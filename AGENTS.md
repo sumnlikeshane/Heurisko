@@ -26,7 +26,7 @@ Baseline recorded on **31 October 2026**, using **Asia/Kolkata** for event times
 - The repository exists. Its initial commit, `6e6159bbbb5fc6c8acc21b9a61c9a53df8f8157d`, contains only `HACKATHON.md`. Do not initialize a replacement repository or amend/recreate that commit.
 - At the start of this documentation task, the branch was `main` tracking `origin/main`, and `docs/` was untracked, pre-existing user material. Do not infer that untracked material can be deleted, staged, or published. Recheck live Git state for every later task.
 - Available material: `HACKATHON.md`, two governing files in `docs/Governing/`, eight research documents, seven supporting evidence/audit files, and their checksum manifest. Root `README.md` and this file were added for the user's documentation request.
-- **No product implementation exists:** no engine, CLI/TUI, browser application, monitoring implementation, actual model integration, package manifest/lockfile, runtime pin, build scripts, product tests, CI workflow, generated examples, or `LICENSE`.
+- **No product implementation exists:** no engine, CLI/TUI, browser application, monitoring implementation, actual model integration, package manifest/lockfile, runtime pin, build scripts, product tests, generated examples, or `LICENSE`. A documentation-only GitHub Actions workflow now checks the research checksums and local Markdown links; it does not install or test product code.
 - All research hypotheses **FH-01/FH-02** and decisions **D-01–D-13** remain **PROPOSED — NOT YET APPROVED**. Writing the root documentation does not approve engineering, dependency installation, model downloads, hosting, or licensing choices.
 - Original governing/research files are preserved. During documentation preparation, all 15 entries in the supplied `SHA256SUMS.txt` verified successfully. That check is research-file integrity, not product validation.
 
@@ -171,7 +171,7 @@ The project has no license yet. The organizer permits **MIT or Apache-2.0**; res
 
 ## Validation and truthful completion
 
-There is no product test runner, install command, runtime floor, or CI workflow to invoke today. Inspect the repository before running familiar package-manager commands; do not fabricate a green test result or quickstart.
+There is no product test runner, install command, runtime floor, or product CI workflow to invoke today. The documentation-only [CI workflow](.github/workflows/ci.yml) runs checksum and local Markdown-link checks on pull requests and pushes to `main`; it does not validate product behavior. Inspect the repository before running familiar package-manager commands; do not fabricate a green test result or quickstart.
 
 For documentation work, check relative links and anchors, Markdown structure, source fidelity, proposal/implementation distinctions, and that only intended files changed. Verify the preserved research snapshot when relevant:
 
@@ -200,7 +200,7 @@ Never claim a proposed test passed, a candidate package was analyzed, a historic
 
 ## Hackathon delivery requirements
 
-Required repository artifacts are an MIT/Apache-2.0 `LICENSE`, `HACKATHON.md`, `README.md` with tested setup/run instructions once runnable, `.github/pull_request_template.md`, `.github/workflows/ci.yml`, and `examples/` with real inputs/outputs. Except for the declaration and this documentation, these are outstanding work, not authorization to create them in every task.
+Required repository artifacts are an MIT/Apache-2.0 `LICENSE`, `HACKATHON.md`, `README.md` with tested setup/run instructions once runnable, `.github/pull_request_template.md`, `.github/workflows/ci.yml`, and `examples/` with real inputs/outputs. The PR template and documentation-only CI workflow now exist. The license, runnable README instructions, and real generated examples remain outstanding; the docs workflow must grow into product CI when implementation exists. Other outstanding items are not authorization to create them in every task.
 
 The initial commit must stay declaration-only. All later work goes through PRs. Every PR must use the organizer's four sections:
 

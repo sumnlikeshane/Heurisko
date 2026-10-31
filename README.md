@@ -298,7 +298,7 @@ P5 can develop after acquisition/report contracts stabilize; it need not wait fo
 
 ## Installation and execution
 
-**There is no executable project to install or run yet.** This checkout has no package manifest, lockfile, runtime pin, build scripts, application entry point, CI workflow, or generated examples. No npm package, binary release, supported operating-system matrix, or live service is declared here. The illustrative commands above are not a quickstart.
+**There is no executable project to install or run yet.** This checkout has no package manifest, lockfile, runtime pin, build scripts, application entry point, product tests, or generated examples. A documentation-only [CI workflow](.github/workflows/ci.yml) checks the research checksums and local Markdown links; it does not install or test product code. No npm package, binary release, supported operating-system matrix, or live service is declared here. The illustrative commands above are not a quickstart.
 
 You can read the repository now: begin with the executive brief, then the product definition, architecture, and founder decisions. Research integrity can be checked from the repository root with:
 
@@ -364,7 +364,7 @@ The organizer requires a new public repository whose first commit contains **onl
 
 **Do not commit or push without the user's explicit approval.** Prepare and validate changes locally, present the concrete change set, and obtain approval for each action. Approval to commit does not by itself authorize a push. See [AGENTS.md](AGENTS.md) for the complete working procedure.
 
-The following organizer-required items remain to be added through authorized work and PRs: an MIT or Apache-2.0 `LICENSE`, `.github/pull_request_template.md`, `.github/workflows/ci.yml`, and `examples/` with representative inputs, actual generated outputs, and supporting evidence. This README supplies an overview and accurately records why runnable installation instructions are not yet available.
+The PR template and documentation-only CI workflow are in place. The following organizer-required items remain: an MIT or Apache-2.0 `LICENSE`, tested setup/run instructions once the project is runnable, and `examples/` with representative inputs, actual generated outputs, and supporting evidence. The docs workflow must expand to install the project and run relevant tests when product implementation exists. This README supplies an overview and accurately records why runnable installation instructions are not yet available.
 
 Each PR must contain these sections:
 
