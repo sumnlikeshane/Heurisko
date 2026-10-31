@@ -1,0 +1,39 @@
+{
+  "model": {
+    "repo": "rootxhacker/codeastra-500M",
+    "revision": "5ac95ba77cec1795afb25ae62a4b65201944844a",
+    "weights_file": "model.safetensors",
+    "weights_sha256": "fc66914223a717973b0ce6e2132235897fb9fc32ff9ccd3d4c69197bcea1cdcd",
+    "config_file": "config.json",
+    "config_sha256": "aaf2bace7b4f3339b811cecdcfac86e40c7fd41d468bb9cb40cf43866e57b6a3",
+    "threshold": 0.3346,
+    "license": "Apache-2.0"
+  },
+  "runtime": {
+    "repo": "https://github.com/harishsg993010/HobbyLM",
+    "revision": "817878f52bf054a4d9aabfdd5360341dd7ce3fa6",
+    "device": "CPU",
+    "python": "3.13.2",
+    "requirements": "requirements.txt",
+    "dependencies": {
+      "torch": "2.12.0",
+      "numpy": "2.2.6",
+      "packaging": "26.2",
+      "safetensors": "0.6.2",
+      "tiktoken": "0.12.0",
+      "pyarrow": "26.0.0"
+    }
+  },
+  "evaluation": {
+    "prompt_version": "codeastra-paired-triage-v1",
+    "repo": "ayshajavd/code-security-vulnerability-dataset",
+    "revision": "9b2f327f6b8bfab9a81411b6e582dd7119c18542",
+    "file": "data/test-00000-of-00001.parquet",
+    "file_sha256": "f16650e9ccfa2aeb2858136b055d899d4059b435b88a76c16573fb88f175fae4",
+    "license": "Apache-2.0",
+    "split": "test",
+    "selection_seed": 4107,
+    "max_pairs": 50,
+    "result": "results/paired-test-sample-50.json"
+  }
+}

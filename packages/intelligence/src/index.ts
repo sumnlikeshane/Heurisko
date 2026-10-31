@@ -316,3 +316,5 @@ export { INTERPRETATION_PROMPT_VERSION, INTERPRETATION_SYSTEM_INSTRUCTION, packa
 export type { InterpretationPromptOptions, InterpretationPromptPackage } from './prompt.js';
 export { analyzeEvidenceWithOpenRouter, OPENROUTER_ANSWER_MODEL } from './openrouter.js';
 export type { OpenRouterAnalysisResult, OpenRouterInferenceMetadata, OpenRouterInferenceOptions } from './openrouter.js';
+export { analyzeCodeAstraEvidence, CODEASTRA_MODEL_ID, CODEASTRA_THRESHOLD, CODEASTRA_PROMPT_VERSION } from './codeastra.js';
+export type { CodeAstraAnalysisResult, CodeAstraLocalScorer, CodeAstraOptions, CodeAstraPrediction, CodeAstraSnippet } from './codeastra.js';

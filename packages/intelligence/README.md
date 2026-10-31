@@ -136,3 +136,47 @@ the active prompt remains v6 and the v12 probe is the reference run. A real
 npm lifecycle-manifest case is still pending Shane's pinned artifact/source
 fixture, which the intelligence package needs to probe that rule on real npm
 evidence. Organizer confirmation remains required before hosted P04 demo use.
+
+## Local CodeAstra paired-code triage
+
+The opt-in `analyzeCodeAstraEvidence` stage adds a local model hypothesis for
+changed code when the caller supplies a function-level source/artifact pair.
+It scores both sides with the same prompt, compares their vulnerability
+probabilities at the model card's `0.3346` threshold, and links any emitted
+interpretation to the original evidence IDs and deterministic change finding.
+It never changes integrity, provenance, deterministic severity, or exit status.
+Use it to ask whether a published code change has a different first-pass
+vulnerability signal from the pinned source; it does not answer artifact/source
+provenance or explain arbitrary file differences.
+
+The caller must select bounded function excerpts and supply each excerpt with
+its exact retained content reference, path, language, line range, and evidence
+ID. The adapter checks that each excerpt exactly matches the caller-resolved
+retained lines. It skips unpaired changes, unsupported languages, mismatched
+references/locators, and prompts over CodeAstra's 2,048-token limit. A score
+below threshold is not a safety result. Model-reported CWE/OWASP names are
+hypotheses; they need human or independent static-analysis review.
+
+`experiments/codeastra/worker.py` is a CPU-only JSONL worker for a local
+CodeAstra installation. It does not download model files or execute source. It
+requires caller-pinned model and HobbyLM runtime revisions plus SHA-256 values
+for the weights/config before loading them. The TS adapter accepts a local
+scorer implementation, so an integrating application can manage the worker
+lifecycle without adding Python or model weights to the core package. The
+worker needs the pinned local HobbyLM checkout plus the isolated Python
+dependencies in `experiments/codeastra/requirements.txt`. Malhar's local
+machine has these installed; the weights, checkout, tokenizer cache, and dataset
+remain ignored and are not bundled in the repository.
+
+The published model card describes 500M F32 parameters, reports 27.40% success
+on vulnerable/patched function pairs, and says its training data is 92% C.
+Those are upstream claims, not Heurisko measurements. The pinned 50-pair local
+held-out run scored 44 pairs: 13.6% paired correctness, 20.5% patched
+specificity, and 68.2% within-pair ranking; 6 calls failed on unsupported
+language or context size. Ranking is close to the card, but fixed-threshold
+behavior is materially worse and needs investigation. This dataset family
+contributed to training, so it is not independent of the training source and
+does not establish package-level accuracy. CodeAstra remains supplementary and
+does not replace the RAG answer model or oracle evaluator. See the [local setup
+and evaluation notes](../../experiments/codeastra/README.md) and [per-pair
+results](../../experiments/codeastra/results/paired-test-sample-50.json).

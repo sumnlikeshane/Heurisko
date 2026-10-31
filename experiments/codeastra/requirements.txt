@@ -1,0 +1,9 @@
+# HobbyLM's pinned reference runtime requirement plus the model's documented
+# tokenizer and safetensors checkpoint reader. Keep this environment separate
+# from the repository's Python contract-validation environment.
+torch==2.12.0
+numpy==2.2.6
+packaging==26.2
+safetensors==0.6.2
+tiktoken==0.12.0
+pyarrow==26.0.0
