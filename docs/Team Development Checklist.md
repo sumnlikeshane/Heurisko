@@ -123,7 +123,7 @@ The order below consolidates the approved requirements into a **recommended engi
 - [ ] Inspect existing Git history: verify whether the **first commit contained only `HACKATHON.md`**; do not rewrite history or claim compliance without checking.
 - [ ] Verify PR template, CI workflow, README, MIT/Apache-2.0 license and approved model/coding-assistant disclosures are in the plan/PR workflow; add via required PRs where missing.
 - [ ] Confirm workspace/package boundaries for shared TypeScript/Node engine, CLI, React/Ink TUI, shared schema and React web; do not introduce another analyzer in the UI.
-- [ ] Co-sign with Malhar the `EvidenceBundle`/`AnalysisResults`/`InvestigationReport` *conceptual boundaries*, schema examples and evidence-reference rules. **Exact field names and enum values remain open** until explicitly frozen.
+- [x] Accept the G0 `EvidenceBundle`/`AnalysisResults`/`InvestigationReport` schema examples and evidence-reference rules under Shane's later [delegated team acceptance](Approved/HEURISKO_SHANE_MALHAR_PRE_SPLIT_AGREEMENT_APPROVED_v0.1.0.md#e09-delegated-g0-contract-acceptance--31-october-2026). The exact G0 fields and enums are accepted for separate interface-dependent work; no independent Malhar review is claimed. Changes to the shared contract still require review through the PR workflow.
 - [ ] Define supported environment and explicit feature flags for unfinished verifiers, rebuilds and AI; avoid working stubs masquerading as completed checks.
 - [ ] Fix a small real-data corpus intake procedure and traceability from each result to the actual inputs.
 

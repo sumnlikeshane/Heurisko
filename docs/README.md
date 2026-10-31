@@ -1,6 +1,6 @@
 # Heurisko documentation map
 
-**Current state, 31 October 2026:** Phases 01–06 and the Shane–Malhar A01–A14 engineering agreement are approved planning decisions. The G0 contract is integrated locally in [packages/contracts](../packages/contracts/package.json), and synthetic checks pass; both developers' technical review and remote repository CI remain pending. No product analyzer, model integration, monitor, TUI, or browser is implemented.
+**Current state, 31 October 2026:** Phases 01–06 and the Shane–Malhar A01–A14 engineering agreement are approved planning decisions. The G0 contract is integrated in [packages/contracts](../packages/contracts/package.json); local checks and PR #2 CI passed. Shane instructed Codex to review it and treat the team as accepting it on that review, recorded in agreement E09. PR merge remains pending. No product analyzer, model integration, monitor, TUI, or browser is implemented.
 
 ## Read in this order
 
@@ -11,7 +11,7 @@
 5. [G0 candidate README](G0_Candidate/README_G0.md) and [root contract package](../packages/contracts/package.json) — preserved handoff and integrated synthetic contract. Review before interface-dependent work.
 6. [Original research](Heurisko_Research/) and [organizer files](Governing/) — evidence, alternatives, and event obligations. The research founder register predates the approvals and retains its historical “proposed” labels.
 
-Current user instructions and organizer rules control the work and submission process. Later approved decisions supersede earlier research proposals where they conflict. The full approved phase records govern the shortened register and checklist. G0 sample types do not become a frozen team contract until both developers review them and the repository CI passes on the proposed commit. The [early work split](Shared_Notes/work_split.md) remains only as provenance.
+Current user instructions and organizer rules control the work and submission process. Later approved decisions supersede earlier research proposals where they conflict. The full approved phase records govern the shortened register and checklist. Shane's later G0 acceptance instruction delegated technical review to Codex on behalf of the team, and PR #2 CI passed on `0e6adb9`; this does not claim an independent Malhar review. The [early work split](Shared_Notes/work_split.md) remains only as provenance.
 
 ## Migration record
 
@@ -21,7 +21,7 @@ The supplied `HEURISKO_COMPLETE_HANDOFF/` bundle verified against all entries in
 
 ## Still open before product claims
 
-- Both developers must review the exact G0 schema and fixtures, and the proposed commit must pass repository CI before marking G0 passed. A 31 October audit found gaps in integrity/provenance success conditions, report IDs, and omission accounting; the candidate was revised and copied into the root workspace. The original G0 log describes the pre-audit candidate. The revised full JSON Schema/semantic suite passed in a temporary Python environment with `jsonschema==4.26.0`; pinned TypeScript typecheck and seven stubbed handshakes passed locally. These checks do not constitute joint sign-off or a remote CI pass.
+- A 31 October audit found gaps in integrity/provenance success conditions, report IDs, and omission accounting; the candidate was revised and copied into the root workspace. The original G0 log describes the pre-audit candidate. The revised full JSON Schema/semantic suite passed in a temporary Python environment with `jsonschema==4.26.0`; pinned TypeScript typecheck and seven stubbed handshakes passed locally. [PR #2 CI](https://github.com/sumnlikeshane/Heurisko/actions/runs/41222794704) passed both jobs on `0e6adb9`. Shane's delegated acceptance is recorded in E09. PR merge is still required for the shared `main` baseline; these synthetic checks do not validate product behavior.
 - The product root still needs an analyzer implementation, actual model inference, monitored releases, generated examples, tested analyzer installation instructions, and analyzer CI.
 - Apache-2.0 was selected under Shane’s delegated choice on 31 October 2026; the local [LICENSE](../LICENSE) and [NOTICE](../NOTICE) await an approved commit/PR. Exact dependency/model versions, verifier policy, resource limits, sandbox, watch schedule, retention, and exit-code precedence require recorded implementation decisions and validation.
 - Commits, pushes, pull-request publication, merges, and external submission require their own authorization under [AGENTS.md](../AGENTS.md).

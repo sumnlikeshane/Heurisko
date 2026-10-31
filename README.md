@@ -8,7 +8,7 @@ Heurisko is a software supply-chain integrity project for **Problem 04 — Publi
 
 Developers often review a Git repository but install a tarball or wheel from a package registry. Those inputs can differ because of compilation, bundling, packaging rules, generated metadata, native code, or unauthorized changes. Heurisko's proposed role is to investigate that relationship and show the evidence behind each explanation and suspicious finding.
 
-**Current status — 31 October 2026:** the six planning phases and Shane–Malhar engineering agreement are approved and indexed in the [approved decision register](docs/Approved%20Decision%20Register.md). The synthetic G0 contract is integrated locally under [packages/contracts](packages/contracts/package.json) and passes local contract checks; both developers’ review and a remote repository CI run remain pending. **No analysis engine, CLI, TUI, web application, release monitor, or model integration exists.** There is no runnable analyzer yet.
+**Current status — 31 October 2026:** the six planning phases and Shane–Malhar engineering agreement are approved and indexed in the [approved decision register](docs/Approved%20Decision%20Register.md). The synthetic G0 contract is integrated under [packages/contracts](packages/contracts/package.json); local checks and [PR #2 CI](https://github.com/sumnlikeshane/Heurisko/actions/runs/41222794704) passed on `0e6adb9`. Shane instructed Codex to review the exact contract and treat the team as accepting it on that review; the [E09 record](docs/Approved/HEURISKO_SHANE_MALHAR_PRE_SPLIT_AGREEMENT_APPROVED_v0.1.0.md#e09-delegated-g0-contract-acceptance--31-october-2026) states the scope. The PR is not merged. **No analysis engine, CLI, TUI, web application, release monitor, or model integration exists.** There is no runnable analyzer yet.
 
 Team **InBuildingPhase**: **Shane Joseph** and **Malhar Mahanor**. See [HACKATHON.md](HACKATHON.md) for the original declaration and [AGENTS.md](AGENTS.md) for contributor instructions and approval boundaries.
 
@@ -161,7 +161,7 @@ flowchart TD
 | Policy evaluator | Evaluate explicit CI rules over findings and completeness, preserving missing-evidence outcomes. |
 | Interfaces | Select inputs and render the common report with escaped content and visible uncertainty. |
 
-The approved direction is **one TypeScript/Node engine and CLI in a pnpm workspace, a mandatory React/Ink TUI, a React/TypeScript browser, and JSON Schema contracts**. The G0 schema/types now live in the root workspace and are pending joint review and remote repository CI. SQLite and content-addressed local storage are design directions; exact storage policy and versions remain open. The original research also assessed Go/Bubble Tea, Rust/Ratatui and Python/Textual as historical alternatives.
+The approved direction is **one TypeScript/Node engine and CLI in a pnpm workspace, a mandatory React/Ink TUI, a React/TypeScript browser, and JSON Schema contracts**. The G0 schema/types live in the root workspace and have local checks, PR CI and Shane's delegated acceptance; PR merge is pending. SQLite and content-addressed local storage are design directions; exact storage policy and versions remain open. The original research also assessed Go/Bubble Tea, Rust/Ratatui and Python/Textual as historical alternatives.
 
 Normal local analysis and exported-report viewing should not require an account or hosted backend. Fresh registry/source evidence still requires network access unless already cached. An optional API can expose the same engine; heavy analysis and rebuilds need suitable isolated job workers rather than assumptions about serverless duration or filesystem limits.
 
@@ -319,7 +319,7 @@ pnpm run typecheck
 pnpm run test:contracts
 ```
 
-These check only synthetic contracts. The full JSON Schema/semantic suite, pinned TypeScript 5.8.3 typecheck and stubbed handshakes passed locally on 31 October 2026. A green remote CI run on the proposed commit and both developers' technical sign-off are still required before G0 can be frozen. Interface-dependent implementation should use the jointly reviewed contract.
+These check only synthetic contracts. The full JSON Schema/semantic suite, pinned TypeScript 5.8.3 typecheck and stubbed handshakes passed locally on 31 October 2026; PR #2 CI passed on `0e6adb9`. Shane delegated final G0 review and team acceptance to Codex, as recorded in E09. Interface-dependent work can use this accepted contract; keep changes to it reviewed in the PR workflow. PR merge remains pending.
 
 ## Repository and research guide
 
@@ -403,7 +403,7 @@ CI must install the project and dependencies, run relevant tests, validate the i
 
 ## Open decisions and limitations
 
-The original [founder research register](docs/Heurisko_Research/HEURISKO_FOUNDER_DECISIONS.md) is preserved as a historical proposal record. The later [approved decision register](docs/Approved%20Decision%20Register.md) controls Phases 01–06 and A01–A14. The exact G0 schema is integrated locally but awaits joint review and remote CI; exit mapping 0/1/2/3 is approved initially, but policy precedence needs tests. Third-party license and redistribution review, analyzer dependency/version admission, model/runtime choice, numeric budgets, hosted operation, and retention remain open. Apache-2.0 has already been selected for original Heurisko material.
+The original [founder research register](docs/Heurisko_Research/HEURISKO_FOUNDER_DECISIONS.md) is preserved as a historical proposal record. The later [approved decision register](docs/Approved%20Decision%20Register.md) controls Phases 01–06 and A01–A14. The exact G0 schema is accepted for separate interface-dependent work under Shane's later delegated review instruction, with PR merge pending; exit mapping 0/1/2/3 is approved initially, but policy precedence needs tests. Third-party license and redistribution review, analyzer dependency/version admission, model/runtime choice, numeric budgets, hosted operation, and retention remain open. Apache-2.0 has already been selected for original Heurisko material.
 
 Research has not established source-matching accuracy, legitimate-build explanation quality, false positives/negatives, native/bundled-code coverage, AI benefit, laptop feasibility, supported runtime/platform versions, performance, or operating costs. No historical attack was detected by Heurisko during research. Candidate packages and planned mutations are not verified examples.
 

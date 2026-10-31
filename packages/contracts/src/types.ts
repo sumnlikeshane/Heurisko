@@ -1,4 +1,4 @@
-// HEURISKO shared G0 contract v0.1.0 — candidate until Shane and Malhar review.
+// HEURISKO shared G0 contract v0.1.0 — accepted under agreement E09; PR merge pending.
 // The JSON Schema in ../schema is the canonical runtime shape.
 export type SHA256 = `sha256:${string}`;
 export type EvidenceId = `ev_${string}`;
