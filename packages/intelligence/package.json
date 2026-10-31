@@ -1,0 +1,22 @@
+{
+  "name": "@heurisko/intelligence",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "typecheck": "pnpm --filter @heurisko/contracts build && tsc --noEmit -p tsconfig.json",
+    "build": "pnpm --filter @heurisko/contracts build && tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "@heurisko/contracts": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "5.8.3"
+  }
+}

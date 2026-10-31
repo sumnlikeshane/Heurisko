@@ -29,9 +29,9 @@ jobs:
           npm install --global pnpm@10.14.0 --ignore-scripts --no-audit --no-fund
           pnpm install --frozen-lockfile --ignore-scripts
           python3 -m pip install -r requirements-contracts.txt
-      - name: Typecheck contracts
+      - name: Typecheck contracts and M0 intelligence
         run: pnpm run typecheck
-      - name: Validate contracts and synthetic handshake
+      - name: Validate contracts and M0 analyzer handshake
         run: pnpm run test:contracts
 
   documentation:

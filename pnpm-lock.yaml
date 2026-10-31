@@ -18,6 +18,16 @@ importers:
         specifier: 5.8.3
         version: 5.8.3
 
+  packages/intelligence:
+    dependencies:
+      '@heurisko/contracts':
+        specifier: workspace:*
+        version: link:../contracts
+    devDependencies:
+      typescript:
+        specifier: 5.8.3
+        version: 5.8.3
+
 packages:
 
   typescript@5.8.3:

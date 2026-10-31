@@ -194,12 +194,14 @@ The order below consolidates the approved requirements into a **recommended engi
 
 ### M0. Agree on bounded intelligence responsibilities
 
-- [ ] Review the shared report/evidence schema with Shane before creating a private model-centric output format.
-- [ ] Define deterministic change/finding structure separately from the AI interpretation record.
-- [ ] Prepare labeled fixtures (benign generated output, introduced install hook, unexpected executable, ambiguous source, missing evidence, hostile package comments) independent of Shane's downloader.
-- [ ] Define exactly what is retrieved, what is omitted and how file/source/evidence IDs survive chunking.
+- [x] Review the shared report/evidence schema with Shane before creating a private model-centric output format. Malhar's contract review is recorded in `packages/intelligence/README.md`; Shane's delegated G0 acceptance is in E09. No contract edit was proposed.
+- [x] Define deterministic change/finding structure separately from the AI interpretation record: deterministic observations use `AnalysisResults.findings`; model hypotheses use `AnalysisResults.interpretations`.
+- [x] Prepare labeled contract cases (benign match/generated candidate, introduced install hook, opaque executable candidate, ambiguous source, missing evidence, hostile package comment) independent of the downloader. The cases are synthetic interface fixtures, not RAG training data or measured analyzer results.
+- [x] Define M0 retrieval as none and specify future content selection, omission reporting, and parent evidence ID plus exact locator preservation in `packages/intelligence/README.md`.
 
 **M0 done when:** Malhar's component consumes the agreed evidence bundle and returns report-compatible results without acquiring packages or asserting cryptographic trust on its own.
+
+**M0 status — complete, 31 October 2026:** `@heurisko/intelligence` consumes F0–F6 without mutation and returns `AnalysisResults` that validate both the result schema and a merged `InvestigationReport`. Heuristic findings and product inference remain explicitly unimplemented; this completes the M0 boundary, not M1 analysis or M2 RAG/model work.
 
 ### M1. Deterministic rules and build-aware investigation
 

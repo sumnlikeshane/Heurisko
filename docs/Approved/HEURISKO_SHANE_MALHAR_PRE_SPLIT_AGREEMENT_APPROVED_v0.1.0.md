@@ -1,8 +1,8 @@
 # HEURISKO — Shane–Malhar Pre-Split Engineering Agreement
 
 **Version:** 0.1.0 · **Date:** 31 October 2026 (IST)  
-**Status:** **APPROVED — JOINT AGREEMENT RECORDED; G0 CONTRACT ACCEPTED PER E09; PR MERGE OPEN**  
-**G0 implementation addendum:** Candidate schema/types, fixtures and historical local validation were created in the original delivery. See Annex E. The later [E09 acceptance record](#e09-delegated-g0-contract-acceptance--31-october-2026) supersedes its earlier pending-review status; PR merge remains pending.  
+**Status:** **APPROVED — JOINT AGREEMENT RECORDED; G0 CONTRACT ACCEPTED PER E09; PR #2 MERGED**
+**G0 implementation addendum:** Candidate schema/types, fixtures and historical local validation were created in the original delivery. See Annex E. The later [E09 acceptance record](#e09-delegated-g0-contract-acceptance--31-october-2026) supersedes its earlier pending-review status; PR #2 merged to `main` as `f06ac54`.
 **Purpose:** Freeze the minimum shared implementation contracts before independent development. This agreement operationalizes, but does not supersede, the **approved Phase 01–06 decisions** and the **Consolidated Implementation Handoff v1.0.0**. Nothing in this file attests that a product, test, model run, security control, or monitor has already been implemented.
 
 > **Decision rule:** The approved six-phase product rules are already locked. Items formerly labeled **proposed freeze** are now **jointly approved implementation directions**, based on Shane's confirmation that both developers agree. The exact runnable schemas and conformance fixtures still need to be created and tested. If a proposal conflicts with an approved trust or product requirement, the approved requirement wins. Each developer may change an owned implementation detail after notifying the other if it does not affect a shared contract; changing a shared contract requires joint review.
