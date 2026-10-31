@@ -1,0 +1,40 @@
+  HEURISKO / report / wide / 160x40                                                                                                                             
+   H Home    I Investigations     M Monitoring                                                                                                                  
+  LOCAL INPUT picocolors@1.1.1 report_7b46cdea60ae3108dd8c4b21                                                                                                  
+  HISTORICAL — checks not refreshed / complete / captured 2026-10-31T21:48:41Z                                                                                  
+  1 Overview  2 Findings*  3 Files  4 Source  5 AI  6 Coverage                                                                                                  
+  ┌─ > Findings ───────────────────────────────┐ ┌─ Findings detail ─────────────────────────────────────────────────┐ ┌─ Supporting evidence ───────────────┐  
+  │ > Package lifecycle script entry changed   │ │ Observation: Manifest key scripts.postinstall is reported as      │ │ > ev_8e5679afc3b6d3667eb09413       │  
+  │   File change remains unexplained          │ │ changed.                                                          │ │                                     │  
+  │   File change remains unexplained          │ │ Significance: Lifecycle entries can affect package-manager        │ │                                     │  
+  │   File change remains unexplained          │ │ installation behavior; inspect the exact command and its source   │ │                                     │  
+  │   File change remains unexplained          │ │ before deciding what it does. This observation does not establish │ │                                     │  
+  │   File change remains unexplained          │ │ malicious intent.                                                 │ │                                     │  
+  │   File change remains unexplained          │ │ Severity: medium                                                  │ │                                     │  
+  │   File change remains unexplained          │ │ Review priority: medium                                           │ │                                     │  
+  │   File change remains unexplained          │ │ Evidence confidence: high                                         │ │                                     │  
+  │   File change remains unexplained          │ │ Explanation strength: exact                                       │ │                                     │  
+  │   File change remains unexplained          │ │ Evidence: ev_8e5679afc3b6d3667eb09413                             │ │                                     │  
+  │   File change remains unexplained          │ │ Limitation: The evidence identifies the changed manifest key but  │ │                                     │  
+  │   File change remains unexplained          │ │ does not retain the old and new command values.                   │ │                                     │  
+  │   File change remains unexplained          │ │ Next action: Review the retained old and new script values and    │ │                                     │  
+  │   File change remains unexplained          │ │ their referenced files; do not execute them on the host.          │ │                                     │  
+  │   Package script entry changed             │ │ Rule: heurisko.manifest.lifecycle-script-change@0.1.0             │ │                                     │  
+  │                                            │ │                                                                   │ │                                     │  
+  │                                            │ │                                                                   │ │                                     │  
+  │                                            │ │                                                                   │ │                                     │  
+  │                                            │ │                                                                   │ │                                     │  
+  │                                            │ │                                                                   │ │                                     │  
+  │                                            │ │                                                                   │ │                                     │  
+  │                                            │ │                                                                   │ │                                     │  
+  │                                            │ │                                                                   │ │                                     │  
+  │                                            │ │                                                                   │ │                                     │  
+  │                                            │ │                                                                   │ │                                     │  
+  │                                            │ │                                                                   │ │                                     │  
+  │                                            │ │                                                                   │ │                                     │  
+  └────────────────────────────────────────────┘ └───────────────────────────────────────────────────────────────────┘ └─────────────────────────────────────┘  
+  Focus 0 / filter (none) / priority:all severity:all confidence:all rule:all                                                                                   
+  j/k move  Enter inspect  e evidence  Tab focus  / filter  ? help  q quit                                                                                      
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                

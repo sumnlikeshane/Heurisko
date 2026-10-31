@@ -1,0 +1,374 @@
+[?1049h[?25l[?25l  [1mHEURISKO / report / medium / 120x35                                                                                 [22m
+   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  npm zod@4.6.7 report_53ce205b689a18c8845dba65
+  HISTORICAL — checks not refreshed / incomplete / captured 2026-10-31T19:01:10Z
+  1 Overview*  2 Findings  3 Files  4 Source  5 AI  6 Coverage
+  ┌─[1m > Overview [22m───────────────────┐ ┌─[1m Overview detail [22m────────────────────────────────────────────────────────────┐
+  │ > Identity and outcomes        │ │ Inspect recorded correspondence and coverage.                                │
+  │                                │ │ Report report_53ce205b689a18c8845dba65                                       │
+  │                                │ │ Content                                                                      │
+  │                                │ │ sha256:66ea87bddf0319c4ccf8cc0d1e7be0f330eb17dc4fe4531775392692d9799757      │
+  │                                │ │ Artifact zod-4.6.7.tgz                                                       │
+  │                                │ │ SHA-256                                                                      │
+  │                                │ │ sha256:84efd155bed93270286e793fc951be270b536cbd5b0eeb111f0fa3967201d698      │
+  │                                │ │ Captured 2026-10-31T19:01:10Z                                                │
+  │                                │ │ Created 2026-10-31T20:18:08Z                                                 │
+  │                                │ │ Configuration                                                                │
+  │                                │ │ 42b9abbec20416d1903a50446e7afff23e55fa3237089d30add22662c5a80289             │
+  │                                │ │ artifactIntegrity: matched                                                   │
+  │                                │ │ sourceAssociation: ambiguous                                                 │
+  │                                │ │ provenancePolicy: not_checked                                                │
+  │                                │ │ correspondence: unresolved                                                   │
+  │                                │ │ analysisCompleteness: incomplete                                             │
+  │                                │ │ policyResult: indeterminate                                                  │
+  │                                │ │ SOURCE CONFLICT — inspect candidate claims in Source.                        │
+  │                                │ │ Findings evaluation: not_evaluated_or_partial; examined-scope count: Unknown │
+  │                                │ │ Recorded findings: 0 (not a safety assessment)                               │
+  │                                │ │ AI: disabled; Analysis module unavailable                                    │
+  │                                │ │ Static raw comparison only; generated/build/security interpretation is       │
+  │                                │ │ unavailable without Malhar analysis.                                         │
+  └────────────────────────────────┘ └──────────────────────────────────────────────────────────────────────────────┘
+  SOURCE CONFLICT — inspect candidate claims / Candidates
+  j/k move  Enter inspect  e evidence  Tab focus  / filter  ? help  q quit
+
+
+[?25l[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO / report / medium / 120x35                                                                                 [22m
+   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  npm zod@4.6.7 report_53ce205b689a18c8845dba65
+  HISTORICAL — checks not refreshed / incomplete / captured 2026-10-31T19:01:10Z
+  1 Overview*  2 Findings  3 Files  4 Source  5 AI  6 Coverage
+  ┌─[1m > Overview [22m───────────────────┐ ┌─[1m Overview detail [22m────────────────────────────────────────────────────────────┐
+  │ > Identity and outcomes        │ │ Inspect recorded correspondence and coverage.                                │
+  │                                │ │ Report report_53ce205b689a18c8845dba65                                       │
+  │                                │ │ Content                                                                      │
+  │                                │ │ sha256:66ea87bddf0319c4ccf8cc0d1e7be0f330eb17dc4fe4531775392692d9799757      │
+  │                                │ │ Artifact zod-4.6.7.tgz                                                       │
+  │                                │ │ SHA-256                                                                      │
+  │                                │ │ sha256:84efd155bed93270286e793fc951be270b536cbd5b0eeb111f0fa3967201d698      │
+  │                                │ │ Captured 2026-10-31T19:01:10Z                                                │
+  │                                │ │ Created 2026-10-31T20:18:08Z                                                 │
+  │                                │ │ Configuration                                                                │
+  │                                │ │ 42b9abbec20416d1903a50446e7afff23e55fa3237089d30add22662c5a80289             │
+  │                                │ │ artifactIntegrity: matched                                                   │
+  │                                │ │ sourceAssociation: ambiguous                                                 │
+  │                                │ │ provenancePolicy: not_checked                                                │
+  │                                │ │ correspondence: unresolved                                                   │
+  │                                │ │ analysisCompleteness: incomplete                                             │
+  │                                │ │ policyResult: indeterminate                                                  │
+  │                                │ │ SOURCE CONFLICT — inspect candidate claims in Source.                        │
+  │                                │ │ Findings evaluation: not_evaluated_or_partial; examined-scope count: Unknown │
+  │                                │ │ Recorded findings: 0 (not a safety assessment)                               │
+  │                                │ │ AI: disabled; Analysis module unavailable                                    │
+  │                                │ │ Static raw comparison only; generated/build/security interpretation is       │
+  │                                │ │ unavailable without Malhar analysis.                                         │
+  └────────────────────────────────┘ └──────────────────────────────────────────────────────────────────────────────┘
+  Per-report UI state reset; report unchanged.
+  j/k move  Enter inspect  e evidence  Tab focus  / filter  ? help  q quit
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO / report / medium / 120x35                                                                                 [22m
+   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  npm zod@4.6.7 report_53ce205b689a18c8845dba65
+  HISTORICAL — checks not refreshed / incomplete / captured 2026-10-31T19:01:10Z
+  1 Overview  2 Findings  3 Files*  4 Source  5 AI  6 Coverage
+  ┌─[1m > Files [22m─────────────────┐ ┌─[1m Files detail [22m────────────────────────────────────────────────────────────────────┐
+  │ > v package/              │ │ Directory: package                                                                │
+  │     unresolved compile.c… │ │ Enter expands/collapses; no filesystem access.                                    │
+  │     unresolved compile.d… │ │                                                                                   │
+  │     unresolved compile.d… │ │                                                                                   │
+  │     unresolved compile.js │ │                                                                                   │
+  │     unresolved index.cjs  │ │                                                                                   │
+  │     unresolved index.d.c… │ │                                                                                   │
+  │     unresolved index.d.ts │ │                                                                                   │
+  │     unresolved index.js   │ │                                                                                   │
+  │     unresolved LICENSE    │ │                                                                                   │
+  │     v locales/            │ │                                                                                   │
+  │       unresolved index.c… │ │                                                                                   │
+  │       unresolved index.d… │ │                                                                                   │
+  │       unresolved index.d… │ │                                                                                   │
+  │       unresolved index.js │ │                                                                                   │
+  │       unresolved package… │ │                                                                                   │
+  │     v mini/               │ │                                                                                   │
+  │       unresolved index.c… │ │                                                                                   │
+  │       unresolved index.d… │ │                                                                                   │
+  │       unresolved index.d… │ │                                                                                   │
+  │       unresolved index.js │ │                                                                                   │
+  │       unresolved package… │ │                                                                                   │
+  │     unresolved package.j… │ │                                                                                   │
+  └───────────────────────────┘ └───────────────────────────────────────────────────────────────────────────────────┘
+  Focus 0 / filter (none) / Raw auto; tree
+  j/k move  Enter inspect  e evidence  Tab focus  / filter  ? help  q quit
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO / report / medium / 120x35                                                                                 [22m
+   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  npm zod@4.6.7 report_53ce205b689a18c8845dba65
+  HISTORICAL — checks not refreshed / incomplete / captured 2026-10-31T19:01:10Z
+  1 Overview  2 Findings  3 Files*  4 Source  5 AI  6 Coverage
+  ┌─[1m > Files [22m─────────────────┐ ┌─[1m Files detail [22m────────────────────────────────────────────────────────────────────┐
+  │ > unresolved zod-b500a2e… │ │ Change chg_9e546afdf2c36f3b8730abef                                               │
+  │   unresolved zod-b500a2e… │ │ Artifact path: Not recorded                                                       │
+  │   unresolved zod-b500a2e… │ │ Source path:                                                                      │
+  │   unresolved package/LIC… │ │ zod-b500a2ee95134f81d74da7911d7378dd2853d042/.claude/skills/security-advisory/SKI │
+  │   unresolved package/REA… │ │ LL.md                                                                             │
+  │   unresolved package/com… │ │ Status: unresolved                                                                │
+  │   unresolved package/com… │ │ Raw equality: unknown                                                             │
+  │   unresolved package/com… │ │ Explanation strength: unexplained                                                 │
+  │   unresolved package/com… │ │ Missing member cannot establish absence in an incomplete inventory.               │
+  │   unresolved package/ind… │ │ Raw evidence: e opens exact recorded byte spans; s changes side.                  │
+  │   unresolved package/ind… │ │ Normalized view unavailable — no transform was performed.                         │
+  │   unresolved package/ind… │ │                                                                                   │
+  │   unresolved package/ind… │ │                                                                                   │
+  │   unresolved package/loc… │ │                                                                                   │
+  │   unresolved package/loc… │ │                                                                                   │
+  │   unresolved package/loc… │ │                                                                                   │
+  │   unresolved package/loc… │ │                                                                                   │
+  │   unresolved package/loc… │ │                                                                                   │
+  │   unresolved package/min… │ │                                                                                   │
+  │   unresolved package/min… │ │                                                                                   │
+  │   unresolved package/min… │ │                                                                                   │
+  │   unresolved package/min… │ │                                                                                   │
+  │   unresolved package/min… │ │                                                                                   │
+  └───────────────────────────┘ └───────────────────────────────────────────────────────────────────────────────────┘
+  Focus 0 / filter (none) / Raw auto; flat
+  j/k move  Enter inspect  e evidence  Tab focus  / filter  ? help  q quit
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO / report / medium / 120x35                                                                                 [22m
+   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  npm zod@4.6.7 report_53ce205b689a18c8845dba65
+  HISTORICAL — checks not refreshed / incomplete / captured 2026-10-31T19:01:10Z
+  1 Overview  2 Findings  3 Files*  4 Source  5 AI  6 Coverage
+  ┌─[1m > Files [22m─────────────────┐ ┌─[1m Files detail [22m────────────────────────────────────────────────────────────────────┐
+  │ > unresolved zod-b500a2e… │ │ Change chg_9e546afdf2c36f3b8730abef                                               │
+  │   unresolved zod-b500a2e… │ │ Artifact path: Not recorded                                                       │
+  │   unresolved zod-b500a2e… │ │ Source path:                                                                      │
+  │   unresolved package/LIC… │ │ zod-b500a2ee95134f81d74da7911d7378dd2853d042/.claude/skills/security-advisory/SKI │
+  │   unresolved package/REA… │ │ LL.md                                                                             │
+  │   unresolved package/com… │ │ Status: unresolved                                                                │
+  │   unresolved package/com… │ │ Raw equality: unknown                                                             │
+  │   unresolved package/com… │ │ Explanation strength: unexplained                                                 │
+  │   unresolved package/com… │ │ Missing member cannot establish absence in an incomplete inventory.               │
+  │   unresolved package/ind… │ │ Raw evidence: e opens exact recorded byte spans; s changes side.                  │
+  │   unresolved package/ind… │ │ Normalized view unavailable — no transform was performed.                         │
+  │   unresolved package/ind… │ │ RAW CHANGED SPANS (independent byte windows; no line-alignment claim)             │
+  │   unresolved package/ind… │ │ SOURCE                                                                            │
+  │   unresolved package/loc… │ │ [0,4096) truncated=true                                                           │
+  │   unresolved package/loc… │ │ ---                                                                               │
+  │   unresolved package/loc… │ │ name: security-advisory                                                           │
+  │   unresolved package/loc… │ │ description: Triage a draft security advisory in colinhacks/zod — a private       │
+  │   unresolved package/loc… │ │ vulnerability report from the Security tab, named by GHSA id                      │
+  │   unresolved package/min… │ │ (GHSA-xxxx-xxxx-xxxx) or reached from "the draft advisories", "the security       │
+  │   unresolved package/min… │ │ reports", "the vulnerability queue". Use instead of the `triage` skill whenever   │
+  │   unresolved package/min… │ │ the ticket is an advisory rather than a public issue or PR, because the workflow  │
+  │   unresolved package/min… │ │ is different: the report is private, the burden of proof is on the reporter, the  │
+  │   unresolved package/min… │ │ fix must be LANDED before any comment is drafted, and the publish-or-decline call │
+  └───────────────────────────┘ └───────────────────────────────────────────────────────────────────────────────────┘
+  Focus 0 / filter (none) / Raw auto; flat
+  j/k move  Enter inspect  e evidence  Tab focus  / filter  ? help  q quit
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO / report / medium / 120x35                                                                                 [22m
+   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  npm zod@4.6.7 report_53ce205b689a18c8845dba65
+  HISTORICAL — checks not refreshed / incomplete / captured 2026-10-31T19:01:10Z
+  1 Overview  2 Findings  3 Files*  4 Source  5 AI  6 Coverage
+  ┌─[1m > Files [22m─────────────────┐ ┌─[1m Files detail [22m────────────────────────────────────────────────────────────────────┐
+  │   unresolved zod-b500a2e… │ │ Change chg_b1dabdbb913acd0a51ce6bb3                                               │
+  │ > unresolved zod-b500a2e… │ │ Artifact path: Not recorded                                                       │
+  │   unresolved zod-b500a2e… │ │ Source path:                                                                      │
+  │   unresolved package/LIC… │ │ zod-b500a2ee95134f81d74da7911d7378dd2853d042/.claude/skills/triage/SKILL.md       │
+  │   unresolved package/REA… │ │ Status: unresolved                                                                │
+  │   unresolved package/com… │ │ Raw equality: unknown                                                             │
+  │   unresolved package/com… │ │ Explanation strength: unexplained                                                 │
+  │   unresolved package/com… │ │ Missing member cannot establish absence in an incomplete inventory.               │
+  │   unresolved package/com… │ │ Raw evidence: e opens exact recorded byte spans; s changes side.                  │
+  │   unresolved package/ind… │ │ Normalized view unavailable — no transform was performed.                         │
+  │   unresolved package/ind… │ │ RAW CHANGED SPANS (independent byte windows; no line-alignment claim)             │
+  │   unresolved package/ind… │ │ SOURCE                                                                            │
+  │   unresolved package/ind… │ │ [0,4096) truncated=true                                                           │
+  │   unresolved package/loc… │ │ ---                                                                               │
+  │   unresolved package/loc… │ │ name: security-advisory                                                           │
+  │   unresolved package/loc… │ │ description: Triage a draft security advisory in colinhacks/zod — a private       │
+  │   unresolved package/loc… │ │ vulnerability report from the Security tab, named by GHSA id                      │
+  │   unresolved package/loc… │ │ (GHSA-xxxx-xxxx-xxxx) or reached from "the draft advisories", "the security       │
+  │   unresolved package/min… │ │ reports", "the vulnerability queue". Use instead of the `triage` skill whenever   │
+  │   unresolved package/min… │ │ the ticket is an advisory rather than a public issue or PR, because the workflow  │
+  │   unresolved package/min… │ │ is different: the report is private, the burden of proof is on the reporter, the  │
+  │   unresolved package/min… │ │ fix must be LANDED before any comment is drafted, and the publish-or-decline call │
+  │   unresolved package/min… │ │ has its own calculus. Covers reproducing a PoC against main, the schema-vs-input  │
+  └───────────────────────────┘ └───────────────────────────────────────────────────────────────────────────────────┘
+  Focus 0 / filter (none) / Raw auto; flat
+  j/k move  Enter inspect  e evidence  Tab focus  / filter  ? help  q quit
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO / report / medium / 120x35                                                                                 [22m
+   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  npm zod@4.6.7 report_53ce205b689a18c8845dba65
+  HISTORICAL — checks not refreshed / incomplete / captured 2026-10-31T19:01:10Z
+  1 Overview  2 Findings  3 Files*  4 Source  5 AI  6 Coverage
+  ┌─[1m > Files [22m─────────────────┐ ┌─[1m Files detail [22m────────────────────────────────────────────────────────────────────┐
+  │   unresolved zod-b500a2e… │ │ Change chg_b1dabdbb913acd0a51ce6bb3                                               │
+  │ > unresolved zod-b500a2e… │ │ Artifact path: Not recorded                                                       │
+  │   unresolved zod-b500a2e… │ │ Source path:                                                                      │
+  │   unresolved package/LIC… │ │ zod-b500a2ee95134f81d74da7911d7378dd2853d042/.claude/skills/triage/SKILL.md       │
+  │   unresolved package/REA… │ │ Status: unresolved                                                                │
+  │   unresolved package/com… │ │ Raw equality: unknown                                                             │
+  │   unresolved package/com… │ │ Explanation strength: unexplained                                                 │
+  │   unresolved package/com… │ │ Missing member cannot establish absence in an incomplete inventory.               │
+  │   unresolved package/com… │ │ Raw evidence: e opens exact recorded byte spans; s changes side.                  │
+  │   unresolved package/ind… │ │ Normalized view unavailable — no transform was performed.                         │
+  │   unresolved package/ind… │ │ RAW CHANGED SPANS (independent byte windows; no line-alignment claim)             │
+  │   unresolved package/ind… │ │ SOURCE                                                                            │
+  │   unresolved package/ind… │ │ [0,4096) truncated=true                                                           │
+  │   unresolved package/loc… │ │ ---                                                                               │
+  │   unresolved package/loc… │ │ name: triage                                                                      │
+  │   unresolved package/loc… │ │ description: Investigate a GitHub issue or pull request in colinhacks/zod and     │
+  │   unresolved package/loc… │ │ write up a durable verdict. Use whenever asked to triage, investigate, review,    │
+  │   unresolved package/loc… │ │ evaluate, or form an opinion on an issue or PR (by number, URL, or "the open PR   │
+  │   unresolved package/min… │ │ queue"), and when sweeping many of them in bulk. For a draft SECURITY ADVISORY (a │
+  │   unresolved package/min… │ │ GHSA id, the Security tab, a private vulnerability report) use the                │
+  │   unresolved package/min… │ │ `security-advisory` skill instead — it shares this file's conventions but its     │
+  │   unresolved package/min… │ │ workflow lands the fix before drafting any comment. Covers where write-ups live   │
+  │   unresolved package/min… │ │ on disk (.triage/issues/NNNN/, .triage/prs/NNNN/), the cheap-disqualifier pass    │
+  └───────────────────────────┘ └───────────────────────────────────────────────────────────────────────────────────┘
+  Focus 0 / filter (none) / Raw auto; flat
+  j/k move  Enter inspect  e evidence  Tab focus  / filter  ? help  q quit
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO / report / medium / 120x35                                                                                 [22m
+   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  npm zod@4.6.7 report_53ce205b689a18c8845dba65
+  HISTORICAL — checks not refreshed / incomplete / captured 2026-10-31T19:01:10Z
+  1 Overview  2 Findings  3 Files*  4 Source  5 AI  6 Coverage
+  ┌─[1m > Files [22m─────────────────┐ ┌─[1m Files detail [22m────────────────────────────────────────────────────────────────────┐
+  │   unresolved zod-b500a2e… │ │ Change chg_175db6a162eda071598ad95b                                               │
+  │   unresolved zod-b500a2e… │ │ Artifact path: Not recorded                                                       │
+  │ > unresolved zod-b500a2e… │ │ Source path:                                                                      │
+  │   unresolved package/LIC… │ │ zod-b500a2ee95134f81d74da7911d7378dd2853d042/.claude/skills/triage/scripts/reinde │
+  │   unresolved package/REA… │ │ x.mjs                                                                             │
+  │   unresolved package/com… │ │ Status: unresolved                                                                │
+  │   unresolved package/com… │ │ Raw equality: unknown                                                             │
+  │   unresolved package/com… │ │ Explanation strength: unexplained                                                 │
+  │   unresolved package/com… │ │ Missing member cannot establish absence in an incomplete inventory.               │
+  │   unresolved package/ind… │ │ Raw evidence: e opens exact recorded byte spans; s changes side.                  │
+  │   unresolved package/ind… │ │ Normalized view unavailable — no transform was performed.                         │
+  │   unresolved package/ind… │ │ RAW CHANGED SPANS (independent byte windows; no line-alignment claim)             │
+  │   unresolved package/ind… │ │ SOURCE                                                                            │
+  │   unresolved package/loc… │ │ [0,4096) truncated=true                                                           │
+  │   unresolved package/loc… │ │ ---                                                                               │
+  │   unresolved package/loc… │ │ name: triage                                                                      │
+  │   unresolved package/loc… │ │ description: Investigate a GitHub issue or pull request in colinhacks/zod and     │
+  │   unresolved package/loc… │ │ write up a durable verdict. Use whenever asked to triage, investigate, review,    │
+  │   unresolved package/min… │ │ evaluate, or form an opinion on an issue or PR (by number, URL, or "the open PR   │
+  │   unresolved package/min… │ │ queue"), and when sweeping many of them in bulk. For a draft SECURITY ADVISORY (a │
+  │   unresolved package/min… │ │ GHSA id, the Security tab, a private vulnerability report) use the                │
+  │   unresolved package/min… │ │ `security-advisory` skill instead — it shares this file's conventions but its     │
+  │   unresolved package/min… │ │ workflow lands the fix before drafting any comment. Covers where write-ups live   │
+  └───────────────────────────┘ └───────────────────────────────────────────────────────────────────────────────────┘
+  Focus 0 / filter (none) / Raw auto; flat
+  j/k move  Enter inspect  e evidence  Tab focus  / filter  ? help  q quit
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO / report / medium / 120x35                                                                                 [22m
+   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  npm zod@4.6.7 report_53ce205b689a18c8845dba65
+  HISTORICAL — checks not refreshed / incomplete / captured 2026-10-31T19:01:10Z
+  1 Overview  2 Findings  3 Files*  4 Source  5 AI  6 Coverage
+  ┌─[1m > Files [22m─────────────────┐ ┌─[1m Files detail [22m────────────────────────────────────────────────────────────────────┐
+  │   unresolved zod-b500a2e… │ │ Change chg_175db6a162eda071598ad95b                                               │
+  │   unresolved zod-b500a2e… │ │ Artifact path: Not recorded                                                       │
+  │ > unresolved zod-b500a2e… │ │ Source path:                                                                      │
+  │   unresolved package/LIC… │ │ zod-b500a2ee95134f81d74da7911d7378dd2853d042/.claude/skills/triage/scripts/reinde │
+  │   unresolved package/REA… │ │ x.mjs                                                                             │
+  │   unresolved package/com… │ │ Status: unresolved                                                                │
+  │   unresolved package/com… │ │ Raw equality: unknown                                                             │
+  │   unresolved package/com… │ │ Explanation strength: unexplained                                                 │
+  │   unresolved package/com… │ │ Missing member cannot establish absence in an incomplete inventory.               │
+  │   unresolved package/ind… │ │ Raw evidence: e opens exact recorded byte spans; s changes side.                  │
+  │   unresolved package/ind… │ │ Normalized view unavailable — no transform was performed.                         │
+  │   unresolved package/ind… │ │ RAW CHANGED SPANS (independent byte windows; no line-alignment claim)             │
+  │   unresolved package/ind… │ │ SOURCE                                                                            │
+  │   unresolved package/loc… │ │ [0,3694) truncated=false                                                          │
+  │   unresolved package/loc… │ │ #!/usr/bin/env -S nub --node                                                      │
+  │   unresolved package/loc… │ │ // Regenerate .triage/<kind>/index.md from the YAML frontmatter of every          │
+  │   unresolved package/loc… │ │ results.md.                                                                       │
+  │   unresolved package/loc… │ │ // usage: nub --node .claude/skills/triage/scripts/reindex.mjs                    │
+  │   unresolved package/min… │ │ [issues|prs|advisories]                                                           │
+  │   unresolved package/min… │ │ import { readdirSync, readFileSync, writeFileSync, existsSync } from "node:fs";   │
+  │   unresolved package/min… │ │ import { join } from "node:path";                                                 │
+  │   unresolved package/min… │ │ import { execFileSync } from "node:child_process";                                │
+  │   unresolved package/min… │ │                                                                                   │
+  └───────────────────────────┘ └───────────────────────────────────────────────────────────────────────────────────┘
+  Focus 0 / filter (none) / Raw auto; flat
+  j/k move  Enter inspect  e evidence  Tab focus  / filter  ? help  q quit
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO / report / medium / 120x35                                                                                 [22m
+   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  npm zod@4.6.7 report_53ce205b689a18c8845dba65
+  HISTORICAL — checks not refreshed / incomplete / captured 2026-10-31T19:01:10Z
+  1 Overview  2 Findings  3 Files  4 Source  5 AI  6 Coverage*
+  ┌─[1m > Coverage [22m───────────────────┐ ┌─[1m Coverage detail [22m────────────────────────────────────────────────────────────┐
+  │ > Measured coverage and stages │ │ artifactFiles: 840                                                           │
+  │                                │ │ sourceFiles: 3                                                               │
+  │                                │ │ comparedFiles: 843                                                           │
+  │                                │ │ analyzedBytes: 6187789                                                       │
+  │                                │ │ skippedBytes: 0                                                              │
+  │                                │ │ unsupportedBytes: 0                                                          │
+  │                                │ │ complete: false                                                              │
+  │                                │ │ These are recorded scope counts; universal coverage denominator: Unknown.    │
+  │                                │ │ File/byte totals are known observed members only; remaining archive scope is │
+  │                                │ │ unknown on failure.                                                          │
+  │                                │ │ resolve_artifact: complete                                                   │
+  │                                │ │ acquire: complete                                                            │
+  │                                │ │ source: incomplete                                                           │
+  │                                │ │ SOURCE_PACKAGE_MANIFEST_MISSING: SOURCE_PACKAGE_MANIFEST_MISSING; source     │
+  │                                │ │ provenance: skipped                                                          │
+  │                                │ │ inventory: incomplete                                                        │
+  │                                │ │ INVENTORY_INCOMPLETE: INVENTORY_INCOMPLETE; inventory                        │
+  │                                │ │ build: skipped                                                               │
+  │                                │ │ compare: incomplete                                                          │
+  │                                │ │ COMPARISON_SCOPE_INCOMPLETE: COMPARISON_SCOPE_INCOMPLETE; compare            │
+  │                                │ │ persist: complete                                                            │
+  │                                │ │ heuristics: incomplete                                                       │
+  │                                │ │ ANALYSIS_MODULE_UNAVAILABLE: Malhar analysis module not supplied;            │
+  └────────────────────────────────┘ └──────────────────────────────────────────────────────────────────────────────┘
+  Focus 0 / filter (none) / No universal safety verdict
+  j/k move  Enter inspect  e evidence  Tab focus  / filter  ? help  q quit
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO / report / medium / 120x35                                                                                 [22m
+   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  npm zod@4.6.7 report_53ce205b689a18c8845dba65
+  HISTORICAL — checks not refreshed / incomplete / captured 2026-10-31T19:01:10Z
+  1 Overview  2 Findings  3 Files  4 Source  5 AI  6 Coverage*
+  ┌─[1m > Coverage / coverage [22m──────────────────────────────────────────────────────────────────────────────────────────┐
+  │ artifactFiles: 840                                                                                               │
+  │ sourceFiles: 3                                                                                                   │
+  │ comparedFiles: 843                                                                                               │
+  │ analyzedBytes: 6187789                                                                                           │
+  │ skippedBytes: 0                                                                                                  │
+  │ unsupportedBytes: 0                                                                                              │
+  │ complete: false                                                                                                  │
+  │ These are recorded scope counts; universal coverage denominator: Unknown.                                        │
+  │ File/byte totals are known observed members only; remaining archive scope is unknown on failure.                 │
+  │ resolve_artifact: complete                                                                                       │
+  │ acquire: complete                                                                                                │
+  │ source: incomplete                                                                                               │
+  │ SOURCE_PACKAGE_MANIFEST_MISSING: SOURCE_PACKAGE_MANIFEST_MISSING; source                                         │
+  │ provenance: skipped                                                                                              │
+  │ inventory: incomplete                                                                                            │
+  │ INVENTORY_INCOMPLETE: INVENTORY_INCOMPLETE; inventory                                                            │
+  │ build: skipped                                                                                                   │
+  │ compare: incomplete                                                                                              │
+  │ COMPARISON_SCOPE_INCOMPLETE: COMPARISON_SCOPE_INCOMPLETE; compare                                                │
+  │ persist: complete                                                                                                │
+  │ heuristics: incomplete                                                                                           │
+  │ ANALYSIS_MODULE_UNAVAILABLE: Malhar analysis module not supplied; deterministic analysis                         │
+  │ ai: skipped                                                                                                      │
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+  Focus 0 / filter (none) / No universal safety verdict
+  j/k move  Enter inspect  e evidence  Tab focus  / filter  ? help  q quit
+
+

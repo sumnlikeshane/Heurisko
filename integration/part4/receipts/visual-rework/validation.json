@@ -1,0 +1,86 @@
+{
+  "version": 1,
+  "checkpointUTC": "2026-10-31T22:56:48+00:00",
+  "scope": "Part 4 TUI visual rework authorized after user rejected visual mismatch; no new Part 4 timebox",
+  "clock": {
+    "startedUTC": "2026-10-31T22:29:30+00:00",
+    "elapsedSeconds": 1638,
+    "knownMeasuredPart4Seconds": 4262,
+    "additionalEarlierVisualEffort": "unmeasured; chronology overlaps original nonvisual session",
+    "originalCalendarEnvelopeSeconds": 13254,
+    "beyondOriginal70MinuteCutoffSeconds": 9054,
+    "reset": false
+  },
+  "gates": {
+    "S4KeyboardEvidenceErrorUnknown": "passed locally",
+    "visual": "revision-7 composition restored/adapted; human acceptance pending",
+    "G3": "open",
+    "Part5": "not started",
+    "design": "v1.0.0-rc.1 unapproved/unfrozen; 59 directions preserved"
+  },
+  "checks": {
+    "fullWorkspaceTypecheck": "typecheck.log: pass",
+    "fullG0SchemaSemanticAndStubHandshake": "contracts.log: pass",
+    "readerModelProgressPersistenceInputAndAlignment": {
+      "pass": 32,
+      "receipt": "unit-final.log"
+    },
+    "actualProductPTY": {
+      "main": {
+        "pass": 185,
+        "receipt": "attempt-3/validation.json"
+      },
+      "additional": {
+        "pass": 29,
+        "receipt": "extra-3/validation.json"
+      },
+      "navigationAndNamedAnchors": {
+        "pass": 35,
+        "receipt": "navigation-7/validation.json"
+      },
+      "total": 249
+    },
+    "realProgressResizeSnapshotCancelAndExactJobAbsence": "live-2/validation.json: pass",
+    "nonTTYAndInspectParity": "non-tty.json: five pass",
+    "finalTUIAndCLICompilation": "final-build.log: pass",
+    "historicalCoreRegression": "117 at prior resumed checkpoint; not rerun for renderer-only rework",
+    "relevantUnchangedCoreCLIAndRegressionFiles": {
+      "packages/cli/package.json": true,
+      "packages/cli/src/index.ts": true,
+      "packages/core/src/parser-job.ts": true,
+      "packages/core/tests/audit-fixes.test.mjs": true,
+      "packages/core/tests/s2.test.mjs": true,
+      "packages/core/tests/helpers/recovery.mjs": true,
+      "integration/part4/tests/readiness.test.mjs": true,
+      "scripts/capture-part4.mjs": true,
+      "scripts/check-part4-cleanup.mjs": true
+    },
+    "originalM1ReportHashUnchanged": true,
+    "spikeSourceHashesUnchanged": true,
+    "indexUnchanged": true,
+    "nativeTerminal": "Tool access denied; actual PTY/ANSI cells only, no screenshot/human approval"
+  },
+  "failureHistory": [
+    "attempt-1: oracle expected a heading after deliberately scrolling past it; exact-state comparison corrected; attempt-3 passes.",
+    "extra-1: rapid input while background metadata work was active; catalog scoped to Home/recent and test waits for actual destination; extra-3 passes.",
+    "navigation-1: test returned to New/text entry instead of global navigation; corrected explicit focus traversal.",
+    "navigation-2: quit timeout while build/test overlapped; clean sequential navigation-3/4 pass.",
+    "navigation-6: newly inserted anchor test reset the shared profile before persistence assertion; test reordered; navigation-7 passes.",
+    "Non-TTY oracle initially expected literal historical; existing CLI correctly says retained observation; no fresh check. CLI unchanged."
+  ],
+  "remaining": [
+    "human visual/contrast/glyph/native screenshot acceptance",
+    "resolved npm preflight before Start and alternate-source online Start exercise",
+    "live partial evidence feed and typed cleanup acknowledgment; no detach/retry",
+    "TUI export and monitoring runtime",
+    "genuine product inference and final module/finding-quality acceptance; joint G3",
+    "cross-process nested back stacks"
+  ],
+  "files": "files-changed.json",
+  "artifacts": "artifact-manifest.json",
+  "preferenceAudit": "preferences.json",
+  "canonicalG0AndTrustSemanticsChanged": false,
+  "coreOrCLISourceChangedByThisRework": false,
+  "modelOrTargetCodeExecuted": false,
+  "stagingCommitPushMergePRPublicationDeploySubmissionExternalMessage": false
+}

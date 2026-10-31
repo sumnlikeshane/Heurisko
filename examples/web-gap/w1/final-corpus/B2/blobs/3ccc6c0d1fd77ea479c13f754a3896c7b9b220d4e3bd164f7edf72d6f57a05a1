@@ -1,0 +1,1 @@
+{"kind":"artifact-manifest","raw":{"repository":{"type":"git","url":"git+ssh://git@github.com/gvergnaud/ts-pattern.git"},"gitHead":null,"name":"ts-pattern","version":"5.9.0"},"repositoryUrl":"https://github.com/gvergnaud/ts-pattern","subdirectory":"","captures":[]}

@@ -1,0 +1,40 @@
+  HEURISKO   H Home    I Investigations     M Monitoring                                                                                                        
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+  picocolors@1.1.1 / LOCAL INPUT / HISTORICAL / complete / Captured 2026-10-31T21:48:41Z                                                                        
+  1 Overview   2 Findings   3 Files   4 Source   5 AI   6 Coverage                                                                                              
+  Historical — online checks have not refreshed · i Identity                                                                                                    
+  Files                                                                                                                                                         
+  Files > package/package.json / Esc restores position                                                                                                          
+  ┌─ > package/package.json ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐  
+  │ Change chg_e945c3a7fac8dd98aff69799                                                                                                                      │  
+  │                                                                                                                                                          │  
+  │ Artifact path:                                                                                                                                           │  
+  │ package/package.json                                                                                                                                     │  
+  │                                                                                                                                                          │  
+  │ Source path:                                                                                                                                             │  
+  │ picocolors-6f0a4638348ed20633d623ee973f9c9a96f65104/package.json                                                                                         │  
+  │                                                                                                                                                          │  
+  │ Status:                                                                                                                                                  │  
+  │ modified                                                                                                                                                 │  
+  │                                                                                                                                                          │  
+  │ Raw equality:                                                                                                                                            │  
+  │ different                                                                                                                                                │  
+  │                                                                                                                                                          │  
+  │ Explanation strength:                                                                                                                                    │  
+  │ unexplained                                                                                                                                              │  
+  │ Archive metadata differs; inspect the retained metadata delta. rawEquality describes content bytes only.                                                 │  
+  │                                                                                                                                                          │  
+  │ Raw evidence:                                                                                                                                            │  
+  │ e opens exact recorded byte spans; s changes side.                                                                                                       │  
+  │ Normalized view unavailable — no transform was performed.                                                                                                │  
+  │                                                                                                                                                          │  
+  │ RAW CHANGED SPANS / side-by-side                                                                                                                         │  
+  │ SOURCE: Metadata only: UNSUPPORTED_RECORD                                                                                                                │  
+  │ ARTIFACT: Metadata only: UNSUPPORTED_RECORD                                                                                                              │  
+  │ Viewer line alignment v1 / window-relative row numbers / e opens exact bytes                                                                             │  
+  │ 1-26 / 31  j/k scroll                                                                                                                                    │  
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘  
+  Files                                                                                                                                                         
+  j/k move  Enter inspect  e evidence  Tab panes  / filter  ? help  q quit                                                                                      
+                                                                                                                                                                
+                                                                                                                                                                

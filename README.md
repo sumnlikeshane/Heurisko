@@ -1,5 +1,9 @@
 # Heurisko
 
+**Current complete workspace handoff:** [Malhar start here](docs/HANDOFF_CURRENT.md). Shane authorized publishing this webapp/S4 checkpoint through draft PR #3 after the completed TUI checkpoint. Earlier checkpoint hashes and no-publication receipts below are historical; use the PR for the current commit and CI result.
+
+The [M1/M2 handoff review](docs/Malhar%20M1%20M2%20Handoff%20Review.md) records the pinned genuine npm lifecycle control, separately hashed local mutation and independent v12 citation/action review. [PR #4](https://github.com/sumnlikeshane/Heurisko/pull/4) at `e8b8116` passes both [CI jobs](https://github.com/sumnlikeshane/Heurisko/actions/runs/41249304087). Fresh fixture/review receipts remain local; no product-model integration or merge is claimed. Hosted OpenRouter P04 demo use still needs organizer confirmation, and “SLSA Level 3+” is not adopted as project policy.
+
 **Investigate how a published software package relates to its claimed source, explain the differences, and keep the evidence inspectable.**
 
 Heurisko is a software supply-chain integrity project for **Problem 04 — Published Package vs Source Code Integrity Analyzer** at Hacktoberfest 2026 Hack Day Sonipat. It asks a precise question:
@@ -8,13 +12,15 @@ Heurisko is a software supply-chain integrity project for **Problem 04 — Publi
 
 Developers often review a Git repository but install a tarball or wheel from a package registry. Those inputs can differ because of compilation, bundling, packaging rules, generated metadata, native code, or unauthorized changes. Heurisko's proposed role is to investigate that relationship and show the evidence behind each explanation and suspicious finding.
 
-**Current status — 1 November 2026:** the six planning phases and Shane–Malhar engineering agreement are approved and indexed in the [approved decision register](docs/Approved%20Decision%20Register.md). The synthetic G0 contract is integrated under [packages/contracts](packages/contracts/package.json); local checks and [PR #2 CI](https://github.com/sumnlikeshane/Heurisko/actions/runs/41222794704) passed on `0e6adb9`. Shane instructed Codex to review the exact contract and treat the team as accepting it on that review; the [E09 record](docs/Approved/HEURISKO_SHANE_MALHAR_PRE_SPLIT_AGREEMENT_APPROVED_v0.1.0.md#e09-delegated-g0-contract-acceptance--31-october-2026) states the scope. PR #2 is now merged (read-only API check in Part 1). The local S2 producer now accepts a local tar/tar.gz archive and explicitly pinned source, retains immutable evidence, computes raw member/manifest deltas, and provides real `analyze`/`inspect` commands. [Actual S2 captures and outputs](examples/s2/current/README.md) include an inert labeled local mutation and separate model-off checks of Malhar's received M0/M1 code. S3 adds exact public npm acquisition (including scoped names), SHA-512/SHA-256 integrity, separate immutable source claims/subtrees and retained unverified attestations. [Actual S3 corpus and handoff](examples/s3/current/README.md) preserve conflicts and unsupported scope. **No provenance verifier, TUI, browser, release monitor or product model integration exists.** See the [execution checkpoint](docs/Shane%20Implementation%20Plan.md#12-execution-checkpoint--update-after-each-part) for evidence and limits.
+**Current status — 1 November 2026:** the six planning phases and Shane–Malhar engineering agreement are approved and indexed in the [approved decision register](docs/Approved%20Decision%20Register.md). The synthetic G0 contract is integrated under [packages/contracts](packages/contracts/package.json); local checks and [PR #2 CI](https://github.com/sumnlikeshane/Heurisko/actions/runs/41222794704) passed on `0e6adb9`. Shane instructed Codex to review the exact contract and treat the team as accepting it on that review; the [E09 record](docs/Approved/HEURISKO_SHANE_MALHAR_PRE_SPLIT_AGREEMENT_APPROVED_v0.1.0.md#e09-delegated-g0-contract-acceptance--31-october-2026) states the scope. PR #2 is now merged (read-only API check in Part 1). The local S2 producer now accepts a local tar/tar.gz archive and explicitly pinned source, retains immutable evidence, computes raw member/manifest deltas, and provides real `analyze`/`inspect` commands. [Actual S2 captures and outputs](examples/s2/current/README.md) include an inert labeled local mutation and separate model-off checks of Malhar's received M0/M1 code. S3 adds exact public npm acquisition (including scoped names), SHA-512/SHA-256 integrity, separate immutable source claims/subtrees and retained unverified attestations. [Actual S3 corpus and handoff](examples/s3/current/README.md) preserve conflicts and unsupported scope. **The local browser application now exists in [apps/web](apps/web/README.md), with terminal-style presentation, validated report/evidence access and portable export/import. Provenance verification, full TUI acceptance, release monitoring and product model integration remain open.** See the [execution checkpoint](docs/Shane%20Implementation%20Plan.md#12-execution-checkpoint--update-after-each-part) for evidence and limits.
 
 Team **InBuildingPhase**: **Shane Joseph** and **Malhar Mahanor**. See [HACKATHON.md](HACKATHON.md) for the original declaration and [AGENTS.md](AGENTS.md) for contributor instructions and approval boundaries.
 
+**Part 4 terminal integration:** [Local Ink TUI](packages/tui/README.md) now launches with `node packages/cli/dist/index.js` in a TTY; `tui REPORT --store DIR` opens historical observations and raw evidence, while redirected commands stay useful. New local investigations review immutable retained snapshots, show actual engine progress and request cancellation while awaiting settlement. [Local S4 acceptance](docs/Part%204%20Integration%20Readiness%20Report.md#resumed-product-integration--1-november-2026) passes its keyboard/raw-evidence/error/unknown minimum. Joint G3, automatic product intelligence adoption, monitoring, TUI export, genuine inference and full design approval remain open. The [real local M1 validation report](examples/part4/current/README.md) preserves a separate identity; original reports remain historical. Nothing from this checkpoint was staged, committed or published.
+
 **Audit repair follow-up:** [repair details and Malhar handoff](docs/Audit%20Repairs%20and%20Malhar%20Handoff.md). Module implementation/configuration digests now distinguish report identities; stage callbacks terminate truthfully; uncertain Docker creation retains recovery records and locks. [New offline replay outputs](examples/audit-fixes/current/README.md) preserve original public observation times and supersede current-code claims for the older S3 capture. The original orphan's exact causal history remains unproven; runtime inference cancellation, intelligence/policy adoption and full TUI acceptance remain open.
 
-**Malhar handoff checkpoint:** start with [handoff instructions](docs/HANDOFF_S1_S3.md). This feature branch freezes the tested S1–S3 engine/evidence and audit repairs, plus the labelled nonvisual reader candidate. S4 visuals, actual intelligence/model adoption and main integration remain separate work. Historical receipts predate publication of this checkpoint.
+**Published integration checkpoint:** [draft PR #3](https://github.com/sumnlikeshane/Heurisko/pull/3), branch `handoff/s1-s3-audit-fixes`, commit `81346271f5a3789b4b43fd8f379014656011823d`. [Handoff instructions](docs/HANDOFF_S1_S3.md) describe the evidence, adapter identity and Malhar deliverables. S4 continues separately; main is unmerged. [Exact-head Linux CI](https://github.com/sumnlikeshane/Heurisko/actions/runs/41238407478) passed both producer and documentation jobs on `8134627`.
 
 **Linux handoff correction:** initial draft-PR Linux validation exposed unreadable UID-65534 output. The current worker publishes non-executable transport files inside its private job parent, with a host-readability/privacy regression. Latest [code-bound replay](examples/handoff/current/README.md) supersedes older current-code claims; original captures remain historical. Check draft PR #3 for its exact final CI result.
 
@@ -177,7 +183,7 @@ Separate bounded queues are proposed for downloads, parsing, inference, and rebu
 
 ## Terminal and browser experience
 
-The CLI is the approved scriptable entry point, while `heurisko` should open a mandatory keyboard-driven Ink TUI. The TUI navigates the shared report rather than implementing another analyzer. The browser would provide room for artifact/source trees, side-by-side differences, provenance details, transformation links, and stable evidence references alongside installation and usage documentation.
+The CLI is the approved scriptable entry point, while `heurisko` should open a mandatory keyboard-driven Ink TUI. The TUI navigates the shared report rather than implementing another analyzer. The [local browser](apps/web/README.md) now opens explicitly supplied saved reports in a dark monospace workspace, with source/artifact byte panes, stable evidence references, separate outcomes, source/provenance/coverage and stored finding/AI records. Its investigation workspace now initiates exact npm/local analyses through the shared engine, alongside landing and sidebar documentation. Saved viewing makes no fresh acquisition; explicit analysis can retrieve public npm/GitHub evidence. [New receipts](examples/web-investigation/README.md) separate engine/API parity from remaining browser acceptance.
 
 The following command shapes retain the broader **illustrative design proposals**. The implemented local `analyze` and `inspect` spellings are documented under installation below; registry, TUI, monitor and other commands remain future work.
 
@@ -304,7 +310,24 @@ The original research roadmap below predates approval. Its gates remain useful a
 
 P5 can develop after acquisition/report contracts stabilize; it need not wait for every UI. A complete P04 claim requires the eight official capabilities, meaningful actual model work, and required repository evidence. See the [implementation roadmap](docs/Heurisko_Research/HEURISKO_IMPLEMENTATION_ROADMAP.md) for dependencies and phase gates.
 
+## Local browser usage
+
+The application lives in **[apps/web](apps/web/README.md)**, not a top-level `webapp` directory. The browser now includes a landing page, complete sidebar CLI/browser documentation, exact npm/local investigation, stage progress/cancel requests, report/evidence navigation, dynamic reopening and explicit downloads/portable import. The saved-report viewer remains the historical **first slice**; full browser acceptance and broader engine-dependent parity remain open. See the [full web scope and parity map](docs/Web%20Application%20Product%20Scope.md), [current CLI reference](docs/CLI%20Reference.md) and [continuation handoff/exact next-run prompt](docs/WEB_CONTINUATION.md). The historical [first-slice receipt](examples/web/current/README.md) retains its partial browser acceptance status.
+
+W0/W1 of the [single web gap plan](docs/Web%20Application%20Gap%20Plan.md) now add native routes/history, separate draft/job/report contexts, session job/report lists and explicit read-only session refresh. Report identity/actions no longer surround a new draft. [Fresh receipts](examples/web-gap/README.md) record isolated validation and the reproduced Chrome access blocker; concurrent S4 setup and actual GUI acceptance remain separate. W2 documentation/first-use improvements are next.
+
+With the pinned setup below:
+
+```sh
+pnpm run build
+pnpm web --report examples/handoff/current/B1.report.json --store examples/handoff/current/store --report examples/handoff/current/B2.report.json --store examples/handoff/current/store
+```
+
+Open the private session URL printed locally; Ctrl+C ends access. The reader uses loopback only. Saved observations do not refresh registry, source or provenance checks. New analysis is explicit and uses the shared static engine; model/verifier/monitor integrations remain unavailable. [Full usage and explicit portable export/import](apps/web/README.md); [actual four-case parity/reopen receipt](examples/web/current/README.md). Run `pnpm run test:web` for the new web boundary tests. No remote web CI pass or full S6/G5 acceptance is claimed.
+
 ## Installation and execution
+
+For all current command options, constraints, outputs/exits, evidence inspection and troubleshooting, use the [CLI reference](docs/CLI%20Reference.md). Historical/proposed command examples elsewhere in this overview are not the current parser contract.
 
 **Historical Part 4 integration checkpoint, before the audit repair:** [nonvisual readiness report](docs/Part%204%20Integration%20Readiness%20Report.md). Candidate report/span and lifecycle adapters have 24 passing headless checks; the visual spike is separate, and S4/G3 remain open. S3 suites/corpus reverify, but the recheck exposed a late-created, never-started parser test orphan after temporary-store removal. The exact stopped job was removed after inspection; the foundation lifecycle issue remains unresolved, and live TUI investigation acceptance is held at that blocker.
 
@@ -336,7 +359,7 @@ node_modules/.bin/tsc -p integration/part4/tsconfig.json
 node --test integration/part4/tests/readiness.test.mjs
 ```
 
-These candidate checks are outside workspace scripts/CI and do not launch a TUI or establish S4 acceptance.
+These candidate checks do not launch a TUI or establish S4 acceptance. The local web build now compiles the unchanged candidate reader, and the web CI job runs its 24 headless checks.
 
 ```sh
 node packages/cli/dist/index.js analyze npm:picocolors@1.1.1 --store .heurisko/npm-run --no-ai --json
@@ -458,3 +481,5 @@ Organizer gaps include the full scoring weights, hidden-test inputs/interface, m
 ## License
 
 Heurisko’s original project material is licensed under **Apache-2.0**; see [LICENSE](LICENSE) and [NOTICE](NOTICE). This choice was delegated by Shane on 31 October 2026 and meets the organizer’s MIT-or-Apache-2.0 rule. The express patent grant is useful for an open-source supply-chain tool. Organizer-supplied files in `docs/Governing/`, dependencies, model weights, and other third-party material retain their own rights and redistribution obligations. LICENSE and NOTICE are already tracked in `0e6adb9` through the prior G0 PR; the newer engineering changes remain uncommitted.
+
+**Part 4 visual correction:** the [whole-TUI audit](docs/Part%204%20TUI%20Visual%20Audit.md) records restored revision-7 screen composition, visible input selection, actual progress bars and revalidated keyboard/evidence/state behavior. Earlier functional S4 receipts did not establish visual fidelity. Joint G3, human visual acceptance and unavailable capabilities remain explicit; no Part 5 was started.

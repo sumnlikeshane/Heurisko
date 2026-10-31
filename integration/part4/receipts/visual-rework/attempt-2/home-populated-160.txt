@@ -1,0 +1,40 @@
+  HEURISKO   H Home    I Investigations     M Monitoring                                                                                                        
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+   > New investigation        npm package / local archive  ·  o Open saved report                                                                               
+                                                                                                                                                                
+  ┌─ Recent investigations ────────────────────────────────────────────────────────────── 2 indexed ┐ ┌─ Monitoring ─────────────────────────────────────────┐  
+  │ PACKAGE / EXACT VERSION                                                                         │ │ Runner                  Not configured               │  
+  │ * picocolors@1.1.1                                                             Source conflict  │ │ Last check              Not recorded                 │  
+  │   Report 7b46cdea60ae                                                          Reading          │ │ Freshness               Unknown                      │  
+  │                                                                                                 │ │                                                      │  
+  │ ─ Selected investigation ────────────────────────────────────────────────────────────────────── │ └──────────────────────────────────────────────────────┘  
+  │ picocolors@1.1.1                                                                                │                                                           
+  │ Findings not evaluated; inspect raw evidence and coverage.                                      │ ┌─ Needs attention ───────────────────────────────── 1 ┐  
+  │ Source ambiguous / AI disabled                                                                  │ │ * picocolors@1.1.1 / Source conflict                 │  
+  │ Captured 2026-10-31T22:28:15Z                                                                   │ │                                                      │  
+  │ [━━━━━━━━━━━━━━━━────────────────] Reading reports / 1/2 50%                                    │ │                                                      │  
+  │                                                                                                 │ │                                                      │  
+  │                                                                                                 │ │                                                      │  
+  │                                                                                                 │ │                                                      │  
+  │                                                                                                 │ │                                                      │  
+  │                                                                                                 │ │                                                      │  
+  │                                                                                                 │ │                                                      │  
+  │                                                                                                 │ │                                                      │  
+  │                                                                                                 │ │                                                      │  
+  │                                                                                                 │ │                                                      │  
+  │                                                                                                 │ │ Inspect recorded scope; no safety verdict.           │  
+  └─────────────────────────────────────────────────────────────────────────────────────────────────┘ └──────────────────────────────────────────────────────┘  
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+  New investigation                                                                                                                                             
+  Enter new  Tab panels  o open  ? help  q quit                                                                                                                 
+                                                                                                                                                                
+                                                                                                                                                                

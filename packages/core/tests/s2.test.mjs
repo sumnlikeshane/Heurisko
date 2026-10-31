@@ -148,6 +148,9 @@ test('interrupted publication leaves old blobs readable and incomplete new recor
  const {store}=await setup(t);const ref=await store.put(Buffer.from('prior'));
  await fs.writeFile(join(store.root,'blobs','.pending-authored-interruption'),'partial');assert.equal((await store.get(ref)).toString(),'prior');
  await fs.mkdir(join(store.root,'.write-lock'));await assert.rejects(store.put(Buffer.from('next')),/STORE_BUSY_RECOVERY_REQUIRED/);assert.equal((await store.get(ref)).toString(),'prior');
+ // This test authored the publication lock without creating any parser job.
+ // Release only that known fixture lock; real unresolved parser roots stay closed.
+ assert.deepEqual(await fs.readdir(join(store.root,'scratch')),[]);await fs.rmdir(join(store.root,'.write-lock'));
 });
 
 test('cancellation/timeout kills the whole parser job and cleans only its private scratch',async t=>{

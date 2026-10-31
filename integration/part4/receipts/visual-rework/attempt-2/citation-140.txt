@@ -1,0 +1,40 @@
+  HEURISKO   H Home    I Investigations     M Monitoring                                                                                    
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+  picocolors@1.1.1 / LOCAL INPUT / HISTORICAL / complete / Captured 2026-10-31T21:48:41Z                                                    
+  1 Overview   2 Findings   3 Files   4 Source   5 AI   6 Coverage                                                                          
+  Raw retained evidence · Esc returns to its origin                                                                                         
+  Evidence                                                                                                                                  
+  Findings > ev_8e5679afc3b6d3667eb09413 / Esc restores position                                                                            
+  ┌─ > Raw citation / artifact ──────────────────────────────────────────────────────────────────────────────────────────────────────────┐  
+  │ ev_8e5679afc3b6d3667eb09413                                                                                                          │  
+  │ BOTH / package.json                                                                                                                  │  
+  │ RAW utf8: [585, 611) / recorded [585, 611)                                                                                           │  
+  │ Window truncated: false / total blob 618 bytes                                                                                       │  
+  │                                                                                                                                      │  
+  │ "HEURISKO_INERT_TEST_ONLY"                                                                                                           │  
+  │                                                                                                                                      │  
+  │ Method: strict-json-value-byte-spans-v1                                                                                              │  
+  │ Availability: retained                                                                                                               │  
+  │ Verification: Not recorded                                                                                                           │  
+  │ Content digest: sha256:4afa16baaedb6f645fd2dd33275661afe16974496f33c35765f25402ab3fe069                                              │  
+  │ Member: ev_fac6fd5699ff0c83dd8be093                                                                                                  │  
+  │ Content ref: sha256:f47239397b7822519c35144a37158b0ff4bb7eeddf325e8b518774ab6be02c61                                                 │  
+  │ 1-13 / 13                                                                                                                            │  
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘  
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                                            
+  evidence                                                                                                                                  
+  j/k scroll  Tab citation  s side  p/b page  Esc return  q quit                                                                            
+                                                                                                                                            
+                                                                                                                                            

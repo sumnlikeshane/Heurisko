@@ -1,0 +1,33 @@
+{
+  "checks": [
+    {
+      "check": "HISTORICAL",
+      "passed": true
+    },
+    {
+      "check": "PRIORITY FINDINGS",
+      "passed": true
+    },
+    {
+      "check": "COVERAGE & UNKNOWNS",
+      "passed": true
+    },
+    {
+      "check": "NEXT ACTIONS",
+      "passed": true
+    },
+    {
+      "check": "Report next actions",
+      "passed": true
+    },
+    {
+      "check": "[Candidates]",
+      "passed": true
+    },
+    {
+      "check": "Findings",
+      "passed": true
+    }
+  ],
+  "count": 7
+}

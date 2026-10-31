@@ -2,6 +2,8 @@
 
 **Branch:** `handoff/s1-s3-audit-fixes`
 
+**Published checkpoint:** `81346271f5a3789b4b43fd8f379014656011823d` · [draft PR #3](https://github.com/sumnlikeshane/Heurisko/pull/3). Latest exact-head CI: [run 41238407478](https://github.com/sumnlikeshane/Heurisko/actions/runs/41238407478), **passed**, both producer and documentation jobs, on this exact commit. Main is unmerged.
+
 **Date:** 1 November 2026, Asia/Kolkata
 
 **Purpose:** a fixed, tested evidence-engine baseline while S4 continues separately. Use the exact commit SHA sent with the draft PR. Main remains unchanged until separately approved integration and merge.

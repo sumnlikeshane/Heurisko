@@ -1,0 +1,22 @@
+{
+  "scope": "final root-option guard real PTY smoke",
+  "checks": [
+    {
+      "check": "Home",
+      "columns": 120,
+      "rows": 35,
+      "passed": true
+    },
+    {
+      "check": "New investigation",
+      "columns": 120,
+      "rows": 35,
+      "passed": true
+    },
+    {
+      "check": "q exits application",
+      "passed": true,
+      "exitCode": 0
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+  HEURISKO   H Home    I Investigations     M Monitoring                                                                                                        
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+                                                                                                                                                                
+                                  ┌─ > Review exact target ─────────────────────────────────────────────────────────── 2 / 2 ┐                                  
+                                  │ Package       picocolors                                                                 │                                  
+                                  │ Version       1.1.1                                                                      │                                  
+                                  │ ! Source selection is a comparison target; release binding is not proven.                │                                  
+                                  │ Source        Unknown until source resolution                                            │                                  
+                                  │ Commit        Unknown                                                                    │                                  
+                                  │ Subdirectory  (root)                                                                     │                                  
+                                  │ SHA-256       Unknown until exact-version acquisition                                    │                                  
+                                  │ AI            Disabled / current inference runtime unavailable                           │                                  
+                                  │ Configuration raw-static-s4-v1                                                           │                                  
+                                  │ Provenance    Not checked / no configured verifier                                       │                                  
+                                  │ 1-10 / 10 · Enter Start · Esc edit                                                       │                                  
+                                  │  > Start investigation                                                                   │                                  
+                                  └──────────────────────────────────────────────────────────────────────────────────────────┘                                  
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+  review                                                                                                                                                        
+  Enter Start  j/k scroll  Esc edit  q quit                                                                                                                     
+                                                                                                                                                                
+                                                                                                                                                                

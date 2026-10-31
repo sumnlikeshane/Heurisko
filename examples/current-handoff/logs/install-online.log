@@ -1,0 +1,14 @@
+Scope: all 6 workspace projects
+Lockfile is up to date, resolution step is skipped
+Progress: resolved 1, reused 0, downloaded 0, added 0
+Packages: +48
+++++++++++++++++++++++++++++++++++++++++++++++++
+Progress: resolved 48, reused 25, downloaded 22, added 47
+Progress: resolved 48, reused 25, downloaded 23, added 47
+Progress: resolved 48, reused 25, downloaded 23, added 48, done
+
+devDependencies:
++ @types/node 22.15.30
++ typescript 5.8.3
+
+Done in 3.5s using pnpm v10.14.0

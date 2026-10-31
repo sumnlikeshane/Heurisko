@@ -1,0 +1,177 @@
+{
+  "version": "heurisko-part4-local-validation-v1",
+  "reviewCheckpointUTC": "2026-10-31T22:09:36+00:00",
+  "scope": "Part 4 only, local minimum gate; design v1.0.0-rc.1 unapproved/unfrozen",
+  "gates": {
+    "S4": "passed locally: genuine keyboard, real report/raw evidence, error/unknown without AI",
+    "G3": "open: product intelligence adoption and joint finding quality remain unmet",
+    "Part5": "not implemented or started",
+    "fullCandidateDesign": "open"
+  },
+  "clock": {
+    "resumeStartUTC": "2026-10-31T21:42:18+00:00",
+    "reviewCheckpointUTC": "2026-10-31T22:09:36+00:00",
+    "resumeSeconds": 1638,
+    "resumeDuration": "00:27:18",
+    "priorNonvisualSeconds": 986,
+    "knownMeasuredNonvisualPlusResumeSeconds": 2624,
+    "knownMeasuredNonvisualPlusResume": "00:43:44",
+    "visualActiveSeconds": null,
+    "visualReceiptStartUTC": "2026-10-31T19:25:51.830634+00:00",
+    "visualReceiptEndUTC": "2026-10-31T21:33:39.175851+00:00",
+    "visualReceiptWindowSeconds": 7667.345217,
+    "originalPart4StartUTC": "2026-10-31T19:15:54+00:00",
+    "original70MinuteCutoffUTC": "2026-10-31T20:25:54+00:00",
+    "part4CalendarWindowSeconds": 10422,
+    "part4CalendarWindow": "02:53:42",
+    "calendarOverTargetSeconds": 6222,
+    "calendarOverTarget": "01:43:42",
+    "remainingCalendarAllowanceSeconds": 0,
+    "budgetReset": false,
+    "accountingLimit": "Visual active effort was not measured. Receipt windows overlap the early nonvisual track and must not be summed as independently timed work; calendar span includes gaps/handoffs. No fresh 53m34s or 70-minute allowance is claimed."
+  },
+  "toolchain": {
+    "os": "macOS arm64",
+    "node": "22.23.4",
+    "pnpm": "10.14.0",
+    "typescript": "5.8.3",
+    "validatorPython": "3.13.2",
+    "terminalPython": "3.14.7",
+    "pyte": "0.8.2",
+    "ink": "6.3.1",
+    "react": "19.1.8"
+  },
+  "checks": {
+    "frozenOfflineInstallIgnoreScripts": "passed",
+    "workspaceBuildTypecheck": "passed",
+    "fullG0": "passed",
+    "serialCore": {
+      "passed": 117,
+      "failed": 0,
+      "firstRun": {
+        "passed": 116,
+        "failed": 1,
+        "reason": "Stricter safe teardown retained an intentionally authored publication lock; fixture now releases only its own known lock after empty-scratch check."
+      }
+    },
+    "readerAndModel": {
+      "passed": 27,
+      "failed": 0
+    },
+    "mainPTY": {
+      "passed": 118,
+      "receipt": "integration/part4/receipts/resumed/terminal/attempt-11/checks.json"
+    },
+    "extraPTY": {
+      "passed": 35,
+      "receipt": "integration/part4/receipts/resumed/terminal/attempt-13/extra-validation.json"
+    },
+    "liveSnapshotCancellation": {
+      "passed": true,
+      "receipt": "integration/part4/receipts/resumed/terminal/attempt-12/live-validation.json",
+      "originalChangedAfterReview": true,
+      "reviewedSnapshotUsed": true,
+      "exitCode": 2
+    },
+    "finalDefaultFlagsSmoke": {
+      "passed": true,
+      "receipt": "integration/part4/receipts/resumed/terminal/attempt-14/default-flags-final.json"
+    },
+    "duplicateRootFlag": {
+      "exitCode": 3,
+      "stdoutEmpty": true
+    },
+    "actualHotRunningJobCleanup": "hot-cleanup.json",
+    "finalHistoricalRecoveryInventory": "final-jobs.json",
+    "cliReportRawSpanParity": "parity.json",
+    "historicalCorpus": {
+      "evidenceReferences": 2988,
+      "rawDiffSideSpans": 1028,
+      "manifestValueSpans": 146,
+      "historicalMode": true
+    },
+    "dependencyAdvisories": {
+      "listedVulnerabilities": 0,
+      "datedObservationOnly": true
+    },
+    "noStagingOrGitPublication": true,
+    "finalDocumentationAndDelivery": {
+      "markdownFiles": 43,
+      "localLinks": "passed",
+      "sourceHashes": "passed",
+      "fileInventory": "passed",
+      "privateHostPrefixScan": "none",
+      "gitDiffCheck": "passed",
+      "indexUnchanged": true,
+      "canonicalG0Unchanged": true,
+      "spikeWorktreeSourcePreserved": true
+    }
+  },
+  "failureHistory": [
+    "Historical missing-create-acknowledgment/store-removal cause remains unproven; current class is fail-closed.",
+    "Initial 116/117 core run was the authored publication-lock teardown mismatch, corrected without loosening real-job retention.",
+    "Initial PTY attempts exposed detail-row clipping and notice/input/state restoration issues; those were adapted and final suites pass.",
+    "Test-only batched command/paste/startup assumptions and a synthetic change-ID schema error were corrected; generated drafts remain private.",
+    "Final read-only inventory found two pre-existing never-started 01:10 IST jobs with already absent roots. Exact stopped-ID/label checks preceded non-forced removals; final absence confirmed, no store recreated or removed.",
+    "Offline store initially lacked existing browser tarballs; exact pinned installation was restored with scripts disabled, then frozen offline install passed. Firecrawl unavailable; official docs/registry fallback used."
+  ],
+  "remaining": [
+    "No typed cancel cleanup acknowledgment, live evidence feed, detach/retry.",
+    "npm review is exact-coordinate validation with unknown unresolved digests, not frozen registry preflight.",
+    "Alternative-source review observed; separate online alternate-target Start not exercised.",
+    "New product investigations have no automatically adopted intelligence module or model.",
+    "M1 lifecycle limitation contradicts retained-value availability; quality correction/joint adoption pending.",
+    "Monitor/TUI export unavailable; full state preferences/migration/hunk synchronization and human visual/accessibility approval remain open.",
+    "Visual session active effort was not measured; no exact combined active-work budget claim."
+  ],
+  "files": "files-changed.json",
+  "sourceHashes": {
+    ".gitignore": "sha256:0dd703e4642122dc508214f7ed0bb38f7d9410255df1a21b6f7dc88de1d1dc58",
+    "AGENTS.md": "sha256:7bd53b9c665cf0fd8727c899c19a45545a1b76095ec77c78f392361aefd8534f",
+    "README.md": "sha256:8cc8706b3690a5c6a8a53b83c30e4c9c567728ed666527b16ae6c8808c2e2135",
+    "docs/README.md": "sha256:09e3f2e895515c90bea0ea87d15e8b0b6e3dadc78a343acfed781182d0ee4366",
+    "docs/Shane Implementation Plan.md": "sha256:085f20e2a5b9280926aed6bb8efa861fb24e338fb8510c57a44f64f21c45cec4",
+    "docs/Part 4 Integration Readiness Report.md": "sha256:7874dddc2dcf741f381fe46ea9feaa62d41b6fa68e9081f45eeb68ed71a48bb5",
+    "package.json": "sha256:03ca266344ff39490314e6ab912af2f3acab8935e57f3decf3fed24dea4593f8",
+    "pnpm-lock.yaml": "sha256:7b304d2abf2987264821998ddf490e501ec65fac81af28888b51793a32daeedb",
+    "packages/cli/package.json": "sha256:6e1938c80801c38dc04e0e7b17d3482595528a262d6213a34f3bcc252c966f9d",
+    "packages/cli/src/index.ts": "sha256:18cea6b9b4be239fd8cb75045387e994b91aaffc8d0b9dc5f11f41dd74d62c0b",
+    "packages/core/src/parser-job.ts": "sha256:413ad333e8a5943ec19d23fb0ef16de765eacd6248413620a76141c76b4914d0",
+    "packages/core/tests/audit-fixes.test.mjs": "sha256:71aa5894d8c78e19452c6fd97e261476d969ae9a798d81f9509fd50a45b4aa73",
+    "packages/core/tests/s2.test.mjs": "sha256:6fb9a87deb1657fade82733b3623c45a9f8fe3d8c5fe308c8e920301b6917f68",
+    "packages/core/tests/helpers/recovery.mjs": "sha256:084f480b98e0aac6eaeaa707a0dcea1350473267f23e19bc555c9b2b53a18998",
+    "integration/part4/tests/readiness.test.mjs": "sha256:74d9de8d605b9901a50f1cd74be2024da9601cc483af3d4dc4cf0271079e5cb4",
+    "scripts/capture-part4.mjs": "sha256:112fa073a1c853bb422210bab26a81b0e4057d7e54a465bccbd9b1be7ab03c67",
+    "scripts/check-part4-cleanup.mjs": "sha256:62148a0687397dc7093466fa74769dac6b43791c1ff9c98f288661e986715616",
+    "packages/tui/README.md": "sha256:10a8e62977c52dc42503b134219b9ea97c27a780f70d5690dcd71965c6725b15",
+    "packages/tui/adoption.json": "sha256:a53377089769a01833290dec54b652df0e21ca8d3a489493b589489f046f7212",
+    "packages/tui/package.json": "sha256:683397b550a9d894b8568156df5b51728c2b0ef93ba7d4b7ee75b830dc9d36cf",
+    "packages/tui/references/npm-audit.json": "sha256:90bc9a72345f0fcccba08fb7295ee255195efcf3c9ff132a3e35d132b86af7e8",
+    "packages/tui/references/registry-admission.json": "sha256:edb4c681d055f65133e027a432a320f47f44104fafd4ae02bb3d7e4e9e4db14e",
+    "packages/tui/references/spike-npm-dependencies.json": "sha256:8550d2eaee12f791dda7719709b214e324887cfb09bf2260844e74b1c519c151",
+    "packages/tui/requirements-terminal.txt": "sha256:cd5eaa1b3f95614b350c6debc865340b083289ed1629cebb9010ea8929fef8bf",
+    "packages/tui/src/App.tsx": "sha256:f8c4fc0663dba43fd6ca77a07bf2be5a083e8a22106438b1c558840720973f53",
+    "packages/tui/src/components/NavigationTabs.tsx": "sha256:519d67119f0b97f77b7b1c187de753f21ef8a5ca04a7482541ac8578760db260",
+    "packages/tui/src/components/Panel.tsx": "sha256:4334c3d592f4f79aa0f84b99d0cf3a0f066f46584b97c689ef966cd62a2d474b",
+    "packages/tui/src/index.tsx": "sha256:7961c2e690201beb4c08b4cc3bf991a3fef4456d1dba1f578a2803fd6363fe8c",
+    "packages/tui/src/model.ts": "sha256:f2481ff64812895fd4da774ad4cd1d46471e56dd94a6333852c1437061fbbe98",
+    "packages/tui/src/state/text-entry.ts": "sha256:cd0bc46ab6941f8045e44275de781ca0c71d5ee6c4980ef0c38866dee843f64d",
+    "packages/tui/src/terminal/layout.ts": "sha256:8ac6a74c2f9a8ed38c97d05730c6969d3718e5079a97aa60d1e45e40425ddf74",
+    "packages/tui/src/terminal/safe-text.ts": "sha256:29d21f0d6e7f889b6a617243bac3f9cabab9cbad5bfa959f258fe38cfb6670df",
+    "packages/tui/src/terminal/use-terminal-input.ts": "sha256:25e1a733a0cff6a18b4ef6821ff8dfcfd149b7eaca754e78ab5649eb2570b838",
+    "packages/tui/src/tokens.ts": "sha256:45c4bd47b1e21e00ce356d0e9ac1ae1c9546e6cbf5b671772592b1a070d20edb",
+    "packages/tui/tests/model.test.mjs": "sha256:9ff44c7ee541ec984b3671411978d8e55b663d250c45d5fd9db513dcef7a4e57",
+    "packages/tui/tests/prepare.mjs": "sha256:e71d9f6c6e4116d7c9230b5e623a02b0fed25526fa12b27e1983b39e3c060de2",
+    "packages/tui/tests/terminal-extra.py": "sha256:5244c7c497431f03c81697b6da804989dff628fae34321ccd831c68764e3ddcd",
+    "packages/tui/tests/terminal-live.py": "sha256:46ce59891961127b68e9e8a5001963b73c1bb93f0b72808897c5cc4ba25c1d6c",
+    "packages/tui/tests/terminal.py": "sha256:8880879cdbaf76f9e746c379012ee63d749a8adc89c2fc770e5b93a3243f8afe",
+    "packages/tui/tsconfig.json": "sha256:79da7c456d5eebdd22226d1f290c5d17252cf134aa98a619c400b39ca8ebb82d"
+  },
+  "canonicalG0ShapeUnchanged": true,
+  "adoptedSpikeSourceHashesStillMatch": true,
+  "branch": "docs/share-research-with-team",
+  "head": "0e2be5a105548b237328879f29c969640d767ec5",
+  "modelExecution": false,
+  "codingAssistant": "Codex",
+  "stagedCommittedPushedMergedPublishedDeployedSubmittedOrExternallyMessaged": false
+}

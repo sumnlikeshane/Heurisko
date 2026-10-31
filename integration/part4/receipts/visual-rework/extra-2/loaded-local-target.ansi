@@ -1,0 +1,200 @@
+[?1049h[?25l[?25l  [1mHEURISKO[22m   [4m[1mH Home   [22m[24m I Investigations     M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+  [1m > New investigation      [22m  npm package / local archive  ·  o Open saved report
+
+  ┌─[1m Recent investigations [22m─────────────────────── 0 indexed ┐ ┌─[1m Monitoring [22m────────────────────┐
+  │ PACKAGE / EXACT VERSION                                  │ │ Runner           Not configured │
+  │ No indexed reports. o opens a report path.               │ │ Last check       Not recorded   │
+  │                                                          │ │ Freshness        Unknown        │
+  │                                                          │ │                                 │
+  │                                                          │ └─────────────────────────────────┘
+  │                                                          │
+  │                                                          │ ┌─[1m Needs attention [22m──────────── 0 ┐
+  │                                                          │ │ No incomplete report indexed. … │
+  │                                                          │ │                                 │
+  │                                                          │ │                                 │
+  │                                                          │ │                                 │
+  │                                                          │ │                                 │
+  │                                                          │ │                                 │
+  │                                                          │ │                                 │
+  │                                                          │ │ Inspect recorded scope; no saf… │
+  └──────────────────────────────────────────────────────────┘ └─────────────────────────────────┘
+
+  New investigation
+  [1mEnter[22m new  [1mTab[22m panels  [1mo[22m open  [1m?[22m help  [1mq[22m quit
+
+[?25l[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m   [4m[1mH Home   [22m[24m I Investigations     M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+
+       ┌─[1m > New investigation [22m─────────────────────────────────────────────────────── 1 / 2 ┐
+       │   Input (Ctrl+T)  [1m[ npm ][22m   [1mLocal archive[22m                                          │
+       │                                                                                    │
+       │ [1mPackage name  [editing]                                                           [22m │
+       │ >  @scope/package                                                                  │
+       │ Exact version                                                                      │
+       │   1.2.3                                                                            │
+       │ Source repository (optional override)                                              │
+       │   https://github.com/owner/repository                                              │
+       │ Full commit                                                                        │
+       │   40-character immutable commit                                                    │
+       │ Subdirectory                                                                       │
+       │   Repository root if empty                                                         │
+       │ AI disabled / runtime unavailable · source selection is not provenance             │
+       │ [1m Load retained example                                                            [22m │
+       │ [1m Review target                                                                    [22m │
+       │                                                                                    │
+       └────────────────────────────────────────────────────────────────────────────────────┘
+
+  New investigation / npm
+  [1mType[22m to edit  [1mTab[22m next  [1mCtrl+T[22m type  [1mEnter[22m review  [1mEsc[22m back
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m   [4m[1mH Home   [22m[24m I Investigations     M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+
+       ┌─[1m > New investigation [22m─────────────────────────────────────────────────────── 1 / 2 ┐
+       │   Input (Ctrl+T)  [1m[ npm ][22m   [1mLocal archive[22m                                          │
+       │                                                                                    │
+       │ Package name                                                                       │
+       │   @scope/package                                                                   │
+       │ [1mExact version  [editing]                                                          [22m │
+       │ >  1.2.3                                                                           │
+       │ Source repository (optional override)                                              │
+       │   https://github.com/owner/repository                                              │
+       │ Full commit                                                                        │
+       │   40-character immutable commit                                                    │
+       │ Subdirectory                                                                       │
+       │   Repository root if empty                                                         │
+       │ AI disabled / runtime unavailable · source selection is not provenance             │
+       │ [1m Load retained example                                                            [22m │
+       │ [1m Review target                                                                    [22m │
+       │                                                                                    │
+       └────────────────────────────────────────────────────────────────────────────────────┘
+
+  New investigation / npm
+  [1mType[22m to edit  [1mTab[22m next  [1mCtrl+T[22m type  [1mEnter[22m review  [1mEsc[22m back
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m   [4m[1mH Home   [22m[24m I Investigations     M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+
+       ┌─[1m > New investigation [22m─────────────────────────────────────────────────────── 1 / 2 ┐
+       │   Input (Ctrl+T)  [1m[ npm ][22m   [1mLocal archive[22m                                          │
+       │                                                                                    │
+       │ Package name                                                                       │
+       │   @scope/package                                                                   │
+       │ Exact version                                                                      │
+       │   1.2.3                                                                            │
+       │ [1mSource repository (optional override)  [editing]                                  [22m │
+       │ >  https://github.com/owner/repository                                             │
+       │ Full commit                                                                        │
+       │   40-character immutable commit                                                    │
+       │ Subdirectory                                                                       │
+       │   Repository root if empty                                                         │
+       │ AI disabled / runtime unavailable · source selection is not provenance             │
+       │ [1m Load retained example                                                            [22m │
+       │ [1m Review target                                                                    [22m │
+       │                                                                                    │
+       └────────────────────────────────────────────────────────────────────────────────────┘
+
+  New investigation / npm
+  [1mType[22m to edit  [1mTab[22m next  [1mCtrl+T[22m type  [1mEnter[22m review  [1mEsc[22m back
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m   [4m[1mH Home   [22m[24m I Investigations     M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+
+       ┌─[1m > New investigation [22m─────────────────────────────────────────────────────── 1 / 2 ┐
+       │   Input (Ctrl+T)  [1m[ npm ][22m   [1mLocal archive[22m                                          │
+       │                                                                                    │
+       │ Package name                                                                       │
+       │   @scope/package                                                                   │
+       │ Exact version                                                                      │
+       │   1.2.3                                                                            │
+       │ Source repository (optional override)                                              │
+       │   https://github.com/owner/repository                                              │
+       │ [1mFull commit  [editing]                                                            [22m │
+       │ >  40-character immutable commit                                                   │
+       │ Subdirectory                                                                       │
+       │   Repository root if empty                                                         │
+       │ AI disabled / runtime unavailable · source selection is not provenance             │
+       │ [1m Load retained example                                                            [22m │
+       │ [1m Review target                                                                    [22m │
+       │                                                                                    │
+       └────────────────────────────────────────────────────────────────────────────────────┘
+
+  New investigation / npm
+  [1mType[22m to edit  [1mTab[22m next  [1mCtrl+T[22m type  [1mEnter[22m review  [1mEsc[22m back
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m   [4m[1mH Home   [22m[24m I Investigations     M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+
+       ┌─[1m > New investigation [22m─────────────────────────────────────────────────────── 1 / 2 ┐
+       │   Input (Ctrl+T)  [1m[ npm ][22m   [1mLocal archive[22m                                          │
+       │                                                                                    │
+       │ Package name                                                                       │
+       │   @scope/package                                                                   │
+       │ Exact version                                                                      │
+       │   1.2.3                                                                            │
+       │ Source repository (optional override)                                              │
+       │   https://github.com/owner/repository                                              │
+       │ Full commit                                                                        │
+       │   40-character immutable commit                                                    │
+       │ [1mSubdirectory  [editing]                                                           [22m │
+       │ >  Repository root if empty                                                        │
+       │ AI disabled / runtime unavailable · source selection is not provenance             │
+       │ [1m Load retained example                                                            [22m │
+       │ [1m Review target                                                                    [22m │
+       │                                                                                    │
+       └────────────────────────────────────────────────────────────────────────────────────┘
+
+  New investigation / npm
+  [1mType[22m to edit  [1mTab[22m next  [1mCtrl+T[22m type  [1mEnter[22m review  [1mEsc[22m back
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m   [4m[1mH Home   [22m[24m I Investigations     M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+
+       ┌─[1m > New investigation [22m─────────────────────────────────────────────────────── 1 / 2 ┐
+       │   Input (Ctrl+T)  [1m[ npm ][22m   [1mLocal archive[22m                                          │
+       │                                                                                    │
+       │ Package name                                                                       │
+       │   @scope/package                                                                   │
+       │ Exact version                                                                      │
+       │   1.2.3                                                                            │
+       │ Source repository (optional override)                                              │
+       │   https://github.com/owner/repository                                              │
+       │ Full commit                                                                        │
+       │   40-character immutable commit                                                    │
+       │ Subdirectory                                                                       │
+       │   Repository root if empty                                                         │
+       │ AI disabled / runtime unavailable · source selection is not provenance             │
+       │ [1m > Load retained example / local mutation                                         [22m │
+       │ [1m Review target                                                                    [22m │
+       │                                                                                    │
+       └────────────────────────────────────────────────────────────────────────────────────┘
+
+  New investigation / npm
+  [1mArrows[22m example  [1mEnter[22m load  [1mTab[22m next  [1mEsc[22m back  [1mq[22m quit
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m   [4m[1mH Home   [22m[24m I Investigations     M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+
+       ┌─[1m > New investigation [22m─────────────────────────────────────────────────────── 1 / 2 ┐
+       │   Input (Ctrl+T)  [1mnpm[22m   [1m[ Local archive ][22m                                          │
+       │                                                                                    │
+       │ [1mArchive path  [editing]                                                           [22m │
+       │ > examples/s2/current/inputs/picocolors-1.1.1.local-inert-mutation.tgz             │
+       │ Source repository                                                                  │
+       │   https://github.com/alexeyraspopov/picocolors                                     │
+       │ Full commit                                                                        │
+       │   6f0a4638348ed20633d623ee973f9c9a96f65104                                         │
+       │ Subdirectory                                                                       │
+       │   Repository root if empty                                                         │
+       │ Source archive (optional)                                                          │
+       │   examples/s2/current/inputs/picocolors-source-6f0a4638348ed20633d623ee973f9c9a96… │
+       │ AI disabled / runtime unavailable · source selection is not provenance             │
+       │ [1m Load retained example                                                            [22m │
+       │ [1m Review target                                                                    [22m │
+       │                                                                                    │
+       └────────────────────────────────────────────────────────────────────────────────────┘
+
+  Local inert mutation target loaded; no investigation has run.
+  [1mType[22m to edit  [1mTab[22m next  [1mCtrl+T[22m type  [1mEnter[22m review  [1mEsc[22m back
+

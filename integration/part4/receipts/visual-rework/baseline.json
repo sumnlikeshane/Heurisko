@@ -1,0 +1,17 @@
+{
+  "startedAtUTC": "2026-10-31T22:29:30Z",
+  "scope": "User-requested whole TUI audit/rework after visual mismatch; historical S4 receipt remains immutable",
+  "sourceHashes": {
+    "packages/tui/src/index.tsx": "sha256:7961c2e690201beb4c08b4cc3bf991a3fef4456d1dba1f578a2803fd6363fe8c",
+    "packages/tui/src/App.tsx": "sha256:f8c4fc0663dba43fd6ca77a07bf2be5a083e8a22106438b1c558840720973f53",
+    "packages/tui/src/model.ts": "sha256:f2481ff64812895fd4da774ad4cd1d46471e56dd94a6333852c1437061fbbe98",
+    "packages/tui/src/tokens.ts": "sha256:45c4bd47b1e21e00ce356d0e9ac1ae1c9546e6cbf5b671772592b1a070d20edb",
+    "packages/tui/src/terminal/safe-text.ts": "sha256:29d21f0d6e7f889b6a617243bac3f9cabab9cbad5bfa959f258fe38cfb6670df",
+    "packages/tui/src/terminal/use-terminal-input.ts": "sha256:25e1a733a0cff6a18b4ef6821ff8dfcfd149b7eaca754e78ab5649eb2570b838",
+    "packages/tui/src/terminal/layout.ts": "sha256:8ac6a74c2f9a8ed38c97d05730c6969d3718e5079a97aa60d1e45e40425ddf74",
+    "packages/tui/src/state/text-entry.ts": "sha256:cd0bc46ab6941f8045e44275de781ca0c71d5ee6c4980ef0c38866dee843f64d",
+    "packages/tui/src/components/Panel.tsx": "sha256:4334c3d592f4f79aa0f84b99d0cf3a0f066f46584b97c689ef966cd62a2d474b",
+    "packages/tui/src/components/NavigationTabs.tsx": "sha256:519d67119f0b97f77b7b1c187de753f21ef8a5ca04a7482541ac8578760db260",
+    "packages/cli/src/index.ts": "sha256:18cea6b9b4be239fd8cb75045387e994b91aaffc8d0b9dc5f11f41dd74d62c0b"
+  }
+}

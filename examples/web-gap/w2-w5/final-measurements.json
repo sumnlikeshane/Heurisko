@@ -1,0 +1,154 @@
+{
+  "kind": "node-presentation-and-loopback-measurements-not-browser",
+  "recordedAt": "2026-10-31T22:00:52.894Z",
+  "node": "v22.23.4",
+  "platform": "darwin",
+  "arch": "arm64",
+  "docsBytes": 68200,
+  "docPages": 15,
+  "corpus": [
+    {
+      "name": "B1",
+      "reportBytes": 54508,
+      "evidence": 89,
+      "changes": 19,
+      "omissions": 0
+    },
+    {
+      "name": "B2",
+      "reportBytes": 196647,
+      "evidence": 308,
+      "changes": 143,
+      "omissions": 0
+    },
+    {
+      "name": "B3R",
+      "reportBytes": 591133,
+      "evidence": 762,
+      "changes": 31,
+      "omissions": 673
+    }
+  ],
+  "synthetic": {
+    "records": 19000,
+    "scope": "presentation projection only; not validated engine report or product adoption"
+  },
+  "measurements": [
+    {
+      "name": "cross-document search source-archive",
+      "iterations": 100,
+      "medianMs": 0.23033399999999915,
+      "p95Ms": 0.3430840000000046,
+      "maxMs": 1.9454160000000016
+    },
+    {
+      "name": "B1 path browser all records",
+      "iterations": 30,
+      "medianMs": 0.0169169999999923,
+      "p95Ms": 0.06700000000000728,
+      "maxMs": 5.801292000000004
+    },
+    {
+      "name": "B1 overview/source/coverage/findings/AI SSR",
+      "iterations": 5,
+      "medianMs": 4.2841669999999965,
+      "p95Ms": 14.117166999999995,
+      "maxMs": 14.117166999999995
+    },
+    {
+      "name": "B2 path browser all records",
+      "iterations": 30,
+      "medianMs": 0.058333999999987896,
+      "p95Ms": 0.08541700000000674,
+      "maxMs": 0.0957080000000019
+    },
+    {
+      "name": "B2 overview/source/coverage/findings/AI SSR",
+      "iterations": 5,
+      "medianMs": 4.28370799999999,
+      "p95Ms": 5.166583000000003,
+      "maxMs": 5.166583000000003
+    },
+    {
+      "name": "B3R path browser all records",
+      "iterations": 30,
+      "medianMs": 0.6112919999999917,
+      "p95Ms": 0.8942919999999788,
+      "maxMs": 0.9045409999999947
+    },
+    {
+      "name": "B3R overview/source/coverage/findings/AI SSR",
+      "iterations": 5,
+      "medianMs": 13.627792,
+      "p95Ms": 46.130583,
+      "maxMs": 46.130583
+    },
+    {
+      "name": "synthetic 19000-record path filter/sort (presentation only)",
+      "iterations": 30,
+      "medianMs": 2.3090419999999767,
+      "p95Ms": 4.413415999999984,
+      "maxMs": 5.477917000000048
+    }
+  ],
+  "operations": [
+    {
+      "name": "exact 32 MiB inert archive admission, never parsed/executed",
+      "ms": 66.25883399999998,
+      "bytes": 33554432
+    },
+    {
+      "name": "observations/OBSERVATION",
+      "ms": 16.289541999999983,
+      "bytes": 798039,
+      "status": 200
+    },
+    {
+      "name": "observations/OBSERVATION/report",
+      "ms": 2.6610410000000684,
+      "bytes": 591133,
+      "status": 200
+    },
+    {
+      "name": "observations/OBSERVATION/export",
+      "ms": 1076.985542,
+      "bytes": 11714724,
+      "status": 200
+    },
+    {
+      "name": "uploads/portable",
+      "ms": 25.92574999999988,
+      "bytes": 163,
+      "status": 201
+    },
+    {
+      "name": "reopen",
+      "ms": 359.6125410000002,
+      "bytes": 45,
+      "status": 201
+    },
+    {
+      "name": "observations/45c302578e0735b144a655b577a8306a/report",
+      "ms": 1.7206249999999272,
+      "bytes": 591133,
+      "status": 200
+    }
+  ],
+  "rss": {
+    "startBytes": 157908992,
+    "endBytes": 232669184,
+    "processMaxRSSKiB": 251728,
+    "scope": "one Node process, mixed parser/SSR/transport allocations; not isolated per-operation peak"
+  },
+  "sourceBuild": {
+    "apps/web/dist/assets/app.js": "sha256:cff7c698ea02cecabf076e7dbb9610afc96c9fefc10176126717b6d6150666f2",
+    "apps/web/dist/assets/app.css": "sha256:b4511b20c8406d5e8e3a2314c36eacebfd714147ae820f1d99e3fbb78628ab9f",
+    "apps/web/dist/service.js": "sha256:f56d52a458135a6c1a92231bb41d7659b4fc5d0a85c09edb9f4eb78aa67b1801",
+    "apps/web/dist/workspace.js": "sha256:94fdea6e1741a85b6eae1668a1b8ca8afe9654cd8e35aa2739339e9d2c75cd80",
+    "apps/web/dist/report-view.js": "sha256:de70dd1d11ec7f782926f40fff959a25d3d7b8c5b126e86706428d68e4568cfe",
+    "apps/web/dist/doc-model.js": "sha256:54220185f4afbef5b4578f557dfadfd6792e3f853afae250c59bd95275994dfd",
+    "apps/web/dist/cli-docs.json": "sha256:88dcdc22c41ccddf971fa6fc7000f5fd4b2300786098cb7c29a877355ff9f830",
+    "apps/web/tooling/measure-workspace.mjs": "sha256:7e6eabf7d193c216db9a602a8c176904ccb7dc2b43c1981773566e32eaeab799"
+  },
+  "targets": "No agreed latency target; observed timings only. Browser rendering/reflow/input latency and offline behavior remain unobserved."
+}

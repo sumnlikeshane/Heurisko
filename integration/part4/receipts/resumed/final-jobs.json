@@ -1,0 +1,44 @@
+{
+  "observedAt": "2026-10-31T22:07:45.015Z",
+  "scope": "two pre-existing never-started jobs from 01:10 IST, before resumed 03:12 IST; missing roots were not recreated",
+  "priorInventoryObservedAt": "2026-10-31T22:07:07.597Z",
+  "exactRecoveries": [
+    {
+      "name": "heurisko-parser-660c41ae-bbcf-48a9-9d5b-cffde14c655c",
+      "containerId": "899f6cd71715e47a7377d033ad0fe6fc2fde21b2b86cccfb68a53fe00acbbbd2",
+      "createdAt": "2026-10-31T19:40:41.846191257Z",
+      "storeLabel": "9544f54c84b960994ae364522d038f40e91e93574fee70466b10d9fd04e61404",
+      "storeAlreadyAbsentBeforeSessionRecovery": true,
+      "observedState": {
+        "status": "created",
+        "running": false,
+        "pid": 0,
+        "startedAt": "0001-01-01T00:00:00Z"
+      },
+      "removedWithoutForce": true,
+      "exactIdAbsenceConfirmed": true,
+      "storeRecreated": false,
+      "storeOrSpoolRemovedByThisRecovery": false
+    },
+    {
+      "name": "heurisko-parser-da8d897d-080b-412c-a207-b7c812f12577",
+      "containerId": "45fe288f3922d2c3bfc0630681261cccaac1bd7ce9adfca27b3780842a105d0d",
+      "createdAt": "2026-10-31T19:40:18.093800552Z",
+      "storeLabel": "64f33adf35347d12f87ad4404697aef38aaceac99cb313ced84003d40b02a804",
+      "storeAlreadyAbsentBeforeSessionRecovery": true,
+      "observedState": {
+        "status": "created",
+        "running": false,
+        "pid": 0,
+        "startedAt": "0001-01-01T00:00:00Z"
+      },
+      "removedWithoutForce": true,
+      "exactIdAbsenceConfirmed": true,
+      "storeRecreated": false,
+      "storeOrSpoolRemovedByThisRecovery": false
+    }
+  ],
+  "remainingParserContainerIds": [],
+  "noBulkOrForcedRemoval": true,
+  "rawInspectionRetainedPrivately": true
+}

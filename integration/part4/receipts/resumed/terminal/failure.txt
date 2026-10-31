@@ -1,0 +1,21 @@
+Expected 'RAW utf8'
+  HEURISKO / evidence / narrow / 60x20                      
+   H Home    I Investigations     M Monitoring              
+  LOCAL INPUT picocolors@1.1.1 report_7b46cdea60ae3108dd8~  
+  HISTORICAL — checks not refreshed / complete / captured~  
+  1 Overview  2 Findings*  3 Files  4 Source  5 AI  6 Cov~  
+  +- > Evidence / ev_8e5679afc3b6d3667eb09413 -----------+  
+  |                                                      |  
+  | Side: both; requested artifact; method               |  
+  | strict-json-value-byte-spans-v1                      |  
+  | Path: package.json                                   |  
+  | Digest:                                              |  
+  | sha256:4afa16baaedb6f645fd2dd33275661afe16974496f33c |  
+  | 35765f25402ab3fe069; availability retained           |  
+  |                                                      |  
+  +------------------------------------------------------+  
+  Focus 0 / filter lifecycle / No universal safety verdict  
+  j/k scroll  Tab cite  s side  p/b page  Esc return  q q~  
+                                                            
+                                                            
+                                                            

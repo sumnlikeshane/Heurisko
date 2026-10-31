@@ -1,0 +1,35 @@
+  HEURISKO / report / medium / 120x35                                                                                   
+   H Home    I Investigations     M Monitoring                                                                          
+  LOCAL INPUT picocolors@1.1.1 report_7b46cdea60ae3108dd8c4b21                                                          
+  HISTORICAL — checks not refreshed / complete / captured 2026-10-31T21:48:41Z                                          
+  1 Overview  2 Findings*  3 Files  4 Source  5 AI  6 Coverage                                                          
+  +- > Findings / find_heurisko_manifest_lifecycle-script-change_chg_e945c3a7fac8dd98aff69799_8e5679af --------------+  
+  |                                                                                                                  |  
+  | Observation: Manifest key scripts.postinstall is reported as changed.                                            |  
+  | Significance: Lifecycle entries can affect package-manager installation behavior; inspect the exact command and  |  
+  | its source before deciding what it does. This observation does not establish malicious intent.                   |  
+  | Severity: medium                                                                                                 |  
+  | Review priority: medium                                                                                          |  
+  | Evidence confidence: high                                                                                        |  
+  | Explanation strength: exact                                                                                      |  
+  | Evidence: ev_8e5679afc3b6d3667eb09413                                                                            |  
+  | Limitation: The evidence identifies the changed manifest key but does not retain the old and new command values. |  
+  | Next action: Review the retained old and new script values and their referenced files; do not execute them on    |  
+  | the host.                                                                                                        |  
+  | Rule: heurisko.manifest.lifecycle-script-change@0.1.0                                                            |  
+  |                                                                                                                  |  
+  |                                                                                                                  |  
+  |                                                                                                                  |  
+  |                                                                                                                  |  
+  |                                                                                                                  |  
+  |                                                                                                                  |  
+  |                                                                                                                  |  
+  |                                                                                                                  |  
+  |                                                                                                                  |  
+  |                                                                                                                  |  
+  +------------------------------------------------------------------------------------------------------------------+  
+  Focus 0 / filter lifecycle / priority:all severity:all confidence:all rule:all                                        
+  j/k move  Enter inspect  e evidence  Tab focus  / filter  ? help  q quit                                              
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        

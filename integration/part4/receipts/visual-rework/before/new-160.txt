@@ -1,0 +1,40 @@
+  HEURISKO / new / wide / 160x40                                                                                                                                
+   H Home    I Investigations     M Monitoring                                                                                                                  
+  Exact artifact / immutable source evidence. Design v1.0.0-rc.1 provisional.                                                                                   
+  AI runtime unavailable; no monitoring/export configured.                                                                                                      
+  <workspace>/.heurisko                                                                                                
+  ┌─ > New investigation / npm ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐  
+  │ Ctrl+T type; Tab field; Enter validates → Review.                                                                                                        │  
+  │ AI disabled; current inference runtime unavailable.                                                                                                      │  
+  │ > Package name: |                                                                                                                                        │  
+  │ Exact version:                                                                                                                                           │  
+  │ Source repository:                                                                                                                                       │  
+  │ Full commit:                                                                                                                                             │  
+  │ Subdirectory:                                                                                                                                            │  
+  │ Chosen source is not verified release provenance.                                                                                                        │  
+  │                                                                                                                                                          │  
+  │                                                                                                                                                          │  
+  │                                                                                                                                                          │  
+  │                                                                                                                                                          │  
+  │                                                                                                                                                          │  
+  │                                                                                                                                                          │  
+  │                                                                                                                                                          │  
+  │                                                                                                                                                          │  
+  │                                                                                                                                                          │  
+  │                                                                                                                                                          │  
+  │                                                                                                                                                          │  
+  │                                                                                                                                                          │  
+  │                                                                                                                                                          │  
+  │                                                                                                                                                          │  
+  │                                                                                                                                                          │  
+  │                                                                                                                                                          │  
+  │                                                                                                                                                          │  
+  │                                                                                                                                                          │  
+  │                                                                                                                                                          │  
+  │                                                                                                                                                          │  
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘  
+  Focus 0 / filter (none) / No universal safety verdict                                                                                                         
+  Type fields  Tab next  Ctrl+T type  Enter review  Esc back                                                                                                    
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                

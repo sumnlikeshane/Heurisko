@@ -1,0 +1,9 @@
+
+> @heurisko/web@0.1.0 typecheck <workspace>/apps/web
+> tsc --noEmit -p tsconfig.json
+
+src/app.tsx(22,226): error TS2304: Cannot find name 'visiblePage'.
+src/app.tsx(22,262): error TS2304: Cannot find name 'visiblePage'.
+<workspace>/apps/web:
+ ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  @heurisko/web@0.1.0 typecheck: `tsc --noEmit -p tsconfig.json`
+Exit status 2

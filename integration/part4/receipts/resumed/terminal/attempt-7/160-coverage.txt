@@ -1,0 +1,40 @@
+  HEURISKO / report / wide / 160x40                                                                                                                             
+   H Home    I Investigations     M Monitoring                                                                                                                  
+  LOCAL INPUT picocolors@1.1.1 report_7b46cdea60ae3108dd8c4b21                                                                                                  
+  HISTORICAL — checks not refreshed / complete / captured 2026-10-31T21:48:41Z                                                                                  
+  1 Overview  2 Findings  3 Files  4 Source  5 AI  6 Coverage*                                                                                                  
+  +- > Coverage -------------------------------+ +- Coverage detail -------------------------------------------------+ +- Supporting evidence ---------------+  
+  |                                            | |                                                                   | |                                     |  
+  | > Measured coverage and stages             | | artifactFiles: 8                                                  | | No citations recorded               |  
+  |                                            | | sourceFiles: 19                                                   | |                                     |  
+  |                                            | | comparedFiles: 20                                                 | |                                     |  
+  |                                            | | analyzedBytes: 39726                                              | |                                     |  
+  |                                            | | skippedBytes: 0                                                   | |                                     |  
+  |                                            | | unsupportedBytes: 0                                               | |                                     |  
+  |                                            | | complete: true                                                    | |                                     |  
+  |                                            | | These are recorded scope counts; universal coverage denominator:  | |                                     |  
+  |                                            | | Unknown.                                                          | |                                     |  
+  |                                            | | resolve_artifact: complete                                        | |                                     |  
+  |                                            | | acquire: complete                                                 | |                                     |  
+  |                                            | | source: complete                                                  | |                                     |  
+  |                                            | | provenance: skipped                                               | |                                     |  
+  |                                            | | inventory: complete                                               | |                                     |  
+  |                                            | | build: skipped                                                    | |                                     |  
+  |                                            | | compare: complete                                                 | |                                     |  
+  |                                            | | persist: complete                                                 | |                                     |  
+  |                                            | | heuristics: complete                                              | |                                     |  
+  |                                            | | ai: skipped                                                       | |                                     |  
+  |                                            | |                                                                   | |                                     |  
+  |                                            | |                                                                   | |                                     |  
+  |                                            | |                                                                   | |                                     |  
+  |                                            | |                                                                   | |                                     |  
+  |                                            | |                                                                   | |                                     |  
+  |                                            | |                                                                   | |                                     |  
+  |                                            | |                                                                   | |                                     |  
+  |                                            | |                                                                   | |                                     |  
+  +--------------------------------------------+ +-------------------------------------------------------------------+ +-------------------------------------+  
+  Focus 0 / filter (none) / No universal safety verdict                                                                                                         
+  j/k move  Enter inspect  e evidence  Tab focus  / filter  ? help  q quit                                                                                      
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                

@@ -6,3 +6,5 @@ node_modules/
 .pnpm-store/
 .heurisko/
 .tooling/
+
+.heurisko-tui-state/

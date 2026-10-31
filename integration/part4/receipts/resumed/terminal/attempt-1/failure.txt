@@ -1,0 +1,21 @@
+Expected 'Provenance'
+  HEURISKO / report / narrow / 60x20                        
+   H Home    I Investigations     M Monitoring              
+  LOCAL INPUT picocolors@1.1.1 report_7b46cdea60ae3108dd8~  
+  HISTORICAL — checks not refreshed / complete / captured~  
+  1 Overview  2 Findings  3 Files  4 Source*  5 AI  6 Cov~  
+  +- > Source / list ------------------------------------+  
+  |                                                      |  
+  | > user_supplied                                      |  
+  | https://github.com/alexeyraspopov/picocolors         |  
+  |                                                      |  
+  |                                                      |  
+  |                                                      |  
+  |                                                      |  
+  |                                                      |  
+  +------------------------------------------------------+  
+  Focus 0 / filter (none) / Candidates                      
+  j/k move  Enter inspect  e evidence  Tab focus  / filte~  
+                                                            
+                                                            
+                                                            

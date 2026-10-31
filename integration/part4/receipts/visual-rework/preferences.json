@@ -1,0 +1,418 @@
+{
+  "scope": "59 confirmed directions retained; statuses are implementation audit, not design approval",
+  "preferences": [
+    {
+      "id": "R1-01",
+      "area": "Overall visual direction",
+      "confirmedDirection": "Hybrid: btop structure/color restraint, Posting clarity, Lazygit usability.",
+      "auditStatus": "implemented direction; local PTY/component evidence, no final human acceptance",
+      "boundary": "Real report projections preserve this direction; exact design remains unapproved/unfrozen."
+    },
+    {
+      "id": "R1-02",
+      "area": "Information density",
+      "confirmedDirection": "Balanced: compact but readable, with clear separation.",
+      "auditStatus": "implemented direction; local PTY/component evidence, no final human acceptance",
+      "boundary": "Real report projections preserve this direction; exact design remains unapproved/unfrozen."
+    },
+    {
+      "id": "R1-03",
+      "area": "Theme",
+      "confirmedDirection": "Dark-first, near-black, subtle borders, restrained semantic accents.",
+      "auditStatus": "implemented direction; local PTY/component evidence, no final human acceptance",
+      "boundary": "Real report projections preserve this direction; exact design remains unapproved/unfrozen."
+    },
+    {
+      "id": "R1-04",
+      "area": "Panel borders",
+      "confirmedDirection": "Outlined major panels, borderless internal content.",
+      "auditStatus": "implemented direction; local PTY/component evidence, no final human acceptance",
+      "boundary": "Real report projections preserve this direction; exact design remains unapproved/unfrozen."
+    },
+    {
+      "id": "R1-05",
+      "area": "Startup",
+      "confirmedDirection": "Home dashboard: new investigation, recent reports, monitoring, incomplete work.",
+      "auditStatus": "implemented direction; local PTY/component evidence, no final human acceptance",
+      "boundary": "Real report projections preserve this direction; exact design remains unapproved/unfrozen."
+    },
+    {
+      "id": "R1-06",
+      "area": "Investigation organization",
+      "confirmedDirection": "Overview dashboard, then dedicated multipane exploration screens.",
+      "auditStatus": "implemented direction; local PTY/component evidence, no final human acceptance",
+      "boundary": "Real report projections preserve this direction; exact design remains unapproved/unfrozen."
+    },
+    {
+      "id": "R1-07",
+      "area": "Overview hierarchy",
+      "confirmedDirection": "Prominent established takeaway followed by compact technical summaries, findings, coverage.",
+      "auditStatus": "implemented direction; local PTY/component evidence, no final human acceptance",
+      "boundary": "Real report projections preserve this direction; exact design remains unapproved/unfrozen."
+    },
+    {
+      "id": "R1-08",
+      "area": "Exploration",
+      "confirmedDirection": "Preview follows selection; Enter opens full inspection.",
+      "auditStatus": "implemented direction; local PTY/component evidence, no final human acceptance",
+      "boundary": "Real report projections preserve this direction; exact design remains unapproved/unfrozen."
+    },
+    {
+      "id": "R1-09",
+      "area": "Diff format",
+      "confirmedDirection": "Side-by-side when wide, unified when narrow, user-toggleable.",
+      "auditStatus": "implemented direction; local PTY/component evidence, no final human acceptance",
+      "boundary": "Real report projections preserve this direction; exact design remains unapproved/unfrozen."
+    },
+    {
+      "id": "R1-10",
+      "area": "Findings organization",
+      "confirmedDirection": "Review priority first, filters for severity, confidence, and type.",
+      "auditStatus": "implemented direction; local PTY/component evidence, no final human acceptance",
+      "boundary": "Real report projections preserve this direction; exact design remains unapproved/unfrozen."
+    },
+    {
+      "id": "R1-11",
+      "area": "AI placement",
+      "confirmedDirection": "Clearly labeled contextual interpretations plus dedicated AI section.",
+      "auditStatus": "partial / dependency open",
+      "boundary": "Contextual retained interpretations are displayed; live inference is unavailable."
+    },
+    {
+      "id": "R1-12",
+      "area": "Keyboard discoverability",
+      "confirmedDirection": "Contextual shortcut footer and `?` help, btop/Lazygit style.",
+      "auditStatus": "implemented direction; local PTY/component evidence, no final human acceptance",
+      "boundary": "Real report projections preserve this direction; exact design remains unapproved/unfrozen."
+    },
+    {
+      "id": "R1-13",
+      "area": "Data visualization",
+      "confirmedDirection": "Compact progress/coverage bars and small charts only when real measurements justify them.",
+      "auditStatus": "implemented direction; local PTY/component evidence, no final human acceptance",
+      "boundary": "Real report projections preserve this direction; exact design remains unapproved/unfrozen."
+    },
+    {
+      "id": "R1-14",
+      "area": "Live progress style",
+      "confirmedDirection": "Compact precise stage-state/count display, minimal layout movement.",
+      "auditStatus": "implemented direction; local PTY/component evidence, no final human acceptance",
+      "boundary": "Real report projections preserve this direction; exact design remains unapproved/unfrozen."
+    },
+    {
+      "id": "R2-15",
+      "area": "Home layout",
+      "confirmedDirection": "Prominent New Investigation action; recent reports and monitoring in two lower panels.",
+      "auditStatus": "implemented direction; local PTY/component evidence, no final human acceptance",
+      "boundary": "Real report projections preserve this direction; exact design remains unapproved/unfrozen."
+    },
+    {
+      "id": "R2-16",
+      "area": "Global navigation",
+      "confirmedDirection": "Compact top navigation for Home / Investigations / Monitoring.",
+      "auditStatus": "implemented direction; local PTY/component evidence, no final human acceptance",
+      "boundary": "Real report projections preserve this direction; exact design remains unapproved/unfrozen."
+    },
+    {
+      "id": "R2-17",
+      "area": "Investigation navigation",
+      "confirmedDirection": "Compact top tabs: Overview, Findings, Files, Source, AI, Coverage. Source includes provenance/build content rather than dropping it.",
+      "auditStatus": "implemented direction; local PTY/component evidence, no final human acceptance",
+      "boundary": "Real report projections preserve this direction; exact design remains unapproved/unfrozen."
+    },
+    {
+      "id": "R2-18",
+      "area": "Persistent identity",
+      "confirmedDirection": "Compact package/version, input type, report state; expanded identity available.",
+      "auditStatus": "implemented direction; local PTY/component evidence, no final human acceptance",
+      "boundary": "Real report projections preserve this direction; exact design remains unapproved/unfrozen."
+    },
+    {
+      "id": "R2-19",
+      "area": "Wide pane allocation",
+      "confirmedDirection": "Context-sensitive ratios: expand diff content in Files, detailed content in Findings. Exact ratios not approved.",
+      "auditStatus": "implemented direction; local PTY/component evidence, no final human acceptance",
+      "boundary": "Real report projections preserve this direction; exact design remains unapproved/unfrozen."
+    },
+    {
+      "id": "R2-20",
+      "area": "Evidence pane",
+      "confirmedDirection": "Visible in inspection-heavy sections; overview/setup can use full width.",
+      "auditStatus": "implemented direction; local PTY/component evidence, no final human acceptance",
+      "boundary": "Real report projections preserve this direction; exact design remains unapproved/unfrozen."
+    },
+    {
+      "id": "R2-21",
+      "area": "Enter behavior",
+      "confirmedDirection": "Open focused full-width detail with breadcrumbs and exact return position.",
+      "auditStatus": "implemented direction; local PTY/component evidence, no final human acceptance",
+      "boundary": "Real report projections preserve this direction; exact design remains unapproved/unfrozen."
+    },
+    {
+      "id": "R2-22",
+      "area": "Responsive bands",
+      "confirmedDirection": "\u2265140 columns: 3 panes; 100\u2013139: 2 panes; <100: 1 pane. Usable minimum/height thresholds remain undecided.",
+      "auditStatus": "implemented direction; local PTY/component evidence, no final human acceptance",
+      "boundary": "Real report projections preserve this direction; exact design remains unapproved/unfrozen."
+    },
+    {
+      "id": "R2-23",
+      "area": "Files exploration",
+      "confirmedDirection": "Expandable directory tree, toggleable flat searchable list.",
+      "auditStatus": "implemented direction; local PTY/component evidence, no final human acceptance",
+      "boundary": "Real report projections preserve this direction; exact design remains unapproved/unfrozen."
+    },
+    {
+      "id": "R2-24",
+      "area": "Pane focus",
+      "confirmedDirection": "Tab / Shift+Tab changes focused pane; arrows and j/k navigate items.",
+      "auditStatus": "implemented direction; local PTY/component evidence, no final human acceptance",
+      "boundary": "Real report projections preserve this direction; exact design remains unapproved/unfrozen."
+    },
+    {
+      "id": "R2-25",
+      "area": "Section jumps",
+      "confirmedDirection": "Both direct numeric jumps and next/previous section navigation. Actual mapping/chords unresolved.",
+      "auditStatus": "implemented direction; local PTY/component evidence, no final human acceptance",
+      "boundary": "Real report projections preserve this direction; exact design remains unapproved/unfrozen."
+    },
+    {
+      "id": "R2-26",
+      "area": "Search and commands",
+      "confirmedDirection": "`/` filters current view; Ctrl+P opens searchable actions/destinations. Exact scopes, command policy unresolved.",
+      "auditStatus": "implemented direction; local PTY/component evidence, no final human acceptance",
+      "boundary": "Real report projections preserve this direction; exact design remains unapproved/unfrozen."
+    },
+    {
+      "id": "R2-27",
+      "area": "UI persistence",
+      "confirmedDirection": "Persist per-report navigation preferences locally, separate from immutable report data. Storage schema/location unresolved.",
+      "auditStatus": "implemented direction; local PTY/component evidence, no final human acceptance",
+      "boundary": "Real report projections preserve this direction; exact design remains unapproved/unfrozen."
+    },
+    {
+      "id": "R2-28",
+      "area": "Live investigation layout",
+      "confirmedDirection": "Stage list left, live diagnostics and partial findings right. Narrow layout still must adapt.",
+      "auditStatus": "partial / dependency open",
+      "boundary": "Stage list and diagnostics work; engine has no partial-findings/evidence stream."
+    },
+    {
+      "id": "R2-29",
+      "area": "Error placement",
+      "confirmedDirection": "Persistent inline error at affected stage, concise summary notice. No blocking error popup by default.",
+      "auditStatus": "implemented direction; local PTY/component evidence, no final human acceptance",
+      "boundary": "Real report projections preserve this direction; exact design remains unapproved/unfrozen."
+    },
+    {
+      "id": "R2-30",
+      "area": "Accent",
+      "confirmedDirection": "Muted cyan/teal primary interactive accent; exact palette/contrast not approved.",
+      "auditStatus": "implemented direction; local PTY/component evidence, no final human acceptance",
+      "boundary": "Real report projections preserve this direction; exact design remains unapproved/unfrozen."
+    },
+    {
+      "id": "R2-31",
+      "area": "Borders",
+      "confirmedDirection": "Square on major panels; simple dividers and spacing inside.",
+      "auditStatus": "implemented direction; local PTY/component evidence, no final human acceptance",
+      "boundary": "Real report projections preserve this direction; exact design remains unapproved/unfrozen."
+    },
+    {
+      "id": "R2-32",
+      "area": "Focus and selection",
+      "confirmedDirection": "Selected-row subtle fill; focus marker and emphasized pane heading. Selection is not focus.",
+      "auditStatus": "implemented direction; local PTY/component evidence, no final human acceptance",
+      "boundary": "Real report projections preserve this direction; exact design remains unapproved/unfrozen."
+    },
+    {
+      "id": "R2-33",
+      "area": "Symbols",
+      "confirmedDirection": "Standard minimal Unicode, ASCII fallback; no Nerd Font dependency.",
+      "auditStatus": "implemented direction; local PTY/component evidence, no final human acceptance",
+      "boundary": "Real report projections preserve this direction; exact design remains unapproved/unfrozen."
+    },
+    {
+      "id": "R3-34",
+      "area": "Minimum terminal size",
+      "confirmedDirection": "Determine minimum through terminal testing; display a clear recovery message below usable size. No untested fixed minimum.",
+      "auditStatus": "implemented direction; local PTY/component evidence, no final human acceptance",
+      "boundary": "Real report projections preserve this direction; exact design remains unapproved/unfrozen."
+    },
+    {
+      "id": "R3-35",
+      "area": "New Investigation first action",
+      "confirmedDirection": "Open input selection with npm preselected.",
+      "auditStatus": "implemented direction; local PTY/component evidence, no final human acceptance",
+      "boundary": "Real report projections preserve this direction; exact design remains unapproved/unfrozen."
+    },
+    {
+      "id": "R3-36",
+      "area": "Full-width finding inspection",
+      "confirmedDirection": "Use a structured scrollable detail document with jump anchors.",
+      "auditStatus": "implemented direction; structured detail and named anchors keyboard checked",
+      "boundary": "PageUp/PageDown navigates actual wrapped heading offsets; no report mutation."
+    },
+    {
+      "id": "R3-37",
+      "area": "Evidence return navigation",
+      "confirmedDirection": "Breadcrumb/back stack restores exact selection, filter, focus and scroll.",
+      "auditStatus": "implemented direction; local PTY/component evidence, no final human acceptance",
+      "boundary": "Real report projections preserve this direction; exact design remains unapproved/unfrozen."
+    },
+    {
+      "id": "R3-38",
+      "area": "Diff scrolling and data access",
+      "confirmedDirection": "Synchronized side-by-side scrolling; horizontal scrolling for long lines; bounded content/range reads.",
+      "auditStatus": "implemented direction; local PTY/component evidence, no final human acceptance",
+      "boundary": "Real report projections preserve this direction; exact design remains unapproved/unfrozen."
+    },
+    {
+      "id": "R3-39",
+      "area": "Finding sort tie-breaks",
+      "confirmedDirection": "Apply deterministic tie-breakers with stable finding IDs; exact ordering fields remain to specify.",
+      "auditStatus": "implemented direction; local PTY/component evidence, no final human acceptance",
+      "boundary": "Real report projections preserve this direction; exact design remains unapproved/unfrozen."
+    },
+    {
+      "id": "R3-40",
+      "area": "Local filtering",
+      "confirmedDirection": "Filter focused list; retain query until explicitly cleared.",
+      "auditStatus": "implemented direction; local PTY/component evidence, no final human acceptance",
+      "boundary": "Real report projections preserve this direction; exact design remains unapproved/unfrozen."
+    },
+    {
+      "id": "R3-41",
+      "area": "Command palette availability",
+      "confirmedDirection": "Include supported actions only; explain temporarily unavailable actions.",
+      "auditStatus": "implemented direction; local PTY/component evidence, no final human acceptance",
+      "boundary": "Real report projections preserve this direction; exact design remains unapproved/unfrozen."
+    },
+    {
+      "id": "R3-42",
+      "area": "Active-job exit",
+      "confirmedDirection": "Ask about keep-running only when supported, or cancel; display actual action/outcome. No assumed detach.",
+      "auditStatus": "implemented direction; local PTY/component evidence, no final human acceptance",
+      "boundary": "Real report projections preserve this direction; exact design remains unapproved/unfrozen."
+    },
+    {
+      "id": "R3-43",
+      "area": "Uncertainty labels",
+      "confirmedDirection": "Use precise textual state with restrained symbol and explanation available.",
+      "auditStatus": "implemented direction; local PTY/component evidence, no final human acceptance",
+      "boundary": "Real report projections preserve this direction; exact design remains unapproved/unfrozen."
+    },
+    {
+      "id": "R3-44",
+      "area": "Historical report and export",
+      "confirmedDirection": "Persistent historical notice; inspect included/omitted contents before export.",
+      "auditStatus": "partial / dependency open",
+      "boundary": "Historical notice works; TUI export/preflight is unavailable."
+    },
+    {
+      "id": "R3-45",
+      "area": "Monitoring watch creation",
+      "confirmedDirection": "Guided setup explicitly selecting release policy and establishing baseline.",
+      "auditStatus": "partial / dependency open",
+      "boundary": "Monitoring setup is unavailable; no simulated baseline."
+    },
+    {
+      "id": "R3-46",
+      "area": "UI state persistence",
+      "confirmedDirection": "Use versioned local UI state keyed per report ID; provide a reset option.",
+      "auditStatus": "implemented direction; local PTY/component evidence, no final human acceptance",
+      "boundary": "Real report projections preserve this direction; exact design remains unapproved/unfrozen."
+    },
+    {
+      "id": "R3-47",
+      "area": "Theme acceptance",
+      "confirmedDirection": "Dark-first design tokens, contrast testing, terminal-palette and monochrome fallback.",
+      "auditStatus": "partial / dependency open",
+      "boundary": "Palette/monochrome/ASCII PTYs pass; human contrast/glyph acceptance remains open."
+    },
+    {
+      "id": "R4-48",
+      "area": "Source tab architecture",
+      "confirmedDirection": "Three compact subtabs\u2014Source candidates, Provenance, Build\u2014with independent status summaries.",
+      "auditStatus": "implemented direction; local PTY/component evidence, no final human acceptance",
+      "boundary": "Real report projections preserve this direction; exact design remains unapproved/unfrozen."
+    },
+    {
+      "id": "R4-49",
+      "area": "Conflicting source claims",
+      "confirmedDirection": "Concise conflict notice on Overview and Source; evidence details are inspected in Source.",
+      "auditStatus": "implemented direction; local PTY/component evidence, no final human acceptance",
+      "boundary": "Real report projections preserve this direction; exact design remains unapproved/unfrozen."
+    },
+    {
+      "id": "R4-50",
+      "area": "Alternative source target",
+      "confirmedDirection": "Place \u201cNew investigation with this target\u201d beside a candidate; create a new investigation/report, never mutate the original.",
+      "auditStatus": "implemented direction; local PTY/component evidence, no final human acceptance",
+      "boundary": "Real report projections preserve this direction; exact design remains unapproved/unfrozen."
+    },
+    {
+      "id": "R4-51",
+      "area": "Exact-target preflight",
+      "confirmedDirection": "Dedicated review screen with exact artifact, source target, configuration and uncertainties before Start.",
+      "auditStatus": "partial / dependency open",
+      "boundary": "Local snapshots are frozen; npm resolution/digest remain explicit unknowns until acquisition."
+    },
+    {
+      "id": "R4-52",
+      "area": "Evidence citation activation",
+      "confirmedDirection": "Open the exact raw span when readable; otherwise explain the metadata-only state without inventing bytes.",
+      "auditStatus": "implemented direction; local PTY/component evidence, no final human acceptance",
+      "boundary": "Real report projections preserve this direction; exact design remains unapproved/unfrozen."
+    },
+    {
+      "id": "R4-53",
+      "area": "Unavailable/failed counts",
+      "confirmedDirection": "Show \u201cNot evaluated\u201d or \u201cUnknown\u201d when unsupported; do not present fabricated zeros or bars.",
+      "auditStatus": "implemented direction; local PTY/component evidence, no final human acceptance",
+      "boundary": "Real report projections preserve this direction; exact design remains unapproved/unfrozen."
+    },
+    {
+      "id": "R4-54",
+      "area": "Empty Findings",
+      "confirmedDirection": "Differentiate no findings recorded within the examined scope from evaluation unavailable.",
+      "auditStatus": "implemented direction; local PTY/component evidence, no final human acceptance",
+      "boundary": "Real report projections preserve this direction; exact design remains unapproved/unfrozen."
+    },
+    {
+      "id": "R4-55",
+      "area": "Quit versus Back",
+      "confirmedDirection": "`q` quits the current workspace/application; `Esc` is reserved for Back. Precise quit scope still needs a tested context rule.",
+      "auditStatus": "implemented direction; local PTY/component evidence, no final human acceptance",
+      "boundary": "Real report projections preserve this direction; exact design remains unapproved/unfrozen."
+    },
+    {
+      "id": "R4-56",
+      "area": "AI controls at setup",
+      "confirmedDirection": "Show AI choice/state and relevant limitations explicitly during setup.",
+      "auditStatus": "partial / dependency open",
+      "boundary": "AI disabled/runtime unavailable are explicit; no live choice or inference runtime."
+    },
+    {
+      "id": "R4-57",
+      "area": "Monitoring stale semantics",
+      "confirmedDirection": "Use \u201cStale\u201d only if configured schedule and recorded timestamps justify it; otherwise \u201cUnknown\u201d or \u201cNot configured\u201d.",
+      "auditStatus": "implemented direction; local PTY/component evidence, no final human acceptance",
+      "boundary": "Real report projections preserve this direction; exact design remains unapproved/unfrozen."
+    },
+    {
+      "id": "R4-58",
+      "area": "Export packaging",
+      "confirmedDirection": "Prefer canonical report with optional retained evidence and manifest, previewed before writing, where supported.",
+      "auditStatus": "partial / dependency open",
+      "boundary": "TUI export is unavailable."
+    },
+    {
+      "id": "R4-59",
+      "area": "Long/untrusted paths",
+      "confirmedDirection": "Elide in constrained views while retaining safely inspectable, copyable full value; render terminal controls inertly.",
+      "auditStatus": "implemented direction; local PTY/component evidence, no final human acceptance",
+      "boundary": "Real report projections preserve this direction; exact design remains unapproved/unfrozen."
+    }
+  ]
+}

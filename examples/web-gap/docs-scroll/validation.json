@@ -1,0 +1,113 @@
+{
+  "version": "heurisko-scrolled-documentation-fix-v1",
+  "recordedAt": "2026-10-31T22:39:25.302490+00:00",
+  "timezone": "Asia/Kolkata",
+  "authorization": "Repeated user-reported Analyze documentation disruption/reload after scrolling; user confirmed Arc",
+  "priorAttempt": "Per-link event tests did not establish scrolled UI acceptance; prior receipts unchanged",
+  "codeConfirmedProblem": [
+    "Docs-to-docs routes invoked window.scrollTo(0,0) and main focus",
+    "Article height changes affected the outer document",
+    "Anchor scrollIntoView could scroll ancestors including the window",
+    "Queued navigation frames could apply superseded window movement"
+  ],
+  "changes": [
+    "Stable-height docs layout with independent persistent article/sidebar scrollers; stacked bounded rows on narrow screens",
+    "Per-document article scroll remembered in memory",
+    "Docs-to-docs navigation skips all window/main scroll/focus resets",
+    "Anchors use relative article coordinates and focus preventScroll",
+    "Stale navigation animation frames are ignored; direct-link prevention/security semantics retained"
+  ],
+  "checks": [
+    {
+      "command": "web build",
+      "result": "pass",
+      "log": "final-build.log"
+    },
+    {
+      "command": "web typecheck",
+      "result": "pass",
+      "log": "final-typecheck.log"
+    },
+    {
+      "command": "node --test apps/web/tests/*.test.mjs",
+      "result": "pass",
+      "tests": 47,
+      "fail": 0,
+      "log": "final-tests.log"
+    },
+    {
+      "command": "live root/JS/CSS/docs byte comparison against final build",
+      "result": "pass"
+    },
+    {
+      "command": "live jobs before preview restart",
+      "result": "pass",
+      "jobs": 0
+    },
+    {
+      "command": "unchanged repository Markdown link check and git diff --check",
+      "result": "pass",
+      "log": "doc-links.log"
+    }
+  ],
+  "earlierFailure": {
+    "log": "tests-attempt1.log",
+    "pass": 44,
+    "fail": 1,
+    "reason": "Previous repeated-anchor test assumed window scrolling; updated to assert only the article moves and added Analyze-after-scroll/stale-frame and contained-anchor regressions"
+  },
+  "sourceSHA256": {
+    "apps/web/src/navigation.ts": "sha256:c7932e921463094ab40ec4013edafa4359e67eb8d514c168fc4c7db385be4c3f",
+    "apps/web/src/docs.tsx": "sha256:3ec6fa2cb3394c6f48aba090ba3ab2e6b1dd69424a8403564aa8c553c3221d89",
+    "apps/web/src/style.css": "sha256:3db0731ec84cae33e3b3037a3d4fba9658de374de9856544a50738341a2baf59",
+    "apps/web/src/link.tsx": "sha256:5710c627d5569e780d35ff1c1183df32708c47e69e61676564723fb3bf1e754c",
+    "apps/web/tests/link-navigation.test.mjs": "sha256:eefe2d830df931369bd919eb6a45aa7729bd367c7b8ff2ce7487343b5bb3ba72"
+  },
+  "buildSHA256": {
+    "apps/web/dist/report-view.js": "sha256:de70dd1d11ec7f782926f40fff959a25d3d7b8c5b126e86706428d68e4568cfe",
+    "apps/web/dist/cli-docs.json": "sha256:e0ab6127acbcfcbc3ab76efa13dc685285e6ff708bbdec18a83cb1ab0b660710",
+    "apps/web/dist/input-review.js": "sha256:d85c84e051cfb7ce18544bbc9d6f99e308b2d5da104df61b0dd7c7cfd300f892",
+    "apps/web/dist/browser-inputs.json": "sha256:eefe84481267153d0e315223a265ce7f3402bbbfc6543dd7a4f5f0f6a334dc22",
+    "apps/web/dist/index.html": "sha256:049fc9f4a86def4e885129d92206e49619e26a350ba1a8d4de168b6bee84f18c",
+    "apps/web/dist/export.js": "sha256:f457bf9a6201b5b312628a540d6b802b7e7d4e2ca3fc5a20e58ff12222f77127",
+    "apps/web/dist/service.js": "sha256:f56d52a458135a6c1a92231bb41d7659b4fc5d0a85c09edb9f4eb78aa67b1801",
+    "apps/web/dist/observation.js": "sha256:220a8c767ae8715c155faa6cea62af3bfc5d7d809c846b1ab8a2e7901f709f87",
+    "apps/web/dist/link.js": "sha256:9f41a4030779346000e354be2d1e5458d6a26951d12b11ff5e0861dda02d7bcf",
+    "apps/web/dist/transport.js": "sha256:716ffe52534e30a4ce51f99a60ba732178081414726d968a38f70c1f87992278",
+    "apps/web/dist/doc-model.js": "sha256:54220185f4afbef5b4578f557dfadfd6792e3f853afae250c59bd95275994dfd",
+    "apps/web/dist/main.js": "sha256:92ea6cc52ecf25ef2cba945e9bee2006c3dce5ba309b11237a075c60913e542d",
+    "apps/web/dist/workspace.js": "sha256:94fdea6e1741a85b6eae1668a1b8ca8afe9654cd8e35aa2739339e9d2c75cd80",
+    "apps/web/dist/navigation.js": "sha256:4dfbc7f781bf8ac384ab0609004d9db4b1c7771876b0227cac6e8c595f83c9f8",
+    "apps/web/dist/render-check.js": "sha256:f740876b550f2a10396e15d4af037df9ff4737b7d5ebab93b897f8766aaa056c",
+    "apps/web/dist/portable.js": "sha256:5a2770694247ef04f7a8ac44cb94d23a6d0d4a3923f3925fd7e2c27161b9c5f0",
+    "apps/web/dist/api.js": "sha256:fdabe981b60df768f30222ce1e6e0f1a4167db35c50e4db5654ac9443dc6b4a1",
+    "apps/web/dist/assets/app.css": "sha256:3db0731ec84cae33e3b3037a3d4fba9658de374de9856544a50738341a2baf59",
+    "apps/web/dist/assets/app.js": "sha256:d198af1a94cd21b2c89794bab7464140a4c0526f6335eccd1111b21f35a9092d"
+  },
+  "preview": {
+    "origin": "http://127.0.0.1:64802",
+    "running": true,
+    "retainedReports": 4,
+    "capability": "memory/live handoff only; not recorded",
+    "diagnostic": "Ignored task-only launcher transiently prints known docs HTML paths on actual document GETs; no headers/tokens/inputs or new endpoint, no external telemetry"
+  },
+  "arcAcceptance": {
+    "automation": "Native Arc binding unavailable: exact running-app attempt returned native pipe closed",
+    "manual": "User opened updated Arc preview, scrolled article and clicked Analyze; answered: Yes, it stays in place",
+    "status": "user_confirmed_for_reported_scrolled_Analyze_case",
+    "limits": "User-reported narrow acceptance only; no agent screenshot, viewport/zoom, full keyboard/AT or complete GUI matrix pass claimed",
+    "recordedAt": "2026-10-31T22:39:56.263114+00:00"
+  },
+  "preservation": {
+    ".git/index": true,
+    "examples/web-gap/link-navigation/validation.json": true,
+    "examples/web-gap/w2-w5/validation.json": true
+  },
+  "newDependencies": false,
+  "coreReaderContractsTuiSourceChangedByThisTask": false,
+  "targetExecution": false,
+  "productModels": [],
+  "commit": false,
+  "push": false,
+  "publication": false
+}

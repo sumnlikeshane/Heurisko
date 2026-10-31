@@ -1,0 +1,117 @@
+[?1049h[?25l[?25l  [1mHEURISKO / report / wide / 160x40                                                                                                                           [22m
+   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  LOCAL INPUT picocolors@1.1.1 report_7b46cdea60ae3108dd8c4b21
+  HISTORICAL — checks not refreshed / complete / captured 2026-10-31T21:48:41Z
+  1 Overview*  2 Findings  3 Files  4 Source  5 AI  6 Coverage
+  ┌─[1m > Overview [22m───────────────────────────────┐ ┌─[1m Overview detail [22m─────────────────────────────────────────────────┐ ┌─[1m Supporting evidence [22m───────────────┐
+  │ > Identity and outcomes                    │ │ Differences recorded; inspect raw evidence.                       │ │ No citations recorded               │
+  │                                            │ │ Report report_7b46cdea60ae3108dd8c4b21                            │ │                                     │
+  │                                            │ │ Content                                                           │ │                                     │
+  │                                            │ │ sha256:f0c624713467072d1f5b2bf5d521fecfa2748593f6b203936f6532ba98 │ │                                     │
+  │                                            │ │ c24df3                                                            │ │                                     │
+  │                                            │ │ Artifact picocolors-1.1.1.local-inert-mutation.tgz                │ │                                     │
+  │                                            │ │ SHA-256                                                           │ │                                     │
+  │                                            │ │ sha256:bcdd003ee749b70575fb2793d3892a393d1224457ecb8ca9c37ff4cfd5 │ │                                     │
+  │                                            │ │ 5e098d                                                            │ │                                     │
+  │                                            │ │ Captured 2026-10-31T21:48:41Z                                     │ │                                     │
+  │                                            │ │ Created 2026-10-31T21:48:45Z                                      │ │                                     │
+  │                                            │ │ Configuration                                                     │ │                                     │
+  │                                            │ │ ae22ea2b126cc8643827269363d00478c36faea1d6be6b1e1b9abcef525f4572  │ │                                     │
+  │                                            │ │ artifactIntegrity: not_checked                                    │ │                                     │
+  │                                            │ │ sourceAssociation: user_supplied                                  │ │                                     │
+  │                                            │ │ provenancePolicy: not_checked                                     │ │                                     │
+  │                                            │ │ correspondence: unresolved                                        │ │                                     │
+  │                                            │ │ analysisCompleteness: complete                                    │ │                                     │
+  │                                            │ │ policyResult: not_evaluated                                       │ │                                     │
+  │                                            │ │ Findings evaluation: recorded_for_examined_scope; examined-scope  │ │                                     │
+  │                                            │ │ count: 16                                                         │ │                                     │
+  │                                            │ │ Recorded findings: 16 (not a safety assessment)                   │ │                                     │
+  │                                            │ │ AI: disabled; No runtime configured                               │ │                                     │
+  │                                            │ │ Static raw comparison only; generated/build/security              │ │                                     │
+  │                                            │ │ interpretation is unavailable without Malhar analysis.            │ │                                     │
+  │                                            │ │ Source override is user supplied; full commit URL is a comparison │ │                                     │
+  │                                            │ │ target, not proof of release correspondence.                      │ │                                     │
+  │                                            │ │ No submodule or LFS materialization, target scripts, rebuild,     │ │                                     │
+  └────────────────────────────────────────────┘ └───────────────────────────────────────────────────────────────────┘ └─────────────────────────────────────┘
+  Focus 0 / filter (none) / No universal safety verdict
+  j/k move  Enter inspect  e evidence  Tab focus  / filter  ? help  q quit
+
+
+[?25l[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO / report / wide / 160x40                                                                                                                           [22m
+   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  LOCAL INPUT picocolors@1.1.1 report_7b46cdea60ae3108dd8c4b21
+  HISTORICAL — checks not refreshed / complete / captured 2026-10-31T21:48:41Z
+  1 Overview  2 Findings  3 Files*  4 Source  5 AI  6 Coverage
+  ┌─[1m > Files [22m───────────────────────────┐ ┌─[1m Files detail [22m───────────────────────────────────────────────────────────┐ ┌─[1m Supporting evidence [22m───────────────┐
+  │ > v package/                        │ │ Directory: package                                                       │ │ No citations recorded               │
+  │     added heurisko-inert-marker.js  │ │ Enter expands/collapses; no filesystem access.                           │ │                                     │
+  │     identical LICENSE               │ │                                                                          │ │                                     │
+  │     modified package.json           │ │                                                                          │ │                                     │
+  │     identical picocolors.browser.js │ │                                                                          │ │                                     │
+  │     identical picocolors.d.ts       │ │                                                                          │ │                                     │
+  │     identical picocolors.js         │ │                                                                          │ │                                     │
+  │     modified README.md              │ │                                                                          │ │                                     │
+  │     identical types.d.ts            │ │                                                                          │ │                                     │
+  │   v picocolors-6f0a4638348ed20633d… │ │                                                                          │ │                                     │
+  │     removed .editorconfig           │ │                                                                          │ │                                     │
+  │     v .github/                      │ │                                                                          │ │                                     │
+  │       v workflows/                  │ │                                                                          │ │                                     │
+  │         removed benchmarks.yaml     │ │                                                                          │ │                                     │
+  │         removed testing.yaml        │ │                                                                          │ │                                     │
+  │     removed .gitignore              │ │                                                                          │ │                                     │
+  │     v benchmarks/                   │ │                                                                          │ │                                     │
+  │       removed complex.mjs           │ │                                                                          │ │                                     │
+  │       removed loading.mjs           │ │                                                                          │ │                                     │
+  │       removed recursion.mjs         │ │                                                                          │ │                                     │
+  │       removed simple.mjs            │ │                                                                          │ │                                     │
+  │       removed size.mjs              │ │                                                                          │ │                                     │
+  │     removed CHANGELOG.md            │ │                                                                          │ │                                     │
+  │     v tests/                        │ │                                                                          │ │                                     │
+  │       removed environments.js       │ │                                                                          │ │                                     │
+  │       removed test.js               │ │                                                                          │ │                                     │
+  │                                     │ │                                                                          │ │                                     │
+  │                                     │ │                                                                          │ │                                     │
+  └─────────────────────────────────────┘ └──────────────────────────────────────────────────────────────────────────┘ └─────────────────────────────────────┘
+  Focus 0 / filter (none) / Raw auto; tree
+  j/k move  Enter inspect  e evidence  Tab focus  / filter  ? help  q quit
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO / report / wide / 160x40                                                                                                                           [22m
+   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  LOCAL INPUT picocolors@1.1.1 report_7b46cdea60ae3108dd8c4b21
+  HISTORICAL — checks not refreshed / complete / captured 2026-10-31T21:48:41Z
+  1 Overview*  2 Findings  3 Files  4 Source  5 AI  6 Coverage
+  ┌─[1m > Overview [22m───────────────────────────────┐ ┌─[1m Overview detail [22m─────────────────────────────────────────────────┐ ┌─[1m Supporting evidence [22m───────────────┐
+  │ > Identity and outcomes                    │ │ Differences recorded; inspect raw evidence.                       │ │ No citations recorded               │
+  │                                            │ │ Report report_7b46cdea60ae3108dd8c4b21                            │ │                                     │
+  │                                            │ │ Content                                                           │ │                                     │
+  │                                            │ │ sha256:f0c624713467072d1f5b2bf5d521fecfa2748593f6b203936f6532ba98 │ │                                     │
+  │                                            │ │ c24df3                                                            │ │                                     │
+  │                                            │ │ Artifact picocolors-1.1.1.local-inert-mutation.tgz                │ │                                     │
+  │                                            │ │ SHA-256                                                           │ │                                     │
+  │                                            │ │ sha256:bcdd003ee749b70575fb2793d3892a393d1224457ecb8ca9c37ff4cfd5 │ │                                     │
+  │                                            │ │ 5e098d                                                            │ │                                     │
+  │                                            │ │ Captured 2026-10-31T21:48:41Z                                     │ │                                     │
+  │                                            │ │ Created 2026-10-31T21:48:45Z                                      │ │                                     │
+  │                                            │ │ Configuration                                                     │ │                                     │
+  │                                            │ │ ae22ea2b126cc8643827269363d00478c36faea1d6be6b1e1b9abcef525f4572  │ │                                     │
+  │                                            │ │ artifactIntegrity: not_checked                                    │ │                                     │
+  │                                            │ │ sourceAssociation: user_supplied                                  │ │                                     │
+  │                                            │ │ provenancePolicy: not_checked                                     │ │                                     │
+  │                                            │ │ correspondence: unresolved                                        │ │                                     │
+  │                                            │ │ analysisCompleteness: complete                                    │ │                                     │
+  │                                            │ │ policyResult: not_evaluated                                       │ │                                     │
+  │                                            │ │ Findings evaluation: recorded_for_examined_scope; examined-scope  │ │                                     │
+  │                                            │ │ count: 16                                                         │ │                                     │
+  │                                            │ │ Recorded findings: 16 (not a safety assessment)                   │ │                                     │
+  │                                            │ │ AI: disabled; No runtime configured                               │ │                                     │
+  │                                            │ │ Static raw comparison only; generated/build/security              │ │                                     │
+  │                                            │ │ interpretation is unavailable without Malhar analysis.            │ │                                     │
+  │                                            │ │ Source override is user supplied; full commit URL is a comparison │ │                                     │
+  │                                            │ │ target, not proof of release correspondence.                      │ │                                     │
+  │                                            │ │ No submodule or LFS materialization, target scripts, rebuild,     │ │                                     │
+  └────────────────────────────────────────────┘ └───────────────────────────────────────────────────────────────────┘ └─────────────────────────────────────┘
+  Per-report UI state reset; report unchanged.
+  j/k move  Enter inspect  e evidence  Tab focus  / filter  ? help  q quit
+
+

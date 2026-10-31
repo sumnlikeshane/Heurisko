@@ -1,0 +1,123 @@
+{
+  "id": "af93f9fbe334c453456d720be6beb06a",
+  "phase": "settled_report",
+  "startedAt": "2026-10-31T21:59:20.318Z",
+  "cancellationRequested": false,
+  "cleanup": "not_observable",
+  "request": {
+    "kind": "npm",
+    "enableAI": true,
+    "analysisProfile": "raw-static-s3-v1",
+    "target": "npm:picocolors@1.1.1",
+    "policy": "web-requested-policy"
+  },
+  "events": [
+    {
+      "stage": "resolve_artifact",
+      "status": "running",
+      "sequence": 1
+    },
+    {
+      "stage": "acquire",
+      "status": "running",
+      "sequence": 2
+    },
+    {
+      "stage": "resolve_artifact",
+      "status": "complete",
+      "sequence": 3
+    },
+    {
+      "stage": "acquire",
+      "status": "complete",
+      "sequence": 4
+    },
+    {
+      "stage": "inventory",
+      "status": "running",
+      "sequence": 5
+    },
+    {
+      "stage": "source",
+      "status": "running",
+      "sequence": 6
+    },
+    {
+      "stage": "provenance",
+      "status": "running",
+      "sequence": 7
+    },
+    {
+      "stage": "source",
+      "status": "complete",
+      "errors": [],
+      "sequence": 8
+    },
+    {
+      "stage": "provenance",
+      "status": "skipped",
+      "errors": [],
+      "sequence": 9
+    },
+    {
+      "stage": "build",
+      "status": "skipped",
+      "errors": [],
+      "sequence": 10
+    },
+    {
+      "stage": "inventory",
+      "status": "complete",
+      "errors": [],
+      "sequence": 11
+    },
+    {
+      "stage": "compare",
+      "status": "running",
+      "sequence": 12
+    },
+    {
+      "stage": "compare",
+      "status": "complete",
+      "sequence": 13
+    },
+    {
+      "stage": "heuristics",
+      "status": "running",
+      "sequence": 14
+    },
+    {
+      "stage": "heuristics",
+      "status": "incomplete",
+      "errors": [
+        {
+          "stage": "heuristics",
+          "code": "ANALYSIS_MODULE_UNAVAILABLE",
+          "message": "Malhar analysis module not supplied",
+          "affectedScope": "deterministic analysis",
+          "retryable": false
+        }
+      ],
+      "sequence": 15
+    },
+    {
+      "stage": "ai",
+      "status": "skipped",
+      "sequence": 16
+    },
+    {
+      "stage": "persist",
+      "status": "running",
+      "sequence": 17
+    },
+    {
+      "stage": "persist",
+      "status": "complete",
+      "sequence": 18
+    }
+  ],
+  "omittedEvents": 0,
+  "observation": "d60ab7ea08a35a2d08be79026776f5fe",
+  "exitCode": 2,
+  "settledAt": "2026-10-31T21:59:29.556Z"
+}

@@ -1,0 +1,306 @@
+[?1049h[?25l[?25l  [1mHEURISKO / report / medium / 120x35                                                                                 [22m
+   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  LOCAL INPUT F0.tgz@Unknown report_1cbc999c58216e4e1f7471b3
+  SYNTHETIC / HISTORICAL — checks not refreshed / incomplete / captured 2026-10-31T15:00:00Z
+  1 Overview*  2 Findings  3 Files  4 Source  5 AI  6 Coverage
+  ┌─[1m > Overview [22m───────────────────┐ ┌─[1m Overview detail [22m────────────────────────────────────────────────────────────┐
+  │ > Identity and outcomes        │ │ Differences recorded; inspect raw evidence.                                  │
+  │                                │ │ Report report_1cbc999c58216e4e1f7471b3                                       │
+  │                                │ │ Content                                                                      │
+  │                                │ │ sha256:ca8c84c2a06fd2c42feccfdb228b490bbe3861c334a021c6460b08178e935f41      │
+  │                                │ │ Artifact F0.tgz                                                              │
+  │                                │ │ SHA-256                                                                      │
+  │                                │ │ sha256:3120e4762610ddea40ab7b4154d1e562cc0ab85dd26699689f951f10c10c48bc      │
+  │                                │ │ Captured 2026-10-31T15:00:00Z                                                │
+  │                                │ │ Created 2026-10-31T15:00:00Z                                                 │
+  │                                │ │ Configuration                                                                │
+  │                                │ │ 52e32b9a58e8e53c51743a98b70664f1fb450c4f0095b7774fdb886b8fefe79c             │
+  │                                │ │ artifactIntegrity: not_available                                             │
+  │                                │ │ sourceAssociation: user_supplied                                             │
+  │                                │ │ provenancePolicy: not_checked                                                │
+  │                                │ │ correspondence: not_assessed                                                 │
+  │                                │ │ analysisCompleteness: incomplete                                             │
+  │                                │ │ policyResult: not_evaluated                                                  │
+  │                                │ │ Findings evaluation: not_evaluated_or_partial; examined-scope count: Unknown │
+  │                                │ │ Recorded findings: 0 (not a safety assessment)                               │
+  │                                │ │ AI: disabled; SYNTHETIC rendering state; no model executed                   │
+  │                                │ │ Next action: inspect Files, source claims and coverage limitations.          │
+  │                                │ │                                                                              │
+  │                                │ │                                                                              │
+  └────────────────────────────────┘ └──────────────────────────────────────────────────────────────────────────────┘
+  Focus 0 / filter (none) / No universal safety verdict
+  j/k move  Enter inspect  e evidence  Tab focus  / filter  ? help  q quit
+
+
+[?25l[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO / report / medium / 120x35                                                                                 [22m
+   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  LOCAL INPUT F0.tgz@Unknown report_1cbc999c58216e4e1f7471b3
+  SYNTHETIC / HISTORICAL — checks not refreshed / incomplete / captured 2026-10-31T15:00:00Z
+  1 Overview*  2 Findings  3 Files  4 Source  5 AI  6 Coverage
+  ┌─[1m > Overview [22m───────────────────┐ ┌─[1m Overview detail [22m────────────────────────────────────────────────────────────┐
+  │ > Identity and outcomes        │ │ Differences recorded; inspect raw evidence.                                  │
+  │                                │ │ Report report_1cbc999c58216e4e1f7471b3                                       │
+  │                                │ │ Content                                                                      │
+  │                                │ │ sha256:ca8c84c2a06fd2c42feccfdb228b490bbe3861c334a021c6460b08178e935f41      │
+  │                                │ │ Artifact F0.tgz                                                              │
+  │                                │ │ SHA-256                                                                      │
+  │                                │ │ sha256:3120e4762610ddea40ab7b4154d1e562cc0ab85dd26699689f951f10c10c48bc      │
+  │                                │ │ Captured 2026-10-31T15:00:00Z                                                │
+  │                                │ │ Created 2026-10-31T15:00:00Z                                                 │
+  │                                │ │ Configuration                                                                │
+  │                                │ │ 52e32b9a58e8e53c51743a98b70664f1fb450c4f0095b7774fdb886b8fefe79c             │
+  │                                │ │ artifactIntegrity: not_available                                             │
+  │                                │ │ sourceAssociation: user_supplied                                             │
+  │                                │ │ provenancePolicy: not_checked                                                │
+  │                                │ │ correspondence: not_assessed                                                 │
+  │                                │ │ analysisCompleteness: incomplete                                             │
+  │                                │ │ policyResult: not_evaluated                                                  │
+  │                                │ │ Findings evaluation: not_evaluated_or_partial; examined-scope count: Unknown │
+  │                                │ │ Recorded findings: 0 (not a safety assessment)                               │
+  │                                │ │ AI: disabled; SYNTHETIC rendering state; no model executed                   │
+  │                                │ │ Next action: inspect Files, source claims and coverage limitations.          │
+  │                                │ │                                                                              │
+  │                                │ │                                                                              │
+  └────────────────────────────────┘ └──────────────────────────────────────────────────────────────────────────────┘
+  Per-report UI state reset; report unchanged.
+  j/k move  Enter inspect  e evidence  Tab focus  / filter  ? help  q quit
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO / report / medium / 120x35                                                                                 [22m
+   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  LOCAL INPUT F0.tgz@Unknown report_1cbc999c58216e4e1f7471b3
+  SYNTHETIC / HISTORICAL — checks not refreshed / incomplete / captured 2026-10-31T15:00:00Z
+  1 Overview  2 Findings  3 Files  4 Source  5 AI*  6 Coverage
+  ┌─[1m > AI [22m─────────────────────────┐ ┌─[1m AI detail [22m──────────────────────────────────────────────────────────────────┐
+  │ > AI disabled                  │ │ AI state: disabled                                                           │
+  │                                │ │ Reason: SYNTHETIC rendering state; no model executed                         │
+  │                                │ │ Model: Not configured                                                        │
+  │                                │ │ Validation: not_run                                                          │
+  │                                │ │ Current inference runtime unavailable; deterministic evidence remains        │
+  │                                │ │ accessible.                                                                  │
+  │                                │ │ Validation does not establish factual truth.                                 │
+  │                                │ │                                                                              │
+  │                                │ │                                                                              │
+  │                                │ │                                                                              │
+  │                                │ │                                                                              │
+  │                                │ │                                                                              │
+  │                                │ │                                                                              │
+  │                                │ │                                                                              │
+  │                                │ │                                                                              │
+  │                                │ │                                                                              │
+  │                                │ │                                                                              │
+  │                                │ │                                                                              │
+  │                                │ │                                                                              │
+  │                                │ │                                                                              │
+  │                                │ │                                                                              │
+  │                                │ │                                                                              │
+  │                                │ │                                                                              │
+  └────────────────────────────────┘ └──────────────────────────────────────────────────────────────────────────────┘
+  Per-report UI state reset; report unchanged.
+  j/k move  Enter inspect  e evidence  Tab focus  / filter  ? help  q quit
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO / report / medium / 120x35                                                                                 [22m
+   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  LOCAL INPUT F0.tgz@Unknown report_1cbc999c58216e4e1f7471b3
+  SYNTHETIC / HISTORICAL — checks not refreshed / incomplete / captured 2026-10-31T15:00:00Z
+  1 Overview  2 Findings  3 Files  4 Source  5 AI*  6 Coverage
+  ┌─[1m > AI / ai-state [22m────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ AI state: disabled                                                                                               │
+  │ Reason: SYNTHETIC rendering state; no model executed                                                             │
+  │ Model: Not configured                                                                                            │
+  │ Validation: not_run                                                                                              │
+  │ Current inference runtime unavailable; deterministic evidence remains accessible.                                │
+  │ Validation does not establish factual truth.                                                                     │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+  Per-report UI state reset; report unchanged.
+  j/k move  Enter inspect  e evidence  Tab focus  / filter  ? help  q quit
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO / report / medium / 120x35                                                                                 [22m
+   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  LOCAL INPUT F0.tgz@Unknown report_1cbc999c58216e4e1f7471b3
+  SYNTHETIC / HISTORICAL — checks not refreshed / incomplete / captured 2026-10-31T15:00:00Z
+  1 Overview  2 Findings  3 Files  4 Source  5 AI*  6 Coverage
+  ┌─[1m > AI [22m─────────────────────────┐ ┌─[1m AI detail [22m──────────────────────────────────────────────────────────────────┐
+  │ > AI disabled                  │ │ AI state: disabled                                                           │
+  │                                │ │ Reason: SYNTHETIC rendering state; no model executed                         │
+  │                                │ │ Model: Not configured                                                        │
+  │                                │ │ Validation: not_run                                                          │
+  │                                │ │ Current inference runtime unavailable; deterministic evidence remains        │
+  │                                │ │ accessible.                                                                  │
+  │                                │ │ Validation does not establish factual truth.                                 │
+  │                                │ │                                                                              │
+  │                                │ │                                                                              │
+  │                                │ │                                                                              │
+  │                                │ │                                                                              │
+  │                                │ │                                                                              │
+  │                                │ │                                                                              │
+  │                                │ │                                                                              │
+  │                                │ │                                                                              │
+  │                                │ │                                                                              │
+  │                                │ │                                                                              │
+  │                                │ │                                                                              │
+  │                                │ │                                                                              │
+  │                                │ │                                                                              │
+  │                                │ │                                                                              │
+  │                                │ │                                                                              │
+  │                                │ │                                                                              │
+  └────────────────────────────────┘ └──────────────────────────────────────────────────────────────────────────────┘
+  Per-report UI state reset; report unchanged.
+  j/k move  Enter inspect  e evidence  Tab focus  / filter  ? help  q quit
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO / report / medium / 120x35                                                                                 [22m
+   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  LOCAL INPUT F0.tgz@Unknown report_1cbc999c58216e4e1f7471b3
+  SYNTHETIC / HISTORICAL — checks not refreshed / incomplete / captured 2026-10-31T15:00:00Z
+  1 Overview  2 Findings  3 Files*  4 Source  5 AI  6 Coverage
+  ┌─[1m > Files [22m─────────────────┐ ┌─[1m Files detail [22m────────────────────────────────────────────────────────────────────┐
+  │ > v package/              │ │ Directory: package                                                                │
+  │     added unsafe\u001b[2… │ │ Enter expands/collapses; no filesystem access.                                    │
+  │                           │ │                                                                                   │
+  │                           │ │                                                                                   │
+  │                           │ │                                                                                   │
+  │                           │ │                                                                                   │
+  │                           │ │                                                                                   │
+  │                           │ │                                                                                   │
+  │                           │ │                                                                                   │
+  │                           │ │                                                                                   │
+  │                           │ │                                                                                   │
+  │                           │ │                                                                                   │
+  │                           │ │                                                                                   │
+  │                           │ │                                                                                   │
+  │                           │ │                                                                                   │
+  │                           │ │                                                                                   │
+  │                           │ │                                                                                   │
+  │                           │ │                                                                                   │
+  │                           │ │                                                                                   │
+  │                           │ │                                                                                   │
+  │                           │ │                                                                                   │
+  │                           │ │                                                                                   │
+  │                           │ │                                                                                   │
+  └───────────────────────────┘ └───────────────────────────────────────────────────────────────────────────────────┘
+  Per-report UI state reset; report unchanged.
+  j/k move  Enter inspect  e evidence  Tab focus  / filter  ? help  q quit
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO / report / medium / 120x35                                                                                 [22m
+   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  LOCAL INPUT F0.tgz@Unknown report_1cbc999c58216e4e1f7471b3
+  SYNTHETIC / HISTORICAL — checks not refreshed / incomplete / captured 2026-10-31T15:00:00Z
+  1 Overview  2 Findings  3 Files*  4 Source  5 AI  6 Coverage
+  ┌─[1m > Files [22m─────────────────┐ ┌─[1m Files detail [22m────────────────────────────────────────────────────────────────────┐
+  │ > added package/unsafe\u… │ │ Change chg_authored-rendering                                                     │
+  │                           │ │ Artifact path: package/unsafe\u001b[2J\u202e.txt                                  │
+  │                           │ │ Source path: Not recorded                                                         │
+  │                           │ │ Status: added                                                                     │
+  │                           │ │ Raw equality: different                                                           │
+  │                           │ │ Explanation strength: unexplained                                                 │
+  │                           │ │ SYNTHETIC rendering fixture                                                       │
+  │                           │ │ Raw evidence: e opens exact recorded byte spans; s changes side.                  │
+  │                           │ │ Normalized view unavailable — no transform was performed.                         │
+  │                           │ │                                                                                   │
+  │                           │ │                                                                                   │
+  │                           │ │                                                                                   │
+  │                           │ │                                                                                   │
+  │                           │ │                                                                                   │
+  │                           │ │                                                                                   │
+  │                           │ │                                                                                   │
+  │                           │ │                                                                                   │
+  │                           │ │                                                                                   │
+  │                           │ │                                                                                   │
+  │                           │ │                                                                                   │
+  │                           │ │                                                                                   │
+  │                           │ │                                                                                   │
+  │                           │ │                                                                                   │
+  └───────────────────────────┘ └───────────────────────────────────────────────────────────────────────────────────┘
+  Per-report UI state reset; report unchanged.
+  j/k move  Enter inspect  e evidence  Tab focus  / filter  ? help  q quit
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO / evidence / medium / 120x35                                                                               [22m
+   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  LOCAL INPUT F0.tgz@Unknown report_1cbc999c58216e4e1f7471b3
+  SYNTHETIC / HISTORICAL — checks not refreshed / incomplete / captured 2026-10-31T15:00:00Z
+  1 Overview  2 Findings  3 Files*  4 Source  5 AI  6 Coverage
+  ┌─[1m > Evidence / ev_5d18242396eafe25d802876a [22m───────────────────────────────────────────────────────────────────────┐
+  │ Side: artifact; requested artifact; method authored-rendering-test                                               │
+  │ Path: package/unsafe\u001b[2J\u202e.txt                                                                          │
+  │ Digest: sha256:5d3a236e6ad38ddc0e9f59335d36c817d31eefd35d896fbaba4df9d9654d3197; availability retained           │
+  │ Loading hash-checked bytes…                                                                                      │
+  │ SYNTHETIC rendering fixture                                                                                      │
+  │ Esc restores exact origin. Tab citation; s side; r raw record; p/b page.                                         │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+  Reading bounded, hash-checked evidence…
+  j/k scroll  Tab cite  s side  p/b page  Esc return  q quit
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO / evidence / medium / 120x35                                                                               [22m
+   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  LOCAL INPUT F0.tgz@Unknown report_1cbc999c58216e4e1f7471b3
+  SYNTHETIC / HISTORICAL — checks not refreshed / incomplete / captured 2026-10-31T15:00:00Z
+  1 Overview  2 Findings  3 Files*  4 Source  5 AI  6 Coverage
+  ┌─[1m > Evidence / ev_5d18242396eafe25d802876a [22m───────────────────────────────────────────────────────────────────────┐
+  │ Side: artifact; requested artifact; method authored-rendering-test                                               │
+  │ Path: package/unsafe\u001b[2J\u202e.txt                                                                          │
+  │ Digest: sha256:5d3a236e6ad38ddc0e9f59335d36c817d31eefd35d896fbaba4df9d9654d3197; availability retained           │
+  │ RAW base64: [0, 4) of recorded [0, 4); truncated false                                                           │
+  │ Member ev_5d18242396eafe25d802876a                                                                               │
+  │ Content sha256:5d3a236e6ad38ddc0e9f59335d36c817d31eefd35d896fbaba4df9d9654d3197                                  │
+  │ BASE64 bytes: AAH/Gw==                                                                                           │
+  │ SYNTHETIC rendering fixture                                                                                      │
+  │ Esc restores exact origin. Tab citation; s side; r raw record; p/b page.                                         │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+  Focus 0 / filter (none) / No universal safety verdict
+  j/k scroll  Tab cite  s side  p/b page  Esc return  q quit
+
+

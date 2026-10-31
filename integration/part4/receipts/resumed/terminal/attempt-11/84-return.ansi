@@ -1,0 +1,275 @@
+[?1049h[?25l[?25l  HEURISKO / report / narrow / 84x26
+   H Home    I Investigations     M Monitoring
+  LOCAL INPUT picocolors@1.1.1 report_7b46cdea60ae3108dd8c4b21
+  HISTORICAL — checks not refreshed / complete / captured 2026-10-31T21:48:41Z
+  1 Overview*  2 Findings  3 Files  4 Source  5 AI  6 Coverage
+  +- > Overview / list ----------------------------------------------------------+
+  | > Identity and outcomes                                                      |
+  |                                                                              |
+  |                                                                              |
+  |                                                                              |
+  |                                                                              |
+  |                                                                              |
+  |                                                                              |
+  |                                                                              |
+  |                                                                              |
+  |                                                                              |
+  |                                                                              |
+  |                                                                              |
+  |                                                                              |
+  |                                                                              |
+  +------------------------------------------------------------------------------+
+  Focus 0 / filter (none) / No universal safety verdict
+  j/k move  Enter inspect  e evidence  Tab focus  / filter  ? help  q quit
+
+
+[?25l[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  HEURISKO / report / narrow / 84x26
+   H Home    I Investigations     M Monitoring
+  LOCAL INPUT picocolors@1.1.1 report_7b46cdea60ae3108dd8c4b21
+  HISTORICAL — checks not refreshed / complete / captured 2026-10-31T21:48:41Z
+  1 Overview  2 Findings  3 Files  4 Source  5 AI  6 Coverage*
+  +- > Coverage / list ----------------------------------------------------------+
+  |                                                                              |
+  | > Measured coverage and stages                                               |
+  |                                                                              |
+  |                                                                              |
+  |                                                                              |
+  |                                                                              |
+  |                                                                              |
+  |                                                                              |
+  |                                                                              |
+  |                                                                              |
+  |                                                                              |
+  |                                                                              |
+  |                                                                              |
+  |                                                                              |
+  +------------------------------------------------------------------------------+
+  Focus 0 / filter (none) / No universal safety verdict
+  j/k move  Enter inspect  e evidence  Tab focus  / filter  ? help  q quit
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  HEURISKO / report / narrow / 84x26
+   H Home    I Investigations     M Monitoring
+  LOCAL INPUT picocolors@1.1.1 report_7b46cdea60ae3108dd8c4b21
+  HISTORICAL — checks not refreshed / complete / captured 2026-10-31T21:48:41Z
+  1 Overview*  2 Findings  3 Files  4 Source  5 AI  6 Coverage
+  +- > Overview / list ----------------------------------------------------------+
+  |                                                                              |
+  | > Identity and outcomes                                                      |
+  |                                                                              |
+  |                                                                              |
+  |                                                                              |
+  |                                                                              |
+  |                                                                              |
+  |                                                                              |
+  |                                                                              |
+  |                                                                              |
+  |                                                                              |
+  |                                                                              |
+  |                                                                              |
+  |                                                                              |
+  +------------------------------------------------------------------------------+
+  Per-report UI state reset; report unchanged.
+  j/k move  Enter inspect  e evidence  Tab focus  / filter  ? help  q quit
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  HEURISKO / report / narrow / 84x26
+   H Home    I Investigations     M Monitoring
+  LOCAL INPUT picocolors@1.1.1 report_7b46cdea60ae3108dd8c4b21
+  HISTORICAL — checks not refreshed / complete / captured 2026-10-31T21:48:41Z
+  1 Overview  2 Findings*  3 Files  4 Source  5 AI  6 Coverage
+  +- > Findings / list ----------------------------------------------------------+
+  |                                                                              |
+  | > Package lifecycle script entry changed                                     |
+  | File change remains unexplained                                              |
+  | File change remains unexplained                                              |
+  | File change remains unexplained                                              |
+  | File change remains unexplained                                              |
+  | File change remains unexplained                                              |
+  | File change remains unexplained                                              |
+  | File change remains unexplained                                              |
+  | File change remains unexplained                                              |
+  | File change remains unexplained                                              |
+  | File change remains unexplained                                              |
+  | File change remains unexplained                                              |
+  |                                                                              |
+  +------------------------------------------------------------------------------+
+  Focus 0 / filter (none) / priority:all severity:all confidence:all rule:all
+  j/k move  Enter inspect  e evidence  Tab focus  / filter  ? help  q quit
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  HEURISKO / report / narrow / 84x26
+   H Home    I Investigations     M Monitoring
+  LOCAL INPUT picocolors@1.1.1 report_7b46cdea60ae3108dd8c4b21
+  HISTORICAL — checks not refreshed / complete / captured 2026-10-31T21:48:41Z
+  1 Overview  2 Findings*  3 Files  4 Source  5 AI  6 Coverage
+  +- > Findings / list ----------------------------------------------------------+
+  |                                                                              |
+  | > Package lifecycle script entry changed                                     |
+  | File change remains unexplained                                              |
+  | File change remains unexplained                                              |
+  | File change remains unexplained                                              |
+  | File change remains unexplained                                              |
+  | File change remains unexplained                                              |
+  | File change remains unexplained                                              |
+  | File change remains unexplained                                              |
+  | File change remains unexplained                                              |
+  | File change remains unexplained                                              |
+  | File change remains unexplained                                              |
+  | File change remains unexplained                                              |
+  |                                                                              |
+  +------------------------------------------------------------------------------+
+  Focus 0 / filter (none) / priority:all severity:all confidence:all rule:all
+  Filter: |
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  HEURISKO / report / narrow / 84x26
+   H Home    I Investigations     M Monitoring
+  LOCAL INPUT picocolors@1.1.1 report_7b46cdea60ae3108dd8c4b21
+  HISTORICAL — checks not refreshed / complete / captured 2026-10-31T21:48:41Z
+  1 Overview  2 Findings*  3 Files  4 Source  5 AI  6 Coverage
+  +- > Findings / list ----------------------------------------------------------+
+  |                                                                              |
+  | > Package lifecycle script entry changed                                     |
+  |                                                                              |
+  |                                                                              |
+  |                                                                              |
+  |                                                                              |
+  |                                                                              |
+  |                                                                              |
+  |                                                                              |
+  |                                                                              |
+  |                                                                              |
+  |                                                                              |
+  |                                                                              |
+  |                                                                              |
+  +------------------------------------------------------------------------------+
+  Focus 0 / filter lifecycle / priority:all severity:all confidence:all rule:all
+  Filter: lifecycle|
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  HEURISKO / report / narrow / 84x26
+   H Home    I Investigations     M Monitoring
+  LOCAL INPUT picocolors@1.1.1 report_7b46cdea60ae3108dd8c4b21
+  HISTORICAL — checks not refreshed / complete / captured 2026-10-31T21:48:41Z
+  1 Overview  2 Findings*  3 Files  4 Source  5 AI  6 Coverage
+  +- > Findings / list ----------------------------------------------------------+
+  |                                                                              |
+  | > Package lifecycle script entry changed                                     |
+  |                                                                              |
+  |                                                                              |
+  |                                                                              |
+  |                                                                              |
+  |                                                                              |
+  |                                                                              |
+  |                                                                              |
+  |                                                                              |
+  |                                                                              |
+  |                                                                              |
+  |                                                                              |
+  |                                                                              |
+  +------------------------------------------------------------------------------+
+  Focus 0 / filter lifecycle / priority:all severity:all confidence:all rule:all
+  j/k move  Enter inspect  e evidence  Tab focus  / filter  ? help  q quit
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  HEURISKO / report / narrow / 84x26
+   H Home    I Investigations     M Monitoring
+  LOCAL INPUT picocolors@1.1.1 report_7b46cdea60ae3108dd8c4b21
+  HISTORICAL — checks not refreshed / complete / captured 2026-10-31T21:48:41Z
+  1 Overview  2 Findings*  3 Files  4 Source  5 AI  6 Coverage
+  +- > Findings / find_heurisko_manifest_lifecycle-script-change_chg_e945c3a7fa~-+
+  |                                                                              |
+  | Observation: Manifest key scripts.postinstall is reported as changed.        |
+  | Significance: Lifecycle entries can affect package-manager installation      |
+  | behavior; inspect the exact command and its source before deciding what it   |
+  | does. This observation does not establish malicious intent.                  |
+  | Severity: medium                                                             |
+  | Review priority: medium                                                      |
+  | Evidence confidence: high                                                    |
+  | Explanation strength: exact                                                  |
+  | Evidence: ev_8e5679afc3b6d3667eb09413                                        |
+  | Limitation: The evidence identifies the changed manifest key but does not    |
+  | retain the old and new command values.                                       |
+  | Next action: Review the retained old and new script values and their         |
+  |                                                                              |
+  +------------------------------------------------------------------------------+
+  Focus 0 / filter lifecycle / priority:all severity:all confidence:all rule:all
+  j/k move  Enter inspect  e evidence  Tab focus  / filter  ? help  q quit
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  HEURISKO / evidence / narrow / 84x26
+   H Home    I Investigations     M Monitoring
+  LOCAL INPUT picocolors@1.1.1 report_7b46cdea60ae3108dd8c4b21
+  HISTORICAL — checks not refreshed / complete / captured 2026-10-31T21:48:41Z
+  1 Overview  2 Findings*  3 Files  4 Source  5 AI  6 Coverage
+  +- > Evidence / ev_8e5679afc3b6d3667eb09413 -----------------------------------+
+  |                                                                              |
+  | Side: both; requested artifact; method strict-json-value-byte-spans-v1       |
+  | Path: package.json                                                           |
+  | Digest:                                                                      |
+  | sha256:4afa16baaedb6f645fd2dd33275661afe16974496f33c35765f25402ab3fe069;     |
+  | availability retained                                                        |
+  | Loading hash-checked bytes…                                                  |
+  | Esc restores exact origin. Tab citation; s side; r raw record; p/b page.     |
+  |                                                                              |
+  |                                                                              |
+  |                                                                              |
+  |                                                                              |
+  |                                                                              |
+  |                                                                              |
+  +------------------------------------------------------------------------------+
+  Reading bounded, hash-checked evidence…
+  j/k scroll  Tab cite  s side  p/b page  Esc return  q quit
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  HEURISKO / evidence / narrow / 84x26
+   H Home    I Investigations     M Monitoring
+  LOCAL INPUT picocolors@1.1.1 report_7b46cdea60ae3108dd8c4b21
+  HISTORICAL — checks not refreshed / complete / captured 2026-10-31T21:48:41Z
+  1 Overview  2 Findings*  3 Files  4 Source  5 AI  6 Coverage
+  +- > Evidence / ev_8e5679afc3b6d3667eb09413 -----------------------------------+
+  |                                                                              |
+  | Side: both; requested artifact; method strict-json-value-byte-spans-v1       |
+  | Path: package.json                                                           |
+  | Digest:                                                                      |
+  | sha256:4afa16baaedb6f645fd2dd33275661afe16974496f33c35765f25402ab3fe069;     |
+  | availability retained                                                        |
+  | RAW utf8: [585, 611) of recorded [585, 611); truncated false                 |
+  | Member ev_fac6fd5699ff0c83dd8be093                                           |
+  | Content                                                                      |
+  | sha256:f47239397b7822519c35144a37158b0ff4bb7eeddf325e8b518774ab6be02c61      |
+  | "HEURISKO_INERT_TEST_ONLY"                                                   |
+  | Esc restores exact origin. Tab citation; s side; r raw record; p/b page.     |
+  |                                                                              |
+  |                                                                              |
+  +------------------------------------------------------------------------------+
+  Focus 0 / filter lifecycle / No universal safety verdict
+  j/k scroll  Tab cite  s side  p/b page  Esc return  q quit
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  HEURISKO / report / narrow / 84x26
+   H Home    I Investigations     M Monitoring
+  LOCAL INPUT picocolors@1.1.1 report_7b46cdea60ae3108dd8c4b21
+  HISTORICAL — checks not refreshed / complete / captured 2026-10-31T21:48:41Z
+  1 Overview  2 Findings*  3 Files  4 Source  5 AI  6 Coverage
+  +- > Findings / find_heurisko_manifest_lifecycle-script-change_chg_e945c3a7fa~-+
+  |                                                                              |
+  | Observation: Manifest key scripts.postinstall is reported as changed.        |
+  | Significance: Lifecycle entries can affect package-manager installation      |
+  | behavior; inspect the exact command and its source before deciding what it   |
+  | does. This observation does not establish malicious intent.                  |
+  | Severity: medium                                                             |
+  | Review priority: medium                                                      |
+  | Evidence confidence: high                                                    |
+  | Explanation strength: exact                                                  |
+  | Evidence: ev_8e5679afc3b6d3667eb09413                                        |
+  | Limitation: The evidence identifies the changed manifest key but does not    |
+  | retain the old and new command values.                                       |
+  | Next action: Review the retained old and new script values and their         |
+  |                                                                              |
+  +------------------------------------------------------------------------------+
+  Focus 0 / filter lifecycle / priority:all severity:all confidence:all rule:all
+  j/k move  Enter inspect  e evidence  Tab focus  / filter  ? help  q quit
+
+

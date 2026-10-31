@@ -104,3 +104,25 @@ test('same package version with changed implementation or rule settings produces
   }
   assert.equal(canonicalJSON(first.outcomes),canonicalJSON(again.outcomes));
 });
+
+test('spool and both locks remain until delayed exact-job removal is acknowledged',async t=>{
+ const dir=await fs.mkdtemp(join(await fs.realpath(tmpdir()),'heurisko-authored-delayed-removal-'));
+ t.after(()=>fs.rm(dir,{recursive:true,force:true}));
+ const store=new EvidenceStore(join(dir,'store')),ref=await store.put(Buffer.from('authored inert input'));
+ let finishRemoval,entered;const removing=new Promise(r=>{entered=r;});
+ const d=driver({remove:key=>{assert.equal(key,id);entered();return new Promise(r=>{finishRemoval=r;});}});
+ const pending=inventoryArchive(store,ref,{parserJobDriver:d});await removing;
+ assert.equal((await fs.stat(join(store.root,'.parser-lock'))).isDirectory(),true);
+ assert.equal((await fs.stat(join(store.root,'.write-lock'))).isDirectory(),true);
+ const scratch=join(store.root,'scratch',(await fs.readdir(join(store.root,'scratch')))[0]);
+ assert.equal((await fs.stat(join(scratch,'job.json'))).isFile(),true);
+ await assert.rejects(store.put(Buffer.from('reuse forbidden during removal')),/STORE_BUSY_RECOVERY_REQUIRED/);
+ finishRemoval(true);await pending;
+ await assert.rejects(fs.stat(scratch),{code:'ENOENT'});
+ await store.put(Buffer.from('reuse only after acknowledged exact removal'));
+});
+test('late acknowledged creation after wall timeout never starts and awaits exact cleanup',async()=>{
+ let acknowledge;const d=driver({create:()=>new Promise(r=>{acknowledge=r;})});
+ const pending=runParserJob([],name,10,undefined,d);await new Promise(r=>setTimeout(r,30));acknowledge(id);
+ assert.deepEqual(await pending,{code:'PARSER_TIMEOUT',cleanupConfirmed:true});assert.deepEqual(d.calls,['remove:'+id]);
+});

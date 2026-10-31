@@ -1,0 +1,40 @@
+  HEURISKO   H Home    I Investigations     M Monitoring                                                                                    
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+  picocolors@1.1.1 / HISTORICAL / incomplete / Captured 2026-10-31T19:00:21Z                                                                
+  1 Overview   2 Findings   3 Files   4 Source   5 AI   6 Coverage                                                                          
+  Historical — online checks have not refreshed · i Identity                                                                                
+  Source                                                                                                                                    
+  [Candidates]  Provenance  Build                                                                                                           
+  ┌─ > Source records ──────── 1 ┐ ┌─ Source details ─────────────────────────────────────┐ ┌─ Supporting evidence ──────────────────────┐  
+  │ > Candidate 1 / 6f0a4638348e │ │ Repository:                                          │ │ Citations / Up–Down selects                │  
+  │   ambiguous                  │ │ https://github.com/alexeyraspopov/picocolors         │ │ > ev_54afcddd214a2726972248d7              │  
+  │                              │ │                                                      │ │ ev_304d5db73d37831377a22783                │  
+  │ 1 / 1 · Enter inspect        │ │ Commit:                                              │ │ ev_216c93daa444b869ec345a9b                │  
+  └──────────────────────────────┘ │ 6f0a4638348ed20633d623ee973f9c9a96f65104             │ │ ev_18c792a328cbd8d4d2f0cb3f                │  
+                                   │                                                      │ │ ev_2e14b499a02edfc5f8403706                │  
+                                   │ Subdirectory:                                        │ │ ev_a4390f0100c665fa0f521a21                │  
+                                   │                                                      │ │ ev_923052180287909e51ae0c4c                │  
+                                   │                                                      │ │                                            │  
+                                   │ Association:                                         │ │ ev_54afcddd214a2726972248d7                │  
+                                   │ ambiguous                                            │ │ EXTERNAL / source-claim-0-registry         │  
+                                   │                                                      │ │ Reading bounded, hash-checked bytes…       │  
+                                   │ Snapshot:                                            │ │                                            │  
+                                   │ sha256:87646ed7f9b372d94da80ec298ef4ec6fc0c2a56bb60e │ │                                            │  
+                                   │ 0b325a9705037408c7c                                  │ │ Method: separate-source-claim-v1           │  
+                                   │                                                      │ │ Availability: retained                     │  
+                                   │ Build context:                                       │ │ Verification: not_checked                  │  
+                                   │ sha256:6383b97048e27e8ab0a0cfeecce3bc80b06ebf1805280 │ │ Content digest:                            │  
+                                   │ 85638aacc6bd3ca0a04                                  │ │ sha256:a3b5010032eb48983c8868712449f1cc675 │  
+                                   │                                                      │ │ c4727eb8015b703388451572f44d7              │  
+                                   │ SOURCE CONFLICT:                                     │ │ Limitation: Unverified candidate claim;    │  
+                                   │ SOURCE_VERSION_LABEL_DIFFERS                         │ │ tag observations are time-bound.           │  
+                                   │                                                      │ │ 1-22 / 22                                  │  
+                                   │ n:                                                   │ └────────────────────────────────────────────┘  
+                                   │ new investigation with this target; historical       │                                                 
+                                   │ report stays immutable.                              │                                                 
+                                   │ 1-26 / 26                                            │                                                 
+                                   └──────────────────────────────────────────────────────┘                                                 
+  SOURCE CONFLICT / inspect source claims                                                                                                   
+  j/k move  Enter inspect  e evidence  Tab panes  / filter  ? help  q quit                                                                  
+                                                                                                                                            
+                                                                                                                                            

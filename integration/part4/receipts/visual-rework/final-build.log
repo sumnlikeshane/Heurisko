@@ -1,0 +1,5 @@
+Scope: 2 of 6 workspace projects
+packages/tui build$ tsc -p tsconfig.json
+packages/tui build: Done
+packages/cli build$ tsc -p tsconfig.json
+packages/cli build: Done

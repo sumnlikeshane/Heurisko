@@ -1,0 +1,94 @@
+{
+  "kind": "node-presentation-measurements-not-browser",
+  "node": "v22.23.4",
+  "platform": "darwin",
+  "arch": "arm64",
+  "docsBytes": 64097,
+  "docPages": 15,
+  "corpus": [
+    {
+      "name": "B1",
+      "reportBytes": 54508,
+      "evidence": 89,
+      "changes": 19,
+      "omissions": 0
+    },
+    {
+      "name": "B2",
+      "reportBytes": 196647,
+      "evidence": 308,
+      "changes": 143,
+      "omissions": 0
+    },
+    {
+      "name": "B3R",
+      "reportBytes": 591133,
+      "evidence": 762,
+      "changes": 31,
+      "omissions": 673
+    }
+  ],
+  "synthetic": {
+    "records": 19000,
+    "scope": "presentation projection only; not validated engine report, not product adoption"
+  },
+  "measurements": [
+    {
+      "name": "cross-document search source-archive",
+      "iterations": 100,
+      "medianMs": 0.23458399999999813,
+      "p95Ms": 0.4278750000000002,
+      "maxMs": 1.4864159999999984
+    },
+    {
+      "name": "B1 path browser all records",
+      "iterations": 30,
+      "medianMs": 0.01737500000000125,
+      "p95Ms": 0.03216700000000117,
+      "maxMs": 6.2636249999999905
+    },
+    {
+      "name": "B1 overview/source/coverage/findings/AI SSR",
+      "iterations": 5,
+      "medianMs": 4.724375000000009,
+      "p95Ms": 46.71333299999999,
+      "maxMs": 46.71333299999999
+    },
+    {
+      "name": "B2 path browser all records",
+      "iterations": 30,
+      "medianMs": 0.05791700000000333,
+      "p95Ms": 0.10095900000001734,
+      "maxMs": 0.4239169999999888
+    },
+    {
+      "name": "B2 overview/source/coverage/findings/AI SSR",
+      "iterations": 5,
+      "medianMs": 4.8130840000000035,
+      "p95Ms": 5.189041000000003,
+      "maxMs": 5.189041000000003
+    },
+    {
+      "name": "B3R path browser all records",
+      "iterations": 30,
+      "medianMs": 0.6447499999999877,
+      "p95Ms": 1.5787090000000035,
+      "maxMs": 1.653250000000014
+    },
+    {
+      "name": "B3R overview/source/coverage/findings/AI SSR",
+      "iterations": 5,
+      "medianMs": 16.938417000000015,
+      "p95Ms": 52.590125,
+      "maxMs": 52.590125
+    },
+    {
+      "name": "synthetic 19000-record path filter/sort (presentation only)",
+      "iterations": 30,
+      "medianMs": 3.1355409999999893,
+      "p95Ms": 7.097082999999998,
+      "maxMs": 10.413917000000026
+    }
+  ],
+  "targets": "No agreed latency target; reproducible observed timings only. Browser rendering, reflow and input latency unobserved."
+}

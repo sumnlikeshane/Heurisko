@@ -1,0 +1,26 @@
+  HEURISKO   H Home    I Investigations     M Monitoring                            
+  ────────────────────────────────────────────────────────────────────────────────  
+                                                                                    
+  ┌─ > New investigation ───────────────────────────────────────────────── 1 / 2 ┐  
+  │   Input (Ctrl+T)  npm   [ Local archive ]                                    │  
+  │                                                                              │  
+  │ Archive path  [editing]                                                      │  
+  │ >  ./package-1.2.3.tgz                                                       │  
+  │ Source repository                                                            │  
+  │   https://github.com/owner/repository                                        │  
+  │ Full commit                                                                  │  
+  │   40-character immutable commit                                              │  
+  │ Subdirectory                                                                 │  
+  │   Repository root if empty                                                   │  
+  │ Source archive (optional)                                                    │  
+  │   Optional retained source .tar.gz                                           │  
+  │ AI disabled / runtime unavailable · source selection is not provenance       │  
+  │  Load retained example                                                       │  
+  │  Review target                                                                  
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    

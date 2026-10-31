@@ -1,0 +1,155 @@
+{
+  "id": 41238407478,
+  "url": "https://github.com/sumnlikeshane/Heurisko/actions/runs/41238407478",
+  "status": "completed",
+  "conclusion": "success",
+  "headSha": "81346271f5a3789b4b43fd8f379014656011823d",
+  "jobs": [
+    {
+      "id": 124646938924,
+      "name": "Documentation integrity",
+      "status": "completed",
+      "conclusion": "success",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Check out repository",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Verify research snapshot checksums",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Check local Markdown links",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Check out repository",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success"
+        }
+      ]
+    },
+    {
+      "id": 124646939091,
+      "name": "Contracts and S1\u2013S3 producer checks",
+      "status": "completed",
+      "conclusion": "success",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Check out repository",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Set up Node",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Set up Python",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Install pinned contract tooling",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Typecheck contracts",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Validate contracts and synthetic handshake",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Test S1 runtime boundaries and cross-language identity",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Prepare digest-pinned static parser runtime",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Verify static parser resource boundary",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Test S2 archive, network, replay and CLI boundaries",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Test S3 exact npm, source candidates and provenance boundary",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Verify retained S3 corpus offline",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Test audit repairs and late parser creation",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Verify earlier audit replay as historical evidence",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Verify host-readable parser checkpoint replay",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Set up Python",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Set up Node",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Check out repository",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success"
+        }
+      ]
+    }
+  ]
+}

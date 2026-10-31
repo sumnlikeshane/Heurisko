@@ -1,0 +1,40 @@
+{
+  "scope": "actual keyboard; real historical source conflict and synthetic corrupt UI state; no model",
+  "checks": [
+    {
+      "check": "HISTORICAL",
+      "columns": 140,
+      "rows": 40,
+      "passed": true
+    },
+    {
+      "check": "SOURCE CONFLICT",
+      "columns": 140,
+      "rows": 40,
+      "passed": true
+    },
+    {
+      "check": "Source*",
+      "columns": 140,
+      "rows": 40,
+      "passed": true
+    },
+    {
+      "check": "SOURCE CONFLICT",
+      "columns": 140,
+      "rows": 40,
+      "passed": true
+    },
+    {
+      "check": "Provenance",
+      "columns": 140,
+      "rows": 40,
+      "passed": true
+    },
+    {
+      "check": "q exits application",
+      "passed": true,
+      "exitCode": 2
+    }
+  ]
+}

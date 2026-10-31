@@ -1,0 +1,48 @@
+{
+  "observedAt": "2026-10-31T22:00:27.624Z",
+  "packages": [
+    {
+      "url": "https://registry.npmjs.org/ink/6.3.1",
+      "name": "ink",
+      "version": "6.3.1",
+      "license": "MIT",
+      "engines": {
+        "node": ">=20"
+      },
+      "peerDependencies": {
+        "react": ">=19.0.0",
+        "@types/react": ">=19.0.0",
+        "react-devtools-core": "^6.1.2"
+      },
+      "distIntegrity": "sha512-3wGwITGrzL6rkWsi2gEKzgwdafGn4ZYd3u4oRp+sOPvfoxEHlnoB5Vnk9Uy5dMRUhDOqF3hqr4rLQ4lEzBc2sQ=="
+    },
+    {
+      "url": "https://registry.npmjs.org/react/19.1.8",
+      "name": "react",
+      "version": "19.1.8",
+      "license": "MIT",
+      "engines": {
+        "node": ">=0.10.0"
+      },
+      "distIntegrity": "sha512-XzY1Xytszq73B9T+4Q8VYfUX9qTz54+AoeZ+cSYNSVAzgz4gxFMZ8Ngk4RlmE9yVWpiZ3JAtQeHBLOK6ZfvOnw=="
+    },
+    {
+      "url": "https://registry.npmjs.org/string-width/7.2.0",
+      "name": "string-width",
+      "version": "7.2.0",
+      "license": "MIT",
+      "engines": {
+        "node": ">=18"
+      },
+      "distIntegrity": "sha512-tsaTIkKW9b4N+AEj+SVA+WhJzV7/zMhcSu78mLKWSk7cXMOSHsBKFWUs0fWwq8QyK3MgJBQRX6Gbi4kYbdvGkQ=="
+    },
+    {
+      "url": "https://registry.npmjs.org/%40types%2Freact/19.1.5",
+      "name": "@types/react",
+      "version": "19.1.5",
+      "license": "MIT",
+      "peerDependencies": {},
+      "distIntegrity": "sha512-piErsCVVbpMMT2r7wbawdZsq4xMvIAhQuac2gedQHysu1TZYEigE6pnFfgZT+/jQnrRuF5r+SHzuehFjfRjr4g=="
+    }
+  ]
+}

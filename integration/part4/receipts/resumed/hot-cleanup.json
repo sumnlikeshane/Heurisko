@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "observedAt": "2026-10-31T21:49:36.791Z",
+  "scope": "authored trusted development worker, no analyzed package execution",
+  "name": "heurisko-parser-bce6caa5-8e9d-4687-8914-c8ff6254c9b0",
+  "containerId": "e60a192cc58f25ba4c046d6cee0cbbb0f50f32a362908158989a628e898dd7a8",
+  "observedRunning": true,
+  "hotCancellation": true,
+  "result": {
+    "code": "CANCELLED",
+    "cleanupConfirmed": true
+  },
+  "exactIdAbsentBeforeStoreReuse": true,
+  "storeReusePassed": true,
+  "spoolRemovalAfterExactAbsence": true,
+  "limits": {
+    "cpuSeconds": 10,
+    "memoryBytes": 268435456,
+    "wallMs": 30000,
+    "concurrency": 1,
+    "queueDepth": 8,
+    "createTimeoutMs": 30000,
+    "controlTimeoutMs": 10000,
+    "outputFileMode": 420,
+    "privateJobMode": 448,
+    "runtime": "digest-pinned-linux-container",
+    "image": "python:3.13.18-slim-bookworm@sha256:281d39ff02e3b389401586134ff9e6572954687822a58055ec07a60ded4e0b7f",
+    "network": "none",
+    "rootFilesystem": "read-only",
+    "pids": 16,
+    "user": "65534:65534",
+    "noHostFallback": true
+  }
+}

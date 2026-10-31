@@ -1,0 +1,48 @@
+{
+  "recordedAt": "2026-10-31T21:43:02.463564+00:00",
+  "stage": "W0 before edits",
+  "source": {
+    "apps/web/build.mjs": "00ff3d8d98618d3d033aa0f086195521ace68ca29eb7a41b1bc2a9c9d17c6b45",
+    "apps/web/server/main.ts": "fc0cc7c6504b3bf7603ab4e2b00efd4c8120d93382aeae0a78cc91d4eb48c5c1",
+    "apps/web/server/observation.ts": "8642dd91aa066984334716f2cacf76426a835e0e6ed79fadaf79ab35bfdaee50",
+    "apps/web/server/service.ts": "2a385aa4f4f6b470dd69a521dd85f35e6886cfb0057dc3456053e5fde4cacc69",
+    "apps/web/server/workspace.ts": "89f490e4f39569faa5c18c0a022a780b1eda97fbea8857f07f3bcf5452540514",
+    "apps/web/src/api.ts": "bc274f61c7caa7f89aeff53339856dccb95dd6425696ba0d1f2651320bf4534d",
+    "apps/web/src/app.tsx": "83793ca0c9834e2d5b3f1744f035c7f382d57c6f18ff5cb2116664c1f155eed8",
+    "apps/web/src/docs.tsx": "712f23ef3e6749200f7b1ea61b9f55571a9e1ccc5b49be43ce9aace2380a7569",
+    "apps/web/src/home.tsx": "e21e3ba7a5cbe4cd200810fcda065e11d3977282f487777c0e75f235d9568863",
+    "apps/web/src/index.html": "049fc9f4a86def4e885129d92206e49619e26a350ba1a8d4de168b6bee84f18c",
+    "apps/web/src/investigate.tsx": "06a98e37ef37eaeffd901028318af12a0c91b81de0eecb0645dc53bb45c23adb",
+    "apps/web/src/main.tsx": "b22bb4f233928992187bd8e2998777bf84bce93a4d858a6cdf7b364176fe9469",
+    "apps/web/src/render-check.tsx": "4284e2fe87f19089afb483eb3899f22f8b19a522134aca22857acb2672426952",
+    "apps/web/src/style.css": "f5eab89b7071149e66fb199532ae6661bdf265e42fddf78bad89f83e48c78221",
+    "pnpm-lock.yaml": "973f7d8a6a178ad907093b29644d02b275ca6d4ca3ed9366515f8950a2da0815"
+  },
+  "gitStatus": "## docs/share-research-with-team...origin/docs/share-research-with-team\n M .github/workflows/ci.yml\n M .gitignore\n M AGENTS.md\n M README.md\n M \"docs/Approved Decision Register.md\"\n M docs/README.md\n M \"docs/Team Development Checklist.md\"\n M package.json\n M packages/contracts/tests/validate_contracts.py\n M pnpm-lock.yaml\n M pnpm-workspace.yaml\n M requirements-contracts.txt\n?? .nvmrc\n?? M0-files-d725b744.tar.gz\n?? M1-uncommitted.patch\n?? apps/\n?? \"docs/Audit Repairs and Malhar Handoff.md\"\n?? \"docs/CLI Reference.md\"\n?? docs/Design/\n?? docs/HANDOFF_LINUX_VALIDATION.json\n?? docs/HANDOFF_REMOTE_CI.json\n?? docs/HANDOFF_S1_S3.md\n?? docs/HANDOFF_VALIDATION.json\n?? \"docs/Part 4 Integration Readiness Report.md\"\n?? \"docs/Shane Implementation Plan.md\"\n?? docs/WEB_CONTINUATION.md\n?? \"docs/Web Application Benchmark Research Prompt.md\"\n?? \"docs/Web Application Gap Plan.md\"\n?? \"docs/Web Application Product Scope.md\"\n?? \"docs/Webapp Parallel Implementation Plan.md\"\n?? docs/_evidence/\n?? examples/\n?? integration/\n?? packages/cli/\n?? packages/contracts/runtime/\n?? packages/core/\n?? scripts/\n",
+  "indexSha256": "ded6dc3345f6b59918a6997fcfb0cbf57746df89cb0106ac4f02e8d49ef9e850",
+  "historicalValidation": {
+    "examples/web-investigation/validation.json": "dc33d58ffc69ddb8a7e1ceaf4f568206b641dbb8e846de142f0165514ff739a3",
+    "examples/web/current/validation.json": "6d2c9b47588242530e0ba3295b5f3682d44847534ba37933698f8b16430dd4b9"
+  },
+  "matrix": {
+    "retainedCorpus": [
+      "B1",
+      "B2",
+      "B3R",
+      "local-mutation"
+    ],
+    "checks": [
+      "workspace typecheck/build",
+      "full G0",
+      "web route/history/session/security tests",
+      "24 reader tests",
+      "four retained-case transport/CLI parity"
+    ],
+    "gui": [
+      "Home > Docs > Workspace > retained report > evidence",
+      "back/forward and native links",
+      "denied session and disconnect",
+      "viewport/zoom/keyboard still require actual observations"
+    ]
+  }
+}

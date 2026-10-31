@@ -1,0 +1,26 @@
+  HEURISKO   H Home    I Investigations     M Monitoring                            
+  ────────────────────────────────────────────────────────────────────────────────  
+  picocolors@1.1.1 / LOCAL INPUT / HISTORICAL / complete / Captured 2026-10-31T21…  
+  1 Overview   2 Findings   3 Files   4 Source   5 AI   6 Coverage                  
+  Historical — online checks have not refreshed · i Identity                        
+  ┌─ > Overview / Outcomes ───────────────────────────────────────────── 1-15/62 ┐  
+  │ ESTABLISHED OBSERVATION                                                      │  
+  │ Source and artifact differences are recorded. Review their evidence and the  │  
+  │ unresolved scope.                                                            │  
+  │                                                                              │  
+  │ INDEPENDENT OUTCOMES                                                         │  
+  │ Artifact integrity      Not checked                                          │  
+  │ Source association      User selected                                        │  
+  │ Provenance              Not checked                                          │  
+  │ Correspondence          Unexplained                                          │  
+  │ Analysis completeness   Complete scope                                       │  
+  │ Policy result           Not evaluated                                        │  
+  │                                                                              │  
+  │ PRIORITY FINDINGS                                                            │  
+  │ > Package lifecycle script entry changed                                     │  
+  │ Priority medium / Severity medium                                            │  
+  └──────────────────────────────────────────────────────────────────────────────┘  
+  Overview                                                                          
+  Tab focus  Enter inspect  1-6 sections  i identity  ? help  q quit                
+                                                                                    
+                                                                                    

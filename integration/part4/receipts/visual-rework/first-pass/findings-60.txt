@@ -1,0 +1,20 @@
+  HEURISKO                                                  
+   H Home    I Investigations     M Monitoring              
+  ────────────────────────────────────────────────────────  
+  picocolors@1.1.1 / LOCAL INPUT / HISTORICAL / complete …  
+  1 Ov  2 Find  3 Files  4 Src  5 AI  6 Scope               
+  Historical — online checks have not refreshed · i Ident…  
+  Findings                                                  
+  priority: all / severity: all / confidence: all / rule:…  
+  ┌─ > Findings ───────────────────────────────────── 16 ┐  
+  │ > Package lifecycle script entry changed             │  
+  │   medium priority / high confidence                  │  
+  │                                                      │  
+  │ 1 / 16 · Enter inspect                               │  
+  └──────────────────────────────────────────────────────┘  
+                                                            
+                                                            
+  Findings                                                  
+  j/k move  Enter inspect  e evidence  Tab panes  q quit    
+                                                            
+                                                            

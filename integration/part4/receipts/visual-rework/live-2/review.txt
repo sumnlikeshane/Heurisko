@@ -1,0 +1,40 @@
+  HEURISKO   H Home    I Investigations     M Monitoring                                                                                                        
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+                                                                                                                                                                
+                                  ┌─ > Review exact target ─────────────────────────────────────────────────────────── 2 / 2 ┐                                  
+                                  │ Archive                                                                                  │                                  
+                                  │ <workspace>/.heurisko/tui-visual-live-fe31e908- │                                  
+                                  │ f472-46f9-8725-a3a6821af135-input.tgz                                                    │                                  
+                                  │ ! Source selection is a comparison target; release binding is not proven.                │                                  
+                                  │ Source        https://github.com/alexeyraspopov/picocolors                               │                                  
+                                  │ Commit        6f0a4638348ed20633d623ee973f9c9a96f65104                                   │                                  
+                                  │ Subdirectory  (root)                                                                     │                                  
+                                  │ SHA-256       sha256:bcdd003ee749b70575fb2793d3892a393d1224457ecb8ca9c37ff4cfd55e098d    │                                  
+                                  │ Local snapshot retained; Start uses the reviewed bytes.                                  │                                  
+                                  │ Source bytes  sha256:87646ed7f9b372d94da80ec298ef4ec6fc0c2a56bb60e0b325a9705037408c7c /  │                                  
+                                  │ user asserted                                                                            │                                  
+                                  │ 1-11 / 14 · Enter Start · Esc edit                                                       │                                  
+                                  │  > Start investigation                                                                   │                                  
+                                  └──────────────────────────────────────────────────────────────────────────────────────────┘                                  
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+  review                                                                                                                                                        
+  Enter Start  j/k scroll  Esc edit  q quit                                                                                                                     
+                                                                                                                                                                
+                                                                                                                                                                

@@ -1,0 +1,40 @@
+  HEURISKO / review / wide / 160x40                                                                                                                             
+   H Home    I Investigations     M Monitoring                                                                                                                  
+  Exact artifact / immutable source evidence. Design v1.0.0-rc.1 provisional.                                                                                   
+  AI runtime unavailable; no monitoring/export configured.                                                                                                      
+  <workspace>/.heurisko/part4-tty-39e81cda-0e49-433c-bb82-07be8585ffe0                                                 
+  ┌─ > Review exact target — Enter Start / Esc edit ─────────────────────────────────────────────────────────────────────────────────────────────────────────┐  
+  │ Input: local                                                                                                                                             │  
+  │ <workspace>/examples/s2/current/inputs/picocolors-1.1.1.local-inert-mutation.tgz                                │  
+  │ Artifact digest: sha256:bcdd003ee749b70575fb2793d3892a393d1224457ecb8ca9c37ff4cfd55e098d                                                                 │  
+  │ Source: https://github.com/alexeyraspopov/picocolors                                                                                                     │  
+  │ Commit: 6f0a4638348ed20633d623ee973f9c9a96f65104                                                                                                         │  
+  │ Subdirectory: (root)                                                                                                                                     │  
+  │ Association: user-supplied target or unresolved publisher assertion; not proof.                                                                          │  
+  │ Configuration: raw-static-s4-v1; AI disabled / runtime unavailable.                                                                                      │  
+  │ Provenance not checked. No verifier, rebuild, model, monitor or export.                                                                                  │  
+  │ Start retrieves exact-version bytes and preserves observed identity; registry changes remain possible.                                                   │  
+  │                                                                                                                                                          │  
+  │                                                                                                                                                          │  
+  │                                                                                                                                                          │  
+  │                                                                                                                                                          │  
+  │                                                                                                                                                          │  
+  │                                                                                                                                                          │  
+  │                                                                                                                                                          │  
+  │                                                                                                                                                          │  
+  │                                                                                                                                                          │  
+  │                                                                                                                                                          │  
+  │                                                                                                                                                          │  
+  │                                                                                                                                                          │  
+  │                                                                                                                                                          │  
+  │                                                                                                                                                          │  
+  │                                                                                                                                                          │  
+  │                                                                                                                                                          │  
+  │                                                                                                                                                          │  
+  │                                                                                                                                                          │  
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘  
+  Focus 0 / filter (none) / No universal safety verdict                                                                                                         
+  j/k move  Enter inspect  e evidence  Tab focus  / filter  ? help  q quit                                                                                      
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                

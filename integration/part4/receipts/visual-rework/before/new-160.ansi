@@ -1,0 +1,78 @@
+[?1049h[?25l[?25l  [1mHEURISKO / home / wide / 160x40                                                                                                                             [22m
+   [4m[1mH Home   [22m[24m I Investigations     M Monitoring
+  Exact artifact / immutable source evidence. Design v1.0.0-rc.1 provisional.
+  AI runtime unavailable; no monitoring/export configured.
+  <workspace>/.heurisko
+  ┌─[1m > Home [22m─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Enter / n New investigation; o Open saved report; I Recent observations; M Monitoring                                                                    │
+  │ Monitoring unconfigured. Durable failed-job index unavailable.                                                                                           │
+  │ No indexed reports in selected store. Open an explicit report path.                                                                                      │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+  Focus 0 / filter (none) / No universal safety verdict
+  j/k move  Enter inspect  e evidence  Tab focus  / filter  ? help  q quit
+
+
+[?25l[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO / new / wide / 160x40                                                                                                                              [22m
+   [4m[1mH Home   [22m[24m I Investigations     M Monitoring
+  Exact artifact / immutable source evidence. Design v1.0.0-rc.1 provisional.
+  AI runtime unavailable; no monitoring/export configured.
+  <workspace>/.heurisko
+  ┌─[1m > New investigation / npm [22m──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Ctrl+T type; Tab field; Enter validates → Review.                                                                                                        │
+  │ AI disabled; current inference runtime unavailable.                                                                                                      │
+  │ > Package name: |                                                                                                                                        │
+  │ Exact version:                                                                                                                                           │
+  │ Source repository:                                                                                                                                       │
+  │ Full commit:                                                                                                                                             │
+  │ Subdirectory:                                                                                                                                            │
+  │ Chosen source is not verified release provenance.                                                                                                        │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+  Focus 0 / filter (none) / No universal safety verdict
+  Type fields  Tab next  Ctrl+T type  Enter review  Esc back
+
+

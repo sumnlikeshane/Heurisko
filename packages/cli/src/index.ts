@@ -1,10 +1,13 @@
 #!/usr/bin/env node
 import { resolve } from 'node:path';
+import {ReportReader} from '../../../integration/part4/dist/report-reader.js';
 import type { InvestigationReport, ArtifactInput } from '@heurisko/contracts';
 import { EvidenceStore, boundedFile, canonicalJSON, decodeReport, encodeReport, exitCode, investigate, terminalText, writeImmutable, npmCoordinates } from '@heurisko/core';
 
 const help=`Heurisko local evidence 0.1.0
 Usage:
+  heurisko                         Open TUI when stdin/stdout are terminals
+  heurisko tui REPORT [--store DIR] [--no-color] [--ascii] [--palette]
   heurisko analyze npm:NAME@EXACT_VERSION [options]
   heurisko analyze --artifact FILE --source https://github.com/OWNER/REPO --commit FULL_SHA [options]
   heurisko inspect REPORT_FILE_OR_SHA256 [--evidence ev_ID] [--store DIR] [--json]
@@ -20,7 +23,7 @@ Options:
   --no-ai --no-color     Disable AI / use inert uncolored output
 Exact public npm releases and local tar/tar.gz use the same static producer.
 Provenance is not checked: no admitted verifier. No target code is executed.
-No command opens the TUI until Part 4. No model or monitor yet.
+No model, monitor or TUI export yet. Saved reports remain historical.
 Exit: 0 completed checks; 1 configured violation; 2 incomplete; 3 no usable report.
 `;
 function summary(r:InvestigationReport):string {
@@ -28,16 +31,23 @@ function summary(r:InvestigationReport):string {
   return terminalText(`${r.reportId}\nArtifact: ${r.bundle.artifact.artifactFilename} ${r.bundle.artifact.observedSha256}\nCaptured: ${r.bundle.artifact.captureTime} (retained observation; no fresh registry/revocation check)\nSource: ${r.outcomes.sourceAssociation}; provenance: ${r.outcomes.provenancePolicy}\nCorrespondence: ${r.outcomes.correspondence}; analysis: ${r.outcomes.analysisCompleteness}; policy: ${r.outcomes.policyResult}\nFiles: ${[...counts].map(([k,v])=>`${k}=${v}`).join(', ')}; raw coverage ${r.bundle.coverage.complete?'complete':'incomplete'}\nAI: ${r.analysis.aiState.status}; findings: ${r.analysis.findings.length}\n${[...r.bundle.limitations,...r.analysis.limitations].join('\n')}\n`);
 }
 const valueFlags=new Set(['artifact','source','commit','subdirectory','source-archive','name','version','store','report','bundle','policy','evidence']);
-const booleanFlags=new Set(['json','no-ai','no-color']);
+const booleanFlags=new Set(['json','no-ai','no-color','ascii','palette']);
 async function main():Promise<void> {
-  const args=process.argv.slice(2);if(!args.length || (args.length===1&&args[0]==='--help')){process.stdout.write(help);return;}
-  const command=args.shift();if(command!=='analyze'&&command!=='inspect')throw new Error('INVOCATION_INVALID');
+  const args=process.argv.slice(2);if(!args.length){if(process.stdin.isTTY&&process.stdout.isTTY){await (await import('@heurisko/tui')).launchTui({storeRoot:resolve('.heurisko')});}else process.stdout.write(help);return;}if(args.length===1&&args[0]==='--help'){process.stdout.write(help);return;}
+  if(args[0]?.startsWith('--')){let root=resolve('.heurisko'),ascii=false,noColor=false,palette=false;const seen=new Set<string>();while(args.length){const flag=args.shift()!;if(seen.has(flag))throw Error('DUPLICATE_OPTION');seen.add(flag);if(flag==='--store'){const value=args.shift();if(!value||value.startsWith('--'))throw Error('OPTION_VALUE_REQUIRED');root=resolve(value);}else if(flag==='--ascii')ascii=true;else if(flag==='--no-color')noColor=true;else if(flag==='--palette')palette=true;else throw Error('UNKNOWN_OPTION');}if(process.stdin.isTTY&&process.stdout.isTTY)await(await import('@heurisko/tui')).launchTui({storeRoot:root,ascii,noColor,palette});else process.stdout.write(help);return;}
+  const command=args.shift();if(command!=='analyze'&&command!=='inspect'&&command!=='tui')throw new Error('INVOCATION_INVALID');
   const flags=new Map<string,string|true>();const positional:string[]=[];
   while(args.length){const arg=args.shift()!;if(!arg.startsWith('--')){positional.push(arg);continue;}const name=arg.slice(2);if(flags.has(name))throw new Error('DUPLICATE_OPTION');if(booleanFlags.has(name))flags.set(name,true);else if(valueFlags.has(name)){const value=args.shift();if(!value||value.startsWith('--'))throw new Error('OPTION_VALUE_REQUIRED');flags.set(name,value);}else throw new Error('UNKNOWN_OPTION');}
   const get=(name:string)=>flags.get(name) as string|undefined;
-  const permitted=command==='analyze'?new Set([...valueFlags].filter(x=>x!=='evidence')):new Set(['store','evidence']);
+  const permitted=command==='analyze'?new Set([...valueFlags].filter(x=>x!=='evidence')):command==='tui'?new Set(['store']):new Set(['store','evidence']);
+  if(command!=='tui'&&(flags.has('ascii')||flags.has('palette')))throw Error('OPTION_NOT_APPLICABLE');
+  if(command==='tui'&&(flags.has('json')||flags.has('no-ai')))throw Error('OPTION_NOT_APPLICABLE');
   for(const name of flags.keys())if(!booleanFlags.has(name)&&!permitted.has(name))throw new Error('OPTION_NOT_APPLICABLE');
-  const store=new EvidenceStore(get('store')?resolve(get('store')!):undefined);const controller=new AbortController();
+  const store=new EvidenceStore(get('store')?resolve(get('store')!):undefined);
+  if(command==='tui'){if(positional.length!==1)throw Error('INVOCATION_INVALID');const target=positional[0]!;const reader=target.startsWith('sha256:')?await ReportReader.openJSON((await store.get(target,8*1024*1024)).toString('utf8'),store.root):await ReportReader.openFile(resolve(target),store.root);
+    if(!process.stdin.isTTY||!process.stdout.isTTY){process.stdout.write(summary(structuredClone(reader.report) as InvestigationReport));process.exitCode=exitCode(reader.report);return;}
+    process.exitCode=exitCode(reader.report);await(await import('@heurisko/tui')).launchTui({storeRoot:store.root,reader,noColor:flags.has('no-color'),ascii:flags.has('ascii'),palette:flags.has('palette')});return;}
+  const controller=new AbortController();
   const cancel=()=>controller.abort();process.once('SIGINT',cancel);process.once('SIGTERM',cancel);
   try {
     let report:InvestigationReport;

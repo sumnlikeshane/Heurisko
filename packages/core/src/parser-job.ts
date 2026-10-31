@@ -19,8 +19,12 @@ export const dockerParserDriver:ParserJobDriver={
   },
   async kill(id){await command(['kill',id]).catch(()=>{});},
   async remove(id) {
-    try {await command(['rm','-f',id]);return true;}
-    catch(error) {return error instanceof Error&&'stderr' in error&&String(error.stderr).includes(`No such container: ${id}`);}
+    try {await command(['rm','-f',id]);}
+    catch(error) {if(!(error instanceof Error&&'stderr' in error&&String(error.stderr).includes(`No such container: ${id}`)))return false;}
+    // Do not release spool/store locks from the attach client's exit or a
+    // removal attempt alone. Confirm absence of the acknowledged immutable ID.
+    try {await command(['inspect',id]);return false;}
+    catch(error) {return error instanceof Error&&'stderr' in error&&String(error.stderr).includes(`No such object: ${id}`);}
   },
 };
 function environment(){return {PATH:process.env.PATH,HOME:process.env.HOME,LANG:'C.UTF-8'};}

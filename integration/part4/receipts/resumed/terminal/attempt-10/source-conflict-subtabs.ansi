@@ -1,0 +1,312 @@
+[?1049h[?25l[?25l  [1mHEURISKO / report / wide / 140x40                                                                                                       [22m
+   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  npm picocolors@1.1.1 report_b74d0497f7fcf6c05930a9c2
+  HISTORICAL — checks not refreshed / incomplete / captured 2026-10-31T19:00:21Z
+  1 Overview*  2 Findings  3 Files  4 Source  5 AI  6 Coverage
+  ┌─[1m > Overview [22m─────────────────────────┐ ┌─[1m Overview detail [22m────────────────────────────────────────┐ ┌─[1m Supporting evidence [22m──────────┐
+  │ > Identity and outcomes              │ │ Differences recorded; inspect raw evidence.              │ │ > ev_7a90e64a072096f956233446  │
+  │                                      │ │ Report report_b74d0497f7fcf6c05930a9c2                   │ │                                │
+  │                                      │ │ Content                                                  │ │                                │
+  │                                      │ │ sha256:2ddd237e2aba592d6901317a935d38495e0d58f7b207200f3 │ │                                │
+  │                                      │ │ 69a85a8855ba4da                                          │ │                                │
+  │                                      │ │ Artifact picocolors-1.1.1.tgz                            │ │                                │
+  │                                      │ │ SHA-256                                                  │ │                                │
+  │                                      │ │ sha256:d3aedb2807967b7eb37fd11b03b7e3701e725af79c650d081 │ │                                │
+  │                                      │ │ 2ff7213f8f882d9                                          │ │                                │
+  │                                      │ │ Captured 2026-10-31T19:00:21Z                            │ │                                │
+  │                                      │ │ Created 2026-10-31T20:16:35Z                             │ │                                │
+  │                                      │ │ Configuration                                            │ │                                │
+  │                                      │ │ e3f113b259f05172b0e46a7bcc2b3e90b17d2363bc51641cb414e3e3 │ │                                │
+  │                                      │ │ 87b476c8                                                 │ │                                │
+  │                                      │ │ artifactIntegrity: matched                               │ │                                │
+  │                                      │ │ sourceAssociation: ambiguous                             │ │                                │
+  │                                      │ │ provenancePolicy: not_checked                            │ │                                │
+  │                                      │ │ correspondence: unresolved                               │ │                                │
+  │                                      │ │ analysisCompleteness: incomplete                         │ │                                │
+  │                                      │ │ policyResult: indeterminate                              │ │                                │
+  │                                      │ │ SOURCE CONFLICT — inspect candidate claims in Source.    │ │                                │
+  │                                      │ │ Findings evaluation: not_evaluated_or_partial;           │ │                                │
+  │                                      │ │ examined-scope count: Unknown                            │ │                                │
+  │                                      │ │ Recorded findings: 0 (not a safety assessment)           │ │                                │
+  │                                      │ │ AI: disabled; Analysis module unavailable                │ │                                │
+  │                                      │ │ Static raw comparison only; generated/build/security     │ │                                │
+  │                                      │ │ interpretation is unavailable without Malhar analysis.   │ │                                │
+  │                                      │ │ Registry/manifest/tag source claims are candidates, not  │ │                                │
+  └──────────────────────────────────────┘ └──────────────────────────────────────────────────────────┘ └────────────────────────────────┘
+  SOURCE CONFLICT — inspect candidate claims / Candidates
+  j/k move  Enter inspect  e evidence  Tab focus  / filter  ? help  q quit
+
+
+[?25l[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO / report / wide / 140x40                                                                                                       [22m
+   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  npm picocolors@1.1.1 report_b74d0497f7fcf6c05930a9c2
+  HISTORICAL — checks not refreshed / incomplete / captured 2026-10-31T19:00:21Z
+  1 Overview  2 Findings  3 Files  4 Source*  5 AI  6 Coverage
+  ┌─[1m > Source / Build [22m───────────────────┐ ┌─[1m Source / Build detail [22m──────────────────────────────────┐ ┌─[1m Supporting evidence [22m──────────┐
+  │   No build records; reproduction un… │ │ No build records; reproduction unavailable.              │ │ No citations recorded          │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  └──────────────────────────────────────┘ └──────────────────────────────────────────────────────────┘ └────────────────────────────────┘
+  SOURCE CONFLICT — inspect candidate claims / Build
+  j/k move  Enter inspect  e evidence  Tab focus  / filter  ? help  q quit
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO / report / wide / 140x40                                                                                                       [22m
+   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  npm picocolors@1.1.1 report_b74d0497f7fcf6c05930a9c2
+  HISTORICAL — checks not refreshed / incomplete / captured 2026-10-31T19:00:21Z
+  1 Overview*  2 Findings  3 Files  4 Source  5 AI  6 Coverage
+  ┌─[1m > Overview [22m─────────────────────────┐ ┌─[1m Overview detail [22m────────────────────────────────────────┐ ┌─[1m Supporting evidence [22m──────────┐
+  │ > Identity and outcomes              │ │ Differences recorded; inspect raw evidence.              │ │ > ev_7a90e64a072096f956233446  │
+  │                                      │ │ Report report_b74d0497f7fcf6c05930a9c2                   │ │                                │
+  │                                      │ │ Content                                                  │ │                                │
+  │                                      │ │ sha256:2ddd237e2aba592d6901317a935d38495e0d58f7b207200f3 │ │                                │
+  │                                      │ │ 69a85a8855ba4da                                          │ │                                │
+  │                                      │ │ Artifact picocolors-1.1.1.tgz                            │ │                                │
+  │                                      │ │ SHA-256                                                  │ │                                │
+  │                                      │ │ sha256:d3aedb2807967b7eb37fd11b03b7e3701e725af79c650d081 │ │                                │
+  │                                      │ │ 2ff7213f8f882d9                                          │ │                                │
+  │                                      │ │ Captured 2026-10-31T19:00:21Z                            │ │                                │
+  │                                      │ │ Created 2026-10-31T20:16:35Z                             │ │                                │
+  │                                      │ │ Configuration                                            │ │                                │
+  │                                      │ │ e3f113b259f05172b0e46a7bcc2b3e90b17d2363bc51641cb414e3e3 │ │                                │
+  │                                      │ │ 87b476c8                                                 │ │                                │
+  │                                      │ │ artifactIntegrity: matched                               │ │                                │
+  │                                      │ │ sourceAssociation: ambiguous                             │ │                                │
+  │                                      │ │ provenancePolicy: not_checked                            │ │                                │
+  │                                      │ │ correspondence: unresolved                               │ │                                │
+  │                                      │ │ analysisCompleteness: incomplete                         │ │                                │
+  │                                      │ │ policyResult: indeterminate                              │ │                                │
+  │                                      │ │ SOURCE CONFLICT — inspect candidate claims in Source.    │ │                                │
+  │                                      │ │ Findings evaluation: not_evaluated_or_partial;           │ │                                │
+  │                                      │ │ examined-scope count: Unknown                            │ │                                │
+  │                                      │ │ Recorded findings: 0 (not a safety assessment)           │ │                                │
+  │                                      │ │ AI: disabled; Analysis module unavailable                │ │                                │
+  │                                      │ │ Static raw comparison only; generated/build/security     │ │                                │
+  │                                      │ │ interpretation is unavailable without Malhar analysis.   │ │                                │
+  │                                      │ │ Registry/manifest/tag source claims are candidates, not  │ │                                │
+  └──────────────────────────────────────┘ └──────────────────────────────────────────────────────────┘ └────────────────────────────────┘
+  Per-report UI state reset; report unchanged.
+  j/k move  Enter inspect  e evidence  Tab focus  / filter  ? help  q quit
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO / report / wide / 140x40                                                                                                       [22m
+   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  npm picocolors@1.1.1 report_b74d0497f7fcf6c05930a9c2
+  HISTORICAL — checks not refreshed / incomplete / captured 2026-10-31T19:00:21Z
+  1 Overview*  2 Findings  3 Files  4 Source  5 AI  6 Coverage
+  ┌─[1m > Overview [22m─────────────────────────┐ ┌─[1m Overview detail [22m────────────────────────────────────────┐ ┌─[1m Supporting evidence [22m──────────┐
+  │ > Identity and outcomes              │ │ Differences recorded; inspect raw evidence.              │ │ > ev_7a90e64a072096f956233446  │
+  │                                      │ │ Report report_b74d0497f7fcf6c05930a9c2                   │ │                                │
+  │                                      │ │ Content                                                  │ │                                │
+  │                                      │ │ sha256:2ddd237e2aba592d6901317a935d38495e0d58f7b207200f3 │ │                                │
+  │                                      │ │ 69a85a8855ba4da                                          │ │                                │
+  │                                      │ │ Artifact picocolors-1.1.1.tgz                            │ │                                │
+  │                                      │ │ SHA-256                                                  │ │                                │
+  │                                      │ │ sha256:d3aedb2807967b7eb37fd11b03b7e3701e725af79c650d081 │ │                                │
+  │                                      │ │ 2ff7213f8f882d9                                          │ │                                │
+  │                                      │ │ Captured 2026-10-31T19:00:21Z                            │ │                                │
+  │                                      │ │ Created 2026-10-31T20:16:35Z                             │ │                                │
+  │                                      │ │ Configuration                                            │ │                                │
+  │                                      │ │ e3f113b259f05172b0e46a7bcc2b3e90b17d2363bc51641cb414e3e3 │ │                                │
+  │                                      │ │ 87b476c8                                                 │ │                                │
+  │                                      │ │ artifactIntegrity: matched                               │ │                                │
+  │                                      │ │ sourceAssociation: ambiguous                             │ │                                │
+  │                                      │ │ provenancePolicy: not_checked                            │ │                                │
+  │                                      │ │ correspondence: unresolved                               │ │                                │
+  │                                      │ │ analysisCompleteness: incomplete                         │ │                                │
+  │                                      │ │ policyResult: indeterminate                              │ │                                │
+  │                                      │ │ SOURCE CONFLICT — inspect candidate claims in Source.    │ │                                │
+  │                                      │ │ Findings evaluation: not_evaluated_or_partial;           │ │                                │
+  │                                      │ │ examined-scope count: Unknown                            │ │                                │
+  │                                      │ │ Recorded findings: 0 (not a safety assessment)           │ │                                │
+  │                                      │ │ AI: disabled; Analysis module unavailable                │ │                                │
+  │                                      │ │ Static raw comparison only; generated/build/security     │ │                                │
+  │                                      │ │ interpretation is unavailable without Malhar analysis.   │ │                                │
+  │                                      │ │ Registry/manifest/tag source claims are candidates, not  │ │                                │
+  └──────────────────────────────────────┘ └──────────────────────────────────────────────────────────┘ └────────────────────────────────┘
+  SOURCE CONFLICT — inspect candidate claims / Candidates
+  j/k move  Enter inspect  e evidence  Tab focus  / filter  ? help  q quit
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO / report / wide / 140x40                                                                                                       [22m
+   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  npm picocolors@1.1.1 report_b74d0497f7fcf6c05930a9c2
+  HISTORICAL — checks not refreshed / incomplete / captured 2026-10-31T19:00:21Z
+  1 Overview  2 Findings  3 Files  4 Source*  5 AI  6 Coverage
+  ┌─[1m > Source / Candidates [22m──────────────┐ ┌─[1m Source / Candidates detail [22m─────────────────────────────┐ ┌─[1m Supporting evidence [22m──────────┐
+  │ > ambiguous https://github.com/alex… │ │ Repository: https://github.com/alexeyraspopov/picocolors │ │ > ev_54afcddd214a2726972248d7  │
+  │                                      │ │ Commit: 6f0a4638348ed20633d623ee973f9c9a96f65104         │ │ ev_304d5db73d37831377a22783    │
+  │                                      │ │ Subdirectory:                                            │ │ ev_216c93daa444b869ec345a9b    │
+  │                                      │ │ Association: ambiguous                                   │ │ ev_18c792a328cbd8d4d2f0cb3f    │
+  │                                      │ │ Snapshot:                                                │ │ ev_2e14b499a02edfc5f8403706    │
+  │                                      │ │ sha256:87646ed7f9b372d94da80ec298ef4ec6fc0c2a56bb60e0b32 │ │ ev_a4390f0100c665fa0f521a21    │
+  │                                      │ │ 5a9705037408c7c                                          │ │ ev_923052180287909e51ae0c4c    │
+  │                                      │ │ Build context:                                           │ │                                │
+  │                                      │ │ sha256:6383b97048e27e8ab0a0cfeecce3bc80b06ebf18052808563 │ │                                │
+  │                                      │ │ 8aacc6bd3ca0a04                                          │ │                                │
+  │                                      │ │ SOURCE CONFLICT: SOURCE_VERSION_LABEL_DIFFERS            │ │                                │
+  │                                      │ │ n: new investigation with this target; historical report │ │                                │
+  │                                      │ │ stays immutable.                                         │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  └──────────────────────────────────────┘ └──────────────────────────────────────────────────────────┘ └────────────────────────────────┘
+  SOURCE CONFLICT — inspect candidate claims / Candidates
+  j/k move  Enter inspect  e evidence  Tab focus  / filter  ? help  q quit
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO / report / wide / 140x40                                                                                                       [22m
+   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  npm picocolors@1.1.1 report_b74d0497f7fcf6c05930a9c2
+  HISTORICAL — checks not refreshed / incomplete / captured 2026-10-31T19:00:21Z
+  1 Overview  2 Findings  3 Files  4 Source*  5 AI  6 Coverage
+  ┌─[1m > Source / Provenance [22m──────────────┐ ┌─[1m Source / Provenance detail [22m─────────────────────────────┐ ┌─[1m Supporting evidence [22m──────────┐
+  │ > Provenance: not_checked            │ │ Status: not_checked                                      │ │ > ev_173e12b48a026ffe6c4ba75f  │
+  │                                      │ │ Artifact binding: not_checked                            │ │                                │
+  │                                      │ │ Policy: Not configured                                   │ │                                │
+  │                                      │ │ No admitted operational verifier, trusted root or        │ │                                │
+  │                                      │ │ expected signer/issuer/source/builder policy. Retrieved  │ │                                │
+  │                                      │ │ material is unverified; no cryptographic or              │ │                                │
+  │                                      │ │ publish/build assertion is accepted.                     │ │                                │
+  │                                      │ │ NO_ATTESTATION_ADVERTISED_VERIFIER_UNAVAILABLE           │ │                                │
+  │                                      │ │ Cryptographic validity and policy acceptance are         │ │                                │
+  │                                      │ │ separate.                                                │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  └──────────────────────────────────────┘ └──────────────────────────────────────────────────────────┘ └────────────────────────────────┘
+  SOURCE CONFLICT — inspect candidate claims / Provenance
+  j/k move  Enter inspect  e evidence  Tab focus  / filter  ? help  q quit
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO / report / wide / 140x40                                                                                                       [22m
+   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  npm picocolors@1.1.1 report_b74d0497f7fcf6c05930a9c2
+  HISTORICAL — checks not refreshed / incomplete / captured 2026-10-31T19:00:21Z
+  1 Overview  2 Findings  3 Files  4 Source*  5 AI  6 Coverage
+  ┌─[1m > Source / Build [22m───────────────────┐ ┌─[1m Source / Build detail [22m──────────────────────────────────┐ ┌─[1m Supporting evidence [22m──────────┐
+  │   No build records; reproduction un… │ │ No build records; reproduction unavailable.              │ │ No citations recorded          │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  └──────────────────────────────────────┘ └──────────────────────────────────────────────────────────┘ └────────────────────────────────┘
+  SOURCE CONFLICT — inspect candidate claims / Build
+  j/k move  Enter inspect  e evidence  Tab focus  / filter  ? help  q quit
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO / report / wide / 140x40                                                                                                       [22m
+   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  npm picocolors@1.1.1 report_b74d0497f7fcf6c05930a9c2
+  HISTORICAL — checks not refreshed / incomplete / captured 2026-10-31T19:00:21Z
+  1 Overview  2 Findings  3 Files  4 Source*  5 AI  6 Coverage
+  ┌─[1m > Source / Candidates [22m──────────────┐ ┌─[1m Source / Candidates detail [22m─────────────────────────────┐ ┌─[1m Supporting evidence [22m──────────┐
+  │ > ambiguous https://github.com/alex… │ │ Repository: https://github.com/alexeyraspopov/picocolors │ │ > ev_54afcddd214a2726972248d7  │
+  │                                      │ │ Commit: 6f0a4638348ed20633d623ee973f9c9a96f65104         │ │ ev_304d5db73d37831377a22783    │
+  │                                      │ │ Subdirectory:                                            │ │ ev_216c93daa444b869ec345a9b    │
+  │                                      │ │ Association: ambiguous                                   │ │ ev_18c792a328cbd8d4d2f0cb3f    │
+  │                                      │ │ Snapshot:                                                │ │ ev_2e14b499a02edfc5f8403706    │
+  │                                      │ │ sha256:87646ed7f9b372d94da80ec298ef4ec6fc0c2a56bb60e0b32 │ │ ev_a4390f0100c665fa0f521a21    │
+  │                                      │ │ 5a9705037408c7c                                          │ │ ev_923052180287909e51ae0c4c    │
+  │                                      │ │ Build context:                                           │ │                                │
+  │                                      │ │ sha256:6383b97048e27e8ab0a0cfeecce3bc80b06ebf18052808563 │ │                                │
+  │                                      │ │ 8aacc6bd3ca0a04                                          │ │                                │
+  │                                      │ │ SOURCE CONFLICT: SOURCE_VERSION_LABEL_DIFFERS            │ │                                │
+  │                                      │ │ n: new investigation with this target; historical report │ │                                │
+  │                                      │ │ stays immutable.                                         │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  │                                      │ │                                                          │ │                                │
+  └──────────────────────────────────────┘ └──────────────────────────────────────────────────────────┘ └────────────────────────────────┘
+  SOURCE CONFLICT — inspect candidate claims / Candidates
+  j/k move  Enter inspect  e evidence  Tab focus  / filter  ? help  q quit
+
+

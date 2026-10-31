@@ -1,0 +1,175 @@
+[?1049h[?25l[?25l  HEURISKO / home / medium / 100x26
+   H Home    I Investigations     M Monitoring
+  Exact artifact / immutable source evidence. Design v1.0.0-rc.1 provisional.
+  AI runtime unavailable; no monitoring/export configured.
+  <workspace>/.heurisko
+  +- > Home -------------------------------------------------------------------------------------+
+  | Enter / n New investigation; o Open saved report; I Recent observations; M Monitoring        |
+  | Monitoring unconfigured. Durable failed-job index unavailable.                               |
+  | No indexed reports in selected store. Open an explicit report path.                          |
+  |                                                                                              |
+  |                                                                                              |
+  |                                                                                              |
+  |                                                                                              |
+  |                                                                                              |
+  |                                                                                              |
+  |                                                                                              |
+  |                                                                                              |
+  |                                                                                              |
+  |                                                                                              |
+  |                                                                                              |
+  +----------------------------------------------------------------------------------------------+
+  Focus 0 / filter (none) / No universal safety verdict
+  j/k move  Enter inspect  e evidence  Tab focus  / filter  ? help  q quit
+
+
+[?25l[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  HEURISKO / home / medium / 100x26
+   H Home    I Investigations     M Monitoring
+  Exact artifact / immutable source evidence. Design v1.0.0-rc.1 provisional.
+  AI runtime unavailable; no monitoring/export configured.
+  <workspace>/.heurisko
+  +- > Home -------------------------------------------------------------------------------------+
+  |                                                                                              |
+  | Enter / n New investigation; o Open saved report; I Recent observations; M Monitoring        |
+  | Monitoring unconfigured. Durable failed-job index unavailable.                               |
+  | No indexed reports in selected store. Open an explicit report path.                          |
+  |                                                                                              |
+  |                                                                                              |
+  |                                                                                              |
+  |                                                                                              |
+  |                                                                                              |
+  |                                                                                              |
+  |                                                                                              |
+  |                                                                                              |
+  |                                                                                              |
+  |                                                                                              |
+  +----------------------------------------------------------------------------------------------+
+  Focus 0 / filter (none) / No universal safety verdict
+  j/k move  Enter inspect  e evidence  Tab focus  / filter  ? help  q quit
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  HEURISKO / new / medium / 100x26
+   H Home    I Investigations     M Monitoring
+  Exact artifact / immutable source evidence. Design v1.0.0-rc.1 provisional.
+  AI runtime unavailable; no monitoring/export configured.
+  <workspace>/.heurisko
+  +- > New investigation / npm ------------------------------------------------------------------+
+  |                                                                                              |
+  | Ctrl+T type; Tab field; Enter validates → Review.                                            |
+  | AI disabled; current inference runtime unavailable.                                          |
+  | > Package name: |                                                                            |
+  | Exact version:                                                                               |
+  | Source repository:                                                                           |
+  | Full commit:                                                                                 |
+  | Subdirectory:                                                                                |
+  | Chosen source is not verified release provenance.                                            |
+  |                                                                                              |
+  |                                                                                              |
+  |                                                                                              |
+  |                                                                                              |
+  |                                                                                              |
+  +----------------------------------------------------------------------------------------------+
+  Focus 0 / filter (none) / No universal safety verdict
+  Type fields  Tab next  Ctrl+T type  Enter review  Esc back
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  HEURISKO / new / medium / 100x26
+   H Home    I Investigations     M Monitoring
+  Exact artifact / immutable source evidence. Design v1.0.0-rc.1 provisional.
+  AI runtime unavailable; no monitoring/export configured.
+  <workspace>/.heurisko
+  +- > New investigation / npm ------------------------------------------------------------------+
+  |                                                                                              |
+  | Ctrl+T type; Tab field; Enter validates → Review.                                            |
+  | AI disabled; current inference runtime unavailable.                                          |
+  | > Package name: @scope/name|                                                                 |
+  | Exact version:                                                                               |
+  | Source repository:                                                                           |
+  | Full commit:                                                                                 |
+  | Subdirectory:                                                                                |
+  | Chosen source is not verified release provenance.                                            |
+  |                                                                                              |
+  |                                                                                              |
+  |                                                                                              |
+  |                                                                                              |
+  |                                                                                              |
+  +----------------------------------------------------------------------------------------------+
+  Focus 0 / filter (none) / No universal safety verdict
+  Type fields  Tab next  Ctrl+T type  Enter review  Esc back
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  HEURISKO / new / medium / 100x26
+   H Home    I Investigations     M Monitoring
+  Exact artifact / immutable source evidence. Design v1.0.0-rc.1 provisional.
+  AI runtime unavailable; no monitoring/export configured.
+  <workspace>/.heurisko
+  +- > New investigation / npm ------------------------------------------------------------------+
+  |                                                                                              |
+  | Ctrl+T type; Tab field; Enter validates → Review.                                            |
+  | AI disabled; current inference runtime unavailable.                                          |
+  | Package name: @scope/name                                                                    |
+  | > Exact version: |                                                                           |
+  | Source repository:                                                                           |
+  | Full commit:                                                                                 |
+  | Subdirectory:                                                                                |
+  | Chosen source is not verified release provenance.                                            |
+  |                                                                                              |
+  |                                                                                              |
+  |                                                                                              |
+  |                                                                                              |
+  |                                                                                              |
+  +----------------------------------------------------------------------------------------------+
+  Focus 0 / filter (none) / No universal safety verdict
+  Type fields  Tab next  Ctrl+T type  Enter review  Esc back
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  HEURISKO / new / medium / 100x26
+   H Home    I Investigations     M Monitoring
+  Exact artifact / immutable source evidence. Design v1.0.0-rc.1 provisional.
+  AI runtime unavailable; no monitoring/export configured.
+  <workspace>/.heurisko
+  +- > New investigation / npm ------------------------------------------------------------------+
+  |                                                                                              |
+  | Ctrl+T type; Tab field; Enter validates → Review.                                            |
+  | AI disabled; current inference runtime unavailable.                                          |
+  | Package name: @scope/name                                                                    |
+  | > Exact version: 1.2.3-beta.1|                                                               |
+  | Source repository:                                                                           |
+  | Full commit:                                                                                 |
+  | Subdirectory:                                                                                |
+  | Chosen source is not verified release provenance.                                            |
+  |                                                                                              |
+  |                                                                                              |
+  |                                                                                              |
+  |                                                                                              |
+  |                                                                                              |
+  +----------------------------------------------------------------------------------------------+
+  Focus 0 / filter (none) / No universal safety verdict
+  Type fields  Tab next  Ctrl+T type  Enter review  Esc back
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  HEURISKO / review / medium / 100x26
+   H Home    I Investigations     M Monitoring
+  Exact artifact / immutable source evidence. Design v1.0.0-rc.1 provisional.
+  AI runtime unavailable; no monitoring/export configured.
+  <workspace>/.heurisko
+  +- > Review exact target — Enter Start / Esc edit ---------------------------------------------+
+  |                                                                                              |
+  | Input: npm                                                                                   |
+  | @scope/name@1.2.3-beta.1                                                                     |
+  | Artifact digest: Unknown until acquisition; no bytes resolved yet                            |
+  | Source: Unknown — resolve candidates during investigation                                    |
+  | Commit: Unknown                                                                              |
+  | Subdirectory: (root)                                                                         |
+  | Association: user-supplied target or unresolved publisher assertion; not proof.              |
+  | Configuration: raw-static-s4-v1; AI disabled / runtime unavailable.                          |
+  | Provenance not checked. No verifier, rebuild, model, monitor or export.                      |
+  | Start retrieves exact-version bytes and preserves observed identity; registry changes remain |
+  | possible.                                                                                    |
+  |                                                                                              |
+  |                                                                                              |
+  +----------------------------------------------------------------------------------------------+
+  Focus 0 / filter (none) / No universal safety verdict
+  j/k move  Enter inspect  e evidence  Tab focus  / filter  ? help  q quit
+
+

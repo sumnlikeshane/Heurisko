@@ -1,0 +1,29 @@
+{
+  "name": "@heurisko/tui",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "test": "node --test tests/*.test.mjs"
+  },
+  "dependencies": {
+    "@heurisko/contracts": "workspace:*",
+    "@heurisko/core": "workspace:*",
+    "react": "19.1.8",
+    "ink": "6.3.1",
+    "string-width": "7.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "19.1.5"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  }
+}

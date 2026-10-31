@@ -1,0 +1,263 @@
+{
+  "scope": "actual product PTY, no model; macOS arm64",
+  "checks": [
+    {
+      "check": "HISTORICAL",
+      "columns": 160,
+      "rows": 40,
+      "passed": true
+    },
+    {
+      "check": "Findings",
+      "columns": 160,
+      "rows": 40,
+      "passed": true
+    },
+    {
+      "check": "lifecycle",
+      "columns": 160,
+      "rows": 40,
+      "passed": true
+    },
+    {
+      "check": "Observation:",
+      "columns": 160,
+      "rows": 40,
+      "passed": true
+    },
+    {
+      "check": "RAW utf8",
+      "columns": 160,
+      "rows": 40,
+      "passed": true
+    },
+    {
+      "check": "Observation:",
+      "columns": 160,
+      "rows": 40,
+      "passed": true
+    },
+    {
+      "check": "filter lifecycle",
+      "columns": 160,
+      "rows": 40,
+      "passed": true
+    },
+    {
+      "check": "Provenance",
+      "columns": 160,
+      "rows": 40,
+      "passed": true
+    },
+    {
+      "check": "Build",
+      "columns": 160,
+      "rows": 40,
+      "passed": true
+    },
+    {
+      "check": "AI",
+      "columns": 160,
+      "rows": 40,
+      "passed": true
+    },
+    {
+      "check": "runtime unavailable",
+      "columns": 160,
+      "rows": 40,
+      "passed": true
+    },
+    {
+      "check": "Coverage",
+      "columns": 160,
+      "rows": 40,
+      "passed": true
+    },
+    {
+      "check": "HISTORICAL",
+      "columns": 120,
+      "rows": 35,
+      "passed": true
+    },
+    {
+      "check": "Findings",
+      "columns": 120,
+      "rows": 35,
+      "passed": true
+    },
+    {
+      "check": "lifecycle",
+      "columns": 120,
+      "rows": 35,
+      "passed": true
+    },
+    {
+      "check": "Observation:",
+      "columns": 120,
+      "rows": 35,
+      "passed": true
+    },
+    {
+      "check": "RAW utf8",
+      "columns": 120,
+      "rows": 35,
+      "passed": true
+    },
+    {
+      "check": "Observation:",
+      "columns": 120,
+      "rows": 35,
+      "passed": true
+    },
+    {
+      "check": "filter lifecycle",
+      "columns": 120,
+      "rows": 35,
+      "passed": true
+    },
+    {
+      "check": "Provenance",
+      "columns": 120,
+      "rows": 35,
+      "passed": true
+    },
+    {
+      "check": "Build",
+      "columns": 120,
+      "rows": 35,
+      "passed": true
+    },
+    {
+      "check": "AI",
+      "columns": 120,
+      "rows": 35,
+      "passed": true
+    },
+    {
+      "check": "runtime unavailable",
+      "columns": 120,
+      "rows": 35,
+      "passed": true
+    },
+    {
+      "check": "Coverage",
+      "columns": 120,
+      "rows": 35,
+      "passed": true
+    },
+    {
+      "check": "HISTORICAL",
+      "columns": 84,
+      "rows": 26,
+      "passed": true
+    },
+    {
+      "check": "Findings",
+      "columns": 84,
+      "rows": 26,
+      "passed": true
+    },
+    {
+      "check": "lifecycle",
+      "columns": 84,
+      "rows": 26,
+      "passed": true
+    },
+    {
+      "check": "Observation:",
+      "columns": 84,
+      "rows": 26,
+      "passed": true
+    },
+    {
+      "check": "RAW utf8",
+      "columns": 84,
+      "rows": 26,
+      "passed": true
+    },
+    {
+      "check": "Observation:",
+      "columns": 84,
+      "rows": 26,
+      "passed": true
+    },
+    {
+      "check": "filter lifecycle",
+      "columns": 84,
+      "rows": 26,
+      "passed": true
+    },
+    {
+      "check": "Provenance",
+      "columns": 84,
+      "rows": 26,
+      "passed": true
+    },
+    {
+      "check": "Build",
+      "columns": 84,
+      "rows": 26,
+      "passed": true
+    },
+    {
+      "check": "AI",
+      "columns": 84,
+      "rows": 26,
+      "passed": true
+    },
+    {
+      "check": "runtime unavailable",
+      "columns": 84,
+      "rows": 26,
+      "passed": true
+    },
+    {
+      "check": "Coverage",
+      "columns": 84,
+      "rows": 26,
+      "passed": true
+    },
+    {
+      "check": "HISTORICAL",
+      "columns": 60,
+      "rows": 20,
+      "passed": true
+    },
+    {
+      "check": "Findings",
+      "columns": 60,
+      "rows": 20,
+      "passed": true
+    },
+    {
+      "check": "lifecycle",
+      "columns": 60,
+      "rows": 20,
+      "passed": true
+    },
+    {
+      "check": "Observation:",
+      "columns": 60,
+      "rows": 20,
+      "passed": true
+    },
+    {
+      "check": "RAW utf8",
+      "columns": 60,
+      "rows": 20,
+      "passed": true
+    },
+    {
+      "check": "Observation:",
+      "columns": 60,
+      "rows": 20,
+      "passed": true
+    },
+    {
+      "check": "filter lifecycle",
+      "columns": 60,
+      "rows": 20,
+      "passed": true
+    }
+  ]
+}

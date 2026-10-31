@@ -14,6 +14,8 @@
 
 > **How to use this document.** Treat **Approved rule** sections as confirmed. Treat checkboxes as **work to perform and verify**, not completed work. Treat explicitly marked **Open decision** items as unfrozen implementation choices. A sample command or interface is a proposed contract shape unless the document says it is already approved. This repository exists; product implementation and remote CI remain unverified.
 
+**Local browser checkpoint, 1 November:** Shane authorized beginning the [parallel web plan](Webapp%20Parallel%20Implementation%20Plan.md), keeping its UI like the terminal CLI. [Usage](../apps/web/README.md) and [actual validation receipt](../examples/web/current/README.md) now cover saved report/evidence navigation and portable reopen. Browser QA and joint TUI/integrated findings/AI parity remain open; checklist gates are not closed by this local implementation.
+
 ## 0. Decision authority and source-of-truth order
 
 All six planning phases are approved:
@@ -243,7 +245,13 @@ The order below consolidates the approved requirements into a **recommended engi
 
 ## 6. Joint — shared React browser, evidence semantics and integration
 
-**Browser purpose:** a readable evidence explorer, not a second analyzer. It can open locally saved/exported reports without mandatory account or hosted execution. Optional hosted processing requires later security/operational approval.
+**Current scope clarification, 1 November 2026:** Shane explicitly requires complete CLI documentation and end-to-end browser investigation with parity for supported CLI capabilities. Use the [full web scope/parity map](Web%20Application%20Product%20Scope.md), [CLI reference](CLI%20Reference.md) and [fresh continuation handoff](WEB_CONTINUATION.md). The existing saved-report viewer is a historical first slice; its open acceptance checks are distinct from the broader missing functionality. No gate is closed by this documentation reconciliation.
+
+**Browser purpose:** initiate supported investigations through the shared engine and inspect the same report/evidence, with complete CLI documentation and local/exported replay. Core use remains account-free and local-first. Optional hosted processing requires later security/operational approval. Exact screens/job/file-access mechanisms remain proposed until reviewed and implemented.
+
+- [ ] Provide complete browser-accessible CLI setup/reference/workflows/options/exits/troubleshooting and honest availability labels; repository reference now exists, current in-app Help remains limited.
+- [ ] Add exact npm and local archive browser input, source/options review, real shared-engine invocation, progress/failure/cancel-request handling and result navigation with equivalent supported CLI behavior.
+- [ ] Provide scoped dynamic reopen and report/bundle/evidence export/import; preserve immutable bytes, omissions/notices and local filesystem boundaries.
 
 - [ ] Agree on and version the shared `InvestigationReport` schema and minimum report reader/writer compatibility rules.
 - [ ] Build report import/open, exact target/source summary, provenance/context, file trees, cross-file correspondence, difference viewer, finding detail, AI interpretation/abstention and coverage/error views.

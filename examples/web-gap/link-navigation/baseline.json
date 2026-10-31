@@ -1,0 +1,13 @@
+{
+  "apps/web/src/app.tsx": "6e799019e1c00b90334b48e675cd53374da90f096cde5644a08ba8477f2cc712",
+  "apps/web/src/navigation.ts": "bbe179843dc620e0d6ac8e09bb010c3fb56e665962655793369addf5bd010976",
+  "apps/web/src/docs.tsx": "f89f045def067665844336629cd78095f3618320bd2bb9898b93e00059d3d0c5",
+  "apps/web/src/home.tsx": "7bb72b58aa7e7b15fce5c3d48c2a9865dfcaa990553ca73df492df88bb723e9d",
+  "apps/web/src/investigate.tsx": "499725e7595898b2b81db4148a9542f0bd0a565f2a67d883997c3044ccab4486",
+  "apps/web/build.mjs": "9b7836f4f35fbaeae7c1dbb7e2b796418c891d8f30baeb69f244dee47720d264",
+  "apps/web/src/api.ts": "a160d6ddc21b690544b3cd31941e13abcb4a39b0a59c70c7571cd32d2495a5f0",
+  "package.json": "03ca266344ff39490314e6ab912af2f3acab8935e57f3decf3fed24dea4593f8",
+  "pnpm-lock.yaml": "7b304d2abf2987264821998ddf490e501ec65fac81af28888b51793a32daeedb",
+  ".git/index": "ded6dc3345f6b59918a6997fcfb0cbf57746df89cb0106ac4f02e8d49ef9e850",
+  "examples/web-gap/w2-w5/validation.json": "a32430ec51c6c141c65400593a4978aa77dd7b4304c24e57117ad535b020713b"
+}

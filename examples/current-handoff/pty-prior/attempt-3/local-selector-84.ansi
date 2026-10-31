@@ -1,0 +1,119 @@
+[?1049h[?25l[?25l  [1mHEURISKO[22m   [4m[1mH Home   [22m[24m I Investigations     M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────
+  ┌─[1m > Home [22m──────────────────────────────────────────────────────────────── 1/4 ┐
+  │                                                                              │
+  │ [1m > New investigation      [22m                                                   │
+  │ npm package / local archive                                                  │
+  │                                                                              │
+  │ Recent investigations   0 indexed                                            │
+  │ Needs attention         0 incomplete                                         │
+  │ Monitoring              Not configured                                       │
+  │                                                                              │
+  │                                                                              │
+  │                                                                              │
+  └──────────────────────────────────────────────────────────────────────────────┘
+
+
+
+
+
+
+
+
+  New investigation
+  [1mEnter[22m new  [1mTab[22m panels  [1mo[22m open  [1m?[22m help  [1mq[22m quit
+
+[?25l[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m   [4m[1mH Home   [22m[24m I Investigations     M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────
+
+  ┌─[1m > New investigation [22m───────────────────────────────────────────────── 1 / 2 ┐
+  │   Input (Ctrl+T)  [1m[ npm ][22m   [1mLocal archive[22m                                    │
+  │                                                                              │
+  │ [1mPackage name  [editing]                                                     [22m │
+  │ >  @scope/package                                                            │
+  │ Exact version                                                                │
+  │   1.2.3                                                                      │
+  │ Source repository (optional override)                                        │
+  │   https://github.com/owner/repository                                        │
+  │ Full commit                                                                  │
+  │   40-character immutable commit                                              │
+  │ Subdirectory                                                                 │
+  │   Repository root if empty                                                   │
+  │ AI disabled / runtime unavailable · source selection is not provenance       │
+  │ [1m Load retained example                                                      [22m │
+  │ [1m Review target                                                              [22m │
+  │                                                                              │
+  └──────────────────────────────────────────────────────────────────────────────┘
+
+  New investigation / npm
+  [1mType[22m to edit  [1mTab[22m next  [1mCtrl+T[22m type  [1mEnter[22m review  [1mEsc[22m back
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m   [4m[1mH Home   [22m[24m I Investigations     M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────
+
+  ┌─[1m > New investigation [22m───────────────────────────────────────────────── 1 / 2 ┐
+  │ > Input (Ctrl+T)  [1m[ npm ][22m   [1mLocal archive[22m                                    │
+  │                                                                              │
+  │ Package name                                                                 │
+  │   @scope/package                                                             │
+  │ Exact version                                                                │
+  │   1.2.3                                                                      │
+  │ Source repository (optional override)                                        │
+  │   https://github.com/owner/repository                                        │
+  │ Full commit                                                                  │
+  │   40-character immutable commit                                              │
+  │ Subdirectory                                                                 │
+  │   Repository root if empty                                                   │
+  │ AI disabled / runtime unavailable · source selection is not provenance       │
+  │ [1m Load retained example                                                      [22m │
+  │ [1m Review target                                                              [22m │
+  │                                                                              │
+  └──────────────────────────────────────────────────────────────────────────────┘
+
+  New investigation / npm
+  [1mLeft/Right[22m input  [1mTab[22m fields  [1mEnter[22m edit  [1mEsc[22m back  [1mq[22m quit
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m   [4m[1mH Home   [22m[24m I Investigations     M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────
+
+  ┌─[1m > New investigation [22m───────────────────────────────────────────────── 1 / 2 ┐
+  │ > Input (Ctrl+T)  [1mnpm[22m   [1m[ Local archive ][22m                                    │
+  │                                                                              │
+  │ Archive path                                                                 │
+  │   ./package-1.2.3.tgz                                                        │
+  │ Source repository                                                            │
+  │   https://github.com/owner/repository                                        │
+  │ Full commit                                                                  │
+  │   40-character immutable commit                                              │
+  │ Subdirectory                                                                 │
+  │   Repository root if empty                                                   │
+  │ Source archive (optional)                                                    │
+  │   Optional retained source .tar.gz                                           │
+  │ AI disabled / runtime unavailable · source selection is not provenance       │
+  │ [1m Load retained example                                                      [22m │
+  │ [1m Review target                                                              [22m │
+  │                                                                              │
+  └──────────────────────────────────────────────────────────────────────────────┘
+
+  New investigation / Local archive
+  [1mLeft/Right[22m input  [1mTab[22m fields  [1mEnter[22m edit  [1mEsc[22m back  [1mq[22m quit
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m   [4m[1mH Home   [22m[24m I Investigations     M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────
+
+  ┌─[1m > New investigation [22m───────────────────────────────────────────────── 1 / 2 ┐
+  │   Input (Ctrl+T)  [1mnpm[22m   [1m[ Local archive ][22m                                    │
+  │                                                                              │
+  │ [1mArchive path  [editing]                                                     [22m │
+  │ >  ./package-1.2.3.tgz                                                       │
+  │ Source repository                                                            │
+  │   https://github.com/owner/repository                                        │
+  │ Full commit                                                                  │
+  │   40-character immutable commit                                              │
+  │ Subdirectory                                                                 │
+  │   Repository root if empty                                                   │
+  │ Source archive (optional)                                                    │
+  │   Optional retained source .tar.gz                                           │
+  │ AI disabled / runtime unavailable · source selection is not provenance       │
+  │ [1m Load retained example                                                      [22m │
+  │ [1m Review target                    

@@ -1,0 +1,35 @@
+  HEURISKO / report / medium / 120x35                                                                                   
+   H Home    I Investigations     M Monitoring                                                                          
+  npm zod@4.6.7 report_53ce205b689a18c8845dba65                                                                         
+  HISTORICAL — checks not refreshed / incomplete / captured 2026-10-31T19:01:10Z                                        
+  1 Overview  2 Findings  3 Files*  4 Source  5 AI  6 Coverage                                                          
+  ┌─ > Files ─────────────────┐ ┌─ Files detail ────────────────────────────────────────────────────────────────────┐   
+  │   unresolved zod-b500a2e… │ │ Change chg_175db6a162eda071598ad95b                                               │   
+  │   unresolved zod-b500a2e… │ │ Artifact path: Not recorded                                                       │   
+  │ > unresolved zod-b500a2e… │ │ Source path:                                                                      │   
+  │   unresolved package/LIC… │ │ zod-b500a2ee95134f81d74da7911d7378dd2853d042/.claude/skills/triage/scripts/reinde │   
+  │   unresolved package/REA… │ │ x.mjs                                                                             │   
+  │   unresolved package/com… │ │ Status: unresolved                                                                │   
+  │   unresolved package/com… │ │ Raw equality: unknown                                                             │   
+  │   unresolved package/com… │ │ Explanation strength: unexplained                                                 │   
+  │   unresolved package/com… │ │ Missing member cannot establish absence in an incomplete inventory.               │   
+  │   unresolved package/ind… │ │ Raw evidence: e opens exact recorded byte spans; s changes side.                  │   
+  │   unresolved package/ind… │ │ Normalized view unavailable — no transform was performed.                         │   
+  │   unresolved package/ind… │ │ RAW CHANGED SPANS (independent byte windows; no line-alignment claim)             │   
+  │   unresolved package/ind… │ │ SOURCE                                                                            │   
+  │   unresolved package/loc… │ │ [0,3694) truncated=false                                                          │   
+  │   unresolved package/loc… │ │ #!/usr/bin/env -S nub --node                                                      │   
+  │   unresolved package/loc… │ │ // Regenerate .triage/<kind>/index.md from the YAML frontmatter of every          │   
+  │   unresolved package/loc… │ │ results.md.                                                                       │   
+  │   unresolved package/loc… │ │ // usage: nub --node .claude/skills/triage/scripts/reindex.mjs                    │   
+  │   unresolved package/min… │ │ [issues|prs|advisories]                                                           │   
+  │   unresolved package/min… │ │ import { readdirSync, readFileSync, writeFileSync, existsSync } from "node:fs";   │   
+  │   unresolved package/min… │ │ import { join } from "node:path";                                                 │   
+  │   unresolved package/min… │ │ import { execFileSync } from "node:child_process";                                │   
+  │   unresolved package/min… │ │                                                                                   │   
+  └───────────────────────────┘ └───────────────────────────────────────────────────────────────────────────────────┘   
+  Focus 0 / filter (none) / Raw auto; flat                                                                              
+  j/k move  Enter inspect  e evidence  Tab focus  / filter  ? help  q quit                                              
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        

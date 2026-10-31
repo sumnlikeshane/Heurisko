@@ -1,0 +1,189 @@
+{
+  "version": "heurisko-web-continuation-validation-v1",
+  "recordedAt": "2026-10-31T21:28:52.775531+00:00",
+  "timezone": "Asia/Kolkata",
+  "node": "v22.23.4",
+  "pnpm": "10.14.0",
+  "productModels": [],
+  "codingAssistance": "Codex",
+  "typecheck": "passed workspace build + all typechecks",
+  "contracts": "passed full schema/semantics + synthetic handshakes",
+  "checks": [
+    {
+      "name": "web-final",
+      "command": [
+        "pnpm",
+        "--filter",
+        "@heurisko/web",
+        "test"
+      ],
+      "exit": 0,
+      "seconds": 4.4
+    },
+    {
+      "name": "readiness",
+      "command": [
+        "node",
+        "--test",
+        "integration/part4/tests/readiness.test.mjs"
+      ],
+      "exit": 0,
+      "seconds": 5.2
+    },
+    {
+      "name": "core-serial",
+      "command": [
+        "node",
+        "--test",
+        "--test-concurrency=1",
+        "packages/core/tests/foundation.test.mjs",
+        "packages/core/tests/s2.test.mjs",
+        "packages/core/tests/network.test.mjs",
+        "packages/core/tests/s3.test.mjs",
+        "packages/core/tests/audit-fixes.test.mjs"
+      ],
+      "exit": 0,
+      "seconds": 143.78
+    },
+    {
+      "name": "corpus",
+      "command": [
+        "node",
+        "apps/web/tooling/verify-corpus.mjs",
+        ".heurisko/web-implementation/corpus-final"
+      ],
+      "exit": 0,
+      "seconds": 9.99
+    }
+  ],
+  "counts": {
+    "web": 23,
+    "headless": 24,
+    "serialCore": 115,
+    "historicalTransportCases": 4,
+    "realEngineCases": 2
+  },
+  "sourceBoundReceipt": "2026-11-01-final/verification.json",
+  "preliminaryReceipt": "2026-11-01/verification.json",
+  "preliminaryLimitation": "Exploratory checks passed; source was refined while running, so its completion-only source inventory is not final acceptance.",
+  "browser": {
+    "browser": "Chrome on macOS",
+    "attempts": [
+      "existing task tab",
+      "fresh task tab after final server restart"
+    ],
+    "result": "ERR_BLOCKED_BY_CLIENT before renderer",
+    "viewportZoomKeyboardOfflineInertNetworkAcceptance": "unverified",
+    "securitySettingsChanged": false
+  },
+  "cleanup": "not_observable; no broad cleanup success claimed",
+  "historicalWebFilesChecked": 1213,
+  "historicalWebFilesUnchanged": true,
+  "gitIndexUnchanged": true,
+  "gitCommitPushPublishMergeDeploySubmit": false,
+  "remoteCI": "not checked or claimed",
+  "logs": {
+    "typecheck": {
+      "sha256": "5d6a27facfc863e8db0d2da0cd5c725c7a1e7627d8eda696262d00d83a803d53",
+      "summary": [
+        "apps/web build: Done",
+        "Scope: 4 of 5 workspace projects",
+        "packages/contracts typecheck$ tsc --noEmit -p tsconfig.json",
+        "packages/contracts typecheck: Done",
+        "packages/core typecheck$ tsc --noEmit -p tsconfig.json",
+        "packages/core typecheck: Done",
+        "apps/web typecheck$ tsc --noEmit -p tsconfig.json",
+        "packages/cli typecheck$ tsc --noEmit -p tsconfig.json",
+        "packages/cli typecheck: Done",
+        "apps/web typecheck: Done"
+      ]
+    },
+    "contracts": {
+      "sha256": "8df0f800e400683f96d077e61536e5fe87134cf40d71d504f9ab4629a12ba81e",
+      "summary": [
+        "F7: WatchState + Job schema-only fixture validated (no scheduler was executed)",
+        "G0 synthetic corpus: 7 valid \u00d7 3 contract shapes, 10 invalid cases rejected; mode: FULL SCHEMA + SEMANTIC",
+        "PASS F0 stubbed collectEvidence \u2192 analyzeEvidence \u2192 InvestigationReport",
+        "PASS F1 stubbed collectEvidence \u2192 analyzeEvidence \u2192 InvestigationReport",
+        "PASS F2 stubbed collectEvidence \u2192 analyzeEvidence \u2192 InvestigationReport",
+        "PASS F3 stubbed collectEvidence \u2192 analyzeEvidence \u2192 InvestigationReport",
+        "PASS F4 stubbed collectEvidence \u2192 analyzeEvidence \u2192 InvestigationReport",
+        "PASS F5 stubbed collectEvidence \u2192 analyzeEvidence \u2192 InvestigationReport",
+        "PASS F6 stubbed collectEvidence \u2192 analyzeEvidence \u2192 InvestigationReport",
+        "Note: these are synthetic interface fixtures, NOT real engine output."
+      ]
+    },
+    "web-final": {
+      "sha256": "22c3af7fedf1f64783f77e1eaece01292b5b8cbf6a54a87398fccc02f524ecd5",
+      "summary": [
+        "  ...",
+        "1..23",
+        "# tests 23",
+        "# suites 0",
+        "# pass 23",
+        "# fail 0",
+        "# cancelled 0",
+        "# skipped 0",
+        "# todo 0",
+        "# duration_ms 4208.136709"
+      ]
+    },
+    "readiness": {
+      "sha256": "f17f3837199b39404e4e5b9996185067a357d91032d2d614132f85a255566748",
+      "summary": [
+        "  ...",
+        "1..24",
+        "# tests 24",
+        "# suites 0",
+        "# pass 24",
+        "# fail 0",
+        "# cancelled 0",
+        "# skipped 0",
+        "# todo 0",
+        "# duration_ms 5171.454"
+      ]
+    },
+    "core-serial": {
+      "sha256": "6f21f268a3c5dfa5db063278a4bcf8403682c0801544255c3bf000ce64c03cc1",
+      "summary": [
+        "  ...",
+        "1..115",
+        "# tests 115",
+        "# suites 0",
+        "# pass 115",
+        "# fail 0",
+        "# cancelled 0",
+        "# skipped 0",
+        "# todo 0",
+        "# duration_ms 143734.332417"
+      ]
+    },
+    "corpus": {
+      "sha256": "6df547259f07bf34972779a6dc8153122c2114fb15215b1f79c9590388e6b9ab",
+      "summary": [
+        "{\"cases\":4,\"partial\":false,\"unchangedReports\":true,\"cliParity\":true}"
+      ]
+    },
+    "real-engine-final": {
+      "sha256": "a1b1b6aac55304e8a0c62cfad63877b501d13b6c2aebaa4859bf6491543d7d02",
+      "summary": [
+        "{\"cases\":[{\"name\":\"local-replay\",\"status\":\"report\",\"exit\":2},{\"name\":\"npm-exact\",\"status\":\"report\",\"exit\":2}],\"realEngine\":true}"
+      ]
+    }
+  },
+  "documentation": {
+    "files": 49,
+    "issues": [
+      "docs/HANDOFF_S1_S3.md: missing anchor Audit Repairs and Malhar Handoff.md#repaired-foundation"
+    ],
+    "allNewOrChangedDocumentLinksPass": true
+  },
+  "liveServer": {
+    "loopback": true,
+    "entryAndCompiledAssetsHTTP": 200,
+    "staticDocumentationHTTP": 200,
+    "authenticatedObservations": 6,
+    "capabilityPersistedInReceipt": false,
+    "runningForUser": true
+  }
+}

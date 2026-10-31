@@ -3,3 +3,12 @@ examples/** -text
 # CAS objects remain inspectable through the evidence reader; raw upstream
 # contents are opaque artifacts in a source review, not authored source diffs.
 examples/**/store/blobs/* -diff
+# Retained PTY captures are immutable transport, including terminal escape bytes.
+integration/part4/receipts/** -text
+integration/part4/receipts/**/*.ansi -diff
+integration/part4/receipts/**/*.txt -diff
+# All retained CAS transports and execution logs keep their original bytes.
+examples/**/blobs/* -diff
+examples/**/*.log -diff
+examples/current-handoff/**/*.ansi -diff
+examples/current-handoff/**/*.txt -diff

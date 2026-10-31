@@ -1,0 +1,17 @@
+{
+  "checks": {
+    "nonTTYDefaultHelp": true,
+    "historicalTui": true,
+    "inspectJSONUnchanged": true,
+    "invalidReportExit3": true,
+    "noTTYControls": true
+  },
+  "exitCodes": [
+    0,
+    0,
+    0,
+    3
+  ],
+  "reportSha256": "f0c624713467072d1f5b2bf5d521fecfa2748593f6b203936f6532ba98c24df3",
+  "oracleCorrection": "The existing CLI says retained observation; no fresh check, rather than the literal word historical. Product CLI is unchanged."
+}

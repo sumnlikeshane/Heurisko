@@ -1,0 +1,40 @@
+  HEURISKO / report / wide / 140x40                                                                                                         
+   H Home    I Investigations     M Monitoring                                                                                              
+  npm picocolors@1.1.1 report_b74d0497f7fcf6c05930a9c2                                                                                      
+  HISTORICAL — checks not refreshed / incomplete / captured 2026-10-31T19:00:21Z                                                            
+  1 Overview  2 Findings  3 Files  4 Source*  5 AI  6 Coverage                                                                              
+  ┌─ > Source / Candidates ──────────────┐ ┌─ Source / Candidates detail ─────────────────────────────┐ ┌─ Supporting evidence ──────────┐  
+  │ > ambiguous https://github.com/alex… │ │ Repository: https://github.com/alexeyraspopov/picocolors │ │ > ev_54afcddd214a2726972248d7  │  
+  │                                      │ │ Commit: 6f0a4638348ed20633d623ee973f9c9a96f65104         │ │ ev_304d5db73d37831377a22783    │  
+  │                                      │ │ Subdirectory:                                            │ │ ev_216c93daa444b869ec345a9b    │  
+  │                                      │ │ Association: ambiguous                                   │ │ ev_18c792a328cbd8d4d2f0cb3f    │  
+  │                                      │ │ Snapshot:                                                │ │ ev_2e14b499a02edfc5f8403706    │  
+  │                                      │ │ sha256:87646ed7f9b372d94da80ec298ef4ec6fc0c2a56bb60e0b32 │ │ ev_a4390f0100c665fa0f521a21    │  
+  │                                      │ │ 5a9705037408c7c                                          │ │ ev_923052180287909e51ae0c4c    │  
+  │                                      │ │ Build context:                                           │ │                                │  
+  │                                      │ │ sha256:6383b97048e27e8ab0a0cfeecce3bc80b06ebf18052808563 │ │                                │  
+  │                                      │ │ 8aacc6bd3ca0a04                                          │ │                                │  
+  │                                      │ │ SOURCE CONFLICT: SOURCE_VERSION_LABEL_DIFFERS            │ │                                │  
+  │                                      │ │ n: new investigation with this target; historical report │ │                                │  
+  │                                      │ │ stays immutable.                                         │ │                                │  
+  │                                      │ │                                                          │ │                                │  
+  │                                      │ │                                                          │ │                                │  
+  │                                      │ │                                                          │ │                                │  
+  │                                      │ │                                                          │ │                                │  
+  │                                      │ │                                                          │ │                                │  
+  │                                      │ │                                                          │ │                                │  
+  │                                      │ │                                                          │ │                                │  
+  │                                      │ │                                                          │ │                                │  
+  │                                      │ │                                                          │ │                                │  
+  │                                      │ │                                                          │ │                                │  
+  │                                      │ │                                                          │ │                                │  
+  │                                      │ │                                                          │ │                                │  
+  │                                      │ │                                                          │ │                                │  
+  │                                      │ │                                                          │ │                                │  
+  │                                      │ │                                                          │ │                                │  
+  └──────────────────────────────────────┘ └──────────────────────────────────────────────────────────┘ └────────────────────────────────┘  
+  SOURCE CONFLICT — inspect candidate claims / Candidates                                                                                   
+  j/k move  Enter inspect  e evidence  Tab focus  / filter  ? help  q quit                                                                  
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                                            

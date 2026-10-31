@@ -1,0 +1,390 @@
+[?1049h[?25l[?25l  HEURISKO / report / wide / 160x40
+   H Home    I Investigations     M Monitoring
+  LOCAL INPUT picocolors@1.1.1 report_7b46cdea60ae3108dd8c4b21
+  HISTORICAL — checks not refreshed / complete / captured 2026-10-31T21:48:41Z
+  1 Overview*  2 Findings  3 Files  4 Source  5 AI  6 Coverage
+  +- > Overview -------------------------------+ +- Overview detail -------------------------------------------------+ +- Supporting evidence ---------------+
+  | > Identity and outcomes                    | | Differences recorded; inspect raw evidence.                       | | No citations recorded               |
+  |                                            | | Report report_7b46cdea60ae3108dd8c4b21                            | |                                     |
+  |                                            | | Content                                                           | |                                     |
+  |                                            | | sha256:f0c624713467072d1f5b2bf5d521fecfa2748593f6b203936f6532ba98 | |                                     |
+  |                                            | | c24df3                                                            | |                                     |
+  |                                            | | Artifact picocolors-1.1.1.local-inert-mutation.tgz                | |                                     |
+  |                                            | | SHA-256                                                           | |                                     |
+  |                                            | | sha256:bcdd003ee749b70575fb2793d3892a393d1224457ecb8ca9c37ff4cfd5 | |                                     |
+  |                                            | | 5e098d                                                            | |                                     |
+  |                                            | | Captured 2026-10-31T21:48:41Z                                     | |                                     |
+  |                                            | | Created 2026-10-31T21:48:45Z                                      | |                                     |
+  |                                            | | Configuration                                                     | |                                     |
+  |                                            | | ae22ea2b126cc8643827269363d00478c36faea1d6be6b1e1b9abcef525f4572  | |                                     |
+  |                                            | | artifactIntegrity: not_checked                                    | |                                     |
+  |                                            | | sourceAssociation: user_supplied                                  | |                                     |
+  |                                            | | provenancePolicy: not_checked                                     | |                                     |
+  |                                            | | correspondence: unresolved                                        | |                                     |
+  |                                            | | analysisCompleteness: complete                                    | |                                     |
+  |                                            | | policyResult: not_evaluated                                       | |                                     |
+  |                                            | | Findings evaluation: recorded_for_examined_scope; examined-scope  | |                                     |
+  |                                            | | count: 16                                                         | |                                     |
+  |                                            | | Recorded findings: 16 (not a safety assessment)                   | |                                     |
+  |                                            | | AI: disabled; No runtime configured                               | |                                     |
+  |                                            | | Static raw comparison only; generated/build/security              | |                                     |
+  |                                            | | interpretation is unavailable without Malhar analysis.            | |                                     |
+  |                                            | | Source override is user supplied; full commit URL is a comparison | |                                     |
+  |                                            | | target, not proof of release correspondence.                      | |                                     |
+  |                                            | | No submodule or LFS materialization, target scripts, rebuild,     | |                                     |
+  +--------------------------------------------+ +-------------------------------------------------------------------+ +-------------------------------------+
+  Focus 0 / filter (none) / No universal safety verdict
+  j/k move  Enter inspect  e evidence  Tab focus  / filter  ? help  q quit
+
+
+[?25l[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  HEURISKO / report / wide / 160x40
+   H Home    I Investigations     M Monitoring
+  LOCAL INPUT picocolors@1.1.1 report_7b46cdea60ae3108dd8c4b21
+  HISTORICAL — checks not refreshed / complete / captured 2026-10-31T21:48:41Z
+  1 Overview*  2 Findings  3 Files  4 Source  5 AI  6 Coverage
+  +- > Overview -------------------------------+ +- Overview detail -------------------------------------------------+ +- Supporting evidence ---------------+
+  |                                            | |                                                                   | |                                     |
+  | > Identity and outcomes                    | | Differences recorded; inspect raw evidence.                       | | No citations recorded               |
+  |                                            | | Report report_7b46cdea60ae3108dd8c4b21                            | |                                     |
+  |                                            | | Content                                                           | |                                     |
+  |                                            | | sha256:f0c624713467072d1f5b2bf5d521fecfa2748593f6b203936f6532ba98 | |                                     |
+  |                                            | | c24df3                                                            | |                                     |
+  |                                            | | Artifact picocolors-1.1.1.local-inert-mutation.tgz                | |                                     |
+  |                                            | | SHA-256                                                           | |                                     |
+  |                                            | | sha256:bcdd003ee749b70575fb2793d3892a393d1224457ecb8ca9c37ff4cfd5 | |                                     |
+  |                                            | | 5e098d                                                            | |                                     |
+  |                                            | | Captured 2026-10-31T21:48:41Z                                     | |                                     |
+  |                                            | | Created 2026-10-31T21:48:45Z                                      | |                                     |
+  |                                            | | Configuration                                                     | |                                     |
+  |                                            | | ae22ea2b126cc8643827269363d00478c36faea1d6be6b1e1b9abcef525f4572  | |                                     |
+  |                                            | | artifactIntegrity: not_checked                                    | |                                     |
+  |                                            | | sourceAssociation: user_supplied                                  | |                                     |
+  |                                            | | provenancePolicy: not_checked                                     | |                                     |
+  |                                            | | correspondence: unresolved                                        | |                                     |
+  |                                            | | analysisCompleteness: complete                                    | |                                     |
+  |                                            | | policyResult: not_evaluated                                       | |                                     |
+  |                                            | | Findings evaluation: recorded_for_examined_scope; examined-scope  | |                                     |
+  |                                            | | count: 16                                                         | |                                     |
+  |                                            | | Recorded findings: 16 (not a safety assessment)                   | |                                     |
+  |                                            | | AI: disabled; No runtime configured                               | |                                     |
+  |                                            | | Static raw comparison only; generated/build/security              | |                                     |
+  |                                            | | interpretation is unavailable without Malhar analysis.            | |                                     |
+  |                                            | | Source override is user supplied; full commit URL is a comparison | |                                     |
+  |                                            | |                                                                   | |                                     |
+  +--------------------------------------------+ +-------------------------------------------------------------------+ +-------------------------------------+
+  Per-report UI state reset; report unchanged.
+  j/k move  Enter inspect  e evidence  Tab focus  / filter  ? help  q quit
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  HEURISKO / report / wide / 160x40
+   H Home    I Investigations     M Monitoring
+  LOCAL INPUT picocolors@1.1.1 report_7b46cdea60ae3108dd8c4b21
+  HISTORICAL — checks not refreshed / complete / captured 2026-10-31T21:48:41Z
+  1 Overview  2 Findings  3 Files  4 Source*  5 AI  6 Coverage
+  +- > Source ---------------------------------+ +- Source detail ---------------------------------------------------+ +- Supporting evidence ---------------+
+  |                                            | |                                                                   | |                                     |
+  |   No build records; reproduction unavaila~ | | No build records; reproduction unavailable.                       | | No citations recorded               |
+  |                                            | |                                                                   | |                                     |
+  |                                            | |                                                                   | |                                     |
+  |                                            | |                                                                   | |                                     |
+  |                                            | |                                                                   | |                                     |
+  |                                            | |                                                                   | |                                     |
+  |                                            | |                                                                   | |                                     |
+  |                                            | |                                                                   | |                                     |
+  |                                            | |                                                                   | |                                     |
+  |                                            | |                                                                   | |                                     |
+  |                                            | |                                                                   | |                                     |
+  |                                            | |                                                                   | |                                     |
+  |                                            | |                                                                   | |                                     |
+  |                                            | |                                                                   | |                                     |
+  |                                            | |                                                                   | |                                     |
+  |                                            | |                                                                   | |                                     |
+  |                                            | |                                                                   | |                                     |
+  |                                            | |                                                                   | |                                     |
+  |                                            | |                                                                   | |                                     |
+  |                                            | |                                                                   | |                                     |
+  |                                            | |                                                                   | |                                     |
+  |                                            | |                                                                   | |                                     |
+  |                                            | |                                                                   | |                                     |
+  |                                            | |                                                                   | |                                     |
+  |                                            | |                                                                   | |                                     |
+  |                                            | |                                                                   | |                                     |
+  |                                            | |                                                                   | |                                     |
+  +--------------------------------------------+ +-------------------------------------------------------------------+ +-------------------------------------+
+  Per-report UI state reset; report unchanged.
+  j/k move  Enter inspect  e evidence  Tab focus  / filter  ? help  q quit
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  HEURISKO / report / wide / 160x40
+   H Home    I Investigations     M Monitoring
+  LOCAL INPUT picocolors@1.1.1 report_7b46cdea60ae3108dd8c4b21
+  HISTORICAL — checks not refreshed / complete / captured 2026-10-31T21:48:41Z
+  1 Overview  2 Findings*  3 Files  4 Source  5 AI  6 Coverage
+  +- > Findings -------------------------------+ +- Findings detail -------------------------------------------------+ +- Supporting evidence ---------------+
+  |                                            | |                                                                   | |                                     |
+  | > Package lifecycle script entry changed   | | Observation: Manifest key scripts.postinstall is reported as      | | > ev_8e5679afc3b6d3667eb09413       |
+  |   File change remains unexplained          | | changed.                                                          | |                                     |
+  |   File change remains unexplained          | | Significance: Lifecycle entries can affect package-manager        | |                                     |
+  |   File change remains unexplained          | | installation behavior; inspect the exact command and its source   | |                                     |
+  |   File change remains unexplained          | | before deciding what it does. This observation does not establish | |                                     |
+  |   File change remains unexplained          | | malicious intent.                                                 | |                                     |
+  |   File change remains unexplained          | | Severity: medium                                                  | |                                     |
+  |   File change remains unexplained          | | Review priority: medium                                           | |                                     |
+  |   File change remains unexplained          | | Evidence confidence: high                                         | |                                     |
+  |   File change remains unexplained          | | Explanation strength: exact                                       | |                                     |
+  |   File change remains unexplained          | | Evidence: ev_8e5679afc3b6d3667eb09413                             | |                                     |
+  |   File change remains unexplained          | | Limitation: The evidence identifies the changed manifest key but  | |                                     |
+  |   File change remains unexplained          | | does not retain the old and new command values.                   | |                                     |
+  |   File change remains unexplained          | | Next action: Review the retained old and new script values and    | |                                     |
+  |   File change remains unexplained          | | their referenced files; do not execute them on the host.          | |                                     |
+  |   Package script entry changed             | | Rule: heurisko.manifest.lifecycle-script-change@0.1.0             | |                                     |
+  |                                            | |                                                                   | |                                     |
+  |                                            | |                                                                   | |                                     |
+  |                                            | |                                                                   | |                                     |
+  |                                            | |                                                                   | |                                     |
+  |                                            | |                                                                   | |                                     |
+  |                                            | |                                                                   | |                                     |
+  |                                            | |                                                                   | |                                     |
+  |                                            | |                                                                   | |                                     |
+  |                                            | |                                                                   | |                                     |
+  |                                            | |                                                                   | |                                     |
+  |                                            | |                                                                   | |                                     |
+  +--------------------------------------------+ +-------------------------------------------------------------------+ +-------------------------------------+
+  Per-report UI state reset; report unchanged.
+  j/k move  Enter inspect  e evidence  Tab focus  / filter  ? help  q quit
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  HEURISKO / report / wide / 160x40
+   H Home    I Investigations     M Monitoring
+  LOCAL INPUT picocolors@1.1.1 report_7b46cdea60ae3108dd8c4b21
+  HISTORICAL — checks not refreshed / complete / captured 2026-10-31T21:48:41Z
+  1 Overview  2 Findings*  3 Files  4 Source  5 AI  6 Coverage
+  +- > Findings -------------------------------+ +- Findings detail -------------------------------------------------+ +- Supporting evidence ---------------+
+  |                                            | |                                                                   | |                                     |
+  | > Package lifecycle script entry changed   | | Observation: Manifest key scripts.postinstall is reported as      | | > ev_8e5679afc3b6d3667eb09413       |
+  |   File change remains unexplained          | | changed.                                                          | |                                     |
+  |   File change remains unexplained          | | Significance: Lifecycle entries can affect package-manager        | |                                     |
+  |   File change remains unexplained          | | installation behavior; inspect the exact command and its source   | |                                     |
+  |   File change remains unexplained          | | before deciding what it does. This observation does not establish | |                                     |
+  |   File change remains unexplained          | | malicious intent.                                                 | |                                     |
+  |   File change remains unexplained          | | Severity: medium                                                  | |                                     |
+  |   File change remains unexplained          | | Review priority: medium                                           | |                                     |
+  |   File change remains unexplained          | | Evidence confidence: high                                         | |                                     |
+  |   File change remains unexplained          | | Explanation strength: exact                                       | |                                     |
+  |   File change remains unexplained          | | Evidence: ev_8e5679afc3b6d3667eb09413                             | |                                     |
+  |   File change remains unexplained          | | Limitation: The evidence identifies the changed manifest key but  | |                                     |
+  |   File change remains unexplained          | | does not retain the old and new command values.                   | |                                     |
+  |   File change remains unexplained          | | Next action: Review the retained old and new script values and    | |                                     |
+  |   File change remains unexplained          | | their referenced files; do not execute them on the host.          | |                                     |
+  |   Package script entry changed             | | Rule: heurisko.manifest.lifecycle-script-change@0.1.0             | |                                     |
+  |                                            | |                                                                   | |                                     |
+  |                                            | |                                                                   | |                                     |
+  |                                            | |                                                                   | |                                     |
+  |                                            | |                                                                   | |                                     |
+  |                                            | |                                                                   | |                                     |
+  |                                            | |                                                                   | |                                     |
+  |                                            | |                                                                   | |                                     |
+  |                                            | |                                                                   | |                                     |
+  |                                            | |                                                                   | |                                     |
+  |                                            | |                                                                   | |                                     |
+  |                                            | |                                                                   | |                                     |
+  +--------------------------------------------+ +-------------------------------------------------------------------+ +-------------------------------------+
+  Per-report UI state reset; report unchanged.
+  Filter: |
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  HEURISKO / report / wide / 160x40
+   H Home    I Investigations     M Monitoring
+  LOCAL INPUT picocolors@1.1.1 report_7b46cdea60ae3108dd8c4b21
+  HISTORICAL — checks not refreshed / complete / captured 2026-10-31T21:48:41Z
+  1 Overview  2 Findings*  3 Files  4 Source  5 AI  6 Coverage
+  +- > Findings -------------------------------+ +- Findings detail -------------------------------------------------+ +- Supporting evidence ---------------+
+  |                                            | |                                                                   | |                                     |
+  | > Package lifecycle script entry changed   | | Observation: Manifest key scripts.postinstall is reported as      | | > ev_8e5679afc3b6d3667eb09413       |
+  |                                            | | changed.                                                          | |                                     |
+  |                                            | | Significance: Lifecycle entries can affect package-manager        | |                                     |
+  |                                            | | installation behavior; inspect the exact command and its source   | |                                     |
+  |                                            | | before deciding what it does. This observation does not establish | |                                     |
+  |                                            | | malicious intent.                                                 | |                                     |
+  |                                            | | Severity: medium                                                  | |                                     |
+  |                                            | | Review priority: medium                                           | |                                     |
+  |                                            | | Evidence confidence: high                                         | |                                     |
+  |                                            | | Explanation strength: exact                                       | |                                     |
+  |                                            | | Evidence: ev_8e5679afc3b6d3667eb09413                             | |                                     |
+  |                                            | | Limitation: The evidence identifies the changed manifest key but  | |                                     |
+  |                                            | | does not retain the old and new command values.                   | |                                     |
+  |                                            | | Next action: Review the retained old and new script values and    | |                                     |
+  |                                            | | their referenced files; do not execute them on the host.          | |                                     |
+  |                                            | | Rule: heurisko.manifest.lifecycle-script-change@0.1.0             | |                                     |
+  |                                            | |                                                                   | |                                     |
+  |                                            | |                                                                   | |                                     |
+  |                                            | |                                                                   | |                                     |
+  |                                            | |                                                                   | |                                     |
+  |                                            | |                                                                   | |                                     |
+  |                                            | |                                                                   | |                                     |
+  |                                            | |                                                                   | |                                     |
+  |                                            | |                                                                   | |                                     |
+  |                                            | |                                                                   | |                                     |
+  |                                            | |                                                                   | |                                     |
+  |                                            | |                                                                   | |                                     |
+  +--------------------------------------------+ +-------------------------------------------------------------------+ +-------------------------------------+
+  Per-report UI state reset; report unchanged.
+  Filter: lifecycle|
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  HEURISKO / report / wide / 160x40
+   H Home    I Investigations     M Monitoring
+  LOCAL INPUT picocolors@1.1.1 report_7b46cdea60ae3108dd8c4b21
+  HISTORICAL — checks not refreshed / complete / captured 2026-10-31T21:48:41Z
+  1 Overview  2 Findings*  3 Files  4 Source  5 AI  6 Coverage
+  +- > Findings -------------------------------+ +- Findings detail -------------------------------------------------+ +- Supporting evidence ---------------+
+  |                                            | |                                                                   | |                                     |
+  | > Package lifecycle script entry changed   | | Observation: Manifest key scripts.postinstall is reported as      | | > ev_8e5679afc3b6d3667eb09413       |
+  |                                            | | changed.                                                          | |                                     |
+  |                                            | | Significance: Lifecycle entries can affect package-manager        | |                                     |
+  |                                            | | installation behavior; inspect the exact command and its source   | |                                     |
+  |                                            | | before deciding what it does. This observation does not establish | |                                     |
+  |                                            | | malicious intent.                                                 | |                                     |
+  |                                            | | Severity: medium                                                  | |                                     |
+  |                                            | | Review priority: medium                                           | |                                     |
+  |                                            | | Evidence confidence: high                                         | |                                     |
+  |                                            | | Explanation strength: exact                                       | |                                     |
+  |                                            | | Evidence: ev_8e5679afc3b6d3667eb09413                             | |                                     |
+  |                                            | | Limitation: The evidence identifies the changed manifest key but  | |                                     |
+  |                                            | | does not retain the old and new command values.                   | |                                     |
+  |                                            | | Next action: Review the retained old and new script values and    | |                                     |
+  |                                            | | their referenced files; do not execute them on the host.          | |                                     |
+  |                                            | | Rule: heurisko.manifest.lifecycle-script-change@0.1.0             | |                                     |
+  |                                            | |                                                                   | |                                     |
+  |                                            | |                                                                   | |                                     |
+  |                                            | |                                                                   | |                                     |
+  |                                            | |                                                                   | |                                     |
+  |                                            | |                                                                   | |                                     |
+  |                                            | |                                                                   | |                                     |
+  |                                            | |                                                                   | |                                     |
+  |                                            | |                                                                   | |                                     |
+  |                                            | |                                                                   | |                                     |
+  |                                            | |                                                                   | |                                     |
+  |                                            | |                                                                   | |                                     |
+  +--------------------------------------------+ +-------------------------------------------------------------------+ +-------------------------------------+
+  Per-report UI state reset; report unchanged.
+  j/k move  Enter inspect  e evidence  Tab focus  / filter  ? help  q quit
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  HEURISKO / report / wide / 160x40
+   H Home    I Investigations     M Monitoring
+  LOCAL INPUT picocolors@1.1.1 report_7b46cdea60ae3108dd8c4b21
+  HISTORICAL — checks not refreshed / complete / captured 2026-10-31T21:48:41Z
+  1 Overview  2 Findings*  3 Files  4 Source  5 AI  6 Coverage
+  +- > Findings / find_heurisko_manifest_lifecycle-script-change_chg_e945c3a7fac8dd98aff69799_8e5679af ------------------------------------------------------+
+  | Observation: Manifest key scripts.postinstall is reported as changed.                                                                                    |
+  | Significance: Lifecycle entries can affect package-manager installation behavior; inspect the exact command and its source before deciding what it does. |
+  | This observation does not establish malicious intent.                                                                                                    |
+  | Severity: medium                                                                                                                                         |
+  | Review priority: medium                                                                                                                                  |
+  | Evidence confidence: high                                                                                                                                |
+  | Explanation strength: exact                                                                                                                              |
+  | Evidence: ev_8e5679afc3b6d3667eb09413                                                                                                                    |
+  | Limitation: The evidence identifies the changed manifest key but does not retain the old and new command values.                                         |
+  | Next action: Review the retained old and new script values and their referenced files; do not execute them on the host.                                  |
+  | Rule: heurisko.manifest.lifecycle-script-change@0.1.0                                                                                                    |
+  |                                                                                                                                                          |
+  |                                                                                                                                                          |
+  |                                                                                                                                                          |
+  |                                                                                                                                                          |
+  |                                                                                                                                                          |
+  |                                                                                                                                                          |
+  |                                                                                                                                                          |
+  |                                                                                                                                                          |
+  |                                                                                                                                                          |
+  |                                                                                                                                                          |
+  |                                                                                                                                                          |
+  |                                                                                                                                                          |
+  |                                                                                                                                                          |
+  |                                                                                                                                                          |
+  |                                                                                                                                                          |
+  |                                                                                                                                                          |
+  |                                                                                                                                                          |
+  +----------------------------------------------------------------------------------------------------------------------------------------------------------+
+  Per-report UI state reset; report unchanged.
+  j/k move  Enter inspect  e evidence  Tab focus  / filter  ? help  q quit
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  HEURISKO / evidence / wide / 160x40
+   H Home    I Investigations     M Monitoring
+  LOCAL INPUT picocolors@1.1.1 report_7b46cdea60ae3108dd8c4b21
+  HISTORICAL — checks not refreshed / complete / captured 2026-10-31T21:48:41Z
+  1 Overview  2 Findings*  3 Files  4 Source  5 AI  6 Coverage
+  +- > Evidence / ev_8e5679afc3b6d3667eb09413 ---------------------------------------------------------------------------------------------------------------+
+  |                                                                                                                                                          |
+  | Side: both; requested artifact; method strict-json-value-byte-spans-v1                                                                                   |
+  | Path: package.json                                                                                                                                       |
+  | Digest: sha256:4afa16baaedb6f645fd2dd33275661afe16974496f33c35765f25402ab3fe069; availability retained                                                   |
+  | Loading hash-checked bytes…                                                                                                                              |
+  | Esc restores exact origin. Tab citation; s side; r raw record; p/b page.                                                                                 |
+  |                                                                                                                                                          |
+  |                                                                                                                                                          |
+  |                                                                                                                                                          |
+  |                                                                                                                                                          |
+  |                                                                                                                                                          |
+  |                                                                                                                                                          |
+  |                                                                                                                                                          |
+  |                                                                                                                                                          |
+  |                                                                                                                                                          |
+  |                                                                                                                                                          |
+  |                                                                                                                                                          |
+  |                                                                                                                                                          |
+  |                                                                                                                                                          |
+  |                                                                                                                                                          |
+  |                                                                                                                                                          |
+  |                                                                                                                                                          |
+  |                                                                                                                                                          |
+  |                                                                                                                                                          |
+  |                                                                                                                                                          |
+  |                                                                                                                                                          |
+  |                                                                                                                                                          |
+  |                                                                                                                                                          |
+  +----------------------------------------------------------------------------------------------------------------------------------------------------------+
+  Reading bounded, hash-checked evidence…
+  j/k scroll  Tab cite  s side  p/b page  Esc return  q quit
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  HEURISKO / evidence / wide / 160x40
+   H Home    I Investigations     M Monitoring
+  LOCAL INPUT picocolors@1.1.1 report_7b46cdea60ae3108dd8c4b21
+  HISTORICAL — checks not refreshed / complete / captured 2026-10-31T21:48:41Z
+  1 Overview  2 Findings*  3 Files  4 Source  5 AI  6 Coverage
+  +- > Evidence / ev_8e5679afc3b6d3667eb09413 ---------------------------------------------------------------------------------------------------------------+
+  |                                                                                                                                                          |
+  | Side: both; requested artifact; method strict-json-value-byte-spans-v1                                                                                   |
+  | Path: package.json                                                                                                                                       |
+  | Digest: sha256:4afa16baaedb6f645fd2dd33275661afe16974496f33c35765f25402ab3fe069; availability retained                                                   |
+  | RAW utf8: [585, 611) of recorded [585, 611); truncated false                                                                                             |
+  | Member ev_fac6fd5699ff0c83dd8be093                                                                                                                       |
+  | Content sha256:f47239397b7822519c35144a37158b0ff4bb7eeddf325e8b518774ab6be02c61                                                                          |
+  | "HEURISKO_INERT_TEST_ONLY"                                                                                                                               |
+  | Esc restores exact origin. Tab citation; s side; r raw record; p/b page.                                                                                 |
+  |                                                                                                                                                          |
+  |                                                                                                                                                          |
+  |                                                                                                                                                          |
+  |                                                                                                                                                          |
+  |                                                                                                                                                          |
+  |                                                                                                                                                          |
+  |                                                                                                                                                          |
+  |                                                                                                                                                          |
+  |                                                                                                                                                          |
+  |                                                                                                                                                          |
+  |                                                                                                                                                          |
+  |                                                                                                                                                          |
+  |                                                                                                                                                          |
+  |                                                                                                                                                          |
+  |                                                                                                                                                          |
+  |                                                                                                                                                          |
+  |                                                                                                                                                          |
+  |                                                                                                                                                          |
+  |                                                                                                                                                          |
+  +----------------------------------------------------------------------------------------------------------------------------------------------------------+
+  Focus 0 / filter lifecycle / No universal safety verdict
+  j/k scroll  Tab cite  s side  p/b page  Esc return  q quit
+
+

@@ -1,0 +1,40 @@
+  HEURISKO   H Home    I Investigations     M Monitoring                                                                                                        
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+  picocolors@1.1.1 / LOCAL INPUT / HISTORICAL / complete / Captured 2026-10-31T21:48:41Z                                                                        
+  1 Overview   2 Findings   3 Files   4 Source   5 AI   6 Coverage                                                                                              
+  Historical — online checks have not refreshed · i Identity                                                                                                    
+  Findings                                                                                                                                                      
+  priority: all / severity: all / confidence: all / rule: all                                                                                                   
+  ┌─ > Findings ─────────────────────────── 16 ┐ ┌─ Observation & assessment ────────────────────────────────────────┐ ┌─ Supporting evidence ───────────────┐  
+  │ > Package lifecycle script entry changed   │ │ Observation:                                                      │ │ Citations / Up–Down selects         │  
+  │   medium priority / high confidence        │ │ Manifest key scripts.postinstall is reported as changed.          │ │ > ev_8e5679afc3b6d3667eb09413       │  
+  │                                            │ │                                                                   │ │                                     │  
+  │   File change remains unexplained          │ │ Significance:                                                     │ │ ev_8e5679afc3b6d3667eb09413         │  
+  │   low priority / limited confidence        │ │ Lifecycle entries can affect package-manager installation         │ │ BOTH / package.json                 │  
+  │                                            │ │ behavior; inspect the exact command and its source before         │ │ RAW utf8: [585, 611) / recorded     │  
+  │   File change remains unexplained          │ │ deciding what it does. This observation does not establish        │ │ [585, 611)                          │  
+  │   low priority / limited confidence        │ │ malicious intent.                                                 │ │ Window truncated: false / total     │  
+  │                                            │ │                                                                   │ │ blob 618 bytes                      │  
+  │   File change remains unexplained          │ │ Severity:                                                         │ │                                     │  
+  │   low priority / limited confidence        │ │ medium                                                            │ │ "HEURISKO_INERT_TEST_ONLY"          │  
+  │                                            │ │                                                                   │ │                                     │  
+  │   File change remains unexplained          │ │ Review priority:                                                  │ │ Method:                             │  
+  │   low priority / limited confidence        │ │ medium                                                            │ │ strict-json-value-byte-spans-v1     │  
+  │                                            │ │                                                                   │ │ Availability: retained              │  
+  │   File change remains unexplained          │ │ Evidence confidence:                                              │ │ Verification: Not recorded          │  
+  │   low priority / limited confidence        │ │ high                                                              │ │ Content digest:                     │  
+  │                                            │ │                                                                   │ │ sha256:4afa16baaedb6f645fd2dd332756 │  
+  │   File change remains unexplained          │ │ Explanation strength:                                             │ │ 61afe16974496f33c35765f25402ab3fe06 │  
+  │   low priority / limited confidence        │ │ exact                                                             │ │ 9                                   │  
+  │                                            │ │                                                                   │ │ Member: ev_fac6fd5699ff0c83dd8be093 │  
+  │   File change remains unexplained          │ │ Evidence:                                                         │ │ Content ref:                        │  
+  │   low priority / limited confidence        │ │ ev_8e5679afc3b6d3667eb09413                                       │ │ sha256:f47239397b7822519c35144a3715 │  
+  │                                            │ │                                                                   │ │ 8b0ff4bb7eeddf325e8b518774ab6be02c6 │  
+  │ 1 / 16 · Enter inspect                     │ │ Limitation:                                                       │ │ 1                                   │  
+  └────────────────────────────────────────────┘ │ The evidence identifies the changed manifest key but does not     │ │ 1-25 / 25                           │  
+                                                 │ 1-26 / 34  j/k scroll                                             │ └─────────────────────────────────────┘  
+                                                 └───────────────────────────────────────────────────────────────────┘                                          
+  Findings                                                                                                                                                      
+  j/k move  Enter inspect  e evidence  Tab panes  / filter  ? help  q quit                                                                                      
+                                                                                                                                                                
+                                                                                                                                                                

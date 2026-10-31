@@ -1,0 +1,40 @@
+{
+  "moduleHead": "e8b8116f9960527d0a82e066059d7792c405defe",
+  "checks": [
+    {
+      "name": "esbuild-control",
+      "bundleSha256": "sha256:d552d133a8ab29789a881d7e93eb0220fd9d5811c89477d69dffee50d741b69d",
+      "findings": 4,
+      "lifecycleFindings": 0,
+      "aiState": {
+        "status": "disabled",
+        "validation": "not_run"
+      },
+      "inputUnchanged": true
+    },
+    {
+      "name": "picocolors-baseline",
+      "bundleSha256": "sha256:a44ed873b77e25f76bd351a3adda50e8d7d01a926ccc6075202ac3607d29c2a0",
+      "findings": 14,
+      "lifecycleFindings": 0,
+      "aiState": {
+        "status": "disabled",
+        "validation": "not_run"
+      },
+      "inputUnchanged": true
+    },
+    {
+      "name": "picocolors-local-mutation",
+      "bundleSha256": "sha256:9b917c8a3755a06580e9655b4b8f79c04403099c058fb398e57b09ec1ff5faa5",
+      "findings": 16,
+      "lifecycleFindings": 1,
+      "aiState": {
+        "status": "disabled",
+        "validation": "not_run"
+      },
+      "inputUnchanged": true
+    }
+  ],
+  "packageExecution": false,
+  "modelExecution": false
+}

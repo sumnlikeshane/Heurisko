@@ -1,0 +1,361 @@
+{
+  "version": "heurisko-web-gap-w2-w5-validation-v1",
+  "recordedAt": "2026-10-31T22:10:17.548716+00:00",
+  "recordedAtIST": "2026-11-01T03:40:17.548716+05:30",
+  "timezone": "Asia/Kolkata",
+  "authorization": "W2/W3/W4 followed by W5 as one substantial local batch; no Git/publication/deployment/external messages",
+  "completion": {
+    "W2": "implemented locally; browser usability unobserved",
+    "W3": "implemented locally; GUI form journey unobserved",
+    "W4": "implemented locally; GUI nested/focus/back unobserved",
+    "W5": "non-GUI validation executed; browser acceptance blocked",
+    "G19": "separate shared-engine/team dependency track remains open"
+  },
+  "runtime": {
+    "node": "22.23.4",
+    "pnpm": "10.14.0",
+    "python": "3.13.2",
+    "platform": "macOS arm64",
+    "dependencyInstallation": "none; restored existing admitted links reused; no fresh frozen-install pass claimed"
+  },
+  "integrationBoundary": {
+    "activeWorkspace": "final current-source workspace build/typecheck, 42 web and 24 reader checks pass",
+    "finalEngineExecution": "fixed captured CURRENT-source assembly to prevent concurrent active CLI/build edits entering result; all scoped source/dependency files match active checkout at handoff",
+    "sourceMatchAtCapture": "isolated-assembly.json",
+    "sourceMatchesActiveAtHandoff": true,
+    "matchingFiles": 77,
+    "baselineCliReused": false,
+    "currentCliSourceSHA256": "sha256:18cea6b9b4be239fd8cb75045387e994b91aaffc8d0b9dc5f11f41dd74d62c0b",
+    "currentCliBuildSHA256": "sha256:25e710c9e9c29ae60f89898b42249231423b1b93ad9fe7d6c8a4370e903f3332",
+    "TUI": "concurrent source preserved and compiled; never invoked/adopted/visually accepted by this web batch",
+    "rootSetup": "exact Installation and execution section is source-bound; unrelated root README changes are recorded separately"
+  },
+  "checks": [
+    {
+      "command": "pnpm run typecheck",
+      "assembly": "active workspace, final current sources; includes TUI compile only",
+      "result": "pass",
+      "log": "workspace-final-typecheck.log"
+    },
+    {
+      "command": "node --test apps/web/tests/*.test.mjs",
+      "assembly": "active workspace; loopback enabled",
+      "result": "pass",
+      "tests": 42,
+      "pass": 42,
+      "fail": 0,
+      "log": "delivery-web-tests.log"
+    },
+    {
+      "command": "node --test apps/web/tests/*.test.mjs",
+      "assembly": "fixed captured current-source copy, existing admitted external dependencies and local @heurisko module links",
+      "result": "pass",
+      "tests": 42,
+      "pass": 42,
+      "fail": 0,
+      "log": "isolated-web-tests.log"
+    },
+    {
+      "command": "tsc CLI build / web build / web noEmit",
+      "assembly": "fixed current-source copy",
+      "result": "pass",
+      "logs": [
+        "isolated-cli-build.log",
+        "isolated-web-build.log",
+        "isolated-web-typecheck.log"
+      ]
+    },
+    {
+      "command": "PATH=<existing-pinned-validator> pnpm run test:contracts",
+      "assembly": "active workspace",
+      "result": "pass",
+      "scope": "F0-F6 full schema/semantics across 3 shapes, 10 invalid cases rejected, F7 schema-only monitor fixture and 7 stubbed handshakes; synthetic, no model/monitor execution",
+      "log": "delivery-contracts.log"
+    },
+    {
+      "command": "node --test integration/part4/tests/readiness.test.mjs",
+      "assembly": "active unchanged reader",
+      "result": "pass",
+      "tests": 24,
+      "pass": 24,
+      "fail": 0,
+      "log": "delivery-readiness.log"
+    },
+    {
+      "command": "node apps/web/tooling/verify-corpus.mjs NEW_DESTINATION",
+      "assembly": "active retained corpus/CLI/transport; source hashes retained",
+      "result": "pass",
+      "cases": 4,
+      "receipt": "validated-corpus/verification.json",
+      "scope": "B1/B2/B3R and inert local mutation; original report bytes/digests/outcomes/evidence/omissions, CLI exit 2, exact mutation artifact span and absent source side"
+    },
+    {
+      "command": "node apps/web/tooling/verify-investigation.mjs NEW_DESTINATION",
+      "assembly": "fixed captured CURRENT web/core/contracts/reader/CLI/TUI-source assembly, not W1 baseline CLI; TUI never invoked",
+      "result": "pass",
+      "cases": 2,
+      "receipt": "final-verified-engine/verification.json",
+      "scope": "actual local source replay and exact public npm; current admitted restricted parser; report/bundle/evidence CLI parity, portable/digest reopen, independent local CLI deterministic equivalence; both exit 2; no model/target execution"
+    },
+    {
+      "command": "node apps/web/tooling/measure-workspace.mjs NEW_RECEIPT",
+      "assembly": "active compiled web, Node-side SSR/projection + real loopback retained transport",
+      "result": "pass",
+      "receipt": "delivery-measurements.json",
+      "scope": "docs search, actual B1/B2/B3R SSR/path projection, 19000 synthetic presentation records, exact 32MiB inert upload/oversize rejection, actual B3R portable export/upload/reopen; not browser or SLA proof"
+    },
+    {
+      "command": "unchanged CI Markdown link checker",
+      "result": "pass",
+      "files": 63,
+      "log": "doc-links-final-pass.log",
+      "priorFailure": "separate missing S4 resumed receipt target, three references; owning lane supplied it during this batch; no S4 behavior/receipt acceptance inferred"
+    },
+    {
+      "command": "same link semantics restricted to authored web docs",
+      "result": "pass",
+      "files": 18,
+      "log": "web-doc-links-final-pass.log"
+    },
+    {
+      "command": "all admitted doc routes/anchors and current CLI flags",
+      "result": "pass",
+      "scope": "15 built pages; build validation + web tests; guides retain valid repository-relative sources and resolve admitted runtime links"
+    },
+    {
+      "command": "git diff --check",
+      "result": "pass",
+      "log": "diff-check.log"
+    },
+    {
+      "command": "Chrome via cua_repl to final owned loopback preview",
+      "result": "blocked_before_render",
+      "receipt": "final-browser.json",
+      "error": "ERR_BLOCKED_BY_CLIENT",
+      "securityChanged": false
+    }
+  ],
+  "productModels": [],
+  "codingAssistance": "Codex",
+  "targetExecution": false,
+  "publicNpmAcquisition": true,
+  "failuresAndPriorCheckpoints": [
+    {
+      "record": "first-web-typecheck.log",
+      "result": "failed",
+      "reason": "Code text-pagination reference was accidentally renamed visiblePage; fixed and covered by final typecheck"
+    },
+    {
+      "record": "web-tests-attempt1.log",
+      "result": "28 pass / 12 fail",
+      "reason": "sandbox loopback EPERM; same tests pass with allowed local access; no service controls weakened"
+    },
+    {
+      "record": "delivery-investigation.log",
+      "result": "source-change assertion failed",
+      "reason": "concurrent root README edits; real reports preserved; final checker binds the exact compiled setup section"
+    },
+    {
+      "record": "validated-investigation.log",
+      "result": "source-change assertion failed",
+      "reason": "concurrent CLI source AND compiled output changed; reports preserved, not claimed a stable-source integration pass; fixed current-source assembly completed final validation"
+    },
+    {
+      "records": [
+        "doc-links-attempt1.log",
+        "doc-links-final.log"
+      ],
+      "result": "failed",
+      "reason": "unrelated S4 resumed receipt link was absent; owning lane supplied target; final unchanged checker passes"
+    },
+    {
+      "record": "initial isolated web build invocation",
+      "result": "failed before build",
+      "reason": "log redirection relative path did not exist; corrected to absolute task-owned receipt path"
+    },
+    {
+      "records": [
+        "investigation/",
+        "final-investigation/",
+        "accepted-investigation/",
+        "corpus/",
+        "delivery-corpus/",
+        "accepted-measurements.json",
+        "final-measurements.json"
+      ],
+      "result": "earlier source/build checkpoints retained",
+      "reason": "use final-verified-engine, validated-corpus and delivery-measurements for final validation; earlier passes are not relabeled"
+    }
+  ],
+  "browser": {
+    "result": "blocked_before_render",
+    "error": "ERR_BLOCKED_BY_CLIENT",
+    "receipt": "final-browser.json",
+    "appScreenshot": null,
+    "noSecurityChanges": true,
+    "notCertified": [
+      "1440/1024/390 widths",
+      "320 CSS pixel reflow",
+      "200% zoom",
+      "browser back/forward",
+      "keyboard/nested evidence/byte window/focus",
+      "clipboard",
+      "GUI downloads/import",
+      "external-offline reopening",
+      "screen reader"
+    ],
+    "ownedPreviewStopped": true
+  },
+  "measurements": {
+    "receipt": "delivery-measurements.json",
+    "allMeasuredBuildHashesMatchFinalActiveBuild": true,
+    "notBrowserPerformance": true,
+    "noAgreedLatencyTarget": true
+  },
+  "preservation": {
+    "gitIndexUnchanged": true,
+    "historicalFilesChecked": 4364,
+    "allHistoricalFilesUnchanged": true,
+    "coreContractsReaderBaselineUnchanged": true,
+    "baselineFoundationFilesChecked": 60,
+    "worktrees": [
+      "<workspace>                          0e2be5a [docs/share-research-with-team]",
+      "<temporary-workspace>                               8134627 [handoff/s1-s3-audit-fixes]",
+      "<tui-spike-worktree>  0e2be5a [experiment/tui-visual-spike-v0.1.0]"
+    ],
+    "separateVisualWorktreeWrittenByThisBatch": false,
+    "unrelatedDirtyWorkPreserved": true,
+    "newDependencies": false,
+    "staged": false,
+    "commit": false,
+    "push": false,
+    "publication": false,
+    "merge": false,
+    "deployment": false,
+    "submission": false,
+    "externalMessages": false
+  },
+  "sourceSHA256": {
+    "apps/web/src/app.tsx": "sha256:6e799019e1c00b90334b48e675cd53374da90f096cde5644a08ba8477f2cc712",
+    "apps/web/src/main.tsx": "sha256:b22bb4f233928992187bd8e2998777bf84bce93a4d858a6cdf7b364176fe9469",
+    "apps/web/src/render-check.tsx": "sha256:19d3f9f73884242f8aba5686510098bd5717df792e667ca82f5e8a9e0f623414",
+    "apps/web/src/index.html": "sha256:049fc9f4a86def4e885129d92206e49619e26a350ba1a8d4de168b6bee84f18c",
+    "apps/web/src/navigation.ts": "sha256:bbe179843dc620e0d6ac8e09bb010c3fb56e665962655793369addf5bd010976",
+    "apps/web/src/home.tsx": "sha256:7bb72b58aa7e7b15fce5c3d48c2a9865dfcaa990553ca73df492df88bb723e9d",
+    "apps/web/src/investigate.tsx": "sha256:499725e7595898b2b81db4148a9542f0bd0a565f2a67d883997c3044ccab4486",
+    "apps/web/src/api.ts": "sha256:a160d6ddc21b690544b3cd31941e13abcb4a39b0a59c70c7571cd32d2495a5f0",
+    "apps/web/src/docs.tsx": "sha256:f89f045def067665844336629cd78095f3618320bd2bb9898b93e00059d3d0c5",
+    "apps/web/src/retained-example.ts": "sha256:66831a97a2a9ca699702db60287cba8c2230837abdd48d5f4b81cfa9168f4f12",
+    "apps/web/src/report-view.ts": "sha256:72275bedd6d94f13f76ead34d945f398e52d6cd7fdb33236fc346cf5a9b556d5",
+    "apps/web/src/input-review.ts": "sha256:1acd5dadd75a4bc6f26fcbef9763ef97642ff056446ab0036cb80f4746cf37c7",
+    "apps/web/src/style.css": "sha256:b4511b20c8406d5e8e3a2314c36eacebfd714147ae820f1d99e3fbb78628ab9f",
+    "apps/web/src/doc-model.ts": "sha256:8c4f3101f5ebebe94e8f96b7f55814bec965887b4c1208b6f17cb7e93b13500f",
+    "apps/web/server/main.ts": "sha256:fc0cc7c6504b3bf7603ab4e2b00efd4c8120d93382aeae0a78cc91d4eb48c5c1",
+    "apps/web/server/workspace.ts": "sha256:e3acc77a0b11b63828f3986eae8d82d036c0a347e40d9bec8c0eec4ff80744f4",
+    "apps/web/server/service.ts": "sha256:88184e73f6a036e929b4a08afaf32fe963e006860bc0b77a81efdbffbfbacc32",
+    "apps/web/server/observation.ts": "sha256:8642dd91aa066984334716f2cacf76426a835e0e6ed79fadaf79ab35bfdaee50",
+    "apps/web/content/workflows-portable.md": "sha256:7f4ab65f043408eae31d1cec8b07fadb024ad633dfef6c1a4d35a7879100decf",
+    "apps/web/content/start-quickstart.md": "sha256:8af0e1fe0fa60355ddc87e4334c2280561a81eb1d81543e906def5765ce70028",
+    "apps/web/content/concepts-identity.md": "sha256:4b812ab963de5d55bb5c3f537dbdf2d43b2e3ac50d191432845588807c057d0f",
+    "apps/web/content/workflows-npm.md": "sha256:1763c2395d5dd8e9fb64997e2b3c67236e3652166fec66dd95bbef205658f631",
+    "apps/web/content/troubleshooting-session.md": "sha256:adf222218ea66fa0657c96d1405786b620d8458f842db1d22de9b48c694947f5",
+    "apps/web/content/workflows-ci.md": "sha256:10112e3da0e3c6c318abbc22dd0fa04990107db3cc9ee4bff111a5b34a8c3a20",
+    "apps/web/content/availability.md": "sha256:2c4ed577f9de4a59a32edb06ecc84d773752dbc53e3a1dfd548e1e35dd69d71b",
+    "apps/web/content/workflows-evidence.md": "sha256:74850533f067834ab9ba9f32773afd68114da48e6a7fe1eb926745ec0357fb30",
+    "apps/web/content/workflows-local.md": "sha256:55708951370ce82db2f46668a15155da0d0550c55296970de52837f906833bcf",
+    "apps/web/content/troubleshooting-errors.md": "sha256:428625d77cb0042c24480ecd99b95e9167436d459de7fe4262805963f19869c1",
+    "apps/web/tests/gap-batch.test.mjs": "sha256:95861253e0f734972c1c9cd85e5b3bb89d0a2b9407576a66a4da93e7d0766e77",
+    "apps/web/tests/viewer.test.mjs": "sha256:af97eb3a106cd5e4911157436d6ef8549d2bf9604efa4d9865b088090ed6184c",
+    "apps/web/tests/workflow.test.mjs": "sha256:63246aad8bbd80c8ddd852becbebcdf246f8320edd7b11789ec6c3d3b28c5251",
+    "apps/web/tests/navigation.test.mjs": "sha256:7fd2b7696f9011c1e23498f9a73f5233f625f48f8fdd7953f8d89863ff0887e1",
+    "apps/web/tooling/measure-workspace.mjs": "sha256:7e6eabf7d193c216db9a602a8c176904ccb7dc2b43c1981773566e32eaeab799",
+    "apps/web/tooling/verify-investigation.mjs": "sha256:d30b5b100a5bcfcd8de30e38dde13d7c36dcd93793b1f1f32d02e149610d6a33",
+    "apps/web/tooling/portable.ts": "sha256:1bea4f7d68a9d7cff1bd3b57967f9948a824379b70f112ca86c7a8082e402251",
+    "apps/web/tooling/strict-json.ts": "sha256:1855d1f964fc3e61cdcbdf02a2a9f2e0dfdef78c09a8789ff7b0237ea4e663d8",
+    "apps/web/tooling/export.ts": "sha256:cefd5b814e87312380172a189f24b9e6cbda881cb3fbc6fd4f4e16c88b50c86c",
+    "apps/web/tooling/verify-corpus.mjs": "sha256:cd348299af334d0c68c8e612ee32d146a430f953c6efc7dc19e25bf66feabdaf",
+    "apps/web/tooling/transport.ts": "sha256:82facd0ed9246518210c93e8d9b724c77729842058a0bf364c653e1d557b2607",
+    "packages/core/src/validation.ts": "sha256:ad1f28916825500c5a5d7ef6225cace71271e58cbad8f0b5a4caf613504f9f5d",
+    "packages/core/src/identity.ts": "sha256:5f5097f3796fdf56740f31ccee7ded03a3dc86a67b26791f804a86beb97c6246",
+    "packages/core/src/provenance.ts": "sha256:ab6d160ad9da7522c6e444e194ee82e088074d89132bfd230e730f8ba6208f75",
+    "packages/core/src/safety.ts": "sha256:8402091b35f9f61f715990ca1e155b0c4e8f99e680e1f24fd48d380e9fa4c6c0",
+    "packages/core/src/parser-job.ts": "sha256:413ad333e8a5943ec19d23fb0ef16de765eacd6248413620a76141c76b4914d0",
+    "packages/core/src/archive.ts": "sha256:12e8be1923cd25778b5492117a215bfc3d7a87403dfabfe541d4593b137b0ff7",
+    "packages/core/src/network.ts": "sha256:0ccfd2369e679a18d0c923aaee86d82bc2856f19f4c9676aca84cb8b6be0ee66",
+    "packages/core/src/storage.ts": "sha256:e8a8bf14be4fa3d8b7c074ef0e47a0ad8750031b1c8c7092b1f6811792d4decf",
+    "packages/core/src/engine.ts": "sha256:a9bfcdfa99ec5360f4754351e55ac40248333b731c756d44e08dc7bba0683596",
+    "packages/core/src/sources.ts": "sha256:588e5d5c3f0719940c9554ffb3d79c41f040ae8d25282146dfef9bb9a445586f",
+    "packages/core/src/comparison.ts": "sha256:a078b9ce0e135b3684a01217f60c7e1046d3a5f960b5e84343af35fc7f1f3fcf",
+    "packages/core/src/npm.ts": "sha256:6db9ef810490519cc5b4364cf7afea84d08acab94afa5dc29424d477fdd5171a",
+    "packages/core/src/producer.ts": "sha256:cd4dbdc04b44ee6987973a2a3efeef136b53c0c308ae2b937b2860f1fc92d145",
+    "packages/core/src/adapter.ts": "sha256:0d1c24358ade91e9386b6f238373a6fbe89abd97be452416f65bf980cdb304df",
+    "packages/core/src/index.ts": "sha256:d5abc08e31a318febe1f527ef338b4d6f530821db5f16bbeef450969941ef484",
+    "packages/core/src/parser-runtime.ts": "sha256:2b204ed6de4c912d86f2184d1783c3beebf615f987887b8debe53bc51aa0a4bd",
+    "packages/contracts/src/types.ts": "sha256:896ecaf54728ac921c539738c75e54369a92f13f3b3fbe6e264593a84201c11b",
+    "packages/contracts/src/index.ts": "sha256:488958cf5865bce05ac5343cf1607ad7af72486a351c3afc7756fdd9fdafa233",
+    "packages/cli/src/index.ts": "sha256:18cea6b9b4be239fd8cb75045387e994b91aaffc8d0b9dc5f11f41dd74d62c0b",
+    "packages/tui/src/index.tsx": "sha256:7961c2e690201beb4c08b4cc3bf991a3fef4456d1dba1f578a2803fd6363fe8c",
+    "packages/tui/src/App.tsx": "sha256:f8c4fc0663dba43fd6ca77a07bf2be5a083e8a22106438b1c558840720973f53",
+    "packages/tui/src/model.ts": "sha256:f2481ff64812895fd4da774ad4cd1d46471e56dd94a6333852c1437061fbbe98",
+    "packages/tui/src/tokens.ts": "sha256:45c4bd47b1e21e00ce356d0e9ac1ae1c9546e6cbf5b671772592b1a070d20edb",
+    "packages/tui/src/terminal/safe-text.ts": "sha256:29d21f0d6e7f889b6a617243bac3f9cabab9cbad5bfa959f258fe38cfb6670df",
+    "packages/tui/src/terminal/use-terminal-input.ts": "sha256:25e1a733a0cff6a18b4ef6821ff8dfcfd149b7eaca754e78ab5649eb2570b838",
+    "packages/tui/src/terminal/layout.ts": "sha256:8ac6a74c2f9a8ed38c97d05730c6969d3718e5079a97aa60d1e45e40425ddf74",
+    "packages/tui/src/state/text-entry.ts": "sha256:cd0bc46ab6941f8045e44275de781ca0c71d5ee6c4980ef0c38866dee843f64d",
+    "packages/tui/src/components/Panel.tsx": "sha256:4334c3d592f4f79aa0f84b99d0cf3a0f066f46584b97c689ef966cd62a2d474b",
+    "packages/tui/src/components/NavigationTabs.tsx": "sha256:519d67119f0b97f77b7b1c187de753f21ef8a5ca04a7482541ac8578760db260",
+    "integration/part4/src/report-reader.ts": "sha256:59b0ab64566dccbc7dd8985deb0a06fe01343b9ac33ae4a099c1cb8c35918f2b",
+    "integration/part4/src/investigation-task.ts": "sha256:31fff258fd3cd2a7688e5290c52a57a81c2ea489eccff6629daa3b7c22ce005f",
+    "apps/web/package.json": "sha256:d7bc44d65fb759293cd468dbce6b48d959b7c09e0450289ccc6728818e8ba946",
+    "apps/web/build.mjs": "sha256:9b7836f4f35fbaeae7c1dbb7e2b796418c891d8f30baeb69f244dee47720d264",
+    "apps/web/README.md": "sha256:17c0d3f9c149dfd6589fc2aaf996944fe1b8166700af9fb0c6c897848bfe7be2",
+    "package.json": "sha256:03ca266344ff39490314e6ab912af2f3acab8935e57f3decf3fed24dea4593f8",
+    "pnpm-lock.yaml": "sha256:7b304d2abf2987264821998ddf490e501ec65fac81af28888b51793a32daeedb",
+    "packages/cli/package.json": "sha256:6e1938c80801c38dc04e0e7b17d3482595528a262d6213a34f3bcc252c966f9d",
+    "packages/tui/package.json": "sha256:683397b550a9d894b8568156df5b51728c2b0ef93ba7d4b7ee75b830dc9d36cf",
+    "packages/contracts/schema/contracts.schema.json": "sha256:bef30a837a383ed7a3fbf49e9bac885822d6e3bdea9ccd05ff46b37f350b4dae",
+    "docs/CLI Reference.md": "sha256:b5911eb246b54a17fe129201503c99dce8e46fb7e1c442351780cddffbe8ba67"
+  },
+  "buildSHA256": {
+    "apps/web/dist/report-view.js": "sha256:de70dd1d11ec7f782926f40fff959a25d3d7b8c5b126e86706428d68e4568cfe",
+    "apps/web/dist/cli-docs.json": "sha256:204431e189980ad9f0b8f027a017360f9c0472d2ed00f62b09022d5f3bbe82b7",
+    "apps/web/dist/input-review.js": "sha256:d85c84e051cfb7ce18544bbc9d6f99e308b2d5da104df61b0dd7c7cfd300f892",
+    "apps/web/dist/browser-inputs.json": "sha256:380f020b073ec65aa6239be3fafd5bba435d47b0dc5a340f495204939ec333af",
+    "apps/web/dist/index.html": "sha256:049fc9f4a86def4e885129d92206e49619e26a350ba1a8d4de168b6bee84f18c",
+    "apps/web/dist/export.js": "sha256:f457bf9a6201b5b312628a540d6b802b7e7d4e2ca3fc5a20e58ff12222f77127",
+    "apps/web/dist/service.js": "sha256:f56d52a458135a6c1a92231bb41d7659b4fc5d0a85c09edb9f4eb78aa67b1801",
+    "apps/web/dist/observation.js": "sha256:220a8c767ae8715c155faa6cea62af3bfc5d7d809c846b1ab8a2e7901f709f87",
+    "apps/web/dist/transport.js": "sha256:716ffe52534e30a4ce51f99a60ba732178081414726d968a38f70c1f87992278",
+    "apps/web/dist/doc-model.js": "sha256:54220185f4afbef5b4578f557dfadfd6792e3f853afae250c59bd95275994dfd",
+    "apps/web/dist/main.js": "sha256:92ea6cc52ecf25ef2cba945e9bee2006c3dce5ba309b11237a075c60913e542d",
+    "apps/web/dist/workspace.js": "sha256:94fdea6e1741a85b6eae1668a1b8ca8afe9654cd8e35aa2739339e9d2c75cd80",
+    "apps/web/dist/navigation.js": "sha256:4692a3aeaac61072194562dc0422a1f6ff16f7dab591fc4c073c8e69d5c804f7",
+    "apps/web/dist/render-check.js": "sha256:5252ed6da5b50cb6505b297569214215797c6794939d387c8ba784fe3a498a2c",
+    "apps/web/dist/portable.js": "sha256:5a2770694247ef04f7a8ac44cb94d23a6d0d4a3923f3925fd7e2c27161b9c5f0",
+    "apps/web/dist/api.js": "sha256:fdabe981b60df768f30222ce1e6e0f1a4167db35c50e4db5654ac9443dc6b4a1",
+    "apps/web/dist/assets/app.css": "sha256:b4511b20c8406d5e8e3a2314c36eacebfd714147ae820f1d99e3fbb78628ab9f",
+    "apps/web/dist/assets/app.js": "sha256:558a0420f607b61602a1f60c55c96d5795bdc948f10f3505bd75c53988cfabe3",
+    "integration/part4/dist/investigation-task.d.ts": "sha256:0a042d613b2e24bad2bbccdb2896035ee8f0ad8b2c35f9cd1afad68126f0d18c",
+    "integration/part4/dist/investigation-task.js": "sha256:60db1721116985a1c96911ec05f331f8d19ce5180335a5ffca26120303b4a3a1",
+    "integration/part4/dist/report-reader.js": "sha256:eeb4c76f50b98afc3c9ea07bf8ccfebb33dab35cdef094432ea371e611c41700",
+    "integration/part4/dist/report-reader.d.ts": "sha256:bdc7e0ee37ad2cb2f3aacdba9495cf175a1f7b0d4988e1e0c76bcfe168624751",
+    "packages/cli/dist/index.js": "sha256:25e710c9e9c29ae60f89898b42249231423b1b93ad9fe7d6c8a4370e903f3332",
+    "packages/cli/dist/index.d.ts": "sha256:43e818adf60173644896298637f47b01d5819b17eda46eaa32d0c7d64724d012"
+  },
+  "documentationSHA256": {
+    "AGENTS.md": "sha256:7bd53b9c665cf0fd8727c899c19a45545a1b76095ec77c78f392361aefd8534f",
+    "README.md": "sha256:8cc8706b3690a5c6a8a53b83c30e4c9c567728ed666527b16ae6c8808c2e2135",
+    "docs/CLI Reference.md": "sha256:b5911eb246b54a17fe129201503c99dce8e46fb7e1c442351780cddffbe8ba67",
+    "docs/Web Application Gap Plan.md": "sha256:106e88756c0d61e0b0d53b550894d78b270a83101fd469ba82390b8f756ccd88",
+    "docs/WEB_CONTINUATION.md": "sha256:5a9232ca8b33d1da27e078af16b74fd976d43c9135171707a49a32daf2a92c9c",
+    "docs/Web Application Product Scope.md": "sha256:bcca5925214f7a58fb0ab305b1be0b4e81fbdebf512f9bebb98bbbb7e87c8414",
+    "docs/README.md": "sha256:09e3f2e895515c90bea0ea87d15e8b0b6e3dadc78a343acfed781182d0ee4366",
+    "docs/Audit Repairs and Malhar Handoff.md": "sha256:6bf9e6d042ca2dd86838d87e1be6f4e7c46fa115586566b239e35140368d8426",
+    "examples/web-gap/README.md": "sha256:1cdb866b97f0aab7333ab458601ec12504649711a554e44243167a8bbde1aaf9"
+  },
+  "nextWork": [
+    "Normal-browser GUI matrix: viewport/reflow/zoom, keyboard nested focus/back/state, clipboard/import/download, screen reader, external-offline behavior",
+    "G19 genuine supplied analysis/build/normalization/model/verifier/policy/monitor integrations and real citation parity; separate TUI visual acceptance",
+    "Shared review and remote web CI; publication remains unauthorized"
+  ]
+}

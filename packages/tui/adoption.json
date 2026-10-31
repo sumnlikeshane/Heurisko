@@ -1,0 +1,91 @@
+{
+  "source": "experiment/tui-visual-spike-v0.1.0 revision7",
+  "files": [
+    {
+      "source": "src/components/Panel.tsx",
+      "sha256": "ea9e3f6623d4e7d24a6208e9e7ab09f370798f38bf3ae5fdd485e4b767fb9495"
+    },
+    {
+      "source": "src/components/NavigationTabs.tsx",
+      "sha256": "519d67119f0b97f77b7b1c187de753f21ef8a5ca04a7482541ac8578760db260"
+    },
+    {
+      "source": "src/tokens.ts",
+      "sha256": "45c4bd47b1e21e00ce356d0e9ac1ae1c9546e6cbf5b671772592b1a070d20edb"
+    },
+    {
+      "source": "src/terminal/layout.ts",
+      "sha256": "8ac6a74c2f9a8ed38c97d05730c6969d3718e5079a97aa60d1e45e40425ddf74"
+    },
+    {
+      "source": "src/terminal/safe-text.ts",
+      "sha256": "29d21f0d6e7f889b6a617243bac3f9cabab9cbad5bfa959f258fe38cfb6670df"
+    },
+    {
+      "source": "src/terminal/use-terminal-input.ts",
+      "sha256": "dd3fd67a0795ba76604f29ee3c42e9be09950e2bb1db1a6f81c12f6a3bc5c94e"
+    },
+    {
+      "source": "src/state/text-entry.ts",
+      "sha256": "cd0bc46ab6941f8045e44275de781ca0c71d5ee6c4980ef0c38866dee843f64d"
+    }
+  ],
+  "historicalInitialReview": "Only data-independent panel/theme/input/safety/layout components adopted. Fixture routes, verdicts, report projections and monitor simulation excluded.",
+  "review": "Revision-7 screen composition is the presentation baseline. Home, Overview, target form/review, Shell and Workspace were reviewed directly and copied/adapted for real read-only engine projections. Fixture records and simulated capabilities are excluded; no overlay, merge or cherry-pick.",
+  "screenAdoption": [
+    {
+      "source": "src/screens/Home.tsx",
+      "sourceSha256": "63f2983f9e3d4534715613f4fda8b5ab380ee6a3fb19831995ebbc05a9b73634",
+      "target": "packages/tui/src/screens/Home.tsx",
+      "adaptation": "Preserve primary action and recent/monitor/attention composition; actual validated local index."
+    },
+    {
+      "source": "src/screens/Overview.tsx",
+      "sourceSha256": "81aa698777cf48a79f1a24cd29452f6647da305815176c327a05bbbeaa0d0851",
+      "target": "packages/tui/src/screens/Overview.tsx",
+      "adaptation": "Preserve dashboard geometry, hierarchy and focus anchors; actual six outcomes and change-record counts."
+    },
+    {
+      "source": "src/screens/Workspace.tsx",
+      "sourceSha256": "133f17e1b079eb579d219169825222dd6f9dffc518fd3bd484df08dda04968d9",
+      "target": "packages/tui/src/screens/Workspace.tsx",
+      "adaptation": "Preserve list/detail/supporting panes; read-only real model projections and evidence."
+    },
+    {
+      "source": "src/state/workspace.ts",
+      "sourceSha256": "2625f6f539a00f19a8b38ea50b59d0c0e6450ec5c8ea408f4e231c49ca2f8c06",
+      "target": "packages/tui/src/terminal/workspace-layout.ts",
+      "adaptation": "Copy workspaceLayout function; bounded raw alignment adapted separately in diff-view.ts."
+    },
+    {
+      "source": "src/components/TargetPicker.tsx",
+      "sourceSha256": "031e3bec55cc17fa37964f03b7311bf0e2ebabe27048c468523d576388e904f6",
+      "target": "packages/tui/src/screens/TargetForm.tsx",
+      "adaptation": "Preserve centered form, selector, field cursor and separate review; real local/npm inputs and immutable snapshots."
+    },
+    {
+      "source": "src/components/Shell.tsx",
+      "sourceSha256": "b018e9797480340bb979cf937387b3b13016446135a8ae908c7129cc7f416a8d",
+      "target": "packages/tui/src/components/Shell.tsx",
+      "adaptation": "Preserve header/navbar/section/footer composition; historical facts and truthful capability text."
+    },
+    {
+      "source": "src/App.tsx",
+      "sourceSha256": "285eda4aa3751ec6326c6b0aaa8160869a46d9550708e799c29f66797e119364",
+      "target": "packages/tui/src/App.tsx",
+      "adaptation": "Adapt navigation/focus/origin patterns around the existing real reader/task adapter; retain engine cancellation ownership."
+    }
+  ],
+  "excluded": [
+    "fixture datasets and experimental contracts",
+    "simulated monitor/jobs/AI/export",
+    "fixture identifiers and invented counts",
+    "experimental runtime entry point"
+  ],
+  "addedProductComponents": [
+    "components/Progress.tsx (real denominators or indeterminate animation)",
+    "state/persistence.ts (v2 UI-only state, v1 migration)",
+    "view-model.ts (actual report projection)",
+    "diff-view.ts (bounded viewer-only alignment)"
+  ]
+}

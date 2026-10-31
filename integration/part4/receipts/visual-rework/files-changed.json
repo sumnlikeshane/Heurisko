@@ -1,0 +1,161 @@
+{
+  "scope": "This visual rework only. Existing dirty S1\u2013S4/web/handoff files are not attributed to it.",
+  "sourceDocumentationAndTests": [
+    {
+      "path": "packages/tui/src/App.tsx",
+      "change": "modified",
+      "sha256": "sha256:a01d8caf76f083eb3a27229c57a88956f51d7c708726733809f7d286b64ebdad"
+    },
+    {
+      "path": "packages/tui/src/components/DocumentPane.tsx",
+      "change": "new",
+      "sha256": "sha256:cda0f9094276d5e57ac53150a12fe514ae9c1d0b80f050d6e89081e1404caed2"
+    },
+    {
+      "path": "packages/tui/src/components/Progress.tsx",
+      "change": "new",
+      "sha256": "sha256:3b2c4adcfd6ca4bdaaf432c6d2d19a8738922888821f2594512dc37bb8f182af"
+    },
+    {
+      "path": "packages/tui/src/components/Shell.tsx",
+      "change": "new",
+      "sha256": "sha256:d53aa7a89930b233b5a71ac2b66ccab92c31307ee1b064fc532449f907661e4f"
+    },
+    {
+      "path": "packages/tui/src/diff-view.ts",
+      "change": "new",
+      "sha256": "sha256:a9eaedc25b74f105c619f1d96f16989dbb6165bbfa9d2e3b1905ef3420e6193f"
+    },
+    {
+      "path": "packages/tui/src/model.ts",
+      "change": "modified",
+      "sha256": "sha256:da4106111800dcbb7b19fa833047a5a4326d11e61609d8db52f01a12cbafd716"
+    },
+    {
+      "path": "packages/tui/src/screens/Home.tsx",
+      "change": "new",
+      "sha256": "sha256:3bfd34747f3eb4d9c92ab64aac57cac1b8cd1c5570173f8913804a89a3aed4c3"
+    },
+    {
+      "path": "packages/tui/src/screens/Live.tsx",
+      "change": "new",
+      "sha256": "sha256:83a92380e4f38fb2097f62808cd539a0ca591023d69479fb4660ed57d068aaa8"
+    },
+    {
+      "path": "packages/tui/src/screens/Overview.tsx",
+      "change": "new",
+      "sha256": "sha256:1c4502a25daef2ca84a9a51f2ec0a21618cc2db8068489b9bf24c25affe79aca"
+    },
+    {
+      "path": "packages/tui/src/screens/TargetForm.tsx",
+      "change": "new",
+      "sha256": "sha256:8b008da26d16646d7436f660e46e54aa4d75d23085d72c9ba933dbc15242ec22"
+    },
+    {
+      "path": "packages/tui/src/screens/Workspace.tsx",
+      "change": "new",
+      "sha256": "sha256:6104aa14b08d203fb3b88f6686b52e70882078747fbf102b5efb796e6724e89a"
+    },
+    {
+      "path": "packages/tui/src/state/persistence.ts",
+      "change": "new",
+      "sha256": "sha256:9a2e6264bb233afc02d8fed57bf6c47ae872f6a6857352a04d8b3bea1dc25e40"
+    },
+    {
+      "path": "packages/tui/src/state/text-entry.ts",
+      "change": "modified",
+      "sha256": "sha256:f1def2d5f73551c2facfc55be0d5a563aeee57d08f0106b63eff01b015bc8e8a"
+    },
+    {
+      "path": "packages/tui/src/terminal/workspace-layout.ts",
+      "change": "new",
+      "sha256": "sha256:7d2490034161a202414df636ebd2aaa2aa3fb640ae1cf790c7570c8852e55534"
+    },
+    {
+      "path": "packages/tui/src/view-model.ts",
+      "change": "new",
+      "sha256": "sha256:6ba3c237d872c2a669acbbf3076926f0a1861df830f61fec4776ea393b8204d8"
+    },
+    {
+      "path": "AGENTS.md",
+      "change": "modified",
+      "sha256": "sha256:d8a0052188e0b4596f66a6cc4cf83ae2e1bca6b4d156cbffba2d10398ecc442f"
+    },
+    {
+      "path": "README.md",
+      "change": "modified",
+      "sha256": "sha256:884583c11b91ee690346690982e7289a336e97e9d4b252e17cdbf35a3f1b037a"
+    },
+    {
+      "path": "docs/README.md",
+      "change": "modified",
+      "sha256": "sha256:942e18196b754a9b492d12f1c8d38457dc26c50fa00ccce76f1afd10ae385f58"
+    },
+    {
+      "path": "docs/Shane Implementation Plan.md",
+      "change": "modified",
+      "sha256": "sha256:09a85d5ff1c0d91010b50ebccea863121ea51b41f547be17c182e9a524ad9359"
+    },
+    {
+      "path": "docs/Part 4 Integration Readiness Report.md",
+      "change": "modified",
+      "sha256": "sha256:e5bb9d5386e21dc73047bab061566fcf539d889e8801dc2379fe23a5f2955df1"
+    },
+    {
+      "path": "docs/Part 4 TUI Visual Audit.md",
+      "change": "new",
+      "sha256": "sha256:765d0c0d023ec5ebbd5585bf1f09a1225aa6ad1bb0dfbe3a7ba229ffa1e07e51"
+    },
+    {
+      "path": "packages/tui/README.md",
+      "change": "modified",
+      "sha256": "sha256:6547dcf2eb6bf36f27a34acd73c0a1cdef8ae05c5a6caa6bbaa7729e61c3a04a"
+    },
+    {
+      "path": "packages/tui/adoption.json",
+      "change": "modified",
+      "sha256": "sha256:e18ee0bbc9e91289f5d6812414a17ef1e8cc891f935e9a73b50707ae7a8e3c6c"
+    },
+    {
+      "path": "packages/tui/tests/audit.test.mjs",
+      "change": "new",
+      "sha256": "sha256:2b2c19e2e5179391025577e5320ad6b8aaa065de1efe60e02ad2e07fdd2e96fd"
+    },
+    {
+      "path": "packages/tui/tests/pty_session.py",
+      "change": "new",
+      "sha256": "sha256:95239300dd34d1ebaed07871166cf405ba61b46539abe62d530d273f41768c80"
+    },
+    {
+      "path": "packages/tui/tests/visual_audit.py",
+      "change": "new",
+      "sha256": "sha256:ae194b2b99e62f540239c703832cde6875897c01a45fe044a97069f79e46e5cb"
+    },
+    {
+      "path": "packages/tui/tests/visual_extra.py",
+      "change": "new",
+      "sha256": "sha256:23d7eb9916a44e8475de8d907ed2b4a508cf415573856f82c9bba1635a7046b4"
+    },
+    {
+      "path": "packages/tui/tests/navigation_audit.py",
+      "change": "new",
+      "sha256": "sha256:066d1d9c2b3718f3a16f722f19f79e4ab62119f745cf9585c276f5a9e6c52fd2"
+    },
+    {
+      "path": "packages/tui/tests/terminal.py",
+      "change": "modified",
+      "sha256": "sha256:73f0a11c22b81dc89f9efc3a0878d5c86537bf6811fec6cbcb7b0c20fa96d9fd"
+    },
+    {
+      "path": "packages/tui/tests/terminal-extra.py",
+      "change": "modified",
+      "sha256": "sha256:c9b69a021bb25a779349f8b20612620ca188fd39d6cb774cd5375133ad4c65de"
+    },
+    {
+      "path": "packages/tui/tests/terminal-live.py",
+      "change": "modified",
+      "sha256": "sha256:69c93255b6d2a80329c9c4cf5a5846597aa08208cf1f8f684ccdf18f81bc2d52"
+    }
+  ],
+  "additionalNewEvidence": "All files under integration/part4/receipts/visual-rework, enumerated in artifact-manifest.json; generated dist and ignored scratch excluded."
+}

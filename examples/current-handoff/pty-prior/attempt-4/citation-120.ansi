@@ -1,0 +1,408 @@
+[?1049h[?25l[?25l  [1mHEURISKO[22m   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  [1mpicocolors@1.1.1 / LOCAL INPUT / HISTORICAL / complete / Captured 2026-10-31T21:48:41Z                              [22m
+  [4m[1m1 Overview   [22m[24m2 Findings   3 Files   4 Source   5 AI   6 Coverage
+  Historical — online checks have not refreshed · i Identity
+  ┌─[1m ESTABLISHED OBSERVATION [22m────────────────────────────────────────────────────────────────────────────────────────┐
+  │ [1mSource and artifact differences are recorded. Review their evidence and the unresolved scope.                   [22m │
+  │                                                                                                                  │
+  │ Source candidate  6f0a4638348e  /  release binding not proven                                                    │
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+  ┌─[1m > Independent outcomes [22m────────────────────────────┐  ┌─[1m Priority findings [22m──────────────────────── 16 recorded ┐
+  │ Artifact integrity    │ Not checked                 │  │ [1m  Package lifecycle script entry changed               [22m │
+  │ Source association    │ User selected               │  │   File change remains unexplained                       │
+  │ Provenance            │ Not checked                 │  │ ─────────────────────────────────────────────────────── │
+  │ Correspondence        │ Unexplained                 │  │ Priority medium / Severity medium                       │
+  │ Analysis completeness │ Complete scope              │  │                                                         │
+  │ Policy result         │ Not evaluated               │  │ Manifest key scripts.postinstall is reported as         │
+  └─────────────────────────────────────────────────────┘  │ changed.                                                │
+                                                           │                                                         │
+  ┌─[1m Coverage & unknowns [22m───────────────────────────────┐  │ Evidence confidence     high                            │
+  │ Compared              │ 20 change records           │  │ Explanation             exact                           │
+  │ Source files          │ 19 recorded                 │  │ AI                      disabled                        │
+  │ Artifact files        │ 8 recorded                  │  └─────────────────────────────────────────────────────────┘
+  │ ─ Coverage gaps ─────────────────────────────────── │
+  │ - No raw coverage omission recorded; check each     │  ┌─[1m Report next action [22m────────────────────────────────────┐
+  │   analysis stage.                                   │  │ [1mReview the retained old and new script values and their[22m │
+  │                                                     │  │ [1mreferenced files; do not execute them on the host.     [22m │
+  └─────────────────────────────────────────────────────┘  └─────────────────────────────────────────────────────────┘
+
+
+  Overview
+  [1mTab[22m focus  [1mEnter[22m inspect  [1m1-6[22m sections  [1mi[22m identity  [1m?[22m help  [1mq[22m quit
+
+[?25l[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  [1mpicocolors@1.1.1 / LOCAL INPUT / HISTORICAL / complete / Captured 2026-10-31T21:48:41Z                              [22m
+  1 Overview   2 Findings   3 Files   4 Source   [4m[1m5 AI   [22m[24m6 Coverage
+  Historical — online checks have not refreshed · i Identity
+  [1mAI                                                                                                                  [22m
+  Recorded interpretation / separate from deterministic observations
+  ┌─[1m > AI [22m────────────────────── 1 ┐ ┌─[1m AI details [22m──────────────────────────────────────────────────────────────────┐
+  │ [1m> AI disabled                 [22m │ │ [1mAI state:                                                                    [22m │
+  │   Recorded report state        │ │ disabled                                                                      │
+  │                                │ │                                                                               │
+  │ 1 / 1 · Enter inspect          │ │ [1mReason:                                                                      [22m │
+  └────────────────────────────────┘ │ Not recorded                                                                  │
+                                     │                                                                               │
+                                     │ [1mModel:                                                                       [22m │
+                                     │ Not configured                                                                │
+                                     │                                                                               │
+                                     │ [1mValidation:                                                                  [22m │
+                                     │ not_run                                                                       │
+                                     │ Current inference runtime unavailable; deterministic evidence remains         │
+                                     │ accessible.                                                                   │
+                                     │ Validation does not establish factual truth.                                  │
+                                     │ 1-14 / 14                                                                     │
+                                     └───────────────────────────────────────────────────────────────────────────────┘
+
+
+
+
+
+
+
+  AI
+  [1mj/k[22m move  [1mEnter[22m inspect  [1me[22m evidence  [1mTab[22m panes  [1m/[22m filter  [1m?[22m help  [1mq[22m quit
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  [1mpicocolors@1.1.1 / LOCAL INPUT / HISTORICAL / complete / Captured 2026-10-31T21:48:41Z                              [22m
+  [4m[1m1 Overview   [22m[24m2 Findings   3 Files   4 Source   5 AI   6 Coverage
+  Historical — online checks have not refreshed · i Identity
+  ┌─[1m ESTABLISHED OBSERVATION [22m────────────────────────────────────────────────────────────────────────────────────────┐
+  │ [1mSource and artifact differences are recorded. Review their evidence and the unresolved scope.                   [22m │
+  │                                                                                                                  │
+  │ Source candidate  6f0a4638348e  /  release binding not proven                                                    │
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+  ┌─[1m > Independent outcomes [22m────────────────────────────┐  ┌─[1m Priority findings [22m──────────────────────── 16 recorded ┐
+  │ Artifact integrity    │ Not checked                 │  │ [1m  Package lifecycle script entry changed               [22m │
+  │ Source association    │ User selected               │  │   File change remains unexplained                       │
+  │ Provenance            │ Not checked                 │  │ ─────────────────────────────────────────────────────── │
+  │ Correspondence        │ Unexplained                 │  │ Priority medium / Severity medium                       │
+  │ Analysis completeness │ Complete scope              │  │                                                         │
+  │ Policy result         │ Not evaluated               │  │ Manifest key scripts.postinstall is reported as         │
+  └─────────────────────────────────────────────────────┘  │ changed.                                                │
+                                                           │                                                         │
+  ┌─[1m Coverage & unknowns [22m───────────────────────────────┐  │ Evidence confidence     high                            │
+  │ Compared              │ 20 change records           │  │ Explanation             exact                           │
+  │ Source files          │ 19 recorded                 │  │ AI                      disabled                        │
+  │ Artifact files        │ 8 recorded                  │  └─────────────────────────────────────────────────────────┘
+  │ ─ Coverage gaps ─────────────────────────────────── │
+  │ - No raw coverage omission recorded; check each     │  ┌─[1m Report next action [22m────────────────────────────────────┐
+  │   analysis stage.                                   │  │ [1mReview the retained old and new script values and their[22m │
+  │                                                     │  │ [1mreferenced files; do not execute them on the host.     [22m │
+  └─────────────────────────────────────────────────────┘  └─────────────────────────────────────────────────────────┘
+
+
+  Per-report UI state reset; report unchanged.
+  [1mTab[22m focus  [1mEnter[22m inspect  [1m1-6[22m sections  [1mi[22m identity  [1m?[22m help  [1mq[22m quit
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  [1mpicocolors@1.1.1 / LOCAL INPUT / HISTORICAL / complete / Captured 2026-10-31T21:48:41Z                              [22m
+  1 Overview   [4m[1m2 Findings   [22m[24m3 Files   4 Source   5 AI   6 Coverage
+  Historical — online checks have not refreshed · i Identity
+  [1mFindings                                                                                                            [22m
+  priority: all / severity: all / confidence: all / rule: all
+  ┌─[1m > Findings [22m─────────────── 16 ┐ ┌─[1m Observation & assessment [22m────────────────────────────────────────────────────┐
+  │ [1m> Package lifecycle script    [22m │ │ [1mObservation:                                                                 [22m │
+  │ [1m  entry changed               [22m │ │ Manifest key scripts.postinstall is reported as changed.                      │
+  │   medium priority / high conf… │ │                                                                               │
+  │                                │ │ [1mSignificance:                                                                [22m │
+  │   File change remains          │ │ Lifecycle entries can affect package-manager installation behavior; inspect   │
+  │   unexplained                  │ │ the exact command and its source before deciding what it does. This           │
+  │   low priority / limited conf… │ │ observation does not establish malicious intent.                              │
+  │                                │ │                                                                               │
+  │   File change remains          │ │ [1mSeverity:                                                                    [22m │
+  │   unexplained                  │ │ medium                                                                        │
+  │   low priority / limited conf… │ │                                                                               │
+  │                                │ │ [1mReview priority:                                                             [22m │
+  │   File change remains          │ │ medium                                                                        │
+  │   unexplained                  │ │                                                                               │
+  │   low priority / limited conf… │ │ [1mEvidence confidence:                                                         [22m │
+  │                                │ │ high                                                                          │
+  │   File change remains          │ │                                                                               │
+  │   unexplained                  │ │ [1mExplanation strength:                                                        [22m │
+  │   low priority / limited conf… │ │ exact                                                                         │
+  │                                │ │                                                                               │
+  │ 1 / 16 · Enter inspect         │ │ [1mEvidence:                                                                    [22m │
+  └────────────────────────────────┘ │ 1-21 / 37  j/k scroll                                                         │
+                                     └───────────────────────────────────────────────────────────────────────────────┘
+  Findings
+  [1mj/k[22m move  [1mEnter[22m inspect  [1me[22m evidence  [1mTab[22m panes  [1m/[22m filter  [1m?[22m help  [1mq[22m quit
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  [1mpicocolors@1.1.1 / LOCAL INPUT / HISTORICAL / complete / Captured 2026-10-31T21:48:41Z                              [22m
+  1 Overview   [4m[1m2 Findings   [22m[24m3 Files   4 Source   5 AI   6 Coverage
+  Historical — online checks have not refreshed · i Identity
+  [1mFindings                                                                                                            [22m
+  priority: all / severity: all / confidence: all / rule: all
+  ┌─[1m > Findings [22m─────────────── 16 ┐ ┌─[1m Observation & assessment [22m────────────────────────────────────────────────────┐
+  │ [1m> Package lifecycle script    [22m │ │ [1mObservation:                                                                 [22m │
+  │ [1m  entry changed               [22m │ │ Manifest key scripts.postinstall is reported as changed.                      │
+  │   medium priority / high conf… │ │                                                                               │
+  │                                │ │ [1mSignificance:                                                                [22m │
+  │   File change remains          │ │ Lifecycle entries can affect package-manager installation behavior; inspect   │
+  │   unexplained                  │ │ the exact command and its source before deciding what it does. This           │
+  │   low priority / limited conf… │ │ observation does not establish malicious intent.                              │
+  │                                │ │                                                                               │
+  │   File change remains          │ │ [1mSeverity:                                                                    [22m │
+  │   unexplained                  │ │ medium                                                                        │
+  │   low priority / limited conf… │ │                                                                               │
+  │                                │ │ [1mReview priority:                                                             [22m │
+  │   File change remains          │ │ medium                                                                        │
+  │   unexplained                  │ │                                                                               │
+  │   low priority / limited conf… │ │ [1mEvidence confidence:                                                         [22m │
+  │                                │ │ high                                                                          │
+  │   File change remains          │ │                                                                               │
+  │   unexplained                  │ │ [1mExplanation strength:                                                        [22m │
+  │   low priority / limited conf… │ │ exact                                                                         │
+  │                                │ │                                                                               │
+  │ 1 / 16 · Enter inspect         │ │ [1mEvidence:                                                                    [22m │
+  └────────────────────────────────┘ │ 1-21 / 37  j/k scroll                                                         │
+                                     └───────────────────────────────────────────────────────────────────────────────┘
+  Filter: _
+  [1mType[22m to edit  [1mTab[22m next  [1mCtrl+T[22m type  [1mEnter[22m review  [1mEsc[22m back
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  [1mpicocolors@1.1.1 / LOCAL INPUT / HISTORICAL / complete / Captured 2026-10-31T21:48:41Z                              [22m
+  1 Overview   [4m[1m2 Findings   [22m[24m3 Files   4 Source   5 AI   6 Coverage
+  Historical — online checks have not refreshed · i Identity
+  [1mFindings                                                                                                            [22m
+  priority: all / severity: all / confidence: all / rule: all
+  ┌─[1m > Findings [22m──────────────── 1 ┐ ┌─[1m Observation & assessment [22m────────────────────────────────────────────────────┐
+  │ Filter: lifecycle              │ │ [1mObservation:                                                                 [22m │
+  │                                │ │ Manifest key scripts.postinstall is reported as changed.                      │
+  │ [1m> Package lifecycle script    [22m │ │                                                                               │
+  │ [1m  entry changed               [22m │ │ [1mSignificance:                                                                [22m │
+  │   medium priority / high conf… │ │ Lifecycle entries can affect package-manager installation behavior; inspect   │
+  │                                │ │ the exact command and its source before deciding what it does. This           │
+  │ 1 / 1 · Enter inspect          │ │ observation does not establish malicious intent.                              │
+  └────────────────────────────────┘ │                                                                               │
+                                     │ [1mSeverity:                                                                    [22m │
+                                     │ medium                                                                        │
+                                     │                                                                               │
+                                     │ [1mReview priority:                                                             [22m │
+                                     │ medium                                                                        │
+                                     │                                                                               │
+                                     │ [1mEvidence confidence:                                                         [22m │
+                                     │ high                                                                          │
+                                     │                                                                               │
+                                     │ [1mExplanation strength:                                                        [22m │
+                                     │ exact                                                                         │
+                                     │                                                                               │
+                                     │ [1mEvidence:                                                                    [22m │
+                                     │ 1-21 / 37  j/k scroll                                                         │
+                                     └───────────────────────────────────────────────────────────────────────────────┘
+  Filter: lifecycle_
+  [1mType[22m to edit  [1mTab[22m next  [1mCtrl+T[22m type  [1mEnter[22m review  [1mEsc[22m back
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  [1mpicocolors@1.1.1 / LOCAL INPUT / HISTORICAL / complete / Captured 2026-10-31T21:48:41Z                              [22m
+  1 Overview   [4m[1m2 Findings   [22m[24m3 Files   4 Source   5 AI   6 Coverage
+  Historical — online checks have not refreshed · i Identity
+  [1mFindings                                                                                                            [22m
+  priority: all / severity: all / confidence: all / rule: all
+  ┌─[1m > Findings [22m──────────────── 1 ┐ ┌─[1m Observation & assessment [22m────────────────────────────────────────────────────┐
+  │ Filter: lifecycle              │ │ [1mObservation:                                                                 [22m │
+  │                                │ │ Manifest key scripts.postinstall is reported as changed.                      │
+  │ [1m> Package lifecycle script    [22m │ │                                                                               │
+  │ [1m  entry changed               [22m │ │ [1mSignificance:                                                                [22m │
+  │   medium priority / high conf… │ │ Lifecycle entries can affect package-manager installation behavior; inspect   │
+  │                                │ │ the exact command and its source before deciding what it does. This           │
+  │ 1 / 1 · Enter inspect          │ │ observation does not establish malicious intent.                              │
+  └────────────────────────────────┘ │                                                                               │
+                                     │ [1mSeverity:                                                                    [22m │
+                                     │ medium                                                                        │
+                                     │                                                                               │
+                                     │ [1mReview priority:                                                             [22m │
+                                     │ medium                                                                        │
+                                     │                                                                               │
+                                     │ [1mEvidence confidence:                                                         [22m │
+                                     │ high                                                                          │
+                                     │                                                                               │
+                                     │ [1mExplanation strength:                                                        [22m │
+                                     │ exact                                                                         │
+                                     │                                                                               │
+                                     │ [1mEvidence:                                                                    [22m │
+                                     │ 1-21 / 37  j/k scroll                                                         │
+                                     └───────────────────────────────────────────────────────────────────────────────┘
+  Findings
+  [1mj/k[22m move  [1mEnter[22m inspect  [1me[22m evidence  [1mTab[22m panes  [1m/[22m filter  [1m?[22m help  [1mq[22m quit
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  [1mpicocolors@1.1.1 / LOCAL INPUT / HISTORICAL / complete / Captured 2026-10-31T21:48:41Z                              [22m
+  1 Overview   [4m[1m2 Findings   [22m[24m3 Files   4 Source   5 AI   6 Coverage
+  Historical — online checks have not refreshed · i Identity
+  [1mFindings                                                                                                            [22m
+  Findings > Package lifecycle script entry changed / Esc restores position
+  ┌─[1m > Package lifecycle script entry changed [22m───────────────────────────────────────────────────────────────────────┐
+  │ [1mObservation:                                                                                                    [22m │
+  │ Manifest key scripts.postinstall is reported as changed.                                                         │
+  │                                                                                                                  │
+  │ [1mSignificance:                                                                                                   [22m │
+  │ Lifecycle entries can affect package-manager installation behavior; inspect the exact command and its source     │
+  │ before deciding what it does. This observation does not establish malicious intent.                              │
+  │                                                                                                                  │
+  │ [1mSeverity:                                                                                                       [22m │
+  │ medium                                                                                                           │
+  │                                                                                                                  │
+  │ [1mReview priority:                                                                                                [22m │
+  │ medium                                                                                                           │
+  │                                                                                                                  │
+  │ [1mEvidence confidence:                                                                                            [22m │
+  │ high                                                                                                             │
+  │                                                                                                                  │
+  │ [1mExplanation strength:                                                                                           [22m │
+  │ exact                                                                                                            │
+  │                                                                                                                  │
+  │ [1mEvidence:                                                                                                       [22m │
+  │ ev_8e5679afc3b6d3667eb09413                                                                                      │
+  │ 1-21 / 33  j/k scroll                                                                                            │
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+  Findings
+  [1mj/k[22m move  [1mEnter[22m inspect  [1me[22m evidence  [1mTab[22m panes  [1m/[22m filter  [1m?[22m help  [1mq[22m quit
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  [1mpicocolors@1.1.1 / LOCAL INPUT / HISTORICAL / complete / Captured 2026-10-31T21:48:41Z                              [22m
+  1 Overview   [4m[1m2 Findings   [22m[24m3 Files   4 Source   5 AI   6 Coverage
+  Historical — online checks have not refreshed · i Identity
+  [1mFindings                                                                                                            [22m
+  Findings > Package lifecycle script entry changed / Esc restores position
+  ┌─[1m > Package lifecycle script entry changed [22m───────────────────────────────────────────────────────────────────────┐
+  │ Manifest key scripts.postinstall is reported as changed.                                                         │
+  │                                                                                                                  │
+  │ [1mSignificance:                                                                                                   [22m │
+  │ Lifecycle entries can affect package-manager installation behavior; inspect the exact command and its source     │
+  │ before deciding what it does. This observation does not establish malicious intent.                              │
+  │                                                                                                                  │
+  │ [1mSeverity:                                                                                                       [22m │
+  │ medium                                                                                                           │
+  │                                                                                                                  │
+  │ [1mReview priority:                                                                                                [22m │
+  │ medium                                                                                                           │
+  │                                                                                                                  │
+  │ [1mEvidence confidence:                                                                                            [22m │
+  │ high                                                                                                             │
+  │                                                                                                                  │
+  │ [1mExplanation strength:                                                                                           [22m │
+  │ exact                                                                                                            │
+  │                                                                                                                  │
+  │ [1mEvidence:                                                                                                       [22m │
+  │ ev_8e5679afc3b6d3667eb09413                                                                                      │
+  │                                                                                                                  │
+  │ 2-22 / 33  j/k scroll                                                                                            │
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+  Findings
+  [1mj/k[22m move  [1mEnter[22m inspect  [1me[22m evidence  [1mTab[22m panes  [1m/[22m filter  [1m?[22m help  [1mq[22m quit
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  [1mpicocolors@1.1.1 / LOCAL INPUT / HISTORICAL / complete / Captured 2026-10-31T21:48:41Z                              [22m
+  1 Overview   [4m[1m2 Findings   [22m[24m3 Files   4 Source   5 AI   6 Coverage
+  Historical — online checks have not refreshed · i Identity
+  [1mFindings                                                                                                            [22m
+  Findings > Package lifecycle script entry changed / Esc restores position
+  ┌─[1m > Package lifecycle script entry changed [22m───────────────────────────────────────────────────────────────────────┐
+  │                                                                                                                  │
+  │ [1mSignificance:                                                                                                   [22m │
+  │ Lifecycle entries can affect package-manager installation behavior; inspect the exact command and its source     │
+  │ before deciding what it does. This observation does not establish malicious intent.                              │
+  │                                                                                                                  │
+  │ [1mSeverity:                                                                                                       [22m │
+  │ medium                                                                                                           │
+  │                                                                                                                  │
+  │ [1mReview priority:                                                                                                [22m │
+  │ medium                                                                                                           │
+  │                                                                                                                  │
+  │ [1mEvidence confidence:                                                                                            [22m │
+  │ high                                                                                                             │
+  │                                                                                                                  │
+  │ [1mExplanation strength:                                                                                           [22m │
+  │ exact                                                                                                            │
+  │                                                                                                                  │
+  │ [1mEvidence:                                                                                                       [22m │
+  │ ev_8e5679afc3b6d3667eb09413                                                                                      │
+  │                                                                                                                  │
+  │ [1mLimitation:                                                                                                     [22m │
+  │ 3-23 / 33  j/k scroll                                                                                            │
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+  Findings
+  [1mj/k[22m move  [1mEnter[22m inspect  [1me[22m evidence  [1mTab[22m panes  [1m/[22m filter  [1m?[22m help  [1mq[22m quit
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  [1mpicocolors@1.1.1 / LOCAL INPUT / HISTORICAL / complete / Captured 2026-10-31T21:48:41Z                              [22m
+  1 Overview   [4m[1m2 Findings   [22m[24m3 Files   4 Source   5 AI   6 Coverage
+  Raw retained evidence · Esc returns to its origin
+  [1mEvidence                                                                                                            [22m
+  Findings > ev_8e5679afc3b6d3667eb09413 / Esc restores position
+  [━━━━────────────────────────────] Reading evidence / indeterminate
+  ┌─[1m > Raw citation / artifact [22m──────────────────────────────────────────────────────────────────────────────────────┐
+  │ [1mev_8e5679afc3b6d3667eb09413                                                                                     [22m │
+  │ BOTH / package.json                                                                                              │
+  │ Reading bounded, hash-checked bytes…                                                                             │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │ Method: strict-json-value-byte-spans-v1                                                                          │
+  │ Availability: retained                                                                                           │
+  │ Verification: Not recorded                                                                                       │
+  │ Content digest: sha256:4afa16baaedb6f645fd2dd33275661afe16974496f33c35765f25402ab3fe069                          │
+  │ 1-9 / 9                                                                                                          │
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+
+
+
+
+
+
+
+
+
+  Reading bounded, hash-checked evidence…
+  [1mj/k[22m scroll  [1mTab[22m citation  [1ms[22m side  [1mp/b[22m page  [1mEsc[22m return  [1mq[22m quit
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  [1mpicocolors@1.1.1 / LOCAL INPUT / HISTORICAL / complete / Captured 2026-10-31T21:48:41Z                              [22m
+  1 Overview   [4m[1m2 Findings   [22m[24m3 Files   4 Source   5 AI   6 Coverage
+  Raw retained evidence · Esc returns to its origin
+  [1mEvidence                                                                                                            [22m
+  Findings > ev_8e5679afc3b6d3667eb09413 / Esc restores position
+  ┌─[1m > Raw citation / artifact [22m──────────────────────────────────────────────────────────────────────────────────────┐
+  │ [1mev_8e5679afc3b6d3667eb09413                                                                                     [22m │
+  │ BOTH / package.json                                                                                              │
+  │ RAW utf8: [585, 611) / recorded [585, 611)                                                                       │
+  │ Window truncated: false / total blob 618 bytes                                                                   │
+  │                                                                                                                  │
+  │ "HEURISKO_INERT_TEST_ONLY"                                                                                       │
+  │                                                                                                                  │
+  │ Method: strict-json-value-byte-spans-v1                                                                          │
+  │ Availability: retained                                                                                           │
+  │ Verification: Not recorded                                                                                       │
+  │ Content digest: sha256:4afa16baaedb6f645fd2dd33275661afe16974496f33c35765f25402ab3fe069                          │
+  │ Member: ev_fac6fd5699ff0c83dd8be093                                                                              │
+  │ Content ref: sha256:f47239397b7822519c35144a37158b0ff4bb7eeddf325e8b518774ab6be02c61                             │
+  │ 1-13 / 13                                                                                                        │
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+
+
+
+
+
+
+  evidence
+  [1mj/k[22m scroll  [1mTab[22m citation  [1ms[22m side  [1mp/b[22m page  [1mEsc[22m return  [1mq[22m quit
+

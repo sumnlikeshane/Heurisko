@@ -1,0 +1,358 @@
+TAP version 13
+# Subtest: every documentation page, declared navigation link and anchor resolves from a deterministic manifest
+ok 1 - every documentation page, declared navigation link and anchor resolves from a deterministic manifest
+  ---
+  duration_ms: 2.147792
+  type: 'test'
+  ...
+# Subtest: docs search spans workflows/reference/errors with section snippets and exact targets
+ok 2 - docs search spans workflows/reference/errors with section snippets and exact targets
+  ---
+  duration_ms: 8.291584
+  type: 'test'
+  ...
+# Subtest: inert markdown keeps semantic headings, ordered/bullet lists, table headings, exact selectable code and safe links
+ok 3 - inert markdown keeps semantic headings, ordered/bullet lists, table headings, exact selectable code and safe links
+  ---
+  duration_ms: 18.855333
+  type: 'test'
+  ...
+# Subtest: draft validation catches invalid combinations before admission, and canonical targets match core
+ok 4 - draft validation catches invalid combinations before admission, and canonical targets match core
+  ---
+  duration_ms: 4.619333
+  type: 'test'
+  ...
+# Subtest: accepted job summaries bind actual core options and archive bytes without host paths
+ok 5 - accepted job summaries bind actual core options and archive bytes without host paths
+  ---
+  duration_ms: 33.165625
+  type: 'test'
+  ...
+# Subtest: latest stage facts retain repeated events and truthful cancel/error actions
+ok 6 - latest stage facts retain repeated events and truthful cancel/error actions
+  ---
+  duration_ms: 2.008
+  type: 'test'
+  ...
+# Subtest: later-page file selection, path member records, explicit omissions and filtered selection stay grounded
+ok 7 - later-page file selection, path member records, explicit omissions and filtered selection stay grounded
+  ---
+  duration_ms: 12.097542
+  type: 'test'
+  ...
+# Subtest: reading guide/export/landing preserve independent outcomes, original identity and honest next actions
+ok 8 - reading guide/export/landing preserve independent outcomes, original identity and honest next actions
+  ---
+  duration_ms: 2.069542
+  type: 'test'
+  ...
+# Subtest: modal focus ring excludes disabled, hidden, inert and closed-details controls
+ok 9 - modal focus ring excludes disabled, hidden, inert and closed-details controls
+  ---
+  duration_ms: 0.334125
+  type: 'test'
+  ...
+# Subtest: destination allowlist separates draft/job/observation identity and rejects host-path disguises
+ok 10 - destination allowlist separates draft/job/observation identity and rejects host-path disguises
+  ---
+  duration_ms: 1.53075
+  type: 'test'
+  ...
+# Subtest: native history traverses destinations, restores same-process view and never stores authority or submits
+ok 11 - native history traverses destinations, restores same-process view and never stores authority or submits
+  ---
+  duration_ms: 0.711666
+  type: 'test'
+  ...
+# Subtest: allowlisted HTML routes stay public and inert; route URLs cannot access API facts or start analysis
+not ok 12 - allowlisted HTML routes stay public and inert; route URLs cannot access API facts or start analysis
+  ---
+  duration_ms: 12.746875
+  type: 'test'
+  location: '<workspace>/apps/web/tests/navigation.test.mjs:40:1'
+  failureType: 'testCodeFailure'
+  error: 'listen EPERM: operation not permitted 127.0.0.1'
+  code: 'EPERM'
+  stack: |-
+    Server.setupListenHandle [as _listen2] (node:net:1919:21)
+    listenInCluster (node:net:1998:12)
+    node:net:2207:7
+    process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+  ...
+# Subtest: reports sharing report ID keep full distinct content/capture context
+ok 13 - reports sharing report ID keep full distinct content/capture context
+  ---
+  duration_ms: 13.738041
+  type: 'test'
+  ...
+# Subtest: draft, reopen and selected job render their own contexts without historical report/export actions
+ok 14 - draft, reopen and selected job render their own contexts without historical report/export actions
+  ---
+  duration_ms: 15.200917
+  type: 'test'
+  ...
+# Subtest: connection and operation errors separate authority, service failure and scoped input rejection
+ok 15 - connection and operation errors separate authority, service failure and scoped input rejection
+  ---
+  duration_ms: 1.42925
+  type: 'test'
+  ...
+# Subtest: session capability is consumed into memory, recovery preserves destination, errors never echo raw text
+ok 16 - session capability is consumed into memory, recovery preserves destination, errors never echo raw text
+  ---
+  duration_ms: 5.049208
+  type: 'test'
+  ...
+# Subtest: aborted reads preserve cancellation and do not falsely announce service loss
+ok 17 - aborted reads preserve cancellation and do not falsely announce service loss
+  ---
+  duration_ms: 1.862125
+  type: 'test'
+  ...
+# Subtest: original observation identity and exact retained outcomes survive the local API
+not ok 18 - original observation identity and exact retained outcomes survive the local API
+  ---
+  duration_ms: 134.937
+  type: 'test'
+  location: '<workspace>/apps/web/tests/viewer.test.mjs:23:1'
+  failureType: 'testCodeFailure'
+  error: 'listen EPERM: operation not permitted 127.0.0.1'
+  code: 'EPERM'
+  stack: |-
+    Server.setupListenHandle [as _listen2] (node:net:1919:21)
+    listenInCluster (node:net:1998:12)
+    node:net:2207:7
+    process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+  ...
+# Subtest: Host, Origin, fetch-site, capability, methods and exact query allowlists fail closed
+not ok 19 - Host, Origin, fetch-site, capability, methods and exact query allowlists fail closed
+  ---
+  duration_ms: 109.11675
+  type: 'test'
+  location: '<workspace>/apps/web/tests/viewer.test.mjs:26:1'
+  failureType: 'testCodeFailure'
+  error: 'listen EPERM: operation not permitted 127.0.0.1'
+  code: 'EPERM'
+  stack: |-
+    Server.setupListenHandle [as _listen2] (node:net:1919:21)
+    listenInCluster (node:net:1998:12)
+    node:net:2207:7
+    process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+  ...
+# Subtest: evidence API preserves exact mutation artifact span and absent source side
+not ok 20 - evidence API preserves exact mutation artifact span and absent source side
+  ---
+  duration_ms: 127.070125
+  type: 'test'
+  location: '<workspace>/apps/web/tests/viewer.test.mjs:33:1'
+  failureType: 'testCodeFailure'
+  error: 'listen EPERM: operation not permitted 127.0.0.1'
+  code: 'EPERM'
+  stack: |-
+    Server.setupListenHandle [as _listen2] (node:net:1919:21)
+    listenInCluster (node:net:1998:12)
+    node:net:2207:7
+    process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+  ...
+# Subtest: B2 and monorepo have unchanged IDs, raw changes and original coverage
+ok 21 - B2 and monorepo have unchanged IDs, raw changes and original coverage
+  ---
+  duration_ms: 399.7005
+  type: 'test'
+  ...
+# Subtest: two observations sharing reportId retain distinct content handles and digests
+not ok 22 - two observations sharing reportId retain distinct content handles and digests
+  ---
+  duration_ms: 297.881416
+  type: 'test'
+  location: '<workspace>/apps/web/tests/viewer.test.mjs:44:1'
+  failureType: 'testCodeFailure'
+  error: 'listen EPERM: operation not permitted 127.0.0.1'
+  code: 'EPERM'
+  stack: |-
+    Server.setupListenHandle [as _listen2] (node:net:1919:21)
+    listenInCluster (node:net:1998:12)
+    node:net:2207:7
+    process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+  ...
+# Subtest: raw duplicate keys, unsafe integers, unsupported schema and validator failure are rejected
+ok 23 - raw duplicate keys, unsafe integers, unsupported schema and validator failure are rejected
+  ---
+  duration_ms: 474.518917
+  type: 'test'
+  ...
+# Subtest: portable directory export/reopen preserves original report and exact citation bytes
+ok 24 - portable directory export/reopen preserves original report and exact citation bytes
+  ---
+  duration_ms: 813.363667
+  type: 'test'
+  ...
+# Subtest: portable import rejects corruption, symlinks, duplicate manifest keys and report binding changes
+ok 25 - portable import rejects corruption, symlinks, duplicate manifest keys and report binding changes
+  ---
+  duration_ms: 819.542375
+  type: 'test'
+  ...
+# Subtest: missing source bytes produce an explicit partial export without changing report contentState
+ok 26 - missing source bytes produce an explicit partial export without changing report contentState
+  ---
+  duration_ms: 366.036416
+  type: 'test'
+  ...
+# Subtest: report and blob limits, missing bytes and invalid ranges remain distinguishable
+ok 27 - report and blob limits, missing bytes and invalid ranges remain distinguishable
+  ---
+  duration_ms: 525.208709
+  type: 'test'
+  ...
+# Subtest: transport cancellation, missing included blob and false omission declarations fail closed
+ok 28 - transport cancellation, missing included blob and false omission declarations fail closed
+  ---
+  duration_ms: 487.929375
+  type: 'test'
+  ...
+# Subtest: synthetic markup, controls, bidi and model text stay inert; real outcome fields stay visible
+ok 29 - synthetic markup, controls, bidi and model text stay inert; real outcome fields stay visible
+  ---
+  duration_ms: 212.487125
+  type: 'test'
+  ...
+# Subtest: all accepted synthetic G0 fixture states render without inferring a verdict
+ok 30 - all accepted synthetic G0 fixture states render without inferring a verdict
+  ---
+  duration_ms: 856.141125
+  type: 'test'
+  ...
+# Subtest: the service permits only two active evidence reads and stops on owned shutdown
+not ok 31 - the service permits only two active evidence reads and stops on owned shutdown
+  ---
+  duration_ms: 114.889667
+  type: 'test'
+  location: '<workspace>/apps/web/tests/viewer.test.mjs:83:1'
+  failureType: 'testCodeFailure'
+  error: 'listen EPERM: operation not permitted 127.0.0.1'
+  code: 'EPERM'
+  stack: |-
+    Server.setupListenHandle [as _listen2] (node:net:1919:21)
+    listenInCluster (node:net:1998:12)
+    node:net:2207:7
+    process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+  ...
+# Subtest: the genuine monorepo export reopens beyond the package-metadata parser node limit
+ok 32 - the genuine monorepo export reopens beyond the package-metadata parser node limit
+  ---
+  duration_ms: 2756.622875
+  type: 'test'
+  ...
+# Subtest: complete built CLI docs and setup include every actual parser flag and workflow
+not ok 33 - complete built CLI docs and setup include every actual parser flag and workflow
+  ---
+  duration_ms: 14.824
+  type: 'test'
+  location: '<workspace>/apps/web/tests/workflow.test.mjs:22:1'
+  failureType: 'testCodeFailure'
+  error: 'listen EPERM: operation not permitted 127.0.0.1'
+  code: 'EPERM'
+  stack: |-
+    Server.setupListenHandle [as _listen2] (node:net:1919:21)
+    listenInCluster (node:net:1998:12)
+    node:net:2207:7
+    process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+  ...
+# Subtest: privileged requests require exact origin, session, media type, bounds and strict input keys
+not ok 34 - privileged requests require exact origin, session, media type, bounds and strict input keys
+  ---
+  duration_ms: 8.993042
+  type: 'test'
+  location: '<workspace>/apps/web/tests/workflow.test.mjs:29:1'
+  failureType: 'testCodeFailure'
+  error: 'listen EPERM: operation not permitted 127.0.0.1'
+  code: 'EPERM'
+  stack: |-
+    Server.setupListenHandle [as _listen2] (node:net:1919:21)
+    listenInCluster (node:net:1998:12)
+    node:net:2207:7
+    process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+  ...
+# Subtest: options reach one shared-engine call; terminal report, downloads and bundle keep exact facts
+not ok 35 - options reach one shared-engine call; terminal report, downloads and bundle keep exact facts
+  ---
+  duration_ms: 129.984792
+  type: 'test'
+  location: '<workspace>/apps/web/tests/workflow.test.mjs:38:1'
+  failureType: 'testCodeFailure'
+  error: 'listen EPERM: operation not permitted 127.0.0.1'
+  code: 'EPERM'
+  stack: |-
+    Server.setupListenHandle [as _listen2] (node:net:1919:21)
+    listenInCluster (node:net:1998:12)
+    node:net:2207:7
+    process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+  ...
+# Subtest: cancel and no-report failures never claim acknowledgment, cleanup, or a verdict
+not ok 36 - cancel and no-report failures never claim acknowledgment, cleanup, or a verdict
+  ---
+  duration_ms: 1.820792
+  type: 'test'
+  location: '<workspace>/apps/web/tests/workflow.test.mjs:48:1'
+  failureType: 'testCodeFailure'
+  error: 'listen EPERM: operation not permitted 127.0.0.1'
+  code: 'EPERM'
+  stack: |-
+    Server.setupListenHandle [as _listen2] (node:net:1919:21)
+    listenInCluster (node:net:1998:12)
+    node:net:2207:7
+    process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+  ...
+# Subtest: uploads have opaque IDs, original filenames, kind checks, local labels and bounded admission
+not ok 37 - uploads have opaque IDs, original filenames, kind checks, local labels and bounded admission
+  ---
+  duration_ms: 16.095333
+  type: 'test'
+  location: '<workspace>/apps/web/tests/workflow.test.mjs:57:1'
+  failureType: 'testCodeFailure'
+  error: 'listen EPERM: operation not permitted 127.0.0.1'
+  code: 'EPERM'
+  stack: |-
+    Server.setupListenHandle [as _listen2] (node:net:1919:21)
+    listenInCluster (node:net:1998:12)
+    node:net:2207:7
+    process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+  ...
+# Subtest: browser portable download/upload reopens original bytes and enforces corruption/omission semantics
+not ok 38 - browser portable download/upload reopens original bytes and enforces corruption/omission semantics
+  ---
+  duration_ms: 589.929167
+  type: 'test'
+  location: '<workspace>/apps/web/tests/workflow.test.mjs:68:1'
+  failureType: 'testCodeFailure'
+  error: 'listen EPERM: operation not permitted 127.0.0.1'
+  code: 'EPERM'
+  stack: |-
+    Server.setupListenHandle [as _listen2] (node:net:1919:21)
+    listenInCluster (node:net:1998:12)
+    node:net:2207:7
+    process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+  ...
+# Subtest: dynamic report-only and workspace digest reopen validate without fresh acquisition or host paths
+ok 39 - dynamic report-only and workspace digest reopen validate without fresh acquisition or host paths
+  ---
+  duration_ms: 492.909792
+  type: 'test'
+  ...
+# Subtest: portable wrapper preserves the genuine scoped monorepo beyond the small metadata decoder size
+ok 40 - portable wrapper preserves the genuine scoped monorepo beyond the small metadata decoder size
+  ---
+  duration_ms: 4449.036333
+  type: 'test'
+  ...
+1..40
+# tests 40
+# suites 0
+# pass 28
+# fail 12
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 8622.954416

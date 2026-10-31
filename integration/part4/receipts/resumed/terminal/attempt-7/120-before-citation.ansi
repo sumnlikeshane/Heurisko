@@ -1,0 +1,272 @@
+[?1049h[?25l[?25l  HEURISKO / report / medium / 120x35
+   H Home    I Investigations     M Monitoring
+  LOCAL INPUT picocolors@1.1.1 report_7b46cdea60ae3108dd8c4b21
+  HISTORICAL — checks not refreshed / complete / captured 2026-10-31T21:48:41Z
+  1 Overview*  2 Findings  3 Files  4 Source  5 AI  6 Coverage
+  +- > Overview -------------------+ +- Overview detail ------------------------------------------------------------+
+  | > Identity and outcomes        | | Differences recorded; inspect raw evidence.                                  |
+  |                                | | Report report_7b46cdea60ae3108dd8c4b21                                       |
+  |                                | | Content                                                                      |
+  |                                | | sha256:f0c624713467072d1f5b2bf5d521fecfa2748593f6b203936f6532ba98c24df3      |
+  |                                | | Artifact picocolors-1.1.1.local-inert-mutation.tgz                           |
+  |                                | | SHA-256                                                                      |
+  |                                | | sha256:bcdd003ee749b70575fb2793d3892a393d1224457ecb8ca9c37ff4cfd55e098d      |
+  |                                | | Captured 2026-10-31T21:48:41Z                                                |
+  |                                | | Created 2026-10-31T21:48:45Z                                                 |
+  |                                | | Configuration                                                                |
+  |                                | | ae22ea2b126cc8643827269363d00478c36faea1d6be6b1e1b9abcef525f4572             |
+  |                                | | artifactIntegrity: not_checked                                               |
+  |                                | | sourceAssociation: user_supplied                                             |
+  |                                | | provenancePolicy: not_checked                                                |
+  |                                | | correspondence: unresolved                                                   |
+  |                                | | analysisCompleteness: complete                                               |
+  |                                | | policyResult: not_evaluated                                                  |
+  |                                | | Findings evaluation: recorded_for_examined_scope; examined-scope count: 16   |
+  |                                | | Recorded findings: 16 (not a safety assessment)                              |
+  |                                | | AI: disabled; No runtime configured                                          |
+  |                                | | Static raw comparison only; generated/build/security interpretation is       |
+  |                                | | unavailable without Malhar analysis.                                         |
+  |                                | | Source override is user supplied; full commit URL is a comparison target,    |
+  +--------------------------------+ +------------------------------------------------------------------------------+
+  Focus 0 / filter (none) / No universal safety verdict
+  j/k move  Enter inspect  e evidence  Tab focus  / filter  ? help  q quit
+
+
+[?25l[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  HEURISKO / report / medium / 120x35
+   H Home    I Investigations     M Monitoring
+  LOCAL INPUT picocolors@1.1.1 report_7b46cdea60ae3108dd8c4b21
+  HISTORICAL — checks not refreshed / complete / captured 2026-10-31T21:48:41Z
+  1 Overview  2 Findings  3 Files  4 Source  5 AI  6 Coverage*
+  +- > Coverage -------------------+ +- Coverage detail ------------------------------------------------------------+
+  |                                | |                                                                              |
+  | > Measured coverage and stages | | artifactFiles: 8                                                             |
+  |                                | | sourceFiles: 19                                                              |
+  |                                | | comparedFiles: 20                                                            |
+  |                                | | analyzedBytes: 39726                                                         |
+  |                                | | skippedBytes: 0                                                              |
+  |                                | | unsupportedBytes: 0                                                          |
+  |                                | | complete: true                                                               |
+  |                                | | These are recorded scope counts; universal coverage denominator: Unknown.    |
+  |                                | | resolve_artifact: complete                                                   |
+  |                                | | acquire: complete                                                            |
+  |                                | | source: complete                                                             |
+  |                                | | provenance: skipped                                                          |
+  |                                | | inventory: complete                                                          |
+  |                                | | build: skipped                                                               |
+  |                                | | compare: complete                                                            |
+  |                                | | persist: complete                                                            |
+  |                                | | heuristics: complete                                                         |
+  |                                | | ai: skipped                                                                  |
+  |                                | |                                                                              |
+  |                                | |                                                                              |
+  |                                | |                                                                              |
+  |                                | |                                                                              |
+  +--------------------------------+ +------------------------------------------------------------------------------+
+  Focus 0 / filter (none) / No universal safety verdict
+  j/k move  Enter inspect  e evidence  Tab focus  / filter  ? help  q quit
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  HEURISKO / report / medium / 120x35
+   H Home    I Investigations     M Monitoring
+  LOCAL INPUT picocolors@1.1.1 report_7b46cdea60ae3108dd8c4b21
+  HISTORICAL — checks not refreshed / complete / captured 2026-10-31T21:48:41Z
+  1 Overview*  2 Findings  3 Files  4 Source  5 AI  6 Coverage
+  +- > Overview -------------------+ +- Overview detail ------------------------------------------------------------+
+  |                                | |                                                                              |
+  | > Identity and outcomes        | | Differences recorded; inspect raw evidence.                                  |
+  |                                | | Report report_7b46cdea60ae3108dd8c4b21                                       |
+  |                                | | Content                                                                      |
+  |                                | | sha256:f0c624713467072d1f5b2bf5d521fecfa2748593f6b203936f6532ba98c24df3      |
+  |                                | | Artifact picocolors-1.1.1.local-inert-mutation.tgz                           |
+  |                                | | SHA-256                                                                      |
+  |                                | | sha256:bcdd003ee749b70575fb2793d3892a393d1224457ecb8ca9c37ff4cfd55e098d      |
+  |                                | | Captured 2026-10-31T21:48:41Z                                                |
+  |                                | | Created 2026-10-31T21:48:45Z                                                 |
+  |                                | | Configuration                                                                |
+  |                                | | ae22ea2b126cc8643827269363d00478c36faea1d6be6b1e1b9abcef525f4572             |
+  |                                | | artifactIntegrity: not_checked                                               |
+  |                                | | sourceAssociation: user_supplied                                             |
+  |                                | | provenancePolicy: not_checked                                                |
+  |                                | | correspondence: unresolved                                                   |
+  |                                | | analysisCompleteness: complete                                               |
+  |                                | | policyResult: not_evaluated                                                  |
+  |                                | | Findings evaluation: recorded_for_examined_scope; examined-scope count: 16   |
+  |                                | | Recorded findings: 16 (not a safety assessment)                              |
+  |                                | | AI: disabled; No runtime configured                                          |
+  |                                | | Static raw comparison only; generated/build/security interpretation is       |
+  |                                | |                                                                              |
+  +--------------------------------+ +------------------------------------------------------------------------------+
+  Per-report UI state reset; report unchanged.
+  j/k move  Enter inspect  e evidence  Tab focus  / filter  ? help  q quit
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  HEURISKO / report / medium / 120x35
+   H Home    I Investigations     M Monitoring
+  LOCAL INPUT picocolors@1.1.1 report_7b46cdea60ae3108dd8c4b21
+  HISTORICAL — checks not refreshed / complete / captured 2026-10-31T21:48:41Z
+  1 Overview  2 Findings*  3 Files  4 Source  5 AI  6 Coverage
+  +- > Findings -------------------+ +- Findings detail ------------------------------------------------------------+
+  |                                | |                                                                              |
+  | > Package lifecycle script en~ | | Observation: Manifest key scripts.postinstall is reported as changed.        |
+  |   File change remains unexpla~ | | Significance: Lifecycle entries can affect package-manager installation      |
+  |   File change remains unexpla~ | | behavior; inspect the exact command and its source before deciding what it   |
+  |   File change remains unexpla~ | | does. This observation does not establish malicious intent.                  |
+  |   File change remains unexpla~ | | Severity: medium                                                             |
+  |   File change remains unexpla~ | | Review priority: medium                                                      |
+  |   File change remains unexpla~ | | Evidence confidence: high                                                    |
+  |   File change remains unexpla~ | | Explanation strength: exact                                                  |
+  |   File change remains unexpla~ | | Evidence: ev_8e5679afc3b6d3667eb09413                                        |
+  |   File change remains unexpla~ | | Limitation: The evidence identifies the changed manifest key but does not    |
+  |   File change remains unexpla~ | | retain the old and new command values.                                       |
+  |   File change remains unexpla~ | | Next action: Review the retained old and new script values and their         |
+  |   File change remains unexpla~ | | referenced files; do not execute them on the host.                           |
+  |   File change remains unexpla~ | | Rule: heurisko.manifest.lifecycle-script-change@0.1.0                        |
+  |   File change remains unexpla~ | |                                                                              |
+  |   Package script entry changed | |                                                                              |
+  |                                | |                                                                              |
+  |                                | |                                                                              |
+  |                                | |                                                                              |
+  |                                | |                                                                              |
+  |                                | |                                                                              |
+  |                                | |                                                                              |
+  +--------------------------------+ +------------------------------------------------------------------------------+
+  Per-report UI state reset; report unchanged.
+  j/k move  Enter inspect  e evidence  Tab focus  / filter  ? help  q quit
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  HEURISKO / report / medium / 120x35
+   H Home    I Investigations     M Monitoring
+  LOCAL INPUT picocolors@1.1.1 report_7b46cdea60ae3108dd8c4b21
+  HISTORICAL — checks not refreshed / complete / captured 2026-10-31T21:48:41Z
+  1 Overview  2 Findings*  3 Files  4 Source  5 AI  6 Coverage
+  +- > Findings -------------------+ +- Findings detail ------------------------------------------------------------+
+  |                                | |                                                                              |
+  | > Package lifecycle script en~ | | Observation: Manifest key scripts.postinstall is reported as changed.        |
+  |   File change remains unexpla~ | | Significance: Lifecycle entries can affect package-manager installation      |
+  |   File change remains unexpla~ | | behavior; inspect the exact command and its source before deciding what it   |
+  |   File change remains unexpla~ | | does. This observation does not establish malicious intent.                  |
+  |   File change remains unexpla~ | | Severity: medium                                                             |
+  |   File change remains unexpla~ | | Review priority: medium                                                      |
+  |   File change remains unexpla~ | | Evidence confidence: high                                                    |
+  |   File change remains unexpla~ | | Explanation strength: exact                                                  |
+  |   File change remains unexpla~ | | Evidence: ev_8e5679afc3b6d3667eb09413                                        |
+  |   File change remains unexpla~ | | Limitation: The evidence identifies the changed manifest key but does not    |
+  |   File change remains unexpla~ | | retain the old and new command values.                                       |
+  |   File change remains unexpla~ | | Next action: Review the retained old and new script values and their         |
+  |   File change remains unexpla~ | | referenced files; do not execute them on the host.                           |
+  |   File change remains unexpla~ | | Rule: heurisko.manifest.lifecycle-script-change@0.1.0                        |
+  |   File change remains unexpla~ | |                                                                              |
+  |   Package script entry changed | |                                                                              |
+  |                                | |                                                                              |
+  |                                | |                                                                              |
+  |                                | |                                                                              |
+  |                                | |                                                                              |
+  |                                | |                                                                              |
+  |                                | |                                                                              |
+  +--------------------------------+ +------------------------------------------------------------------------------+
+  Per-report UI state reset; report unchanged.
+  Filter: |
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  HEURISKO / report / medium / 120x35
+   H Home    I Investigations     M Monitoring
+  LOCAL INPUT picocolors@1.1.1 report_7b46cdea60ae3108dd8c4b21
+  HISTORICAL — checks not refreshed / complete / captured 2026-10-31T21:48:41Z
+  1 Overview  2 Findings*  3 Files  4 Source  5 AI  6 Coverage
+  +- > Findings -------------------+ +- Findings detail ------------------------------------------------------------+
+  |                                | |                                                                              |
+  | > Package lifecycle script en~ | | Observation: Manifest key scripts.postinstall is reported as changed.        |
+  |                                | | Significance: Lifecycle entries can affect package-manager installation      |
+  |                                | | behavior; inspect the exact command and its source before deciding what it   |
+  |                                | | does. This observation does not establish malicious intent.                  |
+  |                                | | Severity: medium                                                             |
+  |                                | | Review priority: medium                                                      |
+  |                                | | Evidence confidence: high                                                    |
+  |                                | | Explanation strength: exact                                                  |
+  |                                | | Evidence: ev_8e5679afc3b6d3667eb09413                                        |
+  |                                | | Limitation: The evidence identifies the changed manifest key but does not    |
+  |                                | | retain the old and new command values.                                       |
+  |                                | | Next action: Review the retained old and new script values and their         |
+  |                                | | referenced files; do not execute them on the host.                           |
+  |                                | | Rule: heurisko.manifest.lifecycle-script-change@0.1.0                        |
+  |                                | |                                                                              |
+  |                                | |                                                                              |
+  |                                | |                                                                              |
+  |                                | |                                                                              |
+  |                                | |                                                                              |
+  |                                | |                                                                              |
+  |                                | |                                                                              |
+  |                                | |                                                                              |
+  +--------------------------------+ +------------------------------------------------------------------------------+
+  Per-report UI state reset; report unchanged.
+  Filter: lifecycle|
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  HEURISKO / report / medium / 120x35
+   H Home    I Investigations     M Monitoring
+  LOCAL INPUT picocolors@1.1.1 report_7b46cdea60ae3108dd8c4b21
+  HISTORICAL — checks not refreshed / complete / captured 2026-10-31T21:48:41Z
+  1 Overview  2 Findings*  3 Files  4 Source  5 AI  6 Coverage
+  +- > Findings -------------------+ +- Findings detail ------------------------------------------------------------+
+  |                                | |                                                                              |
+  | > Package lifecycle script en~ | | Observation: Manifest key scripts.postinstall is reported as changed.        |
+  |                                | | Significance: Lifecycle entries can affect package-manager installation      |
+  |                                | | behavior; inspect the exact command and its source before deciding what it   |
+  |                                | | does. This observation does not establish malicious intent.                  |
+  |                                | | Severity: medium                                                             |
+  |                                | | Review priority: medium                                                      |
+  |                                | | Evidence confidence: high                                                    |
+  |                                | | Explanation strength: exact                                                  |
+  |                                | | Evidence: ev_8e5679afc3b6d3667eb09413                                        |
+  |                                | | Limitation: The evidence identifies the changed manifest key but does not    |
+  |                                | | retain the old and new command values.                                       |
+  |                                | | Next action: Review the retained old and new script values and their         |
+  |                                | | referenced files; do not execute them on the host.                           |
+  |                                | | Rule: heurisko.manifest.lifecycle-script-change@0.1.0                        |
+  |                                | |                                                                              |
+  |                                | |                                                                              |
+  |                                | |                                                                              |
+  |                                | |                                                                              |
+  |                                | |                                                                              |
+  |                                | |                                                                              |
+  |                                | |                                                                              |
+  |                                | |                                                                              |
+  +--------------------------------+ +------------------------------------------------------------------------------+
+  Per-report UI state reset; report unchanged.
+  j/k move  Enter inspect  e evidence  Tab focus  / filter  ? help  q quit
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  HEURISKO / report / medium / 120x35
+   H Home    I Investigations     M Monitoring
+  LOCAL INPUT picocolors@1.1.1 report_7b46cdea60ae3108dd8c4b21
+  HISTORICAL — checks not refreshed / complete / captured 2026-10-31T21:48:41Z
+  1 Overview  2 Findings*  3 Files  4 Source  5 AI  6 Coverage
+  +- > Findings / find_heurisko_manifest_lifecycle-script-change_chg_e945c3a7fac8dd98aff69799_8e5679af --------------+
+  | Observation: Manifest key scripts.postinstall is reported as changed.                                            |
+  | Significance: Lifecycle entries can affect package-manager installation behavior; inspect the exact command and  |
+  | its source before deciding what it does. This observation does not establish malicious intent.                   |
+  | Severity: medium                                                                                                 |
+  | Review priority: medium                                                                                          |
+  | Evidence confidence: high                                                                                        |
+  | Explanation strength: exact                                                                                      |
+  | Evidence: ev_8e5679afc3b6d3667eb09413                                                                            |
+  | Limitation: The evidence identifies the changed manifest key but does not retain the old and new command values. |
+  | Next action: Review the retained old and new script values and their referenced files; do not execute them on    |
+  | the host.                                                                                                        |
+  | Rule: heurisko.manifest.lifecycle-script-change@0.1.0                                                            |
+  |                                                                                                                  |
+  |                                                                                                                  |
+  |                                                                                                                  |
+  |                                                                                                                  |
+  |                                                                                                                  |
+  |                                                                                                                  |
+  |                                                                                                                  |
+  |                                                                                                                  |
+  |                                                                                                                  |
+  |                                                                                                                  |
+  |                                                                                                                  |
+  +------------------------------------------------------------------------------------------------------------------+
+  Per-report UI state reset; report unchanged.
+  j/k move  Enter inspect  e evidence  Tab focus  / filter  ? help  q quit
+
+

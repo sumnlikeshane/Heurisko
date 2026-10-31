@@ -1,0 +1,10 @@
+Collecting pyte==0.8.2 (from -r packages/tui/requirements-terminal.txt (line 1))
+  Downloading pyte-0.8.2-py3-none-any.whl (31 kB)
+Collecting wcwidth==0.2.13 (from -r packages/tui/requirements-terminal.txt (line 2))
+  Downloading wcwidth-0.2.13-py2.py3-none-any.whl (34 kB)
+Installing collected packages: wcwidth, pyte
+
+Successfully installed pyte-0.8.2 wcwidth-0.2.13
+
+[notice] A new release of pip is available: 26.2.1 -> 26.2.2
+[notice] To update, run: <temporary-workspace> -m pip install --upgrade pip

@@ -1,0 +1,181 @@
+{
+  "scope": "actual keyboard; real historical source conflict and synthetic corrupt UI state; no model",
+  "checks": [
+    {
+      "check": "HISTORICAL",
+      "columns": 140,
+      "rows": 40,
+      "passed": true
+    },
+    {
+      "check": "SOURCE CONFLICT",
+      "columns": 140,
+      "rows": 40,
+      "passed": true
+    },
+    {
+      "check": "Source*",
+      "columns": 140,
+      "rows": 40,
+      "passed": true
+    },
+    {
+      "check": "SOURCE CONFLICT",
+      "columns": 140,
+      "rows": 40,
+      "passed": true
+    },
+    {
+      "check": "Provenance",
+      "columns": 140,
+      "rows": 40,
+      "passed": true
+    },
+    {
+      "check": "Build",
+      "columns": 140,
+      "rows": 40,
+      "passed": true
+    },
+    {
+      "check": "Candidates",
+      "columns": 140,
+      "rows": 40,
+      "passed": true
+    },
+    {
+      "check": "New investigation",
+      "columns": 140,
+      "rows": 40,
+      "passed": true
+    },
+    {
+      "check": "Review exact target",
+      "columns": 140,
+      "rows": 40,
+      "passed": true
+    },
+    {
+      "check": "AI disabled",
+      "columns": 140,
+      "rows": 40,
+      "passed": true
+    },
+    {
+      "check": "New investigation",
+      "columns": 140,
+      "rows": 40,
+      "passed": true
+    },
+    {
+      "check": "q exits application",
+      "passed": true,
+      "exitCode": 2
+    },
+    {
+      "check": "HISTORICAL",
+      "columns": 160,
+      "rows": 40,
+      "passed": true
+    },
+    {
+      "check": "Files*",
+      "columns": 160,
+      "rows": 40,
+      "passed": true
+    },
+    {
+      "check": "package/",
+      "columns": 160,
+      "rows": 40,
+      "passed": true
+    },
+    {
+      "check": "RAW CHANGED SPANS",
+      "columns": 160,
+      "rows": 40,
+      "passed": true
+    },
+    {
+      "check": "SOURCE",
+      "columns": 160,
+      "rows": 40,
+      "passed": true
+    },
+    {
+      "check": "Findings*",
+      "columns": 160,
+      "rows": 40,
+      "passed": true
+    },
+    {
+      "check": "priority:high",
+      "columns": 160,
+      "rows": 40,
+      "passed": true
+    },
+    {
+      "check": "Keyboard",
+      "columns": 160,
+      "rows": 40,
+      "passed": true
+    },
+    {
+      "check": "Actions",
+      "columns": 160,
+      "rows": 40,
+      "passed": true
+    },
+    {
+      "check": "Files*",
+      "columns": 160,
+      "rows": 40,
+      "passed": true
+    },
+    {
+      "check": "q exits application",
+      "passed": true,
+      "exitCode": 0
+    },
+    {
+      "check": "Home",
+      "columns": 100,
+      "rows": 26,
+      "passed": true
+    },
+    {
+      "check": "Review exact target",
+      "columns": 100,
+      "rows": 26,
+      "passed": true
+    },
+    {
+      "check": "@scope/name@1.2.3-beta.1",
+      "columns": 100,
+      "rows": 26,
+      "passed": true
+    },
+    {
+      "check": "q exits application",
+      "passed": true,
+      "exitCode": 0
+    },
+    {
+      "check": "UI state unavailable or corrupt",
+      "columns": 120,
+      "rows": 35,
+      "passed": true
+    },
+    {
+      "check": "UI state reset",
+      "columns": 120,
+      "rows": 35,
+      "passed": true
+    },
+    {
+      "check": "q exits application",
+      "passed": true,
+      "exitCode": 2
+    }
+  ]
+}

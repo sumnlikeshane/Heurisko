@@ -264,5 +264,5 @@ test('non-TTY baseline CLI preserves one JSON report, exact IDs and no interacti
   const inspected=run(['inspect',real('B1.report.json'),'--store',realStore,'--json','--no-color']);assert.equal(inspected.status,2);assert.equal(inspected.stderr,'');
   assert.deepEqual(JSON.parse(inspected.stdout),load('examples/s3/current/B1.report.json'));
   const bad=run(['analyze','npm:name@latest','--json']);assert.equal(bad.status,3);assert.equal(bad.stdout,'');
-  const absentTui=run(['tui',real('B1.report.json')]);assert.equal(absentTui.status,3);assert.equal(absentTui.stdout,'','Product TUI wiring remains pending');
+  const linearTui=run(['tui',real('B1.report.json')]);assert.equal(linearTui.status,2);assert.match(linearTui.stdout,/retained observation; no fresh registry/);assert.ok(!linearTui.stdout.includes('\u001b'));
 });

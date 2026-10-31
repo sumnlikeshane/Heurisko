@@ -1,0 +1,26 @@
+  HEURISKO   H Home    I Investigations     M Monitoring                            
+  ────────────────────────────────────────────────────────────────────────────────  
+  picocolors@1.1.1 / LOCAL INPUT / HISTORICAL / complete / Captured 2026-10-31T21…  
+  1 Overview   2 Findings   3 Files   4 Source   5 AI   6 Coverage                  
+  Historical — online checks have not refreshed · i Identity                        
+  Findings                                                                          
+  priority: all / severity: all / confidence: all / rule: all                       
+  ┌─ > Findings ───────────────────────────────────────────────────────────── 16 ┐  
+  │ > Package lifecycle script entry changed                                     │  
+  │   medium priority / high confidence                                          │  
+  │                                                                              │  
+  │   File change remains unexplained                                            │  
+  │   low priority / limited confidence                                          │  
+  │                                                                              │  
+  │   File change remains unexplained                                            │  
+  │   low priority / limited confidence                                          │  
+  │                                                                              │  
+  │   File change remains unexplained                                            │  
+  │   low priority / limited confidence                                          │  
+  │                                                                              │  
+  │ 1 / 16 · Enter inspect                                                       │  
+  └──────────────────────────────────────────────────────────────────────────────┘  
+  Findings                                                                          
+  j/k move  Enter inspect  e evidence  Tab panes  / filter  ? help  q quit          
+                                                                                    
+                                                                                    
