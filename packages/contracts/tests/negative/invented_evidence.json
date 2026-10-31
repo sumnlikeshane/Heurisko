@@ -1,0 +1,207 @@
+{
+  "schemaVersion": "0.1.0",
+  "reportId": "report_56d1936aed9beec6e6609423",
+  "createdAt": "2026-10-31T15:00:00Z",
+  "bundle": {
+    "schemaVersion": "0.1.0",
+    "input": {
+      "ecosystem": "local",
+      "artifactPath": "/synthetic/F1.tgz",
+      "sourceOverride": {
+        "repo": "https://github.com/example/fixture",
+        "commit": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      },
+      "analysisOptions": {
+        "enableAI": false,
+        "analysisProfile": "synthetic-g0"
+      }
+    },
+    "artifact": {
+      "origin": "local",
+      "artifactFilename": "F1.tgz",
+      "observedSha256": "sha256:44b9208b9b9769565d741a6a4c807e4ded22cc5cd036eb42f9295c0f22abf005",
+      "captureTime": "2026-10-31T15:00:00Z",
+      "integrity": {
+        "algorithm": "none",
+        "status": "not_available"
+      }
+    },
+    "sourceCandidates": [
+      {
+        "repositoryUrl": "https://github.com/example/fixture",
+        "commit": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "association": "user_supplied",
+        "evidenceIds": [
+          "ev_f90bd8f69e9fd9c6abe99c39"
+        ],
+        "conflicts": []
+      }
+    ],
+    "provenance": {
+      "status": "not_checked",
+      "artifactBinding": "not_checked",
+      "evidenceIds": [],
+      "limitations": [
+        "Local artifact is not verified against registry provenance."
+      ]
+    },
+    "evidence": [
+      {
+        "evidenceId": "ev_442ba0ac908f459d45674c57",
+        "kind": "artifact_member",
+        "side": "artifact",
+        "locator": {
+          "path": "package/index.js"
+        },
+        "observationMethod": "synthetic_G0_contract_fixture",
+        "contentState": "not_exported",
+        "limitations": [
+          "Synthetic locator: not an independently analyzed package."
+        ],
+        "contentSha256": "sha256:88ac220b4344d9b6ccba42eb88a949cc6201acf6a32a202eb4446fbd35bdeca0"
+      },
+      {
+        "evidenceId": "ev_f90bd8f69e9fd9c6abe99c39",
+        "kind": "source_member",
+        "side": "source",
+        "locator": {
+          "path": "src/index.js"
+        },
+        "observationMethod": "synthetic_G0_contract_fixture",
+        "contentState": "not_exported",
+        "limitations": [
+          "Synthetic locator: not an independently analyzed package."
+        ],
+        "contentSha256": "sha256:88ac220b4344d9b6ccba42eb88a949cc6201acf6a32a202eb4446fbd35bdeca0"
+      },
+      {
+        "evidenceId": "ev_3a974c4a4c967cd1b13b3fee",
+        "kind": "manifest_delta",
+        "side": "both",
+        "locator": {
+          "path": "package.json",
+          "metadataKey": "scripts.postinstall"
+        },
+        "observationMethod": "synthetic_G0_contract_fixture",
+        "contentState": "not_exported",
+        "limitations": [
+          "Synthetic locator: not an independently analyzed package."
+        ],
+        "contentSha256": "sha256:0d72b133e55ce15ebb4a096597c69c0a138e24f2b75f226d162a8ca2952db45a"
+      }
+    ],
+    "changes": [
+      {
+        "changeId": "chg_f1_script",
+        "status": "modified",
+        "sourcePath": "package.json",
+        "artifactPath": "package.json",
+        "rawEquality": "different",
+        "explanationStrength": "unexplained",
+        "evidenceIds": [
+          "ev_3a974c4a4c967cd1b13b3fee"
+        ],
+        "notes": [
+          "Install hook only in synthetic published archive."
+        ]
+      }
+    ],
+    "stages": [
+      {
+        "stage": "resolve_artifact",
+        "status": "complete",
+        "errors": []
+      },
+      {
+        "stage": "acquire",
+        "status": "complete",
+        "errors": []
+      },
+      {
+        "stage": "source",
+        "status": "complete",
+        "errors": []
+      },
+      {
+        "stage": "provenance",
+        "status": "skipped",
+        "errors": []
+      },
+      {
+        "stage": "inventory",
+        "status": "complete",
+        "errors": []
+      },
+      {
+        "stage": "compare",
+        "status": "complete",
+        "errors": []
+      }
+    ],
+    "coverage": {
+      "sourceFiles": 1,
+      "artifactFiles": 1,
+      "comparedFiles": 1,
+      "analyzedBytes": 100,
+      "skippedBytes": 0,
+      "unsupportedBytes": 0,
+      "complete": true,
+      "limitations": [],
+      "omissions": []
+    },
+    "limitations": [],
+    "fixtureKind": "synthetic_contract"
+  },
+  "analysis": {
+    "schemaVersion": "0.1.0",
+    "findings": [
+      {
+        "findingId": "find_install_hook_added",
+        "title": "Install Hook Added",
+        "observation": "A postinstall script exists in the artifact but not the selected source manifest.",
+        "whyItMatters": "Install scripts may execute during installation. Intent is not established.",
+        "evidenceIds": [
+          "ev_ffffffffffffffffffffffff"
+        ],
+        "severity": "high",
+        "reviewPriority": "high",
+        "evidenceConfidence": "high",
+        "explanationStrength": "unexplained",
+        "limitations": [],
+        "nextActions": [
+          "Inspect cited original evidence and source correspondence."
+        ],
+        "ruleId": "g0.fixture.install_hook_added",
+        "ruleVersion": "0.1.0"
+      }
+    ],
+    "aiState": {
+      "status": "disabled",
+      "validation": "not_run"
+    },
+    "interpretations": [],
+    "stages": [
+      {
+        "stage": "heuristics",
+        "status": "complete",
+        "errors": []
+      },
+      {
+        "stage": "ai",
+        "status": "skipped",
+        "errors": []
+      }
+    ],
+    "limitations": []
+  },
+  "outcomes": {
+    "artifactIntegrity": "not_available",
+    "sourceAssociation": "user_supplied",
+    "provenancePolicy": "not_checked",
+    "correspondence": "unresolved",
+    "analysisCompleteness": "complete",
+    "policyResult": "not_evaluated"
+  },
+  "analysisConfigFingerprint": "52e32b9a58e8e53c51743a98b70664f1fb450c4f0095b7774fdb886b8fefe79c",
+  "fixtureKind": "synthetic_contract"
+}

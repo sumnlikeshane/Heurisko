@@ -24,10 +24,11 @@ Baseline recorded on **31 October 2026**, using **Asia/Kolkata** for event times
 - Project: **Heurisko**, team **InBuildingPhase**, members **Shane Joseph** and **Malhar Mahanor**.
 - Entry: **Problem 04 — Published Package vs Source Code Integrity Analyzer**, Hacktoberfest 2026 Hack Day Sonipat, Newton School of Technology at Rishihood University.
 - The repository exists. Its initial commit, `6e6159bbbb5fc6c8acc21b9a61c9a53df8f8157d`, contains only `HACKATHON.md`. Do not initialize a replacement repository or amend/recreate that commit.
-- At the start of this documentation task, the branch was `main` tracking `origin/main`, and `docs/` was untracked, pre-existing user material. Do not infer that untracked material can be deleted, staged, or published. Recheck live Git state for every later task.
-- Available material: `HACKATHON.md`, two governing files in `docs/Governing/`, eight research documents, seven supporting evidence/audit files, and their checksum manifest. Root `README.md` and this file were added for the user's documentation request.
-- **No product implementation exists:** no engine, CLI/TUI, browser application, monitoring implementation, actual model integration, package manifest/lockfile, runtime pin, build scripts, product tests, generated examples, or `LICENSE`. A documentation-only GitHub Actions workflow now checks the research checksums and local Markdown links; it does not install or test product code.
-- All research hypotheses **FH-01/FH-02** and decisions **D-01–D-13** remain **PROPOSED — NOT YET APPROVED**. Writing the root documentation does not approve engineering, dependency installation, model downloads, hosting, or licensing choices.
+- At the start of the 31 October handoff migration, the branch was `docs/share-research-with-team` tracking its remote; the handoff folder and the two top-level `docs/` decision/checklist files were untracked user material. Recheck live Git state for every task, preserving unrelated work.
+- Available material includes the declaration, governing sources, preserved research/evidence snapshot, [approved decision register](docs/Approved%20Decision%20Register.md), [team development checklist](docs/Team%20Development%20Checklist.md), approved phase records/agreement, and the parked G0 candidate. See [docs/README.md](docs/README.md) for the current map.
+- **No analyzer implementation exists:** no engine, CLI/TUI, browser application, monitoring implementation, actual model integration, product tests, or generated examples. Root `LICENSE` and `NOTICE` were added locally after the delegated license choice. The reviewed synthetic G0 contract package is now copied into the root pnpm workspace at `packages/contracts`; `docs/G0_Candidate/` retains the candidate handoff. CI now defines contract checks alongside research checksum and Markdown-link checks. A local pass does not establish a remote CI pass.
+- A later 31 October read-only audit found gaps in the parked G0 candidate's integrity/provenance success conditions, source-context report IDs, and omitted-file accounting. The revised contract passes local full JSON Schema/semantic checks with pinned `jsonschema==4.26.0`, a pinned TypeScript 5.8.3 typecheck, and stubbed handshakes. PR [#2](https://github.com/sumnlikeshane/Heurisko/pull/2) passed both contract and documentation CI jobs on commit `0e6adb9`. Shane then instructed Codex to review the exact contract and treat the team as accepting it on that review; see the E09 acceptance note in the engineering agreement. No independent Malhar review is claimed. The original validation log is historical. PR merge remains pending.
+- Original research hypotheses **FH-01/FH-02** and decisions **D-01–D-13** remain a historical proposal record. The later Phase 01–06 decisions and Shane–Malhar A01–A14 agreement are approved planning directions. Approval is not implementation, G0 sign-off, model/dependency selection, hosting, or permission to commit/push. The later delegated Apache-2.0 license choice is recorded below.
 - Original governing/research files are preserved. During documentation preparation, all 15 entries in the supplied `SHA256SUMS.txt` verified successfully. That check is research-file integrity, not product validation.
 
 This is a dated baseline, not a substitute for inspecting the current tree. Some research prose says “before a repository is created” because it predates this checkout. Preserve the historical research without treating that wording as an instruction to create another repository.
@@ -36,7 +37,7 @@ This is a dated baseline, not a substitute for inspecting the current tree. Some
 
 Current user instructions define task scope and authorization. Organizer documents define hackathon obligations. Approved scoped decisions define implementation commitments; research recommendations alone do not. `README.md` is the public overview; this file defines contributor behavior and carries durable working context. Observed code and executed validation establish what actually works.
 
-Start with [README.md](README.md), [HACKATHON.md](HACKATHON.md), the [executive brief](docs/Heurisko_Research/HEURISKO_EXECUTIVE_BRIEF.md), the [founder decision register](docs/Heurisko_Research/HEURISKO_FOUNDER_DECISIONS.md), and the [organizer requirement map](docs/Heurisko_Research/_evidence/official-requirements.md). Read the complete relevant source before changing a contract or making a consequential claim.
+Start with [docs/README.md](docs/README.md), the [approved decision register](docs/Approved%20Decision%20Register.md), the [team development checklist](docs/Team%20Development%20Checklist.md), [HACKATHON.md](HACKATHON.md), the [executive brief](docs/Heurisko_Research/HEURISKO_EXECUTIVE_BRIEF.md), the [founder decision register](docs/Heurisko_Research/HEURISKO_FOUNDER_DECISIONS.md), and the [organizer requirement map](docs/Heurisko_Research/_evidence/official-requirements.md). Read the complete relevant source before changing a contract or making a consequential claim.
 
 | Source | Authority or purpose |
 |---|---|
@@ -70,32 +71,32 @@ Official P04 requirements, mapped as **O04-01–O04-08**, are:
 7. Provide an evidence-backed risk assessment.
 8. Monitor new releases of selected packages.
 
-npm-first is a proposed sequence; both ecosystems are not mandatory for the first complete event implementation. **Monitoring remains part of complete P04.** A hosted dashboard, accounts, email, and a whole-registry index are optional. Meaningful actual open-model work is a separate event obligation, not satisfied by model names in a declaration or deterministic templates alone.
+npm-first is the approved sequence; both ecosystems are not mandatory for the first complete event implementation. **Monitoring remains part of complete P04.** A hosted dashboard, accounts, email, and a whole-registry index are optional. Meaningful actual open-model work is a separate event obligation, not satisfied by model names in a declaration or deterministic templates alone.
 
-Preserve the proposed product sequence: scriptable local CLI and shared report first; browser evidence explorer over the same engine; optional TUI after demonstrated usefulness; lockfile audits, upgrade comparison, SARIF, and hosted capabilities as later expansions. The event time limit must not silently erase the documented longer-term product scope.
+Preserve the approved product sequence: scriptable local CLI and shared report first; mandatory keyboard-driven Ink TUI and browser evidence explorer over the same engine; lockfile audits, upgrade comparison, SARIF, and hosted capabilities as later expansions. The event time limit must not silently erase the documented longer-term product scope.
 
 Do not substitute advisory lookup, repository reputation, a generic malware score, or an LLM summary for source/artifact analysis. Do not promise universal safe/unsafe classification, arbitrary semantic equivalence, automatic repair, vulnerability reachability, or verification of unscanned transitive dependencies.
 
 ## Approval and decision discipline
 
-The existing research is not an implementation mandate. This user request authorizes comprehensive root documentation and contributor instructions. Do not start scaffolding an application, choosing a license, installing models/dependencies, or deploying services as a side effect of documenting them.
+The approved handoff records planning decisions. The 31 October 2026 migration request authorized relocating and reconciling these documents. Shane's later explicit request to close G0 authorized integrating the candidate contract into the root workspace and running its pinned local tooling. This does not authorize model installation or service deployment. Shane previously delegated the license choice, and Apache-2.0 was added locally on 31 October 2026.
 
 For future user-authorized engineering, proceed within the approved scope and record the authorization rather than repeatedly asking for permission already given. A request to implement one feature does not approve every unrelated founder proposal.
 
-| Decision group | What remains to be settled |
+| Decision area | Current state |
 |---|---|
-| FH-01 / FH-02 | CLI-first terminal direction, optional TUI, purposeful browser investigation, and shared-engine boundary. |
-| D-01–D-05 | Product claim, engine/language/repository, ecosystem sequence, source/trust policy, and comparison/explanation policy. |
-| D-06 | Exact reuse/integration and dependency admission. |
-| D-07 / D-08 | Actual model/runtime evaluation and concrete rebuild isolation boundary. |
-| D-09 / D-10 | Monitoring operation, CI policy, coverage requirements, and exact exit-code contract. |
-| D-11 / D-12 / D-13 | Hosting/data limits, project license, evaluation thresholds, and permitted launch claims. |
+| Product direction, two-person ownership, mandatory TUI, npm-first sequence | Approved in Phase 01 and A01–A14; see the [current register](docs/Approved%20Decision%20Register.md). |
+| CLI/TUI, evidence, security, evaluation, monitoring, presentation | Approved as design in Phases 02–06; implementation and empirical validation remain open. |
+| Shared G0 schema/types/fixtures | Integrated in [packages/contracts](packages/contracts/package.json); local checks and PR #2 CI passed on `0e6adb9`. Shane's delegated team acceptance after Codex review is recorded in agreement E09. Merge remains pending. |
+| Exit behavior | Initial mapping 0/1/2/3 approved in A05; multi-condition precedence and exact policy configuration remain open. |
+| Concrete dependencies, verifier policy, resource caps, rebuild worker, model choice, watch schedule, retention, hosting | Require implementation decisions and validation within the approved boundaries. |
+| Project license | Apache-2.0 selected on 31 October 2026 under Shane’s delegated choice; local `LICENSE` and `NOTICE` added, commit/PR pending. |
 
-Record explicit acceptance with date, approved scope, rationale, dependencies, and deferred items in the founder decision register. Partial approval updates only the named decisions. Keep approved current rules in this file and the README consistent with that register. Preserve relevant alternatives and historical evidence.
+Record any change to an approved product or trust rule as an amendment in the [approved decision register](docs/Approved%20Decision%20Register.md), with date, scope, rationale and affected documents. Preserve the [original founder register](docs/Heurisko_Research/HEURISKO_FOUNDER_DECISIONS.md) as research history. Routine implementation details within an approved rule need an engineering decision record and tests, not a false claim that the original proposal was still unapproved.
 
 ## Architecture and evidence invariants
 
-The proposed default is a TypeScript/Node monorepo engine and CLI, React/TypeScript viewer, optional Ink TUI, JSON Schema contracts, SQLite metadata, and content-addressed local evidence. Go/Bubble Tea is the leading binary-distribution alternative. No stack, version, platform support, hosting provider, or performance target has been approved or tested.
+The approved direction is one TypeScript/Node pnpm workspace engine and CLI, mandatory React/Ink TUI, React/TypeScript viewer, and shared JSON Schema/report contracts. SQLite metadata and content-addressed evidence are design directions. The G0 schema/types are in the product workspace, reviewed under Shane's later delegated acceptance instruction, and tested by PR CI; merge is pending. Exact product runtime support, hosting, and performance targets remain untested/open; Go/Bubble Tea remains a historical research alternative.
 
 Once implementation is authorized, preserve these evidence boundaries unless an explicitly reviewed decision changes them:
 
@@ -111,9 +112,9 @@ Once implementation is authorized, preserve these evidence boundaries unless an 
 - Record schema, engine, rule, normalizer, verifier, policy/trust-root, and toolchain versions. Deterministic report equivalence excludes volatile timestamps and model prose while preserving those in run metadata.
 - Keep immutable reports/blobs separate from mutable job/monitor state. New bytes, source context, tools, or policy create a new report. Offline replay exposes observation time and cached assumptions; it cannot claim a fresh release or revocation check.
 
-The proposed core records are `ArtifactSubject`, `SourceCandidate`, `EvidenceObject`, `FileRecord`, `ComparisonRun`, `ProvenanceResult`, `Finding`, `Interpretation`, `AnalysisReport`, and `MonitorState`. Their detailed fields belong in the architecture and eventual schema.
+The original architecture proposes these core records: `ArtifactSubject`, `SourceCandidate`, `EvidenceObject`, `FileRecord`, `ComparisonRun`, `ProvenanceResult`, `Finding`, `Interpretation`, `AnalysisReport`, and `MonitorState`. Their detailed fields belong in the architecture and eventual schema.
 
-Preserve the five independent proposed dimensions:
+Preserve the five independent dimensions from the original research; reconcile exact enum names with the reviewed G0 contract before implementation:
 
 | Dimension | States |
 |---|---|
@@ -123,7 +124,7 @@ Preserve the five independent proposed dimensions:
 | Comparison | `byte-identical`, `normalized-equivalent`, `rebuild-matched`, `partially-explained`, `unexplained`, `not-comparable` |
 | Completeness | `complete-for-declared-scope`, `partial`, `failed` |
 
-Findings need real evidence IDs, exact locations, method/version, reason, severity, confidence basis, limitations, and review actions. Completeness describes processing scope; it can coexist with unexplained findings. Do not replace these dimensions with a safety percentage or equate “matched,” “verified,” “complete,” or exit zero with “safe.” Exact numeric exit codes remain undecided.
+Findings need real evidence IDs, exact locations, method/version, reason, severity, confidence basis, limitations, and review actions. Completeness describes processing scope; it can coexist with unexplained findings. Do not replace these dimensions with a safety percentage or equate “matched,” “verified,” “complete,” or exit zero with “safe.” A05 approves the initial 0/1/2/3 CLI exit mapping; precedence for simultaneous conditions still needs contract tests.
 
 ## Untrusted-input and execution rules
 
@@ -140,7 +141,7 @@ Treat archives, source, repository metadata, URLs, build instructions, source ma
 
 ## Product AI and development-assistant disclosure
 
-`HACKATHON.md` proposes **Qwen2.5-Coder-7B-Instruct** via Ollama `qwen2.5-coder:7b`; it explicitly says none is integrated. Later research proposes benchmarking **Qwen3-8B** and **Qwen3-4B**, with the coder model as a comparator. This is a proposal difference, not evidence that a model was changed, installed, run, or selected.
+`HACKATHON.md` proposes **Qwen2.5-Coder-7B-Instruct** via Ollama `qwen2.5-coder:7b`; it explicitly says none is integrated. Later research proposes benchmarking **Qwen3-8B** and **Qwen3-4B**, with the coder model as a comparator. This is a historical proposal difference, not evidence that a model was changed, installed, run, or selected. Phase 01 approved genuine open-weight inference but did not select a model.
 
 - Product inference must use a genuine open-source/open-weight model doing meaningful explanatory work. P04 permits local inference or a confirmed organizer open-model server. The project direction excludes closed cloud inference and silent closed-model fallbacks.
 - Do not import P08's Gemma-only/laptop-only rules into P04. Do not assume an organizer model list, API, hardware, or model availability not supplied in the governing documents.
@@ -157,7 +158,7 @@ The monitor must invoke the shared engine, persist exact artifact observations a
 
 Expose last successful fetch, last completed analysis, pending/failure state, and freshness. Respect validators, throttling, retry hints, and resource limits. A stopped local process is not continuous monitoring. Hosted accounts and notification channels are separate capabilities, not conditions for the basic monitor.
 
-Proposed CLI commands are `analyze`, `inspect`, `compare`, `project --lockfile`, `watch add/run/status/remove`, `report export`, and `serve --local`; none exists yet. Freeze syntax and numeric exits only through an approved contract. Keep one JSON result on stdout, diagnostics/progress on stderr, and no interactive terminal requirement for CI. Support no-color/redirected and accessible linear output.
+Approved Phase 02 calls for `heurisko` to open the TUI by default and a scriptable `analyze` path, with `inspect`, `tui`, and `watch add/run/status/remove` in the initial command direction. The original research also proposed `compare`, `project --lockfile`, `report export`, and `serve --local` as later expansions; no command exists yet. Use the approved initial 0/1/2/3 meanings, then test/freeze precedence and exact syntax in the contract. Keep one JSON result on stdout, diagnostics/progress on stderr, and no interactive terminal requirement for CI. Support no-color/redirected and accessible linear output.
 
 Browser/TUI views use the same report/evidence IDs and status meanings. A privileged loopback API requires a per-session token and origin checks. Keep raw differences, transformation strength, model hypotheses, skipped scope, cache state, and capture time visible. Core local analysis and exported-report viewing should remain account-free. A version-only PyPI input must not imply every distribution was checked.
 
@@ -167,11 +168,11 @@ Integrate established verification and parsing rather than inventing cryptograph
 
 Before admitting an actual dependency/model/tool, record the selected released version and digest, runtime/platform requirements, API stability, current security information, license/NOTICE and transitive obligations, resource behavior, and meaningful fixture results. Repository HEAD observations are not proof of released-package compatibility. Avoid unbounded “latest” installation or installing packages merely to describe them.
 
-The project has no license yet. The organizer permits **MIT or Apache-2.0**; research preference for Apache-2.0 is unapproved. Do not add a license without an authorized choice or claim an SPDX license has been granted. External GPL/AGPL tools, services, model weights, and fixture assets retain their own obligations; a subprocess boundary does not itself settle redistribution rights.
+Shane delegated the project license choice on 31 October 2026; **Apache-2.0** was selected for original Heurisko material. The root [LICENSE](LICENSE) contains the official full text and [NOTICE](NOTICE) identifies project attribution and third-party scope. The organizer-supplied governing files and external tools, services, model weights, source excerpts, and third-party fixture assets retain their own rights; a subprocess boundary does not itself settle redistribution rights. Do not assume the local license files have been committed or published.
 
 ## Validation and truthful completion
 
-There is no product test runner, install command, runtime floor, or product CI workflow to invoke today. The documentation-only [CI workflow](.github/workflows/ci.yml) runs checksum and local Markdown-link checks on pull requests and pushes to `main`; it does not validate product behavior. Inspect the repository before running familiar package-manager commands; do not fabricate a green test result or quickstart.
+There is no analyzer test runner or executable product to invoke today. The root workspace now has a pinned TypeScript contract typecheck and a synthetic contract test suite. The [CI workflow](.github/workflows/ci.yml) runs those checks plus research checksums and local Markdown links on pull requests and pushes to `main`; [PR #2 CI](https://github.com/sumnlikeshane/Heurisko/actions/runs/41222794704) passed both jobs on `0e6adb9`, and none of these checks validates analyzer behavior. Local commands from the repository root are `pnpm install --frozen-lockfile --ignore-scripts`, `python3 -m pip install -r requirements-contracts.txt` in an isolated Python environment, `pnpm run typecheck`, and `pnpm run test:contracts`. Inspect the repository before running package-manager commands; do not fabricate a green product result or quickstart.
 
 For documentation work, check relative links and anchors, Markdown structure, source fidelity, proposal/implementation distinctions, and that only intended files changed. Verify the preserved research snapshot when relevant:
 
@@ -200,7 +201,7 @@ Never claim a proposed test passed, a candidate package was analyzed, a historic
 
 ## Hackathon delivery requirements
 
-Required repository artifacts are an MIT/Apache-2.0 `LICENSE`, `HACKATHON.md`, `README.md` with tested setup/run instructions once runnable, `.github/pull_request_template.md`, `.github/workflows/ci.yml`, and `examples/` with real inputs/outputs. The PR template and documentation-only CI workflow now exist. The license, runnable README instructions, and real generated examples remain outstanding; the docs workflow must grow into product CI when implementation exists. Other outstanding items are not authorization to create them in every task.
+Required repository artifacts are an MIT/Apache-2.0 `LICENSE`, `HACKATHON.md`, `README.md` with tested setup/run instructions once runnable, `.github/pull_request_template.md`, `.github/workflows/ci.yml`, and `examples/` with real inputs/outputs. The PR template, contract-and-documentation CI workflow, and local Apache-2.0 license files now exist. Runnable analyzer instructions and real generated examples remain outstanding; CI must grow into analyzer validation when implementation exists. Other outstanding items are not authorization to create them in every task.
 
 The initial commit must stay declaration-only. All later work goes through PRs. Every PR must use the organizer's four sections:
 

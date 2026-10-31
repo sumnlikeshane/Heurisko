@@ -1,0 +1,13 @@
+{
+  "watchId": "watch_fixture_npm",
+  "ecosystem": "npm",
+  "packageName": "synthetic-watch",
+  "releasePolicy": "stable",
+  "cursor": "1.0.0",
+  "schedulerStatus": "stopped",
+  "lastAttemptAt": "2026-10-31T15:00:00Z",
+  "lastSuccessAt": "2026-10-31T15:00:00Z",
+  "seenArtifactDigests": [
+    "sha256:29ce41b576a65edff102631341b3ead68fb8050331bd8b90a5ca281b7d9b20a4"
+  ]
+}

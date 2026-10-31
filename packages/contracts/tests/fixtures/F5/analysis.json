@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "0.1.0",
+  "findings": [],
+  "aiState": {
+    "status": "rejected",
+    "validation": "rejected",
+    "reason": "Model output used an invented evidence ID / attempted authority escalation."
+  },
+  "interpretations": [],
+  "stages": [
+    {
+      "stage": "heuristics",
+      "status": "complete",
+      "errors": []
+    },
+    {
+      "stage": "ai",
+      "status": "failed",
+      "errors": [
+        {
+          "stage": "ai",
+          "code": "INVALID_AI_CITATION",
+          "message": "Synthetic incomplete stage for contract testing",
+          "affectedScope": "fixture",
+          "retryable": false
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "AI was rejected; deterministic findings are unchanged."
+  ]
+}

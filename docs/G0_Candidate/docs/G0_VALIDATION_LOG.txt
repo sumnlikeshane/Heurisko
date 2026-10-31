@@ -1,0 +1,26 @@
+HISTORICAL LOG — original handoff candidate; predates the 31 October repository-audit revision.
+The current G0 schema/fixtures require a fresh full validator and repository CI run.
+PASS F0 : JSON Schema + evidence/inference invariants
+PASS F1 : JSON Schema + evidence/inference invariants
+PASS F2 : JSON Schema + evidence/inference invariants
+PASS F3 : JSON Schema + evidence/inference invariants
+PASS F4 : JSON Schema + evidence/inference invariants
+PASS F5 : JSON Schema + evidence/inference invariants
+PASS F6 : JSON Schema + evidence/inference invariants
+PASS negative false_integrity_success : artifact integrity report mismatch
+PASS negative invalid_schema : -1 is less than the minimum of 0
+PASS negative invented_evidence : invented evidence ID
+PASS negative rejected_ai_claim : invented evidence ID
+PASS negative unsubstantiated_rebuild : reproduced transform lacks independently verified build evidence
+PASS F7: WatchState + Job schema-only fixture (no scheduler was executed)
+G0 synthetic corpus: 7 valid × 3 contract shapes, 5 invalid cases rejected
+PASS F0 stubbed collectEvidence → analyzeEvidence → InvestigationReport
+PASS F1 stubbed collectEvidence → analyzeEvidence → InvestigationReport
+PASS F2 stubbed collectEvidence → analyzeEvidence → InvestigationReport
+PASS F3 stubbed collectEvidence → analyzeEvidence → InvestigationReport
+PASS F4 stubbed collectEvidence → analyzeEvidence → InvestigationReport
+PASS F5 stubbed collectEvidence → analyzeEvidence → InvestigationReport
+PASS F6 stubbed collectEvidence → analyzeEvidence → InvestigationReport
+Note: these are synthetic interface fixtures, NOT real engine output.
+
+G0 local validation exit: 0

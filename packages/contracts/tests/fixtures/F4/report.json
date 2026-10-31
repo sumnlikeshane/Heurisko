@@ -1,0 +1,219 @@
+{
+  "schemaVersion": "0.1.0",
+  "reportId": "report_2c66b594eb3a16f7451d0347",
+  "createdAt": "2026-10-31T15:00:00Z",
+  "bundle": {
+    "schemaVersion": "0.1.0",
+    "input": {
+      "ecosystem": "local",
+      "artifactPath": "/synthetic/F4.tgz",
+      "sourceOverride": {
+        "repo": "https://github.com/example/fixture",
+        "commit": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      },
+      "analysisOptions": {
+        "enableAI": false,
+        "analysisProfile": "synthetic-g0"
+      }
+    },
+    "artifact": {
+      "origin": "local",
+      "artifactFilename": "F4.tgz",
+      "observedSha256": "sha256:7e441835423a2dc5b6be2bc7391e9b1b4edadf6150b9c9462ffa4ee08c2ad165",
+      "captureTime": "2026-10-31T15:00:00Z",
+      "integrity": {
+        "algorithm": "none",
+        "status": "not_available"
+      }
+    },
+    "sourceCandidates": [
+      {
+        "repositoryUrl": "https://github.com/example/fixture",
+        "commit": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "association": "user_supplied",
+        "evidenceIds": [
+          "ev_3df1c5a6de6823df8781c704"
+        ],
+        "conflicts": []
+      }
+    ],
+    "provenance": {
+      "status": "absent",
+      "artifactBinding": "not_checked",
+      "evidenceIds": [],
+      "limitations": [
+        "No attestation available for the local archive."
+      ]
+    },
+    "evidence": [
+      {
+        "evidenceId": "ev_eae43c825a02139b317d6223",
+        "kind": "artifact_member",
+        "side": "artifact",
+        "locator": {
+          "path": "package/index.js"
+        },
+        "observationMethod": "synthetic_G0_contract_fixture",
+        "contentState": "not_exported",
+        "limitations": [
+          "Synthetic locator: not an independently analyzed package."
+        ],
+        "contentSha256": "sha256:5dc948f5ba3bb2e589fa5439b41fb6e4f0e12d7548354dbe8537d050ee87b345"
+      },
+      {
+        "evidenceId": "ev_3df1c5a6de6823df8781c704",
+        "kind": "source_member",
+        "side": "source",
+        "locator": {
+          "path": "src/index.js"
+        },
+        "observationMethod": "synthetic_G0_contract_fixture",
+        "contentState": "not_exported",
+        "limitations": [
+          "Synthetic locator: not an independently analyzed package."
+        ],
+        "contentSha256": "sha256:5dc948f5ba3bb2e589fa5439b41fb6e4f0e12d7548354dbe8537d050ee87b345"
+      },
+      {
+        "evidenceId": "ev_8b657440e1053afa2cb81186",
+        "kind": "artifact_member",
+        "side": "artifact",
+        "locator": {
+          "path": "bin/native.node"
+        },
+        "observationMethod": "synthetic_G0_contract_fixture",
+        "contentState": "not_exported",
+        "limitations": [
+          "Synthetic locator: not an independently analyzed package."
+        ],
+        "contentSha256": "sha256:e6a858b8582b59e10a89928f780b44741362563b87a4f1e84d4e77a44ae3b1c0"
+      }
+    ],
+    "changes": [
+      {
+        "changeId": "chg_f4",
+        "status": "identical",
+        "sourcePath": "src/index.js",
+        "artifactPath": "package/index.js",
+        "rawEquality": "equal",
+        "explanationStrength": "exact",
+        "evidenceIds": [
+          "ev_eae43c825a02139b317d6223",
+          "ev_3df1c5a6de6823df8781c704"
+        ],
+        "notes": [
+          "Synthetic exact match for type validation; no bytes were compared."
+        ]
+      },
+      {
+        "changeId": "chg_f4_binary",
+        "status": "unresolved",
+        "artifactPath": "bin/native.node",
+        "rawEquality": "unknown",
+        "explanationStrength": "not_assessed",
+        "evidenceIds": [
+          "ev_8b657440e1053afa2cb81186"
+        ],
+        "notes": [
+          "No native binary analysis capability supplied."
+        ]
+      }
+    ],
+    "stages": [
+      {
+        "stage": "resolve_artifact",
+        "status": "complete",
+        "errors": []
+      },
+      {
+        "stage": "acquire",
+        "status": "complete",
+        "errors": []
+      },
+      {
+        "stage": "source",
+        "status": "complete",
+        "errors": []
+      },
+      {
+        "stage": "provenance",
+        "status": "skipped",
+        "errors": []
+      },
+      {
+        "stage": "inventory",
+        "status": "complete",
+        "errors": []
+      },
+      {
+        "stage": "compare",
+        "status": "complete",
+        "errors": []
+      },
+      {
+        "stage": "build",
+        "status": "skipped",
+        "errors": []
+      }
+    ],
+    "coverage": {
+      "sourceFiles": 1,
+      "artifactFiles": 2,
+      "comparedFiles": 1,
+      "analyzedBytes": 100,
+      "skippedBytes": 0,
+      "unsupportedBytes": 4096,
+      "complete": false,
+      "limitations": [
+        "Opaque binary not analyzed."
+      ],
+      "omissions": [
+        {
+          "side": "artifact",
+          "path": "bin/native.node",
+          "kind": "unsupported",
+          "stage": "compare",
+          "reason": "Opaque native binary was not analyzed.",
+          "bytes": 4096,
+          "evidenceIds": [
+            "ev_8b657440e1053afa2cb81186"
+          ]
+        }
+      ]
+    },
+    "limitations": [],
+    "fixtureKind": "synthetic_contract"
+  },
+  "analysis": {
+    "schemaVersion": "0.1.0",
+    "findings": [],
+    "aiState": {
+      "status": "disabled",
+      "validation": "not_run"
+    },
+    "interpretations": [],
+    "stages": [
+      {
+        "stage": "heuristics",
+        "status": "complete",
+        "errors": []
+      },
+      {
+        "stage": "ai",
+        "status": "skipped",
+        "errors": []
+      }
+    ],
+    "limitations": []
+  },
+  "outcomes": {
+    "artifactIntegrity": "not_available",
+    "sourceAssociation": "user_supplied",
+    "provenancePolicy": "absent",
+    "correspondence": "unresolved",
+    "analysisCompleteness": "incomplete",
+    "policyResult": "not_evaluated"
+  },
+  "analysisConfigFingerprint": "52e32b9a58e8e53c51743a98b70664f1fb450c4f0095b7774fdb886b8fefe79c",
+  "fixtureKind": "synthetic_contract"
+}
