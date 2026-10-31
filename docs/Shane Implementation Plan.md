@@ -614,3 +614,7 @@ The file-by-file index below maps each reviewed file to its role in this sequenc
 | [README.md](README.md) | Source order, migration and honest baseline; Parts 1/8. |
 | [Shared_Notes/work_split.md](Shared_Notes/work_split.md) | Requested ownership context; historical proposals reconciled with approvals; all parts. |
 | [Team Development Checklist.md](Team%20Development%20Checklist.md) | Shane S0–S5, joint gates/corpus/final checks; all parts. |
+
+### Linux publication follow-up — 1 November 2026
+
+The initial PR #3 head `e29a98b` failed Linux S2 with unreadable UID-65534/0600 output; its local Mac validation receipt remains historical. **F25 — host-readable private transport:** journal/member spool files use 0644 non-executable modes inside the existing fresh 0700 host job parent, with worker UID 65534 and journal mode checked in runtime evidence. CPU/memory/PID/network/mount controls and private CAS publication are unchanged. An actual restricted-parser regression checks host readability and parent privacy, increasing S2 from 48 to 49 tests (115 total core). Journal-read failures have a distinct diagnostic. The latest replay belongs under `examples/handoff/current`; no old report/blob is overwritten. This is a scoped correction to make the authorized checkpoint pass its intended Linux CI, not a new feature or model/adoption approval. Final local/remote receipts follow the actual execution; no passing result is inferred here.

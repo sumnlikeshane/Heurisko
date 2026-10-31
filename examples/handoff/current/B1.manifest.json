@@ -1,0 +1,159 @@
+{
+  "caseId": "B1",
+  "role": "provisional-corpus",
+  "name": "picocolors",
+  "version": "1.1.1",
+  "fixtureKind": "genuine-public-release-replay",
+  "acquisitionMode": "offline retained public bytes/observations; no freshness check",
+  "registry": "https://registry.npmjs.org",
+  "artifactFilename": "picocolors-1.1.1.tgz",
+  "artifactURL": "https://registry.npmjs.org/picocolors/-/picocolors-1.1.1.tgz",
+  "captureTime": "2026-10-31T19:00:21Z",
+  "expectedIntegrity": "sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA==",
+  "observedSha256": "sha256:d3aedb2807967b7eb37fd11b03b7e3701e725af79c650d0812ff7213f8f882d9",
+  "observedSha512": "sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA==",
+  "metadataRef": "sha256:469edbe4663b07f19026f60ec43744bad678caa89a6be7bf6c4692e2967ddf9d",
+  "sourceCandidates": [
+    {
+      "repositoryUrl": "https://github.com/alexeyraspopov/picocolors",
+      "commit": "6f0a4638348ed20633d623ee973f9c9a96f65104",
+      "subdirectory": "",
+      "association": "ambiguous",
+      "evidenceIds": [
+        "ev_54afcddd214a2726972248d7",
+        "ev_304d5db73d37831377a22783",
+        "ev_216c93daa444b869ec345a9b",
+        "ev_18c792a328cbd8d4d2f0cb3f",
+        "ev_2e14b499a02edfc5f8403706",
+        "ev_a4390f0100c665fa0f521a21",
+        "ev_923052180287909e51ae0c4c"
+      ],
+      "conflicts": [
+        "SOURCE_VERSION_LABEL_DIFFERS"
+      ],
+      "sourceSnapshotSha256": "sha256:87646ed7f9b372d94da80ec298ef4ec6fc0c2a56bb60e0b325a9705037408c7c",
+      "buildContextSha256": "sha256:6383b97048e27e8ab0a0cfeecce3bc80b06ebf180528085638aacc6bd3ca0a04"
+    }
+  ],
+  "selectedSource": {
+    "version": "heurisko-source-resolution-v1",
+    "selected": {
+      "repo": "https://github.com/alexeyraspopov/picocolors",
+      "commit": "6f0a4638348ed20633d623ee973f9c9a96f65104",
+      "subdirectory": ""
+    },
+    "ambiguous": true,
+    "sourceCapture": {
+      "version": "heurisko-download-v1",
+      "requestedUrl": "https://codeload.github.com/alexeyraspopov/picocolors/tar.gz/6f0a4638348ed20633d623ee973f9c9a96f65104",
+      "finalUrl": "https://codeload.github.com/alexeyraspopov/picocolors/tar.gz/6f0a4638348ed20633d623ee973f9c9a96f65104",
+      "sha256": "sha256:87646ed7f9b372d94da80ec298ef4ec6fc0c2a56bb60e0b325a9705037408c7c",
+      "size": 9432,
+      "hops": [
+        {
+          "url": "https://codeload.github.com/alexeyraspopov/picocolors/tar.gz/6f0a4638348ed20633d623ee973f9c9a96f65104",
+          "status": 200,
+          "headers": {
+            "content-type": "application/x-gzip",
+            "content-length": "9432",
+            "etag": "\"30732e65f5a763747d1957efa0d5179a6205835e2597b594210255d6e0ff95f0\""
+          }
+        }
+      ],
+      "origin": "immutable-https-source-candidate",
+      "commitBinding": "transport-url-not-git-object-verification"
+    },
+    "failure": null
+  },
+  "provenance": {
+    "status": "not_checked",
+    "artifactBinding": "not_checked",
+    "evidenceIds": [
+      "ev_173e12b48a026ffe6c4ba75f"
+    ],
+    "limitations": [
+      "No admitted operational verifier, trusted root or expected signer/issuer/source/builder policy. Retrieved material is unverified; no cryptographic or publish/build assertion is accepted.",
+      "NO_ATTESTATION_ADVERTISED_VERIFIER_UNAVAILABLE"
+    ]
+  },
+  "reportId": "report_b74d0497f7fcf6c05930a9c2",
+  "reportFile": "B1.report.json",
+  "bundleFile": "B1.bundle.json",
+  "reportContentRef": "sha256:2ddd237e2aba592d6901317a935d38495e0d58f7b207200f369a85a8855ba4da",
+  "analysisConfigFingerprint": "e3f113b259f05172b0e46a7bcc2b3e90b17d2363bc51641cb414e3e387b476c8",
+  "outcomes": {
+    "artifactIntegrity": "matched",
+    "sourceAssociation": "ambiguous",
+    "provenancePolicy": "not_checked",
+    "correspondence": "unresolved",
+    "analysisCompleteness": "incomplete",
+    "policyResult": "indeterminate"
+  },
+  "rawCoverage": {
+    "artifactFiles": 7,
+    "sourceFiles": 19,
+    "comparedFiles": 19,
+    "analyzedBytes": 39579,
+    "skippedBytes": 0,
+    "unsupportedBytes": 0,
+    "omissions": [],
+    "complete": true,
+    "limitations": []
+  },
+  "evidenceCount": 89,
+  "exitCode": 2,
+  "license": {
+    "advertised": "ISC",
+    "retainedArtifactLicense": "B1-LICENSE.txt"
+  },
+  "malharHandoff": {
+    "sourceClaims": [
+      "ev_54afcddd214a2726972248d7",
+      "ev_304d5db73d37831377a22783",
+      "ev_216c93daa444b869ec345a9b",
+      "ev_18c792a328cbd8d4d2f0cb3f",
+      "ev_2e14b499a02edfc5f8403706",
+      "ev_a4390f0100c665fa0f521a21"
+    ],
+    "buildContextEvidence": [
+      {
+        "path": "picocolors-6f0a4638348ed20633d623ee973f9c9a96f65104/.github/workflows/benchmarks.yaml",
+        "evidenceId": "ev_f27972bccaff9c3d49e31dc7",
+        "contentRef": "sha256:55aab7ebb689858284e3f939d67699472a9ee0c06efeac7ed5df46ecfa36cb27"
+      },
+      {
+        "path": "picocolors-6f0a4638348ed20633d623ee973f9c9a96f65104/.github/workflows/testing.yaml",
+        "evidenceId": "ev_63974380d1f223fa0ce7e2c8",
+        "contentRef": "sha256:92520d502ee386364282130d2fa2e55ad189cf08e4ea707a3fcf301e55fe88c1"
+      },
+      {
+        "path": "picocolors-6f0a4638348ed20633d623ee973f9c9a96f65104/LICENSE",
+        "evidenceId": "ev_4b71737654a5f7e90565961e",
+        "contentRef": "sha256:6582629e2979466878f6014313dcc2f3756c9616148682227ce3063dde310750"
+      },
+      {
+        "path": "picocolors-6f0a4638348ed20633d623ee973f9c9a96f65104/package.json",
+        "evidenceId": "ev_913e4520a988d004b90c38c4",
+        "contentRef": "sha256:76124c34a1d7110bbe0db5578ee039d79e3c411a1064ae2f0ddeb728fea68f56"
+      }
+    ],
+    "artifactSourceMaps": [],
+    "interpretationOwner": "Malhar; no generated-output explanation or model result supplied by this capture",
+    "delivery": "Prepared locally; no external message sent"
+  },
+  "independentChecks": {
+    "artifactSHA512AgainstRawRegistryMetadata": "passed",
+    "rawEvidenceHashes": "passed",
+    "reportSchemaSemanticsAndReopen": "passed"
+  },
+  "limitations": [
+    "Static raw comparison only; generated/build/security interpretation is unavailable without Malhar analysis.",
+    "Registry/manifest/tag source claims are candidates, not proof of release correspondence.",
+    "No submodule or LFS materialization, target scripts, rebuild, provenance or model execution.",
+    "version-tag:v1.1.1: SOURCE_TAG_RATE_LIMITED",
+    "version-tag:1.1.1: SOURCE_TAG_DISCOVERY_SKIPPED_RATE_LIMIT",
+    "Metadata/gitHead/tag/manifest agreement is publisher-linked candidate evidence, not proof of artifact-to-source binding.",
+    "GitHub immutable archive URL is transport context; no Git object reconstruction, signed-tag validation, submodule or LFS acquisition.",
+    "Source manifest version label differs from the registry subject; raw inventory remains usable but release association is ambiguous."
+  ]
+}

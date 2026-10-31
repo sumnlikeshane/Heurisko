@@ -7,7 +7,7 @@ import assert from 'node:assert/strict';
 import {EvidenceStore,decodeReport,decodeBundle,canonicalJSON,sha256,writeImmutable,exitCode,engineCodeIdentity} from '../packages/core/dist/index.js';
 const historical=process.argv.includes('--historical');
 const receiptArgument=process.argv[3]&&!process.argv[3].startsWith('--')?process.argv[3]:undefined;
-const base=resolve(process.argv[2]??'examples/s3/current');const store=new EvidenceStore(join(base,'store'));
+const base=resolve(process.argv[2]??'examples/handoff/current');const store=new EvidenceStore(join(base,'store'));
 const corpus=JSON.parse(await fs.readFile(join(base,'corpus-manifest.json'),'utf8'));
 const current=await engineCodeIdentity(),digests=current.codeDigests,currentEngine=current.engine;
 const historicalReceipt=historical?JSON.parse(await fs.readFile(join(base,'verification.json'),'utf8')):undefined;

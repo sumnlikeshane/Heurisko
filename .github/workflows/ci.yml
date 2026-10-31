@@ -49,8 +49,10 @@ jobs:
 
       - name: Test audit repairs and late parser creation
         run: pnpm run test:audit
-      - name: Verify repaired-engine retained replay
-        run: node scripts/verify-s3-capture.mjs examples/audit-fixes/current
+      - name: Verify earlier audit replay as historical evidence
+        run: node scripts/verify-s3-capture.mjs examples/audit-fixes/current --historical
+      - name: Verify host-readable parser checkpoint replay
+        run: node scripts/verify-s3-capture.mjs examples/handoff/current
 
   documentation:
     name: Documentation integrity

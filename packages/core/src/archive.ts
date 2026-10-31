@@ -58,7 +58,7 @@ export async function inventoryArchive(store:EvidenceStore,archiveRef:string,con
     const inventory:ArchiveInventory={version:'heurisko-inventory-v1',archiveRef,members:[],complete:false,code:resultCode,remainingScope:'unknown',knownFiles:0,knownBytes:0};
     let journal='';
     try { journal=(await boundedFile(join(output,'journal.jsonl'),4*1024*1024)).toString('utf8'); }
-    catch(e) { if((e as NodeJS.ErrnoException).code!=='ENOENT') inventory.code='PARSER_JOURNAL_LIMIT'; }
+    catch(e) { if((e as NodeJS.ErrnoException).code!=='ENOENT') inventory.code=e instanceof StorageError&&e.code==='FILE_LIMIT_OR_TYPE'?'PARSER_JOURNAL_LIMIT':'PARSER_JOURNAL_UNREADABLE'; }
     await fs.rmdir(join(store.root,'.write-lock'));writeLock=false;
     for(const line of journal.split('\n').filter(Boolean)) {
       let record; try { record=JSON.parse(line); } catch { break; }

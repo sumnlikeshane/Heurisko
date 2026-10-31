@@ -1,0 +1,1 @@
+{"requestedUrl":"https://api.github.com/repos/colinhacks/zod/git/ref/tags/v4.6.7","captureTime":"2026-10-31T19:02:21.460Z","hops":[{"url":"https://api.github.com/repos/colinhacks/zod/git/ref/tags/v4.6.7","status":403,"headers":{"content-type":"application/json; charset=utf-8","content-length":"281","x-ratelimit-remaining":"0","x-ratelimit-reset":"1793473884"}}]}

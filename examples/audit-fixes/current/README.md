@@ -1,5 +1,7 @@
 # Repaired-engine offline public-evidence replay
 
+**Historical after the Linux handoff follow-up:** this capture predates the cross-UID output-permission fix. Use `node scripts/verify-s3-capture.mjs examples/audit-fixes/current --historical`. The latest [handoff replay](../../handoff/current/README.md) binds the host-readable worker. Earlier code-bound claims below describe the original audit repair.
+
 **1 November 2026 · all four cases generated and verified locally.** These are new actual producer runs over the original retained S3 public bytes and transport observations. They are not fresh registry/source/revocation checks. Original S2/S3 files remain unchanged; new configuration/report identities bind the repaired engine and `heurisko-config-v3`. No target package, lifecycle script, build, model or cryptographic verifier runs.
 
 | Case | Report | Bundle | Manifest | Evidence boundary |
@@ -16,7 +18,7 @@ Every original observed outcome, coverage record and raw change is compared agai
 With the existing pinned Node/Python/Docker setup, from the repository root:
 
 ```sh
-node scripts/verify-s3-capture.mjs examples/audit-fixes/current
+node scripts/verify-s3-capture.mjs examples/audit-fixes/current --historical
 node packages/cli/dist/index.js inspect examples/audit-fixes/current/B2.report.json --store examples/audit-fixes/current/store --json
 node scripts/capture-s3.mjs .heurisko/NEW_REPLAY --replay examples/s3/current
 ```

@@ -67,3 +67,7 @@ This message is prepared locally; it has not been sent. Final validation receipt
 ## Executed validation
 
 [Final receipt](../examples/audit-fixes/current/validation.json): typecheck/full unchanged G0; **114/114** serial core tests (17 foundation, 48 S2, 36 S3, 13 repair); **24/24** nonvisual readiness; four code-bound replay cases; four unchanged actual model-off consumer calls; historical S2/S3 verification; actual new B2 CLI inspect, expected exit 2. Replay retains 2,988 hash-checked references, 1,028 diff spans and 146 manifest spans. Earlier parallel failures, exact stopped-job recovery and a deliberately retained missing-object test root are disclosed. No new remote CI or full S4/G3/model/policy claim is made.
+
+## Linux handoff follow-up
+
+The first draft PR #3 run at `e29a98b` passed documentation, setup, typecheck/contracts, foundation and parser resource probes but failed Linux S2 because UID-65534 output created with umask 077 was not host-readable. The follow-up sets only journal/member transport files to 0644 inside the existing 0700 private host job parent and records/checks worker UID/journal mode. No worker privilege, mount, network or resource restriction is broadened. The cross-UID/private-parent regression increases S2 to 49 tests; the full current core suite is 115. New immutable code-bound replay is under `examples/handoff/current`; all earlier receipts remain historical. Consult PR #3 for its final head and actual remote result.

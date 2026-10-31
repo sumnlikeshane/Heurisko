@@ -12,7 +12,7 @@
 - `packages/cli`: actual `analyze` and retained-report `inspect`, machine JSON/stdout separation, cancellation requests and tested 0/1/2/3 exit precedence.
 - Existing canonical G0 contracts, the shared Python runtime validation bridge, pinned workspace/tooling and CI.
 - Audit fixes: exact executable/rule-configuration identity, terminal progress events, observer isolation, conservative Docker create/cleanup handling, explicit stopped-job recovery and regressions.
-- `examples/s2`, `examples/s3` and `examples/audit-fixes/current`: actual retained public inputs, immutable reports, complete blob stores, licenses, verification and model-off consumer receipts. Historical and repaired-engine replay are explicitly distinguished.
+- `examples/s2`, `examples/s3` and `examples/handoff/current`: actual retained public inputs, immutable reports, complete blob stores, licenses, verification and model-off consumer receipts. Historical and repaired-engine replay are explicitly distinguished.
 - `integration/part4`: a **nonvisual candidate** report/span reader and cancel-request/progress wrapper, with 24 headless checks. This is not an agreed intelligence resolver or completed production TUI.
 - `integration/malhar/m1-retained-value-wording.patch`: a checked wording-only proposal against the received M0+M1 source. It has not been applied to your source.
 
@@ -27,7 +27,7 @@ G0 is unchanged. Source candidates are assertions/comparison targets, not verifi
 ## Start here
 
 1. Fetch this branch and inspect the supplied commit SHA in a clean worktree or your own integration branch. Preserve your current intelligence work. Coordinate before changing shared contracts or core integration APIs.
-2. Read [audit repairs and the detailed Malhar handoff](Audit%20Repairs%20and%20Malhar%20Handoff.md), [repaired replay](../examples/audit-fixes/current/README.md), and its [handoff index](../examples/audit-fixes/current/handoff.json).
+2. Read [audit repairs and the detailed Malhar handoff](Audit%20Repairs%20and%20Malhar%20Handoff.md), [repaired replay](../examples/handoff/current/README.md), and its [handoff index](../examples/handoff/current/handoff.json).
 3. Follow [tested setup/run instructions](../README.md#installation-and-execution): Node 22.23.4, pnpm 10.14.0, Python 3.13/hash-locked requirements and the digest-pinned local Docker parser. Fetching/installing analyzed packages or running their scripts is not part of setup.
 
 After that setup, from this checkout:
@@ -39,8 +39,8 @@ pnpm run test:foundation
 pnpm run test:s2
 pnpm run test:s3
 pnpm run test:audit
-node scripts/verify-s3-capture.mjs examples/audit-fixes/current
-node packages/cli/dist/index.js inspect examples/audit-fixes/current/B2.report.json --store examples/audit-fixes/current/store --json
+node scripts/verify-s3-capture.mjs examples/handoff/current
+node packages/cli/dist/index.js inspect examples/handoff/current/B2.report.json --store examples/handoff/current/store --json
 ```
 
 The final inspect command intentionally exits 2. Run Docker suites serially. Local parser cleanup uncertainty preserves job records/locks; do not erase them to make a run appear clean. [Recovery procedure](Audit%20Repairs%20and%20Malhar%20Handoff.md#repaired-foundation) requires the exact stopped job and store identity.
@@ -49,8 +49,8 @@ The final inspect command intentionally exits 2. Run Docker suites serially. Loc
 
 | Input | Bundle/report | Required byte store | Important limit |
 |---|---|---|---|
-| B1 `picocolors@1.1.1` | `examples/audit-fixes/current/B1.bundle.json` and `B1.report.json` | `examples/audit-fixes/current/store/` | Artifact integrity matched; source manifest is 1.1.0, so association remains ambiguous. |
-| B2 `ts-pattern@5.9.0` | `examples/audit-fixes/current/B2.bundle.json` and `B2.report.json` | Same store | Publisher-asserted source candidate; nine build-context records and three maps indexed in the handoff. No generated equivalence claimed. |
+| B1 `picocolors@1.1.1` | `examples/handoff/current/B1.bundle.json` and `B1.report.json` | `examples/handoff/current/store/` | Artifact integrity matched; source manifest is 1.1.0, so association remains ambiguous. |
+| B2 `ts-pattern@5.9.0` | `examples/handoff/current/B2.bundle.json` and `B2.report.json` | Same store | Publisher-asserted source candidate; nine build-context records and three maps indexed in the handoff. No generated equivalence claimed. |
 | Inert local mutation | `examples/s2/current/outputs/synthetic-local-mutation.bundle.json` and matching report | `examples/s2/current/store/` | Explicit local input. The postinstall value is retained and was never executed. |
 | Unsupported/monorepo cases | B3/B3R in the repaired replay directory | Repaired replay store | Zod has partial unsupported source scope; Vue is a user-selected immutable subtree with exclusions. |
 
@@ -71,8 +71,8 @@ You can call `scripts/check-malhar-handshake.mjs BUNDLE STORE NEW_RECEIPT YOUR_R
 
 ## Validation and publication boundary
 
-The repair baseline passes typecheck/full unchanged G0, **114 serial core tests** (17 foundation, 48 S2, 36 S3, 13 repair), **24** separate headless readiness checks, four current-code replay cases and four actual model-off consumer calls. Replay verifies 2,988 evidence references, 1,028 diff spans and 146 manifest spans. [Immutable receipt](../examples/audit-fixes/current/validation.json) also discloses earlier concurrent failures and conservative recovery. Source/compiled M0/M1 hashes match their original receipts; the wording patch passes applicability check but is not applied.
+The original Mac assembly passed 114 core/24 headless checks, recorded in [the historical assembly receipt](HANDOFF_VALIDATION.json). Initial draft-PR Linux CI then exposed worker-output ownership/permissions. The follow-up adds a real cross-UID host-readability/private-parent test (49 S2; 115 total core), records/checks worker UID and journal mode, and creates a new immutable code-bound replay. The static worker stays UID 65534; only journal/member transport files become 0644 inside the existing 0700 private host parent. CPU/memory/PID/network/mount controls are unchanged. See [the follow-up receipt](HANDOFF_LINUX_VALIDATION.json) for actual local checks and the draft PR for its final remote result.
 
-The [assembled-checkpoint validation](HANDOFF_VALIDATION.json) passes the same 114 core/24 nonvisual checks, actual parser-boundary probes, corpus checks, 40 Markdown link/anchor checks and 15 research checksums. The frozen pnpm install reused pinned cached packages; local Python validation reused the existing hash-locked environment. Draft-PR CI performs its own setup. Check the draft PR for its exact current remote result; local/historical receipts are not a remote pass. Do not merge this branch to main, publish a release, submit the project or send external messages without the relevant approval. S4 remains in progress separately. Git attributes preserve exact retained-example bytes across checkout newline settings. Original project material is Apache-2.0; upstream ISC/MIT source/artifacts and other inherited third-party material retain their own rights/notices.
+Earlier no-publication/current-code receipts are historical. Do not merge to main, publish a release, submit the project or send external messages without the relevant approval. S4 continues separately. Git attributes preserve exact example bytes. Original project material is Apache-2.0; upstream ISC/MIT source/artifacts and inherited third-party material retain their rights/notices.
 
 Product models used in this checkpoint: **none**. Coding assistance: **Codex**.

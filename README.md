@@ -16,6 +16,8 @@ Team **InBuildingPhase**: **Shane Joseph** and **Malhar Mahanor**. See [HACKATHO
 
 **Malhar handoff checkpoint:** start with [handoff instructions](docs/HANDOFF_S1_S3.md). This feature branch freezes the tested S1–S3 engine/evidence and audit repairs, plus the labelled nonvisual reader candidate. S4 visuals, actual intelligence/model adoption and main integration remain separate work. Historical receipts predate publication of this checkpoint.
 
+**Linux handoff correction:** initial draft-PR Linux validation exposed unreadable UID-65534 output. The current worker publishes non-executable transport files inside its private job parent, with a host-readability/privacy regression. Latest [code-bound replay](examples/handoff/current/README.md) supersedes older current-code claims; original captures remain historical. Check draft PR #3 for its exact final CI result.
+
 ## Contents
 
 - [The problem and intended contribution](#the-problem-and-intended-contribution)

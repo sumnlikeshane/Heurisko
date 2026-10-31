@@ -56,5 +56,17 @@
     "scope": "Creation acknowledgment is awaited within its bounded control window; a passed wall deadline forbids start. Cleanup may require a separate bounded control window. CPU/memory/network/mount restrictions are unchanged. Uncertain creation/removal retains job records/spool/locks; no absence-based automatic unlock.",
     "recovery": "Explicit stopped immutable container ID + matching store label; non-forced removal; exact absence confirmation; immutable receipt before releasing own spool/locks. Missing object alone is insufficient.",
     "validation": "Targeted regressions and final serial suite/replay receipts are linked from docs/Audit Repairs and Malhar Handoff.md. Earlier parallel validation exposed lost create acknowledgments and failed closed; those failures are retained in the repair receipt."
+  },
+  "linuxHandoffFollowup20261101": {
+    "trigger": "Draft PR #3 Linux S2 failed with unreadable worker journals; worker UID 65534 and umask 077 produced 0600 files on Linux, unlike Docker Desktop ownership mapping.",
+    "safetyProfile": "heurisko-static-v5",
+    "transportModes": {
+      "privateHostJobParent": "0700",
+      "journalAndMemberSpool": "0644 non-executable; readable by host UID after restricted job stops",
+      "persistedCAS": "unchanged private host-owned publication"
+    },
+    "invariants": "Worker remains UID 65534; CPU/memory/PID/network/capability/read-only mounts unchanged. Numeric spool names and post-stop hash validation unchanged. Other host users cannot traverse the private 0700 parent.",
+    "regression": "Actual restricted parser checks runtime UID/journal mode, host readability of member/journal files and 0700 private job parent. Journal permission/read failures no longer masquerade as size limits.",
+    "history": "Earlier captures remain immutable historical code receipts. Fresh code-bound replay under examples/handoff/current."
   }
 }

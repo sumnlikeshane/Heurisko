@@ -1,6 +1,6 @@
 // Versioned controls for the first local/public static evidence slice.
 export const safetyProfile = {
-  version: 'heurisko-static-v4',
+  version: 'heurisko-static-v5',
   network: {
     schemes: ['https'], hosts: ['registry.npmjs.org', 'codeload.github.com', 'api.github.com'],
     port: 443, redirects: 3, timeoutMs: 30_000, idleTimeoutMs: 10_000,
@@ -16,7 +16,7 @@ export const safetyProfile = {
     rejectLinksSpecialEntriesDuplicatesAndCaseCollisions: true, virtualInventory: true,
   },
   parser: { cpuSeconds: 10, memoryBytes: 256 * 1024 * 1024, wallMs: 30_000, concurrency: 1, queueDepth: 8,
-    createTimeoutMs:30_000,controlTimeoutMs:10_000,
+    createTimeoutMs:30_000,controlTimeoutMs:10_000,outputFileMode:0o644,privateJobMode:0o700,
     runtime:'digest-pinned-linux-container',
     image:'python:3.13.18-slim-bookworm@sha256:281d39ff02e3b389401586134ff9e6572954687822a58055ec07a60ded4e0b7f',
     network:'none',rootFilesystem:'read-only',pids:16,user:'65534:65534',noHostFallback:true },

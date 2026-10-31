@@ -5,7 +5,7 @@ import * as fs from 'node:fs/promises';
 import { execFileSync, spawnSync } from 'node:child_process';
 import { join, resolve } from 'node:path';
 import { tmpdir } from 'node:os';
-import { EvidenceStore, inventoryArchive, sha256, investigate, validateReport, deterministicReportDigest, exitCode, terminalText, manifestFields, safetyProfile, publicAddress, allowedURL, pinnedSourceURL, writeImmutable, decodeReport } from '../dist/index.js';
+import { EvidenceStore, inventoryArchive, dockerParserDriver, sha256, investigate, validateReport, deterministicReportDigest, exitCode, terminalText, manifestFields, safetyProfile, publicAddress, allowedURL, pinnedSourceURL, writeImmutable, decodeReport } from '../dist/index.js';
 
 const root=resolve(import.meta.dirname,'../../..');
 const python=join(root,'.venv/bin/python');
@@ -42,6 +42,25 @@ for(const [name,entries] of [
 ])test(`refuses ${name} without materializing archive-controlled paths`,async t=>{
  const {path,store}=await setup(t);const inv=await parse(store,entries);assert.equal(inv.complete,false);assert.equal(inv.remainingScope,'unknown');assert.match(inv.code,/^ARCHIVE_/);
  assert.deepEqual(await fs.readdir(join(store.root,'scratch')),[]);await assert.rejects(fs.stat(join(path,'escape')),{code:'ENOENT'});
+});
+
+test('cross-UID parser output stays host-readable inside a private job root',async t=>{
+ const {store}=await setup(t);let outputPath,checked=false;
+ const driver={...dockerParserDriver,async create(args){
+  const mount=args.find(x=>x.startsWith('type=bind,src=')&&x.endsWith(',dst=/out'));
+  outputPath=mount.slice('type=bind,src='.length,-',dst=/out'.length);return dockerParserDriver.create(args);
+ },async remove(id){
+  if(outputPath){
+   const names=await fs.readdir(outputPath);const files=names.filter(n=>n==='journal.jsonl'||/^\d+\.member$/.test(n));
+   assert.ok(files.includes('journal.jsonl'));assert.ok(files.some(n=>n.endsWith('.member')));
+   for(const name of files)assert.equal((await fs.stat(join(outputPath,name))).mode&0o777,0o644,'transport output must be non-executable and readable across UIDs');
+   assert.equal((await fs.stat(resolve(outputPath,'..'))).mode&0o777,0o700,'host private job parent must remain inaccessible to other users');checked=true;
+  }
+  return dockerParserDriver.remove(id);
+ }};
+ const ref=await store.put(archive([{path:'package/a',text:'authored inert permission probe'}]));
+ const result=await inventoryArchive(store,ref,{parserJobDriver:driver});
+ assert.equal(result.complete,true);assert.equal(result.runtime.uid,65534);assert.equal(result.runtime.journalMode,0o644);assert.equal(checked,true);
 });
 
 test('actual expansion, member, path/depth and entry limits preserve known/unknown coverage',async t=>{
