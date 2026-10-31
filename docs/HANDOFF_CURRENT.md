@@ -1,5 +1,7 @@
 # Current workspace handoff for Malhar
 
+**Linux CI follow-up:** the first complete checkpoint `af78823` passed web/docs CI but producer cleanup confirmation failed on Linux. The corrective follow-up uses a successful all-container query filtered by the acknowledged full ID, shared by normal cleanup and explicit recovery. Any query error, remaining output or non-full ID stays unconfirmed; resource limits and uncertain-job retention are unchanged. [Fresh corrective validation](../examples/current-handoff-linux/README.md) supersedes current-code claims for the first checkpoint; its original receipts remain historical.
+
 Updated 1 November 2026, Asia/Kolkata. Shane approved one new checkpoint commit, feature-branch push and PR update for the current webapp and integrated workspace. This continues draft PR #3 on `handoff/s1-s3-audit-fixes`; no main merge, deployment, submission or external message is included. Earlier no-publication statements in historical receipts describe those earlier tasks.
 
 ## Get the complete checkpoint

@@ -2,7 +2,7 @@
 import * as fs from 'node:fs/promises';
 import {join,resolve} from 'node:path';
 import {execFile} from 'node:child_process';
-import {EvidenceStore,boundedFile,sha256,writeImmutable,localDockerArgs} from '../packages/core/dist/index.js';
+import {EvidenceStore,boundedFile,sha256,writeImmutable,localDockerArgs,parserJobAbsent} from '../packages/core/dist/index.js';
 const [rootArg,name]=process.argv.slice(2);
 if(!rootArg||!/^heurisko-parser-[a-f0-9-]{36}$/.test(name??''))throw Error('EXPLICIT_STORE_AND_JOB_REQUIRED');
 const store=new EvidenceStore(resolve(rootArg));
@@ -22,9 +22,7 @@ const call=args=>new Promise((accept,reject)=>execFile('docker',localDockerArgs(
 const [job]=JSON.parse(await call(['inspect',name]));
 if(job.Name!=='/'+name||job.Config.Labels?.['heurisko.store']!==jobs[0].job.storeLabel||!/^[a-f0-9]{64}$/.test(job.Id)||job.State.Running||job.State.Pid!==0||!['created','exited','dead'].includes(job.State.Status))throw Error('RECOVERY_STOPPED_STATE_REQUIRED');
 await call(['rm',job.Id]);
-let absent=false;
-try {await call(['inspect',job.Id]);}catch(error){absent=String(error.stderr).includes('No such object: '+job.Id);}
-if(!absent)throw Error('RECOVERY_REMOVAL_UNCONFIRMED');
+if(!await parserJobAbsent(job.Id))throw Error('RECOVERY_REMOVAL_UNCONFIRMED');
 const receipt={version:'heurisko-parser-recovery-v1',name,containerId:job.Id,storeLabel:jobs[0].job.storeLabel,observedState:{status:job.State.Status,running:job.State.Running,pid:job.State.Pid,startedAt:job.State.StartedAt},removedWithoutForce:true,exactRemovalConfirmed:true,recoveredAt:new Date().toISOString()};
 await writeImmutable(join(store.root,'state','parser-recoveries',name+'.json'),Buffer.from(JSON.stringify(receipt,null,2)+'\n'));
 await fs.rm(jobs[0].scratch,{recursive:true});

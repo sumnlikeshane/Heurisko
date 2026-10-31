@@ -12,3 +12,4 @@ examples/**/blobs/* -diff
 examples/**/*.log -diff
 examples/current-handoff/**/*.ansi -diff
 examples/current-handoff/**/*.txt -diff
+examples/current-handoff-linux/**/*.txt -diff

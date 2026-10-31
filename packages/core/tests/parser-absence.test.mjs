@@ -1,0 +1,20 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import * as fs from 'node:fs/promises';
+import {join} from 'node:path';
+import {tmpdir} from 'node:os';
+import {spawnSync} from 'node:child_process';
+const id='a'.repeat(64);
+for(const scenario of ['absent','missing-rm','present','query-error','unexpected-output','remove-error','partial-id'])test('exact parser absence fails closed: '+scenario,async t=>{
+ const dir=await fs.mkdtemp(join(await fs.realpath(tmpdir()),'heurisko-absence-test-'));t.after(()=>fs.rm(dir,{recursive:true,force:true}));
+ const calls=join(dir,'calls.jsonl');
+ const query=['container','ls','--all','--quiet','--no-trunc','--filter','id='+id];
+ const script=`#!${process.execPath}\nconst fs=require('node:fs'),args=process.argv.slice(4),scenario=${JSON.stringify(scenario)};fs.appendFileSync(${JSON.stringify(calls)},JSON.stringify(args)+'\\n');if(args[0]==='rm'){if(scenario==='remove-error'){process.stderr.write('permission denied');process.exit(1);}if(scenario==='missing-rm'){process.stderr.write('Error: No such container: '+args[2]);process.exit(1);}process.exit(0);}if(JSON.stringify(args)!==${JSON.stringify(JSON.stringify(query))})process.exit(2);if(scenario==='query-error'){process.stderr.write('daemon unavailable');process.exit(1);}if(scenario==='present')process.stdout.write(${JSON.stringify(id)});if(scenario==='unexpected-output')process.stdout.write('unexpected diagnostic');\n`;
+ await fs.writeFile(join(dir,'docker'),script,{mode:0o700});
+ const target=scenario==='partial-id'?id.slice(0,12):id;
+ const url=new URL('../dist/parser-job.js',import.meta.url).href;
+ const r=spawnSync(process.execPath,['--input-type=module','-e',`import {dockerParserDriver} from ${JSON.stringify(url)};console.log(await dockerParserDriver.remove(${JSON.stringify(target)}));`],{env:{...process.env,PATH:dir+':'+process.env.PATH},encoding:'utf8'});
+ assert.equal(r.status,0,r.stderr);assert.equal(r.stdout.trim(),['absent','missing-rm'].includes(scenario)?'true':'false');
+ const observed=(await fs.readFile(calls,'utf8')).trim().split('\n').map(JSON.parse);assert.deepEqual(observed[0],['rm','-f',target]);
+ if(['remove-error','partial-id'].includes(scenario))assert.equal(observed.length,1);else assert.deepEqual(observed[1],query);
+});
