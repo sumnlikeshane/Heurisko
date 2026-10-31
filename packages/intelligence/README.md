@@ -66,11 +66,45 @@ changes, entrypoint changes, generated candidates, omissions, uncited changes,
 and contradictory equality records. It checks schema validity and evidence
 references, not real package accuracy or generalization.
 
+## M2 lexical retrieval baseline
+
+`retrieveEvidence` ranks caller-resolved, bounded excerpts with a deterministic
+lexical score. It accepts an excerpt only when its evidence ID exists in the
+bundle, the parent record marks content retained and addressable, the content
+reference matches, and the record supplies an exact path and line range. The
+returned excerpt keeps the original evidence ID and locator. A missing result
+does not imply that relevant evidence does not exist; skipped records and
+selection limits remain visible.
+
+The intelligence package does not read `contentRef`, access the filesystem,
+verify retrieved bytes against a digest, or create excerpts from raw files.
+Those responsibilities remain with the evidence store, which must provide
+bounded content verified against its retained record. `validateRetrievedCitations`
+checks that cited IDs are known and were retrieved; it does not establish that
+a cited excerpt entails a model claim. `validateInterpretationDraft` checks a
+strict draft shape, known finding IDs, retrieved evidence IDs, finding/evidence
+alignment, and explicit abstention when a draft has no citations. Runtime
+metadata comes from the caller. Its `validation: passed` records structural and
+reference checks only; it does not mean the hypothesis is supported by the
+excerpt. This synthetic-only baseline uses no vector database, model runtime,
+or product inference.
+
+`packageInterpretationPrompt` packages fixed system instructions separately
+from a JSON user payload containing bounded findings and retrieved evidence.
+The payload labels those values as untrusted data, preserves evidence IDs and
+exact path/line locators, exposes no tool channel, and omits whole excerpts that
+exceed the configured size bound. This structure does not eliminate prompt
+injection or prove that a model follows the instructions. Synthetic probes put
+instruction-like and unsupported-claim text inside an evidence excerpt and
+verify that it remains in the data field. The tests do not call a model.
+
 ## Current behavior
 
 `analyzeEvidence(bundle, options)` returns the shared `AnalysisResults` shape.
 With AI disabled it records that state and skips AI. If AI is requested, it
 returns `unavailable` and an `AI_ADAPTER_NOT_IMPLEMENTED` stage error. The
-deterministic stage runs the bounded rules described above. This is an initial
-static baseline, not a complete analyzer, real-data evaluation, or product
-model integration.
+deterministic stage runs the bounded rules described above. Lexical retrieval,
+interpretation validation, and prompt packaging are separate helpers and are
+not yet connected to model inference. This is an initial static/retrieval
+baseline, not a complete analyzer, real-data evaluation, or product model
+integration.

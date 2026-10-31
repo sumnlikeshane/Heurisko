@@ -228,6 +228,12 @@ The order below consolidates the approved requirements into a **recommended engi
 
 **M2 done when:** actual inference explains a difficult *real* difference with inspectable citations, alternatives and limits, and abstains or is rejected when references/claims are unsupported.
 
+**M2 progress — synthetic retrieval baseline:** `retrieveEvidence` ranks caller-resolved bounded excerpts lexically, returns only retained/addressable records with matching content references and exact line locators, and preserves the original evidence IDs. Citation checks reject unknown and non-retrieved IDs. Synthetic probes pass, and a one-pass Codex-as-judge review found the top result relevant to its query and the no-match case appropriately limited. This does not verify blob bytes, establish citation entailment, call a model, or complete M2.
+
+**M2 progress — interpretation validation:** `validateInterpretationDraft` rejects malformed fields, unknown findings, unknown or non-retrieved evidence, findings cited with unrelated evidence, and non-abstaining drafts without evidence. It stamps caller-supplied runtime metadata and emits the shared `AIInterpretation` shape. Synthetic probes pass. Codex-as-judge accepted the bounded lifecycle explanation and explicit abstention, but rejected a credential-exfiltration claim as unsupported even though structural/reference validation accepts it. This confirms that `validation: passed` is only a shape/reference result; claim entailment remains a separate, unimplemented review step. No product model is integrated.
+
+**M2 progress — prompt packaging:** `packageInterpretationPrompt` keeps fixed system instructions separate from bounded JSON containing findings and retrieved excerpts. Synthetic hostile text remains inside the evidence field; IDs and exact locators are preserved, oversized excerpts are omitted whole, and the package exposes no tool channel. The checks cover packaging behavior only: this is not a prompt-injection guarantee, entailment validator, or model-inference test. Codex-as-judge review of the synthetic invented credential-theft claim found it unsupported by the provided marker-only excerpt; the structural validator still accepts its citation, as designed.
+
 ### M3. Evaluation, model security and browser collaboration
 
 - [ ] Independently label known explanations and security observations for Phase 03 corpus; keep uncertainty cases and held-out mutation families separate from demo prompts.

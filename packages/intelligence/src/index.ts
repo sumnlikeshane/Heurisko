@@ -249,3 +249,9 @@ export async function analyzeEvidence(
 }
 
 export type { AnalyzeEvidence } from '@heurisko/contracts';
+export { retrieveEvidence, validateRetrievedCitations } from './retrieval.js';
+export type { CitationCheck, EvidenceExcerpt, RetrievedEvidence, RetrievalOptions, RetrievalResult } from './retrieval.js';
+export { validateInterpretationDraft } from './interpretation.js';
+export type { InterpretationDraft, InterpretationMetadata, InterpretationRejectionCode, InterpretationValidation } from './interpretation.js';
+export { INTERPRETATION_PROMPT_VERSION, INTERPRETATION_SYSTEM_INSTRUCTION, packageInterpretationPrompt } from './prompt.js';
+export type { InterpretationPromptOptions, InterpretationPromptPackage } from './prompt.js';
