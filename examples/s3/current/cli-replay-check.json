@@ -1,0 +1,81 @@
+{
+  "version": "heurisko-s3-cli-replay-v1",
+  "checkedAt": "2026-10-31T19:06:40.626Z",
+  "records": [
+    {
+      "caseId": "B1",
+      "operation": "offline inspect",
+      "exitCode": 2,
+      "reportId": "report_b5fbc4c40096d70898615c59",
+      "reportContentRef": "sha256:a5851d2b9f0d92e75291592c0aae46e45d74a8365f31a7bb13e7d7b04fae44d9",
+      "freshness": "retained capture; no network refresh"
+    },
+    {
+      "caseId": "B2",
+      "operation": "offline inspect",
+      "exitCode": 2,
+      "reportId": "report_b9f365256abe5e5929724e6c",
+      "reportContentRef": "sha256:9118fd96b1e11174394c2ff86d9689040aea514e678b662e8e69eb3c2a41b699",
+      "freshness": "retained capture; no network refresh"
+    },
+    {
+      "caseId": "B3",
+      "operation": "offline inspect",
+      "exitCode": 2,
+      "reportId": "report_d8244948a383f386ca9ef2dc",
+      "reportContentRef": "sha256:66930f781d9cc50518a9b0aa06dac54c648ff32a022fbb659ceedfb3fd8e6ad8",
+      "freshness": "retained capture; no network refresh"
+    },
+    {
+      "caseId": "B3R",
+      "operation": "offline inspect",
+      "exitCode": 2,
+      "reportId": "report_8863c3d7076ee50f8f2fb0e0",
+      "reportContentRef": "sha256:bc0dfb893a4e5667742217d0e81a77931e571b74237d075c15f787b493cdb37c",
+      "freshness": "retained capture; no network refresh"
+    },
+    {
+      "caseId": "B1-live-cli",
+      "operation": "fresh public exact npm acquisition",
+      "exitCode": 2,
+      "reportFile": "live-cli-B1.report.json",
+      "reportId": "report_b5fbc4c40096d70898615c59",
+      "reportContentRef": "sha256:4fd5551a0f7e92449a84e021786012ace04e97efb11dd8f1a4c423078fcc774a",
+      "configurationFingerprint": "d63eeda51ef939fcd7c0a7c915a2ed3bad0b95e12449fe462d27fcb2445adc8f",
+      "sameReportIdAsRetained": true,
+      "sameConfigurationAsRetained": true,
+      "stdoutJSON": true,
+      "diagnosticsOnStderr": true
+    },
+    {
+      "caseId": "M1-local-replay",
+      "fixtureKind": "previously authored inert mutation; never executed or uploaded",
+      "operation": "local modified archive cannot inherit registry identity/provenance",
+      "exitCode": 2,
+      "reportFile": "local-mutation-replay.report.json",
+      "reportId": "report_89f970db716d3028fae161fb",
+      "reportContentRef": "sha256:7ded422e87d8c5156cb493fc4c37792e4e225af47f939635fb0a2b3a22ca8ca1",
+      "observedSha256": "sha256:bcdd003ee749b70575fb2793d3892a393d1224457ecb8ca9c37ff4cfd55e098d",
+      "outcomes": {
+        "analysisCompleteness": "incomplete",
+        "artifactIntegrity": "not_checked",
+        "correspondence": "unresolved",
+        "policyResult": "indeterminate",
+        "provenancePolicy": "not_checked",
+        "sourceAssociation": "user_supplied"
+      },
+      "oracle": "S2 independent mutation oracle; scripts.postinstall=HEURISKO_INERT_TEST_ONLY and one comment-only marker file"
+    },
+    {
+      "caseId": "unavailable-version",
+      "operation": "real unavailable exact version",
+      "exitCode": 3,
+      "stdoutEmpty": true,
+      "retainedFailureRef": "sha256:55cfe54c4788a2666d3eaa81a95ed279fce1795332909d7a5519c74f534e66fe",
+      "code": "HTTP_STATUS_REJECTED",
+      "scope": "Failed acquisition receipt, no artifact/report fabricated"
+    }
+  ],
+  "modelExecution": false,
+  "targetCodeExecution": false
+}

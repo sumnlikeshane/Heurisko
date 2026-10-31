@@ -1,0 +1,132 @@
+{
+  "version": "foundation-dependencies-v1",
+  "observedAt": "2026-10-31",
+  "python": [
+    {
+      "name": "jsonschema",
+      "version": "4.26.0",
+      "source": "https://pypi.org/pypi/jsonschema/4.26.0/json",
+      "license": "MIT",
+      "requiresPython": ">=3.10",
+      "vulnerabilities": [],
+      "distributions": [
+        {
+          "filename": "jsonschema-4.26.0-py3-none-any.whl",
+          "sha256": "d489f15263b8d200f8387e64b4c3a75f06629559fb73deb8fdfb525f2dab50ce"
+        }
+      ]
+    },
+    {
+      "name": "attrs",
+      "version": "26.1.0",
+      "source": "https://pypi.org/pypi/attrs/26.1.0/json",
+      "license": "MIT",
+      "requiresPython": ">=3.9",
+      "vulnerabilities": [],
+      "distributions": [
+        {
+          "filename": "attrs-26.1.0-py3-none-any.whl",
+          "sha256": "c647aa4a12dfbad9333ca4e71fe62ddc36f4e63b2d260a37a8b83d2f043ac309"
+        }
+      ]
+    },
+    {
+      "name": "jsonschema-specifications",
+      "version": "2025.9.1",
+      "source": "https://pypi.org/pypi/jsonschema-specifications/2025.9.1/json",
+      "license": "MIT",
+      "requiresPython": ">=3.9",
+      "vulnerabilities": [],
+      "distributions": [
+        {
+          "filename": "jsonschema_specifications-2025.9.1-py3-none-any.whl",
+          "sha256": "98802fee3a11ee76ecaca44429fda8a41bff98b00a0f2838151b113f210cc6fe"
+        }
+      ]
+    },
+    {
+      "name": "referencing",
+      "version": "0.37.0",
+      "source": "https://pypi.org/pypi/referencing/0.37.0/json",
+      "license": "MIT",
+      "requiresPython": ">=3.10",
+      "vulnerabilities": [],
+      "distributions": [
+        {
+          "filename": "referencing-0.37.0-py3-none-any.whl",
+          "sha256": "381329a9f99628c9069361716891d34ad94af76e461dcb0335825aecc7692231"
+        }
+      ]
+    },
+    {
+      "name": "rpds-py",
+      "version": "2026.9.1",
+      "source": "https://pypi.org/pypi/rpds-py/2026.9.1/json",
+      "license": "MIT",
+      "requiresPython": ">=3.11",
+      "vulnerabilities": [],
+      "distributions": [
+        {
+          "filename": "rpds_py-2026.9.1-cp313-cp313-macosx_11_0_arm64.whl",
+          "sha256": "eba5d173f7d5708b22a93815017a4611873ed54db9f268077c0dd1ed99cfc858"
+        },
+        {
+          "filename": "rpds_py-2026.9.1-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+          "sha256": "7868b85224291c6cb6759f9b5adb9745f486d226f62b16a614dd5a2a5ab2b35b"
+        }
+      ]
+    }
+  ],
+  "node": [
+    {
+      "name": "@types/node",
+      "version": "22.15.30",
+      "license": "MIT",
+      "source": "https://registry.npmjs.org/@types/node/22.15.30",
+      "integrity": "sha512-6Q7lr06bEHdlfplU6YRbgG1SFBdlsfNC4/lX+SkhiTs0cpJkOElmWls8PxDFv4yY/xKb8Y6SO0OmSX4wgqTZbA==",
+      "runtime": "development-only declarations; tested with Node 22.23.4, TypeScript 5.8.3"
+    },
+    {
+      "name": "undici-types",
+      "version": "6.21.0",
+      "license": "MIT",
+      "source": "https://registry.npmjs.org/undici-types/6.21.0",
+      "integrity": "sha512-iwDZqg0QAGrg9Rav5H4n0M64c3mkR59cJ6wQp+7C4nI0gsmExaedaYLNO44eT4AtBBwjbTiGPMlt2Md0T9H9JQ==",
+      "runtime": "development-only transitive declarations"
+    },
+    {
+      "name": "typescript",
+      "version": "5.8.3",
+      "license": "Apache-2.0",
+      "source": "https://registry.npmjs.org/typescript/5.8.3",
+      "integrity": "sha512-p1diW6TqL9L07nNxvRMM7hMMw4c5XOo/1ibL4aAIGmSAt9slTE1Xgw5KWuof2uTOvCg9BY7ZRi+GaF+7sfgPeQ==",
+      "runtime": ">=14.17 package metadata; foundation tested on Node 22.23.4"
+    }
+  ],
+  "security": {
+    "npmAudit": "pnpm audit --json: no reported vulnerabilities on 2026-10-31",
+    "pypi": "Official exact-release JSON vulnerabilities arrays were empty for five packages; not a full security audit",
+    "supportedUpdates": "DefinitelyTyped and jsonschema publish security fixes to latest releases; pinned versions need deliberate reassessment",
+    "sources": [
+      "https://nodejs.org/en/blog/vulnerability/october-2026-security-releases",
+      "https://github.com/DefinitelyTyped/DefinitelyTyped/security",
+      "https://github.com/python-jsonschema/jsonschema/security"
+    ],
+    "node": "Selected 22.23.4 after inspecting official 21 October security release; initial 22.23.3 tests superseded by patched-runtime checks."
+  },
+  "licenseHandling": "Retain installed package licenses/third-party notices if redistributed; no vendored dependencies or product distribution produced by S1. MIT attribution and Apache-2.0 notice obligations apply to their respective packages.",
+  "runtime": {
+    "node": "22.23.4",
+    "python": "3.13.2",
+    "pnpm": "10.14.0",
+    "testedPlatform": "macOS arm64",
+    "ciPlatform": "ubuntu-latest x64 configured; new foundation CI has not run",
+    "nodeBinarySha256": "2cc28a1880d0774616959f2210ee739bffa6ac695c887e8988a496a21271f6c0",
+    "nodeDistribution": {
+      "source": "https://nodejs.org/dist/v22.23.4/node-v22.23.4-darwin-arm64.tar.gz",
+      "sha256": "c9e1dbc748b33ed2d14f42445191ecaf14c56259c7a9a26d0042c49ec2b66428",
+      "license": "MIT with bundled third-party notices retained in ignored tooling distribution",
+      "verification": "SHA-256 matched official HTTPS SHASUMS256.txt; release signature not independently verified"
+    }
+  }
+}

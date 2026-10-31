@@ -1,0 +1,139 @@
+{
+  "caseId": "B3",
+  "role": "provisional-monorepo-blocked-source",
+  "name": "zod",
+  "version": "4.6.7",
+  "fixtureKind": "genuine-public-release-capture",
+  "registry": "https://registry.npmjs.org",
+  "artifactFilename": "zod-4.6.7.tgz",
+  "artifactURL": "https://registry.npmjs.org/zod/-/zod-4.6.7.tgz",
+  "captureTime": "2026-10-31T18:52:37Z",
+  "expectedIntegrity": "sha512-g8W2D2kU6a8untc053fX1uVBKzM7yqAxW/3zwk83+6RyF2+SKOuV+c0wBDhUwzV1PaGapmZH+rmcUzPf+3CGwg==",
+  "observedSha256": "sha256:84efd155bed93270286e793fc951be270b536cbd5b0eeb111f0fa3967201d698",
+  "observedSha512": "sha512-g8W2D2kU6a8untc053fX1uVBKzM7yqAxW/3zwk83+6RyF2+SKOuV+c0wBDhUwzV1PaGapmZH+rmcUzPf+3CGwg==",
+  "metadataRef": "sha256:d6eac84f6c13cbef91acd6ee6b4c1ccbaef774a2f5e7147a0166880ca30ccbbb",
+  "sourceCandidates": [
+    {
+      "repositoryUrl": "https://github.com/colinhacks/zod",
+      "commit": "b500a2ee95134f81d74da7911d7378dd2853d042",
+      "subdirectory": "",
+      "association": "ambiguous",
+      "evidenceIds": [
+        "ev_0a27fad15e2d88908a564e71",
+        "ev_bb0a301873e7f4c7c65bdc4b",
+        "ev_ab5d2acb38cf81eff9b980c7",
+        "ev_25440cefd2c78d7b44afb187",
+        "ev_826a89a2a8583c0405531cf5",
+        "ev_83b9034ab055c01d2e520ad2",
+        "ev_c8a5d6410e9821bdbee73bf9"
+      ],
+      "conflicts": [
+        "SOURCE_PACKAGE_MANIFEST_MISSING"
+      ],
+      "sourceSnapshotSha256": "sha256:ac25c3bcd722faabc689bb86e12f94de72ad36e70d496cafbcff09b120f60be4",
+      "buildContextSha256": "sha256:3f3808abfb7341c85f62916874be59b9b08cb36420ead84a1dc64d10f1f06744"
+    }
+  ],
+  "selectedSource": {
+    "version": "heurisko-source-resolution-v1",
+    "selected": {
+      "repo": "https://github.com/colinhacks/zod",
+      "commit": "b500a2ee95134f81d74da7911d7378dd2853d042",
+      "subdirectory": ""
+    },
+    "ambiguous": true,
+    "sourceCapture": {
+      "version": "heurisko-download-v1",
+      "requestedUrl": "https://codeload.github.com/colinhacks/zod/tar.gz/b500a2ee95134f81d74da7911d7378dd2853d042",
+      "finalUrl": "https://codeload.github.com/colinhacks/zod/tar.gz/b500a2ee95134f81d74da7911d7378dd2853d042",
+      "captureTime": "2026-10-31T18:53:20.862Z",
+      "sha256": "sha256:ac25c3bcd722faabc689bb86e12f94de72ad36e70d496cafbcff09b120f60be4",
+      "size": 10434679,
+      "hops": [
+        {
+          "url": "https://codeload.github.com/colinhacks/zod/tar.gz/b500a2ee95134f81d74da7911d7378dd2853d042",
+          "status": 200,
+          "headers": {
+            "content-type": "application/x-gzip",
+            "etag": "\"a1d73dd4f3b71710ff485386875275431eebe456f299db07f97a36a88b5f4a07\""
+          }
+        }
+      ],
+      "origin": "immutable-https-source-candidate",
+      "commitBinding": "transport-url-not-git-object-verification"
+    },
+    "failure": "SOURCE_PACKAGE_MANIFEST_MISSING"
+  },
+  "provenance": {
+    "status": "not_checked",
+    "artifactBinding": "not_checked",
+    "evidenceIds": [
+      "ev_3a94172d662f627ea4aeab9a",
+      "ev_a1ee3b0b6ef56f3c01677619"
+    ],
+    "limitations": [
+      "No admitted operational verifier, trusted root or expected signer/issuer/source/builder policy. Retrieved material is unverified; no cryptographic or publish/build assertion is accepted.",
+      "VERIFIER_UNAVAILABLE"
+    ]
+  },
+  "reportId": "report_08f5a10ddf83d2a1fc3445ec",
+  "reportFile": "B3.report.json",
+  "bundleFile": "B3.bundle.json",
+  "reportContentRef": "sha256:4899ffd051c88aee7127e106d892b6f500345bb36d83bf80a4f728fa7be25f1c",
+  "analysisConfigFingerprint": "c105eb2b37790f97e5ab82d8ff8da1669501f451449865d50fa57ead9478ea96",
+  "outcomes": {
+    "artifactIntegrity": "matched",
+    "sourceAssociation": "ambiguous",
+    "provenancePolicy": "not_checked",
+    "correspondence": "unresolved",
+    "analysisCompleteness": "incomplete",
+    "policyResult": "indeterminate"
+  },
+  "rawCoverage": {
+    "artifactFiles": 840,
+    "sourceFiles": 3,
+    "comparedFiles": 843,
+    "analyzedBytes": 6187789,
+    "skippedBytes": 0,
+    "unsupportedBytes": 0,
+    "omissions": [],
+    "complete": false,
+    "limitations": [
+      "File/byte totals are known observed members only; remaining archive scope is unknown on failure."
+    ]
+  },
+  "evidenceCount": 1826,
+  "exitCode": 2,
+  "license": {
+    "advertised": "MIT",
+    "retainedArtifactLicense": "B3-LICENSE.txt"
+  },
+  "malharHandoff": {
+    "sourceClaims": [
+      "ev_0a27fad15e2d88908a564e71",
+      "ev_bb0a301873e7f4c7c65bdc4b",
+      "ev_ab5d2acb38cf81eff9b980c7",
+      "ev_25440cefd2c78d7b44afb187",
+      "ev_826a89a2a8583c0405531cf5",
+      "ev_83b9034ab055c01d2e520ad2"
+    ],
+    "buildContextEvidence": [],
+    "artifactSourceMaps": [],
+    "interpretationOwner": "Malhar; no generated-output explanation or model result supplied by this capture",
+    "delivery": "Prepared locally; no external message sent"
+  },
+  "independentChecks": {
+    "artifactSHA512AgainstRawRegistryMetadata": "passed",
+    "rawEvidenceHashes": "passed",
+    "reportSchemaSemanticsAndReopen": "passed"
+  },
+  "limitations": [
+    "Static raw comparison only; generated/build/security interpretation is unavailable without Malhar analysis.",
+    "Registry/manifest/tag source claims are candidates, not proof of release correspondence.",
+    "No submodule or LFS materialization, target scripts, rebuild, provenance or model execution.",
+    "version-tag:v4.6.7: SOURCE_TAG_RATE_LIMITED",
+    "version-tag:4.6.7: SOURCE_TAG_DISCOVERY_SKIPPED_RATE_LIMIT",
+    "Metadata/gitHead/tag/manifest agreement is publisher-linked candidate evidence, not proof of artifact-to-source binding.",
+    "GitHub immutable archive URL is transport context; no Git object reconstruction, signed-tag validation, submodule or LFS acquisition."
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "version": "heurisko-npm-source-dependencies-v1",
+  "observedAt": "2026-11-01",
+  "scope": "Part 3 exact public npm data acquisition, immutable GitHub candidate archives and unavailable provenance boundary",
+  "newRuntimeDependencies": [],
+  "newDevDependencies": [],
+  "verifier": {
+    "admitted": false,
+    "name": null,
+    "version": null,
+    "digest": null,
+    "reason": "No direct-artifact verifier plus exact-subject fixture, explicit independently configured expected identity policy and admitted trust-root workflow is operational. npm's documented audit-signatures route assumes an installed dependency graph. No analyzed package installation is performed as a shortcut.",
+    "acceptanceGap": "Released version/digest/API/runtime/license/transitive/security admission, real positive subject-bound integration and signer/issuer/predicate/source/builder/trust-root rejection tests remain open.",
+    "status": "not_checked; raw advertised attestations are retained as unverified data only"
+  },
+  "reusedRuntime": {
+    "node": "22.23.4",
+    "pnpm": "10.14.0",
+    "typescript": "5.8.3",
+    "validatorPython": "3.13.2",
+    "jsonschema": "4.26.0",
+    "parserPython": "3.13.18",
+    "parserImage": "python:3.13.18-slim-bookworm@sha256:281d39ff02e3b389401586134ff9e6572954687822a58055ec07a60ded4e0b7f",
+    "priorAdmission": [
+      "foundation-dependencies.v1.json",
+      "static-evidence-dependencies.v1.json",
+      "parser-image-components.v1.json"
+    ],
+    "api": "Existing Node HTTPS/DNS/crypto/fs APIs; SHA-256 and SHA-512 SRI only; bounded version metadata and GitHub git-ref/git-tag API responses; no Git executable, npm install/pack, scripts or model calls.",
+    "platform": "Existing macOS arm64 host plus restricted Linux arm64 static parser. No broader runtime or remote CI result claimed."
+  },
+  "inputPolicy": {
+    "registry": "https://registry.npmjs.org only; exact canonical name/version, including scoped names",
+    "metadataBytes": 262144,
+    "jsonDepth": 32,
+    "jsonFields": 2048,
+    "sri": "Canonical padded SHA-512/SHA-256 base64 tokens, at most 16. Use strongest supported algorithm; reject unsupported/malformed tokens without downgrade. No SHA-1 acceptance.",
+    "source": "Immutable full-40-lowercase-hex GitHub archive URL; observed metadata/manifest/tag/user claims kept separately; no Git object or signed-tag verification",
+    "tagDiscovery": "At most 3 repositories, vVERSION and VERSION, at most 4 annotated-tag peel requests per ref; capture missing/wrong/conflicting refs, never request a default branch",
+    "network": "Existing DNS/IP pinning/redirect/credential/proxy restrictions; additionally constrain every request/redirect to registry, API or codeload host for its stage",
+    "unsupportedEntries": "Retain bounded inert rejected-name/link prefixes and original archive; unknown remaining scope. Unsupported archive policy is unchanged.",
+    "execution": "No target installation/import/hook/build, no rebuild or model execution"
+  },
+  "rights": {
+    "product": "Original new code Apache-2.0; previous dependency notices/pins carry forward",
+    "fixtures": "picocolors ISC; ts-pattern MIT; zod MIT; @vue/shared MIT. Retain the actual original artifact LICENSE files and evidence refs; no claim that metadata alone grants rights.",
+    "redistribution": "Public evidence remains local. No registry upload, report publication or external message authorized.",
+    "sourceSnapshots": "Broader public source snapshots can carry additional third-party notices. Retained locally; review broader-source redistribution obligations before any approved publication. Root Apache-2.0 does not relicense upstream material."
+  },
+  "officialSourcesChecked": [
+    "https://github.com/npm/registry/blob/main/docs/responses/package-metadata.md",
+    "https://docs.npmjs.com/viewing-package-provenance/",
+    "https://docs.npmjs.com/about-registry-signatures/",
+    "https://registry.npmjs.org/picocolors/1.1.1",
+    "https://registry.npmjs.org/ts-pattern/5.9.0",
+    "https://registry.npmjs.org/zod/4.6.7",
+    "https://registry.npmjs.org/%40vue%2Fshared/3.5.22"
+  ],
+  "retrievalLimit": "Connected Firecrawl was out of credits; official web/API fallback used. No new dependency admission or fresh full image vulnerability scan is claimed."
+}

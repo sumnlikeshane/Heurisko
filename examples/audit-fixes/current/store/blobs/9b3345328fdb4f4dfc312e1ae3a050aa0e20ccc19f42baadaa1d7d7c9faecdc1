@@ -1,0 +1,1 @@
+{"version":"heurisko-manifest-delta-v1","pointer":"/exports/.~1mini","source":null,"artifact":{"value":{"@zod/source":"./src/mini/index.ts","types":"./mini/index.d.cts","import":"./mini/index.js","require":"./mini/index.cjs"},"startByte":1714,"endByte":1873},"sourceContentRef":null,"artifactContentRef":"sha256:c2d190d9ee4e0bdb60332aaa2130a6a98d65ddb903fe1d29248b15de57832c45"}

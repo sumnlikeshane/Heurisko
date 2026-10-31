@@ -1,0 +1,24 @@
+{
+  "version": "heurisko-s2-replay-check-v1",
+  "checkedAt": "2026-10-31T18:27:56.577Z",
+  "checks": {
+    "inspect": {
+      "exitCode": 2,
+      "reportId": "report_27d5fad98d3e85ec5f412c44",
+      "configurationFingerprint": "e1ff80b79c51f7163265a00a4dcd0b2aa8fd41d10cda5bddfd57f043fc74c392"
+    },
+    "offline": {
+      "exitCode": 2,
+      "reportId": "report_27d5fad98d3e85ec5f412c44",
+      "configurationFingerprint": "e1ff80b79c51f7163265a00a4dcd0b2aa8fd41d10cda5bddfd57f043fc74c392"
+    },
+    "live": {
+      "exitCode": 2,
+      "reportId": "report_27d5fad98d3e85ec5f412c44",
+      "configurationFingerprint": "e1ff80b79c51f7163265a00a4dcd0b2aa8fd41d10cda5bddfd57f043fc74c392",
+      "reportContentRef": "sha256:9f667b2205805ee8178285d26840d2f4c1ddf4d55e014f7aaaf22dfb5a2cefff"
+    }
+  },
+  "observations": "Offline facts/IDs are deterministic; live source fetch retains a new capture and full report digest under the same reportId. Original bytes remain intact.",
+  "freshness": "Inspect/replay are historical. Live source override checks its URL only; no registry freshness, integrity, revocation or provenance upgrade."
+}

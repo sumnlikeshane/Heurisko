@@ -1,0 +1,291 @@
+Actual local output from pnpm run test:s2. Private workspace prefix replaced with <workspace>.
+
+
+> heurisko@ test:s2 <workspace>
+> pnpm run build && node --test packages/core/tests/s2.test.mjs packages/core/tests/network.test.mjs
+
+
+> heurisko@ build <workspace>
+> pnpm -r run build
+
+Scope: 3 of 4 workspace projects
+packages/contracts build$ tsc -p tsconfig.json
+packages/contracts build: Done
+packages/core build$ tsc -p tsconfig.json
+packages/core build: Done
+packages/cli build$ tsc -p tsconfig.json
+packages/cli build: Done
+TAP version 13
+# Subtest: pins validated DNS address while preserving TLS hostname and captures only selected response headers
+ok 1 - pins validated DNS address while preserving TLS hostname and captures only selected response headers
+  ---
+  duration_ms: 17.686417
+  type: 'test'
+  ...
+# Subtest: rejects mixed public/private DNS answers before creating a socket
+ok 2 - rejects mixed public/private DNS answers before creating a socket
+  ---
+  duration_ms: 1.466625
+  type: 'test'
+  ...
+# Subtest: redirect revalidates DNS and refuses rebinding before another connection
+ok 3 - redirect revalidates DNS and refuses rebinding before another connection
+  ---
+  duration_ms: 3.827542
+  type: 'test'
+  ...
+# Subtest: cross-host redirects cannot leave the HTTPS allowlist
+ok 4 - cross-host redirects cannot leave the HTTPS allowlist
+  ---
+  duration_ms: 1.7865
+  type: 'test'
+  ...
+# Subtest: redirect count, actual streamed size, advertised size and response encodings are bounded
+ok 5 - redirect count, actual streamed size, advertised size and response encodings are bounded
+  ---
+  duration_ms: 4.90325
+  type: 'test'
+  ...
+# Subtest: TLS/HTTP failure, pre-cancel and ambient proxies fail closed without a fallback
+ok 6 - TLS/HTTP failure, pre-cancel and ambient proxies fail closed without a fallback
+  ---
+  duration_ms: 1.575708
+  type: 'test'
+  ...
+# Subtest: known-answer member hashes, original names, binary bytes and modes are retained
+ok 7 - known-answer member hashes, original names, binary bytes and modes are retained
+  ---
+  duration_ms: 900.568333
+  type: 'test'
+  ...
+# Subtest: refuses traversal without materializing archive-controlled paths
+ok 8 - refuses traversal without materializing archive-controlled paths
+  ---
+  duration_ms: 753.035708
+  type: 'test'
+  ...
+# Subtest: refuses absolute without materializing archive-controlled paths
+ok 9 - refuses absolute without materializing archive-controlled paths
+  ---
+  duration_ms: 876.570667
+  type: 'test'
+  ...
+# Subtest: refuses windows drive without materializing archive-controlled paths
+ok 10 - refuses windows drive without materializing archive-controlled paths
+  ---
+  duration_ms: 853.770125
+  type: 'test'
+  ...
+# Subtest: refuses backslash without materializing archive-controlled paths
+ok 11 - refuses backslash without materializing archive-controlled paths
+  ---
+  duration_ms: 1134.825875
+  type: 'test'
+  ...
+# Subtest: refuses empty component without materializing archive-controlled paths
+ok 12 - refuses empty component without materializing archive-controlled paths
+  ---
+  duration_ms: 991.534542
+  type: 'test'
+  ...
+# Subtest: refuses dot component without materializing archive-controlled paths
+ok 13 - refuses dot component without materializing archive-controlled paths
+  ---
+  duration_ms: 860.703625
+  type: 'test'
+  ...
+# Subtest: refuses terminal name without materializing archive-controlled paths
+ok 14 - refuses terminal name without materializing archive-controlled paths
+  ---
+  duration_ms: 881.990375
+  type: 'test'
+  ...
+# Subtest: refuses windows ambiguous without materializing archive-controlled paths
+ok 15 - refuses windows ambiguous without materializing archive-controlled paths
+  ---
+  duration_ms: 870.715334
+  type: 'test'
+  ...
+# Subtest: refuses trailing dot without materializing archive-controlled paths
+ok 16 - refuses trailing dot without materializing archive-controlled paths
+  ---
+  duration_ms: 1030.460167
+  type: 'test'
+  ...
+# Subtest: refuses duplicate without materializing archive-controlled paths
+ok 17 - refuses duplicate without materializing archive-controlled paths
+  ---
+  duration_ms: 1459.531291
+  type: 'test'
+  ...
+# Subtest: refuses case collision without materializing archive-controlled paths
+ok 18 - refuses case collision without materializing archive-controlled paths
+  ---
+  duration_ms: 1071.080125
+  type: 'test'
+  ...
+# Subtest: refuses unicode collision without materializing archive-controlled paths
+ok 19 - refuses unicode collision without materializing archive-controlled paths
+  ---
+  duration_ms: 1090.11475
+  type: 'test'
+  ...
+# Subtest: refuses file parent without materializing archive-controlled paths
+ok 20 - refuses file parent without materializing archive-controlled paths
+  ---
+  duration_ms: 1436.007708
+  type: 'test'
+  ...
+# Subtest: refuses directory parent case without materializing archive-controlled paths
+ok 21 - refuses directory parent case without materializing archive-controlled paths
+  ---
+  duration_ms: 1312.467833
+  type: 'test'
+  ...
+# Subtest: refuses implicit directory case without materializing archive-controlled paths
+ok 22 - refuses implicit directory case without materializing archive-controlled paths
+  ---
+  duration_ms: 1048.121667
+  type: 'test'
+  ...
+# Subtest: refuses symlink without materializing archive-controlled paths
+ok 23 - refuses symlink without materializing archive-controlled paths
+  ---
+  duration_ms: 1003.223875
+  type: 'test'
+  ...
+# Subtest: refuses hardlink without materializing archive-controlled paths
+ok 24 - refuses hardlink without materializing archive-controlled paths
+  ---
+  duration_ms: 1201.384916
+  type: 'test'
+  ...
+# Subtest: refuses fifo without materializing archive-controlled paths
+ok 25 - refuses fifo without materializing archive-controlled paths
+  ---
+  duration_ms: 1175.133625
+  type: 'test'
+  ...
+# Subtest: refuses device without materializing archive-controlled paths
+ok 26 - refuses device without materializing archive-controlled paths
+  ---
+  duration_ms: 1065.181334
+  type: 'test'
+  ...
+# Subtest: actual expansion, member, path/depth and entry limits preserve known/unknown coverage
+ok 27 - actual expansion, member, path/depth and entry limits preserve known/unknown coverage
+  ---
+  duration_ms: 7414.311875
+  type: 'test'
+  ...
+# Subtest: truncated/corrupt archives and hidden trailing archives fail rather than clean-empty
+ok 28 - truncated/corrupt archives and hidden trailing archives fail rather than clean-empty
+  ---
+  duration_ms: 6336.013916
+  type: 'test'
+  ...
+# Subtest: archive-byte variation changes identities while all raw members stay equal
+ok 29 - archive-byte variation changes identities while all raw members stay equal
+  ---
+  duration_ms: 2921.996917
+  type: 'test'
+  ...
+# Subtest: real producer computes raw additions/removals/modifications and exact manifest spans with no findings
+ok 30 - real producer computes raw additions/removals/modifications and exact manifest spans with no findings
+  ---
+  duration_ms: 4079.179709
+  type: 'test'
+  ...
+# Subtest: replay preserves deterministic IDs; full run bytes and observation references remain distinct
+ok 31 - replay preserves deterministic IDs; full run bytes and observation references remain distinct
+  ---
+  duration_ms: 5482.152792
+  type: 'test'
+  ...
+# Subtest: missing/wrong subtree, partial inventory and binary differences remain visible
+ok 32 - missing/wrong subtree, partial inventory and binary differences remain visible
+  ---
+  duration_ms: 6856.928917
+  type: 'test'
+  ...
+# Subtest: requested policy remains indeterminate; exit precedence retains simultaneous conditions
+ok 33 - requested policy remains indeterminate; exit precedence retains simultaneous conditions
+  ---
+  duration_ms: 6270.672
+  type: 'test'
+  ...
+# Subtest: strict manifest scanner rejects duplicate/deep malformed JSON, preserves unicode byte spans
+ok 34 - strict manifest scanner rejects duplicate/deep malformed JSON, preserves unicode byte spans
+  ---
+  duration_ms: 4.392083
+  type: 'test'
+  ...
+# Subtest: CAS rejects escaping refs, corrupt data, symlinks, cap/reserve and conflicting immutable writes
+ok 35 - CAS rejects escaping refs, corrupt data, symlinks, cap/reserve and conflicting immutable writes
+  ---
+  duration_ms: 183.436083
+  type: 'test'
+  ...
+# Subtest: interrupted publication leaves old blobs readable and incomplete new records unreferenced
+ok 36 - interrupted publication leaves old blobs readable and incomplete new records unreferenced
+  ---
+  duration_ms: 36.939709
+  type: 'test'
+  ...
+# Subtest: cancellation/timeout kills the whole parser job and cleans only its private scratch
+ok 37 - cancellation/timeout kills the whole parser job and cleans only its private scratch
+  ---
+  duration_ms: 753.298625
+  type: 'test'
+  ...
+# Subtest: network rejects private/reserved/mapped addresses, credentials, redirects outside allowlist and mutable commits
+ok 38 - network rejects private/reserved/mapped addresses, credentials, redirects outside allowlist and mutable commits
+  ---
+  duration_ms: 6.424791
+  type: 'test'
+  ...
+# Subtest: CLI is redirected/JSON-safe, inspect resolves exact retained evidence; terminal controls remain inert
+ok 39 - CLI is redirected/JSON-safe, inspect resolves exact retained evidence; terminal controls remain inert
+  ---
+  duration_ms: 7040.147375
+  type: 'test'
+  ...
+# Subtest: manifest parser omissions and metadata-only executable modes stay explicit
+ok 40 - manifest parser omissions and metadata-only executable modes stay explicit
+  ---
+  duration_ms: 3577.543334
+  type: 'test'
+  ...
+# Subtest: report persistence failure returns usable incomplete JSON while retaining raw evidence
+ok 41 - report persistence failure returns usable incomplete JSON while retaining raw evidence
+  ---
+  duration_ms: 3466.330875
+  type: 'test'
+  ...
+# Subtest: parser backpressure and queued cancellation do not start extra work
+ok 42 - parser backpressure and queued cancellation do not start extra work
+  ---
+  duration_ms: 992.196292
+  type: 'test'
+  ...
+# Subtest: opaque archive metadata never permits an invalid UTF-8 pathname
+ok 43 - opaque archive metadata never permits an invalid UTF-8 pathname
+  ---
+  duration_ms: 754.266833
+  type: 'test'
+  ...
+# Subtest: a supplied M0-style skipped heuristics stage cannot earn complete analysis
+ok 44 - a supplied M0-style skipped heuristics stage cannot earn complete analysis
+  ---
+  duration_ms: 7430.954042
+  type: 'test'
+  ...
+1..44
+# tests 44
+# suites 0
+# pass 44
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 84700.740458

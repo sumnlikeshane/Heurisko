@@ -1,0 +1,60 @@
+{
+  "version": "heurisko-handoff-assembly-validation-v1",
+  "checkedAt": "2026-10-31T20:07:26.305798+00:00",
+  "branch": "handoff/s1-s3-audit-fixes",
+  "baseCommit": "f06ac54030486a3bf53c9fadacd4022d6a736195",
+  "setup": {
+    "node": "22.23.4",
+    "pnpm": "10.14.0",
+    "typescript": "5.8.3",
+    "frozenOfflinePnpmInstall": "passed; ignore-scripts; all packages reused from existing pinned cache",
+    "python": "reused existing hash-locked Python 3.13.2 environment for this isolated checkout; draft CI performs its own clean setup",
+    "parser": "existing digest-pinned Python 3.13.18 restricted Linux image"
+  },
+  "checks": {
+    "typecheck": "passed",
+    "fullG0": "passed",
+    "serialCoreTests": {
+      "passed": 114,
+      "failed": 0,
+      "foundation": 17,
+      "s2": 48,
+      "s3": 36,
+      "audit": 13
+    },
+    "nonvisualReadiness": {
+      "passed": 24,
+      "failed": 0
+    },
+    "parserBoundaryProbes": "passed; no target/build/model code",
+    "currentReplayCases": 4,
+    "currentCodeIdentity": "shane-audit-v1;sha256:b730dac830ec5724611aca4d0ff3ebbb7c0315a202ab0f06a96396de5f82f2fd",
+    "retainedReferences": 2988,
+    "diffSpans": 1028,
+    "manifestSpans": 146,
+    "historicalS3": "passed",
+    "markdownLinksAndAnchors": {
+      "files": 40,
+      "issues": 0
+    },
+    "researchChecksums": {
+      "passed": 15,
+      "total": 15
+    },
+    "secretAndPrivateHostPathScan": "no findings in reviewed selected snapshot",
+    "stagedRawByteIdentity": "passed; evidence is marked -text; upstream CAS blobs remain opaque in source diffs",
+    "authoredSourceWhitespace": "passed with exact-byte upstream evidence, supplied design Markdown, patch context and existing pinned semantic EOF preserved",
+    "canonicalG0AndDeclarationLicense": "unchanged"
+  },
+  "scope": {
+    "visualSpike": "excluded; ongoing separately",
+    "originalM0M1Inputs": "excluded; hashes and original provenance receipts retained",
+    "generatedDependenciesCachesAndPrivateScratch": "excluded",
+    "nonvisualReader": "included candidate; not full S4 or agreed intelligence resolver",
+    "model": "none",
+    "targetExecution": false,
+    "intelligenceAdoption": false,
+    "mainMerge": "not authorized/performed",
+    "remoteCI": "pending draft PR"
+  }
+}

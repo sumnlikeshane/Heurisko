@@ -1,0 +1,1 @@
+{"kind":"artifact-manifest","raw":{"repository":{"type":"git","url":"git+https://github.com/colinhacks/zod.git"},"gitHead":null,"name":"zod","version":"4.6.7"},"repositoryUrl":"https://github.com/colinhacks/zod","subdirectory":"","captures":[]}

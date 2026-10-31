@@ -156,6 +156,12 @@ Shane explicitly approved **P6-01 through P6-12** on 31 October 2026. This accep
 
 **Rationale:** Apache-2.0 is permissive and includes an express contributor patent grant. The prior founder research preferred Apache-2.0; the current delegated choice resolves that proposal for the project. The license does not relicense organizer-supplied governing files or third-party dependencies, model weights, sources, and assets. Those require their own admission and attribution checks. [Official license text](https://www.apache.org/licenses/LICENSE-2.0.txt) and [Apache application guidance](https://www.apache.org/legal/apply-license.html) were checked before adding the files.
 
+## TUI design candidate filing — 31 October 2026
+
+**Authority and scope:** Shane requested that the supplied [TUI Design Contract](Design/TUI%20Design%20Contract%20v1.0.0.md) be recorded, moved to the appropriate documentation location and referenced when TUI work starts. The design text and status are preserved in `docs/Design/`, with only three pre-existing appendix table-of-contents anchors corrected; this is a filing and future-reference instruction, not an amendment to Phase 02 or approval of the final design.
+
+**Status:** The filename says v1.0.0; the document identifies itself as **v1.0.0-rc.1 — CANDIDATE FOR REVIEW, NOT APPROVED, NOT FROZEN**, with 59 confirmed design preferences. Proposed wireframes, exact copy, colors, shortcuts and APIs remain provisional. Future TUI work must read this candidate alongside approved Phase 02 and current shared types, verify repository seams, record blockers B01–B13 and evaluate scenarios S01–S09. No prototype, contract conformance or final design acceptance is claimed by this filing.
+
 ## Current decision workflow
 
 **Phases 01–06:** ALL APPROVED as design decisions by explicit user confirmation. **Pre-split A01–A14:** APPROVED (Shane directly; Malhar as reported by Shane); G0 implementation/verification OPEN.  
@@ -168,3 +174,8 @@ Shane explicitly approved **P6-01 through P6-12** on 31 October 2026. This accep
 - Preserve earlier choices and proposal versions; approval of a principle is not implementation or empirical validation.
 - Record modified decisions with amended versions and renewed confirmation.
 - Do not invent package verification outcomes, rebuild isolation evidence, live monitoring uptime or model-performance measurements.
+
+
+## Engineering follow-up — audit repairs, 1 November 2026
+
+Shane authorized fixing the S1–S3 audit findings and preparing the Malhar handoff. [Repair record](Audit%20Repairs%20and%20Malhar%20Handoff.md) documents exact executable/configuration identity, truthful progress and conservative parser-creation recovery. These implement existing evidence/isolation rules; they do not amend the G0 schema, approve a model/policy, freeze the TUI design or authorize publication. LICENSE/NOTICE were already included in `0e6adb9`; the earlier license decision text is historical.

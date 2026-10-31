@@ -1,0 +1,25 @@
+{
+  "version": "heurisko-parser-boundary-check-v1",
+  "observedAt": "2026-10-31T18:00:11.004Z",
+  "image": "python:3.13.18-slim-bookworm@sha256:281d39ff02e3b389401586134ff9e6572954687822a58055ec07a60ded4e0b7f",
+  "scope": "trusted development resource probes, not target/rebuild execution",
+  "results": [
+    {
+      "probe": "memory-network-mounts",
+      "memoryLimit": 268435456,
+      "hostSentinelVisible": false,
+      "dockerSocketVisible": false,
+      "oversizeAllocationBlocked": true,
+      "egressBlocked": true,
+      "rootWriteBlocked": true,
+      "inputWriteBlocked": true,
+      "workerWriteBlocked": true
+    },
+    {
+      "probe": "cpu",
+      "exitCode": 137,
+      "cpuHardLimitSeconds": 1,
+      "wholeJobTerminated": true
+    }
+  ]
+}

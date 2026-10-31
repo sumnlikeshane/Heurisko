@@ -1,0 +1,32 @@
+{
+  "version": "heurisko-s3-corpus-v1",
+  "capturedAt": "2026-10-31T19:53:36.258Z",
+  "cases": [
+    {
+      "caseId": "B1",
+      "manifest": "B1.manifest.json",
+      "reportId": "report_3bbcf961467677d6a4206b8f",
+      "reportContentRef": "sha256:9f80fb81ef5c4ad65a2780e29245d6be52aeade71e0126e2c711aec870747d9e"
+    },
+    {
+      "caseId": "B2",
+      "manifest": "B2.manifest.json",
+      "reportId": "report_793cbbbb87a0240f55c0db5b",
+      "reportContentRef": "sha256:e8db5ee45eda92a3eff6eb314a0d28fcb3e7f0e269b1568c9c0a5c191680e06c"
+    },
+    {
+      "caseId": "B3",
+      "manifest": "B3.manifest.json",
+      "reportId": "report_138ccf466fc5605a1a65b93c",
+      "reportContentRef": "sha256:39d98cde6e499b91a988e45f745ac9ae0f22d9e049ed656c5a2fecf21fdf60bc"
+    },
+    {
+      "caseId": "B3R",
+      "manifest": "B3R.manifest.json",
+      "reportId": "report_849c6f48595e47dca183611d",
+      "reportContentRef": "sha256:248b80eabebf63b0106f12fd78cc17d5ee14013cdbe4483631d6f70cb6b5d74b"
+    }
+  ],
+  "acquisitionMode": "offline retained observation replay",
+  "scope": "Static acquisition/integrity/source-candidate/raw evidence only. No broad correctness, benignness, cryptographic provenance, interpretation/model or complete P04 claim."
+}

@@ -1,0 +1,5 @@
+# Retained evidence/report bytes are hashed; checkout must not rewrite newlines.
+examples/** -text
+# CAS objects remain inspectable through the evidence reader; raw upstream
+# contents are opaque artifacts in a source review, not authored source diffs.
+examples/**/store/blobs/* -diff

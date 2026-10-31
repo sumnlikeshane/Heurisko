@@ -1,0 +1,215 @@
+{
+  "version": "heurisko-s3-local-handoff-v1",
+  "preparedAt": "2026-10-31T19:02:13.492Z",
+  "store": "store",
+  "resolver": "EvidenceStore.get(sha256:<64 lower hex>) checks raw bytes; no arbitrary paths. Received M0/M1 currently uses no resolver.",
+  "cases": [
+    {
+      "caseId": "B1",
+      "reportId": "report_b5fbc4c40096d70898615c59",
+      "bundleFile": "B1.bundle.json",
+      "bundleContentRef": "sha256:c36c9f60a59b051a30d5e8cbcf3f11c754d16bfaf1fe092ee54cb6728715d10e",
+      "metadataRef": "sha256:469edbe4663b07f19026f60ec43744bad678caa89a6be7bf6c4692e2967ddf9d",
+      "sourceCandidates": [
+        {
+          "repositoryUrl": "https://github.com/alexeyraspopov/picocolors",
+          "commit": "6f0a4638348ed20633d623ee973f9c9a96f65104",
+          "subdirectory": "",
+          "association": "ambiguous",
+          "evidenceIds": [
+            "ev_54afcddd214a2726972248d7",
+            "ev_304d5db73d37831377a22783",
+            "ev_216c93daa444b869ec345a9b",
+            "ev_18c792a328cbd8d4d2f0cb3f",
+            "ev_2e14b499a02edfc5f8403706",
+            "ev_a4390f0100c665fa0f521a21",
+            "ev_c04b7fdb8d946cda1880a4a9"
+          ],
+          "conflicts": [
+            "SOURCE_VERSION_LABEL_DIFFERS"
+          ],
+          "sourceSnapshotSha256": "sha256:87646ed7f9b372d94da80ec298ef4ec6fc0c2a56bb60e0b325a9705037408c7c",
+          "buildContextSha256": "sha256:6383b97048e27e8ab0a0cfeecce3bc80b06ebf180528085638aacc6bd3ca0a04"
+        }
+      ],
+      "buildContextEvidence": [
+        {
+          "path": "picocolors-6f0a4638348ed20633d623ee973f9c9a96f65104/.github/workflows/benchmarks.yaml",
+          "evidenceId": "ev_f27972bccaff9c3d49e31dc7",
+          "contentRef": "sha256:55aab7ebb689858284e3f939d67699472a9ee0c06efeac7ed5df46ecfa36cb27"
+        },
+        {
+          "path": "picocolors-6f0a4638348ed20633d623ee973f9c9a96f65104/.github/workflows/testing.yaml",
+          "evidenceId": "ev_63974380d1f223fa0ce7e2c8",
+          "contentRef": "sha256:92520d502ee386364282130d2fa2e55ad189cf08e4ea707a3fcf301e55fe88c1"
+        },
+        {
+          "path": "picocolors-6f0a4638348ed20633d623ee973f9c9a96f65104/LICENSE",
+          "evidenceId": "ev_4b71737654a5f7e90565961e",
+          "contentRef": "sha256:6582629e2979466878f6014313dcc2f3756c9616148682227ce3063dde310750"
+        },
+        {
+          "path": "picocolors-6f0a4638348ed20633d623ee973f9c9a96f65104/package.json",
+          "evidenceId": "ev_913e4520a988d004b90c38c4",
+          "contentRef": "sha256:76124c34a1d7110bbe0db5578ee039d79e3c411a1064ae2f0ddeb728fea68f56"
+        }
+      ],
+      "artifactSourceMaps": [],
+      "consumerChecks": [
+        {
+          "revision": "received M0 archive",
+          "file": "m0-B1-handshake.json",
+          "status": "consumer-returned-validated-output",
+          "actualModuleVersion": "0.1.0",
+          "sourceSha256": "sha256:f80c0c39b3519308f5219e5e430f70422f4db82c38036e81e91bf1a269846944",
+          "compiledSha256": "sha256:b28e8bb80d02e5b8ac3cdbc6342a5fbe0340795dee60657dd402a45e2b379151",
+          "retainedEvidenceVerified": 89,
+          "findings": 0,
+          "heuristics": "skipped",
+          "modelExecution": "none in reviewed M0/M1 source",
+          "inputUnchanged": true
+        },
+        {
+          "revision": "received M0 plus separate uncommitted M1 patch",
+          "file": "m1-B1-handshake.json",
+          "status": "consumer-returned-validated-output",
+          "actualModuleVersion": "0.1.0",
+          "sourceSha256": "sha256:bec8727ddaea615dc765f7afe603a62ff4d6fb3fad960391ecb46b3e4185bd57",
+          "compiledSha256": "sha256:816525f0b5f8571c846421c7cbe218019b26e4d862f5db5eb46063ae4448cf70",
+          "retainedEvidenceVerified": 89,
+          "findings": 14,
+          "heuristics": "complete",
+          "modelExecution": "none in reviewed M0/M1 source",
+          "inputUnchanged": true
+        }
+      ]
+    },
+    {
+      "caseId": "B2",
+      "reportId": "report_b9f365256abe5e5929724e6c",
+      "bundleFile": "B2.bundle.json",
+      "bundleContentRef": "sha256:0a0822efd2bed9f6e91122599fa3ba81e46120110e74f355b67466d3f3941d61",
+      "metadataRef": "sha256:407c01879c9737c8905cb238bb345b1b8ba9c494431f36947b189bda7a4f3f38",
+      "sourceCandidates": [
+        {
+          "repositoryUrl": "https://github.com/gvergnaud/ts-pattern",
+          "commit": "0e15315eafbbb813a91bad34496418846981c1b1",
+          "subdirectory": "",
+          "association": "publisher_asserted",
+          "evidenceIds": [
+            "ev_e1867a1b223701880355eaca",
+            "ev_98991b6480d40554e32afbb9",
+            "ev_925439513a1147f495a8778d",
+            "ev_de0eafe08b87b310aa92072a",
+            "ev_52289d35588e0de4601b931a",
+            "ev_cee903fa857918618405c05b",
+            "ev_84ffae7685b89213f0c398d1"
+          ],
+          "conflicts": [],
+          "sourceSnapshotSha256": "sha256:e0cbf670c4c3635a48e17cd76eaee09a6d10cd5110f411845ad0b02da9233ab7",
+          "buildContextSha256": "sha256:72f6b43653f09c843b6a828a9b4654cf5b979b9c670062d82243b63d03f256c0"
+        }
+      ],
+      "buildContextEvidence": [
+        {
+          "path": "ts-pattern-0e15315eafbbb813a91bad34496418846981c1b1/LICENSE",
+          "evidenceId": "ev_6013104f01b1ccaa83b0320d",
+          "contentRef": "sha256:4a6f1d5bbd77809165c0f9c24bbcf11768b0c936bd205bdb117aa68fea306601"
+        },
+        {
+          "path": "ts-pattern-0e15315eafbbb813a91bad34496418846981c1b1/benchmarks/package.json",
+          "evidenceId": "ev_63f24e54700d328c55ef7c0a",
+          "contentRef": "sha256:4c1a96d056d679d5386c54c625f19fc131818a4991a3f60dacaf73a4b850e294"
+        },
+        {
+          "path": "ts-pattern-0e15315eafbbb813a91bad34496418846981c1b1/examples/gif-fetcher/package.json",
+          "evidenceId": "ev_49d706f54f4acf71f275da09",
+          "contentRef": "sha256:6829731e7f21cb7aa3ea2cac680ceda6e52e51723547e0d9ca3e0ad7f07201b2"
+        },
+        {
+          "path": "ts-pattern-0e15315eafbbb813a91bad34496418846981c1b1/examples/gif-fetcher/tsconfig.json",
+          "evidenceId": "ev_807c71446da781b99cafcb95",
+          "contentRef": "sha256:ad0d8c546107d00127dadd8f43f9f42a17ee2e1a43bc60ffe3a9f5d6f22ba65c"
+        },
+        {
+          "path": "ts-pattern-0e15315eafbbb813a91bad34496418846981c1b1/examples/one-file-demo/package.json",
+          "evidenceId": "ev_4de88b280c383bdc769cbf8b",
+          "contentRef": "sha256:e75bf7c83a5e68e9856dcc59d2abd6558a15c1089a10a4d9c43198c9977e1430"
+        },
+        {
+          "path": "ts-pattern-0e15315eafbbb813a91bad34496418846981c1b1/examples/one-file-demo/tsconfig.json",
+          "evidenceId": "ev_a4610ec21553d4f7049b9d48",
+          "contentRef": "sha256:350a0687aa31672edf07ac8736ebbac5869e2a9ff82c66f41e870868a025d38f"
+        },
+        {
+          "path": "ts-pattern-0e15315eafbbb813a91bad34496418846981c1b1/package.json",
+          "evidenceId": "ev_c1f817301f5a18ceb42ecc52",
+          "contentRef": "sha256:41f2ebe4021d50fb3ce870a18c7228304e855041d6c96b5c93e1919de9645ff5"
+        },
+        {
+          "path": "ts-pattern-0e15315eafbbb813a91bad34496418846981c1b1/tests/tsconfig.json",
+          "evidenceId": "ev_328e776f4d1b6e9fc603632b",
+          "contentRef": "sha256:5111b54ed9c44e43525f9aea27e54872e6039426a2a92f6096fc2438e76dc8ce"
+        },
+        {
+          "path": "ts-pattern-0e15315eafbbb813a91bad34496418846981c1b1/tsconfig.json",
+          "evidenceId": "ev_9011e43ee73c83efcdf909e1",
+          "contentRef": "sha256:b53aa621db1475ecd4316db408f54cb41bb43d9bc737561f00985de4f4ff3c05"
+        }
+      ],
+      "artifactSourceMaps": [
+        {
+          "path": "package/dist/index.cjs.map",
+          "evidenceId": "ev_e98aeb4a5d82f598c2b006c4",
+          "contentRef": "sha256:d25f5e45252a0653d3f7a2ce456b022d7946c585db6492207c6cef04bc43b9f9"
+        },
+        {
+          "path": "package/dist/index.js.map",
+          "evidenceId": "ev_b40a9380593e6af7db4cbfa3",
+          "contentRef": "sha256:8488daf331842817c70668af49cea03f6306edd929d84228e0fe65103a17ae5e"
+        },
+        {
+          "path": "package/dist/index.umd.js.map",
+          "evidenceId": "ev_f959b1b6bc3fcb9fa4612b3d",
+          "contentRef": "sha256:a6ab47830ebe7e758b886595083d2d235db538183051eaad07e497a361151356"
+        }
+      ],
+      "consumerChecks": [
+        {
+          "revision": "received M0 archive",
+          "file": "m0-B2-handshake.json",
+          "status": "consumer-returned-validated-output",
+          "actualModuleVersion": "0.1.0",
+          "sourceSha256": "sha256:f80c0c39b3519308f5219e5e430f70422f4db82c38036e81e91bf1a269846944",
+          "compiledSha256": "sha256:b28e8bb80d02e5b8ac3cdbc6342a5fbe0340795dee60657dd402a45e2b379151",
+          "retainedEvidenceVerified": 308,
+          "findings": 0,
+          "heuristics": "skipped",
+          "modelExecution": "none in reviewed M0/M1 source",
+          "inputUnchanged": true
+        },
+        {
+          "revision": "received M0 plus separate uncommitted M1 patch",
+          "file": "m1-B2-handshake.json",
+          "status": "consumer-returned-validated-output",
+          "actualModuleVersion": "0.1.0",
+          "sourceSha256": "sha256:bec8727ddaea615dc765f7afe603a62ff4d6fb3fad960391ecb46b3e4185bd57",
+          "compiledSha256": "sha256:816525f0b5f8571c846421c7cbe218019b26e4d862f5db5eb46063ae4448cf70",
+          "retainedEvidenceVerified": 308,
+          "findings": 140,
+          "heuristics": "complete",
+          "modelExecution": "none in reviewed M0/M1 source",
+          "inputUnchanged": true
+        }
+      ]
+    }
+  ],
+  "ownership": "Malhar retains deterministic security/build interpretation, retrieval/model, claim-support/citation evaluation and independent labels. No source rewritten or adopted into product workspace.",
+  "limitations": [
+    "Boundary/schema/reference/immutability handshakes are not rule-quality or explanation-entailment acceptance.",
+    "M0 and the distinct uncommitted M1 patch are not a selected product model or final integrated module.",
+    "Default production reports remain uninjected with ANALYSIS_MODULE_UNAVAILABLE.",
+    "Broader held-out corpus and meaningful actual model work remain open."
+  ],
+  "delivery": "Prepared locally only; no external message, upload or publication."
+}

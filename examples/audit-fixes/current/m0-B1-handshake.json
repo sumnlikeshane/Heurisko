@@ -1,0 +1,60 @@
+{
+  "version": "heurisko-early-handshake-v2",
+  "checkedAt": "2026-10-31T19:50:11.767Z",
+  "bundleContentRef": "sha256:5d02a503bdebab8d7933532ac46c528e7b5993314044cbd3e1a53b113c5cedd1",
+  "producerValidation": "passed",
+  "retainedEvidenceVerified": 89,
+  "status": "consumer-returned-validated-output",
+  "actualModuleVersion": "0.1.0",
+  "moduleIdentity": {
+    "implementationSha256": "sha256:e8c7c2658296e3202ccd110933f1edc903d1637364d650f9dfe8830ed15ac428",
+    "configurationSha256": "sha256:fc39027561ef29aa0742a4d8fbc4e1aa95f68d58102f12a022524463a36e13f8"
+  },
+  "implementationFiles": {
+    "dist/index.d.ts": "sha256:9adda6d30c5df5320017ec7f6ee346d7accc854c109b901150694efd3a375490",
+    "dist/index.js": "sha256:b28e8bb80d02e5b8ac3cdbc6342a5fbe0340795dee60657dd402a45e2b379151",
+    "package.json": "sha256:32214103162f2e12179fdad2e19fc45bb42128fcf84a96694c99929d868197f7",
+    "workspace-pnpm-lock.yaml": "sha256:b47207c5db42f5635fc90d69aa6a48f35b096d24a4cec8a1572d5f0d645f9af3"
+  },
+  "sourceSha256": "sha256:f80c0c39b3519308f5219e5e430f70422f4db82c38036e81e91bf1a269846944",
+  "compiledSha256": "sha256:b28e8bb80d02e5b8ac3cdbc6342a5fbe0340795dee60657dd402a45e2b379151",
+  "inputUnchanged": true,
+  "consumerCalled": true,
+  "enableAI": false,
+  "modelExecution": "none in reviewed M0/M1 source",
+  "actualConsumerOutput": {
+    "schemaVersion": "0.1.0",
+    "findings": [],
+    "aiState": {
+      "status": "disabled",
+      "validation": "not_run"
+    },
+    "interpretations": [],
+    "stages": [
+      {
+        "stage": "heuristics",
+        "status": "skipped",
+        "errors": []
+      },
+      {
+        "stage": "ai",
+        "status": "skipped",
+        "errors": []
+      }
+    ],
+    "limitations": [
+      "Static raw comparison only; generated/build/security interpretation is unavailable without Malhar analysis.",
+      "Registry/manifest/tag source claims are candidates, not proof of release correspondence.",
+      "No submodule or LFS materialization, target scripts, rebuild, provenance or model execution.",
+      "version-tag:v1.1.1: SOURCE_TAG_RATE_LIMITED",
+      "version-tag:1.1.1: SOURCE_TAG_DISCOVERY_SKIPPED_RATE_LIMIT",
+      "Metadata/gitHead/tag/manifest agreement is publisher-linked candidate evidence, not proof of artifact-to-source binding.",
+      "GitHub immutable archive URL is transport context; no Git object reconstruction, signed-tag validation, submodule or LFS acquisition.",
+      "Source manifest version label differs from the registry subject; raw inventory remains usable but release association is ambiguous.",
+      "M0 adapter only establishes the shared EvidenceBundle to AnalysisResults boundary; deterministic analysis rules are not implemented yet.",
+      "No evidence is retrieved or chunked in M0. Evidence IDs and locations remain owned by the supplied bundle.",
+      "No package acquisition, provenance verification, cryptographic trust decision, or product model inference is performed by this component."
+    ]
+  },
+  "coordination": "Explicit reviewed team source, isolated from the product workspace; no resolver invoked, no external message sent."
+}

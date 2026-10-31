@@ -1,0 +1,168 @@
+{
+  "version": "heurisko-audit-repair-validation-v1",
+  "checkedAt": "2026-10-31T19:54:22.200Z",
+  "runtime": {
+    "node": "22.23.4",
+    "pnpm": "10.14.0",
+    "validatorPython": "3.13.2",
+    "parserPython": "3.13.18",
+    "platform": "darwin",
+    "architecture": "arm64"
+  },
+  "results": {
+    "typecheck": "passed",
+    "fullG0": "passed; unchanged canonical schema/types/fixtures",
+    "serialTests": {
+      "foundation": 17,
+      "s2": 48,
+      "s3": 36,
+      "auditRepairs": 13,
+      "total": 114,
+      "passed": 114,
+      "failed": 0
+    },
+    "nonvisualReadiness": {
+      "passed": 24,
+      "total": 24
+    },
+    "currentCodeReplayCases": [
+      {
+        "caseId": "B1",
+        "reportId": "report_3bbcf961467677d6a4206b8f",
+        "configurationFingerprint": "fc1bab4fc5dc2f9e41f31fdb985028a28dfa1c88898a90a420767f419a7abcdd"
+      },
+      {
+        "caseId": "B2",
+        "reportId": "report_793cbbbb87a0240f55c0db5b",
+        "configurationFingerprint": "d54b222f5e2a39f9b7374cc7ed710b38a43cd6b968805849b6221dff23401278"
+      },
+      {
+        "caseId": "B3",
+        "reportId": "report_138ccf466fc5605a1a65b93c",
+        "configurationFingerprint": "6e6db4f736efe50a164f0f5043f02414afbe020ce6e2209f65d71d726b1c479f"
+      },
+      {
+        "caseId": "B3R",
+        "reportId": "report_849c6f48595e47dca183611d",
+        "configurationFingerprint": "73e32ca9072464b1d5e18aa8e918e99a72591f05f15f5ebe6aeb4abe1ceb7197"
+      }
+    ],
+    "retainedEvidenceReferencesVerified": 2988,
+    "rawDiffSideSpansVerified": 1028,
+    "manifestValueSpansVerified": 146,
+    "historicalS2AndS3": "passed with explicit historical mode",
+    "modelOffConsumerChecks": [
+      {
+        "caseId": "B1",
+        "checks": [
+          {
+            "revision": "received M0 archive",
+            "moduleIdentity": {
+              "implementationSha256": "sha256:e8c7c2658296e3202ccd110933f1edc903d1637364d650f9dfe8830ed15ac428",
+              "configurationSha256": "sha256:fc39027561ef29aa0742a4d8fbc4e1aa95f68d58102f12a022524463a36e13f8"
+            },
+            "findings": 0,
+            "inputUnchanged": true
+          },
+          {
+            "revision": "received M0 plus separate uncommitted M1 patch",
+            "moduleIdentity": {
+              "implementationSha256": "sha256:82f05cbec81bfb063b7ba462d8db7ccc4bfd751add76efc0310eb08ad49176cc",
+              "configurationSha256": "sha256:fc39027561ef29aa0742a4d8fbc4e1aa95f68d58102f12a022524463a36e13f8"
+            },
+            "findings": 14,
+            "inputUnchanged": true
+          }
+        ]
+      },
+      {
+        "caseId": "B2",
+        "checks": [
+          {
+            "revision": "received M0 archive",
+            "moduleIdentity": {
+              "implementationSha256": "sha256:e8c7c2658296e3202ccd110933f1edc903d1637364d650f9dfe8830ed15ac428",
+              "configurationSha256": "sha256:fc39027561ef29aa0742a4d8fbc4e1aa95f68d58102f12a022524463a36e13f8"
+            },
+            "findings": 0,
+            "inputUnchanged": true
+          },
+          {
+            "revision": "received M0 plus separate uncommitted M1 patch",
+            "moduleIdentity": {
+              "implementationSha256": "sha256:82f05cbec81bfb063b7ba462d8db7ccc4bfd751add76efc0310eb08ad49176cc",
+              "configurationSha256": "sha256:fc39027561ef29aa0742a4d8fbc4e1aa95f68d58102f12a022524463a36e13f8"
+            },
+            "findings": 140,
+            "inputUnchanged": true
+          }
+        ]
+      }
+    ],
+    "newB2CLIInspect": "passed; exit 2, one JSON result, empty stderr",
+    "wordingProposal": "git apply --check passed against original isolated M0+M1; not applied"
+  },
+  "operationalHistory": {
+    "earlierParallelRun": {
+      "s2": {
+        "passed": 43,
+        "total": 48
+      },
+      "s3": {
+        "passed": 33,
+        "total": 36
+      },
+      "repair": {
+        "passed": 8,
+        "total": 9
+      },
+      "reason": "Short Docker client-control windows lost create acknowledgments during concurrent validation. Repair held affected stores closed. These failures are retained; passing retries alone did not close the issue."
+    },
+    "repair": "Bounded create/control client windows 30/10 seconds; parser wall/CPU/memory/network/mount limits unchanged. Final tests serialized. Durable job records/locks are retained on uncertainty; recovery requires exact stopped object/label plus non-forced removal and confirmation.",
+    "confirmedStoppedRecoveries": [
+      {
+        "containerId": "9346b11f1085e3cbffec660dbff9c943bc6abaf64c8462dcffa8cbd584d8e993",
+        "observedStatus": "created",
+        "running": false,
+        "pid": 0,
+        "removedWithoutForce": true
+      },
+      {
+        "containerId": "654c768a2013a3b4a9619c590447bfd80c75da1b72e5a9712d6d4cd1507d429b",
+        "observedStatus": "created",
+        "running": false,
+        "pid": 0,
+        "removedWithoutForce": true
+      },
+      {
+        "containerId": "e828051b567b30a6901509ab768f6c80dcc9496d3136d318d26465904126c49d",
+        "observedStatus": "created",
+        "running": false,
+        "pid": 0,
+        "removedWithoutForce": true
+      },
+      {
+        "containerId": "f8a276c0ee23a0d9667072e93a5e5bc8377da741764a0d735a0dfdcd58facac1",
+        "observedStatus": "created",
+        "running": false,
+        "pid": 0,
+        "removedWithoutForce": true
+      }
+    ],
+    "missingObjectRecovery": "One separate private failed-validation root remains retained: exact object was absent, so recovery refused and its locks/spool were preserved. It is not the product default or replay store.",
+    "historicalOrphanCause": "Exact causal relationship to the earlier source-association assertion remains unproven."
+  },
+  "scope": {
+    "acquisition": "offline replay of original public bytes and observations; no freshness check",
+    "analysisModule": "only unchanged isolated received M0/M1, model off; no product adoption or rule-quality acceptance",
+    "productModel": false,
+    "targetExecution": false,
+    "rebuild": false,
+    "provenance": "not_checked; no verifier",
+    "policy": "no evaluator or thresholds selected",
+    "visualSpike": "unchanged by repair",
+    "S4": "open",
+    "remoteCI": "not run",
+    "commitPushPublicationMessages": "none"
+  }
+}
