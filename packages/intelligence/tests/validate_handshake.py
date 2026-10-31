@@ -22,6 +22,11 @@ REPORT_SCHEMA = {
     "$defs": SCHEMA["$defs"],
     "$ref": "#/$defs/InvestigationReport",
 }
+BUNDLE_SCHEMA = {
+    "$schema": SCHEMA["$schema"],
+    "$defs": SCHEMA["$defs"],
+    "$ref": "#/$defs/EvidenceBundle",
+}
 
 result = subprocess.run(
     ["node", str(ROOT / "packages/intelligence/tests/handshake.mjs")],
@@ -31,7 +36,14 @@ result = subprocess.run(
     text=True,
 )
 cases = json.loads(result.stdout)
-assert [case["id"] for case in cases] == [f"F{i}" for i in range(7)]
+assert [case["id"] for case in cases] == [
+    *(f"F{i}" for i in range(7)),
+    "M1_ADDED_TEST_SCRIPT",
+    "M1_CHANGED_ENTRYPOINT",
+    "M1_GENERATED_VERIFIED",
+    "M1_UNCITED_CHANGE",
+    "M1_CONTRADICTORY_EQUALITY",
+]
 assert LABELS["fixtureKind"] == "synthetic_contract"
 assert {case["id"] for case in LABELS["cases"]} == {
     "benign-exact-match",
@@ -52,17 +64,24 @@ assert "no tools, commands, or model are invoked" in hostile_case["limit"]
 
 validator = Draft202012Validator(ANALYSIS_SCHEMA)
 report_validator = Draft202012Validator(REPORT_SCHEMA)
+bundle_validator = Draft202012Validator(BUNDLE_SCHEMA)
 for case in cases:
     bundle = case["bundle"]
     analysis = case["analysis"]
-    report = case["report"]
+    report = case.get("report")
     validator.validate(analysis)
-    report_validator.validate(report)
-    assert report["bundle"] == bundle and report["analysis"] == analysis
+    bundle_validator.validate(bundle)
+    if report is not None:
+        report_validator.validate(report)
+        assert report["bundle"] == bundle and report["analysis"] == analysis
 
     evidence_ids = {entry["evidenceId"] for entry in bundle["evidence"]}
     for item in analysis["findings"] + analysis["interpretations"]:
         assert set(item["evidenceIds"]).issubset(evidence_ids), f"{case['id']}: unknown evidence reference"
+
+    if bundle["fixtureKind"] == "synthetic_contract":
+        for finding in analysis["findings"]:
+            assert any("synthetic contract fixture, not a real package observation" in item for item in finding["limitations"]), case["id"]
 
     if bundle["input"]["analysisOptions"]["enableAI"]:
         assert analysis["aiState"]["status"] == "unavailable"
@@ -71,8 +90,41 @@ for case in cases:
     else:
         assert analysis["aiState"] == {"status": "disabled", "validation": "not_run"}
 
-    assert analysis["findings"] == []
     assert analysis["interpretations"] == []
     assert analysis["limitations"][:len(bundle["limitations"])] == bundle["limitations"]
+    assert next(stage for stage in analysis["stages"] if stage["stage"] == "heuristics")["status"] == "complete"
 
-print("PASS M0 analyzeEvidence handshake: F0–F6 outputs satisfy AnalysisResults and InvestigationReport schemas")
+    if case["id"] == "F1":
+        lifecycle = [finding for finding in analysis["findings"] if finding["ruleId"] == "heurisko.manifest.lifecycle-script-change"]
+        assert lifecycle and "scripts.postinstall" in lifecycle[0]["observation"]
+        assert lifecycle[0]["evidenceIds"] == ["ev_3a974c4a4c967cd1b13b3fee"]
+    elif case["id"] == "F2":
+        generated = [finding for finding in analysis["findings"] if finding["ruleId"] == "heurisko.change.generated-candidate-unverified"]
+        assert generated and generated[0]["explanationStrength"] == "hypothesis"
+    elif case["id"] == "F4":
+        omitted = [finding for finding in analysis["findings"] if finding["ruleId"] == "heurisko.change.unresolved-difference"]
+        assert omitted and omitted[0]["title"] == "Changed artifact member was not fully analyzed"
+        assert omitted[0]["evidenceIds"] == ["ev_8b657440e1053afa2cb81186"]
+    elif case["id"] == "M1_ADDED_TEST_SCRIPT":
+        script = [finding for finding in analysis["findings"] if finding["ruleId"] == "heurisko.manifest.script-change"]
+        assert script and "scripts.test is reported as added" in script[0]["observation"]
+        assert script[0]["severity"] == "informational"
+    elif case["id"] == "M1_CHANGED_ENTRYPOINT":
+        entrypoint = [finding for finding in analysis["findings"] if finding["ruleId"] == "heurisko.manifest.entrypoint-change"]
+        assert entrypoint and entrypoint[0]["evidenceIds"] == [case["bundle"]["changes"][0]["evidenceIds"][0]]
+        assert "Manifest key exports" in entrypoint[0]["observation"]
+    elif case["id"] == "M1_GENERATED_VERIFIED":
+        generated = [finding for finding in analysis["findings"] if finding["ruleId"] == "heurisko.change.generated-candidate-reproduced"]
+        assert generated and generated[0]["explanationStrength"] == "reproduced"
+        assert set(generated[0]["evidenceIds"]) == set(case["bundle"]["changes"][0]["evidenceIds"])
+        assert "does not establish that the source or output is benign" in generated[0]["whyItMatters"]
+    elif case["id"] == "M1_UNCITED_CHANGE":
+        assert analysis["findings"] == []
+        assert any("have no evidence IDs" in item for item in analysis["limitations"])
+    elif case["id"] == "M1_CONTRADICTORY_EQUALITY":
+        assert analysis["findings"] == []
+        assert any("reporting raw equality" in item for item in analysis["limitations"])
+    elif case["id"] == "F0" or case["id"] == "F6":
+        assert analysis["findings"] == []
+
+print("PASS synthetic M1 evaluation: lifecycle and entrypoint deltas, generated evidence, omissions, and contradictory or uncited records are checked against the shared schemas")

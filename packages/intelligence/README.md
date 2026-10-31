@@ -42,10 +42,35 @@ artifact omission; its filename does not prove executable behavior. The
 hostile-comment case is inert text for a future prompt-injection test, never an
 instruction to execute.
 
+## M1 deterministic baseline
+
+The analyzer now reports evidence-backed changes to `scripts.*` manifest keys,
+package entrypoint metadata (`main`, `module`, `types`, `exports`, `bin`, and
+related keys), generated-output candidates, and other unresolved file changes.
+It cites only IDs present in the bundle and generates stable finding IDs from
+the rule, change ID, and evidence reference. A changed key without retained
+old/new values is described as a key change; the analyzer does not invent the
+command contents or call a modification an addition. Installation lifecycle
+entries receive review priority without an intent or safety verdict.
+
+Generated candidates remain hypotheses unless the change and linked build
+record explicitly say `reproduced` and the build record is marked verified.
+Even then, reproduction is correspondence evidence and does not establish
+benignness. Opaque or omitted members remain unresolved; filename suffixes do
+not establish that a file is executable. Changes without evidence IDs generate
+no finding and add an analysis limitation.
+
+These rules use the contract's supplied evidence only. The local M1 regression
+suite uses labeled synthetic contract cases to check lifecycle and script
+changes, entrypoint changes, generated candidates, omissions, uncited changes,
+and contradictory equality records. It checks schema validity and evidence
+references, not real package accuracy or generalization.
+
 ## Current behavior
 
 `analyzeEvidence(bundle, options)` returns the shared `AnalysisResults` shape.
 With AI disabled it records that state and skips AI. If AI is requested, it
 returns `unavailable` and an `AI_ADAPTER_NOT_IMPLEMENTED` stage error. The
-heuristics stage is skipped. This is the M0 handshake, not an analyzer or a
-product capability claim.
+deterministic stage runs the bounded rules described above. This is an initial
+static baseline, not a complete analyzer, real-data evaluation, or product
+model integration.

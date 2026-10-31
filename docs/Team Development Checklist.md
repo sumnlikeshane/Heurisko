@@ -214,6 +214,8 @@ The order below consolidates the approved requirements into a **recommended engi
 
 **M1 done when:** a newly introduced test script is detected and justified without AI, while an ordinary generated file is not dismissed without evidence or automatically branded malicious.
 
+**M1 progress — synthetic baseline evaluated:** the model-off baseline detects changed script and entrypoint keys, keeps generated candidates unverified until the bundle carries verified reproduced-build evidence, and surfaces unresolved/omitted changes with evidence IDs. Synthetic probes also confirm that uncited changes and contradictory raw-equality records do not produce findings. Schema-backed checks pass. A one-pass Codex-as-judge review checked evidence support, confidence calibration, non-accusatory wording, and traceability; it found the seven emitted fixture findings supportable and both negative controls correctly withheld. This same-assistant qualitative review is not independent model evaluation or measured accuracy. Each synthetic finding now carries a fixture-only limitation. This work remains fixture-only and does not claim real-package accuracy or collector integration.
+
 ### M2. Retrieval and real open-weight inference
 
 - [ ] Benchmark locally runnable **open-weight** candidates (research suggested Qwen3-8B and a smaller Qwen variant) or confirm a compliant organizer open-model server; record installed model identity, quantization/runtime, hardware and actual test outcome.
