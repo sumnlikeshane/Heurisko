@@ -1,0 +1,238 @@
+# Heurisko contributor and agent instructions
+
+This file applies to the entire repository. Read it before doing work and keep it current when approved decisions, implemented behavior, validation commands, or operational context change. It is the durable entry point for agents; detailed research stays in the linked documents.
+
+## User authorization and Git rules
+
+**The user explicitly instructed: “do not commit push without my approval.”**
+
+- Do not create a commit or push any branch, tag, or other ref without explicit user approval covering that action and the concrete change set. This applies to Git CLI, APIs, GUI tools, scripts, hooks, and automated agents.
+- Commit approval does not imply push approval. If the user explicitly approves both for the reviewed changes, honor that scope without asking again. If the change set materially changes after review, present the new scope before using the earlier approval.
+- Full repository access, a request to edit files, an event deadline, a passing test, a roadmap, and a research recommendation are not permission to commit or push.
+- Prepare authorized changes and run appropriate validation before asking for commit/push approval. Make the result reviewable: summarize files, behavior, checks, limitations, intended branch, and any proposed commit message. Stop at the approval boundary, not at an unfinished draft.
+- Read-only inspection, local edits within the requested scope, and appropriate local validation can proceed without repeated permission requests. Do not create extra approval gates for routine reversible work already authorized.
+- Do not merge a PR, publish a release/report/site/package, submit to OrganizerHQ, or send external messages unless the user authorizes that action. Keep proposed PR text local until its publication is authorized.
+- Never force-push, rewrite existing history, discard someone else's changes, or remove untracked files as a cleanup shortcut. Do not use destructive Git commands to make the working tree appear clean.
+- Inspect `git status --short --branch` and relevant diffs before editing and before proposing a commit. Preserve unrelated user changes. Never stage unrelated files or run a blanket add merely because files are present.
+
+The organizer separately requires **all changes after the initial declaration commit to go through PRs with passing CI**. Do not commit or push directly to `main`. Use a feature branch for approved commits, then an approved branch push and PR workflow. Approval to commit does not waive the PR rule. If a later user instruction conflicts with an event rule, explain the effect on hackathon compliance before presenting the work as compliant.
+
+## Current repository baseline
+
+Baseline recorded on **31 October 2026**, using **Asia/Kolkata** for event times:
+
+- Project: **Heurisko**, team **InBuildingPhase**, members **Shane Joseph** and **Malhar Mahanor**.
+- Entry: **Problem 04 — Published Package vs Source Code Integrity Analyzer**, Hacktoberfest 2026 Hack Day Sonipat, Newton School of Technology at Rishihood University.
+- The repository exists. Its initial commit, `6e6159bbbb5fc6c8acc21b9a61c9a53df8f8157d`, contains only `HACKATHON.md`. Do not initialize a replacement repository or amend/recreate that commit.
+- At the start of this documentation task, the branch was `main` tracking `origin/main`, and `docs/` was untracked, pre-existing user material. Do not infer that untracked material can be deleted, staged, or published. Recheck live Git state for every later task.
+- Available material: `HACKATHON.md`, two governing files in `docs/Governing/`, eight research documents, seven supporting evidence/audit files, and their checksum manifest. Root `README.md` and this file were added for the user's documentation request.
+- **No product implementation exists:** no engine, CLI/TUI, browser application, monitoring implementation, actual model integration, package manifest/lockfile, runtime pin, build scripts, product tests, CI workflow, generated examples, or `LICENSE`.
+- All research hypotheses **FH-01/FH-02** and decisions **D-01–D-13** remain **PROPOSED — NOT YET APPROVED**. Writing the root documentation does not approve engineering, dependency installation, model downloads, hosting, or licensing choices.
+- Original governing/research files are preserved. During documentation preparation, all 15 entries in the supplied `SHA256SUMS.txt` verified successfully. That check is research-file integrity, not product validation.
+
+This is a dated baseline, not a substitute for inspecting the current tree. Some research prose says “before a repository is created” because it predates this checkout. Preserve the historical research without treating that wording as an instruction to create another repository.
+
+## Sources, authority, and reading order
+
+Current user instructions define task scope and authorization. Organizer documents define hackathon obligations. Approved scoped decisions define implementation commitments; research recommendations alone do not. `README.md` is the public overview; this file defines contributor behavior and carries durable working context. Observed code and executed validation establish what actually works.
+
+Start with [README.md](README.md), [HACKATHON.md](HACKATHON.md), the [executive brief](docs/Heurisko_Research/HEURISKO_EXECUTIVE_BRIEF.md), the [founder decision register](docs/Heurisko_Research/HEURISKO_FOUNDER_DECISIONS.md), and the [organizer requirement map](docs/Heurisko_Research/_evidence/official-requirements.md). Read the complete relevant source before changing a contract or making a consequential claim.
+
+| Source | Authority or purpose |
+|---|---|
+| [Official Problem Statements and Development Guidelines](docs/Governing/Hacktoberfest%202026%20%281%29.docx) | P04 scope; repository, PR, CI, model, licensing, data, and ownership rules. Relevant sections: Problem 04 and §§4–6. |
+| [Hack Day Sonipat presentation](docs/Governing/Hacktoberfest%20HackDay%20Sonipat.pdf) | Event format/deadlines; model rules p12; CI/examples p13; PRs p14; presentation p18; scoring defect p19; submission pp20–21; P04 example p28. Page references are one-based. |
+| [Research baseline](docs/Heurisko_Research/HEURISKO_RESEARCH_BASELINE.md) | Packaging, provenance semantics, source identity, incidents, and threat context. |
+| [Product definition](docs/Heurisko_Research/HEURISKO_PRODUCT_DEFINITION.md) | Personas, scope, workflows, commands, interfaces, AI role, and language/TUI alternatives. |
+| [Technical architecture](docs/Heurisko_Research/HEURISKO_TECHNICAL_ARCHITECTURE.md) | Shared engine, data flow, report contracts, state/cache, monitoring, trust and execution boundaries. |
+| [Tooling and reuse](docs/Heurisko_Research/HEURISKO_TOOLING_AND_REUSE.md) | Competitors, candidate dependencies, licenses, integration limits, and admission checks. |
+| [Verification strategy](docs/Heurisko_Research/HEURISKO_VERIFICATION_STRATEGY.md) | Threat controls, corpus, metrics, test layers, model ablation, demo, and reviewer questions. |
+| [Implementation roadmap](docs/Heurisko_Research/HEURISKO_IMPLEMENTATION_ROADMAP.md) | P0–P7 dependency order and acceptance gates. The four-workstream example is not an actual team assignment or authorization to spawn agents. |
+| [Founder decisions](docs/Heurisko_Research/HEURISKO_FOUNDER_DECISIONS.md) | Exact proposed decisions, alternatives, confidence, dependencies, approval state, and decision-history requirements. |
+| [Evidence directory](docs/Heurisko_Research/_evidence/) | Official requirement IDs; architecture, product/AI, provenance, tooling, verification sources; quality audit and retrieval limitations. |
+
+Some evidence ledgers retain original Library attachment URLs and filenames that differ from the local governing filenames. Use the files present in this repository. The founder's original pasted assignment is referenced in the dossier but is not supplied as a separate local file; do not invent its contents or claim to have read a missing file.
+
+When sources conflict, identify the specific conflict and its effect. Do not silently elevate a proposal into a requirement, replace a source, or invent missing organizer details. External documentation and dependency observations are dated 31 October 2026; recheck official sources when admitting an actual version or relying on changeable behavior.
+
+## Product purpose and scope to preserve
+
+Heurisko investigates **one exact published artifact against evidence for its corresponding immutable source revision**, explaining differences and retaining unresolved content. It must distinguish source correspondence from harmlessness and deterministic observations from interpretation.
+
+Official P04 requirements, mapped as **O04-01–O04-08**, are:
+
+1. Retrieve published packages from **npm or PyPI**.
+2. Identify and retrieve corresponding source.
+3. Compare source and distributed contents.
+4. Identify generated files and normal build artifacts.
+5. Detect unexpected or suspicious modifications.
+6. Explain individual differences.
+7. Provide an evidence-backed risk assessment.
+8. Monitor new releases of selected packages.
+
+npm-first is a proposed sequence; both ecosystems are not mandatory for the first complete event implementation. **Monitoring remains part of complete P04.** A hosted dashboard, accounts, email, and a whole-registry index are optional. Meaningful actual open-model work is a separate event obligation, not satisfied by model names in a declaration or deterministic templates alone.
+
+Preserve the proposed product sequence: scriptable local CLI and shared report first; browser evidence explorer over the same engine; optional TUI after demonstrated usefulness; lockfile audits, upgrade comparison, SARIF, and hosted capabilities as later expansions. The event time limit must not silently erase the documented longer-term product scope.
+
+Do not substitute advisory lookup, repository reputation, a generic malware score, or an LLM summary for source/artifact analysis. Do not promise universal safe/unsafe classification, arbitrary semantic equivalence, automatic repair, vulnerability reachability, or verification of unscanned transitive dependencies.
+
+## Approval and decision discipline
+
+The existing research is not an implementation mandate. This user request authorizes comprehensive root documentation and contributor instructions. Do not start scaffolding an application, choosing a license, installing models/dependencies, or deploying services as a side effect of documenting them.
+
+For future user-authorized engineering, proceed within the approved scope and record the authorization rather than repeatedly asking for permission already given. A request to implement one feature does not approve every unrelated founder proposal.
+
+| Decision group | What remains to be settled |
+|---|---|
+| FH-01 / FH-02 | CLI-first terminal direction, optional TUI, purposeful browser investigation, and shared-engine boundary. |
+| D-01–D-05 | Product claim, engine/language/repository, ecosystem sequence, source/trust policy, and comparison/explanation policy. |
+| D-06 | Exact reuse/integration and dependency admission. |
+| D-07 / D-08 | Actual model/runtime evaluation and concrete rebuild isolation boundary. |
+| D-09 / D-10 | Monitoring operation, CI policy, coverage requirements, and exact exit-code contract. |
+| D-11 / D-12 / D-13 | Hosting/data limits, project license, evaluation thresholds, and permitted launch claims. |
+
+Record explicit acceptance with date, approved scope, rationale, dependencies, and deferred items in the founder decision register. Partial approval updates only the named decisions. Keep approved current rules in this file and the README consistent with that register. Preserve relevant alternatives and historical evidence.
+
+## Architecture and evidence invariants
+
+The proposed default is a TypeScript/Node monorepo engine and CLI, React/TypeScript viewer, optional Ink TUI, JSON Schema contracts, SQLite metadata, and content-addressed local evidence. Go/Bubble Tea is the leading binary-distribution alternative. No stack, version, platform support, hosting provider, or performance target has been approved or tested.
+
+Once implementation is authorized, preserve these evidence boundaries unless an explicitly reviewed decision changes them:
+
+- Bind analysis to ecosystem/name/version/origin, exact distribution filename, observed and expected digests, and capture time. PyPI wheels are distinct subjects, including later uploads on an existing version.
+- Mark modified/local archives as `local-input`; never carry the registry original's provenance success onto changed bytes.
+- Pin source to a full immutable commit plus package subdirectory/build context. Retain competing candidates and conflicts. Tags, repository URLs, `gitHead`, version strings, file similarity, and source maps alone are not proof. Never silently use the current default branch as the authoritative release baseline.
+- Keep raw archive and extracted-content evidence before normalization. Every transform needs an identity/version, declared scope, and preserved residuals. Do not strip behavior-bearing literals, lifecycle commands, dynamic code, or executable regions to force a match.
+- Treat source maps and AST similarity as scoped correspondence evidence, not general semantic-equivalence proof. Package names, `dist/`, `.min.js`, and generated-looking paths cannot serve as blanket exceptions.
+- Verify provenance against the exact subject digest, expected identity/issuer, predicate, trust root, and source/builder policy. JSON decoding, an API response, a badge, or disabled verification is not successful verification.
+- A publish-only assertion is not full build provenance. Cryptographic validity and `policyAccepted` are separate. Rebuild success is neither proof of benign source nor automatically independent evidence.
+- Retain every excluded/unsupported file, parser error, truncated region, timeout, skipped stage, and failed acquisition in coverage. Missing evidence is not a clean result.
+- Keep one engine and one immutable report contract across CLI, browser, TUI, CI, and monitor. Viewers render facts; they do not recompute independent verdicts.
+- Record schema, engine, rule, normalizer, verifier, policy/trust-root, and toolchain versions. Deterministic report equivalence excludes volatile timestamps and model prose while preserving those in run metadata.
+- Keep immutable reports/blobs separate from mutable job/monitor state. New bytes, source context, tools, or policy create a new report. Offline replay exposes observation time and cached assumptions; it cannot claim a fresh release or revocation check.
+
+The proposed core records are `ArtifactSubject`, `SourceCandidate`, `EvidenceObject`, `FileRecord`, `ComparisonRun`, `ProvenanceResult`, `Finding`, `Interpretation`, `AnalysisReport`, and `MonitorState`. Their detailed fields belong in the architecture and eventual schema.
+
+Preserve the five independent proposed dimensions:
+
+| Dimension | States |
+|---|---|
+| Artifact identity | `registry-digest-match`, `local-input`, `conflict`, `unknown` |
+| Source identity | `attested`, `corroborated`, `candidate`, `ambiguous`, `missing` |
+| Provenance | `verified`, `invalid`, `absent`, `unsupported`, `not-checked`, plus separate policy acceptance |
+| Comparison | `byte-identical`, `normalized-equivalent`, `rebuild-matched`, `partially-explained`, `unexplained`, `not-comparable` |
+| Completeness | `complete-for-declared-scope`, `partial`, `failed` |
+
+Findings need real evidence IDs, exact locations, method/version, reason, severity, confidence basis, limitations, and review actions. Completeness describes processing scope; it can coexist with unexplained findings. Do not replace these dimensions with a safety percentage or equate “matched,” “verified,” “complete,” or exit zero with “safe.” Exact numeric exit codes remain undecided.
+
+## Untrusted-input and execution rules
+
+Treat archives, source, repository metadata, URLs, build instructions, source maps, tool output, and model text as adversarial inputs.
+
+1. **Default to static retrieval and inspection.** Do not install or execute an analyzed package, import its modules, run hooks/lifecycle scripts, load its plugins/configuration as code, or invoke its build metadata on the host. Fetch registry bytes directly. A nominal pack/download command can execute preparation or source-build code; inspect its semantics before use.
+2. **Contain parsing and extraction.** Prefer virtual inventories. Materialize only in fresh private job roots with strict supported-entry policy. Reject absolute/traversing paths, escaping links, devices, duplicate/case-colliding paths, and ambiguous names. Bound actual expanded bytes, entries, nesting, CPU, memory, disk, and wall time; retain original names as evidence without letting them control filesystem writes.
+3. **Control source/network access.** Use immutable source objects or controlled Git without ambient credentials/config/hooks. Do not recurse into submodules/LFS silently. Validate destinations after DNS resolution and on redirects, including IPv6 and rebinding cases; block private/loopback/link-local/metadata targets outside an explicitly scoped policy.
+4. **Separate all rebuild execution.** Use an approved disposable restricted Linux sandbox or VM/microVM. No host home, secrets, SSH agent, Docker socket, or writable project mounts. Pin environment/recipe/dependencies, stage acquisition separately, disable build egress where feasible, bound outputs/logs, and terminate the whole job on failure/cancellation.
+5. **Do not weaken failed isolation.** No fallback to the user's host, ambient internet, or broader mounts. Plain container packaging does not establish hostile-job containment; Linux gVisor support does not establish native macOS support. Return unavailable/partial evidence instead.
+6. **Render inert text.** Escape terminal controls and browser content. Never load extracted HTML/SVG/Markdown, source-map links, remote images, or logs as trusted active content.
+7. **Keep data boundaries explicit.** Event work uses public data only. Never expose secrets or confidential paths in reports/logs. Public source can still have redistribution conditions. Hosted access, retention/deletion, quotas, private inputs, and report publication require scoped decisions.
+8. **Use harmless evaluation material.** Local tampering fixtures use inert markers and reserved test destinations, separate baseline/mutated digests, and a clear synthetic label. Never upload them to a registry or accuse a real maintainer based on a synthetic mutation. Never publish automated issues/comments on real OSS projects.
+
+## Product AI and development-assistant disclosure
+
+`HACKATHON.md` proposes **Qwen2.5-Coder-7B-Instruct** via Ollama `qwen2.5-coder:7b`; it explicitly says none is integrated. Later research proposes benchmarking **Qwen3-8B** and **Qwen3-4B**, with the coder model as a comparator. This is a proposal difference, not evidence that a model was changed, installed, run, or selected.
+
+- Product inference must use a genuine open-source/open-weight model doing meaningful explanatory work. P04 permits local inference or a confirmed organizer open-model server. The project direction excludes closed cloud inference and silent closed-model fallbacks.
+- Do not import P08's Gemma-only/laptop-only rules into P04. Do not assume an organizer model list, API, hardware, or model availability not supplied in the governing documents.
+- Give the interpreter bounded evidence and no tools, credentials, network, build authority, or filesystem writes. Metadata/comments can contain prompt injection. Model output must not trigger commands, fetching, builds, severity escalation, publication, or changes to deterministic status.
+- Require structured explanations with evidence IDs, hypotheses, alternatives, missing evidence, and abstention. Validate IDs, paths, ranges, quotes, output shape, and actual support for the claim. Schema validity and real citations alone do not prove factual correctness.
+- Keep interpretations separate from hashes, source selection, provenance, comparison, and coverage. Record exact model/weight digest, quantization, runtime, prompt/schema version, decoding settings, selected evidence, omissions, and outcome.
+- On inference failure or rejection, preserve the deterministic report and show the AI limit. A saved interpretation or mocked model test is not live inference and does not satisfy meaningful-model demonstration by itself.
+- Never list an aspirational model as used. Update current model declarations through authorized changes when integration is actually established; preserve the original commit.
+- Disclose product models separately from coding assistants. For these root documentation changes, **Codex** assisted writing; no product model was invoked or integrated. Do not guess an unavailable underlying assistant model identifier. Add later actual assistance to the relevant PR disclosure.
+
+## Monitoring, CLI, and interface rules
+
+The monitor must invoke the shared engine, persist exact artifact observations and pending jobs, and use idempotent artifact-plus-configuration job keys. Discovery checkpoint advancement must not lose failed or queued analyses. Support restart/retry accounting; retain older unprocessed artifacts when newer ones arrive. New wheel uploads on existing versions, yanks/removals, and digest conflicts are distinct events.
+
+Expose last successful fetch, last completed analysis, pending/failure state, and freshness. Respect validators, throttling, retry hints, and resource limits. A stopped local process is not continuous monitoring. Hosted accounts and notification channels are separate capabilities, not conditions for the basic monitor.
+
+Proposed CLI commands are `analyze`, `inspect`, `compare`, `project --lockfile`, `watch add/run/status/remove`, `report export`, and `serve --local`; none exists yet. Freeze syntax and numeric exits only through an approved contract. Keep one JSON result on stdout, diagnostics/progress on stderr, and no interactive terminal requirement for CI. Support no-color/redirected and accessible linear output.
+
+Browser/TUI views use the same report/evidence IDs and status meanings. A privileged loopback API requires a per-session token and origin checks. Keep raw differences, transformation strength, model hypotheses, skipped scope, cache state, and capture time visible. Core local analysis and exported-report viewing should remain account-free. A version-only PyPI input must not imply every distribution was checked.
+
+## Dependencies, reuse, and license
+
+Integrate established verification and parsing rather than inventing cryptography or a universal deobfuscator. OSS Rebuild, reproduce, diffoscope, Sigstore, pypi-attestations, and Drydock are substantial existing work; novelty claims need comparison. Optional advisory, behavioral, or hygiene tools must retain their own namespaces and limits.
+
+Before admitting an actual dependency/model/tool, record the selected released version and digest, runtime/platform requirements, API stability, current security information, license/NOTICE and transitive obligations, resource behavior, and meaningful fixture results. Repository HEAD observations are not proof of released-package compatibility. Avoid unbounded “latest” installation or installing packages merely to describe them.
+
+The project has no license yet. The organizer permits **MIT or Apache-2.0**; research preference for Apache-2.0 is unapproved. Do not add a license without an authorized choice or claim an SPDX license has been granted. External GPL/AGPL tools, services, model weights, and fixture assets retain their own obligations; a subprocess boundary does not itself settle redistribution rights.
+
+## Validation and truthful completion
+
+There is no product test runner, install command, runtime floor, or CI workflow to invoke today. Inspect the repository before running familiar package-manager commands; do not fabricate a green test result or quickstart.
+
+For documentation work, check relative links and anchors, Markdown structure, source fidelity, proposal/implementation distinctions, and that only intended files changed. Verify the preserved research snapshot when relevant:
+
+```sh
+(cd docs/Heurisko_Research && shasum -a 256 -c SHA256SUMS.txt)
+```
+
+`SHA256SUMS.txt` covers the eight research documents and seven supporting evidence/audit files, not the governing files or root docs. Preserve originals during unrelated work. If research is intentionally revised, obtain task authorization, record the change, and update affected checksum entries deliberately; never regenerate checksums to conceal unexplained source changes.
+
+When engineering exists, add the **actual tested setup/build/lint/typecheck/test/model/demo commands** here and in the README. Run checks appropriate to the changed behavior. Use meaningful tests for invariants and failure cases rather than tests that merely mirror implementation. Distinguish checks executed locally, unavailable checks, live compatibility checks, and remote CI status.
+
+Required validation families before corresponding capability claims include:
+
+- Known-answer hashes/inventories, immutable raw evidence, manifest changes, exact ranges, and normalization that preserves executable additions.
+- Source conflicts, wrong tag/subtree, publish-only predicates, exact-subject mismatch, unexpected signer/builder, absent/invalid/unsupported provenance, and policy rejection.
+- Archive traversal/link/collision/decompression attacks; parser/resource limits; inert terminal/browser rendering; SSRF and cancellation.
+- Real artifact-to-source integration, exported-report replay, shared CLI/web status conformance, and offline freshness semantics.
+- Rebuild containment, blocked egress/host access, bounded exports, whole-job cleanup, and declared recipe reproduction before any hostile build tests.
+- Actual open-model inference plus injection, hallucinated references, timeout/OOM/unavailability, abstention, and held-out model-off comparison.
+- Monitoring discovery, late artifacts, duplicates, failure/retry, throttling, stale/stopped state, and restart recovery without lost work.
+- Public licensed examples with representative inputs and **actual generated outputs** from the implementation being submitted.
+
+Keep real releases, controlled benign builds, local tampering, and uncertainty/failure cases separate. Pin artifact/source identities and keep mutation labels/oracles outside analyzer inputs. Report denominators, false positives/negatives, coverage, skipped/abstained cases, explanation entailment, runtime/resources, and monitoring success separately from outcome accounting. No accuracy, latency, memory, cost, or quality threshold has been measured or approved.
+
+Never claim a proposed test passed, a candidate package was analyzed, a historical attack was detected, or a sandbox/model works based on research alone. Completion of a milestone does not establish complete P04 if monitoring, meaningful model work, or required repository evidence is absent.
+
+## Hackathon delivery requirements
+
+Required repository artifacts are an MIT/Apache-2.0 `LICENSE`, `HACKATHON.md`, `README.md` with tested setup/run instructions once runnable, `.github/pull_request_template.md`, `.github/workflows/ci.yml`, and `examples/` with real inputs/outputs. Except for the declaration and this documentation, these are outstanding work, not authorization to create them in every task.
+
+The initial commit must stay declaration-only. All later work goes through PRs. Every PR must use the organizer's four sections:
+
+```markdown
+## What this PR does
+
+## Models the product uses in this PR
+
+## AI coding assistants that helped write it
+
+## How we tested it
+```
+
+Name actual product models or `none`, actual coding assistants or `none`, concrete changes, and checks/results. Documentation-only work here uses no product model and was assisted by Codex. CI must install the project/dependencies, execute relevant tests, validate on every PR, and pass on the final submitted commit. Do not bypass CI, invent successful checks, or add fabricated examples.
+
+Event-local deadlines, **Asia/Kolkata** (inferred from Sonipat venue):
+
+| Milestone | Time |
+|---|---|
+| Start | 31 October 2026, 18:30 |
+| Repository link and initial commit | 31 October 2026, 20:30 |
+| Last merge/push, repository freeze, OrganizerHQ submission | 1 November 2026, 06:30 |
+| Presentations begin | 1 November 2026, 08:30 |
+
+P04 selects **Best Open-Source AI Project**. OrganizerHQ has one submission per team with teammates added afterwards. Presentation is eight minutes, four-minute Q&A, two-minute buffer; all members must understand all parts of the implementation. Do not submit or push because a deadline is approaching without user approval.
+
+The main scoring slide p19 visibly contains literal `00` placeholders. Other slides mention individual numerical values, but the complete rubric is unavailable. Do not invent missing weights or an automated/panel split. Organizer hidden-test interface/packages, model-server list/API, supported test platforms, and exact monitoring evaluation remain unresolved.
+
+## Keeping context useful across tasks
+
+At the start of a task, read this file, inspect current status/diffs, identify applicable source documents, and determine which existing approvals cover the requested work. Preserve user changes and use the smallest coherent change set. Do not create unrelated scaffolding or spin up sub-agents solely because the research suggests four contributor workstreams; follow the active user and environment delegation instructions.
+
+When meaningful project facts change, update this file's baseline/current guidance and the affected README sections in the same authorized change. Keep detailed decisions in the founder register and technical contracts in their owning documents; link to them here. Record approved scope, implemented entry points, exact validated commands, model/tool versions, important failure modes, and unresolved decisions. Do not store secrets, private payloads, machine-specific temporary output, or a transcript of every shell command.
+
+Before handing work back, inspect the final diff and Git status, report what changed and how it was checked, identify material limitations, and state whether commit/push actions occurred. Keep changes uncommitted and unpushed until the user explicitly approves those actions. This file documents that behavior; enforcement also depends on agents following it and any separately configured repository protections.
