@@ -1,0 +1,204 @@
+{
+  "schemaVersion": "0.1.0",
+  "reportId": "report_4ab2f7b83fb5282c0574ad40",
+  "createdAt": "2026-10-31T15:00:00Z",
+  "bundle": {
+    "schemaVersion": "0.1.0",
+    "input": {
+      "ecosystem": "local",
+      "artifactPath": "/synthetic/F2.tgz",
+      "sourceOverride": {
+        "repo": "https://github.com/example/fixture",
+        "commit": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      },
+      "analysisOptions": {
+        "enableAI": false,
+        "analysisProfile": "synthetic-g0"
+      }
+    },
+    "artifact": {
+      "origin": "local",
+      "artifactFilename": "F2.tgz",
+      "observedSha256": "sha256:27f7e661813ac5ba00ebcffae4eb99185a893fc278a1ceab929450821dc1042f",
+      "captureTime": "2026-10-31T15:00:00Z",
+      "integrity": {
+        "algorithm": "none",
+        "status": "not_available"
+      }
+    },
+    "sourceCandidates": [
+      {
+        "repositoryUrl": "https://github.com/example/fixture",
+        "commit": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "association": "user_supplied",
+        "evidenceIds": [
+          "ev_48264fae1878cb201d06cceb"
+        ],
+        "conflicts": []
+      }
+    ],
+    "provenance": {
+      "status": "not_checked",
+      "artifactBinding": "not_checked",
+      "evidenceIds": [],
+      "limitations": [
+        "Local artifact is not verified against registry provenance."
+      ]
+    },
+    "evidence": [
+      {
+        "evidenceId": "ev_9a126b6fb3f455fec09f7779",
+        "kind": "artifact_member",
+        "side": "artifact",
+        "locator": {
+          "path": "package/index.js"
+        },
+        "observationMethod": "synthetic_G0_contract_fixture",
+        "contentState": "not_exported",
+        "limitations": [
+          "Synthetic locator: not an independently analyzed package."
+        ],
+        "contentSha256": "sha256:27f7e661813ac5ba00ebcffae4eb99185a893fc278a1ceab929450821dc1042f"
+      },
+      {
+        "evidenceId": "ev_48264fae1878cb201d06cceb",
+        "kind": "source_member",
+        "side": "source",
+        "locator": {
+          "path": "src/index.js"
+        },
+        "observationMethod": "synthetic_G0_contract_fixture",
+        "contentState": "not_exported",
+        "limitations": [
+          "Synthetic locator: not an independently analyzed package."
+        ],
+        "contentSha256": "sha256:1785ee2d7f4a6e27d0fae00f709d10dfc0115331d09947c68856daa55f7de5d9"
+      },
+      {
+        "evidenceId": "ev_a1eeb9b641cdf16f3a098c30",
+        "kind": "build_record",
+        "side": "source",
+        "locator": {
+          "path": "tsconfig.json"
+        },
+        "observationMethod": "synthetic_G0_contract_fixture",
+        "contentState": "not_exported",
+        "limitations": [
+          "Synthetic locator: not an independently analyzed package."
+        ],
+        "contentSha256": "sha256:4da307c1e4fd10669cab86f67a56a32766f68521b97a74f16b126218b6e7aed5",
+        "verification": "unverified"
+      }
+    ],
+    "changes": [
+      {
+        "changeId": "chg_f2_generated",
+        "status": "generated_candidate",
+        "sourcePath": "src/index.ts",
+        "artifactPath": "dist/index.js",
+        "rawEquality": "different",
+        "explanationStrength": "reproduced",
+        "evidenceIds": [
+          "ev_9a126b6fb3f455fec09f7779",
+          "ev_48264fae1878cb201d06cceb",
+          "ev_a1eeb9b641cdf16f3a098c30"
+        ],
+        "notes": [
+          "Build settings suggest compilation; no controlled rebuild exists."
+        ]
+      }
+    ],
+    "stages": [
+      {
+        "stage": "resolve_artifact",
+        "status": "complete",
+        "errors": []
+      },
+      {
+        "stage": "acquire",
+        "status": "complete",
+        "errors": []
+      },
+      {
+        "stage": "source",
+        "status": "complete",
+        "errors": []
+      },
+      {
+        "stage": "provenance",
+        "status": "skipped",
+        "errors": []
+      },
+      {
+        "stage": "inventory",
+        "status": "complete",
+        "errors": []
+      },
+      {
+        "stage": "compare",
+        "status": "complete",
+        "errors": []
+      },
+      {
+        "stage": "build",
+        "status": "incomplete",
+        "errors": [
+          {
+            "stage": "build",
+            "code": "NO_REBUILD_EVIDENCE",
+            "message": "Synthetic incomplete stage for contract testing",
+            "affectedScope": "fixture",
+            "retryable": false
+          }
+        ]
+      }
+    ],
+    "coverage": {
+      "sourceFiles": 1,
+      "artifactFiles": 1,
+      "comparedFiles": 1,
+      "analyzedBytes": 100,
+      "skippedBytes": 0,
+      "unsupportedBytes": 0,
+      "complete": false,
+      "limitations": [
+        "Build relationship is not independently reproduced."
+      ],
+      "omissions": []
+    },
+    "limitations": [],
+    "fixtureKind": "synthetic_contract"
+  },
+  "analysis": {
+    "schemaVersion": "0.1.0",
+    "findings": [],
+    "aiState": {
+      "status": "disabled",
+      "validation": "not_run"
+    },
+    "interpretations": [],
+    "stages": [
+      {
+        "stage": "heuristics",
+        "status": "complete",
+        "errors": []
+      },
+      {
+        "stage": "ai",
+        "status": "skipped",
+        "errors": []
+      }
+    ],
+    "limitations": []
+  },
+  "outcomes": {
+    "artifactIntegrity": "not_available",
+    "sourceAssociation": "user_supplied",
+    "provenancePolicy": "not_checked",
+    "correspondence": "unresolved",
+    "analysisCompleteness": "incomplete",
+    "policyResult": "not_evaluated"
+  },
+  "analysisConfigFingerprint": "52e32b9a58e8e53c51743a98b70664f1fb450c4f0095b7774fdb886b8fefe79c",
+  "fixtureKind": "synthetic_contract"
+}

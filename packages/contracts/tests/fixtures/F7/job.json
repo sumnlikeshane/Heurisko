@@ -1,0 +1,9 @@
+{
+  "jobId": "job_new_1_0_1",
+  "watchId": "watch_fixture_npm",
+  "artifactDigest": "sha256:03eb28d0ccf6103edc02d46291f63dc335fd7bd8cb4a559a9eefd047ad651301",
+  "analysisConfigFingerprint": "e810078a90c9d2f2b54f1d7fb6ff4155c5349cccf0b0d3049f7bbf06a587bf2b",
+  "dedupeKey": "sha256:03eb28d0ccf6103edc02d46291f63dc335fd7bd8cb4a559a9eefd047ad651301:e810078a90c9d2f2b54f1d7fb6ff4155c5349cccf0b0d3049f7bbf06a587bf2b",
+  "status": "completed",
+  "attempts": 1
+}

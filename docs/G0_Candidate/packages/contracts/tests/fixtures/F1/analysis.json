@@ -1,0 +1,42 @@
+{
+  "schemaVersion": "0.1.0",
+  "findings": [
+    {
+      "findingId": "find_install_hook_added",
+      "title": "Install Hook Added",
+      "observation": "A postinstall script exists in the artifact but not the selected source manifest.",
+      "whyItMatters": "Install scripts may execute during installation. Intent is not established.",
+      "evidenceIds": [
+        "ev_3a974c4a4c967cd1b13b3fee"
+      ],
+      "severity": "high",
+      "reviewPriority": "high",
+      "evidenceConfidence": "high",
+      "explanationStrength": "unexplained",
+      "limitations": [],
+      "nextActions": [
+        "Inspect cited original evidence and source correspondence."
+      ],
+      "ruleId": "g0.fixture.install_hook_added",
+      "ruleVersion": "0.1.0"
+    }
+  ],
+  "aiState": {
+    "status": "disabled",
+    "validation": "not_run"
+  },
+  "interpretations": [],
+  "stages": [
+    {
+      "stage": "heuristics",
+      "status": "complete",
+      "errors": []
+    },
+    {
+      "stage": "ai",
+      "status": "skipped",
+      "errors": []
+    }
+  ],
+  "limitations": []
+}

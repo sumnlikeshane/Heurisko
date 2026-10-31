@@ -1,0 +1,22 @@
+{
+  "schemaVersion": "0.1.0",
+  "findings": [],
+  "aiState": {
+    "status": "disabled",
+    "validation": "not_run"
+  },
+  "interpretations": [],
+  "stages": [
+    {
+      "stage": "heuristics",
+      "status": "complete",
+      "errors": []
+    },
+    {
+      "stage": "ai",
+      "status": "skipped",
+      "errors": []
+    }
+  ],
+  "limitations": []
+}

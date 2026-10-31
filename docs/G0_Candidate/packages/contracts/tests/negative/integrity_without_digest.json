@@ -1,0 +1,142 @@
+{
+  "schemaVersion": "0.1.0",
+  "reportId": "report_cdb268b375a925be34a19ab7",
+  "createdAt": "2026-10-31T15:00:00Z",
+  "bundle": {
+    "schemaVersion": "0.1.0",
+    "input": {
+      "ecosystem": "npm",
+      "packageName": "synthetic-fixture",
+      "version": "1.0.0",
+      "analysisOptions": {
+        "enableAI": false,
+        "analysisProfile": "synthetic-g0"
+      }
+    },
+    "artifact": {
+      "origin": "registry",
+      "artifactFilename": "synthetic-fixture-1.0.0.tgz",
+      "observedSha256": "sha256:c75b18a33bd1127e4a71701ddfaccdc9453a6a4f0ab9a7c50987236f92e96f8d",
+      "captureTime": "2026-10-31T15:00:00Z",
+      "integrity": {
+        "algorithm": "none",
+        "status": "matched"
+      },
+      "packageName": "synthetic-fixture",
+      "version": "1.0.0"
+    },
+    "sourceCandidates": [],
+    "provenance": {
+      "status": "not_checked",
+      "artifactBinding": "not_checked",
+      "evidenceIds": [],
+      "limitations": [
+        "Acquisition rejected before provenance verification."
+      ]
+    },
+    "evidence": [
+      {
+        "evidenceId": "ev_f6a20508ee2d3d76d7c0033e",
+        "kind": "artifact_member",
+        "side": "artifact",
+        "locator": {
+          "path": "package/index.js"
+        },
+        "observationMethod": "synthetic_G0_contract_fixture",
+        "contentState": "not_exported",
+        "limitations": [
+          "Synthetic locator: not an independently analyzed package."
+        ],
+        "contentSha256": "sha256:c75b18a33bd1127e4a71701ddfaccdc9453a6a4f0ab9a7c50987236f92e96f8d"
+      }
+    ],
+    "changes": [],
+    "stages": [
+      {
+        "stage": "resolve_artifact",
+        "status": "complete",
+        "errors": []
+      },
+      {
+        "stage": "acquire",
+        "status": "failed",
+        "errors": [
+          {
+            "stage": "acquire",
+            "code": "REGISTRY_INTEGRITY_MISMATCH",
+            "message": "Synthetic incomplete stage for contract testing",
+            "affectedScope": "fixture",
+            "retryable": false
+          }
+        ]
+      },
+      {
+        "stage": "source",
+        "status": "skipped",
+        "errors": []
+      },
+      {
+        "stage": "provenance",
+        "status": "skipped",
+        "errors": []
+      },
+      {
+        "stage": "inventory",
+        "status": "skipped",
+        "errors": []
+      },
+      {
+        "stage": "compare",
+        "status": "skipped",
+        "errors": []
+      }
+    ],
+    "coverage": {
+      "sourceFiles": 0,
+      "artifactFiles": 1,
+      "comparedFiles": 0,
+      "analyzedBytes": 0,
+      "skippedBytes": 0,
+      "unsupportedBytes": 0,
+      "complete": false,
+      "limitations": [
+        "Archive expected-integrity mismatch; no trusted comparison."
+      ],
+      "omissions": []
+    },
+    "limitations": [],
+    "fixtureKind": "synthetic_contract"
+  },
+  "analysis": {
+    "schemaVersion": "0.1.0",
+    "findings": [],
+    "aiState": {
+      "status": "disabled",
+      "validation": "not_run"
+    },
+    "interpretations": [],
+    "stages": [
+      {
+        "stage": "heuristics",
+        "status": "complete",
+        "errors": []
+      },
+      {
+        "stage": "ai",
+        "status": "skipped",
+        "errors": []
+      }
+    ],
+    "limitations": []
+  },
+  "outcomes": {
+    "artifactIntegrity": "matched",
+    "sourceAssociation": "unavailable",
+    "provenancePolicy": "not_checked",
+    "correspondence": "not_assessed",
+    "analysisCompleteness": "failed",
+    "policyResult": "indeterminate"
+  },
+  "analysisConfigFingerprint": "52e32b9a58e8e53c51743a98b70664f1fb450c4f0095b7774fdb886b8fefe79c",
+  "fixtureKind": "synthetic_contract"
+}

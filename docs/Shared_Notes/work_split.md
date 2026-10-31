@@ -2,17 +2,17 @@
 
 **Team:** Shane Joseph + Malhar Mahanor  
 **Entry:** Problem 04 — Published Package vs Source Code Integrity Analyzer  
-**Status:** Proposed responsibility split and integration plan; not approval of implementation decisions.
+**Status:** Historical proposed split. Superseded by the [approved engineering agreement](../Approved/HEURISKO_SHANE_MALHAR_PRE_SPLIT_AGREEMENT_APPROVED_v0.1.0.md) and [team development checklist](../Team%20Development%20Checklist.md); retain for provenance only. Apache-2.0 was selected later; see the root [LICENSE](../../LICENSE).
 
-This note organizes possible work between two contributors. It does not approve a stack, dependency, license, model, hosting choice, or engineering scope. Before implementation, check the current founder decision register and repository instructions. User authorization for a specific task and the repository's PR/CI rules still apply.
+This note organizes possible work between two contributors. It does not approve a stack, dependency, license, model, hosting choice, or engineering scope. Before implementation, check the current approved decision register and repository instructions. User authorization for a specific task and the repository's PR/CI rules still apply.
 
 ## Product framing
 
 Heurisko is a source-to-package verification engine enhanced by evidence retrieval and AI. Its difficult task is to relate one exact published artifact to evidence for its corresponding immutable source revision, compare their contents, and explain what remains unresolved. AI can help interpret evidence; it does not establish identity, certify safety, or replace deterministic observations.
 
-The intended architecture is one investigation engine and one versioned report contract, with CLI, browser, optional TUI, CI, and monitoring as consumers. Interfaces must not independently calculate a package verdict. Keep artifact identity, source identity, provenance, comparison, completeness, and AI interpretation as separate report dimensions. Never collapse these into a safe/unsafe score.
+The intended architecture is one investigation engine and one versioned report contract, with CLI, browser, mandatory Ink TUI, CI, and monitoring as consumers. Interfaces must not independently calculate a package verdict. Keep artifact identity, source identity, provenance, comparison, completeness, and AI interpretation as separate report dimensions. Never collapse these into a safe/unsafe score.
 
-RAG here means retrieving relevant evidence for an existing open-weight model; it does not imply model training. Fine-tuning is optional. Meaningful inference with an actual open model is an event requirement, but no model has yet been integrated or selected. See the [founder decision register](../Heurisko_Research/HEURISKO_FOUNDER_DECISIONS.md) and [product definition](../Heurisko_Research/HEURISKO_PRODUCT_DEFINITION.md).
+RAG here means retrieving relevant evidence for an existing open-weight model; it does not imply model training. Fine-tuning is optional. Meaningful inference with an actual open model is an event requirement, but no model has yet been integrated or selected. See the [approved decision register](../Approved%20Decision%20Register.md) and historical [product definition](../Heurisko_Research/HEURISKO_PRODUCT_DEFINITION.md).
 
 ## Proposed responsibility split
 
@@ -22,10 +22,10 @@ These are suggested ownership areas, not confirmed assignments. Shared contracts
 
 **Focus:** produce reproducible evidence about exact package bytes and candidate source revisions, and expose it through a scriptable local workflow.
 
-- **Architecture and contracts:** work with Malhar on typed inputs, report schema, evidence IDs, and package boundaries. The proposed TypeScript/Node monorepo is unapproved; check D-02 and related decisions before choosing a stack.
+- **Architecture and contracts:** work with Malhar on typed inputs, report schema, evidence IDs, and package boundaries. The TypeScript/Node pnpm workspace direction was later approved in Phase 01 and A01; exact versions remain to validate.
 - **Acquisition and source resolution:** retrieve registry bytes without installing packages; bind results to ecosystem, name, version, exact filename, digest, and capture time. Resolve immutable source candidates, including package subdirectory/build context. Preserve conflicts and missing evidence rather than guessing. Local or modified archives must be marked `local-input`.
 - **Deterministic evidence:** inventory files and hashes; retain raw archive and extracted-content evidence; identify exact matches, additions, removals, and modifications; preserve raw differences before scoped normalization. Keep unsupported files, parser failures, skipped stages, and residual changes visible.
-- **CLI and orchestration:** provide a noninteractive interface over the shared engine and report. Keep machine-readable output separate from diagnostics. Freeze command syntax and numeric exit codes only through an approved contract.
+- **CLI and orchestration:** provide a noninteractive interface over the shared engine and report. Keep machine-readable output separate from diagnostics. Freeze command syntax and the approved initial 0/1/2/3 exit mapping with tested precedence in the shared contract.
 - **Monitoring:** invoke the same engine for newly observed exact artifacts; persist observations and pending jobs; handle retries/restarts without losing or duplicating work; report freshness and failures. Monitoring is part of complete P04 scope.
 - **Reliability and integration:** maintain fixtures and tests for acquisition, inventory, comparison, report replay, and monitoring as those capabilities are authorized and implemented.
 
@@ -130,11 +130,11 @@ For rebuild-related tests, first establish and validate the approved isolated wo
 
 ## Working rules and delivery constraints
 
-- This plan does not authorize scaffolding, dependency/model installation, hosting, licensing, or unrelated engineering. Follow current approvals in `AGENTS.md` and the [founder decision register](../Heurisko_Research/HEURISKO_FOUNDER_DECISIONS.md).
-- Keep public-data and licensing obligations in view. No project license has been selected yet.
+- This historical plan does not itself authorize scaffolding, dependency/model installation, hosting, licensing, or unrelated engineering. Follow current approvals in [AGENTS.md](../../AGENTS.md) and the [approved decision register](../Approved%20Decision%20Register.md).
+- Keep public-data and licensing obligations in view. Apache-2.0 was selected later; third-party rights remain separate.
 - Preserve the declaration-only initial commit. All subsequent changes must go through a feature branch and pull request with passing CI; do not commit or push without explicit user approval covering the reviewed change set.
 - Required PR sections are `What this PR does`, `Models the product uses in this PR`, `AI coding assistants that helped write it`, and `How we tested it`. State actual models/assistants and actual checks; never claim a proposed test passed.
-- Event requirements also include an MIT or Apache-2.0 license, tested README instructions once runnable, PR template, CI workflow, real generated examples, meaningful open-model work, and both members understanding the implementation. These remain outstanding until completed and approved in scope.
+- Event requirements also include an MIT or Apache-2.0 license, tested README instructions once runnable, PR template, CI workflow, real generated examples, meaningful open-model work, and both members understanding the implementation. The local license, PR template, and documentation-only CI now exist; product validation and final PR/CI remain outstanding.
 - Event times use Asia/Kolkata: repository link and initial commit deadline was 31 Oct 2026, 20:30; final merge/push and submission deadline is 1 Nov 2026, 06:30. Deadlines do not authorize publication or Git actions.
 
 ## Responsibility summary

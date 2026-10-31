@@ -10,6 +10,30 @@ permissions:
   contents: read
 
 jobs:
+  contracts:
+    name: G0 contract checks
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Install pinned contract tooling
+        run: |
+          npm install --global pnpm@10.14.0 --ignore-scripts --no-audit --no-fund
+          pnpm install --frozen-lockfile --ignore-scripts
+          python3 -m pip install -r requirements-contracts.txt
+      - name: Typecheck contracts
+        run: pnpm run typecheck
+      - name: Validate contracts and synthetic handshake
+        run: pnpm run test:contracts
+
   documentation:
     name: Documentation integrity
     runs-on: ubuntu-latest

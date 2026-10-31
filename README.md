@@ -8,7 +8,7 @@ Heurisko is a software supply-chain integrity project for **Problem 04 — Publi
 
 Developers often review a Git repository but install a tarball or wheel from a package registry. Those inputs can differ because of compilation, bundling, packaging rules, generated metadata, native code, or unauthorized changes. Heurisko's proposed role is to investigate that relationship and show the evidence behind each explanation and suspicious finding.
 
-**Current status — 31 October 2026:** this repository contains the hackathon declaration, organizer documents, and a completed research/design dossier. **No analysis engine, CLI, TUI, web application, release monitor, model integration, or product tests have been implemented.** The architecture and product decisions below are proposals, not approved commitments or working features. There is no runnable installation yet.
+**Current status — 31 October 2026:** the six planning phases and Shane–Malhar engineering agreement are approved and indexed in the [approved decision register](docs/Approved%20Decision%20Register.md). The synthetic G0 contract is integrated locally under [packages/contracts](packages/contracts/package.json) and passes local contract checks; both developers’ review and a remote repository CI run remain pending. **No analysis engine, CLI, TUI, web application, release monitor, or model integration exists.** There is no runnable analyzer yet.
 
 Team **InBuildingPhase**: **Shane Joseph** and **Malhar Mahanor**. See [HACKATHON.md](HACKATHON.md) for the original declaration and [AGENTS.md](AGENTS.md) for contributor instructions and approval boundaries.
 
@@ -66,7 +66,7 @@ The organizer's complete P04 scope has eight capabilities:
 | Provide an evidence-supported risk assessment | Present findings, potential impact, evidence confidence, and limitations. |
 | Monitor selected packages' new releases | Persist discovery state and analyze newly observed artifacts through the same engine. |
 
-**npm-first is the proposed delivery sequence.** PyPI is the next ecosystem expansion and a design check for artifact-specific identity. Shipping both registries simultaneously is not an organizer requirement. Basic monitoring is required; a hosted monitoring dashboard is optional. All capabilities remain unimplemented.
+**npm-first is the approved delivery sequence.** PyPI is the next ecosystem expansion and a design check for artifact-specific identity. Shipping both registries simultaneously is not an organizer requirement. Basic monitoring is required; a hosted monitoring dashboard is optional. All capabilities remain unimplemented.
 
 The proposed workflows serve several users:
 
@@ -79,7 +79,7 @@ The proposed workflows serve several users:
 | Team auditing a project | Resolve supported lockfile entries to exact direct/transitive artifacts, deduplicate work, and retain unsupported dependency forms as unknown. |
 | User monitoring selected packages | Discover new artifacts, run bounded investigations, and inspect pending, failed, stale, and completed outcomes. |
 
-Project audits, upgrade comparison, SARIF, and the TUI are enhancements after reliable single-artifact analysis. Hosted investigations, accounts, collaboration, and notifications are later platform options. The initial direction excludes automatic dependency repair, vulnerability reachability analysis, private hosted package analysis, and arbitrary semantic-equivalence claims. The product is complementary to advisory and malware scanners.
+Project audits, upgrade comparison, and SARIF are later enhancements. The keyboard-driven Ink TUI is mandatory in the approved first implementation. Hosted investigations, accounts, collaboration, and notifications are later platform options. The initial direction excludes automatic dependency repair, vulnerability reachability analysis, private hosted package analysis, and arbitrary semantic-equivalence claims. The product is complementary to advisory and malware scanners.
 
 ## How an investigation would work
 
@@ -146,7 +146,7 @@ flowchart TD
     Engine --> Reports["Immutable evidence and reports"]
     Reports --> Model["Open-weight explanation adapter"]
     Model --> Annotations["Validated interpretation records"]
-    Reports --> Views["CLI, browser and optional TUI views"]
+    Reports --> Views["CLI, mandatory Ink TUI and browser views"]
     Annotations --> Views
 ```
 
@@ -161,7 +161,7 @@ flowchart TD
 | Policy evaluator | Evaluate explicit CI rules over findings and completeness, preserving missing-evidence outcomes. |
 | Interfaces | Select inputs and render the common report with escaped content and visible uncertainty. |
 
-The research prefers **TypeScript/Node for the engine and CLI, React/TypeScript for the browser, optional Ink for the TUI, JSON Schema contracts, and SQLite plus content-addressed local storage**. A monorepo would keep schema and interface changes reviewable together. These choices are unapproved and untested. **Go with Bubble Tea** is the strongest alternative when standalone binary distribution takes priority; Rust/Ratatui and Python/Textual are also assessed in the dossier.
+The approved direction is **one TypeScript/Node engine and CLI in a pnpm workspace, a mandatory React/Ink TUI, a React/TypeScript browser, and JSON Schema contracts**. The G0 schema/types now live in the root workspace and are pending joint review and remote repository CI. SQLite and content-addressed local storage are design directions; exact storage policy and versions remain open. The original research also assessed Go/Bubble Tea, Rust/Ratatui and Python/Textual as historical alternatives.
 
 Normal local analysis and exported-report viewing should not require an account or hosted backend. Fresh registry/source evidence still requires network access unless already cached. An optional API can expose the same engine; heavy analysis and rebuilds need suitable isolated job workers rather than assumptions about serverless duration or filesystem limits.
 
@@ -171,7 +171,7 @@ Separate bounded queues are proposed for downloads, parsing, inference, and rebu
 
 ## Terminal and browser experience
 
-The CLI is proposed as the primary installable and scriptable entry point. The optional TUI, inspired by terminal investigation tools such as Lazygit, would navigate reports rather than implement another analyzer. The browser would provide room for artifact/source trees, side-by-side differences, provenance details, transformation links, and stable evidence references alongside installation and usage documentation.
+The CLI is the approved scriptable entry point, while `heurisko` should open a mandatory keyboard-driven Ink TUI. The TUI navigates the shared report rather than implementing another analyzer. The browser would provide room for artifact/source trees, side-by-side differences, provenance details, transformation links, and stable evidence references alongside installation and usage documentation.
 
 The following command shapes are **illustrative design proposals only**. The `heurisko` executable does not exist in this repository.
 
@@ -192,7 +192,7 @@ heurisko serve --local <report>
 
 Registry-qualified inputs avoid name collisions. A PyPI version with multiple distributions needs an exact artifact or an explicitly recorded selection policy; checking one wheel does not check every wheel.
 
-Human output should lead with artifact identity, source association, findings, and incomplete stages. Machine mode should emit one versioned JSON document on stdout and progress on stderr. Distinct process outcomes are proposed for policy pass, policy violation, incomplete analysis, and invocation/internal error; numeric exit codes remain undecided. SARIF would project actionable findings while full JSON retains provenance and coverage.
+Human output should lead with artifact identity, source association, findings, and incomplete stages. Machine mode should emit one versioned JSON document on stdout and progress on stderr. Distinct process outcomes are proposed for policy pass, policy violation, incomplete analysis, and invocation/internal error; the approved initial exit mapping is 0/1/2/3, with multi-condition precedence still to specify and test. SARIF would project actionable findings while full JSON retains provenance and coverage.
 
 The viewer should distinguish byte matches, rebuilt transformations, source-map claims, and model hypotheses. It should keep raw differences available, support keyboard navigation and accessible labels, and handle large lists/diffs without hiding skipped content. An optional loopback API needs a per-session token and origin checks. Exported reports should remain inert; package HTML, SVG, Markdown, or scripts must never become trusted application content.
 
@@ -281,7 +281,7 @@ The proposed eight-minute demo shows a genuine build transformation, a clearly l
 
 ## Implementation roadmap
 
-All phases remain proposed. The roadmap sequences dependencies without using the event duration to remove parts of the intended product.
+The original research roadmap below predates approval. Its gates remain useful as a historical dependency sketch; the [team development checklist](docs/Team%20Development%20Checklist.md) now owns the approved G0–G6 implementation sequence.
 
 | Phase | Deliverable and acceptance focus |
 |---|---|
@@ -292,21 +292,34 @@ All phases remain proposed. The roadmap sequences dependencies without using the
 | P4 — AI and evidence interfaces | Genuine open-weight inference, validated interpretations, and shared-report browser inspection. |
 | P5 — Monitoring | Durable selected-package discovery, idempotent jobs, restart recovery, retries, and visible failures. |
 | P6 — Evaluated P04 release | Held-out evaluation, real generated examples, clean setup, passing CI, accurate support claims, and live demonstration. |
-| P7 — Expansion | Supported project audits, upgrades, second ecosystem, optional TUI, and justified hosted capabilities. |
+| P7 — Expansion | Supported project audits, upgrades, second ecosystem and justified hosted capabilities. |
 
 P5 can develop after acquisition/report contracts stabilize; it need not wait for every UI. A complete P04 claim requires the eight official capabilities, meaningful actual model work, and required repository evidence. See the [implementation roadmap](docs/Heurisko_Research/HEURISKO_IMPLEMENTATION_ROADMAP.md) for dependencies and phase gates.
 
 ## Installation and execution
 
-**There is no executable project to install or run yet.** This checkout has no package manifest, lockfile, runtime pin, build scripts, application entry point, product tests, or generated examples. A documentation-only [CI workflow](.github/workflows/ci.yml) checks the research checksums and local Markdown links; it does not install or test product code. No npm package, binary release, supported operating-system matrix, or live service is declared here. The illustrative commands above are not a quickstart.
+**There is no analyzer to install or run yet.** The root pnpm workspace contains only the shared G0 contract, synthetic fixtures, typecheck and contract test scripts. It has no application entry point, analyzer tests, generated examples, binary release, supported operating-system matrix, or live service. The [CI workflow](.github/workflows/ci.yml) now installs pinned contract tooling and runs contract, checksum and local Markdown-link checks; it does not test analyzer behavior.
 
-You can read the repository now: begin with the executive brief, then the product definition, architecture, and founder decisions. Research integrity can be checked from the repository root with:
+You can read the repository now: begin with the [documentation map](docs/README.md), [approved decision register](docs/Approved%20Decision%20Register.md), and [team development checklist](docs/Team%20Development%20Checklist.md), then use the original research for rationale and alternatives. Research integrity can be checked from the repository root with:
 
 ```sh
 (cd docs/Heurisko_Research && shasum -a 256 -c SHA256SUMS.txt)
 ```
 
 This verifies the supplied research snapshot's file checksums; it is not a product test or source/package verification. Once implementation is authorized and works from a clean checkout, this section must gain tested prerequisites, exact installation/run commands, model setup, offline behavior, and links to real generated examples.
+
+For the shared-contract review, start with the [integrated package](packages/contracts/package.json), [G0 candidate README](docs/G0_Candidate/README_G0.md) and [approved engineering agreement](docs/Approved/HEURISKO_SHANE_MALHAR_PRE_SPLIT_AGREEMENT_APPROVED_v0.1.0.md). With Node 22 or newer, pnpm 10.14.0, Python 3.13 and an isolated Python environment, run from the repository root:
+
+```sh
+pnpm install --frozen-lockfile --ignore-scripts
+python3 -m venv .venv
+. .venv/bin/activate
+python3 -m pip install -r requirements-contracts.txt
+pnpm run typecheck
+pnpm run test:contracts
+```
+
+These check only synthetic contracts. The full JSON Schema/semantic suite, pinned TypeScript 5.8.3 typecheck and stubbed handshakes passed locally on 31 October 2026. A green remote CI run on the proposed commit and both developers' technical sign-off are still required before G0 can be frozen. Interface-dependent implementation should use the jointly reviewed contract.
 
 ## Repository and research guide
 
@@ -317,7 +330,17 @@ The current documentation layout is:
 ├── README.md                         Project overview and current status
 ├── AGENTS.md                         Contributor context, rules, and approvals
 ├── HACKATHON.md                      Original team/problem/model declaration
+├── LICENSE                           Apache-2.0 project license
+├── NOTICE                            Copyright and third-party scope notice
+├── package.json / pnpm-lock.yaml      Pinned G0 contract tooling
+├── packages/contracts/                Root shared schema, types and fixtures
 └── docs/
+    ├── README.md                      Documentation map and precedence
+    ├── Approved Decision Register.md Approved Phase 01–06 and A01–A14 summary
+    ├── Team Development Checklist.md Approved engineering handoff and gates
+    ├── Approved/                     Phase records and engineering agreement
+    ├── G0_Candidate/                 Preserved synthetic contract handoff
+    ├── Shared_Notes/                 Superseded early work split
     ├── Governing/                    Supplied organizer PDF and DOCX
     └── Heurisko_Research/
         ├── HEURISKO_EXECUTIVE_BRIEF.md
@@ -334,6 +357,9 @@ The current documentation layout is:
 
 | Document | Read it for |
 |---|---|
+| [Documentation map](docs/README.md) | Current source order, migration record, and next work. |
+| [Approved decision register](docs/Approved%20Decision%20Register.md) | Confirmed phases, joint engineering agreement, and exact limits. |
+| [Team development checklist](docs/Team%20Development%20Checklist.md) | Approved work split, gates, acceptance checks, and demo plan. |
 | [Executive brief](docs/Heurisko_Research/HEURISKO_EXECUTIVE_BRIEF.md) | Standalone research conclusions, system direction, and consequential limitations. |
 | [Research baseline](docs/Heurisko_Research/HEURISKO_RESEARCH_BASELINE.md) | Packaging mechanics, standards, incidents, source identity, and threat context. |
 | [Product definition](docs/Heurisko_Research/HEURISKO_PRODUCT_DEFINITION.md) | Personas, workflows, interface responsibilities, proposed commands, and AI task. |
@@ -364,7 +390,7 @@ The organizer requires a new public repository whose first commit contains **onl
 
 **Do not commit or push without the user's explicit approval.** Prepare and validate changes locally, present the concrete change set, and obtain approval for each action. Approval to commit does not by itself authorize a push. See [AGENTS.md](AGENTS.md) for the complete working procedure.
 
-The PR template and documentation-only CI workflow are in place. The following organizer-required items remain: an MIT or Apache-2.0 `LICENSE`, tested setup/run instructions once the project is runnable, and `examples/` with representative inputs, actual generated outputs, and supporting evidence. The docs workflow must expand to install the project and run relevant tests when product implementation exists. This README supplies an overview and accurately records why runnable installation instructions are not yet available.
+The PR template, contract-and-documentation CI workflow, and Apache-2.0 `LICENSE` are in place locally. The following organizer-required items remain: tested analyzer setup/run instructions once the project is runnable, and `examples/` with representative inputs, actual generated outputs, and supporting evidence. CI must expand to test analyzer behavior when product implementation exists.
 
 Each PR must contain these sections:
 
@@ -377,7 +403,7 @@ CI must install the project and dependencies, run relevant tests, validate the i
 
 ## Open decisions and limitations
 
-All founder hypotheses and D-01–D-13 in the [decision register](docs/Heurisko_Research/HEURISKO_FOUNDER_DECISIONS.md) remain **PROPOSED — NOT YET APPROVED**. The first decisions concern product/engine boundaries, ecosystem order, trust semantics, transformation rules, model/runtime evaluation, and rebuild isolation. Licensing, dependency admission, numeric exit codes, thresholds, budgets, hosting, and retention also need explicit scoped decisions.
+The original [founder research register](docs/Heurisko_Research/HEURISKO_FOUNDER_DECISIONS.md) is preserved as a historical proposal record. The later [approved decision register](docs/Approved%20Decision%20Register.md) controls Phases 01–06 and A01–A14. The exact G0 schema is integrated locally but awaits joint review and remote CI; exit mapping 0/1/2/3 is approved initially, but policy precedence needs tests. Third-party license and redistribution review, analyzer dependency/version admission, model/runtime choice, numeric budgets, hosted operation, and retention remain open. Apache-2.0 has already been selected for original Heurisko material.
 
 Research has not established source-matching accuracy, legitimate-build explanation quality, false positives/negatives, native/bundled-code coverage, AI benefit, laptop feasibility, supported runtime/platform versions, performance, or operating costs. No historical attack was detected by Heurisko during research. Candidate packages and planned mutations are not verified examples.
 
@@ -385,4 +411,4 @@ Organizer gaps include the full scoring weights, hidden-test inputs/interface, m
 
 ## License
 
-The organizer requires **MIT or Apache-2.0**. Research recommends Apache-2.0, with MIT as an acceptable alternative, but no project license has been approved or added. This README does not grant a license. Dependencies, model weights, source excerpts, and fixtures retain their own licensing and redistribution obligations.
+Heurisko’s original project material is licensed under **Apache-2.0**; see [LICENSE](LICENSE) and [NOTICE](NOTICE). This choice was delegated by Shane on 31 October 2026 and meets the organizer’s MIT-or-Apache-2.0 rule. The express patent grant is useful for an open-source supply-chain tool. Organizer-supplied files in `docs/Governing/`, dependencies, model weights, and other third-party material retain their own rights and redistribution obligations. The license files are local changes awaiting an approved commit and PR.

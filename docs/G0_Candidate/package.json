@@ -1,0 +1,12 @@
+{
+  "name": "heurisko-g0-dropin",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test:contracts": "python3 packages/contracts/tests/validate_contracts.py && node packages/contracts/tests/smoke-handshake.mjs",
+    "typecheck": "tsc --noEmit -p packages/contracts/tsconfig.json"
+  },
+  "devDependencies": {
+    "typescript": "5.8.3"
+  }
+}
