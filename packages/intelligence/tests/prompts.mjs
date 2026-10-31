@@ -10,6 +10,7 @@ const retrieved = retrieveEvidence(bundle, 'postinstall install lifecycle comman
 const prompt = packageInterpretationPrompt(analysis.findings, retrieved, {
   maxEvidenceItems: 1,
   maxPayloadChars: 4000,
+  question: 'Explain the package change.',
 });
 const payload = JSON.parse(prompt.userPayload);
 

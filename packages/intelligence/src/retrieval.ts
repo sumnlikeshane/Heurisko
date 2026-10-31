@@ -36,6 +36,19 @@ export interface RetrievalOptions {
 const tokenize = (value: string): string[] =>
   value.toLocaleLowerCase('en-US').match(/[a-z0-9_]+/g) ?? [];
 
+// Small, explicit vocabulary bridges for common package-investigation terms.
+// This remains lexical retrieval: expansions do not assert that records entail
+// the query, and citations still point to the original evidence record.
+const QUERY_EXPANSIONS: Readonly<Record<string, readonly string[]>> = {
+  startup: ['import', 'meta_path', 'add_shim', 'pth'],
+  hook: ['import', 'add_shim', 'pth'],
+  wheel: ['artifact', 'distribution'],
+  cryptographically: ['digest', 'signature', 'attestation'],
+  cryptographic: ['digest', 'signature', 'attestation'],
+  provenance: ['digest', 'signature', 'attestation', 'source'],
+  commit: ['source', 'revision'],
+};
+
 /**
  * Rank caller-resolved, bounded excerpts using deterministic lexical relevance.
  * Only excerpts whose evidence record is retained, addressable, and has an
@@ -82,7 +95,14 @@ export function retrieveEvidence(
       skipped.push({ evidenceId: excerpt.evidenceId, reason: 'Evidence record has no exact valid path and line range.' });
       continue;
     }
-    const terms = tokenize(excerpt.text);
+    const terms = [
+      ...tokenize(excerpt.text),
+      ...tokenize(record.locator.path),
+      ...tokenize(record.kind),
+      ...tokenize(record.side),
+      ...(record.side === 'artifact' ? ['artifact', 'distribution', 'wheel'] : []),
+      ...(record.side === 'source' ? ['source', 'source_revision', 'commit'] : []),
+    ];
     if (terms.length === 0) {
       skipped.push({ evidenceId: excerpt.evidenceId, reason: 'Resolved excerpt contains no searchable text.' });
       continue;
@@ -90,7 +110,8 @@ export function retrieveEvidence(
     eligible.push({ record, text: excerpt.text, terms });
   }
 
-  const queryTerms = [...new Set(tokenize(query))];
+  const baseQueryTerms = tokenize(query);
+  const queryTerms = [...new Set(baseQueryTerms.flatMap((term) => [term, ...(QUERY_EXPANSIONS[term] ?? [])]))];
   if (queryTerms.length === 0) {
     limitations.push('Retrieval query contains no searchable terms; no excerpts were selected.');
     return { method: 'lexical-v0', selected: [], skipped, limitations };

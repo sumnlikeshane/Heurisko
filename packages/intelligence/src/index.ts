@@ -10,8 +10,15 @@ import type {
 
 const INTELLIGENCE_LIMITATIONS = [
   'No evidence is retrieved or chunked by the intelligence component; evidence IDs and locations remain owned by the supplied bundle.',
+  'Caller-resolved text supplied for deterministic content checks is not independently read or hash-verified by this component.',
   'No package acquisition, provenance verification, cryptographic trust decision, or product model inference is performed by this component.',
 ] as const;
+
+export interface ResolvedEvidenceContent {
+  evidenceId: EvidenceId;
+  contentRef: string;
+  text: string;
+}
 
 const LIFECYCLE_SCRIPTS = new Set(['preinstall', 'install', 'postinstall', 'prepare']);
 const ENTRYPOINT_KEYS = new Set(['main', 'module', 'types', 'typings', 'exports', 'bin', 'browser']);
@@ -59,10 +66,26 @@ const findingLimitations = (bundle: Readonly<EvidenceBundle>, limitations: strin
     ? [...limitations, 'This finding is derived from a synthetic contract fixture, not a real package observation.']
     : limitations;
 
-function collectDeterministicFindings(bundle: Readonly<EvidenceBundle>): { findings: Finding[]; limitations: string[] } {
+function collectDeterministicFindings(
+  bundle: Readonly<EvidenceBundle>,
+  resolvedContent: readonly ResolvedEvidenceContent[],
+): { findings: Finding[]; limitations: string[] } {
   const findings: Finding[] = [];
   const limitations: string[] = [];
   const evidenceIds = new Set(bundle.evidence.map(({ evidenceId }) => evidenceId));
+  const recordsById = new Map(bundle.evidence.map((record) => [record.evidenceId, record]));
+  const contentById = new Map<EvidenceId, string>();
+  const seenContent = new Set<EvidenceId>();
+  for (const content of resolvedContent) {
+    const record = recordsById.get(content.evidenceId);
+    if (!record || seenContent.has(content.evidenceId)) continue;
+    seenContent.add(content.evidenceId);
+    if (record.contentState !== 'retained' || !record.contentRef || content.contentRef !== record.contentRef) continue;
+    contentById.set(content.evidenceId, content.text);
+  }
+  if (resolvedContent.length > contentById.size) {
+    limitations.push('Some supplied text was not used because its evidence ID or retained content reference was absent, duplicated, or mismatched.');
+  }
   const unreferencedChanges = bundle.changes.filter((change) =>
     change.status !== 'identical' && change.evidenceIds.length === 0
   );
@@ -161,6 +184,41 @@ function collectDeterministicFindings(bundle: Readonly<EvidenceBundle>): { findi
           ? ['Review the preserved raw difference and evaluate the source behavior separately.']
           : ['Keep the raw difference visible and compare it with a controlled, policy-approved rebuild when available.'],
       }));
+
+      const startupHooks = evidence.filter((item) => {
+        if (item.kind !== 'artifact_member' || item.side !== 'artifact' || !item.locator.path?.endsWith('.pth')) return false;
+        const text = contentById.get(item.evidenceId);
+        return text !== undefined && /(?:^|[;\n])\s*(?:import\s+[A-Za-z_]|from\s+[A-Za-z_][\w.]*\s+import\b|__import__\s*\()/m.test(text);
+      });
+      for (const hook of startupHooks) {
+        const hookText = contentById.get(hook.evidenceId)!;
+        const linkedSourceEvidence = evidence.filter((item) =>
+          item.kind === 'source_member' && item.side === 'source' && contentById.has(item.evidenceId)
+        );
+        const sourceExplainsHook = linkedSourceEvidence.some((item) =>
+          contentById.get(item.evidenceId)!.includes('__import__')
+          && (contentById.get(item.evidenceId)!.includes('add_shim') || contentById.get(item.evidenceId)!.includes('sys.meta_path'))
+        );
+        const hookIds = [hook.evidenceId, ...linkedSourceEvidence.map((item) => item.evidenceId)];
+        findings.push(makeFinding(change.changeId, hookIds, {
+          ruleId: 'heurisko.artifact.python-startup-hook',
+          title: 'Python startup hook contains executable import code',
+          observation: `${hook.locator.path} contains import-time code${hookText.includes('__import__') ? ' using __import__' : ''}.`,
+          whyItMatters: sourceExplainsHook
+            ? 'The retained source excerpt contains the same guarded import and shim call. This is behavior-bearing startup code that merits review; the evidence describes compatibility behavior and does not establish malicious intent or exact build provenance.'
+            : 'Import-bearing .pth content can affect interpreter startup behavior. Inspect its exact condition and source correspondence; this static observation does not establish malicious intent.',
+          severity: 'low',
+          reviewPriority: 'medium',
+          evidenceConfidence: sourceExplainsHook ? 'high' : 'limited',
+          explanationStrength: sourceExplainsHook ? 'supported_unreproduced' : 'hypothesis',
+          limitations: findingLimitations(bundle, [
+            'Text was supplied by the caller and was not independently hash-verified by the intelligence component.',
+            'No package or startup hook was executed, and no independent rebuild verified how this file entered the wheel.',
+            ...(sourceExplainsHook ? ['Matching source text explains the behavior but does not verify the wheel-to-commit provenance binding.'] : []),
+          ]),
+          nextActions: ['Review the exact startup condition and corresponding immutable source; keep the raw wheel-only difference visible.'],
+        }));
+      }
       continue;
     }
 
@@ -202,6 +260,7 @@ function collectDeterministicFindings(bundle: Readonly<EvidenceBundle>): { findi
 export async function analyzeEvidence(
   bundle: Readonly<EvidenceBundle>,
   options: AnalysisOptions,
+  resolvedContent: readonly ResolvedEvidenceContent[] = [],
 ): Promise<AnalysisResults> {
   const aiState: AIState = options.enableAI
     ? {
@@ -237,7 +296,7 @@ export async function analyzeEvidence(
     },
   ];
 
-  const deterministic = collectDeterministicFindings(bundle);
+  const deterministic = collectDeterministicFindings(bundle, resolvedContent);
   return {
     schemaVersion: '0.1.0',
     findings: deterministic.findings,
@@ -255,3 +314,5 @@ export { validateInterpretationDraft } from './interpretation.js';
 export type { InterpretationDraft, InterpretationMetadata, InterpretationRejectionCode, InterpretationValidation } from './interpretation.js';
 export { INTERPRETATION_PROMPT_VERSION, INTERPRETATION_SYSTEM_INSTRUCTION, packageInterpretationPrompt } from './prompt.js';
 export type { InterpretationPromptOptions, InterpretationPromptPackage } from './prompt.js';
+export { analyzeEvidenceWithOpenRouter, OPENROUTER_ANSWER_MODEL } from './openrouter.js';
+export type { OpenRouterAnalysisResult, OpenRouterInferenceMetadata, OpenRouterInferenceOptions } from './openrouter.js';

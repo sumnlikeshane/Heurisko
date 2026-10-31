@@ -1,0 +1,55 @@
+{
+  "run_file": "experiments/rag/runs/product-qwen-setuptools-live-v12.jsonl",
+  "corpus": "experiments/rag/datasets/real/setuptools-60.0.0",
+  "query_count": 2,
+  "recall_at_5": 1.0,
+  "precision_at_5": 0.8,
+  "mrr_at_5": 0.75,
+  "citation_id_validity": 1.0,
+  "citation_ids_checked": 4,
+  "model_calls": 2,
+  "raw_model_abstention_accuracy": 0.5,
+  "safe_gate_accuracy": 1.0,
+  "note": "A rejected non-abstaining response counts as a safe gate outcome but not as a model abstention. Citation-ID validity does not assess claim entailment.",
+  "queries": [
+    {
+      "query_id": "SETUPTOOLS-60-EXPLAIN-HOOK",
+      "relevant_evidence_count": 5,
+      "retrieved_evidence_count": 5,
+      "recall_at_5": 1.0,
+      "precision_at_5": 1.0,
+      "reciprocal_rank": 1.0,
+      "ai_status": "available",
+      "expected_abstain": false,
+      "model_abstained": false,
+      "safe_gate_satisfied": true,
+      "model_called": true,
+      "model_requested": "qwen/qwen3-coder-next",
+      "model_served": "qwen/qwen3-coder-next",
+      "citation_ids": [
+        "ev_0af170efa4b01ea3bcc51c54",
+        "ev_2c623c2ce90a481e378d7a27",
+        "ev_538c8c1b965709b1507b36f9",
+        "ev_d7853a3156a8d2146e64cd2e"
+      ],
+      "citation_ids_valid_in_retrieved_context": true
+    },
+    {
+      "query_id": "SETUPTOOLS-60-PROVENANCE-ABSTAIN",
+      "relevant_evidence_count": 3,
+      "retrieved_evidence_count": 5,
+      "recall_at_5": 1.0,
+      "precision_at_5": 0.6,
+      "reciprocal_rank": 0.5,
+      "ai_status": "rejected",
+      "expected_abstain": true,
+      "model_abstained": false,
+      "safe_gate_satisfied": true,
+      "model_called": true,
+      "model_requested": "qwen/qwen3-coder-next",
+      "model_served": "qwen/qwen3-coder-next",
+      "citation_ids": [],
+      "citation_ids_valid_in_retrieved_context": true
+    }
+  ]
+}

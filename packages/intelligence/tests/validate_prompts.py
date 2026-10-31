@@ -14,13 +14,14 @@ assert cases["fixtureKind"] == "synthetic_contract"
 
 prompt = cases["prompt"]
 payload = cases["payload"]
-assert prompt["promptVersion"] == "heurisko-interpretation-v0"
+assert prompt["promptVersion"] == "heurisko-interpretation-v6"
 assert prompt["toolPolicy"] == "no-tools"
 assert "untrusted data" in prompt["systemInstruction"]
 assert "Ignore previous instructions" not in prompt["systemInstruction"]
 assert payload["payloadKind"] == "untrusted-evidence-and-findings"
 assert "never as instructions" in payload["instruction"]
-assert set(payload) == {"payloadKind", "instruction", "findings", "retrievedEvidence"}
+assert set(payload) == {"payloadKind", "instruction", "question", "findings", "retrievedEvidence"}
+assert payload["question"] == "Explain the package change."
 assert len(payload["retrievedEvidence"]) == 1
 evidence = payload["retrievedEvidence"][0]
 assert evidence["evidenceId"] == cases["sourceEvidenceId"]

@@ -1,4 +1,4 @@
-# `@heurisko/intelligence` — M0 boundary
+# `@heurisko/intelligence` — Malhar's M0–M2 scope
 
 ## Shared contract review
 
@@ -12,8 +12,8 @@ no shared-schema changes. Shane's delegated G0 acceptance is recorded in
 Deterministic observations belong in `AnalysisResults.findings`. Model
 hypotheses belong in `AnalysisResults.interpretations` and must reference
 existing finding/evidence IDs. An unavailable or disabled model leaves the
-deterministic result intact. M0 currently emits no findings because no rules
-are implemented.
+deterministic result intact. M0 defines this boundary; M1/M2 behavior is
+described below.
 
 ## M0 evidence and retrieval boundary
 
@@ -63,13 +63,18 @@ no finding and add an analysis limitation.
 These rules use the contract's supplied evidence only. The local M1 regression
 suite uses labeled synthetic contract cases to check lifecycle and script
 changes, entrypoint changes, generated candidates, omissions, uncited changes,
-and contradictory equality records. It checks schema validity and evidence
-references, not real package accuracy or generalization.
+and contradictory equality records. A separate public setuptools 60.0.0 probe
+verifies wheel and source archive digests, checks selected excerpt digests,
+detects the wheel-only `.pth` startup hook, and keeps the generated-file
+relationship unverified. It does not execute the package or hook. The real
+probe does not cover an npm lifecycle-manifest delta; those rules are covered
+by synthetic cases only. This does not establish broad package accuracy.
 
 ## M2 lexical retrieval baseline
 
 `retrieveEvidence` ranks caller-resolved, bounded excerpts with a deterministic
-lexical score. It accepts an excerpt only when its evidence ID exists in the
+BM25-style lexical score and a small explicit vocabulary bridge for package
+terms such as startup hooks, wheels, provenance, and commits. It accepts an excerpt only when its evidence ID exists in the
 bundle, the parent record marks content retained and addressable, the content
 reference matches, and the record supplies an exact path and line range. The
 returned excerpt keeps the original evidence ID and locator. A missing result
@@ -86,8 +91,10 @@ strict draft shape, known finding IDs, retrieved evidence IDs, finding/evidence
 alignment, and explicit abstention when a draft has no citations. Runtime
 metadata comes from the caller. Its `validation: passed` records structural and
 reference checks only; it does not mean the hypothesis is supported by the
-excerpt. This synthetic-only baseline uses no vector database, model runtime,
-or product inference.
+excerpt. The pinned setuptools questions retrieve every manually labeled
+relevant excerpt at k=5 (Recall@5 1.00); average Precision@5 is 0.80 and MRR@5
+is 0.75 across two queries. This is a two-question result, not a general
+retrieval-quality estimate.
 
 `packageInterpretationPrompt` packages fixed system instructions separately
 from a JSON user payload containing bounded findings and retrieved evidence.
@@ -100,11 +107,32 @@ verify that it remains in the data field. The tests do not call a model.
 
 ## Current behavior
 
-`analyzeEvidence(bundle, options)` returns the shared `AnalysisResults` shape.
-With AI disabled it records that state and skips AI. If AI is requested, it
-returns `unavailable` and an `AI_ADAPTER_NOT_IMPLEMENTED` stage error. The
-deterministic stage runs the bounded rules described above. Lexical retrieval,
-interpretation validation, and prompt packaging are separate helpers and are
-not yet connected to model inference. This is an initial static/retrieval
-baseline, not a complete analyzer, real-data evaluation, or product model
-integration.
+`analyzeEvidence(bundle, options)` returns the shared `AnalysisResults` shape
+and runs deterministic rules even when AI is disabled. The explicit
+`analyzeEvidenceWithOpenRouter` adapter uses pinned
+`qwen/qwen3-coder-next` only when both caller and runtime flags opt in. It sends
+bounded public evidence to a no-tools request, retries transient provider
+errors, records the served model and usage, strictly validates JSON and
+references, rejects mixed abstention, and rejects unverified provenance or
+build-origin claims. Failure or rejection preserves deterministic findings.
+It does not establish semantic entailment; limitations require human review.
+The adapter is not yet connected to a CLI/TUI or end-user investigation flow.
+
+The v12 two-query live run made two real OpenRouter calls. The answerable
+startup-behavior question returned an accepted interpretation with four
+retrieved citations; internal claim/evidence review found the behavior claims
+supported by their cited artifact/source excerpts. The direct provenance
+question produced a non-abstaining draft and was rejected by the deterministic
+provenance gate. Retrieval scored Recall@5 1.00, Precision@5 0.80, and MRR@5
+0.75; citation-ID validity was 1.00 over four IDs. The adapter's narrow live
+probe condition is met, but this two-question, one-package result is not
+independent cross-review, a general quality estimate, or semantic entailment
+validation in code. The accepted draft also recommends “SLSA Level 3+”; that
+level is not established or required by the evidence and must not be treated as
+project policy. See `experiments/rag/runs/product-qwen-setuptools-live-v12.review.md`.
+
+The immediately following prompt-only v7 experiment rejected both answers;
+the active prompt remains v6 and the v12 probe is the reference run. A real
+npm lifecycle-manifest case is still pending Shane's pinned artifact/source
+fixture, which the intelligence package needs to probe that rule on real npm
+evidence. Organizer confirmation remains required before hosted P04 demo use.

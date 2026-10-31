@@ -33,7 +33,8 @@ export type InterpretationRejectionCode =
   | 'unknown_evidence_id'
   | 'evidence_not_retrieved'
   | 'finding_evidence_mismatch'
-  | 'citation_required';
+  | 'citation_required'
+  | 'mixed_abstention';
 
 export type InterpretationValidation =
   | { status: 'accepted'; interpretation: AIInterpretation }
@@ -115,6 +116,10 @@ export function validateInterpretationDraft(
   }
   if (citationCheck.evidenceNotRetrieved.length > 0) {
     return reject('evidence_not_retrieved', 'Draft cites evidence that was not included in the model context.');
+  }
+
+  if (raw.evidenceIds.length > 0 && raw.abstentionReason.trim()) {
+    return reject('mixed_abstention', 'A draft with cited evidence cannot also set a full-abstention reason; describe partial uncertainty in missingEvidence.');
   }
 
   if (raw.evidenceIds.length > 0) {
