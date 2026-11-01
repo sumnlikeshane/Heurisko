@@ -1,0 +1,63 @@
+[
+  {
+    "name": "contracts",
+    "argv": [
+      "pnpm",
+      "run",
+      "test:contracts"
+    ]
+  },
+  {
+    "name": "web",
+    "argv": [
+      "pnpm",
+      "--filter",
+      "@heurisko/web",
+      "test"
+    ]
+  },
+  {
+    "name": "readers",
+    "argv": [
+      "node",
+      "--test",
+      "integration/part4/tests/readiness.test.mjs",
+      "packages/tui/tests/user-failures.test.mjs",
+      "packages/tui/tests/audit.test.mjs",
+      "packages/tui/tests/model.test.mjs"
+    ]
+  },
+  {
+    "name": "parser-lifecycle",
+    "argv": [
+      "node",
+      "--test",
+      "--test-concurrency=1",
+      "packages/core/tests/audit-fixes.test.mjs",
+      "packages/core/tests/parser-absence.test.mjs",
+      "packages/core/tests/cli-boundary.test.mjs"
+    ]
+  },
+  {
+    "name": "intake",
+    "argv": [
+      "node",
+      "scripts/verify-intelligence-intake.mjs"
+    ]
+  },
+  {
+    "name": "contracts-config",
+    "argv": [
+      "node",
+      "--test",
+      "packages/core/tests/foundation.test.mjs"
+    ]
+  },
+  {
+    "name": "secrets",
+    "argv": [
+      "node",
+      "scripts/check-phase1-secrets.mjs"
+    ]
+  }
+]

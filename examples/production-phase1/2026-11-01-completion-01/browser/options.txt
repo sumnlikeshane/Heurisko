@@ -1,0 +1,15 @@
+Browser tab: 1237325268, Title: "Heurisko · Evidence workspace", URL: "http://127.0.0.1:43219/workspace/new".
+The following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 43-44
++				52 container
++					53 button (expanded) Requested options and available checks, Secondary Actions: Collapse
++						54 text Requested options and available checks
++					55 text Static acquisition, inventory and raw comparison are available. Deterministic findings depend on this reader's configured analysis module; the report records the module and any unavailable checks. The product model, provenance verifier, policy evaluator, rebuild and monitoring remain unavailable. AI request semantics
++					56 pop up button (collapsed, settable) AI request semantics, Value: Do not request AI · --no-ai, ID: investigate-enableAI, Secondary Actions: Expand
++						57 menu
++							58 Record an AI request · unavailable
++							59 (selected) Do not request AI · --no-ai
++					60 text AI is off by default, as in the CLI. An explicit request records unavailable AI; neither choice runs a model here. Requested policy reference (optional)
++					61 text field (settable) Requested policy reference (optional), ID: investigate-policy
++					62 text Records a request. Without an evaluator, the policy result remains indeterminate.
+The focused UI element is 53 button (expanded) Requested options and available checks, Secondary Actions: Collapse

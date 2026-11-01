@@ -63,7 +63,7 @@ Read [Save and reopen](workflows-portable.md) for format limits and recovery fro
 
 ## Capability limits
 
-The current shared producer collects static archive/source evidence and raw comparisons. The analysis module, model, provenance verifier, concrete policy evaluator, rebuild and release monitor are not integrated into this web workflow. Requesting an option cannot supply them. The AI request follows the CLI request semantics; this viewer does not fabricate an interpretation.
+The shared producer collects static archive/source evidence and raw comparisons, then runs the reviewed deterministic analysis module. Model inference, a provenance verifier, concrete policy evaluator, rebuild and release monitor are unavailable. Requesting a policy cannot supply an evaluator. The viewer renders recorded AI state and does not fabricate an interpretation.
 
 For complete current support and the separate terminal interface, read [Current capabilities](availability.md). Advanced resource, transport and contributor details remain in the [browser technical reference](../README.md), and all canonical commands remain in the [complete CLI reference](../../../docs/CLI%20Reference.md).
 

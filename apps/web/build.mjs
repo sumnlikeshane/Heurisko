@@ -5,7 +5,9 @@ import {resolve, dirname} from 'node:path';
 execFileSync(process.execPath,[fileURLToPath(new URL('../../node_modules/typescript/bin/tsc',import.meta.url)),'-p','../../integration/part4/tsconfig.json'],{stdio:'inherit'});
 import {mkdir,copyFile,writeFile,readFile} from 'node:fs/promises';
 await mkdir('dist/assets',{recursive:true});
-await build({entryPoints:['src/main.tsx'],bundle:true,outdir:'dist/assets',entryNames:'app',format:'esm',platform:'browser',target:'es2022',jsx:'automatic',minify:true,metafile:true,define:{'process.env.NODE_ENV':'"production"'}}).then(async r=>{
+const browserNotices = await readFile('THIRD_PARTY_NOTICES.txt', 'utf8');
+await copyFile('THIRD_PARTY_NOTICES.txt', 'dist/assets/third-party-notices.txt');
+await build({entryPoints:['src/main.tsx'],bundle:true,outdir:'dist/assets',entryNames:'app',format:'esm',platform:'browser',target:'es2022',jsx:'automatic',minify:true,metafile:true,footer:{js:'/*!\n'+browserNotices.replaceAll('*/','* /')+'\n*/'},define:{'process.env.NODE_ENV':'"production"'}}).then(async r=>{
   if(Object.keys(r.metafile.inputs).some(x=>/packages\/core|integration\/part4|node:/.test(x)))throw Error('NODE_CODE_IN_BROWSER');
   await writeFile('dist/browser-inputs.json',JSON.stringify(Object.keys(r.metafile.inputs),null,2));
 });

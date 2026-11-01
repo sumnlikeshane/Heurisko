@@ -14,9 +14,9 @@ Use the [complete CLI reference](../../../docs/CLI%20Reference.md) for exact opt
 
 ## Shared integrations still unavailable
 
-The current web workflow has no integrated analysis module, open-model inference, provenance verifier, concrete policy evaluator, rebuild worker or release monitor. Requested AI and policy options record intent; they do not provide those capabilities. No fallback interpretation is synthesized.
+The web workflow uses the reviewed deterministic analysis module. Open-model inference, a provenance verifier, concrete policy evaluator, rebuild worker and release monitor are unavailable. AI is off by default; an explicit AI request records unavailable model work. Policy options record intent without evaluation. No fallback interpretation is synthesized.
 
-Monitoring and meaningful actual open-model work remain complete-product and event obligations. A readable web interface does not close them.
+Monitoring and meaningful model work remain future product work. A readable web interface does not supply those capabilities.
 
 ## Later scope
 

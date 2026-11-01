@@ -1,0 +1,59 @@
+{
+  "claims": [
+    {
+      "case": "mutation-lifecycle-add",
+      "constructionTruth": "Adds /scripts/postinstall with inert unexecuted marker.",
+      "observations": [
+        {
+          "ruleId": "heurisko.manifest.lifecycle-script-change",
+          "observation": "Manifest key scripts.postinstall is reported as added to the artifact.",
+          "evidenceIds": [
+            "ev_92f2176bca6e21ec8dd0095c"
+          ],
+          "priority": "medium",
+          "limitations": [
+            "The producer-retained manifest delta supplies the old/new value direction; this M1 rule does not analyze referenced file behavior or establish intent."
+          ]
+        }
+      ],
+      "review": "Observation direction agrees with original authored members and retained delta; no intent/safety claim. Reviewed by implementing agent, independent human acceptance pending."
+    },
+    {
+      "case": "mutation-lifecycle-remove",
+      "constructionTruth": "Removes source /scripts/postinstall. Removal is not malicious intent.",
+      "observations": [
+        {
+          "ruleId": "heurisko.manifest.lifecycle-script-change",
+          "observation": "Manifest key scripts.postinstall is reported as removed from the artifact.",
+          "evidenceIds": [
+            "ev_a274e296ea0ef056004ccb4c"
+          ],
+          "priority": "medium",
+          "limitations": [
+            "The producer-retained manifest delta supplies the old/new value direction; this M1 rule does not analyze referenced file behavior or establish intent."
+          ]
+        }
+      ],
+      "review": "Observation direction agrees with original authored members and retained delta; no intent/safety claim. Reviewed by implementing agent, independent human acceptance pending."
+    },
+    {
+      "case": "mutation-entrypoint",
+      "constructionTruth": "Changes /main value to inert alternate path.",
+      "observations": [
+        {
+          "ruleId": "heurisko.manifest.entrypoint-change",
+          "observation": "Manifest key main is reported as changed.",
+          "evidenceIds": [
+            "ev_718d5e768fef473afb6c2f38"
+          ],
+          "priority": "low",
+          "limitations": [
+            "Old and new manifest values are not available in this evidence record."
+          ]
+        }
+      ],
+      "review": "Observation direction agrees with original authored members and retained delta; no intent/safety claim. Reviewed by implementing agent, independent human acceptance pending."
+    }
+  ],
+  "knownLimitations": "Roadmap Q1 removal priority and Q2 entrypoint wording remain Phase 2 quality items; no rule/provider/contract change in this task."
+}

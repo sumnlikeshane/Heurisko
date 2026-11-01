@@ -1,0 +1,33 @@
+{
+  "scope": "Final validation-image Python installer bundled source, global and venv; read-only filename/manifest review",
+  "installers": [
+    {
+      "site": "/usr/local/lib/python3.13/site-packages",
+      "vendorManifest": "CacheControl==0.14.0\ndistlib==0.3.9\ndistro==1.9.0\nmsgpack==1.0.8\npackaging==24.1\nplatformdirs==4.2.2\npyproject-hooks==1.0.0\nrequests==2.32.3\n    certifi==2024.8.30\n    idna==3.7\n    urllib3==1.26.20\nrich==13.7.1\n    pygments==2.18.0\n    typing_extensions==4.12.2\nresolvelib==1.0.1\nsetuptools==70.3.0\ntomli==2.0.1\ntruststore==0.10.0\n",
+      "vendorManifestSha256": "e37d79dae0eda6cba7104dbdbe62eaa8a654a2c76b6efcc8164cec70b079e428",
+      "vendoredRightsFiles": [],
+      "pipOwnLicenseFiles": [
+        {
+          "path": "pip-24.3.1.dist-info/LICENSE.txt",
+          "bytes": 1093,
+          "sha256": "634300a669d49aeae65b12c6c48c924c51a4cdf3d1ff086dc3456dc8bcaa2104"
+        }
+      ],
+      "limit": "Vendor names/versions are inventory, not a grant. Full third-party notices not found by this filename scan require source-level notice evidence before redistributing the bundled installer."
+    },
+    {
+      "site": "/app/.venv/lib/python3.13/site-packages",
+      "vendorManifest": "CacheControl==0.14.0\ndistlib==0.3.9\ndistro==1.9.0\nmsgpack==1.0.8\npackaging==24.1\nplatformdirs==4.2.2\npyproject-hooks==1.0.0\nrequests==2.32.3\n    certifi==2024.8.30\n    idna==3.7\n    urllib3==1.26.20\nrich==13.7.1\n    pygments==2.18.0\n    typing_extensions==4.12.2\nresolvelib==1.0.1\nsetuptools==70.3.0\ntomli==2.0.1\ntruststore==0.10.0\n",
+      "vendorManifestSha256": "e37d79dae0eda6cba7104dbdbe62eaa8a654a2c76b6efcc8164cec70b079e428",
+      "vendoredRightsFiles": [],
+      "pipOwnLicenseFiles": [
+        {
+          "path": "pip-24.3.1.dist-info/LICENSE.txt",
+          "bytes": 1093,
+          "sha256": "634300a669d49aeae65b12c6c48c924c51a4cdf3d1ff086dc3456dc8bcaa2104"
+        }
+      ],
+      "limit": "Vendor names/versions are inventory, not a grant. Full third-party notices not found by this filename scan require source-level notice evidence before redistributing the bundled installer."
+    }
+  ]
+}

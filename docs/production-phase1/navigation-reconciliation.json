@@ -1,0 +1,136 @@
+[
+  {
+    "path": "examples/README.md",
+    "beforeSha256": "9db9ce77afce8ffc6ad08c980aa385230d0c631c1d8d2e48e5d1a624d0b7fc11",
+    "afterSha256": "341085059a6354d9d23d6232701c06c1f12aff15b03408b1c9a0bc740faf147f",
+    "links": [
+      {
+        "old": "../docs/Final%20Module%20Intake.md",
+        "new": "../packages/intelligence-reviewed/README.md"
+      },
+      {
+        "old": "../docs/Final%20Hour%20Demo%20Runbook.md",
+        "new": "../HEURISKO_COMPLETE_GUIDE.md#16-a-practical-demonstration-sequence"
+      },
+      {
+        "old": "../docs/Final%20Module%20Intake.md",
+        "new": "../packages/intelligence-reviewed/README.md"
+      }
+    ],
+    "editorialChanges": "Current example index: remove stale local/uncommitted/event-completion framing; original report results and pointers unchanged."
+  },
+  {
+    "path": "examples/current-handoff/README.md",
+    "beforeSha256": "d3fd634b043d54d3911ebfa4d1949eafbab5825faf7804609ae32560596273c2",
+    "afterSha256": "d93c9d89cf1a5438e24a6091a8466243dcf556684a2a807380f51eacd7717cd7",
+    "links": [
+      {
+        "old": "../../docs/HANDOFF_CURRENT.md",
+        "new": "https://github.com/sumnlikeshane/Heurisko/blob/6985d3eeecdbdc33463458e8072a31e62e86109f/docs/HANDOFF_CURRENT.md"
+      }
+    ]
+  },
+  {
+    "path": "examples/web-gap/README.md",
+    "beforeSha256": "7a7681ad234d2911baf062013eff66d4887b8d0a1a6ee595a597fe9a0d92ab85",
+    "afterSha256": "8f909c3102e56e221d9209eb698ed1cacffd7acee86ddf9b2bdf1e20863e3e5c",
+    "links": [
+      {
+        "old": "../../docs/Web%20Application%20Gap%20Plan.md",
+        "new": "https://github.com/sumnlikeshane/Heurisko/blob/6985d3eeecdbdc33463458e8072a31e62e86109f/docs/Web%20Application%20Gap%20Plan.md"
+      }
+    ]
+  },
+  {
+    "path": "examples/final-hour/20261101-053912/README.md",
+    "beforeSha256": "5447f9787dff6f9214ea442ec47451f7ab1194ed5cb6cfbd63fdf958971f9a8c",
+    "afterSha256": "b03206f27c47a8e1ec251f5659b2796d44953cfe558a194d4da3bd678542547b",
+    "links": [
+      {
+        "old": "../../../docs/Final%20Module%20Intake.md",
+        "new": "https://github.com/sumnlikeshane/Heurisko/blob/6985d3eeecdbdc33463458e8072a31e62e86109f/docs/Final%20Module%20Intake.md"
+      },
+      {
+        "old": "../../../docs/Final%20Hour%20Demo%20Runbook.md",
+        "new": "https://github.com/sumnlikeshane/Heurisko/blob/6985d3eeecdbdc33463458e8072a31e62e86109f/docs/Final%20Hour%20Demo%20Runbook.md"
+      }
+    ]
+  },
+  {
+    "path": "examples/final-hour/20261101-053912/integrated-55240e9/README.md",
+    "beforeSha256": "e12a6c16d9672d9a7eff96c86bac29d221ed22f7e462616b232dc5d42d489fe0",
+    "afterSha256": "c707e04b727affceeaaaa15577a3ef86ca936825bc7fa378e665c035ff86c45f",
+    "links": [
+      {
+        "old": "../../../../docs/Final%20Module%20Intake.md",
+        "new": "https://github.com/sumnlikeshane/Heurisko/blob/6985d3eeecdbdc33463458e8072a31e62e86109f/docs/Final%20Module%20Intake.md"
+      }
+    ]
+  },
+  {
+    "path": "examples/malhar-handoff/current/README.md",
+    "beforeSha256": "58e1b7b1f3ab57a2dd8132ab7fe66fc420274b2e434ead9ca8334ac40a0616f2",
+    "afterSha256": "20d07bb8f085fca01e0210693789928dcec736de844307babdb9dbf6db8b345a",
+    "links": [
+      {
+        "old": "../../../docs/Malhar%20M1%20M2%20Handoff%20Review.md",
+        "new": "https://github.com/sumnlikeshane/Heurisko/blob/6985d3eeecdbdc33463458e8072a31e62e86109f/docs/Malhar%20M1%20M2%20Handoff%20Review.md"
+      }
+    ]
+  },
+  {
+    "path": "examples/web-overhaul/current/README.md",
+    "beforeSha256": "44ccbd2f3b0008288c80c3f8214707c391578e6fe370da8f618840b892320f34",
+    "afterSha256": "872fae423c8397c69ab9a79d8fa620c9363800474923c36f69b510d393202b56",
+    "links": [
+      {
+        "old": "../../../docs/Web%20Application%20Gap%20Plan.md#overhaul-execution--1-november-2026",
+        "new": "https://github.com/sumnlikeshane/Heurisko/blob/6985d3eeecdbdc33463458e8072a31e62e86109f/docs/Web%20Application%20Gap%20Plan.md#overhaul-execution--1-november-2026"
+      }
+    ]
+  },
+  {
+    "path": "examples/audit-fixes/current/README.md",
+    "beforeSha256": "0b23ff5485cfbd142973085597558c0ec7a7f58001264e139df7a5c3276d6c31",
+    "afterSha256": "7402c8eaa9c43067f77b353731561564dcb7da58122b875ac4cab745f191b488",
+    "links": [
+      {
+        "old": "../../../docs/Audit%20Repairs%20and%20Malhar%20Handoff.md",
+        "new": "https://github.com/sumnlikeshane/Heurisko/blob/6985d3eeecdbdc33463458e8072a31e62e86109f/docs/Audit%20Repairs%20and%20Malhar%20Handoff.md"
+      }
+    ]
+  },
+  {
+    "path": "examples/handoff/current/README.md",
+    "beforeSha256": "ba3f259f78f3a37fd898a70f5ebada1c10f0169e58657db5ae24677269ab2a52",
+    "afterSha256": "d2fb39386782c901ed1f31638716767463cae787be12012a0168e52406f5bfae",
+    "links": [
+      {
+        "old": "../../../docs/HANDOFF_S1_S3.md",
+        "new": "https://github.com/sumnlikeshane/Heurisko/blob/6985d3eeecdbdc33463458e8072a31e62e86109f/docs/HANDOFF_S1_S3.md"
+      }
+    ]
+  },
+  {
+    "path": "examples/part4/current/README.md",
+    "beforeSha256": "1fb91d7e95fea6de4d2d1a2ce09feeb775b3b1f669498ae51371d2375fc0075e",
+    "afterSha256": "de3c78807098c9f11837d9a0fe077c130e59d2ffb96bd48755bba418a87a7304",
+    "links": [
+      {
+        "old": "../../../docs/Part%204%20Integration%20Readiness%20Report.md",
+        "new": "https://github.com/sumnlikeshane/Heurisko/blob/6985d3eeecdbdc33463458e8072a31e62e86109f/docs/Part%204%20Integration%20Readiness%20Report.md"
+      }
+    ]
+  },
+  {
+    "path": "examples/shane-parts456-audit/2026-11-01/README.md",
+    "beforeSha256": "570d731fbf94f9b17baccbd45c11b721a180a510f8a14c9d147444c2ff07ed66",
+    "afterSha256": "fecbc15a0a529269add3e120e3830d508a674c81661af934a3d19ffdbf726ee0",
+    "links": [
+      {
+        "old": "../../../docs/Shane%20Parts%204%E2%80%936%20Audit.md",
+        "new": "https://github.com/sumnlikeshane/Heurisko/blob/6985d3eeecdbdc33463458e8072a31e62e86109f/docs/Shane%20Parts%204%E2%80%936%20Audit.md"
+      }
+    ]
+  }
+]

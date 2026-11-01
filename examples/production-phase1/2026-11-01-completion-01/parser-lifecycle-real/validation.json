@@ -1,0 +1,38 @@
+{
+  "host": "darwin",
+  "scenarios": [
+    {
+      "scenario": "delayed-create-cancel",
+      "exactContainerId": "bd5ba74adf726eaae6a84332895071e7162e5bdc4b79320089c2162812bc3e8b",
+      "inventoryCode": "CANCELLED",
+      "complete": false,
+      "samples": [],
+      "resourceLimit": "Docker stream samples may miss short-lived peaks; zero samples is unmeasured, not zero use."
+    },
+    {
+      "scenario": "delayed-remove",
+      "exactContainerId": "4c783aac4502cb0e7d58549ebb3e9f103fd6d4921bf36ecf51ed11f7a68c9e39",
+      "inventoryCode": "OK",
+      "complete": true,
+      "samples": [
+        {
+          "read": "0001-01-01T00:00:00Z",
+          "memory": {},
+          "cpu": {
+            "cpu_usage": {
+              "total_usage": 0,
+              "usage_in_kernelmode": 0,
+              "usage_in_usermode": 0
+            },
+            "throttling_data": {
+              "periods": 0,
+              "throttled_periods": 0,
+              "throttled_time": 0
+            }
+          }
+        }
+      ],
+      "resourceLimit": "Docker stream samples may miss short-lived peaks; zero samples is unmeasured, not zero use."
+    }
+  ]
+}

@@ -1,0 +1,238 @@
+Browser tab: 1237325268, Title: "Heurisko · Evidence workspace", URL: "http://127.0.0.1:43219/workspace/observations/4eba1ced04a9b3a09539d30d0678cde6/findings".
+0 AXWebArea Heurisko · Evidence workspace, URL: 127.0.0.1:43219/workspace/observations/4eba1ced04a9b3a09539d30d0678cde6/findings
+	1 container root
+		2 link Description: Skip to content, Value: 127.0.0.1:43219/workspace/observations/4eba1ced04a9b3a09539d30d0678cde6/findings#workspace
+		3 container
+			4 link Description: Heurisko home, Value: 127.0.0.1:43219/
+			5 container Main navigation
+				6 link Description: Home, Value: 127.0.0.1:43219/
+				7 link Description: Documentation, Value: 127.0.0.1:43219/docs/start/quickstart
+				8 link Description: Workspace, Value: 127.0.0.1:43219/workspace/new
+		52 container
+			53 text WORKSPACE
+			54 container Workspace tasks
+				55 link Description: New investigation, Value: 127.0.0.1:43219/workspace/new
+				56 link Description: Open evidence, Value: 127.0.0.1:43219/workspace/open
+				57 link Description: Jobs, Value: 127.0.0.1:43219/workspace/jobs
+				58 link Description: Reports, Value: 127.0.0.1:43219/workspace/reports
+			59 button (collapsed) Reader · connected, Secondary Actions: Expand
+				60 text Reader · 
+				61 text connected
+		62 container workspace
+			63 container
+				64 text RETAINED OBSERVATION ·  LOCAL INPUT
+			65 heading picocolors@1.1.1, Value: 1
+				66 text picocolors
+				67 text @
+				68 text 1.1.1
+			69 container
+				70 text Captured  2026-11-01T00:27:21Z
+			71 button (collapsed) Observation identity, Secondary Actions: Expand
+				72 text Observation identity
+			73 button (collapsed) Save this observation, Secondary Actions: Expand
+				74 text Save this observation
+			75 container Report sections
+				76 link Description: Overview, Value: 127.0.0.1:43219/workspace/observations/4eba1ced04a9b3a09539d30d0678cde6/overview
+				77 link Description: Files, Value: 127.0.0.1:43219/workspace/observations/4eba1ced04a9b3a09539d30d0678cde6/files
+				78 link Description: Findings, Value: 127.0.0.1:43219/workspace/observations/4eba1ced04a9b3a09539d30d0678cde6/findings
+				79 link Description: Source, Value: 127.0.0.1:43219/workspace/observations/4eba1ced04a9b3a09539d30d0678cde6/source
+				80 link Description: AI, Value: 127.0.0.1:43219/workspace/observations/4eba1ced04a9b3a09539d30d0678cde6/ai
+				81 link Description: Coverage, Value: 127.0.0.1:43219/workspace/observations/4eba1ced04a9b3a09539d30d0678cde6/coverage
+			82 heading Findings, Value: 2
+				83 text Findings
+			84 text Severity, review priority and evidence confidence describe different things.
+			85 container
+				86 text Filter findings
+				87 text field (settable) Filter findings
+			88 container
+				89 heading 16 matching / 16 recorded, Value: 2
+					90 text 16 matching / 16 recorded
+				91 checkbox File change remains unexplained Severity: undetermined · Priority: low Confidence: limited, Value: 1
+					92 text File change remains unexplained
+					93 text Severity: 
+					94 text undetermined
+					95 text  · Priority: 
+					96 text low
+					97 text Confidence: 
+					98 text limited
+				99 checkbox File change remains unexplained Severity: undetermined · Priority: low Confidence: limited, Value: 0
+					100 text File change remains unexplained
+					101 text Severity: 
+					102 text undetermined
+					103 text  · Priority: 
+					104 text low
+					105 text Confidence: 
+					106 text limited
+				107 checkbox File change remains unexplained Severity: undetermined · Priority: low Confidence: limited, Value: 0
+					108 text File change remains unexplained
+					109 text Severity: 
+					110 text undetermined
+					111 text  · Priority: 
+					112 text low
+					113 text Confidence: 
+					114 text limited
+				115 checkbox File change remains unexplained Severity: undetermined · Priority: low Confidence: limited, Value: 0
+					116 text File change remains unexplained
+					117 text Severity: 
+					118 text undetermined
+					119 text  · Priority: 
+					120 text low
+					121 text Confidence: 
+					122 text limited
+				123 checkbox File change remains unexplained Severity: undetermined · Priority: low Confidence: limited, Value: 0
+					124 text File change remains unexplained
+					125 text Severity: 
+					126 text undetermined
+					127 text  · Priority: 
+					128 text low
+					129 text Confidence: 
+					130 text limited
+				131 checkbox File change remains unexplained Severity: undetermined · Priority: low Confidence: limited, Value: 0
+					132 text File change remains unexplained
+					133 text Severity: 
+					134 text undetermined
+					135 text  · Priority: 
+					136 text low
+					137 text Confidence: 
+					138 text limited
+				139 checkbox File change remains unexplained Severity: undetermined · Priority: low Confidence: limited, Value: 0
+					140 text File change remains unexplained
+					141 text Severity: 
+					142 text undetermined
+					143 text  · Priority: 
+					144 text low
+					145 text Confidence: 
+					146 text limited
+				147 checkbox File change remains unexplained Severity: undetermined · Priority: low Confidence: limited, Value: 0
+					148 text File change remains unexplained
+					149 text Severity: 
+					150 text undetermined
+					151 text  · Priority: 
+					152 text low
+					153 text Confidence: 
+					154 text limited
+				155 checkbox File change remains unexplained Severity: undetermined · Priority: low Confidence: limited, Value: 0
+					156 text File change remains unexplained
+					157 text Severity: 
+					158 text undetermined
+					159 text  · Priority: 
+					160 text low
+					161 text Confidence: 
+					162 text limited
+				163 checkbox File change remains unexplained Severity: undetermined · Priority: low Confidence: limited, Value: 0
+					164 text File change remains unexplained
+					165 text Severity: 
+					166 text undetermined
+					167 text  · Priority: 
+					168 text low
+					169 text Confidence: 
+					170 text limited
+				171 checkbox File change remains unexplained Severity: undetermined · Priority: low Confidence: limited, Value: 0
+					172 text File change remains unexplained
+					173 text Severity: 
+					174 text undetermined
+					175 text  · Priority: 
+					176 text low
+					177 text Confidence: 
+					178 text limited
+				179 checkbox File change remains unexplained Severity: undetermined · Priority: low Confidence: limited, Value: 0
+					180 text File change remains unexplained
+					181 text Severity: 
+					182 text undetermined
+					183 text  · Priority: 
+					184 text low
+					185 text Confidence: 
+					186 text limited
+				187 checkbox Package lifecycle script entry changed Severity: medium · Priority: medium Confidence: high, Value: 0
+					188 text Package lifecycle script entry changed
+					189 text Severity: 
+					190 text medium
+					191 text  · Priority: 
+					192 text medium
+					193 text Confidence: 
+					194 text high
+				195 checkbox Package script entry changed Severity: informational · Priority: low Confidence: high, Value: 0
+					196 text Package script entry changed
+					197 text Severity: 
+					198 text informational
+					199 text  · Priority: 
+					200 text low
+					201 text Confidence: 
+					202 text high
+				203 checkbox File change remains unexplained Severity: undetermined · Priority: low Confidence: limited, Value: 0
+					204 text File change remains unexplained
+					205 text Severity: 
+					206 text undetermined
+					207 text  · Priority: 
+					208 text low
+					209 text Confidence: 
+					210 text limited
+				211 checkbox File change remains unexplained Severity: undetermined · Priority: low Confidence: limited, Value: 0
+					212 text File change remains unexplained
+					213 text Severity: 
+					214 text undetermined
+					215 text  · Priority: 
+					216 text low
+					217 text Confidence: 
+					218 text limited
+				219 button (disabled) Previous findings page
+				220 text 1–16  /  16
+				221 button (disabled) Next findings page
+			222 container
+				223 heading Selected finding, Value: 2
+					224 text Selected finding
+				225 heading File change remains unexplained, Value: 3
+					226 text File change remains unexplained
+				227 definition list
+					228 container Severity
+						229 text Severity
+					230 text undetermined
+					231 container Review priority
+						232 text Review priority
+					233 text low
+					234 container Evidence confidence
+						235 text Evidence confidence
+					236 text limited
+					237 container Explanation strength
+						238 text Explanation strength
+					239 text unexplained
+				240 heading Observation, Value: 3
+					241 text Observation
+				242 text picocolors-7249f8c5d4825550f70bc1ea98652639933d3bbd/.editorconfig is reported as removed; raw equality is different.
+				243 heading Why it matters, Value: 3
+					244 text Why it matters
+				245 text The bundle reports a difference without a supported transformation explanation; review is needed to resolve its significance.
+				246 heading Supporting evidence, Value: 3
+					247 text Supporting evidence
+				248 button both · .editorconfig · raw diff · field raw-byte-delta ev_6737807221122685e88a956a · retained →
+					249 text both · .editorconfig · raw diff · field raw-byte-delta
+					250 container
+						251 text ev_6737807221122685e88a956a  ·  retained  →
+				252 button source · picocolors-7249f8c5d4825550f70bc1ea98652639933d3bbd/.editorconfig · source member · bytes [0, 273) ev_b9aa69f8615ea8911c91532e · retained →
+					253 text source · picocolors-7249f8c5d4825550f70bc1ea98652639933d3bbd/.editorconfig · source member · bytes [0, 273)
+					254 container
+						255 text ev_b9aa69f8615ea8911c91532e  ·  retained  →
+				256 heading Related file changes · 1, Value: 3
+					257 text Related file changes ·  1
+				258 text These records share evidence with this finding.
+				259 button Open related file change: picocolors-7249f8c5d4825550f70bc1ea98652639933d3bbd/.editorconfig
+					260 text Open related file change: 
+					261 text picocolors-7249f8c5d4825550f70bc1ea98652639933d3bbd/.editorconfig
+				262 heading Limitations, Value: 3
+					263 text Limitations
+				264 content list
+					265 container
+						266 AXListMarker • 
+						267 text This rule reports the evidence bundle state; it does not infer executable behavior or malicious intent from a filename.
+				268 heading Next actions, Value: 3
+					269 text Next actions
+				270 content list
+					271 container
+						272 AXListMarker • 
+						273 text Inspect the cited artifact/source evidence and retain any unsupported bytes as unresolved.
+				274 button (collapsed) Rule and finding identity, Secondary Actions: Expand
+					275 text Rule and finding identity
+		50 container
+			51 text Exact bytes. Inspectable evidence. Visible limits. Local reader · one shared engine
+
+The focused UI element is 62 container workspace

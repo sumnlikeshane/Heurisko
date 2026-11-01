@@ -1,0 +1,1 @@
+{"check":"historical missing-store CLI inspect parity", "expected":0, "actual":3, "reason":"Harness expected viewer behavior from strict CLI inspect, which verifies all retained evidence before output. CLI tui and GUI readers permit missing blobs. Preserved without changing product semantics."}

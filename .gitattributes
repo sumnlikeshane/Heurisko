@@ -13,3 +13,36 @@ examples/**/*.log -diff
 examples/current-handoff/**/*.ansi -diff
 examples/current-handoff/**/*.txt -diff
 examples/current-handoff-linux/**/*.txt -diff
+
+# Exact retained notices, ledger and observed UI transports preserve upstream
+# formatting; whitespace lint does not rewrite these hash-bound data bytes.
+THIRD_PARTY_NOTICES.txt -text -whitespace
+docs/production-phase1/document-disposition.tsv -text -whitespace
+examples/production-phase1/2026-11-01-completion-01/browser/draft-back.txt -whitespace
+examples/production-phase1/2026-11-01-completion-01/browser/evidence-dialog.txt -whitespace
+examples/production-phase1/2026-11-01-completion-01/browser/findings.txt -whitespace
+examples/production-phase1/2026-11-01-completion-01/browser/lifecycle.txt -whitespace
+examples/production-phase1/2026-11-01-completion-01/browser/modal-ready.txt -whitespace
+examples/production-phase1/2026-11-01-completion-01/browser/narrow-report.txt -whitespace
+examples/production-phase1/2026-11-01-completion-01/browser/narrow.txt -whitespace
+examples/production-phase1/2026-11-01-completion-01/browser/native-file-selected.txt -whitespace
+examples/production-phase1/2026-11-01-completion-01/browser/nested-member.txt -whitespace
+examples/production-phase1/2026-11-01-completion-01/browser/outer-back.txt -whitespace
+examples/production-phase1/2026-11-01-completion-01/browser/report.txt -whitespace
+examples/production-phase1/2026-11-01-completion-01/browser/service-stopped-docs.txt -whitespace
+examples/production-phase1/2026-11-01-completion-01/browser/service-stopped-refresh.txt -whitespace
+examples/production-phase1/2026-11-01-completion-01/browser/zoom.txt -whitespace
+examples/production-phase1/2026-11-01-completion-01/pty/evidence-mode-byt4j66_/citation-return-160.ansi -whitespace
+examples/production-phase1/2026-11-01-completion-01/pty/evidence-mode-byt4j66_/citation-return-160.txt -whitespace
+examples/production-phase1/2026-11-01-completion-01/pty/evidence-mode-byt4j66_/citation-return-84.ansi -whitespace
+examples/production-phase1/2026-11-01-completion-01/pty/evidence-mode-byt4j66_/citation-return-84.txt -whitespace
+examples/production-phase1/2026-11-01-completion-01/pty/evidence-mode-byt4j66_/record-160.ansi -whitespace
+examples/production-phase1/2026-11-01-completion-01/pty/evidence-mode-byt4j66_/record-160.txt -whitespace
+examples/production-phase1/2026-11-01-completion-01/pty/evidence-mode-byt4j66_/record-84.ansi -whitespace
+examples/production-phase1/2026-11-01-completion-01/pty/evidence-mode-byt4j66_/record-84.txt -whitespace
+examples/production-phase1/2026-11-01-completion-01/rights/emscripten-3.1.28-LICENSE -whitespace
+examples/production-phase1/2026-11-01-completion-01/rights/emscripten-LICENSE -whitespace
+examples/production-phase1/2026-11-01-completion-01/rights/installed-notices/typescript@5.8.3/LICENSE.txt -whitespace
+examples/production-phase1/2026-11-01-completion-01/rights/installed-notices/typescript@5.8.3/ThirdPartyNoticeText.txt -whitespace
+examples/production-phase1/2026-11-01-completion-01/rights/node-22.23.4-LICENSE -whitespace
+examples/production-phase1/2026-11-01-publication-01/setup-node/action.yml -whitespace

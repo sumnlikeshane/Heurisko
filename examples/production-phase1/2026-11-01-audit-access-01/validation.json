@@ -1,0 +1,52 @@
+{
+  "started": "2026-11-01T17:54:35.025085+00:00",
+  "scope": "Fresh local audit checks; no platform, human, rights or remote CI acceptance inferred.",
+  "host": {
+    "system": "Darwin",
+    "release": "25.6.0",
+    "machine": "arm64"
+  },
+  "checks": [
+    {
+      "name": "docker-access",
+      "argv": [
+        "docker",
+        "info",
+        "--format",
+        "{{.OSType}} {{.Architecture}}"
+      ],
+      "exit": 0,
+      "seconds": 0.614
+    },
+    {
+      "name": "core",
+      "argv": [
+        "node",
+        "--test",
+        "--test-concurrency=1",
+        "packages/core/tests/audit-fixes.test.mjs",
+        "packages/core/tests/cli-boundary.test.mjs",
+        "packages/core/tests/foundation.test.mjs",
+        "packages/core/tests/intelligence-boundary.test.mjs",
+        "packages/core/tests/network.test.mjs",
+        "packages/core/tests/parser-absence.test.mjs",
+        "packages/core/tests/reviewed-module.test.mjs",
+        "packages/core/tests/s2.test.mjs",
+        "packages/core/tests/s3.test.mjs"
+      ],
+      "exit": 0,
+      "seconds": 250.334
+    },
+    {
+      "name": "web",
+      "argv": [
+        "pnpm",
+        "--filter",
+        "@heurisko/web",
+        "test"
+      ],
+      "exit": 0,
+      "seconds": 13.398
+    }
+  ]
+}

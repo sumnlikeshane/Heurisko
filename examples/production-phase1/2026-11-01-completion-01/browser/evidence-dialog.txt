@@ -1,0 +1,117 @@
+Browser tab: 1237325268, Title: "Heurisko · Evidence workspace", URL: "http://127.0.0.1:43219/workspace/observations/4eba1ced04a9b3a09539d30d0678cde6/findings".
+0 AXWebArea Heurisko · Evidence workspace, URL: 127.0.0.1:43219/workspace/observations/4eba1ced04a9b3a09539d30d0678cde6/findings
+	1 container package.json
+		2 text EVIDENCE
+		3 heading package.json, Value: 1, ID: evidence-title
+			4 text package.json
+		5 button ← Back · Esc
+			6 text ← Back 
+			7 text · Esc
+		8 container
+			9 text both  ·  manifest delta  ·  retained
+		10 container
+			11 text Recorded field:  scripts.postinstall
+		12 text Evidence text is escaped. Scripts, HTML, SVG and source are never executed.
+		13 text Source and artifact show recorded enclosing byte spans; these spans do not describe a multi-hunk diff or semantic equivalence.
+		14 container
+			15 heading Source · recorded span, Value: 2
+				16 text Source · recorded span
+		17 container
+			18 heading Artifact · recorded span, Value: 2
+				19 text Artifact · recorded span
+			20 text Showing bytes [ 585 ,  611 ) of the recorded range [ 585 ,  611 ).
+			21 button (disabled) ← Previous bytes
+			22 button (disabled) Next bytes →
+			23 button (collapsed) Secondary Actions: Expand
+		24 button (collapsed) Raw delta record, Secondary Actions: Expand
+			25 text Raw delta record
+		26 container
+			27 heading Related evidence / full members, Value: 2
+				28 text Related evidence / full members
+			29 button artifact · package/package.json · artifact member · bytes [0, 618) ev_c0c1b7d8cb7b119e6ea1880c · retained →
+				30 text artifact · package/package.json · artifact member · bytes [0, 618)
+				31 container
+					32 text ev_c0c1b7d8cb7b119e6ea1880c  ·  retained  →
+			33 button source · picocolors-7249f8c5d4825550f70bc1ea98652639933d3bbd/package.json · source member · bytes [0, 1107) ev_a894e3cbbc20b3124c7fb225 · retained →
+				34 text source · picocolors-7249f8c5d4825550f70bc1ea98652639933d3bbd/package.json · source member · bytes [0, 1107)
+				35 container
+					36 text ev_a894e3cbbc20b3124c7fb225  ·  retained  →
+			37 button both · package.json · raw diff · field archive-member-metadata ev_4cc84e38f88353d1b0182594 · retained →
+				38 text both · package.json · raw diff · field archive-member-metadata
+				39 container
+					40 text ev_4cc84e38f88353d1b0182594  ·  retained  →
+			41 button both · package.json · raw diff · field raw-byte-delta ev_242a34e804daf891e3f7c878 · retained →
+				42 text both · package.json · raw diff · field raw-byte-delta
+				43 container
+					44 text ev_242a34e804daf891e3f7c878  ·  retained  →
+			45 button both · package.json · manifest delta · field clean-publish ev_1c374f96bf891662bb5b19d9 · retained →
+				46 text both · package.json · manifest delta · field clean-publish
+				47 container
+					48 text ev_1c374f96bf891662bb5b19d9  ·  retained  →
+			49 button both · package.json · manifest delta · field clean-publish.cleanDocs ev_304e39caf5b3d48d5e2d865d · retained →
+				50 text both · package.json · manifest delta · field clean-publish.cleanDocs
+				51 container
+					52 text ev_304e39caf5b3d48d5e2d865d  ·  retained  →
+			53 button both · package.json · manifest delta · field devDependencies ev_d15461e838129368e3874fc5 · retained →
+				54 text both · package.json · manifest delta · field devDependencies
+				55 container
+					56 text ev_d15461e838129368e3874fc5  ·  retained  →
+			57 button both · package.json · manifest delta · field devDependencies.ansi-colors ev_4e9b8e4a26b1b24694445007 · retained →
+				58 text both · package.json · manifest delta · field devDependencies.ansi-colors
+				59 container
+					60 text ev_4e9b8e4a26b1b24694445007  ·  retained  →
+			61 button both · package.json · manifest delta · field devDependencies.chalk ev_bf60baef2f60db4cebaf38fb · retained →
+				62 text both · package.json · manifest delta · field devDependencies.chalk
+				63 container
+					64 text ev_bf60baef2f60db4cebaf38fb  ·  retained  →
+			65 button both · package.json · manifest delta · field devDependencies.clean-publish ev_e147d8f86a36f8c05b2d80b8 · retained →
+				66 text both · package.json · manifest delta · field devDependencies.clean-publish
+				67 container
+					68 text ev_e147d8f86a36f8c05b2d80b8  ·  retained  →
+			69 button both · package.json · manifest delta · field devDependencies.cli-color ev_cd5ba659e9cac3825fde1f8f · retained →
+				70 text both · package.json · manifest delta · field devDependencies.cli-color
+				71 container
+					72 text ev_cd5ba659e9cac3825fde1f8f  ·  retained  →
+			73 button both · package.json · manifest delta · field devDependencies.colorette ev_c3c67141def991004d5bf9e5 · retained →
+				74 text both · package.json · manifest delta · field devDependencies.colorette
+				75 container
+					76 text ev_c3c67141def991004d5bf9e5  ·  retained  →
+			77 button both · package.json · manifest delta · field devDependencies.kleur ev_b5a1dde39855f3a6f40aec5d · retained →
+				78 text both · package.json · manifest delta · field devDependencies.kleur
+				79 container
+					80 text ev_b5a1dde39855f3a6f40aec5d  ·  retained  →
+			81 button both · package.json · manifest delta · field devDependencies.mitata ev_4b73e27ecbb013f4dba9b21f · retained →
+				82 text both · package.json · manifest delta · field devDependencies.mitata
+				83 container
+					84 text ev_4b73e27ecbb013f4dba9b21f  ·  retained  →
+			85 button both · package.json · manifest delta · field devDependencies.nanocolors ev_152fa32b3a749de283035b91 · retained →
+				86 text both · package.json · manifest delta · field devDependencies.nanocolors
+				87 container
+					88 text ev_152fa32b3a749de283035b91  ·  retained  →
+			89 button both · package.json · manifest delta · field devDependencies.prettier ev_99ea0c98c3423d3dc50400a9 · retained →
+				90 text both · package.json · manifest delta · field devDependencies.prettier
+				91 container
+					92 text ev_99ea0c98c3423d3dc50400a9  ·  retained  →
+			93 button both · package.json · manifest delta · field devDependencies.yoctocolors ev_e8e8de8d8f095dbc1f3adb10 · retained →
+				94 text both · package.json · manifest delta · field devDependencies.yoctocolors
+				95 container
+					96 text ev_e8e8de8d8f095dbc1f3adb10  ·  retained  →
+			97 button both · package.json · manifest delta · field prettier ev_98f52695265a93cecfee6bef · retained →
+				98 text both · package.json · manifest delta · field prettier
+				99 container
+					100 text ev_98f52695265a93cecfee6bef  ·  retained  →
+			101 button both · package.json · manifest delta · field prettier.arrowParens ev_d4a971236626b4438f85ecd2 · retained →
+				102 text both · package.json · manifest delta · field prettier.arrowParens
+				103 container
+					104 text ev_d4a971236626b4438f85ecd2  ·  retained  →
+			105 button both · package.json · manifest delta · field prettier.printWidth ev_bf2cf56d9c18a5790dc2169c · retained →
+				106 text both · package.json · manifest delta · field prettier.printWidth
+				107 container
+					108 text ev_bf2cf56d9c18a5790dc2169c  ·  retained  →
+			109 button (disabled) Previous evidence page
+			110 text 1–20  /  26
+			111 button Next evidence page
+		112 button (collapsed) Original EvidenceRecord and exact identity, Secondary Actions: Expand
+			113 text Original EvidenceRecord and exact identity
+
+The focused UI element is 3 heading package.json, Value: 1, ID: evidence-title

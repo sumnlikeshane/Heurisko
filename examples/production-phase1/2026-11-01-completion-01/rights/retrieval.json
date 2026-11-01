@@ -1,0 +1,37 @@
+[
+  {
+    "file": "yoga-LICENSE",
+    "url": "https://raw.githubusercontent.com/facebook/yoga/v3.2.1/LICENSE",
+    "bytes": 1086,
+    "sha256": "52412d7bc7ce4157ea628bbaacb8829e0a9cb3c58f57f99176126bc8cf2bfc85"
+  },
+  {
+    "file": "yoga-package.json",
+    "url": "https://raw.githubusercontent.com/facebook/yoga/v3.2.1/javascript/package.json",
+    "bytes": 1579,
+    "sha256": "c7d9a452135020d9bd6906e5952f5731b8b3d4ad3de15532004fe2aa66da1c7c"
+  },
+  {
+    "file": "yoga-emscripten-version",
+    "url": "https://raw.githubusercontent.com/facebook/yoga/v3.2.1/.github/workflows/build-js.yml",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "file": "esbuild-LICENSE.md",
+    "url": "https://raw.githubusercontent.com/evanw/esbuild/v0.25.12/LICENSE.md",
+    "bytes": 1069,
+    "sha256": "b40ec5baec7bb34fa5b1c09521fa3cd52d5fad7adafed74932a2010d3612a681"
+  },
+  {
+    "file": "esbuild-go.mod",
+    "url": "https://raw.githubusercontent.com/evanw/esbuild/v0.25.12/go.mod",
+    "bytes": 428,
+    "sha256": "2d48dbed6151e653adc9ab5d8869cba012d167f13352e45880e59104e1e02b9b"
+  },
+  {
+    "file": "go-LICENSE",
+    "url": "https://raw.githubusercontent.com/golang/go/go1.25.4/LICENSE",
+    "bytes": 1453,
+    "sha256": "911f8f5782931320f5b8d1160a76365b83aea6447ee6c04fa6d5591467db9dad"
+  }
+]

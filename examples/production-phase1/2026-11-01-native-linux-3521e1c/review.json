@@ -1,0 +1,168 @@
+{
+  "recordedAt": "2026-11-01T18:26:10.832255+00:00",
+  "sourceCommit": "3521e1ca4b571e5f267d5a0981ec3a408b161667",
+  "sourceSha256": "3a89bc55837ef77bce56708c98ed690739990de5b59a49c3c802fe93be44d0d5",
+  "sourceFilesVerified": 1965,
+  "runURL": "https://github.com/sumnlikeshane/Heurisko/actions/runs/41335705420",
+  "prURL": "https://github.com/sumnlikeshane/Heurisko/pull/6",
+  "jobs": {
+    "contracts": "success",
+    "web": "success",
+    "intelligence-development": "success",
+    "documentation": "success"
+  },
+  "durationsSeconds": {
+    "workflow": 403,
+    "contractsJob": 399,
+    "webJob": 42,
+    "intelligenceJob": 24,
+    "documentationJob": 9,
+    "contractToolInstallStep": 9
+  },
+  "host": {
+    "system": "Linux",
+    "release": "7.0.0-1017-azure",
+    "machine": "x86_64"
+  },
+  "nativeChecks": [
+    {
+      "name": "build",
+      "argv": [
+        "pnpm",
+        "run",
+        "typecheck"
+      ],
+      "exit": 0,
+      "seconds": 22.56
+    },
+    {
+      "name": "real-lifecycle",
+      "argv": [
+        "node",
+        "scripts/check-phase1-parser-lifecycle.mjs",
+        ".heurisko/ci-phase1-lifecycle"
+      ],
+      "exit": 0,
+      "seconds": 1.593
+    },
+    {
+      "name": "worker-resources",
+      "argv": [
+        "node",
+        "scripts/measure-phase1-parser.mjs",
+        ".heurisko/ci-phase1-resources"
+      ],
+      "exit": 0,
+      "seconds": 1.196
+    },
+    {
+      "name": "foundation",
+      "argv": [
+        "node",
+        "scripts/validate-phase1-foundation.mjs",
+        ".heurisko/ci-phase1-foundation"
+      ],
+      "exit": 0,
+      "seconds": 50.723
+    },
+    {
+      "name": "npm-default",
+      "argv": [
+        "node",
+        "packages/cli/dist/index.js",
+        "analyze",
+        "npm:picocolors@1.1.1",
+        "--source",
+        "https://github.com/alexeyraspopov/picocolors",
+        "--commit",
+        "6f0a4638348ed20633d623ee973f9c9a96f65104",
+        "--store",
+        ".heurisko/ci-phase1-npm-default-store",
+        "--report",
+        ".heurisko/ci-phase1-npm-default.report.json",
+        "--json"
+      ],
+      "exit": 0,
+      "seconds": 5.567
+    },
+    {
+      "name": "npm-no-ai",
+      "argv": [
+        "node",
+        "packages/cli/dist/index.js",
+        "analyze",
+        "npm:picocolors@1.1.1",
+        "--source",
+        "https://github.com/alexeyraspopov/picocolors",
+        "--commit",
+        "6f0a4638348ed20633d623ee973f9c9a96f65104",
+        "--store",
+        ".heurisko/ci-phase1-npm-no-ai-store",
+        "--report",
+        ".heurisko/ci-phase1-npm-no-ai.report.json",
+        "--no-ai",
+        "--json"
+      ],
+      "exit": 0,
+      "seconds": 5.191
+    },
+    {
+      "name": "npm-raw",
+      "argv": [
+        "node",
+        "packages/cli/dist/index.js",
+        "analyze",
+        "npm:picocolors@1.1.1",
+        "--source",
+        "https://github.com/alexeyraspopov/picocolors",
+        "--commit",
+        "6f0a4638348ed20633d623ee973f9c9a96f65104",
+        "--store",
+        ".heurisko/ci-phase1-npm-raw-store",
+        "--report",
+        ".heurisko/ci-phase1-npm-raw.report.json",
+        "--json"
+      ],
+      "env": {
+        "HEURISKO_ANALYSIS_MODULE": "off"
+      },
+      "acceptedExits": [
+        2
+      ],
+      "exit": 2,
+      "seconds": 5.1
+    },
+    {
+      "name": "npm-parity",
+      "argv": [
+        "node",
+        "scripts/verify-phase1-npm.mjs",
+        ".heurisko/ci-phase1-npm-default.report.json",
+        ".heurisko/ci-phase1-npm-no-ai.report.json",
+        ".heurisko/ci-phase1-npm-raw.report.json"
+      ],
+      "exit": 0,
+      "seconds": 2.767
+    }
+  ],
+  "lifecycleScenariosVerified": 4,
+  "resourceInputsVerified": 3,
+  "macOSOutcomeCoverageFindingCountParity": [
+    "benign-identical",
+    "benign-format",
+    "benign-generated",
+    "mutation-lifecycle-add",
+    "mutation-lifecycle-remove",
+    "mutation-entrypoint",
+    "uncertain-link",
+    "uncertain-manifest"
+  ],
+  "casBlobsHashVerified": 440,
+  "limits": [
+    "One native CI host, not every Linux distribution.",
+    "Tiny workload resource baselines, not production SLOs.",
+    "Actions declared Node20 and were forced onto Node24 by GitHub; all jobs passed. Product Node remained pinned to 22.23.4.",
+    "ubuntu-latest migration notice retained; this receipt names the actual kernel/architecture.",
+    "Binary/image redistribution rights holds remain; no merge, release or deployment."
+  ]
+}

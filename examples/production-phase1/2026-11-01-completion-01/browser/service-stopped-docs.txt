@@ -1,0 +1,93 @@
+Browser tab: 1237325268, Title: "Heurisko · Evidence workspace", URL: "http://127.0.0.1:43219/docs/concepts/identity".
+0 AXWebArea Heurisko · Evidence workspace, URL: 127.0.0.1:43219/docs/concepts/identity
+	1 container root
+		2 link Description: Skip to content, Value: 127.0.0.1:43219/docs/concepts/identity#docs-content
+		3 container
+			4 link Description: Heurisko home, Value: 127.0.0.1:43219/
+			5 container Main navigation
+				6 link Description: Home, Value: 127.0.0.1:43219/
+				7 link Description: Documentation, Value: 127.0.0.1:43219/docs/start/quickstart
+				8 link Description: Workspace, Value: 127.0.0.1:43219/workspace/new
+		231 link Description: ← Return to selected report, Value: 127.0.0.1:43219/workspace/observations/4eba1ced04a9b3a09539d30d0678cde6/overview
+		232 container docs-content
+			233 text DOCUMENTATION
+			234 text Start with a task. Keep the exact reference close.
+			235 link Description: New investigation, Value: 127.0.0.1:43219/workspace/new
+			236 link Description: Open evidence, Value: 127.0.0.1:43219/workspace/open
+			237 text Search all documentation
+			238 search text field (settable) Search all documentation, ID: docs-query
+			239 text /
+			240 container
+				241 text Search all  16  guides · Match multiple words ·  Ctrl/⌘ K  or  /  to focus
+			242 container Documentation pages
+				243 container
+					244 heading START HERE, Value: 2
+						245 text START HERE
+					246 link Description: First investigation, Value: 127.0.0.1:43219/docs/start/quickstart
+					247 link Description: Installation and execution, Value: 127.0.0.1:43219/docs/setup
+					248 link Description: Use the browser workspace, Value: 127.0.0.1:43219/docs/browser
+				249 container
+					250 heading TASK GUIDES, Value: 2
+						251 text TASK GUIDES
+					252 link Description: Exact npm release, Value: 127.0.0.1:43219/docs/workflows/npm
+					253 link Description: Local archive and source replay, Value: 127.0.0.1:43219/docs/workflows/local
+					254 link Description: Explore evidence, Value: 127.0.0.1:43219/docs/workflows/evidence
+					255 link Description: Save and reopen, Value: 127.0.0.1:43219/docs/workflows/portable
+					256 link Description: Reports in CI, Value: 127.0.0.1:43219/docs/workflows/ci
+				257 container
+					258 heading COMMAND REFERENCE, Value: 2
+						259 text COMMAND REFERENCE
+					260 link Description: Analyze, Value: 127.0.0.1:43219/docs/cli/analyze
+					261 link Description: Inspect, Value: 127.0.0.1:43219/docs/cli/inspect
+					262 link Description: Complete CLI reference, Value: 127.0.0.1:43219/docs/cli
+				263 container
+					264 heading CONCEPTS, Value: 2
+						265 text CONCEPTS
+					266 link Description: Identity, evidence and limits, Value: 127.0.0.1:43219/docs/concepts/identity
+				267 container
+					268 heading TROUBLESHOOTING, Value: 2
+						269 text TROUBLESHOOTING
+					270 link Description: Connection and session, Value: 127.0.0.1:43219/docs/troubleshooting/session
+					271 link Description: Input, engine and import errors, Value: 127.0.0.1:43219/docs/troubleshooting/errors
+				272 container
+					273 heading REFERENCE, Value: 2
+						274 text REFERENCE
+					275 link Description: Current capabilities, Value: 127.0.0.1:43219/docs/availability
+					276 link Description: Browser technical reference, Value: 127.0.0.1:43219/docs/reference/browser
+			277 container Description: Documentation article, ID: doc-page-scroll
+				278 container
+					279 heading Identity, evidence and limits, Value: 1, ID: identity-evidence-and-limits
+						280 text Identity, evidence and limits
+					369 heading Independent outcomes, Value: 2, ID: independent-outcomes
+						370 text Independent outcomes
+					371 text Artifact integrity, source association, provenance policy, correspondence, analysis completeness and policy result are separate recorded dimensions. No combined safety score is computed. Local bytes remain local-input; source conflicts stay ambiguous. Empty findings with unavailable analysis are not a clean assessment.
+					372 heading Observation identity, Value: 2, ID: observation-identity
+						373 text Observation identity
+					374 text Report ID describes analysis identity. Full report content digest distinguishes original encoded bytes, including different capture metadata. The opaque observation handle selects an admission into this reader process; it expires on restart. Configuration fingerprint binds recorded tools/options. No navigation changes the immutable report.
+					375 heading Source and omissions, Value: 2, ID: source-and-omissions
+						376 text Source and omissions
+					377 text Full immutable commit, package subtree and build context matter. Candidate ordering, gitHead, tags and names alone are not proof. Excluded/unsupported files, failed stages and missing bytes remain visible in Coverage and Files. Build context does not prove a reproduced build.
+					378 heading Next task, Value: 2, ID: next-task
+						379 text Next task
+					380 link Description: Explore evidence, Value: 127.0.0.1:43219/docs/workflows/evidence
+					381 text , 
+					382 link Description: export and reopen, Value: 127.0.0.1:43219/docs/workflows/portable
+					383 text , or inspect 
+					384 link Description: current availability, Value: 127.0.0.1:43219/docs/availability
+					385 text . Interpretations, if retained, remain separate from deterministic facts; this browser does not invoke a model.
+				362 container Documentation sequence
+					386 link Description: Previous Complete CLI reference, Value: 127.0.0.1:43219/docs/cli
+					363 link Description: Next Connection and session, Value: 127.0.0.1:43219/docs/troubleshooting/session
+				364 button (collapsed) About this reference, Secondary Actions: Expand
+					365 text About this reference
+			366 container On this page
+				367 heading On this page, Value: 2
+					368 text On this page
+				387 link Description: Independent outcomes, Value: 127.0.0.1:43219/docs/concepts/identity#independent-outcomes
+				388 link Description: Observation identity, Value: 127.0.0.1:43219/docs/concepts/identity#observation-identity
+				389 link Description: Source and omissions, Value: 127.0.0.1:43219/docs/concepts/identity#source-and-omissions
+				390 link Description: Next task, Value: 127.0.0.1:43219/docs/concepts/identity#next-task
+		229 container
+			230 text Exact bytes. Inspectable evidence. Visible limits. Local reader · one shared engine
+
+The focused UI element is 279 heading Identity, evidence and limits, Value: 1, ID: identity-evidence-and-limits

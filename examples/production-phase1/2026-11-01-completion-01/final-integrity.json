@@ -1,0 +1,69 @@
+{
+  "recordedAt": "2026-11-01T17:32:59.548367+00:00",
+  "sourceSha256": "549422ea69c3289aaeaf58351d76eecb0ed06b99eb77714eb69318b048a3c6cd",
+  "sourceMatchesFinalManifest": true,
+  "receiptFilesReverified": 840,
+  "indexStillEmpty": true,
+  "diffCheckExit": 0,
+  "documentation": "88 Markdown files,15 preserved research hashes,2 exact original intake link exceptions",
+  "intake": "33/33 exact source bytes",
+  "boundedCredentialScan": {
+    "checked": 2549,
+    "bytes": 67531156,
+    "missing": 16,
+    "excludedType": 28294,
+    "nonregular": 1,
+    "byExtension": {
+      "(configuration)": 2,
+      ".md": 88,
+      ".yml": 6,
+      ".render": 1,
+      ".txt": 916,
+      ".mjs": 72,
+      ".json": 968,
+      ".ts": 59,
+      ".tsx": 20,
+      ".py": 43,
+      ".yaml": 4,
+      ".env": 1,
+      ".log": 361,
+      ".jsonl": 6,
+      ".cjs": 2
+    }
+  },
+  "matches": 0,
+  "logs": [
+    {
+      "path": "logs/final-docs.log",
+      "bytes": 212,
+      "sha256": "c345537b9049c7a1ba6f41fddc814ebc44a92e23f496b4c0fd9977c72e8e4993"
+    },
+    {
+      "path": "logs/final-review-secrets.json",
+      "bytes": 554,
+      "sha256": "3b8ca43e8007653111da145f4c965e0a717d94d2aa9b2691b5b4dbd173c9b355"
+    },
+    {
+      "path": "logs/final-intake.log",
+      "bytes": 80,
+      "sha256": "65b85c1249c62ad17501763cd3d40ac1bf5a6c2d45df72d3124c9dfb16a595e0"
+    },
+    {
+      "path": "logs/final-diff.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "receipt-manifest.json",
+      "bytes": 173611,
+      "sha256": "1bf7a19170f8e506c5568b4cf4c89363110f1bdc6aed357c3399021b6044a0f1"
+    },
+    {
+      "path": "source-final.json",
+      "bytes": 398416,
+      "sha256": "b08a469c8380b9b2f5a1c33379ba007dffc2c7fb310a1c1aa607a0f38e2b9278"
+    }
+  ],
+  "phaseStatus": "Open; native Linux/exact-head CI, unresolved redistribution evidence, private-reporting activation, human/AT/import/offline and owner acceptance gates remain in the existing plan",
+  "publication": "No staging, commit, push, PR, merge, deployment or external message"
+}

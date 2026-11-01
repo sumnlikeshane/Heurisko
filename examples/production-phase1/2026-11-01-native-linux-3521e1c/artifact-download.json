@@ -1,0 +1,11 @@
+{
+  "runId": 41335705420,
+  "artifactId": 13095401517,
+  "headSha": "3521e1ca4b571e5f267d5a0981ec3a408b161667",
+  "sha256": "78fbcaa6ba43362a56fb2e3e585c36c26d41a86cba7b15c8338e89915504ebd4",
+  "githubDisplayedDigest": "sha256:78fbcaa6ba43362a56fb2e3e585c36c26d41a86cba7b15c8338e89915504ebd4",
+  "bytes": 840518,
+  "acquisition": "Signed-in browser artifact download; original Downloads file preserved. Download-event wait timed out, but exact file exists and matches the GitHub digest.",
+  "sourceURL": "https://github.com/sumnlikeshane/Heurisko/actions/runs/41335705420/artifacts/13095401517",
+  "observedAt": "2026-11-01T18:24:53.643800+00:00"
+}

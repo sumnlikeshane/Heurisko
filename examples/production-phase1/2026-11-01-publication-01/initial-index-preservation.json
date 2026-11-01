@@ -1,0 +1,39 @@
+{
+  "stagedCheckExit": 2,
+  "whitespacePaths": {
+    "THIRD_PARTY_NOTICES.txt": 26,
+    "docs/production-phase1/document-disposition.tsv": 59,
+    "examples/production-phase1/2026-11-01-completion-01/browser/draft-back.txt": 1,
+    "examples/production-phase1/2026-11-01-completion-01/browser/evidence-dialog.txt": 1,
+    "examples/production-phase1/2026-11-01-completion-01/browser/findings.txt": 52,
+    "examples/production-phase1/2026-11-01-completion-01/browser/lifecycle.txt": 1,
+    "examples/production-phase1/2026-11-01-completion-01/browser/modal-ready.txt": 2,
+    "examples/production-phase1/2026-11-01-completion-01/browser/narrow-report.txt": 6,
+    "examples/production-phase1/2026-11-01-completion-01/browser/narrow.txt": 2,
+    "examples/production-phase1/2026-11-01-completion-01/browser/native-file-selected.txt": 2,
+    "examples/production-phase1/2026-11-01-completion-01/browser/nested-member.txt": 1,
+    "examples/production-phase1/2026-11-01-completion-01/browser/outer-back.txt": 52,
+    "examples/production-phase1/2026-11-01-completion-01/browser/report.txt": 6,
+    "examples/production-phase1/2026-11-01-completion-01/browser/service-stopped-docs.txt": 2,
+    "examples/production-phase1/2026-11-01-completion-01/browser/service-stopped-refresh.txt": 1,
+    "examples/production-phase1/2026-11-01-completion-01/browser/zoom.txt": 2,
+    "examples/production-phase1/2026-11-01-completion-01/pty/evidence-mode-byt4j66_/citation-return-160.ansi": 547,
+    "examples/production-phase1/2026-11-01-completion-01/pty/evidence-mode-byt4j66_/citation-return-160.txt": 41,
+    "examples/production-phase1/2026-11-01-completion-01/pty/evidence-mode-byt4j66_/citation-return-84.ansi": 401,
+    "examples/production-phase1/2026-11-01-completion-01/pty/evidence-mode-byt4j66_/citation-return-84.txt": 27,
+    "examples/production-phase1/2026-11-01-completion-01/pty/evidence-mode-byt4j66_/record-160.ansi": 430,
+    "examples/production-phase1/2026-11-01-completion-01/pty/evidence-mode-byt4j66_/record-160.txt": 41,
+    "examples/production-phase1/2026-11-01-completion-01/pty/evidence-mode-byt4j66_/record-84.ansi": 326,
+    "examples/production-phase1/2026-11-01-completion-01/pty/evidence-mode-byt4j66_/record-84.txt": 27,
+    "examples/production-phase1/2026-11-01-completion-01/rights/emscripten-3.1.28-LICENSE": 2,
+    "examples/production-phase1/2026-11-01-completion-01/rights/emscripten-LICENSE": 2,
+    "examples/production-phase1/2026-11-01-completion-01/rights/installed-notices/typescript@5.8.3/LICENSE.txt": 55,
+    "examples/production-phase1/2026-11-01-completion-01/rights/installed-notices/typescript@5.8.3/ThirdPartyNoticeText.txt": 194,
+    "examples/production-phase1/2026-11-01-completion-01/rights/node-22.23.4-LICENSE": 1,
+    "examples/production-phase1/2026-11-01-publication-01/setup-node/action.yml": 1
+  },
+  "indexByteDifferences": [
+    "docs/production-phase1/document-disposition.tsv"
+  ],
+  "resolution": "Preserve raw imported/receipt bytes using scoped Git attributes; do not trim notices or rewrite receipts."
+}

@@ -16,7 +16,8 @@
     "test:audit": "pnpm run build && node --test packages/core/tests/audit-fixes.test.mjs packages/core/tests/parser-absence.test.mjs packages/core/tests/cli-boundary.test.mjs",
     "test:web": "pnpm run build && pnpm --filter @heurisko/web test",
     "web": "node apps/web/dist/main.js",
-    "test:s4": "pnpm run build && node --test integration/part4/tests/readiness.test.mjs packages/tui/tests/*.test.mjs"
+    "test:s4": "pnpm run build && node --test integration/part4/tests/readiness.test.mjs packages/tui/tests/*.test.mjs",
+    "check:docs": "python3 scripts/check-docs.py"
   },
   "devDependencies": {
     "@types/node": "22.15.30",

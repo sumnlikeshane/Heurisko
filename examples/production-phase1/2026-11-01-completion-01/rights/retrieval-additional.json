@@ -1,0 +1,28 @@
+[
+  {
+    "file": "go1.23.12-LICENSE",
+    "url": "https://raw.githubusercontent.com/golang/go/go1.23.12/LICENSE",
+    "bytes": 1479,
+    "sha256": "2d36597f7117c38b006835ae7f537487207d8ec407aa9d9980794b2030cbc067"
+  },
+  {
+    "file": "x-sys-LICENSE",
+    "url": "https://raw.githubusercontent.com/golang/sys/c0bba94af5f8/LICENSE",
+    "bytes": 1479,
+    "sha256": "2d36597f7117c38b006835ae7f537487207d8ec407aa9d9980794b2030cbc067"
+  },
+  {
+    "url": "https://api.github.com/repos/facebook/yoga/contents/.github/workflows?ref=v3.2.1",
+    "error": "HTTP Error 403: rate limit exceeded"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/facebook/yoga/v3.2.1/javascript/binaries/yoga-wasm-base64-esm.js",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "file": "emscripten-LICENSE",
+    "url": "https://raw.githubusercontent.com/emscripten-core/emscripten/3.1.61/LICENSE",
+    "bytes": 5093,
+    "sha256": "620a78084fc7ca97c0b5dea9abf891f3ffcadfdbf305276f099c9c4e12fc1d86"
+  }
+]

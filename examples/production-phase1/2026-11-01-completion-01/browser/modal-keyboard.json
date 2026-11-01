@@ -1,0 +1,52 @@
+[
+  {
+    "inDialog": true,
+    "tag": "BUTTON",
+    "text": "← Back · Esc"
+  },
+  {
+    "inDialog": true,
+    "tag": "PRE",
+    "text": "\"HEURISKO_INERT_TEST_ONLY\""
+  },
+  {
+    "inDialog": true,
+    "tag": "SUMMARY",
+    "text": "Page identity and exact base64 bytes"
+  },
+  {
+    "inDialog": true,
+    "tag": "SUMMARY",
+    "text": "Raw delta record"
+  },
+  {
+    "inDialog": true,
+    "tag": "BUTTON",
+    "text": "artifact · package/package.json · artifact member · bytes [0, 618)ev_c0c1b7d8cb7b119e6ea18"
+  },
+  {
+    "inDialog": true,
+    "tag": "BUTTON",
+    "text": "source · picocolors-7249f8c5d4825550f70bc1ea98652639933d3bbd/package.json · source member "
+  },
+  {
+    "inDialog": true,
+    "tag": "BUTTON",
+    "text": "both · package.json · raw diff · field archive-member-metadataev_4cc84e38f88353d1b0182594 "
+  },
+  {
+    "inDialog": true,
+    "tag": "BUTTON",
+    "text": "both · package.json · raw diff · field raw-byte-deltaev_242a34e804daf891e3f7c878 · retaine"
+  },
+  {
+    "inDialog": true,
+    "tag": "BUTTON",
+    "text": "both · package.json · manifest delta · field clean-publishev_1c374f96bf891662bb5b19d9 · re"
+  },
+  {
+    "inDialog": true,
+    "tag": "BUTTON",
+    "text": "both · package.json · manifest delta · field clean-publish.cleanDocsev_304e39caf5b3d48d5e2"
+  }
+]

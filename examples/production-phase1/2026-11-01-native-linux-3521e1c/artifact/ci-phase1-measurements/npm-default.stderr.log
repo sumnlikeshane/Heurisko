@@ -1,0 +1,41 @@
+resolve_artifact: running
+acquire: running
+resolve_artifact: complete
+acquire: complete
+inventory: running
+source: running
+provenance: running
+source: complete
+provenance: skipped
+build: skipped
+inventory: complete
+compare: running
+compare: complete
+heuristics: running
+heuristics: complete
+ai: skipped
+persist: running
+persist: complete
+	Command being timed: "node packages/cli/dist/index.js analyze npm:picocolors@1.1.1 --source https://github.com/alexeyraspopov/picocolors --commit 6f0a4638348ed20633d623ee973f9c9a96f65104 --store .heurisko/ci-phase1-npm-default-store --report .heurisko/ci-phase1-npm-default.report.json --json"
+	User time (seconds): 3.03
+	System time (seconds): 1.48
+	Percent of CPU this job got: 81%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:05.56
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 78056
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 75640
+	Voluntary context switches: 121481
+	Involuntary context switches: 165
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 1344
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

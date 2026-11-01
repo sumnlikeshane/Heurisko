@@ -1,0 +1,8 @@
+
+> @heurisko/intelligence@0.1.0 build /private/tmp/heurisko-phase1-baseline-qpfxFY/packages/intelligence
+> pnpm --filter @heurisko/contracts build && tsc -p tsconfig.json
+
+
+> @heurisko/contracts@0.1.0 build /private/tmp/heurisko-phase1-baseline-qpfxFY/packages/contracts
+> tsc -p tsconfig.json
+

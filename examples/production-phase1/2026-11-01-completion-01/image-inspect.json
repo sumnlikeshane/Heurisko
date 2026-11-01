@@ -1,0 +1,78 @@
+[
+    {
+        "Id": "sha256:41a8e831f3acb9a929da44e14cb330d357b09f1781c17987c59eeb7aea98122d",
+        "RepoTags": [
+            "heurisko-phase1-local:linux-amd64"
+        ],
+        "RepoDigests": [
+            "heurisko-phase1-local@sha256:41a8e831f3acb9a929da44e14cb330d357b09f1781c17987c59eeb7aea98122d"
+        ],
+        "Parent": "",
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2026-11-01T09:55:16.189835095Z",
+        "DockerVersion": "",
+        "Author": "",
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 167920457,
+        "GraphDriver": {
+            "Data": null,
+            "Name": "overlayfs"
+        },
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:ea680fbff095473bb8a6c867938d6d851e11ef0c177fce983ccc83440172bd72",
+                "sha256:be8a5ff96cfce4a6f2cb9e31ffd352a8c60fd09d08c8b66f8b91d0d961f5474b",
+                "sha256:89054d0ffba00ce5332937311c951b3c99754df3e9c1be5855a1a7aaae19d37e",
+                "sha256:58323669a38df1503c2c82d06b7562fbc4e1cbeca510aacfcf1ad5834939b7aa",
+                "sha256:e2b38c8df2aff708432986a79298fd8a0ebf06e344e4e6fd1d9bff5f40b7734d",
+                "sha256:c484d2b548209ad024318ff7254f82e91541a74fa9e5a12b39769ec8178d1995",
+                "sha256:d65bdf9986ebf9cbfce906c43d8250864567c394026692a8017a3bc904d79d88",
+                "sha256:7142c30541aa7c149663d55a449fcbe8ea37cfe0d6e0ab57c9deb002dc91c630",
+                "sha256:bf988e94ef8711b0e8fcd6afa8b7cb53b7797a940b2a1566d08103da54c0701e",
+                "sha256:e77e56a3ce8b3986220baac44c1f910ac8c3d1f97cb0c2d396ac74ce251aa381",
+                "sha256:b371f379909253573c2370c4f7e462307228c85439e0cd3d838791e8bd1a00f7",
+                "sha256:95c558cc940b72c9dc718802c9512ec6fc6ba15a0b2f14b44be7cfe67498c9b5",
+                "sha256:9d54204ee746b34af00f909430885fff29bd3e7cf97a7117564f16e55417b75a",
+                "sha256:02e1c13cde8f89ecdd4cd09a67248b00d1eb9c543b74a9997482823b7748adfe",
+                "sha256:e906ef2e02c5cd8724787040ff1d4306113cd68b232c11d234ce48c3a3d017f2",
+                "sha256:b782cd937c595a4d979057b6077b31b890fcfc2998ea7b750ee19ce32b9a899b",
+                "sha256:6464e6124cee2f6a4c8e2005d10d1271ce3a0a3e4cee5838667e6aa4871982cb"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "2026-11-01T09:55:19.418143805Z"
+        },
+        "Descriptor": {
+            "mediaType": "application/vnd.oci.image.index.v1+json",
+            "digest": "sha256:41a8e831f3acb9a929da44e14cb330d357b09f1781c17987c59eeb7aea98122d",
+            "size": 856
+        },
+        "Config": {
+            "ArgsEscaped": true,
+            "Cmd": [
+                "node",
+                "apps/web/dist/main.js"
+            ],
+            "Entrypoint": null,
+            "Env": [
+                "PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "GPG_KEY=7169605F62C751356D054A26A821E680E5FA6305",
+                "PYTHON_VERSION=3.13.2",
+                "PYTHON_SHA256=d984bcc57cd67caab26f7def42e523b1c015bbc5dc07836cf4f0b63fa159eb56",
+                "NODE_ENV=production",
+                "HEURISKO_WEB_MODE=public-readonly",
+                "PORT=10000"
+            ],
+            "ExposedPorts": {
+                "10000/tcp": {}
+            },
+            "Labels": null,
+            "OnBuild": null,
+            "User": "10001:10001",
+            "Volumes": null,
+            "WorkingDir": "/app"
+        }
+    }
+]

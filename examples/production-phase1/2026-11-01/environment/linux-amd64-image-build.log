@@ -1,0 +1,135 @@
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile.render
+#1 transferring dockerfile: 1.66kB done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/node:22.23.4-bookworm-slim@sha256:4b150b48b4116e2a22f2c39cc27025fbf4f153e2078fd3b14d159fdb5c7279da
+#2 ...
+
+#3 [internal] load metadata for docker.io/library/python:3.13.2-slim-bookworm@sha256:6b3223eb4d93718828223966ad316909c39813dee3ee9395204940500792b740
+#3 DONE 2.6s
+
+#2 [internal] load metadata for docker.io/library/node:22.23.4-bookworm-slim@sha256:4b150b48b4116e2a22f2c39cc27025fbf4f153e2078fd3b14d159fdb5c7279da
+#2 DONE 3.2s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 902B done
+#4 DONE 0.0s
+
+#5 [stage-1  1/14] FROM docker.io/library/python:3.13.2-slim-bookworm@sha256:6b3223eb4d93718828223966ad316909c39813dee3ee9395204940500792b740
+#5 resolve docker.io/library/python:3.13.2-slim-bookworm@sha256:6b3223eb4d93718828223966ad316909c39813dee3ee9395204940500792b740 0.0s done
+#5 DONE 0.0s
+
+#6 [node-runtime 1/1] FROM docker.io/library/node:22.23.4-bookworm-slim@sha256:4b150b48b4116e2a22f2c39cc27025fbf4f153e2078fd3b14d159fdb5c7279da
+#6 resolve docker.io/library/node:22.23.4-bookworm-slim@sha256:4b150b48b4116e2a22f2c39cc27025fbf4f153e2078fd3b14d159fdb5c7279da 0.0s done
+#6 DONE 0.0s
+
+#7 [internal] load build context
+#7 transferring context: 107.84MB 0.9s done
+#7 DONE 1.0s
+
+#8 [stage-1  2/14] COPY --from=node-runtime /usr/local/bin/node /usr/local/bin/node
+#8 CACHED
+
+#9 [stage-1  3/14] COPY --from=node-runtime /usr/local/lib/node_modules/npm /usr/local/lib/node_modules/npm
+#9 CACHED
+
+#10 [stage-1  4/14] RUN ln -s ../lib/node_modules/npm/bin/npm-cli.js /usr/local/bin/npm     && npm install --global pnpm@10.14.0 --ignore-scripts
+#10 CACHED
+
+#11 [stage-1  5/14] WORKDIR /app
+#11 CACHED
+
+#12 [stage-1  6/14] COPY package.json pnpm-lock.yaml pnpm-workspace.yaml requirements-contracts.txt ./
+#12 DONE 0.2s
+
+#13 [stage-1  7/14] COPY packages ./packages
+#13 DONE 0.0s
+
+#14 [stage-1  8/14] COPY integration/part4 ./integration/part4
+#14 DONE 0.3s
+
+#15 [stage-1  9/14] COPY apps/web ./apps/web
+#15 DONE 0.0s
+
+#16 [stage-1 10/14] COPY README.md LICENSE NOTICE ./
+#16 DONE 0.0s
+
+#17 [stage-1 11/14] COPY [docs/CLI Reference.md, ./docs/CLI Reference.md]
+#17 DONE 0.0s
+
+#18 [stage-1 12/14] COPY examples/handoff/current ./examples/handoff/current
+#18 DONE 0.3s
+
+#19 [stage-1 13/14] COPY examples/final-hour/20261101-053912/integrated-55240e9 ./examples/final-hour/20261101-053912/integrated-55240e9
+#19 DONE 0.0s
+
+#20 [stage-1 14/14] RUN python -m venv .venv     && .venv/bin/pip install --no-cache-dir --require-hashes -r requirements-contracts.txt     && pnpm install --frozen-lockfile --ignore-scripts     && pnpm run build     && groupadd --gid 10001 heurisko     && useradd --uid 10001 --gid 10001 --no-create-home --shell /usr/sbin/nologin heurisko     && chown -R 10001:10001 /app
+#20 3.360 Collecting jsonschema==4.26.0 (from -r requirements-contracts.txt (line 4))
+#20 3.424   Downloading jsonschema-4.26.0-py3-none-any.whl (90 kB)
+#20 3.491 Collecting attrs==26.1.0 (from -r requirements-contracts.txt (line 6))
+#20 3.503   Downloading attrs-26.1.0-py3-none-any.whl (67 kB)
+#20 3.522 Collecting jsonschema-specifications==2025.9.1 (from -r requirements-contracts.txt (line 8))
+#20 3.533   Downloading jsonschema_specifications-2025.9.1-py3-none-any.whl (18 kB)
+#20 3.569 Collecting referencing==0.37.0 (from -r requirements-contracts.txt (line 10))
+#20 3.579   Downloading referencing-0.37.0-py3-none-any.whl (26 kB)
+#20 3.843 Collecting rpds-py==2026.9.1 (from -r requirements-contracts.txt (line 12))
+#20 3.854   Downloading rpds_py-2026.9.1-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (370 kB)
+#20 3.894 Installing collected packages: rpds-py, attrs, referencing, jsonschema-specifications, jsonschema
+#20 4.002 Successfully installed attrs-26.1.0 jsonschema-4.26.0 jsonschema-specifications-2025.9.1 referencing-0.37.0 rpds-py-2026.9.1
+#20 4.130 
+#20 4.130 [notice] A new release of pip is available: 24.3.1 -> 26.2.2
+#20 4.130 [notice] To update, run: python -m pip install --upgrade pip
+#20 4.883 Scope: all 8 workspace projects
+#20 5.048 Lockfile is up to date, resolution step is skipped
+#20 5.073 Progress: resolved 1, reused 0, downloaded 0, added 0
+#20 5.097 Packages: +48
+#20 5.097 ++++++++++++++++++++++++++++++++++++++++++++++++
+#20 5.350 
+#20 5.350    ╭──────────────────────────────────────────╮
+#20 5.350    │                                          │
+#20 5.350    │   Update available! 10.14.0 → 12.16.1.   │
+#20 5.350    │   Changelog: https://pnpm.io/v/12.16.1   │
+#20 5.350    │     To update, run: pnpm add -g pnpm     │
+#20 5.350    │                                          │
+#20 5.350    ╰──────────────────────────────────────────╯
+#20 5.350 
+#20 6.076 Progress: resolved 48, reused 0, downloaded 46, added 46
+#20 6.444 Progress: resolved 48, reused 0, downloaded 48, added 48, done
+#20 6.518 
+#20 6.518 devDependencies:
+#20 6.518 + @types/node 22.15.30
+#20 6.518 + typescript 5.8.3
+#20 6.518 
+#20 6.628 Done in 2.1s using pnpm v10.14.0
+#20 7.135 
+#20 7.135 > heurisko@ build /app
+#20 7.135 > pnpm --filter @heurisko/core... run build && node_modules/.bin/tsc -p integration/part4/tsconfig.json && pnpm --filter @heurisko/tui --filter @heurisko/cli --filter @heurisko/web run build
+#20 7.135 
+#20 7.690 Scope: 3 of 8 workspace projects
+#20 7.694 packages/contracts build$ tsc -p tsconfig.json
+#20 9.397 packages/contracts build: Done
+#20 9.400 packages/intelligence-reviewed build$ tsc -p tsconfig.json
+#20 11.41 packages/intelligence-reviewed build: Done
+#20 11.42 packages/core build$ tsc -p tsconfig.json
+#20 13.85 packages/core build: Done
+#20 16.59 Scope: 3 of 8 workspace projects
+#20 16.59 packages/tui build$ tsc -p tsconfig.json
+#20 16.59 apps/web build$ node build.mjs
+#20 19.65 apps/web build: Done
+#20 20.63 packages/tui build: Done
+#20 20.63 packages/cli build$ tsc -p tsconfig.json
+#20 22.50 packages/cli build: Done
+#20 DONE 25.0s
+
+#21 exporting to image
+#21 exporting layers
+#21 exporting layers 2.9s done
+#21 exporting manifest sha256:724dd65a51eecbc06c0a4576766b523e11dbfc1de5405befd921e4b0250122ca
+#21 exporting manifest sha256:724dd65a51eecbc06c0a4576766b523e11dbfc1de5405befd921e4b0250122ca done
+#21 exporting config sha256:c3f755aec67db4ac5cf72cb6d7a3ac28efe749880728b4e666024541899cf784 done
+#21 exporting attestation manifest sha256:d667efdb263b4ee57feadceaaa32ba6fdfe6b8a0293145b8c98689633ceb8b65 done
+#21 exporting manifest list sha256:253c1a43195ca8940f1d6918f1bd5d2119ed59d4102ded593f513b41cf4e8744 done
+#21 naming to docker.io/library/heurisko-phase1-local:linux-amd64 done
+#21 DONE 2.9s

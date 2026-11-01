@@ -2,7 +2,7 @@
 
 This is the authorized local implementation in the existing `apps/web`. Shane and Codex own the web work. Shane additionally requested the terminal-like neutral near-black palette (`#080808` page, `#111111` surfaces, cyan accents). No dependency, core/G0/trust, parser/isolation, TUI worktree or product-model capability changed. Everything remains uncommitted; no Git/publication/deployment/external-message action occurred.
 
-The [single gap backlog's U01–U18 matrix](../../../docs/Web%20Application%20Gap%20Plan.md#overhaul-execution--1-november-2026) is the disposition/acceptance record, preserving W2–W4 history. This directory is fresh evidence; no older receipt/store/report was overwritten.
+The [single gap backlog's U01–U18 matrix](https://github.com/sumnlikeshane/Heurisko/blob/6985d3eeecdbdc33463458e8072a31e62e86109f/docs/Web%20Application%20Gap%20Plan.md#overhaul-execution--1-november-2026) is the disposition/acceptance record, preserving W2–W4 history. This directory is fresh evidence; no older receipt/store/report was overwritten.
 
 ## Implemented local behavior
 

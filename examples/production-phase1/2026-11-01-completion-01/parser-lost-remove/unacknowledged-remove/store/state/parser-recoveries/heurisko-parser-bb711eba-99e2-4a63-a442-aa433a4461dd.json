@@ -1,0 +1,15 @@
+{
+  "version": "heurisko-parser-recovery-v1",
+  "name": "heurisko-parser-bb711eba-99e2-4a63-a442-aa433a4461dd",
+  "containerId": "ee4b24f7a675c6084a5a30d54beeba8fddcc0fb994d3e0ca4512b8576f10a994",
+  "storeLabel": "c9092cde4592f9fbc16a1d0c4a0202e2dcbd093bea43c00ebc1ef00e4853338f",
+  "observedState": {
+    "status": "exited",
+    "running": false,
+    "pid": 0,
+    "startedAt": "2026-11-01T16:40:14.801788584Z"
+  },
+  "removedWithoutForce": true,
+  "exactRemovalConfirmed": true,
+  "recoveredAt": "2026-11-01T16:40:15.461Z"
+}

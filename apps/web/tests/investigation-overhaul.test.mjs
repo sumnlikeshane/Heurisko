@@ -34,7 +34,8 @@ test('first entry requires explicit example selection and the review exposes lab
   assert.match(html, /Use public example: picocolors@1.1.1/);
   assert.match(html, /id="investigate-target"[^>]*value=""/);
   assert.ok(!html.includes('type="checkbox"'));
-  assert.match(html, /Default matches the CLI request/);
+  assert.match(html, /AI is off by default, as in the CLI/);
+  assert.match(html, /<option value="off" selected="">/);
   const review = render(RequestReview, { draft: draftRequest('npm', fields) });
   assert.ok(review.indexOf('Exact release') < review.indexOf('Technical request details'));
   assert.match(review, /product model unavailable/);

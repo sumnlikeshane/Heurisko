@@ -1,0 +1,52 @@
+Browser tab: 1237325268, Title: "Heurisko · Evidence workspace", URL: "http://127.0.0.1:43219/workspace/reports".
+0 AXWebArea Heurisko · Evidence workspace, URL: 127.0.0.1:43219/workspace/reports
+	1 container root
+		2 link Description: Skip to content, Value: 127.0.0.1:43219/workspace/reports#workspace
+		3 container
+			4 link Description: Heurisko home, Value: 127.0.0.1:43219/
+			5 container Main navigation
+				6 link Description: Home, Value: 127.0.0.1:43219/
+				7 link Description: Documentation, Value: 127.0.0.1:43219/docs/start/quickstart
+				8 link Description: Workspace, Value: 127.0.0.1:43219/workspace/new
+		231 container
+			232 text WORKSPACE
+			233 container Workspace tasks
+				234 link Description: New investigation, Value: 127.0.0.1:43219/workspace/new
+				235 link Description: Open evidence, Value: 127.0.0.1:43219/workspace/open
+				236 link Description: Jobs, Value: 127.0.0.1:43219/workspace/jobs
+				237 link Description: Reports, Value: 127.0.0.1:43219/workspace/reports
+			238 button (expanded) Reader · disconnected, Secondary Actions: Collapse
+				239 text Reader · 
+				240 text disconnected
+			241 text Access stays in this tab’s memory. Reconnecting never starts work.
+			242 button Refresh connection
+			243 text Check that the local reader is running, then refresh or reconnect.
+			244 container
+				245 text Private launch URL
+				246 text field (settable) Private launch URL
+				247 button Reconnect here
+			248 link Description: Connection help, Value: 127.0.0.1:43219/docs/troubleshooting/session
+		249 container workspace
+			250 text ADMITTED OBSERVATIONS
+			251 heading Reports, Value: 1
+				252 text Reports
+			253 text Retained evidence opened in this process. The evidence store can contain other reports; reopen those explicitly.
+			254 button Refresh reports
+			255 container
+				256 text The local reader is disconnected.
+				257 button (collapsed) Diagnostic code, Secondary Actions: Expand
+					258 text Diagnostic code
+				259 button Retry this read
+			260 text Last successful observation: 2026-11-01T16:35:34.351Z
+			261 container
+				262 heading picocolors@1.1.1, Value: 2
+					263 link Description: picocolors@1.1.1, Value: 127.0.0.1:43219/workspace/observations/4eba1ced04a9b3a09539d30d0678cde6/overview
+				264 text local  · captured  2026-11-01T00:27:21Z
+				265 button (collapsed) Observation identity, Secondary Actions: Expand
+					266 text Observation identity
+				267 text Retained observation  · last observed
+				268 link Description: Open report →, Value: 127.0.0.1:43219/workspace/observations/4eba1ced04a9b3a09539d30d0678cde6/overview
+		229 container
+			230 text Exact bytes. Inspectable evidence. Visible limits. Local reader · one shared engine
+
+The focused UI element is 254 button Refresh reports

@@ -1,0 +1,311 @@
+{
+  "default": {
+    "reportId": "report_1493b1286941d848dddac91c",
+    "reportSha256": "sha256:79c0b08ec7525978bf1db48557ec42941ed8a9ad39f2c61791eb6883141c4856",
+    "reportBytes": 12265,
+    "outcomes": {
+      "artifactIntegrity": "not_checked",
+      "sourceAssociation": "user_supplied",
+      "provenancePolicy": "not_checked",
+      "correspondence": "unresolved",
+      "analysisCompleteness": "complete",
+      "policyResult": "not_evaluated"
+    },
+    "ai": {
+      "status": "disabled",
+      "validation": "not_run"
+    },
+    "findings": 1,
+    "conflicts": [],
+    "coverage": {
+      "artifactFiles": 2,
+      "sourceFiles": 2,
+      "comparedFiles": 2,
+      "analyzedBytes": 292,
+      "skippedBytes": 0,
+      "unsupportedBytes": 0,
+      "omissions": [],
+      "complete": true,
+      "limitations": []
+    },
+    "cliExit": 0,
+    "citations": [
+      {
+        "id": "ev_92f2176bca6e21ec8dd0095c",
+        "kind": "content",
+        "ref": "sha256:4b062e84a5bdeae919af92f90a764713cad9560b77ece557cf20c2edc972583a",
+        "range": {
+          "startByte": 0,
+          "endByte": 351
+        },
+        "displayed": {
+          "startByte": 0,
+          "endByte": 351
+        },
+        "bytes": 351
+      }
+    ],
+    "id": "mutation-lifecycle-add",
+    "command": [
+      "analyze",
+      "--artifact",
+      "/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/examples/production-phase1/2026-11-01-completion-01/foundation/mutation-lifecycle-add-inputs/artifact.tgz",
+      "--source",
+      "https://github.com/alexeyraspopov/picocolors",
+      "--commit",
+      "6f0a4638348ed20633d623ee973f9c9a96f65104",
+      "--source-archive",
+      "/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/examples/production-phase1/2026-11-01-completion-01/foundation/mutation-lifecycle-add-inputs/source.tgz",
+      "--store",
+      "/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/examples/production-phase1/2026-11-01-completion-01/foundation/mutation-lifecycle-add/store",
+      "--report",
+      "/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/examples/production-phase1/2026-11-01-completion-01/foundation/mutation-lifecycle-add/report.json",
+      "--json"
+    ],
+    "env": {},
+    "seconds": 11.942,
+    "class": "mutated"
+  },
+  "explicitNoAI": {
+    "reportId": "report_1493b1286941d848dddac91c",
+    "reportSha256": "sha256:e5aa8f7015bb3eab98752b7a10012fa0f180c36fc041be03cffde64697f97f29",
+    "reportBytes": 12265,
+    "outcomes": {
+      "artifactIntegrity": "not_checked",
+      "sourceAssociation": "user_supplied",
+      "provenancePolicy": "not_checked",
+      "correspondence": "unresolved",
+      "analysisCompleteness": "complete",
+      "policyResult": "not_evaluated"
+    },
+    "ai": {
+      "status": "disabled",
+      "validation": "not_run"
+    },
+    "findings": 1,
+    "conflicts": [],
+    "coverage": {
+      "artifactFiles": 2,
+      "sourceFiles": 2,
+      "comparedFiles": 2,
+      "analyzedBytes": 292,
+      "skippedBytes": 0,
+      "unsupportedBytes": 0,
+      "omissions": [],
+      "complete": true,
+      "limitations": []
+    },
+    "cliExit": 0,
+    "citations": [
+      {
+        "id": "ev_92f2176bca6e21ec8dd0095c",
+        "kind": "content",
+        "ref": "sha256:4b062e84a5bdeae919af92f90a764713cad9560b77ece557cf20c2edc972583a",
+        "range": {
+          "startByte": 0,
+          "endByte": 351
+        },
+        "displayed": {
+          "startByte": 0,
+          "endByte": 351
+        },
+        "bytes": 351
+      }
+    ],
+    "id": "explicit-no-ai",
+    "command": [
+      "analyze",
+      "--artifact",
+      "/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/examples/production-phase1/2026-11-01-completion-01/foundation/mutation-lifecycle-add-inputs/artifact.tgz",
+      "--source",
+      "https://github.com/alexeyraspopov/picocolors",
+      "--commit",
+      "6f0a4638348ed20633d623ee973f9c9a96f65104",
+      "--source-archive",
+      "/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/examples/production-phase1/2026-11-01-completion-01/foundation/mutation-lifecycle-add-inputs/source.tgz",
+      "--store",
+      "/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/examples/production-phase1/2026-11-01-completion-01/foundation/explicit-no-ai/store",
+      "--report",
+      "/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/examples/production-phase1/2026-11-01-completion-01/foundation/explicit-no-ai/report.json",
+      "--json",
+      "--no-ai"
+    ],
+    "env": {},
+    "seconds": 6.955
+  },
+  "raw": {
+    "reportId": "report_318a5a7d217b64ef5d9c79d0",
+    "reportSha256": "sha256:ae1e746ad52157ff74990b631580bfe9d40844d9707920c5d27e1d12715fceb1",
+    "reportBytes": 10861,
+    "outcomes": {
+      "artifactIntegrity": "not_checked",
+      "sourceAssociation": "user_supplied",
+      "provenancePolicy": "not_checked",
+      "correspondence": "unresolved",
+      "analysisCompleteness": "incomplete",
+      "policyResult": "not_evaluated"
+    },
+    "ai": {
+      "status": "disabled",
+      "validation": "not_run",
+      "reason": "Analysis module unavailable"
+    },
+    "findings": 0,
+    "conflicts": [],
+    "coverage": {
+      "artifactFiles": 2,
+      "sourceFiles": 2,
+      "comparedFiles": 2,
+      "analyzedBytes": 292,
+      "skippedBytes": 0,
+      "unsupportedBytes": 0,
+      "omissions": [],
+      "complete": true,
+      "limitations": []
+    },
+    "cliExit": 2,
+    "citations": [],
+    "id": "raw-only",
+    "command": [
+      "analyze",
+      "--artifact",
+      "/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/examples/production-phase1/2026-11-01-completion-01/foundation/mutation-lifecycle-add-inputs/artifact.tgz",
+      "--source",
+      "https://github.com/alexeyraspopov/picocolors",
+      "--commit",
+      "6f0a4638348ed20633d623ee973f9c9a96f65104",
+      "--source-archive",
+      "/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/examples/production-phase1/2026-11-01-completion-01/foundation/mutation-lifecycle-add-inputs/source.tgz",
+      "--store",
+      "/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/examples/production-phase1/2026-11-01-completion-01/foundation/raw-only/store",
+      "--report",
+      "/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/examples/production-phase1/2026-11-01-completion-01/foundation/raw-only/report.json",
+      "--json"
+    ],
+    "env": {
+      "HEURISKO_ANALYSIS_MODULE": "off"
+    },
+    "seconds": 3.814
+  },
+  "policy": {
+    "reportId": "report_f83352e8ce1e7fec633dc6c8",
+    "reportSha256": "sha256:8b4dfc5e1e69b02c3ae86a9cd125e42c97480ec3cca98f60d3d2cdb041adf53d",
+    "reportBytes": 12305,
+    "outcomes": {
+      "artifactIntegrity": "not_checked",
+      "sourceAssociation": "user_supplied",
+      "provenancePolicy": "not_checked",
+      "correspondence": "unresolved",
+      "analysisCompleteness": "complete",
+      "policyResult": "indeterminate"
+    },
+    "ai": {
+      "status": "disabled",
+      "validation": "not_run"
+    },
+    "findings": 1,
+    "conflicts": [],
+    "coverage": {
+      "artifactFiles": 2,
+      "sourceFiles": 2,
+      "comparedFiles": 2,
+      "analyzedBytes": 292,
+      "skippedBytes": 0,
+      "unsupportedBytes": 0,
+      "omissions": [],
+      "complete": true,
+      "limitations": []
+    },
+    "cliExit": 2,
+    "citations": [
+      {
+        "id": "ev_92f2176bca6e21ec8dd0095c",
+        "kind": "content",
+        "ref": "sha256:4b062e84a5bdeae919af92f90a764713cad9560b77ece557cf20c2edc972583a",
+        "range": {
+          "startByte": 0,
+          "endByte": 351
+        },
+        "displayed": {
+          "startByte": 0,
+          "endByte": 351
+        },
+        "bytes": 351
+      }
+    ],
+    "id": "requested-policy",
+    "command": [
+      "analyze",
+      "--artifact",
+      "/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/examples/production-phase1/2026-11-01-completion-01/foundation/mutation-lifecycle-add-inputs/artifact.tgz",
+      "--source",
+      "https://github.com/alexeyraspopov/picocolors",
+      "--commit",
+      "6f0a4638348ed20633d623ee973f9c9a96f65104",
+      "--source-archive",
+      "/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/examples/production-phase1/2026-11-01-completion-01/foundation/mutation-lifecycle-add-inputs/source.tgz",
+      "--store",
+      "/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/examples/production-phase1/2026-11-01-completion-01/foundation/requested-policy/store",
+      "--report",
+      "/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/examples/production-phase1/2026-11-01-completion-01/foundation/requested-policy/report.json",
+      "--json",
+      "--policy",
+      "phase1-unimplemented"
+    ],
+    "env": {},
+    "seconds": 3.893
+  },
+  "errors": [
+    {
+      "id": "bad-option",
+      "args": [
+        "analyze",
+        "--unknown"
+      ],
+      "exit": 3,
+      "stderr": "Heurisko: UNKNOWN_OPTION. Run --help for supported syntax.\n"
+    },
+    {
+      "id": "range",
+      "args": [
+        "analyze",
+        "npm:picocolors@latest"
+      ],
+      "exit": 3,
+      "stderr": "Heurisko: NPM_EXACT_VERSION_REQUIRED. Run --help for supported syntax.\n"
+    },
+    {
+      "id": "source-pair",
+      "args": [
+        "analyze",
+        "--artifact",
+        "/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/examples/production-phase1/2026-11-01-completion-01/foundation/mutation-lifecycle-add-inputs/artifact.tgz",
+        "--source",
+        "https://github.com/alexeyraspopov/picocolors"
+      ],
+      "exit": 3,
+      "stderr": "Heurisko: INVOCATION_INVALID. Run --help for supported syntax.\n"
+    },
+    {
+      "id": "unknown-module",
+      "args": [
+        "analyze",
+        "--artifact",
+        "/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/examples/production-phase1/2026-11-01-completion-01/foundation/mutation-lifecycle-add-inputs/artifact.tgz"
+      ],
+      "exit": 3,
+      "stderr": "Heurisko: ANALYSIS_MODULE_SELECTOR_REJECTED. Run --help for supported syntax.\n"
+    },
+    {
+      "id": "missing-report",
+      "args": [
+        "inspect",
+        "/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/examples/production-phase1/2026-11-01-completion-01/foundation/absent.json",
+        "--json"
+      ],
+      "exit": 3,
+      "stderr": "Heurisko: INVOCATION_OR_INTERNAL_ERROR. Run --help for supported syntax.\n"
+    }
+  ],
+  "exitOne": "Covered by contracts only; no current concrete policy evaluator can produce a genuine violation."
+}

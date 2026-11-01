@@ -1,0 +1,71 @@
+[
+  {
+    "name": "npm-default",
+    "argv": [
+      "node",
+      "packages/cli/dist/index.js",
+      "analyze",
+      "npm:picocolors@1.1.1",
+      "--source",
+      "https://github.com/alexeyraspopov/picocolors",
+      "--commit",
+      "6f0a4638348ed20633d623ee973f9c9a96f65104",
+      "--store",
+      "examples/production-phase1/2026-11-01-completion-01/npm-modes/default-store",
+      "--report",
+      "examples/production-phase1/2026-11-01-completion-01/npm-modes/default.report.json",
+      "--json"
+    ],
+    "env": {},
+    "acceptedExits": [
+      0
+    ]
+  },
+  {
+    "name": "npm-no-ai",
+    "argv": [
+      "node",
+      "packages/cli/dist/index.js",
+      "analyze",
+      "npm:picocolors@1.1.1",
+      "--source",
+      "https://github.com/alexeyraspopov/picocolors",
+      "--commit",
+      "6f0a4638348ed20633d623ee973f9c9a96f65104",
+      "--store",
+      "examples/production-phase1/2026-11-01-completion-01/npm-modes/no-ai-store",
+      "--report",
+      "examples/production-phase1/2026-11-01-completion-01/npm-modes/no-ai.report.json",
+      "--json",
+      "--no-ai"
+    ],
+    "env": {},
+    "acceptedExits": [
+      0
+    ]
+  },
+  {
+    "name": "npm-raw",
+    "argv": [
+      "node",
+      "packages/cli/dist/index.js",
+      "analyze",
+      "npm:picocolors@1.1.1",
+      "--source",
+      "https://github.com/alexeyraspopov/picocolors",
+      "--commit",
+      "6f0a4638348ed20633d623ee973f9c9a96f65104",
+      "--store",
+      "examples/production-phase1/2026-11-01-completion-01/npm-modes/raw-store",
+      "--report",
+      "examples/production-phase1/2026-11-01-completion-01/npm-modes/raw.report.json",
+      "--json"
+    ],
+    "env": {
+      "HEURISKO_ANALYSIS_MODULE": "off"
+    },
+    "acceptedExits": [
+      2
+    ]
+  }
+]

@@ -1,0 +1,28 @@
+{
+  "host": "darwin",
+  "scenarios": [
+    {
+      "scenario": "unacknowledged-create",
+      "exactContainerId": "26c2dae544325bff359be5a15c1366df123acb447b5da9fcf7744fdc7dc3dec2",
+      "inventoryCode": "PARSER_CLEANUP_UNCONFIRMED",
+      "complete": false,
+      "recovery": {
+        "version": "heurisko-parser-recovery-v1",
+        "name": "heurisko-parser-5ca1991a-8b0e-46bc-a362-fbd128171123",
+        "containerId": "26c2dae544325bff359be5a15c1366df123acb447b5da9fcf7744fdc7dc3dec2",
+        "storeLabel": "2a88fbdb5d90c6e3093e7557e2ee1263e0309769d7ec1a9d93bc9fa8bc50d7ef",
+        "observedState": {
+          "status": "created",
+          "running": false,
+          "pid": 0,
+          "startedAt": "0001-01-01T00:00:00Z"
+        },
+        "removedWithoutForce": true,
+        "exactRemovalConfirmed": true,
+        "recoveredAt": "2026-11-01T16:40:14.340Z"
+      },
+      "samples": [],
+      "resourceLimit": "Docker stream samples may miss short-lived peaks; zero samples is unmeasured, not zero use."
+    }
+  ]
+}

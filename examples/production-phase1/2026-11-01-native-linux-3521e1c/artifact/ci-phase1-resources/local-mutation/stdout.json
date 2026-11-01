@@ -1,0 +1,1 @@
+{"measurement": "phase1-trusted-worker-copy", "userSeconds": 0.14637899999999998, "systemSeconds": 0.028072, "maxRssKiB": 23120, "cgroupMemoryPeakBytes": 14807040, "cgroupCpuStat": "usage_usec 176138\nuser_usec 146950\nsystem_usec 29188\nnice_usec 0\ncore_sched.force_idle_usec 0\nnr_periods 2\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0"}

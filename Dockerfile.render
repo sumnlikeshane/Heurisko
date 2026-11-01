@@ -11,7 +11,7 @@ COPY package.json pnpm-lock.yaml pnpm-workspace.yaml requirements-contracts.txt 
 COPY packages ./packages
 COPY integration/part4 ./integration/part4
 COPY apps/web ./apps/web
-COPY README.md LICENSE NOTICE ./
+COPY README.md LICENSE NOTICE THIRD_PARTY_NOTICES.txt ./
 COPY ["docs/CLI Reference.md", "./docs/CLI Reference.md"]
 COPY examples/handoff/current ./examples/handoff/current
 COPY examples/final-hour/20261101-053912/integrated-55240e9 ./examples/final-hour/20261101-053912/integrated-55240e9

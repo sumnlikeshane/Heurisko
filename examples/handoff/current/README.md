@@ -26,4 +26,4 @@ node packages/cli/dist/index.js inspect examples/handoff/current/B2.report.json 
 
 Inspect intentionally exits 2. Replay to a new destination using `scripts/capture-s3.mjs NEW_DEST --replay examples/s3/current`; the fetch adapter refuses unretained URLs and has no network fallback. Do not overwrite immutable captures.
 
-See [Malhar's instructions](../../../docs/HANDOFF_S1_S3.md) and [follow-up validation](../../../docs/HANDOFF_LINUX_VALIDATION.json). Original ISC/MIT license bytes are retained with each manifest; upstream source and other third-party material retain their rights/notices. This checkpoint does not close S4, G1/G3/G4, model integration or complete P04.
+See [Malhar's instructions](https://github.com/sumnlikeshane/Heurisko/blob/6985d3eeecdbdc33463458e8072a31e62e86109f/docs/HANDOFF_S1_S3.md) and [follow-up validation](../../../docs/HANDOFF_LINUX_VALIDATION.json). Original ISC/MIT license bytes are retained with each manifest; upstream source and other third-party material retain their rights/notices. This checkpoint does not close S4, G1/G3/G4, model integration or complete P04.

@@ -1,0 +1,5 @@
+
+> heurisko@ check:docs /Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko
+> python3 scripts/check-docs.py
+
+Checked 88 Markdown files and 15 research hashes; 2 exact upstream omitted-experiment links excepted.

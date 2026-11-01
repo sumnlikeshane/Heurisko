@@ -1,0 +1,9 @@
+{
+  "command": "node scripts/verify-phase1-npm.mjs default.report.json no-ai.report.json raw.report.json",
+  "exit": 1,
+  "assertion": "Equal reportId across separate live acquisitions",
+  "actual": "report_04ee6d930542742f816ffd2f",
+  "expected": "report_5a9e520a5cb1e195ae9915f7",
+  "finding": "Outcomes/findings/options/module match. Acquisition-context source-tag 404 headers x-ratelimit-remaining changed14 ->11. Exact acquired context is intentionally fingerprinted, so IDs differ.",
+  "resolution": "No product semantics changed; new reviewed comparison retains both snapshots and checks equality of declared settings, outcomes and findings separately from exact observation identity."
+}

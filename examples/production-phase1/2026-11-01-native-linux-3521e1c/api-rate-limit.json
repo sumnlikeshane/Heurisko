@@ -1,0 +1,6 @@
+{
+  "stage": "public run polling before final metadata capture",
+  "status": 403,
+  "reason": "Anonymous API rate limit exceeded",
+  "resolution": "Signed-in browser showed all four jobs successful; native artifact downloaded and digest verified. No credentials extracted."
+}

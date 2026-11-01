@@ -2,7 +2,7 @@
 
 The application lives in `apps/web/`. It now has a product landing page, searchable CLI/browser documentation with a vertical contents sidebar, and an investigation workspace using the existing shared engine. The terminal visual direction is preserved; no TUI design is adopted or frozen.
 
-Current [overhaul receipts](../../examples/web-overhaul/current/README.md) record partial native Chrome/Safari observations alongside source/API/CLI checks. The complete final viewport, zoom, keyboard, nested-evidence, native import/download, external-offline and assistive-technology matrix remains open. Earlier blocked-browser checkpoints below are historical. Durable selected-package monitoring (Part 5) is not authorized or started; process-local investigation jobs do not provide a monitor or restart recovery.
+Current [overhaul receipts](../../examples/web-overhaul/current/README.md) record partial native Chrome/Safari observations alongside source/API/CLI checks. The complete final viewport, zoom, keyboard, nested-evidence, native import/download, external-offline and assistive-technology matrix remains open. Earlier blocked-browser checkpoints below are historical. Durable selected-package monitoring is planned in roadmap Phase 5 and is not implemented; process-local investigation jobs do not provide a monitor or restart recovery.
 
 ## Setup and open
 
@@ -32,11 +32,11 @@ Ordinary new browser investigations use the reviewed `55240e9` deterministic ent
 pnpm web
 ```
 
-An absent/empty host setting uses this reviewed default; `HEURISKO_ANALYSIS_MODULE=55240e9 pnpm web` explicitly pins the same selection. `HEURISKO_ANALYSIS_MODULE=off pnpm web` provides raw-only investigations with unavailable deterministic analysis. The allowlisted selector is trusted server-process configuration; neither a browser field, HTTP request nor analyzed package can select module code. Unknown nonempty selectors fail before acquisition. Module identity/configuration belongs to each new report. Opening retained reports does not recalculate their findings or alter earlier evidence. [Module intake and validation](../../docs/Final%20Module%20Intake.md) records exact scope and results separately from historical web receipts.
+An absent/empty host setting uses this reviewed default; `HEURISKO_ANALYSIS_MODULE=55240e9 pnpm web` explicitly pins the same selection. `HEURISKO_ANALYSIS_MODULE=off pnpm web` provides raw-only investigations with unavailable deterministic analysis. The allowlisted selector is trusted server-process configuration; neither a browser field, HTTP request nor analyzed package can select module code. Unknown nonempty selectors fail before acquisition. Module identity/configuration belongs to each new report. Opening retained reports does not recalculate their findings or alter earlier evidence. [Module admission and validation](../../packages/intelligence-reviewed/README.md) records exact scope and results separately from historical web receipts.
 
 This path admits only reviewed deterministic code. Product model/provider/CodeAstra paths remain unavailable. The AI request control cannot enable inference. Missing/corrupt/over-limit retained delta or member bytes leave limited/unexplained evidence and incomplete heuristics; configured findings do not establish source binding, verified build equivalence, provenance, concrete policy evaluation or monitoring.
 
-## Navigation and session context (W1)
+## Navigation and session context
 
 Native links and browser Back/Forward address `/`, `/docs/cli`, `/docs/setup`, `/docs/browser`, `/workspace/new`, `/workspace/open`, `/workspace/jobs`, `/workspace/reports`, `/workspace/jobs/OPAQUE_ID` and `/workspace/observations/OPAQUE_HANDLE/SECTION`. Report sections are overview/files/findings/source/ai/coverage. Only these UI paths get the HTML fallback; paths do not map to host files or grant protected API access. Opening a destination never submits analysis. Documentation now uses a deterministic 16-page manifest with stable semantic anchors under `/docs/start/quickstart`, `/docs/cli/analyze`, `/docs/cli/inspect`, `/docs/workflows/...`, `/docs/concepts/identity`, `/docs/troubleshooting/...` and `/docs/availability`. The complete canonical CLI and browser references remain available at `/docs/cli` and `/docs/reference/browser`; `/docs/browser` provides the browser workflow guide.
 
@@ -48,7 +48,7 @@ The shell distinguishes checking/connected/unauthorized/disconnected session sta
 
 1. Open **Workspace → New investigation**. Enter an exact public npm target such as `npm:picocolors@1.1.1` or `npm:@vue/shared@3.5.22`, or select a local tar/tar.gz file. Ranges, tags, aliases and alternate registries are rejected.
 2. Optionally provide the paired GitHub source URL/full 40-hex commit and package subdirectory. Local input also accepts explicit name/version labels and a selected source archive for replay. npm cannot use local source replay, matching the CLI. An override remains user asserted; it never proves release correspondence.
-3. Choose the AI request flag (uncheck for `--no-ai`) and optional requested policy reference. The fixed profile is `raw-static-s3-v1`. Deterministic analysis uses the reviewed default unless the trusted host explicitly selects `off`. AI-off preserves deterministic checks. Model, verifier, rebuild and concrete policy evaluator remain unavailable. Request options cannot manufacture those capabilities.
+3. AI is off by default, as in the CLI. An explicit AI request records unavailable model work; it does not run inference. You may record an optional requested policy reference. The fixed profile is `raw-static-s3-v1`. Deterministic analysis uses the reviewed default unless the trusted host explicitly selects `off`. Model, verifier, rebuild and concrete policy evaluator remain unavailable. Request options cannot manufacture those capabilities.
 4. Choose **Review exact input**. Convenience checks catch exact-target/source-pair/subtree/file restrictions before upload; server/core remain authoritative. The review lists selected filenames/sizes, source, labels and options. **Confirm and start investigation** admits bytes and calls core `investigate`, retains evidence and displays actual stage events. There is one active investigation; no implicit queued/retried work. A usable incomplete report displays the shared CLI exit outcome, usually **2**. Acquisition failure without a usable report displays an error and exit **3**, plus an opaque retained diagnostic reference when supplied by core.
 5. Open the report, follow file changes into evidence, and save **report JSON**, **EvidenceBundle JSON**, or **portable evidence**. Report JSON retains original encoded bytes; bundle JSON contains the validated shared bundle but does not contain every referenced blob. Neither download alone is self-contained evidence portability.
 
@@ -105,34 +105,4 @@ node apps/web/tooling/verify-investigation.mjs examples/web-investigation/NEW_RU
 node apps/web/tooling/verify-corpus.mjs .heurisko/NEW_TRANSPORT_CHECK
 ```
 
-[New investigation receipts](../../examples/web-investigation/README.md) distinguish actual engine/API/CLI checks from browser observation and preliminary attempts. [Original first-slice receipts](../../examples/web/current/README.md) are immutable historical evidence. The [scope/parity map](../../docs/Web%20Application%20Product%20Scope.md) and [continuation prompt](../../docs/WEB_CONTINUATION.md) retain browser acceptance, genuine integrated findings/AI, TUI parity, monitor and remote CI gaps. No new technology, dependency or model is introduced. Product models: none. Coding assistance: Codex. No commit, push, PR, merge, deployment or submission is authorized by local implementation.
-
-
-## W2–W5 local batch checkpoint — 1 November 2026
-
-Shane authorized the remaining web batch together. W2–W4 implementation and W5 non-GUI validation now live in this same app/backlog; [fresh receipts](../../examples/web-gap/w2-w5/validation.json) distinguish current active-workspace checks, earlier isolated W1 checks, real engine/API/CLI observations and blocked browser acceptance. No new dependency is added. The owning `repaired-foundation` handoff heading is repaired without changing historical receipts.
-
-Export is now a contextual choice: original report JSON, bundle JSON or portable evidence, with original content reference/capture time, inclusion/omission/rights/size explanations and explicit Open evidence links. Download feedback confirms preparation/request only, never a filesystem save. Wrong-format/corrupt inputs remain scoped failures; report-only missing blobs direct users to matching startup report/store admission or portable evidence.
-
-The current concurrent S4/CLI source is preserved. Its parser has conditional terminal TUI entry plus `tui REPORT`, `--ascii` and `--palette`; CLI docs record that observed boundary. Active-workspace build/typecheck includes its compile dependencies; this web batch does not adopt or certify visual TUI behavior. Final receipts bind the tested source/build and record any concurrent changes/revalidation. W1's isolated baseline-CLI pass remains historical.
-
-Relevant validation additionally includes:
-
-```sh
-# New destination/file required; records Node/loopback timings, not browser performance:
-node apps/web/tooling/measure-workspace.mjs examples/web-gap/NEW_MEASUREMENTS.json
-```
-
-W5's 1440/1024/390 widths, 320-CSS-pixel reflow, 200% zoom, keyboard/nested focus/back, clipboard, GUI import/download, screen-reader and external-offline tasks remain open because Chrome blocks loopback before rendering. No passing visual or browser-offline result is inferred from HTTP/SSR. Shared engine/model/verifier/policy/monitor work, TUI visual acceptance, shared review and remote web CI remain separate next work. No commit/push/publication/deployment/submission/external message occurred. Product models: none; coding assistance: Codex.
-
-
-## Link navigation repair — 1 November 2026
-
-Internal destinations and documentation links now use direct `AppLink` handlers sharing the memory-only navigation controller. The handler reads the clicked anchor via `currentTarget`, cancels native document navigation even for the current route, and preserves external links, downloads and modified/new-tab clicks. It no longer depends on a shell-level bubbling handler finding an element from the clicked text/icon. The controller is attached before paint. Documentation anchor clicks focus/scroll to the actual heading, including repeated clicks without extra history entries; Back/Forward retain remembered views.
-
-[Fresh scoped validation](../../examples/web-gap/link-navigation/validation.json) records 45 passing web checks and web build/typecheck. Existing authority, report and investigation boundaries are unchanged. This is regression/source validation, not a claim of a new browser GUI acceptance pass. A running preview needs one explicit refresh/new launch after the asset update; subsequent ordinary internal links stay within the document.
-
-
-## Scrolled documentation follow-up — 1 November 2026
-
-The earlier link-handler repair did not address documentation's page-wide scroll reset. Documentation now keeps a stable-height layout with independent sidebar and article scroll regions, remembers article position per document in memory, and bounds search results. Switching between docs never resets/focuses the whole window or main shell. Anchors scroll only the article and focus with `preventScroll`; stale navigation animation frames cannot apply an earlier page reset. Narrow layouts stack the two bounded regions. [Scoped results](../../examples/web-gap/docs-scroll/validation.json) distinguish code/regression checks from actual Arc observations; prior receipts remain historical. No authority persistence, implicit analysis or engine change is introduced.
+[New investigation receipts](../../examples/web-investigation/README.md) distinguish actual engine/API/CLI checks from browser observation and preliminary attempts. [Original first-slice receipts](../../examples/web/current/README.md) are immutable historical evidence. The [capability map](../../HEURISKO_COMPLETE_GUIDE.md#2-capability-map), [current Phase 1 gates](../../docs/Production%20Phase%201%20Implementation%20Plan.md#remaining-work-and-acceptance-matrix) and [roadmap backlog](../../PRODUCTION_MASTER_ROADMAP.md#priorities-and-known-issues) own parity and remaining acceptance. Update this guide with changed behavior; use [contributor workflow](../../AGENTS.md) for validation and publication. Product models: none.

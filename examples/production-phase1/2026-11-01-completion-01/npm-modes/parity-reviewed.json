@@ -1,0 +1,63 @@
+{
+  "defaultNoAIOptionsModuleOutcomesFindingsEqual": true,
+  "reportIdentityEqual": false,
+  "acquisitionSnapshots": {
+    "normal": "sha256:f18f9d2e974c24803ce6a95b94f2a4d69f4e45aa8bafedcdad1c25a1fad22244",
+    "noAI": "sha256:4d01a8a88d30ef6a5d1c730fe1610e6770a5ce36ff9936461800292c26cf36fc"
+  },
+  "identityReason": "Changed exact acquisition snapshot, including observed HTTP facts, legitimately changes identity; no report normalized or rewritten",
+  "rawRemainsIncomplete": true,
+  "cases": [
+    {
+      "path": "examples/production-phase1/2026-11-01-completion-01/npm-modes/default.report.json",
+      "sha256": "sha256:fed33238e0de7d38e097d6b404cb5e5d8786f79253e7d574d2e0d347833d4327",
+      "bytes": 71724,
+      "reportId": "report_04ee6d930542742f816ffd2f",
+      "artifactSha256": "sha256:d3aedb2807967b7eb37fd11b03b7e3701e725af79c650d0812ff7213f8f882d9",
+      "outcomes": {
+        "artifactIntegrity": "matched",
+        "sourceAssociation": "ambiguous",
+        "provenancePolicy": "not_checked",
+        "correspondence": "unresolved",
+        "analysisCompleteness": "complete",
+        "policyResult": "not_evaluated"
+      },
+      "findings": 14,
+      "exit": 0
+    },
+    {
+      "path": "examples/production-phase1/2026-11-01-completion-01/npm-modes/no-ai.report.json",
+      "sha256": "sha256:837dbf66f91f71e5ffeb87f7e3bea3eebf787c72632856182ceb9437210c690e",
+      "bytes": 71724,
+      "reportId": "report_5a9e520a5cb1e195ae9915f7",
+      "artifactSha256": "sha256:d3aedb2807967b7eb37fd11b03b7e3701e725af79c650d0812ff7213f8f882d9",
+      "outcomes": {
+        "artifactIntegrity": "matched",
+        "sourceAssociation": "ambiguous",
+        "provenancePolicy": "not_checked",
+        "correspondence": "unresolved",
+        "analysisCompleteness": "complete",
+        "policyResult": "not_evaluated"
+      },
+      "findings": 14,
+      "exit": 0
+    },
+    {
+      "path": "examples/production-phase1/2026-11-01-completion-01/npm-modes/raw.report.json",
+      "sha256": "sha256:6950840767befa3e8e5126d67178a8e616358e3ac6a7feb6239138906531ab43",
+      "bytes": 57825,
+      "reportId": "report_d337b70a15b2c305452cc250",
+      "artifactSha256": "sha256:d3aedb2807967b7eb37fd11b03b7e3701e725af79c650d0812ff7213f8f882d9",
+      "outcomes": {
+        "artifactIntegrity": "matched",
+        "sourceAssociation": "ambiguous",
+        "provenancePolicy": "not_checked",
+        "correspondence": "unresolved",
+        "analysisCompleteness": "incomplete",
+        "policyResult": "not_evaluated"
+      },
+      "findings": 0,
+      "exit": 2
+    }
+  ]
+}

@@ -1,0 +1,480 @@
+{
+  "core": [
+    {
+      "test": "not ok 13 - same package version with changed implementation or rule settings produces distinct report identities",
+      "error": [
+        "'STORE_BUSY_RECOVERY_REQUIRED'",
+        "'STORE_BUSY_RECOVERY_REQUIRED'"
+      ]
+    },
+    {
+      "test": "not ok 69 - known-answer member hashes, original names, binary bytes and modes are retained",
+      "error": [
+        "'PARSER_CLEANUP_UNCONFIRMED'",
+        "'PARSER_CLEANUP_UNCONFIRMED'"
+      ]
+    },
+    {
+      "test": "not ok 70 - refuses traversal without materializing archive-controlled paths",
+      "error": [
+        "'PARSER_CLEANUP_UNCONFIRMED'",
+        "'PARSER_CLEANUP_UNCONFIRMED'"
+      ]
+    },
+    {
+      "test": "not ok 71 - refuses absolute without materializing archive-controlled paths",
+      "error": [
+        "'PARSER_CLEANUP_UNCONFIRMED'",
+        "'PARSER_CLEANUP_UNCONFIRMED'"
+      ]
+    },
+    {
+      "test": "not ok 72 - refuses windows drive without materializing archive-controlled paths",
+      "error": [
+        "'PARSER_CLEANUP_UNCONFIRMED'",
+        "'PARSER_CLEANUP_UNCONFIRMED'"
+      ]
+    },
+    {
+      "test": "not ok 73 - refuses backslash without materializing archive-controlled paths",
+      "error": [
+        "'PARSER_CLEANUP_UNCONFIRMED'",
+        "'PARSER_CLEANUP_UNCONFIRMED'"
+      ]
+    },
+    {
+      "test": "not ok 74 - refuses empty component without materializing archive-controlled paths",
+      "error": [
+        "'PARSER_CLEANUP_UNCONFIRMED'",
+        "'PARSER_CLEANUP_UNCONFIRMED'"
+      ]
+    },
+    {
+      "test": "not ok 75 - refuses dot component without materializing archive-controlled paths",
+      "error": [
+        "'PARSER_CLEANUP_UNCONFIRMED'",
+        "'PARSER_CLEANUP_UNCONFIRMED'"
+      ]
+    },
+    {
+      "test": "not ok 76 - refuses terminal name without materializing archive-controlled paths",
+      "error": [
+        "'PARSER_CLEANUP_UNCONFIRMED'",
+        "'PARSER_CLEANUP_UNCONFIRMED'"
+      ]
+    },
+    {
+      "test": "not ok 77 - refuses windows ambiguous without materializing archive-controlled paths",
+      "error": [
+        "'PARSER_CLEANUP_UNCONFIRMED'",
+        "'PARSER_CLEANUP_UNCONFIRMED'"
+      ]
+    },
+    {
+      "test": "not ok 78 - refuses trailing dot without materializing archive-controlled paths",
+      "error": [
+        "'PARSER_CLEANUP_UNCONFIRMED'",
+        "'PARSER_CLEANUP_UNCONFIRMED'"
+      ]
+    },
+    {
+      "test": "not ok 79 - refuses duplicate without materializing archive-controlled paths",
+      "error": [
+        "'PARSER_CLEANUP_UNCONFIRMED'",
+        "'PARSER_CLEANUP_UNCONFIRMED'"
+      ]
+    },
+    {
+      "test": "not ok 80 - refuses case collision without materializing archive-controlled paths",
+      "error": [
+        "'PARSER_CLEANUP_UNCONFIRMED'",
+        "'PARSER_CLEANUP_UNCONFIRMED'"
+      ]
+    },
+    {
+      "test": "not ok 81 - refuses unicode collision without materializing archive-controlled paths",
+      "error": [
+        "'PARSER_CLEANUP_UNCONFIRMED'",
+        "'PARSER_CLEANUP_UNCONFIRMED'"
+      ]
+    },
+    {
+      "test": "not ok 82 - refuses file parent without materializing archive-controlled paths",
+      "error": [
+        "'PARSER_CLEANUP_UNCONFIRMED'",
+        "'PARSER_CLEANUP_UNCONFIRMED'"
+      ]
+    },
+    {
+      "test": "not ok 83 - refuses directory parent case without materializing archive-controlled paths",
+      "error": [
+        "'PARSER_CLEANUP_UNCONFIRMED'",
+        "'PARSER_CLEANUP_UNCONFIRMED'"
+      ]
+    },
+    {
+      "test": "not ok 84 - refuses implicit directory case without materializing archive-controlled paths",
+      "error": [
+        "'PARSER_CLEANUP_UNCONFIRMED'",
+        "'PARSER_CLEANUP_UNCONFIRMED'"
+      ]
+    },
+    {
+      "test": "not ok 85 - refuses symlink without materializing archive-controlled paths",
+      "error": [
+        "'PARSER_CLEANUP_UNCONFIRMED'",
+        "'PARSER_CLEANUP_UNCONFIRMED'"
+      ]
+    },
+    {
+      "test": "not ok 86 - refuses hardlink without materializing archive-controlled paths",
+      "error": [
+        "'PARSER_CLEANUP_UNCONFIRMED'",
+        "'PARSER_CLEANUP_UNCONFIRMED'"
+      ]
+    },
+    {
+      "test": "not ok 87 - refuses fifo without materializing archive-controlled paths",
+      "error": [
+        "'PARSER_CLEANUP_UNCONFIRMED'",
+        "'PARSER_CLEANUP_UNCONFIRMED'"
+      ]
+    },
+    {
+      "test": "not ok 88 - refuses device without materializing archive-controlled paths",
+      "error": [
+        "'PARSER_CLEANUP_UNCONFIRMED'",
+        "'PARSER_CLEANUP_UNCONFIRMED'"
+      ]
+    },
+    {
+      "test": "not ok 89 - cross-UID parser output stays host-readable inside a private job root",
+      "error": [
+        "'PARSER_CLEANUP_UNCONFIRMED'",
+        "'PARSER_CLEANUP_UNCONFIRMED'"
+      ]
+    },
+    {
+      "test": "not ok 90 - actual expansion, member, path/depth and entry limits preserve known/unknown coverage",
+      "error": [
+        "'PARSER_CLEANUP_UNCONFIRMED'",
+        "'PARSER_CLEANUP_UNCONFIRMED'"
+      ]
+    },
+    {
+      "test": "not ok 91 - truncated/corrupt archives and hidden trailing archives fail rather than clean-empty",
+      "error": [
+        "'PARSER_CLEANUP_UNCONFIRMED'",
+        "'PARSER_CLEANUP_UNCONFIRMED'"
+      ]
+    },
+    {
+      "test": "not ok 92 - archive-byte variation changes identities while all raw members stay equal",
+      "error": [
+        "'PARSER_CLEANUP_UNCONFIRMED'",
+        "'PARSER_CLEANUP_UNCONFIRMED'"
+      ]
+    },
+    {
+      "test": "not ok 93 - explicit raw producer mode computes additions/removals/modifications and exact manifest spans with unavailable analysis",
+      "error": [
+        "'STORE_BUSY_RECOVERY_REQUIRED'",
+        "'STORE_BUSY_RECOVERY_REQUIRED'"
+      ]
+    },
+    {
+      "test": "not ok 94 - replay preserves deterministic IDs; full run bytes and observation references remain distinct",
+      "error": [
+        "'STORE_BUSY_RECOVERY_REQUIRED'",
+        "'STORE_BUSY_RECOVERY_REQUIRED'"
+      ]
+    },
+    {
+      "test": "not ok 95 - missing/wrong subtree, partial inventory and binary differences remain visible",
+      "error": [
+        "'STORE_BUSY_RECOVERY_REQUIRED'",
+        "'STORE_BUSY_RECOVERY_REQUIRED'"
+      ]
+    },
+    {
+      "test": "not ok 96 - requested policy remains indeterminate; exit precedence retains simultaneous conditions",
+      "error": [
+        "'STORE_BUSY_RECOVERY_REQUIRED'",
+        "'STORE_BUSY_RECOVERY_REQUIRED'"
+      ]
+    },
+    {
+      "test": "not ok 100 - cancellation/timeout kills the whole parser job and cleans only its private scratch",
+      "error": [
+        "'PARSER_CLEANUP_UNCONFIRMED'",
+        "'PARSER_CLEANUP_UNCONFIRMED'"
+      ]
+    },
+    {
+      "test": "not ok 102 - CLI is redirected/JSON-safe, inspect resolves exact retained evidence; terminal controls remain inert",
+      "error": [
+        "'STORE_BUSY_RECOVERY_REQUIRED'",
+        "'STORE_BUSY_RECOVERY_REQUIRED'"
+      ]
+    },
+    {
+      "test": "not ok 103 - manifest parser omissions and metadata-only executable modes stay explicit",
+      "error": [
+        "'STORE_BUSY_RECOVERY_REQUIRED'",
+        "'STORE_BUSY_RECOVERY_REQUIRED'"
+      ]
+    },
+    {
+      "test": "not ok 104 - report persistence failure returns usable incomplete JSON while retaining raw evidence",
+      "error": [
+        "'STORE_BUSY_RECOVERY_REQUIRED'",
+        "'STORE_BUSY_RECOVERY_REQUIRED'"
+      ]
+    },
+    {
+      "test": "not ok 105 - parser backpressure and queued cancellation do not start extra work",
+      "error": [
+        "'PARSER_CLEANUP_UNCONFIRMED'",
+        "'PARSER_CLEANUP_UNCONFIRMED'"
+      ]
+    },
+    {
+      "test": "not ok 106 - opaque archive metadata never permits an invalid UTF-8 pathname",
+      "error": [
+        "'PARSER_CLEANUP_UNCONFIRMED'",
+        "'PARSER_CLEANUP_UNCONFIRMED'"
+      ]
+    },
+    {
+      "test": "not ok 107 - a supplied M0-style skipped heuristics stage cannot earn complete analysis",
+      "error": [
+        "'STORE_BUSY_RECOVERY_REQUIRED'",
+        "'STORE_BUSY_RECOVERY_REQUIRED'"
+      ]
+    },
+    {
+      "test": "not ok 109 - report identity and invocation cannot drift while validation/persistence awaits",
+      "error": [
+        "'STORE_BUSY_RECOVERY_REQUIRED'",
+        "'STORE_BUSY_RECOVERY_REQUIRED'"
+      ]
+    },
+    {
+      "test": "not ok 130 - explicit raw scoped npm fixture traverses actual safe producer/store/validator and cannot imply safety",
+      "error": [
+        "'STORE_BUSY_RECOVERY_REQUIRED'",
+        "'STORE_BUSY_RECOVERY_REQUIRED'"
+      ]
+    },
+    {
+      "test": "not ok 131 - advertised archive mismatch retains failed acquisition bytes, suppresses comparison and never fetches source",
+      "error": [
+        "'STORE_BUSY_RECOVERY_REQUIRED'",
+        "'STORE_BUSY_RECOVERY_REQUIRED'"
+      ]
+    },
+    {
+      "test": "not ok 132 - wrong source manifest subject cannot turn matching version metadata into source correspondence",
+      "error": [
+        "'STORE_BUSY_RECOVERY_REQUIRED'",
+        "'STORE_BUSY_RECOVERY_REQUIRED'"
+      ]
+    },
+    {
+      "test": "not ok 133 - complete inventories with ambiguous version labels keep one-sided records unresolved with the actual reason",
+      "error": [
+        "'STORE_BUSY_RECOVERY_REQUIRED'",
+        "'STORE_BUSY_RECOVERY_REQUIRED'"
+      ]
+    },
+    {
+      "test": "not ok 134 - wrong or missing subtree retains broad build context and unknown correspondence",
+      "error": [
+        "'STORE_BUSY_RECOVERY_REQUIRED'",
+        "'STORE_BUSY_RECOVERY_REQUIRED'"
+      ]
+    },
+    {
+      "test": "not ok 135 - offline source failure yields valid retained report with unknown absence and no clean result",
+      "error": [
+        "'STORE_BUSY_RECOVERY_REQUIRED'",
+        "'STORE_BUSY_RECOVERY_REQUIRED'"
+      ]
+    },
+    {
+      "test": "not ok 136 - conflicting tag candidates cannot earn exact correspondence even if selected member bytes match",
+      "error": [
+        "'STORE_BUSY_RECOVERY_REQUIRED'",
+        "'STORE_BUSY_RECOVERY_REQUIRED'"
+      ]
+    },
+    {
+      "test": "not ok 137 - submodule/LFS archive gaps stay explicit without fetching external objects: root/.gitmodules",
+      "error": [
+        "'STORE_BUSY_RECOVERY_REQUIRED'",
+        "'STORE_BUSY_RECOVERY_REQUIRED'"
+      ]
+    },
+    {
+      "test": "not ok 138 - submodule/LFS archive gaps stay explicit without fetching external objects: root/asset",
+      "error": [
+        "'STORE_BUSY_RECOVERY_REQUIRED'",
+        "'STORE_BUSY_RECOVERY_REQUIRED'"
+      ]
+    },
+    {
+      "test": "not ok 139 - retained exact metadata and source context bind report identity; later metadata changes create new evaluation",
+      "error": [
+        "'STORE_BUSY_RECOVERY_REQUIRED'",
+        "'STORE_BUSY_RECOVERY_REQUIRED'"
+      ]
+    },
+    {
+      "test": "not ok 141 - valid monorepo subtree retains package evidence and accounts for broader build context",
+      "error": [
+        "'STORE_BUSY_RECOVERY_REQUIRED'",
+        "'STORE_BUSY_RECOVERY_REQUIRED'"
+      ]
+    },
+    {
+      "test": "not ok 143 - unsupported source entry diagnostic is retained inertly with unknown remaining scope",
+      "error": [
+        "'STORE_BUSY_RECOVERY_REQUIRED'",
+        "'STORE_BUSY_RECOVERY_REQUIRED'"
+      ]
+    },
+    {
+      "test": "not ok 144 - missing npm SRI stays materially incomplete while raw observations remain available",
+      "error": [
+        "'STORE_BUSY_RECOVERY_REQUIRED'",
+        "'STORE_BUSY_RECOVERY_REQUIRED'"
+      ]
+    },
+    {
+      "test": "not ok 146 - fresh observation timestamps preserve report/change IDs and deterministic equivalence while full observations differ",
+      "error": [
+        "'STORE_BUSY_RECOVERY_REQUIRED'",
+        "'STORE_BUSY_RECOVERY_REQUIRED'"
+      ]
+    }
+  ],
+  "web": [
+    {
+      "test": "not ok 19 - public hosted reads expose only admitted sample facts, original downloads and explicit read-only bootstrap",
+      "error": [
+        "'listen EPERM: operation not permitted 0.0.0.0'",
+        "'EPERM'"
+      ]
+    },
+    {
+      "test": "not ok 20 - hosted Host, Origin and fetch-site checks reject proxy/header spoofing without trusting forwarded authority",
+      "error": [
+        "'listen EPERM: operation not permitted 0.0.0.0'",
+        "'EPERM'"
+      ]
+    },
+    {
+      "test": "not ok 21 - every hosted mutation fails before receiving or parsing its body and never calls the engine",
+      "error": [
+        "'listen EPERM: operation not permitted 0.0.0.0'",
+        "'EPERM'"
+      ]
+    },
+    {
+      "test": "not ok 22 - external public document navigation works while APIs, assets, origins and local mode remain strict",
+      "error": [
+        "'listen EPERM: operation not permitted 0.0.0.0'",
+        "'EPERM'"
+      ]
+    },
+    {
+      "test": "not ok 38 - allowlisted HTML routes stay public and inert; route URLs cannot access API facts or start analysis",
+      "error": [
+        "'listen EPERM: operation not permitted 127.0.0.1'",
+        "'EPERM'"
+      ]
+    },
+    {
+      "test": "not ok 57 - original observation identity and exact retained outcomes survive the local API",
+      "error": [
+        "'listen EPERM: operation not permitted 127.0.0.1'",
+        "'EPERM'"
+      ]
+    },
+    {
+      "test": "not ok 58 - Host, Origin, fetch-site, capability, methods and exact query allowlists fail closed",
+      "error": [
+        "'listen EPERM: operation not permitted 127.0.0.1'",
+        "'EPERM'"
+      ]
+    },
+    {
+      "test": "not ok 59 - evidence API preserves exact mutation artifact span and absent source side",
+      "error": [
+        "'listen EPERM: operation not permitted 127.0.0.1'",
+        "'EPERM'"
+      ]
+    },
+    {
+      "test": "not ok 61 - two observations sharing reportId retain distinct content handles and digests",
+      "error": [
+        "'listen EPERM: operation not permitted 127.0.0.1'",
+        "'EPERM'"
+      ]
+    },
+    {
+      "test": "not ok 70 - the service permits only two active evidence reads and stops on owned shutdown",
+      "error": [
+        "'listen EPERM: operation not permitted 127.0.0.1'",
+        "'EPERM'"
+      ]
+    },
+    {
+      "test": "not ok 72 - complete built CLI docs and setup include every actual parser flag and workflow",
+      "error": [
+        "'listen EPERM: operation not permitted 127.0.0.1'",
+        "'EPERM'"
+      ]
+    },
+    {
+      "test": "not ok 73 - privileged requests require exact origin, session, media type, bounds and strict input keys",
+      "error": [
+        "'listen EPERM: operation not permitted 127.0.0.1'",
+        "'EPERM'"
+      ]
+    },
+    {
+      "test": "not ok 74 - options reach one shared-engine call; terminal report, downloads and bundle keep exact facts",
+      "error": [
+        "'listen EPERM: operation not permitted 127.0.0.1'",
+        "'EPERM'"
+      ]
+    },
+    {
+      "test": "not ok 75 - cancel and no-report failures never claim acknowledgment, cleanup, or a verdict",
+      "error": [
+        "'listen EPERM: operation not permitted 127.0.0.1'",
+        "'EPERM'"
+      ]
+    },
+    {
+      "test": "not ok 76 - uploads have opaque IDs, original filenames, kind checks, local labels and bounded admission",
+      "error": [
+        "'listen EPERM: operation not permitted 127.0.0.1'",
+        "'EPERM'"
+      ]
+    },
+    {
+      "test": "not ok 77 - browser portable download/upload reopens original bytes and enforces corruption/omission semantics",
+      "error": [
+        "'listen EPERM: operation not permitted 127.0.0.1'",
+        "'EPERM'"
+      ]
+    }
+  ],
+  "dockerProbe": {
+    "exit": 1,
+    "diagnostic": "connect: operation not permitted"
+  },
+  "retainedScratch": "51 exact job records preserved in sandbox-retained-jobs.json. No lock/store removed; absent objects do not satisfy acknowledged-stopped-job recovery precondition."
+}

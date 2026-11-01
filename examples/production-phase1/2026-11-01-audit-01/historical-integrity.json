@@ -1,0 +1,32 @@
+{
+  "checkedAt": "2026-11-01T17:55:38.300647+00:00",
+  "checks": [
+    {
+      "manifest": "examples/production-phase1/2026-11-01-completion-01/receipt-manifest.json",
+      "manifestSha256": "1bf7a19170f8e506c5568b4cf4c89363110f1bdc6aed357c3399021b6044a0f1",
+      "files": 840,
+      "missing": [],
+      "changed": [],
+      "interpretation": "Byte verification, no rerun or acceptance attribution."
+    },
+    {
+      "manifest": "examples/production-phase1/2026-11-01-completion-01/source-final.json",
+      "manifestSha256": "b08a469c8380b9b2f5a1c33379ba007dffc2c7fb310a1c1aa607a0f38e2b9278",
+      "files": 1965,
+      "missing": [],
+      "changed": [
+        "docs/Approved Decision Register.md",
+        "docs/Production Phase 1 Implementation Plan.md"
+      ],
+      "interpretation": "Earlier source differs only in the two owner-signoff documents; later signoff source matches current bytes."
+    },
+    {
+      "manifest": "examples/production-phase1/2026-11-01-owner-signoff-01/source.json",
+      "manifestSha256": "7cd972785e33cfa4f468eebea274df31441996437540e9b2aa760a838ecbb92d",
+      "files": 1965,
+      "missing": [],
+      "changed": [],
+      "interpretation": "Byte verification, no rerun or acceptance attribution."
+    }
+  ]
+}

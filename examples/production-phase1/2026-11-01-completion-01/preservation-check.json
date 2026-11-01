@@ -1,0 +1,8 @@
+{
+  "historicalReportHashesMatchEarlierAudit": true,
+  "originalDefaultBytesMatch": true,
+  "webNoticesEqualOriginalHeadBytes": true,
+  "indexEmpty": true,
+  "head": "6985d3eeecdbdc33463458e8072a31e62e86109f",
+  "otherWorktrees": "worktree /Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko\nHEAD 6985d3eeecdbdc33463458e8072a31e62e86109f\nbranch refs/heads/main\n\nworktree /private/tmp/heurisko-handoff-s1-s3-audit-fixes\nHEAD 8ee85d45057730b8649a548985b55a38414525cc\nbranch refs/heads/fix/render-document-entry-20261101\n\nworktree /Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko-tui-visual-spike-v0.1.0\nHEAD 0e2be5a105548b237328879f29c969640d767ec5\nbranch refs/heads/experiment/tui-visual-spike-v0.1.0\n\n"
+}

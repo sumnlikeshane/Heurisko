@@ -27,11 +27,13 @@ The [loader](../core/src/reviewed-module.ts) fingerprints the derived compiled/s
 
 ## Acceptance limits
 
-These rules report retained evidence-backed script/entrypoint differences and unresolved file/build candidates. They do not establish maliciousness, package safety, provenance verification, general generated-code equivalence or complete Problem 04 coverage. Actual model/provider integration and monitoring remain separate.
+These rules report retained evidence-backed script/entrypoint differences and unresolved file/build candidates. They do not establish maliciousness, package safety, provenance verification, general generated-code equivalence or production readiness. Actual model/provider integration and monitoring remain separate.
 
 Two upstream quality limitations are preserved rather than silently changing the reviewed rule implementation:
 
 - Lifecycle removal severity/review priority still derives from the whole-file `FileChange.status`; a removed lifecycle key inside a modified manifest can remain medium priority despite the correct removal direction.
 - The entrypoint rule still says old/new values are unavailable. This is a module wording limitation where the producer retains those values.
 
-An exit of 0 means the configured checks completed without a configured policy violation. Source correspondence may remain unresolved and provenance unchecked; it is not a harmlessness result. Actual validation and generated report identities belong in the [final module intake record](../../docs/Final%20Module%20Intake.md).
+An exit of 0 means the configured checks completed without a configured policy violation. Source correspondence may remain unresolved and provenance unchecked; it is not a harmlessness result. [The integrated retained example](../../examples/final-hour/20261101-053912/integrated-55240e9/README.md) records an actual default CLI report with 16 findings, including one lifecycle addition, exit 0 with unresolved source correspondence and unchecked provenance. It is dated evidence, not general rule acceptance. [Original module-intake receipt](../../examples/final-hour/20261101-053912/module-intake.json) records the earlier e8b8116 boundary checks separately. Source/compiled/admission hashes, not package version alone, identify the runtime.
+
+The trusted boundary permits 128 candidate deltas, 16 KiB per delta, 256 KiB per manifest member and 1 MiB aggregate reads. Its checks bind exact pointers, values, member spans and absence; missing/corrupt/unsupported content makes analysis incomplete. Core tests `intelligence-boundary.test.mjs` and `reviewed-module.test.mjs` protect this integration. Q1/Q2 in [the roadmap](../../PRODUCTION_MASTER_ROADMAP.md#priorities-and-known-issues) own the preserved removal-priority and entrypoint-wording defects. Future development/provider source and its rights/tests are documented in [AI intake](../../docs/production-phase1/AI%20Source%20Intake.md); it is not this runtime.

@@ -1,0 +1,47 @@
+{
+  "host": {
+    "system": "Darwin",
+    "release": "25.6.0",
+    "machine": "arm64"
+  },
+  "started": "2026-11-01T16:28:00.960748+00:00",
+  "checks": [
+    {
+      "name": "versions",
+      "argv": [
+        "node",
+        "--version"
+      ],
+      "exit": 1,
+      "seconds": 0.205
+    },
+    {
+      "name": "pnpm-version",
+      "argv": [
+        "pnpm",
+        "--version"
+      ],
+      "exit": 1,
+      "seconds": 0.265
+    },
+    {
+      "name": "python-version",
+      "argv": [
+        ".venv/bin/python",
+        "--version"
+      ],
+      "exit": 1,
+      "seconds": 0.009
+    },
+    {
+      "name": "typecheck",
+      "argv": [
+        "pnpm",
+        "run",
+        "typecheck"
+      ],
+      "exit": 1,
+      "seconds": 10.279
+    }
+  ]
+}

@@ -1,0 +1,629 @@
+
+> @heurisko/web@0.1.0 test /private/tmp/heurisko-phase1-baseline-qpfxFY/apps/web
+> node --test tests/*.test.mjs
+
+TAP version 13
+# Subtest: a read deadline aborts the pending response exactly once, without announcing a service disconnect or retrying
+ok 1 - a read deadline aborts the pending response exactly once, without announcing a service disconnect or retrying
+  ---
+  duration_ms: 38.542333
+  type: 'test'
+  ...
+# Subtest: caller cancellation preserves its original reason instead of becoming a timeout
+ok 2 - caller cancellation preserves its original reason instead of becoming a timeout
+  ---
+  duration_ms: 2.235583
+  type: 'test'
+  ...
+# Subtest: the read deadline also bounds response body consumption after successful headers
+ok 3 - the read deadline also bounds response body consumption after successful headers
+  ---
+  duration_ms: 12.980708
+  type: 'test'
+  ...
+# Subtest: every documentation page, declared navigation link and anchor resolves from a deterministic manifest
+ok 4 - every documentation page, declared navigation link and anchor resolves from a deterministic manifest
+  ---
+  duration_ms: 4.039
+  type: 'test'
+  ...
+# Subtest: docs search spans workflows/reference/errors with section snippets and exact targets
+ok 5 - docs search spans workflows/reference/errors with section snippets and exact targets
+  ---
+  duration_ms: 5.058041
+  type: 'test'
+  ...
+# Subtest: inert markdown keeps semantic headings, ordered/bullet lists, table headings, exact selectable code and safe links
+ok 6 - inert markdown keeps semantic headings, ordered/bullet lists, table headings, exact selectable code and safe links
+  ---
+  duration_ms: 6.665708
+  type: 'test'
+  ...
+# Subtest: draft validation catches invalid combinations before admission, and canonical targets match core
+ok 7 - draft validation catches invalid combinations before admission, and canonical targets match core
+  ---
+  duration_ms: 45.297
+  type: 'test'
+  ...
+# Subtest: accepted job summaries bind actual core options and archive bytes without host paths
+ok 8 - accepted job summaries bind actual core options and archive bytes without host paths
+  ---
+  duration_ms: 21.490416
+  type: 'test'
+  ...
+# Subtest: latest stage facts retain repeated events and truthful cancel/error actions
+ok 9 - latest stage facts retain repeated events and truthful cancel/error actions
+  ---
+  duration_ms: 1.101417
+  type: 'test'
+  ...
+# Subtest: later-page file selection, path member records, explicit omissions and filtered selection stay grounded
+ok 10 - later-page file selection, path member records, explicit omissions and filtered selection stay grounded
+  ---
+  duration_ms: 7.738291
+  type: 'test'
+  ...
+# Subtest: reading guide/export/landing preserve independent outcomes, original identity and honest next actions
+ok 11 - reading guide/export/landing preserve independent outcomes, original identity and honest next actions
+  ---
+  duration_ms: 2.553083
+  type: 'test'
+  ...
+# Subtest: modal focus ring excludes disabled, hidden, inert and closed-details controls
+ok 12 - modal focus ring excludes disabled, hidden, inert and closed-details controls
+  ---
+  duration_ms: 0.305667
+  type: 'test'
+  ...
+# Subtest: closed raw-delta disclosure defers its third byte reader; initial source/artifact slots stay distinct
+ok 13 - closed raw-delta disclosure defers its third byte reader; initial source/artifact slots stay distinct
+  ---
+  duration_ms: 2.325125
+  type: 'test'
+  ...
+# Subtest: older failed jobs remain selectable after a later explicit start, and status reads never retry
+ok 14 - older failed jobs remain selectable after a later explicit start, and status reads never retry
+  ---
+  duration_ms: 2.743875
+  type: 'test'
+  ...
+# Subtest: multiword documentation snippets retain distant matches within a fixed bound
+ok 15 - multiword documentation snippets retain distant matches within a fixed bound
+  ---
+  duration_ms: 0.489542
+  type: 'test'
+  ...
+# Subtest: hosted mode requires an explicit Render HTTPS origin and port; ambient render variables cannot change local mode
+ok 16 - hosted mode requires an explicit Render HTTPS origin and port; ambient render variables cannot change local mode
+  ---
+  duration_ms: 1.476709
+  type: 'test'
+  ...
+# Subtest: public startup admits three hash-pinned committed captures and rejects changed sample bytes
+ok 17 - public startup admits three hash-pinned committed captures and rejects changed sample bytes
+  ---
+  duration_ms: 466.924166
+  type: 'test'
+  ...
+# Subtest: public hosted reads expose only admitted sample facts, original downloads and explicit read-only bootstrap
+not ok 18 - public hosted reads expose only admitted sample facts, original downloads and explicit read-only bootstrap
+  ---
+  duration_ms: 413.562458
+  type: 'test'
+  location: '/private/tmp/heurisko-phase1-baseline-qpfxFY/apps/web/tests/hosted.test.mjs:44:1'
+  failureType: 'testCodeFailure'
+  error: 'listen EPERM: operation not permitted 0.0.0.0'
+  code: 'EPERM'
+  stack: |-
+    Server.setupListenHandle [as _listen2] (node:net:1919:21)
+    listenInCluster (node:net:1998:12)
+    node:net:2207:7
+    process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+  ...
+# Subtest: hosted Host, Origin and fetch-site checks reject proxy/header spoofing without trusting forwarded authority
+not ok 19 - hosted Host, Origin and fetch-site checks reject proxy/header spoofing without trusting forwarded authority
+  ---
+  duration_ms: 2.501458
+  type: 'test'
+  location: '/private/tmp/heurisko-phase1-baseline-qpfxFY/apps/web/tests/hosted.test.mjs:60:1'
+  failureType: 'testCodeFailure'
+  error: 'listen EPERM: operation not permitted 0.0.0.0'
+  code: 'EPERM'
+  stack: |-
+    Server.setupListenHandle [as _listen2] (node:net:1919:21)
+    listenInCluster (node:net:1998:12)
+    node:net:2207:7
+    process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+  ...
+# Subtest: every hosted mutation fails before receiving or parsing its body and never calls the engine
+not ok 20 - every hosted mutation fails before receiving or parsing its body and never calls the engine
+  ---
+  duration_ms: 0.989958
+  type: 'test'
+  location: '/private/tmp/heurisko-phase1-baseline-qpfxFY/apps/web/tests/hosted.test.mjs:66:1'
+  failureType: 'testCodeFailure'
+  error: 'listen EPERM: operation not permitted 0.0.0.0'
+  code: 'EPERM'
+  stack: |-
+    Server.setupListenHandle [as _listen2] (node:net:1919:21)
+    listenInCluster (node:net:1998:12)
+    node:net:2207:7
+    process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+  ...
+# Subtest: external public document navigation works while APIs, assets, origins and local mode remain strict
+not ok 21 - external public document navigation works while APIs, assets, origins and local mode remain strict
+  ---
+  duration_ms: 1.212875
+  type: 'test'
+  location: '/private/tmp/heurisko-phase1-baseline-qpfxFY/apps/web/tests/hosted.test.mjs:74:1'
+  failureType: 'testCodeFailure'
+  error: 'listen EPERM: operation not permitted 0.0.0.0'
+  code: 'EPERM'
+  stack: |-
+    Server.setupListenHandle [as _listen2] (node:net:1919:21)
+    listenInCluster (node:net:1998:12)
+    node:net:2207:7
+    process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+  ...
+# Subtest: public UI presents captured reports and local setup without mounted upload/start/reconnect forms or portable writes
+ok 22 - public UI presents captured reports and local setup without mounted upload/start/reconnect forms or portable writes
+  ---
+  duration_ms: 413.259167
+  type: 'test'
+  ...
+# Subtest: mode projection preserves selected File identity and excludes inactive mode semantics without mutation
+ok 23 - mode projection preserves selected File identity and excludes inactive mode semantics without mutation
+  ---
+  duration_ms: 1.17325
+  type: 'test'
+  ...
+# Subtest: empty targets and missing source pair/replay associate issues with the useful correction field
+ok 24 - empty targets and missing source pair/replay associate issues with the useful correction field
+  ---
+  duration_ms: 0.216958
+  type: 'test'
+  ...
+# Subtest: first entry requires explicit example selection and the review exposes labels before technical details
+ok 25 - first entry requires explicit example selection and the review exposes labels before technical details
+  ---
+  duration_ms: 9.227458
+  type: 'test'
+  ...
+# Subtest: job states distinguish report availability, cancellation request and no-report failure
+ok 26 - job states distinguish report availability, cancellation request and no-report failure
+  ---
+  duration_ms: 1.851041
+  type: 'test'
+  ...
+# Subtest: open methods explain report-only missing bytes and format-specific recovery without admitting host paths
+ok 27 - open methods explain report-only missing bytes and format-specific recovery without admitting host paths
+  ---
+  duration_ms: 0.831875
+  type: 'test'
+  ...
+# Subtest: all doc sidebar/search/contents links cancel native document loads and navigate from the anchor itself
+ok 28 - all doc sidebar/search/contents links cancel native document loads and navigate from the anchor itself
+  ---
+  duration_ms: 3.179792
+  type: 'test'
+  ...
+# Subtest: native new-tab/download/external actions remain native; links cannot grant authority or target APIs
+ok 29 - native new-tab/download/external actions remain native; links cannot grant authority or target APIs
+  ---
+  duration_ms: 0.411875
+  type: 'test'
+  ...
+# Subtest: same-document repeated anchors scroll only the article without duplicate history or a window jump
+ok 30 - same-document repeated anchors scroll only the article without duplicate history or a window jump
+  ---
+  duration_ms: 1.225916
+  type: 'test'
+  ...
+# Subtest: Analyze after scrolling down leaves the document/shell/sidebar alone; stale navigation frames cannot jump it
+ok 31 - Analyze after scrolling down leaves the document/shell/sidebar alone; stale navigation frames cannot jump it
+  ---
+  duration_ms: 0.412709
+  type: 'test'
+  ...
+# Subtest: documentation anchors scroll only their containing article and reject targets outside it
+ok 32 - documentation anchors scroll only their containing article and reject targets outside it
+  ---
+  duration_ms: 0.112333
+  type: 'test'
+  ...
+# Subtest: a lost successful start response body reports unknown acknowledgment and never resubmits
+ok 33 - a lost successful start response body reports unknown acknowledgment and never resubmits
+  ---
+  duration_ms: 28.284792
+  type: 'test'
+  ...
+# Subtest: an upload body acknowledgment failure never uploads again or requests an investigation
+ok 34 - an upload body acknowledgment failure never uploads again or requests an investigation
+  ---
+  duration_ms: 27.898541
+  type: 'test'
+  ...
+# Subtest: destination allowlist separates draft/job/observation identity and rejects host-path disguises
+ok 35 - destination allowlist separates draft/job/observation identity and rejects host-path disguises
+  ---
+  duration_ms: 0.895333
+  type: 'test'
+  ...
+# Subtest: native history traverses destinations, restores same-process view and never stores authority or submits
+ok 36 - native history traverses destinations, restores same-process view and never stores authority or submits
+  ---
+  duration_ms: 1.174125
+  type: 'test'
+  ...
+# Subtest: allowlisted HTML routes stay public and inert; route URLs cannot access API facts or start analysis
+not ok 37 - allowlisted HTML routes stay public and inert; route URLs cannot access API facts or start analysis
+  ---
+  duration_ms: 11.416208
+  type: 'test'
+  location: '/private/tmp/heurisko-phase1-baseline-qpfxFY/apps/web/tests/navigation.test.mjs:41:1'
+  failureType: 'testCodeFailure'
+  error: 'listen EPERM: operation not permitted 127.0.0.1'
+  code: 'EPERM'
+  stack: |-
+    Server.setupListenHandle [as _listen2] (node:net:1919:21)
+    listenInCluster (node:net:1998:12)
+    node:net:2207:7
+    process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+  ...
+# Subtest: reports sharing report ID keep full distinct content/capture context
+ok 38 - reports sharing report ID keep full distinct content/capture context
+  ---
+  duration_ms: 8.71625
+  type: 'test'
+  ...
+# Subtest: draft, reopen and selected job render their own contexts without historical report/export actions
+ok 39 - draft, reopen and selected job render their own contexts without historical report/export actions
+  ---
+  duration_ms: 14.322042
+  type: 'test'
+  ...
+# Subtest: connection and operation errors separate authority, service failure and scoped input rejection
+ok 40 - connection and operation errors separate authority, service failure and scoped input rejection
+  ---
+  duration_ms: 0.126958
+  type: 'test'
+  ...
+# Subtest: session capability is consumed into memory, recovery preserves destination, errors never echo raw text
+ok 41 - session capability is consumed into memory, recovery preserves destination, errors never echo raw text
+  ---
+  duration_ms: 1.56175
+  type: 'test'
+  ...
+# Subtest: aborted reads preserve cancellation and do not falsely announce service loss
+ok 42 - aborted reads preserve cancellation and do not falsely announce service loss
+  ---
+  duration_ms: 1.040333
+  type: 'test'
+  ...
+# Subtest: observation admission snapshots bytes before asynchronous validation
+ok 43 - observation admission snapshots bytes before asynchronous validation
+  ---
+  duration_ms: 122.42775
+  type: 'test'
+  ...
+# Subtest: exposed observation bytes cannot mutate admitted report downloads
+ok 44 - exposed observation bytes cannot mutate admitted report downloads
+  ---
+  duration_ms: 88.077208
+  type: 'test'
+  ...
+# Subtest: finding pagination reaches every retained finding including records beyond the old 100-match ceiling
+ok 45 - finding pagination reaches every retained finding including records beyond the old 100-match ceiling
+  ---
+  duration_ms: 2.938833
+  type: 'test'
+  ...
+# Subtest: virtual directory navigation includes only real retained path descendants and permits parent traversal
+ok 46 - virtual directory navigation includes only real retained path descendants and permits parent traversal
+  ---
+  duration_ms: 7.706667
+  type: 'test'
+  ...
+# Subtest: evidence labels distinguish side, path, manifest field and real half-open byte ranges
+ok 47 - evidence labels distinguish side, path, manifest field and real half-open byte ranges
+  ---
+  duration_ms: 0.193541
+  type: 'test'
+  ...
+# Subtest: member filters keep omissions reachable and distinguish retained, absent and unsupported states
+ok 48 - member filters keep omissions reachable and distinguish retained, absent and unsupported states
+  ---
+  duration_ms: 1.978542
+  type: 'test'
+  ...
+# Subtest: auxiliary evidence paging restores by observation handle and never merges equal report IDs
+ok 49 - auxiliary evidence paging restores by observation handle and never merges equal report IDs
+  ---
+  duration_ms: 47.006125
+  type: 'test'
+  ...
+# Subtest: manifest evidence labels retain both the path and recorded field
+ok 50 - manifest evidence labels retain both the path and recorded field
+  ---
+  duration_ms: 7.112834
+  type: 'test'
+  ...
+# Subtest: all related changes and stage errors remain reachable through bounded remembered pages
+ok 51 - all related changes and stage errors remain reachable through bounded remembered pages
+  ---
+  duration_ms: 23.511791
+  type: 'test'
+  ...
+# Subtest: selected omissions retain their stage and byte count and recorded request options stay inspectable
+ok 52 - selected omissions retain their stage and byte count and recorded request options stay inspectable
+  ---
+  duration_ms: 6.908583
+  type: 'test'
+  ...
+# Subtest: source subtree renders repository root distinctly from unrecorded metadata
+ok 53 - source subtree renders repository root distinctly from unrecorded metadata
+  ---
+  duration_ms: 4.920375
+  type: 'test'
+  ...
+# Subtest: upload snapshots selected bytes before asynchronous initialization
+ok 54 - upload snapshots selected bytes before asynchronous initialization
+  ---
+  duration_ms: 20.033458
+  type: 'test'
+  ...
+# Subtest: upload summary remains bound to disk when caller mutates after write completion
+ok 55 - upload summary remains bound to disk when caller mutates after write completion
+  ---
+  duration_ms: 73.387417
+  type: 'test'
+  ...
+# Subtest: original observation identity and exact retained outcomes survive the local API
+not ok 56 - original observation identity and exact retained outcomes survive the local API
+  ---
+  duration_ms: 112.631291
+  type: 'test'
+  location: '/private/tmp/heurisko-phase1-baseline-qpfxFY/apps/web/tests/viewer.test.mjs:23:1'
+  failureType: 'testCodeFailure'
+  error: 'listen EPERM: operation not permitted 127.0.0.1'
+  code: 'EPERM'
+  stack: |-
+    Server.setupListenHandle [as _listen2] (node:net:1919:21)
+    listenInCluster (node:net:1998:12)
+    node:net:2207:7
+    process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+  ...
+# Subtest: Host, Origin, fetch-site, capability, methods and exact query allowlists fail closed
+not ok 57 - Host, Origin, fetch-site, capability, methods and exact query allowlists fail closed
+  ---
+  duration_ms: 91.864958
+  type: 'test'
+  location: '/private/tmp/heurisko-phase1-baseline-qpfxFY/apps/web/tests/viewer.test.mjs:26:1'
+  failureType: 'testCodeFailure'
+  error: 'listen EPERM: operation not permitted 127.0.0.1'
+  code: 'EPERM'
+  stack: |-
+    Server.setupListenHandle [as _listen2] (node:net:1919:21)
+    listenInCluster (node:net:1998:12)
+    node:net:2207:7
+    process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+  ...
+# Subtest: evidence API preserves exact mutation artifact span and absent source side
+not ok 58 - evidence API preserves exact mutation artifact span and absent source side
+  ---
+  duration_ms: 83.116375
+  type: 'test'
+  location: '/private/tmp/heurisko-phase1-baseline-qpfxFY/apps/web/tests/viewer.test.mjs:33:1'
+  failureType: 'testCodeFailure'
+  error: 'listen EPERM: operation not permitted 127.0.0.1'
+  code: 'EPERM'
+  stack: |-
+    Server.setupListenHandle [as _listen2] (node:net:1919:21)
+    listenInCluster (node:net:1998:12)
+    node:net:2207:7
+    process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+  ...
+# Subtest: B2 and monorepo have unchanged IDs, raw changes and original coverage
+ok 59 - B2 and monorepo have unchanged IDs, raw changes and original coverage
+  ---
+  duration_ms: 268.453167
+  type: 'test'
+  ...
+# Subtest: two observations sharing reportId retain distinct content handles and digests
+not ok 60 - two observations sharing reportId retain distinct content handles and digests
+  ---
+  duration_ms: 160.982166
+  type: 'test'
+  location: '/private/tmp/heurisko-phase1-baseline-qpfxFY/apps/web/tests/viewer.test.mjs:44:1'
+  failureType: 'testCodeFailure'
+  error: 'listen EPERM: operation not permitted 127.0.0.1'
+  code: 'EPERM'
+  stack: |-
+    Server.setupListenHandle [as _listen2] (node:net:1919:21)
+    listenInCluster (node:net:1998:12)
+    node:net:2207:7
+    process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+  ...
+# Subtest: raw duplicate keys, unsafe integers, unsupported schema and validator failure are rejected
+ok 61 - raw duplicate keys, unsafe integers, unsupported schema and validator failure are rejected
+  ---
+  duration_ms: 310.6105
+  type: 'test'
+  ...
+# Subtest: portable directory export/reopen preserves original report and exact citation bytes
+ok 62 - portable directory export/reopen preserves original report and exact citation bytes
+  ---
+  duration_ms: 226.952084
+  type: 'test'
+  ...
+# Subtest: portable import rejects corruption, symlinks, duplicate manifest keys and report binding changes
+ok 63 - portable import rejects corruption, symlinks, duplicate manifest keys and report binding changes
+  ---
+  duration_ms: 455.829792
+  type: 'test'
+  ...
+# Subtest: missing source bytes produce an explicit partial export without changing report contentState
+ok 64 - missing source bytes produce an explicit partial export without changing report contentState
+  ---
+  duration_ms: 178.068167
+  type: 'test'
+  ...
+# Subtest: report and blob limits, missing bytes and invalid ranges remain distinguishable
+ok 65 - report and blob limits, missing bytes and invalid ranges remain distinguishable
+  ---
+  duration_ms: 155.750958
+  type: 'test'
+  ...
+# Subtest: transport cancellation, missing included blob and false omission declarations fail closed
+ok 66 - transport cancellation, missing included blob and false omission declarations fail closed
+  ---
+  duration_ms: 249.854208
+  type: 'test'
+  ...
+# Subtest: synthetic markup, controls, bidi and model text stay inert; real outcome fields stay visible
+ok 67 - synthetic markup, controls, bidi and model text stay inert; real outcome fields stay visible
+  ---
+  duration_ms: 105.72
+  type: 'test'
+  ...
+# Subtest: all accepted synthetic G0 fixture states render without inferring a verdict
+ok 68 - all accepted synthetic G0 fixture states render without inferring a verdict
+  ---
+  duration_ms: 499.927584
+  type: 'test'
+  ...
+# Subtest: the service permits only two active evidence reads and stops on owned shutdown
+not ok 69 - the service permits only two active evidence reads and stops on owned shutdown
+  ---
+  duration_ms: 72.460375
+  type: 'test'
+  location: '/private/tmp/heurisko-phase1-baseline-qpfxFY/apps/web/tests/viewer.test.mjs:83:1'
+  failureType: 'testCodeFailure'
+  error: 'listen EPERM: operation not permitted 127.0.0.1'
+  code: 'EPERM'
+  stack: |-
+    Server.setupListenHandle [as _listen2] (node:net:1919:21)
+    listenInCluster (node:net:1998:12)
+    node:net:2207:7
+    process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+  ...
+# Subtest: the genuine monorepo export reopens beyond the package-metadata parser node limit
+ok 70 - the genuine monorepo export reopens beyond the package-metadata parser node limit
+  ---
+  duration_ms: 822.713583
+  type: 'test'
+  ...
+# Subtest: complete built CLI docs and setup include every actual parser flag and workflow
+not ok 71 - complete built CLI docs and setup include every actual parser flag and workflow
+  ---
+  duration_ms: 8.101542
+  type: 'test'
+  location: '/private/tmp/heurisko-phase1-baseline-qpfxFY/apps/web/tests/workflow.test.mjs:22:1'
+  failureType: 'testCodeFailure'
+  error: 'listen EPERM: operation not permitted 127.0.0.1'
+  code: 'EPERM'
+  stack: |-
+    Server.setupListenHandle [as _listen2] (node:net:1919:21)
+    listenInCluster (node:net:1998:12)
+    node:net:2207:7
+    process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+  ...
+# Subtest: privileged requests require exact origin, session, media type, bounds and strict input keys
+not ok 72 - privileged requests require exact origin, session, media type, bounds and strict input keys
+  ---
+  duration_ms: 4.561583
+  type: 'test'
+  location: '/private/tmp/heurisko-phase1-baseline-qpfxFY/apps/web/tests/workflow.test.mjs:29:1'
+  failureType: 'testCodeFailure'
+  error: 'listen EPERM: operation not permitted 127.0.0.1'
+  code: 'EPERM'
+  stack: |-
+    Server.setupListenHandle [as _listen2] (node:net:1919:21)
+    listenInCluster (node:net:1998:12)
+    node:net:2207:7
+    process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+  ...
+# Subtest: options reach one shared-engine call; terminal report, downloads and bundle keep exact facts
+not ok 73 - options reach one shared-engine call; terminal report, downloads and bundle keep exact facts
+  ---
+  duration_ms: 93.309083
+  type: 'test'
+  location: '/private/tmp/heurisko-phase1-baseline-qpfxFY/apps/web/tests/workflow.test.mjs:38:1'
+  failureType: 'testCodeFailure'
+  error: 'listen EPERM: operation not permitted 127.0.0.1'
+  code: 'EPERM'
+  stack: |-
+    Server.setupListenHandle [as _listen2] (node:net:1919:21)
+    listenInCluster (node:net:1998:12)
+    node:net:2207:7
+    process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+  ...
+# Subtest: cancel and no-report failures never claim acknowledgment, cleanup, or a verdict
+not ok 74 - cancel and no-report failures never claim acknowledgment, cleanup, or a verdict
+  ---
+  duration_ms: 1.890583
+  type: 'test'
+  location: '/private/tmp/heurisko-phase1-baseline-qpfxFY/apps/web/tests/workflow.test.mjs:48:1'
+  failureType: 'testCodeFailure'
+  error: 'listen EPERM: operation not permitted 127.0.0.1'
+  code: 'EPERM'
+  stack: |-
+    Server.setupListenHandle [as _listen2] (node:net:1919:21)
+    listenInCluster (node:net:1998:12)
+    node:net:2207:7
+    process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+  ...
+# Subtest: uploads have opaque IDs, original filenames, kind checks, local labels and bounded admission
+not ok 75 - uploads have opaque IDs, original filenames, kind checks, local labels and bounded admission
+  ---
+  duration_ms: 13.07075
+  type: 'test'
+  location: '/private/tmp/heurisko-phase1-baseline-qpfxFY/apps/web/tests/workflow.test.mjs:57:1'
+  failureType: 'testCodeFailure'
+  error: 'listen EPERM: operation not permitted 127.0.0.1'
+  code: 'EPERM'
+  stack: |-
+    Server.setupListenHandle [as _listen2] (node:net:1919:21)
+    listenInCluster (node:net:1998:12)
+    node:net:2207:7
+    process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+  ...
+# Subtest: browser portable download/upload reopens original bytes and enforces corruption/omission semantics
+not ok 76 - browser portable download/upload reopens original bytes and enforces corruption/omission semantics
+  ---
+  duration_ms: 258.395291
+  type: 'test'
+  location: '/private/tmp/heurisko-phase1-baseline-qpfxFY/apps/web/tests/workflow.test.mjs:68:1'
+  failureType: 'testCodeFailure'
+  error: 'listen EPERM: operation not permitted 127.0.0.1'
+  code: 'EPERM'
+  stack: |-
+    Server.setupListenHandle [as _listen2] (node:net:1919:21)
+    listenInCluster (node:net:1998:12)
+    node:net:2207:7
+    process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+  ...
+# Subtest: dynamic report-only and workspace digest reopen validate without fresh acquisition or host paths
+ok 77 - dynamic report-only and workspace digest reopen validate without fresh acquisition or host paths
+  ---
+  duration_ms: 263.5585
+  type: 'test'
+  ...
+# Subtest: portable wrapper preserves the genuine scoped monorepo beyond the small metadata decoder size
+ok 78 - portable wrapper preserves the genuine scoped monorepo beyond the small metadata decoder size
+  ---
+  duration_ms: 1245.287125
+  type: 'test'
+  ...
+1..78
+# tests 78
+# suites 0
+# pass 62
+# fail 16
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 4014.229292
+/private/tmp/heurisko-phase1-baseline-qpfxFY/apps/web:
+ ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  @heurisko/web@0.1.0 test: `node --test tests/*.test.mjs`
+Exit status 1

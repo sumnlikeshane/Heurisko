@@ -1,0 +1,1 @@
+PASS synthetic M2 prompt packaging: fixed instruction/data separation, hostile payload containment, no tool channel, preserved citations, and whole-excerpt size limits

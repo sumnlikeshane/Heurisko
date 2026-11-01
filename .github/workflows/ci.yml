@@ -11,17 +11,19 @@ permissions:
 
 jobs:
   contracts:
-    name: Contracts and S1–S3 producer checks
+    name: Contracts and core investigation boundaries
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
       - name: Set up Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
         with:
           node-version: '22.23.4'
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
         with:
           python-version: '3.13'
       - name: Install pinned contract tooling
@@ -29,32 +31,42 @@ jobs:
           npm install --global pnpm@10.14.0 --ignore-scripts --no-audit --no-fund
           pnpm install --frozen-lockfile --ignore-scripts
           python3 -m venv .venv
-          .venv/bin/python -m pip install -r requirements-contracts.txt
+          .venv/bin/python -m pip install --require-hashes -r requirements-contracts.txt
       - name: Typecheck contracts
         run: pnpm run typecheck
       - name: Validate contracts and synthetic handshake
         run: PATH="$PWD/.venv/bin:$PATH" pnpm run test:contracts
-      - name: Test S1 runtime boundaries and cross-language identity
-        run: pnpm run test:foundation
       - name: Prepare digest-pinned static parser runtime
         run: docker pull python:3.13.18-slim-bookworm@sha256:281d39ff02e3b389401586134ff9e6572954687822a58055ec07a60ded4e0b7f
       - name: Verify static parser resource boundary
         run: node scripts/check-parser-boundary.mjs .heurisko/ci-parser-boundary.json
-      - name: Test S2 archive, network, replay and CLI boundaries
-        run: pnpm run test:s2
-      - name: Test S3 exact npm, source candidates and provenance boundary
-        run: pnpm run test:s3
+      - name: Test all core investigation boundaries serially
+        run: node --test --test-concurrency=1 packages/core/tests/*.test.mjs
       - name: Verify retained S3 corpus offline
         run: node scripts/verify-s3-capture.mjs examples/s3/current --historical
 
-      - name: Test audit repairs and late parser creation
-        run: pnpm run test:audit
-      - name: Test default intelligence identity and retained-content boundary
-        run: node --test packages/core/tests/intelligence-boundary.test.mjs packages/core/tests/reviewed-module.test.mjs
       - name: Verify earlier audit replay as historical evidence
         run: node scripts/verify-s3-capture.mjs examples/audit-fixes/current --historical
       - name: Verify earlier host-readable parser checkpoint as historical evidence
         run: node scripts/verify-s3-capture.mjs examples/handoff/current --historical
+
+      - name: Confirm native Linux amd64 host and Docker engine
+        run: |
+          test "$(uname -m)" = x86_64
+          test "$RUNNER_ARCH" = X64
+          test "$(docker info --format '{{.Architecture}}')" = x86_64
+          node -e "if(process.platform!=='linux'||process.arch!=='x64')process.exit(1)"
+      - name: Retain native Phase 1 lifecycle, corpus, npm and resource evidence
+        run: PATH="$PWD/.venv/bin:$PATH" python3 scripts/phase1-checks.py docs/production-phase1/native-validation.json .heurisko/ci-phase1-measurements
+      - name: Upload source-bound Phase 1 native evidence including failures
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2; official tag verified locally
+        with:
+          name: phase1-native-linux-amd64-${{ github.event.pull_request.head.sha || github.sha }}
+          path: .heurisko/ci-phase1*
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 30
 
   web:
     name: Local web evidence boundaries
@@ -62,12 +74,14 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
       - name: Set up Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
         with:
           node-version: '22.23.4'
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
         with:
           python-version: '3.13'
       - name: Install pinned viewer and validator tooling
@@ -75,7 +89,7 @@ jobs:
           npm install --global pnpm@10.14.0 --ignore-scripts --no-audit --no-fund
           pnpm install --frozen-lockfile --ignore-scripts
           python3 -m venv .venv
-          .venv/bin/python -m pip install -r requirements-contracts.txt
+          .venv/bin/python -m pip install --require-hashes -r requirements-contracts.txt
       - name: Build and typecheck browser and local reader
         run: pnpm run typecheck
       - name: Test read-only web boundaries, exact evidence and portable reopen
@@ -83,49 +97,48 @@ jobs:
       - name: Check shared report reader and integrated TUI model regressions
         run: node --test integration/part4/tests/readiness.test.mjs packages/tui/tests/*.test.mjs
 
+  intelligence-development:
+    name: Offline AI source checks (runtime inactive)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+      - name: Set up Node
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+        with:
+          node-version: '22.23.4'
+      - name: Set up Python
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
+        with:
+          python-version: '3.13'
+      - name: Install pinned offline test tooling
+        run: |
+          npm install --global pnpm@10.14.0 --ignore-scripts --no-audit --no-fund
+          pnpm install --frozen-lockfile --ignore-scripts
+          python3 -m venv .venv
+          .venv/bin/python -m pip install --require-hashes -r requirements-contracts.txt
+      - name: Build and typecheck development package
+        run: pnpm --filter @heurisko/intelligence build && pnpm --filter @heurisko/intelligence typecheck
+      - name: Verify selected source and fixture bytes
+        run: node scripts/verify-intelligence-intake.mjs
+      - name: Test development package without provider or model access
+        env:
+          OPENROUTER_API_KEY: ''
+        run: |
+          node --test packages/intelligence/tests/*.mjs
+          for validator in packages/intelligence/tests/validate_*.py; do .venv/bin/python "$validator"; done
+      - name: Scan present source, configuration and receipt text for common credentials
+        run: node scripts/check-phase1-secrets.mjs
+
   documentation:
     name: Documentation integrity
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
-      - name: Verify research snapshot checksums
-        run: cd docs/Heurisko_Research && sha256sum -c SHA256SUMS.txt
-      - name: Check local Markdown links
-        run: |
-          python3 - <<'PY'
-          from pathlib import Path
-          from urllib.parse import unquote
-          import re
-          import sys
-
-          files = [Path('README.md'), Path('AGENTS.md')]
-          files.extend(sorted(Path('docs').rglob('*.md')))
-          files.extend(sorted(Path('examples').rglob('*.md')))
-          files.extend(sorted(Path('apps/web').rglob('*.md')))
-          issues = []
-          pattern = re.compile(r'(?<!!)\[[^\]]*\]\(([^)]+)\)')
-          for source in files:
-              for raw in pattern.findall(source.read_text(errors='replace')):
-                  target = unquote(raw.strip().split()[0].strip('<>'))
-                  if not target or target.startswith(('http://', 'https://', 'mailto:', 'data:')):
-                      continue
-                  path, _, anchor = target.partition('#')
-                  destination = (source.parent / path).resolve() if path else source.resolve()
-                  if not destination.exists():
-                      issues.append(f'{source}: missing link target {target}')
-                      continue
-                  if anchor and destination.suffix.lower() == '.md':
-                      headings = []
-                      for line in destination.read_text(errors='replace').splitlines():
-                          match = re.match(r'^#{1,6}\s+(.+?)\s*#*$', line)
-                          if match:
-                              heading = re.sub(r'[^\w -]', '', match.group(1).lower()).strip().replace(' ', '-')
-                              headings.append(heading)
-                      if anchor not in headings:
-                          issues.append(f'{source}: missing heading anchor #{anchor} in {target}')
-          if issues:
-              print('\n'.join(issues))
-              sys.exit(1)
-          print(f'Checked relative Markdown links in {len(files)} files.')
-          PY
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+      - name: Check Markdown navigation and preserved research hashes
+        run: python3 scripts/check-docs.py

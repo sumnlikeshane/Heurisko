@@ -1,8 +1,8 @@
-# Render deployment preparation
+# Render public-readonly operations
 
-The prepared Render Blueprint runs a public **captured-report explorer**. It serves Home, documentation and three pinned public observations: the integrated deterministic inert local mutation, historical ts-pattern 5.9.0 and historical incomplete-source zod 4.6.7. Capture times, original report bytes and retained evidence remain unchanged. Opening them does not acquire a release or run analysis.
+The checked-in Render Blueprint configures a public **captured-report explorer**. It serves Home, documentation and three pinned public observations: the integrated deterministic inert local mutation, historical ts-pattern 5.9.0 and historical incomplete-source zod 4.6.7. Capture times, original report bytes and retained evidence remain unchanged. Opening them does not acquire a release or run analysis.
 
-This is a prepared deployment option, not an accepted substitute for the requested live hosted analyzer. Deployment and actual Render runtime acceptance must be recorded separately. Local `pnpm web` continues to provide the admitted full investigation workflow.
+The [operating guide](../HEURISKO_COMPLETE_GUIDE.md#9-how-the-live-render-server-works) records a dated observation of the public explorer on 1 November 2026. Exact deployed commit is unverified; this reference makes no fresh health/deployment claim. Local `pnpm web` provides the supported live investigation workflow. Hosted live analysis remains roadmap Phase 4.
 
 ## Configuration
 
@@ -38,3 +38,9 @@ docker build --platform linux/amd64 -f Dockerfile.render -t heurisko-render-chec
 Render builds Linux amd64 images. Select that platform explicitly when verifying from an Apple Silicon host; the admitted requirements retain macOS arm64/Linux amd64 wheel hashes. The initial native Linux arm64 attempt correctly rejected the unadmitted `rpds-py` wheel hash; no hash or dependency policy was weakened. [Render Docker platform guidance](https://github.com/render-oss/skills/blob/main/skills/render-docker/SKILL.md#platform-specifics)
 
 The Docker build requires network access to exact existing package versions and digest-pinned base-image registries. Source/unit tests alone do not certify that container build or a real Render deployment passed. Hosted HTTP regressions exercise anonymous sample reads, original download bytes, spoofed Host/Origin/forwarded headers and mutation rejection before parsing; local-mode tests continue to exercise capability-protected investigation and import/export behavior. Final deployment receipts must identify the exact commit, image/build result, URL, health and actual browser evidence journey.
+
+## Deployment and recovery workflow
+
+Prepare source/image locally, run relevant hosted/local regressions, inspect build context and public sample identities, then obtain the outstanding deployment authorization under [AGENTS.md](../AGENTS.md). After an authorized deploy, record exact source/image identity, actual Render live-deploy status, health/mode and an original-byte evidence journey. Health alone proves neither deployed source identity nor parser availability. Roll back through Render to the previously reviewed image/commit if the hosted checks fail; verify mode, sample hashes and mutation rejection again. Do not enable writes or attach a Docker socket as a recovery shortcut.
+
+There are no user jobs/uploads to recover in this profile. Public handles expire with the process; reopen captures from the catalog. Configuration/origin failure should fail closed. Private parser recovery belongs only to local operation and its exact-job script; it is not a hosted retry capability.

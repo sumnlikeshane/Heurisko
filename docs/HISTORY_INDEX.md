@@ -1,0 +1,29 @@
+# Historical evidence
+
+These records describe earlier decisions, sources and executed checkpoints. They are outside current product navigation and do not authorize work or define today's status. Start with [current documentation](README.md). The [disposition ledger](production-phase1/Document%20Disposition.md) records the content review and completed retirement decisions.
+
+## Retained originals and why
+
+| Material | Specific retention purpose |
+|---|---|
+| [Original declaration](../HACKATHON.md) and Git history | Required initial declaration, original authorship and exact historical source; no new repository or event submission procedure. |
+| [Approved phase/agreement sources](Approved/) and [original handoff checksum list](Approved/ORIGINAL_HANDOFF_SHA256SUMS.txt) | Evidence of product/trust approvals, amendments and delegated G0 acceptance. Seven source pages retain original bytes. The checksum list describes the pre-migration bundle, not current paths. Two phases were reconstructed from in-chat approvals as their provenance notes state. Current constraints/amendments are in [decisions](Approved%20Decision%20Register.md). |
+| [Research snapshot](Heurisko_Research/) and [15-entry checksum manifest](Heurisko_Research/SHA256SUMS.txt) | Original dated alternatives, primary-source qualification and claim limits. Preserved together because the manifest binds the complete dossier; optional TUI/four-person/pre-repository language is superseded. Refresh selected dependencies when admitted; do not treat old vendor observations as current facts. |
+| [Organizer DOCX/PDF](Governing/) | Original requirements/provenance and unresolved redistribution rights. Event deadlines, scoring and model-server eligibility do not control ongoing product work; evidence, rights and engineering constraints carried forward are explicit in current decisions. No new publication rights are assumed. |
+| [G0 candidate](G0_Candidate/README_G0.md) and original results/log | Exact historical candidate/fixture context for the pre-audit synthetic validation receipt. It is parked outside the installed workspace; `packages/contracts` is the only maintained contract. Old pending-merge/review statements are dated. |
+| [Examples](../examples/README.md) and `integration/part4/receipts/` | Original generated reports, raw evidence, logs, failure/repair/recovery and interface observations. Each establishes only its recorded source/configuration and time. Reports/blobs/machine receipts and checksum-bound prose stay immutable. |
+| [AI intake](production-phase1/AI%20Source%20Intake.md) and manifest | Exact upstream source/fixture derivation, attribution and inactive-runtime boundary. Hash-pinned imported prose can retain obsolete references; it is not product instructions. |
+
+## Retired instructions
+
+Obsolete plans/prompts/handoffs/audits are retained in exact Git history, not copied into a second archive. Current technical rules moved to the foundation/module/usage references; unresolved findings moved to the Phase 1 plan and roadmap. Inbound links from unpinned narrative indexes now name the historical commit explicitly; their recorded results did not change.
+
+| Original subject | Historical source / current home |
+|---|---|
+| Event eight-hour implementation/session gates and decisions F01–F35 | [Original implementation plan](https://github.com/sumnlikeshane/Heurisko/blob/6985d3eeecdbdc33463458e8072a31e62e86109f/docs/Shane%20Implementation%20Plan.md); current boundaries in [foundation](production-phase1/Foundation%20Contract.md), current phase/workflow in [Phase 1](Production%20Phase%201%20Implementation%20Plan.md) and [AGENTS](../AGENTS.md). |
+| Final-hour narration and integration handoffs | [Demo runbook](https://github.com/sumnlikeshane/Heurisko/blob/6985d3eeecdbdc33463458e8072a31e62e86109f/docs/Final%20Hour%20Demo%20Runbook.md), [workspace checkpoint](https://github.com/sumnlikeshane/Heurisko/blob/6985d3eeecdbdc33463458e8072a31e62e86109f/docs/HANDOFF_CURRENT.md), [S1–S3 checkpoint](https://github.com/sumnlikeshane/Heurisko/blob/6985d3eeecdbdc33463458e8072a31e62e86109f/docs/HANDOFF_S1_S3.md); actual reports/receipts remain in examples; current operation in [the guide](../HEURISKO_COMPLETE_GUIDE.md). |
+| Deterministic module intake and v12 review | [Original intake](https://github.com/sumnlikeshane/Heurisko/blob/6985d3eeecdbdc33463458e8072a31e62e86109f/docs/Final%20Module%20Intake.md), [independent review](https://github.com/sumnlikeshane/Heurisko/blob/6985d3eeecdbdc33463458e8072a31e62e86109f/docs/Malhar%20M1%20M2%20Handoff%20Review.md); admitted runtime/limits in [module reference](../packages/intelligence-reviewed/README.md), findings Q1/Q2/AI1/Q4 in roadmap. |
+| TUI visual and Parts 4–6 audits | [Visual audit](https://github.com/sumnlikeshane/Heurisko/blob/6985d3eeecdbdc33463458e8072a31e62e86109f/docs/Part%204%20TUI%20Visual%20Audit.md), [functional audit](https://github.com/sumnlikeshane/Heurisko/blob/6985d3eeecdbdc33463458e8072a31e62e86109f/docs/Shane%20Parts%204%E2%80%936%20Audit.md); regression map in foundation, actual receipts unchanged, remaining acceptance in Phase 1/UX1–UX3. |
+| Web benchmark/gap/overhaul prompts and parallel plan | [Original gap research and U01–U18 results](https://github.com/sumnlikeshane/Heurisko/blob/6985d3eeecdbdc33463458e8072a31e62e86109f/docs/Web%20Application%20Gap%20Plan.md); real receipts under `examples/web-*`, current usage in web/CLI guides, open acceptance in Phase 1/roadmap. |
+
+Three small citation landings remain solely to keep checksum-bound original prose navigable: [web continuation](WEB_CONTINUATION.md), [TUI readiness](Part%204%20Integration%20Readiness%20Report.md), and [team checklist](Team%20Development%20Checklist.md). They contain no old next-session prompts or active phase instructions. The ledger identifies the exact pinned inbound record for each; they are not pending cleanup candidates.

@@ -1,0 +1,45 @@
+Browser tab: 1237325268, Title: "Heurisko · Evidence workspace", URL: "http://127.0.0.1:43219/workspace/open".
+0 AXWebArea Heurisko · Evidence workspace, URL: 127.0.0.1:43219/workspace/open
+	1 container root
+		2 link Description: Skip to content, Value: 127.0.0.1:43219/workspace/open#workspace
+		3 container
+			4 link Description: Heurisko home, Value: 127.0.0.1:43219/
+			5 container Main navigation
+				6 link Description: Home, Value: 127.0.0.1:43219/
+				7 link Description: Documentation, Value: 127.0.0.1:43219/docs/start/quickstart
+				8 link Description: Workspace, Value: 127.0.0.1:43219/workspace/new
+		9 container
+			11 container Workspace tasks
+				12 link Description: New investigation, Value: 127.0.0.1:43219/workspace/new
+				13 link Description: Open evidence, Value: 127.0.0.1:43219/workspace/open
+				14 link Description: Jobs, Value: 127.0.0.1:43219/workspace/jobs
+				15 link Description: Reports, Value: 127.0.0.1:43219/workspace/reports
+			16 button (collapsed) Reader · connected, Secondary Actions: Expand
+				17 text Reader · 
+				18 text connected
+		19 container workspace
+			231 text OPEN EVIDENCE
+			232 heading Continue from retained evidence, Value: 1
+				233 text Continue from retained evidence
+			234 text Open an existing observation without starting an investigation or refreshing registry and provenance checks.
+			235 container
+				236 heading Choose your saved format, Value: 2
+					237 text Choose your saved format
+				238 text Open method
+				239 pop up button (collapsed, settable) Open method, Value: Portable evidence file (.heurisko.json), ID: open-kind, Secondary Actions: Expand
+					240 menu
+						241 (selected) Portable evidence file (.heurisko.json)
+						242 Original report JSON
+						243 Report-content reference in this workspace
+				244 text Portable evidence file
+				245 button Portable evidence file, ID: open-portable
+				246 text At most 100 MiB. Carries original report bytes, available retained blobs and explicit omissions.
+				247 container
+					248 text Use public data. Opening a file admits its bytes to local workspace storage; retention is not automatic deletion. A process restart loses old handles. Reopen the file/reference, or start the reader with an explicit matching report/store pair. 
+					249 link Description: Format and reopening details, Value: 127.0.0.1:43219/docs/workflows/portable
+				250 button Open validated observation
+				251 link Description: See admitted reports, Value: 127.0.0.1:43219/workspace/reports
+		229 container
+			230 text Exact bytes. Inspectable evidence. Visible limits. Local reader · one shared engine
+
+The focused UI element is 245 button Portable evidence file, ID: open-portable
