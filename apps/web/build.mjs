@@ -11,7 +11,7 @@ await build({entryPoints:['src/main.tsx'],bundle:true,outdir:'dist/assets',entry
 });
 await copyFile('src/style.css','dist/assets/app.css');
 await copyFile('src/index.html','dist/index.html');
-await build({entryPoints:['server/main.ts','server/service.ts','server/observation.ts','tooling/export.ts','tooling/transport.ts','server/workspace.ts','tooling/portable.ts','src/render-check.tsx','src/navigation.ts','src/api.ts','src/link.tsx'],bundle:true,outdir:'dist',entryNames:'[name]',format:'esm',platform:'node',target:'node22',packages:'external',external:['../../../integration/part4/dist/report-reader.js'],sourcemap:false});
+await build({entryPoints:['server/main.ts','server/service.ts','server/hosted.ts','server/observation.ts','tooling/export.ts','tooling/transport.ts','server/workspace.ts','tooling/portable.ts','src/render-check.tsx','src/navigation.ts','src/api.ts','src/link.tsx'],bundle:true,outdir:'dist',entryNames:'[name]',format:'esm',platform:'node',target:'node22',packages:'external',external:['../../../integration/part4/dist/report-reader.js'],sourcemap:false});
 
 // Deterministic, admitted page manifest; canonical references remain complete.
 await build({entryPoints:['src/doc-model.ts','src/input-review.ts','src/report-view.ts'],bundle:true,outdir:'dist',format:'esm',platform:'node',packages:'external'});

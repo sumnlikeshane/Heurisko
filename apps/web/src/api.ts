@@ -1,4 +1,7 @@
 import type { ArtifactIdentity, InvestigationReport } from '@heurisko/contracts';
+// Server-rendered deployment metadata grants no mutation authority. The server
+// independently rejects every mutation in public sample mode.
+export const publicReadOnlyMode = typeof document !== 'undefined' && document.querySelector('meta[name="heurisko-mode"]')?.getAttribute('content') === 'public-readonly';
 export type CatalogEntry = {
     handle: string;
     reportId: string;

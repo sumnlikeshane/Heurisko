@@ -12,19 +12,34 @@ const security = {
     'X-Content-Type-Options': 'nosniff', 'Referrer-Policy': 'no-referrer', 'Cache-Control': 'no-store', 'Cross-Origin-Resource-Policy': 'same-origin', 'Cross-Origin-Opener-Policy': 'same-origin', 'Permissions-Policy': 'camera=(), microphone=(), geolocation=()'
 };
 function tokenEqual(a: string, b: string) { const x = Buffer.from(a), y = Buffer.from(b); return x.length === y.length && timingSafeEqual(x, y); }
-export async function startViewer(initial: Observation[], port = 0, settings: { workspaceRoot?: string; engine?: typeof investigate } = {}) {
+// This origin is trusted process configuration, never a forwarded/request header.
+export function publicHostedOrigin(value: string): string {
+    let url: URL;
+    try { url = new URL(value); } catch { throw Error('HOSTED_ORIGIN_INVALID'); }
+    if (url.protocol !== 'https:' || url.username || url.password || url.port || url.pathname !== '/' || url.search || url.hash || !/^[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.onrender\.com$/.test(url.hostname)) throw Error('HOSTED_ORIGIN_INVALID');
+    return url.origin;
+}
+export async function startViewer(initial: Observation[], port = 0, settings: { workspaceRoot?: string; engine?: typeof investigate; publicReadOnlyOrigin?: string } = {}) {
+    const publicReadOnly = settings.publicReadOnlyOrigin !== undefined;
+    const configuredOrigin = publicReadOnly ? publicHostedOrigin(settings.publicReadOnlyOrigin!) : '';
     const observations = [...initial];
     if (observations.length > 16)
         throw Error('CATALOG_LIMIT');
     const workspace = new WebWorkspace(settings.workspaceRoot, settings.engine);
     const docs = await readFile(fileURLToPath(new URL('cli-docs.json', import.meta.url)));
-    const capability = randomBytes(32).toString('hex'), catalog = new Map(observations.map(o => [o.handle, o]));
+    const capability = publicReadOnly ? '' : randomBytes(32).toString('hex'), catalog = new Map(observations.map(o => [o.handle, o]));
     const compiled = new Map<string, {
         bytes: Buffer;
         type: string;
     }>();
     for (const [route, [path, type]] of assets)
         compiled.set(route, { bytes: await readFile(fileURLToPath(new URL(path!, import.meta.url))), type: type! });
+    if (publicReadOnly) {
+        const html = compiled.get('/')!;
+        const source = html.bytes.toString('utf8');
+        if (!source.includes('name="heurisko-mode" content="local"')) throw Error('HOSTED_BOOTSTRAP_MISSING');
+        html.bytes = Buffer.from(source.replace('name="heurisko-mode" content="local"', 'name="heurisko-mode" content="public-readonly"'));
+    }
     let origin = '', host = '', active = 0;
     function respond(res: ServerResponse, status: number, value: unknown) { const body = Buffer.from(JSON.stringify(value)); res.writeHead(status, { 'Content-Type': 'application/json; charset=utf-8', ...security }); res.end(body); }
     const server = createServer(async (req, res) => {
@@ -40,6 +55,10 @@ export async function startViewer(initial: Observation[], port = 0, settings: { 
                 return respond(res, 403, { error: 'ORIGIN_DENIED' });
             if (req.method !== 'GET' && req.method !== 'POST')
                 return respond(res, 405, { error: 'METHOD_DENIED' });
+            // Hosted samples are immutable. Reject every mutation before route,
+            // media-type or body parsing; no upload/job/store method is reached.
+            if (publicReadOnly && req.method !== 'GET')
+                return respond(res, 405, { error: 'HOSTED_READ_ONLY' });
             if (req.method === 'GET' && (req.headers['transfer-encoding'] || req.headers['content-length'] && req.headers['content-length'] !== '0'))
                 return respond(res, 400, { error: 'BODY_DENIED' });
             if (!req.url || req.url.length > 2048)
@@ -49,6 +68,11 @@ export async function startViewer(initial: Observation[], port = 0, settings: { 
             const url = new URL(req.url, origin);
             if (url.origin !== origin || /%|\\|\.\./.test(url.pathname))
                 return respond(res, 400, { error: 'INVALID_ROUTE' });
+            if (url.pathname === '/healthz') {
+                if (req.method !== 'GET') return respond(res, 405, { error: 'METHOD_DENIED' });
+                if (url.search) return respond(res, 400, { error: 'INVALID_QUERY' });
+                return respond(res, 200, { status: 'ok', mode: publicReadOnly ? 'public-readonly' : 'local' });
+            }
             const asset = compiled.get(url.pathname) ?? (uiPath(url.pathname) ? compiled.get('/') : undefined);
             if (asset) {
                 if (req.method !== 'GET') return respond(res, 405, { error: 'METHOD_DENIED' });
@@ -60,7 +84,7 @@ export async function startViewer(initial: Observation[], port = 0, settings: { 
             }
             if (!url.pathname.startsWith('/api/'))
                 return respond(res, 404, { error: 'NOT_FOUND' });
-            if (!tokenEqual(String(req.headers['x-heurisko-session'] ?? ''), capability))
+            if (!publicReadOnly && !tokenEqual(String(req.headers['x-heurisko-session'] ?? ''), capability))
                 return respond(res, 403, { error: 'SESSION_DENIED' });
             const admit = (observation: Observation) => { if (observations.length >= 16) throw Error('CATALOG_LIMIT'); observations.push(observation); catalog.set(observation.handle, observation); };
             if (req.method === 'POST') {
@@ -176,13 +200,14 @@ export async function startViewer(initial: Observation[], port = 0, settings: { 
     server.keepAliveTimeout = 2000;
     server.maxRequestsPerSocket = 100;
     server.maxConnections = 32;
-    await new Promise<void>((accept, reject) => { server.once('error', reject); server.listen(port, '127.0.0.1', () => accept()); });
+    await new Promise<void>((accept, reject) => { server.once('error', reject); server.listen(port, publicReadOnly ? '0.0.0.0' : '127.0.0.1', () => accept()); });
     const address = server.address();
     if (!address || typeof address === 'string')
         throw Error('LISTEN_FAILED');
-    host = `127.0.0.1:${address.port}`;
-    origin = `http://${host}`;
-    return { origin, capability, url: `${origin}/#session=${capability}`, async close() { await workspace.close(); server.closeAllConnections(); await new Promise<void>((accept, reject) => server.close(e => e ? reject(e) : accept())); } };
+    const listenOrigin = `http://127.0.0.1:${address.port}`;
+    origin = configuredOrigin || listenOrigin;
+    host = new URL(origin).host;
+    return { origin, listenOrigin, capability, url: publicReadOnly ? origin : `${origin}/#session=${capability}`, async close() { await workspace.close(); server.closeAllConnections(); await new Promise<void>((accept, reject) => server.close(e => e ? reject(e) : accept())); } };
 }
 
 async function body(req: IncomingMessage, limit: number): Promise<Buffer> {

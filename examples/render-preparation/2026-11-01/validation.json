@@ -1,0 +1,118 @@
+{
+  "version": "heurisko-render-preparation-validation-v1",
+  "preparedAt": "2026-11-01T00:44:36.287201+00:00",
+  "scope": "Public captured-report explorer only; local full investigation behavior remains. No claim of hosted live analysis or Render deployment.",
+  "sourceManifestSha256": "f505fd92dfca52654bba5dc10287c92df0e9f642e0d5d0dc8726c7bbce7073f9",
+  "runtime": {
+    "node": "22.23.4",
+    "pnpm": "10.14.0",
+    "pythonValidator": "3.13.2",
+    "targetPlatform": "linux/amd64"
+  },
+  "checks": [
+    {
+      "command": "pnpm --filter @heurisko/web build",
+      "result": "passed",
+      "finalSource": true
+    },
+    {
+      "command": "pnpm --filter @heurisko/web typecheck",
+      "result": "passed",
+      "finalSource": true
+    },
+    {
+      "command": "pnpm --filter @heurisko/web test",
+      "result": "passed",
+      "tests": 77,
+      "pass": 77,
+      "fail": 0,
+      "note": "Full suite before final same-byte sample-admission tightening; existing local regressions plus six hosted regressions."
+    },
+    {
+      "command": "node --test apps/web/tests/hosted.test.mjs",
+      "result": "passed",
+      "tests": 6,
+      "pass": 6,
+      "fail": 0,
+      "finalSource": true,
+      "coverage": [
+        "three hash-pinned captures and corrupt startup input rejection",
+        "anonymous health/catalog/docs and exact report/bundle/member bytes",
+        "exact Host/Origin/fetch-site and forwarded-header spoof rejection",
+        "all eight mutation routes reject before receiving a declared 900000000-byte body",
+        "public UI has no upload/start/reconnect/portable-write forms"
+      ],
+      "note": "Repeated after final Home wording change on the final local compiled sources."
+    }
+  ],
+  "dockerAttempts": [
+    {
+      "command": "docker build -f Dockerfile.render -t heurisko-render-check:20261101 .",
+      "platform": "linux/arm64 (local default)",
+      "result": "failed_closed",
+      "reason": "Admitted requirements have macOS arm64/Linux amd64 hashes; Linux arm64 rpds-py wheel was rejected.",
+      "package": "rpds-py==2026.9.1",
+      "observedRejectedWheelSha256": "457866b85daf5034296666168b84a69e0b2e89dc4f1af102b46f6448a60b9063",
+      "policyChanged": false,
+      "note": "Selected observed failure facts, not a complete unedited build transcript."
+    },
+    {
+      "command": "docker build --platform linux/amd64 -f Dockerfile.render -t heurisko-render-check:20261101 .",
+      "platform": "linux/amd64",
+      "result": "passed",
+      "observed": "Hash-pinned Python and frozen pnpm installs and complete workspace build/export passed.",
+      "imageId": "sha256:e28e8677c403e2e1c21a110a7a772e2752a2abf84cc67deaf463f316ea474060",
+      "scope": "Pre-final image: before same-byte sample admission and Home wording tightening; actual source hashes are in container-smoke.json."
+    },
+    {
+      "command": "docker build --platform linux/amd64 -f Dockerfile.render -t heurisko-render-check:20261101 .",
+      "platform": "linux/amd64",
+      "result": "passed",
+      "imageId": "sha256:633ca8cd922456a7514a4e20f81e1c3b1cacb2f0f79fac4184bc51f1198d77d0",
+      "imageConfigSha256": "7b49332fcb489d0649bab7ef84a2468004f575aa75d5d01b5d2afc02b48e65b0",
+      "scope": "Rebuilt after final same-byte sample admission and Home wording changes; full hash-pinned/frozen installation, complete workspace compilation and image export passed. Final-image runtime smoke is separate from the completed older-image smoke."
+    }
+  ],
+  "containerSmoke": {
+    "result": "passed",
+    "receipt": "container-smoke.json",
+    "imageId": "sha256:e28e8677c403e2e1c21a110a7a772e2752a2abf84cc67deaf463f316ea474060",
+    "scope": "Completed pre-final image runtime only. It differs from final source in loader snapshot admission and one Home wording line; no final image runtime pass is inferred.",
+    "observed": [
+      "uid10001",
+      "read-only root",
+      "network none",
+      "512MiB memory",
+      "cap-drop ALL",
+      "no new privileges",
+      "health/UI bootstrap/catalog3",
+      "three original report SHA256 values",
+      "787 exact retained member bytes",
+      "16 deterministic findings",
+      "spoofed Host/Origin rejected",
+      "mutation rejected",
+      "zero jobs",
+      "exact owned container absence confirmed after initial --rm race"
+    ]
+  },
+  "remoteDeployment": {
+    "performedByThisLane": false,
+    "status": "not_verified"
+  },
+  "limits": [
+    "This mode cannot start live investigations or accept uploads.",
+    "Actual Render proxy/health/browser acceptance is separate from local container checks.",
+    "No parser/engine/G0/dependency/resource/isolation boundary was weakened.",
+    "No commit, staging, push, deployment or external message by this lane."
+  ],
+  "finalizedAt": "2026-11-01T00:48:17.584723+00:00",
+  "publicationAssembly": {
+    "fullWorkspaceBuildTypecheck": "passed",
+    "finalFullWebSuite": {
+      "tests": 77,
+      "pass": 77,
+      "fail": 0
+    },
+    "sourceChangesAfterContainerBuild": "render.yaml deployment branch and hosting documentation select main as explicitly requested; no runtime/build/image input changed."
+  }
+}

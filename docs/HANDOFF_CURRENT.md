@@ -8,6 +8,8 @@ Updated 1 November 2026, Asia/Kolkata. Shane authorized finishing the current Ma
 
 [Final assembled validation](../examples/final-integration/2026-11-01/README.md) binds the reviewed publication copy, source hashes and metadata redactions; exact-head remote CI is recorded separately.
 
+The [Render Docker deployment](Render%20Deployment.md) serves a public captured-report explorer; full live investigations continue locally. [Hosted preparation validation](../examples/render-preparation/2026-11-01/README.md) records the exact tested scope. The [runtime follow-up](../examples/final-integration/2026-11-01/runtime-followup.json) records the completed serial cleanup recheck separately from the original retained attempt.
+
 ## Get the complete checkpoint
 
 From an existing clone, first preserve your own uncommitted work and inspect status. Fetch the handoff branch and create your own continuation branch:

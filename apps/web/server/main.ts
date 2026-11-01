@@ -1,8 +1,17 @@
 import { openObservation, type Observation } from './observation.js';
 import { importObservation } from '../tooling/transport.js';
 import { startViewer } from './service.js';
+import { hostedSettings, openPublicSamples } from './hosted.js';
 async function main() {
     const args = process.argv.slice(2), observations: Observation[] = [];
+    const hosted = hostedSettings(process.env);
+    if (hosted) {
+        if (args.length) throw Error('HOSTED_ARGUMENTS_DENIED');
+        const viewer = await startViewer(await openPublicSamples(), hosted.port, { publicReadOnlyOrigin: hosted.origin });
+        process.stdout.write(`Heurisko public captured-report explorer\n${viewer.origin}\nRead-only public examples; live analysis, uploads and reopening are unavailable on this host.\n`);
+        for (const signal of ['SIGINT', 'SIGTERM'] as const) process.once(signal, () => { void viewer.close().then(() => process.exit(0)); });
+        return;
+    }
     let port = 0;
     for (let i = 0; i < args.length; i++) {
         if (args[i] === '--report' && args[i + 1] && args[i + 2] === '--store' && args[i + 3]) {
@@ -26,4 +35,4 @@ async function main() {
     for (const signal of ['SIGINT', 'SIGTERM'] as const)
         process.once(signal, () => { void viewer.close().then(() => process.exit(0)); });
 }
-main().catch(() => { process.stderr.write('OPEN_FAILED: local workspace could not start.\nUsage: node apps/web/dist/main.js --report REPORT --store STORE [--report REPORT --store STORE] [--import EXPORT_DIRECTORY] [--port PORT]\n'); process.exitCode = 1; });
+main().catch(() => { process.stderr.write('OPEN_FAILED: workspace could not start. Check mode, trusted origin, port, validator and retained sample bytes.\nLocal usage: node apps/web/dist/main.js --report REPORT --store STORE [--report REPORT --store STORE] [--import EXPORT_DIRECTORY] [--port PORT]\n'); process.exitCode = 1; });

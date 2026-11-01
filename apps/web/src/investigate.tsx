@@ -6,8 +6,8 @@ import { validateDraft, draftRequest, errorHelp, type DraftRequest, type InputIs
 import type { JobSnapshot } from '../server/workspace.js';
 
 type ExportKind = 'report' | 'bundle' | 'export';
-export function ExportActions({ handle, loaded }: { handle: string; loaded: Loaded }) {
-  const [kind, setKind] = useState<ExportKind>('export'), [busy, setBusy] = useState(false), [error, setError] = useState(''), [message, setMessage] = useState('');
+export function ExportActions({ handle, loaded, publicReadOnly = false }: { handle: string; loaded: Loaded; publicReadOnly?: boolean }) {
+  const [kind, setKind] = useState<ExportKind>(publicReadOnly ? 'report' : 'export'), [busy, setBusy] = useState(false), [error, setError] = useState(''), [message, setMessage] = useState('');
   const artifact = loaded.report.bundle.artifact;
   const choices = {
     report: 'Original report JSON: exact encoded report bytes and evidence references. Reopen with Report JSON. Referenced evidence bytes are not embedded.',
@@ -15,7 +15,7 @@ export function ExportActions({ handle, loaded }: { handle: string; loaded: Load
     export: 'Portable evidence: original report, retained bytes within the export limits, and manifest omissions. Reopen with Portable evidence (.heurisko.json).'
   };
   async function save() {
-    if (busy) return;
+    if (busy || publicReadOnly && kind === 'export') return;
     setBusy(true); setError(''); setMessage('Preparing the selected format…');
     try {
       const name = [artifact.packageName ?? artifact.artifactFilename, artifact.version, artifact.captureTime.slice(0, 10)].filter(Boolean).join('-').replace(/[^A-Za-z0-9._-]+/g, '-').slice(0, 110) || 'investigation';
@@ -27,11 +27,12 @@ export function ExportActions({ handle, loaded }: { handle: string; loaded: Load
     <p>Captured {safe(artifact.captureTime)}. Original report: <code>{safe(loaded.reportContentRef)}</code></p>
     <label className="search" htmlFor={'export-' + handle}>Choose what to save</label>
     <select id={'export-' + handle} value={kind} disabled={busy} onChange={e => { setKind(e.target.value as ExportKind); setMessage(''); setError(''); }}>
-      <option value="export">Portable evidence · report and retained bytes</option><option value="report">Original report JSON · references only</option><option value="bundle">EvidenceBundle JSON · comparison records only</option>
+      {!publicReadOnly && <option value="export">Portable evidence · report and retained bytes</option>}<option value="report">Original report JSON · references only</option><option value="bundle">EvidenceBundle JSON · comparison records only</option>
     </select><p>{choices[kind]}</p>
     {kind === 'export' && <p className="field-help">100 MiB envelope, at most 64 MiB included blobs. Missing, oversized or unavailable bytes stay explicit omissions. {loaded.transport ? `${loaded.transport.included} included / ${loaded.transport.omitted} omitted in the opened transport; this export checks availability again.` : 'Byte availability is checked while preparing the export.'}</p>}
     <p className="field-help">Capture time, original bytes, digests, omission reasons and rights notices are preserved. Upstream redistribution rights still apply.</p>
-    <div className="actions"><button className="primary" disabled={busy} onClick={() => void save()}>{busy ? 'Preparing download…' : 'Prepare download'}</button><AppLink href="/workspace/open">Open a saved export</AppLink><AppLink href="/docs/workflows/portable">Format and reopen guide</AppLink></div>
+    {publicReadOnly && <p className="field-help">This public sample host offers report and bundle downloads. Portable export and reopening require the local workspace; referenced blobs are not embedded in these downloads.</p>}
+    <div className="actions"><button className="primary" disabled={busy} onClick={() => void save()}>{busy ? 'Preparing download…' : 'Prepare download'}</button>{!publicReadOnly && <AppLink href="/workspace/open">Open a saved export</AppLink>}<AppLink href="/docs/workflows/portable">Format and reopen guide</AppLink></div>
     <p role="status">{message}</p>{error && <div role="alert" className="notice danger"><p>Download could not be prepared. {errorHelp(error)}</p><details><summary>Diagnostic code</summary><code>{safe(error)}</code></details><p>Choose a format and explicitly prepare it again when ready.</p></div>}
   </details>;
 }

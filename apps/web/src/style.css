@@ -56,3 +56,5 @@ h1,h2,h3,p{margin-top:0}h1{font-size:30px;line-height:1.22;letter-spacing:-.025e
 .doc-search-results mark{color:#eafffb;background:#16443d;border-radius:2px;padding:0 2px}
 .doc-search-results .search-empty{padding:18px 2px}
 @media(max-width:800px){.docs-search{padding:12px}.docs-search-input{gap:9px}.docs-search-input input{font-size:15px}.docs-search>p{line-height:1.7}.docs-results-heading{align-items:flex-start;flex-direction:column;gap:4px}.docs-results-heading>[role=status]{text-align:left}.doc-search-results{max-height:40dvh;padding-inline:12px}.docs-results-heading{margin-inline:-12px;padding-inline:12px}.doc-search-results article>a{flex-wrap:wrap}.search-result-arrow{opacity:1}}
+/* Explicit public sample hosting; local workspace behavior stays separate. */
+.hosted-notice{display:flex;flex-wrap:wrap;align-items:center;gap:.6rem 1rem;padding:.85rem max(1rem,calc((100vw - 1440px)/2));border-bottom:1px solid #21484b;background:#0b191a;color:#d6eeee;font-size:.85rem}.hosted-notice strong{color:#80eff5}.hosted-notice span{flex:1;min-width:15rem}
