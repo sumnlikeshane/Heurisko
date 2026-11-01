@@ -215,6 +215,30 @@ test('S06 symlinked store directories are refused without following them or chan
   assert.equal((await fs.readFile(join(actual,'blobs',e.contentRef.slice(7)))).toString(),'inert');
 });
 
+test('S03/S06 a delta citation cannot widen its linked member byte or unsupported line scope',async()=>{
+  const original=load('examples/s3/current/local-mutation-replay.report.json');
+  const delta=original.bundle.evidence.find(e=>e.kind==='manifest_delta'&&e.locator.metadataKey==='scripts.postinstall');
+  const data=JSON.parse(await fs.readFile(join(realStore,'blobs',delta.contentRef.slice(7)),'utf8'));
+  const change=original.bundle.changes.find(c=>c.evidenceIds.includes(delta.evidenceId));
+  const member=original.bundle.evidence.find(e=>e.kind==='artifact_member'&&e.contentSha256===data.artifactContentRef&&change.evidenceIds.includes(e.evidenceId));
+  const path=member.locator.path;
+  for(const [locator,reason]of [
+    [{path,startByte:0,endByte:0},'INVALID_RANGE'],
+    [{path,startLine:1,endLine:1},'LINE_RANGE_UNSUPPORTED'],
+    [{path,startByte:0},'LINE_RANGE_UNSUPPORTED'],
+    [{path,startByte:data.artifact.startByte,endByte:data.artifact.endByte},undefined],
+    [{path},undefined],
+  ]) {
+    const report=structuredClone(original),updated=report.bundle.evidence.find(e=>e.evidenceId===member.evidenceId);
+    updated.locator=locator;updated.evidenceId=evidenceId(report.bundle,updated);
+    // Locator changes get their actual new ID throughout this valid report.
+    const reader=await ReportReader.openJSON(JSON.stringify(report).replaceAll(member.evidenceId,updated.evidenceId),realStore);
+    const result=await reader.readCitation(delta.evidenceId,'artifact');
+    if(reason) {assert.equal(result.kind,'metadata_only');assert.equal(result.reason,reason);}
+    else {assert.equal(result.kind,'content');assert.deepEqual(result.recordedRange,{startByte:data.artifact.startByte,endByte:data.artifact.endByte});}
+  }
+});
+
 test('S08 cancellation remains a request until an injected engine settles; no cleanup acknowledgment is invented',async()=>{
   let finish,seenSignal;const r=f0();const gate=new Promise(resolve=>{finish=resolve;});
   const task=startInvestigation(r.bundle.input,r.bundle.input.analysisOptions,{engine:async(_input,_options,context)=>{seenSignal=context.signal;context.onProgress({stage:'acquire',status:'running'});return gate;}});

@@ -1,3 +1,25 @@
+# Current continuation: Shane-owned audit — 1 November 2026
+
+Shane authorized an audit/repair of existing Parts 4–6 before new Malhar integration. Continue from [the concrete audit](Shane%20Parts%204%E2%80%936%20Audit.md) and [fresh validation](../examples/shane-parts456-audit/2026-11-01/README.md); do not restart the web overhaul or infer acceptance from its older receipts. The current browser workflows remain local/shared-engine and process-local. Part 5 monitoring is not authorized/started. Browser report/bundle/portable exports exist; TUI export and durable monitoring remain unavailable. No intelligence/model/verifier/policy/rebuild adoption or Git/publication action is performed.
+
+The current audit repairs strict report-byte intake, recorded availability/span parity, immutable web admission, explicit root labels and bounded documentation-search excerpts. TUI repairs and remaining human/joint gates are recorded separately in the same audit. Its actual browser attempt was blocked by the extension; native Chrome reached the local URL but provided no inspectable content tree, and screenshot capture failed. These attempts establish no new full GUI/AT acceptance. Historical partial browser observations below remain scoped to their own builds.
+
+**Assembly boundary:** incoming integration changed the active engine/index/dependency graph during validation. The failed active build and source-change rejection remain in the fresh receipt. Final scoped validation uses an isolated baseline-plus-audit assembly; incoming code/results are not modified or adopted by this audit. Reconcile that lane separately before claiming the active checkout passes as a whole.
+
+Everything below is preserved continuation history.
+
+# Current continuation: local end-to-end overhaul — 1 November 2026
+
+Shane and Codex own the webapp. Shane authorized a cohesive implementation across the existing `apps/web`, then requested neutral near-black styling like the terminal. The shell, Home/Docs, draft/review/run, job/read reliability, report overview/evidence workbench, Save and Open have been revised. Continue from the [same gap backlog and U01–U18 matrix](Web%20Application%20Gap%20Plan.md#overhaul-execution--1-november-2026); do not restart the already implemented W2–W4 packages. [Fresh receipts and local review](../examples/web-overhaul/current/README.md) distinguish code-bound automated/API/CLI results from actual browser observations and remaining acceptance.
+
+Public Home/Docs have no permanent connection band. Workspace uses one task rail and scoped connection recovery. Only the active report section mounts; file/finding/omission pages and auxiliary evidence pages have observation-scoped memory. Reads have a 12-second client deadline, independent job/catalog failure state and explicit read-only retry; successful mutation-body loss blocks an uncertain start and directs users to Jobs. No automatic retry is added. Exact original report bytes, imports, evidence verification, all service/parser limits and memory-only launch authority remain unchanged.
+
+Current product TUI source already provides default TTY entry, `tui REPORT`, live exact npm/local review/progress/cancel and evidence reading. Its human visual acceptance, shared G3 and unavailable monitoring/model/export work are separate. Earlier text below is historical, including past blocked-browser statements and old ownership.
+
+No dependency, G0/core trust change, new product analysis/model/verifier/policy/rebuild/monitor, Git publication, deployment or external message is authorized by this overhaul. Product models: none. Coding assistance: Codex. Keep private launch URLs out of files and receipts.
+
+Everything below preserves earlier continuation history.
+
 # Current continuation: W2–W4 implemented, W5 GUI gate blocked — 1 November 2026
 
 **Published-checkpoint preparation:** Shane approved the current complete workspace commit, branch push and PR #3 update. [Malhar start here](HANDOFF_CURRENT.md) supplies checkout/setup and the next web tasks. Historical no-Git statements below describe earlier tasks; future changes still need their own approval.

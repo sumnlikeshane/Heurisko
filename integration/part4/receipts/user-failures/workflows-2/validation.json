@@ -1,0 +1,84 @@
+{
+  "checks": [
+    {
+      "check": "HISTORICAL",
+      "size": [
+        160,
+        40
+      ],
+      "passed": true
+    },
+    {
+      "check": "Malhar analysis module not supplied",
+      "size": [
+        160,
+        40
+      ],
+      "passed": true
+    },
+    {
+      "check": "unavailable explanation and successes reachable at 160",
+      "passed": true
+    },
+    {
+      "check": "Artifact root/",
+      "size": [
+        160,
+        40
+      ],
+      "passed": true
+    },
+    {
+      "check": "modified / different",
+      "size": [
+        160,
+        40
+      ],
+      "passed": true
+    },
+    {
+      "check": "RAW CHANGED SPANS",
+      "size": [
+        160,
+        40
+      ],
+      "passed": true
+    },
+    {
+      "check": "SOURCE: raw utf8",
+      "size": [
+        160,
+        40
+      ],
+      "passed": true
+    },
+    {
+      "check": "RAW CHANGED SPANS",
+      "size": [
+        160,
+        40
+      ],
+      "passed": true
+    },
+    {
+      "check": "Evidence",
+      "size": [
+        160,
+        40
+      ],
+      "passed": true
+    },
+    {
+      "check": "RAW CHANGED SPANS",
+      "size": [
+        160,
+        40
+      ],
+      "passed": true
+    }
+  ],
+  "count": 10,
+  "reports": [],
+  "store": "examples/part4/user-failures/store-efea67c6-7df6-4e54-8101-7882d03bbedf",
+  "noTargetOrModelExecution": true
+}

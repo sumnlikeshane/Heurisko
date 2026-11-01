@@ -1,0 +1,151 @@
+{
+  "kind": "controlled-alternating-node-SSR-and-direct-bounded-reader-not-browser",
+  "recordedAt": "2026-10-31T23:46:24.394Z",
+  "node": "v22.23.4",
+  "platform": "darwin",
+  "arch": "arm64",
+  "report": {
+    "path": "examples/handoff/current/B3R.report.json",
+    "reportContentRef": "sha256:5833188c0a2899db0bba94c94282d551f3507d0cc67b5077e2a9862f5b22cc7d",
+    "captureTime": "2026-10-31T19:04:04Z",
+    "evidence": 762,
+    "omissions": 673,
+    "reportBytes": 591133
+  },
+  "historicalBaseline": {
+    "path": ".heurisko/web-gap-final-assembly",
+    "scope": "Retained W2-W5 local assembly, read-only. Not asserted to be the immediate pre-overhaul source, and never rebuilt or modified."
+  },
+  "method": "One process, five warmups, old/current render order alternates each iteration. Node SSR includes React markup generation, not browser style/layout/paint or event-loop input latency. APIs and engine acquisition are not invoked.",
+  "measurements": [
+    {
+      "name": "B3R full combined overview/source/coverage/findings/AI SSR (all sections intentionally rendered by harness)",
+      "old": {
+        "iterations": 30,
+        "medianMs": 11.485458999999992,
+        "p95Ms": 65.001083,
+        "maxMs": 125.49395800000002,
+        "renderedHTMLBytes": 446031
+      },
+      "current": {
+        "iterations": 30,
+        "medianMs": 2.6789170000000695,
+        "p95Ms": 43.54641700000002,
+        "maxMs": 63.57058400000005,
+        "renderedHTMLBytes": 43471
+      }
+    },
+    {
+      "name": "B3R Files changes view SSR; old also computes member/omission browse while hidden by its app",
+      "old": {
+        "iterations": 50,
+        "medianMs": 1.9178329999999733,
+        "p95Ms": 3.5762090000000626,
+        "maxMs": 3.974333000000115,
+        "renderedHTMLBytes": 9371
+      },
+      "current": {
+        "iterations": 50,
+        "medianMs": 0.9259159999999156,
+        "p95Ms": 2.580041999999821,
+        "maxMs": 3.3223749999999654,
+        "renderedHTMLBytes": 12637
+      }
+    }
+  ],
+  "read": {
+    "scope": "Direct shared reader, hash checks retained, 4096-byte windows; excludes HTTP/browser decode",
+    "evidenceId": "ev_c779d1cea2900c0ef6d7e876",
+    "path": "core-5a8aa0b2ba575e098cbb63b396e9bcb751eb3a0f/.github/issue-workflow.png",
+    "side": "source",
+    "memberBytes": 267800,
+    "reads": [
+      {
+        "offset": 0,
+        "iterations": 20,
+        "medianMs": 0.6623749999998836,
+        "p95Ms": 1.2506250000001273,
+        "maxMs": 1.2506250000001273,
+        "recordedRange": {
+          "startByte": 0,
+          "endByte": 267800
+        },
+        "displayedRange": {
+          "startByte": 0,
+          "endByte": 4096
+        },
+        "encoding": "base64",
+        "returnedBytes": 4096,
+        "pageSha256": "sha256:639b25b8b596e1ddd436d9b2ced63ee2c624088172976c580c672a32a3403f84"
+      },
+      {
+        "offset": 4096,
+        "iterations": 20,
+        "medianMs": 0.7199170000001232,
+        "p95Ms": 3.371582999999873,
+        "maxMs": 3.371582999999873,
+        "recordedRange": {
+          "startByte": 0,
+          "endByte": 267800
+        },
+        "displayedRange": {
+          "startByte": 4096,
+          "endByte": 8192
+        },
+        "encoding": "base64",
+        "returnedBytes": 4096,
+        "pageSha256": "sha256:b68a9b3c6d50b61f767bdc4acb5d0809cfeb7de995469c301c310ac5d409f6f7"
+      },
+      {
+        "offset": 8192,
+        "iterations": 20,
+        "medianMs": 0.7691250000000309,
+        "p95Ms": 1.52475000000004,
+        "maxMs": 1.52475000000004,
+        "recordedRange": {
+          "startByte": 0,
+          "endByte": 267800
+        },
+        "displayedRange": {
+          "startByte": 8192,
+          "endByte": 12288
+        },
+        "encoding": "base64",
+        "returnedBytes": 4096,
+        "pageSha256": "sha256:a7f6b6be7ac694abc198ec314869af898ea5c18b27b49dcdf8dfab701812da6d"
+      }
+    ]
+  },
+  "sourceInspection": {
+    "oldHiddenFilesElement": true,
+    "currentInactiveFilesUnmounted": true,
+    "oldConfiguredActivePollMs": 700,
+    "currentConfiguredActivePollMs": 1500,
+    "scope": "Source facts, not observed browser poll counts or a React client trace. New app memoizes the active section and observes jobs/catalog independently."
+  },
+  "rss": {
+    "endBytes": 140214272,
+    "heapUsedBytes": 11379488,
+    "processMaxRSSKiB": 147504,
+    "scope": "One mixed process including old/current harness and shared-reader allocations; not isolated export/browser peak."
+  },
+  "limits": [
+    "No browser main-thread/style/layout/input trace captured by this Node profile.",
+    "Historical aggregate timings use different times/load and page content; do not infer a speedup from their ratio.",
+    "Controlled SSR differences reflect changed content/pagination as well as renderer work; they are not a browser speed score.",
+    "No latency target or WCAG/performance conformance is asserted.",
+    "No package, lifecycle, configuration or build metadata was executed; only trusted app renderers and static shared reader ran."
+  ],
+  "code": {
+    "apps/web/src/app.tsx": "sha256:9227bd388df995bd92bcb8dd7be2b8d86e45ef7a499f1150e35969f13675274d",
+    "apps/web/src/report-components.tsx": "sha256:4cd527ef4520c69625d2600076ae768e541feace8e20b002dbfd94d2d1d5d0c1",
+    "apps/web/src/report-view.ts": "sha256:bf191386c4473562763884b6a10bd53b60ae55cbc9f95699b03d5b5c2e623e92",
+    "apps/web/dist/render-check.js": "sha256:d25f0632789eeeff09fe21155cf5f7c26ce9bf2004baa4c711bfd5a6f3efc3bb",
+    "apps/web/dist/report-view.js": "sha256:f954dbeb4858238833641c2950ed19a32762d1e063186fe074d7798177104797",
+    "integration/part4/src/report-reader.ts": "sha256:59b0ab64566dccbc7dd8985deb0a06fe01343b9ac33ae4a099c1cb8c35918f2b",
+    "integration/part4/dist/report-reader.js": "sha256:eeb4c76f50b98afc3c9ea07bf8ccfebb33dab35cdef094432ea371e611c41700",
+    ".heurisko/web-gap-final-assembly/apps/web/src/app.tsx": "sha256:6e799019e1c00b90334b48e675cd53374da90f096cde5644a08ba8477f2cc712",
+    ".heurisko/web-gap-final-assembly/apps/web/dist/render-check.js": "sha256:5252ed6da5b50cb6505b297569214215797c6794939d387c8ba784fe3a498a2c",
+    "examples/web-overhaul/current/profile-read-render-final.mjs": "sha256:c73c0fd33e7d35ed35246f6b4c0c1074f1fa2910daa1002a78b5ee43d61c672d"
+  }
+}

@@ -88,16 +88,26 @@ async function npmCase(t,config={}) {
  if(config.noIntegrity)delete meta.dist.integrity;
  const calls=[];const fetchData=async(url,opts)=>{calls.push({url,opts});if(opts?.signal?.aborted)throw new DownloadError('CANCELLED');if(url===npmCoordinates(name,version))return download(url,meta);if(url===meta.dist.tarball)return download(url,artifact);if(url.includes('/git/ref/')){if(config.tagConflict)return download(url,{object:{type:'commit',sha:other}});throw new DownloadError('HTTP_STATUS_REJECTED');}if(url.startsWith('https://codeload.github.com/')){if(config.noSource)throw new DownloadError('DOWNLOAD_FAILED');return download(url,source);}throw new Error('UNEXPECTED_FIXTURE_URL');};
  const input={ecosystem:'npm',packageName:name,version,analysisOptions:options,...(config.override?{sourceOverride:config.override}:{})};
- const report=await investigate(input,options,{store,fetchData});return {dir,store,report,calls,artifact,source,input,fetchData};
+ const report=await investigate(input,options,{store,fetchData,...(config.analysisModuleSelector?{analysisModuleSelector:config.analysisModuleSelector}:{})});return {dir,store,report,calls,artifact,source,input,fetchData};
 }
-test('authored scoped npm fixture traverses actual safe producer/store/validator and cannot imply safety',async t=>{
- const {report,store,calls,artifact}=await npmCase(t,{scoped:true});await validateReport(report);await store.verifyEvidence(report);assert.equal(report.bundle.artifact.origin,'registry');assert.equal(report.bundle.artifact.observedSha256,sha256(artifact));assert.equal(report.outcomes.artifactIntegrity,'matched');assert.equal(report.outcomes.sourceAssociation,'publisher_asserted');assert.equal(report.outcomes.provenancePolicy,'not_checked');assert.equal(report.outcomes.correspondence,'exact');assert.equal(exitCode(report),2);assert.ok(calls[0].url.includes('%40fixture%2Fname'));assert.equal(report.analysis.findings.length,0);assert.ok(report.bundle.artifact.metadataEvidenceId);
+test('explicit raw scoped npm fixture traverses actual safe producer/store/validator and cannot imply safety',async t=>{
+ const {report,store,calls,artifact}=await npmCase(t,{scoped:true,analysisModuleSelector:'off'});await validateReport(report);await store.verifyEvidence(report);assert.equal(report.bundle.artifact.origin,'registry');assert.equal(report.bundle.artifact.observedSha256,sha256(artifact));assert.equal(report.outcomes.artifactIntegrity,'matched');assert.equal(report.outcomes.sourceAssociation,'publisher_asserted');assert.equal(report.outcomes.provenancePolicy,'not_checked');assert.equal(report.outcomes.correspondence,'exact');assert.equal(exitCode(report),2);assert.ok(calls[0].url.includes('%40fixture%2Fname'));assert.equal(report.analysis.findings.length,0);assert.ok(report.bundle.artifact.metadataEvidenceId);assert.equal(report.analysis.stages.find(s=>s.stage==='heuristics').errors[0].code,'ANALYSIS_MODULE_UNAVAILABLE');
 });
 test('advertised archive mismatch retains failed acquisition bytes, suppresses comparison and never fetches source',async t=>{
  const {report,store,calls,artifact}=await npmCase(t,{mismatch:true});assert.equal(report.outcomes.artifactIntegrity,'mismatched');assert.equal(report.outcomes.correspondence,'not_assessed');assert.equal(report.outcomes.analysisCompleteness,'incomplete');assert.deepEqual(report.bundle.changes,[]);assert.ok(report.bundle.stages.some(s=>s.stage==='acquire'&&s.status==='failed'));assert.ok(!calls.some(c=>c.url.startsWith('https://codeload')));assert.deepEqual(await store.get(report.bundle.artifact.observedSha256),artifact);
 });
 test('wrong source manifest subject cannot turn matching version metadata into source correspondence',async t=>{
  const {report}=await npmCase(t,{sourceManifest:{name:'wrong-name'}});assert.equal(report.outcomes.sourceAssociation,'ambiguous');assert.equal(report.outcomes.correspondence,'unresolved');assert.equal(report.bundle.coverage.complete,false);assert.ok(report.bundle.sourceCandidates.some(c=>c.conflicts.includes('SOURCE_PACKAGE_SUBJECT_MISMATCH')));
+});
+test('complete inventories with ambiguous version labels keep one-sided records unresolved with the actual reason',async t=>{
+ const {report}=await npmCase(t,{sourceManifest:{version:'1.1.0'},sourceEntries:[{path:'root/source-only.txt',text:'// inert source-only probe\n'}]});
+ assert.equal(report.bundle.coverage.complete,true);
+ for(const stage of ['inventory','compare'])assert.equal(report.bundle.stages.find(s=>s.stage===stage).status,'complete');
+ assert.equal(report.outcomes.sourceAssociation,'ambiguous');assert.equal(report.outcomes.correspondence,'unresolved');
+ const one=report.bundle.changes.find(c=>c.sourcePath==='root/source-only.txt');
+ assert.equal(one.status,'unresolved');assert.equal(one.rawEquality,'unknown');
+ assert.match(one.notes.join('\n'),/Inventories complete; source association is ambiguous/);
+ assert.ok(!report.bundle.changes.some(c=>c.notes.some(n=>n.includes('incomplete inventory'))));
 });
 test('wrong or missing subtree retains broad build context and unknown correspondence',async t=>{
  const {report}=await npmCase(t,{override:{repo,commit,subdirectory:'missing'},metadata:{repository:{url:repo,directory:''}}});assert.equal(report.bundle.coverage.complete,false);assert.ok(report.bundle.coverage.skippedBytes>0);assert.equal(report.outcomes.sourceAssociation,'ambiguous');assert.ok(report.bundle.sourceCandidates.find(c=>c.subdirectory==='missing').sourceSnapshotSha256);

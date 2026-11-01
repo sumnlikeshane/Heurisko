@@ -8,11 +8,12 @@ import { validateOptions, validateReport } from './validation.js';
 import { retainJSONEvidence } from './comparison.js';
 import { boundedFile } from './storage.js';
 import { fileURLToPath } from 'node:url';
+import { loadConfiguredAnalysisModule } from './reviewed-module.js';
 
-export interface InvestigationContext extends ProducerContext { module?:AnalysisModule }
+export interface InvestigationContext extends ProducerContext { module?:AnalysisModule; analysisModuleSelector?:string }
 export async function engineCodeIdentity() {
   const codeDigests:Record<string,string>={};
-  for(const name of ['engine','producer','comparison','archive','network','storage','parser-runtime','parser-job','adapter','identity','validation','safety','npm','sources','provenance'])codeDigests[name]=sha256(await boundedFile(fileURLToPath(new URL(`./${name}.js`,import.meta.url)),128*1024));
+  for(const name of ['engine','producer','comparison','archive','network','storage','parser-runtime','parser-job','adapter','identity','validation','safety','npm','sources','provenance','intelligence-boundary','reviewed-module'])codeDigests[name]=sha256(await boundedFile(fileURLToPath(new URL(`./${name}.js`,import.meta.url)),256*1024));
   for(const [name,path]of [['parserWorker','../runtime/archive_worker.py'],['contractSchema','../../contracts/schema/contracts.schema.json'],['contractValidator','../../contracts/runtime/validate.py'],['contractSemantics','../../contracts/runtime/semantics.py']] as const)codeDigests[name]=sha256(await boundedFile(fileURLToPath(new URL(path,import.meta.url)),256*1024));
   return {engine:'shane-audit-v1;'+sha256(canonicalJSON(codeDigests)),codeDigests};
 }
@@ -24,9 +25,12 @@ export function exitCode(report?:Pick<InvestigationReport,'outcomes'>):0|1|2|3 {
 }
 export async function investigate(input:ArtifactInput,options:AnalysisOptions,context:InvestigationContext={}):Promise<InvestigationReport> {
   input=structuredClone(input);
-  const module=context.module?Object.freeze({...context.module}):undefined;
+  const store=context.store??new EvidenceStore();
+  // Trusted explicit injection overrides host configuration. Unknown host
+  // selectors fail before acquisition and can never come from target metadata.
+  const module=context.module?Object.freeze({...context.module}):await loadConfiguredAnalysisModule({store,signal:context.signal,selector:context.analysisModuleSelector});
   const moduleIdentity=module?analysisModuleIdentity(module):null;
-  const settings=await validateOptions(options,context);const store=context.store??new EvidenceStore();
+  const settings=await validateOptions(options,context);
   const bundle=await collectEvidence({...input,analysisOptions:settings},{...context,store});
   const {engine,codeDigests}=await engineCodeIdentity();
   const config:AnalysisConfiguration={version:'heurisko-config-v3',analysisModule:moduleIdentity,evidenceSnapshotSha256:sha256(canonicalJSON(bundle.evidence.filter(e=>e.locator.metadataKey==='acquisition-context').map(e=>({kind:e.kind,locator:e.locator,digest:e.contentSha256})))),subject:{ecosystem:input.ecosystem,origin:bundle.artifact.origin,packageName:bundle.artifact.packageName??null,version:bundle.artifact.version??null,artifactFilename:bundle.artifact.artifactFilename,registryUrl:input.ecosystem==='npm'?'https://registry.npmjs.org':null},artifactSha256:bundle.artifact.observedSha256,sources:bundle.sourceCandidates.map(sourceIdentity),versions:{engine,rules:moduleIdentity?`${moduleIdentity.moduleId}@${moduleIdentity.moduleVersion}`:'unavailable',tools:`node-${process.versions.node};host-${process.platform}-${process.arch};${safetyProfile.parser.image};worker-${codeDigests.parserWorker}`,policy:settings.trustPolicyRef??'none',normalizers:'none',verifier:'none',trustRoot:'none'},options:settings,safetyProfileSha256:sha256(canonicalJSON(safetyProfile)),interpretationConfigSha256:moduleIdentity?.interpretationConfigSha256??null};

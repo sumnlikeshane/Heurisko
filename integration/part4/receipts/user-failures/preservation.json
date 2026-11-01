@@ -1,0 +1,21 @@
+{
+  "originalStore": {
+    "filesChecked": 138,
+    "unchanged": true,
+    "changed": []
+  },
+  "historicalReceipts": {
+    "filesChecked": 424,
+    "unchanged": true,
+    "changed": []
+  },
+  "spike": {
+    "filesChecked": 23,
+    "unchanged": true,
+    "changed": []
+  },
+  "indexUnchanged": true,
+  "G0TrackedShapeAndFixturesUnchanged": true,
+  "activeHead": "0e2be5a105548b237328879f29c969640d767ec5",
+  "worktrees": "<WORKSPACE>                          0e2be5a [docs/share-research-with-team]\n<TASK_TMP>/heurisko-handoff-s1-s3-audit-fixes                               c08a701 [handoff/s1-s3-audit-fixes]\n<WORKSPACE>-tui-visual-spike-v0.1.0  0e2be5a [experiment/tui-visual-spike-v0.1.0]\n"
+}

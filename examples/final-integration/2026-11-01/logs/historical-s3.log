@@ -1,0 +1,93 @@
+{
+  "version": "heurisko-s3-verification-v1",
+  "checkedAt": "2026-11-01T00:36:14.159Z",
+  "validationScope": "Historical retained evidence/receipts; no current-code binding claimed.",
+  "engine": "shane-s3-v1;sha256:477dd081c018c709ab713bf323fa3312cc4e72464c1e4582ce2ca250b8eff169",
+  "codeDigests": {
+    "engine": "sha256:b98c491205e008da4aa1839f5db39f751bcbb83cebadcb885305b7689089a20e",
+    "producer": "sha256:408edaa780cc4674d9cab521d98ea15efcdd8ded6e4a91418db3262b0dc0446d",
+    "comparison": "sha256:9a1a68f30013e0ff7c4e6fd40c2caa68c169bc9e5a76bc6656324d08992ea51b",
+    "archive": "sha256:2c4cf6115d2e818bc51c48456e9f51c92f8db1f65f85f75e61caf69613c6951f",
+    "network": "sha256:06c7b087282832746631c5a89f2ee929ae7ec8cf0b2aec8d80d30c410e264e52",
+    "storage": "sha256:763408f7644f18cd62c3cb591d006cdc7db79641f0dc797be784bbef3ca595c8",
+    "parser-runtime": "sha256:05cc905bb69c7c2bffa43e9aca54ea20d3fb2b7a1459ac40ae1a09af437187b0",
+    "adapter": "sha256:cf383dcdd71101f60aa6beff8f95d19a7779d345f28968e4bd597c6d57636552",
+    "identity": "sha256:8b94fa58fc277908eb33171c0610383ff03797b8a2400a08eb2c86198eeac53e",
+    "validation": "sha256:5b77dc41ec7d65681de88feb2f033651884bcf3cfb15bd742cbf64d2b3a48324",
+    "safety": "sha256:809326a06e9ba9c40b59e673e0e5f0eda773ce6b0770f6d261e065301506dce0",
+    "npm": "sha256:19bd4bc0064b4b6421753305e26db2879662ccb887d727d0aa99defb73d6e850",
+    "sources": "sha256:6eb632d8baf16b4fe313b4433127c64247b09c64687b66387dc1dfb3883d8c25",
+    "provenance": "sha256:e9f6be405bbd3b546bcd25a377180fb5806ca6eeeb12ac8a3071b5bdaa5ce222",
+    "parserWorker": "sha256:04e7159556ad8fe5dc03c9879f9588beb80da20620ee244f2e9491783f4228d9"
+  },
+  "results": [
+    {
+      "caseId": "B1",
+      "reportId": "report_b5fbc4c40096d70898615c59",
+      "reportContentRef": "sha256:a5851d2b9f0d92e75291592c0aae46e45d74a8365f31a7bb13e7d7b04fae44d9",
+      "configurationFingerprint": "d63eeda51ef939fcd7c0a7c915a2ed3bad0b95e12449fe462d27fcb2445adc8f",
+      "evidenceCount": 89,
+      "exitCode": 2,
+      "outcomes": {
+        "artifactIntegrity": "matched",
+        "sourceAssociation": "ambiguous",
+        "provenancePolicy": "not_checked",
+        "correspondence": "unresolved",
+        "analysisCompleteness": "incomplete",
+        "policyResult": "indeterminate"
+      }
+    },
+    {
+      "caseId": "B2",
+      "reportId": "report_b9f365256abe5e5929724e6c",
+      "reportContentRef": "sha256:9118fd96b1e11174394c2ff86d9689040aea514e678b662e8e69eb3c2a41b699",
+      "configurationFingerprint": "8ab703208ca13f5e64492cf66edf913d5ccf34e6404098da0b21b104c4d6ab5b",
+      "evidenceCount": 308,
+      "exitCode": 2,
+      "outcomes": {
+        "artifactIntegrity": "matched",
+        "sourceAssociation": "publisher_asserted",
+        "provenancePolicy": "not_checked",
+        "correspondence": "unresolved",
+        "analysisCompleteness": "incomplete",
+        "policyResult": "indeterminate"
+      }
+    },
+    {
+      "caseId": "B3",
+      "reportId": "report_d8244948a383f386ca9ef2dc",
+      "reportContentRef": "sha256:66930f781d9cc50518a9b0aa06dac54c648ff32a022fbb659ceedfb3fd8e6ad8",
+      "configurationFingerprint": "90eac19e3f514adecc7c1e2a3daf7eaaf16f2844c19cb60faba64796681bf552",
+      "evidenceCount": 1829,
+      "exitCode": 2,
+      "outcomes": {
+        "artifactIntegrity": "matched",
+        "sourceAssociation": "ambiguous",
+        "provenancePolicy": "not_checked",
+        "correspondence": "unresolved",
+        "analysisCompleteness": "incomplete",
+        "policyResult": "indeterminate"
+      }
+    },
+    {
+      "caseId": "B3R",
+      "reportId": "report_8863c3d7076ee50f8f2fb0e0",
+      "reportContentRef": "sha256:bc0dfb893a4e5667742217d0e81a77931e571b74237d075c15f787b493cdb37c",
+      "configurationFingerprint": "3a4e6973568286abe9e846365c6d1760c1b5c04a802d7814521ebe824713f07b",
+      "evidenceCount": 762,
+      "exitCode": 2,
+      "outcomes": {
+        "artifactIntegrity": "matched",
+        "sourceAssociation": "user_supplied",
+        "provenancePolicy": "not_checked",
+        "correspondence": "unresolved",
+        "analysisCompleteness": "incomplete",
+        "policyResult": "indeterminate"
+      }
+    }
+  ],
+  "retainedEvidenceReferencesVerified": 2988,
+  "rawDiffSideSpansVerified": 1028,
+  "manifestValueSpansVerified": 146,
+  "scope": "Hash/schema/reference/span/current-code/corpus handoff checks only. No Malhar quality, cryptographic verification, model, rebuild or complete P04 claim."
+}

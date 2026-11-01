@@ -91,10 +91,10 @@ test('archive-byte variation changes identities while all raw members stay equal
  assert.equal(ai.complete,true);assert.equal(bi.complete,true);assert.equal(ai.members[0].sha256,bi.members[0].sha256);
 });
 
-test('real producer computes raw additions/removals/modifications and exact manifest spans with no findings',async t=>{
+test('explicit raw producer mode computes additions/removals/modifications and exact manifest spans with unavailable analysis',async t=>{
  const source=[{path:'source-root/a.txt',text:'old\n'},{path:'source-root/removed',text:'remove'},{path:'source-root/package.json',text:'{"name":"authored","scripts":{},"main":"a.txt"}'}];
  const artifact=[{path:'package/a.txt',text:'new\n'},{path:'package/added.js',text:'// HEURISKO_INERT_TEST_MARKER\n'},{path:'package/package.json',text:'{"name":"authored","scripts":{"postinstall":"HEURISKO_INERT_TEST_ONLY"},"main":"added.js"}'}];
- const {report,store}=await localCase(t,artifact,source);
+ const {report,store}=await localCase(t,artifact,source,{analysisModuleSelector:'off'});
  await validateReport(report);await store.verifyEvidence(report);
  assert.deepEqual(report.bundle.changes.map(c=>c.status).sort(),['added','modified','modified','removed']);
  const delta=report.bundle.evidence.find(e=>e.kind==='manifest_delta'&&e.locator.metadataKey==='scripts.postinstall');assert.ok(delta);
@@ -172,9 +172,9 @@ test('CLI is redirected/JSON-safe, inspect resolves exact retained evidence; ter
  const {report,store,path,input,source}=await localCase(t,[{path:'package/a',text:'\u001b]52;c;INERT\u0007\n'}],[{path:'root/a',text:'abc'}]);
  const reportFile=join(path,'report.json');await fs.writeFile(reportFile,JSON.stringify(report));const cli=join(root,'packages/cli/dist/index.js');
  const run=(args)=>spawnSync(process.execPath,[cli,...args],{encoding:'utf8',maxBuffer:8*1024*1024});
- const inspect=run(['inspect',reportFile,'--store',store.root,'--json']);assert.equal(inspect.status,2);assert.deepEqual(JSON.parse(inspect.stdout),report);assert.equal(inspect.stderr,'');
- const e=report.bundle.evidence.find(e=>e.kind==='artifact_member');const human=run(['inspect',reportFile,'--store',store.root,'--evidence',e.evidenceId,'--no-color']);assert.equal(human.status,2);assert.ok(!human.stdout.includes('\u001b'));assert.ok(!human.stdout.includes('\u0007'));
- const analyzed=run(['analyze','--artifact',input.artifactPath,'--source',repo,'--commit',commit,'--source-archive',source,'--store',store.root,'--name','\u009bLABEL\u202e','--no-ai','--json']);assert.equal(analyzed.status,2);const cliReport=JSON.parse(analyzed.stdout);assert.ok(!/[\u009b\u202e]/.test(analyzed.stdout));assert.equal(cliReport.bundle.artifact.packageName,'\u009bLABEL\u202e');assert.equal(cliReport.bundle.artifact.observedSha256,report.bundle.artifact.observedSha256);assert.notEqual(cliReport.reportId,report.reportId,'Different CLI analysis profile must change identity');assert.match(analyzed.stderr,/persist: complete/);
+ const inspect=run(['inspect',reportFile,'--store',store.root,'--json']);assert.equal(inspect.status,exitCode(report));assert.deepEqual(JSON.parse(inspect.stdout),report);assert.equal(inspect.stderr,'');
+ const e=report.bundle.evidence.find(e=>e.kind==='artifact_member');const human=run(['inspect',reportFile,'--store',store.root,'--evidence',e.evidenceId,'--no-color']);assert.equal(human.status,exitCode(report));assert.ok(!human.stdout.includes('\u001b'));assert.ok(!human.stdout.includes('\u0007'));
+ const analyzed=run(['analyze','--artifact',input.artifactPath,'--source',repo,'--commit',commit,'--source-archive',source,'--store',store.root,'--name','\u009bLABEL\u202e','--no-ai','--json']);const cliReport=JSON.parse(analyzed.stdout);assert.equal(analyzed.status,exitCode(cliReport));assert.ok(!/[\u009b\u202e]/.test(analyzed.stdout));assert.equal(cliReport.bundle.artifact.packageName,'\u009bLABEL\u202e');assert.equal(cliReport.bundle.artifact.observedSha256,report.bundle.artifact.observedSha256);assert.notEqual(cliReport.reportId,report.reportId,'Different CLI analysis profile must change identity');assert.match(analyzed.stderr,/persist: complete/);
  const bad=run(['analyze','--artifact',input.artifactPath,'--unknown']);assert.equal(bad.status,3);assert.equal(bad.stdout,'');assert.ok(!bad.stderr.includes(path));
  assert.equal(terminalText('\u001b[31m\u009btest\u202e'),'\\u001b[31m\\u009btest\\u202e');
 });

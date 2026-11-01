@@ -12,5 +12,6 @@ export { Investigation, OpenEvidence, JobDetail } from './investigate.js';
 
 export { Markdown, CodeBlock } from './docs.js';
 export { Home } from './home.js';
-export { Files, EvidenceDetail };
+export { Files, EvidenceDetail, Overview, Findings, Sources, Coverage };
+export { ReportMemoryProvider } from './report-components.js';
 export { RequestReview, ExportActions } from './investigate.js';

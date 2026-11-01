@@ -1,0 +1,117 @@
+[?1049h[?25l[?25l  [1mHEURISKO[22m   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  [1mpicocolors@1.1.1 / HISTORICAL / incomplete / Captured 2026-10-31T22:59:33Z                                                                                  [22m
+  [4m[1m1 Overview   [22m[24m2 Findings   3 Files   4 Source   5 AI   6 Coverage
+  Historical — online checks have not refreshed · i Identity
+  ┌─[1m ESTABLISHED OBSERVATION [22m────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │                                                                                                                                                          │
+  │  [1mSource and artifact differences are recorded. Review their evidence and the unresolved scope.                                                         [22m  │
+  │                                                                                                                                                          │
+  │  ! Source conflict / competing commits / release binding unresolved                                                                                      │
+  │                                                                                                                                                          │
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+  ┌─[1m > Independent outcomes [22m─────────────────────────────────┐  ┌─[1m Priority findings [22m───────────────────────────────────────────────────────── None recorded ┐
+  │                                                          │  │                                                                                            │
+  │  Artifact integrity    │ Digest matched                  │  │  Findings not evaluated / analysis unavailable.                                            │
+  │  Source association    │ Conflicting claims              │  │  AI                      disabled                                                          │
+  │  Provenance            │ Not checked                     │  │                                                                                            │
+  │  Correspondence        │ Unexplained                     │  │                                                                                            │
+  │  Analysis completeness │ Incomplete                      │  └────────────────────────────────────────────────────────────────────────────────────────────┘
+  │  Policy result         │ Not evaluated                   │
+  │                                                          │  ┌─[1m Report next action [22m───────────────────────────────────────────────────────────────────────┐
+  └──────────────────────────────────────────────────────────┘  │                                                                                            │
+                                                                │  [1mInspect raw file changes, source claims and coverage before drawing a conclusion.       [22m  │
+  ┌─[1m Coverage & unknowns [22m────────────────────────────────────┐  │                                                                                            │
+  │                                                          │  └────────────────────────────────────────────────────────────────────────────────────────────┘
+  │  Compared              │ 19 change records               │
+  │  Source files          │ 19 recorded                     │
+  │  Artifact files        │ 7 recorded                      │
+  │  ─ Coverage gaps ──────────────────────────────────────  │
+  │  - Findings not evaluated for a complete examined        │
+  │    scope.                                                │
+  │                                                          │
+  └──────────────────────────────────────────────────────────┘
+
+
+  SOURCE CONFLICT / inspect source claims
+  [1mTab[22m focus  [1mEnter[22m inspect  [1m1-6[22m sections  [1mi[22m identity  [1m?[22m help  [1mq[22m quit
+
+[?25l[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  [1mpicocolors@1.1.1 / HISTORICAL / incomplete / Captured 2026-10-31T22:59:33Z                                                                                  [22m
+  [4m[1m1 Overview   [22m[24m2 Findings   3 Files   4 Source   5 AI   6 Coverage
+  Historical — online checks have not refreshed · i Identity
+  ┌─[1m ESTABLISHED OBSERVATION [22m────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │                                                                                                                                                          │
+  │  [1mSource and artifact differences are recorded. Review their evidence and the unresolved scope.                                                         [22m  │
+  │                                                                                                                                                          │
+  │  ! Source conflict / competing commits / release binding unresolved                                                                                      │
+  │                                                                                                                                                          │
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+  ┌─[1m > Independent outcomes [22m─────────────────────────────────┐  ┌─[1m Priority findings [22m───────────────────────────────────────────────────────── None recorded ┐
+  │                                                          │  │                                                                                            │
+  │  Artifact integrity    │ Digest matched                  │  │  Findings not evaluated / analysis unavailable.                                            │
+  │  Source association    │ Conflicting claims              │  │  AI                      disabled                                                          │
+  │  Provenance            │ Not checked                     │  │                                                                                            │
+  │  Correspondence        │ Unexplained                     │  │                                                                                            │
+  │  Analysis completeness │ Incomplete                      │  └────────────────────────────────────────────────────────────────────────────────────────────┘
+  │  Policy result         │ Not evaluated                   │
+  │                                                          │  ┌─[1m Report next action [22m───────────────────────────────────────────────────────────────────────┐
+  └──────────────────────────────────────────────────────────┘  │                                                                                            │
+                                                                │  [1mInspect raw file changes, source claims and coverage before drawing a conclusion.       [22m  │
+  ┌─[1m Coverage & unknowns [22m────────────────────────────────────┐  │                                                                                            │
+  │                                                          │  └────────────────────────────────────────────────────────────────────────────────────────────┘
+  │  Compared              │ 19 change records               │
+  │  Source files          │ 19 recorded                     │
+  │  Artifact files        │ 7 recorded                      │
+  │  ─ Coverage gaps ──────────────────────────────────────  │
+  │  - Findings not evaluated for a complete examined        │
+  │    scope.                                                │
+  │                                                          │
+  └──────────────────────────────────────────────────────────┘
+
+
+  Per-report UI state reset; report unchanged.
+  [1mTab[22m focus  [1mEnter[22m inspect  [1m1-6[22m sections  [1mi[22m identity  [1m?[22m help  [1mq[22m quit
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  [1mpicocolors@1.1.1 / HISTORICAL / incomplete / Captured 2026-10-31T22:59:33Z                                                                                  [22m
+  1 Overview   [4m[1m2 Findings   [22m[24m3 Files   4 Source   5 AI   6 Coverage
+  Historical — online checks have not refreshed · i Identity
+  ┌─[1m > Findings [22m─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ [1mDeterministic findings unavailable — Malhar analysis module not supplied.                                                                               [22m │
+  │ ANALYSIS_MODULE_UNAVAILABLE: Malhar analysis module not supplied                                                                                         │
+  │ Artifact acquisition: complete; integrity matched.                                                                                                       │
+  │ Inventory: complete; raw comparison complete.                                                                                                            │
+  │ 2 modified / 5 identical / 12 unresolved (19 change records)                                                                                             │
+  │ Source association: ambiguous.                                                                                                                           │
+  │ AI: disabled. Deterministic analysis is a separate module; enabling AI does not supply it.                                                               │
+  │ Next action: 3 Files, then m next modified file; 4 Source explains association; 6 Coverage has stage diagnostics.                                        │
+  │ No clean-result or policy pass may be inferred.                                                                                                          │
+  │ 1-9 / 9                                                                                                                                                  │
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  Findings
+  [1mj/k[22m move  [1mEnter[22m inspect  [1me[22m evidence  [1mTab[22m panes  [1m/[22m filter  [1m?[22m help  [1mq[22m quit
+

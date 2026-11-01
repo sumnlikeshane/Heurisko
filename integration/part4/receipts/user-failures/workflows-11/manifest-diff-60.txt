@@ -1,0 +1,20 @@
+  HEURISKO                                                  
+   H Home    I Investigations     M Monitoring              
+  ────────────────────────────────────────────────────────  
+  picocolors@1.1.1 / HISTORICAL / incomplete / Captured 2…  
+  1 Ov  2 Find  3 Files  4 Src  5 AI  6 Scope               
+  Historical — online checks have not refreshed · i Ident…  
+  Files                                                     
+  Files > Artifact / package.json / Esc restores position   
+  ┌─ > Artifact / package.json ──────────────────────────┐  
+  │ modified / different                                 │  
+  │ SOURCE → ARTIFACT / bounded recorded byte spans; e   │  
+  │ exact bytes                                          │  
+  │ RAW CHANGED SPANS / side-by-side                     │  
+  │ SOURCE: raw utf8 bytes [44,1104) / truncated false   │  
+  │ 1-5 / 100  j/k scroll                                │  
+  └──────────────────────────────────────────────────────┘  
+  Files                                                     
+  m next modified  Enter inspect  e exact bytes  q quit     
+                                                            
+                                                            

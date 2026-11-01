@@ -1,0 +1,1470 @@
+{
+  "checks": [
+    {
+      "check": "HISTORICAL",
+      "size": [
+        160,
+        40
+      ],
+      "passed": true
+    },
+    {
+      "check": "Malhar analysis module not supplied",
+      "size": [
+        160,
+        40
+      ],
+      "passed": true
+    },
+    {
+      "check": "unavailable explanation and successes reachable at 160",
+      "passed": true
+    },
+    {
+      "check": "Artifact root/",
+      "size": [
+        160,
+        40
+      ],
+      "passed": true
+    },
+    {
+      "check": "modified / different",
+      "size": [
+        160,
+        40
+      ],
+      "passed": true
+    },
+    {
+      "check": "RAW CHANGED SPANS",
+      "size": [
+        160,
+        40
+      ],
+      "passed": true
+    },
+    {
+      "check": "SOURCE: raw utf8",
+      "size": [
+        160,
+        40
+      ],
+      "passed": true
+    },
+    {
+      "check": "RAW CHANGED SPANS",
+      "size": [
+        160,
+        40
+      ],
+      "passed": true
+    },
+    {
+      "check": "Evidence",
+      "size": [
+        160,
+        40
+      ],
+      "passed": true
+    },
+    {
+      "check": "RAW utf8:",
+      "size": [
+        160,
+        40
+      ],
+      "passed": true
+    },
+    {
+      "check": "RAW CHANGED SPANS",
+      "size": [
+        160,
+        40
+      ],
+      "passed": true
+    },
+    {
+      "check": "Flat /",
+      "size": [
+        160,
+        40
+      ],
+      "passed": true
+    },
+    {
+      "check": "Filter:",
+      "size": [
+        160,
+        40
+      ],
+      "passed": true
+    },
+    {
+      "check": "Filter: package.json",
+      "size": [
+        160,
+        40
+      ],
+      "passed": true
+    },
+    {
+      "check": "RAW CHANGED SPANS",
+      "size": [
+        160,
+        40
+      ],
+      "passed": true
+    },
+    {
+      "check": "Source >",
+      "size": [
+        160,
+        40
+      ],
+      "passed": true
+    },
+    {
+      "check": "Association ambiguous",
+      "size": [
+        160,
+        40
+      ],
+      "passed": true
+    },
+    {
+      "check": "Evidence",
+      "size": [
+        160,
+        40
+      ],
+      "passed": true
+    },
+    {
+      "check": "RAW utf8:",
+      "size": [
+        160,
+        40
+      ],
+      "passed": true
+    },
+    {
+      "check": "Source >",
+      "size": [
+        160,
+        40
+      ],
+      "passed": true
+    },
+    {
+      "check": "source Back state oracle",
+      "before": {
+        "section": 3,
+        "subtab": 0,
+        "index": 0,
+        "focus": 0,
+        "citation": 0,
+        "scroll": 0,
+        "scrolls": [
+          0,
+          0,
+          0
+        ],
+        "query": "",
+        "detail": false,
+        "pan": 0,
+        "selectedId": "candidate-0"
+      },
+      "after": {
+        "section": 3,
+        "subtab": 0,
+        "index": 0,
+        "focus": 0,
+        "citation": 0,
+        "scroll": 0,
+        "scrolls": [
+          0,
+          0,
+          0
+        ],
+        "query": "",
+        "detail": false,
+        "pan": 0,
+        "selectedId": "candidate-0"
+      },
+      "size": [
+        160,
+        40
+      ]
+    },
+    {
+      "check": "exact source inspection Back 160",
+      "passed": true
+    },
+    {
+      "check": "[Provenance]",
+      "size": [
+        160,
+        40
+      ],
+      "passed": true
+    },
+    {
+      "check": "[Build]",
+      "size": [
+        160,
+        40
+      ],
+      "passed": true
+    },
+    {
+      "check": "[Candidates]",
+      "size": [
+        160,
+        40
+      ],
+      "passed": true
+    },
+    {
+      "check": "Terminal too small",
+      "size": [
+        55,
+        14
+      ],
+      "passed": true
+    },
+    {
+      "check": "[Candidates]",
+      "size": [
+        160,
+        40
+      ],
+      "passed": true
+    },
+    {
+      "check": "HISTORICAL",
+      "size": [
+        140,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "Malhar analysis module not supplied",
+      "size": [
+        140,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "unavailable explanation and successes reachable at 140",
+      "passed": true
+    },
+    {
+      "check": "Artifact root/",
+      "size": [
+        140,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "modified / different",
+      "size": [
+        140,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "RAW CHANGED SPANS",
+      "size": [
+        140,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "SOURCE: raw utf8",
+      "size": [
+        140,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "RAW CHANGED SPANS",
+      "size": [
+        140,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "Evidence",
+      "size": [
+        140,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "RAW utf8:",
+      "size": [
+        140,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "RAW CHANGED SPANS",
+      "size": [
+        140,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "Flat /",
+      "size": [
+        140,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "Filter:",
+      "size": [
+        140,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "Filter: package.json",
+      "size": [
+        140,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "RAW CHANGED SPANS",
+      "size": [
+        140,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "Source >",
+      "size": [
+        140,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "Association ambiguous",
+      "size": [
+        140,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "Evidence",
+      "size": [
+        140,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "RAW utf8:",
+      "size": [
+        140,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "Source >",
+      "size": [
+        140,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "source Back state oracle",
+      "before": {
+        "section": 3,
+        "subtab": 0,
+        "index": 0,
+        "focus": 0,
+        "citation": 0,
+        "scroll": 0,
+        "scrolls": [
+          0,
+          0,
+          0
+        ],
+        "query": "",
+        "detail": false,
+        "pan": 0,
+        "selectedId": "candidate-0"
+      },
+      "after": {
+        "section": 3,
+        "subtab": 0,
+        "index": 0,
+        "focus": 0,
+        "citation": 0,
+        "scroll": 0,
+        "scrolls": [
+          0,
+          0,
+          0
+        ],
+        "query": "",
+        "detail": false,
+        "pan": 0,
+        "selectedId": "candidate-0"
+      },
+      "size": [
+        140,
+        35
+      ]
+    },
+    {
+      "check": "exact source inspection Back 140",
+      "passed": true
+    },
+    {
+      "check": "[Provenance]",
+      "size": [
+        140,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "[Build]",
+      "size": [
+        140,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "[Candidates]",
+      "size": [
+        140,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "Terminal too small",
+      "size": [
+        55,
+        14
+      ],
+      "passed": true
+    },
+    {
+      "check": "[Candidates]",
+      "size": [
+        140,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "HISTORICAL",
+      "size": [
+        120,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "Malhar analysis module not supplied",
+      "size": [
+        120,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "unavailable explanation and successes reachable at 120",
+      "passed": true
+    },
+    {
+      "check": "Artifact root/",
+      "size": [
+        120,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "modified / different",
+      "size": [
+        120,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "RAW CHANGED SPANS",
+      "size": [
+        120,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "SOURCE: raw utf8",
+      "size": [
+        120,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "RAW CHANGED SPANS",
+      "size": [
+        120,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "Evidence",
+      "size": [
+        120,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "RAW utf8:",
+      "size": [
+        120,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "RAW CHANGED SPANS",
+      "size": [
+        120,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "Flat /",
+      "size": [
+        120,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "Filter:",
+      "size": [
+        120,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "Filter: package.json",
+      "size": [
+        120,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "RAW CHANGED SPANS",
+      "size": [
+        120,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "Source >",
+      "size": [
+        120,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "Association ambiguous",
+      "size": [
+        120,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "Evidence",
+      "size": [
+        120,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "RAW utf8:",
+      "size": [
+        120,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "Source >",
+      "size": [
+        120,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "source Back state oracle",
+      "before": {
+        "section": 3,
+        "subtab": 0,
+        "index": 0,
+        "focus": 0,
+        "citation": 0,
+        "scroll": 0,
+        "scrolls": [
+          0,
+          0,
+          0
+        ],
+        "query": "",
+        "detail": false,
+        "pan": 0,
+        "selectedId": "candidate-0"
+      },
+      "after": {
+        "section": 3,
+        "subtab": 0,
+        "index": 0,
+        "focus": 0,
+        "citation": 0,
+        "scroll": 0,
+        "scrolls": [
+          0,
+          0,
+          0
+        ],
+        "query": "",
+        "detail": false,
+        "pan": 0,
+        "selectedId": "candidate-0"
+      },
+      "size": [
+        120,
+        35
+      ]
+    },
+    {
+      "check": "exact source inspection Back 120",
+      "passed": true
+    },
+    {
+      "check": "[Provenance]",
+      "size": [
+        120,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "[Build]",
+      "size": [
+        120,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "[Candidates]",
+      "size": [
+        120,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "Terminal too small",
+      "size": [
+        55,
+        14
+      ],
+      "passed": true
+    },
+    {
+      "check": "[Candidates]",
+      "size": [
+        120,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "HISTORICAL",
+      "size": [
+        100,
+        28
+      ],
+      "passed": true
+    },
+    {
+      "check": "Malhar analysis module not supplied",
+      "size": [
+        100,
+        28
+      ],
+      "passed": true
+    },
+    {
+      "check": "unavailable explanation and successes reachable at 100",
+      "passed": true
+    },
+    {
+      "check": "Artifact root/",
+      "size": [
+        100,
+        28
+      ],
+      "passed": true
+    },
+    {
+      "check": "modified / different",
+      "size": [
+        100,
+        28
+      ],
+      "passed": true
+    },
+    {
+      "check": "RAW CHANGED SPANS",
+      "size": [
+        100,
+        28
+      ],
+      "passed": true
+    },
+    {
+      "check": "SOURCE: raw utf8",
+      "size": [
+        100,
+        28
+      ],
+      "passed": true
+    },
+    {
+      "check": "RAW CHANGED SPANS",
+      "size": [
+        100,
+        28
+      ],
+      "passed": true
+    },
+    {
+      "check": "Evidence",
+      "size": [
+        100,
+        28
+      ],
+      "passed": true
+    },
+    {
+      "check": "RAW utf8:",
+      "size": [
+        100,
+        28
+      ],
+      "passed": true
+    },
+    {
+      "check": "RAW CHANGED SPANS",
+      "size": [
+        100,
+        28
+      ],
+      "passed": true
+    },
+    {
+      "check": "Flat /",
+      "size": [
+        100,
+        28
+      ],
+      "passed": true
+    },
+    {
+      "check": "Filter:",
+      "size": [
+        100,
+        28
+      ],
+      "passed": true
+    },
+    {
+      "check": "Filter: package.json",
+      "size": [
+        100,
+        28
+      ],
+      "passed": true
+    },
+    {
+      "check": "RAW CHANGED SPANS",
+      "size": [
+        100,
+        28
+      ],
+      "passed": true
+    },
+    {
+      "check": "Source >",
+      "size": [
+        100,
+        28
+      ],
+      "passed": true
+    },
+    {
+      "check": "Association ambiguous",
+      "size": [
+        100,
+        28
+      ],
+      "passed": true
+    },
+    {
+      "check": "Evidence",
+      "size": [
+        100,
+        28
+      ],
+      "passed": true
+    },
+    {
+      "check": "RAW utf8:",
+      "size": [
+        100,
+        28
+      ],
+      "passed": true
+    },
+    {
+      "check": "Source >",
+      "size": [
+        100,
+        28
+      ],
+      "passed": true
+    },
+    {
+      "check": "source Back state oracle",
+      "before": {
+        "section": 3,
+        "subtab": 0,
+        "index": 0,
+        "focus": 0,
+        "citation": 0,
+        "scroll": 5,
+        "scrolls": [
+          5,
+          0,
+          0
+        ],
+        "query": "",
+        "detail": false,
+        "pan": 0,
+        "selectedId": "candidate-0"
+      },
+      "after": {
+        "section": 3,
+        "subtab": 0,
+        "index": 0,
+        "focus": 0,
+        "citation": 0,
+        "scroll": 5,
+        "scrolls": [
+          5,
+          0,
+          0
+        ],
+        "query": "",
+        "detail": false,
+        "pan": 0,
+        "selectedId": "candidate-0"
+      },
+      "size": [
+        100,
+        28
+      ]
+    },
+    {
+      "check": "exact source inspection Back 100",
+      "passed": true
+    },
+    {
+      "check": "[Provenance]",
+      "size": [
+        100,
+        28
+      ],
+      "passed": true
+    },
+    {
+      "check": "[Build]",
+      "size": [
+        100,
+        28
+      ],
+      "passed": true
+    },
+    {
+      "check": "[Candidates]",
+      "size": [
+        100,
+        28
+      ],
+      "passed": true
+    },
+    {
+      "check": "Terminal too small",
+      "size": [
+        55,
+        14
+      ],
+      "passed": true
+    },
+    {
+      "check": "[Candidates]",
+      "size": [
+        100,
+        28
+      ],
+      "passed": true
+    },
+    {
+      "check": "HISTORICAL",
+      "size": [
+        84,
+        26
+      ],
+      "passed": true
+    },
+    {
+      "check": "Malhar analysis module not supplied",
+      "size": [
+        84,
+        26
+      ],
+      "passed": true
+    },
+    {
+      "check": "unavailable explanation and successes reachable at 84",
+      "passed": true
+    },
+    {
+      "check": "Artifact root/",
+      "size": [
+        84,
+        26
+      ],
+      "passed": true
+    },
+    {
+      "check": "modified / different",
+      "size": [
+        84,
+        26
+      ],
+      "passed": true
+    },
+    {
+      "check": "RAW CHANGED SPANS",
+      "size": [
+        84,
+        26
+      ],
+      "passed": true
+    },
+    {
+      "check": "SOURCE: raw utf8",
+      "size": [
+        84,
+        26
+      ],
+      "passed": true
+    },
+    {
+      "check": "RAW CHANGED SPANS",
+      "size": [
+        84,
+        26
+      ],
+      "passed": true
+    },
+    {
+      "check": "Evidence",
+      "size": [
+        84,
+        26
+      ],
+      "passed": true
+    },
+    {
+      "check": "RAW utf8:",
+      "size": [
+        84,
+        26
+      ],
+      "passed": true
+    },
+    {
+      "check": "RAW CHANGED SPANS",
+      "size": [
+        84,
+        26
+      ],
+      "passed": true
+    },
+    {
+      "check": "Flat /",
+      "size": [
+        84,
+        26
+      ],
+      "passed": true
+    },
+    {
+      "check": "Filter:",
+      "size": [
+        84,
+        26
+      ],
+      "passed": true
+    },
+    {
+      "check": "Filter: package.json",
+      "size": [
+        84,
+        26
+      ],
+      "passed": true
+    },
+    {
+      "check": "RAW CHANGED SPANS",
+      "size": [
+        84,
+        26
+      ],
+      "passed": true
+    },
+    {
+      "check": "Source >",
+      "size": [
+        84,
+        26
+      ],
+      "passed": true
+    },
+    {
+      "check": "Association ambiguous",
+      "size": [
+        84,
+        26
+      ],
+      "passed": true
+    },
+    {
+      "check": "Evidence",
+      "size": [
+        84,
+        26
+      ],
+      "passed": true
+    },
+    {
+      "check": "RAW utf8:",
+      "size": [
+        84,
+        26
+      ],
+      "passed": true
+    },
+    {
+      "check": "Source >",
+      "size": [
+        84,
+        26
+      ],
+      "passed": true
+    },
+    {
+      "check": "source Back state oracle",
+      "before": {
+        "section": 3,
+        "subtab": 0,
+        "index": 0,
+        "focus": 0,
+        "citation": 0,
+        "scroll": 11,
+        "scrolls": [
+          11,
+          0,
+          0
+        ],
+        "query": "",
+        "detail": false,
+        "pan": 0,
+        "selectedId": "candidate-0"
+      },
+      "after": {
+        "section": 3,
+        "subtab": 0,
+        "index": 0,
+        "focus": 0,
+        "citation": 0,
+        "scroll": 11,
+        "scrolls": [
+          11,
+          0,
+          0
+        ],
+        "query": "",
+        "detail": false,
+        "pan": 0,
+        "selectedId": "candidate-0"
+      },
+      "size": [
+        84,
+        26
+      ]
+    },
+    {
+      "check": "exact source inspection Back 84",
+      "passed": true
+    },
+    {
+      "check": "[Provenance]",
+      "size": [
+        84,
+        26
+      ],
+      "passed": true
+    },
+    {
+      "check": "[Build]",
+      "size": [
+        84,
+        26
+      ],
+      "passed": true
+    },
+    {
+      "check": "[Candidates]",
+      "size": [
+        84,
+        26
+      ],
+      "passed": true
+    },
+    {
+      "check": "Terminal too small",
+      "size": [
+        55,
+        14
+      ],
+      "passed": true
+    },
+    {
+      "check": "[Candidates]",
+      "size": [
+        84,
+        26
+      ],
+      "passed": true
+    },
+    {
+      "check": "HISTORICAL",
+      "size": [
+        60,
+        20
+      ],
+      "passed": true
+    },
+    {
+      "check": "Malhar analysis module not supplied",
+      "size": [
+        60,
+        20
+      ],
+      "passed": true
+    },
+    {
+      "check": "unavailable explanation and successes reachable at 60",
+      "passed": true
+    },
+    {
+      "check": "Artifact root/",
+      "size": [
+        60,
+        20
+      ],
+      "passed": true
+    },
+    {
+      "check": "modified / different",
+      "size": [
+        60,
+        20
+      ],
+      "passed": true
+    },
+    {
+      "check": "RAW CHANGED SPANS",
+      "size": [
+        60,
+        20
+      ],
+      "passed": true
+    },
+    {
+      "check": "SOURCE: raw utf8",
+      "size": [
+        60,
+        20
+      ],
+      "passed": true
+    },
+    {
+      "check": "RAW CHANGED SPANS",
+      "size": [
+        60,
+        20
+      ],
+      "passed": true
+    },
+    {
+      "check": "Evidence",
+      "size": [
+        60,
+        20
+      ],
+      "passed": true
+    },
+    {
+      "check": "RAW utf8:",
+      "size": [
+        60,
+        20
+      ],
+      "passed": true
+    },
+    {
+      "check": "RAW CHANGED SPANS",
+      "size": [
+        60,
+        20
+      ],
+      "passed": true
+    },
+    {
+      "check": "Flat /",
+      "size": [
+        60,
+        20
+      ],
+      "passed": true
+    },
+    {
+      "check": "Filter:",
+      "size": [
+        60,
+        20
+      ],
+      "passed": true
+    },
+    {
+      "check": "Filter: package.json",
+      "size": [
+        60,
+        20
+      ],
+      "passed": true
+    },
+    {
+      "check": "RAW CHANGED SPANS",
+      "size": [
+        60,
+        20
+      ],
+      "passed": true
+    },
+    {
+      "check": "Source >",
+      "size": [
+        60,
+        20
+      ],
+      "passed": true
+    },
+    {
+      "check": "Association ambiguous",
+      "size": [
+        60,
+        20
+      ],
+      "passed": true
+    },
+    {
+      "check": "Evidence",
+      "size": [
+        60,
+        20
+      ],
+      "passed": true
+    },
+    {
+      "check": "RAW utf8:",
+      "size": [
+        60,
+        20
+      ],
+      "passed": true
+    },
+    {
+      "check": "Source >",
+      "size": [
+        60,
+        20
+      ],
+      "passed": true
+    },
+    {
+      "check": "source Back state oracle",
+      "before": {
+        "section": 3,
+        "subtab": 0,
+        "index": 0,
+        "focus": 0,
+        "citation": 0,
+        "scroll": 24,
+        "scrolls": [
+          24,
+          0,
+          0
+        ],
+        "query": "",
+        "detail": false,
+        "pan": 0,
+        "selectedId": "candidate-0"
+      },
+      "after": {
+        "section": 3,
+        "subtab": 0,
+        "index": 0,
+        "focus": 0,
+        "citation": 0,
+        "scroll": 24,
+        "scrolls": [
+          24,
+          0,
+          0
+        ],
+        "query": "",
+        "detail": false,
+        "pan": 0,
+        "selectedId": "candidate-0"
+      },
+      "size": [
+        60,
+        20
+      ]
+    },
+    {
+      "check": "exact source inspection Back 60",
+      "passed": true
+    },
+    {
+      "check": "[Provenance]",
+      "size": [
+        60,
+        20
+      ],
+      "passed": true
+    },
+    {
+      "check": "[Build]",
+      "size": [
+        60,
+        20
+      ],
+      "passed": true
+    },
+    {
+      "check": "[Candidates]",
+      "size": [
+        60,
+        20
+      ],
+      "passed": true
+    },
+    {
+      "check": "Terminal too small",
+      "size": [
+        55,
+        14
+      ],
+      "passed": true
+    },
+    {
+      "check": "[Candidates]",
+      "size": [
+        60,
+        20
+      ],
+      "passed": true
+    },
+    {
+      "check": "HISTORICAL",
+      "size": [
+        100,
+        28
+      ],
+      "passed": true
+    },
+    {
+      "check": "non-TTY report summary exit 2 / no control stream dd4fb19136fa91ca1581336c6fbc22b864b86e413eaa9978ece3ee0f08c52a3b",
+      "passed": true
+    },
+    {
+      "check": "original reproduction bytes unchanged",
+      "passed": true
+    }
+  ],
+  "count": 165,
+  "reports": [],
+  "store": "examples/part4/user-failures/store-a6833cfb-39b7-4981-985a-caffaffdfdcb",
+  "noTargetOrModelExecution": true
+}

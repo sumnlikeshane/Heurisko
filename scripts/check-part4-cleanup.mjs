@@ -17,6 +17,6 @@ try{await call(['inspect',id]);throw Error('EXACT_JOB_STILL_PRESENT');}catch(e){
 confirmed=true;
 const store=new EvidenceStore(join(root,'store'));await store.put(Buffer.from('reuse after exact absence acknowledgment'));
 const receipt={version:1,observedAt:new Date().toISOString(),scope:'authored trusted development worker, no analyzed package execution',name,containerId:id,observedRunning,hotCancellation:true,result,exactIdAbsentBeforeStoreReuse:true,storeReusePassed:true,spoolRemovalAfterExactAbsence:true,limits:safetyProfile.parser};
-await writeImmutable(resolve('integration/part4/receipts/resumed/hot-cleanup.json'),Buffer.from(JSON.stringify(receipt,null,2)+'\n'));
+await writeImmutable(resolve(process.argv[2]??'integration/part4/receipts/resumed/hot-cleanup.json'),Buffer.from(JSON.stringify(receipt,null,2)+'\n'));
 if(confirmed)await fs.rm(root,{recursive:true});
 console.log(JSON.stringify(receipt));

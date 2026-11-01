@@ -1,0 +1,28 @@
+  HEURISKO   H Home    I Investigations     M Monitoring                                            
+  ────────────────────────────────────────────────────────────────────────────────────────────────  
+                                                                                                    
+    ┌─ > Open saved report ────────────────────────────────────────────────────────────────────┐    
+    │ Report file or full sha256: observation reference                                        │    
+    │                                                                                          │    
+    │ /does/not/exist|                                                                         │    
+    │                                                                                          │    
+    │ Enter validates and opens; Esc returns.                                                  │    
+    │ Missing evidence remains inspectable as metadata.                                        │    
+    │ 1-6 / 6                                                                                  │    
+    └──────────────────────────────────────────────────────────────────────────────────────────┘    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+  Open failed: REPORT_READ_FAILED                                                                   
+  Type to edit  Tab next  Ctrl+T type  Enter review  Esc back                                       
+                                                                                                    
+                                                                                                    

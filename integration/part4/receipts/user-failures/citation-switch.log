@@ -1,0 +1,3 @@
+Traceback (most recent call last):
+  File "<stdin>", line 10, in <module>
+AssertionError: [{'section': 3, 'subtab': 0, 'index': 0, 'focus': 0, 'citation': 0, 'scroll': 0, 'scrolls': [0, 0, 0], 'query': '', 'detail': False, 'pan': 0, 'selectedId': 'candidate-0'}, {'section': 3, 'subtab': 0, 'index': 0, 'focus': 0, 'citation': 0, 'scroll': 3, 'scrolls': [3, 0, 0], 'query': '', 'detail': False, 'pan': 0, 'selectedId': 'candidate-0'}]

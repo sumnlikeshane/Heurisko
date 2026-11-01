@@ -22,10 +22,10 @@ const begin = readme.indexOf('## Installation and execution');
 if (begin < 0) throw Error('SETUP_SECTION_MISSING');
 const end = readme.indexOf('\n## ', begin + 4);
 const setup = readme.slice(begin,end < 0 ? undefined : end);
-const sources = {cli,setup:'# Installation and execution\n\n'+setup,browser:await readFile('README.md','utf8')};
+const sources = {cli,setup:'# Installation and execution\n\n'+setup,browser:await readFile('content/browser.md','utf8'),'reference/browser':await readFile('README.md','utf8')};
 const section = (names) => cli.split(/(?=^## )/m).filter(s=>names.some(n=>s.startsWith('## '+n+'\n'))).join('\n');
 const docs = await Promise.all(docPages.map(async ([id,group,title]) => {
- let markdown = sources[id], source = id === 'cli' ? 'docs/CLI Reference.md' : id === 'setup' ? 'README.md#installation-and-execution' : 'apps/web/README.md';
+ let markdown = sources[id], source = id === 'cli' ? 'docs/CLI Reference.md' : id === 'setup' ? 'README.md#installation-and-execution' : id === 'browser' ? 'apps/web/content/browser.md' : 'apps/web/README.md';
  if(id === 'cli/analyze') markdown = '# Analyze\n\n' + section(['Analyze inputs and constraints','All current options','Exact npm and source override examples','Local archive and source replay']) + '\n[Output and exits](/docs/cli#output-exits-and-ci) · [Inspect](/docs/cli/inspect)';
  if(id === 'cli/inspect') markdown = '# Inspect\n\n' + section(['Inspect reports and evidence','Output, exits and CI']) + '\n[All options](/docs/cli#all-current-options) · [Troubleshooting](/docs/troubleshooting/errors)';
  if (id.startsWith('cli/')) source = 'docs/CLI Reference.md';

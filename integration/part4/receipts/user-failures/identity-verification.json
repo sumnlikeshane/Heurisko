@@ -1,0 +1,74 @@
+{
+  "current": {
+    "engine": "shane-audit-v1;sha256:187200532eedaa62b96c818af3957c4ce4deea06c8908d8a3d3ed279d89067e2",
+    "codeDigests": {
+      "engine": "sha256:0d99a9289e144a0aae8f45378a24774205ca5e572ec8f82aaf5723e1b2707c0c",
+      "producer": "sha256:de02519853ce4201cb6b2cac7ef1834dc83e60a2d0c9cab6ec0a834b0a39533b",
+      "comparison": "sha256:8be2c4525eeb95dc115556013e55f3fcd6ed907c00c6286d679fe0f58451870e",
+      "archive": "sha256:9d1722caf4fda64a76f74bf075c9675dc73986be8dc4be6f4f9a3d85baab52d6",
+      "network": "sha256:06c7b087282832746631c5a89f2ee929ae7ec8cf0b2aec8d80d30c410e264e52",
+      "storage": "sha256:763408f7644f18cd62c3cb591d006cdc7db79641f0dc797be784bbef3ca595c8",
+      "parser-runtime": "sha256:05cc905bb69c7c2bffa43e9aca54ea20d3fb2b7a1459ac40ae1a09af437187b0",
+      "parser-job": "sha256:c234dcd1eaaf84f97ff636f1471063bcb3f75661aca21c52f30e515d6a4322c2",
+      "adapter": "sha256:79970491592c61cdbad11b60527ce6ebbf730f82740e98f892b41f5c1bacc4f4",
+      "identity": "sha256:91e189c4a4b7eef82b788da7b7707af9fa6df40b4268c49d8b108c682d124e96",
+      "validation": "sha256:5b77dc41ec7d65681de88feb2f033651884bcf3cfb15bd742cbf64d2b3a48324",
+      "safety": "sha256:f66b9867a5c3a1ec4163f95a446c3d4ba975d0aa07b9df6a28d3aaa172aa9c01",
+      "npm": "sha256:19bd4bc0064b4b6421753305e26db2879662ccb887d727d0aa99defb73d6e850",
+      "sources": "sha256:6eb632d8baf16b4fe313b4433127c64247b09c64687b66387dc1dfb3883d8c25",
+      "provenance": "sha256:e9f6be405bbd3b546bcd25a377180fb5806ca6eeeb12ac8a3071b5bdaa5ce222",
+      "parserWorker": "sha256:c3425b822ae12703f1f7a7fe891abebbc5776361374efab94f227c49d9bdaceb",
+      "contractSchema": "sha256:bef30a837a383ed7a3fbf49e9bac885822d6e3bdea9ccd05ff46b37f350b4dae",
+      "contractValidator": "sha256:7b3a956eb4651477792a77659397d85c849fa48d4780ddecef02ca3d3242e2e7",
+      "contractSemantics": "sha256:c1e231aa0c887da8e890e7615f8c0ca1e72e21246155746b36c6aebb4ee636e1"
+    }
+  },
+  "checks": [
+    {
+      "name": "reproduction",
+      "reportId": "report_67c88c791c269dab8cab5aff",
+      "contentRef": "sha256:dd4fb19136fa91ca1581336c6fbc22b864b86e413eaa9978ece3ee0f08c52a3b",
+      "engine": "shane-audit-v1;sha256:6c1594a1759eb6b82127d037ca66d118e26f224bdbf534d6f690a3c6f322f915",
+      "currentCodeBound": false,
+      "module": null,
+      "exitCode": 2,
+      "evidence": 90
+    },
+    {
+      "name": "fresh-npm",
+      "reportId": "report_e088db3a11c119fbfe4c291b",
+      "contentRef": "sha256:659f2c4e6823300edc1ae19509c74c8e3cd789a8e27b841714426cab51ecd1b9",
+      "engine": "shane-audit-v1;sha256:187200532eedaa62b96c818af3957c4ce4deea06c8908d8a3d3ed279d89067e2",
+      "currentCodeBound": true,
+      "module": null,
+      "exitCode": 2,
+      "evidence": 93
+    },
+    {
+      "name": "fresh-local",
+      "reportId": "report_cc24925f49a83ea599cc750f",
+      "contentRef": "sha256:1a54411180d2491d7227ad255499559e453ba5ecfa45c03e1422046aa8e49c28",
+      "engine": "shane-audit-v1;sha256:187200532eedaa62b96c818af3957c4ce4deea06c8908d8a3d3ed279d89067e2",
+      "currentCodeBound": true,
+      "module": null,
+      "exitCode": 2,
+      "evidence": 81
+    },
+    {
+      "name": "local-e8b8116-validation",
+      "reportId": "report_09bd16233621153500f4a50c",
+      "contentRef": "sha256:1b455c2fdd0c9fed36b643bbb3ffdb0189030f058dffd1ddcbf4b66e055f944c",
+      "engine": "shane-audit-v1;sha256:187200532eedaa62b96c818af3957c4ce4deea06c8908d8a3d3ed279d89067e2",
+      "currentCodeBound": true,
+      "module": {
+        "moduleId": "@heurisko/intelligence",
+        "moduleVersion": "0.1.0",
+        "implementationSha256": "sha256:c8b84634b670ad93fec33efc82cde686c8316bb274193ec1e0cc573aa7c8774a",
+        "configurationSha256": "sha256:cf6a7c29e66512435541a8c2033b4c63204c9ac2c44d09167ab9fe763fe522b8",
+        "interpretationConfigSha256": null
+      },
+      "exitCode": 0,
+      "evidence": 81
+    }
+  ]
+}

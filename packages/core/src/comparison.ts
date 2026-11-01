@@ -49,7 +49,7 @@ export function manifestFields(bytes:Buffer):Map<string,{value:unknown;startByte
   };
   value('',0);ws();if(i!==text.length || !text.startsWith('{',text.search(/\S/)))throw new Error('MANIFEST_JSON');return fields;
 }
-export async function rawCompare(bundle:EvidenceBundle,store:EvidenceStore,artifact:LogicalMember[],source:LogicalMember[],scopeComplete:boolean):Promise<void> {
+export async function rawCompare(bundle:EvidenceBundle,store:EvidenceStore,artifact:LogicalMember[],source:LogicalMember[],scopeComplete:boolean,absenceLimitation='Missing member cannot establish absence in an incomplete inventory.'):Promise<void> {
   const am=new Map(artifact.map(m=>[m.relativePath,m])),sm=new Map(source.map(m=>[m.relativePath,m]));
   const unsupportedManifest=(a:LogicalMember|undefined,s:LogicalMember|undefined,reason:string)=>{
     bundle.coverage.complete=false;bundle.coverage.limitations.push(reason+'; full manifest bytes and raw delta retained.');
@@ -59,7 +59,7 @@ export async function rawCompare(bundle:EvidenceBundle,store:EvidenceStore,artif
     const a=am.get(path),s=sm.get(path);const equal=!!a&&!!s&&a.member.sha256===s.member.sha256;
     const status=equal?'identical':a&&s?'modified':scopeComplete?a?'added':'removed':'unresolved';
     const ids=[...(a?[a.evidenceId]:[]),...(s?[s.evidenceId]:[])];
-    const change:FileChange={changeId:canonicalId('chg_',{artifact:bundle.artifact.observedSha256,source:bundle.sourceCandidates.map(sourceIdentity),path}),status,rawEquality:equal?'equal':a&&s?'different':scopeComplete?'different':'unknown',explanationStrength:equal?'exact':'unexplained',evidenceIds:ids,notes:scopeComplete?[]:['Missing member cannot establish absence in an incomplete inventory.']};
+    const change:FileChange={changeId:canonicalId('chg_',{artifact:bundle.artifact.observedSha256,source:bundle.sourceCandidates.map(sourceIdentity),path}),status,rawEquality:equal?'equal':a&&s?'different':scopeComplete?'different':'unknown',explanationStrength:equal?'exact':'unexplained',evidenceIds:ids,notes:!scopeComplete&&(!a||!s)?[absenceLimitation]:[]};
     if(a)change.artifactPath=a.member.path;if(s)change.sourcePath=s.member.path;
     if(a&&s) {
       const metadata=(m:LogicalMember)=>({mode:m.member.mode,uid:m.member.uid,gid:m.member.gid,mtime:m.member.mtime,pax:m.member.pax});

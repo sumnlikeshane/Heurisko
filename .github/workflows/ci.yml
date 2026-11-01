@@ -49,6 +49,8 @@ jobs:
 
       - name: Test audit repairs and late parser creation
         run: pnpm run test:audit
+      - name: Test default intelligence identity and retained-content boundary
+        run: node --test packages/core/tests/intelligence-boundary.test.mjs packages/core/tests/reviewed-module.test.mjs
       - name: Verify earlier audit replay as historical evidence
         run: node scripts/verify-s3-capture.mjs examples/audit-fixes/current --historical
       - name: Verify earlier host-readable parser checkpoint as historical evidence

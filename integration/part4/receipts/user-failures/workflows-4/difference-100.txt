@@ -1,0 +1,28 @@
+  HEURISKO   H Home    I Investigations     M Monitoring                                            
+  ────────────────────────────────────────────────────────────────────────────────────────────────  
+  picocolors@1.1.1 / HISTORICAL / incomplete / Captured 2026-10-31T22:59:33Z                        
+  1 Overview   2 Findings   3 Files   4 Source   5 AI   6 Coverage                                  
+  Historical — online checks have not refreshed · i Identity                                        
+  Files                                                                                             
+  Flat / 2 modified / 5 identical / 12 unresolved (19 change records) / m next modified / v tree-…  
+  ┌─ > Files ────────── 19 ┐ ┌─ Raw source / artifact comparison ────────────────────────────────┐  
+  │   Source / .gitignore  │ │ modified / different                                              │  
+  │   unresolved / unknown │ │ SOURCE → ARTIFACT / bounded recorded byte spans; e exact bytes    │  
+  │                        │ │ RAW CHANGED SPANS / unified                                       │  
+  │   Source / CHANGELOG.… │ │ SOURCE: raw utf8 bytes [532,4628) / truncated true                │  
+  │   unresolved / unknown │ │ ARTIFACT: raw utf8 bytes [532,621) / truncated false              │  
+  │                        │ │ Viewer line alignment v1 / window-relative row numbers / e opens  │  
+  │   Artifact / LICENSE   │ │ exact bytes                                                       │  
+  │   identical / equal    │ │ SOURCE (-) → ARTIFACT (+) / relative window rows                  │  
+  │                        │ │ - S1 Motivation                                                   │  
+  │ > Artifact / README.md │ │ - S2                                                              │  
+  │   modified / different │ │ - S3 With `picocolors` we are trying to draw attention to the `n… │  
+  │                        │ │ - S4 problem and promote performance-first culture.               │  
+  │ 7 / 19 · Enter inspect │ │ - S5                                                              │  
+  └────────────────────────┘ │ - S6 ## Prior Art                                                 │  
+                             │ 1-14 / 194  j/k scroll                                            │  
+                             └───────────────────────────────────────────────────────────────────┘  
+  Modified file / Artifact / README.md / Enter inspect; e exact bytes.                              
+  m next modified  Enter inspect  e exact bytes  Tab panes  v tree/flat  q quit                     
+                                                                                                    
+                                                                                                    

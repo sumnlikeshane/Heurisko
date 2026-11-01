@@ -1,0 +1,11 @@
+[
+  {
+    "id": "999ab4764b2b468a9ad30102e4ea4016",
+    "phase": "settled_report",
+    "startedAt": "2026-10-31T23:35:32.641Z",
+    "settledAt": "2026-10-31T23:35:53.404Z",
+    "exitCode": 2,
+    "observation": "785c9f9e87aa6f4093861c3d5a42cfe0",
+    "cleanup": "not_observable"
+  }
+]

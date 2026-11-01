@@ -1,0 +1,612 @@
+[?1049h[?25l[?25l  [1mHEURISKO[22m   [4m[1mH Home   [22m[24m I Investigations     M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  [1m > New investigation      [22m  npm package / local archive  ·  o Open saved report
+
+  ┌─[1m Recent investigations [22m──────────────────────────────────── 0 indexed ┐ ┌─[1m Monitoring [22m───────────────────────────┐
+  │ PACKAGE / EXACT VERSION                                               │ │ Runner                Not configured   │
+  │ No indexed reports. o opens a report path.                            │ │ Last check            Not recorded     │
+  │                                                                       │ │ Freshness             Unknown          │
+  │                                                                       │ │                                        │
+  │                                                                       │ └────────────────────────────────────────┘
+  │                                                                       │
+  │                                                                       │ ┌─[1m Needs attention [22m─────────────────── 0 ┐
+  │                                                                       │ │ No incomplete report indexed. Job his… │
+  │                                                                       │ │                                        │
+  │                                                                       │ │                                        │
+  │                                                                       │ │                                        │
+  │                                                                       │ │                                        │
+  │                                                                       │ │                                        │
+  │                                                                       │ │                                        │
+  │                                                                       │ │                                        │
+  │                                                                       │ │                                        │
+  │                                                                       │ │                                        │
+  │                                                                       │ │                                        │
+  │                                                                       │ │                                        │
+  │                                                                       │ │ Inspect recorded scope; no safety ver… │
+  └───────────────────────────────────────────────────────────────────────┘ └────────────────────────────────────────┘
+
+
+
+
+
+  New investigation
+  [1mEnter[22m new  [1mTab[22m panels  [1mo[22m open  [1m?[22m help  [1mq[22m quit
+
+[?25l[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m   [4m[1mH Home   [22m[24m I Investigations     M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+                 ┌─[1m > New investigation [22m─────────────────────────────────────────────────────── 1 / 2 ┐
+                 │   Input (Ctrl+T)  [1m[ npm ][22m   [1mLocal archive[22m                                          │
+                 │                                                                                    │
+                 │ [1mPackage name  [editing]                                                           [22m │
+                 │ >  @scope/package                                                                  │
+                 │ Exact version                                                                      │
+                 │   1.2.3                                                                            │
+                 │ Source repository (optional override)                                              │
+                 │   https://github.com/owner/repository                                              │
+                 │ Full commit                                                                        │
+                 │   40-character immutable commit                                                    │
+                 │ Subdirectory                                                                       │
+                 │   Repository root if empty                                                         │
+                 │ AI disabled / runtime unavailable · source selection is not provenance             │
+                 │ [1m Load retained example                                                            [22m │
+                 │ [1m Review target                                                                    [22m │
+                 │                                                                                    │
+                 └────────────────────────────────────────────────────────────────────────────────────┘
+
+
+
+
+
+
+
+
+
+
+  New investigation / npm
+  [1mType[22m to edit  [1mTab[22m next  [1mCtrl+T[22m type  [1mEnter[22m review  [1mEsc[22m back
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m   [4m[1mH Home   [22m[24m I Investigations     M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+                 ┌─[1m > New investigation [22m─────────────────────────────────────────────────────── 1 / 2 ┐
+                 │   Input (Ctrl+T)  [1mnpm[22m   [1m[ Local archive ][22m                                          │
+                 │                                                                                    │
+                 │ [1mArchive path  [editing]                                                           [22m │
+                 │ >  ./package-1.2.3.tgz                                                             │
+                 │ Source repository                                                                  │
+                 │   https://github.com/owner/repository                                              │
+                 │ Full commit                                                                        │
+                 │   40-character immutable commit                                                    │
+                 │ Subdirectory                                                                       │
+                 │   Repository root if empty                                                         │
+                 │ Source archive (optional)                                                          │
+                 │   Optional retained source .tar.gz                                                 │
+                 │ AI disabled / runtime unavailable · source selection is not provenance             │
+                 │ [1m Load retained example                                                            [22m │
+                 │ [1m Review target                                                                    [22m │
+                 │                                                                                    │
+                 └────────────────────────────────────────────────────────────────────────────────────┘
+
+
+
+
+
+
+
+
+
+
+  New investigation / Local archive
+  [1mType[22m to edit  [1mTab[22m next  [1mCtrl+T[22m type  [1mEnter[22m review  [1mEsc[22m back
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m   [4m[1mH Home   [22m[24m I Investigations     M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+                 ┌─[1m > New investigation [22m─────────────────────────────────────────────────────── 1 / 2 ┐
+                 │   Input (Ctrl+T)  [1mnpm[22m   [1m[ Local archive ][22m                                          │
+                 │                                                                                    │
+                 │ [1mArchive path  [editing]                                                           [22m │
+                 │ > examples/s2/current/inputs/picocolors-1.1.1.local-inert-mutation.tgz             │
+                 │ Source repository                                                                  │
+                 │   https://github.com/owner/repository                                              │
+                 │ Full commit                                                                        │
+                 │   40-character immutable commit                                                    │
+                 │ Subdirectory                                                                       │
+                 │   Repository root if empty                                                         │
+                 │ Source archive (optional)                                                          │
+                 │   Optional retained source .tar.gz                                                 │
+                 │ AI disabled / runtime unavailable · source selection is not provenance             │
+                 │ [1m Load retained example                                                            [22m │
+                 │ [1m Review target                                                                    [22m │
+                 │                                                                                    │
+                 └────────────────────────────────────────────────────────────────────────────────────┘
+
+
+
+
+
+
+
+
+
+
+  New investigation / Local archive
+  [1mType[22m to edit  [1mTab[22m next  [1mCtrl+T[22m type  [1mEnter[22m review  [1mEsc[22m back
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m   [4m[1mH Home   [22m[24m I Investigations     M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+                 ┌─[1m > New investigation [22m─────────────────────────────────────────────────────── 1 / 2 ┐
+                 │   Input (Ctrl+T)  [1mnpm[22m   [1m[ Local archive ][22m                                          │
+                 │                                                                                    │
+                 │ Archive path                                                                       │
+                 │   examples/s2/current/inputs/picocolors-1.1.1.local-inert-mutation.tgz             │
+                 │ [1mSource repository  [editing]                                                      [22m │
+                 │ >  https://github.com/owner/repository                                             │
+                 │ Full commit                                                                        │
+                 │   40-character immutable commit                                                    │
+                 │ Subdirectory                                                                       │
+                 │   Repository root if empty                                                         │
+                 │ Source archive (optional)                                                          │
+                 │   Optional retained source .tar.gz                                                 │
+                 │ AI disabled / runtime unavailable · source selection is not provenance             │
+                 │ [1m Load retained example                                                            [22m │
+                 │ [1m Review target                                                                    [22m │
+                 │                                                                                    │
+                 └────────────────────────────────────────────────────────────────────────────────────┘
+
+
+
+
+
+
+
+
+
+
+  New investigation / Local archive
+  [1mType[22m to edit  [1mTab[22m next  [1mCtrl+T[22m type  [1mEnter[22m review  [1mEsc[22m back
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m   [4m[1mH Home   [22m[24m I Investigations     M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+                 ┌─[1m > New investigation [22m─────────────────────────────────────────────────────── 1 / 2 ┐
+                 │   Input (Ctrl+T)  [1mnpm[22m   [1m[ Local archive ][22m                                          │
+                 │                                                                                    │
+                 │ Archive path                                                                       │
+                 │   examples/s2/current/inputs/picocolors-1.1.1.local-inert-mutation.tgz             │
+                 │ [1mSource repository  [editing]                                                      [22m │
+                 │ > https://github.com/alexeyraspopov/picocolors                                     │
+                 │ Full commit                                                                        │
+                 │   40-character immutable commit                                                    │
+                 │ Subdirectory                                                                       │
+                 │   Repository root if empty                                                         │
+                 │ Source archive (optional)                                                          │
+                 │   Optional retained source .tar.gz                                                 │
+                 │ AI disabled / runtime unavailable · source selection is not provenance             │
+                 │ [1m Load retained example                                                            [22m │
+                 │ [1m Review target                                                                    [22m │
+                 │                                                                                    │
+                 └────────────────────────────────────────────────────────────────────────────────────┘
+
+
+
+
+
+
+
+
+
+
+  New investigation / Local archive
+  [1mType[22m to edit  [1mTab[22m next  [1mCtrl+T[22m type  [1mEnter[22m review  [1mEsc[22m back
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m   [4m[1mH Home   [22m[24m I Investigations     M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+                 ┌─[1m > New investigation [22m─────────────────────────────────────────────────────── 1 / 2 ┐
+                 │   Input (Ctrl+T)  [1mnpm[22m   [1m[ Local archive ][22m                                          │
+                 │                                                                                    │
+                 │ Archive path                                                                       │
+                 │   examples/s2/current/inputs/picocolors-1.1.1.local-inert-mutation.tgz             │
+                 │ Source repository                                                                  │
+                 │   https://github.com/alexeyraspopov/picocolors                                     │
+                 │ [1mFull commit  [editing]                                                            [22m │
+                 │ >  40-character immutable commit                                                   │
+                 │ Subdirectory                                                                       │
+                 │   Repository root if empty                                                         │
+                 │ Source archive (optional)                                                          │
+                 │   Optional retained source .tar.gz                                                 │
+                 │ AI disabled / runtime unavailable · source selection is not provenance             │
+                 │ [1m Load retained example                                                            [22m │
+                 │ [1m Review target                                                                    [22m │
+                 │                                                                                    │
+                 └────────────────────────────────────────────────────────────────────────────────────┘
+
+
+
+
+
+
+
+
+
+
+  New investigation / Local archive
+  [1mType[22m to edit  [1mTab[22m next  [1mCtrl+T[22m type  [1mEnter[22m review  [1mEsc[22m back
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m   [4m[1mH Home   [22m[24m I Investigations     M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+                 ┌─[1m > New investigation [22m─────────────────────────────────────────────────────── 1 / 2 ┐
+                 │   Input (Ctrl+T)  [1mnpm[22m   [1m[ Local archive ][22m                                          │
+                 │                                                                                    │
+                 │ Archive path                                                                       │
+                 │   examples/s2/current/inputs/picocolors-1.1.1.local-inert-mutation.tgz             │
+                 │ Source repository                                                                  │
+                 │   https://github.com/alexeyraspopov/picocolors                                     │
+                 │ [1mFull commit  [editing]                                                            [22m │
+                 │ > 7249f8c5d4825550f70bc1ea98652639933d3bbd                                         │
+                 │ Subdirectory                                                                       │
+                 │   Repository root if empty                                                         │
+                 │ Source archive (optional)                                                          │
+                 │   Optional retained source .tar.gz                                                 │
+                 │ AI disabled / runtime unavailable · source selection is not provenance             │
+                 │ [1m Load retained example                                                            [22m │
+                 │ [1m Review target                                                                    [22m │
+                 │                                                                                    │
+                 └────────────────────────────────────────────────────────────────────────────────────┘
+
+
+
+
+
+
+
+
+
+
+  New investigation / Local archive
+  [1mType[22m to edit  [1mTab[22m next  [1mCtrl+T[22m type  [1mEnter[22m review  [1mEsc[22m back
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m   [4m[1mH Home   [22m[24m I Investigations     M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+                 ┌─[1m > New investigation [22m─────────────────────────────────────────────────────── 1 / 2 ┐
+                 │   Input (Ctrl+T)  [1mnpm[22m   [1m[ Local archive ][22m                                          │
+                 │                                                                                    │
+                 │ Archive path                                                                       │
+                 │   examples/s2/current/inputs/picocolors-1.1.1.local-inert-mutation.tgz             │
+                 │ Source repository                                                                  │
+                 │   https://github.com/alexeyraspopov/picocolors                                     │
+                 │ Full commit                                                                        │
+                 │   7249f8c5d4825550f70bc1ea98652639933d3bbd                                         │
+                 │ [1mSubdirectory  [editing]                                                           [22m │
+                 │ >  Repository root if empty                                                        │
+                 │ Source archive (optional)                                                          │
+                 │   Optional retained source .tar.gz                                                 │
+                 │ AI disabled / runtime unavailable · source selection is not provenance             │
+                 │ [1m Load retained example                                                            [22m │
+                 │ [1m Review target                                                                    [22m │
+                 │                                                                                    │
+                 └────────────────────────────────────────────────────────────────────────────────────┘
+
+
+
+
+
+
+
+
+
+
+  New investigation / Local archive
+  [1mType[22m to edit  [1mTab[22m next  [1mCtrl+T[22m type  [1mEnter[22m review  [1mEsc[22m back
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m   [4m[1mH Home   [22m[24m I Investigations     M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+                 ┌─[1m > New investigation [22m─────────────────────────────────────────────────────── 1 / 2 ┐
+                 │   Input (Ctrl+T)  [1mnpm[22m   [1m[ Local archive ][22m                                          │
+                 │                                                                                    │
+                 │ Archive path                                                                       │
+                 │   examples/s2/current/inputs/picocolors-1.1.1.local-inert-mutation.tgz             │
+                 │ Source repository                                                                  │
+                 │   https://github.com/alexeyraspopov/picocolors                                     │
+                 │ Full commit                                                                        │
+                 │   7249f8c5d4825550f70bc1ea98652639933d3bbd                                         │
+                 │ Subdirectory                                                                       │
+                 │   Repository root if empty                                                         │
+                 │ [1mSource archive (optional)  [editing]                                              [22m │
+                 │ >  Optional retained source .tar.gz                                                │
+                 │ AI disabled / runtime unavailable · source selection is not provenance             │
+                 │ [1m Load retained example                                                            [22m │
+                 │ [1m Review target                                                                    [22m │
+                 │                                                                                    │
+                 └────────────────────────────────────────────────────────────────────────────────────┘
+
+
+
+
+
+
+
+
+
+
+  New investigation / Local archive
+  [1mType[22m to edit  [1mTab[22m next  [1mCtrl+T[22m type  [1mEnter[22m review  [1mEsc[22m back
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m   [4m[1mH Home   [22m[24m I Investigations     M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+                 ┌─[1m > New investigation [22m─────────────────────────────────────────────────────── 1 / 2 ┐
+                 │   Input (Ctrl+T)  [1mnpm[22m   [1m[ Local archive ][22m                                          │
+                 │                                                                                    │
+                 │ Archive path                                                                       │
+                 │   examples/s2/current/inputs/picocolors-1.1.1.local-inert-mutation.tgz             │
+                 │ Source repository                                                                  │
+                 │   https://github.com/alexeyraspopov/picocolors                                     │
+                 │ Full commit                                                                        │
+                 │   7249f8c5d4825550f70bc1ea98652639933d3bbd                                         │
+                 │ Subdirectory                                                                       │
+                 │   Repository root if empty                                                         │
+                 │ [1mSource archive (optional)  [editing]                                              [22m │
+                 │ > 9045b/blobs/c1053a4131e05d3e62088b3988f4cefe16e05b1a90db59115bf7706f7350e7de     │
+                 │ AI disabled / runtime unavailable · source selection is not provenance             │
+                 │ [1m Load retained example                                                            [22m │
+                 │ [1m Review target                                                                    [22m │
+                 │                                                                                    │
+                 └────────────────────────────────────────────────────────────────────────────────────┘
+
+
+
+
+
+
+
+
+
+
+  New investigation / Local archive
+  [1mType[22m to edit  [1mTab[22m next  [1mCtrl+T[22m type  [1mEnter[22m review  [1mEsc[22m back
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m   [4m[1mH Home   [22m[24m I Investigations     M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+
+
+
+
+
+                 ┌─[1m > Validating and retaining target [22m────────────────────────────────────────────────┐
+                 │ Validating and retaining target                                                    │
+                 │                                                                                    │
+                 │ [━━━━────────────────────────] Working / indeterminate                             │
+                 │ Wait for the operation to finish. Ctrl+C requests cancellation.                    │
+                 │                                                                                    │
+                 └────────────────────────────────────────────────────────────────────────────────────┘
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  New investigation / Local archive
+  [1mCtrl+C[22m cancel  [1mWaiting[22m for operation
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m   [4m[1mH Home   [22m[24m I Investigations     M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+
+
+
+
+
+                 ┌─[1m > Validating and retaining target [22m────────────────────────────────────────────────┐
+                 │ Validating and retaining target                                                    │
+                 │                                                                                    │
+                 │ [─━━━━───────────────────────] Working / indeterminate                             │
+                 │ Wait for the operation to finish. Ctrl+C requests cancellation.                    │
+                 │                                                                                    │
+                 └────────────────────────────────────────────────────────────────────────────────────┘
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  New investigation / Local archive
+  [1mCtrl+C[22m cancel  [1mWaiting[22m for operation
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m   [4m[1mH Home   [22m[24m I Investigations     M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+
+
+
+
+
+                 ┌─[1m > Validating and retaining target [22m────────────────────────────────────────────────┐
+                 │ Validating and retaining target                                                    │
+                 │                                                                                    │
+                 │ [──━━━━──────────────────────] Working / indeterminate                             │
+                 │ Wait for the operation to finish. Ctrl+C requests cancellation.                    │
+                 │                                                                                    │
+                 └────────────────────────────────────────────────────────────────────────────────────┘
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  New investigation / Local archive
+  [1mCtrl+C[22m cancel  [1mWaiting[22m for operation
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m   [4m[1mH Home   [22m[24m I Investigations     M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+
+
+
+
+
+                 ┌─[1m > Validating and retaining target [22m────────────────────────────────────────────────┐
+                 │ Validating and retaining target                                                    │
+                 │                                                                                    │
+                 │ [───━━━━─────────────────────] Working / indeterminate                             │
+                 │ Wait for the operation to finish. Ctrl+C requests cancellation.                    │
+                 │                                                                                    │
+                 └────────────────────────────────────────────────────────────────────────────────────┘
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  New investigation / Local archive
+  [1mCtrl+C[22m cancel  [1mWaiting[22m for operation
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m   [4m[1mH Home   [22m[24m I Investigations     M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+
+
+
+
+
+                 ┌─[1m > Validating and retaining target [22m────────────────────────────────────────────────┐
+                 │ Validating and retaining target                                                    │
+                 │                                                                                    │
+                 │ [────━━━━────────────────────] Working / indeterminate                             │
+                 │ Wait for the operation to finish. Ctrl+C requests cancellation.                    │
+                 │                                                                                    │
+                 └────────────────────────────────────────────────────────────────────────────────────┘
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  New investigation / Local archive
+  [1mCtrl+C[22m cancel  [1mWaiting[22m for operation
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m   [4m[1mH Home   [22m[24m I Investigations     M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+
+
+
+
+
+                 ┌─[1m > Validating and retaining target [22m────────────────────────────────────────────────┐
+                 │ Validating and retaining target                                                    │
+                 │                                                                                    │
+                 │ [─────━━━━───────────────────] Working / indeterminate                             │
+                 │ Wait for the operation to finish. Ctrl+C requests cancellation.                    │
+                 │                                                                                    │
+                 └────────────────────────────────────────────────────────────────────────────────────┘
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  New investigation / Local archive
+  [1mCtrl+C[22m cancel  [1mWaiting[22m for operation
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m   [4m[1mH Home   [22m[24m I Investigations     M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+              ┌─[1m > Review exact target [22m─────────────────────────────────────────────────────────── 2 / 2 ┐
+              │ [1mArchive                                                                                 [22m │
+              │ <workspace>/examples/s2/current/inputs/picocolo │
+              │ rs-1.1.1.local-inert-mutation.tgz                                                        │
+              │ ! Source selection is a comparison target; release binding is not proven.                │
+              │ Source        https://github.com/alexeyraspopov/picocolors                               │
+              │ Commit        7249f8c5d4825550f70bc1ea98652639933d3bbd                                   │
+              │ Subdirectory  (repository root)                                                          │
+              │ SHA-256       sha256:bcdd003ee749b70575fb2793d3892a393d1224457ecb8ca9c37ff4cfd55e098d    │
+              │ Local snapshot retained; Start uses the reviewed bytes.                                  │
+              │ Source bytes  sha256:c1053a4131e05d3e62088b3988f4cefe16e05b1a90db59115bf7706f7350e7de /  │
+              │ user asserted                                                                            │
+              │ 1-11 / 14 · Enter Start · Esc edit                                                       │
+              │ [1m > Start investigation                                                                  [22m │
+              └──────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+
+
+
+
+
+
+
+
+
+
+
+  review
+  [1mEnter[22m Start  [1mj/k[22m scroll  [1mEsc[22m edit  [1mq[22m quit
+

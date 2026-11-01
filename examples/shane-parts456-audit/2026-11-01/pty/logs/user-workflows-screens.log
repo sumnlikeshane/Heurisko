@@ -1,0 +1,54 @@
+Traceback (most recent call last):
+  File "/tmp/heurisko-parts456-pty.py", line 26, in <module>
+    runpy.run_path(str(repo/'packages/tui/tests'/script),run_name='__main__')
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 294, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "<workspace>/packages/tui/tests/user-workflows.py", line 50, in <module>
+    s.send('3',.4);expect(s,'Artifact root/');s.capture(CAP/f'directories-{c}');s.send('m',.4);expect(s,'modified / different');s.send('\r',.5);expect(s,'RAW CHANGED SPANS');expect(s,'SOURCE: raw utf8');s.capture(CAP/f'difference-{c}');s.send('d',.3);expect(s,'RAW CHANGED SPANS');s.send('e',.4);expect(s,'Evidence');expect(s,'RAW utf8:');s.capture(CAP/f'raw-{c}');s.send('\x1b',.4);expect(s,'RAW CHANGED SPANS');s.send('\x1b',.6);expect(s,'Flat /')
+                                                                                                                                                                              ~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "<workspace>/packages/tui/tests/user-workflows.py", line 15, in expect
+    assert ' '.join(text.split()) in ' '.join(s.frame().replace('│',' ').split()),repr(text)+' missing\n'+s.frame()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'SOURCE: raw utf8' missing
+  HEURISKO   H Home    I Investigations     M Monitoring                                                                                                        
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+  picocolors@1.1.1 / HISTORICAL / incomplete / Captured 2026-10-31T22:59:33Z                                                                                    
+  1 Overview   2 Findings   3 Files   4 Source   5 AI   6 Coverage                                                                                              
+  Historical — online checks have not refreshed · i Identity                                                                                                    
+  Files                                                                                                                                                         
+  Files > Artifact / README.md / Esc restores position                                                                                                          
+  ┌─ > Artifact / README.md ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐  
+  │ modified / different                                                                                                                                     │  
+  │ SOURCE → ARTIFACT / bounded recorded byte spans; e exact bytes                                                                                           │  
+  │ RAW CHANGED SPANS / side-by-side                                                                                                                         │  
+  │ SOURCE: Metadata only: READ_FAILED                                                                                                                       │  
+  │ ARTIFACT: Metadata only: READ_FAILED                                                                                                                     │  
+  │ Viewer line alignment v1 / window-relative row numbers / e opens exact bytes                                                                             │  
+  │ SOURCE                                                                                                                                                   │  
+  │ Metadata only: READ_FAILED                                                                                                                               │  
+  │ ARTIFACT                                                                                                                                                 │  
+  │ Metadata only: READ_FAILED                                                                                                                               │  
+  │ No aligned comparison is inferred where a side is absent, missing or binary.                                                                             │  
+  │                                                                                                                                                          │  
+  │ File:                                                                                                                                                    │  
+  │ modified / raw bytes different                                                                                                                           │  
+  │                                                                                                                                                          │  
+  │ Pairing:                                                                                                                                                 │  
+  │ recorded source and artifact members for this change.                                                                                                    │  
+  │ Raw inventory complete; source association remains ambiguous. One-sided records stay unresolved; release-relative absence is not established.            │  
+  │                                                                                                                                                          │  
+  │ Historical wording caveat:                                                                                                                               │  
+  │ stored notes say incomplete inventory. Both raw inventories/stages are complete here; the producer also used that message when ambiguous source          │  
+  │ association blocked absence conclusions. Original notes are preserved below.                                                                             │  
+  │                                                                                                                                                          │  
+  │ Artifact path:                                                                                                                                           │  
+  │ package/README.md                                                                                                                                        │  
+  │                                                                                                                                                          │  
+  │ 1-26 / 42  j/k scroll                                                                                                                                    │  
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘  
+  Modified file / Artifact / README.md / Enter inspect; e exact bytes.                                                                                          
+  m next modified  Enter inspect  e exact bytes  Tab panes  v tree/flat  q quit                                                                                 
+                                                                                                                                                                
+                                                                                                                                                                

@@ -1,0 +1,21 @@
+{
+  "version": "heurisko-fixed-audit-assembly-v1",
+  "reason": "Concurrent incoming module/source changes are excluded from this pre-integration audit; original checkout is untouched.",
+  "recoveredBaselineSHA256": {
+    "packages/core/src/engine.ts": "a9bfcdfa99ec5360f4754351e55ac40248333b731c756d44e08dc7bba0683596",
+    "packages/core/src/index.ts": "d5abc08e31a318febe1f527ef338b4d6f530821db5f16bbeef450969941ef484",
+    "packages/core/package.json": "39e9a1aaa27ee2620fbb50ba2f35722b638ae5384d355c3077bd9d3d800cb337",
+    "pnpm-lock.yaml": "7b304d2abf2987264821998ddf490e501ec65fac81af28888b51793a32daeedb",
+    "apps/web/src/investigate.tsx": "e29ec7b2d8f50244dceea769af174581d85d87fe27b6d8cee8fbe0ad8ba7612e",
+    "apps/web/tests/investigation-overhaul.test.mjs": "7e661466f7ca4127ac4b6b4a2d67a5489db93f138ff43794190047e42705bc11"
+  },
+  "excluded": [
+    "packages/intelligence-reviewed",
+    "packages/core/src/intelligence-boundary.ts",
+    "packages/core/src/reviewed-module.ts",
+    "concurrent final-hour tooling/tests"
+  ],
+  "copiedFileCount": 28978,
+  "dependencyInstall": false,
+  "targetExecution": false
+}

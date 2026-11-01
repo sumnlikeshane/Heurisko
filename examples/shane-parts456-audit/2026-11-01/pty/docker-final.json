@@ -1,0 +1,46 @@
+{
+  "scope": "Independent final exact-store-label Docker inventory and actual lock/spool filesystem checks; UI cleanup acknowledgment remains not_observable",
+  "items": [
+    {
+      "store": ".heurisko/parts456-audit-20261101/pty/report-adoption-4h1qzqrz/workspace/store",
+      "storeLabel": "de6fcd6ad81d01c3b76fc8f7554c730159936b3579990ea9759d530fab7296da",
+      "queryExitCode": 0,
+      "containerIds": [],
+      "querySucceededAndNoContainers": true,
+      "parserLockAbsent": true,
+      "writeLockAbsent": true,
+      "parserSpool": []
+    },
+    {
+      "store": ".heurisko/parts456-audit-20261101/pty/workspace-v2/.heurisko/tui-visual-live-09804684-50e8-40c4-87b5-7b90846ff67d",
+      "storeLabel": "cdcaf71bfd3292d47d49119a3c7f909a66f326b7092c9c0869267fedc9c12605",
+      "queryExitCode": 0,
+      "containerIds": [],
+      "querySucceededAndNoContainers": true,
+      "parserLockAbsent": true,
+      "writeLockAbsent": true,
+      "parserSpool": []
+    },
+    {
+      "store": ".heurisko/parts456-audit-20261101/pty/workspace-v2/.heurisko/tui-visual-live-2f334d01-c31e-4649-8ce1-9dcb03b64fad",
+      "storeLabel": "3cd1b54fd6def2ecb7974b935f38a55f748f5eb6bfad37df4755ac6645150dec",
+      "queryExitCode": 0,
+      "containerIds": [],
+      "querySucceededAndNoContainers": true,
+      "parserLockAbsent": true,
+      "writeLockAbsent": true,
+      "parserSpool": []
+    },
+    {
+      "store": ".heurisko/parts456-audit-20261101/pty/workspace-v2/.heurisko/state-repro-98758e2a-a4ef-4f2a-afe8-5cceacfe4489",
+      "storeLabel": "7d325bdbd24a871ad0e057b1c938f2246204f01d83e886a9a045ae77121987c0",
+      "queryExitCode": 0,
+      "containerIds": [],
+      "querySucceededAndNoContainers": true,
+      "parserLockAbsent": true,
+      "writeLockAbsent": true,
+      "parserSpool": []
+    }
+  ],
+  "allQueriedAbsentAndNoLocksOrSpool": true
+}

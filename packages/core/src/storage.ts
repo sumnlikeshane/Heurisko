@@ -4,7 +4,7 @@ import { dirname, join, resolve, parse } from 'node:path';
 import { randomUUID } from 'node:crypto';
 import type { InvestigationReport } from '@heurisko/contracts';
 import { canonicalJSON, sha256, sourceIdentity } from './identity.js';
-import { decodeReport, encodeReport, type ValidationContext } from './validation.js';
+import { decodeReportBytes, encodeReport, type ValidationContext } from './validation.js';
 import { safetyProfile } from './safety.js';
 
 export class StorageError extends Error { constructor(public readonly code:string) { super(code); } }
@@ -19,7 +19,9 @@ export async function privateDirectory(path:string):Promise<void> {
   }
 }
 export async function boundedFile(path:string,limit:number):Promise<Buffer> {
-  const handle=await fs.open(path,constants.O_RDONLY|constants.O_NOFOLLOW);
+  // A FIFO blocks at open before fstat can reject it unless NONBLOCK is set.
+  // Regular files keep the same size/type checks and streaming byte bound.
+  const handle=await fs.open(path,constants.O_RDONLY|constants.O_NOFOLLOW|constants.O_NONBLOCK);
   try {
     const stat=await handle.stat(); if (!stat.isFile() || stat.size>limit) throw new StorageError('FILE_LIMIT_OR_TYPE');
     const chunks:Buffer[]=[]; let total=0;
@@ -98,7 +100,7 @@ export class EvidenceStore {
     }); return ref;
   }
   async loadReport(ref:string,context:ValidationContext={}):Promise<InvestigationReport> {
-    return decodeReport((await this.get(ref,8*1024*1024)).toString('utf8'),context);
+    return decodeReportBytes(await this.get(ref,8*1024*1024),context);
   }
   async verifyEvidence(report:InvestigationReport):Promise<void> {
     report=structuredClone(report);

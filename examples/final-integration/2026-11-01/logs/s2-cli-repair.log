@@ -1,0 +1,16 @@
+TAP version 13
+# Subtest: CLI is redirected/JSON-safe, inspect resolves exact retained evidence; terminal controls remain inert
+ok 1 - CLI is redirected/JSON-safe, inspect resolves exact retained evidence; terminal controls remain inert
+  ---
+  duration_ms: 16757.847334
+  type: 'test'
+  ...
+1..1
+# tests 1
+# suites 0
+# pass 1
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 16922.912875

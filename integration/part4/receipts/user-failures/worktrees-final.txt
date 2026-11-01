@@ -1,0 +1,3 @@
+<WORKSPACE>                          0e2be5a [docs/share-research-with-team]
+<TASK_TMP>/heurisko-handoff-s1-s3-audit-fixes                               c08a701 [handoff/s1-s3-audit-fixes]
+<WORKSPACE>-tui-visual-spike-v0.1.0  0e2be5a [experiment/tui-visual-spike-v0.1.0]

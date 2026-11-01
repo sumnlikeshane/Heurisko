@@ -1,0 +1,40 @@
+  HEURISKO   H Home    I Investigations     M Monitoring                                                                                                        
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+  picocolors@1.1.1 / HISTORICAL / incomplete / Captured 2026-10-31T22:59:33Z                                                                                    
+  1 Overview   2 Findings   3 Files   4 Source   5 AI   6 Coverage                                                                                              
+  Historical — online checks have not refreshed · i Identity                                                                                                    
+  Source                                                                                                                                                        
+  [Candidates]  Provenance  Build                                                                                                                               
+  ┌─ > Source records ───────────── 1 ┐ ┌─ Source details ─────────────────────────────────────────────┐ ┌─ Supporting evidence ─────────────────────────────┐  
+  │ > Candidate 1 / 6f0a4638348e      │ │ Association ambiguous — this candidate is not a verified     │ │ Citations / Up–Down selects                       │  
+  │   ambiguous                       │ │ release baseline.                                            │ │ > ev_3ca16ad46cd957d737ef0c18                     │  
+  │                                   │ │                                                              │ │ ev_ec5b0358b13edb689c4ced2c                       │  
+  │ 1 / 1 · Enter inspect             │ │ Compared target:                                             │ │ ev_d92f043e33ac7f6993c2b35d                       │  
+  └───────────────────────────────────┘ │ this repository / commit / package directory was selected.   │ │ ev_065b4580538f2a13348b79ac                       │  
+                                        │                                                              │ │ ev_f8a730b1133122753c4ae1ce                       │  
+                                        │ Candidate basis:                                             │ │ ev_276b463ab652843042b81668                       │  
+                                        │ user-override, registry, artifact-manifest, version-tag.     │ │ ev_2e14b499a02edfc5f8403706                       │  
+                                        │                                                              │ │ ev_a4390f0100c665fa0f521a21                       │  
+                                        │ Version labels:                                              │ │ ev_923052180287909e51ae0c4c                       │  
+                                        │ artifact 1.1.1; selected source 1.1.0. Evidence              │ │                                                   │  
+                                        │ ev_3ca16ad46cd957d737ef0c18 (e opens exact values; s         │ │ ev_3ca16ad46cd957d737ef0c18                       │  
+                                        │ switches side).                                              │ │ BOTH / package.json                               │  
+                                        │                                                              │ │ RAW utf8: [532, 621) / recorded [532, 621)        │  
+                                        │ SOURCE CONFLICT:                                             │ │ Window truncated: false / total blob 622 bytes    │  
+                                        │ SOURCE_VERSION_LABEL_DIFFERS                                 │ │                                                   │  
+                                        │                                                              │ │ Docs                                              │  
+                                        │ Discovery limitation:                                        │ │ Read **[full                                      │  
+                                        │ version-tag v1.1.1 — SOURCE_TAG_RATE_LIMITED. This is not    │ │ docs](https://github.com/alexeyraspopov/picocolor │  
+                                        │ evidence that the tag is absent.                             │ │ s#readme)** on GitHub.                            │  
+                                        │                                                              │ │                                                   │  
+                                        │ Discovery limitation:                                        │ │ Method: strict-json-value-byte-spans-v1           │  
+                                        │ version-tag 1.1.1 — SOURCE_TAG_DISCOVERY_SKIPPED_RATE_LIMIT. │ │ Availability: retained                            │  
+                                        │ This is not evidence that the tag is absent.                 │ │ Verification: Not recorded                        │  
+                                        │                                                              │ │ Content digest:                                   │  
+                                        │ Verified observation:                                        │ │ sha256:9c6cdf861be3a099424c6be279a2d7f09423517d6d │  
+                                        │ 1-26 / 57  j/k scroll                                        │ │ 1-26 / 31  j/k scroll                             │  
+                                        └──────────────────────────────────────────────────────────────┘ └───────────────────────────────────────────────────┘  
+  SOURCE CONFLICT / inspect source claims                                                                                                                       
+  v subtabs  Enter inspect  e evidence  n new target  Tab panes  q quit                                                                                         
+                                                                                                                                                                
+                                                                                                                                                                

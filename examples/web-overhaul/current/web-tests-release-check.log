@@ -1,0 +1,424 @@
+
+> heurisko@ test:web <WORKSPACE>
+> pnpm run build && pnpm --filter @heurisko/web test
+
+
+> heurisko@ build <WORKSPACE>
+> pnpm --filter @heurisko/core... run build && node_modules/.bin/tsc -p integration/part4/tsconfig.json && pnpm --filter @heurisko/tui --filter @heurisko/cli --filter @heurisko/web run build
+
+Scope: 2 of 6 workspace projects
+packages/contracts build$ tsc -p tsconfig.json
+packages/contracts build: Done
+packages/core build$ tsc -p tsconfig.json
+packages/core build: Done
+Scope: 3 of 6 workspace projects
+packages/tui build$ tsc -p tsconfig.json
+apps/web build$ node build.mjs
+apps/web build: Done
+packages/tui build: Done
+packages/cli build$ tsc -p tsconfig.json
+packages/cli build: Done
+
+> @heurisko/web@0.1.0 test <WORKSPACE>/apps/web
+> node --test tests/*.test.mjs
+
+TAP version 13
+# Subtest: a read deadline aborts the pending response exactly once, without announcing a service disconnect or retrying
+ok 1 - a read deadline aborts the pending response exactly once, without announcing a service disconnect or retrying
+  ---
+  duration_ms: 47.433333
+  type: 'test'
+  ...
+# Subtest: caller cancellation preserves its original reason instead of becoming a timeout
+ok 2 - caller cancellation preserves its original reason instead of becoming a timeout
+  ---
+  duration_ms: 9.07425
+  type: 'test'
+  ...
+# Subtest: the read deadline also bounds response body consumption after successful headers
+ok 3 - the read deadline also bounds response body consumption after successful headers
+  ---
+  duration_ms: 12.457541
+  type: 'test'
+  ...
+# Subtest: every documentation page, declared navigation link and anchor resolves from a deterministic manifest
+ok 4 - every documentation page, declared navigation link and anchor resolves from a deterministic manifest
+  ---
+  duration_ms: 5.477708
+  type: 'test'
+  ...
+# Subtest: docs search spans workflows/reference/errors with section snippets and exact targets
+ok 5 - docs search spans workflows/reference/errors with section snippets and exact targets
+  ---
+  duration_ms: 4.188458
+  type: 'test'
+  ...
+# Subtest: inert markdown keeps semantic headings, ordered/bullet lists, table headings, exact selectable code and safe links
+ok 6 - inert markdown keeps semantic headings, ordered/bullet lists, table headings, exact selectable code and safe links
+  ---
+  duration_ms: 6.918208
+  type: 'test'
+  ...
+# Subtest: draft validation catches invalid combinations before admission, and canonical targets match core
+ok 7 - draft validation catches invalid combinations before admission, and canonical targets match core
+  ---
+  duration_ms: 37.865958
+  type: 'test'
+  ...
+# Subtest: accepted job summaries bind actual core options and archive bytes without host paths
+ok 8 - accepted job summaries bind actual core options and archive bytes without host paths
+  ---
+  duration_ms: 13.69825
+  type: 'test'
+  ...
+# Subtest: latest stage facts retain repeated events and truthful cancel/error actions
+ok 9 - latest stage facts retain repeated events and truthful cancel/error actions
+  ---
+  duration_ms: 1.285834
+  type: 'test'
+  ...
+# Subtest: later-page file selection, path member records, explicit omissions and filtered selection stay grounded
+ok 10 - later-page file selection, path member records, explicit omissions and filtered selection stay grounded
+  ---
+  duration_ms: 9.821042
+  type: 'test'
+  ...
+# Subtest: reading guide/export/landing preserve independent outcomes, original identity and honest next actions
+ok 11 - reading guide/export/landing preserve independent outcomes, original identity and honest next actions
+  ---
+  duration_ms: 2.6145
+  type: 'test'
+  ...
+# Subtest: modal focus ring excludes disabled, hidden, inert and closed-details controls
+ok 12 - modal focus ring excludes disabled, hidden, inert and closed-details controls
+  ---
+  duration_ms: 0.348834
+  type: 'test'
+  ...
+# Subtest: closed raw-delta disclosure defers its third byte reader; initial source/artifact slots stay distinct
+ok 13 - closed raw-delta disclosure defers its third byte reader; initial source/artifact slots stay distinct
+  ---
+  duration_ms: 1.810334
+  type: 'test'
+  ...
+# Subtest: older failed jobs remain selectable after a later explicit start, and status reads never retry
+ok 14 - older failed jobs remain selectable after a later explicit start, and status reads never retry
+  ---
+  duration_ms: 1.55425
+  type: 'test'
+  ...
+# Subtest: mode projection preserves selected File identity and excludes inactive mode semantics without mutation
+ok 15 - mode projection preserves selected File identity and excludes inactive mode semantics without mutation
+  ---
+  duration_ms: 11.008208
+  type: 'test'
+  ...
+# Subtest: empty targets and missing source pair/replay associate issues with the useful correction field
+ok 16 - empty targets and missing source pair/replay associate issues with the useful correction field
+  ---
+  duration_ms: 0.379042
+  type: 'test'
+  ...
+# Subtest: first entry requires explicit example selection and the review exposes labels before technical details
+ok 17 - first entry requires explicit example selection and the review exposes labels before technical details
+  ---
+  duration_ms: 12.154458
+  type: 'test'
+  ...
+# Subtest: job states distinguish report availability, cancellation request and no-report failure
+ok 18 - job states distinguish report availability, cancellation request and no-report failure
+  ---
+  duration_ms: 6.797
+  type: 'test'
+  ...
+# Subtest: open methods explain report-only missing bytes and format-specific recovery without admitting host paths
+ok 19 - open methods explain report-only missing bytes and format-specific recovery without admitting host paths
+  ---
+  duration_ms: 1.823416
+  type: 'test'
+  ...
+# Subtest: all doc sidebar/search/contents links cancel native document loads and navigate from the anchor itself
+ok 20 - all doc sidebar/search/contents links cancel native document loads and navigate from the anchor itself
+  ---
+  duration_ms: 6.003375
+  type: 'test'
+  ...
+# Subtest: native new-tab/download/external actions remain native; links cannot grant authority or target APIs
+ok 21 - native new-tab/download/external actions remain native; links cannot grant authority or target APIs
+  ---
+  duration_ms: 0.284041
+  type: 'test'
+  ...
+# Subtest: same-document repeated anchors scroll only the article without duplicate history or a window jump
+ok 22 - same-document repeated anchors scroll only the article without duplicate history or a window jump
+  ---
+  duration_ms: 1.012125
+  type: 'test'
+  ...
+# Subtest: Analyze after scrolling down leaves the document/shell/sidebar alone; stale navigation frames cannot jump it
+ok 23 - Analyze after scrolling down leaves the document/shell/sidebar alone; stale navigation frames cannot jump it
+  ---
+  duration_ms: 0.3175
+  type: 'test'
+  ...
+# Subtest: documentation anchors scroll only their containing article and reject targets outside it
+ok 24 - documentation anchors scroll only their containing article and reject targets outside it
+  ---
+  duration_ms: 0.079458
+  type: 'test'
+  ...
+# Subtest: a lost successful start response body reports unknown acknowledgment and never resubmits
+ok 25 - a lost successful start response body reports unknown acknowledgment and never resubmits
+  ---
+  duration_ms: 29.23725
+  type: 'test'
+  ...
+# Subtest: an upload body acknowledgment failure never uploads again or requests an investigation
+ok 26 - an upload body acknowledgment failure never uploads again or requests an investigation
+  ---
+  duration_ms: 28.094083
+  type: 'test'
+  ...
+# Subtest: destination allowlist separates draft/job/observation identity and rejects host-path disguises
+ok 27 - destination allowlist separates draft/job/observation identity and rejects host-path disguises
+  ---
+  duration_ms: 1.479917
+  type: 'test'
+  ...
+# Subtest: native history traverses destinations, restores same-process view and never stores authority or submits
+ok 28 - native history traverses destinations, restores same-process view and never stores authority or submits
+  ---
+  duration_ms: 0.725833
+  type: 'test'
+  ...
+# Subtest: allowlisted HTML routes stay public and inert; route URLs cannot access API facts or start analysis
+ok 29 - allowlisted HTML routes stay public and inert; route URLs cannot access API facts or start analysis
+  ---
+  duration_ms: 39.463167
+  type: 'test'
+  ...
+# Subtest: reports sharing report ID keep full distinct content/capture context
+ok 30 - reports sharing report ID keep full distinct content/capture context
+  ---
+  duration_ms: 6.771417
+  type: 'test'
+  ...
+# Subtest: draft, reopen and selected job render their own contexts without historical report/export actions
+ok 31 - draft, reopen and selected job render their own contexts without historical report/export actions
+  ---
+  duration_ms: 10.1465
+  type: 'test'
+  ...
+# Subtest: connection and operation errors separate authority, service failure and scoped input rejection
+ok 32 - connection and operation errors separate authority, service failure and scoped input rejection
+  ---
+  duration_ms: 0.116333
+  type: 'test'
+  ...
+# Subtest: session capability is consumed into memory, recovery preserves destination, errors never echo raw text
+ok 33 - session capability is consumed into memory, recovery preserves destination, errors never echo raw text
+  ---
+  duration_ms: 1.663959
+  type: 'test'
+  ...
+# Subtest: aborted reads preserve cancellation and do not falsely announce service loss
+ok 34 - aborted reads preserve cancellation and do not falsely announce service loss
+  ---
+  duration_ms: 0.57075
+  type: 'test'
+  ...
+# Subtest: finding pagination reaches every retained finding including records beyond the old 100-match ceiling
+ok 35 - finding pagination reaches every retained finding including records beyond the old 100-match ceiling
+  ---
+  duration_ms: 11.638
+  type: 'test'
+  ...
+# Subtest: virtual directory navigation includes only real retained path descendants and permits parent traversal
+ok 36 - virtual directory navigation includes only real retained path descendants and permits parent traversal
+  ---
+  duration_ms: 9.995084
+  type: 'test'
+  ...
+# Subtest: evidence labels distinguish side, path, manifest field and real half-open byte ranges
+ok 37 - evidence labels distinguish side, path, manifest field and real half-open byte ranges
+  ---
+  duration_ms: 0.1655
+  type: 'test'
+  ...
+# Subtest: member filters keep omissions reachable and distinguish retained, absent and unsupported states
+ok 38 - member filters keep omissions reachable and distinguish retained, absent and unsupported states
+  ---
+  duration_ms: 1.191292
+  type: 'test'
+  ...
+# Subtest: auxiliary evidence paging restores by observation handle and never merges equal report IDs
+ok 39 - auxiliary evidence paging restores by observation handle and never merges equal report IDs
+  ---
+  duration_ms: 48.671542
+  type: 'test'
+  ...
+# Subtest: manifest evidence labels retain both the path and recorded field
+ok 40 - manifest evidence labels retain both the path and recorded field
+  ---
+  duration_ms: 4.526167
+  type: 'test'
+  ...
+# Subtest: all related changes and stage errors remain reachable through bounded remembered pages
+ok 41 - all related changes and stage errors remain reachable through bounded remembered pages
+  ---
+  duration_ms: 51.345917
+  type: 'test'
+  ...
+# Subtest: selected omissions retain their stage and byte count and recorded request options stay inspectable
+ok 42 - selected omissions retain their stage and byte count and recorded request options stay inspectable
+  ---
+  duration_ms: 6.280375
+  type: 'test'
+  ...
+# Subtest: original observation identity and exact retained outcomes survive the local API
+ok 43 - original observation identity and exact retained outcomes survive the local API
+  ---
+  duration_ms: 172.066167
+  type: 'test'
+  ...
+# Subtest: Host, Origin, fetch-site, capability, methods and exact query allowlists fail closed
+ok 44 - Host, Origin, fetch-site, capability, methods and exact query allowlists fail closed
+  ---
+  duration_ms: 89.801375
+  type: 'test'
+  ...
+# Subtest: evidence API preserves exact mutation artifact span and absent source side
+ok 45 - evidence API preserves exact mutation artifact span and absent source side
+  ---
+  duration_ms: 90.08225
+  type: 'test'
+  ...
+# Subtest: B2 and monorepo have unchanged IDs, raw changes and original coverage
+ok 46 - B2 and monorepo have unchanged IDs, raw changes and original coverage
+  ---
+  duration_ms: 270.764958
+  type: 'test'
+  ...
+# Subtest: two observations sharing reportId retain distinct content handles and digests
+ok 47 - two observations sharing reportId retain distinct content handles and digests
+  ---
+  duration_ms: 189.638417
+  type: 'test'
+  ...
+# Subtest: raw duplicate keys, unsafe integers, unsupported schema and validator failure are rejected
+ok 48 - raw duplicate keys, unsafe integers, unsupported schema and validator failure are rejected
+  ---
+  duration_ms: 348.754917
+  type: 'test'
+  ...
+# Subtest: portable directory export/reopen preserves original report and exact citation bytes
+ok 49 - portable directory export/reopen preserves original report and exact citation bytes
+  ---
+  duration_ms: 246.169167
+  type: 'test'
+  ...
+# Subtest: portable import rejects corruption, symlinks, duplicate manifest keys and report binding changes
+ok 50 - portable import rejects corruption, symlinks, duplicate manifest keys and report binding changes
+  ---
+  duration_ms: 555.2235
+  type: 'test'
+  ...
+# Subtest: missing source bytes produce an explicit partial export without changing report contentState
+ok 51 - missing source bytes produce an explicit partial export without changing report contentState
+  ---
+  duration_ms: 274.258625
+  type: 'test'
+  ...
+# Subtest: report and blob limits, missing bytes and invalid ranges remain distinguishable
+ok 52 - report and blob limits, missing bytes and invalid ranges remain distinguishable
+  ---
+  duration_ms: 257.366
+  type: 'test'
+  ...
+# Subtest: transport cancellation, missing included blob and false omission declarations fail closed
+ok 53 - transport cancellation, missing included blob and false omission declarations fail closed
+  ---
+  duration_ms: 567.825667
+  type: 'test'
+  ...
+# Subtest: synthetic markup, controls, bidi and model text stay inert; real outcome fields stay visible
+ok 54 - synthetic markup, controls, bidi and model text stay inert; real outcome fields stay visible
+  ---
+  duration_ms: 165.994166
+  type: 'test'
+  ...
+# Subtest: all accepted synthetic G0 fixture states render without inferring a verdict
+ok 55 - all accepted synthetic G0 fixture states render without inferring a verdict
+  ---
+  duration_ms: 659.019875
+  type: 'test'
+  ...
+# Subtest: the service permits only two active evidence reads and stops on owned shutdown
+ok 56 - the service permits only two active evidence reads and stops on owned shutdown
+  ---
+  duration_ms: 81.687416
+  type: 'test'
+  ...
+# Subtest: the genuine monorepo export reopens beyond the package-metadata parser node limit
+ok 57 - the genuine monorepo export reopens beyond the package-metadata parser node limit
+  ---
+  duration_ms: 1081.850292
+  type: 'test'
+  ...
+# Subtest: complete built CLI docs and setup include every actual parser flag and workflow
+ok 58 - complete built CLI docs and setup include every actual parser flag and workflow
+  ---
+  duration_ms: 17.76425
+  type: 'test'
+  ...
+# Subtest: privileged requests require exact origin, session, media type, bounds and strict input keys
+ok 59 - privileged requests require exact origin, session, media type, bounds and strict input keys
+  ---
+  duration_ms: 13.292834
+  type: 'test'
+  ...
+# Subtest: options reach one shared-engine call; terminal report, downloads and bundle keep exact facts
+ok 60 - options reach one shared-engine call; terminal report, downloads and bundle keep exact facts
+  ---
+  duration_ms: 364.175375
+  type: 'test'
+  ...
+# Subtest: cancel and no-report failures never claim acknowledgment, cleanup, or a verdict
+ok 61 - cancel and no-report failures never claim acknowledgment, cleanup, or a verdict
+  ---
+  duration_ms: 3.776583
+  type: 'test'
+  ...
+# Subtest: uploads have opaque IDs, original filenames, kind checks, local labels and bounded admission
+ok 62 - uploads have opaque IDs, original filenames, kind checks, local labels and bounded admission
+  ---
+  duration_ms: 13.467083
+  type: 'test'
+  ...
+# Subtest: browser portable download/upload reopens original bytes and enforces corruption/omission semantics
+ok 63 - browser portable download/upload reopens original bytes and enforces corruption/omission semantics
+  ---
+  duration_ms: 477.762333
+  type: 'test'
+  ...
+# Subtest: dynamic report-only and workspace digest reopen validate without fresh acquisition or host paths
+ok 64 - dynamic report-only and workspace digest reopen validate without fresh acquisition or host paths
+  ---
+  duration_ms: 305.725625
+  type: 'test'
+  ...
+# Subtest: portable wrapper preserves the genuine scoped monorepo beyond the small metadata decoder size
+ok 65 - portable wrapper preserves the genuine scoped monorepo beyond the small metadata decoder size
+  ---
+  duration_ms: 2232.721416
+  type: 'test'
+  ...
+1..65
+# tests 65
+# suites 0
+# pass 65
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 5221.366583

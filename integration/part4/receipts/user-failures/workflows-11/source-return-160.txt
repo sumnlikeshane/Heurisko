@@ -1,0 +1,40 @@
+  HEURISKO   H Home    I Investigations     M Monitoring                                                                                                        
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+  picocolors@1.1.1 / HISTORICAL / incomplete / Captured 2026-10-31T22:59:33Z                                                                                    
+  1 Overview   2 Findings   3 Files   4 Source   5 AI   6 Coverage                                                                                              
+  Historical — online checks have not refreshed · i Identity                                                                                                    
+  Source                                                                                                                                                        
+  [Candidates]  Provenance  Build                                                                                                                               
+  ┌─ > Source records ───────────── 1 ┐ ┌─ Source details ─────────────────────────────────────────────┐ ┌─ Supporting evidence ─────────────────────────────┐  
+  │ > Candidate 1 / 6f0a4638348e      │ │ Association ambiguous — this candidate is not a verified     │ │ Citations / Up–Down selects                       │  
+  │   ambiguous                       │ │ release baseline.                                            │ │ > ev_3ca16ad46cd957d737ef0c18                     │  
+  │                                   │ │ Selected comparison target: this repository / commit /       │ │ ev_ec5b0358b13edb689c4ced2c                       │  
+  │ 1 / 1 · Enter inspect             │ │ package directory was selected.                              │ │ ev_d92f043e33ac7f6993c2b35d                       │  
+  └───────────────────────────────────┘ │ Candidate basis: user-override, registry, artifact-manifest, │ │ ev_065b4580538f2a13348b79ac                       │  
+                                        │ version-tag.                                                 │ │ ev_f8a730b1133122753c4ae1ce                       │  
+                                        │ Version labels: artifact 1.1.1; selected source 1.1.0.       │ │ ev_276b463ab652843042b81668                       │  
+                                        │ Evidence ev_3ca16ad46cd957d737ef0c18 (e opens exact values;  │ │ ev_2e14b499a02edfc5f8403706                       │  
+                                        │ s switches side).                                            │ │ ev_a4390f0100c665fa0f521a21                       │  
+                                        │ SOURCE CONFLICT: SOURCE_VERSION_LABEL_DIFFERS                │ │ ev_923052180287909e51ae0c4c                       │  
+                                        │ Subdirectory: (repository root)                              │ │                                                   │  
+                                        │ New investigation with this target: n opens a new draft,     │ │ ev_3ca16ad46cd957d737ef0c18                       │  
+                                        │ then Review and Start. Edit the commit before Review to      │ │ BOTH / package.json                               │  
+                                        │ investigate another candidate. This report stays immutable.  │ │ RAW utf8: [39, 46) / recorded [39, 46)            │  
+                                        │ Discovery limitation: version-tag v1.1.1 —                   │ │ Window truncated: false / total blob 552 bytes    │  
+                                        │ SOURCE_TAG_RATE_LIMITED. This is not evidence that the tag   │ │                                                   │  
+                                        │ is absent.                                                   │ │ "1.1.1"                                           │  
+                                        │ Discovery limitation: version-tag 1.1.1 —                    │ │                                                   │  
+                                        │ SOURCE_TAG_DISCOVERY_SKIPPED_RATE_LIMIT. This is not         │ │ Method: strict-json-value-byte-spans-v1           │  
+                                        │ evidence that the tag is absent.                             │ │ Availability: retained                            │  
+                                        │ Artifact check: integrity matched. Source claim: ambiguous.  │ │ Verification: Not recorded                        │  
+                                        │ Digest agreement checks acquired artifact bytes against      │ │ Content digest:                                   │  
+                                        │ registry metadata, not source provenance.                    │ │ sha256:9c6cdf861be3a099424c6be279a2d7f09423517d6d │  
+                                        │ Provenance: not_checked; build stage skipped. No release     │ │ 0fbd1357ecc7deb67f608d                            │  
+                                        │ binding follows from matching version labels.                │ │ Member: ev_e230092de7aea9bb23526f1a               │  
+                                        │ Next action: inspect the conflicting manifest values and     │ │ Content ref:                                      │  
+                                        │ 1-26 / 36  j/k scroll                                        │ │ 1-26 / 28  j/k scroll                             │  
+                                        └──────────────────────────────────────────────────────────────┘ └───────────────────────────────────────────────────┘  
+  SOURCE CONFLICT / inspect source claims                                                                                                                       
+  v subtabs  Enter inspect  e evidence  n new target  Tab panes  q quit                                                                                         
+                                                                                                                                                                
+                                                                                                                                                                

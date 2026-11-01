@@ -1,5 +1,5 @@
 import { AppLink } from './link.js';
-import React, { useEffect, useLayoutEffect, useRef, useState } from 'react';
+import React, { useEffect, useLayoutEffect, useRef, useState, useMemo } from 'react';
 import { scrollDocAnchor } from './navigation.js';
 import { safe } from './api.js';
 import { docPages, headings, docLink, searchDocs, type DocId, type DocPage } from './doc-model.js';
@@ -30,20 +30,104 @@ export function Markdown({ text, page = 'cli' }: { text: string; page?: DocId })
  }
  return <div className="documentation">{nodes}</div>;
 }
+function highlighted(text: string, query: string) {
+ const terms = [...new Set(query.match(/"[^"]+"|\S+/g)?.map(value => value.replace(/^"|"$/g, '').trim()).filter(Boolean) ?? [])].sort((a, b) => b.length - a.length);
+ if (!terms.length) return safe(text);
+ const pattern = new RegExp('(' + terms.map(term => term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|') + ')', 'ig');
+ return text.split(pattern).filter(Boolean).map((part, index) => terms.some(term => part.toLocaleLowerCase() === term.toLocaleLowerCase()) ? <mark key={index}>{safe(part)}</mark> : <React.Fragment key={index}>{safe(part)}</React.Fragment>);
+}
 export function Documentation({ doc = 'start/quickstart' }: { doc?: DocId }) {
- const [docs,setDocs]=useState<DocPage[]>([]),[query,setQuery]=useState(''),[error,setError]=useState(''),[retry,setRetry]=useState(0);
- useEffect(()=>{const c=new AbortController(); setError('');fetch('/assets/docs.json',{credentials:'omit',cache:'no-store',signal:c.signal}).then(r=>{if(!r.ok)throw Error('DOCS_UNAVAILABLE');return r.json() as Promise<DocPage[]>;}).then(d=>{if(!c.signal.aborted)setDocs(d);}).catch(()=>{if(!c.signal.aborted)setError('Documentation unavailable. Check the local reader and retry.');});return()=>c.abort();},[retry]);
- const article=useRef<HTMLDivElement>(null), positions=useRef(new Map<DocId,number>());
- useLayoutEffect(()=>{
-  const pane=article.current;if(!pane||!docs.length)return;
-  if(!location.hash||!scrollDocAnchor(document,location.hash))pane.scrollTop=positions.current.get(doc)??0;
-  const anchored=()=>{if(location.hash)scrollDocAnchor(document,location.hash);};
-  window.addEventListener('hashchange',anchored);
-  return()=>window.removeEventListener('hashchange',anchored);
- },[docs,doc]);
- const current=docs.find(d=>d.id===doc),results=searchDocs(docs,query),index=docPages.findIndex(([id])=>id===doc);
- return <><div className="section-intro"><p className="eyebrow">DOCUMENTATION / LOCAL REFERENCE</p><p>Guided tasks, current CLI reference and evidence limits. No analysis starts here.</p><div className="actions"><AppLink href="/workspace/new">New investigation</AppLink><AppLink href="/workspace/open">Open saved evidence</AppLink></div></div><label className="search">Search all documentation <input type="search" value={query} maxLength={256} onChange={e=>setQuery(e.target.value)} placeholder="--source-archive, exit 2, SESSION_DENIED"/></label>
- {error&&<p role="alert">{error} <button onClick={()=>setRetry(n=>n+1)}>Reload documentation</button></p>}{!docs.length&&!error&&<p role="status">Loading documentation…</p>}
- {query.trim()&&<section className="panel doc-search-results"><h2>Search results / up to 100 sections</h2><div className="panel-body"><p role="status">{results.length} matching sections. Query stays in this tab when following results.</p>{results.map((r,i)=><article key={i}><AppLink href={'/docs/'+r.page+'#'+r.anchor}>{r.title} / {safe(r.section)}</AppLink><p>{safe(r.snippet)}</p></article>)}{!results.length&&<p>Try an option, error code, “replay” or “exit 2”.</p>}<button onClick={()=>setQuery('')}>Clear search</button></div></section>}
- <div className="doc-layout"><aside aria-label="Documentation pages">{[...new Set(docPages.map(([,group])=>group))].map(group=><div key={group}><h2>{group}</h2>{docPages.filter(p=>p[1]===group).map(([id,,title])=><AppLink key={id} href={'/docs/'+id} aria-current={id===doc?'page':undefined}>{title}</AppLink>)}</div>)}</aside><div id="doc-page-scroll" className="doc-page" ref={article} onScroll={event=>positions.current.set(doc,event.currentTarget.scrollTop)}>{current&&<><div className="doc-toc"><p>On this page</p>{headings(current.markdown).filter(h=>h.level===2).map(h=><AppLink key={h.id} href={'/docs/'+doc+'#'+h.id}>{safe(h.text)}</AppLink>)}</div><section className="panel"><div className="panel-body"><Markdown text={current.markdown} page={doc}/><p className="muted">Built from {current.source}. Rebuild after repository documentation changes.</p></div></section><nav aria-label="Documentation sequence">{[docPages[index-1],docPages[index+1]].filter(Boolean).map(p=><AppLink key={p![0]} href={'/docs/'+p![0]}>{p![2]}</AppLink>)}</nav></>}</div></div></>;
+ const [docs, setDocs] = useState<DocPage[]>([]), [query, setQuery] = useState(''), [error, setError] = useState(''), [retry, setRetry] = useState(0);
+ const [loading, setLoading] = useState(true), [activeSection, setActiveSection] = useState('');
+ const layout = useRef<HTMLDivElement>(null), article = useRef<HTMLDivElement>(null), sidebar = useRef<HTMLElement>(null), search = useRef<HTMLInputElement>(null);
+ const positions = useRef(new Map<DocId, number>()), sidebarPosition = useRef(0);
+ const clearSearch = () => { setQuery(''); search.current?.focus(); };
+ useEffect(() => {
+  const controller = new AbortController();
+  const deadline = window.setTimeout(() => controller.abort(), 10000);
+  let disposed = false;
+  setError(''); setLoading(true);
+  fetch('/assets/docs.json', { credentials: 'omit', cache: 'no-store', signal: controller.signal })
+   .then(async response => {
+    if (!response.ok) throw Error('DOCS_UNAVAILABLE');
+    const data = await response.json() as DocPage[];
+    if (!Array.isArray(data) || data.length !== docPages.length || docPages.some(([id]) => !data.some(page => page.id === id && typeof page.markdown === 'string'))) throw Error('DOCS_INVALID');
+    if (!disposed) setDocs(data);
+   })
+   .catch(() => { if (!disposed) setError('Documentation could not be read within 10 seconds. Check the local reader, then retry this read.'); })
+   .finally(() => { window.clearTimeout(deadline); if (!disposed) setLoading(false); });
+  return () => { disposed = true; window.clearTimeout(deadline); controller.abort(); };
+ }, [retry]);
+ useEffect(() => {
+  const shortcut = (event: KeyboardEvent) => {
+   if ((event.key === '/' && !event.metaKey && !event.ctrlKey && !event.altKey) || ((event.metaKey || event.ctrlKey) && event.key.toLowerCase() === 'k')) {
+    const target = event.target as HTMLElement | null;
+    if (event.key === '/' && target && /^(INPUT|TEXTAREA|SELECT)$/.test(target.tagName)) return;
+    event.preventDefault(); search.current?.focus(); search.current?.select();
+   } else if (event.key === 'Escape' && document.activeElement === search.current && query) {
+    event.preventDefault(); clearSearch();
+   }
+  };
+  window.addEventListener('keydown', shortcut);
+  return () => window.removeEventListener('keydown', shortcut);
+ }, [query]);
+ useLayoutEffect(() => {
+  const pane = article.current;
+  if (!pane || !docs.length) return;
+  if (!location.hash || !scrollDocAnchor(document, location.hash)) pane.scrollTop = positions.current.get(doc) ?? 0;
+  setActiveSection(pane.querySelector<HTMLElement>('h2')?.id ?? '');
+  if (sidebar.current) sidebar.current.scrollTop = sidebarPosition.current;
+  const anchored = () => { if (location.hash) scrollDocAnchor(document, location.hash); };
+  window.addEventListener('hashchange', anchored);
+  return () => window.removeEventListener('hashchange', anchored);
+ }, [docs, doc]);
+ useLayoutEffect(() => {
+  // Use the measured shell/search chrome, rather than assuming a fixed header height.
+  const measure = () => {
+   const root = layout.current;
+   if (!root || !root.getClientRects().length) return;
+   root.style.setProperty('--docs-pane-height', Math.max(220, window.innerHeight - Math.max(0, root.getBoundingClientRect().top) - 24) + 'px');
+  };
+  measure();
+  window.addEventListener('resize', measure);
+  window.addEventListener('scroll', measure, { passive: true });
+  const observer = new ResizeObserver(measure);
+  if (layout.current?.parentElement) observer.observe(layout.current.parentElement);
+  return () => { window.removeEventListener('resize', measure); window.removeEventListener('scroll', measure); observer.disconnect(); };
+ }, [query, docs, error, doc]);
+ const current = docs.find(page => page.id === doc), results = useMemo(() => searchDocs(docs, query), [docs, query]);
+ const index = docPages.findIndex(([id]) => id === doc), contents = current ? headings(current.markdown).filter(heading => heading.level === 2) : [];
+ const closeDisclosure = (event: React.MouseEvent<HTMLAnchorElement>) => { const details = event.currentTarget.closest('details'); if (details) details.open = false; };
+ const pageLinks = () => [...new Set(docPages.map(([, group]) => group))].map(group => <section className="doc-nav-group" key={group}><h2>{group}</h2>{docPages.filter(page => page[1] === group).map(([id, , title]) => <AppLink key={id} href={'/docs/' + id} aria-current={id === doc ? 'page' : undefined} onClick={closeDisclosure}>{title}</AppLink>)}</section>);
+ const contentsLinks = () => contents.map(heading => <AppLink key={heading.id} href={'/docs/' + doc + '#' + heading.id} aria-current={activeSection === heading.id ? 'location' : undefined} onClick={closeDisclosure}>{safe(heading.text)}</AppLink>);
+ const rememberArticle = (pane: HTMLDivElement) => {
+  positions.current.set(doc, pane.scrollTop);
+  const top = pane.getBoundingClientRect().top + 48;
+  let currentHeading = pane.querySelector<HTMLElement>('h2')?.id ?? '';
+  for (const heading of pane.querySelectorAll<HTMLElement>('h2')) {
+   if (heading.getBoundingClientRect().top <= top) currentHeading = heading.id;
+   else break;
+  }
+  setActiveSection(currentHeading);
+ };
+ return <div className="docs-workspace">
+  <div className="docs-toolbar"><div className="docs-heading"><p className="eyebrow">DOCUMENTATION</p><p>Start with a task. Keep the exact reference close.</p></div><div className="actions"><AppLink href="/workspace/new">New investigation</AppLink><AppLink href="/workspace/open">Open evidence</AppLink></div></div>
+  <div className="docs-search"><div className="docs-search-input"><span className="docs-search-icon" aria-hidden="true">⌕</span><label className="visually-hidden" htmlFor="docs-query">Search all documentation</label><input ref={search} id="docs-query" type="search" value={query} maxLength={256} onChange={event => setQuery(event.target.value)} placeholder="Search commands, workflows, errors…" aria-controls="docs-search-results"/><kbd className="search-hint">/</kbd>{query && <button className="search-clear" type="button" onClick={clearSearch} aria-label="Clear documentation search">Clear</button>}</div><p>Search all {docPages.length} guides · Match multiple words · <kbd>Ctrl/⌘ K</kbd> or <kbd>/</kbd> to focus</p></div>
+  {error && <p role="alert" className="notice danger">{error} {docs.length > 0 && 'The last successfully loaded reference remains readable.'} <button onClick={() => setRetry(value => value + 1)}>Retry documentation read</button></p>}
+  {loading && !docs.length && <p role="status">Loading documentation…</p>}
+  {query.trim() && <section id="docs-search-results" className="doc-search-results" aria-labelledby="docs-results-title"><div className="docs-results-heading"><div><p className="eyebrow">DOCUMENTATION INDEX</p><h2 id="docs-results-title">Results for <span>{safe(query)}</span></h2></div><p role="status" aria-live="polite">{!docs.length && loading ? 'Waiting for documentation…' : results.length === 100 ? 'Showing first 100 matches · refine your search' : `${results.length} ${results.length === 1 ? 'section' : 'sections'}`}</p></div>{results.map((result, i) => <article key={result.page + ':' + result.anchor}><AppLink href={'/docs/' + result.page + '#' + result.anchor}><span className="search-result-page">{result.title}</span><span className="search-result-divider" aria-hidden="true">/</span><strong>{safe(result.section)}</strong><span className="search-result-arrow" aria-hidden="true">↗</span></AppLink><p>{highlighted(result.snippet, query)}</p></article>)}{!results.length && docs.length > 0 && <p className="search-empty">No sections match <strong>{safe(query)}</strong>. Try fewer words, a command such as <code>--no-ai</code>, or an error code.</p>}{!docs.length && error && <p>Search is unavailable until the documentation read succeeds.</p>}</section>}
+  <details className="doc-mobile-nav"><summary>Browse documentation · {docPages[index]?.[2]}</summary><nav aria-label="Documentation pages on small screens">{pageLinks()}</nav></details>
+  <div className="doc-layout" ref={layout}>
+   <aside className="doc-sidebar" aria-label="Documentation pages" ref={sidebar} onScroll={event => { sidebarPosition.current = event.currentTarget.scrollTop; }}>{pageLinks()}</aside>
+   <div id="doc-page-scroll" className="doc-page" ref={article} onScroll={event => rememberArticle(event.currentTarget)} tabIndex={0} role="region" aria-label="Documentation article">
+    {current && <>
+     {contents.length > 0 && <details className="doc-mobile-toc" key={doc}><summary>On this page</summary><nav aria-label="On this page on small screens">{contentsLinks()}</nav></details>}
+     <article className="doc-article"><Markdown text={current.markdown} page={doc}/></article>
+     <nav className="doc-sequence" aria-label="Documentation sequence">{docPages[index - 1] && <AppLink href={'/docs/' + docPages[index - 1]![0]}><span>Previous</span>{docPages[index - 1]![2]}</AppLink>}{docPages[index + 1] && <AppLink href={'/docs/' + docPages[index + 1]![0]}><span>Next</span>{docPages[index + 1]![2]}</AppLink>}</nav>
+     <details className="doc-source"><summary>About this reference</summary><p>Built from <code>{current.source}</code>. It is bundled with this local reader. Rebuild the application after changing its documentation sources.</p><AppLink href="/docs/reference/browser">Browser technical reference</AppLink></details>
+    </>}
+   </div>
+   <nav className="doc-toc" aria-label="On this page"><h2>On this page</h2>{contentsLinks()}</nav>
+  </div>
+ </div>;
 }

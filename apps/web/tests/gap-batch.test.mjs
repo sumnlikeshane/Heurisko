@@ -22,7 +22,7 @@ test('every documentation page, declared navigation link and anchor resolves fro
  }
 });
 test('docs search spans workflows/reference/errors with section snippets and exact targets',()=>{
- for(const [q,id] of [['--source-archive','cli/analyze'],['exit 2','workflows/ci'],['SESSION_DENIED','troubleshooting/session'],['source replay','workflows/local']]) {const found=searchDocs(docs,q);assert.ok(found.some(r=>r.page===id),q);assert.ok(found.every(r=>r.snippet.toLowerCase().includes(q.toLowerCase())));}
+ for(const [q,id] of [['--source-archive','cli/analyze'],['exit 2','workflows/ci'],['SESSION_DENIED','troubleshooting/session'],['source replay','workflows/local']]) {const found=searchDocs(docs,q);assert.ok(found.some(r=>r.page===id),q);for(const term of q.toLowerCase().split(/\s+/))assert.ok(found.every(r=>r.snippet.toLowerCase().includes(term)));assert.ok(found.every(r=>r.snippet.length<=640));}
  assert.deepEqual(searchDocs(docs,'   '),[]);assert.deepEqual(searchDocs(docs,'unfindable_9134'),[]);
 });
 test('inert markdown keeps semantic headings, ordered/bullet lists, table headings, exact selectable code and safe links',()=>{
@@ -87,4 +87,16 @@ test('older failed jobs remain selectable after a later explicit start, and stat
  const second=w.start({...input,target:'npm:@vue/shared@3.5.22'},()=>{});await new Promise(r=>setImmediate(r));
  for(let i=0;i<10;i++){const jobs=w.listJobs();assert.equal(jobs.length,2);assert.equal(jobs[0].id,first.id);assert.equal(w.job(second.id).request.target,'npm:@vue/shared@3.5.22');}
  assert.equal(calls,2);assert.equal(w.job(first.id).error,'EXPECTED_NO_REPORT');
+});
+
+// Synthetic long documentation tests search presentation, not analyzer output.
+test('multiword documentation snippets retain distant matches within a fixed bound',()=>{
+ const pages=[{id:'cli',group:'Command reference',title:'CLI',source:'synthetic-search',markdown:'# Heading\n\nalpha '+ 'x'.repeat(12000)+' omega'}];
+ const found=searchDocs(pages,'alpha omega');assert.equal(found.length,1);
+ assert.ok(found[0].snippet.includes('alpha'));assert.ok(found[0].snippet.includes('omega'));
+ assert.ok(found[0].snippet.includes(' … '));assert.ok(found[0].snippet.length<=640);
+ assert.deepEqual(searchDocs(pages,'"alpha omega"'),[]);
+ pages[0].markdown='# Heading\n\nalpha omega';
+ assert.ok(searchDocs(pages,'"alpha omega"')[0].snippet.includes('alpha omega'));
+ assert.deepEqual(searchDocs(pages,'x'.repeat(257)),[]);
 });

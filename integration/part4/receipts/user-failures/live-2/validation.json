@@ -1,0 +1,26 @@
+{
+  "scope": "Actual product keyboard and restricted core; retained inert local bytes, no target code/model/network",
+  "passed": true,
+  "exitCode": 2,
+  "progressVisible": true,
+  "progressMode": "indeterminate: engine did not supply a unit total",
+  "animationObserved": false,
+  "stageFactsVisible": true,
+  "liveResizeBands": [
+    160,
+    120,
+    84,
+    55,
+    160
+  ],
+  "narrowDiagnosticsAccessible": true,
+  "cancelRequestVisible": true,
+  "engineSettlementObserved": true,
+  "exactStoreLabelHasNoContainers": true,
+  "locksAbsent": true,
+  "spoolEmpty": true,
+  "reviewedSnapshotUsedAfterOriginalChanged": true,
+  "reportId": "report_36011be389aca1d279d0e5b4",
+  "storeRetained": true,
+  "sourceAndModelExecution": false
+}

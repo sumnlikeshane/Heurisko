@@ -5,7 +5,7 @@ export { ReportReader, readerLimits, reportFacts };
 export interface Observation {
     handle: string;
     reader: ReportReader;
-    raw: Buffer;
+    readonly raw: Buffer;
     transport?: {
         format: string;
         exportedAt: string;
@@ -24,13 +24,16 @@ export async function openObservation(reportPath: string, storeRoot: string, sig
 }
 export async function observationFromBytes(raw: Buffer, storeRoot: string, signal?: AbortSignal): Promise<Observation> {
     if (!raw.length || raw.length > readerLimits.reportBytes) throw Error('REPORT_SIZE_LIMIT');
+    // Keep validated and downloadable bytes identical across asynchronous validation
+    // and callers' later use of either the input or an exposed byte buffer.
+    const admitted = Buffer.from(raw);
     let text: string;
     try {
-        text = new TextDecoder('utf-8', { fatal: true, ignoreBOM: true }).decode(raw);
+        text = new TextDecoder('utf-8', { fatal: true, ignoreBOM: true }).decode(admitted);
     }
     catch {
         throw Error('REPORT_ENCODING_INVALID');
     }
     const reader = await ReportReader.openJSON(text, storeRoot, { signal });
-    return { handle: randomBytes(16).toString('hex'), reader, raw };
+    return { handle: randomBytes(16).toString('hex'), reader, get raw() { return Buffer.from(admitted); } };
 }

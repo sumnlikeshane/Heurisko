@@ -1,6 +1,8 @@
 # Part 4 Integration Readiness Report
 
-**Current, 1 November 2026: S4 minimum PASSED locally; joint G3 OPEN.** See [resumed product integration](#resumed-product-integration--1-november-2026) for the superseding B01–B13/S01–S09 statuses and evidence. Full candidate-design acceptance remains open.
+**Latest scoped audit:** [Shane-owned Parts 4–6 findings/repairs](Shane%20Parts%204%E2%80%936%20Audit.md) and [fresh executed checks](../examples/shane-parts456-audit/2026-11-01/README.md) supersede current-source intake/Source/evidence/state claims below. Earlier matrices and receipts remain historical. Functional S4, human usability/visual/AT acceptance and joint G3 remain separate; Part 5 is not authorized/started.
+
+**Current, 1 November 2026: user-failure repair; functional S4, human usability and joint G3 are separate gates.** See [the latest assessment](#user-failure-repair-and-workflow-proof--1-november-2026). Earlier passing minima did not establish user acceptance. See [resumed product integration](#resumed-product-integration--1-november-2026) for the superseding B01–B13/S01–S09 statuses and evidence. Full candidate-design acceptance remains open.
 
 **Historical nonvisual integration checkpoint:** Shane authorized this track while a separate React/Ink visual spike owns appearance, components, keyboard/focus behavior, layouts, theming and responsive behavior. This report records an integration audit and isolated candidate adapters, not a completed TUI or a competing implementation plan. The canonical [TUI Design Contract](Design/TUI%20Design%20Contract%20v1.0.0.md) remains **v1.0.0-rc.1, unapproved and unfrozen**; its 59 confirmed directions are preserved.
 
@@ -214,3 +216,55 @@ Shane rejected the visual mismatch and authorized a whole-TUI audit/rework with 
 **S4 minimum passes locally from actual keyboard/evidence/error/unknown checks. Visual fidelity has been reworked against the completed spike; Shane's human acceptance is still pending. Joint G3 remains OPEN**, with final intelligence/module and finding-quality dependencies retained. No Part 5 work or Git/publication action occurred. The original 70-minute budget is exhausted and has not been reset; see plan section 12 for added rework time.
 
 **Final visual-rework clock:** checkpoint **1 November 04:26:48 IST** (2026-10-31 22:56:48 UTC); rework **0h27m18s**, added to the same Part 4 record. Known measured work is now **1h11m02s plus unmeasured earlier visual effort**. Original Part 4 calendar envelope **3h40m54s**, **2h30m54s beyond** the unchanged 70-minute cutoff. Overlapping visual receipt chronology is not double-counted. No allowance was reset; the old 53m34s remainder remains historical.
+
+
+## User-failure repair and workflow proof — 1 November 2026
+
+Shane's actual report was reopened before edits in an actual product PTY. [Before captures and final receipts](../integration/part4/receipts/user-failures/validation.json) retain all attempts; [portable reproduction and new runs](../examples/part4/user-failures/README.md) preserve original bytes, current-code outputs, exact module identity and runnable commands. This section supersedes earlier **current** usability claims, retaining the historical matrices above.
+
+The generic Findings message hid a missing deterministic module; acquisition/integrity and raw comparison had succeeded independently. Files hid modified records behind collapsed/unreadable roots and treated directory metadata as a comparison. Its first-raw-diff selection could select archive metadata instead of content spans. Source omitted the actual 1.1.1/1.1.0 version conflict, claim basis and discovery limits. These renderer/wording defects are distinct from unavailable intelligence and ambiguous release association.
+
+The original raw inventory/compare completion is accurate for its declared processing scope. `scopeComplete && !resolution.ambiguous` suppressed one-sided absence inference, while the generic note called that incomplete inventory. New notes explain the true ambiguity; old stored notes remain unchanged with a displayed historical caveat. No status, unknown, trust dimension, resource limit or absence rule is relaxed.
+
+| Gap | Latest Part 4 assessment | Retained boundary |
+|---|---|---|
+| B01 | Governing Phase 02, candidate, G0, actual engine/reader and revision-7 handoff traced to the reproduced facts. | Candidate v1.0.0-rc.1 stays unapproved/unfrozen; all 59 directions retained. |
+| B02 | Real stage progress, reviewed-snapshot mutation test, keyboard cancellation/settlement and independent running-container exact-ID cleanup proof in new receipts. Concurrent parser absence repair is separately identified/source-hashed. | No typed cleanup acknowledgment, partial evidence feed, detach or retry; uncertainty retains locks. |
+| B03 | File content-delta selection, exact version-value/source/member navigation and current explicit-M1 lifecycle citations use bounded hash-checked reader evidence. | Missing/binary/unsupported/one-sided states remain explicit; no guessed spans. |
+| B04 | Findings names missing deterministic module and successes independently of AI; complete raw scope and ambiguous absence inference are explained separately. | No clean verdict, fabricated zero examined count or safety/coverage percentage. |
+| B05 | Inert text/binary/error checks and full-path detail retained; compact paths/roots have visible labels and ellipsis. | Manual copy; no clipboard automation or universal terminal certification. |
+| B06 | `m` next modified file and contextual directory/file hints; exact evidence Back restores citation, filter, selection, focus and scroll. | Chords/copy remain tested implementation choices, not a design freeze. |
+| B07 | Source new-target draft → edit immutable commit → dedicated Review → fresh npm Start; separate retained local Review/Start and history reopening are checked by the workflow receipt. | Remote digest remains Unknown before Start. Local replay/selected source is user asserted, not verified release binding. |
+| B08 | Report-content/change/citation guards prevent stale async evidence being labeled as another record; raw citation and Back tested across bands and recovery. | No semantic/normalized/whole-file equivalence; 4 KiB/200-row display bounds remain. |
+| B09 | Honest unavailable monitor retained. | No Part 5 runner/schedule/restart work. |
+| B10 | Honest unavailable TUI export retained. | No exporter/preflight acceptance claimed. |
+| B11 | Actual model-off product/module runs and labeled synthetic disabled/unavailable/failed/rejected/abstained states preserve evidence. | No model or provider invocation; final intelligence/claim-quality adoption remains open. |
+| B12 | Readable expanded roots, tree/flat paths, modified discovery, bounded paired/unified differences; >=140, 100–139, <100 and short recovery receipts. | Existing UI-state v2 is unchanged; no whole-file hunk or cross-process nested-stack guarantee. |
+| B13 | Actual terminal-cell/ANSI observations preserve revision-7 composition, explicit statuses/focus and monochrome operation. | Human usability/visual, native rendering, contrast/glyph and accessibility approval remain pending. |
+
+| Scenario | Latest evidence and acceptance boundary |
+|---|---|
+| S01 | Fresh npm and retained local target Review/Start/persistence use the real product engine; unavailable module is explicit. Unresolved npm digest before Start remains disclosed. |
+| S02 | Original source-version conflict retained; primary upstream release candidate is a separate new target. Fresh npm preserves registry gitHead disagreement. Candidate action creates a new report; the old report hash is unchanged. |
+| S03 | Current explicit model-off team-module validation report supplies a real inert lifecycle citation and exact Back. This is validation injection, not default product module adoption. |
+| S04 | Actual `ANALYSIS_MODULE_UNAVAILABLE`, completed acquisition/raw scope and ambiguous one-sided records remain distinct; no AI/network explanation is substituted for missing deterministic analysis. |
+| S05 | Directory/file distinction, modified discovery, real bounded rendered differences and binary/inert/error states are exercised. Unsupported/missing content never becomes empty text implying additions. |
+| S06 | Historical notice, immutable original, validated history/reopen, missing claim/member bytes and non-TTY exit behavior are exercised. TUI export remains unavailable. |
+| S07 | Unconfigured/Unknown monitoring only; no runtime/restart acceptance. |
+| S08 | Real keyboard progress/cancel/settlement, exact running-job cleanup, 3/2/1-pane navigation and short-terminal recovery. No typed cleanup acknowledgment/detach claim. |
+| S09 | Deterministic analysis availability is independent from AI disabled/failure states. No inference/interpretation-quality acceptance is claimed. |
+
+**Acceptance:** use final receipt counts and outcomes below. S4 functional minimum is a local executable-workflow gate. Shane's human usability/visual acceptance remains pending after these changes. Joint G3 remains **OPEN**: current product runs do not inject an accepted deterministic module; M1's retained-value wording/finding-quality acceptance and joint integration review are unresolved. The latest available e8b8116 handoff/CI validates an isolated consumer boundary, not product adoption. No final design approval follows from tests.
+
+No Part 5, staging, commit, push, merge, PR publication, deployment, submission or external message. Exact changed files and the same-clock added time are in the new receipt and plan section 12.
+
+
+**Final local result for this repair:** 125/125 serial core, 36/36 reader/model, full G0 and workspace typecheck/build pass. **252 explicit passing PTY assertions** comprise 159 original-report matrix assertions, 32 complete fresh npm/local workflow assertions, 58 AI/error/binary/current explicit-module assertions and 3 citation-switch/exact-Back journeys. State-oracle diagnostic rows are counted separately. Sizes: 160/140/120/100/84/60 columns and 55×14 recovery. New live keyboard and independent hot-running exact-ID cleanup proofs pass. Four portable CLI/non-TTY cases preserve values and expected exits. Original store/history/spike/index/G0 preservation is checked separately.
+
+**S4 functional minimum: PASSED locally for available workflows. Human usability/visual acceptance: PENDING. Joint G3: OPEN.** No final design approval or complete P04 claim follows. Exact file inventory, failed attempts, current engine/module identities and same-clock added time are in the new receipt and plan section 12.
+
+
+**Documentation check boundary:** repository/Part 4 file links and headings pass the scoped checker. The unchanged generic whole-repository checker flags 30 `/docs/...` and `/workspace/...` website routes in unrelated `apps/web/content` as missing filesystem targets; the raw failure is retained. No web content or CI repair was made under this Part 4 task. This is not a new remote CI pass.
+
+
+**Final user-failure repair clock:** checkpoint **1 November 04:58:17 IST** (`2026-10-31T23:28:17Z`). Added session elapsed from **04:33:04 IST**: **0h25m13s**, including validation/waits/documentation/review. The **6m16s gap** after **04:26:48** is excluded. Earlier known measured work **1h11m02s** plus this recorded interval is **1h36m15s**, still **plus unmeasured earlier visual effort**; no exact combined active-effort total is claimed. Original **00:45:54** start and **01:55:54** cutoff remain unchanged: calendar envelope **4h12m23s**, **3h02m23s beyond** the original cutoff. No reset, extra allowance or reuse of the historical 53m34s remainder. Stopped at the Part 4 gate; human usability/visual and joint G3 acceptance remain open.

@@ -1,0 +1,76 @@
+{
+  "kind": "web-overhaul-local-profile-summary",
+  "recordedAt": "2026-10-31T23:35:38.388Z",
+  "receipts": [
+    "performance-attempt1-sandbox.log",
+    "performance-20261101.json",
+    "read-render-profile-20261101.json",
+    "corpus-20261101/verification.json"
+  ],
+  "results": {
+    "portableCases": 4,
+    "allOriginalReportBytesPreserved": true,
+    "allCLIExits": [
+      2
+    ],
+    "portableOmittedBlobs": 0,
+    "directEvidenceWindows": 3,
+    "directReadPageBytes": 4096,
+    "directReadEncoding": "base64",
+    "oldAppMatchesRetainedAssemblyManifest": true,
+    "controlledAlternatingSSR": [
+      {
+        "name": "B3R full combined overview/source/coverage/findings/AI SSR (all sections intentionally rendered by harness)",
+        "old": {
+          "iterations": 30,
+          "medianMs": 42.93766600000026,
+          "p95Ms": 175.582042,
+          "maxMs": 211.64375000000018,
+          "renderedHTMLBytes": 446031
+        },
+        "current": {
+          "iterations": 30,
+          "medianMs": 9.09745799999996,
+          "p95Ms": 32.0434580000001,
+          "maxMs": 38.87366699999984,
+          "renderedHTMLBytes": 41992
+        }
+      },
+      {
+        "name": "B3R Files changes view SSR; old also computes member/omission browse while hidden by its app",
+        "old": {
+          "iterations": 50,
+          "medianMs": 4.984625000000051,
+          "p95Ms": 16.69879200000014,
+          "maxMs": 19.01233400000001,
+          "renderedHTMLBytes": 9371
+        },
+        "current": {
+          "iterations": 50,
+          "medianMs": 3.155833000000257,
+          "p95Ms": 15.425583000000188,
+          "maxMs": 20.116291999999703,
+          "renderedHTMLBytes": 12579
+        }
+      }
+    ]
+  },
+  "historicalComparison": {
+    "receipt": "examples/web-gap/w2-w5/final-measurements.json",
+    "sameNode": "v22.23.4",
+    "controlledComparison": false,
+    "warning": "Different wall-clock load and changed document content. Fresh aggregate search/filter/transport timings are often slower; do not infer causal speedups or browser performance from historical ratios."
+  },
+  "scope": {
+    "browserClientTrace": false,
+    "observedBrowserPollingCounts": false,
+    "mainThreadStyleLayoutPaint": false,
+    "browserExportPeakMemory": false,
+    "isolatedNodeExportPeakMemory": false,
+    "offlineBrowserJourney": false,
+    "networkAcquisition": false,
+    "targetExecution": false,
+    "engineRun": false
+  },
+  "remaining": "Browser main-thread, actual hidden component render/poll counts, browser export-memory peak and external-offline interaction remain open unless separately observed by the root browser lane. Source inspection proves inactive report sections are unmounted and active report element is memoized; Node SSR measurements quantify retained historical renderer work only."
+}

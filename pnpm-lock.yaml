@@ -63,6 +63,15 @@ importers:
       '@heurisko/contracts':
         specifier: workspace:*
         version: link:../contracts
+      '@heurisko/intelligence-reviewed':
+        specifier: workspace:*
+        version: link:../intelligence-reviewed
+
+  packages/intelligence-reviewed:
+    dependencies:
+      '@heurisko/contracts':
+        specifier: workspace:*
+        version: link:../contracts
 
   packages/tui:
     dependencies:

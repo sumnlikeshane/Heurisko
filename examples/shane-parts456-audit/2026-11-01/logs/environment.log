@@ -1,0 +1,6 @@
+v22.23.4
+10.14.0
+Python 3.13.2
+Darwin arm64
+28.4.0 / 
+permission denied while trying to connect to the Docker daemon socket at unix:///home/operator/.docker/run/docker.sock: Get "http://%2FUsers%2Fsumnlikehsane%2F.docker%2Frun%2Fdocker.sock/v1.51/version": dial unix /home/operator/.docker/run/docker.sock: connect: operation not permitted

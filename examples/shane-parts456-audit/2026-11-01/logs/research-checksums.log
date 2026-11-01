@@ -1,0 +1,15 @@
+HEURISKO_RESEARCH_BASELINE.md: OK
+HEURISKO_PRODUCT_DEFINITION.md: OK
+HEURISKO_TECHNICAL_ARCHITECTURE.md: OK
+HEURISKO_TOOLING_AND_REUSE.md: OK
+HEURISKO_VERIFICATION_STRATEGY.md: OK
+HEURISKO_IMPLEMENTATION_ROADMAP.md: OK
+HEURISKO_FOUNDER_DECISIONS.md: OK
+HEURISKO_EXECUTIVE_BRIEF.md: OK
+_evidence/official-requirements.md: OK
+_evidence/provenance-sources.md: OK
+_evidence/product-ai-sources.md: OK
+_evidence/architecture-sources.md: OK
+_evidence/tooling-sources.md: OK
+_evidence/verification-sources.md: OK
+_evidence/quality-audit.md: OK

@@ -13,3 +13,5 @@ export * from './parser-job.js';
 export * from './npm.js';
 export * from './sources.js';
 export * from './provenance.js';
+export * from './reviewed-module.js';
+export * from './intelligence-boundary.js';

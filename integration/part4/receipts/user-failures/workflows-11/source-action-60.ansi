@@ -1,0 +1,570 @@
+[?1049h[?25l[?25l  [1mHEURISKO[22m
+   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  ────────────────────────────────────────────────────────
+  [1mpicocolors@1.1.1 / HISTORICAL / incomplete / Captured 2…[22m
+  [4m[1m1 Ov  [22m[24m2 Find  3 Files  4 Src  5 AI  6 Scope
+  Historical — online checks have not refreshed · i Ident…
+  ┌─[1m > Overview / Outcomes [22m────────────────────── 1-8/29 ┐
+  │ [1mESTABLISHED OBSERVATION                             [22m │
+  │ Source and artifact differences are recorded. Review │
+  │ their evidence and the unresolved scope.             │
+  │ ! Source conflict: competing immutable candidates    │
+  │                                                      │
+  │ [1mINDEPENDENT OUTCOMES                                [22m │
+  │ Artifact integrity      Digest matched               │
+  │ Source association      Conflicting claims           │
+  └──────────────────────────────────────────────────────┘
+  SOURCE CONFLICT / inspect source claims
+  [1mTab[22m focus  [1mEnter[22m inspect  [1m1-6[22m sections  [1m?[22m help  [1mq[22m quit
+
+[?25l[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m
+   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  ────────────────────────────────────────────────────────
+  [1mpicocolors@1.1.1 / HISTORICAL / incomplete / Captured 2…[22m
+  1 Ov  2 Find  3 Files  [4m[1m4 Src  [22m[24m5 AI  6 Scope
+  Historical — online checks have not refreshed · i Ident…
+  [1mSource                                                  [22m
+  [Candidates]  Provenance  Build
+  ┌─[1m > Source records [22m──────────────────────────────── 1 ┐
+  │ [1m> Candidate 1 / 6f0a4638348e                        [22m │
+  │   ambiguous                                          │
+  │                                                      │
+  │ 1 / 1 · Enter inspect                                │
+  └──────────────────────────────────────────────────────┘
+
+
+  SOURCE CONFLICT / inspect source claims
+  [1mv[22m subtabs  [1mEnter[22m inspect  [1me[22m evidence  [1mTab[22m panes  [1mq[22m quit
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m
+   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  ────────────────────────────────────────────────────────
+  [1mpicocolors@1.1.1 / HISTORICAL / incomplete / Captured 2…[22m
+  [4m[1m1 Ov  [22m[24m2 Find  3 Files  4 Src  5 AI  6 Scope
+  Historical — online checks have not refreshed · i Ident…
+  ┌─[1m > Overview / Outcomes [22m────────────────────── 1-8/29 ┐
+  │ [1mESTABLISHED OBSERVATION                             [22m │
+  │ Source and artifact differences are recorded. Review │
+  │ their evidence and the unresolved scope.             │
+  │ ! Source conflict: competing immutable candidates    │
+  │                                                      │
+  │ [1mINDEPENDENT OUTCOMES                                [22m │
+  │ Artifact integrity      Digest matched               │
+  │ Source association      Conflicting claims           │
+  └──────────────────────────────────────────────────────┘
+  Per-report UI state reset; report unchanged.
+  [1mTab[22m focus  [1mEnter[22m inspect  [1m1-6[22m sections  [1m?[22m help  [1mq[22m quit
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m
+   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  ────────────────────────────────────────────────────────
+  [1mpicocolors@1.1.1 / HISTORICAL / incomplete / Captured 2…[22m
+  1 Ov  [4m[1m2 Find  [22m[24m3 Files  4 Src  5 AI  6 Scope
+  Historical — online checks have not refreshed · i Ident…
+  ┌─[1m > Findings [22m─────────────────────────────────────────┐
+  │ [1mDeterministic findings unavailable — Malhar analysis[22m │
+  │ [1mmodule not supplied.                                [22m │
+  │ ANALYSIS_MODULE_UNAVAILABLE: Malhar analysis module  │
+  │ not supplied                                         │
+  │ Artifact acquisition: complete; integrity matched.   │
+  │ Inventory: complete; raw comparison complete.        │
+  │ 2 modified / 5 identical / 12 unresolved (19 change  │
+  │ 1-7 / 15  j/k scroll                                 │
+  └──────────────────────────────────────────────────────┘
+  Findings
+  [1mj/k[22m move  [1mEnter[22m inspect  [1me[22m evidence  [1mTab[22m panes  [1mq[22m quit
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m
+   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  ────────────────────────────────────────────────────────
+  [1mpicocolors@1.1.1 / HISTORICAL / incomplete / Captured 2…[22m
+  1 Ov  [4m[1m2 Find  [22m[24m3 Files  4 Src  5 AI  6 Scope
+  Historical — online checks have not refreshed · i Ident…
+  ┌─[1m > Findings [22m─────────────────────────────────────────┐
+  │ [1mmodule not supplied.                                [22m │
+  │ ANALYSIS_MODULE_UNAVAILABLE: Malhar analysis module  │
+  │ not supplied                                         │
+  │ Artifact acquisition: complete; integrity matched.   │
+  │ Inventory: complete; raw comparison complete.        │
+  │ 2 modified / 5 identical / 12 unresolved (19 change  │
+  │ records)                                             │
+  │ 2-8 / 15  j/k scroll                                 │
+  └──────────────────────────────────────────────────────┘
+  Findings
+  [1mj/k[22m move  [1mEnter[22m inspect  [1me[22m evidence  [1mTab[22m panes  [1mq[22m quit
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m
+   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  ────────────────────────────────────────────────────────
+  [1mpicocolors@1.1.1 / HISTORICAL / incomplete / Captured 2…[22m
+  1 Ov  [4m[1m2 Find  [22m[24m3 Files  4 Src  5 AI  6 Scope
+  Historical — online checks have not refreshed · i Ident…
+  ┌─[1m > Findings [22m─────────────────────────────────────────┐
+  │ ANALYSIS_MODULE_UNAVAILABLE: Malhar analysis module  │
+  │ not supplied                                         │
+  │ Artifact acquisition: complete; integrity matched.   │
+  │ Inventory: complete; raw comparison complete.        │
+  │ 2 modified / 5 identical / 12 unresolved (19 change  │
+  │ records)                                             │
+  │ Source association: ambiguous.                       │
+  │ 3-9 / 15  j/k scroll                                 │
+  └──────────────────────────────────────────────────────┘
+  Findings
+  [1mj/k[22m move  [1mEnter[22m inspect  [1me[22m evidence  [1mTab[22m panes  [1mq[22m quit
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m
+   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  ────────────────────────────────────────────────────────
+  [1mpicocolors@1.1.1 / HISTORICAL / incomplete / Captured 2…[22m
+  1 Ov  [4m[1m2 Find  [22m[24m3 Files  4 Src  5 AI  6 Scope
+  Historical — online checks have not refreshed · i Ident…
+  ┌─[1m > Findings [22m─────────────────────────────────────────┐
+  │ not supplied                                         │
+  │ Artifact acquisition: complete; integrity matched.   │
+  │ Inventory: complete; raw comparison complete.        │
+  │ 2 modified / 5 identical / 12 unresolved (19 change  │
+  │ records)                                             │
+  │ Source association: ambiguous.                       │
+  │ AI: disabled. Deterministic analysis is a separate   │
+  │ 4-10 / 15  j/k scroll                                │
+  └──────────────────────────────────────────────────────┘
+  Findings
+  [1mj/k[22m move  [1mEnter[22m inspect  [1me[22m evidence  [1mTab[22m panes  [1mq[22m quit
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m
+   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  ────────────────────────────────────────────────────────
+  [1mpicocolors@1.1.1 / HISTORICAL / incomplete / Captured 2…[22m
+  1 Ov  [4m[1m2 Find  [22m[24m3 Files  4 Src  5 AI  6 Scope
+  Historical — online checks have not refreshed · i Ident…
+  ┌─[1m > Findings [22m─────────────────────────────────────────┐
+  │ Artifact acquisition: complete; integrity matched.   │
+  │ Inventory: complete; raw comparison complete.        │
+  │ 2 modified / 5 identical / 12 unresolved (19 change  │
+  │ records)                                             │
+  │ Source association: ambiguous.                       │
+  │ AI: disabled. Deterministic analysis is a separate   │
+  │ module; enabling AI does not supply it.              │
+  │ 5-11 / 15  j/k scroll                                │
+  └──────────────────────────────────────────────────────┘
+  Findings
+  [1mj/k[22m move  [1mEnter[22m inspect  [1me[22m evidence  [1mTab[22m panes  [1mq[22m quit
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m
+   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  ────────────────────────────────────────────────────────
+  [1mpicocolors@1.1.1 / HISTORICAL / incomplete / Captured 2…[22m
+  1 Ov  2 Find  [4m[1m3 Files  [22m[24m4 Src  5 AI  6 Scope
+  Historical — online checks have not refreshed · i Ident…
+  [1mFiles                                                   [22m
+  Tree / 2 modified / 5 identical / 12 unresolved (19 cha…
+  ┌─[1m > Files [22m──────────────────────────────────────── 25 ┐
+  │ [1m> [-] Artifact root/                                [22m │
+  │   7 records / 2 modified                             │
+  │                                                      │
+  │ 1 / 25 · Enter expand                                │
+  └──────────────────────────────────────────────────────┘
+
+
+  Files
+  [1mEnter[22m expand  [1mm[22m modified  [1mv[22m tree/flat  [1m?[22m help  [1mq[22m quit
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m
+   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  ────────────────────────────────────────────────────────
+  [1mpicocolors@1.1.1 / HISTORICAL / incomplete / Captured 2…[22m
+  1 Ov  2 Find  [4m[1m3 Files  [22m[24m4 Src  5 AI  6 Scope
+  Historical — online checks have not refreshed · i Ident…
+  [1mFiles                                                   [22m
+  Flat / 2 modified / 5 identical / 12 unresolved (19 cha…
+  ┌─[1m > Files [22m──────────────────────────────────────── 19 ┐
+  │ [1m> Artifact / README.md                              [22m │
+  │   modified / different                               │
+  │                                                      │
+  │ 7 / 19 · Enter inspect                               │
+  └──────────────────────────────────────────────────────┘
+
+
+  Modified file / Artifact / README.md / Enter inspect; e…
+  [1mm[22m next modified  [1mEnter[22m inspect  [1me[22m exact bytes  [1mq[22m quit
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m
+   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  ────────────────────────────────────────────────────────
+  [1mpicocolors@1.1.1 / HISTORICAL / incomplete / Captured 2…[22m
+  1 Ov  2 Find  [4m[1m3 Files  [22m[24m4 Src  5 AI  6 Scope
+  Historical — online checks have not refreshed · i Ident…
+  [1mFiles                                                   [22m
+  Files > Artifact / README.md / Esc restores position
+  ┌─[1m > Artifact / README.md [22m─────────────────────────────┐
+  │ [1mmodified / different                                [22m │
+  │ SOURCE → ARTIFACT / bounded recorded byte spans; e   │
+  │ exact bytes                                          │
+  │ [1mRAW CHANGED SPANS / unified                         [22m │
+  │ SOURCE: raw utf8 bytes [532,4628) / truncated true   │
+  │ 1-5 / 200  j/k scroll                                │
+  └──────────────────────────────────────────────────────┘
+  Modified file / Artifact / README.md / Enter inspect; e…
+  [1mm[22m next modified  [1mEnter[22m inspect  [1me[22m exact bytes  [1mq[22m quit
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m
+   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  ────────────────────────────────────────────────────────
+  [1mpicocolors@1.1.1 / HISTORICAL / incomplete / Captured 2…[22m
+  1 Ov  2 Find  [4m[1m3 Files  [22m[24m4 Src  5 AI  6 Scope
+  Historical — online checks have not refreshed · i Ident…
+  [1mFiles                                                   [22m
+  Files > Artifact / README.md / Esc restores position
+  ┌─[1m > Artifact / README.md [22m─────────────────────────────┐
+  │ [1mmodified / different                                [22m │
+  │ SOURCE → ARTIFACT / bounded recorded byte spans; e   │
+  │ exact bytes                                          │
+  │ [1mRAW CHANGED SPANS / side-by-side                    [22m │
+  │ SOURCE: raw utf8 bytes [532,4628) / truncated true   │
+  │ 1-5 / 199  j/k scroll                                │
+  └──────────────────────────────────────────────────────┘
+  Diff mode side-by-side; raw evidence remains available …
+  [1mm[22m next modified  [1mEnter[22m inspect  [1me[22m exact bytes  [1mq[22m quit
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m
+   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  ────────────────────────────────────────────────────────
+  [1mpicocolors@1.1.1 / HISTORICAL / incomplete / Captured 2…[22m
+  1 Ov  2 Find  [4m[1m3 Files  [22m[24m4 Src  5 AI  6 Scope
+  Raw retained evidence · Esc returns to its origin
+  [1mEvidence                                                [22m
+  Files > ev_f61f09233ab041767071cc94 / Esc restores posi…
+  [━━━━───────────────] Reading evidence / indeterminate
+  ┌─[1m > Raw citation / artifact [22m──────────────────────────┐
+  │ [1mev_f61f09233ab041767071cc94                         [22m │
+  │ BOTH / README.md                                     │
+  │ Reading bounded, hash-checked bytes…                 │
+  │                                                      │
+  │ 1-4 / 13  j/k scroll                                 │
+  └──────────────────────────────────────────────────────┘
+  Reading bounded, hash-checked evidence…
+  [1mj/k[22m scroll  [1mTab[22m citation  [1ms[22m side  [1mp/b[22m page  [1mq[22m quit
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m
+   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  ────────────────────────────────────────────────────────
+  [1mpicocolors@1.1.1 / HISTORICAL / incomplete / Captured 2…[22m
+  1 Ov  2 Find  [4m[1m3 Files  [22m[24m4 Src  5 AI  6 Scope
+  Raw retained evidence · Esc returns to its origin
+  [1mEvidence                                                [22m
+  Files > ev_f61f09233ab041767071cc94 / Esc restores posi…
+  ┌─[1m > Raw citation / artifact [22m──────────────────────────┐
+  │ [1mev_f61f09233ab041767071cc94                         [22m │
+  │ BOTH / README.md                                     │
+  │ RAW utf8: [532, 621) / recorded [532, 621)           │
+  │ Window truncated: false / total blob 622 bytes       │
+  │                                                      │
+  │ 1-5 / 22  j/k scroll                                 │
+  └──────────────────────────────────────────────────────┘
+  evidence
+  [1mj/k[22m scroll  [1mTab[22m citation  [1ms[22m side  [1mp/b[22m page  [1mq[22m quit
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m
+   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  ────────────────────────────────────────────────────────
+  [1mpicocolors@1.1.1 / HISTORICAL / incomplete / Captured 2…[22m
+  1 Ov  2 Find  [4m[1m3 Files  [22m[24m4 Src  5 AI  6 Scope
+  Historical — online checks have not refreshed · i Ident…
+  [1mFiles                                                   [22m
+  Files > Artifact / README.md / Esc restores position
+  ┌─[1m > Artifact / README.md [22m─────────────────────────────┐
+  │ [1mmodified / different                                [22m │
+  │ SOURCE → ARTIFACT / bounded recorded byte spans; e   │
+  │ exact bytes                                          │
+  │ [1mRAW CHANGED SPANS / side-by-side                    [22m │
+  │ SOURCE: raw utf8 bytes [532,4628) / truncated true   │
+  │ 1-5 / 199  j/k scroll                                │
+  └──────────────────────────────────────────────────────┘
+  Files
+  [1mm[22m next modified  [1mEnter[22m inspect  [1me[22m exact bytes  [1mq[22m quit
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m
+   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  ────────────────────────────────────────────────────────
+  [1mpicocolors@1.1.1 / HISTORICAL / incomplete / Captured 2…[22m
+  1 Ov  2 Find  [4m[1m3 Files  [22m[24m4 Src  5 AI  6 Scope
+  Historical — online checks have not refreshed · i Ident…
+  [1mFiles                                                   [22m
+  Flat / 2 modified / 5 identical / 12 unresolved (19 cha…
+  ┌─[1m > Files [22m──────────────────────────────────────── 19 ┐
+  │ [1m> Artifact / README.md                              [22m │
+  │   modified / different                               │
+  │                                                      │
+  │ 7 / 19 · Enter inspect                               │
+  └──────────────────────────────────────────────────────┘
+
+
+  Files
+  [1mm[22m next modified  [1mEnter[22m inspect  [1me[22m exact bytes  [1mq[22m quit
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m
+   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  ────────────────────────────────────────────────────────
+  [1mpicocolors@1.1.1 / HISTORICAL / incomplete / Captured 2…[22m
+  1 Ov  2 Find  [4m[1m3 Files  [22m[24m4 Src  5 AI  6 Scope
+  Historical — online checks have not refreshed · i Ident…
+  [1mFiles                                                   [22m
+  Flat / 2 modified / 5 identical / 12 unresolved (19 cha…
+  ┌─[1m > Files [22m──────────────────────────────────────── 19 ┐
+  │ [1m> Artifact / README.md                              [22m │
+  │   modified / different                               │
+  │                                                      │
+  │ 7 / 19 · Enter inspect                               │
+  └──────────────────────────────────────────────────────┘
+
+
+  Filter: _
+  [1mm[22m next modified  [1mEnter[22m inspect  [1me[22m exact bytes  [1mTab[22m panes
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m
+   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  ────────────────────────────────────────────────────────
+  [1mpicocolors@1.1.1 / HISTORICAL / incomplete / Captured 2…[22m
+  1 Ov  2 Find  [4m[1m3 Files  [22m[24m4 Src  5 AI  6 Scope
+  Historical — online checks have not refreshed · i Ident…
+  [1mFiles                                                   [22m
+  Matching files / 2 modified / 5 identical / 12 unresolv…
+  ┌─[1m > Files [22m───────────────────────────────────────── 1 ┐
+  │ Filter: package.json                                 │
+  │                                                      │
+  │ [1m> Artifact / package.json                           [22m │
+  │   modified / different                               │
+  │                                                      │
+  │ 1 / 1 · Enter inspect                                │
+  └──────────────────────────────────────────────────────┘
+  Filter: package.json_
+  [1mm[22m next modified  [1mEnter[22m inspect  [1me[22m exact bytes  [1mTab[22m panes
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m
+   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  ────────────────────────────────────────────────────────
+  [1mpicocolors@1.1.1 / HISTORICAL / incomplete / Captured 2…[22m
+  1 Ov  2 Find  [4m[1m3 Files  [22m[24m4 Src  5 AI  6 Scope
+  Historical — online checks have not refreshed · i Ident…
+  [1mFiles                                                   [22m
+  Matching files / 2 modified / 5 identical / 12 unresolv…
+  ┌─[1m > Files [22m───────────────────────────────────────── 1 ┐
+  │ Filter: package.json                                 │
+  │                                                      │
+  │ [1m> Artifact / package.json                           [22m │
+  │   modified / different                               │
+  │                                                      │
+  │ 1 / 1 · Enter inspect                                │
+  └──────────────────────────────────────────────────────┘
+  Files
+  [1mm[22m next modified  [1mEnter[22m inspect  [1me[22m exact bytes  [1mq[22m quit
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m
+   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  ────────────────────────────────────────────────────────
+  [1mpicocolors@1.1.1 / HISTORICAL / incomplete / Captured 2…[22m
+  1 Ov  2 Find  [4m[1m3 Files  [22m[24m4 Src  5 AI  6 Scope
+  Historical — online checks have not refreshed · i Ident…
+  [1mFiles                                                   [22m
+  Files > Artifact / package.json / Esc restores position
+  ┌─[1m > Artifact / package.json [22m──────────────────────────┐
+  │ [1mmodified / different                                [22m │
+  │ SOURCE → ARTIFACT / bounded recorded byte spans; e   │
+  │ exact bytes                                          │
+  │ [1mRAW CHANGED SPANS / side-by-side                    [22m │
+  │ SOURCE: raw utf8 bytes [44,1104) / truncated false   │
+  │ 1-5 / 100  j/k scroll                                │
+  └──────────────────────────────────────────────────────┘
+  Files
+  [1mm[22m next modified  [1mEnter[22m inspect  [1me[22m exact bytes  [1mq[22m quit
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m
+   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  ────────────────────────────────────────────────────────
+  [1mpicocolors@1.1.1 / HISTORICAL / incomplete / Captured 2…[22m
+  1 Ov  2 Find  [4m[1m3 Files  [22m[24m4 Src  5 AI  6 Scope
+  Historical — online checks have not refreshed · i Ident…
+  [1mFiles                                                   [22m
+  Matching files / 2 modified / 5 identical / 12 unresolv…
+  ┌─[1m > Files [22m───────────────────────────────────────── 1 ┐
+  │ Filter: package.json                                 │
+  │                                                      │
+  │ [1m> Artifact / package.json                           [22m │
+  │   modified / different                               │
+  │                                                      │
+  │ 1 / 1 · Enter inspect                                │
+  └──────────────────────────────────────────────────────┘
+  Files
+  [1mm[22m next modified  [1mEnter[22m inspect  [1me[22m exact bytes  [1mq[22m quit
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m
+   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  ────────────────────────────────────────────────────────
+  [1mpicocolors@1.1.1 / HISTORICAL / incomplete / Captured 2…[22m
+  1 Ov  2 Find  3 Files  [4m[1m4 Src  [22m[24m5 AI  6 Scope
+  Historical — online checks have not refreshed · i Ident…
+  [1mSource                                                  [22m
+  [Candidates]  Provenance  Build
+  ┌─[1m > Source records [22m──────────────────────────────── 1 ┐
+  │ [1m> Candidate 1 / 6f0a4638348e                        [22m │
+  │   ambiguous                                          │
+  │                                                      │
+  │ 1 / 1 · Enter inspect                                │
+  └──────────────────────────────────────────────────────┘
+
+
+  SOURCE CONFLICT / inspect source claims
+  [1mv[22m subtabs  [1mEnter[22m inspect  [1me[22m evidence  [1mTab[22m panes  [1mq[22m quit
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m
+   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  ────────────────────────────────────────────────────────
+  [1mpicocolors@1.1.1 / HISTORICAL / incomplete / Captured 2…[22m
+  1 Ov  2 Find  3 Files  [4m[1m4 Src  [22m[24m5 AI  6 Scope
+  Historical — online checks have not refreshed · i Ident…
+  [1mSource                                                  [22m
+  Source > Candidate 1 / 6f0a4638348e / Esc restores posi…
+  ┌─[1m > Candidate 1 / 6f0a4638348e [22m───────────────────────┐
+  │ [1mAssociation ambiguous — this candidate is not a     [22m │
+  │ [1mverified release baseline.                          [22m │
+  │ Selected comparison target: this repository / commit │
+  │ / package directory was selected.                    │
+  │ Candidate basis: user-override, registry,            │
+  │ 1-5 / 40  j/k scroll                                 │
+  └──────────────────────────────────────────────────────┘
+  SOURCE CONFLICT / inspect source claims
+  [1mv[22m subtabs  [1mEnter[22m inspect  [1me[22m evidence  [1mTab[22m panes  [1mq[22m quit
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m
+   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  ────────────────────────────────────────────────────────
+  [1mpicocolors@1.1.1 / HISTORICAL / incomplete / Captured 2…[22m
+  1 Ov  2 Find  3 Files  [4m[1m4 Src  [22m[24m5 AI  6 Scope
+  Historical — online checks have not refreshed · i Ident…
+  [1mSource                                                  [22m
+  Source > Candidate 1 / 6f0a4638348e / Esc restores posi…
+  ┌─[1m > Candidate 1 / 6f0a4638348e [22m───────────────────────┐
+  │ [1mverified release baseline.                          [22m │
+  │ Selected comparison target: this repository / commit │
+  │ / package directory was selected.                    │
+  │ Candidate basis: user-override, registry,            │
+  │ artifact-manifest, version-tag.                      │
+  │ 2-6 / 40  j/k scroll                                 │
+  └──────────────────────────────────────────────────────┘
+  SOURCE CONFLICT / inspect source claims
+  [1mv[22m subtabs  [1mEnter[22m inspect  [1me[22m evidence  [1mTab[22m panes  [1mq[22m quit
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m
+   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  ────────────────────────────────────────────────────────
+  [1mpicocolors@1.1.1 / HISTORICAL / incomplete / Captured 2…[22m
+  1 Ov  2 Find  3 Files  [4m[1m4 Src  [22m[24m5 AI  6 Scope
+  Historical — online checks have not refreshed · i Ident…
+  [1mSource                                                  [22m
+  Source > Candidate 1 / 6f0a4638348e / Esc restores posi…
+  ┌─[1m > Candidate 1 / 6f0a4638348e [22m───────────────────────┐
+  │ Selected comparison target: this repository / commit │
+  │ / package directory was selected.                    │
+  │ Candidate basis: user-override, registry,            │
+  │ artifact-manifest, version-tag.                      │
+  │ Version labels: artifact 1.1.1; selected source      │
+  │ 3-7 / 40  j/k scroll                                 │
+  └──────────────────────────────────────────────────────┘
+  SOURCE CONFLICT / inspect source claims
+  [1mv[22m subtabs  [1mEnter[22m inspect  [1me[22m evidence  [1mTab[22m panes  [1mq[22m quit
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m
+   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  ────────────────────────────────────────────────────────
+  [1mpicocolors@1.1.1 / HISTORICAL / incomplete / Captured 2…[22m
+  1 Ov  2 Find  3 Files  [4m[1m4 Src  [22m[24m5 AI  6 Scope
+  Historical — online checks have not refreshed · i Ident…
+  [1mSource                                                  [22m
+  Source > Candidate 1 / 6f0a4638348e / Esc restores posi…
+  ┌─[1m > Candidate 1 / 6f0a4638348e [22m───────────────────────┐
+  │ / package directory was selected.                    │
+  │ Candidate basis: user-override, registry,            │
+  │ artifact-manifest, version-tag.                      │
+  │ Version labels: artifact 1.1.1; selected source      │
+  │ 1.1.0. Evidence ev_3ca16ad46cd957d737ef0c18 (e opens │
+  │ 4-8 / 40  j/k scroll                                 │
+  └──────────────────────────────────────────────────────┘
+  SOURCE CONFLICT / inspect source claims
+  [1mv[22m subtabs  [1mEnter[22m inspect  [1me[22m evidence  [1mTab[22m panes  [1mq[22m quit
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m
+   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  ────────────────────────────────────────────────────────
+  [1mpicocolors@1.1.1 / HISTORICAL / incomplete / Captured 2…[22m
+  1 Ov  2 Find  3 Files  [4m[1m4 Src  [22m[24m5 AI  6 Scope
+  Historical — online checks have not refreshed · i Ident…
+  [1mSource                                                  [22m
+  Source > Candidate 1 / 6f0a4638348e / Esc restores posi…
+  ┌─[1m > Candidate 1 / 6f0a4638348e [22m───────────────────────┐
+  │ Candidate basis: user-override, registry,            │
+  │ artifact-manifest, version-tag.                      │
+  │ Version labels: artifact 1.1.1; selected source      │
+  │ 1.1.0. Evidence ev_3ca16ad46cd957d737ef0c18 (e opens │
+  │ exact values; s switches side).                      │
+  │ 5-9 / 40  j/k scroll                                 │
+  └──────────────────────────────────────────────────────┘
+  SOURCE CONFLICT / inspect source claims
+  [1mv[22m subtabs  [1mEnter[22m inspect  [1me[22m evidence  [1mTab[22m panes  [1mq[22m quit
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m
+   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  ────────────────────────────────────────────────────────
+  [1mpicocolors@1.1.1 / HISTORICAL / incomplete / Captured 2…[22m
+  1 Ov  2 Find  3 Files  [4m[1m4 Src  [22m[24m5 AI  6 Scope
+  Historical — online checks have not refreshed · i Ident…
+  [1mSource                                                  [22m
+  Source > Candidate 1 / 6f0a4638348e / Esc restores posi…
+  ┌─[1m > Candidate 1 / 6f0a4638348e [22m───────────────────────┐
+  │ artifact-manifest, version-tag.                      │
+  │ Version labels: artifact 1.1.1; selected source      │
+  │ 1.1.0. Evidence ev_3ca16ad46cd957d737ef0c18 (e opens │
+  │ exact values; s switches side).                      │
+  │ SOURCE CONFLICT: SOURCE_VERSION_LABEL_DIFFERS        │
+  │ 6-10 / 40  j/k scroll                                │
+  └──────────────────────────────────────────────────────┘
+  SOURCE CONFLICT / inspect source claims
+  [1mv[22m subtabs  [1mEnter[22m inspect  [1me[22m evidence  [1mTab[22m panes  [1mq[22m quit
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m
+   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  ────────────────────────────────────────────────────────
+  [1mpicocolors@1.1.1 / HISTORICAL / incomplete / Captured 2…[22m
+  1 Ov  2 Find  3 Files  [4m[1m4 Src  [22m[24m5 AI  6 Scope
+  Historical — online checks have not refreshed · i Ident…
+  [1mSource                                                  [22m
+  Source > Candidate 1 / 6f0a4638348e / Esc restores posi…
+  ┌─[1m > Candidate 1 / 6f0a4638348e [22m───────────────────────┐
+  │ Version labels: artifact 1.1.1; selected source      │
+  │ 1.1.0. Evidence ev_3ca16ad46cd957d737ef0c18 (e opens │
+  │ exact values; s switches side).                      │
+  │ SOURCE CONFLICT: SOURCE_VERSION_LABEL_DIFFERS        │
+  │ Subdirectory: (repository root)                      │
+  │ 7-11 / 40  j/k scroll                                │
+  └──────────────────────────────────────────────────────┘
+  SOURCE CONFLICT / inspect source claims
+  [1mv[22m subtabs  [1mEnter[22m inspect  [1me[22m evidence  [1mTab[22m panes  [1mq[22m quit
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m
+   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  ────────────────────────────────────────────────────────
+  [1mpicocolors@1.1.1 / HISTORICAL / incomplete / Captured 2…[22m
+  1 Ov  2 Find  3 Files  [4m[1m4 Src  [22m[24m5 AI  6 Scope
+  Historical — online checks have not refreshed · i Ident…
+  [1mSource                                                  [22m
+  Source > Candidate 1 / 6f0a4638348e / Esc restores posi…
+  ┌─[1m > Candidate 1 / 6f0a4638348e [22m───────────────────────┐
+  │ 1.1.0. Evidence ev_3ca16ad46cd957d737ef0c18 (e opens │
+  │ exact values; s switches side).                      │
+  │ SOURCE CONFLICT: SOURCE_VERSION_LABEL_DIFFERS        │
+  │ Subdirectory: (repository root)                      │
+  │ New investigation with this target: n opens a new    │
+  │ 8-12 / 40  j/k scroll                                │
+  └──────────────────────────────────────────────────────┘
+  SOURCE CONFLICT / inspect source claims
+  [1mv[22m subtabs  [1mEnter[22m inspect  [1me[22m evidence  [1mTab[22m panes  [1mq[22m quit
+

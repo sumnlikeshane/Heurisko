@@ -2,7 +2,7 @@
 import { resolve } from 'node:path';
 import {ReportReader} from '../../../integration/part4/dist/report-reader.js';
 import type { InvestigationReport, ArtifactInput } from '@heurisko/contracts';
-import { EvidenceStore, boundedFile, canonicalJSON, decodeReport, encodeReport, exitCode, investigate, terminalText, writeImmutable, npmCoordinates } from '@heurisko/core';
+import { EvidenceStore, boundedFile, canonicalJSON, decodeReportBytes, encodeReport, exitCode, investigate, terminalText, writeImmutable, npmCoordinates } from '@heurisko/core';
 
 const help=`Heurisko local evidence 0.1.0
 Usage:
@@ -44,7 +44,7 @@ async function main():Promise<void> {
   if(command==='tui'&&(flags.has('json')||flags.has('no-ai')))throw Error('OPTION_NOT_APPLICABLE');
   for(const name of flags.keys())if(!booleanFlags.has(name)&&!permitted.has(name))throw new Error('OPTION_NOT_APPLICABLE');
   const store=new EvidenceStore(get('store')?resolve(get('store')!):undefined);
-  if(command==='tui'){if(positional.length!==1)throw Error('INVOCATION_INVALID');const target=positional[0]!;const reader=target.startsWith('sha256:')?await ReportReader.openJSON((await store.get(target,8*1024*1024)).toString('utf8'),store.root):await ReportReader.openFile(resolve(target),store.root);
+  if(command==='tui'){if(positional.length!==1)throw Error('INVOCATION_INVALID');const target=positional[0]!;const reader=target.startsWith('sha256:')?await ReportReader.openBytes(await store.get(target,8*1024*1024),store.root):await ReportReader.openFile(resolve(target),store.root);
     if(!process.stdin.isTTY||!process.stdout.isTTY){process.stdout.write(summary(structuredClone(reader.report) as InvestigationReport));process.exitCode=exitCode(reader.report);return;}
     process.exitCode=exitCode(reader.report);await(await import('@heurisko/tui')).launchTui({storeRoot:store.root,reader,noColor:flags.has('no-color'),ascii:flags.has('ascii'),palette:flags.has('palette')});return;}
   const controller=new AbortController();
@@ -65,10 +65,10 @@ async function main():Promise<void> {
       process.stdout.write(flags.has('json')?canonicalJSON(report)+'\n':summary(report));process.exitCode=exitCode(report);
     } else {
       if(positional.length!==1)throw new Error('INVOCATION_INVALID');const target=positional[0]!;
-      report=target.startsWith('sha256:')?await store.loadReport(target):await decodeReport((await boundedFile(resolve(target),8*1024*1024)).toString('utf8'));
+      report=target.startsWith('sha256:')?await store.loadReport(target):await decodeReportBytes(await boundedFile(resolve(target),8*1024*1024));
       await store.verifyEvidence(report);
       if(get('evidence')) {
-        const e=report.bundle.evidence.find(e=>e.evidenceId===get('evidence'));if(!e||!e.contentRef)throw new Error('EVIDENCE_NOT_RETAINED');
+        const e=report.bundle.evidence.find(e=>e.evidenceId===get('evidence'));if(!e||e.contentState!=='retained'||!e.contentRef)throw new Error('EVIDENCE_NOT_RETAINED');
         const bytes=await store.get(e.contentRef);const excerpt=bytes.subarray(0,8192);
         process.stdout.write(flags.has('json')?canonicalJSON({reportId:report.reportId,evidence:e,content:{encoding:'base64',bytesBase64:excerpt.toString('base64'),totalBytes:bytes.length,truncated:bytes.length>excerpt.length},freshness:'retained observation; no fresh check'})+'\n':terminalText(`${e.evidenceId} ${e.contentRef}\n${excerpt.toString('utf8')}\n${bytes.length>excerpt.length?'[excerpt truncated; full bytes retained]\n':''}`));
       } else process.stdout.write(flags.has('json')?canonicalJSON(report)+'\n':summary(report));

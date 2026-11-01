@@ -1,0 +1,63 @@
+Traceback (most recent call last):
+  File "/tmp/heurisko-parts456-pty.py", line 28, in <module>
+    runpy.run_path(str(repo/'packages/tui/tests'/script),run_name='__main__')
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 294, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "<workspace>/packages/tui/tests/terminal-extra.py", line 3, in <module>
+    runpy.run_path(str(pathlib.Path(__file__).with_name('visual_extra.py')),run_name='__main__')
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 294, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "<workspace>/packages/tui/tests/visual_extra.py", line 10, in <module>
+    s=new(160,40,['tui','examples/part4/current/local-m1.report.json','--store','examples/part4/current/store']);expect(s,'HISTORICAL');s.send('x');s.send('3');expect(s,'package/');assert 'Supporting evidence' not in s.frame();checks.append({'check':'Files keeps revision-7 two-pane wide geometry','passed':True});s.send('\r');s.send('\r');s.send('v');s.send('/');s.send('package.json');s.send('\r');s.send('\r');s.scroll_to('RAW CHANGED SPANS');s.scroll_to('Viewer line alignment');s.capture(CAP/'raw-diff-160');s.send('d');s.send('\x1b[C');s.send('\x1b');s.send('4');s.send('/');s.send('Candidate');s.send('\r');s.send('\t');s.send('j');s.send('v');expect(s,'[Provenance]');assert 'Filter: Candidate' not in s.frame();s.send('v');s.send('v');expect(s,'Filter: Candidate');s.send('\x1b[Z');s.send('\x1b[Z');s.send('\x1b[C');s.send('\r');s.capture(CAP/'global-navigation-focus');s.send('H');s.send('o');s.send('/does/not/exist');s.send('\r');expect(s,'Open failed');s.capture(CAP/'open-error');s.send('\x1b');s.quit()
+                                                                                                                                                                ~~~~~~^^^^^^^^^^^^^^
+  File "<workspace>/packages/tui/tests/visual_extra.py", line 6, in expect
+    def expect(s,text):s.wait(text);checks.append({'check':text,'passed':True})
+                       ~~~~~~^^^^^^
+  File "<workspace>/packages/tui/tests/pty_session.py", line 42, in wait
+    assert text in self.frame(),repr(text)+' missing\n'+self.frame()
+           ^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'package/' missing
+  HEURISKO   H Home    I Investigations     M Monitoring                                                                                                        
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+  picocolors@1.1.1 / LOCAL INPUT / HISTORICAL / complete / Captured 2026-10-31T21:48:41Z                                                                        
+  1 Overview   2 Findings   3 Files   4 Source   5 AI   6 Coverage                                                                                              
+  Historical — online checks have not refreshed · i Identity                                                                                                    
+  Files                                                                                                                                                         
+  Tree / 2 modified / 5 identical / 0 unresolved / 1 added / 12 removed (20 change records) / m next modified / v tree-flat                                     
+  ┌─ > Files ───────────────────── 26 ┐ ┌─ Directory / navigation ───────────────────────────────────────────────────────────────────────────────────────────┐  
+  │ > [-] Artifact root/              │ │ Directory:                                                                                                         │  
+  │   8 records / 2 modified          │ │ package                                                                                                            │  
+  │                                   │ │ 8 descendant change records; 2 modified.                                                                           │  
+  │     heurisko-inert-marker.js      │ │ Enter expands/collapses. m jumps directly to the next modified file.                                               │  
+  │   added / different               │ │ Directory selection shows navigation metadata; no file comparison is implied.                                      │  
+  │                                   │ │ 1-5 / 5                                                                                                            │  
+  │     LICENSE                       │ └────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘  
+  │   identical / equal               │                                                                                                                         
+  │                                   │                                                                                                                         
+  │     package.json                  │                                                                                                                         
+  │   modified / different            │                                                                                                                         
+  │                                   │                                                                                                                         
+  │     picocolors.browser.js         │                                                                                                                         
+  │   identical / equal               │                                                                                                                         
+  │                                   │                                                                                                                         
+  │     picocolors.d.ts               │                                                                                                                         
+  │   identical / equal               │                                                                                                                         
+  │                                   │                                                                                                                         
+  │     picocolors.js                 │                                                                                                                         
+  │   identical / equal               │                                                                                                                         
+  │                                   │                                                                                                                         
+  │     README.md                     │                                                                                                                         
+  │   modified / different            │                                                                                                                         
+  │                                   │                                                                                                                         
+  │ 1 / 26 · Enter expand             │                                                                                                                         
+  └───────────────────────────────────┘                                                                                                                         
+                                                                                                                                                                
+                                                                                                                                                                
+  Files                                                                                                                                                         
+  Enter expand  m modified  v tree/flat  Tab preview  ? help  q quit                                                                                            
+                                                                                                                                                                
+                                                                                                                                                                

@@ -1,0 +1,52 @@
+Traceback (most recent call last):
+  File "/tmp/heurisko-parts456-pty.py", line 28, in <module>
+    runpy.run_path(str(repo/'packages/tui/tests'/script),run_name='__main__')
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 294, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "<workspace>/packages/tui/tests/navigation_audit.py", line 12, in <module>
+    s=Session(120,35,['tui','examples/part4/current/local-m1.report.json','--store','examples/part4/current/store']);sessions.append(s);expect(s,'HISTORICAL');expect(s,'confidence: high');expect(s,'Filter: lifecycle');s.send('x');s.send('3');expect(s,'[+] package/');s.capture(cap/'default-collapsed-tree');s.send('\r');expect(s,'[-] package/');s.capture(cap/'expanded-tree');s.quit()
+                                                                                                                                                                                                                                                  ~~~~~~^^^^^^^^^^^^^^^^^^
+  File "<workspace>/packages/tui/tests/navigation_audit.py", line 5, in expect
+    def expect(s,text):s.wait(text);checks.append({'check':text,'passed':True})
+                       ~~~~~~^^^^^^
+  File "<workspace>/packages/tui/tests/pty_session.py", line 42, in wait
+    assert text in self.frame(),repr(text)+' missing\n'+self.frame()
+           ^^^^^^^^^^^^^^^^^^^^
+AssertionError: '[+] package/' missing
+  HEURISKO   H Home    I Investigations     M Monitoring                                                                
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+  picocolors@1.1.1 / LOCAL INPUT / HISTORICAL / complete / Captured 2026-10-31T21:48:41Z                                
+  1 Overview   2 Findings   3 Files   4 Source   5 AI   6 Coverage                                                      
+  Historical — online checks have not refreshed · i Identity                                                            
+  Files                                                                                                                 
+  Tree / 2 modified / 5 identical / 0 unresolved / 1 added / 12 removed (20 change records) / m next modified / v tre…  
+  ┌─ > Files ─────────── 26 ┐ ┌─ Directory / navigation ─────────────────────────────────────────────────────────────┐  
+  │ > [-] Artifact root/    │ │ Directory:                                                                           │  
+  │   8 records / 2 modifi… │ │ package                                                                              │  
+  │                         │ │ 8 descendant change records; 2 modified.                                             │  
+  │     heurisko-inert-mar… │ │ Enter expands/collapses. m jumps directly to the next modified file.                 │  
+  │   added / different     │ │ Directory selection shows navigation metadata; no file comparison is implied.        │  
+  │                         │ │ 1-5 / 5                                                                              │  
+  │     LICENSE             │ └──────────────────────────────────────────────────────────────────────────────────────┘  
+  │   identical / equal     │                                                                                           
+  │                         │                                                                                           
+  │     package.json        │                                                                                           
+  │   modified / different  │                                                                                           
+  │                         │                                                                                           
+  │     picocolors.browser… │                                                                                           
+  │   identical / equal     │                                                                                           
+  │                         │                                                                                           
+  │     picocolors.d.ts     │                                                                                           
+  │   identical / equal     │                                                                                           
+  │                         │                                                                                           
+  │     picocolors.js       │                                                                                           
+  │   identical / equal     │                                                                                           
+  │                         │                                                                                           
+  │ 1 / 26 · Enter expand   │                                                                                           
+  └─────────────────────────┘                                                                                           
+  Files                                                                                                                 
+  Enter expand  m modified  v tree/flat  Tab preview  ? help  q quit                                                    
+                                                                                                                        
+                                                                                                                        

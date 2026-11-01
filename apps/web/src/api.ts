@@ -71,8 +71,15 @@ consumeSession();
 if (typeof window !== 'undefined') window.addEventListener('hashchange', () => {
     if (new URLSearchParams(location.hash.slice(1)).has('session')) { consumeSession(); window.dispatchEvent(new Event('heurisko-session')); }
 });
-export async function api<T>(route: string, signal?: AbortSignal): Promise<T> {
-    return (await response(route, { signal })).json();
+// Only reads receive a client deadline. Mutations are never retried or resubmitted.
+export async function api<T>(route: string, signal?: AbortSignal, timeoutMs = 12000): Promise<T> {
+    const controller = new AbortController(); let timedOut = false;
+    const abort = () => controller.abort(signal?.reason);
+    if (signal?.aborted) abort(); else signal?.addEventListener('abort', abort, { once: true });
+    const timer = setTimeout(() => { timedOut = true; controller.abort(); }, timeoutMs);
+    try { return await (await response(route, { signal: controller.signal })).json(); }
+    catch (error) { if (timedOut && !signal?.aborted) throw Error('READ_TIMEOUT'); throw error; }
+    finally { clearTimeout(timer); signal?.removeEventListener('abort', abort); }
 }
 export function safe(value: unknown, multiline = false): string {
     const text = typeof value === 'string' ? value : String(value);
@@ -96,16 +103,28 @@ async function response(route: string, init: RequestInit = {}) {
     }
     return result;
 }
-export async function post<T>(route: string, value: unknown): Promise<T> { return (await response(route, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(value) })).json(); }
+// A mutation may be accepted before its response body is lost. Normalize that
+// missing acknowledgment separately from known HTTP rejection codes; never retry.
+async function mutationJSON<T>(result: Response): Promise<T> {
+    try { return await result.json(); }
+    catch {
+        if (typeof window !== 'undefined') window.dispatchEvent(new CustomEvent('heurisko-connection', { detail: 'disconnected' }));
+        throw Error('LOCAL_SERVICE_UNAVAILABLE');
+    }
+}
+export async function post<T>(route: string, value: unknown): Promise<T> {
+    const result = await response(route, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(value) });
+    return mutationJSON<T>(result);
+}
 export async function upload(kind: string, file: File): Promise<string> {
     const max = kind === 'portable' ? 100 : kind === 'report' ? 8 : 32;
     if (!file.size || file.size > max * 1024 * 1024) throw Error('UPLOAD_LIMIT');
     const result = await response('uploads/' + kind, { method: 'POST', headers: { 'Content-Type': 'application/octet-stream', 'X-Heurisko-Filename': encodeURIComponent(file.name) }, body: file });
-    return (await result.json()).upload;
+    return (await mutationJSON<{ upload: string }>(result)).upload;
 }
-export async function download(handle: string, kind: 'report' | 'bundle' | 'export') {
+export async function download(handle: string, kind: 'report' | 'bundle' | 'export', filename?: string) {
     const result = await response(`observations/${handle}/${kind}`, kind === 'export' ? { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: '{}' } : {});
     const url = URL.createObjectURL(await result.blob()), link = document.createElement('a');
-    link.href = url; link.download = kind === 'export' ? 'investigation.heurisko.json' : kind + '.json';
+    link.href = url; link.download = filename ?? (kind === 'export' ? 'investigation.heurisko.json' : kind + '.json');
     link.click(); setTimeout(() => URL.revokeObjectURL(url), 1000);
 }

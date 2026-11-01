@@ -1,0 +1,23 @@
+{
+  "/assets/app.js": {
+    "servedBytes": 299974,
+    "servedHash": "98add636d420119a84e0d8fe3d443d4cc3d5b94d12851db6979cdece2464adfe",
+    "localBytes": 302207,
+    "localHash": "d7ad31d8995113c871a8388817f234f232b13d1d270e961ec0e99308bf1aec8a",
+    "same": false
+  },
+  "/assets/app.css": {
+    "servedBytes": 27282,
+    "servedHash": "8849ab4ddd226e822c8090031c05f26a2ece9baae720ea69db793a2d1aa01004",
+    "localBytes": 27282,
+    "localHash": "8849ab4ddd226e822c8090031c05f26a2ece9baae720ea69db793a2d1aa01004",
+    "same": true
+  },
+  "/assets/docs.json": {
+    "servedBytes": 80771,
+    "servedHash": "ab80706cde09be66d7d4f0a0e474eca3def3c9d3e6bef256e98a8995c10e31e0",
+    "localBytes": 80771,
+    "localHash": "ab80706cde09be66d7d4f0a0e474eca3def3c9d3e6bef256e98a8995c10e31e0",
+    "same": true
+  }
+}

@@ -1,0 +1,8 @@
+
+> @heurisko/tui@0.1.0 build <workspace>/packages/tui
+> tsc -p tsconfig.json
+
+
+> @heurisko/tui@0.1.0 typecheck <workspace>/packages/tui
+> tsc --noEmit -p tsconfig.json
+

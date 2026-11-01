@@ -1,0 +1,14 @@
+  HEURISKO                                             
+   H Home    I Investigations     M Monitoring         
+  ───────────────────────────────────────────────────  
+  ┌─ > Terminal too small ──────────────────────────┐  
+  │ Resize to at least 60 columns × 20 rows.        │  
+  │ Context retained.                               │  
+  │ q quits; an active job cancels and waits for    │  
+  │ settlement.                                     │  
+  │ 1-4 / 4                                         │  
+  └─────────────────────────────────────────────────┘  
+  live                                                 
+  Up/Down stages  Tab details  Ctrl+C cancel           
+                                                       
+                                                       

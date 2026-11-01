@@ -1,0 +1,28 @@
+  HEURISKO   H Home    I Investigations     M Monitoring                                            
+  ────────────────────────────────────────────────────────────────────────────────────────────────  
+  picocolors@1.1.1 / HISTORICAL / incomplete / Captured 2026-10-31T22:59:33Z                        
+  1 Overview   2 Findings   3 Files   4 Source   5 AI   6 Coverage                                  
+  Historical — online checks have not refreshed · i Identity                                        
+  Files                                                                                             
+  Files > Artifact / package.json / Esc restores position                                           
+  ┌─ > Artifact / package.json ──────────────────────────────────────────────────────────────────┐  
+  │ modified / different                                                                         │  
+  │ SOURCE → ARTIFACT / bounded recorded byte spans; e exact bytes                               │  
+  │ RAW CHANGED SPANS / side-by-side                                                             │  
+  │ SOURCE: raw utf8 bytes [44,1104) / truncated false                                           │  
+  │ ARTIFACT: raw utf8 bytes [44,549) / truncated false                                          │  
+  │ Viewer line alignment v1 / window-relative row numbers / e opens exact bytes                 │  
+  │ SOURCE (-)                                   | ARTIFACT (+)                                  │  
+  │ S1 - 0",                                     | A1 + 1",                                      │  
+  │ S2     "main": "./picocolors.js",            | A2     "main": "./picocolors.js",             │  
+  │ S3     "types": "./picocolors.d.ts",         | A3     "types": "./picocolors.d.ts",          │  
+  │ S4     "browser": {                          | A4     "browser": {                           │  
+  │ S5       "./picocolors.js": "./picocolors.b… | A5       "./picocolors.js": "./picocolors.b…  │  
+  │ S6     },                                    | A6     },                                     │  
+  │ S7     "sideEffects": false,                 | A7     "sideEffects": false,                  │  
+  │ 1-14 / 89  j/k scroll                                                                        │  
+  └──────────────────────────────────────────────────────────────────────────────────────────────┘  
+  Files                                                                                             
+  m next modified  Enter inspect  e exact bytes  Tab panes  v tree/flat  q quit                     
+                                                                                                    
+                                                                                                    

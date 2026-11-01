@@ -1,0 +1,40 @@
+TAP version 13
+# Subtest: bounded local file open rejects FIFO before waiting for a writer
+ok 1 - bounded local file open rejects FIFO before waiting for a writer
+  ---
+  duration_ms: 129.240708
+  type: 'test'
+  ...
+# Subtest: CLI file and digest imports reject invalid UTF-8 instead of changing report identity
+ok 2 - CLI file and digest imports reject invalid UTF-8 instead of changing report identity
+  ---
+  duration_ms: 204.923709
+  type: 'test'
+  ...
+# Subtest: CLI report byte imports preserve BOM rejection and valid retained identity
+ok 3 - CLI report byte imports preserve BOM rejection and valid retained identity
+  ---
+  duration_ms: 1292.395167
+  type: 'test'
+  ...
+# Subtest: CLI evidence inspection honors not_exported even when matching bytes exist
+ok 4 - CLI evidence inspection honors not_exported even when matching bytes exist
+  ---
+  duration_ms: 593.618
+  type: 'test'
+  ...
+# Subtest: CLI evidence inspection honors unavailable even when matching bytes exist
+ok 5 - CLI evidence inspection honors unavailable even when matching bytes exist
+  ---
+  duration_ms: 585.546958
+  type: 'test'
+  ...
+1..5
+# tests 5
+# suites 0
+# pass 5
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 2886.714292

@@ -1,0 +1,26 @@
+  HEURISKO   H Home    I Investigations     M Monitoring                            
+  ────────────────────────────────────────────────────────────────────────────────  
+  Live investigation                                                                
+  0m 01s elapsed · 2/10 stages reported terminal facts · no estimated finish time   
+  [─────────━━━━───────────────] inventory / indeterminate                          
+                                                                                    
+  ┌─ > inventory / diagnostics ──────────────────────────────────────────────────┐  
+  │ Investigation in progress                                                    │  
+  │ Stage execution is not a security verdict.                                   │  
+  │                                                                              │  
+  │ Selected stage                                                               │  
+  │ inventory                                                                    │  
+  │ Status: running                                                              │  
+  │ No diagnostic event recorded for this stage.                                 │  
+  │                                                                              │  
+  │ Available evidence                                                           │  
+  │ Live evidence references are unavailable. The settled report preserves its   │  
+  │ recorded scope.                                                              │  
+  │                                                                              │  
+  │ Recent activity                                                              │  
+  │ 1-13 / 22  j/k scroll                                                        │  
+  └──────────────────────────────────────────────────────────────────────────────┘  
+  live                                                                              
+  Up/Down stages  Tab details  Ctrl+C cancel  q cancel                              
+                                                                                    
+                                                                                    

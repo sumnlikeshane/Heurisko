@@ -157,7 +157,7 @@ export async function collectEvidence(input:ArtifactInput,context:ProducerContex
     if(bundle.coverage.omissions.length)bundle.coverage.complete=false;
   }
   emitProgress(context,bundle.stages.find(s=>s.stage==='inventory')!);notify('compare','running');
-  if(!mismatch)await rawCompare(bundle,store,artifact,source,scopeComplete&&!resolution.ambiguous);
+  if(!mismatch)await rawCompare(bundle,store,artifact,source,scopeComplete&&!resolution.ambiguous,scopeComplete&&resolution.ambiguous?'Inventories complete; source association is ambiguous. One-sided records remain unresolved; release-relative absence is not established.':undefined);
   else {bundle.coverage.complete=false;bundle.coverage.limitations.push('Registry digest mismatch: raw bytes retained; correspondence not assessed.');}
   bundle.stages.push(stage('compare',scopeComplete&&bundle.coverage.complete?'complete':'incomplete',scopeComplete&&bundle.coverage.complete?undefined:'COMPARISON_SCOPE_INCOMPLETE'));
   await retainJSONEvidence(bundle,store,{kind:'analysis_note',side:'both',locator:{metadataKey:'path-mapping-and-scope'},observationMethod:'explicit-prefix-view-v1',limitations:['Only archive root/package-subtree prefixes are mapped; original paths and bytes remain unchanged.']},{version:'heurisko-path-map-v1',artifactPrefix,sourcePrefix,sourceSubtree:override?.subdirectory??'',complete:scopeComplete});

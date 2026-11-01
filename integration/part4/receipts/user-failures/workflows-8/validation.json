@@ -1,0 +1,303 @@
+{
+  "checks": [
+    {
+      "check": "HISTORICAL",
+      "size": [
+        160,
+        40
+      ],
+      "passed": true
+    },
+    {
+      "check": "Package name",
+      "size": [
+        160,
+        40
+      ],
+      "passed": true
+    },
+    {
+      "check": "Full commit  [editing]",
+      "size": [
+        160,
+        40
+      ],
+      "passed": true
+    },
+    {
+      "check": "Review exact target",
+      "size": [
+        160,
+        40
+      ],
+      "passed": true
+    },
+    {
+      "check": "Start investigation",
+      "size": [
+        160,
+        40
+      ],
+      "passed": true
+    },
+    {
+      "check": "Live investigation",
+      "size": [
+        160,
+        40
+      ],
+      "passed": true
+    },
+    {
+      "check": "fresh npm integrity matched",
+      "passed": true
+    },
+    {
+      "check": "fresh npm AI disabled",
+      "passed": true
+    },
+    {
+      "check": "fresh product keeps missing deterministic module explicit",
+      "passed": true
+    },
+    {
+      "check": "release candidate actually acquired",
+      "passed": true
+    },
+    {
+      "check": "registry gitHead conflict retained",
+      "passed": true
+    },
+    {
+      "check": "Malhar analysis module not supplied",
+      "size": [
+        160,
+        40
+      ],
+      "passed": true
+    },
+    {
+      "check": "RAW CHANGED SPANS",
+      "size": [
+        160,
+        40
+      ],
+      "passed": true
+    },
+    {
+      "check": "Package name",
+      "size": [
+        160,
+        40
+      ],
+      "passed": true
+    },
+    {
+      "check": "[Candidates]",
+      "size": [
+        160,
+        40
+      ],
+      "passed": true
+    },
+    {
+      "check": "Investigations",
+      "size": [
+        160,
+        40
+      ],
+      "passed": true
+    },
+    {
+      "check": "HISTORICAL",
+      "size": [
+        160,
+        40
+      ],
+      "passed": true
+    },
+    {
+      "check": "HEURISKO",
+      "size": [
+        120,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "[ Local archive ]",
+      "size": [
+        120,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "Review exact target",
+      "size": [
+        120,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "Local snapshot retained",
+      "size": [
+        120,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "Live investigation",
+      "size": [
+        120,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "mutation remains local input",
+      "passed": true
+    },
+    {
+      "check": "mutation inherits no registry match",
+      "passed": true
+    },
+    {
+      "check": "Filter:",
+      "size": [
+        120,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "Filter: package.json",
+      "size": [
+        120,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "RAW CHANGED SPANS",
+      "size": [
+        120,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "HISTORICAL",
+      "size": [
+        100,
+        28
+      ],
+      "passed": true
+    },
+    {
+      "check": "non-TTY report summary exit 2 / no control stream dd4fb19136fa91ca1581336c6fbc22b864b86e413eaa9978ece3ee0f08c52a3b",
+      "passed": true
+    },
+    {
+      "check": "non-TTY report summary exit 2 / no control stream npm-release-candidate-b51539b3-ee23-4131-afd1-6d028c89045b.report.json",
+      "passed": true
+    },
+    {
+      "check": "non-TTY report summary exit 2 / no control stream local-inert-mutation-b51539b3-ee23-4131-afd1-6d028c89045b.report.json",
+      "passed": true
+    },
+    {
+      "check": "original reproduction bytes unchanged",
+      "passed": true
+    }
+  ],
+  "count": 32,
+  "reports": [
+    {
+      "name": "npm-release-candidate",
+      "path": "examples/part4/user-failures/npm-release-candidate-b51539b3-ee23-4131-afd1-6d028c89045b.report.json",
+      "store": "examples/part4/user-failures/store-b51539b3-ee23-4131-afd1-6d028c89045b",
+      "reportId": "report_e088db3a11c119fbfe4c291b",
+      "contentRef": "sha256:659f2c4e6823300edc1ae19509c74c8e3cd789a8e27b841714426cab51ecd1b9",
+      "outcomes": {
+        "artifactIntegrity": "matched",
+        "sourceAssociation": "ambiguous",
+        "provenancePolicy": "not_checked",
+        "correspondence": "unresolved",
+        "analysisCompleteness": "incomplete",
+        "policyResult": "not_evaluated"
+      },
+      "sourceCandidates": [
+        {
+          "repositoryUrl": "https://github.com/alexeyraspopov/picocolors",
+          "commit": "6f0a4638348ed20633d623ee973f9c9a96f65104",
+          "subdirectory": "",
+          "association": "ambiguous",
+          "evidenceIds": [
+            "ev_2af9c746c00b8cdd58bf8d53",
+            "ev_71cfe02e6f43393bc1e70f47",
+            "ev_8ce87ba634c4ba1efd11d9f9",
+            "ev_8be837bb7c713d487b6baf9a"
+          ],
+          "conflicts": [
+            "SOURCE_CLAIMS_CONFLICT: retained repository/commit/subdirectory claims disagree."
+          ]
+        },
+        {
+          "repositoryUrl": "https://github.com/alexeyraspopov/picocolors",
+          "commit": "7249f8c5d4825550f70bc1ea98652639933d3bbd",
+          "subdirectory": "",
+          "association": "ambiguous",
+          "evidenceIds": [
+            "ev_9df83d228b53fafb344e87c1",
+            "ev_71cfe02e6f43393bc1e70f47",
+            "ev_77e1a77b5ae91b0f043252b5",
+            "ev_8ce87ba634c4ba1efd11d9f9",
+            "ev_8be837bb7c713d487b6baf9a",
+            "ev_8da3c52b40697710504b12af",
+            "ev_bcac006cc904f55957eaa0db"
+          ],
+          "conflicts": [
+            "SOURCE_CLAIMS_CONFLICT: retained repository/commit/subdirectory claims disagree."
+          ],
+          "sourceSnapshotSha256": "sha256:c1053a4131e05d3e62088b3988f4cefe16e05b1a90db59115bf7706f7350e7de",
+          "buildContextSha256": "sha256:f8cf11c87c206269fd62e69593f5da3fbeeb0d1948657ee448b43f1a7cbd4e61"
+        }
+      ]
+    },
+    {
+      "name": "local-inert-mutation",
+      "path": "examples/part4/user-failures/local-inert-mutation-b51539b3-ee23-4131-afd1-6d028c89045b.report.json",
+      "store": "examples/part4/user-failures/store-b51539b3-ee23-4131-afd1-6d028c89045b",
+      "reportId": "report_cc24925f49a83ea599cc750f",
+      "contentRef": "sha256:1a54411180d2491d7227ad255499559e453ba5ecfa45c03e1422046aa8e49c28",
+      "outcomes": {
+        "artifactIntegrity": "not_checked",
+        "sourceAssociation": "user_supplied",
+        "provenancePolicy": "not_checked",
+        "correspondence": "unresolved",
+        "analysisCompleteness": "incomplete",
+        "policyResult": "not_evaluated"
+      },
+      "sourceCandidates": [
+        {
+          "repositoryUrl": "https://github.com/alexeyraspopov/picocolors",
+          "commit": "7249f8c5d4825550f70bc1ea98652639933d3bbd",
+          "subdirectory": "",
+          "association": "user_supplied",
+          "evidenceIds": [
+            "ev_fd5afc8b1e98682e8cc0cbf6",
+            "ev_5356eefc4312741f16ddf629"
+          ],
+          "conflicts": [],
+          "sourceSnapshotSha256": "sha256:c1053a4131e05d3e62088b3988f4cefe16e05b1a90db59115bf7706f7350e7de",
+          "buildContextSha256": "sha256:f8cf11c87c206269fd62e69593f5da3fbeeb0d1948657ee448b43f1a7cbd4e61"
+        }
+      ]
+    }
+  ],
+  "store": "examples/part4/user-failures/store-b51539b3-ee23-4131-afd1-6d028c89045b",
+  "noTargetOrModelExecution": true
+}

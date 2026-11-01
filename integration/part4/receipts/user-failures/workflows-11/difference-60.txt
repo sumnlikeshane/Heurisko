@@ -1,0 +1,20 @@
+  HEURISKO                                                  
+   H Home    I Investigations     M Monitoring              
+  ────────────────────────────────────────────────────────  
+  picocolors@1.1.1 / HISTORICAL / incomplete / Captured 2…  
+  1 Ov  2 Find  3 Files  4 Src  5 AI  6 Scope               
+  Historical — online checks have not refreshed · i Ident…  
+  Files                                                     
+  Files > Artifact / README.md / Esc restores position      
+  ┌─ > Artifact / README.md ─────────────────────────────┐  
+  │ modified / different                                 │  
+  │ SOURCE → ARTIFACT / bounded recorded byte spans; e   │  
+  │ exact bytes                                          │  
+  │ RAW CHANGED SPANS / unified                          │  
+  │ SOURCE: raw utf8 bytes [532,4628) / truncated true   │  
+  │ 1-5 / 200  j/k scroll                                │  
+  └──────────────────────────────────────────────────────┘  
+  Modified file / Artifact / README.md / Enter inspect; e…  
+  m next modified  Enter inspect  e exact bytes  q quit     
+                                                            
+                                                            

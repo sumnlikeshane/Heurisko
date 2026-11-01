@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/tmp/heurisko-parts456-pty.py", line 28, in <module>
+    runpy.run_path(str(repo/'packages/tui/tests'/script),run_name='__main__')
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 294, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "<workspace>/packages/tui/tests/navigation_audit.py", line 9, in <module>
+    s=new(84,26);s.send('\t');expect(s,'PRIORITY FINDINGS');s.send('\t');expect(s,'COVERAGE & UNKNOWNS');s.send('\t');expect(s,'NEXT ACTIONS');s.send('\r');expect(s,'Report next actions');s.send('\x1b');s.send('1');s.send('x');s.send('\r');expect(s,'[Candidates]');s.send('1');s.send('\t');s.send('\r');expect(s,'Observation & assessment' if s.cols>=100 else 'Findings');s.capture(cap/'overview-focus-anchors-84');s.quit()
+                                                                                                                                                                                                                                                                                                                                                                                                                              ~~~~~~^^
+  File "<workspace>/packages/tui/tests/pty_session.py", line 62, in quit
+    raise AssertionError('q did not quit application')
+AssertionError: q did not quit application

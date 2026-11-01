@@ -1,0 +1,237 @@
+{
+  "recordedAtUTC": "2026-10-31T23:47:47.273478+00:00",
+  "authorization": "Local implementation only; explicit user terminal-like near-black steering; no Git/publication/external messages",
+  "source": {
+    "apps/web/README.md": "sha256:8634b0b10bf35a32915e6a389d2cf77aad8356c6856d71f64e2eaff2021288e0",
+    "apps/web/build.mjs": "sha256:55b94d7d2e85f88f0c1a4848c14bbb96c5ca2bbb4bbf58a0b06c27dd514bac92",
+    "apps/web/content/availability.md": "sha256:6b0e79e58b1d21ab38857b1c9ab63653da20f67a55e7a4f86d31af9cf4c1e810",
+    "apps/web/content/browser.md": "sha256:09130ce6d6d57d6a68f48385287d3061d72b9c85a9884ca242f7808832482980",
+    "apps/web/content/concepts-identity.md": "sha256:4b812ab963de5d55bb5c3f537dbdf2d43b2e3ac50d191432845588807c057d0f",
+    "apps/web/content/start-quickstart.md": "sha256:35f9e535498d33990f03f54ed6929f334983054acc11b173b85d58ca3a5abcde",
+    "apps/web/content/troubleshooting-errors.md": "sha256:428625d77cb0042c24480ecd99b95e9167436d459de7fe4262805963f19869c1",
+    "apps/web/content/troubleshooting-session.md": "sha256:adf222218ea66fa0657c96d1405786b620d8458f842db1d22de9b48c694947f5",
+    "apps/web/content/workflows-ci.md": "sha256:10112e3da0e3c6c318abbc22dd0fa04990107db3cc9ee4bff111a5b34a8c3a20",
+    "apps/web/content/workflows-evidence.md": "sha256:74850533f067834ab9ba9f32773afd68114da48e6a7fe1eb926745ec0357fb30",
+    "apps/web/content/workflows-local.md": "sha256:55708951370ce82db2f46668a15155da0d0550c55296970de52837f906833bcf",
+    "apps/web/content/workflows-npm.md": "sha256:1763c2395d5dd8e9fb64997e2b3c67236e3652166fec66dd95bbef205658f631",
+    "apps/web/content/workflows-portable.md": "sha256:7f4ab65f043408eae31d1cec8b07fadb024ad633dfef6c1a4d35a7879100decf",
+    "apps/web/package.json": "sha256:d7bc44d65fb759293cd468dbce6b48d959b7c09e0450289ccc6728818e8ba946",
+    "apps/web/server/main.ts": "sha256:fc0cc7c6504b3bf7603ab4e2b00efd4c8120d93382aeae0a78cc91d4eb48c5c1",
+    "apps/web/server/observation.ts": "sha256:8642dd91aa066984334716f2cacf76426a835e0e6ed79fadaf79ab35bfdaee50",
+    "apps/web/server/service.ts": "sha256:88184e73f6a036e929b4a08afaf32fe963e006860bc0b77a81efdbffbfbacc32",
+    "apps/web/server/workspace.ts": "sha256:e3acc77a0b11b63828f3986eae8d82d036c0a347e40d9bec8c0eec4ff80744f4",
+    "apps/web/src/api.ts": "sha256:d93d112d58adbf21e697d6720d20840366ba39dedaaa7258f01b406ba4ad92b4",
+    "apps/web/src/app.tsx": "sha256:9227bd388df995bd92bcb8dd7be2b8d86e45ef7a499f1150e35969f13675274d",
+    "apps/web/src/doc-model.ts": "sha256:549b6b8d805cef27d9fcf41cd89dd3fbdb1a2da35ed3615edac588fe768fef74",
+    "apps/web/src/docs.tsx": "sha256:4c9a599284672d9303ae15dce0a33bbf2ea53bfecb3ba7085b52e6c85062833d",
+    "apps/web/src/home.tsx": "sha256:199d29537cdbee9cdaffa7f9aae633dc49872d737a0b536890ca3e516d4b0d80",
+    "apps/web/src/index.html": "sha256:049fc9f4a86def4e885129d92206e49619e26a350ba1a8d4de168b6bee84f18c",
+    "apps/web/src/input-review.ts": "sha256:ab9175d701dc571eba0fa8f97c62b0ac23dcb6dca89c80b534a6a4788f7a7b1b",
+    "apps/web/src/investigate.tsx": "sha256:e29ec7b2d8f50244dceea769af174581d85d87fe27b6d8cee8fbe0ad8ba7612e",
+    "apps/web/src/link.tsx": "sha256:5710c627d5569e780d35ff1c1183df32708c47e69e61676564723fb3bf1e754c",
+    "apps/web/src/main.tsx": "sha256:b22bb4f233928992187bd8e2998777bf84bce93a4d858a6cdf7b364176fe9469",
+    "apps/web/src/navigation.ts": "sha256:c7932e921463094ab40ec4013edafa4359e67eb8d514c168fc4c7db385be4c3f",
+    "apps/web/src/render-check.tsx": "sha256:d211d94b84ab7307c30bc9bc97a09c697a825f04cb3829464d57d2cb2726bc3b",
+    "apps/web/src/report-components.tsx": "sha256:4cd527ef4520c69625d2600076ae768e541feace8e20b002dbfd94d2d1d5d0c1",
+    "apps/web/src/report-view.ts": "sha256:bf191386c4473562763884b6a10bd53b60ae55cbc9f95699b03d5b5c2e623e92",
+    "apps/web/src/retained-example.ts": "sha256:66831a97a2a9ca699702db60287cba8c2230837abdd48d5f4b81cfa9168f4f12",
+    "apps/web/src/style.css": "sha256:8849ab4ddd226e822c8090031c05f26a2ece9baae720ea69db793a2d1aa01004",
+    "apps/web/tests/api-read-timeout.test.mjs": "sha256:a7a314302d284b4830a90a84a82131c2abf63e5ffdec85cd6ba3c54b09b2e928",
+    "apps/web/tests/gap-batch.test.mjs": "sha256:95861253e0f734972c1c9cd85e5b3bb89d0a2b9407576a66a4da93e7d0766e77",
+    "apps/web/tests/investigation-overhaul.test.mjs": "sha256:7e661466f7ca4127ac4b6b4a2d67a5489db93f138ff43794190047e42705bc11",
+    "apps/web/tests/link-navigation.test.mjs": "sha256:eefe2d830df931369bd919eb6a45aa7729bd367c7b8ff2ce7487343b5bb3ba72",
+    "apps/web/tests/mutation-ack.test.mjs": "sha256:1e46dd7c65245e6aed7787d2b01b7ab57273e4a001100f3099cfc2bd928b4a02",
+    "apps/web/tests/navigation.test.mjs": "sha256:06d13e4e7ea7b9b250d62eb86c3a62240635a16e61d094fc7d8a3a22e21a1ab8",
+    "apps/web/tests/report-overhaul.test.mjs": "sha256:035725d27f52ae869be84df4429196882977eb5fa878e3c4fe344ca4def42d27",
+    "apps/web/tests/viewer.test.mjs": "sha256:af97eb3a106cd5e4911157436d6ef8549d2bf9604efa4d9865b088090ed6184c",
+    "apps/web/tests/workflow.test.mjs": "sha256:63246aad8bbd80c8ddd852becbebcdf246f8320edd7b11789ec6c3d3b28c5251",
+    "apps/web/tooling/export.ts": "sha256:cefd5b814e87312380172a189f24b9e6cbda881cb3fbc6fd4f4e16c88b50c86c",
+    "apps/web/tooling/measure-workspace.mjs": "sha256:7e6eabf7d193c216db9a602a8c176904ccb7dc2b43c1981773566e32eaeab799",
+    "apps/web/tooling/portable.ts": "sha256:1bea4f7d68a9d7cff1bd3b57967f9948a824379b70f112ca86c7a8082e402251",
+    "apps/web/tooling/strict-json.ts": "sha256:1855d1f964fc3e61cdcbdf02a2a9f2e0dfdef78c09a8789ff7b0237ea4e663d8",
+    "apps/web/tooling/transport.ts": "sha256:82facd0ed9246518210c93e8d9b724c77729842058a0bf364c653e1d557b2607",
+    "apps/web/tooling/verify-corpus.mjs": "sha256:cd348299af334d0c68c8e612ee32d146a430f953c6efc7dc19e25bf66feabdaf",
+    "apps/web/tooling/verify-investigation.mjs": "sha256:d30b5b100a5bcfcd8de30e38dde13d7c36dcd93793b1f1f32d02e149610d6a33",
+    "apps/web/tsconfig.json": "sha256:50759ee743f5e2c496baa490d9a5380d875ca161fd59b164719ccae616a7ea2b",
+    "docs/CLI Reference.md": "sha256:43321d0c6238858191e24019e43610899d602286833d44de5d8dd3c18ccfdd99"
+  },
+  "build": {
+    "apps/web/dist/api.js": "sha256:3bc083b912dd209210af67c1bbf7588206715079b611fba248da2a55efb082e8",
+    "apps/web/dist/assets/app.css": "sha256:8849ab4ddd226e822c8090031c05f26a2ece9baae720ea69db793a2d1aa01004",
+    "apps/web/dist/assets/app.js": "sha256:d7ad31d8995113c871a8388817f234f232b13d1d270e961ec0e99308bf1aec8a",
+    "apps/web/dist/browser-inputs.json": "sha256:f6f0e522fbdae0078708c46e92f380deb577986b0b0e612b0d921cb3af405172",
+    "apps/web/dist/cli-docs.json": "sha256:ab80706cde09be66d7d4f0a0e474eca3def3c9d3e6bef256e98a8995c10e31e0",
+    "apps/web/dist/doc-model.js": "sha256:c754ab92ea94cba448a0444d265b7d3d2d642bd767bc2d2069196cfa50a8cb75",
+    "apps/web/dist/export.js": "sha256:f457bf9a6201b5b312628a540d6b802b7e7d4e2ca3fc5a20e58ff12222f77127",
+    "apps/web/dist/index.html": "sha256:049fc9f4a86def4e885129d92206e49619e26a350ba1a8d4de168b6bee84f18c",
+    "apps/web/dist/input-review.js": "sha256:9a3f37ee0d8483bedf0fead9616f590d13da77d99c0aab77cc22f0db84b150b8",
+    "apps/web/dist/link.js": "sha256:ffa8e6e255e2f64f972a013dfa4dbba984523017f6c2fb5720f98d5283abaee0",
+    "apps/web/dist/main.js": "sha256:9047170592e874af0bd5c25cce4250fbb4bdd1f6fd40db4104dc88169b80c87d",
+    "apps/web/dist/navigation.js": "sha256:4c3bf98f7141e21095492a4b446fbdd4964d043adb86b04cafabc4dace17e6b7",
+    "apps/web/dist/observation.js": "sha256:220a8c767ae8715c155faa6cea62af3bfc5d7d809c846b1ab8a2e7901f709f87",
+    "apps/web/dist/portable.js": "sha256:5a2770694247ef04f7a8ac44cb94d23a6d0d4a3923f3925fd7e2c27161b9c5f0",
+    "apps/web/dist/render-check.js": "sha256:d25f0632789eeeff09fe21155cf5f7c26ce9bf2004baa4c711bfd5a6f3efc3bb",
+    "apps/web/dist/report-view.js": "sha256:f954dbeb4858238833641c2950ed19a32762d1e063186fe074d7798177104797",
+    "apps/web/dist/service.js": "sha256:e91eaac10fa2649feb3128539be4806c702fbda3c95d915537300bad99f955bd",
+    "apps/web/dist/transport.js": "sha256:716ffe52534e30a4ce51f99a60ba732178081414726d968a38f70c1f87992278",
+    "apps/web/dist/workspace.js": "sha256:94fdea6e1741a85b6eae1668a1b8ca8afe9654cd8e35aa2739339e9d2c75cd80"
+  },
+  "palette": {
+    "page": "#080808",
+    "surface": "#111111",
+    "accent": "#67e1d4"
+  },
+  "checks": [
+    {
+      "command": "pnpm run typecheck",
+      "result": "pass",
+      "log": "typecheck.log",
+      "boundary": "Initial integrated pass; final source later passed package typechecks and final web build."
+    },
+    {
+      "command": "pnpm -r run typecheck",
+      "result": "pass",
+      "log": "typecheck-release-check.log",
+      "boundary": "Final source; noEmit checks."
+    },
+    {
+      "command": "pnpm run test:web",
+      "result": "pass",
+      "tests": 65,
+      "log": "web-tests-release-check.log",
+      "boundary": "Final compiled application; authorized loopback listeners."
+    },
+    {
+      "command": "PATH=\"$PWD/.venv/bin:$PATH\" pnpm run test:contracts",
+      "result": "pass",
+      "log": "contracts.log",
+      "boundary": "Full schema and semantic fixtures + seven stubbed handshakes; contracts unchanged."
+    },
+    {
+      "command": "node --test integration/part4/tests/readiness.test.mjs",
+      "result": "pass",
+      "tests": 24,
+      "log": "reader.log",
+      "boundary": "Shared reader unchanged by UI work."
+    },
+    {
+      "command": "node apps/web/tooling/verify-investigation.mjs examples/web-overhaul/current/engine-final",
+      "result": "pass",
+      "receipt": "engine-final/verification.json",
+      "boundary": "Final stable source/build, genuine local/public npm + CLI/API/portable/digest parity."
+    },
+    {
+      "command": "node apps/web/tooling/measure-workspace.mjs examples/web-overhaul/current/performance-final.json",
+      "result": "pass",
+      "receipt": "performance-final.json",
+      "boundary": "Final stable source/build; Node measurements, not browser performance."
+    },
+    {
+      "command": "CI-equivalent relative Markdown links",
+      "result": "pass",
+      "files": 73,
+      "log": "docs-links.log"
+    }
+  ],
+  "failuresPreserved": [
+    "web-tests.log: restricted listener EPERM and superseded copy assertion",
+    "web-tests-near-black-final.log: manifest test selected B2, which has no manifest delta; corrected to genuine B1",
+    "performance-attempt1-sandbox.log: listener EPERM",
+    "Initial web build while lane replacement briefly lacked investigate.tsx; corrected atomic replacement, later builds pass"
+  ],
+  "browser": {
+    "platform": "macOS native Chrome and Safari",
+    "observed": [
+      "Chrome exact target invalid/correction, focused summary, review/edit/preserved target, one real explicit start and running activity",
+      "Browser-created public job actual settled_report/exit2 from read-only settlement record",
+      "Safari explicit retained example, loading report, overview, Files, selected modified manifest and descriptive both-side/member links",
+      "Final Safari Home after explicit reload shows near-black theme; all served asset bytes match final build."
+    ],
+    "toolBlockers": [
+      "Chrome focus-emulation CDP timeout",
+      "Browser automation net::ERR_BLOCKED_BY_CLIENT on task QA loopback tab",
+      "ScreenCaptureKit capture failure -3811",
+      "In-app browser unavailable",
+      "Safari blank native capture after a later reload; subsequently recovered by explicit reload, final Home captured"
+    ],
+    "screenReaderTested": null,
+    "conformanceClaim": false,
+    "open": [
+      "full native file/scoped/local replay/selected-file continuity",
+      "all native download/reopen choices and wrong/corrupt files",
+      "controlled lost-ack and no-report/cancel settlement GUI",
+      "active-job/Docs/reportA/jobB context and Back/Forward",
+      "disconnect/reconnect/restart/external-offline GUI",
+      "full nested evidence offset/disclosure/scroll/focus restoration",
+      "same-report-ID independent observation GUI",
+      "Docs search/copy/anchors/scrolled Analyze final regression",
+      "1440/1024/390 and320CSSpx final reflow,200percent zoom,keyboard/AT/forced-colors/reduced-motion",
+      "browser main-thread/poll-count/export-peak profile"
+    ]
+  },
+  "screenshots": [
+    {
+      "file": "home-1440.png",
+      "sha256": "sha256:fd7863692ad5be4a8d657688ea6b92fb5f6b252c85a664bec6a59c4997b19e92",
+      "encoding": "JPEG returned by browser/native capture despite .png suffix",
+      "note": "Preliminary Home; viewport override1440, before CSS composition/loading fixes and near-black steering.",
+      "servedAssetIdentity": "browser-build-before-loading-fix.json"
+    },
+    {
+      "file": "home-final-safari.png",
+      "sha256": "sha256:8d7fa9e755b25874bdde3af5a2a7919163cc2ed6ff1ff5768bbfd426606509c5",
+      "encoding": "JPEG returned by browser/native capture despite .png suffix",
+      "note": "Safari Home on pre-near-black build; filename retained as captured, not a final-theme claim.",
+      "servedAssetIdentity": "safari-build-before-near-black.json"
+    },
+    {
+      "file": "overview-final-safari.png",
+      "sha256": "sha256:3429de0dbd2e5f2a665276d2c4c906bc81169d4c91bb01bf62a8e579c0370073",
+      "encoding": "JPEG returned by browser/native capture despite .png suffix",
+      "note": "Safari retained Overview on pre-near-black build; filename retained as captured.",
+      "servedAssetIdentity": "safari-build-before-near-black.json"
+    },
+    {
+      "file": "home-near-black-chrome.png",
+      "sha256": "sha256:fc1e6cf913cb26324b4b1954aded5d501f1b05a781c0e1b6b43e0af65abf8a1d",
+      "encoding": "JPEG returned by browser/native capture despite .png suffix",
+      "note": "Capture returned Docs/CLI rather than prior Home AX; old blue-black colors visible. Unbound preliminary capture; not final-theme proof.",
+      "servedAssetIdentity": null
+    },
+    {
+      "file": "near-black-safari-capture.png",
+      "sha256": "sha256:3abf354f1ec263126d63ff10dfda94dda34e9cc7d2b93222e9a14d59285da849",
+      "encoding": "JPEG returned by browser/native capture despite .png suffix",
+      "note": "Blank native captured state after reload; retained failed observation, not a visual pass.",
+      "servedAssetIdentity": "near-black-preview-diagnostic.json"
+    },
+    {
+      "file": "near-black-final-home.jpg",
+      "sha256": "sha256:183385746ebbaf46ece70236bd76a1fdc0d3818a7732051972172f5b7c506fe1",
+      "encoding": "JPEG native Safari capture",
+      "note": "Final Home after explicit reload; neutral near-black visible. Default native browser size, not the requested viewport/zoom acceptance matrix.",
+      "servedAssetIdentity": "final-served-assets.json",
+      "finalBuildMatchesServedAssets": true
+    }
+  ],
+  "integrationsUnavailable": [
+    "analysis module",
+    "model",
+    "provenance verifier",
+    "concrete policy evaluator",
+    "rebuild worker",
+    "monitor/runner"
+  ],
+  "productModels": [],
+  "codingAssistant": "Codex",
+  "gitActionsPerformed": [],
+  "humanDesignApproval": false,
+  "frozenDesign": false,
+  "p04Complete": false,
+  "runtime": {
+    "taskOwnedPreviewStoppedAfterFinalCapture": true,
+    "existingOtherPreviewsPreserved": true,
+    "activeJobsAtPreviousTeardown": 0,
+    "parserCleanupClaim": "none"
+  }
+}

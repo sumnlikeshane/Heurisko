@@ -1,0 +1,26 @@
+[
+  {
+    "store": ".heurisko/parts456-audit-20261101/pty/report-adoption-4h1qzqrz/workspace/store",
+    "reportId": "report_18f3fbea35ca15bb23bdb942",
+    "engine": "shane-audit-v1;sha256:61d25423cad40f76928a7675fffc33763bf5522d4b5f38afe024bdc5c136d9ab",
+    "analysisModule": null
+  },
+  {
+    "store": ".heurisko/parts456-audit-20261101/pty/workspace-v2/.heurisko/tui-visual-live-09804684-50e8-40c4-87b5-7b90846ff67d",
+    "reportId": "report_73987e80c166064951c449a1",
+    "engine": "shane-audit-v1;sha256:61d25423cad40f76928a7675fffc33763bf5522d4b5f38afe024bdc5c136d9ab",
+    "analysisModule": null
+  },
+  {
+    "store": ".heurisko/parts456-audit-20261101/pty/workspace-v2/.heurisko/tui-visual-live-2f334d01-c31e-4649-8ce1-9dcb03b64fad",
+    "reportId": "report_673bd27c70e6d36e9acf62b3",
+    "engine": "shane-audit-v1;sha256:61d25423cad40f76928a7675fffc33763bf5522d4b5f38afe024bdc5c136d9ab",
+    "analysisModule": null
+  },
+  {
+    "store": ".heurisko/parts456-audit-20261101/pty/workspace-v2/.heurisko/state-repro-98758e2a-a4ef-4f2a-afe8-5cceacfe4489",
+    "reportId": "report_18f3fbea35ca15bb23bdb942",
+    "engine": "shane-audit-v1;sha256:61d25423cad40f76928a7675fffc33763bf5522d4b5f38afe024bdc5c136d9ab",
+    "analysisModule": null
+  }
+]

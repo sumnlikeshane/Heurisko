@@ -1,0 +1,209 @@
+{
+  "version": "heurisko-p04-examples-index-v1",
+  "preparedAt": "2026-11-01T00:20:04.481191+00:00",
+  "scope": "Local uncommitted index of existing actual inputs, generated outputs and supporting files. No publication or complete P04 compliance claim.",
+  "cases": [
+    {
+      "id": "genuine-release",
+      "subject": "ts-pattern@5.9.0",
+      "origin": "registry",
+      "historical": true,
+      "captureTime": "2026-10-31T19:00:35Z",
+      "inputs": {
+        "artifact": {
+          "path": "examples/handoff/current/store/blobs/ecea9dd2a1460293929c97fb5118fa3f93a2fb37a59a0a79384203d3ff64f368",
+          "sha256": "sha256:ecea9dd2a1460293929c97fb5118fa3f93a2fb37a59a0a79384203d3ff64f368",
+          "bytes": 102287,
+          "filename": "ts-pattern-5.9.0.tgz",
+          "originalURL": "https://registry.npmjs.org/ts-pattern/-/ts-pattern-5.9.0.tgz"
+        },
+        "source": {
+          "path": "examples/handoff/current/store/blobs/e0cbf670c4c3635a48e17cd76eaee09a6d10cd5110f411845ad0b02da9233ab7",
+          "sha256": "sha256:e0cbf670c4c3635a48e17cd76eaee09a6d10cd5110f411845ad0b02da9233ab7",
+          "bytes": 266583,
+          "repository": "https://github.com/gvergnaud/ts-pattern",
+          "commit": "0e15315eafbbb813a91bad34496418846981c1b1",
+          "subdirectory": "",
+          "sourceBinding": "Transport at immutable commit URL; not cryptographic release binding"
+        }
+      },
+      "output": {
+        "report": {
+          "path": "examples/handoff/current/B2.report.json",
+          "sha256": "sha256:1f09dd8942fa3b379d0dc3cf462772e8c3eedd616597c59f3ccc58176b6d6e1e",
+          "bytes": 196647
+        },
+        "bundle": {
+          "path": "examples/handoff/current/B2.bundle.json",
+          "sha256": "sha256:fe02a1194c02f0096136d9c424c41950e1a1eb84a8608ffd069f35ec63179c36",
+          "bytes": 195660
+        },
+        "reportId": "report_98e7cf895ee37bff160d1894",
+        "expectedExit": 2
+      },
+      "support": {
+        "store": "examples/handoff/current/store",
+        "manifest": {
+          "path": "examples/handoff/current/B2.manifest.json",
+          "sha256": "sha256:0ddcf000d6060ac4fb8c946f67ea3246157fbe1e966093620d35da1ccf40bee8",
+          "bytes": 8618
+        },
+        "artifactLicense": {
+          "path": "examples/handoff/current/B2-LICENSE.txt",
+          "sha256": "sha256:4a6f1d5bbd77809165c0f9c24bbcf11768b0c936bd205bdb117aa68fea306601",
+          "bytes": 1073,
+          "license": "MIT",
+          "scope": "Retained package license; comprehensive source-snapshot notices not attested"
+        }
+      },
+      "outcomes": {
+        "artifactIntegrity": "matched",
+        "sourceAssociation": "publisher_asserted",
+        "provenancePolicy": "not_checked",
+        "correspondence": "unresolved",
+        "analysisCompleteness": "incomplete",
+        "policyResult": "indeterminate"
+      }
+    },
+    {
+      "id": "inert-local-mutation",
+      "subject": "picocolors@1.1.1 synthetic local-input",
+      "origin": "local",
+      "historical": false,
+      "captureTime": "2026-11-01T00:19:27Z",
+      "inputs": {
+        "artifact": {
+          "path": "examples/p04/local-mutation/inputs/picocolors-1.1.1.local-inert-mutation.tgz",
+          "sha256": "sha256:bcdd003ee749b70575fb2793d3892a393d1224457ecb8ca9c37ff4cfd55e098d",
+          "bytes": 2785,
+          "synthetic": true,
+          "inertMarker": "HEURISKO_INERT_TEST_ONLY",
+          "byteIdenticalOriginal": "examples/part4/user-failures/inputs/picocolors-1.1.1.local-inert-mutation.tgz"
+        },
+        "publicControl": {
+          "path": "examples/part4/user-failures/inputs/picocolors-1.1.1.tgz",
+          "sha256": "sha256:d3aedb2807967b7eb37fd11b03b7e3701e725af79c650d0812ff7213f8f882d9",
+          "bytes": 2625
+        },
+        "source": {
+          "path": "examples/p04/local-mutation/inputs/picocolors-source-7249f8c5d4825550f70bc1ea98652639933d3bbd.tar.gz",
+          "sha256": "sha256:c1053a4131e05d3e62088b3988f4cefe16e05b1a90db59115bf7706f7350e7de",
+          "bytes": 9553,
+          "repository": "https://github.com/alexeyraspopov/picocolors",
+          "commit": "7249f8c5d4825550f70bc1ea98652639933d3bbd",
+          "subdirectory": "",
+          "sourceBinding": "Explicit user-selected comparison target; not verified release binding",
+          "byteIdenticalOriginal": "examples/part4/user-failures/inputs/picocolors-source-7249f8c5d4825550f70bc1ea98652639933d3bbd.tar.gz"
+        }
+      },
+      "output": {
+        "report": {
+          "path": "examples/p04/local-mutation/report.json",
+          "sha256": "sha256:47b100f689e4f11c95b7e3fc90541b0abd909e05060c73d071ebdb22c7c65eb2",
+          "bytes": 48435
+        },
+        "bundle": {
+          "path": "examples/p04/local-mutation/bundle.json",
+          "sha256": "sha256:72da3ff8457dd31efad1f0befc0b771162c91eef117b8af0d4b3d76594a1b54a",
+          "bytes": 47449
+        },
+        "reportId": "report_6f2b8c84f5b3495a77e8da71",
+        "expectedExit": 2
+      },
+      "support": {
+        "store": "examples/p04/local-mutation/store",
+        "workflow": {
+          "path": "examples/part4/user-failures/workflow-outputs.json",
+          "sha256": "sha256:fcb595ebc20c31285efd65888ad0562ec556be5de1ac8448efa7585781648d74",
+          "bytes": 5157
+        },
+        "artifactAndSourceLicense": {
+          "path": "examples/p04/local-mutation/LICENSE.upstream.txt",
+          "sha256": "sha256:6582629e2979466878f6014313dcc2f3756c9616148682227ce3063dde310750",
+          "bytes": 787,
+          "license": "ISC",
+          "scope": "Byte-identical retained LICENSE for selected artifact and source"
+        },
+        "reproduction": {
+          "path": "examples/p04/local-mutation/reproduction.json",
+          "sha256": "sha256:cd2dc61ea9238ef05580bfeb6ced8d0d6f479e159a9f5a1852ce105e66907c25",
+          "bytes": 4033
+        }
+      },
+      "outcomes": {
+        "artifactIntegrity": "not_checked",
+        "sourceAssociation": "user_supplied",
+        "provenancePolicy": "not_checked",
+        "correspondence": "unresolved",
+        "analysisCompleteness": "incomplete",
+        "policyResult": "not_evaluated"
+      },
+      "acquisitionMode": "New current-engine static local replay of retained original input bytes; no fresh public acquisition"
+    },
+    {
+      "id": "incomplete-source",
+      "subject": "zod@4.6.7",
+      "origin": "registry",
+      "historical": true,
+      "captureTime": "2026-10-31T19:01:10Z",
+      "inputs": {
+        "artifact": {
+          "path": "examples/handoff/current/store/blobs/84efd155bed93270286e793fc951be270b536cbd5b0eeb111f0fa3967201d698",
+          "sha256": "sha256:84efd155bed93270286e793fc951be270b536cbd5b0eeb111f0fa3967201d698",
+          "bytes": 1141941,
+          "filename": "zod-4.6.7.tgz",
+          "originalURL": "https://registry.npmjs.org/zod/-/zod-4.6.7.tgz"
+        },
+        "source": {
+          "path": "examples/handoff/current/store/blobs/ac25c3bcd722faabc689bb86e12f94de72ad36e70d496cafbcff09b120f60be4",
+          "sha256": "sha256:ac25c3bcd722faabc689bb86e12f94de72ad36e70d496cafbcff09b120f60be4",
+          "bytes": 10434679,
+          "repository": "https://github.com/colinhacks/zod",
+          "commit": "b500a2ee95134f81d74da7911d7378dd2853d042",
+          "subdirectory": "",
+          "sourceBinding": "Transport at immutable commit URL; not cryptographic release binding"
+        }
+      },
+      "output": {
+        "report": {
+          "path": "examples/handoff/current/B3.report.json",
+          "sha256": "sha256:66ea87bddf0319c4ccf8cc0d1e7be0f330eb17dc4fe4531775392692d9799757",
+          "bytes": 1150758
+        },
+        "bundle": {
+          "path": "examples/handoff/current/B3.bundle.json",
+          "sha256": "sha256:503b71349cd464781f46ba152feb87ec2110244c45f6239b11437a27237308cd",
+          "bytes": 1149780
+        },
+        "reportId": "report_53ce205b689a18c8845dba65",
+        "expectedExit": 2
+      },
+      "support": {
+        "store": "examples/handoff/current/store",
+        "manifest": {
+          "path": "examples/handoff/current/B3.manifest.json",
+          "sha256": "sha256:3b11c901917524630bd8b937b3b597b67e7c6da1f87cfe0b0851ece2596e379f",
+          "bytes": 5760
+        },
+        "artifactLicense": {
+          "path": "examples/handoff/current/B3-LICENSE.txt",
+          "sha256": "sha256:3f1189b28e3866e0d979968d466b78f813f76827cfdca1fbb124cc0a5c8841f8",
+          "bytes": 1072,
+          "license": "MIT",
+          "scope": "Retained package license; comprehensive source-snapshot notices not attested"
+        }
+      },
+      "outcomes": {
+        "artifactIntegrity": "matched",
+        "sourceAssociation": "ambiguous",
+        "provenancePolicy": "not_checked",
+        "correspondence": "unresolved",
+        "analysisCompleteness": "incomplete",
+        "policyResult": "indeterminate"
+      }
+    }
+  ],
+  "productModels": [],
+  "targetExecution": false,
+  "sourceRightsCaveat": "Broader source snapshots may include additional third-party notices not comprehensively reviewed. Retain all original notices; root Apache-2.0 does not relicense upstream material."
+}

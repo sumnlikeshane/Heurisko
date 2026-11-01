@@ -1,0 +1,31 @@
+
+> heurisko@ test:contracts <PUBLICATION_WORKTREE>
+> python3 packages/contracts/tests/validate_contracts.py && node packages/contracts/tests/smoke-handshake.mjs
+
+PASS F0 : JSON Schema + evidence/inference invariants
+PASS F1 : JSON Schema + evidence/inference invariants
+PASS F2 : JSON Schema + evidence/inference invariants
+PASS F3 : JSON Schema + evidence/inference invariants
+PASS F4 : JSON Schema + evidence/inference invariants
+PASS F5 : JSON Schema + evidence/inference invariants
+PASS F6 : JSON Schema + evidence/inference invariants
+PASS negative false_integrity_success : artifact integrity report mismatch
+PASS negative integrity_without_digest : 'none' is not one of ['sha512', 'sha256']
+PASS negative invalid_schema : -1 is less than the minimum of 0
+PASS negative invented_evidence : invented evidence ID
+PASS negative missing_omission : omission byte total mismatch
+PASS negative provenance_unverified_evidence : verified provenance lacks verified assertion evidence
+PASS negative provenance_without_binding : 'matched' was expected
+PASS negative rejected_ai_claim : invented evidence ID
+PASS negative source_subdirectory_collision : non-deterministic reportId
+PASS negative unsubstantiated_rebuild : reproduced transform lacks independently verified build evidence
+F7: WatchState + Job schema-only fixture validated (no scheduler was executed)
+G0 synthetic corpus: 7 valid × 3 contract shapes, 10 invalid cases rejected; mode: FULL SCHEMA + SEMANTIC
+PASS F0 stubbed collectEvidence → analyzeEvidence → InvestigationReport
+PASS F1 stubbed collectEvidence → analyzeEvidence → InvestigationReport
+PASS F2 stubbed collectEvidence → analyzeEvidence → InvestigationReport
+PASS F3 stubbed collectEvidence → analyzeEvidence → InvestigationReport
+PASS F4 stubbed collectEvidence → analyzeEvidence → InvestigationReport
+PASS F5 stubbed collectEvidence → analyzeEvidence → InvestigationReport
+PASS F6 stubbed collectEvidence → analyzeEvidence → InvestigationReport
+Note: these are synthetic interface fixtures, NOT real engine output.

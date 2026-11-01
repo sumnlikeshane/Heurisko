@@ -1,0 +1,61 @@
+{
+  "version": "heurisko-final-hour-demo-manifest-v1",
+  "preparedAt": "2026-11-01T00:09:12Z",
+  "purpose": "Three retained, evidence-backed demo cases. Launching does not refresh or analyze.",
+  "cases": [
+    {
+      "id": "genuine-release",
+      "label": "Genuine public ts-pattern 5.9.0; retained raw/build-context evidence",
+      "report": "examples/handoff/current/B2.report.json",
+      "store": "examples/handoff/current/store",
+      "reportId": "report_98e7cf895ee37bff160d1894",
+      "reportContentRef": "sha256:1f09dd8942fa3b379d0dc3cf462772e8c3eedd616597c59f3ccc58176b6d6e1e",
+      "artifactSha256": "sha256:ecea9dd2a1460293929c97fb5118fa3f93a2fb37a59a0a79384203d3ff64f368",
+      "origin": "registry",
+      "capturedAt": "2026-10-31T19:00:35Z",
+      "expectedExit": 2,
+      "historical": true,
+      "boundary": "Historical public release control; candidate source and generated-looking output are not build-equivalence or harmlessness proof.",
+      "productModuleAdopted": false
+    },
+    {
+      "id": "inert-local-mutation",
+      "label": "Synthetic local picocolors mutation; exact inert lifecycle literal",
+      "report": "examples/part4/user-failures/fresh-local.report.json",
+      "store": "examples/part4/user-failures/store",
+      "reportId": "report_cc24925f49a83ea599cc750f",
+      "reportContentRef": "sha256:1a54411180d2491d7227ad255499559e453ba5ecfa45c03e1422046aa8e49c28",
+      "artifactSha256": "sha256:bcdd003ee749b70575fb2793d3892a393d1224457ecb8ca9c37ff4cfd55e098d",
+      "origin": "local",
+      "capturedAt": "2026-10-31T23:18:14Z",
+      "expectedExit": 2,
+      "historical": true,
+      "boundary": "Historical local-input mutation; no registry integrity or provenance success is inherited.",
+      "productModuleAdopted": false
+    },
+    {
+      "id": "incomplete-source",
+      "label": "Genuine zod 4.6.7; unsupported source entry and unresolved scope",
+      "report": "examples/handoff/current/B3.report.json",
+      "store": "examples/handoff/current/store",
+      "reportId": "report_53ce205b689a18c8845dba65",
+      "reportContentRef": "sha256:66ea87bddf0319c4ccf8cc0d1e7be0f330eb17dc4fe4531775392692d9799757",
+      "artifactSha256": "sha256:84efd155bed93270286e793fc951be270b536cbd5b0eeb111f0fa3967201d698",
+      "origin": "registry",
+      "capturedAt": "2026-10-31T19:01:10Z",
+      "expectedExit": 2,
+      "historical": true,
+      "boundary": "Historical public capture; unsupported source symlink and missing source manifest retain incomplete coverage.",
+      "productModuleAdopted": false
+    }
+  ],
+  "optionalFindingExample": {
+    "report": "examples/part4/user-failures/local-e8b8116-validation.report.json",
+    "store": "examples/part4/user-failures/module-validation-store",
+    "scope": "Explicit e8b8116 model-off module validation only; not default product adoption.",
+    "moduleHead": "e8b8116f9960527d0a82e066059d7792c405defe",
+    "findings": 16,
+    "productModuleAdopted": false,
+    "productModelExecution": false
+  }
+}

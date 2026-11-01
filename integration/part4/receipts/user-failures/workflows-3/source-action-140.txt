@@ -1,0 +1,35 @@
+  HEURISKO   H Home    I Investigations     M Monitoring                                                                                    
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+  picocolors@1.1.1 / HISTORICAL / incomplete / Captured 2026-10-31T22:59:33Z                                                                
+  1 Overview   2 Findings   3 Files   4 Source   5 AI   6 Coverage                                                                          
+  Historical — online checks have not refreshed · i Identity                                                                                
+  Source                                                                                                                                    
+  Source > Candidate 1 / 6f0a4638348e / Esc restores position                                                                               
+  ┌─ > Candidate 1 / 6f0a4638348e ───────────────────────────────────────────────────────────────────────────────────────────────────────┐  
+  │ Association ambiguous — this candidate is not a verified release baseline.                                                           │  
+  │ Compared target: this repository / commit / package directory was selected.                                                          │  
+  │ Candidate basis: user-override, registry, artifact-manifest, version-tag.                                                            │  
+  │ Version labels: artifact 1.1.1; selected source 1.1.0. Evidence ev_3ca16ad46cd957d737ef0c18 (e opens exact values; s switches side). │  
+  │ SOURCE CONFLICT: SOURCE_VERSION_LABEL_DIFFERS                                                                                        │  
+  │ Subdirectory: (repository root)                                                                                                      │  
+  │ New investigation with this target: n opens a new draft, then Review and Start. Edit the commit before Review to investigate another │  
+  │ candidate. This report stays immutable.                                                                                              │  
+  │ Discovery limitation: version-tag v1.1.1 — SOURCE_TAG_RATE_LIMITED. This is not evidence that the tag is absent.                     │  
+  │ Discovery limitation: version-tag 1.1.1 — SOURCE_TAG_DISCOVERY_SKIPPED_RATE_LIMIT. This is not evidence that the tag is absent.      │  
+  │ Artifact check: integrity matched. Source claim: ambiguous. Digest agreement checks acquired artifact bytes against registry         │  
+  │ metadata, not source provenance.                                                                                                     │  
+  │ Provenance: not_checked; build stage skipped. No release binding follows from matching version labels.                               │  
+  │ Next action: inspect the conflicting manifest values and release claims; choose another immutable target if warranted.               │  
+  │ Repository: https://github.com/alexeyraspopov/picocolors                                                                             │  
+  │ Commit: 6f0a4638348ed20633d623ee973f9c9a96f65104                                                                                     │  
+  │ Snapshot: sha256:87646ed7f9b372d94da80ec298ef4ec6fc0c2a56bb60e0b325a9705037408c7c                                                    │  
+  │ Build context: sha256:6383b97048e27e8ab0a0cfeecce3bc80b06ebf180528085638aacc6bd3ca0a04                                               │  
+  │ 1-18 / 18                                                                                                                            │  
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘  
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                                            
+  SOURCE CONFLICT / inspect source claims                                                                                                   
+  v subtabs  Enter inspect  e evidence  n new target  Tab panes  q quit                                                                     
+                                                                                                                                            
+                                                                                                                                            

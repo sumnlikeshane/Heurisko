@@ -1,0 +1,36 @@
+{
+  "scope": "Final shared report and exact citation parity through actual loopback browser APIs; native GUI observations separate",
+  "checkedAt": "2026-11-01T00:33:18.045Z",
+  "report": "examples/final-hour/20261101-053912/integrated-55240e9/report.json",
+  "store": "examples/final-hour/20261101-053912/integrated-55240e9/store",
+  "reportId": "report_1366f57f990327d57dd6ad73",
+  "reportSha256": "c06db35768713d8c3b8dc4fc205a02c96e16af39d62dbe607f2c453373cc7f71",
+  "findings": 16,
+  "lifecycle": {
+    "findingId": "find_heurisko_manifest_lifecycle-script-change_chg_6c49c8951ee8ff1147bff2a9_e7075cb6",
+    "evidenceId": "ev_e7075cb69f91c7e1b4c4223f",
+    "observation": "Manifest key scripts.postinstall is reported as added to the artifact.",
+    "recordedRange": {
+      "startByte": 585,
+      "endByte": 611
+    },
+    "inertText": "\"HEURISKO_INERT_TEST_ONLY\""
+  },
+  "checks": {
+    "reportFactsIdentical": true,
+    "originalReportDownloadIdentical": true,
+    "bundleDownloadIdentical": true,
+    "sharedReaderCitationIdentical": true,
+    "servedAssetsEqualFinalBuild": true,
+    "noAnalysisStartedByOpening": true
+  },
+  "assets": {
+    "index.html": "049fc9f4a86def4e885129d92206e49619e26a350ba1a8d4de168b6bee84f18c",
+    "assets/app.js": "c1252b8f73e01dfcfe6efd6e0802bc6d8a4aba1816f48f2c41c04d6d6135eb38",
+    "assets/app.css": "03b429504d5965e467f022f366a76d00bc3279a731bc6512189ecc2de259fd51"
+  },
+  "modelExecuted": false,
+  "targetCodeExecuted": false,
+  "sessionCredentialsIncluded": false,
+  "earlierAttempt": "A separately launched task viewer expired during user steering; that read failed ECONNREFUSED. This passing check owns and closes its viewer in one operation."
+}

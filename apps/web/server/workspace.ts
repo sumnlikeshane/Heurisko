@@ -48,14 +48,15 @@ export class WebWorkspace {
         if (!filename || filename.length > 128 || /[\/\\:\x00-\x1f\x7f]/.test(filename) || filename === '.' || filename === '..') throw Error('UPLOAD_NAME_INVALID');
         if (!bytes.length || bytes.length > limit) throw Error('UPLOAD_LIMIT');
         if (this.uploads.size >= webLimits.uploads || this.admittedBytes + bytes.length > webLimits.admittedBytes) throw Error('SESSION_UPLOAD_LIMIT');
+        const admitted = Buffer.from(bytes), size = admitted.length, digest = sha256(admitted);
         await this.initialize();
-        await this.capacity.assertCapacity(bytes.length);
+        await this.capacity.assertCapacity(size);
         const disk = await fs.statfs(this.root, { bigint: true });
-        if (disk.bavail * disk.bsize < BigInt(bytes.length * 2 + 64 * 1024 * 1024)) throw Error('STORE_DISK_RESERVE');
+        if (disk.bavail * disk.bsize < BigInt(size * 2 + 64 * 1024 * 1024)) throw Error('STORE_DISK_RESERVE');
         const handle = id(), path = join(this.root, 'uploads', handle);
-        await fs.writeFile(path, bytes, { flag: 'wx', mode: 0o600 });
-        this.uploads.set(handle, { path, kind, filename, bytes:bytes.length, sha256:sha256(bytes) }); this.admittedBytes += bytes.length;
-        return { upload: handle, bytes: bytes.length, sha256: sha256(bytes), kind };
+        await fs.writeFile(path, admitted, { flag: 'wx', mode: 0o600 });
+        this.uploads.set(handle, { path, kind, filename, bytes:size, sha256:digest }); this.admittedBytes += size;
+        return { upload: handle, bytes: size, sha256: digest, kind };
     }
     private uploaded(value: unknown, kind: string) {
         const handle = text(value, 32), upload = handle ? this.uploads.get(handle) : undefined;

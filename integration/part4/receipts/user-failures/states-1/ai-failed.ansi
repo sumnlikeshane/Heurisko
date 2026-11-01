@@ -1,0 +1,136 @@
+[?1049h[?25l[?25l  [1mHEURISKO[22m   H Home    [4m[1mI Investigations    [22m[24m M Monitoring                                                     SYNTHETIC
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  [1mF0.tgz / LOCAL INPUT / HISTORICAL / incomplete / Captured 2026-10-31T15:00:00Z                                      [22m
+  [4m[1m1 Overview   [22m[24m2 Findings   3 Files   4 Source   5 AI   6 Coverage
+  Historical — online checks have not refreshed · i Identity
+  ┌─[1m ESTABLISHED OBSERVATION [22m────────────────────────────────────────────────────────────────────────────────────────┐
+  │ [1mSource and artifact differences are recorded. Review their evidence and the unresolved scope.                   [22m │
+  │                                                                                                                  │
+  │ Source candidate  aaaaaaaaaaaa  /  release binding not proven                                                    │
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+  ┌─[1m > Independent outcomes [22m────────────────────────────┐  ┌─[1m Priority findings [22m────────────────────── Not evaluated ┐
+  │ Artifact integrity    │ Unavailable                 │  │ Findings not evaluated / analysis unavailable.          │
+  │ Source association    │ User selected               │  │ AI                      failed                          │
+  │ Provenance            │ Not checked                 │  │                                                         │
+  │ Correspondence        │ Not assessed                │  └─────────────────────────────────────────────────────────┘
+  │ Analysis completeness │ Incomplete                  │
+  │ Policy result         │ Not evaluated               │  ┌─[1m Report next action [22m────────────────────────────────────┐
+  └─────────────────────────────────────────────────────┘  │ [1mInspect raw file changes, source claims and coverage   [22m │
+                                                           │ [1mbefore drawing a conclusion.                           [22m │
+  ┌─[1m Coverage & unknowns [22m───────────────────────────────┐  └─────────────────────────────────────────────────────────┘
+  │ Compared              │ 1 change records            │
+  │ Source files          │ 1 recorded                  │
+  │ Artifact files        │ 1 recorded                  │
+  │ Remaining scope       │ Unknown                     │
+  │ ─ Coverage gaps ─────────────────────────────────── │
+  │ - Findings not evaluated for a complete examined    │
+  │   scope.                                            │
+  └─────────────────────────────────────────────────────┘
+
+
+  Overview
+  [1mTab[22m focus  [1mEnter[22m inspect  [1m1-6[22m sections  [1mi[22m identity  [1m?[22m help  [1mq[22m quit
+
+[?25l[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m   H Home    [4m[1mI Investigations    [22m[24m M Monitoring                                                     SYNTHETIC
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  [1mF0.tgz / LOCAL INPUT / HISTORICAL / incomplete / Captured 2026-10-31T15:00:00Z                                      [22m
+  [4m[1m1 Overview   [22m[24m2 Findings   3 Files   4 Source   5 AI   6 Coverage
+  Historical — online checks have not refreshed · i Identity
+  ┌─[1m ESTABLISHED OBSERVATION [22m────────────────────────────────────────────────────────────────────────────────────────┐
+  │ [1mSource and artifact differences are recorded. Review their evidence and the unresolved scope.                   [22m │
+  │                                                                                                                  │
+  │ Source candidate  aaaaaaaaaaaa  /  release binding not proven                                                    │
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+  ┌─[1m > Independent outcomes [22m────────────────────────────┐  ┌─[1m Priority findings [22m────────────────────── Not evaluated ┐
+  │ Artifact integrity    │ Unavailable                 │  │ Findings not evaluated / analysis unavailable.          │
+  │ Source association    │ User selected               │  │ AI                      failed                          │
+  │ Provenance            │ Not checked                 │  │                                                         │
+  │ Correspondence        │ Not assessed                │  └─────────────────────────────────────────────────────────┘
+  │ Analysis completeness │ Incomplete                  │
+  │ Policy result         │ Not evaluated               │  ┌─[1m Report next action [22m────────────────────────────────────┐
+  └─────────────────────────────────────────────────────┘  │ [1mInspect raw file changes, source claims and coverage   [22m │
+                                                           │ [1mbefore drawing a conclusion.                           [22m │
+  ┌─[1m Coverage & unknowns [22m───────────────────────────────┐  └─────────────────────────────────────────────────────────┘
+  │ Compared              │ 1 change records            │
+  │ Source files          │ 1 recorded                  │
+  │ Artifact files        │ 1 recorded                  │
+  │ Remaining scope       │ Unknown                     │
+  │ ─ Coverage gaps ─────────────────────────────────── │
+  │ - Findings not evaluated for a complete examined    │
+  │   scope.                                            │
+  └─────────────────────────────────────────────────────┘
+
+
+  Per-report UI state reset; report unchanged.
+  [1mTab[22m focus  [1mEnter[22m inspect  [1m1-6[22m sections  [1mi[22m identity  [1m?[22m help  [1mq[22m quit
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m   H Home    [4m[1mI Investigations    [22m[24m M Monitoring                                                     SYNTHETIC
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  [1mF0.tgz / LOCAL INPUT / HISTORICAL / incomplete / Captured 2026-10-31T15:00:00Z                                      [22m
+  1 Overview   2 Findings   3 Files   4 Source   [4m[1m5 AI   [22m[24m6 Coverage
+  Historical — online checks have not refreshed · i Identity
+  [1mAI                                                                                                                  [22m
+  Recorded interpretation / separate from deterministic observations
+  ┌─[1m > AI [22m────────────────────── 1 ┐ ┌─[1m AI details [22m──────────────────────────────────────────────────────────────────┐
+  │ [1m> AI failed                   [22m │ │ [1mAI state:                                                                    [22m │
+  │   Recorded report state        │ │ failed                                                                        │
+  │                                │ │                                                                               │
+  │ 1 / 1 · Enter inspect          │ │ [1mReason:                                                                      [22m │
+  └────────────────────────────────┘ │ SYNTHETIC rendering state; no model executed                                  │
+                                     │                                                                               │
+                                     │ [1mModel:                                                                       [22m │
+                                     │ Not configured                                                                │
+                                     │                                                                               │
+                                     │ [1mValidation:                                                                  [22m │
+                                     │ not_run                                                                       │
+                                     │ Current inference runtime unavailable; deterministic evidence remains         │
+                                     │ accessible.                                                                   │
+                                     │ Validation does not establish factual truth.                                  │
+                                     │ 1-14 / 14                                                                     │
+                                     └───────────────────────────────────────────────────────────────────────────────┘
+
+
+
+
+
+
+
+  AI
+  [1mj/k[22m move  [1mEnter[22m inspect  [1me[22m evidence  [1mTab[22m panes  [1m/[22m filter  [1m?[22m help  [1mq[22m quit
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m   H Home    [4m[1mI Investigations    [22m[24m M Monitoring                                                     SYNTHETIC
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  [1mF0.tgz / LOCAL INPUT / HISTORICAL / incomplete / Captured 2026-10-31T15:00:00Z                                      [22m
+  1 Overview   2 Findings   3 Files   4 Source   [4m[1m5 AI   [22m[24m6 Coverage
+  Historical — online checks have not refreshed · i Identity
+  [1mAI                                                                                                                  [22m
+  AI > AI failed / Esc restores position
+  ┌─[1m > AI failed [22m────────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ [1mAI state:                                                                                                       [22m │
+  │ failed                                                                                                           │
+  │                                                                                                                  │
+  │ [1mReason:                                                                                                         [22m │
+  │ SYNTHETIC rendering state; no model executed                                                                     │
+  │                                                                                                                  │
+  │ [1mModel:                                                                                                          [22m │
+  │ Not configured                                                                                                   │
+  │                                                                                                                  │
+  │ [1mValidation:                                                                                                     [22m │
+  │ not_run                                                                                                          │
+  │ Current inference runtime unavailable; deterministic evidence remains accessible.                                │
+  │ Validation does not establish factual truth.                                                                     │
+  │ 1-13 / 13                                                                                                        │
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+
+
+
+
+
+
+  AI
+  [1mj/k[22m move  [1mEnter[22m inspect  [1me[22m evidence  [1mTab[22m panes  [1m/[22m filter  [1m?[22m help  [1mq[22m quit
+

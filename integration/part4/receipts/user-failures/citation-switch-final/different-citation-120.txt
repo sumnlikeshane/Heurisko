@@ -1,0 +1,35 @@
+  HEURISKO   H Home    I Investigations     M Monitoring                                                                
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+  picocolors@1.1.1 / HISTORICAL / incomplete / Captured 2026-10-31T22:59:33Z                                            
+  1 Overview   2 Findings   3 Files   4 Source   5 AI   6 Coverage                                                      
+  Raw retained evidence · Esc returns to its origin                                                                     
+  Evidence                                                                                                              
+  Source > ev_ec5b0358b13edb689c4ced2c / Esc restores position                                                          
+  ┌─ > Raw citation / external ──────────────────────────────────────────────────────────────────────────────────────┐  
+  │ ev_ec5b0358b13edb689c4ced2c                                                                                      │  
+  │ EXTERNAL / source-claim-0-user-override                                                                          │  
+  │ RAW utf8: [0, 171) / recorded [0, 171)                                                                           │  
+  │ Window truncated: false / total blob 171 bytes                                                                   │  
+  │                                                                                                                  │  
+  │ {"kind":"user-override","repositoryUrl":"https://github.com/alexeyraspopov/picocolors","commit":"6f0a4638348ed20 │  
+  │ 633d623ee973f9c9a96f65104","subdirectory":"","captures":[]}                                                      │  
+  │                                                                                                                  │  
+  │ Method: separate-source-claim-v1                                                                                 │  
+  │ Availability: retained                                                                                           │  
+  │ Verification: not_checked                                                                                        │  
+  │ Content digest: sha256:b2addd4ca81139763fdfbfd7f69e721222671a26bed6ac80689158f6f9a82891                          │  
+  │ Member: ev_ec5b0358b13edb689c4ced2c                                                                              │  
+  │ Content ref: sha256:b2addd4ca81139763fdfbfd7f69e721222671a26bed6ac80689158f6f9a82891                             │  
+  │ Limitation: Unverified candidate claim; tag observations are time-bound.                                         │  
+  │ 1-15 / 15                                                                                                        │  
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘  
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+  evidence                                                                                                              
+  j/k scroll  Tab citation  s side  p/b page  Esc return  q quit                                                        
+                                                                                                                        
+                                                                                                                        

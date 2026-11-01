@@ -1,0 +1,24 @@
+{
+  "method": "sRGB relative luminance from authored tokens, not a browser or WCAG conformance claim",
+  "colors": {
+    "page": "#080808",
+    "panel": "#111111",
+    "control_hover": "#1b1b1b",
+    "primary": "#67e1d4",
+    "primary_hover": "#a1f5eb",
+    "primary_text": "#07211f",
+    "disabled_bg": "#303030",
+    "disabled_text": "#bbc8ca",
+    "focus": "#67e1d4",
+    "text": "#eeeeee",
+    "muted": "#b2b2b2"
+  },
+  "contrast": {
+    "primary_text/primary": 10.67,
+    "primary_text/primary_hover": 13.46,
+    "disabled_text/disabled_bg": 7.68,
+    "text/page": 17.26,
+    "muted/panel": 8.91,
+    "focus/page": 12.68
+  }
+}

@@ -1,0 +1,40 @@
+  HEURISKO   H Home    I Investigations     M Monitoring                                                                                                        
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+  picocolors@1.1.1 / HISTORICAL / incomplete / Captured 2026-10-31T22:59:33Z                                                                                    
+  1 Overview   2 Findings   3 Files   4 Source   5 AI   6 Coverage                                                                                              
+  Historical — online checks have not refreshed · i Identity                                                                                                    
+  Files                                                                                                                                                         
+  Flat / 2 modified / 5 identical / 12 unresolved (19 change records) / m next modified / v tree-flat                                                           
+  ┌─ > Files ───────────────────── 19 ┐ ┌─ Raw source / artifact comparison ─────────────────────────────────────────────────────────────────────────────────┐  
+  │   Source / .editorconfig          │ │ modified / different                                                                                               │  
+  │   unresolved / unknown            │ │ SOURCE → ARTIFACT / bounded recorded byte spans; e exact bytes                                                     │  
+  │                                   │ │ RAW CHANGED SPANS / side-by-side                                                                                   │  
+  │   Source / .github/workflows/ben… │ │ SOURCE: raw utf8 bytes [532,4628) / truncated true                                                                 │  
+  │   unresolved / unknown            │ │ ARTIFACT: raw utf8 bytes [532,621) / truncated false                                                               │  
+  │                                   │ │ Viewer line alignment v1 / window-relative row numbers / e opens exact bytes                                       │  
+  │   Source / .github/workflows/tes… │ │ SOURCE (-)                                              | ARTIFACT (+)                                             │  
+  │   unresolved / unknown            │ │ S1 - Motivation                                         |                                                          │  
+  │                                   │ │ S2 -                                                    |                                                          │  
+  │   Source / .gitignore             │ │ S3 - With `picocolors` we are trying to draw attention… |                                                          │  
+  │   unresolved / unknown            │ │ S4 - problem and promote performance-first culture.     |                                                          │  
+  │                                   │ │ S5 -                                                    |                                                          │  
+  │   Source / CHANGELOG.md           │ │ S6 - ## Prior Art                                       |                                                          │  
+  │   unresolved / unknown            │ │ S7 -                                                    |                                                          │  
+  │                                   │ │ S8 - Credits go to the following projects:              |                                                          │  
+  │   Artifact / LICENSE              │ │ S9 -                                                    |                                                          │  
+  │   identical / equal               │ │ S10 - - [Nanocolors](https://github.com/ai/nanocolors)… |                                                          │  
+  │                                   │ │ S11 - - [Colorette](https://github.com/jorgebucaran/co… |                                                          │  
+  │ > Artifact / README.md            │ │ S12 - - [Kleur](https://github.com/lukeed/kleur) by [@… |                                                          │  
+  │   modified / different            │ │ S13 - - [Colors.js](https://github.com/Marak/colors.js… |                                                          │  
+  │                                   │ │ S14 - - [Chalk](https://github.com/chalk/chalk) by [@s… |                                                          │  
+  │   Source / benchmarks/complex.mjs │ │ S15 -                                                   |                                                          │  
+  │   unresolved / unknown            │ │ S16 - ## Benchmarks                                     |                                                          │  
+  │                                   │ │ S17 -                                                   |                                                          │  
+  │ 7 / 19 · Enter inspect            │ │ S18 - The space in node_modules including sub-dependen… |                                                          │  
+  └───────────────────────────────────┘ │ S19 -                                                   |                                                          │  
+                                        │ 1-26 / 186  j/k scroll                                                                                             │  
+                                        └────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘  
+  Modified file / Artifact / README.md / Enter inspect; e exact bytes.                                                                                          
+  m next modified  Enter inspect  e exact bytes  Tab panes  v tree/flat  q quit                                                                                 
+                                                                                                                                                                
+                                                                                                                                                                

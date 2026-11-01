@@ -1,0 +1,29 @@
+{
+  "checks": [
+    {
+      "store": ".heurisko/tui-visual-live-f7848a67-1866-43eb-bb2d-6c7caa9c34bc",
+      "storeLabel": "0ca5337f684185ecc4eed11b86fee23a9a264da578d42cb0b88c01fda945c68a",
+      "containersAbsent": true,
+      "locksAbsent": true,
+      "parserSpoolAbsent": true
+    },
+    {
+      "store": "examples/part4/user-failures/store-b51539b3-ee23-4131-afd1-6d028c89045b",
+      "storeLabel": "12b5648ae2a5a17c8fe94a685be0edde80f6d80f02a3cd5f5e0f49b921a85e75",
+      "containersAbsent": true,
+      "locksAbsent": true,
+      "parserSpoolAbsent": true
+    },
+    {
+      "store": "examples/part4/user-failures/module-validation-store",
+      "storeLabel": "c24483645cd48ab090d9970dc204d3313bbcec3228ae5b2842a3dc9a0eee4897",
+      "containersAbsent": true,
+      "locksAbsent": true,
+      "parserSpoolAbsent": true
+    }
+  ],
+  "hotExactId": "9ed3545ff12de1da51ce1acacc594729640e11aa0a3c1f01abed91f6d599b464",
+  "hotExactIdAbsent": true,
+  "limitsUnchanged": true,
+  "note": "Sandbox-denied earlier test stores remain retained for recovery; these checks concern the exact actual completed/cancelled workflow stores."
+}

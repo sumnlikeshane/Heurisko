@@ -1,0 +1,28 @@
+  HEURISKO   H Home    I Investigations     M Monitoring                                            
+  ────────────────────────────────────────────────────────────────────────────────────────────────  
+  picocolors@1.1.1 / HISTORICAL / incomplete / Captured 2026-10-31T22:59:33Z                        
+  1 Overview   2 Findings   3 Files   4 Source   5 AI   6 Coverage                                  
+  Historical — online checks have not refreshed · i Identity                                        
+  Files                                                                                             
+  Tree / 2 modified / 5 identical / 12 unresolved (19 change records) / m next modified / v tree-…  
+  ┌─ > Files ────────── 25 ┐ ┌─ Directory / navigation ──────────────────────────────────────────┐  
+  │ > [-] Artifact root/   │ │ Directory:                                                        │  
+  │   7 records / 2 modif… │ │ package                                                           │  
+  │                        │ │ 7 descendant change records; 2 modified.                          │  
+  │     LICENSE            │ │ Enter expands/collapses. m jumps directly to the next modified    │  
+  │   identical / equal    │ │ file.                                                             │  
+  │                        │ │ Directory selection shows navigation metadata; no file comparison │  
+  │     package.json       │ │ is implied.                                                       │  
+  │   modified / different │ │ 1-7 / 7                                                           │  
+  │                        │ └───────────────────────────────────────────────────────────────────┘  
+  │     picocolors.browse… │                                                                        
+  │   identical / equal    │                                                                        
+  │                        │                                                                        
+  │ 1 / 25 · Enter expand  │                                                                        
+  └────────────────────────┘                                                                        
+                                                                                                    
+                                                                                                    
+  Files                                                                                             
+  Enter expand  m modified  v tree/flat  Tab preview  ? help  q quit                                
+                                                                                                    
+                                                                                                    

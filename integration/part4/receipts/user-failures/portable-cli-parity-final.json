@@ -1,0 +1,38 @@
+[
+  {
+    "name": "reproduction",
+    "reportId": "report_67c88c791c269dab8cab5aff",
+    "originalContentRef": "sha256:dd4fb19136fa91ca1581336c6fbc22b864b86e413eaa9978ece3ee0f08c52a3b",
+    "inspectJSONSameReport": true,
+    "inspectExitCode": 2,
+    "linearExitCode": 2,
+    "linearNoANSI": true
+  },
+  {
+    "name": "fresh-npm",
+    "reportId": "report_e088db3a11c119fbfe4c291b",
+    "originalContentRef": "sha256:659f2c4e6823300edc1ae19509c74c8e3cd789a8e27b841714426cab51ecd1b9",
+    "inspectJSONSameReport": true,
+    "inspectExitCode": 2,
+    "linearExitCode": 2,
+    "linearNoANSI": true
+  },
+  {
+    "name": "fresh-local",
+    "reportId": "report_cc24925f49a83ea599cc750f",
+    "originalContentRef": "sha256:1a54411180d2491d7227ad255499559e453ba5ecfa45c03e1422046aa8e49c28",
+    "inspectJSONSameReport": true,
+    "inspectExitCode": 2,
+    "linearExitCode": 2,
+    "linearNoANSI": true
+  },
+  {
+    "name": "local-e8b8116-validation",
+    "reportId": "report_09bd16233621153500f4a50c",
+    "originalContentRef": "sha256:1b455c2fdd0c9fed36b643bbb3ffdb0189030f058dffd1ddcbf4b66e055f944c",
+    "inspectJSONSameReport": true,
+    "inspectExitCode": 0,
+    "linearExitCode": 0,
+    "linearNoANSI": true
+  }
+]

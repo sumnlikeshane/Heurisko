@@ -1,0 +1,680 @@
+[?1049h[?25l[?25l  [1mHEURISKO[22m   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  [1mpicocolors@1.1.1 / HISTORICAL / incomplete / Captured 2026-10-31T22:59:33Z                                          [22m
+  [4m[1m1 Overview   [22m[24m2 Findings   3 Files   4 Source   5 AI   6 Coverage
+  Historical — online checks have not refreshed · i Identity
+  ┌─[1m ESTABLISHED OBSERVATION [22m────────────────────────────────────────────────────────────────────────────────────────┐
+  │ [1mSource and artifact differences are recorded. Review their evidence and the unresolved scope.                   [22m │
+  │                                                                                                                  │
+  │ ! Source conflict / competing commits / release binding unresolved                                               │
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+  ┌─[1m > Independent outcomes [22m────────────────────────────┐  ┌─[1m Priority findings [22m────────────────────── None recorded ┐
+  │ Artifact integrity    │ Digest matched              │  │ Findings not evaluated / analysis unavailable.          │
+  │ Source association    │ Conflicting claims          │  │ AI                      disabled                        │
+  │ Provenance            │ Not checked                 │  │                                                         │
+  │ Correspondence        │ Unexplained                 │  └─────────────────────────────────────────────────────────┘
+  │ Analysis completeness │ Incomplete                  │
+  │ Policy result         │ Not evaluated               │  ┌─[1m Report next action [22m────────────────────────────────────┐
+  └─────────────────────────────────────────────────────┘  │ [1mInspect raw file changes, source claims and coverage   [22m │
+                                                           │ [1mbefore drawing a conclusion.                           [22m │
+  ┌─[1m Coverage & unknowns [22m───────────────────────────────┐  └─────────────────────────────────────────────────────────┘
+  │ Compared              │ 19 change records           │
+  │ Source files          │ 19 recorded                 │
+  │ Artifact files        │ 7 recorded                  │
+  │ ─ Coverage gaps ─────────────────────────────────── │
+  │ - Findings not evaluated for a complete examined    │
+  │   scope.                                            │
+  └─────────────────────────────────────────────────────┘
+
+
+
+  SOURCE CONFLICT / inspect source claims
+  [1mTab[22m focus  [1mEnter[22m inspect  [1m1-6[22m sections  [1mi[22m identity  [1m?[22m help  [1mq[22m quit
+
+[?25l[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  [1mpicocolors@1.1.1 / HISTORICAL / incomplete / Captured 2026-10-31T22:59:33Z                                          [22m
+  [4m[1m1 Overview   [22m[24m2 Findings   3 Files   4 Source   5 AI   6 Coverage
+  Historical — online checks have not refreshed · i Identity
+  ┌─[1m ESTABLISHED OBSERVATION [22m────────────────────────────────────────────────────────────────────────────────────────┐
+  │ [1mSource and artifact differences are recorded. Review their evidence and the unresolved scope.                   [22m │
+  │                                                                                                                  │
+  │ ! Source conflict / competing commits / release binding unresolved                                               │
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+  ┌─[1m > Independent outcomes [22m────────────────────────────┐  ┌─[1m Priority findings [22m────────────────────── None recorded ┐
+  │ Artifact integrity    │ Digest matched              │  │ Findings not evaluated / analysis unavailable.          │
+  │ Source association    │ Conflicting claims          │  │ AI                      disabled                        │
+  │ Provenance            │ Not checked                 │  │                                                         │
+  │ Correspondence        │ Unexplained                 │  └─────────────────────────────────────────────────────────┘
+  │ Analysis completeness │ Incomplete                  │
+  │ Policy result         │ Not evaluated               │  ┌─[1m Report next action [22m────────────────────────────────────┐
+  └─────────────────────────────────────────────────────┘  │ [1mInspect raw file changes, source claims and coverage   [22m │
+                                                           │ [1mbefore drawing a conclusion.                           [22m │
+  ┌─[1m Coverage & unknowns [22m───────────────────────────────┐  └─────────────────────────────────────────────────────────┘
+  │ Compared              │ 19 change records           │
+  │ Source files          │ 19 recorded                 │
+  │ Artifact files        │ 7 recorded                  │
+  │ ─ Coverage gaps ─────────────────────────────────── │
+  │ - Findings not evaluated for a complete examined    │
+  │   scope.                                            │
+  └─────────────────────────────────────────────────────┘
+
+
+
+  Per-report UI state reset; report unchanged.
+  [1mTab[22m focus  [1mEnter[22m inspect  [1m1-6[22m sections  [1mi[22m identity  [1m?[22m help  [1mq[22m quit
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  [1mpicocolors@1.1.1 / HISTORICAL / incomplete / Captured 2026-10-31T22:59:33Z                                          [22m
+  1 Overview   [4m[1m2 Findings   [22m[24m3 Files   4 Source   5 AI   6 Coverage
+  Historical — online checks have not refreshed · i Identity
+  ┌─[1m > Findings [22m─────────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ [1mDeterministic findings unavailable — Malhar analysis module not supplied.                                       [22m │
+  │ ANALYSIS_MODULE_UNAVAILABLE: Malhar analysis module not supplied                                                 │
+  │ Artifact acquisition: complete; integrity matched.                                                               │
+  │ Inventory: complete; raw comparison complete.                                                                    │
+  │ 2 modified / 5 identical / 12 unresolved (19 change records)                                                     │
+  │ Source association: ambiguous.                                                                                   │
+  │ AI: disabled. Deterministic analysis is a separate module; enabling AI does not supply it.                       │
+  │ Next action: 3 Files, then m next modified file; 4 Source explains association; 6 Coverage has stage             │
+  │ diagnostics.                                                                                                     │
+  │ No clean-result or policy pass may be inferred.                                                                  │
+  │ 1-10 / 10                                                                                                        │
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+
+
+
+
+
+
+
+
+
+
+
+  Findings
+  [1mj/k[22m move  [1mEnter[22m inspect  [1me[22m evidence  [1mTab[22m panes  [1m/[22m filter  [1m?[22m help  [1mq[22m quit
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  [1mpicocolors@1.1.1 / HISTORICAL / incomplete / Captured 2026-10-31T22:59:33Z                                          [22m
+  1 Overview   2 Findings   [4m[1m3 Files   [22m[24m4 Source   5 AI   6 Coverage
+  Historical — online checks have not refreshed · i Identity
+  [1mFiles                                                                                                               [22m
+  Tree / 2 modified / 5 identical / 12 unresolved (19 change records) / m next modified / v tree-flat
+  ┌─[1m > Files [22m─────────── 25 ┐ ┌─[1m Directory / navigation [22m─────────────────────────────────────────────────────────────┐
+  │ [1m> [-] Artifact root/   [22m │ │ [1mDirectory:                                                                          [22m │
+  │   7 records / 2 modifi… │ │ package                                                                              │
+  │                         │ │ 7 descendant change records; 2 modified.                                             │
+  │     LICENSE             │ │ Enter expands/collapses. m jumps directly to the next modified file.                 │
+  │   identical / equal     │ │ Directory selection shows navigation metadata; no file comparison is implied.        │
+  │                         │ │ 1-5 / 5                                                                              │
+  │     package.json        │ └──────────────────────────────────────────────────────────────────────────────────────┘
+  │   modified / different  │
+  │                         │
+  │     picocolors.browser… │
+  │   identical / equal     │
+  │                         │
+  │     picocolors.d.ts     │
+  │   identical / equal     │
+  │                         │
+  │     picocolors.js       │
+  │   identical / equal     │
+  │                         │
+  │     README.md           │
+  │   modified / different  │
+  │                         │
+  │ 1 / 25 · Enter expand   │
+  └─────────────────────────┘
+  Files
+  [1mEnter[22m expand  [1mm[22m modified  [1mv[22m tree/flat  [1mTab[22m preview  [1m?[22m help  [1mq[22m quit
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  [1mpicocolors@1.1.1 / HISTORICAL / incomplete / Captured 2026-10-31T22:59:33Z                                          [22m
+  1 Overview   2 Findings   [4m[1m3 Files   [22m[24m4 Source   5 AI   6 Coverage
+  Historical — online checks have not refreshed · i Identity
+  [1mFiles                                                                                                               [22m
+  Flat / 2 modified / 5 identical / 12 unresolved (19 change records) / m next modified / v tree-flat
+  ┌─[1m > Files [22m─────────── 19 ┐ ┌─[1m Raw source / artifact comparison [22m───────────────────────────────────────────────────┐
+  │   Source / .editorconf… │ │ [1mFile:                                                                               [22m │
+  │   unresolved / unknown  │ │ modified / raw bytes different                                                       │
+  │                         │ │                                                                                      │
+  │   Source / .github/wor… │ │ [1mPairing:                                                                            [22m │
+  │   unresolved / unknown  │ │ recorded source and artifact members for this change.                                │
+  │                         │ │ Raw inventory complete; source association remains ambiguous. One-sided records stay │
+  │   Source / .github/wor… │ │ unresolved; release-relative absence is not established.                             │
+  │   unresolved / unknown  │ │                                                                                      │
+  │                         │ │ [1mHistorical wording caveat:                                                          [22m │
+  │   Source / .gitignore   │ │ stored notes say incomplete inventory. Both raw inventories/stages are complete      │
+  │   unresolved / unknown  │ │ here; the producer also used that message when ambiguous source association blocked  │
+  │                         │ │ absence conclusions. Original notes are preserved below.                             │
+  │   Source / CHANGELOG.md │ │                                                                                      │
+  │   unresolved / unknown  │ │ [1mArtifact path:                                                                      [22m │
+  │                         │ │ package/README.md                                                                    │
+  │   Artifact / LICENSE    │ │                                                                                      │
+  │   identical / equal     │ │ [1mSource path:                                                                        [22m │
+  │                         │ │ picocolors-6f0a4638348ed20633d623ee973f9c9a96f65104/README.md                        │
+  │ [1m> Artifact / README.md [22m │ │ Raw difference follows; Enter full inspection, e exact bytes, s switches side in     │
+  │   modified / different  │ │ Evidence.                                                                            │
+  │                         │ │                                                                                      │
+  │ 7 / 19 · Enter inspect  │ │ 1-21 / 34  j/k scroll                                                                │
+  └─────────────────────────┘ └──────────────────────────────────────────────────────────────────────────────────────┘
+  Modified file / Artifact / README.md / Enter inspect; e exact bytes.
+  [1mm[22m next modified  [1mEnter[22m inspect  [1me[22m exact bytes  [1mTab[22m panes  [1mv[22m tree/flat  [1mq[22m quit
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  [1mpicocolors@1.1.1 / HISTORICAL / incomplete / Captured 2026-10-31T22:59:33Z                                          [22m
+  1 Overview   2 Findings   [4m[1m3 Files   [22m[24m4 Source   5 AI   6 Coverage
+  Historical — online checks have not refreshed · i Identity
+  [1mFiles                                                                                                               [22m
+  Flat / 2 modified / 5 identical / 12 unresolved (19 change records) / m next modified / v tree-flat
+  ┌─[1m > Files [22m─────────── 19 ┐ ┌─[1m Raw source / artifact comparison [22m───────────────────────────────────────────────────┐
+  │   Source / .editorconf… │ │ [1mmodified / different                                                                [22m │
+  │   unresolved / unknown  │ │ SOURCE → ARTIFACT / bounded recorded byte spans; e exact bytes                       │
+  │                         │ │ [1mRAW CHANGED SPANS / unified                                                         [22m │
+  │   Source / .github/wor… │ │ SOURCE: raw utf8 bytes [532,4628) / truncated true                                   │
+  │   unresolved / unknown  │ │ ARTIFACT: raw utf8 bytes [532,621) / truncated false                                 │
+  │                         │ │ Viewer line alignment v1 / window-relative row numbers / e opens exact bytes         │
+  │   Source / .github/wor… │ │ SOURCE (-) → ARTIFACT (+) / relative window rows                                     │
+  │   unresolved / unknown  │ │ - S1 Motivation                                                                      │
+  │                         │ │ - S2                                                                                 │
+  │   Source / .gitignore   │ │ - S3 With `picocolors` we are trying to draw attention to the `node_modules` size    │
+  │   unresolved / unknown  │ │ - S4 problem and promote performance-first culture.                                  │
+  │                         │ │ - S5                                                                                 │
+  │   Source / CHANGELOG.md │ │ - S6 ## Prior Art                                                                    │
+  │   unresolved / unknown  │ │ - S7                                                                                 │
+  │                         │ │ - S8 Credits go to the following projects:                                           │
+  │   Artifact / LICENSE    │ │ - S9                                                                                 │
+  │   identical / equal     │ │ - S10 - [Nanocolors](https://github.com/ai/nanocolors) by [@ai](https://github.com/… │
+  │                         │ │ - S11 - [Colorette](https://github.com/jorgebucaran/colorette) by [@jorgebucaran](h… │
+  │ [1m> Artifact / README.md [22m │ │ - S12 - [Kleur](https://github.com/lukeed/kleur) by [@lukeed](https://github.com/lu… │
+  │   modified / different  │ │ - S13 - [Colors.js](https://github.com/Marak/colors.js) by [@Marak](https://github.… │
+  │                         │ │ - S14 - [Chalk](https://github.com/chalk/chalk) by [@sindresorhus](https://github.c… │
+  │ 7 / 19 · Enter inspect  │ │ 1-21 / 190  j/k scroll                                                               │
+  └─────────────────────────┘ └──────────────────────────────────────────────────────────────────────────────────────┘
+  Modified file / Artifact / README.md / Enter inspect; e exact bytes.
+  [1mm[22m next modified  [1mEnter[22m inspect  [1me[22m exact bytes  [1mTab[22m panes  [1mv[22m tree/flat  [1mq[22m quit
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  [1mpicocolors@1.1.1 / HISTORICAL / incomplete / Captured 2026-10-31T22:59:33Z                                          [22m
+  1 Overview   2 Findings   [4m[1m3 Files   [22m[24m4 Source   5 AI   6 Coverage
+  Historical — online checks have not refreshed · i Identity
+  [1mFiles                                                                                                               [22m
+  Files > Artifact / README.md / Esc restores position
+  ┌─[1m > Artifact / README.md [22m─────────────────────────────────────────────────────────────────────────────────────────┐
+  │ [1mmodified / different                                                                                            [22m │
+  │ SOURCE → ARTIFACT / bounded recorded byte spans; e exact bytes                                                   │
+  │ [1mRAW CHANGED SPANS / side-by-side                                                                                [22m │
+  │ SOURCE: raw utf8 bytes [532,4628) / truncated true                                                               │
+  │ ARTIFACT: raw utf8 bytes [532,621) / truncated false                                                             │
+  │ Viewer line alignment v1 / window-relative row numbers / e opens exact bytes                                     │
+  │ SOURCE (-)                                             | ARTIFACT (+)                                            │
+  │ S1 - Motivation                                        |                                                         │
+  │ S2 -                                                   |                                                         │
+  │ S3 - With `picocolors` we are trying to draw attentio… |                                                         │
+  │ S4 - problem and promote performance-first culture.    |                                                         │
+  │ S5 -                                                   |                                                         │
+  │ S6 - ## Prior Art                                      |                                                         │
+  │ S7 -                                                   |                                                         │
+  │ S8 - Credits go to the following projects:             |                                                         │
+  │ S9 -                                                   |                                                         │
+  │ S10 - - [Nanocolors](https://github.com/ai/nanocolors… |                                                         │
+  │ S11 - - [Colorette](https://github.com/jorgebucaran/c… |                                                         │
+  │ S12 - - [Kleur](https://github.com/lukeed/kleur) by [… |                                                         │
+  │ S13 - - [Colors.js](https://github.com/Marak/colors.j… |                                                         │
+  │ S14 - - [Chalk](https://github.com/chalk/chalk) by [@… |                                                         │
+  │ 1-21 / 186  j/k scroll                                                                                           │
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+  Modified file / Artifact / README.md / Enter inspect; e exact bytes.
+  [1mm[22m next modified  [1mEnter[22m inspect  [1me[22m exact bytes  [1mTab[22m panes  [1mv[22m tree/flat  [1mq[22m quit
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  [1mpicocolors@1.1.1 / HISTORICAL / incomplete / Captured 2026-10-31T22:59:33Z                                          [22m
+  1 Overview   2 Findings   [4m[1m3 Files   [22m[24m4 Source   5 AI   6 Coverage
+  Historical — online checks have not refreshed · i Identity
+  [1mFiles                                                                                                               [22m
+  Files > Artifact / README.md / Esc restores position
+  ┌─[1m > Artifact / README.md [22m─────────────────────────────────────────────────────────────────────────────────────────┐
+  │ [1mmodified / different                                                                                            [22m │
+  │ SOURCE → ARTIFACT / bounded recorded byte spans; e exact bytes                                                   │
+  │ [1mRAW CHANGED SPANS / side-by-side                                                                                [22m │
+  │ SOURCE: raw utf8 bytes [532,4628) / truncated true                                                               │
+  │ ARTIFACT: raw utf8 bytes [532,621) / truncated false                                                             │
+  │ Viewer line alignment v1 / window-relative row numbers / e opens exact bytes                                     │
+  │ SOURCE (-)                                             | ARTIFACT (+)                                            │
+  │ S1 - Motivation                                        |                                                         │
+  │ S2 -                                                   |                                                         │
+  │ S3 - With `picocolors` we are trying to draw attentio… |                                                         │
+  │ S4 - problem and promote performance-first culture.    |                                                         │
+  │ S5 -                                                   |                                                         │
+  │ S6 - ## Prior Art                                      |                                                         │
+  │ S7 -                                                   |                                                         │
+  │ S8 - Credits go to the following projects:             |                                                         │
+  │ S9 -                                                   |                                                         │
+  │ S10 - - [Nanocolors](https://github.com/ai/nanocolors… |                                                         │
+  │ S11 - - [Colorette](https://github.com/jorgebucaran/c… |                                                         │
+  │ S12 - - [Kleur](https://github.com/lukeed/kleur) by [… |                                                         │
+  │ S13 - - [Colors.js](https://github.com/Marak/colors.j… |                                                         │
+  │ S14 - - [Chalk](https://github.com/chalk/chalk) by [@… |                                                         │
+  │ 1-21 / 186  j/k scroll                                                                                           │
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+  Diff mode side-by-side; raw evidence remains available with e.
+  [1mm[22m next modified  [1mEnter[22m inspect  [1me[22m exact bytes  [1mTab[22m panes  [1mv[22m tree/flat  [1mq[22m quit
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  [1mpicocolors@1.1.1 / HISTORICAL / incomplete / Captured 2026-10-31T22:59:33Z                                          [22m
+  1 Overview   2 Findings   [4m[1m3 Files   [22m[24m4 Source   5 AI   6 Coverage
+  Raw retained evidence · Esc returns to its origin
+  [1mEvidence                                                                                                            [22m
+  Files > ev_f61f09233ab041767071cc94 / Esc restores position
+  [━━━━────────────────────────────] Reading evidence / indeterminate
+  ┌─[1m > Raw citation / artifact [22m──────────────────────────────────────────────────────────────────────────────────────┐
+  │ [1mev_f61f09233ab041767071cc94                                                                                     [22m │
+  │ BOTH / README.md                                                                                                 │
+  │ Reading bounded, hash-checked bytes…                                                                             │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │ Method: common-prefix-suffix-byte-span-v1                                                                        │
+  │ Availability: retained                                                                                           │
+  │ Verification: Not recorded                                                                                       │
+  │ Content digest: sha256:eb4c571d34dab1160ed59e4cd84bd6a38550bd22c9daa950055ea81f85e43e4b                          │
+  │ Limitation: One enclosing changed byte span, not semantic equivalence; full member bytes retained.               │
+  │ 1-10 / 10                                                                                                        │
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+
+
+
+
+
+
+
+
+  Reading bounded, hash-checked evidence…
+  [1mj/k[22m scroll  [1mTab[22m citation  [1ms[22m side  [1mp/b[22m page  [1mEsc[22m return  [1mq[22m quit
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  [1mpicocolors@1.1.1 / HISTORICAL / incomplete / Captured 2026-10-31T22:59:33Z                                          [22m
+  1 Overview   2 Findings   [4m[1m3 Files   [22m[24m4 Source   5 AI   6 Coverage
+  Raw retained evidence · Esc returns to its origin
+  [1mEvidence                                                                                                            [22m
+  Files > ev_f61f09233ab041767071cc94 / Esc restores position
+  ┌─[1m > Raw citation / artifact [22m──────────────────────────────────────────────────────────────────────────────────────┐
+  │ [1mev_f61f09233ab041767071cc94                                                                                     [22m │
+  │ BOTH / README.md                                                                                                 │
+  │ RAW utf8: [532, 621) / recorded [532, 621)                                                                       │
+  │ Window truncated: false / total blob 622 bytes                                                                   │
+  │                                                                                                                  │
+  │ Docs                                                                                                             │
+  │ Read **[full docs](https://github.com/alexeyraspopov/picocolors#readme)** on GitHub.                             │
+  │                                                                                                                  │
+  │ Method: common-prefix-suffix-byte-span-v1                                                                        │
+  │ Availability: retained                                                                                           │
+  │ Verification: Not recorded                                                                                       │
+  │ Content digest: sha256:eb4c571d34dab1160ed59e4cd84bd6a38550bd22c9daa950055ea81f85e43e4b                          │
+  │ Member: ev_73596ae4a9b9e96268c7161d                                                                              │
+  │ Content ref: sha256:5027b2836551ea0f91fa27b97335de905e24e1459d590eacfa45c0156962b70c                             │
+  │ Limitation: One enclosing changed byte span, not semantic equivalence; full member bytes retained.               │
+  │ 1-15 / 15                                                                                                        │
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+
+
+
+
+  evidence
+  [1mj/k[22m scroll  [1mTab[22m citation  [1ms[22m side  [1mp/b[22m page  [1mEsc[22m return  [1mq[22m quit
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  [1mpicocolors@1.1.1 / HISTORICAL / incomplete / Captured 2026-10-31T22:59:33Z                                          [22m
+  1 Overview   2 Findings   [4m[1m3 Files   [22m[24m4 Source   5 AI   6 Coverage
+  Historical — online checks have not refreshed · i Identity
+  [1mFiles                                                                                                               [22m
+  Files > Artifact / README.md / Esc restores position
+  ┌─[1m > Artifact / README.md [22m─────────────────────────────────────────────────────────────────────────────────────────┐
+  │ [1mmodified / different                                                                                            [22m │
+  │ SOURCE → ARTIFACT / bounded recorded byte spans; e exact bytes                                                   │
+  │ [1mRAW CHANGED SPANS / side-by-side                                                                                [22m │
+  │ SOURCE: raw utf8 bytes [532,4628) / truncated true                                                               │
+  │ ARTIFACT: raw utf8 bytes [532,621) / truncated false                                                             │
+  │ Viewer line alignment v1 / window-relative row numbers / e opens exact bytes                                     │
+  │ SOURCE (-)                                             | ARTIFACT (+)                                            │
+  │ S1 - Motivation                                        |                                                         │
+  │ S2 -                                                   |                                                         │
+  │ S3 - With `picocolors` we are trying to draw attentio… |                                                         │
+  │ S4 - problem and promote performance-first culture.    |                                                         │
+  │ S5 -                                                   |                                                         │
+  │ S6 - ## Prior Art                                      |                                                         │
+  │ S7 -                                                   |                                                         │
+  │ S8 - Credits go to the following projects:             |                                                         │
+  │ S9 -                                                   |                                                         │
+  │ S10 - - [Nanocolors](https://github.com/ai/nanocolors… |                                                         │
+  │ S11 - - [Colorette](https://github.com/jorgebucaran/c… |                                                         │
+  │ S12 - - [Kleur](https://github.com/lukeed/kleur) by [… |                                                         │
+  │ S13 - - [Colors.js](https://github.com/Marak/colors.j… |                                                         │
+  │ S14 - - [Chalk](https://github.com/chalk/chalk) by [@… |                                                         │
+  │ 1-21 / 186  j/k scroll                                                                                           │
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+  Files
+  [1mm[22m next modified  [1mEnter[22m inspect  [1me[22m exact bytes  [1mTab[22m panes  [1mv[22m tree/flat  [1mq[22m quit
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  [1mpicocolors@1.1.1 / HISTORICAL / incomplete / Captured 2026-10-31T22:59:33Z                                          [22m
+  1 Overview   2 Findings   [4m[1m3 Files   [22m[24m4 Source   5 AI   6 Coverage
+  Historical — online checks have not refreshed · i Identity
+  [1mFiles                                                                                                               [22m
+  Flat / 2 modified / 5 identical / 12 unresolved (19 change records) / m next modified / v tree-flat
+  ┌─[1m > Files [22m─────────── 19 ┐ ┌─[1m Raw source / artifact comparison [22m───────────────────────────────────────────────────┐
+  │   Source / .editorconf… │ │ [1mmodified / different                                                                [22m │
+  │   unresolved / unknown  │ │ SOURCE → ARTIFACT / bounded recorded byte spans; e exact bytes                       │
+  │                         │ │ [1mRAW CHANGED SPANS / side-by-side                                                    [22m │
+  │   Source / .github/wor… │ │ SOURCE: raw utf8 bytes [532,4628) / truncated true                                   │
+  │   unresolved / unknown  │ │ ARTIFACT: raw utf8 bytes [532,621) / truncated false                                 │
+  │                         │ │ Viewer line alignment v1 / window-relative row numbers / e opens exact bytes         │
+  │   Source / .github/wor… │ │ SOURCE (-)                               | ARTIFACT (+)                              │
+  │   unresolved / unknown  │ │ S1 - Motivation                          |                                           │
+  │                         │ │ S2 -                                     |                                           │
+  │   Source / .gitignore   │ │ S3 - With `picocolors` we are trying to… |                                           │
+  │   unresolved / unknown  │ │ S4 - problem and promote performance-fi… |                                           │
+  │                         │ │ S5 -                                     |                                           │
+  │   Source / CHANGELOG.md │ │ S6 - ## Prior Art                        |                                           │
+  │   unresolved / unknown  │ │ S7 -                                     |                                           │
+  │                         │ │ S8 - Credits go to the following projec… |                                           │
+  │   Artifact / LICENSE    │ │ S9 -                                     |                                           │
+  │   identical / equal     │ │ S10 - - [Nanocolors](https://github.com… |                                           │
+  │                         │ │ S11 - - [Colorette](https://github.com/… |                                           │
+  │ [1m> Artifact / README.md [22m │ │ S12 - - [Kleur](https://github.com/luke… |                                           │
+  │   modified / different  │ │ S13 - - [Colors.js](https://github.com/… |                                           │
+  │                         │ │ S14 - - [Chalk](https://github.com/chal… |                                           │
+  │ 7 / 19 · Enter inspect  │ │ 1-21 / 189  j/k scroll                                                               │
+  └─────────────────────────┘ └──────────────────────────────────────────────────────────────────────────────────────┘
+  Files
+  [1mm[22m next modified  [1mEnter[22m inspect  [1me[22m exact bytes  [1mTab[22m panes  [1mv[22m tree/flat  [1mq[22m quit
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  [1mpicocolors@1.1.1 / HISTORICAL / incomplete / Captured 2026-10-31T22:59:33Z                                          [22m
+  1 Overview   2 Findings   [4m[1m3 Files   [22m[24m4 Source   5 AI   6 Coverage
+  Historical — online checks have not refreshed · i Identity
+  [1mFiles                                                                                                               [22m
+  Flat / 2 modified / 5 identical / 12 unresolved (19 change records) / m next modified / v tree-flat
+  ┌─[1m > Files [22m─────────── 19 ┐ ┌─[1m Raw source / artifact comparison [22m───────────────────────────────────────────────────┐
+  │   Source / .editorconf… │ │ [1mmodified / different                                                                [22m │
+  │   unresolved / unknown  │ │ SOURCE → ARTIFACT / bounded recorded byte spans; e exact bytes                       │
+  │                         │ │ [1mRAW CHANGED SPANS / side-by-side                                                    [22m │
+  │   Source / .github/wor… │ │ SOURCE: raw utf8 bytes [532,4628) / truncated true                                   │
+  │   unresolved / unknown  │ │ ARTIFACT: raw utf8 bytes [532,621) / truncated false                                 │
+  │                         │ │ Viewer line alignment v1 / window-relative row numbers / e opens exact bytes         │
+  │   Source / .github/wor… │ │ SOURCE (-)                               | ARTIFACT (+)                              │
+  │   unresolved / unknown  │ │ S1 - Motivation                          |                                           │
+  │                         │ │ S2 -                                     |                                           │
+  │   Source / .gitignore   │ │ S3 - With `picocolors` we are trying to… |                                           │
+  │   unresolved / unknown  │ │ S4 - problem and promote performance-fi… |                                           │
+  │                         │ │ S5 -                                     |                                           │
+  │   Source / CHANGELOG.md │ │ S6 - ## Prior Art                        |                                           │
+  │   unresolved / unknown  │ │ S7 -                                     |                                           │
+  │                         │ │ S8 - Credits go to the following projec… |                                           │
+  │   Artifact / LICENSE    │ │ S9 -                                     |                                           │
+  │   identical / equal     │ │ S10 - - [Nanocolors](https://github.com… |                                           │
+  │                         │ │ S11 - - [Colorette](https://github.com/… |                                           │
+  │ [1m> Artifact / README.md [22m │ │ S12 - - [Kleur](https://github.com/luke… |                                           │
+  │   modified / different  │ │ S13 - - [Colors.js](https://github.com/… |                                           │
+  │                         │ │ S14 - - [Chalk](https://github.com/chal… |                                           │
+  │ 7 / 19 · Enter inspect  │ │ 1-21 / 189  j/k scroll                                                               │
+  └─────────────────────────┘ └──────────────────────────────────────────────────────────────────────────────────────┘
+  Filter: _
+  [1mm[22m next modified  [1mEnter[22m inspect  [1me[22m exact bytes  [1mTab[22m panes  [1mv[22m tree/flat
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  [1mpicocolors@1.1.1 / HISTORICAL / incomplete / Captured 2026-10-31T22:59:33Z                                          [22m
+  1 Overview   2 Findings   [4m[1m3 Files   [22m[24m4 Source   5 AI   6 Coverage
+  Historical — online checks have not refreshed · i Identity
+  [1mFiles                                                                                                               [22m
+  Matching files / 2 modified / 5 identical / 12 unresolved (19 change records) / m next modified / v tree-flat
+  ┌─[1m > Files [22m──────────── 1 ┐ ┌─[1m Raw source / artifact comparison [22m───────────────────────────────────────────────────┐
+  │ Filter: package.json    │ │ [1mFile:                                                                               [22m │
+  │                         │ │ modified / raw bytes different                                                       │
+  │ [1m> Artifact / package.j…[22m │ │                                                                                      │
+  │   modified / different  │ │ [1mPairing:                                                                            [22m │
+  │                         │ │ recorded source and artifact members for this change.                                │
+  │ 1 / 1 · Enter inspect   │ │ Raw inventory complete; source association remains ambiguous. One-sided records stay │
+  └─────────────────────────┘ │ unresolved; release-relative absence is not established.                             │
+                              │                                                                                      │
+                              │ [1mHistorical wording caveat:                                                          [22m │
+                              │ stored notes say incomplete inventory. Both raw inventories/stages are complete      │
+                              │ here; the producer also used that message when ambiguous source association blocked  │
+                              │ absence conclusions. Original notes are preserved below.                             │
+                              │                                                                                      │
+                              │ [1mArtifact path:                                                                      [22m │
+                              │ package/package.json                                                                 │
+                              │                                                                                      │
+                              │ [1mSource path:                                                                        [22m │
+                              │ picocolors-6f0a4638348ed20633d623ee973f9c9a96f65104/package.json                     │
+                              │ Raw difference follows; Enter full inspection, e exact bytes, s switches side in     │
+                              │ Evidence.                                                                            │
+                              │                                                                                      │
+                              │ 1-21 / 34  j/k scroll                                                                │
+                              └──────────────────────────────────────────────────────────────────────────────────────┘
+  Filter: package.json_
+  [1mm[22m next modified  [1mEnter[22m inspect  [1me[22m exact bytes  [1mTab[22m panes  [1mv[22m tree/flat
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  [1mpicocolors@1.1.1 / HISTORICAL / incomplete / Captured 2026-10-31T22:59:33Z                                          [22m
+  1 Overview   2 Findings   [4m[1m3 Files   [22m[24m4 Source   5 AI   6 Coverage
+  Historical — online checks have not refreshed · i Identity
+  [1mFiles                                                                                                               [22m
+  Matching files / 2 modified / 5 identical / 12 unresolved (19 change records) / m next modified / v tree-flat
+  ┌─[1m > Files [22m──────────── 1 ┐ ┌─[1m Raw source / artifact comparison [22m───────────────────────────────────────────────────┐
+  │ Filter: package.json    │ │ [1mmodified / different                                                                [22m │
+  │                         │ │ SOURCE → ARTIFACT / bounded recorded byte spans; e exact bytes                       │
+  │ [1m> Artifact / package.j…[22m │ │ [1mRAW CHANGED SPANS / side-by-side                                                    [22m │
+  │   modified / different  │ │ SOURCE: raw utf8 bytes [44,1104) / truncated false                                   │
+  │                         │ │ ARTIFACT: raw utf8 bytes [44,549) / truncated false                                  │
+  │ 1 / 1 · Enter inspect   │ │ Viewer line alignment v1 / window-relative row numbers / e opens exact bytes         │
+  └─────────────────────────┘ │ SOURCE (-)                               | ARTIFACT (+)                              │
+                              │ S1 - 0",                                 | A1 + 1",                                  │
+                              │ S2     "main": "./picocolors.js",        | A2     "main": "./picocolors.js",         │
+                              │ S3     "types": "./picocolors.d.ts",     | A3     "types": "./picocolors.d.ts",      │
+                              │ S4     "browser": {                      | A4     "browser": {                       │
+                              │ S5       "./picocolors.js": "./picocolo… | A5       "./picocolors.js": "./picocolo…  │
+                              │ S6     },                                | A6     },                                 │
+                              │ S7     "sideEffects": false,             | A7     "sideEffects": false,              │
+                              │ S8     "description": "The tiniest and … | A8     "description": "The tiniest and …  │
+                              │ S9 -   "scripts": {                      |                                           │
+                              │ S10 -     "test": "node tests/test.js"   |                                           │
+                              │ S11 -   },                               |                                           │
+                              │ S12     "files": [                       | A9     "files": [                         │
+                              │ S13       "picocolors.*",                | A10       "picocolors.*",                 │
+                              │ S14       "types.d.ts"                   | A11       "types.d.ts"                    │
+                              │ 1-21 / 90  j/k scroll                                                                │
+                              └──────────────────────────────────────────────────────────────────────────────────────┘
+  Filter: package.json_
+  [1mm[22m next modified  [1mEnter[22m inspect  [1me[22m exact bytes  [1mTab[22m panes  [1mv[22m tree/flat
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  [1mpicocolors@1.1.1 / HISTORICAL / incomplete / Captured 2026-10-31T22:59:33Z                                          [22m
+  1 Overview   2 Findings   [4m[1m3 Files   [22m[24m4 Source   5 AI   6 Coverage
+  Historical — online checks have not refreshed · i Identity
+  [1mFiles                                                                                                               [22m
+  Matching files / 2 modified / 5 identical / 12 unresolved (19 change records) / m next modified / v tree-flat
+  ┌─[1m > Files [22m──────────── 1 ┐ ┌─[1m Raw source / artifact comparison [22m───────────────────────────────────────────────────┐
+  │ Filter: package.json    │ │ [1mmodified / different                                                                [22m │
+  │                         │ │ SOURCE → ARTIFACT / bounded recorded byte spans; e exact bytes                       │
+  │ [1m> Artifact / package.j…[22m │ │ [1mRAW CHANGED SPANS / side-by-side                                                    [22m │
+  │   modified / different  │ │ SOURCE: raw utf8 bytes [44,1104) / truncated false                                   │
+  │                         │ │ ARTIFACT: raw utf8 bytes [44,549) / truncated false                                  │
+  │ 1 / 1 · Enter inspect   │ │ Viewer line alignment v1 / window-relative row numbers / e opens exact bytes         │
+  └─────────────────────────┘ │ SOURCE (-)                               | ARTIFACT (+)                              │
+                              │ S1 - 0",                                 | A1 + 1",                                  │
+                              │ S2     "main": "./picocolors.js",        | A2     "main": "./picocolors.js",         │
+                              │ S3     "types": "./picocolors.d.ts",     | A3     "types": "./picocolors.d.ts",      │
+                              │ S4     "browser": {                      | A4     "browser": {                       │
+                              │ S5       "./picocolors.js": "./picocolo… | A5       "./picocolors.js": "./picocolo…  │
+                              │ S6     },                                | A6     },                                 │
+                              │ S7     "sideEffects": false,             | A7     "sideEffects": false,              │
+                              │ S8     "description": "The tiniest and … | A8     "description": "The tiniest and …  │
+                              │ S9 -   "scripts": {                      |                                           │
+                              │ S10 -     "test": "node tests/test.js"   |                                           │
+                              │ S11 -   },                               |                                           │
+                              │ S12     "files": [                       | A9     "files": [                         │
+                              │ S13       "picocolors.*",                | A10       "picocolors.*",                 │
+                              │ S14       "types.d.ts"                   | A11       "types.d.ts"                    │
+                              │ 1-21 / 90  j/k scroll                                                                │
+                              └──────────────────────────────────────────────────────────────────────────────────────┘
+  Files
+  [1mm[22m next modified  [1mEnter[22m inspect  [1me[22m exact bytes  [1mTab[22m panes  [1mv[22m tree/flat  [1mq[22m quit
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  [1mpicocolors@1.1.1 / HISTORICAL / incomplete / Captured 2026-10-31T22:59:33Z                                          [22m
+  1 Overview   2 Findings   [4m[1m3 Files   [22m[24m4 Source   5 AI   6 Coverage
+  Historical — online checks have not refreshed · i Identity
+  [1mFiles                                                                                                               [22m
+  Files > Artifact / package.json / Esc restores position
+  ┌─[1m > Artifact / package.json [22m──────────────────────────────────────────────────────────────────────────────────────┐
+  │ [1mmodified / different                                                                                            [22m │
+  │ SOURCE → ARTIFACT / bounded recorded byte spans; e exact bytes                                                   │
+  │ [1mRAW CHANGED SPANS / side-by-side                                                                                [22m │
+  │ SOURCE: raw utf8 bytes [44,1104) / truncated false                                                               │
+  │ ARTIFACT: raw utf8 bytes [44,549) / truncated false                                                              │
+  │ Viewer line alignment v1 / window-relative row numbers / e opens exact bytes                                     │
+  │ SOURCE (-)                                             | ARTIFACT (+)                                            │
+  │ S1 - 0",                                               | A1 + 1",                                                │
+  │ S2     "main": "./picocolors.js",                      | A2     "main": "./picocolors.js",                       │
+  │ S3     "types": "./picocolors.d.ts",                   | A3     "types": "./picocolors.d.ts",                    │
+  │ S4     "browser": {                                    | A4     "browser": {                                     │
+  │ S5       "./picocolors.js": "./picocolors.browser.js"  | A5       "./picocolors.js": "./picocolors.browser.js"   │
+  │ S6     },                                              | A6     },                                               │
+  │ S7     "sideEffects": false,                           | A7     "sideEffects": false,                            │
+  │ S8     "description": "The tiniest and the fastest li… | A8     "description": "The tiniest and the fastest li…  │
+  │ S9 -   "scripts": {                                    |                                                         │
+  │ S10 -     "test": "node tests/test.js"                 |                                                         │
+  │ S11 -   },                                             |                                                         │
+  │ S12     "files": [                                     | A9     "files": [                                       │
+  │ S13       "picocolors.*",                              | A10       "picocolors.*",                               │
+  │ S14       "types.d.ts"                                 | A11       "types.d.ts"                                  │
+  │ 1-21 / 87  j/k scroll                                                                                            │
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+  Files
+  [1mm[22m next modified  [1mEnter[22m inspect  [1me[22m exact bytes  [1mTab[22m panes  [1mv[22m tree/flat  [1mq[22m quit
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  [1mpicocolors@1.1.1 / HISTORICAL / incomplete / Captured 2026-10-31T22:59:33Z                                          [22m
+  1 Overview   2 Findings   [4m[1m3 Files   [22m[24m4 Source   5 AI   6 Coverage
+  Historical — online checks have not refreshed · i Identity
+  [1mFiles                                                                                                               [22m
+  Matching files / 2 modified / 5 identical / 12 unresolved (19 change records) / m next modified / v tree-flat
+  ┌─[1m > Files [22m──────────── 1 ┐ ┌─[1m Raw source / artifact comparison [22m───────────────────────────────────────────────────┐
+  │ Filter: package.json    │ │ [1mmodified / different                                                                [22m │
+  │                         │ │ SOURCE → ARTIFACT / bounded recorded byte spans; e exact bytes                       │
+  │ [1m> Artifact / package.j…[22m │ │ [1mRAW CHANGED SPANS / side-by-side                                                    [22m │
+  │   modified / different  │ │ SOURCE: raw utf8 bytes [44,1104) / truncated false                                   │
+  │                         │ │ ARTIFACT: raw utf8 bytes [44,549) / truncated false                                  │
+  │ 1 / 1 · Enter inspect   │ │ Viewer line alignment v1 / window-relative row numbers / e opens exact bytes         │
+  └─────────────────────────┘ │ SOURCE (-)                               | ARTIFACT (+)                              │
+                              │ S1 - 0",                                 | A1 + 1",                                  │
+                              │ S2     "main": "./picocolors.js",        | A2     "main": "./picocolors.js",         │
+                              │ S3     "types": "./picocolors.d.ts",     | A3     "types": "./picocolors.d.ts",      │
+                              │ S4     "browser": {                      | A4     "browser": {                       │
+                              │ S5       "./picocolors.js": "./picocolo… | A5       "./picocolors.js": "./picocolo…  │
+                              │ S6     },                                | A6     },                                 │
+                              │ S7     "sideEffects": false,             | A7     "sideEffects": false,              │
+                              │ S8     "description": "The tiniest and … | A8     "description": "The tiniest and …  │
+                              │ S9 -   "scripts": {                      |                                           │
+                              │ S10 -     "test": "node tests/test.js"   |                                           │
+                              │ S11 -   },                               |                                           │
+                              │ S12     "files": [                       | A9     "files": [                         │
+                              │ S13       "picocolors.*",                | A10       "picocolors.*",                 │
+                              │ S14       "types.d.ts"                   | A11       "types.d.ts"                    │
+                              │ 1-21 / 90  j/k scroll                                                                │
+                              └──────────────────────────────────────────────────────────────────────────────────────┘
+  Files
+  [1mm[22m next modified  [1mEnter[22m inspect  [1me[22m exact bytes  [1mTab[22m panes  [1mv[22m tree/flat  [1mq[22m quit
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  [1mpicocolors@1.1.1 / HISTORICAL / incomplete / Captured 2026-10-31T22:59:33Z                                          [22m
+  1 Overview   2 Findings   3 Files   [4m[1m4 Source   [22m[24m5 AI   6 Coverage
+  Historical — online checks have not refreshed · i Identity
+  [1mSource                                                                                                              [22m
+  [Candidates]  Provenance  Build
+  ┌─[1m > Source records [22m────────── 1 ┐ ┌─[1m Source details [22m──────────────────────────────────────────────────────────────┐
+  │ [1m> Candidate 1 / 6f0a4638348e  [22m │ │ [1mAssociation ambiguous — this candidate is not a verified release baseline.   [22m │
+  │   ambiguous                    │ │ Compared target: this repository / commit / package directory was selected.   │
+  │                                │ │ Candidate basis: user-override, registry, artifact-manifest, version-tag.     │
+  │ 1 / 1 · Enter inspect          │ │ Version labels: artifact 1.1.1; selected source 1.1.0. Evidence               │
+  └────────────────────────────────┘ │ ev_3ca16ad46cd957d737ef0c18 (e opens exact values; s switches side).          │
+                                     │ SOURCE CONFLICT: SOURCE_VERSION_LABEL_DIFFERS                                 │
+                                     │ Subdirectory: (repository root)                                               │
+                                     │ New investigation with this target: n opens a new draft, then Review and      │
+                                     │ Start. Edit the commit before Review to investigate another candidate. This   │
+                                     │ report stays immutable.                                                       │
+                                     │ Discovery limitation: version-tag v1.1.1 — SOURCE_TAG_RATE_LIMITED. This is   │
+                                     │ not evidence that the tag is absent.                                          │
+                                     │ Discovery limitation: version-tag 1.1.1 —                                     │
+                                     │ SOURCE_TAG_DISCOVERY_SKIPPED_RATE_LIMIT. This is not evidence that the tag is │
+                                     │ absent.                                                                       │
+                                     │ Artifact check: integrity matched. Source claim: ambiguous. Digest agreement  │
+                                     │ checks acquired artifact bytes against registry metadata, not source          │
+                                     │ provenance.                                                                   │
+                                     │ Provenance: not_checked; build stage skipped. No release binding follows from │
+                                     │ matching version labels.                                                      │
+                                     │ Next action: inspect the conflicting manifest values and release claims;      │
+                                     │ 1-21 / 28  j/k scroll                                                         │
+                                     └───────────────────────────────────────────────────────────────────────────────┘
+  SOURCE CONFLICT / inspect source claims
+  [1mv[22m subtabs  [1mEnter[22m inspect  [1me[22m evidence  [1mn[22m new target  [1mTab[22m panes  [1mq[22m quit
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  [1mpicocolors@1.1.1 / HISTORICAL / incomplete / Captured 2026-10-31T22:59:33Z                                          [22m
+  1 Overview   2 Findings   3 Files   [4m[1m4 Source   [22m[24m5 AI   6 Coverage
+  Historical — online checks have not refreshed · i Identity
+  [1mSource                                                                                                              [22m
+  Source > Candidate 1 / 6f0a4638348e / Esc restores position
+  ┌─[1m > Candidate 1 / 6f0a4638348e [22m───────────────────────────────────────────────────────────────────────────────────┐
+  │ [1mAssociation ambiguous — this candidate is not a verified release baseline.                                      [22m │
+  │ Compared target: this repository / commit / package directory was selected.                                      │
+  │ Candidate basis: user-override, registry, artifact-manifest, version-tag.                                        │
+  │ Version labels: artifact 1.1.1; selected source 1.1.0. Evidence ev_3ca16ad46cd957d737ef0c18 (e opens exact       │
+  │ values; s switches side).                                                                                        │
+  │ SOURCE CONFLICT: SOURCE_VERSION_LABEL_DIFFERS                                                                    │
+  │ Subdirectory: (repository root)                                                                                  │
+  │ New investigation with this target: n opens a new draft, then Review and Start. Edit the commit before Review to │
+  │ investigate another candidate. This report stays immutable.                                                      │
+  │ Discovery limitation: version-tag v1.1.1 — SOURCE_TAG_RATE_LIMITED. This is not evidence that the tag is absent. │
+  │ Discovery limitation: version-tag 1.1.1 — SOURCE_TAG_DISCOVERY_SKIPPED_RATE_LIMIT. This is not evidence that the │
+  │ tag is absent.                                                                                                   │
+  │ Artifact check: integrity matched. Source claim: ambiguous. Digest agreement checks acquired artifact bytes      │
+  │ against registry metadata, not source provenance.                                                                │
+  │ Provenance: not_checked; build stage skipped. No release binding follows from matching version labels.           │
+  │ Next action: inspect the conflicting manifest values and release claims; choose another immutable target if      │
+  │ warranted.                                                                                                       │
+  │ Repository: https://github.com/alexeyraspopov/picocolors                                                         │
+  │ Commit: 6f0a4638348ed20633d623ee973f9c9a96f65104                                                                 │
+  │ Snapshot: sha256:87646ed7f9b372d94da80ec298ef4ec6fc0c2a56bb60e0b325a9705037408c7c                                │
+  │ Build context: sha256:6383b97048e27e8ab0a0cfeecce3bc80b06ebf180528085638aacc6bd3ca0a04                           │
+  │ 1-21 / 21                                                                                                        │
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+  SOURCE CONFLICT / inspect source claims
+  [1mv[22m subtabs  [1mEnter[22m inspect  [1me[22m evidence  [1mn[22m new target  [1mTab[22m panes  [1mq[22m quit
+

@@ -68,7 +68,7 @@ test('draft, reopen and selected job render their own contexts without historica
  const draft = renderToStaticMarkup(React.createElement(Investigation, { onStart() {} }));
  const open = renderToStaticMarkup(React.createElement(OpenEvidence, { onOpen() {} }));
  const job = renderToStaticMarkup(React.createElement(JobDetail, { job: { id, phase: 'cancel_requested', events: [], omittedEvents: 0, startedAt: '2026-11-01T00:00:00Z', cancellationRequested: true, cleanup: 'not_observable' }, onCancel() {}, error: 'LOCAL_SERVICE_UNAVAILABLE' }));
- assert.match(draft, /Start an investigation/); assert.ok(!draft.includes('Reopen saved evidence')); assert.match(open, /Open saved evidence/); assert.ok(!open.includes('name="target"'));
+ assert.match(draft, /<h1>What do you want to investigate\?<\/h1>/); assert.match(draft, /id="investigate-target"[^>]*value=""/); assert.ok(!draft.includes('Reopen saved evidence')); assert.match(open, /Continue from retained evidence/); assert.ok(!open.includes('name="target"'));
  for (const text of [draft, open, job]) { assert.ok(!text.includes('SELECTED REPORT')); assert.ok(!text.includes('Save report JSON')); assert.ok(!text.includes('SAVED / HISTORICAL')); }
  assert.match(job, /cancel_requested/); assert.match(job, /not_observable/); assert.match(job, /Status uncertain/); assert.ok(!job.includes('Open report and evidence'));
  const shell = renderToStaticMarkup(React.createElement(App)); assert.match(shell, /href="\/docs\/start\/quickstart"/); assert.match(shell, /href="\/workspace\/new"/); assert.ok(!shell.includes('SELECTED REPORT'));

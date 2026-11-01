@@ -1,0 +1,26 @@
+  HEURISKO   H Home    I Investigations     M Monitoring                            
+  ────────────────────────────────────────────────────────────────────────────────  
+  picocolors@1.1.1 / HISTORICAL / incomplete / Captured 2026-10-31T22:59:33Z        
+  1 Overview   2 Findings   3 Files   4 Source   5 AI   6 Coverage                  
+  Raw retained evidence · Esc returns to its origin                                 
+  Evidence                                                                          
+  Files > ev_f61f09233ab041767071cc94 / Esc restores position                       
+  ┌─ > Raw citation / artifact ──────────────────────────────────────────────────┐  
+  │ ev_f61f09233ab041767071cc94                                                  │  
+  │ BOTH / README.md                                                             │  
+  │ RAW utf8: [532, 621) / recorded [532, 621)                                   │  
+  │ Window truncated: false / total blob 622 bytes                               │  
+  │                                                                              │  
+  │ Docs                                                                         │  
+  │ Read **[full docs](https://github.com/alexeyraspopov/picocolors#readme)** on │  
+  │ GitHub.                                                                      │  
+  │                                                                              │  
+  │ Method: common-prefix-suffix-byte-span-v1                                    │  
+  │ Availability: retained                                                       │  
+  │ Verification: Not recorded                                                   │  
+  │ 1-12 / 19  j/k scroll                                                        │  
+  └──────────────────────────────────────────────────────────────────────────────┘  
+  evidence                                                                          
+  j/k scroll  Tab citation  s side  p/b page  Esc return  q quit                    
+                                                                                    
+                                                                                    

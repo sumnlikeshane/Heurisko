@@ -104,16 +104,21 @@ export class ReportReader {
   static async openJSON(raw:string,storeRoot:string,context:ValidationContext={}) {
     const report=await decodeReport(raw,context);return new ReportReader(report,raw,storeRoot);
   }
+  static async openBytes(bytes:Uint8Array,storeRoot:string,context:ValidationContext={}) {
+    if(context.signal?.aborted) throw new BoundaryError('CANCELLED');
+    if(bytes.byteLength>readerLimits.reportBytes) throw new ReportOpenError('REPORT_READ_LIMIT_OR_TYPE');
+    let raw:string;
+    try {raw=new TextDecoder('utf-8',{fatal:true,ignoreBOM:true}).decode(bytes);}
+    catch {throw new ReportOpenError('REPORT_ENCODING_INVALID');}
+    return this.openJSON(raw,storeRoot,context);
+  }
   static async openFile(path:string,storeRoot:string,context:ValidationContext={}) {
     if(context.signal?.aborted) throw new BoundaryError('CANCELLED');
     let bytes:Buffer;
     try {bytes=await boundedFile(resolve(path),readerLimits.reportBytes);}
     catch(error) {throw new ReportOpenError((error as {code?:string})?.code==='FILE_LIMIT_OR_TYPE'?'REPORT_READ_LIMIT_OR_TYPE':'REPORT_READ_FAILED');}
     if(context.signal?.aborted) throw new BoundaryError('CANCELLED');
-    let raw:string;
-    try {raw=new TextDecoder('utf-8',{fatal:true,ignoreBOM:true}).decode(bytes);}
-    catch {throw new ReportOpenError('REPORT_ENCODING_INVALID');}
-    return this.openJSON(raw,storeRoot,context);
+    return this.openBytes(bytes,storeRoot,context);
   }
   static async fromReport(report:InvestigationReport,storeRoot:string,context:ValidationContext={}) {
     // encodeReport snapshots before awaiting validation; no caller mutation race.
@@ -172,7 +177,13 @@ export class ReportReader {
       const linkedIds=new Set(this.report.bundle.changes.filter(c=>c.evidenceIds.includes(id as EvidenceId)).flatMap(c=>c.evidenceIds));
       const members=[...this.#evidence.values()].filter(e=>e.kind===side+'_member'&&e.side===side&&e.contentSha256===ref&&(e.contentRef===undefined||e.contentRef===ref)&&linkedIds.has(e.evidenceId)&&(path===undefined||e.locator.path===path));
       if(members.length!==1) return this.#metadata('UNBOUND_MEMBER',evidence);
-      return this.#content(evidence,range,window,'recorded_byte_range',members[0]);
+      const member=members[0]!,loc=member.locator;
+      // The retained delta cannot widen the scope of its linked member record.
+      // A full-content member without ranges still denotes the whole blob.
+      if(loc.startByte!==undefined&&loc.endByte!==undefined) {
+        if(range.startByte<loc.startByte||range.endByte>loc.endByte) return this.#metadata('INVALID_RANGE',evidence);
+      } else if(loc.startLine!==undefined||loc.endLine!==undefined||loc.startByte!==undefined||loc.endByte!==undefined) return this.#metadata('LINE_RANGE_UNSUPPORTED',evidence);
+      return this.#content(evidence,range,window,'recorded_byte_range',member);
     } catch(error) {return this.#metadata(reasonFor(error,window.signal),evidence);}
   }
 }

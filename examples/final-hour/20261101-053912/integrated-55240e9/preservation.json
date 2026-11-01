@@ -1,0 +1,25 @@
+{
+  "version": "heurisko-default-integration-preservation-v1",
+  "checkedAt": "2026-11-01T00:29:25.561Z",
+  "originalExampleChecks": [
+    {
+      "path": "examples/p04/local-mutation/inputs/picocolors-1.1.1.local-inert-mutation.tgz",
+      "expectedSha256": "sha256:bcdd003ee749b70575fb2793d3892a393d1224457ecb8ca9c37ff4cfd55e098d",
+      "actualSha256": "sha256:bcdd003ee749b70575fb2793d3892a393d1224457ecb8ca9c37ff4cfd55e098d",
+      "unchanged": true
+    },
+    {
+      "path": "examples/p04/local-mutation/inputs/picocolors-source-7249f8c5d4825550f70bc1ea98652639933d3bbd.tar.gz",
+      "expectedSha256": "sha256:c1053a4131e05d3e62088b3988f4cefe16e05b1a90db59115bf7706f7350e7de",
+      "actualSha256": "sha256:c1053a4131e05d3e62088b3988f4cefe16e05b1a90db59115bf7706f7350e7de",
+      "unchanged": true
+    },
+    {
+      "path": "examples/p04/local-mutation/report.json",
+      "expectedSha256": "sha256:47b100f689e4f11c95b7e3fc90541b0abd909e05060c73d071ebdb22c7c65eb2",
+      "actualSha256": "sha256:47b100f689e4f11c95b7e3fc90541b0abd909e05060c73d071ebdb22c7c65eb2",
+      "unchanged": true
+    }
+  ],
+  "originalReportMatchesBeforeIntegrationIntake": true
+}

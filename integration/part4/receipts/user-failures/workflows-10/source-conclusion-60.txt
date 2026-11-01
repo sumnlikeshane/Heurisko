@@ -1,0 +1,20 @@
+  HEURISKO                                                  
+   H Home    I Investigations     M Monitoring              
+  ────────────────────────────────────────────────────────  
+  picocolors@1.1.1 / HISTORICAL / incomplete / Captured 2…  
+  1 Ov  2 Find  3 Files  4 Src  5 AI  6 Scope               
+  Historical — online checks have not refreshed · i Ident…  
+  Source                                                    
+  Source > Candidate 1 / 6f0a4638348e / Esc restores posi…  
+  ┌─ > Candidate 1 / 6f0a4638348e ───────────────────────┐  
+  │ directory was selected.                              │  
+  │ Candidate basis: user-override, registry,            │  
+  │ artifact-manifest, version-tag.                      │  
+  │ Version labels: artifact 1.1.1; selected source      │  
+  │ 1.1.0. Evidence ev_3ca16ad46cd957d737ef0c18 (e opens │  
+  │ 4-8 / 40  j/k scroll                                 │  
+  └──────────────────────────────────────────────────────┘  
+  SOURCE CONFLICT / inspect source claims                   
+  v subtabs  Enter inspect  e evidence  Tab panes  q quit   
+                                                            
+                                                            

@@ -7,7 +7,7 @@ const root = fileURLToPath(new URL('../../../', import.meta.url));
 export type ContractKind = 'ArtifactInput'|'AnalysisOptions'|'EvidenceBundle'|'AnalysisResults'|'InvestigationReport'|'WatchState'|'Job';
 export interface ValidationContext { signal?: AbortSignal; pythonExecutable?: string }
 export class BoundaryError extends Error {
-  constructor(public readonly code: 'CONTRACT_INVALID'|'VALIDATOR_UNAVAILABLE'|'VALIDATION_LIMIT'|'CANCELLED') { super(code); }
+  constructor(public readonly code: 'CONTRACT_INVALID'|'VALIDATOR_UNAVAILABLE'|'VALIDATION_LIMIT'|'CANCELLED'|'REPORT_ENCODING_INVALID') { super(code); }
 }
 export async function validateContract(kind: ContractKind, value: unknown, context: ValidationContext = {}, bundle?: EvidenceBundle): Promise<void> {
   return runValidator({kind, value, bundle}, context);
@@ -60,6 +60,15 @@ export async function decodeReport(bytes: string, context?: ValidationContext): 
   // round unsafe integers. Python accepts only the shared safe-number domain.
   await runValidator({kind:'InvestigationReport', rawValue:bytes}, context ?? {});
   return JSON.parse(bytes) as InvestigationReport;
+}
+// Report bytes must never be repaired by replacement decoding: their original
+// encoding is part of the content identity, including an unsupported BOM.
+export async function decodeReportBytes(bytes:Uint8Array,context?:ValidationContext):Promise<InvestigationReport> {
+  if(bytes.byteLength>8*1024*1024)throw new BoundaryError('VALIDATION_LIMIT');
+  let raw:string;
+  try {raw=new TextDecoder('utf-8',{fatal:true,ignoreBOM:true}).decode(bytes);}
+  catch {throw new BoundaryError('REPORT_ENCODING_INVALID');}
+  return decodeReport(raw,context);
 }
 export async function decodeBundle(bytes:string,context?:ValidationContext):Promise<EvidenceBundle> {
   if(Buffer.byteLength(bytes)>8*1024*1024)throw new BoundaryError('VALIDATION_LIMIT');

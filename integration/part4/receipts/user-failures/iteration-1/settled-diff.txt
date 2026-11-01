@@ -1,0 +1,35 @@
+  HEURISKO   H Home    I Investigations     M Monitoring                                                                
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+  picocolors@1.1.1 / HISTORICAL / incomplete / Captured 2026-10-31T22:59:33Z                                            
+  1 Overview   2 Findings   3 Files   4 Source   5 AI   6 Coverage                                                      
+  Historical — online checks have not refreshed · i Identity                                                            
+  Files                                                                                                                 
+  Files > package/README.md / Esc restores position                                                                     
+  ┌─ > package/README.md ────────────────────────────────────────────────────────────────────────────────────────────┐  
+  │ modified / different                                                                                             │  
+  │ SOURCE → ARTIFACT / bounded recorded byte spans; e exact bytes                                                   │  
+  │ RAW CHANGED SPANS / side-by-side                                                                                 │  
+  │ SOURCE: raw utf8 bytes [532,4628) / truncated true                                                               │  
+  │ ARTIFACT: raw utf8 bytes [532,621) / truncated false                                                             │  
+  │ Viewer line alignment v1 / window-relative row numbers / e opens exact bytes                                     │  
+  │ SOURCE (-)                                             | ARTIFACT (+)                                            │  
+  │ S1 - Motivation                                        |                                                         │  
+  │ S2 -                                                   |                                                         │  
+  │ S3 - With `picocolors` we are trying to draw attentio… |                                                         │  
+  │ S4 - problem and promote performance-first culture.    |                                                         │  
+  │ S5 -                                                   |                                                         │  
+  │ S6 - ## Prior Art                                      |                                                         │  
+  │ S7 -                                                   |                                                         │  
+  │ S8 - Credits go to the following projects:             |                                                         │  
+  │ S9 -                                                   |                                                         │  
+  │ S10 - - [Nanocolors](https://github.com/ai/nanocolors… |                                                         │  
+  │ S11 - - [Colorette](https://github.com/jorgebucaran/c… |                                                         │  
+  │ S12 - - [Kleur](https://github.com/lukeed/kleur) by [… |                                                         │  
+  │ S13 - - [Colors.js](https://github.com/Marak/colors.j… |                                                         │  
+  │ S14 - - [Chalk](https://github.com/chalk/chalk) by [@… |                                                         │  
+  │ 1-21 / 186  j/k scroll                                                                                           │  
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘  
+  Modified file / package/README.md / Enter inspect; e exact bytes.                                                     
+  m next modified  Enter inspect  e exact bytes  Tab panes  v tree/flat  q quit                                         
+                                                                                                                        
+                                                                                                                        

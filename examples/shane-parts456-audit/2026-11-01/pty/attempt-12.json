@@ -1,0 +1,54 @@
+{
+  "scope": "actual product keyboard; source metadata, navigation, raw bytes, safe errors, state reset",
+  "checks": [
+    {
+      "check": "HEURISKO",
+      "passed": true
+    },
+    {
+      "check": "HISTORICAL",
+      "passed": true
+    },
+    {
+      "check": "Source conflict",
+      "passed": true
+    },
+    {
+      "check": "[Candidates]",
+      "passed": true
+    },
+    {
+      "check": "[Provenance]",
+      "passed": true
+    },
+    {
+      "check": "[Build]",
+      "passed": true
+    },
+    {
+      "check": "[Candidates]",
+      "passed": true
+    },
+    {
+      "check": "New investigation",
+      "passed": true
+    },
+    {
+      "check": "Review exact target",
+      "passed": true
+    },
+    {
+      "check": "[Candidates]",
+      "passed": true
+    },
+    {
+      "check": "HEURISKO",
+      "passed": true
+    },
+    {
+      "check": "HISTORICAL",
+      "passed": true
+    }
+  ],
+  "count": 12
+}

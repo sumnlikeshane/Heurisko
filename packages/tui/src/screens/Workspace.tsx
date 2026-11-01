@@ -3,7 +3,7 @@ import React from 'react';
 import {Box} from 'ink';
 import {Panel,Row} from '../components/Panel.js';
 import {DocumentPane,type Line,documentLines} from '../components/DocumentPane.js';
-import {wrap} from '../terminal/safe-text.js';
+import {wrap,fit} from '../terminal/safe-text.js';
 import {workspaceLayout} from '../terminal/workspace-layout.js';
 import type {Item} from '../model.js';
 import type {Theme} from '../tokens.js';
@@ -16,11 +16,13 @@ export function structuredLines(lines:readonly string[]):Line[]{
 export function Workspace({columns,height,theme,title,subtitle,items,index,focus,scroll,scrolls,detail,query,refs,active=true,citation,detailLines,supportLines}:{columns:number;height:number;theme:Theme;title:string;subtitle:string;items:Item[];index:number;focus:number;scroll:number;scrolls:readonly number[];detail:boolean;query:string;refs:readonly string[];active?:boolean;citation:number;detailLines:Line[];supportLines:Line[]}){
  const width=columns-4,selected=items[Math.min(index,Math.max(0,items.length-1))],hasSupport=refs.length>0,isFiles=title==='Files',geometry=workspaceLayout(columns,height,focus,detail,isFiles,!hasSupport),paneHeight=geometry.height,inspector=detail,panes=detail?[1]:geometry.visible;
 
+ if(!items.length)return <DocumentPane title={title} lines={detailLines} width={width} height={height} scroll={scroll} focused={active} theme={theme}/>;
+
  return <Box width={width} height={height} flexDirection="column"><Row width={width} theme={theme} bold>{title}</Row><Row width={width} theme={theme} tone={inspector?'accent':'muted'}>{inspector?`${title} > ${selected?.label??'No record'} / Esc restores position`:subtitle}</Row><Box gap={1}>
  {panes.map(pane=>{
   const w=inspector?width:geometry.widths[panes.indexOf(pane)]!;
-  if(pane!==0)return <DocumentPane key={pane} title={pane===2?'Supporting evidence':inspector?selected?.label??title:title==='Findings'?'Observation & assessment':title==='Files'?'Raw source / artifact comparison':title+' details'} lines={pane===2?supportLines:detailLines} width={w} height={paneHeight} scroll={inspector?scroll:scrolls[pane]??0} focused={active&&(inspector||focus===pane)} theme={theme}/>;
-  const inner=w-4,capacity=Math.max(1,paneHeight-3-(query?2:0)),rows=items.map(item=>({item,labels:wrap(item.label,Math.max(1,inner-2)).slice(0,isFiles?1:2),meta:item.meta}));
+  if(pane!==0)return <DocumentPane key={pane} title={pane===2?'Supporting evidence':isFiles&&selected?.directory?'Directory / navigation':inspector?selected?.label??title:title==='Findings'?'Observation & assessment':isFiles?'Raw source / artifact comparison':title+' details'} lines={pane===2?supportLines:detailLines} width={w} height={paneHeight} scroll={inspector?scroll:scrolls[pane]??0} focused={active&&(inspector||focus===pane)} theme={theme}/>;
+  const inner=w-4,capacity=Math.max(1,paneHeight-3-(query?2:0)),rows=items.map(item=>({item,labels:isFiles?[fit(item.label,Math.max(1,inner-2))]:wrap(item.label,Math.max(1,inner-2)).slice(0,2),meta:item.meta}));
   const at=Math.min(index,Math.max(0,rows.length-1));let start=at,used=(rows[at]?.labels.length??0)+(rows[at]?.meta?1:0)+1;
   while(start>0){const r=rows[start-1]!,n=r.labels.length+(r.meta?1:0)+1;if(used+n>capacity)break;used+=n;start--;}
   const visible:typeof rows=[];used=0;for(const row of rows.slice(start)){const n=row.labels.length+(row.meta?1:0)+1;if(used+n>capacity)break;visible.push(row);used+=n;}

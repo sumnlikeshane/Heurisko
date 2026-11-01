@@ -1,0 +1,467 @@
+{
+  "version": "heurisko-shane-parts456-audit-v1",
+  "recordedAt": "2026-11-01T00:35:15.966661+00:00",
+  "dateTimezone": "Asia/Kolkata",
+  "scope": "Shane-owned Parts4\u20136, starting implementation plus audit repairs; Part5 unstarted; no Malhar adoption.",
+  "assembly": "Final full pass applies to isolated baseline-plus-audit assembly. Active incoming engine/loader integration is preserved and not certified. Latest active audit typecheck attempted failed (exit2).",
+  "environment": {
+    "os": "Darwin arm64",
+    "node": "22.23.4",
+    "pnpm": "10.14.0",
+    "validatorPython": "3.13.2",
+    "ptyPython": "3.14.7",
+    "pyte": "0.8.2",
+    "wcwidth": "0.2.13",
+    "docker": "28.4.0",
+    "parser": "python:3.13.18-slim-bookworm@sha256:281d39ff02e3b389401586134ff9e6572954687822a58055ec07a60ded4e0b7f",
+    "dependencyInstall": false,
+    "approvedExistingParserImageRestored": true
+  },
+  "commands": [
+    {
+      "label": "environment",
+      "command": "node --version && pnpm --version && python3 --version && uname -sm && docker version --format \"{{.Client.Version}} / {{.Server.Version}}\"",
+      "startedAt": "2026-11-01T00:04:59.030615+00:00",
+      "elapsedSeconds": 0.653,
+      "exitCode": 1,
+      "tap": {},
+      "publicLog": "logs/environment.log"
+    },
+    {
+      "label": "docker-preflight",
+      "command": "docker version --format \"{{.Client.Version}} / {{.Server.Version}}\" && docker image inspect python:3.13.18-slim-bookworm@sha256:281d39ff02e3b389401586134ff9e6572954687822a58055ec07a60ded4e0b7f --format \"{{.Id}}\" && docker container ls --all --quiet --no-trunc --filter name=heurisko-parser-",
+      "startedAt": "2026-11-01T00:05:06.219175+00:00",
+      "elapsedSeconds": 0.175,
+      "exitCode": 1,
+      "tap": {},
+      "publicLog": "logs/docker-preflight.log"
+    },
+    {
+      "label": "workspace-typecheck",
+      "command": "pnpm run typecheck",
+      "startedAt": "2026-11-01T00:05:11.909961+00:00",
+      "elapsedSeconds": 14.47,
+      "exitCode": 0,
+      "tap": {},
+      "publicLog": "logs/workspace-typecheck.log"
+    },
+    {
+      "label": "parser-image-restore",
+      "command": "docker pull python:3.13.18-slim-bookworm@sha256:281d39ff02e3b389401586134ff9e6572954687822a58055ec07a60ded4e0b7f",
+      "startedAt": "2026-11-01T00:05:15.952706+00:00",
+      "elapsedSeconds": 12.314,
+      "exitCode": 0,
+      "tap": {},
+      "publicLog": "logs/parser-image-restore.log"
+    },
+    {
+      "label": "cli-boundary",
+      "command": "node --test packages/core/tests/cli-boundary.test.mjs",
+      "startedAt": "2026-11-01T00:05:41.689315+00:00",
+      "elapsedSeconds": 3.091,
+      "exitCode": 0,
+      "tap": {
+        "tests": 5,
+        "pass": 5,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0
+      },
+      "publicLog": "logs/cli-boundary.log"
+    },
+    {
+      "label": "contracts",
+      "command": "pnpm run test:contracts",
+      "startedAt": "2026-11-01T00:05:46.153106+00:00",
+      "elapsedSeconds": 0.311,
+      "exitCode": 0,
+      "tap": {},
+      "publicLog": "logs/contracts.log"
+    },
+    {
+      "label": "web-root-label-repro",
+      "command": "node --input-type=module - <<'JS'\nimport fs from \"node:fs/promises\";\nimport React from \"./apps/web/node_modules/react/index.js\";\nimport {renderToStaticMarkup} from \"./apps/web/node_modules/react-dom/server.node.js\";\nimport {Sources} from \"./apps/web/dist/render-check.js\";\nconst r=JSON.parse(await fs.readFile(\"examples/handoff/current/B1.report.json\",\"utf8\"));\nconsole.log(\"explicitRootCandidates\",r.bundle.sourceCandidates.filter(c=>c.subdirectory===\"\").length);\nconst html=renderToStaticMarkup(React.createElement(Sources,{r,onOpen(){}}));\nconsole.log(\"blankSubtree\",html.includes(\"<dt>Package subtree</dt><dd><code></code></dd>\"));\nJS",
+      "startedAt": "2026-11-01T00:06:01.367460+00:00",
+      "elapsedSeconds": 0.16,
+      "exitCode": 0,
+      "tap": {},
+      "publicLog": "logs/web-root-label-repro.log"
+    },
+    {
+      "label": "final-workspace-typecheck",
+      "command": "pnpm run typecheck",
+      "startedAt": "2026-11-01T00:06:06.379823+00:00",
+      "elapsedSeconds": 14.811,
+      "exitCode": 0,
+      "tap": {},
+      "publicLog": "logs/final-workspace-typecheck.log"
+    },
+    {
+      "label": "browser-service-preflight",
+      "command": "docker container ls --all --quiet --no-trunc --filter name=heurisko-parser-",
+      "startedAt": "2026-11-01T00:06:49.443520+00:00",
+      "elapsedSeconds": 0.082,
+      "exitCode": 0,
+      "tap": {},
+      "publicLog": "logs/browser-service-preflight.log"
+    },
+    {
+      "label": "core-full",
+      "command": "node --test --test-concurrency=1 packages/core/tests/*.test.mjs",
+      "startedAt": "2026-11-01T00:05:48.328902+00:00",
+      "elapsedSeconds": 231.518,
+      "exitCode": 0,
+      "tap": {
+        "tests": 130,
+        "pass": 130,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0
+      },
+      "publicLog": "logs/core-full.log"
+    },
+    {
+      "label": "assembled-typecheck",
+      "command": "pnpm run typecheck",
+      "startedAt": "2026-11-01T00:10:10.069502+00:00",
+      "elapsedSeconds": 27.771,
+      "exitCode": 0,
+      "tap": {},
+      "publicLog": "logs/assembled-typecheck.log"
+    },
+    {
+      "label": "s4-full",
+      "command": "node --test integration/part4/tests/readiness.test.mjs packages/tui/tests/*.test.mjs",
+      "startedAt": "2026-11-01T00:10:38.176056+00:00",
+      "elapsedSeconds": 29.434,
+      "exitCode": 0,
+      "tap": {
+        "tests": 39,
+        "pass": 39,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0
+      },
+      "publicLog": "logs/s4-full.log"
+    },
+    {
+      "label": "web-full",
+      "command": "pnpm --filter @heurisko/web test",
+      "startedAt": "2026-11-01T00:10:44.671050+00:00",
+      "elapsedSeconds": 38.956,
+      "exitCode": 1,
+      "tap": {
+        "tests": 68,
+        "pass": 67,
+        "fail": 1,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0
+      },
+      "publicLog": "logs/web-full.log"
+    },
+    {
+      "label": "corpus-parity",
+      "command": "node apps/web/tooling/verify-corpus.mjs .heurisko/parts456-audit-20261101/transport-corpus",
+      "startedAt": "2026-11-01T00:10:59.642839+00:00",
+      "elapsedSeconds": 48.688,
+      "exitCode": 0,
+      "tap": {},
+      "publicLog": "logs/corpus-parity.log"
+    },
+    {
+      "label": "docs-search-repro",
+      "command": "node --input-type=module - <<'JS'\nimport {readFile} from \"node:fs/promises\"; import {searchDocs} from \"./apps/web/dist/doc-model.js\";\nconst pages=JSON.parse(await readFile(\"apps/web/dist/cli-docs.json\"));\nfor(const q of [\"--source-archive\",\"exit 2\",\"SESSION_DENIED\",\"source replay\"]){const results=searchDocs(pages,q); console.log(JSON.stringify({query:q,results:results.length,maxSnippet:Math.max(...results.map(x=>x.snippet.length)),nonliteral:results.filter(x=>!x.snippet.toLowerCase().includes(q.toLowerCase())).map(x=>({page:x.page,anchor:x.anchor,length:x.snippet.length}))}));}\nJS",
+      "startedAt": "2026-11-01T00:11:54.307396+00:00",
+      "elapsedSeconds": 0.135,
+      "exitCode": 0,
+      "tap": {},
+      "publicLog": "logs/docs-search-repro.log"
+    },
+    {
+      "label": "web-search-build",
+      "command": "pnpm --filter @heurisko/web run build && pnpm --filter @heurisko/web run typecheck",
+      "startedAt": "2026-11-01T00:12:26.442437+00:00",
+      "elapsedSeconds": 11.632,
+      "exitCode": 0,
+      "tap": {},
+      "publicLog": "logs/web-search-build.log"
+    },
+    {
+      "label": "historical-corpus",
+      "command": "node scripts/verify-s3-capture.mjs examples/s3/current --historical && node scripts/verify-s2-capture.mjs examples/s2/current --historical",
+      "startedAt": "2026-11-01T00:10:57.213288+00:00",
+      "elapsedSeconds": 119.263,
+      "exitCode": 0,
+      "tap": {},
+      "publicLog": "logs/historical-corpus.log"
+    },
+    {
+      "label": "browser-service",
+      "command": "node .heurisko/parts456-audit-20261101/browser-server.mjs",
+      "startedAt": "2026-11-01T00:07:35.378132+00:00",
+      "elapsedSeconds": 335.563,
+      "exitCode": 0,
+      "tap": {},
+      "publicLog": "logs/browser-service.log"
+    },
+    {
+      "label": "web-full-final",
+      "command": "pnpm --filter @heurisko/web test",
+      "startedAt": "2026-11-01T00:12:59.581777+00:00",
+      "elapsedSeconds": 24.301,
+      "exitCode": 0,
+      "tap": {
+        "tests": 69,
+        "pass": 69,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0
+      },
+      "publicLog": "logs/web-full-final.log"
+    },
+    {
+      "label": "parser-boundary",
+      "command": "node scripts/check-parser-boundary.mjs .heurisko/parts456-audit-20261101/parser-boundary.json",
+      "startedAt": "2026-11-01T00:13:57.206543+00:00",
+      "elapsedSeconds": 6.068,
+      "exitCode": 0,
+      "tap": {},
+      "publicLog": "logs/parser-boundary.log"
+    },
+    {
+      "label": "release-review-typecheck",
+      "command": "pnpm run typecheck",
+      "startedAt": "2026-11-01T00:14:59.388302+00:00",
+      "elapsedSeconds": 45.618,
+      "exitCode": 0,
+      "tap": {},
+      "publicLog": "logs/release-review-typecheck.log"
+    },
+    {
+      "label": "s4-final",
+      "command": "node --test integration/part4/tests/readiness.test.mjs packages/tui/tests/*.test.mjs",
+      "startedAt": "2026-11-01T00:15:55.632544+00:00",
+      "elapsedSeconds": 20.855,
+      "exitCode": 0,
+      "tap": {
+        "tests": 39,
+        "pass": 39,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0
+      },
+      "publicLog": "logs/s4-final.log"
+    },
+    {
+      "label": "investigation-e2e",
+      "command": "node apps/web/tooling/verify-investigation.mjs .heurisko/parts456-audit-20261101/investigation",
+      "startedAt": "2026-11-01T00:15:54.662775+00:00",
+      "elapsedSeconds": 54.916,
+      "exitCode": 0,
+      "tap": {},
+      "publicLog": "logs/investigation-e2e.log"
+    },
+    {
+      "label": "audit-final-typecheck",
+      "command": "pnpm run typecheck",
+      "startedAt": "2026-11-01T00:18:05.337335+00:00",
+      "elapsedSeconds": 39.018,
+      "exitCode": 0,
+      "tap": {},
+      "publicLog": "logs/audit-final-typecheck.log"
+    },
+    {
+      "label": "tui-last-compile",
+      "command": "pnpm --filter @heurisko/tui run build && pnpm --filter @heurisko/tui run typecheck",
+      "startedAt": "2026-11-01T00:19:20.000049+00:00",
+      "elapsedSeconds": 15.695,
+      "exitCode": 0,
+      "tap": {},
+      "publicLog": "logs/tui-last-compile.log"
+    },
+    {
+      "label": "s4-complete",
+      "command": "node --test integration/part4/tests/readiness.test.mjs packages/tui/tests/*.test.mjs",
+      "startedAt": "2026-11-01T00:19:53.512953+00:00",
+      "elapsedSeconds": 10.398,
+      "exitCode": 0,
+      "tap": {
+        "tests": 40,
+        "pass": 40,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0
+      },
+      "publicLog": "logs/s4-complete.log"
+    },
+    {
+      "label": "workspace-review-final",
+      "command": "pnpm run typecheck",
+      "startedAt": "2026-11-01T00:21:48.306797+00:00",
+      "elapsedSeconds": 13.586,
+      "exitCode": 0,
+      "tap": {},
+      "publicLog": "logs/workspace-review-final.log"
+    },
+    {
+      "label": "web-complete",
+      "command": "pnpm --filter @heurisko/web test",
+      "startedAt": "2026-11-01T00:22:18.789705+00:00",
+      "elapsedSeconds": 11.814,
+      "exitCode": 0,
+      "tap": {
+        "tests": 71,
+        "pass": 71,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0
+      },
+      "publicLog": "logs/web-complete.log"
+    },
+    {
+      "label": "investigation-e2e-final",
+      "command": "node apps/web/tooling/verify-investigation.mjs .heurisko/parts456-audit-20261101/investigation-final",
+      "startedAt": "2026-11-01T00:22:19.144119+00:00",
+      "elapsedSeconds": 33.073,
+      "exitCode": 1,
+      "tap": {},
+      "publicLog": "logs/investigation-e2e-final.log"
+    },
+    {
+      "label": "stable-workspace-typecheck",
+      "command": "pnpm run typecheck",
+      "startedAt": "2026-11-01T00:23:34.608461+00:00",
+      "elapsedSeconds": 5.666,
+      "exitCode": 2,
+      "tap": {},
+      "publicLog": "logs/stable-workspace-typecheck.log"
+    },
+    {
+      "workingDirectory": ".heurisko/parts456-audit-20261101/fixed-audit",
+      "label": "isolated-typecheck",
+      "command": "pnpm run typecheck",
+      "startedAt": "2026-11-01T00:26:59.847650+00:00",
+      "elapsedSeconds": 15.611,
+      "exitCode": 0,
+      "tap": {},
+      "publicLog": "logs/isolated-typecheck.log"
+    },
+    {
+      "workingDirectory": ".heurisko/parts456-audit-20261101/fixed-audit",
+      "label": "isolated-resolution",
+      "command": "node --input-type=module - <<'JS'\nimport {createRequire} from \"node:module\";\nconst require=createRequire(new URL(\"./apps/web/package.json\",import.meta.url));\nconsole.log(require.resolve(\"@heurisko/core\"));\nconst core=await import(\"./packages/core/dist/index.js\");\nconsole.log(JSON.stringify({reviewedLoaderAvailable:\"loadConfiguredAnalysisModule\" in core,engine:await core.engineCodeIdentity()}));\nJS",
+      "startedAt": "2026-11-01T00:27:15.538947+00:00",
+      "elapsedSeconds": 0.051,
+      "exitCode": 0,
+      "tap": {},
+      "publicLog": "logs/isolated-resolution.log"
+    },
+    {
+      "workingDirectory": ".heurisko/parts456-audit-20261101/fixed-audit",
+      "label": "isolated-contracts",
+      "command": "pnpm run test:contracts",
+      "startedAt": "2026-11-01T00:27:26.714581+00:00",
+      "elapsedSeconds": 0.402,
+      "exitCode": 0,
+      "tap": {},
+      "publicLog": "logs/isolated-contracts.log"
+    },
+    {
+      "workingDirectory": ".heurisko/parts456-audit-20261101/fixed-audit",
+      "label": "isolated-s4",
+      "command": "node --test integration/part4/tests/readiness.test.mjs packages/tui/tests/*.test.mjs",
+      "startedAt": "2026-11-01T00:27:27.185489+00:00",
+      "elapsedSeconds": 8.266,
+      "exitCode": 0,
+      "tap": {
+        "tests": 40,
+        "pass": 40,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0
+      },
+      "publicLog": "logs/isolated-s4.log"
+    },
+    {
+      "workingDirectory": ".heurisko/parts456-audit-20261101/fixed-audit",
+      "label": "isolated-web",
+      "command": "pnpm --filter @heurisko/web test",
+      "startedAt": "2026-11-01T00:27:30.086464+00:00",
+      "elapsedSeconds": 6.823,
+      "exitCode": 0,
+      "tap": {
+        "tests": 71,
+        "pass": 71,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0
+      },
+      "publicLog": "logs/isolated-web.log"
+    },
+    {
+      "workingDirectory": ".heurisko/parts456-audit-20261101/fixed-audit",
+      "label": "isolated-corpus",
+      "command": "node apps/web/tooling/verify-corpus.mjs audit-transport",
+      "startedAt": "2026-11-01T00:28:22.527985+00:00",
+      "elapsedSeconds": 33.215,
+      "exitCode": 0,
+      "tap": {},
+      "publicLog": "logs/isolated-corpus.log"
+    },
+    {
+      "workingDirectory": ".",
+      "label": "research-checksums",
+      "command": "cd docs/Heurisko_Research && shasum -a 256 -c SHA256SUMS.txt",
+      "startedAt": "2026-11-01T00:29:16.155231+00:00",
+      "elapsedSeconds": 0.164,
+      "exitCode": 0,
+      "tap": {},
+      "publicLog": "logs/research-checksums.log"
+    },
+    {
+      "label": "isolated-core-interrupted",
+      "command": "node --test --test-concurrency=1 packages/core/tests/*.test.mjs",
+      "workingDirectory": ".heurisko/parts456-audit-20261101/fixed-audit",
+      "exitCode": null,
+      "publicLog": "logs/isolated-core.log",
+      "result": "Incomplete: session disappeared before final TAP summary/runner exit; never treated as passed."
+    }
+  ],
+  "ptyResults": "pty/results.json",
+  "isolation": "isolation.json",
+  "preservation": "preservation.json",
+  "auditFiles": "audit-files.json",
+  "remainingGates": [
+    "Active concurrent module integration full validation is outside this audit certification.",
+    "Human TUI visual/usability and actual assistive-technology review.",
+    "Final browser viewport/zoom/keyboard/nested focus/native import/download/offline journeys: automation blocked or lacked observable content.",
+    "Joint G3 and Malhar finding/citation entailment/retrieval/model/build-interpretation quality and sign-off.",
+    "No monitor implementation/Part5 authorization; no verifier/policy/rebuild/open-model/fullP04 completion."
+  ],
+  "browser": {
+    "observations": 3,
+    "taskLoopbackPort": 56826,
+    "chromeExtension": "ERR_BLOCKED_BY_CLIENT",
+    "nativeChrome": "Reached URL, AX content tree unavailable; screenshot ScreenCaptureKit -3811; no GUI acceptance claimed.",
+    "taskServerStopped": true,
+    "capabilityCredentialsPublished": false
+  },
+  "publication": {
+    "staged": false,
+    "commit": false,
+    "push": false,
+    "merge": false,
+    "externalMessage": false,
+    "deployment": false
+  }
+}

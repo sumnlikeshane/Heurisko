@@ -1,0 +1,26 @@
+  HEURISKO   H Home    I Investigations     M Monitoring                            
+  ────────────────────────────────────────────────────────────────────────────────  
+  picocolors@1.1.1 / HISTORICAL / incomplete / Captured 2026-10-31T22:59:33Z        
+  1 Overview   2 Findings   3 Files   4 Source   5 AI   6 Coverage                  
+  Historical — online checks have not refreshed · i Identity                        
+  Files                                                                             
+  Tree / 2 modified / 5 identical / 12 unresolved (19 change records) / m next mo…  
+  ┌─ > Files ──────────────────────────────────────────────────────────────── 25 ┐  
+  │ > [-] Artifact root/                                                         │  
+  │   7 records / 2 modified                                                     │  
+  │                                                                              │  
+  │     LICENSE                                                                  │  
+  │   identical / equal                                                          │  
+  │                                                                              │  
+  │     package.json                                                             │  
+  │   modified / different                                                       │  
+  │                                                                              │  
+  │     picocolors.browser.js                                                    │  
+  │   identical / equal                                                          │  
+  │                                                                              │  
+  │ 1 / 25 · Enter expand                                                        │  
+  └──────────────────────────────────────────────────────────────────────────────┘  
+  Files                                                                             
+  Enter expand  m modified  v tree/flat  Tab preview  ? help  q quit                
+                                                                                    
+                                                                                    

@@ -1,0 +1,520 @@
+
+> heurisko@ test:web <WORKSPACE>
+> pnpm run build && pnpm --filter @heurisko/web test
+
+
+> heurisko@ build <WORKSPACE>
+> pnpm --filter @heurisko/core... run build && node_modules/.bin/tsc -p integration/part4/tsconfig.json && pnpm --filter @heurisko/tui --filter @heurisko/cli --filter @heurisko/web run build
+
+Scope: 2 of 6 workspace projects
+packages/contracts build$ tsc -p tsconfig.json
+packages/contracts build: Done
+packages/core build$ tsc -p tsconfig.json
+packages/core build: Done
+Scope: 3 of 6 workspace projects
+packages/tui build$ tsc -p tsconfig.json
+apps/web build$ node build.mjs
+apps/web build: Done
+packages/tui build: Done
+packages/cli build$ tsc -p tsconfig.json
+packages/cli build: Done
+
+> @heurisko/web@0.1.0 test <WORKSPACE>/apps/web
+> node --test tests/*.test.mjs
+
+TAP version 13
+# Subtest: every documentation page, declared navigation link and anchor resolves from a deterministic manifest
+ok 1 - every documentation page, declared navigation link and anchor resolves from a deterministic manifest
+  ---
+  duration_ms: 5.084459
+  type: 'test'
+  ...
+# Subtest: docs search spans workflows/reference/errors with section snippets and exact targets
+ok 2 - docs search spans workflows/reference/errors with section snippets and exact targets
+  ---
+  duration_ms: 2.564375
+  type: 'test'
+  ...
+# Subtest: inert markdown keeps semantic headings, ordered/bullet lists, table headings, exact selectable code and safe links
+ok 3 - inert markdown keeps semantic headings, ordered/bullet lists, table headings, exact selectable code and safe links
+  ---
+  duration_ms: 5.777084
+  type: 'test'
+  ...
+# Subtest: draft validation catches invalid combinations before admission, and canonical targets match core
+ok 4 - draft validation catches invalid combinations before admission, and canonical targets match core
+  ---
+  duration_ms: 288.141458
+  type: 'test'
+  ...
+# Subtest: accepted job summaries bind actual core options and archive bytes without host paths
+ok 5 - accepted job summaries bind actual core options and archive bytes without host paths
+  ---
+  duration_ms: 2206.587416
+  type: 'test'
+  ...
+# Subtest: latest stage facts retain repeated events and truthful cancel/error actions
+ok 6 - latest stage facts retain repeated events and truthful cancel/error actions
+  ---
+  duration_ms: 35.240375
+  type: 'test'
+  ...
+# Subtest: later-page file selection, path member records, explicit omissions and filtered selection stay grounded
+ok 7 - later-page file selection, path member records, explicit omissions and filtered selection stay grounded
+  ---
+  duration_ms: 432.226125
+  type: 'test'
+  ...
+# Subtest: reading guide/export/landing preserve independent outcomes, original identity and honest next actions
+ok 8 - reading guide/export/landing preserve independent outcomes, original identity and honest next actions
+  ---
+  duration_ms: 6.263166
+  type: 'test'
+  ...
+# Subtest: modal focus ring excludes disabled, hidden, inert and closed-details controls
+ok 9 - modal focus ring excludes disabled, hidden, inert and closed-details controls
+  ---
+  duration_ms: 0.357458
+  type: 'test'
+  ...
+# Subtest: closed raw-delta disclosure defers its third byte reader; initial source/artifact slots stay distinct
+ok 10 - closed raw-delta disclosure defers its third byte reader; initial source/artifact slots stay distinct
+  ---
+  duration_ms: 48.236583
+  type: 'test'
+  ...
+# Subtest: older failed jobs remain selectable after a later explicit start, and status reads never retry
+ok 11 - older failed jobs remain selectable after a later explicit start, and status reads never retry
+  ---
+  duration_ms: 232.682584
+  type: 'test'
+  ...
+# Subtest: mode projection preserves selected File identity and excludes inactive mode semantics without mutation
+ok 12 - mode projection preserves selected File identity and excludes inactive mode semantics without mutation
+  ---
+  duration_ms: 1.1695
+  type: 'test'
+  ...
+# Subtest: empty targets and missing source pair/replay associate issues with the useful correction field
+ok 13 - empty targets and missing source pair/replay associate issues with the useful correction field
+  ---
+  duration_ms: 0.572458
+  type: 'test'
+  ...
+# Subtest: first entry requires explicit example selection and the review exposes labels before technical details
+ok 14 - first entry requires explicit example selection and the review exposes labels before technical details
+  ---
+  duration_ms: 23.393667
+  type: 'test'
+  ...
+# Subtest: job states distinguish report availability, cancellation request and no-report failure
+ok 15 - job states distinguish report availability, cancellation request and no-report failure
+  ---
+  duration_ms: 7.594333
+  type: 'test'
+  ...
+# Subtest: open methods explain report-only missing bytes and format-specific recovery without admitting host paths
+ok 16 - open methods explain report-only missing bytes and format-specific recovery without admitting host paths
+  ---
+  duration_ms: 2.617166
+  type: 'test'
+  ...
+# Subtest: all doc sidebar/search/contents links cancel native document loads and navigate from the anchor itself
+ok 17 - all doc sidebar/search/contents links cancel native document loads and navigate from the anchor itself
+  ---
+  duration_ms: 5.094416
+  type: 'test'
+  ...
+# Subtest: native new-tab/download/external actions remain native; links cannot grant authority or target APIs
+ok 18 - native new-tab/download/external actions remain native; links cannot grant authority or target APIs
+  ---
+  duration_ms: 0.457209
+  type: 'test'
+  ...
+# Subtest: same-document repeated anchors scroll only the article without duplicate history or a window jump
+ok 19 - same-document repeated anchors scroll only the article without duplicate history or a window jump
+  ---
+  duration_ms: 4.38975
+  type: 'test'
+  ...
+# Subtest: Analyze after scrolling down leaves the document/shell/sidebar alone; stale navigation frames cannot jump it
+ok 20 - Analyze after scrolling down leaves the document/shell/sidebar alone; stale navigation frames cannot jump it
+  ---
+  duration_ms: 1.08675
+  type: 'test'
+  ...
+# Subtest: documentation anchors scroll only their containing article and reject targets outside it
+ok 21 - documentation anchors scroll only their containing article and reject targets outside it
+  ---
+  duration_ms: 0.113666
+  type: 'test'
+  ...
+# Subtest: a lost successful start response body reports unknown acknowledgment and never resubmits
+ok 22 - a lost successful start response body reports unknown acknowledgment and never resubmits
+  ---
+  duration_ms: 40.08125
+  type: 'test'
+  ...
+# Subtest: an upload body acknowledgment failure never uploads again or requests an investigation
+ok 23 - an upload body acknowledgment failure never uploads again or requests an investigation
+  ---
+  duration_ms: 56.13375
+  type: 'test'
+  ...
+# Subtest: destination allowlist separates draft/job/observation identity and rejects host-path disguises
+ok 24 - destination allowlist separates draft/job/observation identity and rejects host-path disguises
+  ---
+  duration_ms: 1.217166
+  type: 'test'
+  ...
+# Subtest: native history traverses destinations, restores same-process view and never stores authority or submits
+ok 25 - native history traverses destinations, restores same-process view and never stores authority or submits
+  ---
+  duration_ms: 1.133042
+  type: 'test'
+  ...
+# Subtest: allowlisted HTML routes stay public and inert; route URLs cannot access API facts or start analysis
+not ok 26 - allowlisted HTML routes stay public and inert; route URLs cannot access API facts or start analysis
+  ---
+  duration_ms: 84.200917
+  type: 'test'
+  location: '<WORKSPACE>/apps/web/tests/navigation.test.mjs:41:1'
+  failureType: 'testCodeFailure'
+  error: 'listen EPERM: operation not permitted 127.0.0.1'
+  code: 'EPERM'
+  stack: |-
+    Server.setupListenHandle [as _listen2] (node:net:1919:21)
+    listenInCluster (node:net:1998:12)
+    node:net:2207:7
+    process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+  ...
+# Subtest: reports sharing report ID keep full distinct content/capture context
+ok 27 - reports sharing report ID keep full distinct content/capture context
+  ---
+  duration_ms: 14.711334
+  type: 'test'
+  ...
+# Subtest: draft, reopen and selected job render their own contexts without historical report/export actions
+not ok 28 - draft, reopen and selected job render their own contexts without historical report/export actions
+  ---
+  duration_ms: 12.225041
+  type: 'test'
+  location: '<WORKSPACE>/apps/web/tests/navigation.test.mjs:67:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    The input did not match the regular expression /Start an investigation/. Input:
+    
+    '<div class="section-intro workflow-intro"><p class="eyebrow">NEW INVESTIGATION</p><h1>What do you want to investigate?</h1><p>Compare one exact artifact with immutable source evidence. Review the request before anything starts.</p></div><ol class="flow-steps" aria-label="Investigation steps"><li aria-current="step">1 · Target</li><li>2 · Review</li><li>3 · Run</li></ol><form noValidate="" class="panel input-form"><h2>Choose your artifact</h2><fieldset class="panel-body"><label class="search" for="investigate-kind">Input type</label><select id="investigate-kind"><option value="npm" selected="">Exact public npm release</option><option value="local">Local tar / tar.gz archive</option></select><div><label class="search" for="investigate-target">Exact npm release</label><input id="investigate-target" aria-describedby="help-target" placeholder="npm:package@1.2.3" maxLength="1024" value=""/><p class="field-help" id="help-target">Use npm:name@version or npm:@scope/name@version. Exact versions only; no latest, ranges or private registries.</p><button type="button" class="link">Use public example: picocolors@1.1.1</button></div><div hidden=""><label class="search" for="investigate-artifact">Artifact archive</label><input id="investigate-artifact" aria-describedby="help-artifact" type="file" accept=".tar,.tgz,.gz" name="artifact"/><p class="field-help" id="help-artifact">A nonempty tar or tar.gz file, at most 32 MiB. Selection alone sends no bytes. Use public, non-confidential data.</p><div class="grid two"><div><label class="search" for="investigate-name">Local name label <span class="muted">(optional)</span></label><input id="investigate-name" aria-describedby="help-name" maxLength="1024" value=""/><p class="field-help" id="help-name">A label for these local bytes, not a registry identity.</p></div><div><label class="search" for="investigate-version">Local version label <span class="muted">(optional)</span></label><input id="investigate-version" aria-describedby="help-version" maxLength="1024" value=""/><p class="field-help" id="help-version">Does not establish the origin or version of an official release.</p></div></div></div><details class="compact-details"><summary>Add pinned source evidence <span class="muted">(optional)</span></summary><p>Compare against a specific GitHub commit. A source override helps define the comparison; it does not prove that source produced the artifact.</p><label class="search" for="investigate-source">GitHub source repository</label><input id="investigate-source" aria-describedby="help-source" placeholder="https://github.com/OWNER/REPO" maxLength="1024" value=""/><p class="field-help" id="help-source">Pair this URL with a full immutable commit. Leave both blank to use source resolution for npm.</p><label class="search" for="investigate-commit">Full source commit</label><input id="investigate-commit" aria-describedby="help-commit" placeholder="40 lowercase hexadecimal characters" maxLength="40" value=""/><p class="field-help" id="help-commit">A full 40-character commit, not a branch or tag.</p><label class="search" for="investigate-subdirectory">Package subtree <span class="muted">(optional)</span></label><input id="investigate-subdirectory" aria-describedby="help-subdirectory" placeholder="packages/shared" maxLength="1024" value=""/><p class="field-help" id="help-subdirectory">Relative slash-separated path within the pinned repository. Requires the source URL and commit.</p><div hidden=""><label class="search" for="investigate-sourceArchive">Source replay archive <span class="muted">(optional)</span></label><input id="investigate-sourceArchive" aria-describedby="help-sourceArchive" type="file" accept=".tar,.tgz,.gz" name="sourceArchive"/><p class="field-help" id="help-sourceArchive">At most 32 MiB. Requires the source URL and full commit; association remains user asserted.</p></div></details><details class="compact-details"><summary>Requested options and available checks</summary><p>Static acquisition, inventory and raw comparison are available. Analysis module, model, provenance verifier, policy evaluator, rebuild and monitoring are not integrated.</p><label class="search" for="investigate-enableAI">AI request semantics</label><select id="investigate-enableAI"><option value="requested" selected="">Record an AI request · unavailable</option><option value="off">Do not request AI · --no-ai</option></select><p class="field-help">Default matches the CLI request. Neither choice runs a model here; changing it changes the submitted request only.</p><label class="search" for="investigate-policy">Requested policy reference <span class="muted">(optional)</span></label><input id="investigate-policy" aria-describedby="help-policy" maxLength="1024" value=""/><p class="field-help" id="help-policy">Records a request. Without an evaluator, the policy result remains indeterminate.</p></details><p class="field-help">Only confirmation admits selected files to private local workspace storage and starts static inspection. Target scripts and builds do not run. Retained data is not automatically deleted. <a href="/docs/workflows/local">Input and retention details</a></p><div class="actions"><button class="primary" type="submit">Review investigation →</button><a href="/workspace/open">Open existing evidence instead</a></div></fieldset></form><p role="status"></p>'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+  actual: '<div class="section-intro workflow-intro"><p class="eyebrow">NEW INVESTIGATION</p><h1>What do you want to investigate?</h1><p>Compare one exact artifact with immutable source evidence. Review the request before anything starts.</p></div><ol class="flow-steps" aria-label="Investigation steps"><li aria-current="step">1 · Target</li><li>2 · Review</li><li>3 · Run</li></ol><form noValidate="" class="panel input-form"><h2>Choose your artifact</h2><fieldset class="panel-body"><label class="search" for="investigate-kind">Input type</label><select id="investigate-kind"><option value="npm" selected="">Exact public npm release</option><option value="local">Local tar / tar.gz archive</option></select><div><label class="search" for="investigate-target">Exact npm release</label><input id="investigate-target" aria-describedby="help-target" placeholder="npm:package@1.2.3" maxLength="1024" value=""/><p class="field-help" id="help-target">Use npm:name@version or npm:@scope/name@version. Exact versions only; no latest, ranges or private registries.</p><button type="button" class="link">Use public example: picocolors@1.1.1</button></div><div hidden=""><label class="search" for="investigate-artifact">Artifact archive</label><input id="investigate-artifact" aria-describedby="help-artifact" type="file" accept=".tar,.tgz,.gz" name="artifact"/><p class="field-help" id="help-artifact">A nonempty tar or tar.gz file, at most 32 MiB. Selection alone sends no bytes. Use public, non-confidential data.</p><div class="grid two"><div><label class="search" for="investigate-name">Local name label <span class="muted">(optional)</span></label><input id="investigate-name" aria-describedby="help-name" maxLength="1024" value=""/><p class="field-help" id="help-name">A label for these local bytes, not a registry identity.</p></div><div><label class="search" for="investigate-version">Local version label <span class="muted">(optional)</span></label><input id="investigate-version" aria-describedby="help-version" maxLength="1024" value=""/><p class="field-help" id="help-version">Does not establish the origin or version of an official release.</p></div></div></div><details class="compact-details"><summary>Add pinned source evidence <span class="muted">(optional)</span></summary><p>Compare against a specific GitHub commit. A source override helps define the comparison; it does not prove that source produced the artifact.</p><label class="search" for="investigate-source">GitHub source repository</label><input id="investigate-source" aria-describedby="help-source" placeholder="https://github.com/OWNER/REPO" maxLength="1024" value=""/><p class="field-help" id="help-source">Pair this URL with a full immutable commit. Leave both blank to use source resolution for npm.</p><label class="search" for="investigate-commit">Full source commit</label><input id="investigate-commit" aria-describedby="help-commit" placeholder="40 lowercase hexadecimal characters" maxLength="40" value=""/><p class="field-help" id="help-commit">A full 40-character commit, not a branch or tag.</p><label class="search" for="investigate-subdirectory">Package subtree <span class="muted">(optional)</span></label><input id="investigate-subdirectory" aria-describedby="help-subdirectory" placeholder="packages/shared" maxLength="1024" value=""/><p class="field-help" id="help-subdirectory">Relative slash-separated path within the pinned repository. Requires the source URL and commit.</p><div hidden=""><label class="search" for="investigate-sourceArchive">Source replay archive <span class="muted">(optional)</span></label><input id="investigate-sourceArchive" aria-describedby="help-sourceArchive" type="file" accept=".tar,.tgz,.gz" name="sourceArchive"/><p class="field-help" id="help-sourceArchive">At most 32 MiB. Requires the source URL and full commit; association remains user asserted.</p></div></details><details class="compact-details"><summary>Requested options and available checks</summary><p>Static acquisition, inventory and raw comparison are available. Analysis module, model, provenance verifier, policy evaluator, rebuild and monitoring are not integrated.</p><label class="search" for="investigate-enableAI">AI request semantics</label><select id="investigate-enableAI"><option value="requested" selected="">Record an AI request · unavailable</option><option value="off">Do not request AI · --no-ai</option></select><p class="field-help">Default matches the CLI request. Neither choice runs a model here; changing it changes the submitted request only.</p><label class="search" for="investigate-policy">Requested policy reference <span class="muted">(optional)</span></label><input id="investigate-policy" aria-describedby="help-policy" maxLength="1024" value=""/><p class="field-help" id="help-policy">Records a request. Without an evaluator, the policy result remains indeterminate.</p></details><p class="field-help">Only confirmation admits selected files to private local workspace storage and starts static inspection. Target scripts and builds do not run. Retained data is not automatically deleted. <a href="/docs/workflows/local">Input and retention details</a></p><div class="actions"><button class="primary" type="submit">Review investigation →</button><a href="/workspace/open">Open existing evidence instead</a></div></fieldset></form><p role="status"></p>'
+  operator: 'match'
+  stack: |-
+    TestContext.<anonymous> (file://<WORKSPACE>/apps/web/tests/navigation.test.mjs:71:9)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: connection and operation errors separate authority, service failure and scoped input rejection
+ok 29 - connection and operation errors separate authority, service failure and scoped input rejection
+  ---
+  duration_ms: 0.267375
+  type: 'test'
+  ...
+# Subtest: session capability is consumed into memory, recovery preserves destination, errors never echo raw text
+ok 30 - session capability is consumed into memory, recovery preserves destination, errors never echo raw text
+  ---
+  duration_ms: 6.795375
+  type: 'test'
+  ...
+# Subtest: aborted reads preserve cancellation and do not falsely announce service loss
+ok 31 - aborted reads preserve cancellation and do not falsely announce service loss
+  ---
+  duration_ms: 4.260875
+  type: 'test'
+  ...
+# Subtest: finding pagination reaches every retained finding including records beyond the old 100-match ceiling
+ok 32 - finding pagination reaches every retained finding including records beyond the old 100-match ceiling
+  ---
+  duration_ms: 44.376417
+  type: 'test'
+  ...
+# Subtest: virtual directory navigation includes only real retained path descendants and permits parent traversal
+ok 33 - virtual directory navigation includes only real retained path descendants and permits parent traversal
+  ---
+  duration_ms: 22.1685
+  type: 'test'
+  ...
+# Subtest: evidence labels distinguish side, path, manifest field and real half-open byte ranges
+ok 34 - evidence labels distinguish side, path, manifest field and real half-open byte ranges
+  ---
+  duration_ms: 0.176375
+  type: 'test'
+  ...
+# Subtest: member filters keep omissions reachable and distinguish retained, absent and unsupported states
+ok 35 - member filters keep omissions reachable and distinguish retained, absent and unsupported states
+  ---
+  duration_ms: 1.086375
+  type: 'test'
+  ...
+# Subtest: auxiliary evidence paging restores by observation handle and never merges equal report IDs
+ok 36 - auxiliary evidence paging restores by observation handle and never merges equal report IDs
+  ---
+  duration_ms: 143.96225
+  type: 'test'
+  ...
+# Subtest: original observation identity and exact retained outcomes survive the local API
+not ok 37 - original observation identity and exact retained outcomes survive the local API
+  ---
+  duration_ms: 1250.062458
+  type: 'test'
+  location: '<WORKSPACE>/apps/web/tests/viewer.test.mjs:23:1'
+  failureType: 'testCodeFailure'
+  error: 'listen EPERM: operation not permitted 127.0.0.1'
+  code: 'EPERM'
+  stack: |-
+    Server.setupListenHandle [as _listen2] (node:net:1919:21)
+    listenInCluster (node:net:1998:12)
+    node:net:2207:7
+    process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+  ...
+# Subtest: Host, Origin, fetch-site, capability, methods and exact query allowlists fail closed
+not ok 38 - Host, Origin, fetch-site, capability, methods and exact query allowlists fail closed
+  ---
+  duration_ms: 2315.841958
+  type: 'test'
+  location: '<WORKSPACE>/apps/web/tests/viewer.test.mjs:26:1'
+  failureType: 'testCodeFailure'
+  error: 'listen EPERM: operation not permitted 127.0.0.1'
+  code: 'EPERM'
+  stack: |-
+    Server.setupListenHandle [as _listen2] (node:net:1919:21)
+    listenInCluster (node:net:1998:12)
+    node:net:2207:7
+    process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+  ...
+# Subtest: evidence API preserves exact mutation artifact span and absent source side
+not ok 39 - evidence API preserves exact mutation artifact span and absent source side
+  ---
+  duration_ms: 167.319458
+  type: 'test'
+  location: '<WORKSPACE>/apps/web/tests/viewer.test.mjs:33:1'
+  failureType: 'testCodeFailure'
+  error: 'listen EPERM: operation not permitted 127.0.0.1'
+  code: 'EPERM'
+  stack: |-
+    Server.setupListenHandle [as _listen2] (node:net:1919:21)
+    listenInCluster (node:net:1998:12)
+    node:net:2207:7
+    process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+  ...
+# Subtest: B2 and monorepo have unchanged IDs, raw changes and original coverage
+ok 40 - B2 and monorepo have unchanged IDs, raw changes and original coverage
+  ---
+  duration_ms: 694.216583
+  type: 'test'
+  ...
+# Subtest: two observations sharing reportId retain distinct content handles and digests
+not ok 41 - two observations sharing reportId retain distinct content handles and digests
+  ---
+  duration_ms: 385.732
+  type: 'test'
+  location: '<WORKSPACE>/apps/web/tests/viewer.test.mjs:44:1'
+  failureType: 'testCodeFailure'
+  error: 'listen EPERM: operation not permitted 127.0.0.1'
+  code: 'EPERM'
+  stack: |-
+    Server.setupListenHandle [as _listen2] (node:net:1919:21)
+    listenInCluster (node:net:1998:12)
+    node:net:2207:7
+    process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+  ...
+# Subtest: raw duplicate keys, unsafe integers, unsupported schema and validator failure are rejected
+ok 42 - raw duplicate keys, unsafe integers, unsupported schema and validator failure are rejected
+  ---
+  duration_ms: 1657.484125
+  type: 'test'
+  ...
+# Subtest: portable directory export/reopen preserves original report and exact citation bytes
+ok 43 - portable directory export/reopen preserves original report and exact citation bytes
+  ---
+  duration_ms: 3410.664167
+  type: 'test'
+  ...
+# Subtest: portable import rejects corruption, symlinks, duplicate manifest keys and report binding changes
+ok 44 - portable import rejects corruption, symlinks, duplicate manifest keys and report binding changes
+  ---
+  duration_ms: 3868.206916
+  type: 'test'
+  ...
+# Subtest: missing source bytes produce an explicit partial export without changing report contentState
+ok 45 - missing source bytes produce an explicit partial export without changing report contentState
+  ---
+  duration_ms: 1604.751375
+  type: 'test'
+  ...
+# Subtest: report and blob limits, missing bytes and invalid ranges remain distinguishable
+ok 46 - report and blob limits, missing bytes and invalid ranges remain distinguishable
+  ---
+  duration_ms: 880.712708
+  type: 'test'
+  ...
+# Subtest: transport cancellation, missing included blob and false omission declarations fail closed
+ok 47 - transport cancellation, missing included blob and false omission declarations fail closed
+  ---
+  duration_ms: 4395.747666
+  type: 'test'
+  ...
+# Subtest: synthetic markup, controls, bidi and model text stay inert; real outcome fields stay visible
+ok 48 - synthetic markup, controls, bidi and model text stay inert; real outcome fields stay visible
+  ---
+  duration_ms: 594.5235
+  type: 'test'
+  ...
+# Subtest: all accepted synthetic G0 fixture states render without inferring a verdict
+ok 49 - all accepted synthetic G0 fixture states render without inferring a verdict
+  ---
+  duration_ms: 1720.78975
+  type: 'test'
+  ...
+# Subtest: the service permits only two active evidence reads and stops on owned shutdown
+not ok 50 - the service permits only two active evidence reads and stops on owned shutdown
+  ---
+  duration_ms: 535.232167
+  type: 'test'
+  location: '<WORKSPACE>/apps/web/tests/viewer.test.mjs:83:1'
+  failureType: 'testCodeFailure'
+  error: 'listen EPERM: operation not permitted 127.0.0.1'
+  code: 'EPERM'
+  stack: |-
+    Server.setupListenHandle [as _listen2] (node:net:1919:21)
+    listenInCluster (node:net:1998:12)
+    node:net:2207:7
+    process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+  ...
+# Subtest: the genuine monorepo export reopens beyond the package-metadata parser node limit
+ok 51 - the genuine monorepo export reopens beyond the package-metadata parser node limit
+  ---
+  duration_ms: 15889.063833
+  type: 'test'
+  ...
+# Subtest: complete built CLI docs and setup include every actual parser flag and workflow
+not ok 52 - complete built CLI docs and setup include every actual parser flag and workflow
+  ---
+  duration_ms: 49.963791
+  type: 'test'
+  location: '<WORKSPACE>/apps/web/tests/workflow.test.mjs:22:1'
+  failureType: 'testCodeFailure'
+  error: 'listen EPERM: operation not permitted 127.0.0.1'
+  code: 'EPERM'
+  stack: |-
+    Server.setupListenHandle [as _listen2] (node:net:1919:21)
+    listenInCluster (node:net:1998:12)
+    node:net:2207:7
+    process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+  ...
+# Subtest: privileged requests require exact origin, session, media type, bounds and strict input keys
+not ok 53 - privileged requests require exact origin, session, media type, bounds and strict input keys
+  ---
+  duration_ms: 4.241083
+  type: 'test'
+  location: '<WORKSPACE>/apps/web/tests/workflow.test.mjs:29:1'
+  failureType: 'testCodeFailure'
+  error: 'listen EPERM: operation not permitted 127.0.0.1'
+  code: 'EPERM'
+  stack: |-
+    Server.setupListenHandle [as _listen2] (node:net:1919:21)
+    listenInCluster (node:net:1998:12)
+    node:net:2207:7
+    process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+  ...
+# Subtest: options reach one shared-engine call; terminal report, downloads and bundle keep exact facts
+not ok 54 - options reach one shared-engine call; terminal report, downloads and bundle keep exact facts
+  ---
+  duration_ms: 3276.903917
+  type: 'test'
+  location: '<WORKSPACE>/apps/web/tests/workflow.test.mjs:38:1'
+  failureType: 'testCodeFailure'
+  error: 'listen EPERM: operation not permitted 127.0.0.1'
+  code: 'EPERM'
+  stack: |-
+    Server.setupListenHandle [as _listen2] (node:net:1919:21)
+    listenInCluster (node:net:1998:12)
+    node:net:2207:7
+    process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+  ...
+# Subtest: cancel and no-report failures never claim acknowledgment, cleanup, or a verdict
+not ok 55 - cancel and no-report failures never claim acknowledgment, cleanup, or a verdict
+  ---
+  duration_ms: 2.051959
+  type: 'test'
+  location: '<WORKSPACE>/apps/web/tests/workflow.test.mjs:48:1'
+  failureType: 'testCodeFailure'
+  error: 'listen EPERM: operation not permitted 127.0.0.1'
+  code: 'EPERM'
+  stack: |-
+    Server.setupListenHandle [as _listen2] (node:net:1919:21)
+    listenInCluster (node:net:1998:12)
+    node:net:2207:7
+    process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+  ...
+# Subtest: uploads have opaque IDs, original filenames, kind checks, local labels and bounded admission
+not ok 56 - uploads have opaque IDs, original filenames, kind checks, local labels and bounded admission
+  ---
+  duration_ms: 23.17275
+  type: 'test'
+  location: '<WORKSPACE>/apps/web/tests/workflow.test.mjs:57:1'
+  failureType: 'testCodeFailure'
+  error: 'listen EPERM: operation not permitted 127.0.0.1'
+  code: 'EPERM'
+  stack: |-
+    Server.setupListenHandle [as _listen2] (node:net:1919:21)
+    listenInCluster (node:net:1998:12)
+    node:net:2207:7
+    process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+  ...
+# Subtest: browser portable download/upload reopens original bytes and enforces corruption/omission semantics
+not ok 57 - browser portable download/upload reopens original bytes and enforces corruption/omission semantics
+  ---
+  duration_ms: 1291.56925
+  type: 'test'
+  location: '<WORKSPACE>/apps/web/tests/workflow.test.mjs:68:1'
+  failureType: 'testCodeFailure'
+  error: 'listen EPERM: operation not permitted 127.0.0.1'
+  code: 'EPERM'
+  stack: |-
+    Server.setupListenHandle [as _listen2] (node:net:1919:21)
+    listenInCluster (node:net:1998:12)
+    node:net:2207:7
+    process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+  ...
+# Subtest: dynamic report-only and workspace digest reopen validate without fresh acquisition or host paths
+ok 58 - dynamic report-only and workspace digest reopen validate without fresh acquisition or host paths
+  ---
+  duration_ms: 1557.613833
+  type: 'test'
+  ...
+# Subtest: portable wrapper preserves the genuine scoped monorepo beyond the small metadata decoder size
+ok 59 - portable wrapper preserves the genuine scoped monorepo beyond the small metadata decoder size
+  ---
+  duration_ms: 29960.312667
+  type: 'test'
+  ...
+1..59
+# tests 59
+# suites 0
+# pass 46
+# fail 13
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 39888.504958
+<WORKSPACE>/apps/web:
+ ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  @heurisko/web@0.1.0 test: `node --test tests/*.test.mjs`
+Exit status 1
+ ELIFECYCLE  Command failed with exit code 1.
