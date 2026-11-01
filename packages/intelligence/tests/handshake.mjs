@@ -68,6 +68,30 @@ change.evidenceIds = [delta.evidenceId];
 const probeAnalysis = await analyzeEvidence(probe, { ...probe.input.analysisOptions, enableAI: false });
 cases.push({ id: 'M1_ADDED_TEST_SCRIPT', bundle: probe, analysis: probeAnalysis });
 
+for (const [id, sourceValue, artifactValue, expectedDirection] of [
+  ['M1_RETAINED_SCRIPT_ADDED', null, { value: 'node install.js' }, 'is reported as added to the artifact'],
+  ['M1_RETAINED_SCRIPT_REMOVED', { value: 'node install.js' }, null, 'is reported as removed from the artifact'],
+]) {
+  const retainedProbe = structuredClone(probe);
+  retainedProbe.changes[0].status = artifactValue === null ? 'removed' : 'added';
+  const retainedDelta = retainedProbe.evidence.find((item) => item.kind === 'manifest_delta');
+  retainedDelta.locator.metadataKey = 'scripts.postinstall';
+  retainedDelta.contentState = 'retained';
+  retainedDelta.contentRef = `synthetic://m1/${id}`;
+  const retainedText = JSON.stringify({
+    version: 'heurisko-manifest-delta-v1',
+    pointer: '/scripts/postinstall',
+    source: sourceValue,
+    artifact: artifactValue,
+  });
+  const retainedAnalysis = await analyzeEvidence(
+    retainedProbe,
+    { ...retainedProbe.input.analysisOptions, enableAI: false },
+    [{ evidenceId: retainedDelta.evidenceId, contentRef: retainedDelta.contentRef, text: retainedText }],
+  );
+  cases.push({ id, bundle: retainedProbe, analysis: retainedAnalysis, expectedDirection });
+}
+
 const entrypointProbe = structuredClone(probe);
 const entrypointChange = entrypointProbe.changes[0];
 const entrypointDelta = entrypointProbe.evidence.find((item) => item.kind === 'manifest_delta');

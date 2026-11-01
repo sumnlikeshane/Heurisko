@@ -20,6 +20,29 @@ export interface ResolvedEvidenceContent {
   text: string;
 }
 
+interface ManifestDeltaV1 {
+  version: 'heurisko-manifest-delta-v1';
+  pointer: string;
+  source: { value: unknown } | null;
+  artifact: { value: unknown } | null;
+}
+
+const resolveManifestDelta = (value: string | undefined): ManifestDeltaV1 | undefined => {
+  if (!value || value.length > 16_384) return undefined;
+  try {
+    const parsed: unknown = JSON.parse(value);
+    if (!parsed || typeof parsed !== 'object') return undefined;
+    const delta = parsed as Partial<ManifestDeltaV1>;
+    if (delta.version !== 'heurisko-manifest-delta-v1' || typeof delta.pointer !== 'string') return undefined;
+    const sideHasValue = (side: unknown): side is { value: unknown } | null =>
+      side === null || (typeof side === 'object' && side !== null && 'value' in side);
+    if (!sideHasValue(delta.source) || !sideHasValue(delta.artifact)) return undefined;
+    return delta as ManifestDeltaV1;
+  } catch {
+    return undefined;
+  }
+};
+
 const LIFECYCLE_SCRIPTS = new Set(['preinstall', 'install', 'postinstall', 'prepare']);
 const ENTRYPOINT_KEYS = new Set(['main', 'module', 'types', 'typings', 'exports', 'bin', 'browser']);
 
@@ -108,15 +131,21 @@ function collectDeterministicFindings(
       const scriptName = key.slice('scripts.'.length);
       const isLifecycle = LIFECYCLE_SCRIPTS.has(scriptName);
       const isOnlyTestOrDev = ['test', 'pretest', 'posttest', 'lint', 'format'].includes(scriptName);
-      const hasRetainedValue = delta.contentState === 'retained' && delta.contentRef !== undefined;
-      const direction = change.status === 'added'
+      const manifestDelta = resolveManifestDelta(contentById.get(delta.evidenceId));
+      const direction = manifestDelta && manifestDelta.source === null && manifestDelta.artifact !== null
+        ? 'is reported as added to the artifact'
+        : manifestDelta && manifestDelta.artifact === null && manifestDelta.source !== null
+          ? 'is reported as removed from the artifact'
+          : manifestDelta
+            ? 'is reported as changed'
+            : change.status === 'added'
         ? 'is reported as added to the artifact'
         : change.status === 'removed'
           ? 'is reported as removed from the artifact'
           : 'is reported as changed';
-      const limitations = [
-        'The evidence identifies the changed manifest key but does not retain the old and new command values.',
-      ];
+      const limitations = manifestDelta
+        ? ['The producer-retained manifest delta supplies the old/new value direction; this M1 rule does not analyze referenced file behavior or establish intent.']
+        : ['The producer may retain old and new manifest values, but this M1 rule has not resolved them from the retained delta content.'];
 
       findings.push(makeFinding(change.changeId, [delta.evidenceId], {
         ruleId: isLifecycle ? 'heurisko.manifest.lifecycle-script-change' : 'heurisko.manifest.script-change',
@@ -129,12 +158,12 @@ function collectDeterministicFindings(
             : 'A package script entry changed; inspect the command and its callers before deciding what behavior it enables.',
         severity: isLifecycle && change.status !== 'removed' ? 'medium' : 'informational',
         reviewPriority: isLifecycle && change.status !== 'removed' ? 'medium' : 'low',
-        evidenceConfidence: hasRetainedValue ? 'high' : 'limited',
+        evidenceConfidence: manifestDelta ? 'high' : 'limited',
         explanationStrength: 'exact',
         limitations: findingLimitations(bundle, limitations),
-        nextActions: hasRetainedValue
+        nextActions: manifestDelta
           ? ['Review the retained old and new script values and their referenced files; do not execute them on the host.']
-          : ['Retrieve or inspect the exact old and new manifest values in the evidence collector; do not install or execute the package.'],
+          : ['Resolve the retained old and new manifest values from producer evidence, then inspect referenced files without installing or executing the package.'],
       }));
     }
 

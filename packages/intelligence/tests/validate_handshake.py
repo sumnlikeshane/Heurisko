@@ -39,6 +39,8 @@ cases = json.loads(result.stdout)
 assert [case["id"] for case in cases] == [
     *(f"F{i}" for i in range(7)),
     "M1_ADDED_TEST_SCRIPT",
+    "M1_RETAINED_SCRIPT_ADDED",
+    "M1_RETAINED_SCRIPT_REMOVED",
     "M1_CHANGED_ENTRYPOINT",
     "M1_GENERATED_VERIFIED",
     "M1_UNCITED_CHANGE",
@@ -109,6 +111,12 @@ for case in cases:
         script = [finding for finding in analysis["findings"] if finding["ruleId"] == "heurisko.manifest.script-change"]
         assert script and "scripts.test is reported as added" in script[0]["observation"]
         assert script[0]["severity"] == "informational"
+    elif case["id"].startswith("M1_RETAINED_SCRIPT_"):
+        script = [finding for finding in analysis["findings"] if finding["ruleId"] == "heurisko.manifest.lifecycle-script-change"]
+        assert script and case["expectedDirection"] in script[0]["observation"]
+        assert script[0]["evidenceConfidence"] == "high"
+        expected_severity = "informational" if case["id"].endswith("REMOVED") else "medium"
+        assert script[0]["severity"] == expected_severity
     elif case["id"] == "M1_CHANGED_ENTRYPOINT":
         entrypoint = [finding for finding in analysis["findings"] if finding["ruleId"] == "heurisko.manifest.entrypoint-change"]
         assert entrypoint and entrypoint[0]["evidenceIds"] == [case["bundle"]["changes"][0]["evidenceIds"][0]]
