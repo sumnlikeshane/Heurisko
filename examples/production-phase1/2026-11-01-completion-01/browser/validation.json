@@ -1,0 +1,83 @@
+{
+  "category": "Agent-driven native/browser automation; not human or screen-reader acceptance",
+  "source": "build-measured/source-after.json; browser loaded pre-notice-footer UI build. Later build changes only add distribution notices; no React behavior changed.",
+  "browser": "Google Chrome on macOS; native application and extension surface",
+  "checks": [
+    {
+      "check": "Loopback via createBrowserTab",
+      "result": "blocked",
+      "detail": "ERR_BLOCKED_BY_CLIENT; native app navigation subsequently loaded the same local origin."
+    },
+    {
+      "check": "Default AI state and exact npm review",
+      "result": "pass",
+      "detail": "Do not request AI selected; Review binds npm:picocolors@1.1.1 and AI Off. Review did not Start acquisition."
+    },
+    {
+      "check": "Documentation and browser Back",
+      "result": "pass",
+      "detail": "Return retained Review state and exact coordinate."
+    },
+    {
+      "check": "Historical report and lifecycle citation",
+      "result": "pass",
+      "detail": "Original local-input report, six independent outcomes, 16 findings, artifact [585,611) displayed as inert marker."
+    },
+    {
+      "check": "Modal keyboard and nested Back",
+      "result": "pass",
+      "detail": "10 actual Tab targets remained in dialog; nested full member -> Esc restored citation; outer Esc restored citation button focus."
+    },
+    {
+      "check": "Native browser download",
+      "result": "pass",
+      "detail": "Browser history showed 243 KB Done. Preserved file has 63,733 original report bytes and 76 hash-verified blobs; see download-verification.json."
+    },
+    {
+      "check": "Native file/import",
+      "result": "blocked",
+      "detail": "Chooser setFiles denied because extension file-URL access is disabled. Normal macOS picker opened and selected exact downloaded filename, but resulting input.files remained empty after Open. No extension security setting changed, no import pass asserted."
+    },
+    {
+      "check": "390x844 reflow",
+      "result": "pass for sampled Open and retained Overview",
+      "detail": "Document scroll width=390; screenshots and AX retained. This is not every section at every viewport."
+    },
+    {
+      "check": "Native 200% zoom",
+      "result": "pass for sampled Open form",
+      "detail": "Native View Zoom In plus shortcuts changed devicePixelRatio from 2 to 4, viewport width1512 ->756, document width756. Restored to DPR2/width1512; viewport override reset."
+    },
+    {
+      "check": "Local service stopped",
+      "result": "pass",
+      "detail": "Cached identity docs remained navigable; Refresh reports displayed Reader disconnected and retry without starting a new job. Backend stopped cleanly."
+    },
+    {
+      "check": "External Internet offline",
+      "result": "not exercised",
+      "detail": "Host networking was not disabled; other projects were running. Source/build tests cover self-hosted assets but do not replace this observation."
+    },
+    {
+      "check": "Assistive technology",
+      "result": "partial automation only",
+      "detail": "AX headings/labels/modal scope and actual keyboard targets inspected. No actual VoiceOver/NVDA user listening/navigation, and no human task acceptance."
+    },
+    {
+      "check": "Safari",
+      "result": "limited",
+      "detail": "Loaded local title but native capture initially blank. No Safari task pass asserted."
+    }
+  ],
+  "settingsRestored": {
+    "zoom": "100%",
+    "viewport": "default",
+    "extensionPermissions": "unchanged"
+  },
+  "remaining": [
+    "Native file/download/import round trip with actual successful attachment",
+    "External-offline observation",
+    "Human keyboard/viewport/reflow review and actual screen-reader task acceptance"
+  ],
+  "observationLimit": "Native application AX/screenshot snapshots were sometimes stale after route changes (navigation-stale.png). The extension tab surface then verified the actual updated route/content. No navigation product defect or Safari pass was inferred from that stale capture."
+}

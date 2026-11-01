@@ -1,0 +1,63 @@
+Browser tab: 1237325268, Title: "Heurisko · Evidence workspace", URL: "http://127.0.0.1:43219/workspace/new".
+0 AXWebArea Heurisko · Evidence workspace, URL: 127.0.0.1:43219/workspace/new
+	1 container root
+		2 link Description: Skip to content, Value: 127.0.0.1:43219/workspace/new#workspace
+		3 container
+			4 link Description: Heurisko home, Value: 127.0.0.1:43219/
+			5 container Main navigation
+				6 link Description: Home, Value: 127.0.0.1:43219/
+				7 link Description: Documentation, Value: 127.0.0.1:43219/docs/start/quickstart
+				8 link Description: Workspace, Value: 127.0.0.1:43219/workspace/new
+		52 container
+			53 text WORKSPACE
+			54 container Workspace tasks
+				55 link Description: New investigation, Value: 127.0.0.1:43219/workspace/new
+				56 link Description: Open evidence, Value: 127.0.0.1:43219/workspace/open
+				57 link Description: Jobs, Value: 127.0.0.1:43219/workspace/jobs
+				58 link Description: Reports, Value: 127.0.0.1:43219/workspace/reports
+			59 button (collapsed) Reader · connected, Secondary Actions: Expand
+				60 text Reader · 
+				61 text connected
+		62 container workspace
+			63 text NEW INVESTIGATION
+			64 heading Review your investigation, Value: 1
+				65 text Review your investigation
+			66 text Compare one exact artifact with immutable source evidence. Review the request before anything starts.
+			67 content list Investigation steps
+				68 text 1 · Target
+				69 text 2 · Review
+				70 text 3 · Run
+			71 container Exact input review
+				72 heading Review exact request, Value: 2
+					73 text Review exact request
+				74 button Edit target and options
+				75 definition list
+					76 container Exact release
+						77 text Exact release
+					78 text npm:picocolors@1.1.1
+					79 container Source evidence
+						80 text Source evidence
+					81 text Use retained release metadata to look for source candidates.
+					82 container Package subtree
+						83 text Package subtree
+					84 text Repository root / resolved context
+					85 container Inspection profile
+						86 text Inspection profile
+					87 container
+						88 text Static retrieval and raw comparison  raw-static-s3-v1
+					89 container AI request
+						90 text AI request
+					91 text Off — equivalent to --no-ai.
+					92 container Requested policy
+						93 text Requested policy
+					94 text None requested.
+				95 text Source overrides and replay remain user asserted, not proof of origin. Local archives retain local-input identity.
+				96 button (collapsed) Technical request details, Secondary Actions: Expand
+					97 text Technical request details
+				98 text Confirming admits the selected bytes and starts one shared-engine job. No automatic retries.
+				99 button Confirm and start investigation
+				100 button Edit draft
+		50 container
+			51 text Exact bytes. Inspectable evidence. Visible limits. Local reader · one shared engine
+
+The focused UI element is 7 link Description: Documentation, URL: 127.0.0.1:43219/docs/start/quickstart

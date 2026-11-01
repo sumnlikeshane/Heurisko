@@ -1,0 +1,55 @@
+[
+  {
+    "name": "historical-s3",
+    "argv": [
+      "node",
+      "scripts/verify-s3-capture.mjs",
+      "examples/s3/current",
+      "--historical"
+    ],
+    "exit": 0,
+    "seconds": 55.906
+  },
+  {
+    "name": "historical-audit",
+    "argv": [
+      "node",
+      "scripts/verify-s3-capture.mjs",
+      "examples/audit-fixes/current",
+      "--historical"
+    ],
+    "exit": 0,
+    "seconds": 34.298
+  },
+  {
+    "name": "historical-handoff",
+    "argv": [
+      "node",
+      "scripts/verify-s3-capture.mjs",
+      "examples/handoff/current",
+      "--historical"
+    ],
+    "exit": 0,
+    "seconds": 31.68
+  },
+  {
+    "name": "documentation-amendment",
+    "argv": [
+      "pnpm",
+      "run",
+      "check:docs"
+    ],
+    "exit": 0,
+    "seconds": 0.973
+  },
+  {
+    "name": "amendment-diff",
+    "argv": [
+      "git",
+      "diff",
+      "--check"
+    ],
+    "exit": 0,
+    "seconds": 0.06
+  }
+]

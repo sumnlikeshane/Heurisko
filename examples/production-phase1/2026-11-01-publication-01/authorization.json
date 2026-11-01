@@ -1,0 +1,20 @@
+{
+  "owner": "Shane Joseph",
+  "statement": "you have my oermission",
+  "scope": "Commit the prepared Phase 1 package, push its feature branch, open the PR and run/inspect native final-head CI.",
+  "branch": "foundation/phase1-completion-20261101",
+  "commitMessage": "Complete local Phase 1 evidence and distribution notices",
+  "excludedActions": [
+    "merge",
+    "release",
+    "deployment",
+    "Phase 2 implementation"
+  ],
+  "excludedPublication": [
+    "ignored installed tools/venvs",
+    "local source-candidate archive",
+    "Docker images",
+    "private launch state",
+    "local-only PTY workspace symlink"
+  ]
+}

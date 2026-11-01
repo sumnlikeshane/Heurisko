@@ -1,0 +1,14 @@
+{
+  "scope": "Every previously manifested package/app/integration source file still matches the full local audit; no new runtime code change.",
+  "matched": true,
+  "checksReused": {
+    "serialCore": 146,
+    "readerTUI": 40,
+    "web": 79,
+    "realParserResources": "passed"
+  },
+  "receipts": [
+    "examples/production-phase1/2026-11-01-audit-01/validation.json",
+    "examples/production-phase1/2026-11-01-audit-access-01/validation.json"
+  ]
+}

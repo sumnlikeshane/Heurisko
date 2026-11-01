@@ -1,0 +1,5 @@
+{
+  "input": "https://phase1.invalid",
+  "code": "HOSTED_ORIGIN_INVALID",
+  "expectedAdmittedOrigin": "https://heurisko.onrender.com"
+}

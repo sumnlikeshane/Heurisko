@@ -1,0 +1,105 @@
+[
+  {
+    "name": "build",
+    "argv": [
+      "pnpm",
+      "run",
+      "typecheck"
+    ]
+  },
+  {
+    "name": "real-lifecycle",
+    "argv": [
+      "node",
+      "scripts/check-phase1-parser-lifecycle.mjs",
+      ".heurisko/ci-phase1-lifecycle"
+    ]
+  },
+  {
+    "name": "worker-resources",
+    "argv": [
+      "node",
+      "scripts/measure-phase1-parser.mjs",
+      ".heurisko/ci-phase1-resources"
+    ]
+  },
+  {
+    "name": "foundation",
+    "argv": [
+      "node",
+      "scripts/validate-phase1-foundation.mjs",
+      ".heurisko/ci-phase1-foundation"
+    ]
+  },
+  {
+    "name": "npm-default",
+    "argv": [
+      "node",
+      "packages/cli/dist/index.js",
+      "analyze",
+      "npm:picocolors@1.1.1",
+      "--source",
+      "https://github.com/alexeyraspopov/picocolors",
+      "--commit",
+      "6f0a4638348ed20633d623ee973f9c9a96f65104",
+      "--store",
+      ".heurisko/ci-phase1-npm-default-store",
+      "--report",
+      ".heurisko/ci-phase1-npm-default.report.json",
+      "--json"
+    ]
+  },
+  {
+    "name": "npm-no-ai",
+    "argv": [
+      "node",
+      "packages/cli/dist/index.js",
+      "analyze",
+      "npm:picocolors@1.1.1",
+      "--source",
+      "https://github.com/alexeyraspopov/picocolors",
+      "--commit",
+      "6f0a4638348ed20633d623ee973f9c9a96f65104",
+      "--store",
+      ".heurisko/ci-phase1-npm-no-ai-store",
+      "--report",
+      ".heurisko/ci-phase1-npm-no-ai.report.json",
+      "--no-ai",
+      "--json"
+    ]
+  },
+  {
+    "name": "npm-raw",
+    "argv": [
+      "node",
+      "packages/cli/dist/index.js",
+      "analyze",
+      "npm:picocolors@1.1.1",
+      "--source",
+      "https://github.com/alexeyraspopov/picocolors",
+      "--commit",
+      "6f0a4638348ed20633d623ee973f9c9a96f65104",
+      "--store",
+      ".heurisko/ci-phase1-npm-raw-store",
+      "--report",
+      ".heurisko/ci-phase1-npm-raw.report.json",
+      "--json"
+    ],
+    "env": {
+      "HEURISKO_ANALYSIS_MODULE": "off"
+    },
+    "acceptedExits": [
+      2
+    ]
+  },
+  {
+    "name": "npm-parity",
+    "argv": [
+      "node",
+      "scripts/verify-phase1-npm.mjs",
+      ".heurisko/ci-phase1-npm-default.report.json",
+      ".heurisko/ci-phase1-npm-no-ai.report.json",
+      ".heurisko/ci-phase1-npm-raw.report.json"
+    ]
+  }
+]

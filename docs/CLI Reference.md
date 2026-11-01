@@ -1,6 +1,6 @@
 # Heurisko CLI reference
 
-**Source-inspected:** 1 November 2026, Asia/Kolkata, [current CLI parser](../packages/cli/src/index.ts). This documents the local shared engine, static evidence producer and default reviewed deterministic integration; no new command is implemented by this document. [Full web scope](Web%20Application%20Product%20Scope.md) defines browser parity; [web usage](../apps/web/README.md) documents the separate reader/export tools.
+**Source-inspected:** 1 November 2026, Asia/Kolkata, [current CLI parser](../packages/cli/src/index.ts). This documents the local shared engine, static evidence producer and default reviewed deterministic integration; no new command is implemented by this document. [The capability map](../HEURISKO_COMPLETE_GUIDE.md#2-capability-map) defines current interface differences; [web usage](../apps/web/README.md) documents the separate reader/export tools.
 
 ## Setup and command availability
 
@@ -19,7 +19,7 @@ The static producer never installs/imports the analyzed package or runs its hook
 
 ## Deterministic analysis and raw-only replay
 
-The default is `@heurisko/intelligence-reviewed` version `0.1.0-55240e9`, derived from the supplied commit `55240e99409ad44cbd6a978f40873ef410cb1861`. The allowlisted host setting `HEURISKO_ANALYSIS_MODULE=55240e9` explicitly selects the same entry. Only reviewed deterministic code is admitted; provider/CodeAstra/model paths are excluded. Integration validation and remaining limits belong to the [module intake record](Final%20Module%20Intake.md); older receipts and saved reports retain their original configuration.
+The default is `@heurisko/intelligence-reviewed` version `0.1.0-55240e9`, derived from the supplied commit `55240e99409ad44cbd6a978f40873ef410cb1861`. The allowlisted host setting `HEURISKO_ANALYSIS_MODULE=55240e9` explicitly selects the same entry. Only reviewed deterministic code is admitted; provider/CodeAstra/model paths are excluded. Integration validation and remaining limits belong to the [module admission reference](../packages/intelligence-reviewed/README.md); older receipts and saved reports retain their original configuration.
 
 This is trusted **host-process configuration**, not an artifact option, CLI module-path flag, browser form field or HTTP module API. The shared engine reads it for a new investigation. An absent/empty value uses the reviewed default; `off` selects raw-only/unavailable analysis. An unknown nonempty selector is rejected before acquisition unless trusted caller code supplies its own explicit module. An explicit trusted `InvestigationContext.module` takes precedence. Opening a saved report never reruns analysis or changes its module identity.
 
@@ -37,7 +37,7 @@ node packages/cli/dist/index.js analyze \
   --bundle .heurisko/CONFIGURED_DETERMINISTIC_NEW/bundle.json --json
 ```
 
-`--no-ai` disables the model request while retaining configured deterministic checks. No model/provider is invoked by this path. Inspect actual findings, evidence, coverage and exit status; configuring a module cannot supply missing source bytes, provenance, policy evaluation or whole-file equivalence. Bounded retained manifest deltas are resolved only after hash, exact pointer, member-span and value/absence checks. Missing/corrupt/over-limit evidence remains limited or unexplained with incomplete heuristics. This supports scoped observations, not a package safety verdict or full P04 acceptance.
+AI is disabled by default; `--no-ai` remains accepted for existing commands and has the same deterministic behavior. No model/provider is invoked by this path. Inspect actual findings, evidence, coverage and exit status; configuring a module cannot supply missing source bytes, provenance, policy evaluation or whole-file equivalence. Bounded retained manifest deltas are resolved only after hash, exact pointer, member-span and value/absence checks. Missing/corrupt/over-limit evidence remains limited or unexplained with incomplete heuristics. This supports scoped observations, not a package safety verdict or full P04 acceptance.
 
 The retained-content boundary permits at most **128 candidate records**, **16 KiB per delta**, **256 KiB per member** and **1 MiB aggregate read budget**. Unique uncached successful reads count toward the aggregate; a failed read conservatively charges its allowed budget, and cached references are not charged twice. Invalid/missing/corrupt/oversize bindings leave raw bundle bytes unchanged and make heuristics incomplete with unresolved values/direction. Cancellation or deadline aborts analysis rather than returning a successful empty result.
 
@@ -78,7 +78,7 @@ Options use separate values (`--store DIR`), not `--store=DIR`. Duplicate option
 | `--policy REF` | analyze | Record requested trust policy; remains indeterminate until a concrete evaluator exists |
 | `--evidence ev_ID` | inspect | Read a retained evidence object's first 8,192 bytes after report/evidence verification |
 | `--json` | analyze, inspect | One canonical JSON result on stdout; diagnostics/progress on stderr |
-| `--no-ai` | analyze | Disable requested AI; configured deterministic checks remain active. Default request enables AI but no product model is admitted. |
+| `--no-ai` | analyze | Explicitly keep AI disabled; configured deterministic checks remain active. The default also disables AI; no product model is admitted. |
 | `--no-color` | analyze, inspect, tui / interactive entry | Inert uncolored output |
 | `--ascii` | tui / interactive entry | ASCII presentation request; rejected for analyze/inspect |
 | `--palette` | tui / interactive entry | Palette request; rejected for analyze/inspect |
@@ -132,7 +132,7 @@ Analyze and report inspection emit a readable uncolored summary by default; `--j
 | `2` | Otherwise materially incomplete/failed analysis or indeterminate requested policy |
 | `0` | Otherwise completed configured checks without violation; never universal harmlessness |
 
-The mapping is approved in A05, precedence tested in S2; final shared policy review/concrete evaluators remain open. The retained raw/default examples intentionally exit **2**, including successful historical JSON inspection. A newly configured report uses its own recorded outcomes and may have a different exit. Treat valid useful JSON plus exit 2 as incomplete evidence, not a process transport failure or a safe result. CI must capture both the exit and report; do not discard JSON just because a shell's fail-fast setting sees nonzero. No tested generic policy-evaluation recipe is claimed.
+The mapping is preserved in [current decisions](Approved%20Decision%20Register.md), with precedence implemented in `engine.ts` and covered by core tests; concrete policy evaluation remains unavailable. The retained raw/default examples intentionally exit **2**, including successful historical JSON inspection. A newly configured report uses its own recorded outcomes and may have a different exit. Treat valid useful JSON plus exit 2 as incomplete evidence, not a process transport failure or a safe result. CI must capture both the exit and report; do not discard JSON just because a shell's fail-fast setting sees nonzero. No tested generic policy-evaluation recipe is claimed.
 
 SIGINT/SIGTERM request cancellation via the shared abort signal. A request is not proof of cleanup acknowledgment; use actual outcome/recovery records. The parser retains durable records/locks/spool if creation/removal is uncertain. There is no CLI `resume`, `detach`, automatic lock deletion or general job recovery command; the existing explicit [parser recovery script](../scripts/recover-parser-job.mjs) is developer tooling and requires exact-job inspection, not a browser retry API.
 
@@ -174,4 +174,9 @@ Default terminal Home and `tui REPORT` are available as described above; their h
 | PyPI, `compare`, `project --lockfile`, SARIF, `report export`, `serve --local` | Later directions/provisional syntax; current parser rejects these commands |
 | Hosted analysis, accounts, notifications, public sharing | Separate future scope/approval; not prerequisites for local use |
 
-The web continuation implements browser surfaces over this parser/engine contract; [new execution receipts](../examples/web-investigation/README.md) are distinct from the earlier documentation-only observations. Future CLI changes must update this reference and the browser [parity matrix](Web%20Application%20Product%20Scope.md#5-cli-and-browser-parity-requirements), with actual setup/check receipts. Source inspection and historical validation are distinguished here; this documentation session did not run fresh acquisition, inference or product acceptance tests. Product models used: none. Coding assistance: Codex.
+The browser uses this engine contract with [explicit interface differences](../HEURISKO_COMPLETE_GUIDE.md#2-capability-map). Update this canonical command reference and affected browser/TUI guides with each parser change. [Current work](Production%20Phase%201%20Implementation%20Plan.md) and [future priorities](../PRODUCTION_MASTER_ROADMAP.md) track remaining validation and features. This reference is source-inspected; historical examples are not fresh acquisition or inference claims.
+
+
+### Missing-evidence compatibility
+
+`inspect REPORT --store STORE --json` validates the report and verifies its retained blobs before emitting JSON. A missing/corrupt required blob yields exit 3 and no JSON. This strict check is different from metadata viewing: `tui REPORT --store STORE` accepts a valid historical report even with missing blobs; redirected output is an inert summary with the recorded report exit. Interactive TUI and browser show `MISSING_BLOB` when cited bytes are requested. Neither path fabricates bytes or upgrades outcomes. A standalone report JSON is not a portable evidence bundle. The Phase 1 compatibility receipt preserves this distinction and the original bytes; use portable export or retain the matching store for full evidence.

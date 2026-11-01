@@ -1,0 +1,137 @@
+{
+  "checked": 6,
+  "byteAndReportParity": true,
+  "missingEvidence": {
+    "evidenceId": "ev_87f773e0a98edba25b223357",
+    "reason": "MISSING_BLOB",
+    "tuiWebAgree": true
+  },
+  "cases": [
+    {
+      "reportFile": "examples/handoff/current/B1.report.json",
+      "storeRoot": "examples/handoff/current/store",
+      "sha256": "sha256:2ddd237e2aba592d6901317a935d38495e0d58f7b207200f369a85a8855ba4da",
+      "bytes": 54508,
+      "reportId": "report_b74d0497f7fcf6c05930a9c2",
+      "cliExit": 2,
+      "outcomes": {
+        "artifactIntegrity": "matched",
+        "sourceAssociation": "ambiguous",
+        "provenancePolicy": "not_checked",
+        "correspondence": "unresolved",
+        "analysisCompleteness": "incomplete",
+        "policyResult": "indeterminate"
+      },
+      "coverage": {
+        "complete": true,
+        "omissions": 0
+      },
+      "findings": 0
+    },
+    {
+      "reportFile": "examples/handoff/current/B2.report.json",
+      "storeRoot": "examples/handoff/current/store",
+      "sha256": "sha256:1f09dd8942fa3b379d0dc3cf462772e8c3eedd616597c59f3ccc58176b6d6e1e",
+      "bytes": 196647,
+      "reportId": "report_98e7cf895ee37bff160d1894",
+      "cliExit": 2,
+      "outcomes": {
+        "artifactIntegrity": "matched",
+        "sourceAssociation": "publisher_asserted",
+        "provenancePolicy": "not_checked",
+        "correspondence": "unresolved",
+        "analysisCompleteness": "incomplete",
+        "policyResult": "indeterminate"
+      },
+      "coverage": {
+        "complete": true,
+        "omissions": 0
+      },
+      "findings": 0
+    },
+    {
+      "reportFile": "examples/handoff/current/B3.report.json",
+      "storeRoot": "examples/handoff/current/store",
+      "sha256": "sha256:66ea87bddf0319c4ccf8cc0d1e7be0f330eb17dc4fe4531775392692d9799757",
+      "bytes": 1150758,
+      "reportId": "report_53ce205b689a18c8845dba65",
+      "cliExit": 2,
+      "outcomes": {
+        "artifactIntegrity": "matched",
+        "sourceAssociation": "ambiguous",
+        "provenancePolicy": "not_checked",
+        "correspondence": "unresolved",
+        "analysisCompleteness": "incomplete",
+        "policyResult": "indeterminate"
+      },
+      "coverage": {
+        "complete": false,
+        "omissions": 0
+      },
+      "findings": 0
+    },
+    {
+      "reportFile": "examples/handoff/current/B3R.report.json",
+      "storeRoot": "examples/handoff/current/store",
+      "sha256": "sha256:5833188c0a2899db0bba94c94282d551f3507d0cc67b5077e2a9862f5b22cc7d",
+      "bytes": 591133,
+      "reportId": "report_f06ba1c962f7e54f3f84e7f5",
+      "cliExit": 2,
+      "outcomes": {
+        "artifactIntegrity": "matched",
+        "sourceAssociation": "user_supplied",
+        "provenancePolicy": "not_checked",
+        "correspondence": "unresolved",
+        "analysisCompleteness": "incomplete",
+        "policyResult": "indeterminate"
+      },
+      "coverage": {
+        "complete": false,
+        "omissions": 673
+      },
+      "findings": 0
+    },
+    {
+      "reportFile": "examples/p04/local-mutation/report.json",
+      "storeRoot": "examples/p04/local-mutation/store",
+      "sha256": "sha256:47b100f689e4f11c95b7e3fc90541b0abd909e05060c73d071ebdb22c7c65eb2",
+      "bytes": 48435,
+      "reportId": "report_6f2b8c84f5b3495a77e8da71",
+      "cliExit": 2,
+      "outcomes": {
+        "artifactIntegrity": "not_checked",
+        "sourceAssociation": "user_supplied",
+        "provenancePolicy": "not_checked",
+        "correspondence": "unresolved",
+        "analysisCompleteness": "incomplete",
+        "policyResult": "not_evaluated"
+      },
+      "coverage": {
+        "complete": true,
+        "omissions": 0
+      },
+      "findings": 0
+    },
+    {
+      "reportFile": "examples/part4/current/local-m1.report.json",
+      "storeRoot": "examples/part4/current/store",
+      "sha256": "sha256:f0c624713467072d1f5b2bf5d521fecfa2748593f6b203936f6532ba98c24df3",
+      "bytes": 63940,
+      "reportId": "report_7b46cdea60ae3108dd8c4b21",
+      "cliExit": 0,
+      "outcomes": {
+        "artifactIntegrity": "not_checked",
+        "sourceAssociation": "user_supplied",
+        "provenancePolicy": "not_checked",
+        "correspondence": "unresolved",
+        "analysisCompleteness": "complete",
+        "policyResult": "not_evaluated"
+      },
+      "coverage": {
+        "complete": true,
+        "omissions": 0
+      },
+      "findings": 16
+    }
+  ]
+}

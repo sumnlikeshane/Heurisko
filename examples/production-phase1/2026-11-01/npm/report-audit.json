@@ -1,0 +1,24 @@
+{
+  "reportPath": "npm/report.json",
+  "storePath": "npm/store",
+  "reportSha256": "sha256:a090d0a4d101fea3299dac6b0f0e191685bf1931f30353e4517c6786192dcb08",
+  "reportBytes": 71724,
+  "reportId": "report_b0a86e9cac74973daa351d75",
+  "outcomes": {
+    "artifactIntegrity": "matched",
+    "sourceAssociation": "ambiguous",
+    "provenancePolicy": "not_checked",
+    "correspondence": "unresolved",
+    "analysisCompleteness": "complete",
+    "policyResult": "not_evaluated"
+  },
+  "coverage": {
+    "complete": true,
+    "omissions": 0
+  },
+  "findings": 14,
+  "citedEvidenceId": "ev_7b9e38d1be5fa99cc01a3fa7",
+  "citedContentRef": "sha256:58546f33e3d8d110d1cc9dd1b6a5097066bd6c475ab0fea4498b4d2f67a00436",
+  "citedBytes": 273,
+  "cliTuiWebReportAndEvidenceAgree": true
+}

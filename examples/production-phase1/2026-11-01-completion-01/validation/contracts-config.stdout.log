@@ -1,0 +1,112 @@
+TAP version 13
+# Subtest: known-answer ASCII/Unicode/integer vectors match the accepted Python algorithm
+ok 1 - known-answer ASCII/Unicode/integer vectors match the accepted Python algorithm
+  ---
+  duration_ms: 28.814625
+  type: 'test'
+  ...
+# Subtest: all G0 evidence/report IDs are reproduced without changing accepted fixture order
+ok 2 - all G0 evidence/report IDs are reproduced without changing accepted fixture order
+  ---
+  duration_ms: 3.548833
+  type: 'test'
+  ...
+# Subtest: source order is deterministic; subtree/snapshot/build/config changes alter identity
+ok 3 - source order is deterministic; subtree/snapshot/build/config changes alter identity
+  ---
+  duration_ms: 24.037
+  type: 'test'
+  ...
+# Subtest: producer/consumer/persistence/import boundaries accept all positive G0 records
+ok 4 - producer/consumer/persistence/import boundaries accept all positive G0 records
+  ---
+  duration_ms: 2662.753292
+  type: 'test'
+  ...
+# Subtest: every accepted negative G0 counterexample is rejected at runtime
+ok 5 - every accepted negative G0 counterexample is rejected at runtime
+  ---
+  duration_ms: 1014.992292
+  type: 'test'
+  ...
+# Subtest: producer rejects unknown fields, forged IDs and unaccounted omissions
+ok 6 - producer rejects unknown fields, forged IDs and unaccounted omissions
+  ---
+  duration_ms: 279.829958
+  type: 'test'
+  ...
+# Subtest: consumer references are checked against the original evidence
+ok 7 - consumer references are checked against the original evidence
+  ---
+  duration_ms: 74.698125
+  type: 'test'
+  ...
+# Subtest: import rejects duplicate keys, unsafe numeric values, malformed JSON and size overflow
+ok 8 - import rejects duplicate keys, unsafe numeric values, malformed JSON and size overflow
+  ---
+  duration_ms: 213.009667
+  type: 'test'
+  ...
+# Subtest: missing validator fails closed; pre-cancelled validation never runs
+ok 9 - missing validator fails closed; pre-cancelled validation never runs
+  ---
+  duration_ms: 2.566667
+  type: 'test'
+  ...
+# Subtest: boundary results and persistence encoding cannot change while validation awaits
+ok 10 - boundary results and persistence encoding cannot change while validation awaits
+  ---
+  duration_ms: 152.496042
+  type: 'test'
+  ...
+# Subtest: missing analysis is explicitly incomplete with no invented findings
+ok 11 - missing analysis is explicitly incomplete with no invented findings
+  ---
+  duration_ms: 356.9625
+  type: 'test'
+  ...
+# Subtest: injected team module receives deeply frozen copies and validated options
+ok 12 - injected team module receives deeply frozen copies and validated options
+  ---
+  duration_ms: 505.816875
+  type: 'test'
+  ...
+# Subtest: module exceptions are bounded errors; invalid output is rejected
+ok 13 - module exceptions are bounded errors; invalid output is rejected
+  ---
+  duration_ms: 354.59925
+  type: 'test'
+  ...
+# Subtest: cancellation stops waiting for an asynchronous team module
+ok 14 - cancellation stops waiting for an asynchronous team module
+  ---
+  duration_ms: 139.459833
+  type: 'test'
+  ...
+# Subtest: deterministic equivalence excludes timestamps/model prose; storage bytes differ
+ok 15 - deterministic equivalence excludes timestamps/model prose; storage bytes differ
+  ---
+  duration_ms: 1.437834
+  type: 'test'
+  ...
+# Subtest: unavailable AI can coexist with completed deterministic processing
+ok 16 - unavailable AI can coexist with completed deterministic processing
+  ---
+  duration_ms: 66.698
+  type: 'test'
+  ...
+# Subtest: CLI help is noninteractive; malformed analyze returns 3
+ok 17 - CLI help is noninteractive; malformed analyze returns 3
+  ---
+  duration_ms: 74.434
+  type: 'test'
+  ...
+1..17
+# tests 17
+# suites 0
+# pass 17
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 6006.421416

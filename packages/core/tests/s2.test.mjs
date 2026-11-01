@@ -175,6 +175,12 @@ test('CLI is redirected/JSON-safe, inspect resolves exact retained evidence; ter
  const inspect=run(['inspect',reportFile,'--store',store.root,'--json']);assert.equal(inspect.status,exitCode(report));assert.deepEqual(JSON.parse(inspect.stdout),report);assert.equal(inspect.stderr,'');
  const e=report.bundle.evidence.find(e=>e.kind==='artifact_member');const human=run(['inspect',reportFile,'--store',store.root,'--evidence',e.evidenceId,'--no-color']);assert.equal(human.status,exitCode(report));assert.ok(!human.stdout.includes('\u001b'));assert.ok(!human.stdout.includes('\u0007'));
  const analyzed=run(['analyze','--artifact',input.artifactPath,'--source',repo,'--commit',commit,'--source-archive',source,'--store',store.root,'--name','\u009bLABEL\u202e','--no-ai','--json']);const cliReport=JSON.parse(analyzed.stdout);assert.equal(analyzed.status,exitCode(cliReport));assert.ok(!/[\u009b\u202e]/.test(analyzed.stdout));assert.equal(cliReport.bundle.artifact.packageName,'\u009bLABEL\u202e');assert.equal(cliReport.bundle.artifact.observedSha256,report.bundle.artifact.observedSha256);assert.notEqual(cliReport.reportId,report.reportId,'Different CLI analysis profile must change identity');assert.match(analyzed.stderr,/persist: complete/);
+ const defaultRun=run(['analyze','--artifact',input.artifactPath,'--source',repo,'--commit',commit,'--source-archive',source,'--store',store.root,'--name','\u009bLABEL\u202e','--json']);
+ const defaultReport=JSON.parse(defaultRun.stdout);
+ assert.equal(defaultRun.status,analyzed.status);
+ assert.equal(defaultReport.analysis.aiState.status,'disabled');
+ assert.equal(defaultReport.reportId,cliReport.reportId,'The default and explicit --no-ai paths must have the same evaluation identity');
+ assert.deepEqual(defaultReport.analysis.findings,cliReport.analysis.findings);
  const bad=run(['analyze','--artifact',input.artifactPath,'--unknown']);assert.equal(bad.status,3);assert.equal(bad.stdout,'');assert.ok(!bad.stderr.includes(path));
  assert.equal(terminalText('\u001b[31m\u009btest\u202e'),'\\u001b[31m\\u009btest\\u202e');
 });

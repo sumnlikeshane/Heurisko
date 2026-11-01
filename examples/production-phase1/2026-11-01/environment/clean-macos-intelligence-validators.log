@@ -1,0 +1,6 @@
+validate_handshake.py PASS synthetic M1 evaluation: lifecycle and entrypoint deltas, generated evidence, omissions, and contradictory or uncited records are checked against the shared schemas
+validate_inference.py PASS M2 OpenRouter adapter: explicit opt-in, evidence-reference rejection, provenance abstention guard, retries, secret-safe metadata, and contract-valid result states
+validate_interpretations.py PASS synthetic M2 interpretation checks: strict shape, known finding/retrieved evidence, citation alignment, and explicit abstention; entailment remains a separate judge step
+validate_prompts.py PASS synthetic M2 prompt packaging: fixed instruction/data separation, hostile payload containment, no tool channel, preserved citations, and whole-excerpt size limits
+validate_real_setuptools.py PASS real M1/M2 evidence: pinned setuptools wheel-only .pth remains visible and untrusted; bounded retrieval returns all manually labeled relevant excerpts at k=5
+validate_retrieval.py PASS synthetic M2 retrieval: retained-content filter, lexical ranking, exact evidence locators, and citation membership checks

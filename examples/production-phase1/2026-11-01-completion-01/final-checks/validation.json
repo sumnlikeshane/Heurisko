@@ -1,0 +1,89 @@
+{
+  "host": {
+    "system": "Darwin",
+    "release": "25.6.0",
+    "machine": "arm64"
+  },
+  "started": "2026-11-01T17:06:58.748876+00:00",
+  "checks": [
+    {
+      "name": "typecheck",
+      "argv": [
+        "pnpm",
+        "run",
+        "typecheck"
+      ],
+      "exit": 0,
+      "seconds": 13.319
+    },
+    {
+      "name": "web",
+      "argv": [
+        "pnpm",
+        "--filter",
+        "@heurisko/web",
+        "test"
+      ],
+      "exit": 0,
+      "seconds": 7.291
+    },
+    {
+      "name": "intake",
+      "argv": [
+        "node",
+        "scripts/verify-intelligence-intake.mjs"
+      ],
+      "exit": 0,
+      "seconds": 0.209
+    },
+    {
+      "name": "secrets",
+      "argv": [
+        "node",
+        "scripts/check-phase1-secrets.mjs"
+      ],
+      "exit": 0,
+      "seconds": 1.904
+    },
+    {
+      "name": "diff",
+      "argv": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit": 0,
+      "seconds": 0.564
+    },
+    {
+      "name": "validate-phase1-foundation-syntax",
+      "argv": [
+        "node",
+        "--check",
+        "scripts/validate-phase1-foundation.mjs"
+      ],
+      "exit": 0,
+      "seconds": 0.166
+    },
+    {
+      "name": "check-phase1-parser-lifecycle-syntax",
+      "argv": [
+        "node",
+        "--check",
+        "scripts/check-phase1-parser-lifecycle.mjs"
+      ],
+      "exit": 0,
+      "seconds": 0.035
+    },
+    {
+      "name": "measure-phase1-parser-syntax",
+      "argv": [
+        "node",
+        "--check",
+        "scripts/measure-phase1-parser.mjs"
+      ],
+      "exit": 0,
+      "seconds": 0.045
+    }
+  ]
+}

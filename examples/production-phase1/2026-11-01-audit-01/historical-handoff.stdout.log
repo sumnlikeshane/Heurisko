@@ -1,0 +1,97 @@
+{
+  "version": "heurisko-s3-verification-v1",
+  "checkedAt": "2026-11-01T18:00:34.579Z",
+  "validationScope": "Historical retained evidence/receipts; no current-code binding claimed.",
+  "engine": "shane-audit-v1;sha256:603146fe725954c1d1153393f709a5a3f518c008a745e7ffb637cfc54d385e02",
+  "codeDigests": {
+    "engine": "sha256:0d99a9289e144a0aae8f45378a24774205ca5e572ec8f82aaf5723e1b2707c0c",
+    "producer": "sha256:d1dd6c3d0617cf60044df50217a6f30b0faa89fe581f052138e563a63c817598",
+    "comparison": "sha256:9a1a68f30013e0ff7c4e6fd40c2caa68c169bc9e5a76bc6656324d08992ea51b",
+    "archive": "sha256:9d1722caf4fda64a76f74bf075c9675dc73986be8dc4be6f4f9a3d85baab52d6",
+    "network": "sha256:06c7b087282832746631c5a89f2ee929ae7ec8cf0b2aec8d80d30c410e264e52",
+    "storage": "sha256:763408f7644f18cd62c3cb591d006cdc7db79641f0dc797be784bbef3ca595c8",
+    "parser-runtime": "sha256:05cc905bb69c7c2bffa43e9aca54ea20d3fb2b7a1459ac40ae1a09af437187b0",
+    "parser-job": "sha256:d520eb67a782bc6d53e3daebe9f99b9c722ecf696435321aa1e0925cc8cbc7db",
+    "adapter": "sha256:79970491592c61cdbad11b60527ce6ebbf730f82740e98f892b41f5c1bacc4f4",
+    "identity": "sha256:91e189c4a4b7eef82b788da7b7707af9fa6df40b4268c49d8b108c682d124e96",
+    "validation": "sha256:5b77dc41ec7d65681de88feb2f033651884bcf3cfb15bd742cbf64d2b3a48324",
+    "safety": "sha256:f66b9867a5c3a1ec4163f95a446c3d4ba975d0aa07b9df6a28d3aaa172aa9c01",
+    "npm": "sha256:19bd4bc0064b4b6421753305e26db2879662ccb887d727d0aa99defb73d6e850",
+    "sources": "sha256:6eb632d8baf16b4fe313b4433127c64247b09c64687b66387dc1dfb3883d8c25",
+    "provenance": "sha256:e9f6be405bbd3b546bcd25a377180fb5806ca6eeeb12ac8a3071b5bdaa5ce222",
+    "parserWorker": "sha256:c3425b822ae12703f1f7a7fe891abebbc5776361374efab94f227c49d9bdaceb",
+    "contractSchema": "sha256:bef30a837a383ed7a3fbf49e9bac885822d6e3bdea9ccd05ff46b37f350b4dae",
+    "contractValidator": "sha256:7b3a956eb4651477792a77659397d85c849fa48d4780ddecef02ca3d3242e2e7",
+    "contractSemantics": "sha256:c1e231aa0c887da8e890e7615f8c0ca1e72e21246155746b36c6aebb4ee636e1"
+  },
+  "results": [
+    {
+      "caseId": "B1",
+      "reportId": "report_b74d0497f7fcf6c05930a9c2",
+      "reportContentRef": "sha256:2ddd237e2aba592d6901317a935d38495e0d58f7b207200f369a85a8855ba4da",
+      "configurationFingerprint": "e3f113b259f05172b0e46a7bcc2b3e90b17d2363bc51641cb414e3e387b476c8",
+      "evidenceCount": 89,
+      "exitCode": 2,
+      "outcomes": {
+        "artifactIntegrity": "matched",
+        "sourceAssociation": "ambiguous",
+        "provenancePolicy": "not_checked",
+        "correspondence": "unresolved",
+        "analysisCompleteness": "incomplete",
+        "policyResult": "indeterminate"
+      }
+    },
+    {
+      "caseId": "B2",
+      "reportId": "report_98e7cf895ee37bff160d1894",
+      "reportContentRef": "sha256:1f09dd8942fa3b379d0dc3cf462772e8c3eedd616597c59f3ccc58176b6d6e1e",
+      "configurationFingerprint": "b35816deb1ec0b91f7b7266876e14f73a2a0c39188dd4abe48d98f86decbaca3",
+      "evidenceCount": 308,
+      "exitCode": 2,
+      "outcomes": {
+        "artifactIntegrity": "matched",
+        "sourceAssociation": "publisher_asserted",
+        "provenancePolicy": "not_checked",
+        "correspondence": "unresolved",
+        "analysisCompleteness": "incomplete",
+        "policyResult": "indeterminate"
+      }
+    },
+    {
+      "caseId": "B3",
+      "reportId": "report_53ce205b689a18c8845dba65",
+      "reportContentRef": "sha256:66ea87bddf0319c4ccf8cc0d1e7be0f330eb17dc4fe4531775392692d9799757",
+      "configurationFingerprint": "42b9abbec20416d1903a50446e7afff23e55fa3237089d30add22662c5a80289",
+      "evidenceCount": 1829,
+      "exitCode": 2,
+      "outcomes": {
+        "artifactIntegrity": "matched",
+        "sourceAssociation": "ambiguous",
+        "provenancePolicy": "not_checked",
+        "correspondence": "unresolved",
+        "analysisCompleteness": "incomplete",
+        "policyResult": "indeterminate"
+      }
+    },
+    {
+      "caseId": "B3R",
+      "reportId": "report_f06ba1c962f7e54f3f84e7f5",
+      "reportContentRef": "sha256:5833188c0a2899db0bba94c94282d551f3507d0cc67b5077e2a9862f5b22cc7d",
+      "configurationFingerprint": "f4ea93f14187dead5ddb4511d52a554873b353b7843c872e38330a212b12418c",
+      "evidenceCount": 762,
+      "exitCode": 2,
+      "outcomes": {
+        "artifactIntegrity": "matched",
+        "sourceAssociation": "user_supplied",
+        "provenancePolicy": "not_checked",
+        "correspondence": "unresolved",
+        "analysisCompleteness": "incomplete",
+        "policyResult": "indeterminate"
+      }
+    }
+  ],
+  "retainedEvidenceReferencesVerified": 2988,
+  "rawDiffSideSpansVerified": 1028,
+  "manifestValueSpansVerified": 146,
+  "scope": "Hash/schema/reference/span/current-code/corpus handoff checks only. No Malhar quality, cryptographic verification, model, rebuild or complete P04 claim."
+}

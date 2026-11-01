@@ -1,0 +1,88 @@
+Browser tab: 1237325268, Title: "Heurisko · Evidence workspace", URL: "http://127.0.0.1:43219/workspace/observations/4eba1ced04a9b3a09539d30d0678cde6/overview".
+0 AXWebArea Heurisko · Evidence workspace, URL: 127.0.0.1:43219/workspace/observations/4eba1ced04a9b3a09539d30d0678cde6/overview
+	1 container root
+		2 link Description: Skip to content, Value: 127.0.0.1:43219/workspace/observations/4eba1ced04a9b3a09539d30d0678cde6/overview#workspace
+		3 container
+			4 link Description: Heurisko home, Value: 127.0.0.1:43219/
+			5 container Main navigation
+				6 link Description: Home, Value: 127.0.0.1:43219/
+				7 link Description: Documentation, Value: 127.0.0.1:43219/docs/start/quickstart
+				8 link Description: Workspace, Value: 127.0.0.1:43219/workspace/new
+		9 container
+			11 container Workspace tasks
+				12 link Description: New investigation, Value: 127.0.0.1:43219/workspace/new
+				13 link Description: Open evidence, Value: 127.0.0.1:43219/workspace/open
+				14 link Description: Jobs, Value: 127.0.0.1:43219/workspace/jobs
+				15 link Description: Reports, Value: 127.0.0.1:43219/workspace/reports
+			16 button (collapsed) Reader · connected, Secondary Actions: Expand
+				17 text Reader · 
+				18 text connected
+		19 container workspace
+			256 container
+				257 text RETAINED OBSERVATION ·  LOCAL INPUT
+			258 heading picocolors@1.1.1, Value: 1
+				259 text picocolors
+				260 text @
+				261 text 1.1.1
+			262 container
+				263 text Captured  2026-11-01T00:27:21Z
+			264 button (collapsed) Observation identity, Secondary Actions: Expand
+				265 text Observation identity
+			266 button (collapsed) Save this observation, Secondary Actions: Expand
+				267 text Save this observation
+			268 container Report sections
+				269 link Description: Overview, Value: 127.0.0.1:43219/workspace/observations/4eba1ced04a9b3a09539d30d0678cde6/overview
+				270 link Description: Files, Value: 127.0.0.1:43219/workspace/observations/4eba1ced04a9b3a09539d30d0678cde6/files
+				271 link Description: Findings, Value: 127.0.0.1:43219/workspace/observations/4eba1ced04a9b3a09539d30d0678cde6/findings
+				272 link Description: Source, Value: 127.0.0.1:43219/workspace/observations/4eba1ced04a9b3a09539d30d0678cde6/source
+				273 link Description: AI, Value: 127.0.0.1:43219/workspace/observations/4eba1ced04a9b3a09539d30d0678cde6/ai
+				274 link Description: Coverage, Value: 127.0.0.1:43219/workspace/observations/4eba1ced04a9b3a09539d30d0678cde6/coverage
+			275 container
+				276 text WHAT THIS OBSERVATION ESTABLISHED
+				277 heading These are retained local-input bytes., Value: 2
+					278 text These are retained local-input bytes.
+				279 text Source association is recorded as user supplied.  Source correspondence is  unresolved . Analysis is  complete ; policy is  not evaluated . 16 findings were recorded for the examined scope.
+				280 button Inspect file differences →
+				281 button Review coverage limits
+				282 button Read findings
+			283 container Independent recorded outcomes
+				284 text Artifact integrity not_checked Source association user_supplied Provenance policy not_checked Source correspondence unresolved Analysis completeness complete Policy result not_evaluated
+			285 container
+				286 heading Useful next inspections, Value: 2
+					287 text Useful next inspections
+				288 content list
+					289 container
+						290 AXListMarker • 
+						291 button 20 recorded file relationships
+							292 text 20
+							293 text  recorded file relationships
+						294 text Follow a relationship to the retained artifact and source bytes.
+					295 container
+						296 AXListMarker • 
+						297 button 1 source candidates · 0 conflicts
+							298 text 1
+							299 text  source candidates · 
+							300 text 0
+							301 text  conflicts
+						302 text Inspect the exact revision and package subtree behind each claim.
+					303 container
+						304 AXListMarker • 
+						305 button 0 omissions and all stage records
+							306 text 0
+							307 text  omissions and all stage records
+						308 text Review unsupported content, failed processing and excluded scope.
+			309 container
+				310 heading Limits of this conclusion, Value: 2
+					311 text Limits of this conclusion
+				312 text These outcomes describe recorded evidence. Matching bytes, complete processing or zero findings do not establish that a package is safe.
+				313 button (collapsed) All recorded limitations, Secondary Actions: Expand
+					314 text All recorded limitations
+				315 button AI state: disabled
+					316 text AI state: 
+					317 text disabled
+			318 button (collapsed) Artifact, report and configuration identity, Secondary Actions: Expand
+				319 text Artifact, report and configuration identity
+		229 container
+			230 text Exact bytes. Inspectable evidence. Visible limits. Local reader · one shared engine
+
+The focused UI element is 0 AXWebArea Heurisko · Evidence workspace, URL: 127.0.0.1:43219/workspace/observations/4eba1ced04a9b3a09539d30d0678cde6/overview

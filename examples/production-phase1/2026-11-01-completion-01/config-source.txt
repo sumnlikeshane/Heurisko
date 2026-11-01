@@ -1,0 +1,7 @@
+apps/web/server/hosted.ts:9:    if (env.HEURISKO_WEB_MODE === undefined || env.HEURISKO_WEB_MODE === 'local') return undefined;
+apps/web/server/hosted.ts:10:    if (env.HEURISKO_WEB_MODE !== 'public-readonly') throw Error('WEB_MODE_INVALID');
+apps/web/server/main.ts:7:    const hosted = hostedSettings(process.env);
+packages/core/src/network.ts:26:  if(Object.keys(process.env).some(k=>/^(https?_proxy|all_proxy)$/i.test(k) && process.env[k]))throw new DownloadError('PROXY_ENVIRONMENT_REJECTED');
+packages/core/src/reviewed-module.ts:14:export function configuredAnalysisSelection(value:string|undefined=process.env.HEURISKO_ANALYSIS_MODULE):typeof REVIEWED_INTELLIGENCE_SELECTOR|undefined {
+packages/core/src/parser-job.ts:37:function environment(){return {PATH:process.env.PATH,HOME:process.env.HOME,LANG:'C.UTF-8'};}
+packages/tui/src/index.tsx:10: const app=render(<App {...options} theme={{ascii:!!options.ascii,noColor:!!options.noColor||process.env.NO_COLOR!==undefined,palette:!!options.palette}}/>,{exitOnCtrlC:false,patchConsole:false,maxFps:20});

@@ -1,0 +1,26 @@
+[
+  {
+    "file": "emscripten-3.1.28-LICENSE",
+    "url": "https://raw.githubusercontent.com/emscripten-core/emscripten/3.1.28/LICENSE",
+    "bytes": 5093,
+    "sha256": "620a78084fc7ca97c0b5dea9abf891f3ffcadfdbf305276f099c9c4e12fc1d86"
+  },
+  {
+    "file": "node-22.23.4-LICENSE",
+    "url": "https://raw.githubusercontent.com/nodejs/node/v22.23.4/LICENSE",
+    "bytes": 145485,
+    "sha256": "c738ae413cf561f174e34f6961f8ca458aae2369a73640dda6234c629b98bcc4"
+  },
+  {
+    "file": "python-3.13.2-LICENSE",
+    "url": "https://raw.githubusercontent.com/python/cpython/v3.13.2/LICENSE",
+    "bytes": 13809,
+    "sha256": "78b12c3a81360b357002334f0e70ea0e92eebf7a9b358805c03c48484945f3bb"
+  },
+  {
+    "file": "python-3.13.18-LICENSE",
+    "url": "https://raw.githubusercontent.com/python/cpython/v3.13.18/LICENSE",
+    "bytes": 13809,
+    "sha256": "78b12c3a81360b357002334f0e70ea0e92eebf7a9b358805c03c48484945f3bb"
+  }
+]

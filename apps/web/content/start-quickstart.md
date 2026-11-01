@@ -51,7 +51,7 @@ For a new exact npm investigation:
 node packages/cli/dist/index.js analyze npm:picocolors@1.1.1 --store .heurisko/npm-run --no-ai --json
 ```
 
-`--no-ai` disables the AI request. The current producer has no integrated model or analysis module; enabling a request cannot supply one. Keep a fresh output destination if adding `--report` or `--bundle`.
+AI is disabled by default; `--no-ai` remains accepted. The reviewed deterministic analysis module still runs, while model inference remains unavailable. Keep a fresh output destination if adding `--report` or `--bundle`.
 
 ## Choose your next task
 

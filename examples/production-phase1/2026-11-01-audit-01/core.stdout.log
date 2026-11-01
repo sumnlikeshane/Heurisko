@@ -1,0 +1,1439 @@
+TAP version 13
+# Subtest: acknowledged parser creation starts/removes only the exact immutable container ID
+ok 1 - acknowledged parser creation starts/removes only the exact immutable container ID
+  ---
+  duration_ms: 0.879958
+  type: 'test'
+  ...
+# Subtest: cancel during delayed acknowledged creation waits for the acknowledgment and never starts
+ok 2 - cancel during delayed acknowledged creation waits for the acknowledgment and never starts
+  ---
+  duration_ms: 0.13825
+  type: 'test'
+  ...
+# Subtest: unacknowledged create plus immediate not-found never proves cleanup before late creation
+ok 3 - unacknowledged create plus immediate not-found never proves cleanup before late creation
+  ---
+  duration_ms: 0.127417
+  type: 'test'
+  ...
+# Subtest: failed exact removal remains unconfirmed even after a successful parse
+ok 4 - failed exact removal remains unconfirmed even after a successful parse
+  ---
+  duration_ms: 0.125667
+  type: 'test'
+  ...
+# Subtest: attach startup failure still removes the acknowledged exact job
+ok 5 - attach startup failure still removes the acknowledged exact job
+  ---
+  duration_ms: 0.117333
+  type: 'test'
+  ...
+# Subtest: wall timeout awaits exact daemon cleanup instead of only killing its attach client
+ok 6 - wall timeout awaits exact daemon cleanup instead of only killing its attach client
+  ---
+  duration_ms: 11.230708
+  type: 'test'
+  ...
+# Subtest: unconfirmed creation retains private spool, durable job identity and both store locks
+ok 7 - unconfirmed creation retains private spool, durable job identity and both store locks
+  ---
+  duration_ms: 68.611375
+  type: 'test'
+  ...
+# Subtest: explicit recovery stopped verifies identity before releasing only its own records
+ok 8 - explicit recovery stopped verifies identity before releasing only its own records
+  ---
+  duration_ms: 730.957709
+  type: 'test'
+  ...
+# Subtest: explicit recovery running verifies identity before releasing only its own records
+ok 9 - explicit recovery running verifies identity before releasing only its own records
+  ---
+  duration_ms: 540.543583
+  type: 'test'
+  ...
+# Subtest: explicit recovery wrong-label verifies identity before releasing only its own records
+ok 10 - explicit recovery wrong-label verifies identity before releasing only its own records
+  ---
+  duration_ms: 526.883917
+  type: 'test'
+  ...
+# Subtest: explicit recovery missing verifies identity before releasing only its own records
+ok 11 - explicit recovery missing verifies identity before releasing only its own records
+  ---
+  duration_ms: 531.566042
+  type: 'test'
+  ...
+# Subtest: missing executable/configuration digest is rejected before an injected module can run
+ok 12 - missing executable/configuration digest is rejected before an injected module can run
+  ---
+  duration_ms: 0.614625
+  type: 'test'
+  ...
+# Subtest: same package version with changed implementation or rule settings produces distinct report identities
+not ok 13 - same package version with changed implementation or rule settings produces distinct report identities
+  ---
+  duration_ms: 801.435667
+  type: 'test'
+  location: '/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/audit-fixes.test.mjs:89:1'
+  failureType: 'testCodeFailure'
+  error: 'STORE_BUSY_RECOVERY_REQUIRED'
+  code: 'STORE_BUSY_RECOVERY_REQUIRED'
+  stack: |-
+    EvidenceStore.exclusive (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/storage.js:135:19)
+    async retainEvidence (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/comparison.js:15:17)
+    async collectEvidence (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/producer.js:169:5)
+    async investigate (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/engine.js:36:20)
+    async TestContext.<anonymous> (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/audit-fixes.test.mjs:95:31)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: spool and both locks remain until delayed exact-job removal is acknowledged
+ok 14 - spool and both locks remain until delayed exact-job removal is acknowledged
+  ---
+  duration_ms: 99.083792
+  type: 'test'
+  ...
+# Subtest: late acknowledged creation after wall timeout never starts and awaits exact cleanup
+ok 15 - late acknowledged creation after wall timeout never starts and awaits exact cleanup
+  ---
+  duration_ms: 31.473083
+  type: 'test'
+  ...
+# Subtest: bounded local file open rejects FIFO before waiting for a writer
+ok 16 - bounded local file open rejects FIFO before waiting for a writer
+  ---
+  duration_ms: 142.035708
+  type: 'test'
+  ...
+# Subtest: CLI file and digest imports reject invalid UTF-8 instead of changing report identity
+ok 17 - CLI file and digest imports reject invalid UTF-8 instead of changing report identity
+  ---
+  duration_ms: 216.723125
+  type: 'test'
+  ...
+# Subtest: CLI report byte imports preserve BOM rejection and valid retained identity
+ok 18 - CLI report byte imports preserve BOM rejection and valid retained identity
+  ---
+  duration_ms: 1030.40725
+  type: 'test'
+  ...
+# Subtest: CLI evidence inspection honors not_exported even when matching bytes exist
+ok 19 - CLI evidence inspection honors not_exported even when matching bytes exist
+  ---
+  duration_ms: 573.449666
+  type: 'test'
+  ...
+# Subtest: CLI evidence inspection honors unavailable even when matching bytes exist
+ok 20 - CLI evidence inspection honors unavailable even when matching bytes exist
+  ---
+  duration_ms: 590.186875
+  type: 'test'
+  ...
+# Subtest: known-answer ASCII/Unicode/integer vectors match the accepted Python algorithm
+ok 21 - known-answer ASCII/Unicode/integer vectors match the accepted Python algorithm
+  ---
+  duration_ms: 23.952666
+  type: 'test'
+  ...
+# Subtest: all G0 evidence/report IDs are reproduced without changing accepted fixture order
+ok 22 - all G0 evidence/report IDs are reproduced without changing accepted fixture order
+  ---
+  duration_ms: 1.296
+  type: 'test'
+  ...
+# Subtest: source order is deterministic; subtree/snapshot/build/config changes alter identity
+ok 23 - source order is deterministic; subtree/snapshot/build/config changes alter identity
+  ---
+  duration_ms: 22.906
+  type: 'test'
+  ...
+# Subtest: producer/consumer/persistence/import boundaries accept all positive G0 records
+ok 24 - producer/consumer/persistence/import boundaries accept all positive G0 records
+  ---
+  duration_ms: 2609.827417
+  type: 'test'
+  ...
+# Subtest: every accepted negative G0 counterexample is rejected at runtime
+ok 25 - every accepted negative G0 counterexample is rejected at runtime
+  ---
+  duration_ms: 698.8505
+  type: 'test'
+  ...
+# Subtest: producer rejects unknown fields, forged IDs and unaccounted omissions
+ok 26 - producer rejects unknown fields, forged IDs and unaccounted omissions
+  ---
+  duration_ms: 210.107917
+  type: 'test'
+  ...
+# Subtest: consumer references are checked against the original evidence
+ok 27 - consumer references are checked against the original evidence
+  ---
+  duration_ms: 69.359458
+  type: 'test'
+  ...
+# Subtest: import rejects duplicate keys, unsafe numeric values, malformed JSON and size overflow
+ok 28 - import rejects duplicate keys, unsafe numeric values, malformed JSON and size overflow
+  ---
+  duration_ms: 205.539042
+  type: 'test'
+  ...
+# Subtest: missing validator fails closed; pre-cancelled validation never runs
+ok 29 - missing validator fails closed; pre-cancelled validation never runs
+  ---
+  duration_ms: 2.014584
+  type: 'test'
+  ...
+# Subtest: boundary results and persistence encoding cannot change while validation awaits
+ok 30 - boundary results and persistence encoding cannot change while validation awaits
+  ---
+  duration_ms: 138.635625
+  type: 'test'
+  ...
+# Subtest: missing analysis is explicitly incomplete with no invented findings
+ok 31 - missing analysis is explicitly incomplete with no invented findings
+  ---
+  duration_ms: 352.805834
+  type: 'test'
+  ...
+# Subtest: injected team module receives deeply frozen copies and validated options
+ok 32 - injected team module receives deeply frozen copies and validated options
+  ---
+  duration_ms: 534.446042
+  type: 'test'
+  ...
+# Subtest: module exceptions are bounded errors; invalid output is rejected
+ok 33 - module exceptions are bounded errors; invalid output is rejected
+  ---
+  duration_ms: 343.658875
+  type: 'test'
+  ...
+# Subtest: cancellation stops waiting for an asynchronous team module
+ok 34 - cancellation stops waiting for an asynchronous team module
+  ---
+  duration_ms: 141.314167
+  type: 'test'
+  ...
+# Subtest: deterministic equivalence excludes timestamps/model prose; storage bytes differ
+ok 35 - deterministic equivalence excludes timestamps/model prose; storage bytes differ
+  ---
+  duration_ms: 1.745084
+  type: 'test'
+  ...
+# Subtest: unavailable AI can coexist with completed deterministic processing
+ok 36 - unavailable AI can coexist with completed deterministic processing
+  ---
+  duration_ms: 69.766208
+  type: 'test'
+  ...
+# Subtest: CLI help is noninteractive; malformed analyze returns 3
+ok 37 - CLI help is noninteractive; malformed analyze returns 3
+  ---
+  duration_ms: 75.599709
+  type: 'test'
+  ...
+# Subtest: actual canonical local fixture resolves hash-bound lifecycle addition and removal without changing evidence
+ok 38 - actual canonical local fixture resolves hash-bound lifecycle addition and removal without changing evidence
+  ---
+  duration_ms: 18.739208
+  type: 'test'
+  ...
+# Subtest: the reviewed 55240e9 deterministic consumer accepts the real retained addition through the G0 adapter
+ok 39 - the reviewed 55240e9 deterministic consumer accepts the real retained addition through the G0 adapter
+  ---
+  duration_ms: 261.707667
+  type: 'test'
+  ...
+# Subtest: actual EvidenceStore missing and corrupt delta bytes remain unresolved without supplying content
+ok 40 - actual EvidenceStore missing and corrupt delta bytes remain unresolved without supplying content
+  ---
+  duration_ms: 22.39925
+  type: 'test'
+  ...
+# Subtest: foreign pointer, forged member link, span mismatch and false absence cannot establish script direction
+ok 41 - foreign pointer, forged member link, span mismatch and false absence cannot establish script direction
+  ---
+  duration_ms: 29.168375
+  type: 'test'
+  ...
+# Subtest: duplicate-key JSON and invalid UTF8 are rejected for deltas and linked original manifests
+ok 42 - duplicate-key JSON and invalid UTF8 are rejected for deltas and linked original manifests
+  ---
+  duration_ms: 12.216084
+  type: 'test'
+  ...
+# Subtest: both-null and canonically equal-value pseudo-deltas are rejected before any member resolution
+ok 43 - both-null and canonically equal-value pseudo-deltas are rejected before any member resolution
+  ---
+  duration_ms: 4.905291
+  type: 'test'
+  ...
+# Subtest: a delta referenced by another change is unresolved even when its content hash exists in the store
+ok 44 - a delta referenced by another change is unresolved even when its content hash exists in the store
+  ---
+  duration_ms: 2.911625
+  type: 'test'
+  ...
+# Subtest: individual delta/member byte bounds are enforced without passing oversized text to intelligence
+ok 45 - individual delta/member byte bounds are enforced without passing oversized text to intelligence
+  ---
+  duration_ms: 4.781167
+  type: 'test'
+  ...
+# Subtest: record count and total read budgets remain bounded even when every content read fails after consuming its allowance
+ok 46 - record count and total read budgets remain bounded even when every content read fails after consuming its allowance
+  ---
+  duration_ms: 30.64375
+  type: 'test'
+  ...
+# Subtest: pre-cancel, cancellation during a read, and an expired deadline never call the intelligence function
+ok 47 - pre-cancel, cancellation during a read, and an expired deadline never call the intelligence function
+  ---
+  duration_ms: 89.587917
+  type: 'test'
+  ...
+# Subtest: caller mutation during a delayed read cannot replace the bundle, options or resolved retained bytes
+ok 48 - caller mutation during a delayed read cannot replace the bundle, options or resolved retained bytes
+  ---
+  duration_ms: 9.295541
+  type: 'test'
+  ...
+# Subtest: exact member spans in the canonical fixture are independently reproducible by the strict scanner
+ok 49 - exact member spans in the canonical fixture are independently reproducible by the strict scanner
+  ---
+  duration_ms: 6.705167
+  type: 'test'
+  ...
+# Subtest: pins validated DNS address while preserving TLS hostname and captures only selected response headers
+ok 50 - pins validated DNS address while preserving TLS hostname and captures only selected response headers
+  ---
+  duration_ms: 7.477042
+  type: 'test'
+  ...
+# Subtest: rejects mixed public/private DNS answers before creating a socket
+ok 51 - rejects mixed public/private DNS answers before creating a socket
+  ---
+  duration_ms: 0.59875
+  type: 'test'
+  ...
+# Subtest: redirect revalidates DNS and refuses rebinding before another connection
+ok 52 - redirect revalidates DNS and refuses rebinding before another connection
+  ---
+  duration_ms: 1.285375
+  type: 'test'
+  ...
+# Subtest: cross-host redirects cannot leave the HTTPS allowlist
+ok 53 - cross-host redirects cannot leave the HTTPS allowlist
+  ---
+  duration_ms: 0.648167
+  type: 'test'
+  ...
+# Subtest: redirect count, actual streamed size, advertised size and response encodings are bounded
+ok 54 - redirect count, actual streamed size, advertised size and response encodings are bounded
+  ---
+  duration_ms: 2.562083
+  type: 'test'
+  ...
+# Subtest: TLS/HTTP failure, pre-cancel and ambient proxies fail closed without a fallback
+ok 55 - TLS/HTTP failure, pre-cancel and ambient proxies fail closed without a fallback
+  ---
+  duration_ms: 0.859375
+  type: 'test'
+  ...
+# Subtest: acquisition-specific host scopes reject redirects to another globally allowlisted service before a second request
+ok 56 - acquisition-specific host scopes reject redirects to another globally allowlisted service before a second request
+  ---
+  duration_ms: 0.660292
+  type: 'test'
+  ...
+# Subtest: in-flight cancellation aborts a pinned network request without fallback
+ok 57 - in-flight cancellation aborts a pinned network request without fallback
+  ---
+  duration_ms: 0.927542
+  type: 'test'
+  ...
+# Subtest: exact parser absence fails closed: absent
+ok 58 - exact parser absence fails closed: absent
+  ---
+  duration_ms: 569.124875
+  type: 'test'
+  ...
+# Subtest: exact parser absence fails closed: missing-rm
+ok 59 - exact parser absence fails closed: missing-rm
+  ---
+  duration_ms: 618.944041
+  type: 'test'
+  ...
+# Subtest: exact parser absence fails closed: present
+ok 60 - exact parser absence fails closed: present
+  ---
+  duration_ms: 558.830041
+  type: 'test'
+  ...
+# Subtest: exact parser absence fails closed: query-error
+ok 61 - exact parser absence fails closed: query-error
+  ---
+  duration_ms: 587.913209
+  type: 'test'
+  ...
+# Subtest: exact parser absence fails closed: unexpected-output
+ok 62 - exact parser absence fails closed: unexpected-output
+  ---
+  duration_ms: 1161.794334
+  type: 'test'
+  ...
+# Subtest: exact parser absence fails closed: remove-error
+ok 63 - exact parser absence fails closed: remove-error
+  ---
+  duration_ms: 592.16425
+  type: 'test'
+  ...
+# Subtest: exact parser absence fails closed: partial-id
+ok 64 - exact parser absence fails closed: partial-id
+  ---
+  duration_ms: 557.447625
+  type: 'test'
+  ...
+# Subtest: host selector defaults to the reviewed identifier and explicit off is unavailable
+ok 65 - host selector defaults to the reviewed identifier and explicit off is unavailable
+  ---
+  duration_ms: 18.132083
+  type: 'test'
+  ...
+# Subtest: unknown host selector rejects before acquisition or store creation
+ok 66 - unknown host selector rejects before acquisition or store creation
+  ---
+  duration_ms: 0.974417
+  type: 'test'
+  ...
+# Subtest: explicit trusted injection takes precedence over an unknown host selector
+ok 67 - explicit trusted injection takes precedence over an unknown host selector
+  ---
+  duration_ms: 1.015708
+  type: 'test'
+  ...
+# Subtest: configured module has bounded bridge and identities without creating evidence state
+ok 68 - configured module has bounded bridge and identities without creating evidence state
+  ---
+  duration_ms: 5.20575
+  type: 'test'
+  ...
+# Subtest: known-answer member hashes, original names, binary bytes and modes are retained
+not ok 69 - known-answer member hashes, original names, binary bytes and modes are retained
+  ---
+  duration_ms: 175.351042
+  type: 'test'
+  location: '/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s2.test.mjs:28:1'
+  failureType: 'testCodeFailure'
+  error: 'PARSER_CLEANUP_UNCONFIRMED'
+  code: 'PARSER_CLEANUP_UNCONFIRMED'
+  stack: |-
+    inventoryArchive (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/archive.js:79:19)
+    async TestContext.<anonymous> (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s2.test.mjs:29:41)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async startSubtestAfterBootstrap (node:internal/test_runner/harness:296:3)
+  ...
+# Subtest: refuses traversal without materializing archive-controlled paths
+not ok 70 - refuses traversal without materializing archive-controlled paths
+  ---
+  duration_ms: 75.452041
+  type: 'test'
+  location: '/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s2.test.mjs:42:3'
+  failureType: 'testCodeFailure'
+  error: 'PARSER_CLEANUP_UNCONFIRMED'
+  code: 'PARSER_CLEANUP_UNCONFIRMED'
+  stack: |-
+    inventoryArchive (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/archive.js:79:19)
+    async TestContext.<anonymous> (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s2.test.mjs:43:46)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: refuses absolute without materializing archive-controlled paths
+not ok 71 - refuses absolute without materializing archive-controlled paths
+  ---
+  duration_ms: 71.952292
+  type: 'test'
+  location: '/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s2.test.mjs:42:3'
+  failureType: 'testCodeFailure'
+  error: 'PARSER_CLEANUP_UNCONFIRMED'
+  code: 'PARSER_CLEANUP_UNCONFIRMED'
+  stack: |-
+    inventoryArchive (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/archive.js:79:19)
+    async TestContext.<anonymous> (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s2.test.mjs:43:46)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: refuses windows drive without materializing archive-controlled paths
+not ok 72 - refuses windows drive without materializing archive-controlled paths
+  ---
+  duration_ms: 75.968709
+  type: 'test'
+  location: '/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s2.test.mjs:42:3'
+  failureType: 'testCodeFailure'
+  error: 'PARSER_CLEANUP_UNCONFIRMED'
+  code: 'PARSER_CLEANUP_UNCONFIRMED'
+  stack: |-
+    inventoryArchive (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/archive.js:79:19)
+    async TestContext.<anonymous> (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s2.test.mjs:43:46)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: refuses backslash without materializing archive-controlled paths
+not ok 73 - refuses backslash without materializing archive-controlled paths
+  ---
+  duration_ms: 77.111042
+  type: 'test'
+  location: '/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s2.test.mjs:42:3'
+  failureType: 'testCodeFailure'
+  error: 'PARSER_CLEANUP_UNCONFIRMED'
+  code: 'PARSER_CLEANUP_UNCONFIRMED'
+  stack: |-
+    inventoryArchive (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/archive.js:79:19)
+    async TestContext.<anonymous> (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s2.test.mjs:43:46)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: refuses empty component without materializing archive-controlled paths
+not ok 74 - refuses empty component without materializing archive-controlled paths
+  ---
+  duration_ms: 70.86
+  type: 'test'
+  location: '/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s2.test.mjs:42:3'
+  failureType: 'testCodeFailure'
+  error: 'PARSER_CLEANUP_UNCONFIRMED'
+  code: 'PARSER_CLEANUP_UNCONFIRMED'
+  stack: |-
+    inventoryArchive (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/archive.js:79:19)
+    async TestContext.<anonymous> (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s2.test.mjs:43:46)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: refuses dot component without materializing archive-controlled paths
+not ok 75 - refuses dot component without materializing archive-controlled paths
+  ---
+  duration_ms: 69.924917
+  type: 'test'
+  location: '/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s2.test.mjs:42:3'
+  failureType: 'testCodeFailure'
+  error: 'PARSER_CLEANUP_UNCONFIRMED'
+  code: 'PARSER_CLEANUP_UNCONFIRMED'
+  stack: |-
+    inventoryArchive (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/archive.js:79:19)
+    async TestContext.<anonymous> (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s2.test.mjs:43:46)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: refuses terminal name without materializing archive-controlled paths
+not ok 76 - refuses terminal name without materializing archive-controlled paths
+  ---
+  duration_ms: 70.90075
+  type: 'test'
+  location: '/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s2.test.mjs:42:3'
+  failureType: 'testCodeFailure'
+  error: 'PARSER_CLEANUP_UNCONFIRMED'
+  code: 'PARSER_CLEANUP_UNCONFIRMED'
+  stack: |-
+    inventoryArchive (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/archive.js:79:19)
+    async TestContext.<anonymous> (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s2.test.mjs:43:46)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: refuses windows ambiguous without materializing archive-controlled paths
+not ok 77 - refuses windows ambiguous without materializing archive-controlled paths
+  ---
+  duration_ms: 77.821375
+  type: 'test'
+  location: '/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s2.test.mjs:42:3'
+  failureType: 'testCodeFailure'
+  error: 'PARSER_CLEANUP_UNCONFIRMED'
+  code: 'PARSER_CLEANUP_UNCONFIRMED'
+  stack: |-
+    inventoryArchive (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/archive.js:79:19)
+    async TestContext.<anonymous> (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s2.test.mjs:43:46)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: refuses trailing dot without materializing archive-controlled paths
+not ok 78 - refuses trailing dot without materializing archive-controlled paths
+  ---
+  duration_ms: 72.986292
+  type: 'test'
+  location: '/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s2.test.mjs:42:3'
+  failureType: 'testCodeFailure'
+  error: 'PARSER_CLEANUP_UNCONFIRMED'
+  code: 'PARSER_CLEANUP_UNCONFIRMED'
+  stack: |-
+    inventoryArchive (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/archive.js:79:19)
+    async TestContext.<anonymous> (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s2.test.mjs:43:46)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: refuses duplicate without materializing archive-controlled paths
+not ok 79 - refuses duplicate without materializing archive-controlled paths
+  ---
+  duration_ms: 74.06925
+  type: 'test'
+  location: '/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s2.test.mjs:42:3'
+  failureType: 'testCodeFailure'
+  error: 'PARSER_CLEANUP_UNCONFIRMED'
+  code: 'PARSER_CLEANUP_UNCONFIRMED'
+  stack: |-
+    inventoryArchive (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/archive.js:79:19)
+    async TestContext.<anonymous> (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s2.test.mjs:43:46)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: refuses case collision without materializing archive-controlled paths
+not ok 80 - refuses case collision without materializing archive-controlled paths
+  ---
+  duration_ms: 70.965125
+  type: 'test'
+  location: '/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s2.test.mjs:42:3'
+  failureType: 'testCodeFailure'
+  error: 'PARSER_CLEANUP_UNCONFIRMED'
+  code: 'PARSER_CLEANUP_UNCONFIRMED'
+  stack: |-
+    inventoryArchive (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/archive.js:79:19)
+    async TestContext.<anonymous> (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s2.test.mjs:43:46)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: refuses unicode collision without materializing archive-controlled paths
+not ok 81 - refuses unicode collision without materializing archive-controlled paths
+  ---
+  duration_ms: 71.005042
+  type: 'test'
+  location: '/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s2.test.mjs:42:3'
+  failureType: 'testCodeFailure'
+  error: 'PARSER_CLEANUP_UNCONFIRMED'
+  code: 'PARSER_CLEANUP_UNCONFIRMED'
+  stack: |-
+    inventoryArchive (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/archive.js:79:19)
+    async TestContext.<anonymous> (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s2.test.mjs:43:46)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: refuses file parent without materializing archive-controlled paths
+not ok 82 - refuses file parent without materializing archive-controlled paths
+  ---
+  duration_ms: 89.480167
+  type: 'test'
+  location: '/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s2.test.mjs:42:3'
+  failureType: 'testCodeFailure'
+  error: 'PARSER_CLEANUP_UNCONFIRMED'
+  code: 'PARSER_CLEANUP_UNCONFIRMED'
+  stack: |-
+    inventoryArchive (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/archive.js:79:19)
+    async TestContext.<anonymous> (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s2.test.mjs:43:46)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: refuses directory parent case without materializing archive-controlled paths
+not ok 83 - refuses directory parent case without materializing archive-controlled paths
+  ---
+  duration_ms: 69.78125
+  type: 'test'
+  location: '/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s2.test.mjs:42:3'
+  failureType: 'testCodeFailure'
+  error: 'PARSER_CLEANUP_UNCONFIRMED'
+  code: 'PARSER_CLEANUP_UNCONFIRMED'
+  stack: |-
+    inventoryArchive (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/archive.js:79:19)
+    async TestContext.<anonymous> (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s2.test.mjs:43:46)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: refuses implicit directory case without materializing archive-controlled paths
+not ok 84 - refuses implicit directory case without materializing archive-controlled paths
+  ---
+  duration_ms: 73.567625
+  type: 'test'
+  location: '/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s2.test.mjs:42:3'
+  failureType: 'testCodeFailure'
+  error: 'PARSER_CLEANUP_UNCONFIRMED'
+  code: 'PARSER_CLEANUP_UNCONFIRMED'
+  stack: |-
+    inventoryArchive (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/archive.js:79:19)
+    async TestContext.<anonymous> (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s2.test.mjs:43:46)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: refuses symlink without materializing archive-controlled paths
+not ok 85 - refuses symlink without materializing archive-controlled paths
+  ---
+  duration_ms: 91.562375
+  type: 'test'
+  location: '/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s2.test.mjs:42:3'
+  failureType: 'testCodeFailure'
+  error: 'PARSER_CLEANUP_UNCONFIRMED'
+  code: 'PARSER_CLEANUP_UNCONFIRMED'
+  stack: |-
+    inventoryArchive (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/archive.js:79:19)
+    async TestContext.<anonymous> (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s2.test.mjs:43:46)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: refuses hardlink without materializing archive-controlled paths
+not ok 86 - refuses hardlink without materializing archive-controlled paths
+  ---
+  duration_ms: 77.20075
+  type: 'test'
+  location: '/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s2.test.mjs:42:3'
+  failureType: 'testCodeFailure'
+  error: 'PARSER_CLEANUP_UNCONFIRMED'
+  code: 'PARSER_CLEANUP_UNCONFIRMED'
+  stack: |-
+    inventoryArchive (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/archive.js:79:19)
+    async TestContext.<anonymous> (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s2.test.mjs:43:46)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: refuses fifo without materializing archive-controlled paths
+not ok 87 - refuses fifo without materializing archive-controlled paths
+  ---
+  duration_ms: 85.734459
+  type: 'test'
+  location: '/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s2.test.mjs:42:3'
+  failureType: 'testCodeFailure'
+  error: 'PARSER_CLEANUP_UNCONFIRMED'
+  code: 'PARSER_CLEANUP_UNCONFIRMED'
+  stack: |-
+    inventoryArchive (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/archive.js:79:19)
+    async TestContext.<anonymous> (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s2.test.mjs:43:46)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: refuses device without materializing archive-controlled paths
+not ok 88 - refuses device without materializing archive-controlled paths
+  ---
+  duration_ms: 115.542042
+  type: 'test'
+  location: '/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s2.test.mjs:42:3'
+  failureType: 'testCodeFailure'
+  error: 'PARSER_CLEANUP_UNCONFIRMED'
+  code: 'PARSER_CLEANUP_UNCONFIRMED'
+  stack: |-
+    inventoryArchive (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/archive.js:79:19)
+    async TestContext.<anonymous> (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s2.test.mjs:43:46)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: cross-UID parser output stays host-readable inside a private job root
+not ok 89 - cross-UID parser output stays host-readable inside a private job root
+  ---
+  duration_ms: 78.405125
+  type: 'test'
+  location: '/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s2.test.mjs:47:1'
+  failureType: 'testCodeFailure'
+  error: 'PARSER_CLEANUP_UNCONFIRMED'
+  code: 'PARSER_CLEANUP_UNCONFIRMED'
+  stack: |-
+    inventoryArchive (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/archive.js:79:19)
+    async TestContext.<anonymous> (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s2.test.mjs:62:15)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: actual expansion, member, path/depth and entry limits preserve known/unknown coverage
+not ok 90 - actual expansion, member, path/depth and entry limits preserve known/unknown coverage
+  ---
+  duration_ms: 81.836125
+  type: 'test'
+  location: '/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s2.test.mjs:66:1'
+  failureType: 'testCodeFailure'
+  error: 'PARSER_CLEANUP_UNCONFIRMED'
+  code: 'PARSER_CLEANUP_UNCONFIRMED'
+  stack: |-
+    inventoryArchive (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/archive.js:79:19)
+    async TestContext.<anonymous> (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s2.test.mjs:74:15)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: truncated/corrupt archives and hidden trailing archives fail rather than clean-empty
+not ok 91 - truncated/corrupt archives and hidden trailing archives fail rather than clean-empty
+  ---
+  duration_ms: 104.595208
+  type: 'test'
+  location: '/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s2.test.mjs:79:1'
+  failureType: 'testCodeFailure'
+  error: 'PARSER_CLEANUP_UNCONFIRMED'
+  code: 'PARSER_CLEANUP_UNCONFIRMED'
+  stack: |-
+    inventoryArchive (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/archive.js:79:19)
+    async TestContext.<anonymous> (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s2.test.mjs:83:13)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: archive-byte variation changes identities while all raw members stay equal
+not ok 92 - archive-byte variation changes identities while all raw members stay equal
+  ---
+  duration_ms: 95.047667
+  type: 'test'
+  location: '/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s2.test.mjs:87:1'
+  failureType: 'testCodeFailure'
+  error: 'PARSER_CLEANUP_UNCONFIRMED'
+  code: 'PARSER_CLEANUP_UNCONFIRMED'
+  stack: |-
+    inventoryArchive (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/archive.js:79:19)
+    async TestContext.<anonymous> (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s2.test.mjs:90:11)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: explicit raw producer mode computes additions/removals/modifications and exact manifest spans with unavailable analysis
+not ok 93 - explicit raw producer mode computes additions/removals/modifications and exact manifest spans with unavailable analysis
+  ---
+  duration_ms: 242.753916
+  type: 'test'
+  location: '/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s2.test.mjs:94:1'
+  failureType: 'testCodeFailure'
+  error: 'STORE_BUSY_RECOVERY_REQUIRED'
+  code: 'STORE_BUSY_RECOVERY_REQUIRED'
+  stack: |-
+    EvidenceStore.exclusive (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/storage.js:135:19)
+    async retainEvidence (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/comparison.js:15:17)
+    async collectEvidence (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/producer.js:169:5)
+    async investigate (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/engine.js:36:20)
+    async localCase (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s2.test.mjs:25:15)
+    async TestContext.<anonymous> (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s2.test.mjs:97:23)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: replay preserves deterministic IDs; full run bytes and observation references remain distinct
+not ok 94 - replay preserves deterministic IDs; full run bytes and observation references remain distinct
+  ---
+  duration_ms: 244.235583
+  type: 'test'
+  location: '/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s2.test.mjs:108:1'
+  failureType: 'testCodeFailure'
+  error: 'STORE_BUSY_RECOVERY_REQUIRED'
+  code: 'STORE_BUSY_RECOVERY_REQUIRED'
+  stack: |-
+    EvidenceStore.exclusive (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/storage.js:135:19)
+    async retainEvidence (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/comparison.js:15:17)
+    async collectEvidence (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/producer.js:169:5)
+    async investigate (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/engine.js:36:20)
+    async localCase (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s2.test.mjs:25:15)
+    async TestContext.<anonymous> (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s2.test.mjs:109:129)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: missing/wrong subtree, partial inventory and binary differences remain visible
+not ok 95 - missing/wrong subtree, partial inventory and binary differences remain visible
+  ---
+  duration_ms: 258.757084
+  type: 'test'
+  location: '/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s2.test.mjs:116:1'
+  failureType: 'testCodeFailure'
+  error: 'STORE_BUSY_RECOVERY_REQUIRED'
+  code: 'STORE_BUSY_RECOVERY_REQUIRED'
+  stack: |-
+    EvidenceStore.exclusive (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/storage.js:135:19)
+    async retainEvidence (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/comparison.js:15:17)
+    async collectEvidence (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/producer.js:169:5)
+    async investigate (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/engine.js:36:20)
+    async localCase (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s2.test.mjs:25:15)
+    async TestContext.<anonymous> (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s2.test.mjs:117:10)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: requested policy remains indeterminate; exit precedence retains simultaneous conditions
+not ok 96 - requested policy remains indeterminate; exit precedence retains simultaneous conditions
+  ---
+  duration_ms: 262.88325
+  type: 'test'
+  location: '/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s2.test.mjs:125:1'
+  failureType: 'testCodeFailure'
+  error: 'STORE_BUSY_RECOVERY_REQUIRED'
+  code: 'STORE_BUSY_RECOVERY_REQUIRED'
+  stack: |-
+    EvidenceStore.exclusive (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/storage.js:135:19)
+    async retainEvidence (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/comparison.js:15:17)
+    async collectEvidence (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/producer.js:169:5)
+    async investigate (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/engine.js:36:20)
+    async localCase (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s2.test.mjs:25:15)
+    async TestContext.<anonymous> (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s2.test.mjs:126:36)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: strict manifest scanner rejects duplicate/deep malformed JSON, preserves unicode byte spans
+ok 97 - strict manifest scanner rejects duplicate/deep malformed JSON, preserves unicode byte spans
+  ---
+  duration_ms: 1.716917
+  type: 'test'
+  ...
+# Subtest: CAS rejects escaping refs, corrupt data, symlinks, cap/reserve and conflicting immutable writes
+ok 98 - CAS rejects escaping refs, corrupt data, symlinks, cap/reserve and conflicting immutable writes
+  ---
+  duration_ms: 43.470083
+  type: 'test'
+  ...
+# Subtest: interrupted publication leaves old blobs readable and incomplete new records unreferenced
+ok 99 - interrupted publication leaves old blobs readable and incomplete new records unreferenced
+  ---
+  duration_ms: 19.173875
+  type: 'test'
+  ...
+# Subtest: cancellation/timeout kills the whole parser job and cleans only its private scratch
+not ok 100 - cancellation/timeout kills the whole parser job and cleans only its private scratch
+  ---
+  duration_ms: 104.572417
+  type: 'test'
+  location: '/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s2.test.mjs:156:1'
+  failureType: 'testCodeFailure'
+  error: 'PARSER_CLEANUP_UNCONFIRMED'
+  code: 'PARSER_CLEANUP_UNCONFIRMED'
+  stack: |-
+    inventoryArchive (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/archive.js:79:19)
+    async TestContext.<anonymous> (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s2.test.mjs:159:14)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: network rejects private/reserved/mapped addresses, credentials, redirects outside allowlist and mutable commits
+ok 101 - network rejects private/reserved/mapped addresses, credentials, redirects outside allowlist and mutable commits
+  ---
+  duration_ms: 6.416959
+  type: 'test'
+  ...
+# Subtest: CLI is redirected/JSON-safe, inspect resolves exact retained evidence; terminal controls remain inert
+not ok 102 - CLI is redirected/JSON-safe, inspect resolves exact retained evidence; terminal controls remain inert
+  ---
+  duration_ms: 381.438709
+  type: 'test'
+  location: '/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s2.test.mjs:171:1'
+  failureType: 'testCodeFailure'
+  error: 'STORE_BUSY_RECOVERY_REQUIRED'
+  code: 'STORE_BUSY_RECOVERY_REQUIRED'
+  stack: |-
+    EvidenceStore.exclusive (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/storage.js:135:19)
+    async retainEvidence (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/comparison.js:15:17)
+    async collectEvidence (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/producer.js:169:5)
+    async investigate (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/engine.js:36:20)
+    async localCase (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s2.test.mjs:25:15)
+    async TestContext.<anonymous> (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s2.test.mjs:172:41)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: manifest parser omissions and metadata-only executable modes stay explicit
+not ok 103 - manifest parser omissions and metadata-only executable modes stay explicit
+  ---
+  duration_ms: 320.23375
+  type: 'test'
+  location: '/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s2.test.mjs:188:1'
+  failureType: 'testCodeFailure'
+  error: 'STORE_BUSY_RECOVERY_REQUIRED'
+  code: 'STORE_BUSY_RECOVERY_REQUIRED'
+  stack: |-
+    EvidenceStore.exclusive (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/storage.js:135:19)
+    async retainEvidence (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/comparison.js:15:17)
+    async collectEvidence (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/producer.js:169:5)
+    async investigate (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/engine.js:36:20)
+    async localCase (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s2.test.mjs:25:15)
+    async TestContext.<anonymous> (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s2.test.mjs:189:17)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: report persistence failure returns usable incomplete JSON while retaining raw evidence
+not ok 104 - report persistence failure returns usable incomplete JSON while retaining raw evidence
+  ---
+  duration_ms: 266.22
+  type: 'test'
+  location: '/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s2.test.mjs:195:1'
+  failureType: 'testCodeFailure'
+  error: 'STORE_BUSY_RECOVERY_REQUIRED'
+  code: 'STORE_BUSY_RECOVERY_REQUIRED'
+  stack: |-
+    FullReportStore.exclusive (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/storage.js:135:19)
+    async retainEvidence (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/comparison.js:15:17)
+    async collectEvidence (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/producer.js:169:5)
+    async investigate (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/engine.js:36:20)
+    async TestContext.<anonymous> (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s2.test.mjs:199:15)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: parser backpressure and queued cancellation do not start extra work
+not ok 105 - parser backpressure and queued cancellation do not start extra work
+  ---
+  duration_ms: 72.258834
+  type: 'test'
+  location: '/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s2.test.mjs:203:1'
+  failureType: 'testCodeFailure'
+  error: 'PARSER_CLEANUP_UNCONFIRMED'
+  code: 'PARSER_CLEANUP_UNCONFIRMED'
+  stack: |-
+    inventoryArchive (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/archive.js:79:19)
+    async TestContext.<anonymous> (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s2.test.mjs:206:190)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: opaque archive metadata never permits an invalid UTF-8 pathname
+not ok 106 - opaque archive metadata never permits an invalid UTF-8 pathname
+  ---
+  duration_ms: 75.495209
+  type: 'test'
+  location: '/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s2.test.mjs:209:1'
+  failureType: 'testCodeFailure'
+  error: 'PARSER_CLEANUP_UNCONFIRMED'
+  code: 'PARSER_CLEANUP_UNCONFIRMED'
+  stack: |-
+    inventoryArchive (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/archive.js:79:19)
+    async TestContext.<anonymous> (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s2.test.mjs:211:12)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: a supplied M0-style skipped heuristics stage cannot earn complete analysis
+not ok 107 - a supplied M0-style skipped heuristics stage cannot earn complete analysis
+  ---
+  duration_ms: 261.681875
+  type: 'test'
+  location: '/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s2.test.mjs:214:1'
+  failureType: 'testCodeFailure'
+  error: 'STORE_BUSY_RECOVERY_REQUIRED'
+  code: 'STORE_BUSY_RECOVERY_REQUIRED'
+  stack: |-
+    EvidenceStore.exclusive (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/storage.js:135:19)
+    async retainEvidence (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/comparison.js:15:17)
+    async collectEvidence (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/producer.js:169:5)
+    async investigate (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/engine.js:36:20)
+    async localCase (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s2.test.mjs:25:15)
+    async TestContext.<anonymous> (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s2.test.mjs:215:29)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: CAS and publication snapshot caller-owned bytes before asynchronous filesystem work
+ok 108 - CAS and publication snapshot caller-owned bytes before asynchronous filesystem work
+  ---
+  duration_ms: 23.622417
+  type: 'test'
+  ...
+# Subtest: report identity and invocation cannot drift while validation/persistence awaits
+not ok 109 - report identity and invocation cannot drift while validation/persistence awaits
+  ---
+  duration_ms: 256.603666
+  type: 'test'
+  location: '/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s2.test.mjs:225:1'
+  failureType: 'testCodeFailure'
+  error: 'STORE_BUSY_RECOVERY_REQUIRED'
+  code: 'STORE_BUSY_RECOVERY_REQUIRED'
+  stack: |-
+    EvidenceStore.exclusive (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/storage.js:135:19)
+    async retainEvidence (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/comparison.js:15:17)
+    async collectEvidence (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/producer.js:169:5)
+    async investigate (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/engine.js:36:20)
+    async localCase (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s2.test.mjs:25:15)
+    async TestContext.<anonymous> (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s2.test.mjs:226:41)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: exact npm coordinates include scoped names and reject ranges, aliases, URLs and ambiguous spelling
+ok 110 - exact npm coordinates include scoped names and reject ranges, aliases, URLs and ambiguous spelling
+  ---
+  duration_ms: 0.833
+  type: 'test'
+  ...
+# Subtest: registry data URLs reject credentials, queries, IPs, private endpoints and other allowlisted services
+ok 111 - registry data URLs reject credentials, queries, IPs, private endpoints and other allowlisted services
+  ---
+  duration_ms: 2.892291
+  type: 'test'
+  ...
+# Subtest: known-answer SRI binds the actual archive bytes and records independent SHA-256 and SHA-512
+ok 112 - known-answer SRI binds the actual archive bytes and records independent SHA-256 and SHA-512
+  ---
+  duration_ms: 1.031333
+  type: 'test'
+  ...
+# Subtest: SRI selects strongest supported algorithm and never downgrades malformed or unsupported tokens
+ok 113 - SRI selects strongest supported algorithm and never downgrades malformed or unsupported tokens
+  ---
+  duration_ms: 0.240792
+  type: 'test'
+  ...
+# Subtest: untrusted metadata rejects duplicate keys, invalid UTF-8 and structural limits
+ok 114 - untrusted metadata rejects duplicate keys, invalid UTF-8 and structural limits
+  ---
+  duration_ms: 0.3055
+  type: 'test'
+  ...
+# Subtest: GitHub repository normalization is inert and preserves validated monorepo directories
+ok 115 - GitHub repository normalization is inert and preserves validated monorepo directories
+  ---
+  duration_ms: 0.302459
+  type: 'test'
+  ...
+# Subtest: matching metadata/manifest/lightweight tags remain publisher assertions with separate captured claims
+ok 116 - matching metadata/manifest/lightweight tags remain publisher assertions with separate captured claims
+  ---
+  duration_ms: 0.775459
+  type: 'test'
+  ...
+# Subtest: annotated tags are peeled to a full commit with bounded requests; tag equality never verifies provenance
+ok 117 - annotated tags are peeled to a full commit with bounded requests; tag equality never verifies provenance
+  ---
+  duration_ms: 0.74425
+  type: 'test'
+  ...
+# Subtest: moved/wrong version tag retains both full commits and forces ambiguity
+ok 118 - moved/wrong version tag retains both full commits and forces ambiguity
+  ---
+  duration_ms: 0.491584
+  type: 'test'
+  ...
+# Subtest: wrong repository/commit/subtree override is retained beside publisher claims, never silently superseding them
+ok 119 - wrong repository/commit/subtree override is retained beside publisher claims, never silently superseding them
+  ---
+  duration_ms: 0.625041
+  type: 'test'
+  ...
+# Subtest: missing tags/source remain explicit and no default-branch URL is requested
+ok 120 - missing tags/source remain explicit and no default-branch URL is requested
+  ---
+  duration_ms: 0.187625
+  type: 'test'
+  ...
+# Subtest: manifest directory can fill omitted registry directory without treating omission as an explicit root
+ok 121 - manifest directory can fill omitted registry directory without treating omission as an explicit root
+  ---
+  duration_ms: 0.089125
+  type: 'test'
+  ...
+# Subtest: tag discovery cancellation is bounded and preserves the full registry candidate
+ok 122 - tag discovery cancellation is bounded and preserves the full registry candidate
+  ---
+  duration_ms: 0.056209
+  type: 'test'
+  ...
+# Subtest: unavailable verifier treats invalid-signature material as inert unverified bytes (adapter failure fixture)
+ok 123 - unavailable verifier treats invalid-signature material as inert unverified bytes (adapter failure fixture)
+  ---
+  duration_ms: 0.15875
+  type: 'test'
+  ...
+# Subtest: unavailable verifier treats publish-only material as inert unverified bytes (adapter failure fixture)
+ok 124 - unavailable verifier treats publish-only material as inert unverified bytes (adapter failure fixture)
+  ---
+  duration_ms: 0.048084
+  type: 'test'
+  ...
+# Subtest: unavailable verifier treats wrong-subject material as inert unverified bytes (adapter failure fixture)
+ok 125 - unavailable verifier treats wrong-subject material as inert unverified bytes (adapter failure fixture)
+  ---
+  duration_ms: 0.082625
+  type: 'test'
+  ...
+# Subtest: unavailable verifier treats unexpected-signer material as inert unverified bytes (adapter failure fixture)
+ok 126 - unavailable verifier treats unexpected-signer material as inert unverified bytes (adapter failure fixture)
+  ---
+  duration_ms: 0.042667
+  type: 'test'
+  ...
+# Subtest: unavailable verifier treats policy-rejected material as inert unverified bytes (adapter failure fixture)
+ok 127 - unavailable verifier treats policy-rejected material as inert unverified bytes (adapter failure fixture)
+  ---
+  duration_ms: 0.03925
+  type: 'test'
+  ...
+# Subtest: unavailable verifier treats forged-verified material as inert unverified bytes (adapter failure fixture)
+ok 128 - unavailable verifier treats forged-verified material as inert unverified bytes (adapter failure fixture)
+  ---
+  duration_ms: 0.039042
+  type: 'test'
+  ...
+# Subtest: unadvertised provenance is not a cryptographically established absence; invalid URL and offline failure remain not checked
+ok 129 - unadvertised provenance is not a cryptographically established absence; invalid URL and offline failure remain not checked
+  ---
+  duration_ms: 0.175417
+  type: 'test'
+  ...
+# Subtest: explicit raw scoped npm fixture traverses actual safe producer/store/validator and cannot imply safety
+not ok 130 - explicit raw scoped npm fixture traverses actual safe producer/store/validator and cannot imply safety
+  ---
+  duration_ms: 271.316
+  type: 'test'
+  location: '/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s3.test.mjs:93:1'
+  failureType: 'testCodeFailure'
+  error: 'STORE_BUSY_RECOVERY_REQUIRED'
+  code: 'STORE_BUSY_RECOVERY_REQUIRED'
+  stack: |-
+    EvidenceStore.exclusive (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/storage.js:135:19)
+    async retainEvidence (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/comparison.js:15:17)
+    async collectEvidence (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/producer.js:169:5)
+    async investigate (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/engine.js:36:20)
+    async npmCase (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s3.test.mjs:91:15)
+    async TestContext.<anonymous> (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s3.test.mjs:94:38)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: advertised archive mismatch retains failed acquisition bytes, suppresses comparison and never fetches source
+not ok 131 - advertised archive mismatch retains failed acquisition bytes, suppresses comparison and never fetches source
+  ---
+  duration_ms: 284.784916
+  type: 'test'
+  location: '/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s3.test.mjs:96:1'
+  failureType: 'testCodeFailure'
+  error: 'STORE_BUSY_RECOVERY_REQUIRED'
+  code: 'STORE_BUSY_RECOVERY_REQUIRED'
+  stack: |-
+    EvidenceStore.exclusive (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/storage.js:135:19)
+    async retainEvidence (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/comparison.js:15:17)
+    async collectEvidence (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/producer.js:169:5)
+    async investigate (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/engine.js:36:20)
+    async npmCase (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s3.test.mjs:91:15)
+    async TestContext.<anonymous> (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s3.test.mjs:97:38)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: wrong source manifest subject cannot turn matching version metadata into source correspondence
+not ok 132 - wrong source manifest subject cannot turn matching version metadata into source correspondence
+  ---
+  duration_ms: 283.021834
+  type: 'test'
+  location: '/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s3.test.mjs:99:1'
+  failureType: 'testCodeFailure'
+  error: 'STORE_BUSY_RECOVERY_REQUIRED'
+  code: 'STORE_BUSY_RECOVERY_REQUIRED'
+  stack: |-
+    EvidenceStore.exclusive (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/storage.js:135:19)
+    async retainEvidence (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/comparison.js:15:17)
+    async collectEvidence (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/producer.js:169:5)
+    async investigate (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/engine.js:36:20)
+    async npmCase (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s3.test.mjs:91:15)
+    async TestContext.<anonymous> (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s3.test.mjs:100:17)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: complete inventories with ambiguous version labels keep one-sided records unresolved with the actual reason
+not ok 133 - complete inventories with ambiguous version labels keep one-sided records unresolved with the actual reason
+  ---
+  duration_ms: 286.319458
+  type: 'test'
+  location: '/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s3.test.mjs:102:1'
+  failureType: 'testCodeFailure'
+  error: 'STORE_BUSY_RECOVERY_REQUIRED'
+  code: 'STORE_BUSY_RECOVERY_REQUIRED'
+  stack: |-
+    EvidenceStore.exclusive (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/storage.js:135:19)
+    async retainEvidence (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/comparison.js:15:17)
+    async collectEvidence (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/producer.js:169:5)
+    async investigate (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/engine.js:36:20)
+    async npmCase (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s3.test.mjs:91:15)
+    async TestContext.<anonymous> (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s3.test.mjs:103:17)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: wrong or missing subtree retains broad build context and unknown correspondence
+not ok 134 - wrong or missing subtree retains broad build context and unknown correspondence
+  ---
+  duration_ms: 261.374292
+  type: 'test'
+  location: '/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s3.test.mjs:112:1'
+  failureType: 'testCodeFailure'
+  error: 'STORE_BUSY_RECOVERY_REQUIRED'
+  code: 'STORE_BUSY_RECOVERY_REQUIRED'
+  stack: |-
+    EvidenceStore.exclusive (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/storage.js:135:19)
+    async retainEvidence (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/comparison.js:15:17)
+    async collectEvidence (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/producer.js:169:5)
+    async investigate (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/engine.js:36:20)
+    async npmCase (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s3.test.mjs:91:15)
+    async TestContext.<anonymous> (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s3.test.mjs:113:17)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: offline source failure yields valid retained report with unknown absence and no clean result
+not ok 135 - offline source failure yields valid retained report with unknown absence and no clean result
+  ---
+  duration_ms: 260.118416
+  type: 'test'
+  location: '/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s3.test.mjs:115:1'
+  failureType: 'testCodeFailure'
+  error: 'STORE_BUSY_RECOVERY_REQUIRED'
+  code: 'STORE_BUSY_RECOVERY_REQUIRED'
+  stack: |-
+    EvidenceStore.exclusive (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/storage.js:135:19)
+    async retainEvidence (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/comparison.js:15:17)
+    async collectEvidence (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/producer.js:169:5)
+    async investigate (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/engine.js:36:20)
+    async npmCase (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s3.test.mjs:91:15)
+    async TestContext.<anonymous> (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s3.test.mjs:116:17)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: conflicting tag candidates cannot earn exact correspondence even if selected member bytes match
+not ok 136 - conflicting tag candidates cannot earn exact correspondence even if selected member bytes match
+  ---
+  duration_ms: 257.666666
+  type: 'test'
+  location: '/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s3.test.mjs:118:1'
+  failureType: 'testCodeFailure'
+  error: 'STORE_BUSY_RECOVERY_REQUIRED'
+  code: 'STORE_BUSY_RECOVERY_REQUIRED'
+  stack: |-
+    EvidenceStore.exclusive (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/storage.js:135:19)
+    async retainEvidence (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/comparison.js:15:17)
+    async collectEvidence (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/producer.js:169:5)
+    async investigate (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/engine.js:36:20)
+    async npmCase (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s3.test.mjs:91:15)
+    async TestContext.<anonymous> (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s3.test.mjs:119:17)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: submodule/LFS archive gaps stay explicit without fetching external objects: root/.gitmodules
+not ok 137 - submodule/LFS archive gaps stay explicit without fetching external objects: root/.gitmodules
+  ---
+  duration_ms: 256.587125
+  type: 'test'
+  location: '/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s3.test.mjs:121:207'
+  failureType: 'testCodeFailure'
+  error: 'STORE_BUSY_RECOVERY_REQUIRED'
+  code: 'STORE_BUSY_RECOVERY_REQUIRED'
+  stack: |-
+    EvidenceStore.exclusive (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/storage.js:135:19)
+    async retainEvidence (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/comparison.js:15:17)
+    async collectEvidence (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/producer.js:169:5)
+    async investigate (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/engine.js:36:20)
+    async npmCase (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s3.test.mjs:91:15)
+    async TestContext.<anonymous> (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s3.test.mjs:122:23)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: submodule/LFS archive gaps stay explicit without fetching external objects: root/asset
+not ok 138 - submodule/LFS archive gaps stay explicit without fetching external objects: root/asset
+  ---
+  duration_ms: 256.532708
+  type: 'test'
+  location: '/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s3.test.mjs:121:207'
+  failureType: 'testCodeFailure'
+  error: 'STORE_BUSY_RECOVERY_REQUIRED'
+  code: 'STORE_BUSY_RECOVERY_REQUIRED'
+  stack: |-
+    EvidenceStore.exclusive (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/storage.js:135:19)
+    async retainEvidence (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/comparison.js:15:17)
+    async collectEvidence (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/producer.js:169:5)
+    async investigate (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/engine.js:36:20)
+    async npmCase (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s3.test.mjs:91:15)
+    async TestContext.<anonymous> (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s3.test.mjs:122:23)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: retained exact metadata and source context bind report identity; later metadata changes create new evaluation
+not ok 139 - retained exact metadata and source context bind report identity; later metadata changes create new evaluation
+  ---
+  duration_ms: 257.645792
+  type: 'test'
+  location: '/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s3.test.mjs:124:1'
+  failureType: 'testCodeFailure'
+  error: 'STORE_BUSY_RECOVERY_REQUIRED'
+  code: 'STORE_BUSY_RECOVERY_REQUIRED'
+  stack: |-
+    EvidenceStore.exclusive (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/storage.js:135:19)
+    async retainEvidence (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/comparison.js:15:17)
+    async collectEvidence (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/producer.js:169:5)
+    async investigate (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/engine.js:36:20)
+    async npmCase (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s3.test.mjs:91:15)
+    async TestContext.<anonymous> (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s3.test.mjs:125:10)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: CLI rejects npm aliases, mixed local/npm inputs and source replay without network
+ok 140 - CLI rejects npm aliases, mixed local/npm inputs and source replay without network
+  ---
+  duration_ms: 116.461541
+  type: 'test'
+  ...
+# Subtest: valid monorepo subtree retains package evidence and accounts for broader build context
+not ok 141 - valid monorepo subtree retains package evidence and accounts for broader build context
+  ---
+  duration_ms: 254.837458
+  type: 'test'
+  location: '/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s3.test.mjs:133:1'
+  failureType: 'testCodeFailure'
+  error: 'STORE_BUSY_RECOVERY_REQUIRED'
+  code: 'STORE_BUSY_RECOVERY_REQUIRED'
+  stack: |-
+    EvidenceStore.exclusive (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/storage.js:135:19)
+    async retainEvidence (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/comparison.js:15:17)
+    async collectEvidence (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/producer.js:169:5)
+    async investigate (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/engine.js:36:20)
+    async npmCase (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s3.test.mjs:91:15)
+    async TestContext.<anonymous> (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s3.test.mjs:136:17)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: npm metadata subject mismatch preserves raw bytes and failure receipt without creating a misleading artifact
+ok 142 - npm metadata subject mismatch preserves raw bytes and failure receipt without creating a misleading artifact
+  ---
+  duration_ms: 170.370375
+  type: 'test'
+  ...
+# Subtest: unsupported source entry diagnostic is retained inertly with unknown remaining scope
+not ok 143 - unsupported source entry diagnostic is retained inertly with unknown remaining scope
+  ---
+  duration_ms: 256.466334
+  type: 'test'
+  location: '/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s3.test.mjs:145:1'
+  failureType: 'testCodeFailure'
+  error: 'STORE_BUSY_RECOVERY_REQUIRED'
+  code: 'STORE_BUSY_RECOVERY_REQUIRED'
+  stack: |-
+    EvidenceStore.exclusive (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/storage.js:135:19)
+    async retainEvidence (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/comparison.js:15:17)
+    async collectEvidence (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/producer.js:169:5)
+    async investigate (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/engine.js:36:20)
+    async npmCase (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s3.test.mjs:91:15)
+    async TestContext.<anonymous> (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s3.test.mjs:146:23)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: missing npm SRI stays materially incomplete while raw observations remain available
+not ok 144 - missing npm SRI stays materially incomplete while raw observations remain available
+  ---
+  duration_ms: 260.891959
+  type: 'test'
+  location: '/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s3.test.mjs:150:1'
+  failureType: 'testCodeFailure'
+  error: 'STORE_BUSY_RECOVERY_REQUIRED'
+  code: 'STORE_BUSY_RECOVERY_REQUIRED'
+  stack: |-
+    EvidenceStore.exclusive (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/storage.js:135:19)
+    async retainEvidence (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/comparison.js:15:17)
+    async collectEvidence (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/producer.js:169:5)
+    async investigate (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/engine.js:36:20)
+    async npmCase (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s3.test.mjs:91:15)
+    async TestContext.<anonymous> (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s3.test.mjs:151:17)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: observed API rate limit retains retry metadata and stops remaining tag requests
+ok 145 - observed API rate limit retains retry metadata and stops remaining tag requests
+  ---
+  duration_ms: 0.251167
+  type: 'test'
+  ...
+# Subtest: fresh observation timestamps preserve report/change IDs and deterministic equivalence while full observations differ
+not ok 146 - fresh observation timestamps preserve report/change IDs and deterministic equivalence while full observations differ
+  ---
+  duration_ms: 265.04325
+  type: 'test'
+  location: '/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s3.test.mjs:158:1'
+  failureType: 'testCodeFailure'
+  error: 'STORE_BUSY_RECOVERY_REQUIRED'
+  code: 'STORE_BUSY_RECOVERY_REQUIRED'
+  stack: |-
+    EvidenceStore.exclusive (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/storage.js:135:19)
+    async retainEvidence (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/comparison.js:15:17)
+    async collectEvidence (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/producer.js:169:5)
+    async investigate (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/engine.js:36:20)
+    async npmCase (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s3.test.mjs:91:15)
+    async TestContext.<anonymous> (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s3.test.mjs:159:10)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+1..146
+# tests 146
+# suites 0
+# pass 95
+# fail 51
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 25864.558917

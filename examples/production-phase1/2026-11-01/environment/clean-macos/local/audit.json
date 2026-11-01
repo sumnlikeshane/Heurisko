@@ -1,0 +1,24 @@
+{
+  "reportPath": "environment/clean-macos/local/report.json",
+  "storePath": "environment/clean-macos/local/store",
+  "reportSha256": "sha256:3e52c81d307402654b72c23e78be9b1a3e020f43d892e76a7e2cc0f003c359e6",
+  "reportBytes": 64178,
+  "reportId": "report_a12f5af652e46146f353602a",
+  "outcomes": {
+    "artifactIntegrity": "not_checked",
+    "sourceAssociation": "user_supplied",
+    "provenancePolicy": "not_checked",
+    "correspondence": "unresolved",
+    "analysisCompleteness": "complete",
+    "policyResult": "not_evaluated"
+  },
+  "coverage": {
+    "complete": true,
+    "omissions": 0
+  },
+  "findings": 16,
+  "citedEvidenceId": "ev_87f773e0a98edba25b223357",
+  "citedContentRef": "sha256:58546f33e3d8d110d1cc9dd1b6a5097066bd6c475ab0fea4498b4d2f67a00436",
+  "citedBytes": 273,
+  "cliTuiWebReportAndEvidenceAgree": true
+}

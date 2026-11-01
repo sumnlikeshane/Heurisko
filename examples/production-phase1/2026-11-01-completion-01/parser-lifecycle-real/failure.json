@@ -1,0 +1,14 @@
+{
+  "recordedFrom": "actual initial command output",
+  "command": [
+    "node",
+    "scripts/check-phase1-parser-lifecycle.mjs",
+    "examples/production-phase1/2026-11-01-completion-01/parser-lifecycle-real"
+  ],
+  "exit": 1,
+  "scenario": "unacknowledged-create",
+  "errorCode": "PARSER_CLEANUP_UNCONFIRMED",
+  "sourceScript": "executed-validator.mjs",
+  "cause": "Harness expected an inventory return; production correctly throws while retaining both locks, scratch and the exact stopped container.",
+  "resolution": "Exact recorded job recovered in unacknowledged-create/recovery-after-harness-failure.json. Corrected uncertain cases passed in separate fresh parser-lost-create and parser-lost-remove receipts."
+}

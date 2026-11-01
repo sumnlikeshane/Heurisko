@@ -1,0 +1,33 @@
+{
+  "checks": [
+    {
+      "name": "documentation",
+      "argv": [
+        "pnpm",
+        "run",
+        "check:docs"
+      ],
+      "exit": 0
+    },
+    {
+      "name": "diff",
+      "argv": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit": 0
+    },
+    {
+      "name": "index",
+      "argv": [
+        "git",
+        "diff",
+        "--cached",
+        "--exit-code"
+      ],
+      "exit": 0
+    }
+  ],
+  "measurementLimit": "The earlier resource-accounting wrapper failed because the sandbox denies time(1) kern.clockrate. These documentation-only checks do not require resource measurements; no check was waived."
+}

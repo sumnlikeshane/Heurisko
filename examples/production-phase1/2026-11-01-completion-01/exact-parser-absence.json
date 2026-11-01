@@ -1,0 +1,50 @@
+{
+  "scope": "Only exact IDs recorded by this new receipt; no removals performed by this check",
+  "allAbsent": true,
+  "results": [
+    {
+      "id": "bd5ba74adf726eaae6a84332895071e7162e5bdc4b79320089c2162812bc3e8b",
+      "absent": true
+    },
+    {
+      "id": "4c783aac4502cb0e7d58549ebb3e9f103fd6d4921bf36ecf51ed11f7a68c9e39",
+      "absent": true
+    },
+    {
+      "id": "26c2dae544325bff359be5a15c1366df123acb447b5da9fcf7744fdc7dc3dec2",
+      "absent": true
+    },
+    {
+      "id": "ee4b24f7a675c6084a5a30d54beeba8fddcc0fb994d3e0ca4512b8576f10a994",
+      "absent": true
+    },
+    {
+      "id": "aebd776f6310c7c448acc4b45fd56d96b8b8cea6ed3fd7bcf2b6253421492ab5",
+      "absent": true
+    },
+    {
+      "id": "235966b3472041112626b055324cc32597fd20091b90987da06f2977cd8d7dfc",
+      "absent": true
+    },
+    {
+      "id": "70ffa316c1e402b22a4b4a5f2745b6c72eab9988c86fba88ebad62e2dc50ed82",
+      "absent": true
+    },
+    {
+      "id": "aca9428e5afec665371dd193966d78e08df59a3936f0e1b7aa9ece376a6422c4",
+      "absent": true
+    }
+  ],
+  "legacyContainersPreserved": [
+    {
+      "id": "042eac7a174a938c28c8f75358de66f70fb6efa05089ea27fa3f3f9a187f26a2",
+      "created": "2026-11-01T00:30:54.751076168Z",
+      "state": "created"
+    },
+    {
+      "id": "70ae3be5a3e12cc89991fcdc609217dcd469301fd279d91a7f01f42d0088d607",
+      "created": "2026-11-01T00:30:53.090228292Z",
+      "state": "exited"
+    }
+  ]
+}

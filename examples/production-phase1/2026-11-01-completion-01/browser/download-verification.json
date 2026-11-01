@@ -1,0 +1,14 @@
+{
+  "downloadFilename": "native-download.heurisko.json",
+  "fileBytes": 248733,
+  "sha256": "757f6b0066b55d8717d3db3c33afe9d665e299ffb38a0c25ebac231ccccef7b8",
+  "format": "heurisko-web-portable-v1",
+  "reportOriginalBytesMatch": true,
+  "reportBytes": 63733,
+  "reportSha256": "c06db35768713d8c3b8dc4fc205a02c96e16af39d62dbe607f2c453373cc7f71",
+  "blobsVerified": 76,
+  "manifestNotices": [
+    "Third-party package and source bytes retain their upstream rights. Consult retained LICENSE/NOTICE evidence before redistribution."
+  ],
+  "partial": false
+}

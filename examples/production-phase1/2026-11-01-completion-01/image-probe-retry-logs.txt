@@ -1,0 +1,3 @@
+Heurisko public captured-report explorer
+https://heurisko.onrender.com
+Read-only public examples; live analysis, uploads and reopening are unavailable on this host.

@@ -1,0 +1,56 @@
+{
+  "recordedAt": "2026-11-01T18:01:17.241065+00:00",
+  "gitHead": "6985d3eeecdbdc33463458e8072a31e62e86109f",
+  "sourceBeforeSha256": "9d1ec42d165a87668479a3f0512c95e886ced4e7158582ccb068d54ba4870d3c",
+  "sourceFinalSha256": "b2deb93560a358bbb75a36dcb7136f52fc927956078a318ab791a9ebac53c33d",
+  "sourceChangesByThisAudit": [
+    "docs/Production Phase 1 Implementation Plan.md"
+  ],
+  "retainedEvidence": [
+    {
+      "manifest": "examples/production-phase1/2026-11-01-completion-01/receipt-manifest.json",
+      "matchingFiles": 840
+    }
+  ],
+  "finalChecks": [
+    {
+      "name": "final-docs",
+      "argv": [
+        "pnpm",
+        "run",
+        "check:docs"
+      ],
+      "exit": 0
+    },
+    {
+      "name": "final-secrets",
+      "argv": [
+        "node",
+        "scripts/check-phase1-secrets.mjs"
+      ],
+      "exit": 0
+    },
+    {
+      "name": "final-diff",
+      "argv": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit": 0
+    },
+    {
+      "name": "final-index",
+      "argv": [
+        "git",
+        "diff",
+        "--cached",
+        "--exit-code"
+      ],
+      "exit": 0
+    }
+  ],
+  "localResult": "Build, contracts, 146 serial core, 40 reader/TUI, 79 web, parser resource probes, offline intelligence and historical checks passed. Initial sandbox failures and uncertain scratch preserved.",
+  "phaseStatus": "Open; gates in the existing plan remain required.",
+  "publication": "No staging, commit, push, PR, merge, release or deployment."
+}

@@ -1,0 +1,87 @@
+# Heurisko foundation contract
+
+**Source reference, reconciled 1 November 2026.** This owns current module responsibilities, evidence/compatibility and trust boundaries. It does not certify platform support or Phase 1 acceptance. [The Phase 1 plan](../Production%20Phase%201%20Implementation%20Plan.md) owns unfinished work; [initial receipts](../../examples/production-phase1/2026-11-01/README.md) establish only their named checks.
+
+## Responsibility map and public interfaces
+
+| Boundary | Owner in code | Contract now |
+|---|---|---|
+| Acquisition and static evidence | `packages/core/src/{npm,network,sources,archive,producer,comparison}.ts` | Exact npm/local bytes, immutable source candidates, raw member/delta evidence and explicit omissions. No target install or lifecycle execution. |
+| Parser control and store | `packages/core/src/{safety,parser-runtime,parser-job,storage}.ts` | Digest-pinned Docker parser, exact job identity/recovery, immutable content-addressed blobs and reports. No host parser fallback. |
+| Analysis | `packages/core/src/{engine,adapter,reviewed-module,intelligence-boundary}.ts` and `packages/intelligence-reviewed` | `investigate()` selects one reviewed deterministic module by default. Evidence content is bounded and hash checked. AI remains disabled in ordinary CLI/TUI/web investigations. |
+| Report contract and reader | `packages/contracts/schema/contracts.schema.json`, validators, `integration/part4/src/report-reader.ts` | G0 `0.1.0`, six separate outcomes, original report bytes, evidence IDs and exact ranges. Opening is historical and does not rerun analysis. |
+| Presenters | `packages/cli`, `packages/tui`, `apps/web` | CLI generates/inspects, TUI reviews and reads, local web investigates and exports/reopens. They render the shared report rather than assigning new verdicts. |
+| Public service | `apps/web/server/hosted.ts`, `render.yaml`, `Dockerfile.render` | Fixed public-readonly catalog and health check. Hosted investigation, upload, import and other mutations reject before body parsing. |
+| Future AI development | `packages/intelligence` | Imported source builds and passes offline tests. It is not the runtime module; provider and local scorer activation need separate admission. |
+
+The public API to preserve during Phase 1 is `investigate(input, options, context)`, G0 report/bundle schema and semantic rules, CLI invocation/exit mapping, reader evidence availability/ranges, and local versus hosted web authority. Internal module boundaries may change only with an observed defect and compatibility check. The current fixed CLI analysis profile is `raw-static-s3-v1`.
+
+## Safety and data boundaries
+
+| Entry | Risk and current control | Deferred decision |
+|---|---|---|
+| Registry and source fetch | HTTPS allowlist, public-address validation, DNS pinning, no proxy environment, bounded redirects/time/bytes. Registry identity and source claims remain distinct. | Add ecosystems and authentication in later phases only after a new trust review. |
+| Archive bytes | A digest-pinned Python container inventories virtually under limits; no target code executes. Links, special entries, traversal, collisions and unsupported scope cannot become clean absence. | Rebuild and broader formats are separate worker designs. |
+| Docker control | Local socket is trusted host infrastructure. Create/remove uncertainty retains exact job metadata, spool and locks; absence must be confirmed before release. | Durable hosted worker is outside Phase 1. |
+| Local web | Loopback origin and per-process capability guard mutation routes; content is inert, bounded and escaped. Browser job history is process-local. | Accounts, sharing, durable queues and retention policy belong later. |
+| Public web | Trusted HTTPS Host/Origin checks and fixed captured-report catalog; writes fail closed. No Docker socket or parser is present. | Hosted live analysis needs an independently reviewed architecture. |
+| AI inputs | Current reviewed rules consume admitted evidence; imported provider/retrieval/model code is development only. Target content is untrusted and cannot select executable modules. | Model runtime, privacy/cost, citation entailment and prompt-injection acceptance require a separate gate. |
+| Export and logs | Reports and original evidence bytes remain immutable; transport omissions are explicit. Diagnostics should use bounded codes/references, never credentials or whole private inputs. | Define hosted retention/removal before hosted writes. |
+
+Existing `heurisko-static-v5` caps remain unchanged: 32 MiB compressed and 128 MiB expanded archive, 16 MiB per member, 10,000 entries; parser 30 s wall, 10 CPU s, 256 MiB, one active with queue eight, network none, read-only root, UID/GID 65534, no host fallback; store 1 GiB with 64 MiB reserve and no automatic eviction. These are containment limits, not measured production SLOs. Resource measurements on both supported hosts remain open.
+
+## Configuration, credentials and diagnostics
+
+- `HEURISKO_ANALYSIS_MODULE` is a trusted host selector: unset/empty or `55240e9` selects the reviewed module; `off` reproduces raw-only incomplete analysis. Unknown values fail before acquisition. Target metadata and HTTP requests cannot select it.
+- `HEURISKO_WEB_MODE` is `local` (or unset) for the local app and `public-readonly` for the hosted explorer. Hosted mode requires an exact trusted `RENDER_EXTERNAL_URL` and numeric `PORT`; local web uses its own private loopback URL. `HEURISKO_WEB_TEST_CORPUS` and TUI receipt/test variables are test-only.
+- The product does not read an OpenRouter credential. The imported development adapter accepts an API key only as an explicit caller argument after an explicit enable flag; it is not connected. [Example settings](example.env) contain no credential. The [bounded format scan](../../scripts/check-phase1-secrets.mjs) checks present Git-tracked/candidate source, configuration, documentation and receipt text for common token/private-key forms. It reports bytes/types/exclusions; ignored/private files, binaries, archives and extensionless CAS blobs are outside coverage. It cannot prove arbitrary secrets absent.
+- CLI exits: `0` for a usable report with complete analysis and no configured policy violation/indeterminate policy; `1` for a configured policy violation; `2` for usable but incomplete/indeterminate; `3` for no usable report. Exit 0 is not a package-safety claim. JSON stdout and progress/error stderr remain separate. TUI and web surface the recorded outcome and unavailable-feature state rather than upgrading it.
+- Parser recovery uses `node scripts/recover-parser-job.mjs STORE_ROOT EXACT_JOB_NAME` only for a recorded, stopped, store-bound job. It inspects/removes the exact acknowledged container ID and confirms absence before releasing that job's scratch and locks. Never bulk-delete `.heurisko` to clear a failure.
+
+## Compatibility, dependencies and contribution rules
+
+- G0 `0.1.0`, the six outcomes and old report bytes remain unchanged in Phase 1. New evaluation identities are expected when source, lockfile, executable/configuration digest or option changes. Viewers must reopen old complete, incomplete and missing-evidence reports without recomputation. A required schema break needs a separately approved versioned migration and old-reader proof.
+- Node 22.23.4, pnpm 10.14.0 and Python 3.13 are pinned for the current workflow. Linux amd64 CI passed on starting main; this change has no exact-head CI. A fresh macOS arm64 source copy passed offline frozen pnpm installation using a shared tarball cache, a fresh hash-pinned Python installation, full Docker-backed checks, real npm/local investigations and cross-interface audits. A Linux amd64 hosted image built and served read-only routes under emulation. Native Linux amd64 host parser and complete platform support remain unproven. Do not advertise other Node/Python combinations from this receipt.
+- The [macOS npm license inventory](npm-licenses.json) and [Linux amd64 image inventory](linux-amd64-npm-licenses.json) each record 48 installed package versions; the only platform difference is the MIT-licensed esbuild optional binary. The declared licenses are MIT, ISC, Apache-2.0 or `(MIT OR CC0-1.0)`, with no missing declaration in either installed set. A [local top-level notice audit](npm-notice-audit.json) hashes license/notice files for 46 of the 48 macOS package directories. `@esbuild/darwin-arm64@0.25.12` and `yoga-layout@3.2.1` declare MIT but have no top-level rights file in their installed package directory. The Python validator environment reports MIT for `jsonschema`, `attrs`, `jsonschema-specifications`, `referencing` and `rpds-py`. The selected setuptools evaluation fixture retains its MIT notice; original Heurisko material is Apache-2.0. These are local file/metadata observations, not a legal conclusion or a complete review of bundled source, Linux package files or distribution notices. New/updated dependencies require lockfile digest, direct/transitive license and fixture-rights review before admission.
+- After the frozen pnpm install on macOS arm64, generate a new notice audit with `python3 scripts/audit-npm-notices.py > NEW_NOTICE_RECEIPT.json`; never overwrite the recorded audit. The script requires every package in the declared-license inventory to exist and records top-level rights-file hashes. It does not inspect embedded source comments or replace a release notice review.
+- Each product change should have a reproducible defect or decision ID, a focused regression, retained before/after observation where relevant, and an exact-head PR CI result. No direct commit/push to `main`; commit, branch push, PR publication, merge and deployment follow [repository authorization rules](../../AGENTS.md). Release versions and deprecations must be tied to an approved compatibility note. The delegated [security policy](../../SECURITY.md) selects GitHub private reporting and a best-effort seven-calendar-day acknowledgment target. The owner has closed the reporting-verification gate by signoff; the agent has no independent observation of activation/notifications. Do not publish exploit details or invent an alternate address.
+
+The [remaining rights review](../../examples/production-phase1/2026-11-01-completion-01/rights/review.md) recovers full exact-release esbuild/yoga notices, records bundled-code and distribution obligations, and identifies release holds. Metadata inventories above remain historical observations.
+
+## Evidence and identity rules
+
+The executable authority is G0 `0.1.0` in `packages/contracts/schema/contracts.schema.json`, `src/types.ts` and `runtime/semantics.py`. Preserve separate `artifactIntegrity`, `sourceAssociation`, `provenancePolicy`, `correspondence`, `analysisCompleteness`, `policyResult` and AI state. Presenters display the report; they do not infer policy violations from priority or upgrade unchecked trust.
+
+- Exact npm SHA-512/SHA-256 SRI concerns registry expectations; observed SHA-256 identifies bytes. Local mutations remain local even when their manifest uses an upstream name/version.
+- Registry gitHead/repository, artifact manifest, bounded tags and user overrides are separate claims. Pin full GitHub commit, package subtree and broader source/build context. Empty subtree means repository root; undefined means not recorded. Never use the default branch to settle an unresolved release identity. Current acquisition does not materialize submodules/LFS or verify signed tags.
+- Raw archive identity, member identity, archive metadata and source/artifact changes are distinct. Comparison uses raw enclosing byte spans, not semantic/multi-hunk equivalence. Added/removed inference needs complete unambiguous scope; otherwise preserve unresolved sides. Generated names, source maps and build configuration are clues, not exemptions or reproduced output.
+- Report/evidence labels are deterministic canonical-JSON SHA-256 prefixes, not content store keys. Full byte SHA-256 plus identity payload guards collisions. Configuration v3 binds subject/source/context, executable module/rule configuration, schema/validator semantics, lock/tool/safety identities and options. Different observations can share report ID while retaining distinct full content hashes/capture times.
+- Preserve original UTF-8 report bytes; reject invalid encoding/BOM, duplicate keys, unsafe numbers and unsupported depth/shape. Missing evidence cannot be repaired by replacement decoding, guessed text, relabeling availability or a coincidentally present CAS blob.
+- Evidence records, raw delta JSON and linked member bytes are different objects. Resolve exact pointer/member/value/half-open span and independently supported absence. Citation ranges must stay within their member's declared scope. Unsupported line-only/partial ranges remain metadata-only.
+- New source, code, configuration or analysis creates a new evaluation; never overlay findings onto an old saved report. Deterministic equivalence may exclude volatile metadata/model prose while retaining those bytes in the original observation. Offline reopen does not refresh registry, revocation or monitoring state.
+
+## Analysis admission and interface behavior
+
+`packages/intelligence-reviewed` retains the complete deterministic body from `55240e99409ad44cbd6a978f40873ef410cb1861`; only terminal reexports were removed. Original source and derivation/admission hashes remain in that package. The trusted shared loader supplies bounded verified manifest delta/member content through a wrapper; G0's two-argument consumer interface is unchanged. Provider, retrieval, prompt and CodeAstra code from development intake is not in this runtime graph.
+
+The loader binds source/compiled/admission/loader/boundary/configuration identity, rechecks bytes after asynchronous import and rejects changed cached code. Unknown selectors fail before acquisition; explicit trusted injection takes precedence. Target metadata and HTTP cannot choose executable modules. The in-process adapter is trusted code, not hostile JavaScript containment: timeout stops waiting and cannot preempt arbitrary synchronous code or prove background inference stopped.
+
+Current interfaces use the same report but have different input surfaces: CLI local input can omit source and accept labels; TUI local Review requires source, snapshots local bytes before Start and does not expose local labels; browser admits selected bounded bytes into fixed server storage. npm Review currently shows unresolved remote digest/source honestly until acquisition. The TUI profile is `raw-static-s4-v1`, CLI/browser `raw-static-s3-v1`; separate runs need equivalent options/configuration before deterministic comparison. Saved report readers preserve identical recorded facts.
+
+A cancel request, engine settlement, exact parser absence and UI cleanup observability are separate. The web/TUI do not claim typed cleanup acknowledgment, durable resume, detach or retry. Local job history is process-local; immutable reports persist separately. Browser portable exports retain original report bytes plus declared included/omitted content; report/bundle JSON alone is not self-contained evidence. TUI export is unavailable.
+
+## Regression ownership
+
+Historical audits were retired after these protections and remaining findings were reconciled. Current known quality/UI work is in the [roadmap backlog](../../PRODUCTION_MASTER_ROADMAP.md#priorities-and-known-issues); Phase 1 gates are in [the current plan](../Production%20Phase%201%20Implementation%20Plan.md#remaining-work-and-acceptance-matrix).
+
+| Boundary | Source / checks retaining repaired behavior |
+|---|---|
+| Strict/nonblocking regular-file report intake and declared availability | `storage.ts`, `validation.ts`, CLI; `packages/core/tests/cli-boundary.test.mjs` |
+| Module/config identity, observer isolation, uncertain parser lifecycle/recovery | `engine.ts`, `adapter.ts`, `parser-job.ts`; core foundation/audit-fixes/parser-absence tests |
+| Manifest/member exact binding and missing-content behavior | `intelligence-boundary.ts`; core intelligence-boundary/reviewed-module tests |
+| Bounded hash-checked record/citation/member reads and scope | `integration/part4/src/report-reader.ts`; readiness tests |
+| Raw-record versus citation labels, Source strict values/read failures, report-specific UI state | TUI App/summary/state; model/user-failures tests and focused evidence-mode/report-adoption PTYs |
+| Observation/upload snapshots, explicit root labels, bounded search | web observation/workspace/doc-model; observation-identity/upload-identity/report-overhaul/gap-batch tests |
+| Hosted mutation rejection before parsing and origin/catalog boundary | web service/hosted; hosted tests |
+
+These are regression responsibilities, not assertions that tests ran during every documentation edit. [The operating guide](../../HEURISKO_COMPLETE_GUIDE.md) owns run instructions and detailed limits; [AGENTS.md](../../AGENTS.md) owns contribution, validation selection and approval rules. No source/schema/isolation change is made by this reconciliation.

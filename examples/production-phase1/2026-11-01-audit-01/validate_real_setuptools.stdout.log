@@ -1,0 +1,1 @@
+PASS real M1/M2 evidence: pinned setuptools wheel-only .pth remains visible and untrusted; bounded retrieval returns all manually labeled relevant excerpts at k=5

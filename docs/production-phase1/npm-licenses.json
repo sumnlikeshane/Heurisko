@@ -1,0 +1,246 @@
+{
+  "version": "heurisko-phase1-npm-license-inventory-v1",
+  "source": "pnpm licenses list --json after offline frozen install, macOS arm64",
+  "items": [
+    {
+      "name": "@alcalzone/ansi-tokenize",
+      "version": "0.2.5",
+      "license": "MIT"
+    },
+    {
+      "name": "@esbuild/darwin-arm64",
+      "version": "0.25.12",
+      "license": "MIT"
+    },
+    {
+      "name": "@types/node",
+      "version": "22.15.30",
+      "license": "MIT"
+    },
+    {
+      "name": "@types/react",
+      "version": "19.1.5",
+      "license": "MIT"
+    },
+    {
+      "name": "@types/react-dom",
+      "version": "19.1.6",
+      "license": "MIT"
+    },
+    {
+      "name": "ansi-escapes",
+      "version": "7.3.0",
+      "license": "MIT"
+    },
+    {
+      "name": "ansi-regex",
+      "version": "6.5.0",
+      "license": "MIT"
+    },
+    {
+      "name": "ansi-styles",
+      "version": "6.2.3",
+      "license": "MIT"
+    },
+    {
+      "name": "auto-bind",
+      "version": "5.0.1",
+      "license": "MIT"
+    },
+    {
+      "name": "chalk",
+      "version": "5.6.2",
+      "license": "MIT"
+    },
+    {
+      "name": "cli-boxes",
+      "version": "3.0.0",
+      "license": "MIT"
+    },
+    {
+      "name": "cli-cursor",
+      "version": "4.0.0",
+      "license": "MIT"
+    },
+    {
+      "name": "cli-truncate",
+      "version": "4.0.0",
+      "license": "MIT"
+    },
+    {
+      "name": "code-excerpt",
+      "version": "4.0.0",
+      "license": "MIT"
+    },
+    {
+      "name": "convert-to-spaces",
+      "version": "2.0.1",
+      "license": "MIT"
+    },
+    {
+      "name": "csstype",
+      "version": "3.2.3",
+      "license": "MIT"
+    },
+    {
+      "name": "emoji-regex",
+      "version": "10.6.0",
+      "license": "MIT"
+    },
+    {
+      "name": "environment",
+      "version": "1.1.0",
+      "license": "MIT"
+    },
+    {
+      "name": "es-toolkit",
+      "version": "1.53.1",
+      "license": "MIT"
+    },
+    {
+      "name": "esbuild",
+      "version": "0.25.12",
+      "license": "MIT"
+    },
+    {
+      "name": "escape-string-regexp",
+      "version": "2.0.0",
+      "license": "MIT"
+    },
+    {
+      "name": "get-east-asian-width",
+      "version": "1.7.0",
+      "license": "MIT"
+    },
+    {
+      "name": "indent-string",
+      "version": "5.0.0",
+      "license": "MIT"
+    },
+    {
+      "name": "ink",
+      "version": "6.3.1",
+      "license": "MIT"
+    },
+    {
+      "name": "is-fullwidth-code-point",
+      "version": "4.0.0",
+      "license": "MIT"
+    },
+    {
+      "name": "is-fullwidth-code-point",
+      "version": "5.1.0",
+      "license": "MIT"
+    },
+    {
+      "name": "is-in-ci",
+      "version": "2.0.0",
+      "license": "MIT"
+    },
+    {
+      "name": "mimic-fn",
+      "version": "2.1.0",
+      "license": "MIT"
+    },
+    {
+      "name": "onetime",
+      "version": "5.1.2",
+      "license": "MIT"
+    },
+    {
+      "name": "patch-console",
+      "version": "2.0.0",
+      "license": "MIT"
+    },
+    {
+      "name": "react",
+      "version": "19.1.8",
+      "license": "MIT"
+    },
+    {
+      "name": "react-dom",
+      "version": "19.1.8",
+      "license": "MIT"
+    },
+    {
+      "name": "react-reconciler",
+      "version": "0.32.0",
+      "license": "MIT"
+    },
+    {
+      "name": "restore-cursor",
+      "version": "4.0.0",
+      "license": "MIT"
+    },
+    {
+      "name": "scheduler",
+      "version": "0.26.0",
+      "license": "MIT"
+    },
+    {
+      "name": "signal-exit",
+      "version": "3.0.7",
+      "license": "ISC"
+    },
+    {
+      "name": "slice-ansi",
+      "version": "5.0.0",
+      "license": "MIT"
+    },
+    {
+      "name": "slice-ansi",
+      "version": "7.1.2",
+      "license": "MIT"
+    },
+    {
+      "name": "stack-utils",
+      "version": "2.0.6",
+      "license": "MIT"
+    },
+    {
+      "name": "string-width",
+      "version": "7.2.0",
+      "license": "MIT"
+    },
+    {
+      "name": "strip-ansi",
+      "version": "7.2.0",
+      "license": "MIT"
+    },
+    {
+      "name": "type-fest",
+      "version": "4.41.0",
+      "license": "(MIT OR CC0-1.0)"
+    },
+    {
+      "name": "typescript",
+      "version": "5.8.3",
+      "license": "Apache-2.0"
+    },
+    {
+      "name": "undici-types",
+      "version": "6.21.0",
+      "license": "MIT"
+    },
+    {
+      "name": "widest-line",
+      "version": "5.0.0",
+      "license": "MIT"
+    },
+    {
+      "name": "wrap-ansi",
+      "version": "9.0.2",
+      "license": "MIT"
+    },
+    {
+      "name": "ws",
+      "version": "8.22.1",
+      "license": "MIT"
+    },
+    {
+      "name": "yoga-layout",
+      "version": "3.2.1",
+      "license": "MIT"
+    }
+  ]
+}

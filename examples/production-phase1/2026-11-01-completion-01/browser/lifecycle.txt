@@ -1,0 +1,23 @@
+Browser tab: 1237325268, Title: "Heurisko · Evidence workspace", URL: "http://127.0.0.1:43219/workspace/observations/4eba1ced04a9b3a09539d30d0678cde6/findings".
+The following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 248-255, 259-261
+~				91 checkbox File change remains unexplained Severity: undetermined · Priority: low Confidence: limited, Value: 0
+~				187 checkbox Package lifecycle script entry changed Severity: medium · Priority: medium Confidence: high, Value: 1
+~				225 heading Package lifecycle script entry changed, Value: 3
+~					226 text Package lifecycle script entry changed
+~					230 text medium
+~					233 text medium
+~					236 text high
+~					239 text exact
+~				242 text Manifest key scripts.postinstall is reported as added to the artifact.
+~				245 text Lifecycle entries can affect package-manager installation behavior; inspect the exact command and its source before deciding what it does. This observation does not establish malicious intent.
++				276 button both · package.json · manifest delta · field scripts.postinstall ev_e7075cb69f91c7e1b4c4223f · retained →
++					277 text both · package.json · manifest delta · field scripts.postinstall
++					278 container
++						279 text ev_e7075cb69f91c7e1b4c4223f  ·  retained  →
++				280 button Open related file change: package/package.json
++					281 text Open related file change: 
++					282 text package/package.json
+~						267 text The producer-retained manifest delta supplies the old/new value direction; this M1 rule does not analyze referenced file behavior or establish intent.
+~						273 text Review the retained old and new script values and their referenced files; do not execute them on the host.
+The focused UI element is 187 checkbox Package lifecycle script entry changed Severity: medium · Priority: medium Confidence: high, Value: 1

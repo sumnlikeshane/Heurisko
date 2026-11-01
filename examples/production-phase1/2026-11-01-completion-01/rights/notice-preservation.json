@@ -1,0 +1,8 @@
+{
+  "finding": "Initial local assembly replaced the clean existing browser notice file with runtime-only notices, dropping existing build/type notices. Caught in assembled diff review.",
+  "resolution": "Restore exact original tracked bytes; only build delivery changes. Preserve initial attempt separately.",
+  "restoredPath": "apps/web/THIRD_PARTY_NOTICES.txt",
+  "sha256": "0cab4965023071e70e41b3c51911c4e35d2e85b67748041d0ec4fd97e36b67bd",
+  "source": "HEAD at6985d3eeecdbdc33463458e8072a31e62e86109f",
+  "supersededAttempt": "browser-notice-assembly-superseded.txt"
+}

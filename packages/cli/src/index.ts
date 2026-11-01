@@ -20,10 +20,11 @@ Options:
   --bundle FILE          Save real importable EvidenceBundle JSON
   --policy REF           Requested policy; indeterminate until evaluator exists
   --json                 One JSON result on stdout; progress on stderr
-  --no-ai --no-color     Disable AI / use inert uncolored output
+  --no-ai --no-color     Keep AI disabled / use inert uncolored output
 Exact public npm releases and local tar/tar.gz use the same static producer.
 Provenance is not checked: no admitted verifier. No target code is executed.
-No model, monitor or TUI export yet. Saved reports remain historical.
+Model inference is unavailable and disabled by default. --no-ai remains accepted.
+No monitor or TUI export yet. Saved reports remain historical.
 Exit: 0 completed checks; 1 configured violation; 2 incomplete; 3 no usable report.
 `;
 function summary(r:InvestigationReport):string {
@@ -56,7 +57,7 @@ async function main():Promise<void> {
       const match=spec?/^npm:(.+)@([^@]+)$/.exec(spec):undefined;
       if((positional.length&& !match)||(!match&&!get('artifact'))||(match&&(get('artifact')||get('name')||get('version')||get('source-archive')))|| (!!get('source')!==!!get('commit'))||(!get('source')&&(get('source-archive')||get('subdirectory'))))throw new Error('INVOCATION_INVALID');
       if(match)npmCoordinates(match[1]!,match[2]!);
-      const options={enableAI:!flags.has('no-ai'),analysisProfile:'raw-static-s3-v1',...(get('policy')?{trustPolicyRef:get('policy')}:{} )};
+      const options={enableAI:false,analysisProfile:'raw-static-s3-v1',...(get('policy')?{trustPolicyRef:get('policy')}:{} )};
       const source=get('source')?{sourceOverride:{repo:get('source')!,commit:get('commit')!,...(get('subdirectory')?{subdirectory:get('subdirectory')}:{} )}}:{};
       const input:ArtifactInput=match?{ecosystem:'npm',packageName:match[1]!,version:match[2]!,analysisOptions:options,...source}:{ecosystem:'local',artifactPath:resolve(get('artifact')!),analysisOptions:options,...(get('name')?{packageName:get('name')}:{}),...(get('version')?{version:get('version')}:{}),...source};
       report=await investigate(input,options,{store,sourceArchivePath:get('source-archive')?resolve(get('source-archive')!):undefined,signal:controller.signal,onProgress:e=>process.stderr.write(`${e.stage}: ${e.status}\n`)});

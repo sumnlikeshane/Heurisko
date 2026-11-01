@@ -1,0 +1,85 @@
+{
+  "host": {
+    "system": "Darwin",
+    "release": "25.6.0",
+    "machine": "arm64"
+  },
+  "started": "2026-11-01T16:31:18.153395+00:00",
+  "checks": [
+    {
+      "name": "contracts",
+      "argv": [
+        "pnpm",
+        "run",
+        "test:contracts"
+      ],
+      "exit": 0,
+      "seconds": 0.615
+    },
+    {
+      "name": "web",
+      "argv": [
+        "pnpm",
+        "--filter",
+        "@heurisko/web",
+        "test"
+      ],
+      "exit": 0,
+      "seconds": 4.532
+    },
+    {
+      "name": "readers",
+      "argv": [
+        "node",
+        "--test",
+        "integration/part4/tests/readiness.test.mjs",
+        "packages/tui/tests/user-failures.test.mjs",
+        "packages/tui/tests/audit.test.mjs",
+        "packages/tui/tests/model.test.mjs"
+      ],
+      "exit": 0,
+      "seconds": 5.625
+    },
+    {
+      "name": "parser-lifecycle",
+      "argv": [
+        "node",
+        "--test",
+        "--test-concurrency=1",
+        "packages/core/tests/audit-fixes.test.mjs",
+        "packages/core/tests/parser-absence.test.mjs",
+        "packages/core/tests/cli-boundary.test.mjs"
+      ],
+      "exit": 0,
+      "seconds": 28.514
+    },
+    {
+      "name": "intake",
+      "argv": [
+        "node",
+        "scripts/verify-intelligence-intake.mjs"
+      ],
+      "exit": 0,
+      "seconds": 0.045
+    },
+    {
+      "name": "contracts-config",
+      "argv": [
+        "node",
+        "--test",
+        "packages/core/tests/foundation.test.mjs"
+      ],
+      "exit": 0,
+      "seconds": 6.038
+    },
+    {
+      "name": "secrets",
+      "argv": [
+        "node",
+        "scripts/check-phase1-secrets.mjs"
+      ],
+      "exit": 0,
+      "seconds": 0.766
+    }
+  ]
+}

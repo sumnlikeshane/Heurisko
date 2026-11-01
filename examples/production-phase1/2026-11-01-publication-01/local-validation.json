@@ -1,0 +1,60 @@
+[
+  {
+    "name": "typecheck",
+    "argv": [
+      "pnpm",
+      "run",
+      "typecheck"
+    ],
+    "exit": 0,
+    "seconds": 9.268
+  },
+  {
+    "name": "contracts",
+    "argv": [
+      "pnpm",
+      "run",
+      "test:contracts"
+    ],
+    "exit": 0,
+    "seconds": 0.419
+  },
+  {
+    "name": "intake",
+    "argv": [
+      "node",
+      "scripts/verify-intelligence-intake.mjs"
+    ],
+    "exit": 0,
+    "seconds": 0.042
+  },
+  {
+    "name": "docs",
+    "argv": [
+      "pnpm",
+      "run",
+      "check:docs"
+    ],
+    "exit": 0,
+    "seconds": 0.391
+  },
+  {
+    "name": "secrets",
+    "argv": [
+      "node",
+      "scripts/check-phase1-secrets.mjs"
+    ],
+    "exit": 0,
+    "seconds": 0.765
+  },
+  {
+    "name": "diff",
+    "argv": [
+      "git",
+      "diff",
+      "--check"
+    ],
+    "exit": 0,
+    "seconds": 0.07
+  }
+]

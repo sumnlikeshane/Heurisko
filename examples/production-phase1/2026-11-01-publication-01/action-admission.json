@@ -1,0 +1,58 @@
+{
+  "checkedAt": "2026-11-01T18:08:48.113796+00:00",
+  "actions": [
+    {
+      "repository": "actions/setup-node",
+      "release": "v4.4.0",
+      "commit": "49933ea5288caeca8642d1e84afbd3f7d6820020",
+      "releaseURL": "https://github.com/actions/setup-node/releases/tag/v4.4.0",
+      "files": [
+        {
+          "path": "action.yml",
+          "url": "https://raw.githubusercontent.com/actions/setup-node/49933ea5288caeca8642d1e84afbd3f7d6820020/action.yml",
+          "bytes": 2614,
+          "sha256": "8aee59063ebc272d850507febb30930de2684be1b1240cf5f3dff13179fcff0b"
+        },
+        {
+          "path": "package.json",
+          "url": "https://raw.githubusercontent.com/actions/setup-node/49933ea5288caeca8642d1e84afbd3f7d6820020/package.json",
+          "bytes": 1825,
+          "sha256": "923a7a6a88841f2a4d89e4774bf5f0cbdb8a322fdd486f6b712bdbcba67554a1"
+        },
+        {
+          "path": "LICENSE",
+          "url": "https://raw.githubusercontent.com/actions/setup-node/49933ea5288caeca8642d1e84afbd3f7d6820020/LICENSE",
+          "bytes": 1096,
+          "sha256": "7d070f6b64d9bcc530fe99cc21eaaa4b3c364e0b2d367d7735671fa202a03b32"
+        }
+      ]
+    },
+    {
+      "repository": "actions/setup-python",
+      "release": "v5.6.0",
+      "commit": "a26af69be951a213d495a4c3e4e4022e16d87065",
+      "releaseURL": "https://github.com/actions/setup-python/releases/tag/v5.6.0",
+      "files": [
+        {
+          "path": "action.yml",
+          "url": "https://raw.githubusercontent.com/actions/setup-python/a26af69be951a213d495a4c3e4e4022e16d87065/action.yml",
+          "bytes": 2364,
+          "sha256": "0acca40eee6f548ea8269ece66fd625fe9deb1f61f31f0b58562068fc083eb37"
+        },
+        {
+          "path": "package.json",
+          "url": "https://raw.githubusercontent.com/actions/setup-python/a26af69be951a213d495a4c3e4e4022e16d87065/package.json",
+          "bytes": 1833,
+          "sha256": "9cd25231095168c97942be30bbe7d0df05b47f65bb7cd2b0fa55a77531a4b6ba"
+        },
+        {
+          "path": "LICENSE",
+          "url": "https://raw.githubusercontent.com/actions/setup-python/a26af69be951a213d495a4c3e4e4022e16d87065/LICENSE",
+          "bytes": 1096,
+          "sha256": "7d070f6b64d9bcc530fe99cc21eaaa4b3c364e0b2d367d7735671fa202a03b32"
+        }
+      ]
+    }
+  ],
+  "scope": "Exact releases in existing action majors; retain upstream license and action/package definitions. Hosted CI will supply compatibility proof; no general vulnerability-free claim."
+}

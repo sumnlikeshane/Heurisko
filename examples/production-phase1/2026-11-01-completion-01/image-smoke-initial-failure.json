@@ -1,0 +1,9 @@
+{
+  "command": "measurement-tools/heurisko-phase1-final-image-check.py",
+  "exit": 1,
+  "exception": "RuntimeError: Image health unavailable",
+  "cause": "Harness configured https://phase1.invalid, but unchanged publicHostedOrigin admits only exact https://NAME.onrender.com origins. Startup correctly rejected the unsupported origin.",
+  "source": "apps/web/server/service.ts publicHostedOrigin and server/main.ts hostedSettings before listen",
+  "cleanup": "Initial harness finally stopped/removed its exact returned probe ID and queried absence. ID was not printed or retained by that initial harness; no claim of a concrete ID is invented.",
+  "resolution": "New probe uses the existing documented https://heurisko.onrender.com as configuration/Host header over loopback only, captures container logs and ID, without changing any security control or calling the external host."
+}

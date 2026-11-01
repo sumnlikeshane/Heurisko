@@ -1,0 +1,3192 @@
+{
+  "scope": "Full installed npm package rights filenames and source headers; pinned validator license files; retained fixture notices. Headers are evidence, not complete bundled-code clearance.",
+  "npm": [
+    {
+      "name": "@alcalzone/ansi-tokenize",
+      "version": "0.2.5",
+      "licenseDeclaration": "MIT",
+      "noticeFiles": [
+        {
+          "path": "LICENSE",
+          "bytes": 1071,
+          "sha256": "c60f722e431aa92d949775157b269851c9d0e2a1bc18f77dcbf0d95363734443"
+        }
+      ],
+      "sourceHeaders": []
+    },
+    {
+      "name": "@esbuild/darwin-arm64",
+      "version": "0.25.12",
+      "licenseDeclaration": "MIT",
+      "noticeFiles": [],
+      "sourceHeaders": []
+    },
+    {
+      "name": "@types/node",
+      "version": "22.15.30",
+      "licenseDeclaration": "MIT",
+      "noticeFiles": [
+        {
+          "path": "LICENSE",
+          "bytes": 1141,
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+        }
+      ],
+      "sourceHeaders": [
+        {
+          "path": "index.d.ts",
+          "sha256": "ad90122e1cb599b3bc06a11710eb5489101be678f2920f2322b0ac3e195af78d",
+          "header": [
+            "* License for programmatically and manually incorporated",
+            "* Copyright Node.js contributors. All rights reserved.",
+            "* rights to use, copy, modify, merge, publish, distribute, sublicense, and/or",
+            "* The above copyright notice and this permission notice shall be included in",
+            "* AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER"
+          ]
+        },
+        {
+          "path": "ts5.6/index.d.ts",
+          "sha256": "171fd8807643c46a9d17e843959abdf10480d57d60d38d061fb44a4c8d4a8cc4",
+          "header": [
+            "* License for programmatically and manually incorporated",
+            "* Copyright Node.js contributors. All rights reserved.",
+            "* rights to use, copy, modify, merge, publish, distribute, sublicense, and/or",
+            "* The above copyright notice and this permission notice shall be included in",
+            "* AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "@types/react",
+      "version": "19.1.5",
+      "licenseDeclaration": "MIT",
+      "noticeFiles": [
+        {
+          "path": "LICENSE",
+          "bytes": 1141,
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+        }
+      ],
+      "sourceHeaders": []
+    },
+    {
+      "name": "@types/react-dom",
+      "version": "19.1.6",
+      "licenseDeclaration": "MIT",
+      "noticeFiles": [
+        {
+          "path": "LICENSE",
+          "bytes": 1141,
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+        }
+      ],
+      "sourceHeaders": []
+    },
+    {
+      "name": "ansi-escapes",
+      "version": "7.3.0",
+      "licenseDeclaration": "MIT",
+      "noticeFiles": [
+        {
+          "path": "license",
+          "bytes": 1117,
+          "sha256": "5c932d88256b4ab958f64a856fa48e8bd1f55bc1d96b8149c65689e0c61789d3"
+        }
+      ],
+      "sourceHeaders": []
+    },
+    {
+      "name": "ansi-regex",
+      "version": "6.5.0",
+      "licenseDeclaration": "MIT",
+      "noticeFiles": [
+        {
+          "path": "license",
+          "bytes": 1117,
+          "sha256": "5c932d88256b4ab958f64a856fa48e8bd1f55bc1d96b8149c65689e0c61789d3"
+        }
+      ],
+      "sourceHeaders": []
+    },
+    {
+      "name": "ansi-styles",
+      "version": "6.2.3",
+      "licenseDeclaration": "MIT",
+      "noticeFiles": [
+        {
+          "path": "license",
+          "bytes": 1117,
+          "sha256": "5c932d88256b4ab958f64a856fa48e8bd1f55bc1d96b8149c65689e0c61789d3"
+        }
+      ],
+      "sourceHeaders": []
+    },
+    {
+      "name": "auto-bind",
+      "version": "5.0.1",
+      "licenseDeclaration": "MIT",
+      "noticeFiles": [
+        {
+          "path": "license",
+          "bytes": 1117,
+          "sha256": "5c932d88256b4ab958f64a856fa48e8bd1f55bc1d96b8149c65689e0c61789d3"
+        }
+      ],
+      "sourceHeaders": []
+    },
+    {
+      "name": "chalk",
+      "version": "5.6.2",
+      "licenseDeclaration": "MIT",
+      "noticeFiles": [
+        {
+          "path": "license",
+          "bytes": 1117,
+          "sha256": "5c932d88256b4ab958f64a856fa48e8bd1f55bc1d96b8149c65689e0c61789d3"
+        }
+      ],
+      "sourceHeaders": []
+    },
+    {
+      "name": "cli-boxes",
+      "version": "3.0.0",
+      "licenseDeclaration": "MIT",
+      "noticeFiles": [
+        {
+          "path": "license",
+          "bytes": 1117,
+          "sha256": "5c932d88256b4ab958f64a856fa48e8bd1f55bc1d96b8149c65689e0c61789d3"
+        }
+      ],
+      "sourceHeaders": []
+    },
+    {
+      "name": "cli-cursor",
+      "version": "4.0.0",
+      "licenseDeclaration": "MIT",
+      "noticeFiles": [
+        {
+          "path": "license",
+          "bytes": 1117,
+          "sha256": "5c932d88256b4ab958f64a856fa48e8bd1f55bc1d96b8149c65689e0c61789d3"
+        }
+      ],
+      "sourceHeaders": []
+    },
+    {
+      "name": "cli-truncate",
+      "version": "4.0.0",
+      "licenseDeclaration": "MIT",
+      "noticeFiles": [
+        {
+          "path": "license",
+          "bytes": 1117,
+          "sha256": "5c932d88256b4ab958f64a856fa48e8bd1f55bc1d96b8149c65689e0c61789d3"
+        }
+      ],
+      "sourceHeaders": []
+    },
+    {
+      "name": "code-excerpt",
+      "version": "4.0.0",
+      "licenseDeclaration": "MIT",
+      "noticeFiles": [
+        {
+          "path": "license",
+          "bytes": 1122,
+          "sha256": "b53ca5a0db1b07785cbd9627341b6bd731ef6104bc3b74d44c15c5e7a8990f20"
+        }
+      ],
+      "sourceHeaders": []
+    },
+    {
+      "name": "convert-to-spaces",
+      "version": "2.0.1",
+      "licenseDeclaration": "MIT",
+      "noticeFiles": [
+        {
+          "path": "license",
+          "bytes": 1123,
+          "sha256": "49810fde850fee8647c52ae2d5debb9272c3b26634b9f6a800242b8aa823bad2"
+        }
+      ],
+      "sourceHeaders": []
+    },
+    {
+      "name": "csstype",
+      "version": "3.2.3",
+      "licenseDeclaration": "MIT",
+      "noticeFiles": [
+        {
+          "path": "LICENSE",
+          "bytes": 1062,
+          "sha256": "11d55bd4541c75ee7879547ac49089c489163dae49551389713c3d026cab383e"
+        }
+      ],
+      "sourceHeaders": []
+    },
+    {
+      "name": "emoji-regex",
+      "version": "10.6.0",
+      "licenseDeclaration": "MIT",
+      "noticeFiles": [
+        {
+          "path": "LICENSE-MIT.txt",
+          "bytes": 1077,
+          "sha256": "483acb265f182907d1caf6cff9c16c96f31325ed23792832cc5d8b12d5f88c8a"
+        }
+      ],
+      "sourceHeaders": []
+    },
+    {
+      "name": "environment",
+      "version": "1.1.0",
+      "licenseDeclaration": "MIT",
+      "noticeFiles": [
+        {
+          "path": "license",
+          "bytes": 1117,
+          "sha256": "5c932d88256b4ab958f64a856fa48e8bd1f55bc1d96b8149c65689e0c61789d3"
+        }
+      ],
+      "sourceHeaders": []
+    },
+    {
+      "name": "es-toolkit",
+      "version": "1.53.1",
+      "licenseDeclaration": "MIT",
+      "noticeFiles": [
+        {
+          "path": "LICENSE",
+          "bytes": 1077,
+          "sha256": "51f3674294d988d89dbebd31273baaeb3c697a15482d9699b14d1fded2e132a7"
+        },
+        {
+          "path": "NOTICE",
+          "bytes": 1698,
+          "sha256": "11ee5e3bce9b0a4dde7f73811caf98978e710228d891c3111ad8ef8d7d2a916f"
+        }
+      ],
+      "sourceHeaders": []
+    },
+    {
+      "name": "esbuild",
+      "version": "0.25.12",
+      "licenseDeclaration": "MIT",
+      "noticeFiles": [
+        {
+          "path": "LICENSE.md",
+          "bytes": 1069,
+          "sha256": "b40ec5baec7bb34fa5b1c09521fa3cd52d5fad7adafed74932a2010d3612a681"
+        }
+      ],
+      "sourceHeaders": []
+    },
+    {
+      "name": "escape-string-regexp",
+      "version": "2.0.0",
+      "licenseDeclaration": "MIT",
+      "noticeFiles": [
+        {
+          "path": "license",
+          "bytes": 1109,
+          "sha256": "48da2f39e100d4085767e94966b43f4fa95ff6a0698fba57ed460914e35f94a0"
+        }
+      ],
+      "sourceHeaders": []
+    },
+    {
+      "name": "get-east-asian-width",
+      "version": "1.7.0",
+      "licenseDeclaration": "MIT",
+      "noticeFiles": [
+        {
+          "path": "license",
+          "bytes": 1117,
+          "sha256": "5c932d88256b4ab958f64a856fa48e8bd1f55bc1d96b8149c65689e0c61789d3"
+        }
+      ],
+      "sourceHeaders": []
+    },
+    {
+      "name": "indent-string",
+      "version": "5.0.0",
+      "licenseDeclaration": "MIT",
+      "noticeFiles": [
+        {
+          "path": "license",
+          "bytes": 1117,
+          "sha256": "5c932d88256b4ab958f64a856fa48e8bd1f55bc1d96b8149c65689e0c61789d3"
+        }
+      ],
+      "sourceHeaders": []
+    },
+    {
+      "name": "ink",
+      "version": "6.3.1",
+      "licenseDeclaration": "MIT",
+      "noticeFiles": [
+        {
+          "path": "license",
+          "bytes": 1114,
+          "sha256": "198d506def2360aa9781fad04cc15125a096f4983a44479b366e657c9b1d3138"
+        }
+      ],
+      "sourceHeaders": []
+    },
+    {
+      "name": "is-fullwidth-code-point",
+      "version": "5.1.0",
+      "licenseDeclaration": "MIT",
+      "noticeFiles": [
+        {
+          "path": "license",
+          "bytes": 1117,
+          "sha256": "5c932d88256b4ab958f64a856fa48e8bd1f55bc1d96b8149c65689e0c61789d3"
+        }
+      ],
+      "sourceHeaders": []
+    },
+    {
+      "name": "is-fullwidth-code-point",
+      "version": "4.0.0",
+      "licenseDeclaration": "MIT",
+      "noticeFiles": [
+        {
+          "path": "license",
+          "bytes": 1117,
+          "sha256": "5c932d88256b4ab958f64a856fa48e8bd1f55bc1d96b8149c65689e0c61789d3"
+        }
+      ],
+      "sourceHeaders": []
+    },
+    {
+      "name": "is-in-ci",
+      "version": "2.0.0",
+      "licenseDeclaration": "MIT",
+      "noticeFiles": [
+        {
+          "path": "license",
+          "bytes": 1117,
+          "sha256": "5c932d88256b4ab958f64a856fa48e8bd1f55bc1d96b8149c65689e0c61789d3"
+        }
+      ],
+      "sourceHeaders": []
+    },
+    {
+      "name": "mimic-fn",
+      "version": "2.1.0",
+      "licenseDeclaration": "MIT",
+      "noticeFiles": [
+        {
+          "path": "license",
+          "bytes": 1109,
+          "sha256": "48da2f39e100d4085767e94966b43f4fa95ff6a0698fba57ed460914e35f94a0"
+        }
+      ],
+      "sourceHeaders": []
+    },
+    {
+      "name": "onetime",
+      "version": "5.1.2",
+      "licenseDeclaration": "MIT",
+      "noticeFiles": [
+        {
+          "path": "license",
+          "bytes": 1117,
+          "sha256": "5c932d88256b4ab958f64a856fa48e8bd1f55bc1d96b8149c65689e0c61789d3"
+        }
+      ],
+      "sourceHeaders": []
+    },
+    {
+      "name": "patch-console",
+      "version": "2.0.0",
+      "licenseDeclaration": "MIT",
+      "noticeFiles": [
+        {
+          "path": "license",
+          "bytes": 1115,
+          "sha256": "67726f6c8adeaf7d7e1a3af90fc88c76f7b9747552e5187a8ba62bf781297b49"
+        }
+      ],
+      "sourceHeaders": []
+    },
+    {
+      "name": "react",
+      "version": "19.1.8",
+      "licenseDeclaration": "MIT",
+      "noticeFiles": [
+        {
+          "path": "LICENSE",
+          "bytes": 1088,
+          "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
+        }
+      ],
+      "sourceHeaders": [
+        {
+          "path": "compiler-runtime.js",
+          "sha256": "5c00456a0180b7b6b2366348f7218b0ea2c3a85c7fefe24c18533ed54126f601",
+          "header": [
+            "* Copyright (c) Meta Platforms, Inc. and affiliates.",
+            "* This source code is licensed under the MIT license found in the",
+            "* LICENSE file in the root directory of this source tree."
+          ]
+        },
+        {
+          "path": "cjs/react-compiler-runtime.profiling.js",
+          "sha256": "821fc2969277b5bc7814965e0ac07f815aafb3880d8bca31bcb53ce5d875edd3",
+          "header": [
+            "* @license React",
+            "* Copyright (c) Meta Platforms, Inc. and affiliates.",
+            "* This source code is licensed under the MIT license found in the",
+            "* LICENSE file in the root directory of this source tree."
+          ]
+        },
+        {
+          "path": "cjs/react-compiler-runtime.production.js",
+          "sha256": "f7d518f5c043cd008514b4fd8c665a9d2fa5686bd36c6e7d44d78187c0438700",
+          "header": [
+            "* @license React",
+            "* Copyright (c) Meta Platforms, Inc. and affiliates.",
+            "* This source code is licensed under the MIT license found in the",
+            "* LICENSE file in the root directory of this source tree."
+          ]
+        },
+        {
+          "path": "cjs/react-jsx-runtime.production.js",
+          "sha256": "1e46f15002696985e80c61d47aaa30dabb03c954270a690f5f7dfbbacfa9002b",
+          "header": [
+            "* @license React",
+            "* Copyright (c) Meta Platforms, Inc. and affiliates.",
+            "* This source code is licensed under the MIT license found in the",
+            "* LICENSE file in the root directory of this source tree."
+          ]
+        },
+        {
+          "path": "cjs/react-jsx-dev-runtime.react-server.production.js",
+          "sha256": "c56f744270c8cd4d733575757eaf48de91edfa04d0f5e01ef5043bf9848263b3",
+          "header": [
+            "* @license React",
+            "* Copyright (c) Meta Platforms, Inc. and affiliates.",
+            "* This source code is licensed under the MIT license found in the",
+            "* LICENSE file in the root directory of this source tree."
+          ]
+        },
+        {
+          "path": "cjs/react-jsx-dev-runtime.profiling.js",
+          "sha256": "c89fe850b7e66b6e1a10496321ea9d778a64512960d01dccf49ff0fd5d256b20",
+          "header": [
+            "* @license React",
+            "* Copyright (c) Meta Platforms, Inc. and affiliates.",
+            "* This source code is licensed under the MIT license found in the",
+            "* LICENSE file in the root directory of this source tree."
+          ]
+        },
+        {
+          "path": "cjs/react.development.js",
+          "sha256": "574e2cc351a3f7d8146bef8fc92abef901b7385d54dd6e36ec20440910e8a8d9",
+          "header": [
+            "* @license React",
+            "* Copyright (c) Meta Platforms, Inc. and affiliates.",
+            "* This source code is licensed under the MIT license found in the",
+            "* LICENSE file in the root directory of this source tree."
+          ]
+        },
+        {
+          "path": "cjs/react-jsx-dev-runtime.production.js",
+          "sha256": "ba9b367119971ed746925a600256d342eb4cc3f2389de013f61e36ff1f3594a5",
+          "header": [
+            "* @license React",
+            "* Copyright (c) Meta Platforms, Inc. and affiliates.",
+            "* This source code is licensed under the MIT license found in the",
+            "* LICENSE file in the root directory of this source tree."
+          ]
+        },
+        {
+          "path": "cjs/react-jsx-runtime.profiling.js",
+          "sha256": "27b2fb3d04f9878687ab58717172592650e256de727e910366340be87e0f8352",
+          "header": [
+            "* @license React",
+            "* Copyright (c) Meta Platforms, Inc. and affiliates.",
+            "* This source code is licensed under the MIT license found in the",
+            "* LICENSE file in the root directory of this source tree."
+          ]
+        },
+        {
+          "path": "cjs/react-jsx-runtime.react-server.production.js",
+          "sha256": "44bdd0dbbf51d5d49ac46ece12e919151c7f27b7f5b174790c4ca6aef0b6a1eb",
+          "header": [
+            "* @license React",
+            "* Copyright (c) Meta Platforms, Inc. and affiliates.",
+            "* This source code is licensed under the MIT license found in the",
+            "* LICENSE file in the root directory of this source tree."
+          ]
+        },
+        {
+          "path": "cjs/react-jsx-runtime.react-server.development.js",
+          "sha256": "652caf25aa96d78eb21b93bbfd396b1385bc0ff22db3b1d74a0667f15dfc8510",
+          "header": [
+            "* @license React",
+            "* Copyright (c) Meta Platforms, Inc. and affiliates.",
+            "* This source code is licensed under the MIT license found in the",
+            "* LICENSE file in the root directory of this source tree."
+          ]
+        },
+        {
+          "path": "cjs/react.react-server.production.js",
+          "sha256": "758b851b4c9119a8527bd51082b46df2f25a53a9e8f8fd9878f24613148fd5b6",
+          "header": [
+            "* @license React",
+            "* Copyright (c) Meta Platforms, Inc. and affiliates.",
+            "* This source code is licensed under the MIT license found in the",
+            "* LICENSE file in the root directory of this source tree."
+          ]
+        },
+        {
+          "path": "cjs/react-compiler-runtime.development.js",
+          "sha256": "7ae8fa77a54c404572cba7065e14fe599a3d8cc0b68d34d649d8acc776e4e096",
+          "header": [
+            "* @license React",
+            "* Copyright (c) Meta Platforms, Inc. and affiliates.",
+            "* This source code is licensed under the MIT license found in the",
+            "* LICENSE file in the root directory of this source tree."
+          ]
+        },
+        {
+          "path": "cjs/react.react-server.development.js",
+          "sha256": "10e13db003795ab1b114b82ac6dc5c106828520a48bb0ca21b0821c22184dc12",
+          "header": [
+            "* @license React",
+            "* Copyright (c) Meta Platforms, Inc. and affiliates.",
+            "* This source code is licensed under the MIT license found in the",
+            "* LICENSE file in the root directory of this source tree."
+          ]
+        },
+        {
+          "path": "cjs/react-jsx-runtime.development.js",
+          "sha256": "fa3de8510895129cfcdbd37cfcce16b5f88e225565517d944f414d7cdd9687b0",
+          "header": [
+            "* @license React",
+            "* Copyright (c) Meta Platforms, Inc. and affiliates.",
+            "* This source code is licensed under the MIT license found in the",
+            "* LICENSE file in the root directory of this source tree."
+          ]
+        },
+        {
+          "path": "cjs/react-jsx-dev-runtime.react-server.development.js",
+          "sha256": "26bdd4ba04099aae2c1cea29be23e0f46f5c6c719bb73b8308d9466d09b8eaca",
+          "header": [
+            "* @license React",
+            "* Copyright (c) Meta Platforms, Inc. and affiliates.",
+            "* This source code is licensed under the MIT license found in the",
+            "* LICENSE file in the root directory of this source tree."
+          ]
+        },
+        {
+          "path": "cjs/react.production.js",
+          "sha256": "7c7577905b186af59234e71b18d03b51a7cf22e7288c5671375380930b57b7de",
+          "header": [
+            "* @license React",
+            "* Copyright (c) Meta Platforms, Inc. and affiliates.",
+            "* This source code is licensed under the MIT license found in the",
+            "* LICENSE file in the root directory of this source tree."
+          ]
+        },
+        {
+          "path": "cjs/react-jsx-dev-runtime.development.js",
+          "sha256": "16a92a1e7e15a81ef5e23f8f7565d6d5f1f12db12b6d9de62e41e22f00561272",
+          "header": [
+            "* @license React",
+            "* Copyright (c) Meta Platforms, Inc. and affiliates.",
+            "* This source code is licensed under the MIT license found in the",
+            "* LICENSE file in the root directory of this source tree."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "react-dom",
+      "version": "19.1.8",
+      "licenseDeclaration": "MIT",
+      "noticeFiles": [
+        {
+          "path": "LICENSE",
+          "bytes": 1088,
+          "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
+        }
+      ],
+      "sourceHeaders": [
+        {
+          "path": "cjs/react-dom.production.js",
+          "sha256": "ab8858f72a340ddff53d88fd19b89929abc8f89bb0ab661c32239bc5703ced61",
+          "header": [
+            "* @license React",
+            "* Copyright (c) Meta Platforms, Inc. and affiliates.",
+            "* This source code is licensed under the MIT license found in the",
+            "* LICENSE file in the root directory of this source tree."
+          ]
+        },
+        {
+          "path": "cjs/react-dom-profiling.development.js",
+          "sha256": "fc18c398180e96d07577d20d48c9addda2451347de6616713817ee3c6cecd5f5",
+          "header": [
+            "* @license React",
+            "* Copyright (c) Meta Platforms, Inc. and affiliates.",
+            "* This source code is licensed under the MIT license found in the",
+            "* LICENSE file in the root directory of this source tree."
+          ]
+        },
+        {
+          "path": "cjs/react-dom-server.edge.production.js",
+          "sha256": "2640a2a9ee221d01a701fa1024cdd5e31dbef3b55c42819530791257b4898de1",
+          "header": [
+            "* @license React",
+            "* Copyright (c) Meta Platforms, Inc. and affiliates.",
+            "* This source code is licensed under the MIT license found in the",
+            "* LICENSE file in the root directory of this source tree.",
+            "Copyright (c) 2011 Gary Court",
+            "to use, copy, modify, merge, publish, distribute, sublicense, and/or sell",
+            "The above copyright notice and this permission notice shall be included in",
+            "AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER"
+          ]
+        },
+        {
+          "path": "cjs/react-dom-test-utils.production.js",
+          "sha256": "d41ce0bee80299c8330fc080936da31afa5f307dfe4912bc8a6c68f9f566d344",
+          "header": [
+            "* @license React",
+            "* Copyright (c) Meta Platforms, Inc. and affiliates.",
+            "* This source code is licensed under the MIT license found in the",
+            "* LICENSE file in the root directory of this source tree."
+          ]
+        },
+        {
+          "path": "cjs/react-dom-server.bun.production.js",
+          "sha256": "f6f637b8c5b6e3471401e6df67095418f6e3feb4f432b3420231281d77ebff99",
+          "header": [
+            "* @license React",
+            "* Copyright (c) Meta Platforms, Inc. and affiliates.",
+            "* This source code is licensed under the MIT license found in the",
+            "* LICENSE file in the root directory of this source tree."
+          ]
+        },
+        {
+          "path": "cjs/react-dom-server.browser.development.js",
+          "sha256": "09b04c1ce27612b74cbca89d46b6d3e9eaa8379cf2a629352163d31e102dfc2a",
+          "header": [
+            "* @license React",
+            "* Copyright (c) Meta Platforms, Inc. and affiliates.",
+            "* This source code is licensed under the MIT license found in the",
+            "* LICENSE file in the root directory of this source tree.",
+            "Copyright (c) 2011 Gary Court",
+            "to use, copy, modify, merge, publish, distribute, sublicense, and/or sell",
+            "The above copyright notice and this permission notice shall be included in",
+            "AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER"
+          ]
+        },
+        {
+          "path": "cjs/react-dom-profiling.profiling.js",
+          "sha256": "55494fd5e341e292a404488a5589b1f26ae7ad7b45b0cf00f368366f298e1dee",
+          "header": [
+            "* @license React",
+            "* Copyright (c) Meta Platforms, Inc. and affiliates.",
+            "* This source code is licensed under the MIT license found in the",
+            "* LICENSE file in the root directory of this source tree."
+          ]
+        },
+        {
+          "path": "cjs/react-dom-client.production.js",
+          "sha256": "e4b433198e071abc3a4ac7f02f525af4572f84fd63f890e264b7e575b463c6f1",
+          "header": [
+            "* @license React",
+            "* Copyright (c) Meta Platforms, Inc. and affiliates.",
+            "* This source code is licensed under the MIT license found in the",
+            "* LICENSE file in the root directory of this source tree."
+          ]
+        },
+        {
+          "path": "cjs/react-dom-server-legacy.node.development.js",
+          "sha256": "0770239de7d6f5cb1d81e0f6107aa7a8d87e11fbbf794b2f73aa2ccd2c696c3e",
+          "header": [
+            "* @license React",
+            "* Copyright (c) Meta Platforms, Inc. and affiliates.",
+            "* This source code is licensed under the MIT license found in the",
+            "* LICENSE file in the root directory of this source tree.",
+            "Copyright (c) 2011 Gary Court",
+            "to use, copy, modify, merge, publish, distribute, sublicense, and/or sell",
+            "The above copyright notice and this permission notice shall be included in",
+            "AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER"
+          ]
+        },
+        {
+          "path": "cjs/react-dom-client.development.js",
+          "sha256": "6005b69738d649a36c129b2893ac494eb09cb84477585b928827957deadcb68f",
+          "header": [
+            "* @license React",
+            "* Copyright (c) Meta Platforms, Inc. and affiliates.",
+            "* This source code is licensed under the MIT license found in the",
+            "* LICENSE file in the root directory of this source tree."
+          ]
+        },
+        {
+          "path": "cjs/react-dom-server.edge.development.js",
+          "sha256": "8b29446a6a6c367df0b1e3e7cdff591035add87ce43cb6ef287dd20b336b7a7c",
+          "header": [
+            "* @license React",
+            "* Copyright (c) Meta Platforms, Inc. and affiliates.",
+            "* This source code is licensed under the MIT license found in the",
+            "* LICENSE file in the root directory of this source tree.",
+            "Copyright (c) 2011 Gary Court",
+            "to use, copy, modify, merge, publish, distribute, sublicense, and/or sell",
+            "The above copyright notice and this permission notice shall be included in",
+            "AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER"
+          ]
+        },
+        {
+          "path": "cjs/react-dom-server-legacy.browser.production.js",
+          "sha256": "cd7535df73f9715377bd318ff33ec3a5e5367a93a1e2e25297404d850aafc488",
+          "header": [
+            "* @license React",
+            "* Copyright (c) Meta Platforms, Inc. and affiliates.",
+            "* This source code is licensed under the MIT license found in the",
+            "* LICENSE file in the root directory of this source tree.",
+            "Copyright (c) 2011 Gary Court",
+            "to use, copy, modify, merge, publish, distribute, sublicense, and/or sell",
+            "The above copyright notice and this permission notice shall be included in",
+            "AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER"
+          ]
+        },
+        {
+          "path": "cjs/react-dom-server.node.development.js",
+          "sha256": "05fe0c19565ebe459a30ad269b095533b3114b4baf4216a96326e7cde236c40a",
+          "header": [
+            "* @license React",
+            "* Copyright (c) Meta Platforms, Inc. and affiliates.",
+            "* This source code is licensed under the MIT license found in the",
+            "* LICENSE file in the root directory of this source tree."
+          ]
+        },
+        {
+          "path": "cjs/react-dom.react-server.production.js",
+          "sha256": "83e223dbde049290a00a01f834f7a52e8b39a30cea3704a39e9687bb31920da8",
+          "header": [
+            "* @license React",
+            "* Copyright (c) Meta Platforms, Inc. and affiliates.",
+            "* This source code is licensed under the MIT license found in the",
+            "* LICENSE file in the root directory of this source tree."
+          ]
+        },
+        {
+          "path": "cjs/react-dom-server.bun.development.js",
+          "sha256": "88c975ab7ae66013b1a10c1427231a0464b45a3bd4f56d59eda0a9901b982114",
+          "header": [
+            "* @license React",
+            "* Copyright (c) Meta Platforms, Inc. and affiliates.",
+            "* This source code is licensed under the MIT license found in the",
+            "* LICENSE file in the root directory of this source tree."
+          ]
+        },
+        {
+          "path": "cjs/react-dom-server-legacy.node.production.js",
+          "sha256": "0f384363551fabb1caa4e1afaf31825f8f56740619654f82c98fa05745658538",
+          "header": [
+            "* @license React",
+            "* Copyright (c) Meta Platforms, Inc. and affiliates.",
+            "* This source code is licensed under the MIT license found in the",
+            "* LICENSE file in the root directory of this source tree.",
+            "Copyright (c) 2011 Gary Court",
+            "to use, copy, modify, merge, publish, distribute, sublicense, and/or sell",
+            "The above copyright notice and this permission notice shall be included in",
+            "AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER"
+          ]
+        },
+        {
+          "path": "cjs/react-dom.development.js",
+          "sha256": "aada13f9ce8034a3dc44a43669923878b7348753b5d09759ee45b4728f69c50d",
+          "header": [
+            "* @license React",
+            "* Copyright (c) Meta Platforms, Inc. and affiliates.",
+            "* This source code is licensed under the MIT license found in the",
+            "* LICENSE file in the root directory of this source tree."
+          ]
+        },
+        {
+          "path": "cjs/react-dom.react-server.development.js",
+          "sha256": "de18748854d3392ad426624bd123c10c63196a1f203ee054e37c0023e1c079e7",
+          "header": [
+            "* @license React",
+            "* Copyright (c) Meta Platforms, Inc. and affiliates.",
+            "* This source code is licensed under the MIT license found in the",
+            "* LICENSE file in the root directory of this source tree."
+          ]
+        },
+        {
+          "path": "cjs/react-dom-server.browser.production.js",
+          "sha256": "0704c239fe8809863f9ba44c6da5ab49fcf30841c101db0adc547da3af5a07e1",
+          "header": [
+            "* @license React",
+            "* Copyright (c) Meta Platforms, Inc. and affiliates.",
+            "* This source code is licensed under the MIT license found in the",
+            "* LICENSE file in the root directory of this source tree.",
+            "Copyright (c) 2011 Gary Court",
+            "to use, copy, modify, merge, publish, distribute, sublicense, and/or sell",
+            "The above copyright notice and this permission notice shall be included in",
+            "AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER"
+          ]
+        },
+        {
+          "path": "cjs/react-dom-server-legacy.browser.development.js",
+          "sha256": "303126b57eecff66198c21632646322fe3209c33b812463a7d22cf1247376082",
+          "header": [
+            "* @license React",
+            "* Copyright (c) Meta Platforms, Inc. and affiliates.",
+            "* This source code is licensed under the MIT license found in the",
+            "* LICENSE file in the root directory of this source tree.",
+            "Copyright (c) 2011 Gary Court",
+            "to use, copy, modify, merge, publish, distribute, sublicense, and/or sell",
+            "The above copyright notice and this permission notice shall be included in",
+            "AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER"
+          ]
+        },
+        {
+          "path": "cjs/react-dom-test-utils.development.js",
+          "sha256": "a691b913756753dd769c1559b8efbd3d8157feb4c9368d2cb4b79eba67441841",
+          "header": [
+            "* @license React",
+            "* Copyright (c) Meta Platforms, Inc. and affiliates.",
+            "* This source code is licensed under the MIT license found in the",
+            "* LICENSE file in the root directory of this source tree."
+          ]
+        },
+        {
+          "path": "cjs/react-dom-server.node.production.js",
+          "sha256": "d1304a620df89b73c5e2314c0e37e1ef5ca9cb19f182756fdb64c93b1bb85535",
+          "header": [
+            "* @license React",
+            "* Copyright (c) Meta Platforms, Inc. and affiliates.",
+            "* This source code is licensed under the MIT license found in the",
+            "* LICENSE file in the root directory of this source tree."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "react-reconciler",
+      "version": "0.32.0",
+      "licenseDeclaration": "MIT",
+      "noticeFiles": [
+        {
+          "path": "LICENSE",
+          "bytes": 1088,
+          "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
+        }
+      ],
+      "sourceHeaders": [
+        {
+          "path": "cjs/react-reconciler.profiling.js",
+          "sha256": "1cce020ff677399f900ae9d602e8d3b7ab5bfd907f2e4594776f94ae0b162f61",
+          "header": [
+            "* @license React",
+            "* Copyright (c) Meta Platforms, Inc. and affiliates.",
+            "* This source code is licensed under the MIT license found in the",
+            "* LICENSE file in the root directory of this source tree."
+          ]
+        },
+        {
+          "path": "cjs/react-reconciler-constants.production.js",
+          "sha256": "413c03d7cb39e4a1474d1dad2faa605bc0e861311bff9fc87a4e43d7dda3e09e",
+          "header": [
+            "* @license React",
+            "* Copyright (c) Meta Platforms, Inc. and affiliates.",
+            "* This source code is licensed under the MIT license found in the",
+            "* LICENSE file in the root directory of this source tree."
+          ]
+        },
+        {
+          "path": "cjs/react-reconciler.development.js",
+          "sha256": "2bda7cde968c8bc21fc41fba4843bc90e1f6f1948929e249150e30cf098fd671",
+          "header": [
+            "* @license React",
+            "* Copyright (c) Meta Platforms, Inc. and affiliates.",
+            "* This source code is licensed under the MIT license found in the",
+            "* LICENSE file in the root directory of this source tree."
+          ]
+        },
+        {
+          "path": "cjs/react-reconciler.production.js",
+          "sha256": "a6027fc72d12bdd3570696d7d5f01fce700e312e7a258d0b5f379daed67fb695",
+          "header": [
+            "* @license React",
+            "* Copyright (c) Meta Platforms, Inc. and affiliates.",
+            "* This source code is licensed under the MIT license found in the",
+            "* LICENSE file in the root directory of this source tree."
+          ]
+        },
+        {
+          "path": "cjs/react-reconciler-reflection.production.js",
+          "sha256": "6840d3cbbb7bb15951e1d641f25b1ac7e2a9584fd8ac6605f06c3b2c2b43e6b9",
+          "header": [
+            "* @license React",
+            "* Copyright (c) Meta Platforms, Inc. and affiliates.",
+            "* This source code is licensed under the MIT license found in the",
+            "* LICENSE file in the root directory of this source tree."
+          ]
+        },
+        {
+          "path": "cjs/react-reconciler-constants.development.js",
+          "sha256": "23d6b2c440bc59ae289532b2585da390f3ac49c3a12c787b7a27c8d7dcbf6bbf",
+          "header": [
+            "* @license React",
+            "* Copyright (c) Meta Platforms, Inc. and affiliates.",
+            "* This source code is licensed under the MIT license found in the",
+            "* LICENSE file in the root directory of this source tree."
+          ]
+        },
+        {
+          "path": "cjs/react-reconciler-reflection.development.js",
+          "sha256": "01b3854d17f3e080adaebe84a12b4285dd33a2cd708f2474c7ebcf5c4b7a1357",
+          "header": [
+            "* @license React",
+            "* Copyright (c) Meta Platforms, Inc. and affiliates.",
+            "* This source code is licensed under the MIT license found in the",
+            "* LICENSE file in the root directory of this source tree."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "restore-cursor",
+      "version": "4.0.0",
+      "licenseDeclaration": "MIT",
+      "noticeFiles": [
+        {
+          "path": "license",
+          "bytes": 1117,
+          "sha256": "5c932d88256b4ab958f64a856fa48e8bd1f55bc1d96b8149c65689e0c61789d3"
+        }
+      ],
+      "sourceHeaders": []
+    },
+    {
+      "name": "scheduler",
+      "version": "0.26.0",
+      "licenseDeclaration": "MIT",
+      "noticeFiles": [
+        {
+          "path": "LICENSE",
+          "bytes": 1088,
+          "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93"
+        }
+      ],
+      "sourceHeaders": [
+        {
+          "path": "cjs/scheduler.development.js",
+          "sha256": "646eb671c8585382baff16daf92fe16a4cdd10dcf1a363c58b2ae1f6bf3a2b8d",
+          "header": [
+            "* @license React",
+            "* Copyright (c) Meta Platforms, Inc. and affiliates.",
+            "* This source code is licensed under the MIT license found in the",
+            "* LICENSE file in the root directory of this source tree."
+          ]
+        },
+        {
+          "path": "cjs/scheduler-unstable_post_task.production.js",
+          "sha256": "88e667020933b71752478d18e3f94271e9e8eb44d6dfff95ba014b06b47329be",
+          "header": [
+            "* @license React",
+            "* Copyright (c) Meta Platforms, Inc. and affiliates.",
+            "* This source code is licensed under the MIT license found in the",
+            "* LICENSE file in the root directory of this source tree."
+          ]
+        },
+        {
+          "path": "cjs/scheduler.native.development.js",
+          "sha256": "26401a9da7b51e0db1f506c5d1e8579081302460212d007593acdd8c5968570b",
+          "header": [
+            "* @license React",
+            "* Copyright (c) Meta Platforms, Inc. and affiliates.",
+            "* This source code is licensed under the MIT license found in the",
+            "* LICENSE file in the root directory of this source tree."
+          ]
+        },
+        {
+          "path": "cjs/scheduler.native.production.js",
+          "sha256": "f6e15b1a0f7912a8dbae536f037b9c059026742f3dfe740b37bd03fc7d816d65",
+          "header": [
+            "* @license React",
+            "* Copyright (c) Meta Platforms, Inc. and affiliates.",
+            "* This source code is licensed under the MIT license found in the",
+            "* LICENSE file in the root directory of this source tree."
+          ]
+        },
+        {
+          "path": "cjs/scheduler-unstable_post_task.development.js",
+          "sha256": "34171513f5d7662f42d42c479445c2536cc02161c245b0f5083ef595f88f0e20",
+          "header": [
+            "* @license React",
+            "* Copyright (c) Meta Platforms, Inc. and affiliates.",
+            "* This source code is licensed under the MIT license found in the",
+            "* LICENSE file in the root directory of this source tree."
+          ]
+        },
+        {
+          "path": "cjs/scheduler-unstable_mock.development.js",
+          "sha256": "de31e2407f585fd6ba00efd420485bff8b84aa6ea3ebcb870289214d27ca34b8",
+          "header": [
+            "* @license React",
+            "* Copyright (c) Meta Platforms, Inc. and affiliates.",
+            "* This source code is licensed under the MIT license found in the",
+            "* LICENSE file in the root directory of this source tree."
+          ]
+        },
+        {
+          "path": "cjs/scheduler.production.js",
+          "sha256": "679adff761d31e9426604f80c0e99be44a3e6f4c6834b0218ecf0312a67c171f",
+          "header": [
+            "* @license React",
+            "* Copyright (c) Meta Platforms, Inc. and affiliates.",
+            "* This source code is licensed under the MIT license found in the",
+            "* LICENSE file in the root directory of this source tree."
+          ]
+        },
+        {
+          "path": "cjs/scheduler-unstable_mock.production.js",
+          "sha256": "d49069c9cfea586989b09fe16fa2b7ebdf064fd60fb7c932e9a3799f7e95cabf",
+          "header": [
+            "* @license React",
+            "* Copyright (c) Meta Platforms, Inc. and affiliates.",
+            "* This source code is licensed under the MIT license found in the",
+            "* LICENSE file in the root directory of this source tree."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "signal-exit",
+      "version": "3.0.7",
+      "licenseDeclaration": "ISC",
+      "noticeFiles": [
+        {
+          "path": "LICENSE.txt",
+          "bytes": 748,
+          "sha256": "e05b1eaf5b5f99b7ad75cd1f38858ff9a311780b97715ead67936d60bf96aa7e"
+        }
+      ],
+      "sourceHeaders": []
+    },
+    {
+      "name": "slice-ansi",
+      "version": "7.1.2",
+      "licenseDeclaration": "MIT",
+      "noticeFiles": [
+        {
+          "path": "license",
+          "bytes": 1158,
+          "sha256": "c91d87c3bca16ab6d96d82da08edc54377d14b679547a331eecc4adef3c353c8"
+        }
+      ],
+      "sourceHeaders": []
+    },
+    {
+      "name": "slice-ansi",
+      "version": "5.0.0",
+      "licenseDeclaration": "MIT",
+      "noticeFiles": [
+        {
+          "path": "license",
+          "bytes": 1158,
+          "sha256": "c91d87c3bca16ab6d96d82da08edc54377d14b679547a331eecc4adef3c353c8"
+        }
+      ],
+      "sourceHeaders": []
+    },
+    {
+      "name": "stack-utils",
+      "version": "2.0.6",
+      "licenseDeclaration": "MIT",
+      "noticeFiles": [
+        {
+          "path": "LICENSE.md",
+          "bytes": 1179,
+          "sha256": "9be2ec8089dfa4059a78e4e3e0443c416b2d63dedffb246c7473d0f3d763c6c4"
+        }
+      ],
+      "sourceHeaders": []
+    },
+    {
+      "name": "string-width",
+      "version": "7.2.0",
+      "licenseDeclaration": "MIT",
+      "noticeFiles": [
+        {
+          "path": "license",
+          "bytes": 1117,
+          "sha256": "5c932d88256b4ab958f64a856fa48e8bd1f55bc1d96b8149c65689e0c61789d3"
+        }
+      ],
+      "sourceHeaders": []
+    },
+    {
+      "name": "strip-ansi",
+      "version": "7.2.0",
+      "licenseDeclaration": "MIT",
+      "noticeFiles": [
+        {
+          "path": "license",
+          "bytes": 1117,
+          "sha256": "5c932d88256b4ab958f64a856fa48e8bd1f55bc1d96b8149c65689e0c61789d3"
+        }
+      ],
+      "sourceHeaders": []
+    },
+    {
+      "name": "type-fest",
+      "version": "4.41.0",
+      "licenseDeclaration": "(MIT OR CC0-1.0)",
+      "noticeFiles": [
+        {
+          "path": "license-cc0",
+          "bytes": 7048,
+          "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+        },
+        {
+          "path": "license-mit",
+          "bytes": 1117,
+          "sha256": "5c932d88256b4ab958f64a856fa48e8bd1f55bc1d96b8149c65689e0c61789d3"
+        }
+      ],
+      "sourceHeaders": []
+    },
+    {
+      "name": "typescript",
+      "version": "5.8.3",
+      "licenseDeclaration": "Apache-2.0",
+      "noticeFiles": [
+        {
+          "path": "LICENSE.txt",
+          "bytes": 9197,
+          "sha256": "a7d00bfd54525bc694b6e32f64c7ebcf5e6b7ae3657be5cc12767bce74654a47"
+        },
+        {
+          "path": "ThirdPartyNoticeText.txt",
+          "bytes": 37824,
+          "sha256": "1af3c68039c57e539422da82a4faada506ce6d0ea6f90e0b699d02dbcdb7a90c"
+        }
+      ],
+      "sourceHeaders": [
+        {
+          "path": "lib/lib.es2019.object.d.ts",
+          "sha256": "71c37f4c9543f31dfced6c7840e068c5a5aacb7b89111a4364b1d5276b852557",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.dom.iterable.d.ts",
+          "sha256": "07f073f19d67f74d732b1adea08e1dc66b1b58d77cb5b43931dee3d798a2fd53",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.es2018.full.d.ts",
+          "sha256": "95f1023b824c2c511c48f1201e2d1188bcb0ca1138a309a870b956d2e92e44ab",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.esnext.collection.d.ts",
+          "sha256": "e3a2a0cee0f03ffdde24d89660eba2685bfbdeae955a6c67e8c4c9fd28928eeb",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/tsserverlibrary.js",
+          "sha256": "7ca9b464de80a5382d9ccfed2b224323bc0274c8de61bf0464e89ee824677c76",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.es2015.reflect.d.ts",
+          "sha256": "8d697a2a929a5fcb38b7a65594020fcef05ec1630804a33748829c5ff53640d0",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.es2019.string.d.ts",
+          "sha256": "576711e016cf4f1804676043e6a0a5414252560eb57de9faceee34d79798c850",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.es2017.date.d.ts",
+          "sha256": "38f0219c9e23c915ef9790ab1d680440d95419ad264816fa15009a8851e79119",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.es2021.intl.d.ts",
+          "sha256": "965f36eae237dd74e6cca203a43e9ca801ce38824ead814728a2807b1910117d",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.es2016.d.ts",
+          "sha256": "3facaf05f0c5fc569c5649dd359892c98a85557e3e0c847964caeb67076f4d75",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.es2015.core.d.ts",
+          "sha256": "c57796738e7f83dbc4b8e65132f11a377649c00dd3eee333f672b8f0a6bea671",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.dom.asynciterable.d.ts",
+          "sha256": "d7a3c8b952931daebdfc7a2897c53c0a1c73624593fa070e46bd537e64dcd20a",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.es2019.intl.d.ts",
+          "sha256": "74f7fa2d027d5b33eb0471c8e82a6c87216223181ec31247c357a3e8e2fddc5b",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.es2022.string.d.ts",
+          "sha256": "3287d9d085fbd618c3971944b65b4be57859f5415f495b33a6adc994edd2f004",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.es2020.d.ts",
+          "sha256": "5efce4fc3c29ea84e8928f97adec086e3dc876365e0982cc8479a07954a3efd4",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.es2020.full.d.ts",
+          "sha256": "1305d1e76ca44e30fb8b2b8075fa522b83f60c0bcf5d4326a9d2cf79b53724f8",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.es2022.object.d.ts",
+          "sha256": "8444af78980e3b20b49324f4a16ba35024fef3ee069a0eb67616ea6ca821c47a",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.esnext.iterator.d.ts",
+          "sha256": "22adec94ef7047a6c9d1af3cb96be87a335908bf9ef386ae9fd50eeb37f44c47",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.es2015.proxy.d.ts",
+          "sha256": "ce691fb9e5c64efb9547083e4a34091bcbe5bdb41027e310ebba8f7d96a98671",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.es2015.generator.d.ts",
+          "sha256": "515d0b7b9bea2e31ea4ec968e9edd2c39d3eebf4a2d5cbd04e88639819ae3b71",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.esnext.promise.d.ts",
+          "sha256": "60037901da1a425516449b9a20073aa03386cce92f7a1fd902d7602be3a7c2e9",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.es2021.d.ts",
+          "sha256": "feecb1be483ed332fad555aff858affd90a48ab19ba7272ee084704eb7167569",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.esnext.disposable.d.ts",
+          "sha256": "51ad4c928303041605b4d7ae32e0c1ee387d43a24cd6f1ebf4a2699e1076d4fa",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.es2020.number.d.ts",
+          "sha256": "368af93f74c9c932edd84c58883e736c9e3d53cec1fe24c0b0ff451f529ceab1",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.es2017.d.ts",
+          "sha256": "e44bb8bbac7f10ecc786703fe0a6a4b952189f908707980ba8f3c8975a760962",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.es2018.promise.d.ts",
+          "sha256": "811ec78f7fefcabbda4bfa93b3eb67d9ae166ef95f9bff989d964061cbf81a0c",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.es2017.typedarrays.d.ts",
+          "sha256": "954296b30da6d508a104a3a0b5d96b76495c709785c1d11610908e63481ee667",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.scripthost.d.ts",
+          "sha256": "cd034f499c6cdca722b60c04b5b1b78e058487a7085a8e0d6fb50809947ee573",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.es2022.array.d.ts",
+          "sha256": "3925a6c820dcb1a06506c90b1577db1fdbf7705d65b62b99dce4be75c637e26b",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.esnext.decorators.d.ts",
+          "sha256": "d4b1d2c51d058fc21ec2629fff7a76249dec2e36e12960ea056e3ef89174080f",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.es2024.arraybuffer.d.ts",
+          "sha256": "87dc0f382502f5bbce5129bdc0aea21e19a3abbc19259e0b43ae038a9fc4e326",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.es2019.full.d.ts",
+          "sha256": "08f6861df84fba9719c14d5adc3ba40be9f0c687639e6c4df3c05b9301b8ff94",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.es2020.intl.d.ts",
+          "sha256": "639e512c0dfc3fad96a84caad71b8834d66329a1f28dc95e3946c9b58176c73a",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.es2024.collection.d.ts",
+          "sha256": "b1cb28af0c891c8c96b2d6b7be76bd394fddcfdb4709a20ba05a7c1605eea0f9",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.decorators.legacy.d.ts",
+          "sha256": "782dec38049b92d4e85c1585fbea5474a219c6984a35b004963b00beb1aab538",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.es2015.promise.d.ts",
+          "sha256": "0dc1e7ceda9b8b9b455c3a2d67b0412feab00bd2f66656cd8850e8831b08b537",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/_tsserver.js",
+          "sha256": "0efcc88cdf0593cc1dcc8b6afd605c7bed9eca6f648c70c8f0df8695114bf6d7",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.es2018.intl.d.ts",
+          "sha256": "9e9fbd7030c440b33d021da145d3232984c8bb7916f277e8ffd3dc2e3eae2bdb",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.es2015.symbol.wellknown.d.ts",
+          "sha256": "936e80ad36a2ee83fc3caf008e7c4c5afe45b3cf3d5c24408f039c1d47bdc1df",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.es2024.object.d.ts",
+          "sha256": "2fef54945a13095fdb9b84f705f2b5994597640c46afeb2ce78352fab4cb3279",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.es2024.promise.d.ts",
+          "sha256": "ac77cb3e8c6d3565793eb90a8373ee8033146315a3dbead3bde8db5eaf5e5ec6",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.es2021.full.d.ts",
+          "sha256": "4a66df3ab5de5cfcda11538cffddd67ff6a174e003788e270914c1e0248483cf",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.es2024.string.d.ts",
+          "sha256": "0a6282c8827e4b9a95f4bf4f5c205673ada31b982f50572d27103df8ceb8013c",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.es2015.iterable.d.ts",
+          "sha256": "0559b1f683ac7505ae451f9a96ce4c3c92bdc71411651ca6ddb0e88baaaad6a3",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.es2018.regexp.d.ts",
+          "sha256": "717937616a17072082152a2ef351cb51f98802fb4b2fdabd32399843875974ca",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.decorators.d.ts",
+          "sha256": "8e7f8264d0fb4c5339605a15daadb037bf238c10b654bb3eee14208f860a32ea",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.es2021.string.d.ts",
+          "sha256": "995c005ab91a498455ea8dfb63aa9f83fa2ea793c3d8aa344be4a1678d06d399",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.es2018.asynciterable.d.ts",
+          "sha256": "0a969edff4bd52585473d24995c5ef223f6652d6ef46193309b3921d65dd4376",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.es6.d.ts",
+          "sha256": "df039a67536fe2acc3affdcbfb645892f842db36fe599e8e652e2f0c640a90d1",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.es2023.collection.d.ts",
+          "sha256": "436aaf437562f276ec2ddbee2f2cdedac7664c1e4c1d2c36839ddd582eeb3d0a",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.es2022.error.d.ts",
+          "sha256": "0a3d63ef2b853447ec4f749d3f368ce642264246e02911fcb1590d8c161b8005",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.es2016.array.include.d.ts",
+          "sha256": "d15bea3d62cbbdb9797079416b8ac375ae99162a7fba5de2c6c505446486ac0a",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.esnext.intl.d.ts",
+          "sha256": "811c71eee4aa0ac5f7adf713323a5c41b0cf6c4e17367a34fbce379e12bbf0a4",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.es5.d.ts",
+          "sha256": "69684132aeb9b5642cbcd9e22dff7818ff0ee1aa831728af0ecf97d3364d5546",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.esnext.d.ts",
+          "sha256": "8bf8b5e44e3c9c36f98e1007e8b7018c0f38d8adc07aecef42f5200114547c70",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.es2023.intl.d.ts",
+          "sha256": "8e3c06ea092138bf9fa5e874a1fdbc9d54805d074bee1de31b99a11e2fec239d",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.esnext.float16.d.ts",
+          "sha256": "4245fee526a7d1754529d19227ecbf3be066ff79ebb6a380d78e41648f2f224d",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.es2019.array.d.ts",
+          "sha256": "d7e7d9b7b50e5f22c915b525acc5a49a7a6584cf8f62d0569e557c5cfc4b2ac2",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.es2024.d.ts",
+          "sha256": "8fd575e12870e9944c7e1d62e1f5a73fcf23dd8d3a321f2a2c74c20d022283fe",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.es2016.intl.d.ts",
+          "sha256": "68d18b664c9d32a7336a70235958b8997ebc1c3b8505f4f1ae2b7e7753b87618",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.es2024.regexp.d.ts",
+          "sha256": "56e4ed5aab5f5920980066a9409bfaf53e6d21d3f8d020c17e4de584d29600ad",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.es2020.date.d.ts",
+          "sha256": "063600664504610fe3e99b717a1223f8b1900087fab0b4cad1496a114744f8df",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.webworker.asynciterable.d.ts",
+          "sha256": "ca417afee74054e99d5a8252b35bef26ca6e2942d67d343fce6b42fc9f432993",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.es2022.full.d.ts",
+          "sha256": "3cbad9a1ba4453443026ed38e4b8be018abb26565fa7c944376463ad9df07c41",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/_typingsInstaller.js",
+          "sha256": "62a69c574365f1c81633b86b3214f9df860aad08843028dd5244b00aa7f1e190",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.es2017.full.d.ts",
+          "sha256": "1d242d5c24cf285c88bc4fb93c5ff903de8319064e282986edeb6247ba028d5e",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.es2020.promise.d.ts",
+          "sha256": "934019d7e3c81950f9a8426d093458b65d5aff2c7c1511233c0fd5b941e608ab",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.dom.d.ts",
+          "sha256": "092c2bfe125ce69dbb1223c85d68d4d2397d7d8411867b5cc03cec902c233763",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.es2023.array.d.ts",
+          "sha256": "df83c2a6c73228b625b0beb6669c7ee2a09c914637e2d35170723ad49c0f5cd4",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.es2024.sharedmemory.d.ts",
+          "sha256": "4ece9f17b3866cc077099c73f4983bddbcb1dc7ddb943227f1ec070f529dedd1",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.es2020.symbol.wellknown.d.ts",
+          "sha256": "59fb2c069260b4ba00b5643b907ef5d5341b167e7d1dbf58dfd895658bda2867",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.webworker.iterable.d.ts",
+          "sha256": "b6edb3b4073acf6e142f7a1c4f23d8a89cd85725c3411a65fd5f3fb07c750a78",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.es2020.bigint.d.ts",
+          "sha256": "d6d7ae4d1f1f3772e2a3cde568ed08991a8ae34a080ff1151af28b7f798e22ca",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.es2020.sharedmemory.d.ts",
+          "sha256": "52ada8e0b6e0482b728070b7639ee42e83a9b1c22d205992756fe020fd9f4a47",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.es2021.promise.d.ts",
+          "sha256": "af3dd424cf267428f30ccfc376f47a2c0114546b55c44d8c0f1d57d841e28d74",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.es2024.full.d.ts",
+          "sha256": "b3e9cef4eed59f8a2249ed834ba4aabe9d0d4e9037d4679487fa17dad99004a3",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.es2022.intl.d.ts",
+          "sha256": "b5ce7a470bc3628408429040c4e3a53a27755022a32fd05e2cb694e7015386c7",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.es2022.regexp.d.ts",
+          "sha256": "b4b67b1a91182421f5df999988c690f14d813b9850b40acd06ed44691f6727ad",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.es2017.sharedmemory.d.ts",
+          "sha256": "fef8cfad2e2dc5f5b3d97a6f4f2e92848eb1b88e897bb7318cef0e2820bceaab",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.es2017.intl.d.ts",
+          "sha256": "4de680d5bb41c17f7f68e0419412ca23c98d5749dcaaea1896172f06435891fc",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.webworker.d.ts",
+          "sha256": "8ea22b76493fc658fe9b76a84e64c9618823608076ecee5ed3f93f7f0dde904e",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/tsserverlibrary.d.ts",
+          "sha256": "73b15a0b7cf5c6df9076b9408c5ce682f11813453bf54c54cb284f075b5224cf",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.es2019.symbol.d.ts",
+          "sha256": "89c1b1281ba7b8a96efc676b11b264de7a8374c5ea1e6617f11880a13fc56dc6",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.d.ts",
+          "sha256": "a7297ff837fcdf174a9524925966429eb8e5feecc2cc55cc06574e6b092c1eaa",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.es2018.d.ts",
+          "sha256": "5e1c4c362065a6b95ff952c0eab010f04dcd2c3494e813b493ecfd4fcb9fc0d8",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.esnext.full.d.ts",
+          "sha256": "bde31fd423cd93b0eff97197a3f66df7c93e8c0c335cbeb113b7ff1ac35c23f4",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.es2020.string.d.ts",
+          "sha256": "3bdefe1bfd4d6dee0e26f928f93ccc128f1b64d5d501ff4a8cf3c6371200e5e6",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.es2023.full.d.ts",
+          "sha256": "785921608325fa246b450f05b238f4b3ed659f1099af278ce9ebbc9416a13f1d",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.es2018.asyncgenerator.d.ts",
+          "sha256": "ac9538681b19688c8eae65811b329d3744af679e0bdfa5d842d0e32524c73e1c",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.es2022.d.ts",
+          "sha256": "ee7bad0c15b58988daa84371e0b89d313b762ab83cb5b31b8a2d1162e8eb41c2",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.es2021.weakref.d.ts",
+          "sha256": "959d36cddf5e7d572a65045b876f2956c973a586da58e5d26cde519184fd9b8a",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.es2016.full.d.ts",
+          "sha256": "807e0e0bdc67605dd28efe18f20ab5fcd75d944ef95936120702335f9379094b",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.es2017.object.d.ts",
+          "sha256": "69ab18c3b76cd9b1be3d188eaf8bba06112ebbe2f47f6c322b5105a6fbc45a2e",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.es2023.d.ts",
+          "sha256": "27bdc30a0e32783366a5abeda841bc22757c1797de8681bbe81fbc735eeb1c10",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/watchGuard.js",
+          "sha256": "471200d4bc555ef8d8429358bdca2a68ea7c9bfff6c853b5b048d2512fe4092a",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/typescript.d.ts",
+          "sha256": "c302df1d6f371c6064cb5f4d0b41165425b682b287a3b8625527b2752eb433ee",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.es2017.string.d.ts",
+          "sha256": "2f11ff796926e0832f9ae148008138ad583bd181899ab7dd768a2666700b1893",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.es2019.d.ts",
+          "sha256": "68d73b4a11549f9c0b7d352d10e91e5dca8faa3322bfb77b661839c42b1ddec7",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.webworker.importscripts.d.ts",
+          "sha256": "80e18897e5884b6723488d4f5652167e7bb5024f946743134ecc4aa4ee731f89",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.es2015.symbol.d.ts",
+          "sha256": "4ff2a353abf8a80ee399af572debb8faab2d33ad38c4b4474cff7f26e7653b8d",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.es2017.arraybuffer.d.ts",
+          "sha256": "eb3d66c8327153d8fa7dd03f9c58d351107fe824c79e9b56b462935176cdf12a",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.esnext.array.d.ts",
+          "sha256": "1c9319a09485199c1f7b0498f2988d6d2249793ef67edda49d1e584746be9032",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.es2015.collection.d.ts",
+          "sha256": "dc2df20b1bcdc8c2d34af4926e2c3ab15ffe1160a63e58b7e09833f616efff44",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        },
+        {
+          "path": "lib/lib.es2015.d.ts",
+          "sha256": "45b7ab580deca34ae9729e97c13cfd999df04416a79116c3bfb483804f85ded4",
+          "header": [
+            "Copyright (c) Microsoft Corporation. All rights reserved.",
+            "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use",
+            "this file except in compliance with the License. You may obtain a copy of the",
+            "License at http://www.apache.org/licenses/LICENSE-2.0",
+            "See the Apache Version 2.0 License for specific language governing permissions",
+            "and limitations under the License."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "undici-types",
+      "version": "6.21.0",
+      "licenseDeclaration": "MIT",
+      "noticeFiles": [
+        {
+          "path": "LICENSE",
+          "bytes": 1090,
+          "sha256": "a6db8096b2707bc0102d256917d4d33f298ba36d8c3f25de067a2b5bb379db27"
+        }
+      ],
+      "sourceHeaders": [
+        {
+          "path": "fetch.d.ts",
+          "sha256": "c464d66b20788266e5353b48dc4aa6bc0dc4a707276df1e7152ab0c9ae21fad8",
+          "header": [
+            "// based on https://github.com/Ethan-Arrowood/undici-fetch/blob/249269714db874351589d2d364a0645d5160ae71/index.d.ts (MIT license)",
+            "// and https://github.com/node-fetch/node-fetch/blob/914ce6be5ec67a8bab63d68510aabf07cb818b6d/index.d.ts (MIT license)"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "widest-line",
+      "version": "5.0.0",
+      "licenseDeclaration": "MIT",
+      "noticeFiles": [
+        {
+          "path": "license",
+          "bytes": 1117,
+          "sha256": "5c932d88256b4ab958f64a856fa48e8bd1f55bc1d96b8149c65689e0c61789d3"
+        }
+      ],
+      "sourceHeaders": []
+    },
+    {
+      "name": "wrap-ansi",
+      "version": "9.0.2",
+      "licenseDeclaration": "MIT",
+      "noticeFiles": [
+        {
+          "path": "license",
+          "bytes": 1117,
+          "sha256": "5c932d88256b4ab958f64a856fa48e8bd1f55bc1d96b8149c65689e0c61789d3"
+        }
+      ],
+      "sourceHeaders": []
+    },
+    {
+      "name": "ws",
+      "version": "8.22.1",
+      "licenseDeclaration": "MIT",
+      "noticeFiles": [
+        {
+          "path": "LICENSE",
+          "bytes": 1183,
+          "sha256": "2b29dcfe0d6471f7e8c92c5fb38c9f93edee10330937055440192f1832b1ecef"
+        }
+      ],
+      "sourceHeaders": []
+    },
+    {
+      "name": "yoga-layout",
+      "version": "3.2.1",
+      "licenseDeclaration": "MIT",
+      "noticeFiles": [],
+      "sourceHeaders": [
+        {
+          "path": "src/Size.h",
+          "sha256": "290f3df85a826ebc1ea935e35847155c12c53eb4cdd8ebacf927f132e1c168ae",
+          "header": [
+            "* Copyright (c) Meta Platforms, Inc. and affiliates.",
+            "* This source code is licensed under the MIT license found in the",
+            "* LICENSE file in the root directory of this source tree."
+          ]
+        },
+        {
+          "path": "src/load.ts",
+          "sha256": "c5656438fc842e10cfdb12bf314ed89da3e5f8366479900190ba292b8eaae3bd",
+          "header": [
+            "* Copyright (c) Meta Platforms, Inc. and affiliates.",
+            "* This source code is licensed under the MIT license found in the",
+            "* LICENSE file in the root directory of this source tree."
+          ]
+        },
+        {
+          "path": "src/Config.h",
+          "sha256": "3fb507bd464997547abd9c64c1c608ad40cb7a74eb7841ba5ea4e6c82e551178",
+          "header": [
+            "* Copyright (c) Meta Platforms, Inc. and affiliates.",
+            "* This source code is licensed under the MIT license found in the",
+            "* LICENSE file in the root directory of this source tree."
+          ]
+        },
+        {
+          "path": "src/Node.cpp",
+          "sha256": "364f78b31e319f47be425454b6028c4740900521022240793f2da6431cf267e0",
+          "header": [
+            "* Copyright (c) Meta Platforms, Inc. and affiliates.",
+            "* This source code is licensed under the MIT license found in the",
+            "* LICENSE file in the root directory of this source tree."
+          ]
+        },
+        {
+          "path": "src/Node.h",
+          "sha256": "6cbf2f4b43d705c6d7301e2ba1203cdb03e472d59ffbfc939e82aebcf31cacfd",
+          "header": [
+            "* Copyright (c) Meta Platforms, Inc. and affiliates.",
+            "* This source code is licensed under the MIT license found in the",
+            "* LICENSE file in the root directory of this source tree."
+          ]
+        },
+        {
+          "path": "src/embind.cpp",
+          "sha256": "70f12792f700190df64a10d9535576886824ad6701ab62c62b0a83ea153940af",
+          "header": [
+            "* Copyright (c) Meta Platforms, Inc. and affiliates.",
+            "* This source code is licensed under the MIT license found in the",
+            "* LICENSE file in the root directory of this source tree."
+          ]
+        },
+        {
+          "path": "src/Value.h",
+          "sha256": "0de5b99bedd3d727392e3734b53223c56c02cabe64e80320bf148515ea98980c",
+          "header": [
+            "* Copyright (c) Meta Platforms, Inc. and affiliates.",
+            "* This source code is licensed under the MIT license found in the",
+            "* LICENSE file in the root directory of this source tree."
+          ]
+        },
+        {
+          "path": "src/Layout.h",
+          "sha256": "30530362b56fa22aeaefd35384a9dd7861c89990884214047fd870fd225c2ffc",
+          "header": [
+            "* Copyright (c) Meta Platforms, Inc. and affiliates.",
+            "* This source code is licensed under the MIT license found in the",
+            "* LICENSE file in the root directory of this source tree."
+          ]
+        },
+        {
+          "path": "src/Config.cpp",
+          "sha256": "6464886f1231170aa9e12df0bd75ab5173f95b38414b875bf4108336195d9f61",
+          "header": [
+            "* Copyright (c) Meta Platforms, Inc. and affiliates.",
+            "* This source code is licensed under the MIT license found in the",
+            "* LICENSE file in the root directory of this source tree."
+          ]
+        },
+        {
+          "path": "src/index.ts",
+          "sha256": "08c9f17b043f37b3816d516e2d88d6650d15d29a81d9dd3b1675648a4a45c7a1",
+          "header": [
+            "* Copyright (c) Meta Platforms, Inc. and affiliates.",
+            "* This source code is licensed under the MIT license found in the",
+            "* LICENSE file in the root directory of this source tree."
+          ]
+        },
+        {
+          "path": "src/wrapAssembly.ts",
+          "sha256": "e063db4e80e7cc381a17c5c12306fdb753ba96d6f9dbf95bb07a98241cf81fe5",
+          "header": [
+            "* Copyright (c) Meta Platforms, Inc. and affiliates.",
+            "* This source code is licensed under the MIT license found in the",
+            "* LICENSE file in the root directory of this source tree."
+          ]
+        },
+        {
+          "path": "src/generated/YGEnums.ts",
+          "sha256": "bc7ef97509d5572e0a2db12e14a830c5da5d916c17d09977c7d257f6144b650b",
+          "header": [
+            "* Copyright (c) Meta Platforms, Inc. and affiliates.",
+            "* This source code is licensed under the MIT license found in the",
+            "* LICENSE file in the root directory of this source tree."
+          ]
+        },
+        {
+          "path": "dist/src/wrapAssembly.d.ts",
+          "sha256": "5c187cdbece8ad89247f507b3f6b04aad849d4b3fd8108289e19e9d452714882",
+          "header": [
+            "* Copyright (c) Meta Platforms, Inc. and affiliates.",
+            "* This source code is licensed under the MIT license found in the",
+            "* LICENSE file in the root directory of this source tree."
+          ]
+        },
+        {
+          "path": "dist/src/wrapAssembly.js",
+          "sha256": "b9615fdf7bc03e9014a25f478dd3004e231f28c11968b6e5668aee5cb390ff19",
+          "header": [
+            "* Copyright (c) Meta Platforms, Inc. and affiliates.",
+            "* This source code is licensed under the MIT license found in the",
+            "* LICENSE file in the root directory of this source tree."
+          ]
+        },
+        {
+          "path": "dist/src/index.js",
+          "sha256": "0c89ff0c01ee90b081b369119f972d72f71eb8882263d94ef0824500817d5de1",
+          "header": [
+            "* Copyright (c) Meta Platforms, Inc. and affiliates.",
+            "* This source code is licensed under the MIT license found in the",
+            "* LICENSE file in the root directory of this source tree."
+          ]
+        },
+        {
+          "path": "dist/src/load.js",
+          "sha256": "87c293f7926ccaabbd1026c3dce86326fa9ce02e9b216781b84b6431825b5df4",
+          "header": [
+            "* Copyright (c) Meta Platforms, Inc. and affiliates.",
+            "* This source code is licensed under the MIT license found in the",
+            "* LICENSE file in the root directory of this source tree."
+          ]
+        },
+        {
+          "path": "dist/src/load.d.ts",
+          "sha256": "66c5d8e45c122a72a672582e9ce01e4b71217e6309ba70bf990c00f305661716",
+          "header": [
+            "* Copyright (c) Meta Platforms, Inc. and affiliates.",
+            "* This source code is licensed under the MIT license found in the",
+            "* LICENSE file in the root directory of this source tree."
+          ]
+        },
+        {
+          "path": "dist/src/index.d.ts",
+          "sha256": "753b64b831aa731751b352e7bc9ef4d95b8c25df769dd629f8ec6a84478a85c7",
+          "header": [
+            "* Copyright (c) Meta Platforms, Inc. and affiliates.",
+            "* This source code is licensed under the MIT license found in the",
+            "* LICENSE file in the root directory of this source tree."
+          ]
+        },
+        {
+          "path": "dist/src/generated/YGEnums.d.ts",
+          "sha256": "e0c394ad75777f77b761a10d69c0c9f9dd7afb04c910758dcb0a50bcaae08527",
+          "header": [
+            "* Copyright (c) Meta Platforms, Inc. and affiliates.",
+            "* This source code is licensed under the MIT license found in the",
+            "* LICENSE file in the root directory of this source tree."
+          ]
+        },
+        {
+          "path": "dist/src/generated/YGEnums.js",
+          "sha256": "f9cdfa4247cf5954c0323c2edcb0190320014251afb5197d9935c1dc3e2d0fc6",
+          "header": [
+            "* Copyright (c) Meta Platforms, Inc. and affiliates.",
+            "* This source code is licensed under the MIT license found in the",
+            "* LICENSE file in the root directory of this source tree."
+          ]
+        }
+      ]
+    }
+  ],
+  "python": [
+    {
+      "name": "jsonschema",
+      "version": "4.26.0",
+      "notices": [
+        {
+          "path": "jsonschema-4.26.0.dist-info/licenses/COPYING",
+          "sha256": "4f92a015a13c4d1a040bef018aa13430b4f1bc73b41b16bb846c346766de7439",
+          "bytes": 1057
+        }
+      ]
+    },
+    {
+      "name": "attrs",
+      "version": "26.1.0",
+      "notices": [
+        {
+          "path": "attrs-26.1.0.dist-info/licenses/LICENSE",
+          "sha256": "882115c95dfc2af1eeb6714f8ec6d5cbcabf667caff8729f42420da63f714e9f",
+          "bytes": 1109
+        }
+      ]
+    },
+    {
+      "name": "jsonschema-specifications",
+      "version": "2025.9.1",
+      "notices": [
+        {
+          "path": "jsonschema_specifications-2025.9.1.dist-info/licenses/COPYING",
+          "sha256": "42dcd63495f87b4eb7c7757afa379bb55a53f94afd7a5f657d9adf57236e515c",
+          "bytes": 1057
+        }
+      ]
+    },
+    {
+      "name": "referencing",
+      "version": "0.37.0",
+      "notices": [
+        {
+          "path": "referencing-0.37.0.dist-info/licenses/COPYING",
+          "sha256": "42dcd63495f87b4eb7c7757afa379bb55a53f94afd7a5f657d9adf57236e515c",
+          "bytes": 1057
+        }
+      ]
+    },
+    {
+      "name": "rpds-py",
+      "version": "2026.9.1",
+      "notices": [
+        {
+          "path": "rpds_py-2026.9.1.dist-info/licenses/LICENSE",
+          "sha256": "314e4e91be3baa93c0fb4bccc9e4e97cd643eb839b065af921782c2175fe9909",
+          "bytes": 1057
+        }
+      ]
+    },
+    {
+      "name": "pip",
+      "version": "25.0",
+      "notices": [
+        {
+          "path": "pip-25.0.dist-info/LICENSE.txt",
+          "sha256": "634300a669d49aeae65b12c6c48c924c51a4cdf3d1ff086dc3456dc8bcaa2104",
+          "bytes": 1093
+        }
+      ]
+    }
+  ],
+  "fixtures": [
+    {
+      "path": "examples/s2/PICOCOLORS-LICENSE.txt",
+      "bytes": 787,
+      "sha256": "6582629e2979466878f6014313dcc2f3756c9616148682227ce3063dde310750",
+      "title": [
+        "ISC License",
+        "",
+        "Copyright (c) 2021-2024 Oleksii Raspopov, Kostiantyn Denysov, Anton Verinov"
+      ]
+    },
+    {
+      "path": "examples/s3/B3-LICENSE.txt",
+      "bytes": 1072,
+      "sha256": "3f1189b28e3866e0d979968d466b78f813f76827cfdca1fbb124cc0a5c8841f8",
+      "title": [
+        "MIT License",
+        "",
+        "Copyright (c) 2025 Colin McDonnell"
+      ]
+    },
+    {
+      "path": "examples/s3/B3R-LICENSE.txt",
+      "bytes": 1091,
+      "sha256": "1bb85cc9b13b81ef41c81c51866172fc345e0503c86726a6755b796590b70175",
+      "title": [
+        "The MIT License (MIT)",
+        "",
+        "Copyright (c) 2018-present, Yuxi (Evan) You"
+      ]
+    },
+    {
+      "path": "examples/s3/B2-LICENSE.txt",
+      "bytes": 1073,
+      "sha256": "4a6f1d5bbd77809165c0f9c24bbcf11768b0c936bd205bdb117aa68fea306601",
+      "title": [
+        "MIT License",
+        "",
+        "Copyright (c) 2021 Gabriel Vergnaud"
+      ]
+    },
+    {
+      "path": "examples/s3/B1-LICENSE.txt",
+      "bytes": 787,
+      "sha256": "6582629e2979466878f6014313dcc2f3756c9616148682227ce3063dde310750",
+      "title": [
+        "ISC License",
+        "",
+        "Copyright (c) 2021-2024 Oleksii Raspopov, Kostiantyn Denysov, Anton Verinov"
+      ]
+    },
+    {
+      "path": "examples/production-phase1/2026-11-01-completion-01/rights/go-LICENSE",
+      "bytes": 1453,
+      "sha256": "911f8f5782931320f5b8d1160a76365b83aea6447ee6c04fa6d5591467db9dad",
+      "title": [
+        "Copyright 2009 The Go Authors.",
+        "",
+        "Redistribution and use in source and binary forms, with or without"
+      ]
+    },
+    {
+      "path": "examples/production-phase1/2026-11-01-completion-01/rights/yoga-LICENSE",
+      "bytes": 1086,
+      "sha256": "52412d7bc7ce4157ea628bbaacb8829e0a9cb3c58f57f99176126bc8cf2bfc85",
+      "title": [
+        "MIT License",
+        "",
+        "Copyright (c) Facebook, Inc. and its affiliates."
+      ]
+    },
+    {
+      "path": "examples/production-phase1/2026-11-01-completion-01/rights/esbuild-LICENSE.md",
+      "bytes": 1069,
+      "sha256": "b40ec5baec7bb34fa5b1c09521fa3cd52d5fad7adafed74932a2010d3612a681",
+      "title": [
+        "MIT License",
+        "",
+        "Copyright (c) 2020 Evan Wallace"
+      ]
+    },
+    {
+      "path": "examples/production-phase1/2026-11-01-completion-01/rights/installed-notices/@types__react@19.1.5/LICENSE",
+      "bytes": 1141,
+      "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+      "title": [
+        "    MIT License",
+        "",
+        "    Copyright (c) Microsoft Corporation."
+      ]
+    },
+    {
+      "path": "examples/production-phase1/2026-11-01-completion-01/rights/installed-notices/@types__node@22.15.30/LICENSE",
+      "bytes": 1141,
+      "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+      "title": [
+        "    MIT License",
+        "",
+        "    Copyright (c) Microsoft Corporation."
+      ]
+    },
+    {
+      "path": "examples/production-phase1/2026-11-01-completion-01/rights/installed-notices/signal-exit@3.0.7/LICENSE.txt",
+      "bytes": 748,
+      "sha256": "e05b1eaf5b5f99b7ad75cd1f38858ff9a311780b97715ead67936d60bf96aa7e",
+      "title": [
+        "The ISC License",
+        "",
+        "Copyright (c) 2015, Contributors"
+      ]
+    },
+    {
+      "path": "examples/production-phase1/2026-11-01-completion-01/rights/installed-notices/emoji-regex@10.6.0/LICENSE-MIT.txt",
+      "bytes": 1077,
+      "sha256": "483acb265f182907d1caf6cff9c16c96f31325ed23792832cc5d8b12d5f88c8a",
+      "title": [
+        "Copyright Mathias Bynens <https://mathiasbynens.be/>",
+        "",
+        "Permission is hereby granted, free of charge, to any person obtaining"
+      ]
+    },
+    {
+      "path": "examples/production-phase1/2026-11-01-completion-01/rights/installed-notices/react-reconciler@0.32.0/LICENSE",
+      "bytes": 1088,
+      "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93",
+      "title": [
+        "MIT License",
+        "",
+        "Copyright (c) Meta Platforms, Inc. and affiliates."
+      ]
+    },
+    {
+      "path": "examples/production-phase1/2026-11-01-completion-01/rights/installed-notices/react@19.1.8/LICENSE",
+      "bytes": 1088,
+      "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93",
+      "title": [
+        "MIT License",
+        "",
+        "Copyright (c) Meta Platforms, Inc. and affiliates."
+      ]
+    },
+    {
+      "path": "examples/production-phase1/2026-11-01-completion-01/rights/installed-notices/esbuild@0.25.12/LICENSE.md",
+      "bytes": 1069,
+      "sha256": "b40ec5baec7bb34fa5b1c09521fa3cd52d5fad7adafed74932a2010d3612a681",
+      "title": [
+        "MIT License",
+        "",
+        "Copyright (c) 2020 Evan Wallace"
+      ]
+    },
+    {
+      "path": "examples/production-phase1/2026-11-01-completion-01/rights/installed-notices/es-toolkit@1.53.1/LICENSE",
+      "bytes": 1077,
+      "sha256": "51f3674294d988d89dbebd31273baaeb3c697a15482d9699b14d1fded2e132a7",
+      "title": [
+        "MIT License",
+        "",
+        "Copyright (c) 2024 Viva Republica, Inc."
+      ]
+    },
+    {
+      "path": "examples/production-phase1/2026-11-01-completion-01/rights/installed-notices/csstype@3.2.3/LICENSE",
+      "bytes": 1062,
+      "sha256": "11d55bd4541c75ee7879547ac49089c489163dae49551389713c3d026cab383e",
+      "title": [
+        "Copyright (c) 2017-2018 Fredrik Nicol",
+        "",
+        "Permission is hereby granted, free of charge, to any person obtaining a copy"
+      ]
+    },
+    {
+      "path": "examples/production-phase1/2026-11-01-completion-01/rights/installed-notices/typescript@5.8.3/LICENSE.txt",
+      "bytes": 9197,
+      "sha256": "a7d00bfd54525bc694b6e32f64c7ebcf5e6b7ae3657be5cc12767bce74654a47",
+      "title": [
+        "Apache License",
+        "",
+        "Version 2.0, January 2004"
+      ]
+    },
+    {
+      "path": "examples/production-phase1/2026-11-01-completion-01/rights/installed-notices/ws@8.22.1/LICENSE",
+      "bytes": 1183,
+      "sha256": "2b29dcfe0d6471f7e8c92c5fb38c9f93edee10330937055440192f1832b1ecef",
+      "title": [
+        "Copyright (c) 2011 Einar Otto Stangvik <einaros@gmail.com>",
+        "Copyright (c) 2013 Arnout Kazemier and contributors",
+        "Copyright (c) 2016 Luigi Pinca and contributors"
+      ]
+    },
+    {
+      "path": "examples/production-phase1/2026-11-01-completion-01/rights/installed-notices/@alcalzone__ansi-tokenize@0.2.5/LICENSE",
+      "bytes": 1071,
+      "sha256": "c60f722e431aa92d949775157b269851c9d0e2a1bc18f77dcbf0d95363734443",
+      "title": [
+        "MIT License",
+        "",
+        "Copyright (c) 2020-2026 AlCalzone"
+      ]
+    },
+    {
+      "path": "examples/production-phase1/2026-11-01-completion-01/rights/installed-notices/undici-types@6.21.0/LICENSE",
+      "bytes": 1090,
+      "sha256": "a6db8096b2707bc0102d256917d4d33f298ba36d8c3f25de067a2b5bb379db27",
+      "title": [
+        "MIT License",
+        "",
+        "Copyright (c) Matteo Collina and Undici contributors"
+      ]
+    },
+    {
+      "path": "examples/production-phase1/2026-11-01-completion-01/rights/installed-notices/@types__react-dom@19.1.6/LICENSE",
+      "bytes": 1141,
+      "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+      "title": [
+        "    MIT License",
+        "",
+        "    Copyright (c) Microsoft Corporation."
+      ]
+    },
+    {
+      "path": "examples/production-phase1/2026-11-01-completion-01/rights/installed-notices/scheduler@0.26.0/LICENSE",
+      "bytes": 1088,
+      "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93",
+      "title": [
+        "MIT License",
+        "",
+        "Copyright (c) Meta Platforms, Inc. and affiliates."
+      ]
+    },
+    {
+      "path": "examples/production-phase1/2026-11-01-completion-01/rights/installed-notices/react-dom@19.1.8/LICENSE",
+      "bytes": 1088,
+      "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93",
+      "title": [
+        "MIT License",
+        "",
+        "Copyright (c) Meta Platforms, Inc. and affiliates."
+      ]
+    },
+    {
+      "path": "examples/production-phase1/2026-11-01-completion-01/rights/installed-notices/stack-utils@2.0.6/LICENSE.md",
+      "bytes": 1179,
+      "sha256": "9be2ec8089dfa4059a78e4e3e0443c416b2d63dedffb246c7473d0f3d763c6c4",
+      "title": [
+        "The MIT License (MIT)",
+        "",
+        "Copyright (c) 2016-2022 Isaac Z. Schlueter <i@izs.me>, James Talmage <james@talmage.io> (github.com/jamestalmage), and Contributors"
+      ]
+    },
+    {
+      "path": "examples/production-phase1/2026-11-01-completion-01/rights/installed-notices/python-attrs@26.1.0/attrs-26.1.0.dist-info/licenses/LICENSE",
+      "bytes": 1109,
+      "sha256": "882115c95dfc2af1eeb6714f8ec6d5cbcabf667caff8729f42420da63f714e9f",
+      "title": [
+        "The MIT License (MIT)",
+        "",
+        "Copyright (c) 2015 Hynek Schlawack and the attrs contributors"
+      ]
+    },
+    {
+      "path": "examples/production-phase1/2026-11-01-completion-01/rights/installed-notices/python-rpds-py@2026.9.1/rpds_py-2026.9.1.dist-info/licenses/LICENSE",
+      "bytes": 1057,
+      "sha256": "314e4e91be3baa93c0fb4bccc9e4e97cd643eb839b065af921782c2175fe9909",
+      "title": [
+        "Copyright (c) 2023 Julian Berman",
+        "",
+        "Permission is hereby granted, free of charge, to any person obtaining a copy"
+      ]
+    },
+    {
+      "path": "examples/production-phase1/2026-11-01-completion-01/rights/installed-notices/python-pip@25.0/pip-25.0.dist-info/LICENSE.txt",
+      "bytes": 1093,
+      "sha256": "634300a669d49aeae65b12c6c48c924c51a4cdf3d1ff086dc3456dc8bcaa2104",
+      "title": [
+        "Copyright (c) 2008-present The pip developers (see AUTHORS.txt file)",
+        "",
+        "Permission is hereby granted, free of charge, to any person obtaining"
+      ]
+    },
+    {
+      "path": "examples/audit-fixes/current/B3-LICENSE.txt",
+      "bytes": 1072,
+      "sha256": "3f1189b28e3866e0d979968d466b78f813f76827cfdca1fbb124cc0a5c8841f8",
+      "title": [
+        "MIT License",
+        "",
+        "Copyright (c) 2025 Colin McDonnell"
+      ]
+    },
+    {
+      "path": "examples/audit-fixes/current/B3R-LICENSE.txt",
+      "bytes": 1091,
+      "sha256": "1bb85cc9b13b81ef41c81c51866172fc345e0503c86726a6755b796590b70175",
+      "title": [
+        "The MIT License (MIT)",
+        "",
+        "Copyright (c) 2018-present, Yuxi (Evan) You"
+      ]
+    },
+    {
+      "path": "examples/audit-fixes/current/B2-LICENSE.txt",
+      "bytes": 1073,
+      "sha256": "4a6f1d5bbd77809165c0f9c24bbcf11768b0c936bd205bdb117aa68fea306601",
+      "title": [
+        "MIT License",
+        "",
+        "Copyright (c) 2021 Gabriel Vergnaud"
+      ]
+    },
+    {
+      "path": "examples/audit-fixes/current/B1-LICENSE.txt",
+      "bytes": 787,
+      "sha256": "6582629e2979466878f6014313dcc2f3756c9616148682227ce3063dde310750",
+      "title": [
+        "ISC License",
+        "",
+        "Copyright (c) 2021-2024 Oleksii Raspopov, Kostiantyn Denysov, Anton Verinov"
+      ]
+    },
+    {
+      "path": "examples/p04/local-mutation/LICENSE.upstream.txt",
+      "bytes": 787,
+      "sha256": "6582629e2979466878f6014313dcc2f3756c9616148682227ce3063dde310750",
+      "title": [
+        "ISC License",
+        "",
+        "Copyright (c) 2021-2024 Oleksii Raspopov, Kostiantyn Denysov, Anton Verinov"
+      ]
+    },
+    {
+      "path": "examples/handoff/current/B3-LICENSE.txt",
+      "bytes": 1072,
+      "sha256": "3f1189b28e3866e0d979968d466b78f813f76827cfdca1fbb124cc0a5c8841f8",
+      "title": [
+        "MIT License",
+        "",
+        "Copyright (c) 2025 Colin McDonnell"
+      ]
+    },
+    {
+      "path": "examples/handoff/current/B3R-LICENSE.txt",
+      "bytes": 1091,
+      "sha256": "1bb85cc9b13b81ef41c81c51866172fc345e0503c86726a6755b796590b70175",
+      "title": [
+        "The MIT License (MIT)",
+        "",
+        "Copyright (c) 2018-present, Yuxi (Evan) You"
+      ]
+    },
+    {
+      "path": "examples/handoff/current/B2-LICENSE.txt",
+      "bytes": 1073,
+      "sha256": "4a6f1d5bbd77809165c0f9c24bbcf11768b0c936bd205bdb117aa68fea306601",
+      "title": [
+        "MIT License",
+        "",
+        "Copyright (c) 2021 Gabriel Vergnaud"
+      ]
+    },
+    {
+      "path": "examples/handoff/current/B1-LICENSE.txt",
+      "bytes": 787,
+      "sha256": "6582629e2979466878f6014313dcc2f3756c9616148682227ce3063dde310750",
+      "title": [
+        "ISC License",
+        "",
+        "Copyright (c) 2021-2024 Oleksii Raspopov, Kostiantyn Denysov, Anton Verinov"
+      ]
+    },
+    {
+      "path": "examples/s3/current/B3-LICENSE.txt",
+      "bytes": 1072,
+      "sha256": "3f1189b28e3866e0d979968d466b78f813f76827cfdca1fbb124cc0a5c8841f8",
+      "title": [
+        "MIT License",
+        "",
+        "Copyright (c) 2025 Colin McDonnell"
+      ]
+    },
+    {
+      "path": "examples/s3/current/B3R-LICENSE.txt",
+      "bytes": 1091,
+      "sha256": "1bb85cc9b13b81ef41c81c51866172fc345e0503c86726a6755b796590b70175",
+      "title": [
+        "The MIT License (MIT)",
+        "",
+        "Copyright (c) 2018-present, Yuxi (Evan) You"
+      ]
+    },
+    {
+      "path": "examples/s3/current/B2-LICENSE.txt",
+      "bytes": 1073,
+      "sha256": "4a6f1d5bbd77809165c0f9c24bbcf11768b0c936bd205bdb117aa68fea306601",
+      "title": [
+        "MIT License",
+        "",
+        "Copyright (c) 2021 Gabriel Vergnaud"
+      ]
+    },
+    {
+      "path": "examples/s3/current/B1-LICENSE.txt",
+      "bytes": 787,
+      "sha256": "6582629e2979466878f6014313dcc2f3756c9616148682227ce3063dde310750",
+      "title": [
+        "ISC License",
+        "",
+        "Copyright (c) 2021-2024 Oleksii Raspopov, Kostiantyn Denysov, Anton Verinov"
+      ]
+    },
+    {
+      "path": "examples/s2/current/PICOCOLORS-LICENSE.txt",
+      "bytes": 787,
+      "sha256": "6582629e2979466878f6014313dcc2f3756c9616148682227ce3063dde310750",
+      "title": [
+        "ISC License",
+        "",
+        "Copyright (c) 2021-2024 Oleksii Raspopov, Kostiantyn Denysov, Anton Verinov"
+      ]
+    },
+    {
+      "path": "experiments/rag/datasets/real/setuptools-60.0.0/LICENSE",
+      "bytes": 1050,
+      "sha256": "db3f0246b1f9278f15845b99fec478b8b506eb76487993722f8c6e254285faf8",
+      "title": [
+        "Copyright Jason R. Coombs",
+        "",
+        "Permission is hereby granted, free of charge, to any person obtaining a copy"
+      ]
+    }
+  ],
+  "esbuildBinary": {
+    "path": "node_modules/.pnpm/@esbuild+darwin-arm64@0.25.12/node_modules/@esbuild/darwin-arm64/bin/esbuild",
+    "sha256": "3e030ee2aa86ad3c33e5e95ae0e53bb03de40e0da35c9b1180a67de4a497cae5",
+    "goVersionMarkers": [
+      "go1.23.12"
+    ],
+    "xSysMarker": true
+  },
+  "excluded": [
+    "No organizer permission inferred",
+    "No global npm/pnpm/base-image clearance inferred",
+    "No generated WASM dependency clearance inferred"
+  ]
+}

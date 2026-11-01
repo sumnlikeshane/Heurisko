@@ -1,0 +1,42 @@
+{
+  "checks": [
+    {
+      "name": "documentation",
+      "argv": [
+        "python3",
+        "scripts/check-docs.py"
+      ],
+      "exit": 0
+    },
+    {
+      "name": "diff",
+      "argv": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit": 0
+    },
+    {
+      "name": "index",
+      "argv": [
+        "git",
+        "diff",
+        "--cached",
+        "--exit-code"
+      ],
+      "exit": 0
+    }
+  ],
+  "sourceBeforeSha256": "b2deb93560a358bbb75a36dcb7136f52fc927956078a318ab791a9ebac53c33d",
+  "sourceAfterSha256": "7a292d97c684f63f519a2ded9334dbc2e87de054f8a11bfea2c44bc759a9d5a0",
+  "changedSourceFiles": [
+    "HEURISKO_COMPLETE_GUIDE.md",
+    "PRODUCTION_MASTER_ROADMAP.md",
+    "SECURITY.md",
+    "docs/Approved Decision Register.md",
+    "docs/Production Phase 1 Implementation Plan.md",
+    "docs/production-phase1/Foundation Contract.md"
+  ],
+  "scope": "Owner gate disposition and current-reference synchronization only; no feature, runtime, CI execution or original receipt mutation."
+}

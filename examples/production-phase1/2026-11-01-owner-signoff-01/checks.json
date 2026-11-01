@@ -1,0 +1,27 @@
+[
+  {
+    "name": "documentation",
+    "argv": [
+      "pnpm",
+      "run",
+      "check:docs"
+    ]
+  },
+  {
+    "name": "diff",
+    "argv": [
+      "git",
+      "diff",
+      "--check"
+    ]
+  },
+  {
+    "name": "index",
+    "argv": [
+      "git",
+      "diff",
+      "--cached",
+      "--exit-code"
+    ]
+  }
+]

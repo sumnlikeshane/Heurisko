@@ -1,0 +1,172 @@
+TAP version 13
+# Subtest: acknowledged parser creation starts/removes only the exact immutable container ID
+ok 1 - acknowledged parser creation starts/removes only the exact immutable container ID
+  ---
+  duration_ms: 0.806584
+  type: 'test'
+  ...
+# Subtest: cancel during delayed acknowledged creation waits for the acknowledgment and never starts
+ok 2 - cancel during delayed acknowledged creation waits for the acknowledgment and never starts
+  ---
+  duration_ms: 0.133208
+  type: 'test'
+  ...
+# Subtest: unacknowledged create plus immediate not-found never proves cleanup before late creation
+ok 3 - unacknowledged create plus immediate not-found never proves cleanup before late creation
+  ---
+  duration_ms: 0.119084
+  type: 'test'
+  ...
+# Subtest: failed exact removal remains unconfirmed even after a successful parse
+ok 4 - failed exact removal remains unconfirmed even after a successful parse
+  ---
+  duration_ms: 0.133209
+  type: 'test'
+  ...
+# Subtest: attach startup failure still removes the acknowledged exact job
+ok 5 - attach startup failure still removes the acknowledged exact job
+  ---
+  duration_ms: 0.11125
+  type: 'test'
+  ...
+# Subtest: wall timeout awaits exact daemon cleanup instead of only killing its attach client
+ok 6 - wall timeout awaits exact daemon cleanup instead of only killing its attach client
+  ---
+  duration_ms: 11.194167
+  type: 'test'
+  ...
+# Subtest: unconfirmed creation retains private spool, durable job identity and both store locks
+ok 7 - unconfirmed creation retains private spool, durable job identity and both store locks
+  ---
+  duration_ms: 42.478458
+  type: 'test'
+  ...
+# Subtest: explicit recovery stopped verifies identity before releasing only its own records
+ok 8 - explicit recovery stopped verifies identity before releasing only its own records
+  ---
+  duration_ms: 992.81575
+  type: 'test'
+  ...
+# Subtest: explicit recovery running verifies identity before releasing only its own records
+ok 9 - explicit recovery running verifies identity before releasing only its own records
+  ---
+  duration_ms: 608.98775
+  type: 'test'
+  ...
+# Subtest: explicit recovery wrong-label verifies identity before releasing only its own records
+ok 10 - explicit recovery wrong-label verifies identity before releasing only its own records
+  ---
+  duration_ms: 718.618958
+  type: 'test'
+  ...
+# Subtest: explicit recovery missing verifies identity before releasing only its own records
+ok 11 - explicit recovery missing verifies identity before releasing only its own records
+  ---
+  duration_ms: 608.948458
+  type: 'test'
+  ...
+# Subtest: missing executable/configuration digest is rejected before an injected module can run
+ok 12 - missing executable/configuration digest is rejected before an injected module can run
+  ---
+  duration_ms: 0.671625
+  type: 'test'
+  ...
+# Subtest: same package version with changed implementation or rule settings produces distinct report identities
+ok 13 - same package version with changed implementation or rule settings produces distinct report identities
+  ---
+  duration_ms: 17784.931625
+  type: 'test'
+  ...
+# Subtest: spool and both locks remain until delayed exact-job removal is acknowledged
+ok 14 - spool and both locks remain until delayed exact-job removal is acknowledged
+  ---
+  duration_ms: 76.083667
+  type: 'test'
+  ...
+# Subtest: late acknowledged creation after wall timeout never starts and awaits exact cleanup
+ok 15 - late acknowledged creation after wall timeout never starts and awaits exact cleanup
+  ---
+  duration_ms: 31.503625
+  type: 'test'
+  ...
+# Subtest: bounded local file open rejects FIFO before waiting for a writer
+ok 16 - bounded local file open rejects FIFO before waiting for a writer
+  ---
+  duration_ms: 181.001542
+  type: 'test'
+  ...
+# Subtest: CLI file and digest imports reject invalid UTF-8 instead of changing report identity
+ok 17 - CLI file and digest imports reject invalid UTF-8 instead of changing report identity
+  ---
+  duration_ms: 435.435542
+  type: 'test'
+  ...
+# Subtest: CLI report byte imports preserve BOM rejection and valid retained identity
+ok 18 - CLI report byte imports preserve BOM rejection and valid retained identity
+  ---
+  duration_ms: 1049.509042
+  type: 'test'
+  ...
+# Subtest: CLI evidence inspection honors not_exported even when matching bytes exist
+ok 19 - CLI evidence inspection honors not_exported even when matching bytes exist
+  ---
+  duration_ms: 569.333167
+  type: 'test'
+  ...
+# Subtest: CLI evidence inspection honors unavailable even when matching bytes exist
+ok 20 - CLI evidence inspection honors unavailable even when matching bytes exist
+  ---
+  duration_ms: 574.269333
+  type: 'test'
+  ...
+# Subtest: exact parser absence fails closed: absent
+ok 21 - exact parser absence fails closed: absent
+  ---
+  duration_ms: 574.097333
+  type: 'test'
+  ...
+# Subtest: exact parser absence fails closed: missing-rm
+ok 22 - exact parser absence fails closed: missing-rm
+  ---
+  duration_ms: 571.668959
+  type: 'test'
+  ...
+# Subtest: exact parser absence fails closed: present
+ok 23 - exact parser absence fails closed: present
+  ---
+  duration_ms: 594.894042
+  type: 'test'
+  ...
+# Subtest: exact parser absence fails closed: query-error
+ok 24 - exact parser absence fails closed: query-error
+  ---
+  duration_ms: 954.549333
+  type: 'test'
+  ...
+# Subtest: exact parser absence fails closed: unexpected-output
+ok 25 - exact parser absence fails closed: unexpected-output
+  ---
+  duration_ms: 583.854417
+  type: 'test'
+  ...
+# Subtest: exact parser absence fails closed: remove-error
+ok 26 - exact parser absence fails closed: remove-error
+  ---
+  duration_ms: 622.612917
+  type: 'test'
+  ...
+# Subtest: exact parser absence fails closed: partial-id
+ok 27 - exact parser absence fails closed: partial-id
+  ---
+  duration_ms: 540.7445
+  type: 'test'
+  ...
+1..27
+# tests 27
+# suites 0
+# pass 27
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 28480.772625

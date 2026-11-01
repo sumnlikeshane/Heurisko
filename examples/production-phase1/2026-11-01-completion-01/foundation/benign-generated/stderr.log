@@ -1,0 +1,36 @@
+resolve_artifact: running
+acquire: running
+resolve_artifact: complete
+acquire: complete
+inventory: running
+source: running
+provenance: running
+source: complete
+provenance: skipped
+build: skipped
+inventory: complete
+compare: running
+compare: complete
+heuristics: running
+heuristics: complete
+ai: skipped
+persist: running
+persist: complete
+        8.81 real         1.25 user         0.60 sys
+            59916288  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               55802  page reclaims
+                 507  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  65  messages sent
+                  60  messages received
+                  77  signals received
+                 190  voluntary context switches
+               55555  involuntary context switches
+          2900015060  instructions retired
+          1894214198  cycles elapsed
+            26757976  peak memory footprint

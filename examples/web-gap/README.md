@@ -10,7 +10,7 @@ W1 adds native destinations/history, separate New/Open/Jobs/Reports contexts, se
 
 Concurrent S4 work appeared in the active checkout during validation, adding TUI/CLI wiring while dependency links disappeared. Those edits are preserved. The isolated assembly uses the unchanged pre-S4 CLI source digest `e1d8e8b9c6bd0807be1085c84fb339dea9b7ffd671965dfb684e086fc7325841`, matching the research baseline, and the existing admitted web dependencies. It does not validate/adopt the concurrent TUI. Failed frozen offline installation is not a successful setup claim. Corpus stores are copied into isolation because the reader deliberately rejects symlinked store paths.
 
-Actual browser acceptance remains open. W2 documentation/first-use improvements are next in the [same gap plan](../../docs/Web%20Application%20Gap%20Plan.md); W3–W5 and shared engine dependencies remain visible. The earlier `w1/corpus` checkpoint is retained separately. Historical web/investigation receipts are unchanged.
+Actual browser acceptance remains open. W2 documentation/first-use improvements are next in the [same gap plan](https://github.com/sumnlikeshane/Heurisko/blob/6985d3eeecdbdc33463458e8072a31e62e86109f/docs/Web%20Application%20Gap%20Plan.md); W3–W5 and shared engine dependencies remain visible. The earlier `w1/corpus` checkpoint is retained separately. Historical web/investigation receipts are unchanged.
 
 
 ## W2–W5 local engineering batch — 1 November 2026

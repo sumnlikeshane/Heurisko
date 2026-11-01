@@ -1,0 +1,211 @@
+{
+  "labelMethod": "Construction truth declared before analysis, independent of detector output; authored by implementing agent, no independent human sign-off.",
+  "license": "Apache-2.0 original inert fixtures",
+  "cases": [
+    {
+      "id": "benign-identical",
+      "class": "benign",
+      "truth": "Identical member bytes; no change to explain.",
+      "source": [
+        {
+          "path": "package.json",
+          "text": "{\"name\":\"phase1-authored\",\"version\":\"1.0.0\",\"scripts\":{},\"main\":\"index.js\"}"
+        },
+        {
+          "path": "index.js",
+          "text": "// authored inert baseline\nexport const value = 1;\n"
+        }
+      ],
+      "artifact": [
+        {
+          "path": "package.json",
+          "text": "{\"name\":\"phase1-authored\",\"version\":\"1.0.0\",\"scripts\":{},\"main\":\"index.js\"}"
+        },
+        {
+          "path": "index.js",
+          "text": "// authored inert baseline\nexport const value = 1;\n"
+        }
+      ]
+    },
+    {
+      "id": "benign-format",
+      "class": "benign",
+      "truth": "Only authored whitespace differs; no behavior claim is inferred by analyzer.",
+      "source": [
+        {
+          "path": "package.json",
+          "text": "{\"name\":\"phase1-authored\",\"version\":\"1.0.0\",\"scripts\":{},\"main\":\"index.js\"}"
+        },
+        {
+          "path": "index.js",
+          "text": "// authored inert baseline\nexport const value = 1;\n"
+        }
+      ],
+      "artifact": [
+        {
+          "path": "package.json",
+          "text": "{\"name\":\"phase1-authored\",\"version\":\"1.0.0\",\"scripts\":{},\"main\":\"index.js\"}"
+        },
+        {
+          "path": "index.js",
+          "text": "// authored inert baseline\nexport const value=1;\n"
+        }
+      ]
+    },
+    {
+      "id": "benign-generated",
+      "class": "benign",
+      "truth": "Authored generated equivalent constant; generation is construction knowledge, not runtime verification.",
+      "source": [
+        {
+          "path": "package.json",
+          "text": "{\"name\":\"phase1-authored\",\"version\":\"1.0.0\",\"scripts\":{},\"main\":\"index.js\"}"
+        },
+        {
+          "path": "index.js",
+          "text": "// authored inert baseline\nexport const value = 1;\n"
+        }
+      ],
+      "artifact": [
+        {
+          "path": "package.json",
+          "text": "{\"name\":\"phase1-authored\",\"version\":\"1.0.0\",\"scripts\":{},\"main\":\"index.js\"}"
+        },
+        {
+          "path": "index.js",
+          "text": "/* generated inert fixture */ export const value=1;\n"
+        }
+      ]
+    },
+    {
+      "id": "mutation-lifecycle-add",
+      "class": "mutated",
+      "truth": "Adds /scripts/postinstall with inert unexecuted marker.",
+      "source": [
+        {
+          "path": "package.json",
+          "text": "{\"name\":\"phase1-authored\",\"version\":\"1.0.0\",\"scripts\":{},\"main\":\"index.js\"}"
+        },
+        {
+          "path": "index.js",
+          "text": "// authored inert baseline\nexport const value = 1;\n"
+        }
+      ],
+      "artifact": [
+        {
+          "path": "package.json",
+          "text": "{\"name\":\"phase1-authored\",\"version\":\"1.0.0\",\"scripts\":{\"postinstall\":\"HEURISKO_INERT_TEST_ONLY\"},\"main\":\"index.js\"}"
+        },
+        {
+          "path": "index.js",
+          "text": "// authored inert baseline\nexport const value = 1;\n"
+        }
+      ]
+    },
+    {
+      "id": "mutation-lifecycle-remove",
+      "class": "mutated",
+      "truth": "Removes source /scripts/postinstall. Removal is not malicious intent.",
+      "source": [
+        {
+          "path": "package.json",
+          "text": "{\"name\":\"phase1-authored\",\"version\":\"1.0.0\",\"scripts\":{\"postinstall\":\"HEURISKO_INERT_TEST_ONLY\"},\"main\":\"index.js\"}"
+        },
+        {
+          "path": "index.js",
+          "text": "// authored inert baseline\nexport const value = 1;\n"
+        }
+      ],
+      "artifact": [
+        {
+          "path": "package.json",
+          "text": "{\"name\":\"phase1-authored\",\"version\":\"1.0.0\",\"scripts\":{},\"main\":\"index.js\"}"
+        },
+        {
+          "path": "index.js",
+          "text": "// authored inert baseline\nexport const value = 1;\n"
+        }
+      ]
+    },
+    {
+      "id": "mutation-entrypoint",
+      "class": "mutated",
+      "truth": "Changes /main value to inert alternate path.",
+      "source": [
+        {
+          "path": "package.json",
+          "text": "{\"name\":\"phase1-authored\",\"version\":\"1.0.0\",\"scripts\":{},\"main\":\"index.js\"}"
+        },
+        {
+          "path": "index.js",
+          "text": "// authored inert baseline\nexport const value = 1;\n"
+        }
+      ],
+      "artifact": [
+        {
+          "path": "package.json",
+          "text": "{\"name\":\"phase1-authored\",\"version\":\"1.0.0\",\"scripts\":{},\"main\":\"alternate.js\"}"
+        },
+        {
+          "path": "index.js",
+          "text": "// authored inert baseline\nexport const value = 1;\n"
+        }
+      ]
+    },
+    {
+      "id": "uncertain-link",
+      "class": "uncertain",
+      "truth": "Unsupported symlink makes coverage incomplete; no clean absence claim.",
+      "source": [
+        {
+          "path": "package.json",
+          "text": "{\"name\":\"phase1-authored\",\"version\":\"1.0.0\",\"scripts\":{},\"main\":\"index.js\"}"
+        },
+        {
+          "path": "index.js",
+          "text": "// authored inert baseline\nexport const value = 1;\n"
+        }
+      ],
+      "artifact": [
+        {
+          "path": "package.json",
+          "text": "{\"name\":\"phase1-authored\",\"version\":\"1.0.0\",\"scripts\":{},\"main\":\"index.js\"}"
+        },
+        {
+          "path": "index.js",
+          "text": "// authored inert baseline\nexport const value = 1;\n"
+        },
+        {
+          "path": "unknown",
+          "type": "symlink",
+          "target": "index.js"
+        }
+      ]
+    },
+    {
+      "id": "uncertain-manifest",
+      "class": "uncertain",
+      "truth": "Duplicate manifest key prevents reliable metadata interpretation.",
+      "source": [
+        {
+          "path": "package.json",
+          "text": "{\"name\":\"phase1-authored\",\"version\":\"1.0.0\",\"scripts\":{},\"main\":\"index.js\"}"
+        },
+        {
+          "path": "index.js",
+          "text": "// authored inert baseline\nexport const value = 1;\n"
+        }
+      ],
+      "artifact": [
+        {
+          "path": "package.json",
+          "text": "{\"name\":\"phase1-authored\",\"main\":\"a\",\"main\":\"b\"}"
+        },
+        {
+          "path": "index.js",
+          "text": "// authored inert baseline\nexport const value = 1;\n"
+        }
+      ]
+    }
+  ]
+}

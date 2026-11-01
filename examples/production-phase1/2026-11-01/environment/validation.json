@@ -1,0 +1,883 @@
+{
+  "checks": {
+    "AI-development-build": {
+      "exit": 0,
+      "log": "clean-macos-intelligence-build.log"
+    },
+    "AI-development-offline-tests": {
+      "exit": 0,
+      "log": "clean-macos-intelligence-tests.log"
+    },
+    "AI-development-python-validators": {
+      "exit": 0,
+      "log": "clean-macos-intelligence-validators.log"
+    },
+    "TUI-reader-full": {
+      "exit": 0,
+      "log": "clean-macos-s4.log",
+      "tests": 40
+    },
+    "contracts": {
+      "exit": 0,
+      "log": "clean-macos-contracts.log"
+    },
+    "core-real-Docker": {
+      "exit": 0,
+      "log": "clean-macos-core.log",
+      "seconds": 137.56,
+      "tests": 146
+    },
+    "final-active-typecheck": {
+      "exit": 0,
+      "log": "final-typecheck.log"
+    },
+    "fresh-pnpm-offline-frozen": {
+      "exit": 0,
+      "log": "clean-macos-pnpm.log",
+      "seconds": 1.72
+    },
+    "fresh-python-require-hashes": {
+      "exit": 0,
+      "log": "clean-macos-pip.log",
+      "seconds": 0.92
+    },
+    "linux-amd64-hosted-image-build": {
+      "bytes": 167920457,
+      "exit": 0,
+      "imageId": "sha256:41a8e831f3acb9a929da44e14cb330d357b09f1781c17987c59eeb7aea98122d",
+      "log": "linux-final-build.log"
+    },
+    "linux-amd64-image-smoke": {
+      "containerStopped": true,
+      "healthMode": "public-readonly",
+      "healthStatus": 200,
+      "mutationError": "HOSTED_READ_ONLY",
+      "mutationStatus": 405
+    },
+    "local-inert-investigation": {
+      "audit": "clean-macos/local/audit.json",
+      "exit": 0,
+      "report": "clean-macos/local/report.json"
+    },
+    "npm-exact-investigation": {
+      "audit": "clean-macos/npm/audit.json",
+      "exit": 0,
+      "report": "clean-macos/npm/report.json"
+    },
+    "parser-boundary": {
+      "exit": 0,
+      "result": "clean-macos/parser-boundary.json"
+    },
+    "six-historical-report-reader-audit": {
+      "cases": 6,
+      "exit": 0,
+      "result": "../historical-reader-audit.json"
+    },
+    "typecheck": {
+      "exit": 0,
+      "log": "clean-macos-typecheck.log"
+    },
+    "web-full": {
+      "exit": 0,
+      "log": "clean-macos-web.log",
+      "tests": 78
+    }
+  },
+  "copy": "clean exported source with Phase 1 changes overlaid; final web AI-default code and test copied before full web/TUI suites",
+  "date": "2026-11-01",
+  "files": {
+    "clean-macos-contracts.log": {
+      "bytes": 2092,
+      "sha256": "80be9dad20dfc738aadc02701470f96f798bc3e3f64cdd77b0be27903890babf"
+    },
+    "clean-macos-core.log": {
+      "bytes": 34697,
+      "sha256": "648fcb0ad1174c0f23ace813849d0c8727acd2cd3ba74c6f121fb89c302bc7de"
+    },
+    "clean-macos-intelligence-build.log": {
+      "bytes": 301,
+      "sha256": "3810287df0a939dbb03e379c24ea0a3b748babb5cecd546c892d47ace43d90e1"
+    },
+    "clean-macos-intelligence-tests.log": {
+      "bytes": 162821,
+      "sha256": "5e3cf396ce0e7659f1ed9fd3eb75deaca69a38eae0ffe658c5159e7f9e0e2759"
+    },
+    "clean-macos-intelligence-validators.log": {
+      "bytes": 1113,
+      "sha256": "7e0df49377eae95d85e09a65dba267ffcdfb36cadd633290dd800d8c029bc52a"
+    },
+    "clean-macos-local.stderr.log": {
+      "bytes": 338,
+      "sha256": "71264842124b2e66bdc482f6bb1ac65e72982dee823472a024b4e0e6922bda10"
+    },
+    "clean-macos-local.stdout.log": {
+      "bytes": 64179,
+      "sha256": "8891afee4177115b70cb91659e0704c8356343a8e6d9ce23b0ed24687f382f20"
+    },
+    "clean-macos-npm.stderr.log": {
+      "bytes": 338,
+      "sha256": "71264842124b2e66bdc482f6bb1ac65e72982dee823472a024b4e0e6922bda10"
+    },
+    "clean-macos-npm.stdout.log": {
+      "bytes": 71725,
+      "sha256": "29723532749f12f0608a95144adea646af269b108a19ff3588397c60bca2e43c"
+    },
+    "clean-macos-parser-boundary.log": {
+      "bytes": 759,
+      "sha256": "f9a507664e564acfdff1063a822ec529f23f8bef1bcaf63e78cf3b0fff8bc557"
+    },
+    "clean-macos-pip.log": {
+      "bytes": 1140,
+      "sha256": "fae8d0dbd5164d18187ef29a8744dce1a15664e057a95fd6081e9d740e047cb8"
+    },
+    "clean-macos-pnpm.log": {
+      "bytes": 443,
+      "sha256": "826a3e3e2de7d674e0bf7bde9bad97cdda69f3cab7a1cd68627e7010300b7604"
+    },
+    "clean-macos-s4.log": {
+      "bytes": 11396,
+      "sha256": "7f2ee01a96af6dd187e445998ef960120d2fd7d09c8a4f1bb2561d32de2618f6"
+    },
+    "clean-macos-typecheck.log": {
+      "bytes": 1808,
+      "sha256": "e30be24b6ec4573b2f4a1bb90ce3a44f294d954542654923c4497951ec40af20"
+    },
+    "clean-macos-web.log": {
+      "bytes": 20799,
+      "sha256": "4b8aab329e3f0ce9145d4709b017db23c903eee8f24f32d287822659b45e21f9"
+    },
+    "clean-macos/local/audit.json": {
+      "bytes": 830,
+      "sha256": "df56f15363a84c8696ba149c8d98f7e8c30766f984b97803c1004aed650274ef"
+    },
+    "clean-macos/local/report.json": {
+      "bytes": 64178,
+      "sha256": "3e52c81d307402654b72c23e78be9b1a3e020f43d892e76a7e2cc0f003c359e6"
+    },
+    "clean-macos/local/store/blobs/0d5b22758db38f1e506ed37bc97aa553146de030b2e22816c084e0a50b1f9ca8": {
+      "bytes": 165,
+      "sha256": "0d5b22758db38f1e506ed37bc97aa553146de030b2e22816c084e0a50b1f9ca8"
+    },
+    "clean-macos/local/store/blobs/0e6ca36094c0e97cacf7b252b885763c4014edcdd20b01750f9d5735003553d3": {
+      "bytes": 1716,
+      "sha256": "0e6ca36094c0e97cacf7b252b885763c4014edcdd20b01750f9d5735003553d3"
+    },
+    "clean-macos/local/store/blobs/11643f3538c2e7c215fea1b050341e96c6322a2e8d95c69177d65d354390b835": {
+      "bytes": 341,
+      "sha256": "11643f3538c2e7c215fea1b050341e96c6322a2e8d95c69177d65d354390b835"
+    },
+    "clean-macos/local/store/blobs/1485193bd466521d8a76d44e3285b28161e03f5c7b8b4b32dab3d6237bbdc8ba": {
+      "bytes": 340,
+      "sha256": "1485193bd466521d8a76d44e3285b28161e03f5c7b8b4b32dab3d6237bbdc8ba"
+    },
+    "clean-macos/local/store/blobs/16d30e4462189fb14dd611bdb708c510630c576a1f35b9383e89a4352da36c97": {
+      "bytes": 13,
+      "sha256": "16d30e4462189fb14dd611bdb708c510630c576a1f35b9383e89a4352da36c97"
+    },
+    "clean-macos/local/store/blobs/1b8af32564e5ff8b8cb0f7704f809b423186646d38245295c47310f2ef7a3fc1": {
+      "bytes": 4334,
+      "sha256": "1b8af32564e5ff8b8cb0f7704f809b423186646d38245295c47310f2ef7a3fc1"
+    },
+    "clean-macos/local/store/blobs/213bb870fcaad4def0215fe34fbb0f529836cc4d2462e02f14f1a49d09781625": {
+      "bytes": 2663,
+      "sha256": "213bb870fcaad4def0215fe34fbb0f529836cc4d2462e02f14f1a49d09781625"
+    },
+    "clean-macos/local/store/blobs/237391ccf04026d3ba6d7277bb1a20b67a504ecf35bca25bf3351e87fa4cb228": {
+      "bytes": 2042,
+      "sha256": "237391ccf04026d3ba6d7277bb1a20b67a504ecf35bca25bf3351e87fa4cb228"
+    },
+    "clean-macos/local/store/blobs/2920e39be44057dafbf9e2782fb12ccf6aec8eb47e733d0d8ae468530d991939": {
+      "bytes": 2389,
+      "sha256": "2920e39be44057dafbf9e2782fb12ccf6aec8eb47e733d0d8ae468530d991939"
+    },
+    "clean-macos/local/store/blobs/2a8dd155acbb46a1dc5cb26f4b0978c0d8b866999e6fed5b44faffd2b7a2e13f": {
+      "bytes": 534,
+      "sha256": "2a8dd155acbb46a1dc5cb26f4b0978c0d8b866999e6fed5b44faffd2b7a2e13f"
+    },
+    "clean-macos/local/store/blobs/2ca33a37448165fc702ce95a4848a0d134f45dc5f7f2a28d58b8a97a0268c770": {
+      "bytes": 3302,
+      "sha256": "2ca33a37448165fc702ce95a4848a0d134f45dc5f7f2a28d58b8a97a0268c770"
+    },
+    "clean-macos/local/store/blobs/2de0df647e1fd8951346580891e23b8fe70aec803c742225d0c5868749b2dc6a": {
+      "bytes": 337,
+      "sha256": "2de0df647e1fd8951346580891e23b8fe70aec803c742225d0c5868749b2dc6a"
+    },
+    "clean-macos/local/store/blobs/317317f13c6359005db870fb8e22b6569272a26566382021e65853532a338484": {
+      "bytes": 2597,
+      "sha256": "317317f13c6359005db870fb8e22b6569272a26566382021e65853532a338484"
+    },
+    "clean-macos/local/store/blobs/320883948ebc210b0c8e057b68f502c37963f633ba989119f01420554445e8be": {
+      "bytes": 1663,
+      "sha256": "320883948ebc210b0c8e057b68f502c37963f633ba989119f01420554445e8be"
+    },
+    "clean-macos/local/store/blobs/34367841182335f5b8029c9dbbe45c092e172f1f226be34343540aaf0e2bd034": {
+      "bytes": 4995,
+      "sha256": "34367841182335f5b8029c9dbbe45c092e172f1f226be34343540aaf0e2bd034"
+    },
+    "clean-macos/local/store/blobs/346b9d3c61d3b4b862b57e70ad3fa466f1b31276e4f5edf2f007f4917b8d6a9e": {
+      "bytes": 343,
+      "sha256": "346b9d3c61d3b4b862b57e70ad3fa466f1b31276e4f5edf2f007f4917b8d6a9e"
+    },
+    "clean-macos/local/store/blobs/388055e92570eff448a7644e4848aa5d38c4c0839943166cbbb3b7a9d310894f": {
+      "bytes": 340,
+      "sha256": "388055e92570eff448a7644e4848aa5d38c4c0839943166cbbb3b7a9d310894f"
+    },
+    "clean-macos/local/store/blobs/3c7ddaf8eba4f23017aa59f2ff528dc174d3e15d63bb1014fd941eb8f7fb4504": {
+      "bytes": 3217,
+      "sha256": "3c7ddaf8eba4f23017aa59f2ff528dc174d3e15d63bb1014fd941eb8f7fb4504"
+    },
+    "clean-macos/local/store/blobs/3e52c81d307402654b72c23e78be9b1a3e020f43d892e76a7e2cc0f003c359e6": {
+      "bytes": 64178,
+      "sha256": "3e52c81d307402654b72c23e78be9b1a3e020f43d892e76a7e2cc0f003c359e6"
+    },
+    "clean-macos/local/store/blobs/433ee0359b3db04e698d686421d23cd9dd358d008fb92d4b3aa7d48946ea6b74": {
+      "bytes": 330,
+      "sha256": "433ee0359b3db04e698d686421d23cd9dd358d008fb92d4b3aa7d48946ea6b74"
+    },
+    "clean-macos/local/store/blobs/44adb93df68f4ac75f3ea121f91fe0208a22d5c31a33fcde0ba59d9d09ceaa3e": {
+      "bytes": 2714,
+      "sha256": "44adb93df68f4ac75f3ea121f91fe0208a22d5c31a33fcde0ba59d9d09ceaa3e"
+    },
+    "clean-macos/local/store/blobs/4afa16baaedb6f645fd2dd33275661afe16974496f33c35765f25402ab3fe069": {
+      "bytes": 353,
+      "sha256": "4afa16baaedb6f645fd2dd33275661afe16974496f33c35765f25402ab3fe069"
+    },
+    "clean-macos/local/store/blobs/5027b2836551ea0f91fa27b97335de905e24e1459d590eacfa45c0156962b70c": {
+      "bytes": 622,
+      "sha256": "5027b2836551ea0f91fa27b97335de905e24e1459d590eacfa45c0156962b70c"
+    },
+    "clean-macos/local/store/blobs/5050f9a099c2f413f7f571e5b8acf9ef14489ca7da2041c55e1313bc58bbc3b8": {
+      "bytes": 343,
+      "sha256": "5050f9a099c2f413f7f571e5b8acf9ef14489ca7da2041c55e1313bc58bbc3b8"
+    },
+    "clean-macos/local/store/blobs/5169dd23065f97ec3f91562b59a225ce5775bce1f4599f6820806bc48ee0aad3": {
+      "bytes": 337,
+      "sha256": "5169dd23065f97ec3f91562b59a225ce5775bce1f4599f6820806bc48ee0aad3"
+    },
+    "clean-macos/local/store/blobs/525fc64c1b33267253dda09d8bc6baa35c3383ce17cf6018d2e81b840d6c3b67": {
+      "bytes": 3226,
+      "sha256": "525fc64c1b33267253dda09d8bc6baa35c3383ce17cf6018d2e81b840d6c3b67"
+    },
+    "clean-macos/local/store/blobs/531585f1f6134d6d8bc292f8152263f16f5315107ad80e67ec72b1051c2cf1b8": {
+      "bytes": 361,
+      "sha256": "531585f1f6134d6d8bc292f8152263f16f5315107ad80e67ec72b1051c2cf1b8"
+    },
+    "clean-macos/local/store/blobs/54e959f82fe35faa7993ccb9f27cc8f16b02f226d8c64fa0a8d850bd03d475b8": {
+      "bytes": 342,
+      "sha256": "54e959f82fe35faa7993ccb9f27cc8f16b02f226d8c64fa0a8d850bd03d475b8"
+    },
+    "clean-macos/local/store/blobs/55aab7ebb689858284e3f939d67699472a9ee0c06efeac7ed5df46ecfa36cb27": {
+      "bytes": 908,
+      "sha256": "55aab7ebb689858284e3f939d67699472a9ee0c06efeac7ed5df46ecfa36cb27"
+    },
+    "clean-macos/local/store/blobs/578db2d4b24bb7762f767c654f06360c3c2d930b60bebd5b25a5ccf9210665c3": {
+      "bytes": 557,
+      "sha256": "578db2d4b24bb7762f767c654f06360c3c2d930b60bebd5b25a5ccf9210665c3"
+    },
+    "clean-macos/local/store/blobs/58546f33e3d8d110d1cc9dd1b6a5097066bd6c475ab0fea4498b4d2f67a00436": {
+      "bytes": 273,
+      "sha256": "58546f33e3d8d110d1cc9dd1b6a5097066bd6c475ab0fea4498b4d2f67a00436"
+    },
+    "clean-macos/local/store/blobs/590595c1230ebb7c43ebac51b2b2da956a719b213355b4358e2a6b16a8b5936c": {
+      "bytes": 1013,
+      "sha256": "590595c1230ebb7c43ebac51b2b2da956a719b213355b4358e2a6b16a8b5936c"
+    },
+    "clean-macos/local/store/blobs/64a4d1c9ac4f2218d96afbcd64bb8a64b3d767e01bbb546e714b1fdc2e4d213c": {
+      "bytes": 1189,
+      "sha256": "64a4d1c9ac4f2218d96afbcd64bb8a64b3d767e01bbb546e714b1fdc2e4d213c"
+    },
+    "clean-macos/local/store/blobs/6582629e2979466878f6014313dcc2f3756c9616148682227ce3063dde310750": {
+      "bytes": 787,
+      "sha256": "6582629e2979466878f6014313dcc2f3756c9616148682227ce3063dde310750"
+    },
+    "clean-macos/local/store/blobs/68d8737e023ca9f4dbff90cafb1dc89e5ba6b26f99a1bde3fa43bbdc44a66b7f": {
+      "bytes": 2742,
+      "sha256": "68d8737e023ca9f4dbff90cafb1dc89e5ba6b26f99a1bde3fa43bbdc44a66b7f"
+    },
+    "clean-macos/local/store/blobs/6f9f7b9c4cd3d1672131e3da90d96eaa21f0515cae65b89872a1af27bb1c60d7": {
+      "bytes": 336,
+      "sha256": "6f9f7b9c4cd3d1672131e3da90d96eaa21f0515cae65b89872a1af27bb1c60d7"
+    },
+    "clean-macos/local/store/blobs/75905e31378a777a4a77d1541fd7f1b92a9508eb2585f127a3db211cbea80732": {
+      "bytes": 3225,
+      "sha256": "75905e31378a777a4a77d1541fd7f1b92a9508eb2585f127a3db211cbea80732"
+    },
+    "clean-macos/local/store/blobs/76124c34a1d7110bbe0db5578ee039d79e3c411a1064ae2f0ddeb728fea68f56": {
+      "bytes": 1107,
+      "sha256": "76124c34a1d7110bbe0db5578ee039d79e3c411a1064ae2f0ddeb728fea68f56"
+    },
+    "clean-macos/local/store/blobs/76c3c3d960bb127db86e9c584e638799df75129e7afb4b4de5aa51fe9a1f3681": {
+      "bytes": 422,
+      "sha256": "76c3c3d960bb127db86e9c584e638799df75129e7afb4b4de5aa51fe9a1f3681"
+    },
+    "clean-macos/local/store/blobs/7797a2d96e31fd3d1da7462b661e36a2f06b5aa7f5b871e5986203e91f373aad": {
+      "bytes": 3345,
+      "sha256": "7797a2d96e31fd3d1da7462b661e36a2f06b5aa7f5b871e5986203e91f373aad"
+    },
+    "clean-macos/local/store/blobs/78bb547c6d6c56c2ede9ed7a291d099e33a60c731ff050799a4e1eb818d28c65": {
+      "bytes": 345,
+      "sha256": "78bb547c6d6c56c2ede9ed7a291d099e33a60c731ff050799a4e1eb818d28c65"
+    },
+    "clean-macos/local/store/blobs/7a3c52f58ea39d5e2d33d70ed89e662ae86955295588988e91731d73de633d15": {
+      "bytes": 326,
+      "sha256": "7a3c52f58ea39d5e2d33d70ed89e662ae86955295588988e91731d73de633d15"
+    },
+    "clean-macos/local/store/blobs/809096145df43dd6c34d9cd1bd08dccad12bc81d1ac38f347e11b03c777cec9d": {
+      "bytes": 336,
+      "sha256": "809096145df43dd6c34d9cd1bd08dccad12bc81d1ac38f347e11b03c777cec9d"
+    },
+    "clean-macos/local/store/blobs/8486b68a2a04c756654b9d2979c68555cd958043d1bdc5d18559b23590828e4d": {
+      "bytes": 3239,
+      "sha256": "8486b68a2a04c756654b9d2979c68555cd958043d1bdc5d18559b23590828e4d"
+    },
+    "clean-macos/local/store/blobs/85072082e46e16b9ca93b591ff96380a6591a25112538d3ffa677dd89e5b370b": {
+      "bytes": 343,
+      "sha256": "85072082e46e16b9ca93b591ff96380a6591a25112538d3ffa677dd89e5b370b"
+    },
+    "clean-macos/local/store/blobs/87206303dac6328281d188f0e10ffb0b2a0df0b549f441c64cc2689fafb35d70": {
+      "bytes": 1709,
+      "sha256": "87206303dac6328281d188f0e10ffb0b2a0df0b549f441c64cc2689fafb35d70"
+    },
+    "clean-macos/local/store/blobs/87646ed7f9b372d94da80ec298ef4ec6fc0c2a56bb60e0b325a9705037408c7c": {
+      "bytes": 9432,
+      "sha256": "87646ed7f9b372d94da80ec298ef4ec6fc0c2a56bb60e0b325a9705037408c7c"
+    },
+    "clean-macos/local/store/blobs/8c5f0739f00f89f89b03a1fe6658c6d78000d7ebd7f556f0f8d6908fa679de35": {
+      "bytes": 138,
+      "sha256": "8c5f0739f00f89f89b03a1fe6658c6d78000d7ebd7f556f0f8d6908fa679de35"
+    },
+    "clean-macos/local/store/blobs/8e9967a3973a4ec978dd41e7a6cc69d1cedc1a2dd688295b7251f9b32a1778b9": {
+      "bytes": 328,
+      "sha256": "8e9967a3973a4ec978dd41e7a6cc69d1cedc1a2dd688295b7251f9b32a1778b9"
+    },
+    "clean-macos/local/store/blobs/92520d502ee386364282130d2fa2e55ad189cf08e4ea707a3fcf301e55fe88c1": {
+      "bytes": 885,
+      "sha256": "92520d502ee386364282130d2fa2e55ad189cf08e4ea707a3fcf301e55fe88c1"
+    },
+    "clean-macos/local/store/blobs/957040db522067e4ce0e1de7cc25ee29175d9aad58123f185214aa724108d331": {
+      "bytes": 575,
+      "sha256": "957040db522067e4ce0e1de7cc25ee29175d9aad58123f185214aa724108d331"
+    },
+    "clean-macos/local/store/blobs/9a34d49facf7903ce262125d2eb779b982fd697951572f0a967cc6bfea9c068f": {
+      "bytes": 340,
+      "sha256": "9a34d49facf7903ce262125d2eb779b982fd697951572f0a967cc6bfea9c068f"
+    },
+    "clean-macos/local/store/blobs/9bac9395a82958a1bb1552c2522c50ffc90336fb5f32882dda06b7aa38f1cdda": {
+      "bytes": 339,
+      "sha256": "9bac9395a82958a1bb1552c2522c50ffc90336fb5f32882dda06b7aa38f1cdda"
+    },
+    "clean-macos/local/store/blobs/a1e9d16b8595d11a4ea1a1e923da202141580f02480a12e219b72c911eada350": {
+      "bytes": 3209,
+      "sha256": "a1e9d16b8595d11a4ea1a1e923da202141580f02480a12e219b72c911eada350"
+    },
+    "clean-macos/local/store/blobs/a25a6582b1e0dc73cd0a9147e247ccd3ef97def5186e05f8a12c89e2147f1b57": {
+      "bytes": 1417,
+      "sha256": "a25a6582b1e0dc73cd0a9147e247ccd3ef97def5186e05f8a12c89e2147f1b57"
+    },
+    "clean-macos/local/store/blobs/a2e045ba16013e35c7045797ae940e3ea1c0e0ada13467bc73f7538690ea091a": {
+      "bytes": 598,
+      "sha256": "a2e045ba16013e35c7045797ae940e3ea1c0e0ada13467bc73f7538690ea091a"
+    },
+    "clean-macos/local/store/blobs/a406d244ff5e3cbd404a38502d15aae33673e7ae9e5ca76dde2d4727186c9f63": {
+      "bytes": 11131,
+      "sha256": "a406d244ff5e3cbd404a38502d15aae33673e7ae9e5ca76dde2d4727186c9f63"
+    },
+    "clean-macos/local/store/blobs/a54b9359e0f038872752190a5c16c5b0f2d55d7906d3d9bc55518cd7f805510d": {
+      "bytes": 1681,
+      "sha256": "a54b9359e0f038872752190a5c16c5b0f2d55d7906d3d9bc55518cd7f805510d"
+    },
+    "clean-macos/local/store/blobs/aa08268064c637a032e2ebfe5f2cb04b9d5130136a5d9a81445542004e0bffdd": {
+      "bytes": 337,
+      "sha256": "aa08268064c637a032e2ebfe5f2cb04b9d5130136a5d9a81445542004e0bffdd"
+    },
+    "clean-macos/local/store/blobs/aa700978e0616f9e655bcec5cec9d8ace66af5fa43126c5425ac0daaf688f89d": {
+      "bytes": 342,
+      "sha256": "aa700978e0616f9e655bcec5cec9d8ace66af5fa43126c5425ac0daaf688f89d"
+    },
+    "clean-macos/local/store/blobs/b0d205d8bd317cf70826ee4b465f3051783d45d94663da06c5c06fc5fa03e81c": {
+      "bytes": 848,
+      "sha256": "b0d205d8bd317cf70826ee4b465f3051783d45d94663da06c5c06fc5fa03e81c"
+    },
+    "clean-macos/local/store/blobs/b3459efe33d502b72b32c72e6d91460f541112fbdfe5e12be62b01015c1bc475": {
+      "bytes": 3226,
+      "sha256": "b3459efe33d502b72b32c72e6d91460f541112fbdfe5e12be62b01015c1bc475"
+    },
+    "clean-macos/local/store/blobs/baab6f9003dea1da44be1e3c5f7af7c5980f3b2e8ee69ba2afcd900a16790950": {
+      "bytes": 2080,
+      "sha256": "baab6f9003dea1da44be1e3c5f7af7c5980f3b2e8ee69ba2afcd900a16790950"
+    },
+    "clean-macos/local/store/blobs/bc0af890614a7f28ac6b7756f3b5bf5ff6b067a224d0a038892536efa8667a31": {
+      "bytes": 499,
+      "sha256": "bc0af890614a7f28ac6b7756f3b5bf5ff6b067a224d0a038892536efa8667a31"
+    },
+    "clean-macos/local/store/blobs/bcdd003ee749b70575fb2793d3892a393d1224457ecb8ca9c37ff4cfd55e098d": {
+      "bytes": 2785,
+      "sha256": "bcdd003ee749b70575fb2793d3892a393d1224457ecb8ca9c37ff4cfd55e098d"
+    },
+    "clean-macos/local/store/blobs/d6bfc5ebb6ea2cdbb9ba4fe178f1bb307a1aadef55c8c9c45e6b45ed31f439da": {
+      "bytes": 334,
+      "sha256": "d6bfc5ebb6ea2cdbb9ba4fe178f1bb307a1aadef55c8c9c45e6b45ed31f439da"
+    },
+    "clean-macos/local/store/blobs/dbed1b691a306da78cf27d02e4809dbb5f90946737484b64ff2f944cea9b54b7": {
+      "bytes": 330,
+      "sha256": "dbed1b691a306da78cf27d02e4809dbb5f90946737484b64ff2f944cea9b54b7"
+    },
+    "clean-macos/local/store/blobs/ded434273828c3dcb14a04d51599cdc4ded4158f7700a16092b42e4fcf6c4c40": {
+      "bytes": 337,
+      "sha256": "ded434273828c3dcb14a04d51599cdc4ded4158f7700a16092b42e4fcf6c4c40"
+    },
+    "clean-macos/local/store/blobs/dfbf56ed3a787854f41a3580148db8d3f3f4691ec6a9e641c1498f1a03a57e0b": {
+      "bytes": 326,
+      "sha256": "dfbf56ed3a787854f41a3580148db8d3f3f4691ec6a9e641c1498f1a03a57e0b"
+    },
+    "clean-macos/local/store/blobs/e3db7386f7402cd4d4b5d8d6611b10a9865c14475edc80266e23517d7bde2289": {
+      "bytes": 81,
+      "sha256": "e3db7386f7402cd4d4b5d8d6611b10a9865c14475edc80266e23517d7bde2289"
+    },
+    "clean-macos/local/store/blobs/e41d1117ab01f30c941063f2a24d0046fb523389a699b10f5dee3b3ef1483ce8": {
+      "bytes": 358,
+      "sha256": "e41d1117ab01f30c941063f2a24d0046fb523389a699b10f5dee3b3ef1483ce8"
+    },
+    "clean-macos/local/store/blobs/e58101cb26b939dbca4153df05164a53b70596ccaef3fbfb9ee0966ccb9993bf": {
+      "bytes": 419,
+      "sha256": "e58101cb26b939dbca4153df05164a53b70596ccaef3fbfb9ee0966ccb9993bf"
+    },
+    "clean-macos/local/store/blobs/f40b0e778cdf5ac0add0aa3f7f9c0853080a896dc7bf3ecd4dce94d6eee29c7e": {
+      "bytes": 3425,
+      "sha256": "f40b0e778cdf5ac0add0aa3f7f9c0853080a896dc7bf3ecd4dce94d6eee29c7e"
+    },
+    "clean-macos/local/store/blobs/f47239397b7822519c35144a37158b0ff4bb7eeddf325e8b518774ab6be02c61": {
+      "bytes": 618,
+      "sha256": "f47239397b7822519c35144a37158b0ff4bb7eeddf325e8b518774ab6be02c61"
+    },
+    "clean-macos/local/store/blobs/f93e98efe4048c6e76f240a408fb761b99a01058be5252e445ed71bded412274": {
+      "bytes": 341,
+      "sha256": "f93e98efe4048c6e76f240a408fb761b99a01058be5252e445ed71bded412274"
+    },
+    "clean-macos/local/store/blobs/faae13c791f3d245a60b4774a1d08890369ece1b0bae53eae1071ea73780b53b": {
+      "bytes": 221,
+      "sha256": "faae13c791f3d245a60b4774a1d08890369ece1b0bae53eae1071ea73780b53b"
+    },
+    "clean-macos/local/store/blobs/fe2731ad84a6dac49f7a7190de96211d571c31a8576019d7eaffe4bcd2aa0d92": {
+      "bytes": 330,
+      "sha256": "fe2731ad84a6dac49f7a7190de96211d571c31a8576019d7eaffe4bcd2aa0d92"
+    },
+    "clean-macos/local/store/blobs/ffbc96b432dd69b026a37c98bc1d993ce0c5513a72cb592a6ca86424ee30c89b": {
+      "bytes": 346,
+      "sha256": "ffbc96b432dd69b026a37c98bc1d993ce0c5513a72cb592a6ca86424ee30c89b"
+    },
+    "clean-macos/local/store/identities/report_a12f5af652e46146f353602a.json": {
+      "bytes": 491,
+      "sha256": "a12f5af652e46146f353602a1df994ad76097d4354ac4ffbe04bb4a89493e17f"
+    },
+    "clean-macos/local/store/runs/report_a12f5af652e46146f353602a/3e52c81d307402654b72c23e78be9b1a3e020f43d892e76a7e2cc0f003c359e6.json": {
+      "bytes": 202,
+      "sha256": "265d9874f7b16676ef4f0c7495fc5294869f4e6af040b8847382757e88275822"
+    },
+    "clean-macos/npm/audit.json": {
+      "bytes": 818,
+      "sha256": "a4a6c6f0e413e9431d58215d32ea443e6635ce78f2e64510413b37a9647252b7"
+    },
+    "clean-macos/npm/report.json": {
+      "bytes": 71724,
+      "sha256": "c34351012957c764594da9bc28dfc7688d79cb3f546c68c4c1693c4b56ebf380"
+    },
+    "clean-macos/npm/store/blobs/002f2e8088a88bcc157a1000347306b26c9a9da1a039b78d4c74e54ee7d03138": {
+      "bytes": 340,
+      "sha256": "002f2e8088a88bcc157a1000347306b26c9a9da1a039b78d4c74e54ee7d03138"
+    },
+    "clean-macos/npm/store/blobs/06e0f4802c19e5c7680a5447bc011c46a99325a721caa94ef4eabb66cbd66520": {
+      "bytes": 3218,
+      "sha256": "06e0f4802c19e5c7680a5447bc011c46a99325a721caa94ef4eabb66cbd66520"
+    },
+    "clean-macos/npm/store/blobs/072f794390753b4635733a6c2789885706d29ad7124c0efba26d9a515c97167b": {
+      "bytes": 343,
+      "sha256": "072f794390753b4635733a6c2789885706d29ad7124c0efba26d9a515c97167b"
+    },
+    "clean-macos/npm/store/blobs/0894602a2e62fe1ed726c57fad2dd2ac4904eb6d8c7fea138c6f245c801d82ca": {
+      "bytes": 345,
+      "sha256": "0894602a2e62fe1ed726c57fad2dd2ac4904eb6d8c7fea138c6f245c801d82ca"
+    },
+    "clean-macos/npm/store/blobs/0abd28bc0d7380847615cb7267214cafecc2b9e67ef3405720a25fca49ce283f": {
+      "bytes": 2081,
+      "sha256": "0abd28bc0d7380847615cb7267214cafecc2b9e67ef3405720a25fca49ce283f"
+    },
+    "clean-macos/npm/store/blobs/0d5b22758db38f1e506ed37bc97aa553146de030b2e22816c084e0a50b1f9ca8": {
+      "bytes": 165,
+      "sha256": "0d5b22758db38f1e506ed37bc97aa553146de030b2e22816c084e0a50b1f9ca8"
+    },
+    "clean-macos/npm/store/blobs/1485193bd466521d8a76d44e3285b28161e03f5c7b8b4b32dab3d6237bbdc8ba": {
+      "bytes": 340,
+      "sha256": "1485193bd466521d8a76d44e3285b28161e03f5c7b8b4b32dab3d6237bbdc8ba"
+    },
+    "clean-macos/npm/store/blobs/152507edef9e4801817c231f5f15ec5c563302366951fd226d45460b5680dc2d": {
+      "bytes": 768,
+      "sha256": "152507edef9e4801817c231f5f15ec5c563302366951fd226d45460b5680dc2d"
+    },
+    "clean-macos/npm/store/blobs/16d30e4462189fb14dd611bdb708c510630c576a1f35b9383e89a4352da36c97": {
+      "bytes": 13,
+      "sha256": "16d30e4462189fb14dd611bdb708c510630c576a1f35b9383e89a4352da36c97"
+    },
+    "clean-macos/npm/store/blobs/1b8af32564e5ff8b8cb0f7704f809b423186646d38245295c47310f2ef7a3fc1": {
+      "bytes": 4334,
+      "sha256": "1b8af32564e5ff8b8cb0f7704f809b423186646d38245295c47310f2ef7a3fc1"
+    },
+    "clean-macos/npm/store/blobs/213bb870fcaad4def0215fe34fbb0f529836cc4d2462e02f14f1a49d09781625": {
+      "bytes": 2663,
+      "sha256": "213bb870fcaad4def0215fe34fbb0f529836cc4d2462e02f14f1a49d09781625"
+    },
+    "clean-macos/npm/store/blobs/237391ccf04026d3ba6d7277bb1a20b67a504ecf35bca25bf3351e87fa4cb228": {
+      "bytes": 2042,
+      "sha256": "237391ccf04026d3ba6d7277bb1a20b67a504ecf35bca25bf3351e87fa4cb228"
+    },
+    "clean-macos/npm/store/blobs/23f61161f835b38490668d7b9b8eea6bbe4e6b23c93dbb31c78079cb53b0d1fd": {
+      "bytes": 225,
+      "sha256": "23f61161f835b38490668d7b9b8eea6bbe4e6b23c93dbb31c78079cb53b0d1fd"
+    },
+    "clean-macos/npm/store/blobs/266d7eaf8495cc19169865c436a4f287c718dc38cb2aa325b6cbb925d61429b3": {
+      "bytes": 330,
+      "sha256": "266d7eaf8495cc19169865c436a4f287c718dc38cb2aa325b6cbb925d61429b3"
+    },
+    "clean-macos/npm/store/blobs/2da79276ccd62d09bdcdaa5e671436bcc8073b948c874096a4b3cb33250024fb": {
+      "bytes": 3226,
+      "sha256": "2da79276ccd62d09bdcdaa5e671436bcc8073b948c874096a4b3cb33250024fb"
+    },
+    "clean-macos/npm/store/blobs/317317f13c6359005db870fb8e22b6569272a26566382021e65853532a338484": {
+      "bytes": 2597,
+      "sha256": "317317f13c6359005db870fb8e22b6569272a26566382021e65853532a338484"
+    },
+    "clean-macos/npm/store/blobs/320883948ebc210b0c8e057b68f502c37963f633ba989119f01420554445e8be": {
+      "bytes": 1663,
+      "sha256": "320883948ebc210b0c8e057b68f502c37963f633ba989119f01420554445e8be"
+    },
+    "clean-macos/npm/store/blobs/33f83299d274b3d9564fcba0c9acac7141a27df2525e8f8537ddb9cd6652933f": {
+      "bytes": 326,
+      "sha256": "33f83299d274b3d9564fcba0c9acac7141a27df2525e8f8537ddb9cd6652933f"
+    },
+    "clean-macos/npm/store/blobs/34367841182335f5b8029c9dbbe45c092e172f1f226be34343540aaf0e2bd034": {
+      "bytes": 4995,
+      "sha256": "34367841182335f5b8029c9dbbe45c092e172f1f226be34343540aaf0e2bd034"
+    },
+    "clean-macos/npm/store/blobs/3499e78157e8ce14f9eed23e55c5eb82ac9aa97d6bf0d5aa88621e3d8cdb59cb": {
+      "bytes": 820,
+      "sha256": "3499e78157e8ce14f9eed23e55c5eb82ac9aa97d6bf0d5aa88621e3d8cdb59cb"
+    },
+    "clean-macos/npm/store/blobs/3b12da8d7ea32f46a7966c070e4e3b25f05fb7b8081529bf868dfddf756e1286": {
+      "bytes": 525,
+      "sha256": "3b12da8d7ea32f46a7966c070e4e3b25f05fb7b8081529bf868dfddf756e1286"
+    },
+    "clean-macos/npm/store/blobs/433ee0359b3db04e698d686421d23cd9dd358d008fb92d4b3aa7d48946ea6b74": {
+      "bytes": 330,
+      "sha256": "433ee0359b3db04e698d686421d23cd9dd358d008fb92d4b3aa7d48946ea6b74"
+    },
+    "clean-macos/npm/store/blobs/469edbe4663b07f19026f60ec43744bad678caa89a6be7bf6c4692e2967ddf9d": {
+      "bytes": 1510,
+      "sha256": "469edbe4663b07f19026f60ec43744bad678caa89a6be7bf6c4692e2967ddf9d"
+    },
+    "clean-macos/npm/store/blobs/49385b42ca15630c9f8afbee63bd345efcb213e316efa707391a754d2d4bc089": {
+      "bytes": 730,
+      "sha256": "49385b42ca15630c9f8afbee63bd345efcb213e316efa707391a754d2d4bc089"
+    },
+    "clean-macos/npm/store/blobs/4dbc541196e12d81b62159c4b8697b0da7dad7e4b67728a7553098bea6d150ac": {
+      "bytes": 2032,
+      "sha256": "4dbc541196e12d81b62159c4b8697b0da7dad7e4b67728a7553098bea6d150ac"
+    },
+    "clean-macos/npm/store/blobs/5027b2836551ea0f91fa27b97335de905e24e1459d590eacfa45c0156962b70c": {
+      "bytes": 622,
+      "sha256": "5027b2836551ea0f91fa27b97335de905e24e1459d590eacfa45c0156962b70c"
+    },
+    "clean-macos/npm/store/blobs/52181c8602e0fe809d7d9ec81562f41db9132e911724e14c9497f975b22bb390": {
+      "bytes": 2390,
+      "sha256": "52181c8602e0fe809d7d9ec81562f41db9132e911724e14c9497f975b22bb390"
+    },
+    "clean-macos/npm/store/blobs/54e959f82fe35faa7993ccb9f27cc8f16b02f226d8c64fa0a8d850bd03d475b8": {
+      "bytes": 342,
+      "sha256": "54e959f82fe35faa7993ccb9f27cc8f16b02f226d8c64fa0a8d850bd03d475b8"
+    },
+    "clean-macos/npm/store/blobs/55aab7ebb689858284e3f939d67699472a9ee0c06efeac7ed5df46ecfa36cb27": {
+      "bytes": 908,
+      "sha256": "55aab7ebb689858284e3f939d67699472a9ee0c06efeac7ed5df46ecfa36cb27"
+    },
+    "clean-macos/npm/store/blobs/58546f33e3d8d110d1cc9dd1b6a5097066bd6c475ab0fea4498b4d2f67a00436": {
+      "bytes": 273,
+      "sha256": "58546f33e3d8d110d1cc9dd1b6a5097066bd6c475ab0fea4498b4d2f67a00436"
+    },
+    "clean-macos/npm/store/blobs/590595c1230ebb7c43ebac51b2b2da956a719b213355b4358e2a6b16a8b5936c": {
+      "bytes": 1013,
+      "sha256": "590595c1230ebb7c43ebac51b2b2da956a719b213355b4358e2a6b16a8b5936c"
+    },
+    "clean-macos/npm/store/blobs/5bc552da60cd7374f7961f5b34e069e499142fde8026a290112abb4ba7077fbb": {
+      "bytes": 176,
+      "sha256": "5bc552da60cd7374f7961f5b34e069e499142fde8026a290112abb4ba7077fbb"
+    },
+    "clean-macos/npm/store/blobs/5c26f714634836914d005646387a892fc4ccdfbf9e4d381b92a2ce2098e33a64": {
+      "bytes": 2966,
+      "sha256": "5c26f714634836914d005646387a892fc4ccdfbf9e4d381b92a2ce2098e33a64"
+    },
+    "clean-macos/npm/store/blobs/5c39afeba5aa6fc006f151cb2bc9f7c6de8e29478a2467623d88a9660a8ebed2": {
+      "bytes": 3227,
+      "sha256": "5c39afeba5aa6fc006f151cb2bc9f7c6de8e29478a2467623d88a9660a8ebed2"
+    },
+    "clean-macos/npm/store/blobs/5caa38aca46545cacc6536bcf88c938cdc868cbcb49f52244e59e184fec2365a": {
+      "bytes": 500,
+      "sha256": "5caa38aca46545cacc6536bcf88c938cdc868cbcb49f52244e59e184fec2365a"
+    },
+    "clean-macos/npm/store/blobs/5ed54de6d688951ef39f94f444dbeebfa71c32d8e1f839cf13bcd0b0b958a616": {
+      "bytes": 1889,
+      "sha256": "5ed54de6d688951ef39f94f444dbeebfa71c32d8e1f839cf13bcd0b0b958a616"
+    },
+    "clean-macos/npm/store/blobs/601d4638ba08a905461c6c9e739ad8b8d634df06c379e2d822453830df307e53": {
+      "bytes": 341,
+      "sha256": "601d4638ba08a905461c6c9e739ad8b8d634df06c379e2d822453830df307e53"
+    },
+    "clean-macos/npm/store/blobs/6102452c5a7311594a670aa536348e24876ff1806d7a8d79813943be2f4761c0": {
+      "bytes": 337,
+      "sha256": "6102452c5a7311594a670aa536348e24876ff1806d7a8d79813943be2f4761c0"
+    },
+    "clean-macos/npm/store/blobs/64a4d1c9ac4f2218d96afbcd64bb8a64b3d767e01bbb546e714b1fdc2e4d213c": {
+      "bytes": 1189,
+      "sha256": "64a4d1c9ac4f2218d96afbcd64bb8a64b3d767e01bbb546e714b1fdc2e4d213c"
+    },
+    "clean-macos/npm/store/blobs/6582629e2979466878f6014313dcc2f3756c9616148682227ce3063dde310750": {
+      "bytes": 787,
+      "sha256": "6582629e2979466878f6014313dcc2f3756c9616148682227ce3063dde310750"
+    },
+    "clean-macos/npm/store/blobs/7274301da25a7d24eaf11e67e9ebefb21c131beb3fcb37c02e4685ca6dcf7431": {
+      "bytes": 336,
+      "sha256": "7274301da25a7d24eaf11e67e9ebefb21c131beb3fcb37c02e4685ca6dcf7431"
+    },
+    "clean-macos/npm/store/blobs/76124c34a1d7110bbe0db5578ee039d79e3c411a1064ae2f0ddeb728fea68f56": {
+      "bytes": 1107,
+      "sha256": "76124c34a1d7110bbe0db5578ee039d79e3c411a1064ae2f0ddeb728fea68f56"
+    },
+    "clean-macos/npm/store/blobs/7797a2d96e31fd3d1da7462b661e36a2f06b5aa7f5b871e5986203e91f373aad": {
+      "bytes": 3345,
+      "sha256": "7797a2d96e31fd3d1da7462b661e36a2f06b5aa7f5b871e5986203e91f373aad"
+    },
+    "clean-macos/npm/store/blobs/809096145df43dd6c34d9cd1bd08dccad12bc81d1ac38f347e11b03c777cec9d": {
+      "bytes": 336,
+      "sha256": "809096145df43dd6c34d9cd1bd08dccad12bc81d1ac38f347e11b03c777cec9d"
+    },
+    "clean-macos/npm/store/blobs/80eb538623029e45f26b78cddb5877023abe5d229a9a94d72f6fdd02c712574e": {
+      "bytes": 328,
+      "sha256": "80eb538623029e45f26b78cddb5877023abe5d229a9a94d72f6fdd02c712574e"
+    },
+    "clean-macos/npm/store/blobs/8138d8c428d1d2f2623f3f910582807dc2196c90c9ca557afbbf03db0c1855e1": {
+      "bytes": 339,
+      "sha256": "8138d8c428d1d2f2623f3f910582807dc2196c90c9ca557afbbf03db0c1855e1"
+    },
+    "clean-macos/npm/store/blobs/8486b68a2a04c756654b9d2979c68555cd958043d1bdc5d18559b23590828e4d": {
+      "bytes": 3239,
+      "sha256": "8486b68a2a04c756654b9d2979c68555cd958043d1bdc5d18559b23590828e4d"
+    },
+    "clean-macos/npm/store/blobs/87646ed7f9b372d94da80ec298ef4ec6fc0c2a56bb60e0b325a9705037408c7c": {
+      "bytes": 9432,
+      "sha256": "87646ed7f9b372d94da80ec298ef4ec6fc0c2a56bb60e0b325a9705037408c7c"
+    },
+    "clean-macos/npm/store/blobs/87b08e35aeba41865eb9c661a69fbccc21aa9babf6a701786fb1b340d00219f8": {
+      "bytes": 326,
+      "sha256": "87b08e35aeba41865eb9c661a69fbccc21aa9babf6a701786fb1b340d00219f8"
+    },
+    "clean-macos/npm/store/blobs/8c5f0739f00f89f89b03a1fe6658c6d78000d7ebd7f556f0f8d6908fa679de35": {
+      "bytes": 138,
+      "sha256": "8c5f0739f00f89f89b03a1fe6658c6d78000d7ebd7f556f0f8d6908fa679de35"
+    },
+    "clean-macos/npm/store/blobs/92520d502ee386364282130d2fa2e55ad189cf08e4ea707a3fcf301e55fe88c1": {
+      "bytes": 885,
+      "sha256": "92520d502ee386364282130d2fa2e55ad189cf08e4ea707a3fcf301e55fe88c1"
+    },
+    "clean-macos/npm/store/blobs/9ae589452bb6f5057f706ae66b72fae55e802cf7dbd74d7af896659ef3f58f3d": {
+      "bytes": 693,
+      "sha256": "9ae589452bb6f5057f706ae66b72fae55e802cf7dbd74d7af896659ef3f58f3d"
+    },
+    "clean-macos/npm/store/blobs/9c6cdf861be3a099424c6be279a2d7f09423517d6d0fbd1357ecc7deb67f608d": {
+      "bytes": 361,
+      "sha256": "9c6cdf861be3a099424c6be279a2d7f09423517d6d0fbd1357ecc7deb67f608d"
+    },
+    "clean-macos/npm/store/blobs/9cbe35ed92aa43b0e6db9850a4d0ac4dcc527856e82fd14ee26631b8056c0cb9": {
+      "bytes": 340,
+      "sha256": "9cbe35ed92aa43b0e6db9850a4d0ac4dcc527856e82fd14ee26631b8056c0cb9"
+    },
+    "clean-macos/npm/store/blobs/9d2bc7a2645cfdcbb1388301d1c09c06385a06eb7968dbf2d69cfc670f8ce12f": {
+      "bytes": 337,
+      "sha256": "9d2bc7a2645cfdcbb1388301d1c09c06385a06eb7968dbf2d69cfc670f8ce12f"
+    },
+    "clean-macos/npm/store/blobs/9e944a68deb95877028a6791e2b02c9e2e4be3e9b00fd90b1abdbe32a2ae380b": {
+      "bytes": 385,
+      "sha256": "9e944a68deb95877028a6791e2b02c9e2e4be3e9b00fd90b1abdbe32a2ae380b"
+    },
+    "clean-macos/npm/store/blobs/9f77c24d572db0651c6508cb3d25c4bcffa525df28d2f5a80f37bd970d51aaf0": {
+      "bytes": 197,
+      "sha256": "9f77c24d572db0651c6508cb3d25c4bcffa525df28d2f5a80f37bd970d51aaf0"
+    },
+    "clean-macos/npm/store/blobs/a103dca435b999a9acbfd2ba5898b7a17eab68dccd60a52bad6d751ca9249695": {
+      "bytes": 2715,
+      "sha256": "a103dca435b999a9acbfd2ba5898b7a17eab68dccd60a52bad6d751ca9249695"
+    },
+    "clean-macos/npm/store/blobs/a25a6582b1e0dc73cd0a9147e247ccd3ef97def5186e05f8a12c89e2147f1b57": {
+      "bytes": 1417,
+      "sha256": "a25a6582b1e0dc73cd0a9147e247ccd3ef97def5186e05f8a12c89e2147f1b57"
+    },
+    "clean-macos/npm/store/blobs/a2e045ba16013e35c7045797ae940e3ea1c0e0ada13467bc73f7538690ea091a": {
+      "bytes": 598,
+      "sha256": "a2e045ba16013e35c7045797ae940e3ea1c0e0ada13467bc73f7538690ea091a"
+    },
+    "clean-macos/npm/store/blobs/a3b5010032eb48983c8868712449f1cc675c4727eb8015b703388451572f44d7": {
+      "bytes": 354,
+      "sha256": "a3b5010032eb48983c8868712449f1cc675c4727eb8015b703388451572f44d7"
+    },
+    "clean-macos/npm/store/blobs/a406d244ff5e3cbd404a38502d15aae33673e7ae9e5ca76dde2d4727186c9f63": {
+      "bytes": 11131,
+      "sha256": "a406d244ff5e3cbd404a38502d15aae33673e7ae9e5ca76dde2d4727186c9f63"
+    },
+    "clean-macos/npm/store/blobs/a5d477a582039cc6bf14c96f61c00f5c1fb9b7aa61f8ac00b3357013d1a6d6d7": {
+      "bytes": 1763,
+      "sha256": "a5d477a582039cc6bf14c96f61c00f5c1fb9b7aa61f8ac00b3357013d1a6d6d7"
+    },
+    "clean-macos/npm/store/blobs/a7753bdd6ed6d0e0e67f91344bbe54a603d7289df6cb5ddec94b7f23242e3263": {
+      "bytes": 341,
+      "sha256": "a7753bdd6ed6d0e0e67f91344bbe54a603d7289df6cb5ddec94b7f23242e3263"
+    },
+    "clean-macos/npm/store/blobs/a9a41116db10cde46b94cdd5436e8ada2d93ef8405529b1f70113d8c3e672700": {
+      "bytes": 3227,
+      "sha256": "a9a41116db10cde46b94cdd5436e8ada2d93ef8405529b1f70113d8c3e672700"
+    },
+    "clean-macos/npm/store/blobs/a9c3f403e53783f82329759ed70e198b3bf96679fb2401457698ee70f54eb3af": {
+      "bytes": 990,
+      "sha256": "a9c3f403e53783f82329759ed70e198b3bf96679fb2401457698ee70f54eb3af"
+    },
+    "clean-macos/npm/store/blobs/ab7fe1f649e7024a8ab5dd6def34088dab597b353168371a55759bc4f9feff31": {
+      "bytes": 1799,
+      "sha256": "ab7fe1f649e7024a8ab5dd6def34088dab597b353168371a55759bc4f9feff31"
+    },
+    "clean-macos/npm/store/blobs/b2addd4ca81139763fdfbfd7f69e721222671a26bed6ac80689158f6f9a82891": {
+      "bytes": 171,
+      "sha256": "b2addd4ca81139763fdfbfd7f69e721222671a26bed6ac80689158f6f9a82891"
+    },
+    "clean-macos/npm/store/blobs/b5428433e077856cba9b66710f3efe284b96ab6572865175e78c21565383f393": {
+      "bytes": 3210,
+      "sha256": "b5428433e077856cba9b66710f3efe284b96ab6572865175e78c21565383f393"
+    },
+    "clean-macos/npm/store/blobs/ba009eb243ea4c249778b4e012c045f10f67056894ed6b67a1ba8e78ef4388d7": {
+      "bytes": 1717,
+      "sha256": "ba009eb243ea4c249778b4e012c045f10f67056894ed6b67a1ba8e78ef4388d7"
+    },
+    "clean-macos/npm/store/blobs/bd5c35aca78d96525df95e647d9843f196deb5683a8809270ee2ab6f7f49931d": {
+      "bytes": 343,
+      "sha256": "bd5c35aca78d96525df95e647d9843f196deb5683a8809270ee2ab6f7f49931d"
+    },
+    "clean-macos/npm/store/blobs/c34351012957c764594da9bc28dfc7688d79cb3f546c68c4c1693c4b56ebf380": {
+      "bytes": 71724,
+      "sha256": "c34351012957c764594da9bc28dfc7688d79cb3f546c68c4c1693c4b56ebf380"
+    },
+    "clean-macos/npm/store/blobs/c71292e04d8e831a045bcdc68850331f0f2c96507805856507caee2f65e5de5a": {
+      "bytes": 956,
+      "sha256": "c71292e04d8e831a045bcdc68850331f0f2c96507805856507caee2f65e5de5a"
+    },
+    "clean-macos/npm/store/blobs/c94a392ad45ee62303c749c99aa7a6ddb057851ac71a2b40f22dc7fde794dade": {
+      "bytes": 342,
+      "sha256": "c94a392ad45ee62303c749c99aa7a6ddb057851ac71a2b40f22dc7fde794dade"
+    },
+    "clean-macos/npm/store/blobs/d3aedb2807967b7eb37fd11b03b7e3701e725af79c650d0812ff7213f8f882d9": {
+      "bytes": 2625,
+      "sha256": "d3aedb2807967b7eb37fd11b03b7e3701e725af79c650d0812ff7213f8f882d9"
+    },
+    "clean-macos/npm/store/blobs/d579936b231b0c026e9932b656e8811ea338d6286068c055d7f05615fc7f847a": {
+      "bytes": 419,
+      "sha256": "d579936b231b0c026e9932b656e8811ea338d6286068c055d7f05615fc7f847a"
+    },
+    "clean-macos/npm/store/blobs/d6bfc5ebb6ea2cdbb9ba4fe178f1bb307a1aadef55c8c9c45e6b45ed31f439da": {
+      "bytes": 334,
+      "sha256": "d6bfc5ebb6ea2cdbb9ba4fe178f1bb307a1aadef55c8c9c45e6b45ed31f439da"
+    },
+    "clean-macos/npm/store/blobs/df105fba2beaa6179cd8c34e80ebd683ef3c7af3ec6b50fc8bdd438c59d67a7b": {
+      "bytes": 1682,
+      "sha256": "df105fba2beaa6179cd8c34e80ebd683ef3c7af3ec6b50fc8bdd438c59d67a7b"
+    },
+    "clean-macos/npm/store/blobs/e291d95ab926743219bd24dca219817d1e360021e5188462f1d2df2758434f96": {
+      "bytes": 345,
+      "sha256": "e291d95ab926743219bd24dca219817d1e360021e5188462f1d2df2758434f96"
+    },
+    "clean-macos/npm/store/blobs/e2a41fe35e2eaf4407561fc9b35416a90b0c79a4f019e706390e3e0822f42d58": {
+      "bytes": 344,
+      "sha256": "e2a41fe35e2eaf4407561fc9b35416a90b0c79a4f019e706390e3e0822f42d58"
+    },
+    "clean-macos/npm/store/blobs/e3149be98f86af0e32766fe2f558f649dac7e90e63bdf10ddcecb270474df8bf": {
+      "bytes": 337,
+      "sha256": "e3149be98f86af0e32766fe2f558f649dac7e90e63bdf10ddcecb270474df8bf"
+    },
+    "clean-macos/npm/store/blobs/e41d1117ab01f30c941063f2a24d0046fb523389a699b10f5dee3b3ef1483ce8": {
+      "bytes": 358,
+      "sha256": "e41d1117ab01f30c941063f2a24d0046fb523389a699b10f5dee3b3ef1483ce8"
+    },
+    "clean-macos/npm/store/blobs/e73832c7cad48c4527d5829b68b47bc11d1edbb62b614a3b9d3aa60b77300bb9": {
+      "bytes": 337,
+      "sha256": "e73832c7cad48c4527d5829b68b47bc11d1edbb62b614a3b9d3aa60b77300bb9"
+    },
+    "clean-macos/npm/store/blobs/e7b55bbd2bca9d2fbbe3d8d6584e77bb471dae65a96021e21d7a290bb8d001d7": {
+      "bytes": 534,
+      "sha256": "e7b55bbd2bca9d2fbbe3d8d6584e77bb471dae65a96021e21d7a290bb8d001d7"
+    },
+    "clean-macos/npm/store/blobs/e8d234940801c5314d150e23e942a0beb67ab7ee460b16454836be076879e4ed": {
+      "bytes": 343,
+      "sha256": "e8d234940801c5314d150e23e942a0beb67ab7ee460b16454836be076879e4ed"
+    },
+    "clean-macos/npm/store/blobs/eb4c571d34dab1160ed59e4cd84bd6a38550bd22c9daa950055ea81f85e43e4b": {
+      "bytes": 3426,
+      "sha256": "eb4c571d34dab1160ed59e4cd84bd6a38550bd22c9daa950055ea81f85e43e4b"
+    },
+    "clean-macos/npm/store/blobs/ef2ac226c4811d312e12c64214c453878653e834482125ae475f27cea60de737": {
+      "bytes": 552,
+      "sha256": "ef2ac226c4811d312e12c64214c453878653e834482125ae475f27cea60de737"
+    },
+    "clean-macos/npm/store/blobs/f5ba83bbc6f54730be0f453a72c765dce26fad89c1efeaa3cb042a42fcab4b3e": {
+      "bytes": 2671,
+      "sha256": "f5ba83bbc6f54730be0f453a72c765dce26fad89c1efeaa3cb042a42fcab4b3e"
+    },
+    "clean-macos/npm/store/blobs/f62da88c2ba85a16f9d7573649e74ec7e1b0ed1eb2b8b7fff070c66d4b911ed8": {
+      "bytes": 849,
+      "sha256": "f62da88c2ba85a16f9d7573649e74ec7e1b0ed1eb2b8b7fff070c66d4b911ed8"
+    },
+    "clean-macos/npm/store/blobs/ffbc96b432dd69b026a37c98bc1d993ce0c5513a72cb592a6ca86424ee30c89b": {
+      "bytes": 346,
+      "sha256": "ffbc96b432dd69b026a37c98bc1d993ce0c5513a72cb592a6ca86424ee30c89b"
+    },
+    "clean-macos/npm/store/identities/report_a13732946439f9a89cbb2c7c.json": {
+      "bytes": 667,
+      "sha256": "a13732946439f9a89cbb2c7c0bc972abc1d07409fed1aab3a16182296e2503e0"
+    },
+    "clean-macos/npm/store/runs/report_a13732946439f9a89cbb2c7c/c34351012957c764594da9bc28dfc7688d79cb3f546c68c4c1693c4b56ebf380.json": {
+      "bytes": 202,
+      "sha256": "bd5866dc3aeb8204073f68dae072c8c69129fc04a89c65ec7254fe02ab9a9091"
+    },
+    "clean-macos/parser-boundary.json": {
+      "bytes": 759,
+      "sha256": "f9a507664e564acfdff1063a822ec529f23f8bef1bcaf63e78cf3b0fff8bc557"
+    },
+    "final-typecheck.log": {
+      "bytes": 1981,
+      "sha256": "23feb76def8f0289e9d6fb6cf43bb05e27027b32834c72dd9210c6eba01d18f8"
+    },
+    "linux-amd64-image-build.log": {
+      "bytes": 6912,
+      "sha256": "81d220a091d58ecf1278a20dceca5fe1567427949862f611cefa46d6d5fed119"
+    },
+    "linux-final-build.log": {
+      "bytes": 6585,
+      "sha256": "19b81211614baf75c1bf6f11908cdd20187cfd0051a627b349b58eabfc9fd5ae"
+    }
+  },
+  "host": "macOS Darwin 25.6.0 arm64",
+  "limits": [
+    "Offline pnpm installation uses preexisting cached tarballs; node_modules are fresh.",
+    "Linux amd64 image runs under Docker Desktop emulation and has no parser socket; this is not native Linux host parser proof.",
+    "No exact-head CI or deployed commit observation."
+  ],
+  "startingHead": "6985d3eeecdbdc33463458e8072a31e62e86109f",
+  "toolchain": {
+    "dockerEngine": "28.4.0",
+    "node": "22.23.4",
+    "pnpm": "10.14.0",
+    "python": "3.13.2"
+  }
+}

@@ -1,0 +1,176 @@
+{
+  "version": "heurisko-phase1-intake-v1",
+  "sourceCommit": "55240e99409ad44cbd6a978f40873ef410cb1861",
+  "selection": [
+    "packages/intelligence",
+    "experiments/rag/datasets/real/setuptools-60.0.0"
+  ],
+  "runtimeStatus": "development-source-only; core loader remains packages/intelligence-reviewed",
+  "files": [
+    {
+      "path": "experiments/rag/datasets/real/setuptools-60.0.0/LICENSE",
+      "bytes": 1050,
+      "sha256": "db3f0246b1f9278f15845b99fec478b8b506eb76487993722f8c6e254285faf8"
+    },
+    {
+      "path": "experiments/rag/datasets/real/setuptools-60.0.0/README.md",
+      "bytes": 3095,
+      "sha256": "fe44aadeaf1750644bc9587be3de1ef91afe0a91a6a2fde3c47fd3218328ee29"
+    },
+    {
+      "path": "experiments/rag/datasets/real/setuptools-60.0.0/documents.jsonl",
+      "bytes": 3547,
+      "sha256": "27f7273395aad9e9c49bc6e6608dfbfdeb2c5df32678350bc33cd144dd7cf657"
+    },
+    {
+      "path": "experiments/rag/datasets/real/setuptools-60.0.0/manifest.json",
+      "bytes": 1864,
+      "sha256": "c905ef284a4d4a9812a8ef787b5687eea5f1128def266d4edc4529cec5318f61"
+    },
+    {
+      "path": "experiments/rag/datasets/real/setuptools-60.0.0/oracle/judgments.jsonl",
+      "bytes": 1343,
+      "sha256": "7fc0b83ae1f925c6bf9226da7d5c99fca32dcf4dda959113ec036b0ca3c69e98"
+    },
+    {
+      "path": "experiments/rag/datasets/real/setuptools-60.0.0/queries.jsonl",
+      "bytes": 834,
+      "sha256": "41968212685a9ea14e0d1aa5fbdc94505c7e65e0d0ec2749d72badc20923b955"
+    },
+    {
+      "path": "experiments/rag/datasets/real/setuptools-60.0.0/setuptools-60.0.0-py3-none-any.whl",
+      "bytes": 952774,
+      "sha256": "75fd345a47ce3d79595b27bf57e6f49c2ca7904f3c7ce75f8a87012046c86b0b"
+    },
+    {
+      "path": "experiments/rag/datasets/real/setuptools-60.0.0/setuptools-60.0.0.tar.gz",
+      "bytes": 2282339,
+      "sha256": "5ec2bbb534ed160b261acbbdd1b463eb3cf52a8d223d96a8ab9981f63798e85c"
+    },
+    {
+      "path": "experiments/rag/datasets/real/setuptools-60.0.0/source/_distutils_hack/__init__.py",
+      "bytes": 3758,
+      "sha256": "7688a23bb369b867ca503635e94c625981671c1e01adf621da6c59d2d07d5114"
+    },
+    {
+      "path": "experiments/rag/datasets/real/setuptools-60.0.0/source/setup.py",
+      "bytes": 2625,
+      "sha256": "f2b8c1a68b56240d7e6e9acd2bf1981dc8f929b74e13033ae2fb4557c2a8688d"
+    },
+    {
+      "path": "packages/intelligence/README.md",
+      "bytes": 11380,
+      "sha256": "1a4f5b1603fa29f0c0308d135de29559e7093b9cbde252c55cfa728170900558"
+    },
+    {
+      "path": "packages/intelligence/package.json",
+      "bytes": 488,
+      "sha256": "32214103162f2e12179fdad2e19fc45bb42128fcf84a96694c99929d868197f7"
+    },
+    {
+      "path": "packages/intelligence/src/codeastra.ts",
+      "bytes": 18678,
+      "sha256": "25676ad737e7911f0c9389cea00f8b63b203171533a2c09ce48f7b2b780d2889"
+    },
+    {
+      "path": "packages/intelligence/src/index.ts",
+      "bytes": 18996,
+      "sha256": "af7b00acceed67aaf37534ee58d3663000deaab08c1bb72f6da1ea9178380019"
+    },
+    {
+      "path": "packages/intelligence/src/interpretation.ts",
+      "bytes": 5883,
+      "sha256": "8bdc2bdc939d764c6569d853d739fd58e6c73adab0edf7006b7fbb0d7be39f5a"
+    },
+    {
+      "path": "packages/intelligence/src/openrouter.ts",
+      "bytes": 16287,
+      "sha256": "5062160a3907b95141f8ebc567a6a518870e7702375e248de85ac76a71c49b6b"
+    },
+    {
+      "path": "packages/intelligence/src/prompt.ts",
+      "bytes": 5912,
+      "sha256": "defc9613fd8e10b4121c73f7f1a5d47e684bbf175ad5c0b48a40b3f534415af0"
+    },
+    {
+      "path": "packages/intelligence/src/retrieval.ts",
+      "bytes": 7639,
+      "sha256": "4dd2b752004a346a5bbc438557795339f7507d28869ff75d855a061f1cb72ad9"
+    },
+    {
+      "path": "packages/intelligence/tests/fixtures/m0-case-labels.json",
+      "bytes": 2069,
+      "sha256": "e9effeaff2ef2c500dc2fff19b038363c968681ada5dcfb6ed1f670bb65920e3"
+    },
+    {
+      "path": "packages/intelligence/tests/handshake.mjs",
+      "bytes": 6272,
+      "sha256": "fc37895e0d9881195f90ff45e38a4454b46ce1bd97c297a5b782ba3f40221ddd"
+    },
+    {
+      "path": "packages/intelligence/tests/inference.mjs",
+      "bytes": 12159,
+      "sha256": "9141e92317ef1e2df325f21728dae3a3210e675f8a4569e8d9a8c008c0960cd8"
+    },
+    {
+      "path": "packages/intelligence/tests/interpretations.mjs",
+      "bytes": 3872,
+      "sha256": "c990bb8b1bd4d099e73a6c02acd6c58eca0f89fb70a3182d48de6daca2091101"
+    },
+    {
+      "path": "packages/intelligence/tests/prompts.mjs",
+      "bytes": 1348,
+      "sha256": "4a67da25e2da937dbc13738bd74074dd5d6e222906560bf5b7692869d43cf44b"
+    },
+    {
+      "path": "packages/intelligence/tests/real-setuptools.mjs",
+      "bytes": 7162,
+      "sha256": "e0faebe765fac0c170d1a537d300d91e10aa102a7ee18396ee3070acfcc50322"
+    },
+    {
+      "path": "packages/intelligence/tests/retrieval.mjs",
+      "bytes": 1109,
+      "sha256": "4ea79192f836f449f60b78e21b7a74692d02455722e057ad32d52624c49b97cb"
+    },
+    {
+      "path": "packages/intelligence/tests/synthetic-evidence.mjs",
+      "bytes": 3991,
+      "sha256": "3b6c283997d29ef642e79923c6374927bc03fcd0f54a3bb88751c71c7e9f718b"
+    },
+    {
+      "path": "packages/intelligence/tests/validate_handshake.py",
+      "bytes": 6900,
+      "sha256": "57da385999fa5ad51eea0d2e7b27a164c7ed4ecb23d1579da3eb6e3a91b8587c"
+    },
+    {
+      "path": "packages/intelligence/tests/validate_inference.py",
+      "bytes": 1496,
+      "sha256": "d5d51c2318caba46eff7888cff748a0fff4f222b6d7e5263c3ed3d3597b0ba53"
+    },
+    {
+      "path": "packages/intelligence/tests/validate_interpretations.py",
+      "bytes": 2029,
+      "sha256": "7a7e58121d8492a3787ade20b2e32b17ea87470427332534dfe67fb9bbbbbb40"
+    },
+    {
+      "path": "packages/intelligence/tests/validate_prompts.py",
+      "bytes": 1871,
+      "sha256": "718600361ec2f1aa2783d1ae3448de38e0a0a25abbb6c6c77057628eb74c1e03"
+    },
+    {
+      "path": "packages/intelligence/tests/validate_real_setuptools.py",
+      "bytes": 2415,
+      "sha256": "376577fe607dc9c554445dc62ac6bf9653fb2c06ab487f577d128eb4a374375d"
+    },
+    {
+      "path": "packages/intelligence/tests/validate_retrieval.py",
+      "bytes": 3208,
+      "sha256": "8b7f471786efc2e6659a91f526c3a7013c4e9d99999ece4565f59cf6a47995aa"
+    },
+    {
+      "path": "packages/intelligence/tsconfig.json",
+      "bytes": 421,
+      "sha256": "957632f96e2f58797ffe73ebe9e0ddcc64a01dea5c55c73b9083a513190a878c"
+    }
+  ]
+}

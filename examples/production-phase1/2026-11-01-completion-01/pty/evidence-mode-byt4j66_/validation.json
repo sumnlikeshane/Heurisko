@@ -1,0 +1,182 @@
+{
+  "scope": "Actual product PTY over unchanged retained report; isolated UI-state directory",
+  "checks": [
+    {
+      "check": "HISTORICAL",
+      "size": [
+        160,
+        40
+      ],
+      "passed": true
+    },
+    {
+      "check": "Raw citation / artifact",
+      "size": [
+        160,
+        40
+      ],
+      "passed": true
+    },
+    {
+      "check": "RAW utf8: [532, 621) / recorded [532, 621)",
+      "size": [
+        160,
+        40
+      ],
+      "passed": true
+    },
+    {
+      "check": "Evidence-record digest:",
+      "size": [
+        160,
+        40
+      ],
+      "passed": true
+    },
+    {
+      "check": "Displayed content ref:",
+      "size": [
+        160,
+        40
+      ],
+      "passed": true
+    },
+    {
+      "check": "Raw evidence record / record bytes",
+      "size": [
+        160,
+        40
+      ],
+      "passed": true
+    },
+    {
+      "check": "RETAINED EVIDENCE RECORD",
+      "size": [
+        160,
+        40
+      ],
+      "passed": true
+    },
+    {
+      "check": "RAW utf8: [0, 3426) / recorded [0, 3426)",
+      "size": [
+        160,
+        40
+      ],
+      "passed": true
+    },
+    {
+      "check": "Raw citation / artifact",
+      "size": [
+        160,
+        40
+      ],
+      "passed": true
+    },
+    {
+      "check": "RAW utf8: [532, 621) / recorded [532, 621)",
+      "size": [
+        160,
+        40
+      ],
+      "passed": true
+    },
+    {
+      "check": "New citation resolves member bytes after record-mode Back",
+      "size": [
+        160,
+        40
+      ],
+      "passed": true
+    },
+    {
+      "check": "HISTORICAL",
+      "size": [
+        84,
+        26
+      ],
+      "passed": true
+    },
+    {
+      "check": "Raw citation / artifact",
+      "size": [
+        84,
+        26
+      ],
+      "passed": true
+    },
+    {
+      "check": "RAW utf8: [532, 621) / recorded [532, 621)",
+      "size": [
+        84,
+        26
+      ],
+      "passed": true
+    },
+    {
+      "check": "Evidence-record digest:",
+      "size": [
+        84,
+        26
+      ],
+      "passed": true
+    },
+    {
+      "check": "Displayed content ref:",
+      "size": [
+        84,
+        26
+      ],
+      "passed": true
+    },
+    {
+      "check": "Raw evidence record / record bytes",
+      "size": [
+        84,
+        26
+      ],
+      "passed": true
+    },
+    {
+      "check": "RETAINED EVIDENCE RECORD",
+      "size": [
+        84,
+        26
+      ],
+      "passed": true
+    },
+    {
+      "check": "RAW utf8: [0, 3426) / recorded [0, 3426)",
+      "size": [
+        84,
+        26
+      ],
+      "passed": true
+    },
+    {
+      "check": "Raw citation / artifact",
+      "size": [
+        84,
+        26
+      ],
+      "passed": true
+    },
+    {
+      "check": "RAW utf8: [532, 621) / recorded [532, 621)",
+      "size": [
+        84,
+        26
+      ],
+      "passed": true
+    },
+    {
+      "check": "New citation resolves member bytes after record-mode Back",
+      "size": [
+        84,
+        26
+      ],
+      "passed": true
+    }
+  ],
+  "count": 22
+}

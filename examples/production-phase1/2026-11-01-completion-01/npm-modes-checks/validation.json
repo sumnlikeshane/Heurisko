@@ -1,0 +1,85 @@
+{
+  "host": {
+    "system": "Darwin",
+    "release": "25.6.0",
+    "machine": "arm64"
+  },
+  "started": "2026-11-01T17:07:48.177839+00:00",
+  "checks": [
+    {
+      "name": "npm-default",
+      "argv": [
+        "node",
+        "packages/cli/dist/index.js",
+        "analyze",
+        "npm:picocolors@1.1.1",
+        "--source",
+        "https://github.com/alexeyraspopov/picocolors",
+        "--commit",
+        "6f0a4638348ed20633d623ee973f9c9a96f65104",
+        "--store",
+        "examples/production-phase1/2026-11-01-completion-01/npm-modes/default-store",
+        "--report",
+        "examples/production-phase1/2026-11-01-completion-01/npm-modes/default.report.json",
+        "--json"
+      ],
+      "env": {},
+      "acceptedExits": [
+        0
+      ],
+      "exit": 0,
+      "seconds": 10.125
+    },
+    {
+      "name": "npm-no-ai",
+      "argv": [
+        "node",
+        "packages/cli/dist/index.js",
+        "analyze",
+        "npm:picocolors@1.1.1",
+        "--source",
+        "https://github.com/alexeyraspopov/picocolors",
+        "--commit",
+        "6f0a4638348ed20633d623ee973f9c9a96f65104",
+        "--store",
+        "examples/production-phase1/2026-11-01-completion-01/npm-modes/no-ai-store",
+        "--report",
+        "examples/production-phase1/2026-11-01-completion-01/npm-modes/no-ai.report.json",
+        "--json",
+        "--no-ai"
+      ],
+      "env": {},
+      "acceptedExits": [
+        0
+      ],
+      "exit": 0,
+      "seconds": 9.069
+    },
+    {
+      "name": "npm-raw",
+      "argv": [
+        "node",
+        "packages/cli/dist/index.js",
+        "analyze",
+        "npm:picocolors@1.1.1",
+        "--source",
+        "https://github.com/alexeyraspopov/picocolors",
+        "--commit",
+        "6f0a4638348ed20633d623ee973f9c9a96f65104",
+        "--store",
+        "examples/production-phase1/2026-11-01-completion-01/npm-modes/raw-store",
+        "--report",
+        "examples/production-phase1/2026-11-01-completion-01/npm-modes/raw.report.json",
+        "--json"
+      ],
+      "env": {
+        "HEURISKO_ANALYSIS_MODULE": "off"
+      },
+      "acceptedExits": [
+        2
+      ],
+      "exit": 2,
+      "seconds": 9.341
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+  HEURISKO   H Home    I Investigations     M Monitoring                                                                                                        
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+  picocolors@1.1.1 / HISTORICAL / incomplete / Captured 2026-10-31T22:59:33Z                                                                                    
+  1 Overview   2 Findings   3 Files   4 Source   5 AI   6 Coverage                                                                                              
+  Raw retained evidence · Esc returns to its origin                                                                                                             
+  Evidence                                                                                                                                                      
+  Files > ev_f61f09233ab041767071cc94 / Esc restores position                                                                                                   
+  ┌─ > Raw evidence record / record bytes ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐  
+  │ ev_f61f09233ab041767071cc94                                                                                                                              │  
+  │ RETAINED EVIDENCE RECORD / cited member span not selected                                                                                                │  
+  │ BOTH / README.md                                                                                                                                         │  
+  │ RAW utf8: [0, 3426) / recorded [0, 3426)                                                                                                                 │  
+  │ Window truncated: false / total blob 3426 bytes                                                                                                          │  
+  │                                                                                                                                                          │  
+  │ {"version":"heurisko-raw-diff-v1","kind":"utf8","source":{"path":"picocolors-6f0a4638348ed20633d623ee973f9c9a96f65104/README.md","contentRef":"sha256:34 │  
+  │ 367841182335f5b8029c9dbbe45c092e172f1f226be34343540aaf0e2bd034","size":4995,"changedSpan":{"startByte":532,"endByte":4994},"excerptBase64":"TW90aXZhdGlv │  
+  │ bgoKV2l0aCBgcGljb2NvbG9yc2Agd2UgYXJlIHRyeWluZyB0byBkcmF3IGF0dGVudGlvbiB0byB0aGUgYG5vZGVfbW9kdWxlc2Agc2l6ZQpwcm9ibGVtIGFuZCBwcm9tb3RlIHBlcmZvcm1hbmNlLWZp │  
+  │ cnN0IGN1bHR1cmUuCgojIyBQcmlvciBBcnQKCkNyZWRpdHMgZ28gdG8gdGhlIGZvbGxvd2luZyBwcm9qZWN0czoKCi0gW05hbm9jb2xvcnNdKGh0dHBzOi8vZ2l0aHViLmNvbS9haS9uYW5vY29sb3Jz │  
+  │ KSBieSBbQGFpXShodHRwczovL2dpdGh1Yi5jb20vYWkpCi0gW0NvbG9yZXR0ZV0oaHR0cHM6Ly9naXRodWIuY29tL2pvcmdlYnVjYXJhbi9jb2xvcmV0dGUpIGJ5IFtAam9yZ2VidWNhcmFuXShodHRw │  
+  │ czovL2dpdGh1Yi5jb20vam9yZ2VidWNhcmFuKQotIFtLbGV1cl0oaHR0cHM6Ly9naXRodWIuY29tL2x1a2VlZC9rbGV1cikgYnkgW0BsdWtlZWRdKGh0dHBzOi8vZ2l0aHViLmNvbS9sdWtlZWQpCi0g │  
+  │ W0NvbG9ycy5qc10oaHR0cHM6Ly9naXRodWIuY29tL01hcmFrL2NvbG9ycy5qcykgYnkgW0BNYXJha10oaHR0cHM6Ly9naXRodWIuY29tL01hcmFrKQotIFtDaGFsa10oaHR0cHM6Ly9naXRodWIuY29t │  
+  │ L2NoYWxrL2NoYWxrKSBieSBbQHNpbmRyZXNvcmh1c10oaHR0cHM6Ly9naXRodWIuY29tL3NpbmRyZXNvcmh1cykKCiMjIEJlbmNobWFya3MKClRoZSBzcGFjZSBpbiBub2RlX21vZHVsZXMgaW5jbHVk │  
+  │ aW5nIHN1Yi1kZXBlbmRlbmNpZXM6CgpgYGBkaWZmCiQgbm9kZSAuL2JlbmNobWFya3Mvc2l6ZS5qcwpEYXRhIGZyb20gcGFja2FnZXBob2JpYS5jb20KICBjaGFsayAgICAgICAxMDEga0IKICBjbGkt │  
+  │ Y29sb3IgIDEyNDkga0IKICBhbnNpLWNvbG9ycyAgMjUga0IKICBrbGV1ciAgICAgICAgMjEga0IKICBjb2xvcmV0dGUgICAgMTcga0IKICBuYW5vY29sb3JzICAgMTYga0IKKyBwaWNvY29sb3JzICAg │  
+  │ IDcga0IKYGBgCgpMaWJyYXJ5IGxvYWRpbmcgdGltZToKCmBgYGRpZmYKJCBub2RlIC4vYmVuY2htYXJrcy9sb2FkaW5nLmpzCiAgY2hhbGsgICAgICAgICAgNi4xNjcgbXMKICBjbGktY29sb3IgICAg │  
+  │ IDMxLjQzMSBtcwogIGFuc2ktY29sb3JzICAgIDEuNTg1IG1zCiAga2xldXIgICAgICAgICAgMi4wMDggbXMKICBrbGV1ci9jb2xvcnMgICAwLjc3MyBtcwogIGNvbG9yZXR0ZSAgICAgIDIuNDc2IG1z │  
+  │ CiAgbmFub2NvbG9ycyAgICAgMC44MzMgbXMKKyBwaWNvY29sb3JzICAgICAwLjQ2NiBtcwpgYGAKCkJlbmNobWFyayBmb3Igc2ltcGxlIHVzZSBjYXNlOgoKYGBgZGlmZgokIG5vZGUgLi9iZW5jaG1h │  
+  │ cmtzL3NpbXBsZS5qcwogIGNoYWxrICAgICAgICAgMjQsMDY2LDM0MiBvcHMvc2VjCiAgY2xpLWNvbG9yICAgICAgICA5MzgsNzAwIG9wcy9zZWMKICBhbnNpLWNvbG9ycyAgICA0LDUzMiw1NDIgb3Bz │  
+  │ L3NlYwogIGtsZXVyICAgICAgICAgMjAsMzQzLDEyMiBvcHMvc2VjCiAga2xldXIvY29sb3JzICAzNSw0MTUsNzcwIG9wcy9zZWMKICBjb2xvcmV0dGUgICAgIDM0LDI0NCw4MzQgb3BzL3NlYwogIG5h │  
+  │ bm9jb2xvcnMgICAgMzMsNDQzLDI2NSBvcHMvc2VjCisgcGljb2NvbG9ycyAgICAzMywyNzEsNjQ1IG9wcy9zZWMKYGBgCgpCZW5jaG1hcmsgZm9yIGNvbXBsZXggdXNlIGNhc2VzOgoKYGBgZGlmZgok │  
+  │ IG5vZGUgLi9iZW5jaG1hcmtzL2NvbXBsZXguanMKICBjaGFsayAgICAgICAgICAgIDk2OSw5MTUgb3BzL3NlYwogIGNsaS1jb2xvciAgICAgICAgMTMxLDYzOSBvcHMvc2VjCiAgYW5zaS1jb2xvcnMg │  
+  │ ICAgICAzNDIsMjUwIG9wcy9zZWMKICBrbGV1ciAgICAgICAgICAgIDYxMSw4ODAgb3BzL3NlYwogIGtsZXVyL2NvbG9ycyAgIDEsMTI5LDUyNiBvcHMvc2VjCiAgY29sb3JldHRlICAgICAgMSw3NDcs │  
+  │ Mjc3IG9wcy9zZWMKICBuYW5vY29sb3JzICAgICAxLDI1MSwzMTIgb3BzL3NlYworIHBpY29jb2xvcnMgICAgIDIsMDI0LDA4NiBvcHMvc2VjCmBgYAoKIyMgVXNhZ2UKClBpY29jb2xvcnMgcHJvdmlk │  
+  │ ZXMgYW4gb2JqZWN0IHdoaWNoIGluY2x1ZGVzIGEgdmFyaWV0eSBvZiB0ZXh0IGNvbG9yaW5nIGFuZCBmb3JtYXR0aW5nIGZ1bmN0aW9ucwoKYGBgamF2YXNjcmlwdAppbXBvcnQ=","excerptTrunca │  
+  │ 1-26 / 37  j/k scroll                                                                                                                                    │  
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘  
+  evidence                                                                                                                                                      
+  j/k scroll  Tab citation  s side  r record/citation  p/b page  Esc return  q quit                                                                             
+                                                                                                                                                                
+                                                                                                                                                                

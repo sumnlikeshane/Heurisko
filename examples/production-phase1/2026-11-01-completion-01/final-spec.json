@@ -1,0 +1,65 @@
+[
+  {
+    "name": "typecheck",
+    "argv": [
+      "pnpm",
+      "run",
+      "typecheck"
+    ]
+  },
+  {
+    "name": "web",
+    "argv": [
+      "pnpm",
+      "--filter",
+      "@heurisko/web",
+      "test"
+    ]
+  },
+  {
+    "name": "intake",
+    "argv": [
+      "node",
+      "scripts/verify-intelligence-intake.mjs"
+    ]
+  },
+  {
+    "name": "secrets",
+    "argv": [
+      "node",
+      "scripts/check-phase1-secrets.mjs"
+    ]
+  },
+  {
+    "name": "diff",
+    "argv": [
+      "git",
+      "diff",
+      "--check"
+    ]
+  },
+  {
+    "name": "validate-phase1-foundation-syntax",
+    "argv": [
+      "node",
+      "--check",
+      "scripts/validate-phase1-foundation.mjs"
+    ]
+  },
+  {
+    "name": "check-phase1-parser-lifecycle-syntax",
+    "argv": [
+      "node",
+      "--check",
+      "scripts/check-phase1-parser-lifecycle.mjs"
+    ]
+  },
+  {
+    "name": "measure-phase1-parser-syntax",
+    "argv": [
+      "node",
+      "--check",
+      "scripts/measure-phase1-parser.mjs"
+    ]
+  }
+]

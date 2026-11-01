@@ -1,0 +1,52 @@
+{
+  "noticeInDeliveredJavaScript": true,
+  "originalBuildAndTypeNoticesPreserved": true,
+  "files": [
+    {
+      "path": "THIRD_PARTY_NOTICES.txt",
+      "bytes": 268987,
+      "sha256": "ef794fb74d3c264e6b4eef8f6592b85be81fb299124e462ce7a0f3f0e392f586"
+    },
+    {
+      "path": "apps/web/THIRD_PARTY_NOTICES.txt",
+      "bytes": 7912,
+      "sha256": "0cab4965023071e70e41b3c51911c4e35d2e85b67748041d0ec4fd97e36b67bd"
+    },
+    {
+      "path": "apps/web/dist/assets/app.js",
+      "bytes": 317235,
+      "sha256": "b4f99c01f3a2a4dbfac4147d98698847a8878c348645bb48a74d7021f5ad113f"
+    },
+    {
+      "path": "apps/web/dist/assets/third-party-notices.txt",
+      "bytes": 7912,
+      "sha256": "0cab4965023071e70e41b3c51911c4e35d2e85b67748041d0ec4fd97e36b67bd"
+    }
+  ],
+  "imageId": "sha256:fca199d4126b2c5c1d11ff39d7736c4651faea40f171097f97d5fd490d81ee4b",
+  "dockerReportedSize": 168035332,
+  "scope": "Local hosted-image validation under emulation, no native parser proof or external deployment",
+  "responses": [
+    {
+      "method": "GET",
+      "path": "/healthz",
+      "status": 200,
+      "body": "{\"status\":\"ok\",\"mode\":\"public-readonly\"}"
+    },
+    {
+      "method": "GET",
+      "path": "/assets/app.js",
+      "status": 200,
+      "sha256": "b4f99c01f3a2a4dbfac4147d98698847a8878c348645bb48a74d7021f5ad113f",
+      "fullNoticeIncluded": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/investigations",
+      "status": 405,
+      "body": "{\"error\":\"HOSTED_READ_ONLY\"}"
+    }
+  ],
+  "exactProbeContainerId": "22fcccd62b7e951c013964deef917005c02005166fffc7cc0c373e3d0237ebb6",
+  "exactRemovalConfirmed": true
+}

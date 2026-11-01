@@ -1,0 +1,48 @@
+{
+  "dataset_id": "real-package-source-case-setuptools-60.0.0-v1",
+  "fixture_kind": "public_real_package",
+  "case_id": "REAL-PYPI-SETUPTOOLS-60.0.0",
+  "package": {
+    "ecosystem": "pypi",
+    "name": "setuptools",
+    "version": "60.0.0"
+  },
+  "artifact": {
+    "filename": "setuptools-60.0.0-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/f9/73/a1e8254ee8604a7f8598f5b7c09d587b329ad2727f410a210f26c9595b7a/setuptools-60.0.0-py3-none-any.whl",
+    "size_bytes": 952774,
+    "sha256": "sha256:75fd345a47ce3d79595b27bf57e6f49c2ca7904f3c7ce75f8a87012046c86b0b"
+  },
+  "source_distribution": {
+    "filename": "setuptools-60.0.0.tar.gz",
+    "url": "https://pypi.org/project/setuptools/60.0.0/#files",
+    "size_bytes": 2282339,
+    "sha256": "sha256:5ec2bbb534ed160b261acbbdd1b463eb3cf52a8d223d96a8ab9981f63798e85c"
+  },
+  "source_candidate": {
+    "repository": "https://github.com/pypa/setuptools",
+    "tag": "v60.0.0",
+    "commit": "9288c6f3f039bf51f997a99ae8766ed02ed92cda"
+  },
+  "source_match_check": {
+    "files": [
+      "setup.py",
+      "_distutils_hack/__init__.py"
+    ],
+    "result": "byte-identical between the PyPI sdist and raw files at the pinned Git commit"
+  },
+  "license": "MIT; see LICENSE",
+  "provenance": {
+    "status": "not-verified",
+    "note": "The artifact hash and tagged source files are recorded; this case does not include an independently verified attestation binding this exact wheel to the commit."
+  },
+  "observed_difference": "The wheel contains distutils-precedence.pth; the sdist has no member with that path. The release setup.py generates the hook from a template.",
+  "evidence_ids": [
+    "ev_0af170efa4b01ea3bcc51c54",
+    "ev_538c8c1b965709b1507b36f9",
+    "ev_d7853a3156a8d2146e64cd2e",
+    "ev_2c623c2ce90a481e378d7a27",
+    "ev_369e2251243014a44df361d0"
+  ],
+  "synthetic": false
+}

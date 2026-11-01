@@ -1,0 +1,75 @@
+{
+  "scope": "All audit files before this manifest; original receipts unmodified.",
+  "files": [
+    {
+      "path": "audit-runner.py",
+      "bytes": 1727,
+      "sha256": "6ad82b163c0fe34acfa5a31c3b70f7f964bc10445f72ce328f105b85de3095f7"
+    },
+    {
+      "path": "core.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "core.stdout.log",
+      "bytes": 34723,
+      "sha256": "cce88508c56bd28ec91b18484da7858c365b613f17e5182ac454136b97cab780"
+    },
+    {
+      "path": "docker-access.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docker-access.stdout.log",
+      "bytes": 14,
+      "sha256": "1b31177d5feae9aadf1ce238378a9e4f103b8838a5f23c0e1dfa333f65b21d57"
+    },
+    {
+      "path": "parser-boundary-check.json",
+      "bytes": 187,
+      "sha256": "4d4ee9c11ad42a87413ddb4093da9b3f5017dc95a8dee68061c8eff303187cde"
+    },
+    {
+      "path": "parser-boundary.json",
+      "bytes": 759,
+      "sha256": "79ecb003ab615e10ab75ddbcbb972d4de430a59e4e89b6a917cb01b1891566ab"
+    },
+    {
+      "path": "parser-boundary.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "parser-boundary.stdout.log",
+      "bytes": 759,
+      "sha256": "79ecb003ab615e10ab75ddbcbb972d4de430a59e4e89b6a917cb01b1891566ab"
+    },
+    {
+      "path": "source-after.json",
+      "bytes": 395337,
+      "sha256": "b65f274e9f4f8cd77fc844e178258b967ccab0b47e22c25a3771e38cb251073c"
+    },
+    {
+      "path": "source-before.json",
+      "bytes": 395337,
+      "sha256": "7cd972785e33cfa4f468eebea274df31441996437540e9b2aa760a838ecbb92d"
+    },
+    {
+      "path": "validation.json",
+      "bytes": 1269,
+      "sha256": "4079dc6cbbdb2ae5b9ee1491aeb6149a766c46be37672f57cf466f9eea41aaea"
+    },
+    {
+      "path": "web.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "web.stdout.log",
+      "bytes": 20214,
+      "sha256": "b469949b13a7bdf26cad2b7fe96e7684fdc49577d0ee93dd8c0d285bf3508647"
+    }
+  ]
+}

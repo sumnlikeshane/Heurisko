@@ -1,0 +1,9 @@
+Collecting pyte==0.8.2 (from -r packages/tui/requirements-terminal.txt (line 1))
+  Using cached pyte-0.8.2-py3-none-any.whl (31 kB)
+Collecting wcwidth==0.2.13 (from -r packages/tui/requirements-terminal.txt (line 2))
+  Using cached wcwidth-0.2.13-py2.py3-none-any.whl (34 kB)
+Installing collected packages: wcwidth, pyte
+Successfully installed pyte-0.8.2 wcwidth-0.2.13
+
+[notice] A new release of pip is available: 25.0 -> 26.2.2
+[notice] To update, run: /Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/.heurisko/phase1-completion-01-pty/bin/python -m pip install --upgrade pip
