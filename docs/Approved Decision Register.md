@@ -1,9 +1,13 @@
 # HEURISKO — Approved Decision Register
 
-**As of:** 31 October 2026  
-**Approval authority:** Shane, explicit confirmations in this conversation.  
+**As of:** 1 November 2026
+**Approval authority:** Shane's explicit confirmations for approved phases; Malhar-specific implementation selections are labeled separately.
 **Scope:** Approved Phases 01, 02, 03, 04, 05 and 06.  
 **Status:** CONFIRMED. This record does not claim that implementation or verification has been completed.
+
+## Malhar implementation selection — supplemental CodeAstra triage (1 November 2026)
+
+Malhar selected `rootxhacker/codeastra-500M` as a supplemental local model for paired function-level vulnerability triage. The selected question is whether a changed published-artifact function receives a different first-pass vulnerability signal from the corresponding pinned-source function. The model emits a non-authoritative interpretation citing existing source/artifact evidence IDs. It does not replace the RAG answer model, answer provenance questions, alter deterministic findings/severity, or establish exploitability. This is an implementation selection within Malhar's approved heuristics/open-weight inference/evaluation ownership, not a new joint architecture approval or a change to P04 scope. As of 1 November 2026, exact model/runtime/data pins, local CPU inference, and a 50-pair held-out run are recorded. Paired correctness and patched specificity are below the model-card report; exact upstream helper reconciliation, larger evaluation, runtime-source license clarification, Shane review, and report/CLI integration remain open. See [CodeAstra integration notes](../experiments/codeastra/README.md).
 
 ## Phase 01 — Technical Foundation v0.2.0 — APPROVED
 

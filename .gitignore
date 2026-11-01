@@ -3,3 +3,8 @@ node_modules/
 **/dist/
 **/__pycache__/
 .venv/
+.env.local
+.venv-codeastra/
+models/codeastra-500M/
+experiments/codeastra/.runtime/
+experiments/codeastra/.datasets/

@@ -8,7 +8,7 @@ Heurisko is a software supply-chain integrity project for **Problem 04 — Publi
 
 Developers often review a Git repository but install a tarball or wheel from a package registry. Those inputs can differ because of compilation, bundling, packaging rules, generated metadata, native code, or unauthorized changes. Heurisko's proposed role is to investigate that relationship and show the evidence behind each explanation and suspicious finding.
 
-**Current status — 31 October 2026:** the six planning phases and Shane–Malhar engineering agreement are approved and indexed in the [approved decision register](docs/Approved%20Decision%20Register.md). The synthetic G0 contract is integrated under [packages/contracts](packages/contracts/package.json); local checks and [PR #2 CI](https://github.com/sumnlikeshane/Heurisko/actions/runs/41222794704) passed on `0e6adb9`. Shane instructed Codex to review the exact contract and treat the team as accepting it on that review; the [E09 record](docs/Approved/HEURISKO_SHANE_MALHAR_PRE_SPLIT_AGREEMENT_APPROVED_v0.1.0.md#e09-delegated-g0-contract-acceptance--31-october-2026) states the scope. The PR is not merged. **No analysis engine, CLI, TUI, web application, release monitor, or model integration exists.** There is no runnable analyzer yet.
+**Current status — 1 November 2026:** the six planning phases and Shane–Malhar engineering agreement are approved and indexed in the [approved decision register](docs/Approved%20Decision%20Register.md). The G0 contract is integrated under [packages/contracts](packages/contracts/package.json); [PR #2](https://github.com/sumnlikeshane/Heurisko/pull/2) passed CI and merged in `f06ac54`. Shane delegated contract acceptance to Codex as recorded in the [E09 record](docs/Approved/HEURISKO_SHANE_MALHAR_PRE_SPLIT_AGREEMENT_APPROVED_v0.1.0.md#e09-delegated-g0-contract-acceptance--31-october-2026). Malhar's [intelligence package](packages/intelligence/package.json) now has M1 deterministic findings, M2 bounded lexical retrieval, strict interpretation validation, untrusted-data prompt packaging, and an opt-in OpenRouter adapter. In the narrow v12 live probe, Qwen returned an accepted cited explanation for the real setuptools startup-hook difference; the unsupported provenance answer was rejected. Internal review flagged one over-specific suggested assurance level, and Shane's independent cross-review remains due. The v13 prompt experiment rejected both answers. A real npm manifest probe still depends on Shane's pinned artifact/source fixture. Hosted use in a P04 demo still requires organizer confirmation. No artifact acquisition, CLI, TUI, web application, or release monitor exists.
 
 Team **InBuildingPhase**: **Shane Joseph** and **Malhar Mahanor**. See [HACKATHON.md](HACKATHON.md) for the original declaration and [AGENTS.md](AGENTS.md) for contributor instructions and approval boundaries.
 
@@ -204,11 +204,9 @@ The intended AI task is to explain a bounded difficult difference, suggest plaus
 
 | Model reference | Current status |
 |---|---|
-| Qwen2.5-Coder-7B-Instruct, proposed Ollama tag `qwen2.5-coder:7b` | Original candidate recorded in `HACKATHON.md`; never integrated or tested. |
-| Qwen3-8B and Qwen3-4B | Later research recommends benchmarking these candidates on the same grounded-explanation cases. Neither has been selected through experiments. |
-| Other open-weight alternatives and runtimes | Assessed in the product dossier; selection depends on license, actual availability, hardware, and measured explanation quality. |
+| `qwen/qwen3-coder-next` via OpenRouter | Selected as the sole answer model for Malhar's experimental RAG harness. It retains the evidence-bound JSON answer contract and hidden-oracle evaluation. No local or alternate-model fallback; hosted use/demo still requires organizer confirmation. |
 
-**Models currently integrated: none.** The later Qwen3 recommendation does not silently replace the original declaration or establish actual model use. Exact weights/digest, quantization, runtime, context limits, prompt/schema version, decoding settings, latency, and memory behavior remain to be validated.
+**Models currently integrated into the product: none.** Malhar's separate RAG experiment uses one selected answer model, `qwen/qwen3-coder-next`, through OpenRouter; the current intelligence adapter is not connected to an end-user workflow. The narrow v12 two-query probe retrieved all labeled relevant excerpts at k=5 (Recall@5 1.00), accepted one cited startup-behavior explanation, and rejected the non-abstaining provenance answer. The internal review flags one over-specific suggested assurance level; independent cross-review remains due. See [`experiments/rag/README.md`](experiments/rag/README.md) for run artifacts. Hosted inference still requires organizer confirmation before any P04 demo use.
 
 Proposed inference flow:
 
@@ -262,7 +260,7 @@ All integrations are research proposals. Exact released versions, licenses/notic
 
 ## Verification and demonstration
 
-**No product tests, rebuilds, detector benchmarks, or model inference have run.** Research defines a falsifiable validation plan with four separately labeled corpus strata:
+**No end-user product tests, rebuilds, detector benchmarks, or product model inference have run.** The intelligence contract and evidence probes passed locally, and the separate RAG experiment has one live two-query model evaluation; neither validates the package analyzer. Research defines a falsifiable validation plan with four separately labeled corpus strata:
 
 | Corpus stratum | What it can establish |
 |---|---|
@@ -298,7 +296,7 @@ P5 can develop after acquisition/report contracts stabilize; it need not wait fo
 
 ## Installation and execution
 
-**There is no analyzer to install or run yet.** The root pnpm workspace contains only the shared G0 contract, synthetic fixtures, typecheck and contract test scripts. It has no application entry point, analyzer tests, generated examples, binary release, supported operating-system matrix, or live service. The [CI workflow](.github/workflows/ci.yml) now installs pinned contract tooling and runs contract, checksum and local Markdown-link checks; it does not test analyzer behavior.
+**There is no end-user analyzer to install or run yet.** The root pnpm workspace contains the shared G0 contract, an initial deterministic intelligence baseline, lexical retrieval for caller-resolved bounded excerpts, and structured interpretation draft validation. Findings retain evidence IDs and limitations; retrieval preserves IDs and exact locators, while draft validation checks shape and citation membership. Neither verifies blob contents nor proves citation entailment, and neither is connected to a product model. The component does not infer intent or execute package code. AI is reported unavailable when requested. There is no acquisition path, CLI, TUI, generated example, binary release, supported operating-system matrix, or live service. The [CI workflow](.github/workflows/ci.yml) validates adapters and synthetic probes; it does not validate real-package accuracy.
 
 You can read the repository now: begin with the [documentation map](docs/README.md), [approved decision register](docs/Approved%20Decision%20Register.md), and [team development checklist](docs/Team%20Development%20Checklist.md), then use the original research for rationale and alternatives. Research integrity can be checked from the repository root with:
 
@@ -319,7 +317,7 @@ pnpm run typecheck
 pnpm run test:contracts
 ```
 
-These check only synthetic contracts. The full JSON Schema/semantic suite, pinned TypeScript 5.8.3 typecheck and stubbed handshakes passed locally on 31 October 2026; PR #2 CI passed on `0e6adb9`. Shane delegated final G0 review and team acceptance to Codex, as recorded in E09. Interface-dependent work can use this accepted contract; keep changes to it reviewed in the PR workflow. PR merge remains pending.
+These validate contract fixtures and the M0 `analyzeEvidence` adapter boundary. The full JSON Schema/semantic suite, pinned TypeScript 5.8.3 typecheck, stubbed G0 handshakes, and actual M0 adapter outputs passed locally on 31 October 2026. PR #2 CI passed on `0e6adb9` and merged in `f06ac54`; it predates the M0 additions. Shane delegated final G0 review and team acceptance to Codex, as recorded in E09. Changes to the shared contract still require review in the PR workflow.
 
 ## Repository and research guide
 
@@ -403,7 +401,7 @@ CI must install the project and dependencies, run relevant tests, validate the i
 
 ## Open decisions and limitations
 
-The original [founder research register](docs/Heurisko_Research/HEURISKO_FOUNDER_DECISIONS.md) is preserved as a historical proposal record. The later [approved decision register](docs/Approved%20Decision%20Register.md) controls Phases 01–06 and A01–A14. The exact G0 schema is accepted for separate interface-dependent work under Shane's later delegated review instruction, with PR merge pending; exit mapping 0/1/2/3 is approved initially, but policy precedence needs tests. Third-party license and redistribution review, analyzer dependency/version admission, model/runtime choice, numeric budgets, hosted operation, and retention remain open. Apache-2.0 has already been selected for original Heurisko material.
+The original [founder research register](docs/Heurisko_Research/HEURISKO_FOUNDER_DECISIONS.md) is preserved as a historical proposal record. The later [approved decision register](docs/Approved%20Decision%20Register.md) controls Phases 01–06 and A01–A14. The G0 schema is accepted for interface-dependent work under Shane's delegated review instruction and PR #2 is merged. Exit mapping 0/1/2/3 is approved initially, but policy precedence needs tests. Third-party license and redistribution review, analyzer dependency/version admission, product model/runtime integration, numeric budgets, hosted operation, and retention remain open. The curated setuptools case is included only in the experimental local RAG harness, not integrated into the product. The RAG experiment selects only OpenRouter `qwen/qwen3-coder-next` for evidence-bound answer generation. The v12 two-question probe scored Recall@5 1.00, Precision@5 0.80, MRR@5 0.75, and citation-ID validity 1.00 over four cited IDs; it accepted the scoped startup-behavior answer and rejected the unsupported provenance response. The internal review flags an over-specific next-action suggestion and is awaiting Shane's independent cross-review. A v13 prompt iteration rejected both answers. Organizer confirmation is required before P04 demo use. Older local-model runs and unreviewed research downloads are not included in this branch. Apache-2.0 has already been selected for original Heurisko material.
 
 Research has not established source-matching accuracy, legitimate-build explanation quality, false positives/negatives, native/bundled-code coverage, AI benefit, laptop feasibility, supported runtime/platform versions, performance, or operating costs. No historical attack was detected by Heurisko during research. Candidate packages and planned mutations are not verified examples.
 

@@ -1,0 +1,546 @@
+{
+  "schema_version": "heurisko-codeastra-paired-evaluation-v1",
+  "dataset": {
+    "repo": "ayshajavd/code-security-vulnerability-dataset",
+    "revision": "9b2f327f6b8bfab9a81411b6e582dd7119c18542",
+    "file_sha256": "f16650e9ccfa2aeb2858136b055d899d4059b435b88a76c16573fb88f175fae4",
+    "split": "test",
+    "selection_seed": 4107,
+    "selected_pairs": 50
+  },
+  "model": {
+    "id": "rootxhacker/codeastra-500M",
+    "revision": "5ac95ba77cec1795afb25ae62a4b65201944844a",
+    "weights_sha256": "fc66914223a717973b0ce6e2132235897fb9fc32ff9ccd3d4c69197bcea1cdcd",
+    "config_sha256": "aaf2bace7b4f3339b811cecdcfac86e40c7fd41d468bb9cb40cf43866e57b6a3",
+    "runtime_revision": "817878f52bf054a4d9aabfdd5360341dd7ce3fa6",
+    "threshold": 0.3346,
+    "scoring_mode": "documented_next_token_probability_only"
+  },
+  "metrics": {
+    "scored_pairs": 44,
+    "failed_pairs": 6,
+    "paired_correct_rate": 0.13636363636363635,
+    "vulnerable_detection_rate": 0.9318181818181818,
+    "patched_specificity": 0.20454545454545459,
+    "within_pair_ranking_accuracy": 0.6818181818181818,
+    "both_flagged_rate": 0.7954545454545454,
+    "both_cleared_rate": 0.06818181818181818,
+    "reversed_pair_rate": 0.0
+  },
+  "results": [
+    {
+      "pair_id": "79df054813f8534b41d240f7",
+      "cwe_id": "CWE-119",
+      "language": "C",
+      "vulnerable_probability": 0.4248526990413666,
+      "fixed_probability": 0.019895222038030624,
+      "vulnerable_flag": true,
+      "fixed_flag": false,
+      "pair_correct": true,
+      "within_pair_rank_correct": true
+    },
+    {
+      "pair_id": "b70459bff1e2f1b44f1bc4d0",
+      "cwe_id": "CWE-125",
+      "language": "C",
+      "vulnerable_probability": 0.5315930247306824,
+      "fixed_probability": 0.5261874198913574,
+      "vulnerable_flag": true,
+      "fixed_flag": true,
+      "pair_correct": false,
+      "within_pair_rank_correct": true
+    },
+    {
+      "pair_id": "b73d7adb61da00090e360faa",
+      "cwe_id": "CWE-119",
+      "language": "C",
+      "vulnerable_probability": 0.43742260336875916,
+      "fixed_probability": 0.3882870078086853,
+      "vulnerable_flag": true,
+      "fixed_flag": true,
+      "pair_correct": false,
+      "within_pair_rank_correct": true
+    },
+    {
+      "pair_id": "48659d28727fad4a30a10c5f",
+      "cwe_id": "CWE-94",
+      "language": "Javascript",
+      "vulnerable_probability": 0.752344012260437,
+      "fixed_probability": 0.7883673906326294,
+      "vulnerable_flag": true,
+      "fixed_flag": true,
+      "pair_correct": false,
+      "within_pair_rank_correct": false
+    },
+    {
+      "pair_id": "d13c997d6245aa0698cb99c5",
+      "cwe_id": "CWE-399",
+      "language": "C",
+      "vulnerable_probability": 0.5659157037734985,
+      "fixed_probability": 0.606137752532959,
+      "vulnerable_flag": true,
+      "fixed_flag": true,
+      "pair_correct": false,
+      "within_pair_rank_correct": false
+    },
+    {
+      "pair_id": "4f0b7f19f89dcfefedb47cc1",
+      "cwe_id": "CWE-119",
+      "language": "Fortran",
+      "vulnerable_probability": 0.829197883605957,
+      "fixed_probability": 0.8010354042053223,
+      "vulnerable_flag": true,
+      "fixed_flag": true,
+      "pair_correct": false,
+      "within_pair_rank_correct": true
+    },
+    {
+      "pair_id": "7e069852e2941a4f923eef56",
+      "cwe_id": "CWE-20",
+      "language": "C",
+      "vulnerable_probability": 0.41732075810432434,
+      "fixed_probability": 0.3248806893825531,
+      "vulnerable_flag": true,
+      "fixed_flag": false,
+      "pair_correct": true,
+      "within_pair_rank_correct": true
+    },
+    {
+      "pair_id": "08aebbd812ee8eb337d8e9b3",
+      "cwe_id": "CWE-119",
+      "language": "C",
+      "vulnerable_probability": 0.013243332505226135,
+      "fixed_probability": 0.03653974458575249,
+      "vulnerable_flag": false,
+      "fixed_flag": false,
+      "pair_correct": false,
+      "within_pair_rank_correct": false
+    },
+    {
+      "pair_id": "157662b5027b8fd23d0a516f",
+      "cwe_id": "CWE-119",
+      "language": "C",
+      "vulnerable_probability": 0.3703715205192566,
+      "fixed_probability": 0.3397957384586334,
+      "vulnerable_flag": true,
+      "fixed_flag": true,
+      "pair_correct": false,
+      "within_pair_rank_correct": true
+    },
+    {
+      "pair_id": "f6b80bef54d9c029e9926d89",
+      "cwe_id": "CWE-94",
+      "language": "Php",
+      "vulnerable_probability": 0.7384433150291443,
+      "fixed_probability": 0.31462958455085754,
+      "vulnerable_flag": true,
+      "fixed_flag": false,
+      "pair_correct": true,
+      "within_pair_rank_correct": true
+    },
+    {
+      "pair_id": "ddfb2201e11f05491d0ed34d",
+      "cwe_id": "CWE-119",
+      "language": "C",
+      "vulnerable_probability": 0.5252169966697693,
+      "fixed_probability": 0.5437570214271545,
+      "vulnerable_flag": true,
+      "fixed_flag": true,
+      "pair_correct": false,
+      "within_pair_rank_correct": false
+    },
+    {
+      "pair_id": "7fb2f7f44f62b7b3ff123fa9",
+      "cwe_id": "CWE-399",
+      "language": "C",
+      "vulnerable_probability": 0.5906444191932678,
+      "fixed_probability": 0.3166300356388092,
+      "vulnerable_flag": true,
+      "fixed_flag": false,
+      "pair_correct": true,
+      "within_pair_rank_correct": true
+    },
+    {
+      "pair_id": "a4074a8d2d046fa6628aa211",
+      "cwe_id": "CWE-119",
+      "language": "Ruby",
+      "vulnerable_probability": 0.878442645072937,
+      "fixed_probability": 0.32899969816207886,
+      "vulnerable_flag": true,
+      "fixed_flag": false,
+      "pair_correct": true,
+      "within_pair_rank_correct": true
+    },
+    {
+      "pair_id": "3f2ecbf42bb8e54ae6da3385",
+      "cwe_id": "CWE-20",
+      "language": "C",
+      "vulnerable_probability": 0.03810104355216026,
+      "fixed_probability": 0.03811979666352272,
+      "vulnerable_flag": false,
+      "fixed_flag": false,
+      "pair_correct": false,
+      "within_pair_rank_correct": false
+    },
+    {
+      "pair_id": "d7974e4094aed51f72b38ccd",
+      "cwe_id": "CWE-89",
+      "language": "Java",
+      "vulnerable_probability": 0.571208655834198,
+      "fixed_probability": 0.5470607280731201,
+      "vulnerable_flag": true,
+      "fixed_flag": true,
+      "pair_correct": false,
+      "within_pair_rank_correct": true
+    },
+    {
+      "pair_id": "e69fbe07bc13d815a3204f8d",
+      "cwe_id": "CWE-264",
+      "language": "C",
+      "vulnerable_probability": 0.7583991289138794,
+      "fixed_probability": 0.5737812519073486,
+      "vulnerable_flag": true,
+      "fixed_flag": true,
+      "pair_correct": false,
+      "within_pair_rank_correct": true
+    },
+    {
+      "pair_id": "d20694d506093f55b1d259c4",
+      "cwe_id": "CWE-119",
+      "language": "C",
+      "vulnerable_probability": 0.515154242515564,
+      "fixed_probability": 0.5407916903495789,
+      "vulnerable_flag": true,
+      "fixed_flag": true,
+      "pair_correct": false,
+      "within_pair_rank_correct": false
+    },
+    {
+      "pair_id": "f31337cb1d0c50b0d4e5f626",
+      "cwe_id": "CWE-119",
+      "language": "C",
+      "vulnerable_probability": 0.4844065010547638,
+      "fixed_probability": 0.502354621887207,
+      "vulnerable_flag": true,
+      "fixed_flag": true,
+      "pair_correct": false,
+      "within_pair_rank_correct": false
+    },
+    {
+      "pair_id": "2e4f31e97c727ddf5a75cc62",
+      "cwe_id": "CWE-399",
+      "language": "C",
+      "vulnerable_probability": 0.48971256613731384,
+      "fixed_probability": 0.5482663512229919,
+      "vulnerable_flag": true,
+      "fixed_flag": true,
+      "pair_correct": false,
+      "within_pair_rank_correct": false
+    },
+    {
+      "pair_id": "773717153a9e1c8461b12a85",
+      "cwe_id": "CWE-399",
+      "language": "C",
+      "vulnerable_probability": 0.6144853830337524,
+      "fixed_probability": 0.559887707233429,
+      "vulnerable_flag": true,
+      "fixed_flag": true,
+      "pair_correct": false,
+      "within_pair_rank_correct": true
+    },
+    {
+      "pair_id": "35b61b7d8dbad9e0e8d1bbba",
+      "error": "language is unsupported by the CodeAstra prompt"
+    },
+    {
+      "pair_id": "d3b8ef8b42fd79e6292ac416",
+      "cwe_id": "CWE-119",
+      "language": "C",
+      "vulnerable_probability": 0.47818711400032043,
+      "fixed_probability": 0.3618537187576294,
+      "vulnerable_flag": true,
+      "fixed_flag": true,
+      "pair_correct": false,
+      "within_pair_rank_correct": true
+    },
+    {
+      "pair_id": "cce3e9e0d4de34bacb911b56",
+      "cwe_id": "CWE-119",
+      "language": "C",
+      "vulnerable_probability": 0.3417187035083771,
+      "fixed_probability": 0.2926883399486542,
+      "vulnerable_flag": true,
+      "fixed_flag": false,
+      "pair_correct": true,
+      "within_pair_rank_correct": true
+    },
+    {
+      "pair_id": "e07f006da2f96a66a6339d88",
+      "cwe_id": "CWE-94",
+      "language": "Ruby",
+      "vulnerable_probability": 0.9417251348495483,
+      "fixed_probability": 0.7884144186973572,
+      "vulnerable_flag": true,
+      "fixed_flag": true,
+      "pair_correct": false,
+      "within_pair_rank_correct": true
+    },
+    {
+      "pair_id": "93b65bcde9766515908d15a3",
+      "cwe_id": "CWE-119",
+      "language": "Fortran",
+      "vulnerable_probability": 0.9868039488792419,
+      "fixed_probability": 0.4730999767780304,
+      "vulnerable_flag": true,
+      "fixed_flag": true,
+      "pair_correct": false,
+      "within_pair_rank_correct": true
+    },
+    {
+      "pair_id": "0507ba2d10b54af64cbd66d4",
+      "cwe_id": "CWE-399",
+      "language": "C",
+      "vulnerable_probability": 0.4879344403743744,
+      "fixed_probability": 0.5081217288970947,
+      "vulnerable_flag": true,
+      "fixed_flag": true,
+      "pair_correct": false,
+      "within_pair_rank_correct": false
+    },
+    {
+      "pair_id": "82d6ab90f8dd8a997a8757de",
+      "cwe_id": "CWE-399",
+      "language": "C",
+      "vulnerable_probability": 0.7811768054962158,
+      "fixed_probability": 0.5931229591369629,
+      "vulnerable_flag": true,
+      "fixed_flag": true,
+      "pair_correct": false,
+      "within_pair_rank_correct": true
+    },
+    {
+      "pair_id": "c51af2c77b97692e7dd7e19a",
+      "cwe_id": "CWE-125",
+      "language": "C",
+      "vulnerable_probability": 0.08888522535562515,
+      "fixed_probability": 0.10005605965852737,
+      "vulnerable_flag": false,
+      "fixed_flag": false,
+      "pair_correct": false,
+      "within_pair_rank_correct": false
+    },
+    {
+      "pair_id": "2add38965144df8de0c5fd8c",
+      "cwe_id": "CWE-79",
+      "language": "Php",
+      "vulnerable_probability": 0.626128077507019,
+      "fixed_probability": 0.3410874307155609,
+      "vulnerable_flag": true,
+      "fixed_flag": true,
+      "pair_correct": false,
+      "within_pair_rank_correct": true
+    },
+    {
+      "pair_id": "c313ae2b488445c0ec18c368",
+      "cwe_id": "CWE-119",
+      "language": "Swift",
+      "vulnerable_probability": 0.7958217859268188,
+      "fixed_probability": 0.48505863547325134,
+      "vulnerable_flag": true,
+      "fixed_flag": true,
+      "pair_correct": false,
+      "within_pair_rank_correct": true
+    },
+    {
+      "pair_id": "48f668c65d9c68686ee603e0",
+      "cwe_id": "CWE-119",
+      "language": "C",
+      "vulnerable_probability": 0.562416136264801,
+      "fixed_probability": 0.5411340594291687,
+      "vulnerable_flag": true,
+      "fixed_flag": true,
+      "pair_correct": false,
+      "within_pair_rank_correct": true
+    },
+    {
+      "pair_id": "2787a653ca0dcc33d3274624",
+      "cwe_id": "CWE-310",
+      "language": "C",
+      "vulnerable_probability": 0.6172447800636292,
+      "fixed_probability": 0.4505029022693634,
+      "vulnerable_flag": true,
+      "fixed_flag": true,
+      "pair_correct": false,
+      "within_pair_rank_correct": true
+    },
+    {
+      "pair_id": "fae58aed1421b8eebf4af1dd",
+      "cwe_id": "CWE-416",
+      "language": "C",
+      "vulnerable_probability": 0.5739912390708923,
+      "fixed_probability": 0.5552909970283508,
+      "vulnerable_flag": true,
+      "fixed_flag": true,
+      "pair_correct": false,
+      "within_pair_rank_correct": true
+    },
+    {
+      "pair_id": "86137ddc5388b4227a0f1cfc",
+      "cwe_id": "CWE-330",
+      "language": "Javascript",
+      "vulnerable_probability": 0.750766396522522,
+      "fixed_probability": 0.45475009083747864,
+      "vulnerable_flag": true,
+      "fixed_flag": true,
+      "pair_correct": false,
+      "within_pair_rank_correct": true
+    },
+    {
+      "pair_id": "cbaaae55e1b5b5f5a22d7ddb",
+      "cwe_id": "CWE-119",
+      "language": "Go",
+      "vulnerable_probability": 0.6709884405136108,
+      "fixed_probability": 0.6232424378395081,
+      "vulnerable_flag": true,
+      "fixed_flag": true,
+      "pair_correct": false,
+      "within_pair_rank_correct": true
+    },
+    {
+      "pair_id": "24678cfd139750dbd1a0d740",
+      "error": "language is unsupported by the CodeAstra prompt"
+    },
+    {
+      "pair_id": "468b342e2b8c7c552ad85d7a",
+      "error": "prompt/completion exceeds CodeAstra's 2048-token context"
+    },
+    {
+      "pair_id": "9612b24e84618c9bed17939f",
+      "cwe_id": "CWE-362",
+      "language": "C",
+      "vulnerable_probability": 0.4469212293624878,
+      "fixed_probability": 0.38420575857162476,
+      "vulnerable_flag": true,
+      "fixed_flag": true,
+      "pair_correct": false,
+      "within_pair_rank_correct": true
+    },
+    {
+      "pair_id": "7a2f65deade796b545592b89",
+      "error": "language is unsupported by the CodeAstra prompt"
+    },
+    {
+      "pair_id": "cb01ff9324575bd6fc6a997c",
+      "cwe_id": "CWE-200",
+      "language": "C",
+      "vulnerable_probability": 0.36123886704444885,
+      "fixed_probability": 0.47565990686416626,
+      "vulnerable_flag": true,
+      "fixed_flag": true,
+      "pair_correct": false,
+      "within_pair_rank_correct": false
+    },
+    {
+      "pair_id": "bd1150bdcd1cb2ee1bd2e0fa",
+      "cwe_id": "CWE-787",
+      "language": "C",
+      "vulnerable_probability": 0.513886570930481,
+      "fixed_probability": 0.41891637444496155,
+      "vulnerable_flag": true,
+      "fixed_flag": true,
+      "pair_correct": false,
+      "within_pair_rank_correct": true
+    },
+    {
+      "pair_id": "28a6c5e77975bdf717585ede",
+      "cwe_id": "CWE-399",
+      "language": "C",
+      "vulnerable_probability": 0.6004425883293152,
+      "fixed_probability": 0.6045176386833191,
+      "vulnerable_flag": true,
+      "fixed_flag": true,
+      "pair_correct": false,
+      "within_pair_rank_correct": false
+    },
+    {
+      "pair_id": "9d21ea36515eccb63fd38280",
+      "cwe_id": "CWE-200",
+      "language": "C",
+      "vulnerable_probability": 0.5100777745246887,
+      "fixed_probability": 0.3477361500263214,
+      "vulnerable_flag": true,
+      "fixed_flag": true,
+      "pair_correct": false,
+      "within_pair_rank_correct": true
+    },
+    {
+      "pair_id": "84628f67ced0f0b3bedc3de7",
+      "cwe_id": "CWE-119",
+      "language": "C",
+      "vulnerable_probability": 0.8302072286605835,
+      "fixed_probability": 0.8277788162231445,
+      "vulnerable_flag": true,
+      "fixed_flag": true,
+      "pair_correct": false,
+      "within_pair_rank_correct": true
+    },
+    {
+      "pair_id": "e31293dcff497f4b8993ece5",
+      "cwe_id": "CWE-119",
+      "language": "C",
+      "vulnerable_probability": 0.3796079754829407,
+      "fixed_probability": 0.47830167412757874,
+      "vulnerable_flag": true,
+      "fixed_flag": true,
+      "pair_correct": false,
+      "within_pair_rank_correct": false
+    },
+    {
+      "pair_id": "be1ccd417e2014604e6aeead",
+      "error": "prompt/completion exceeds CodeAstra's 2048-token context"
+    },
+    {
+      "pair_id": "ce88c9760ad89a18d0dde720",
+      "cwe_id": "CWE-119",
+      "language": "Fortran",
+      "vulnerable_probability": 0.8910735249519348,
+      "fixed_probability": 0.9245718717575073,
+      "vulnerable_flag": true,
+      "fixed_flag": true,
+      "pair_correct": false,
+      "within_pair_rank_correct": false
+    },
+    {
+      "pair_id": "52566917f8448c3ce75b4879",
+      "error": "prompt/completion exceeds CodeAstra's 2048-token context"
+    },
+    {
+      "pair_id": "80c462bbe0be83d24a3550a8",
+      "cwe_id": "CWE-119",
+      "language": "Fortran",
+      "vulnerable_probability": 0.6858066320419312,
+      "fixed_probability": 0.44704535603523254,
+      "vulnerable_flag": true,
+      "fixed_flag": true,
+      "pair_correct": false,
+      "within_pair_rank_correct": true
+    },
+    {
+      "pair_id": "a04ebaf64b0238cbde5a427f",
+      "cwe_id": "CWE-119",
+      "language": "Fortran",
+      "vulnerable_probability": 0.5977855324745178,
+      "fixed_probability": 0.5774754881858826,
+      "vulnerable_flag": true,
+      "fixed_flag": true,
+      "pair_correct": false,
+      "within_pair_rank_correct": true
+    }
+  ],
+  "limitations": [
+    "These are function-level vulnerability-pair results, not package integrity, exploitability, or provenance validation.",
+    "This dataset family contributed to CodeAstra training; the held-out test split is required, and results do not establish performance on unrelated packages.",
+    "A model-card benchmark is not independent reproduction; report the selected-pair denominator and failures with every metric."
+  ]
+}

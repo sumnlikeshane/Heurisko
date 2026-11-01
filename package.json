@@ -4,8 +4,9 @@
   "type": "module",
   "packageManager": "pnpm@10.14.0",
   "scripts": {
-    "typecheck": "tsc --noEmit -p packages/contracts/tsconfig.json",
-    "test:contracts": "python3 packages/contracts/tests/validate_contracts.py && node packages/contracts/tests/smoke-handshake.mjs"
+    "typecheck": "tsc -p packages/contracts/tsconfig.json && tsc --noEmit -p packages/intelligence/tsconfig.json",
+    "test:contracts": "python3 packages/contracts/tests/validate_contracts.py && node packages/contracts/tests/smoke-handshake.mjs && pnpm run test:intelligence",
+    "test:intelligence": "tsc -p packages/contracts/tsconfig.json && tsc -p packages/intelligence/tsconfig.json && python3 packages/intelligence/tests/validate_handshake.py && python3 packages/intelligence/tests/validate_retrieval.py && python3 packages/intelligence/tests/validate_interpretations.py && python3 packages/intelligence/tests/validate_prompts.py && python3 packages/intelligence/tests/validate_real_setuptools.py && python3 packages/intelligence/tests/validate_inference.py"
   },
   "devDependencies": {
     "typescript": "5.8.3"
