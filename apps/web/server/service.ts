@@ -51,7 +51,14 @@ export async function startViewer(initial: Observation[], port = 0, settings: { 
                 return respond(res, 403, { error: 'HOST_DENIED' });
             if (req.headers.origin !== undefined && req.headers.origin !== origin)
                 return respond(res, 403, { error: 'ORIGIN_DENIED' });
-            if (req.headers['sec-fetch-site'] && !['same-origin', 'none'].includes(String(req.headers['sec-fetch-site'])))
+            const fetchSite = String(req.headers['sec-fetch-site'] ?? '');
+            // An external link may navigate to a public HTML page. This grants
+            // no API/asset access and does not relax the local capability mode.
+            const publicDocumentNavigation = publicReadOnly && req.method === 'GET' && req.headers.origin === undefined
+                && ['same-site', 'cross-site'].includes(fetchSite)
+                && req.headers['sec-fetch-mode'] === 'navigate' && req.headers['sec-fetch-dest'] === 'document'
+                && typeof req.url === 'string' && !req.url.includes('?') && uiPath(req.url);
+            if (fetchSite && !['same-origin', 'none'].includes(fetchSite) && !publicDocumentNavigation)
                 return respond(res, 403, { error: 'ORIGIN_DENIED' });
             if (req.method !== 'GET' && req.method !== 'POST')
                 return respond(res, 405, { error: 'METHOD_DENIED' });

@@ -71,6 +71,26 @@ test('every hosted mutation fails before receiving or parsing its body and never
     }
     assert.equal(calls, 0); assert.deepEqual((await http(viewer, '/api/observations')).data, []);
 });
+test('external public document navigation works while APIs, assets, origins and local mode remain strict', async t => {
+    const viewer = await startViewer([], 0, { publicReadOnlyOrigin: origin }); t.after(() => viewer.close());
+    const navigation = { 'Sec-Fetch-Mode': 'navigate', 'Sec-Fetch-Dest': 'document' };
+    for (const site of ['same-site', 'cross-site']) {
+        const headers = { ...navigation, 'Sec-Fetch-Site': site };
+        for (const path of ['/', '/docs/start/quickstart', '/workspace/reports', '/workspace/observations/' + 'a'.repeat(32) + '/overview']) assert.equal((await http(viewer, path, { headers })).status, 200, site + ' ' + path);
+        for (const path of ['/api/observations', '/api/docs', '/assets/app.js', '/assets/app.css', '/healthz']) assert.equal((await http(viewer, path, { headers })).status, 403, site + ' ' + path);
+        assert.equal((await http(viewer, '/', { headers: { ...headers, Origin: 'https://evil.invalid' } })).status, 403);
+        assert.equal((await http(viewer, '/', { headers: { ...headers, Host: 'evil.invalid', 'X-Forwarded-Host': new URL(origin).host } })).status, 403);
+        assert.equal((await http(viewer, '/?x=1', { headers })).status, 403);
+        assert.equal((await http(viewer, '/', { headers: { ...headers, 'Sec-Fetch-Mode': 'cors' } })).status, 403);
+        assert.equal((await http(viewer, '/', { headers: { ...headers, 'Sec-Fetch-Dest': 'iframe' } })).status, 403);
+        assert.equal((await http(viewer, '/api/investigations', { method: 'POST', headers: { ...headers, Origin: origin } })).status, 403);
+    }
+    const local = await startViewer([], 0); t.after(() => local.close());
+    const localNavigation = await new Promise((accept, reject) => {
+        const req = request(local.listenOrigin + '/', { headers: { ...navigation, 'Sec-Fetch-Site': 'cross-site' } }, res => { res.resume(); res.on('end', () => accept(res.statusCode)); }); req.on('error', reject); req.end();
+    });
+    assert.equal(localNavigation, 403);
+});
 test('public UI presents captured reports and local setup without mounted upload/start/reconnect forms or portable writes', async () => {
     const app = renderToStaticMarkup(React.createElement(App, { publicReadOnly: true }));
     assert.match(app, /Public captured-report explorer/); assert.doesNotMatch(app, /type="file"|Private launch URL|Review exact input|Confirm and start investigation/);
