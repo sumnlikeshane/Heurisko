@@ -1,6 +1,6 @@
 # Security and support
 
-Heurisko is a Phase 1 foundation with owner acceptance granted and remaining technical gates open. The source-checkout workflow pins Node 22.23.4, pnpm 10.14.0 and CPython 3.13. macOS arm64 has local evidence; Linux amd64 remains a candidate pending the native CI proof in the [Phase 1 plan](docs/Production%20Phase%201%20Implementation%20Plan.md). Windows and other runtime/architecture combinations have no support claim. There is no maintained published release line or guaranteed fix window yet.
+Heurisko is a Phase 1 foundation with owner acceptance granted and remaining technical gates open. The source-checkout workflow pins Node 22.23.4, pnpm 10.14.0 and CPython 3.13. macOS arm64 has local evidence and Linux amd64 now has [native CI evidence](examples/production-phase1/2026-11-01-native-linux-3521e1c/review.json) at `3521e1c`. The [Phase 1 plan](docs/Production%20Phase%201%20Implementation%20Plan.md) tracks current PR-head checks and remaining rights holds. Windows and other runtime/architecture combinations have no support claim. There is no maintained published release line or guaranteed fix window yet.
 
 ## Report a vulnerability privately
 

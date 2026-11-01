@@ -1,0 +1,63 @@
+{
+  "defaultNoAIOptionsModuleOutcomesFindingsEqual": true,
+  "reportIdentityEqual": false,
+  "acquisitionSnapshots": {
+    "normal": "sha256:fcb1088bcec926655c5cc358e76063e186d65c80e96ffd57b0cdb33cd9c75d7a",
+    "noAI": "sha256:21ac839b7ac02a9abdd51a418d84b1c956ade7eba2db64e54b593e9484f831f7"
+  },
+  "identityReason": "Changed exact acquisition snapshot, including observed HTTP facts, legitimately changes identity; no report normalized or rewritten",
+  "rawRemainsIncomplete": true,
+  "cases": [
+    {
+      "path": ".heurisko/ci-phase1-npm-default.report.json",
+      "sha256": "sha256:57571fd9525ac946106488bc830462d8a808b3783b7431dd3caabf5d91c2af45",
+      "bytes": 71724,
+      "reportId": "report_c6357f18bce9cfa73821e07e",
+      "artifactSha256": "sha256:d3aedb2807967b7eb37fd11b03b7e3701e725af79c650d0812ff7213f8f882d9",
+      "outcomes": {
+        "artifactIntegrity": "matched",
+        "sourceAssociation": "ambiguous",
+        "provenancePolicy": "not_checked",
+        "correspondence": "unresolved",
+        "analysisCompleteness": "complete",
+        "policyResult": "not_evaluated"
+      },
+      "findings": 14,
+      "exit": 0
+    },
+    {
+      "path": ".heurisko/ci-phase1-npm-no-ai.report.json",
+      "sha256": "sha256:bec9f26cc70e18943e97cadf7d5c09ebf38f7556d182f0826673aff1c6a8f2c5",
+      "bytes": 71724,
+      "reportId": "report_7ac03d65968fe847b53941c0",
+      "artifactSha256": "sha256:d3aedb2807967b7eb37fd11b03b7e3701e725af79c650d0812ff7213f8f882d9",
+      "outcomes": {
+        "artifactIntegrity": "matched",
+        "sourceAssociation": "ambiguous",
+        "provenancePolicy": "not_checked",
+        "correspondence": "unresolved",
+        "analysisCompleteness": "complete",
+        "policyResult": "not_evaluated"
+      },
+      "findings": 14,
+      "exit": 0
+    },
+    {
+      "path": ".heurisko/ci-phase1-npm-raw.report.json",
+      "sha256": "sha256:d6cb00dd26d4ed20056be9f1f1c0c81038112e224124bcf9ce66b73bee44f73f",
+      "bytes": 57825,
+      "reportId": "report_6d81a770187bb0b6fec6372b",
+      "artifactSha256": "sha256:d3aedb2807967b7eb37fd11b03b7e3701e725af79c650d0812ff7213f8f882d9",
+      "outcomes": {
+        "artifactIntegrity": "matched",
+        "sourceAssociation": "ambiguous",
+        "provenancePolicy": "not_checked",
+        "correspondence": "unresolved",
+        "analysisCompleteness": "incomplete",
+        "policyResult": "not_evaluated"
+      },
+      "findings": 0,
+      "exit": 2
+    }
+  ]
+}

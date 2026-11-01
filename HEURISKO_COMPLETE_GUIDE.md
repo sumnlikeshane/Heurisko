@@ -261,7 +261,7 @@ To uninstall this source workflow, stop the CLI/TUI/local web process and confir
 | Environment | Evidence/support status |
 |---|---|
 | macOS arm64, Node 22.23.4, pnpm 10.14.0, Python 3.13.2, Docker Desktop local socket | Fresh source installation and actual parser/investigation proof retained; current additional checks are in the Phase 1 plan |
-| Native Linux amd64, same Node/pnpm and CPython 3.13, local `/var/run/docker.sock` | Candidate; starting-main CI exists, but the final Phase 1 native proof awaits authorized publication and its exact-head CI artifact |
+| Native Linux amd64, same Node/pnpm and CPython 3.13, local `/var/run/docker.sock` | Native GitHub CI proof at `3521e1c`: parser/recovery, local/npm/reopen, eight-case baseline and resource samples; [retained review](examples/production-phase1/2026-11-01-native-linux-3521e1c/review.json). One tested host; other distributions/runtime combinations are not implied. |
 | Linux amd64 hosted image under macOS Docker emulation | Image/build/read-only serving evidence only; cannot substitute for native parser/support proof |
 | Windows, other architectures/runtime versions, remote Docker sockets | No supported installation claim from Phase 1 |
 

@@ -1,0 +1,84 @@
+{
+  "host": "linux",
+  "scenarios": [
+    {
+      "scenario": "delayed-create-cancel",
+      "exactContainerId": "d64ff25e41199fab49fcc1ab6205b89ad20ca3db89e68a9b3d3a65c9d67afe5a",
+      "inventoryCode": "CANCELLED",
+      "complete": false,
+      "samples": [],
+      "resourceLimit": "Docker stream samples may miss short-lived peaks; zero samples is unmeasured, not zero use."
+    },
+    {
+      "scenario": "delayed-remove",
+      "exactContainerId": "90a8a78a5a379332d04c077521fce222caf2db939794a65b3310ac403e649a58",
+      "inventoryCode": "OK",
+      "complete": true,
+      "samples": [
+        {
+          "read": "0001-01-01T00:00:00Z",
+          "memory": {},
+          "cpu": {
+            "cpu_usage": {
+              "total_usage": 0,
+              "usage_in_kernelmode": 0,
+              "usage_in_usermode": 0
+            },
+            "throttling_data": {
+              "periods": 0,
+              "throttled_periods": 0,
+              "throttled_time": 0
+            }
+          }
+        }
+      ],
+      "resourceLimit": "Docker stream samples may miss short-lived peaks; zero samples is unmeasured, not zero use."
+    },
+    {
+      "scenario": "unacknowledged-create",
+      "exactContainerId": "0b929e450100388b228c6ed52b7348cc11cb2a51078a23ba8c8abf77a3cbd8ff",
+      "inventoryCode": "PARSER_CLEANUP_UNCONFIRMED",
+      "complete": false,
+      "recovery": {
+        "version": "heurisko-parser-recovery-v1",
+        "name": "heurisko-parser-ea6cf41b-f147-4fb0-96d1-6860bc2353a9",
+        "containerId": "0b929e450100388b228c6ed52b7348cc11cb2a51078a23ba8c8abf77a3cbd8ff",
+        "storeLabel": "5849e3a0f8deade98dd0453d6f45092580717899eddb77a487081facc3170342",
+        "observedState": {
+          "status": "created",
+          "running": false,
+          "pid": 0,
+          "startedAt": "0001-01-01T00:00:00Z"
+        },
+        "removedWithoutForce": true,
+        "exactRemovalConfirmed": true,
+        "recoveredAt": "2026-11-01T18:21:16.634Z"
+      },
+      "samples": [],
+      "resourceLimit": "Docker stream samples may miss short-lived peaks; zero samples is unmeasured, not zero use."
+    },
+    {
+      "scenario": "unacknowledged-remove",
+      "exactContainerId": "41ef4991173144f3056ad05c8c7f4007f90d2edbc482959a967a783f37f56a5f",
+      "inventoryCode": "PARSER_CLEANUP_UNCONFIRMED",
+      "complete": false,
+      "recovery": {
+        "version": "heurisko-parser-recovery-v1",
+        "name": "heurisko-parser-e09e8a7c-5cd4-46c3-a454-9aeed446509e",
+        "containerId": "41ef4991173144f3056ad05c8c7f4007f90d2edbc482959a967a783f37f56a5f",
+        "storeLabel": "bc0175a5b72da7feeb50d9ba5caf689205fbf95f180d576f09962bac2645b222",
+        "observedState": {
+          "status": "exited",
+          "running": false,
+          "pid": 0,
+          "startedAt": "2026-11-01T18:21:16.771588175Z"
+        },
+        "removedWithoutForce": true,
+        "exactRemovalConfirmed": true,
+        "recoveredAt": "2026-11-01T18:21:17.165Z"
+      },
+      "samples": [],
+      "resourceLimit": "Docker stream samples may miss short-lived peaks; zero samples is unmeasured, not zero use."
+    }
+  ]
+}

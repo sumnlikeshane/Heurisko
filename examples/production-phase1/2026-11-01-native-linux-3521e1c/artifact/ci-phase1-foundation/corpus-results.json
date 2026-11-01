@@ -1,0 +1,627 @@
+[
+  {
+    "reportId": "report_981939fb7535c7e3ad910c5a",
+    "reportSha256": "sha256:16c1effbc8884a674c19da78ec8fd176503dc5691b1bdc7bf1143118bf64b37e",
+    "reportBytes": 9847,
+    "outcomes": {
+      "artifactIntegrity": "not_checked",
+      "sourceAssociation": "user_supplied",
+      "provenancePolicy": "not_checked",
+      "correspondence": "exact",
+      "analysisCompleteness": "complete",
+      "policyResult": "not_evaluated"
+    },
+    "ai": {
+      "status": "disabled",
+      "validation": "not_run"
+    },
+    "findings": 0,
+    "conflicts": [],
+    "coverage": {
+      "artifactFiles": 2,
+      "sourceFiles": 2,
+      "comparedFiles": 2,
+      "analyzedBytes": 252,
+      "skippedBytes": 0,
+      "unsupportedBytes": 0,
+      "omissions": [],
+      "complete": true,
+      "limitations": []
+    },
+    "cliInspectExit": 0,
+    "cliTuiExit": 0,
+    "citations": [],
+    "id": "benign-identical",
+    "command": [
+      "analyze",
+      "--artifact",
+      "/home/runner/work/Heurisko/Heurisko/.heurisko/ci-phase1-foundation/benign-identical-inputs/artifact.tgz",
+      "--source",
+      "https://github.com/alexeyraspopov/picocolors",
+      "--commit",
+      "6f0a4638348ed20633d623ee973f9c9a96f65104",
+      "--source-archive",
+      "/home/runner/work/Heurisko/Heurisko/.heurisko/ci-phase1-foundation/benign-identical-inputs/source.tgz",
+      "--store",
+      "/home/runner/work/Heurisko/Heurisko/.heurisko/ci-phase1-foundation/benign-identical/store",
+      "--report",
+      "/home/runner/work/Heurisko/Heurisko/.heurisko/ci-phase1-foundation/benign-identical/report.json",
+      "--json"
+    ],
+    "env": {},
+    "seconds": 3.477,
+    "class": "benign"
+  },
+  {
+    "reportId": "report_83de3224f0de724f9d6231da",
+    "reportSha256": "sha256:ff8f32f88a285590120d98abe4f705918b7c7dc63afddf1e48533c14264ad1fc",
+    "reportBytes": 11299,
+    "outcomes": {
+      "artifactIntegrity": "not_checked",
+      "sourceAssociation": "user_supplied",
+      "provenancePolicy": "not_checked",
+      "correspondence": "unresolved",
+      "analysisCompleteness": "complete",
+      "policyResult": "not_evaluated"
+    },
+    "ai": {
+      "status": "disabled",
+      "validation": "not_run"
+    },
+    "findings": 1,
+    "conflicts": [],
+    "coverage": {
+      "artifactFiles": 2,
+      "sourceFiles": 2,
+      "comparedFiles": 2,
+      "analyzedBytes": 250,
+      "skippedBytes": 0,
+      "unsupportedBytes": 0,
+      "omissions": [],
+      "complete": true,
+      "limitations": []
+    },
+    "cliInspectExit": 0,
+    "cliTuiExit": 0,
+    "citations": [
+      {
+        "id": "ev_45434cc716ec98123934c977",
+        "kind": "content",
+        "ref": "sha256:27939cf8ad5c6af0b251a1dd2286e3f11b8f42c856f1550a5fd4690c42a8bee5",
+        "range": {
+          "startByte": 0,
+          "endByte": 532
+        },
+        "displayed": {
+          "startByte": 0,
+          "endByte": 532
+        },
+        "bytes": 532
+      },
+      {
+        "id": "ev_5c55c6a29cce9db041d28a50",
+        "kind": "content",
+        "ref": "sha256:af97a4adec77cdb68ce84d2f083ae858e9bbd04646f4eea614184797fd7fadba",
+        "range": {
+          "startByte": 0,
+          "endByte": 51
+        },
+        "displayed": {
+          "startByte": 0,
+          "endByte": 51
+        },
+        "bytes": 51
+      },
+      {
+        "id": "ev_f8cfaf6ebde1238fe8a42d34",
+        "kind": "content",
+        "ref": "sha256:eab5d3a6cd6ef7e7af4778c1f46fcd4c871759f69fa42574ae1cb4e91c1a5e64",
+        "range": {
+          "startByte": 0,
+          "endByte": 49
+        },
+        "displayed": {
+          "startByte": 0,
+          "endByte": 49
+        },
+        "bytes": 49
+      }
+    ],
+    "id": "benign-format",
+    "command": [
+      "analyze",
+      "--artifact",
+      "/home/runner/work/Heurisko/Heurisko/.heurisko/ci-phase1-foundation/benign-format-inputs/artifact.tgz",
+      "--source",
+      "https://github.com/alexeyraspopov/picocolors",
+      "--commit",
+      "6f0a4638348ed20633d623ee973f9c9a96f65104",
+      "--source-archive",
+      "/home/runner/work/Heurisko/Heurisko/.heurisko/ci-phase1-foundation/benign-format-inputs/source.tgz",
+      "--store",
+      "/home/runner/work/Heurisko/Heurisko/.heurisko/ci-phase1-foundation/benign-format/store",
+      "--report",
+      "/home/runner/work/Heurisko/Heurisko/.heurisko/ci-phase1-foundation/benign-format/report.json",
+      "--json"
+    ],
+    "env": {},
+    "seconds": 3.497,
+    "class": "benign"
+  },
+  {
+    "reportId": "report_a0bc393fdbe016c28cda9ad4",
+    "reportSha256": "sha256:f8f5076e66d8d390ea37cd04e79060827fed45be9a98d589d06f0cc6947f9c4f",
+    "reportBytes": 11299,
+    "outcomes": {
+      "artifactIntegrity": "not_checked",
+      "sourceAssociation": "user_supplied",
+      "provenancePolicy": "not_checked",
+      "correspondence": "unresolved",
+      "analysisCompleteness": "complete",
+      "policyResult": "not_evaluated"
+    },
+    "ai": {
+      "status": "disabled",
+      "validation": "not_run"
+    },
+    "findings": 1,
+    "conflicts": [],
+    "coverage": {
+      "artifactFiles": 2,
+      "sourceFiles": 2,
+      "comparedFiles": 2,
+      "analyzedBytes": 253,
+      "skippedBytes": 0,
+      "unsupportedBytes": 0,
+      "omissions": [],
+      "complete": true,
+      "limitations": []
+    },
+    "cliInspectExit": 0,
+    "cliTuiExit": 0,
+    "citations": [
+      {
+        "id": "ev_1370b35c0c64218f5a3f808c",
+        "kind": "content",
+        "ref": "sha256:af97a4adec77cdb68ce84d2f083ae858e9bbd04646f4eea614184797fd7fadba",
+        "range": {
+          "startByte": 0,
+          "endByte": 51
+        },
+        "displayed": {
+          "startByte": 0,
+          "endByte": 51
+        },
+        "bytes": 51
+      },
+      {
+        "id": "ev_74944aef2cfd586fff8d86c6",
+        "kind": "content",
+        "ref": "sha256:1325183f74c05d0ad7762b73360effb492459fbdfa824d5a3cb1ba27e00f35fd",
+        "range": {
+          "startByte": 0,
+          "endByte": 52
+        },
+        "displayed": {
+          "startByte": 0,
+          "endByte": 52
+        },
+        "bytes": 52
+      },
+      {
+        "id": "ev_9996d944cd68801536c2edfb",
+        "kind": "content",
+        "ref": "sha256:602e2827f7561a25da501d6f20e7564a95dd9d4a224d7c5f8c51cb73c252111a",
+        "range": {
+          "startByte": 0,
+          "endByte": 650
+        },
+        "displayed": {
+          "startByte": 0,
+          "endByte": 650
+        },
+        "bytes": 650
+      }
+    ],
+    "id": "benign-generated",
+    "command": [
+      "analyze",
+      "--artifact",
+      "/home/runner/work/Heurisko/Heurisko/.heurisko/ci-phase1-foundation/benign-generated-inputs/artifact.tgz",
+      "--source",
+      "https://github.com/alexeyraspopov/picocolors",
+      "--commit",
+      "6f0a4638348ed20633d623ee973f9c9a96f65104",
+      "--source-archive",
+      "/home/runner/work/Heurisko/Heurisko/.heurisko/ci-phase1-foundation/benign-generated-inputs/source.tgz",
+      "--store",
+      "/home/runner/work/Heurisko/Heurisko/.heurisko/ci-phase1-foundation/benign-generated/store",
+      "--report",
+      "/home/runner/work/Heurisko/Heurisko/.heurisko/ci-phase1-foundation/benign-generated/report.json",
+      "--json"
+    ],
+    "env": {},
+    "seconds": 3.617,
+    "class": "benign"
+  },
+  {
+    "reportId": "report_98a78fa4254553aa732bb223",
+    "reportSha256": "sha256:df6ac65fb5feb0c42d7047155a70e1c853c065da14cf865e2ba132a6c756e0f1",
+    "reportBytes": 12265,
+    "outcomes": {
+      "artifactIntegrity": "not_checked",
+      "sourceAssociation": "user_supplied",
+      "provenancePolicy": "not_checked",
+      "correspondence": "unresolved",
+      "analysisCompleteness": "complete",
+      "policyResult": "not_evaluated"
+    },
+    "ai": {
+      "status": "disabled",
+      "validation": "not_run"
+    },
+    "findings": 1,
+    "conflicts": [],
+    "coverage": {
+      "artifactFiles": 2,
+      "sourceFiles": 2,
+      "comparedFiles": 2,
+      "analyzedBytes": 292,
+      "skippedBytes": 0,
+      "unsupportedBytes": 0,
+      "omissions": [],
+      "complete": true,
+      "limitations": []
+    },
+    "cliInspectExit": 0,
+    "cliTuiExit": 0,
+    "citations": [
+      {
+        "id": "ev_92f2176bca6e21ec8dd0095c",
+        "kind": "content",
+        "ref": "sha256:4b062e84a5bdeae919af92f90a764713cad9560b77ece557cf20c2edc972583a",
+        "range": {
+          "startByte": 0,
+          "endByte": 351
+        },
+        "displayed": {
+          "startByte": 0,
+          "endByte": 351
+        },
+        "bytes": 351
+      }
+    ],
+    "id": "mutation-lifecycle-add",
+    "command": [
+      "analyze",
+      "--artifact",
+      "/home/runner/work/Heurisko/Heurisko/.heurisko/ci-phase1-foundation/mutation-lifecycle-add-inputs/artifact.tgz",
+      "--source",
+      "https://github.com/alexeyraspopov/picocolors",
+      "--commit",
+      "6f0a4638348ed20633d623ee973f9c9a96f65104",
+      "--source-archive",
+      "/home/runner/work/Heurisko/Heurisko/.heurisko/ci-phase1-foundation/mutation-lifecycle-add-inputs/source.tgz",
+      "--store",
+      "/home/runner/work/Heurisko/Heurisko/.heurisko/ci-phase1-foundation/mutation-lifecycle-add/store",
+      "--report",
+      "/home/runner/work/Heurisko/Heurisko/.heurisko/ci-phase1-foundation/mutation-lifecycle-add/report.json",
+      "--json"
+    ],
+    "env": {},
+    "seconds": 3.591,
+    "class": "mutated"
+  },
+  {
+    "reportId": "report_9d4bfb499b9fa61285f18e7f",
+    "reportSha256": "sha256:169f50f60ddfacd07b2f2a6f9629ebfff978c8c2a84d0e131a14621847e0ffd5",
+    "reportBytes": 12269,
+    "outcomes": {
+      "artifactIntegrity": "not_checked",
+      "sourceAssociation": "user_supplied",
+      "provenancePolicy": "not_checked",
+      "correspondence": "unresolved",
+      "analysisCompleteness": "complete",
+      "policyResult": "not_evaluated"
+    },
+    "ai": {
+      "status": "disabled",
+      "validation": "not_run"
+    },
+    "findings": 1,
+    "conflicts": [],
+    "coverage": {
+      "artifactFiles": 2,
+      "sourceFiles": 2,
+      "comparedFiles": 2,
+      "analyzedBytes": 292,
+      "skippedBytes": 0,
+      "unsupportedBytes": 0,
+      "omissions": [],
+      "complete": true,
+      "limitations": []
+    },
+    "cliInspectExit": 0,
+    "cliTuiExit": 0,
+    "citations": [
+      {
+        "id": "ev_a274e296ea0ef056004ccb4c",
+        "kind": "content",
+        "ref": "sha256:dee7bb52d919d9453f5d5d3e70f016dc7d9772cbfd82c1796f5a135bd4380480",
+        "range": {
+          "startByte": 0,
+          "endByte": 351
+        },
+        "displayed": {
+          "startByte": 0,
+          "endByte": 351
+        },
+        "bytes": 351
+      }
+    ],
+    "id": "mutation-lifecycle-remove",
+    "command": [
+      "analyze",
+      "--artifact",
+      "/home/runner/work/Heurisko/Heurisko/.heurisko/ci-phase1-foundation/mutation-lifecycle-remove-inputs/artifact.tgz",
+      "--source",
+      "https://github.com/alexeyraspopov/picocolors",
+      "--commit",
+      "6f0a4638348ed20633d623ee973f9c9a96f65104",
+      "--source-archive",
+      "/home/runner/work/Heurisko/Heurisko/.heurisko/ci-phase1-foundation/mutation-lifecycle-remove-inputs/source.tgz",
+      "--store",
+      "/home/runner/work/Heurisko/Heurisko/.heurisko/ci-phase1-foundation/mutation-lifecycle-remove/store",
+      "--report",
+      "/home/runner/work/Heurisko/Heurisko/.heurisko/ci-phase1-foundation/mutation-lifecycle-remove/report.json",
+      "--json"
+    ],
+    "env": {},
+    "seconds": 3.558,
+    "class": "mutated"
+  },
+  {
+    "reportId": "report_7b491b0ad50ccc37f2f4c4d7",
+    "reportSha256": "sha256:3aa08454112b10dc1e5c86b1ace20a6d77ed6898731aa890d800e9b88b59ab43",
+    "reportBytes": 11589,
+    "outcomes": {
+      "artifactIntegrity": "not_checked",
+      "sourceAssociation": "user_supplied",
+      "provenancePolicy": "not_checked",
+      "correspondence": "unresolved",
+      "analysisCompleteness": "complete",
+      "policyResult": "not_evaluated"
+    },
+    "ai": {
+      "status": "disabled",
+      "validation": "not_run"
+    },
+    "findings": 1,
+    "conflicts": [],
+    "coverage": {
+      "artifactFiles": 2,
+      "sourceFiles": 2,
+      "comparedFiles": 2,
+      "analyzedBytes": 256,
+      "skippedBytes": 0,
+      "unsupportedBytes": 0,
+      "omissions": [],
+      "complete": true,
+      "limitations": []
+    },
+    "cliInspectExit": 0,
+    "cliTuiExit": 0,
+    "citations": [
+      {
+        "id": "ev_718d5e768fef473afb6c2f38",
+        "kind": "content",
+        "ref": "sha256:b98745df8566d3f3657dc215896c081bc52d8676556474b03442dfa444f7642d",
+        "range": {
+          "startByte": 0,
+          "endByte": 368
+        },
+        "displayed": {
+          "startByte": 0,
+          "endByte": 368
+        },
+        "bytes": 368
+      }
+    ],
+    "id": "mutation-entrypoint",
+    "command": [
+      "analyze",
+      "--artifact",
+      "/home/runner/work/Heurisko/Heurisko/.heurisko/ci-phase1-foundation/mutation-entrypoint-inputs/artifact.tgz",
+      "--source",
+      "https://github.com/alexeyraspopov/picocolors",
+      "--commit",
+      "6f0a4638348ed20633d623ee973f9c9a96f65104",
+      "--source-archive",
+      "/home/runner/work/Heurisko/Heurisko/.heurisko/ci-phase1-foundation/mutation-entrypoint-inputs/source.tgz",
+      "--store",
+      "/home/runner/work/Heurisko/Heurisko/.heurisko/ci-phase1-foundation/mutation-entrypoint/store",
+      "--report",
+      "/home/runner/work/Heurisko/Heurisko/.heurisko/ci-phase1-foundation/mutation-entrypoint/report.json",
+      "--json"
+    ],
+    "env": {},
+    "seconds": 3.532,
+    "class": "mutated"
+  },
+  {
+    "reportId": "report_591a4d7526ed1171dfa9818c",
+    "reportSha256": "sha256:5bf34c7d764a0e75db0db3a1d4d682dffe1b38685803e8535253d9946f964405",
+    "reportBytes": 10316,
+    "outcomes": {
+      "artifactIntegrity": "not_checked",
+      "sourceAssociation": "user_supplied",
+      "provenancePolicy": "not_checked",
+      "correspondence": "unresolved",
+      "analysisCompleteness": "incomplete",
+      "policyResult": "not_evaluated"
+    },
+    "ai": {
+      "status": "disabled",
+      "validation": "not_run"
+    },
+    "findings": 0,
+    "conflicts": [],
+    "coverage": {
+      "artifactFiles": 2,
+      "sourceFiles": 2,
+      "comparedFiles": 2,
+      "analyzedBytes": 252,
+      "skippedBytes": 0,
+      "unsupportedBytes": 0,
+      "omissions": [],
+      "complete": false,
+      "limitations": [
+        "File/byte totals are known observed members only; remaining archive scope is unknown on failure."
+      ]
+    },
+    "cliInspectExit": 2,
+    "cliTuiExit": 2,
+    "citations": [],
+    "id": "uncertain-link",
+    "command": [
+      "analyze",
+      "--artifact",
+      "/home/runner/work/Heurisko/Heurisko/.heurisko/ci-phase1-foundation/uncertain-link-inputs/artifact.tgz",
+      "--source",
+      "https://github.com/alexeyraspopov/picocolors",
+      "--commit",
+      "6f0a4638348ed20633d623ee973f9c9a96f65104",
+      "--source-archive",
+      "/home/runner/work/Heurisko/Heurisko/.heurisko/ci-phase1-foundation/uncertain-link-inputs/source.tgz",
+      "--store",
+      "/home/runner/work/Heurisko/Heurisko/.heurisko/ci-phase1-foundation/uncertain-link/store",
+      "--report",
+      "/home/runner/work/Heurisko/Heurisko/.heurisko/ci-phase1-foundation/uncertain-link/report.json",
+      "--json"
+    ],
+    "env": {},
+    "seconds": 3.435,
+    "class": "uncertain"
+  },
+  {
+    "reportId": "report_ca0effc22071ed4f59fbb767",
+    "reportSha256": "sha256:4b58feaf78e788a0a246d9fa4c109eb410929466ae5d95c2a5917c87a63b2f1a",
+    "reportBytes": 11931,
+    "outcomes": {
+      "artifactIntegrity": "not_checked",
+      "sourceAssociation": "user_supplied",
+      "provenancePolicy": "not_checked",
+      "correspondence": "unresolved",
+      "analysisCompleteness": "incomplete",
+      "policyResult": "not_evaluated"
+    },
+    "ai": {
+      "status": "disabled",
+      "validation": "not_run"
+    },
+    "findings": 1,
+    "conflicts": [],
+    "coverage": {
+      "artifactFiles": 2,
+      "sourceFiles": 2,
+      "comparedFiles": 2,
+      "analyzedBytes": 102,
+      "skippedBytes": 0,
+      "unsupportedBytes": 123,
+      "omissions": [
+        {
+          "side": "artifact",
+          "path": "package/package.json",
+          "kind": "unsupported",
+          "stage": "compare",
+          "reason": "MANIFEST_DUPLICATE_KEY",
+          "bytes": 48,
+          "evidenceIds": [
+            "ev_a7ae28aca3e2e6e6f673db48"
+          ]
+        },
+        {
+          "side": "source",
+          "path": "source-root/package.json",
+          "kind": "unsupported",
+          "stage": "compare",
+          "reason": "MANIFEST_DUPLICATE_KEY",
+          "bytes": 75,
+          "evidenceIds": [
+            "ev_381629bafb6ce5d4f87c6e22"
+          ]
+        }
+      ],
+      "complete": false,
+      "limitations": [
+        "MANIFEST_DUPLICATE_KEY; full manifest bytes and raw delta retained."
+      ]
+    },
+    "cliInspectExit": 2,
+    "cliTuiExit": 2,
+    "citations": [
+      {
+        "id": "ev_381629bafb6ce5d4f87c6e22",
+        "kind": "content",
+        "ref": "sha256:f684139b6e08da2d67648dfeea45dfe503187e2faf30b474ae1e9a2b31b8dcda",
+        "range": {
+          "startByte": 0,
+          "endByte": 75
+        },
+        "displayed": {
+          "startByte": 0,
+          "endByte": 75
+        },
+        "bytes": 75
+      },
+      {
+        "id": "ev_a7ae28aca3e2e6e6f673db48",
+        "kind": "content",
+        "ref": "sha256:348153659378f3aebbe96a610efd3a2edcb01b1b570faee8a8b730427487bd4e",
+        "range": {
+          "startByte": 0,
+          "endByte": 48
+        },
+        "displayed": {
+          "startByte": 0,
+          "endByte": 48
+        },
+        "bytes": 48
+      },
+      {
+        "id": "ev_ee7bfc23d68bf6df5a7c5a1e",
+        "kind": "content",
+        "ref": "sha256:db05d79b54a7f246f8dcc665d740589a0e592c6ae657027164ffc2bad4394182",
+        "range": {
+          "startByte": 0,
+          "endByte": 624
+        },
+        "displayed": {
+          "startByte": 0,
+          "endByte": 624
+        },
+        "bytes": 624
+      }
+    ],
+    "id": "uncertain-manifest",
+    "command": [
+      "analyze",
+      "--artifact",
+      "/home/runner/work/Heurisko/Heurisko/.heurisko/ci-phase1-foundation/uncertain-manifest-inputs/artifact.tgz",
+      "--source",
+      "https://github.com/alexeyraspopov/picocolors",
+      "--commit",
+      "6f0a4638348ed20633d623ee973f9c9a96f65104",
+      "--source-archive",
+      "/home/runner/work/Heurisko/Heurisko/.heurisko/ci-phase1-foundation/uncertain-manifest-inputs/source.tgz",
+      "--store",
+      "/home/runner/work/Heurisko/Heurisko/.heurisko/ci-phase1-foundation/uncertain-manifest/store",
+      "--report",
+      "/home/runner/work/Heurisko/Heurisko/.heurisko/ci-phase1-foundation/uncertain-manifest/report.json",
+      "--json"
+    ],
+    "env": {},
+    "seconds": 3.495,
+    "class": "uncertain"
+  }
+]

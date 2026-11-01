@@ -49,7 +49,7 @@ Local readiness, owner acceptance and publication are separate. Exact-head CI is
 
 **Acceptance:** all gates in the plan have actual evidence or a separately approved scope amendment; no unresolved P0 foundation defect; current reports retain exact bytes/meaning; supported hosts reproduce representative npm/local/reopen behavior; rights/config/recovery/support documentation is reviewable; exact proposed-head CI and human/owner review recorded. Emulation does not prove native-host parsing; passing tests alone do not close the phase.
 
-**Validation:** pinned install/build/contracts, serial core and actual parser/recovery, shared reader/TUI/web, representative cases and historical reopen, platform/resources/rights review. **Next:** finish remaining native/final-head CI, rights/distribution and CI tool-identity gates; retain the owner acceptance already granted, then scope Phase 2 against Q1–Q4. Until technical closure Phase 1 stays current.
+**Validation:** pinned install/build/contracts, serial core and actual parser/recovery, shared reader/TUI/web, representative cases and historical reopen, platform/resources/rights review. **Next:** native Linux and all four CI jobs now pass at implementation head `3521e1c` ([retained proof](examples/production-phase1/2026-11-01-native-linux-3521e1c/review.json)); confirm final PR-head checks and resolve applicable rights/distribution holds. Retain owner acceptance already granted, then scope Phase 2 against Q1–Q4. Until technical closure Phase 1 stays current.
 
 ## 2. Trustworthy npm investigation
 
