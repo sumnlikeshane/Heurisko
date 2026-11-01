@@ -8,11 +8,12 @@ import { validateOptions, validateReport } from './validation.js';
 import { retainJSONEvidence } from './comparison.js';
 import { boundedFile } from './storage.js';
 import { fileURLToPath } from 'node:url';
+import { createIntelligenceModule } from './intelligence.js';
 
 export interface InvestigationContext extends ProducerContext { module?:AnalysisModule }
 export async function engineCodeIdentity() {
   const codeDigests:Record<string,string>={};
-  for(const name of ['engine','producer','comparison','archive','network','storage','parser-runtime','parser-job','adapter','identity','validation','safety','npm','sources','provenance'])codeDigests[name]=sha256(await boundedFile(fileURLToPath(new URL(`./${name}.js`,import.meta.url)),128*1024));
+  for(const name of ['engine','producer','comparison','archive','network','storage','parser-runtime','parser-job','adapter','intelligence','identity','validation','safety','npm','sources','provenance'])codeDigests[name]=sha256(await boundedFile(fileURLToPath(new URL(`./${name}.js`,import.meta.url)),128*1024));
   for(const [name,path]of [['parserWorker','../runtime/archive_worker.py'],['contractSchema','../../contracts/schema/contracts.schema.json'],['contractValidator','../../contracts/runtime/validate.py'],['contractSemantics','../../contracts/runtime/semantics.py']] as const)codeDigests[name]=sha256(await boundedFile(fileURLToPath(new URL(path,import.meta.url)),256*1024));
   return {engine:'shane-audit-v1;'+sha256(canonicalJSON(codeDigests)),codeDigests};
 }
@@ -24,7 +25,7 @@ export function exitCode(report?:Pick<InvestigationReport,'outcomes'>):0|1|2|3 {
 }
 export async function investigate(input:ArtifactInput,options:AnalysisOptions,context:InvestigationContext={}):Promise<InvestigationReport> {
   input=structuredClone(input);
-  const module=context.module?Object.freeze({...context.module}):undefined;
+  const module=context.module?Object.freeze({...context.module}):await createIntelligenceModule(context.store??new EvidenceStore(),context.signal);
   const moduleIdentity=module?analysisModuleIdentity(module):null;
   const settings=await validateOptions(options,context);const store=context.store??new EvidenceStore();
   const bundle=await collectEvidence({...input,analysisOptions:settings},{...context,store});

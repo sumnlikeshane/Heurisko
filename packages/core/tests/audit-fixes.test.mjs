@@ -4,7 +4,7 @@ import * as fs from 'node:fs/promises';
 import {join,resolve} from 'node:path';
 import {tmpdir} from 'node:os';
 import {spawnSync} from 'node:child_process';
-import {EvidenceStore,investigate,inventoryArchive,runParserJob,sha256,analysisModuleIdentity,canonicalJSON,deterministicReportDigest} from '../dist/index.js';
+import {EvidenceStore,investigate,inventoryArchive,runParserJob,sha256,analysisModuleIdentity,canonicalJSON,deterministicReportDigest,createIntelligenceModule,evidenceId,runAnalysis,exitCode} from '../dist/index.js';
 
 const id='a'.repeat(64),name='heurisko-parser-authored-test';
 function driver(overrides={}) {
@@ -77,6 +77,77 @@ for(const scenario of ['stopped','running','wrong-label','missing'])test('explic
   }
 });
 const settings={enableAI:false,analysisProfile:'authored-audit-regressions'};
+test('approved exit precedence keeps violation, incomplete, indeterminate and not-evaluated outcomes distinct',()=>{
+ assert.equal(exitCode(),3);
+ assert.equal(exitCode({outcomes:{analysisCompleteness:'incomplete',policyResult:'violation'}}),1);
+ assert.equal(exitCode({outcomes:{analysisCompleteness:'complete',policyResult:'violation'}}),1);
+ assert.equal(exitCode({outcomes:{analysisCompleteness:'incomplete',policyResult:'indeterminate'}}),2);
+ assert.equal(exitCode({outcomes:{analysisCompleteness:'complete',policyResult:'indeterminate'}}),2);
+ assert.equal(exitCode({outcomes:{analysisCompleteness:'complete',policyResult:'pass'}}),0);
+ assert.equal(exitCode({outcomes:{analysisCompleteness:'complete',policyResult:'not_evaluated'}}),0);
+ assert.equal(exitCode({outcomes:{analysisCompleteness:'failed',policyResult:'not_evaluated'}}),2);
+});
+test('integrated Malhar module reads only hash-verified retained manifest delta under the shared two-argument interface',async t=>{
+ const dir=await fs.mkdtemp(join(await fs.realpath(tmpdir()),'heurisko-intelligence-handshake-'));t.after(()=>fs.rm(dir,{recursive:true,force:true}));
+ const root=resolve(import.meta.dirname,'../../..'),store=new EvidenceStore(join(dir,'store'));
+ const bundle=JSON.parse(await fs.readFile(join(root,'packages/contracts/tests/fixtures/F1/bundle.json'),'utf8'));
+ const record=bundle.evidence.find(e=>e.kind==='manifest_delta'),change=bundle.changes.find(c=>c.evidenceIds.includes(record.evidenceId));
+ const delta=Buffer.from(JSON.stringify({version:'heurisko-manifest-delta-v1',pointer:'/scripts/postinstall',source:null,artifact:{value:'node install.js'}}));
+ record.contentRef=await store.put(delta);record.contentSha256=record.contentRef;record.contentState='retained';record.evidenceId=evidenceId(bundle,record);change.evidenceIds=[record.evidenceId];
+ const before=JSON.stringify(bundle),module=await createIntelligenceModule(store),result=await runAnalysis(bundle,{enableAI:false,analysisProfile:'synthetic-g0'},module,{pythonExecutable:process.env.HEURISKO_PYTHON_EXECUTABLE??join(root,'.venv/bin/python')});
+ const finding=result.findings.find(f=>f.ruleId==='heurisko.manifest.lifecycle-script-change');
+ assert.equal(module.moduleId,'@heurisko/intelligence');assert.equal(module.moduleVersion,JSON.parse(await fs.readFile(join(root,'packages/intelligence/package.json'),'utf8')).version);
+ assert.match(finding.observation,/scripts\.postinstall is reported as added to the artifact/);assert.deepEqual(finding.evidenceIds,[record.evidenceId]);assert.equal(result.stages.find(s=>s.stage==='heuristics').status,'complete');assert.equal(JSON.stringify(bundle),before);
+});
+test('integrated model-off module accepts the retained real S2 release and inert-mutation bundles',async()=>{
+ const root=resolve(import.meta.dirname,'../../..'),store=new EvidenceStore(join(root,'examples/s2/current/store'));
+ const module=await createIntelligenceModule(store);
+ for(const [name,file,expectedFindings] of [
+  ['release','release-local-input.bundle.json',14],
+  ['mutation','synthetic-local-mutation.bundle.json',16],
+ ]) {
+  const bundle=JSON.parse(await fs.readFile(join(root,'examples/s2/current/outputs',file),'utf8'));
+  const before=JSON.stringify(bundle);assert.equal(bundle.fixtureKind,'real_generated');
+  for(const item of bundle.evidence)if(item.contentState==='retained'&&item.contentRef)await store.get(item.contentRef);
+  const result=await runAnalysis(bundle,{...bundle.input.analysisOptions,enableAI:false},module,{pythonExecutable:process.env.HEURISKO_PYTHON_EXECUTABLE??join(root,'.venv/bin/python')});
+  const known=new Set(bundle.evidence.map(item=>item.evidenceId));
+  assert.equal(result.findings.length,expectedFindings,name);assert.equal(result.aiState.status,'disabled',name);
+  assert.equal(result.stages.find(stage=>stage.stage==='heuristics').status,'complete',name);
+  assert.ok(result.findings.every(finding=>finding.evidenceIds.length>0&&finding.evidenceIds.every(id=>known.has(id))),`${name}: findings cite bundle evidence`);
+  assert.equal(JSON.stringify(bundle),before,`${name}: analysis does not mutate the real bundle`);
+  if(name==='release') {
+   const sourceOnly=bundle.changes.find(change=>change.status==='removed');
+   assert.ok(result.findings.some(f=>f.ruleId==='heurisko.change.unresolved-difference'&&f.evidenceIds.some(id=>sourceOnly.evidenceIds.includes(id))&&f.observation.includes('has no artifact counterpart')));
+  }
+  if(name==='mutation') {
+   assert.ok(result.findings.some(f=>f.ruleId==='heurisko.manifest.lifecycle-script-change'&&f.evidenceIds.some(id=>bundle.evidence.find(e=>e.evidenceId===id)?.locator.metadataKey==='scripts.postinstall')));
+   const artifactOnly=bundle.changes.find(change=>change.status==='added');
+   assert.ok(result.findings.some(f=>f.ruleId==='heurisko.change.unresolved-difference'&&f.evidenceIds.some(id=>artifactOnly.evidenceIds.includes(id))&&f.observation.includes('has no source counterpart')));
+  }
+ }
+});
+test('manifest resolver marks missing, corrupt and oversized retained delta content incomplete',async t=>{
+ const dir=await fs.mkdtemp(join(await fs.realpath(tmpdir()),'heurisko-intelligence-bounds-'));t.after(()=>fs.rm(dir,{recursive:true,force:true}));
+ const root=resolve(import.meta.dirname,'../../..'),store=new EvidenceStore(join(dir,'store'));
+ const template=JSON.parse(await fs.readFile(join(root,'packages/contracts/tests/fixtures/F1/bundle.json'),'utf8'));
+ const valid=Buffer.from(JSON.stringify({version:'heurisko-manifest-delta-v1',pointer:'/scripts/postinstall',source:null,artifact:{value:'node install.js'}}));
+ const oversized=Buffer.from(JSON.stringify({version:'heurisko-manifest-delta-v1',pointer:'/scripts/postinstall',source:null,artifact:{value:'x'.repeat(16*1024)}}));
+ const module=await createIntelligenceModule(store);
+ for(const [caseName,stored,corrupt,expectedCode] of [
+  ['missing',valid,false,'READ_FAILED'],
+  ['corrupt',valid,true,'BLOB_HASH_MISMATCH'],
+  ['oversized',oversized,false,'FILE_LIMIT_OR_TYPE'],
+ ]) {
+  const bundle=structuredClone(template),record=bundle.evidence.find(e=>e.kind==='manifest_delta'),change=bundle.changes.find(c=>c.evidenceIds.includes(record.evidenceId));
+  const ref=sha256(stored);if(caseName!=='missing')await store.put(stored);
+  record.contentRef=ref;record.contentSha256=ref;record.contentState='retained';record.evidenceId=evidenceId(bundle,record);change.evidenceIds=[record.evidenceId];
+  if(corrupt)await fs.writeFile(store.blobPath(ref),Buffer.from('corrupt evidence bytes'));
+  const result=await runAnalysis(bundle,{enableAI:false,analysisProfile:'synthetic-g0'},module,{pythonExecutable:process.env.HEURISKO_PYTHON_EXECUTABLE??join(root,'.venv/bin/python')});
+  assert.equal(result.stages.find(stage=>stage.stage==='heuristics').status,'incomplete',caseName);
+  assert.ok(result.stages.find(stage=>stage.stage==='heuristics').errors.some(error=>error.code==='EVIDENCE_RESOLUTION_INCOMPLETE'),caseName);
+  assert.ok(result.limitations.some(text=>text.includes(expectedCode)),caseName);
+ }
+});
 function module(implementation='A',configuration='{}',complete=false) {
   return {moduleId:'authored-reviewed-module',moduleVersion:'0.1.0',implementationSha256:sha256(implementation),configurationSha256:sha256(configuration),async analyzeEvidence(){return {schemaVersion:'0.1.0',findings:[],interpretations:[],aiState:{status:'disabled',validation:'not_run'},stages:[{stage:'heuristics',status:complete?'complete':'skipped',errors:[]},{stage:'ai',status:'skipped',errors:[]}],limitations:['Authored no-model identity regression.']};}};
 }
@@ -91,7 +162,7 @@ test('same package version with changed implementation or rule settings produces
   t.after(async()=>{const locks=await fs.readdir(join(dir,'store')).catch(()=>[]);assert.ok(!locks.includes('.parser-lock')&&!locks.includes('.write-lock'),'retain real unresolved jobs for recovery');await fs.rm(dir,{recursive:true,force:true});});
   const root=resolve(import.meta.dirname,'../../..'),store=new EvidenceStore(join(dir,'store'));
   const input={ecosystem:'local',artifactPath:join(root,'examples/s2/current/inputs/picocolors-1.1.1.local-inert-mutation.tgz'),sourceOverride:{repo:'https://github.com/alexeyraspopov/picocolors',commit:'6f0a4638348ed20633d623ee973f9c9a96f65104'},analysisOptions:settings};
-  const context={store,sourceArchivePath:join(root,'examples/s2/current/inputs/picocolors-source-6f0a4638348ed20633d623ee973f9c9a96f65104.tar.gz')};
+  const context={store,sourceArchivePath:join(root,'examples/s2/current/inputs/picocolors-source-6f0a4638348ed20633d623ee973f9c9a96f65104.tar.gz'),pythonExecutable:process.env.HEURISKO_PYTHON_EXECUTABLE??join(root,'.venv/bin/python')};
   const events=[];const first=await investigate(input,settings,{...context,module:module(),onProgress:e=>{events.push(e);assert.throws(()=>{e.status='failed';});throw Error('authored renderer error');}});
   const next=await investigate(input,settings,{...context,module:module('B','{}',true)});
   const configured=await investigate(input,settings,{...context,module:module('B','{"rule":true}',true)});

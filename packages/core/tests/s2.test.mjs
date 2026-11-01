@@ -8,7 +8,7 @@ import { tmpdir } from 'node:os';
 import { EvidenceStore, inventoryArchive, dockerParserDriver, sha256, investigate, validateReport, deterministicReportDigest, exitCode, terminalText, manifestFields, safetyProfile, publicAddress, allowedURL, pinnedSourceURL, writeImmutable, decodeReport } from '../dist/index.js';
 
 const root=resolve(import.meta.dirname,'../../..');
-const python=join(root,'.venv/bin/python');
+const python=process.env.HEURISKO_PYTHON_EXECUTABLE??join(root,'.venv/bin/python');
 // Real public commit observed in exact-release metadata; local authored unit
 // snapshots remain explicitly user asserted, not fabricated upstream evidence.
 const commit='6f0a4638348ed20633d623ee973f9c9a96f65104';
@@ -22,7 +22,7 @@ async function localCase(t,artifactEntries,sourceEntries,extra={}){
  const x=await setup(t);const artifact=join(x.path,'authored.tgz'),source=join(x.path,'authored-source.tgz');
  await fs.writeFile(artifact,archive(artifactEntries));await fs.writeFile(source,archive(sourceEntries));
  const input={ecosystem:'local',artifactPath:artifact,sourceOverride:{repo,commit},analysisOptions:options};
- const report=await investigate(input,options,{store:x.store,sourceArchivePath:source,...extra});return {...x,report,input,source};
+ const report=await investigate(input,options,{store:x.store,sourceArchivePath:source,pythonExecutable:python,...extra});return {...x,report,input,source};
 }
 
 test('known-answer member hashes, original names, binary bytes and modes are retained',async t=>{
@@ -91,7 +91,7 @@ test('archive-byte variation changes identities while all raw members stay equal
  assert.equal(ai.complete,true);assert.equal(bi.complete,true);assert.equal(ai.members[0].sha256,bi.members[0].sha256);
 });
 
-test('real producer computes raw additions/removals/modifications and exact manifest spans with no findings',async t=>{
+test('real producer computes raw additions/removals/modifications and M1 reports the retained lifecycle delta',async t=>{
  const source=[{path:'source-root/a.txt',text:'old\n'},{path:'source-root/removed',text:'remove'},{path:'source-root/package.json',text:'{"name":"authored","scripts":{},"main":"a.txt"}'}];
  const artifact=[{path:'package/a.txt',text:'new\n'},{path:'package/added.js',text:'// HEURISKO_INERT_TEST_MARKER\n'},{path:'package/package.json',text:'{"name":"authored","scripts":{"postinstall":"HEURISKO_INERT_TEST_ONLY"},"main":"added.js"}'}];
  const {report,store}=await localCase(t,artifact,source);
@@ -100,9 +100,23 @@ test('real producer computes raw additions/removals/modifications and exact mani
  const delta=report.bundle.evidence.find(e=>e.kind==='manifest_delta'&&e.locator.metadataKey==='scripts.postinstall');assert.ok(delta);
  const d=JSON.parse((await store.get(delta.contentRef)).toString());const bytes=await store.get(d.artifactContentRef);
  assert.equal(bytes.subarray(d.artifact.startByte,d.artifact.endByte).toString(),'"HEURISKO_INERT_TEST_ONLY"');
- assert.equal(report.outcomes.artifactIntegrity,'not_checked');assert.equal(report.outcomes.analysisCompleteness,'incomplete');assert.equal(report.analysis.findings.length,0);assert.equal(exitCode(report),2);
- assert.equal(report.analysis.stages.find(s=>s.stage==='heuristics').errors[0].code,'ANALYSIS_MODULE_UNAVAILABLE');assert.equal(report.analysis.aiState.status,'disabled');
+ assert.equal(report.outcomes.artifactIntegrity,'not_checked');assert.equal(report.outcomes.analysisCompleteness,'complete');assert.equal(exitCode(report),0);
+ const finding=report.analysis.findings.find(f=>f.ruleId==='heurisko.manifest.lifecycle-script-change');assert.ok(finding);assert.match(finding.observation,/scripts\.postinstall is reported as added to the artifact/);assert.deepEqual(finding.evidenceIds,[delta.evidenceId]);
+ assert.equal(report.analysis.stages.find(s=>s.stage==='heuristics').status,'complete');assert.equal(report.analysis.aiState.status,'disabled');
  assert.equal(report.bundle.coverage.complete,true);assert.ok(!JSON.stringify(report).includes(root));
+});
+
+test('fresh Part 2 Picocolors investigation uses the default model-off module with verified finding references',async t=>{
+ const {store}=await setup(t);
+ const input={ecosystem:'local',artifactPath:join(root,'examples/s2/current/inputs/picocolors-1.1.1.local-inert-mutation.tgz'),sourceOverride:{repo,commit},analysisOptions:options};
+ const before=structuredClone(input),sourceArchivePath=join(root,'examples/s2/current/inputs/picocolors-source-6f0a4638348ed20633d623ee973f9c9a96f65104.tar.gz');
+ const report=await investigate(input,options,{store,sourceArchivePath,pythonExecutable:python});
+ await validateReport(report,{pythonExecutable:python});await store.verifyEvidence(report);
+ const config=JSON.parse((await store.get(report.bundle.evidence.find(e=>e.locator.metadataKey==='analysis-configuration').contentRef)).toString());
+ const lifecycle=report.analysis.findings.find(f=>f.ruleId==='heurisko.manifest.lifecycle-script-change');
+ assert.equal(config.analysisModule.moduleId,'@heurisko/intelligence');assert.equal(config.analysisModule.moduleVersion,JSON.parse(await fs.readFile(join(root,'packages/intelligence/package.json'),'utf8')).version);
+ assert.equal(report.analysis.aiState.status,'disabled');assert.equal(report.analysis.stages.find(s=>s.stage==='heuristics').status,'complete');assert.equal(report.outcomes.analysisCompleteness,'complete');assert.equal(report.bundle.coverage.complete,true);
+ assert.ok(lifecycle);assert.ok(lifecycle.evidenceIds.length>0);assert.ok(lifecycle.evidenceIds.every(id=>report.bundle.evidence.some(e=>e.evidenceId===id)));assert.deepEqual(input,before);
 });
 
 test('replay preserves deterministic IDs; full run bytes and observation references remain distinct',async t=>{
@@ -172,9 +186,9 @@ test('CLI is redirected/JSON-safe, inspect resolves exact retained evidence; ter
  const {report,store,path,input,source}=await localCase(t,[{path:'package/a',text:'\u001b]52;c;INERT\u0007\n'}],[{path:'root/a',text:'abc'}]);
  const reportFile=join(path,'report.json');await fs.writeFile(reportFile,JSON.stringify(report));const cli=join(root,'packages/cli/dist/index.js');
  const run=(args)=>spawnSync(process.execPath,[cli,...args],{encoding:'utf8',maxBuffer:8*1024*1024});
- const inspect=run(['inspect',reportFile,'--store',store.root,'--json']);assert.equal(inspect.status,2);assert.deepEqual(JSON.parse(inspect.stdout),report);assert.equal(inspect.stderr,'');
- const e=report.bundle.evidence.find(e=>e.kind==='artifact_member');const human=run(['inspect',reportFile,'--store',store.root,'--evidence',e.evidenceId,'--no-color']);assert.equal(human.status,2);assert.ok(!human.stdout.includes('\u001b'));assert.ok(!human.stdout.includes('\u0007'));
- const analyzed=run(['analyze','--artifact',input.artifactPath,'--source',repo,'--commit',commit,'--source-archive',source,'--store',store.root,'--name','\u009bLABEL\u202e','--no-ai','--json']);assert.equal(analyzed.status,2);const cliReport=JSON.parse(analyzed.stdout);assert.ok(!/[\u009b\u202e]/.test(analyzed.stdout));assert.equal(cliReport.bundle.artifact.packageName,'\u009bLABEL\u202e');assert.equal(cliReport.bundle.artifact.observedSha256,report.bundle.artifact.observedSha256);assert.notEqual(cliReport.reportId,report.reportId,'Different CLI analysis profile must change identity');assert.match(analyzed.stderr,/persist: complete/);
+ const inspect=run(['inspect',reportFile,'--store',store.root,'--json']);assert.equal(inspect.status,exitCode(report));assert.deepEqual(JSON.parse(inspect.stdout),report);assert.equal(inspect.stderr,'');
+ const e=report.bundle.evidence.find(e=>e.kind==='artifact_member');const human=run(['inspect',reportFile,'--store',store.root,'--evidence',e.evidenceId,'--no-color']);assert.equal(human.status,exitCode(report));assert.ok(!human.stdout.includes('\u001b'));assert.ok(!human.stdout.includes('\u0007'));
+ const analyzed=run(['analyze','--artifact',input.artifactPath,'--source',repo,'--commit',commit,'--source-archive',source,'--store',store.root,'--name','\u009bLABEL\u202e','--no-ai','--json']);const cliReport=JSON.parse(analyzed.stdout);assert.equal(analyzed.status,exitCode(cliReport));assert.ok(!/[\u009b\u202e]/.test(analyzed.stdout));assert.equal(cliReport.bundle.artifact.packageName,'\u009bLABEL\u202e');assert.equal(cliReport.bundle.artifact.observedSha256,report.bundle.artifact.observedSha256);assert.notEqual(cliReport.reportId,report.reportId,'Different CLI analysis profile must change identity');assert.match(analyzed.stderr,/persist: complete/);
  const bad=run(['analyze','--artifact',input.artifactPath,'--unknown']);assert.equal(bad.status,3);assert.equal(bad.stdout,'');assert.ok(!bad.stderr.includes(path));
  assert.equal(terminalText('\u001b[31m\u009btest\u202e'),'\\u001b[31m\\u009btest\\u202e');
 });
@@ -190,7 +204,7 @@ test('report persistence failure returns usable incomplete JSON while retaining 
  const {path}=await setup(t);
  class FullReportStore extends EvidenceStore{async saveReport(){throw new Error('STORE_DISK_RESERVE');}}
  const store=new FullReportStore(join(path,'store'));const artifact=join(path,'authored.tgz'),source=join(path,'source.tgz');await fs.writeFile(artifact,archive([{path:'package/a',text:'abc'}]));await fs.writeFile(source,archive([{path:'root/a',text:'abc'}]));
- const report=await investigate({ecosystem:'local',artifactPath:artifact,analysisOptions:options,sourceOverride:{repo,commit}},options,{store,sourceArchivePath:source});await validateReport(report);await store.verifyEvidence(report);
+ const report=await investigate({ecosystem:'local',artifactPath:artifact,analysisOptions:options,sourceOverride:{repo,commit}},options,{store,sourceArchivePath:source,pythonExecutable:python});await validateReport(report);await store.verifyEvidence(report);
  assert.equal(report.outcomes.analysisCompleteness,'incomplete');assert.equal(report.bundle.stages.find(s=>s.stage==='persist').errors[0].code,'STORE_DISK_RESERVE');assert.equal(exitCode(report),2);
 });
 
@@ -208,7 +222,7 @@ test('opaque archive metadata never permits an invalid UTF-8 pathname',async t=>
 test('a supplied M0-style skipped heuristics stage cannot earn complete analysis',async t=>{
  const {store,input,source}=await localCase(t,[{path:'package/a',text:'abc'}],[{path:'root/a',text:'abc'}]);
  const module={moduleId:'trusted-m0-boundary-test',moduleVersion:'0.1.0',implementationSha256:sha256('authored-m0-test-module'),configurationSha256:sha256('{}'),async analyzeEvidence(){return {schemaVersion:'0.1.0',findings:[],interpretations:[],aiState:{status:'disabled',validation:'not_run'},stages:[{stage:'heuristics',status:'skipped',errors:[]},{stage:'ai',status:'skipped',errors:[]}],limitations:['Authored M0 boundary test; rules unavailable.']};}};
- const report=await investigate(input,options,{store,sourceArchivePath:source,module});assert.equal(report.outcomes.analysisCompleteness,'incomplete');assert.equal(exitCode(report),2);
+ const report=await investigate(input,options,{store,sourceArchivePath:source,module,pythonExecutable:python});assert.equal(report.outcomes.analysisCompleteness,'incomplete');assert.equal(exitCode(report),2);
 });
 
 test('CAS and publication snapshot caller-owned bytes before asynchronous filesystem work',async t=>{
@@ -219,5 +233,5 @@ test('CAS and publication snapshot caller-owned bytes before asynchronous filesy
 test('report identity and invocation cannot drift while validation/persistence awaits',async t=>{
  const {report,store,input,source,path}=await localCase(t,[{path:'package/a',text:'abc'}],[{path:'root/a',text:'abc'}]);
  const original=structuredClone(report);const saving=store.saveReport(report);report.reportId='../../escape';report.bundle.artifact.artifactFilename='changed';const ref=await saving;assert.deepEqual(await store.loadReport(ref),original);await assert.rejects(fs.stat(join(path,'escape.json')),{code:'ENOENT'});
- const request=structuredClone(input);const investigating=investigate(request,options,{store,sourceArchivePath:source});request.artifactPath='/this-authored-path-must-never-be-read';request.sourceOverride.commit='main';const stable=await investigating;assert.equal(stable.reportId,original.reportId);
+ const request=structuredClone(input);const investigating=investigate(request,options,{store,sourceArchivePath:source,pythonExecutable:python});request.artifactPath='/this-authored-path-must-never-be-read';request.sourceOverride.commit='main';const stable=await investigating;assert.equal(stable.reportId,original.reportId);
 });

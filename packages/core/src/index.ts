@@ -1,6 +1,7 @@
 export * from './identity.js';
 export * from './validation.js';
 export * from './adapter.js';
+export * from './intelligence.js';
 export * from './safety.js';
 export * from './storage.js';
 export * from './archive.js';
