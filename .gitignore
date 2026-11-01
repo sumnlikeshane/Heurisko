@@ -3,3 +3,8 @@ node_modules/
 **/dist/
 **/__pycache__/
 .venv/
+.pnpm-store/
+.heurisko/
+.tooling/
+
+.heurisko-tui-state/

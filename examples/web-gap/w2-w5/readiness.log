@@ -1,0 +1,154 @@
+TAP version 13
+# Subtest: S01 input validation is available; it is not resolved preflight or permission to Start
+ok 1 - S01 input validation is available; it is not resolved preflight or permission to Start
+  ---
+  duration_ms: 410.637542
+  type: 'test'
+  ...
+# Subtest: S02 actual conflicting source, all six outcomes and source context survive immutable inspection
+ok 2 - S02 actual conflicting source, all six outcomes and source context survive immutable inspection
+  ---
+  duration_ms: 172.135458
+  type: 'test'
+  ...
+# Subtest: S03 actual S3 manifest delta resolves to exact member value bytes, not the JSON delta record
+ok 3 - S03 actual S3 manifest delta resolves to exact member value bytes, not the JSON delta record
+  ---
+  duration_ms: 126.63425
+  type: 'test'
+  ...
+# Subtest: S03 received M1 lifecycle finding cites actual retained S2 evidence; review output stays separate
+ok 4 - S03 received M1 lifecycle finding cites actual retained S2 evidence; review output stays separate
+  ---
+  duration_ms: 381.1965
+  type: 'test'
+  ...
+# Subtest: S03 raw byte difference sides bind exact original member paths and changed spans
+ok 5 - S03 raw byte difference sides bind exact original member paths and changed spans
+  ---
+  duration_ms: 183.145333
+  type: 'test'
+  ...
+# Subtest: S04 unavailable or failed heuristics never produces a displayed examined-scope zero
+ok 6 - S04 unavailable or failed heuristics never produces a displayed examined-scope zero
+  ---
+  duration_ms: 1778.249708
+  type: 'test'
+  ...
+# Subtest: S04 broader monorepo and omission accounting are preserved without incompatible fractions
+ok 7 - S04 broader monorepo and omission accounting are preserved without incompatible fractions
+  ---
+  duration_ms: 252.909334
+  type: 'test'
+  ...
+# Subtest: S05 byte paging stays inside recorded range and distinguishes window truncation from analysis
+ok 8 - S05 byte paging stays inside recorded range and distinguishes window truncation from analysis
+  ---
+  duration_ms: 478.109417
+  type: 'test'
+  ...
+# Subtest: S05 binary and split UTF-8 byte windows use base64 without forged replacement text
+ok 9 - S05 binary and split UTF-8 byte windows use base64 without forged replacement text
+  ---
+  duration_ms: 223.074417
+  type: 'test'
+  ...
+# Subtest: S05 text safety covers ANSI, OSC, C1, bidi, line boundaries, Unicode and full recorded paths
+ok 10 - S05 text safety covers ANSI, OSC, C1, bidi, line boundaries, Unicode and full recorded paths
+  ---
+  duration_ms: 194.832709
+  type: 'test'
+  ...
+# Subtest: S05 full blob hash is checked before exposing even a small valid-looking prefix
+ok 11 - S05 full blob hash is checked before exposing even a small valid-looking prefix
+  ---
+  duration_ms: 211.366416
+  type: 'test'
+  ...
+# Subtest: S05 oversized/nonregular/symlink storage cannot turn evidence paths into filesystem reads
+ok 12 - S05 oversized/nonregular/symlink storage cannot turn evidence paths into filesystem reads
+  ---
+  duration_ms: 1401.024667
+  type: 'test'
+  ...
+# Subtest: S06 metadata remains openable with a nonexistent store; replay creates no store and refreshes nothing
+ok 13 - S06 metadata remains openable with a nonexistent store; replay creates no store and refreshes nothing
+  ---
+  duration_ms: 233.453875
+  type: 'test'
+  ...
+# Subtest: S06 not_exported, unavailable, unknown IDs, line-only and invalid byte ranges stay distinct
+ok 14 - S06 not_exported, unavailable, unknown IDs, line-only and invalid byte ranges stay distinct
+  ---
+  duration_ms: 416.438583
+  type: 'test'
+  ...
+# Subtest: S06 unsupported/corrupt imports fail validation, with no schema coercion or bytes availability claims
+ok 15 - S06 unsupported/corrupt imports fail validation, with no schema coercion or bytes availability claims
+  ---
+  duration_ms: 1039.84175
+  type: 'test'
+  ...
+# Subtest: S06 file-open errors disclose fixed codes, preserve exact encoding identity and respect pre-cancel
+ok 16 - S06 file-open errors disclose fixed codes, preserve exact encoding identity and respect pre-cancel
+  ---
+  duration_ms: 189.1095
+  type: 'test'
+  ...
+# Subtest: S03/S06 delta readers refuse unbound refs, unknown transforms, duplicate JSON keys and unrecorded sides
+ok 17 - S03/S06 delta readers refuse unbound refs, unknown transforms, duplicate JSON keys and unrecorded sides
+  ---
+  duration_ms: 1133.394
+  type: 'test'
+  ...
+# Subtest: S06 symlinked store directories are refused without following them or changing retained data
+ok 18 - S06 symlinked store directories are refused without following them or changing retained data
+  ---
+  duration_ms: 332.04375
+  type: 'test'
+  ...
+# Subtest: S08 cancellation remains a request until an injected engine settles; no cleanup acknowledgment is invented
+ok 19 - S08 cancellation remains a request until an injected engine settles; no cleanup acknowledgment is invented
+  ---
+  duration_ms: 181.989459
+  type: 'test'
+  ...
+# Subtest: S08 progress forwarding is bounded, preserves real states, and observer errors cannot destroy results
+ok 20 - S08 progress forwarding is bounded, preserves real states, and observer errors cannot destroy results
+  ---
+  duration_ms: 333.94025
+  type: 'test'
+  ...
+# Subtest: S08 inputs are snapshotted and malformed/failed engines return no forged report or private error text
+ok 21 - S08 inputs are snapshotted and malformed/failed engines return no forged report or private error text
+  ---
+  duration_ms: 545.356209
+  type: 'test'
+  ...
+# Subtest: S08 real core pre-cancel validation is observable as no usable report, independently of mocked lifecycle
+ok 22 - S08 real core pre-cancel validation is observable as no usable report, independently of mocked lifecycle
+  ---
+  duration_ms: 2.711167
+  type: 'test'
+  ...
+# Subtest: S09 all AI states preserve deterministic fields; synthetic statuses are not live model evidence
+ok 23 - S09 all AI states preserve deterministic fields; synthetic statuses are not live model evidence
+  ---
+  duration_ms: 2717.692167
+  type: 'test'
+  ...
+# Subtest: non-TTY baseline CLI preserves one JSON report, exact IDs and no interactive dependency
+ok 24 - non-TTY baseline CLI preserves one JSON report, exact IDs and no interactive dependency
+  ---
+  duration_ms: 1515.837667
+  type: 'test'
+  ...
+1..24
+# tests 24
+# suites 0
+# pass 24
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 14561.833125

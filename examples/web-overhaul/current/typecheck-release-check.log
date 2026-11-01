@@ -1,0 +1,11 @@
+Scope: 5 of 6 workspace projects
+packages/contracts typecheck$ tsc --noEmit -p tsconfig.json
+packages/contracts typecheck: Done
+packages/core typecheck$ tsc --noEmit -p tsconfig.json
+packages/core typecheck: Done
+packages/tui typecheck$ tsc --noEmit -p tsconfig.json
+apps/web typecheck$ tsc --noEmit -p tsconfig.json
+packages/tui typecheck: Done
+apps/web typecheck: Done
+packages/cli typecheck$ tsc --noEmit -p tsconfig.json
+packages/cli typecheck: Done

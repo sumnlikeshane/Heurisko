@@ -8,9 +8,13 @@
 **Audience:** Both founders, coding agents, reviewers and demo operators  
 **Purpose:** One authoritative engineering handoff consolidating the *approved* Phase 01–06 decisions into owner-specific work, cross-module contracts, test gates, integration sequence and submission checks.
 
-**License update, 31 October 2026:** Shane delegated the project license choice; Apache-2.0 was selected and root `LICENSE`/`NOTICE` were added locally. Commit, PR, CI and distribution remain pending. Other checklist boxes remain unchecked until their full conditions are met.
+**Shane's execution sequence:** use [Shane Implementation Plan.md](Shane%20Implementation%20Plan.md) for the eight-hour, one-part-per-session schedule and next-session prompts requested on 31 October 2026. This checklist remains the approved requirements reference; the plan schedules Shane's work and treats Malhar's module as a dependency. It does not attest any completed product gate.
+
+**License update, 31 October 2026:** Shane delegated the project license choice; Apache-2.0 was selected and root `LICENSE`/`NOTICE` are already tracked in `0e6adb9` through the prior G0 PR. New engineering still needs its authorized PR/CI and distribution workflow. Other checklist boxes remain unchecked until their full conditions are met.
 
 > **How to use this document.** Treat **Approved rule** sections as confirmed. Treat checkboxes as **work to perform and verify**, not completed work. Treat explicitly marked **Open decision** items as unfrozen implementation choices. A sample command or interface is a proposed contract shape unless the document says it is already approved. This repository exists; product implementation and remote CI remain unverified.
+
+**Local browser checkpoint, 1 November:** Shane authorized beginning the [parallel web plan](Webapp%20Parallel%20Implementation%20Plan.md), keeping its UI like the terminal CLI. [Usage](../apps/web/README.md) and [actual validation receipt](../examples/web/current/README.md) now cover saved report/evidence navigation and portable reopen. Browser QA and joint TUI/integrated findings/AI parity remain open; checklist gates are not closed by this local implementation.
 
 ## 0. Decision authority and source-of-truth order
 
@@ -155,6 +159,7 @@ The order below consolidates the approved requirements into a **recommended engi
 
 ### S3. Scriptable CLI and mandatory TypeScript/Ink TUI
 
+- [ ] Before TUI work, read the [TUI Design Contract](Design/TUI%20Design%20Contract%20v1.0.0.md) with approved Phase 02 and current shared types. Internal version v1.0.0-rc.1 remains an unfrozen candidate with 59 confirmed preferences; filing is not final approval. Map fields/statuses and engine seams, record Appendix C B01–B13 gaps, and include S01–S09 in acceptance without treating proposed APIs or wireframes as implemented behavior.
 - [ ] `heurisko` launches a real interactive TUI; `heurisko analyze npm:package@version` is noninteractive; add local `--artifact`/`--source`, `inspect` and `tui <report>` paths per approved Phase 02.
 - [ ] Support JSON stdout versus diagnostics stderr, no-color mode, explicit report path, optional AI disabling and documented distinct exit *meanings* (initial 0/1/2/3 mapping approved in A05; policy precedence still to test).
 - [ ] Implement interactive Home, Overview, Source/Artifact Files, Diffs, Findings, Provenance/Build, AI and Monitoring views.
@@ -240,7 +245,13 @@ The order below consolidates the approved requirements into a **recommended engi
 
 ## 6. Joint — shared React browser, evidence semantics and integration
 
-**Browser purpose:** a readable evidence explorer, not a second analyzer. It can open locally saved/exported reports without mandatory account or hosted execution. Optional hosted processing requires later security/operational approval.
+**Current scope clarification, 1 November 2026:** Shane explicitly requires complete CLI documentation and end-to-end browser investigation with parity for supported CLI capabilities. Use the [full web scope/parity map](Web%20Application%20Product%20Scope.md), [CLI reference](CLI%20Reference.md) and [fresh continuation handoff](WEB_CONTINUATION.md). The existing saved-report viewer is a historical first slice; its open acceptance checks are distinct from the broader missing functionality. No gate is closed by this documentation reconciliation.
+
+**Browser purpose:** initiate supported investigations through the shared engine and inspect the same report/evidence, with complete CLI documentation and local/exported replay. Core use remains account-free and local-first. Optional hosted processing requires later security/operational approval. Exact screens/job/file-access mechanisms remain proposed until reviewed and implemented.
+
+- [ ] Provide complete browser-accessible CLI setup/reference/workflows/options/exits/troubleshooting and honest availability labels; repository reference now exists, current in-app Help remains limited.
+- [ ] Add exact npm and local archive browser input, source/options review, real shared-engine invocation, progress/failure/cancel-request handling and result navigation with equivalent supported CLI behavior.
+- [ ] Provide scoped dynamic reopen and report/bundle/evidence export/import; preserve immutable bytes, omissions/notices and local filesystem boundaries.
 
 - [ ] Agree on and version the shared `InvestigationReport` schema and minimum report reader/writer compatibility rules.
 - [ ] Build report import/open, exact target/source summary, provenance/context, file trees, cross-file correspondence, difference viewer, finding detail, AI interpretation/abstention and coverage/error views.

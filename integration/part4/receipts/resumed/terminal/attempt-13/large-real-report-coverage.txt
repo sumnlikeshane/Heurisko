@@ -1,0 +1,35 @@
+  HEURISKO / report / medium / 120x35                                                                                   
+   H Home    I Investigations     M Monitoring                                                                          
+  npm zod@4.6.7 report_53ce205b689a18c8845dba65                                                                         
+  HISTORICAL — checks not refreshed / incomplete / captured 2026-10-31T19:01:10Z                                        
+  1 Overview  2 Findings  3 Files  4 Source  5 AI  6 Coverage*                                                          
+  ┌─ > Coverage / coverage ──────────────────────────────────────────────────────────────────────────────────────────┐  
+  │ artifactFiles: 840                                                                                               │  
+  │ sourceFiles: 3                                                                                                   │  
+  │ comparedFiles: 843                                                                                               │  
+  │ analyzedBytes: 6187789                                                                                           │  
+  │ skippedBytes: 0                                                                                                  │  
+  │ unsupportedBytes: 0                                                                                              │  
+  │ complete: false                                                                                                  │  
+  │ These are recorded scope counts; universal coverage denominator: Unknown.                                        │  
+  │ File/byte totals are known observed members only; remaining archive scope is unknown on failure.                 │  
+  │ resolve_artifact: complete                                                                                       │  
+  │ acquire: complete                                                                                                │  
+  │ source: incomplete                                                                                               │  
+  │ SOURCE_PACKAGE_MANIFEST_MISSING: SOURCE_PACKAGE_MANIFEST_MISSING; source                                         │  
+  │ provenance: skipped                                                                                              │  
+  │ inventory: incomplete                                                                                            │  
+  │ INVENTORY_INCOMPLETE: INVENTORY_INCOMPLETE; inventory                                                            │  
+  │ build: skipped                                                                                                   │  
+  │ compare: incomplete                                                                                              │  
+  │ COMPARISON_SCOPE_INCOMPLETE: COMPARISON_SCOPE_INCOMPLETE; compare                                                │  
+  │ persist: complete                                                                                                │  
+  │ heuristics: incomplete                                                                                           │  
+  │ ANALYSIS_MODULE_UNAVAILABLE: Malhar analysis module not supplied; deterministic analysis                         │  
+  │ ai: skipped                                                                                                      │  
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘  
+  Focus 0 / filter (none) / No universal safety verdict                                                                 
+  j/k move  Enter inspect  e evidence  Tab focus  / filter  ? help  q quit                                              
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        

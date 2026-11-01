@@ -1,0 +1,40 @@
+  HEURISKO   H Home    I Investigations     M Monitoring                                                                                                        
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+  picocolors@1.1.1 / HISTORICAL / incomplete / Captured 2026-10-31T23:13:57Z                                                                                    
+  1 Overview   2 Findings   3 Files   4 Source   5 AI   6 Coverage                                                                                              
+  Historical — online checks have not refreshed · i Identity                                                                                                    
+  ┌─ ESTABLISHED OBSERVATION ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐  
+  │                                                                                                                                                          │  
+  │  Source and artifact differences are recorded. Review their evidence and the unresolved scope.                                                           │  
+  │                                                                                                                                                          │  
+  │  ! Source conflict / competing commits / release binding unresolved                                                                                      │  
+  │                                                                                                                                                          │  
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘  
+                                                                                                                                                                
+  ┌─ > Independent outcomes ─────────────────────────────────┐  ┌─ Priority findings ───────────────────────────────────────────────────────── None recorded ┐  
+  │                                                          │  │                                                                                            │  
+  │  Artifact integrity    │ Digest matched                  │  │  Findings not evaluated / analysis unavailable.                                            │  
+  │  Source association    │ Conflicting claims              │  │  AI                      disabled                                                          │  
+  │  Provenance            │ Not checked                     │  │                                                                                            │  
+  │  Correspondence        │ Unexplained                     │  │                                                                                            │  
+  │  Analysis completeness │ Incomplete                      │  └────────────────────────────────────────────────────────────────────────────────────────────┘  
+  │  Policy result         │ Not evaluated                   │                                                                                                  
+  │                                                          │  ┌─ Report next action ───────────────────────────────────────────────────────────────────────┐  
+  └──────────────────────────────────────────────────────────┘  │                                                                                            │  
+                                                                │  Inspect raw file changes, source claims and coverage before drawing a conclusion.         │  
+  ┌─ Coverage & unknowns ────────────────────────────────────┐  │                                                                                            │  
+  │                                                          │  └────────────────────────────────────────────────────────────────────────────────────────────┘  
+  │  Compared              │ 19 change records               │                                                                                                  
+  │  Source files          │ 19 recorded                     │                                                                                                  
+  │  Artifact files        │ 7 recorded                      │                                                                                                  
+  │  ─ Coverage gaps ──────────────────────────────────────  │                                                                                                  
+  │  - Findings not evaluated for a complete examined        │                                                                                                  
+  │    scope.                                                │                                                                                                  
+  │                                                          │                                                                                                  
+  └──────────────────────────────────────────────────────────┘                                                                                                  
+                                                                                                                                                                
+                                                                                                                                                                
+  SOURCE CONFLICT / inspect source claims                                                                                                                       
+  Tab focus  Enter inspect  1-6 sections  i identity  ? help  q quit                                                                                            
+                                                                                                                                                                
+                                                                                                                                                                

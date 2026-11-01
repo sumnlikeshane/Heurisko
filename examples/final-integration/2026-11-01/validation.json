@@ -1,0 +1,74 @@
+{
+  "version": "heurisko-final-integrated-publication-v1",
+  "recordedAt": "2026-11-01T00:40:06.201627+00:00",
+  "base": "c08a701960b5a539c589ed1ff738f2b5b19a2b38",
+  "branch": "handoff/s1-s3-audit-fixes",
+  "pr": "https://github.com/sumnlikeshane/Heurisko/pull/3",
+  "authorization": "Shane explicitly requested finishing current Malhar integration and commit/push so servers can launch. Render preparation is separate; no main merge or submission.",
+  "scope": "Current reviewed 55240e9 deterministic default and current CLI/TUI/web audit repairs; public representative examples and exact retained evidence. Pre-Render snapshot; hosted changes are a separate follow-up.",
+  "runtime": {
+    "node": "22.23.4",
+    "pnpm": "10.14.0",
+    "validatorPython": "3.13.2"
+  },
+  "checks": {
+    "frozenInstall": "Offline cache lacked a pinned tarball; frozen online install with scripts disabled passed, lock unchanged.",
+    "assembledBuildTypecheck": "pass",
+    "contracts": "pass; full schema/semantic suite and 7 synthetic handshakes",
+    "assembledWebReaderTuiDefaultBoundary": {
+      "passed": 127,
+      "failed": 0
+    },
+    "foundationCliBoundary": {
+      "passed": 22,
+      "failed": 0
+    },
+    "actualParserResourceProbe": "pass; parser-boundary.json",
+    "historicalCorpora": "all 3 pass; each 2988 retained evidence refs, 1028 diff spans, 146 manifest-value spans",
+    "integratedRetainedReport": {
+      "reportId": "report_1366f57f990327d57dd6ad73",
+      "findings": 16,
+      "inspectExit": 0,
+      "note": "Completed declared static checks; correspondence unresolved, provenance unchecked, no package safety claim."
+    },
+    "docs": "82 files pass using exact CI workflow checker",
+    "research": "15/15 preserved hashes",
+    "newRawEvidence": "543 new raw files, 3496458 bytes unchanged; CAS filename hashes verified",
+    "runtimeCore": {
+      "initialBroadRun": {
+        "tests": 108,
+        "passed": 107,
+        "failed": 1,
+        "failure": "Stale S2 CLI exit2 assertion; test-only repair now follows actual report exit semantics."
+      },
+      "exactRepairedCase": "passes with actual restricted Docker parser; logs/s2-cli-repair.log",
+      "conclusion": "Every broad runtime case has a passing executed result across the original run plus exact repaired case; no claim that the first full run was green.",
+      "overlappingDuplicateS2": "A separate overlapping full S2 rerun observed cleanup-unconfirmed under contention; fail-closed records retained, serial recheck pending."
+    },
+    "stagedWhitespace": "Authored source/docs check passes; retained terminal/log padding and the exact derived upstream final blank line are preserved and excluded from this scoped formatting check."
+  },
+  "failuresRetained": [
+    "Offline install lacked cached pinned tarball, then frozen online install with scripts disabled passed.",
+    "Initial S2 CLI assertion expected legacy unavailable-analysis exit2; now asserts actual report exit semantics. Exact repaired case passes.",
+    "Overlapping Docker validation runs observed one fail-closed cleanup-unconfirmed case; exact serial recheck pending. No cleanup controls or caps relaxed."
+  ],
+  "publication": {
+    "priorRedactionsPreserved": 39,
+    "newRedactions": 37,
+    "rawReportBundleArchiveBlobBytesRewritten": false,
+    "activeCheckoutIndexPreserved": true,
+    "excluded": [
+      "incoming original M0/M1 attachments",
+      "installed dependencies and build output",
+      "private tools/state/scratch",
+      "experimental sibling worktree",
+      "unvalidated Render work from this first checkpoint"
+    ]
+  },
+  "remaining": [
+    "Meaningful product model/provider work, monitoring, provenance verifier/policy/rebuild",
+    "Finding quality, human GUI/AT and joint G3 acceptance",
+    "Exact-head remote CI is pending publication; no old CI pass attributed",
+    "Render account access and hosted live parser availability; no deployment claimed"
+  ]
+}

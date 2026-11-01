@@ -1,0 +1,54 @@
+{
+  "version": "heurisko-linux-exact-id-query-v1",
+  "recordedAt": "2026-10-31T23:06:31.922206+00:00",
+  "initialHead": "af78823b9ea7041166125e773aa4d63ffc58f9d8",
+  "initialCI": "https://github.com/sumnlikeshane/Heurisko/actions/runs/41250648942",
+  "failure": "S2 PARSER_CLEANUP_UNCONFIRMED; web/documentation jobs passed",
+  "repair": "Successful bounded all-container query filtered by acknowledged full ID; only empty output confirms absence. Error/output/name/partial ID stay unconfirmed. Shared with explicit stopped-job recovery.",
+  "unchanged": [
+    "G0",
+    "resource/mount/network limits",
+    "unacknowledged-create and uncertain-job retention",
+    "product module/model policy"
+  ],
+  "checks": {
+    "coreBuild": "passed",
+    "exactQueryAndRecoveryRegressions": {
+      "passed": 11,
+      "failed": 0,
+      "log": "absence-tests.log"
+    },
+    "freshEngineCLIWeb": {
+      "cases": 2,
+      "exitCodes": [
+        2,
+        2
+      ],
+      "sourceBuildStable": true,
+      "receipt": "engine/verification.json"
+    },
+    "fullSerialCore": {
+      "passed": 124,
+      "failed": 0,
+      "log": "absence-core.log"
+    },
+    "remoteCI": "Read PR #3 final head; initial failed run preserved"
+  },
+  "sourceSHA256": {
+    "packages/core/src/parser-job.ts": "sha256:8144abf66505b533d74037b4cbeb572f289d9a3412b031c929d5cc8dbf9bc9fe",
+    "packages/core/tests/parser-absence.test.mjs": "sha256:31f6467850e4538317ce83870f84689a1bd38031cc6f96a891e2be8afba26a80",
+    "packages/core/tests/audit-fixes.test.mjs": "sha256:03189fbc623159614e5c5dd1bd763ef384e5b1a80e05ab6c51115e45facfe41e",
+    "scripts/recover-parser-job.mjs": "sha256:65d41e40d2c2f3108ab2afdc676e87aaaad074413b19dd339512dacdcc7811a9",
+    "package.json": "sha256:5d45eb7becaa26f8bac977514b8f8d29da0f200d724311373e1d4619e03535dc"
+  },
+  "targetCodeOrModelExecuted": false,
+  "codingAssistant": "Codex",
+  "historyRewritten": false,
+  "mainMerged": false,
+  "publication": {
+    "correctiveCommitted": false,
+    "correctivePushed": false,
+    "approval": "Shane explicitly answered yes to committing and pushing this prepared corrective fix, tests and receipts to PR #3. Earlier automatic-review rejection remains historical.",
+    "stateAtReceipt": "Approved, prepared for commit/push; consult PR #3 for published head and remote CI."
+  }
+}

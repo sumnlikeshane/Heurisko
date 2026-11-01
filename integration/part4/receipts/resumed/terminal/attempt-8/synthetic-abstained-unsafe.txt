@@ -1,0 +1,35 @@
+  HEURISKO / evidence / medium / 120x35                                                                                 
+   H Home    I Investigations     M Monitoring                                                                          
+  LOCAL INPUT F0.tgz@Unknown report_1cbc999c58216e4e1f7471b3                                                            
+  SYNTHETIC / HISTORICAL — checks not refreshed / incomplete / captured 2026-10-31T15:00:00Z                            
+  1 Overview  2 Findings  3 Files*  4 Source  5 AI  6 Coverage                                                          
+  ┌─ > Evidence / ev_3ff91302c2e4f2757084775c ───────────────────────────────────────────────────────────────────────┐  
+  │ Side: artifact; requested artifact; method authored-rendering-test                                               │  
+  │ Path: package/unsafe\u001b[2J\u202e.txt                                                                          │  
+  │ Digest: sha256:c33e561b372df3d55a7c60a5732f6dab49b3cce6c84f66ddb50f919d994cd20f; availability retained           │  
+  │ RAW utf8: [0, 4096) of recorded [0, 20032); truncated true                                                       │  
+  │ Member ev_3ff91302c2e4f2757084775c                                                                               │  
+  │ Content sha256:c33e561b372df3d55a7c60a5732f6dab49b3cce6c84f66ddb50f919d994cd20f                                  │  
+  │ INERT\u001b]52;c;PAYLOAD\u0007\u001b[2J\u202eTEST                                                                │  
+  │ longlonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglong │  
+  │ longlonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglong │  
+  │ longlonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglong │  
+  │ longlonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglong │  
+  │ longlonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglong │  
+  │ longlonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglong │  
+  │ longlonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglong │  
+  │ longlonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglong │  
+  │ longlonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglong │  
+  │ longlonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglong │  
+  │ longlonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglong │  
+  │ longlonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglong │  
+  │ longlonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglong │  
+  │ longlonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglong │  
+  │ longlonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglong │  
+  │ longlonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglong │  
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘  
+  Focus 0 / filter (none) / No universal safety verdict                                                                 
+  j/k scroll  Tab cite  s side  p/b page  Esc return  q quit                                                            
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        

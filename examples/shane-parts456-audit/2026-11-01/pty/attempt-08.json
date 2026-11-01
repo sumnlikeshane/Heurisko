@@ -1,0 +1,52 @@
+{
+  "checks": [
+    {
+      "check": "HISTORICAL",
+      "size": [
+        160,
+        40
+      ],
+      "passed": true
+    },
+    {
+      "check": "Malhar analysis module not supplied",
+      "size": [
+        160,
+        40
+      ],
+      "passed": true
+    },
+    {
+      "check": "unavailable explanation and successes reachable at 160",
+      "passed": true
+    },
+    {
+      "check": "Artifact root/",
+      "size": [
+        160,
+        40
+      ],
+      "passed": true
+    },
+    {
+      "check": "modified / different",
+      "size": [
+        160,
+        40
+      ],
+      "passed": true
+    },
+    {
+      "check": "RAW CHANGED SPANS",
+      "size": [
+        160,
+        40
+      ],
+      "passed": true
+    }
+  ],
+  "count": 6,
+  "reports": [],
+  "store": "examples/part4/user-failures/store-cc5cdfd6-a42d-4632-b3ba-e3a925e3f7cb",
+  "noTargetOrModelExecution": true
+}

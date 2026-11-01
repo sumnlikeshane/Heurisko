@@ -1,0 +1,214 @@
+{
+  "scope": "actual PTY; synthetic AI/binary states labeled; current explicit model-off module validation report",
+  "checks": [
+    {
+      "check": "HISTORICAL",
+      "size": [
+        120,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "SYNTHETIC",
+      "size": [
+        120,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "AI state:",
+      "size": [
+        120,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "RAW base64:",
+      "size": [
+        120,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "HISTORICAL",
+      "size": [
+        120,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "SYNTHETIC",
+      "size": [
+        120,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "AI state:",
+      "size": [
+        120,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "RAW utf8:",
+      "size": [
+        120,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "HISTORICAL",
+      "size": [
+        120,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "SYNTHETIC",
+      "size": [
+        120,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "AI state:",
+      "size": [
+        120,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "RAW utf8:",
+      "size": [
+        120,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "HISTORICAL",
+      "size": [
+        120,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "SYNTHETIC",
+      "size": [
+        120,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "AI state:",
+      "size": [
+        120,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "RAW utf8:",
+      "size": [
+        120,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "HISTORICAL",
+      "size": [
+        120,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "SYNTHETIC",
+      "size": [
+        120,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "AI state:",
+      "size": [
+        120,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "RAW utf8:",
+      "size": [
+        120,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "HISTORICAL",
+      "size": [
+        160,
+        40
+      ],
+      "passed": true
+    },
+    {
+      "check": "Filter:",
+      "size": [
+        160,
+        40
+      ],
+      "passed": true
+    },
+    {
+      "check": "Package lifecycle",
+      "size": [
+        160,
+        40
+      ],
+      "passed": true
+    },
+    {
+      "check": "Observation:",
+      "size": [
+        160,
+        40
+      ],
+      "passed": true
+    },
+    {
+      "check": "RAW utf8:",
+      "size": [
+        160,
+        40
+      ],
+      "passed": true
+    },
+    {
+      "check": "Terminal too small",
+      "size": [
+        55,
+        14
+      ],
+      "passed": true
+    }
+  ],
+  "count": 26
+}

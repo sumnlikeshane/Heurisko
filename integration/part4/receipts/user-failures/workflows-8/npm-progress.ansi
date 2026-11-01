@@ -1,0 +1,585 @@
+[?1049h[?25l[?25l  [1mHEURISKO[22m   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  [1mpicocolors@1.1.1 / HISTORICAL / incomplete / Captured 2026-10-31T22:59:33Z                                                                                  [22m
+  [4m[1m1 Overview   [22m[24m2 Findings   3 Files   4 Source   5 AI   6 Coverage
+  Historical — online checks have not refreshed · i Identity
+  ┌─[1m ESTABLISHED OBSERVATION [22m────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │                                                                                                                                                          │
+  │  [1mSource and artifact differences are recorded. Review their evidence and the unresolved scope.                                                         [22m  │
+  │                                                                                                                                                          │
+  │  ! Source conflict / competing commits / release binding unresolved                                                                                      │
+  │                                                                                                                                                          │
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+  ┌─[1m > Independent outcomes [22m─────────────────────────────────┐  ┌─[1m Priority findings [22m───────────────────────────────────────────────────────── None recorded ┐
+  │                                                          │  │                                                                                            │
+  │  Artifact integrity    │ Digest matched                  │  │  Findings not evaluated / analysis unavailable.                                            │
+  │  Source association    │ Conflicting claims              │  │  AI                      disabled                                                          │
+  │  Provenance            │ Not checked                     │  │                                                                                            │
+  │  Correspondence        │ Unexplained                     │  │                                                                                            │
+  │  Analysis completeness │ Incomplete                      │  └────────────────────────────────────────────────────────────────────────────────────────────┘
+  │  Policy result         │ Not evaluated                   │
+  │                                                          │  ┌─[1m Report next action [22m───────────────────────────────────────────────────────────────────────┐
+  └──────────────────────────────────────────────────────────┘  │                                                                                            │
+                                                                │  [1mInspect raw file changes, source claims and coverage before drawing a conclusion.       [22m  │
+  ┌─[1m Coverage & unknowns [22m────────────────────────────────────┐  │                                                                                            │
+  │                                                          │  └────────────────────────────────────────────────────────────────────────────────────────────┘
+  │  Compared              │ 19 change records               │
+  │  Source files          │ 19 recorded                     │
+  │  Artifact files        │ 7 recorded                      │
+  │  ─ Coverage gaps ──────────────────────────────────────  │
+  │  - Findings not evaluated for a complete examined        │
+  │    scope.                                                │
+  │                                                          │
+  └──────────────────────────────────────────────────────────┘
+
+
+  SOURCE CONFLICT / inspect source claims
+  [1mTab[22m focus  [1mEnter[22m inspect  [1m1-6[22m sections  [1mi[22m identity  [1m?[22m help  [1mq[22m quit
+
+[?25l[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  [1mpicocolors@1.1.1 / HISTORICAL / incomplete / Captured 2026-10-31T22:59:33Z                                                                                  [22m
+  1 Overview   2 Findings   3 Files   [4m[1m4 Source   [22m[24m5 AI   6 Coverage
+  Historical — online checks have not refreshed · i Identity
+  [1mSource                                                                                                                                                      [22m
+  [Candidates]  Provenance  Build
+  ┌─[1m > Source records [22m───────────── 1 ┐ ┌─[1m Source details [22m─────────────────────────────────────────────┐ ┌─[1m Supporting evidence [22m─────────────────────────────┐
+  │ [1m> Candidate 1 / 6f0a4638348e     [22m │ │ [1mAssociation: ambiguous                                      [22m │ │ Citations / Up–Down selects                       │
+  │   ambiguous                       │ │ Source identity is conflicting; this is not a verified       │ │ > ev_ec5b0358b13edb689c4ced2c                     │
+  │                                   │ │ release baseline.                                            │ │ ev_d92f043e33ac7f6993c2b35d                       │
+  │ 1 / 1 · Enter inspect             │ │ Reading hash-checked candidate basis and manifest values…    │ │ ev_065b4580538f2a13348b79ac                       │
+  └───────────────────────────────────┘ │ Repository: https://github.com/alexeyraspopov/picocolors     │ │ ev_f8a730b1133122753c4ae1ce                       │
+                                        │ Commit: 6f0a4638348ed20633d623ee973f9c9a96f65104             │ │ ev_276b463ab652843042b81668                       │
+                                        │ Subdirectory: (repository root)                              │ │ ev_2e14b499a02edfc5f8403706                       │
+                                        │ SOURCE CONFLICT: SOURCE_VERSION_LABEL_DIFFERS                │ │ ev_a4390f0100c665fa0f521a21                       │
+                                        │ New investigation with this target: n opens a separate       │ │ ev_923052180287909e51ae0c4c                       │
+                                        │ draft.                                                       │ │                                                   │
+                                        │ 1-10 / 10                                                    │ │ [1mev_ec5b0358b13edb689c4ced2c                      [22m │
+                                        └──────────────────────────────────────────────────────────────┘ │ EXTERNAL / source-claim-0-user-override           │
+                                                                                                         │ Reading bounded, hash-checked bytes…              │
+                                                                                                         │                                                   │
+                                                                                                         │                                                   │
+                                                                                                         │ Method: separate-source-claim-v1                  │
+                                                                                                         │ Availability: retained                            │
+                                                                                                         │ Verification: not_checked                         │
+                                                                                                         │ Content digest:                                   │
+                                                                                                         │ sha256:b2addd4ca81139763fdfbfd7f69e721222671a26be │
+                                                                                                         │ d6ac80689158f6f9a82891                            │
+                                                                                                         │ Limitation: Unverified candidate claim; tag       │
+                                                                                                         │ observations are time-bound.                      │
+                                                                                                         │ 1-23 / 23                                         │
+                                                                                                         └───────────────────────────────────────────────────┘
+
+
+
+  SOURCE CONFLICT / inspect source claims
+  [1mv[22m subtabs  [1mEnter[22m inspect  [1me[22m evidence  [1mn[22m new target  [1mTab[22m panes  [1mq[22m quit
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  [1mpicocolors@1.1.1 / HISTORICAL / incomplete / Captured 2026-10-31T22:59:33Z                                                                                  [22m
+  [4m[1m1 Overview   [22m[24m2 Findings   3 Files   4 Source   5 AI   6 Coverage
+  Historical — online checks have not refreshed · i Identity
+  ┌─[1m ESTABLISHED OBSERVATION [22m────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │                                                                                                                                                          │
+  │  [1mSource and artifact differences are recorded. Review their evidence and the unresolved scope.                                                         [22m  │
+  │                                                                                                                                                          │
+  │  ! Source conflict / competing commits / release binding unresolved                                                                                      │
+  │                                                                                                                                                          │
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+  ┌─[1m > Independent outcomes [22m─────────────────────────────────┐  ┌─[1m Priority findings [22m───────────────────────────────────────────────────────── None recorded ┐
+  │                                                          │  │                                                                                            │
+  │  Artifact integrity    │ Digest matched                  │  │  Findings not evaluated / analysis unavailable.                                            │
+  │  Source association    │ Conflicting claims              │  │  AI                      disabled                                                          │
+  │  Provenance            │ Not checked                     │  │                                                                                            │
+  │  Correspondence        │ Unexplained                     │  │                                                                                            │
+  │  Analysis completeness │ Incomplete                      │  └────────────────────────────────────────────────────────────────────────────────────────────┘
+  │  Policy result         │ Not evaluated                   │
+  │                                                          │  ┌─[1m Report next action [22m───────────────────────────────────────────────────────────────────────┐
+  └──────────────────────────────────────────────────────────┘  │                                                                                            │
+                                                                │  [1mInspect raw file changes, source claims and coverage before drawing a conclusion.       [22m  │
+  ┌─[1m Coverage & unknowns [22m────────────────────────────────────┐  │                                                                                            │
+  │                                                          │  └────────────────────────────────────────────────────────────────────────────────────────────┘
+  │  Compared              │ 19 change records               │
+  │  Source files          │ 19 recorded                     │
+  │  Artifact files        │ 7 recorded                      │
+  │  ─ Coverage gaps ──────────────────────────────────────  │
+  │  - Findings not evaluated for a complete examined        │
+  │    scope.                                                │
+  │                                                          │
+  └──────────────────────────────────────────────────────────┘
+
+
+  Per-report UI state reset; report unchanged.
+  [1mTab[22m focus  [1mEnter[22m inspect  [1m1-6[22m sections  [1mi[22m identity  [1m?[22m help  [1mq[22m quit
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  [1mpicocolors@1.1.1 / HISTORICAL / incomplete / Captured 2026-10-31T22:59:33Z                                                                                  [22m
+  1 Overview   2 Findings   3 Files   [4m[1m4 Source   [22m[24m5 AI   6 Coverage
+  Historical — online checks have not refreshed · i Identity
+  [1mSource                                                                                                                                                      [22m
+  [Candidates]  Provenance  Build
+  ┌─[1m > Source records [22m───────────── 1 ┐ ┌─[1m Source details [22m─────────────────────────────────────────────┐ ┌─[1m Supporting evidence [22m─────────────────────────────┐
+  │ [1m> Candidate 1 / 6f0a4638348e     [22m │ │ [1mAssociation ambiguous — this candidate is not a verified    [22m │ │ Citations / Up–Down selects                       │
+  │   ambiguous                       │ │ [1mrelease baseline.                                           [22m │ │ > ev_ec5b0358b13edb689c4ced2c                     │
+  │                                   │ │ Snapshot recorded; selected-target link could not be         │ │ ev_d92f043e33ac7f6993c2b35d                       │
+  │ 1 / 1 · Enter inspect             │ │ confirmed from available records.                            │ │ ev_065b4580538f2a13348b79ac                       │
+  └───────────────────────────────────┘ │ Candidate basis: See recorded candidate evidence; claim      │ │ ev_f8a730b1133122753c4ae1ce                       │
+                                        │ details unavailable.                                         │ │ ev_276b463ab652843042b81668                       │
+                                        │ SOURCE CONFLICT: SOURCE_VERSION_LABEL_DIFFERS                │ │ ev_2e14b499a02edfc5f8403706                       │
+                                        │ Subdirectory: (repository root)                              │ │ ev_a4390f0100c665fa0f521a21                       │
+                                        │ New investigation with this target: n opens a new draft,     │ │ ev_923052180287909e51ae0c4c                       │
+                                        │ then Review and Start. Edit the commit before Review to      │ │                                                   │
+                                        │ investigate another candidate. This report stays immutable.  │ │ [1mev_ec5b0358b13edb689c4ced2c                      [22m │
+                                        │ Artifact check: integrity matched. Source claim: ambiguous.  │ │ EXTERNAL / source-claim-0-user-override           │
+                                        │ Digest agreement checks acquired artifact bytes against      │ │ Reading bounded, hash-checked bytes…              │
+                                        │ registry metadata, not source provenance.                    │ │                                                   │
+                                        │ Provenance: not_checked; build stage skipped. No release     │ │                                                   │
+                                        │ binding follows from matching version labels.                │ │ Method: separate-source-claim-v1                  │
+                                        │ Next action: inspect the conflicting manifest values and     │ │ Availability: retained                            │
+                                        │ release claims; choose another immutable target if           │ │ Verification: not_checked                         │
+                                        │ warranted.                                                   │ │ Content digest:                                   │
+                                        │ Repository: https://github.com/alexeyraspopov/picocolors     │ │ sha256:b2addd4ca81139763fdfbfd7f69e721222671a26be │
+                                        │ Commit: 6f0a4638348ed20633d623ee973f9c9a96f65104             │ │ d6ac80689158f6f9a82891                            │
+                                        │ Snapshot:                                                    │ │ Limitation: Unverified candidate claim; tag       │
+                                        │ sha256:87646ed7f9b372d94da80ec298ef4ec6fc0c2a56bb60e0b325a97 │ │ observations are time-bound.                      │
+                                        │ 05037408c7c                                                  │ │ 1-23 / 23                                         │
+                                        │ Build context:                                               │ └───────────────────────────────────────────────────┘
+                                        │ sha256:6383b97048e27e8ab0a0cfeecce3bc80b06ebf180528085638aac │
+                                        │ 1-26 / 41  j/k scroll                                        │
+                                        └──────────────────────────────────────────────────────────────┘
+  SOURCE CONFLICT / inspect source claims
+  [1mv[22m subtabs  [1mEnter[22m inspect  [1me[22m evidence  [1mn[22m new target  [1mTab[22m panes  [1mq[22m quit
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  [1mpicocolors@1.1.1 / HISTORICAL / incomplete / Captured 2026-10-31T22:59:33Z                                                                                  [22m
+  1 Overview   2 Findings   3 Files   [4m[1m4 Source   [22m[24m5 AI   6 Coverage
+  Historical — online checks have not refreshed · i Identity
+  [1mSource                                                                                                                                                      [22m
+  [Candidates]  Provenance  Build
+  ┌─[1m > Source records [22m───────────── 1 ┐ ┌─[1m Source details [22m─────────────────────────────────────────────┐ ┌─[1m Supporting evidence [22m─────────────────────────────┐
+  │ [1m> Candidate 1 / 6f0a4638348e     [22m │ │ [1mAssociation ambiguous — this candidate is not a verified    [22m │ │ Citations / Up–Down selects                       │
+  │   ambiguous                       │ │ [1mrelease baseline.                                           [22m │ │ > ev_ec5b0358b13edb689c4ced2c                     │
+  │                                   │ │ Snapshot recorded; selected-target link could not be         │ │ ev_d92f043e33ac7f6993c2b35d                       │
+  │ 1 / 1 · Enter inspect             │ │ confirmed from available records.                            │ │ ev_065b4580538f2a13348b79ac                       │
+  └───────────────────────────────────┘ │ Candidate basis: See recorded candidate evidence; claim      │ │ ev_f8a730b1133122753c4ae1ce                       │
+                                        │ details unavailable.                                         │ │ ev_276b463ab652843042b81668                       │
+                                        │ SOURCE CONFLICT: SOURCE_VERSION_LABEL_DIFFERS                │ │ ev_2e14b499a02edfc5f8403706                       │
+                                        │ Subdirectory: (repository root)                              │ │ ev_a4390f0100c665fa0f521a21                       │
+                                        │ New investigation with this target: n opens a new draft,     │ │ ev_923052180287909e51ae0c4c                       │
+                                        │ then Review and Start. Edit the commit before Review to      │ │                                                   │
+                                        │ investigate another candidate. This report stays immutable.  │ │ [1mev_ec5b0358b13edb689c4ced2c                      [22m │
+                                        │ Artifact check: integrity matched. Source claim: ambiguous.  │ │ EXTERNAL / source-claim-0-user-override           │
+                                        │ Digest agreement checks acquired artifact bytes against      │ │ METADATA ONLY: MISSING_BLOB                       │
+                                        │ registry metadata, not source provenance.                    │ │                                                   │
+                                        │ Provenance: not_checked; build stage skipped. No release     │ │                                                   │
+                                        │ binding follows from matching version labels.                │ │ Method: separate-source-claim-v1                  │
+                                        │ Next action: inspect the conflicting manifest values and     │ │ Availability: retained                            │
+                                        │ release claims; choose another immutable target if           │ │ Verification: not_checked                         │
+                                        │ warranted.                                                   │ │ Content digest:                                   │
+                                        │ Repository: https://github.com/alexeyraspopov/picocolors     │ │ sha256:b2addd4ca81139763fdfbfd7f69e721222671a26be │
+                                        │ Commit: 6f0a4638348ed20633d623ee973f9c9a96f65104             │ │ d6ac80689158f6f9a82891                            │
+                                        │ Snapshot:                                                    │ │ Limitation: Unverified candidate claim; tag       │
+                                        │ sha256:87646ed7f9b372d94da80ec298ef4ec6fc0c2a56bb60e0b325a97 │ │ observations are time-bound.                      │
+                                        │ 05037408c7c                                                  │ │ 1-23 / 23                                         │
+                                        │ Build context:                                               │ └───────────────────────────────────────────────────┘
+                                        │ sha256:6383b97048e27e8ab0a0cfeecce3bc80b06ebf180528085638aac │
+                                        │ 1-26 / 41  j/k scroll                                        │
+                                        └──────────────────────────────────────────────────────────────┘
+  SOURCE CONFLICT / inspect source claims
+  [1mv[22m subtabs  [1mEnter[22m inspect  [1me[22m evidence  [1mn[22m new target  [1mTab[22m panes  [1mq[22m quit
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m   [4m[1mH Home   [22m[24m I Investigations     M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+                                     ┌─[1m > New investigation [22m─────────────────────────────────────────────────────── 1 / 2 ┐
+                                     │   Input (Ctrl+T)  [1m[ npm ][22m   [1mLocal archive[22m                                          │
+                                     │                                                                                    │
+                                     │ [1mPackage name  [editing]                                                           [22m │
+                                     │ > picocolors                                                                       │
+                                     │ Exact version                                                                      │
+                                     │   1.1.1                                                                            │
+                                     │ Source repository (optional override)                                              │
+                                     │   https://github.com/alexeyraspopov/picocolors                                     │
+                                     │ Full commit                                                                        │
+                                     │   6f0a4638348ed20633d623ee973f9c9a96f65104                                         │
+                                     │ Subdirectory                                                                       │
+                                     │   Repository root if empty                                                         │
+                                     │ AI disabled / runtime unavailable · source selection is not provenance             │
+                                     │ [1m Load retained example                                                            [22m │
+                                     │ [1m Review target                                                                    [22m │
+                                     │                                                                                    │
+                                     └────────────────────────────────────────────────────────────────────────────────────┘
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  New target draft; review and Start create a new report.
+  [1mType[22m to edit  [1mTab[22m next  [1mCtrl+T[22m type  [1mEnter[22m review  [1mEsc[22m back
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m   [4m[1mH Home   [22m[24m I Investigations     M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+                                     ┌─[1m > New investigation [22m─────────────────────────────────────────────────────── 1 / 2 ┐
+                                     │   Input (Ctrl+T)  [1m[ npm ][22m   [1mLocal archive[22m                                          │
+                                     │                                                                                    │
+                                     │ Package name                                                                       │
+                                     │   picocolors                                                                       │
+                                     │ [1mExact version  [editing]                                                          [22m │
+                                     │ > 1.1.1                                                                            │
+                                     │ Source repository (optional override)                                              │
+                                     │   https://github.com/alexeyraspopov/picocolors                                     │
+                                     │ Full commit                                                                        │
+                                     │   6f0a4638348ed20633d623ee973f9c9a96f65104                                         │
+                                     │ Subdirectory                                                                       │
+                                     │   Repository root if empty                                                         │
+                                     │ AI disabled / runtime unavailable · source selection is not provenance             │
+                                     │ [1m Load retained example                                                            [22m │
+                                     │ [1m Review target                                                                    [22m │
+                                     │                                                                                    │
+                                     └────────────────────────────────────────────────────────────────────────────────────┘
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  New target draft; review and Start create a new report.
+  [1mType[22m to edit  [1mTab[22m next  [1mCtrl+T[22m type  [1mEnter[22m review  [1mEsc[22m back
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m   [4m[1mH Home   [22m[24m I Investigations     M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+                                     ┌─[1m > New investigation [22m─────────────────────────────────────────────────────── 1 / 2 ┐
+                                     │   Input (Ctrl+T)  [1m[ npm ][22m   [1mLocal archive[22m                                          │
+                                     │                                                                                    │
+                                     │ Package name                                                                       │
+                                     │   picocolors                                                                       │
+                                     │ Exact version                                                                      │
+                                     │   1.1.1                                                                            │
+                                     │ [1mSource repository (optional override)  [editing]                                  [22m │
+                                     │ > https://github.com/alexeyraspopov/picocolors                                     │
+                                     │ Full commit                                                                        │
+                                     │   6f0a4638348ed20633d623ee973f9c9a96f65104                                         │
+                                     │ Subdirectory                                                                       │
+                                     │   Repository root if empty                                                         │
+                                     │ AI disabled / runtime unavailable · source selection is not provenance             │
+                                     │ [1m Load retained example                                                            [22m │
+                                     │ [1m Review target                                                                    [22m │
+                                     │                                                                                    │
+                                     └────────────────────────────────────────────────────────────────────────────────────┘
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  New target draft; review and Start create a new report.
+  [1mType[22m to edit  [1mTab[22m next  [1mCtrl+T[22m type  [1mEnter[22m review  [1mEsc[22m back
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m   [4m[1mH Home   [22m[24m I Investigations     M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+                                     ┌─[1m > New investigation [22m─────────────────────────────────────────────────────── 1 / 2 ┐
+                                     │   Input (Ctrl+T)  [1m[ npm ][22m   [1mLocal archive[22m                                          │
+                                     │                                                                                    │
+                                     │ Package name                                                                       │
+                                     │   picocolors                                                                       │
+                                     │ Exact version                                                                      │
+                                     │   1.1.1                                                                            │
+                                     │ Source repository (optional override)                                              │
+                                     │   https://github.com/alexeyraspopov/picocolors                                     │
+                                     │ [1mFull commit  [editing]                                                            [22m │
+                                     │ > 6f0a4638348ed20633d623ee973f9c9a96f65104                                         │
+                                     │ Subdirectory                                                                       │
+                                     │   Repository root if empty                                                         │
+                                     │ AI disabled / runtime unavailable · source selection is not provenance             │
+                                     │ [1m Load retained example                                                            [22m │
+                                     │ [1m Review target                                                                    [22m │
+                                     │                                                                                    │
+                                     └────────────────────────────────────────────────────────────────────────────────────┘
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  New target draft; review and Start create a new report.
+  [1mType[22m to edit  [1mTab[22m next  [1mCtrl+T[22m type  [1mEnter[22m review  [1mEsc[22m back
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m   [4m[1mH Home   [22m[24m I Investigations     M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+                                     ┌─[1m > New investigation [22m─────────────────────────────────────────────────────── 1 / 2 ┐
+                                     │   Input (Ctrl+T)  [1m[ npm ][22m   [1mLocal archive[22m                                          │
+                                     │                                                                                    │
+                                     │ Package name                                                                       │
+                                     │   picocolors                                                                       │
+                                     │ Exact version                                                                      │
+                                     │   1.1.1                                                                            │
+                                     │ Source repository (optional override)                                              │
+                                     │   https://github.com/alexeyraspopov/picocolors                                     │
+                                     │ [1mFull commit  [editing]                                                            [22m │
+                                     │ >  40-character immutable commit                                                   │
+                                     │ Subdirectory                                                                       │
+                                     │   Repository root if empty                                                         │
+                                     │ AI disabled / runtime unavailable · source selection is not provenance             │
+                                     │ [1m Load retained example                                                            [22m │
+                                     │ [1m Review target                                                                    [22m │
+                                     │                                                                                    │
+                                     └────────────────────────────────────────────────────────────────────────────────────┘
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  New target draft; review and Start create a new report.
+  [1mType[22m to edit  [1mTab[22m next  [1mCtrl+T[22m type  [1mEnter[22m review  [1mEsc[22m back
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m   [4m[1mH Home   [22m[24m I Investigations     M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+                                     ┌─[1m > New investigation [22m─────────────────────────────────────────────────────── 1 / 2 ┐
+                                     │   Input (Ctrl+T)  [1m[ npm ][22m   [1mLocal archive[22m                                          │
+                                     │                                                                                    │
+                                     │ Package name                                                                       │
+                                     │   picocolors                                                                       │
+                                     │ Exact version                                                                      │
+                                     │   1.1.1                                                                            │
+                                     │ Source repository (optional override)                                              │
+                                     │   https://github.com/alexeyraspopov/picocolors                                     │
+                                     │ [1mFull commit  [editing]                                                            [22m │
+                                     │ > 7249f8c5d4825550f70bc1ea98652639933d3bbd                                         │
+                                     │ Subdirectory                                                                       │
+                                     │   Repository root if empty                                                         │
+                                     │ AI disabled / runtime unavailable · source selection is not provenance             │
+                                     │ [1m Load retained example                                                            [22m │
+                                     │ [1m Review target                                                                    [22m │
+                                     │                                                                                    │
+                                     └────────────────────────────────────────────────────────────────────────────────────┘
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  New target draft; review and Start create a new report.
+  [1mType[22m to edit  [1mTab[22m next  [1mCtrl+T[22m type  [1mEnter[22m review  [1mEsc[22m back
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m   [4m[1mH Home   [22m[24m I Investigations     M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+
+
+
+
+
+
+                                     ┌─[1m > Validating and retaining target [22m────────────────────────────────────────────────┐
+                                     │ Validating and retaining target                                                    │
+                                     │                                                                                    │
+                                     │ [━━━━────────────────────────] Working / indeterminate                             │
+                                     │ Wait for the operation to finish. Ctrl+C requests cancellation.                    │
+                                     │                                                                                    │
+                                     └────────────────────────────────────────────────────────────────────────────────────┘
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  New target draft; review and Start create a new report.
+  [1mCtrl+C[22m cancel  [1mWaiting[22m for operation
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m   [4m[1mH Home   [22m[24m I Investigations     M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+
+
+
+
+
+
+                                     ┌─[1m > Validating and retaining target [22m────────────────────────────────────────────────┐
+                                     │ Validating and retaining target                                                    │
+                                     │                                                                                    │
+                                     │ [─━━━━───────────────────────] Working / indeterminate                             │
+                                     │ Wait for the operation to finish. Ctrl+C requests cancellation.                    │
+                                     │                                                                                    │
+                                     └────────────────────────────────────────────────────────────────────────────────────┘
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  New target draft; review and Start create a new report.
+  [1mCtrl+C[22m cancel  [1mWaiting[22m for operation
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m   [4m[1mH Home   [22m[24m I Investigations     M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+                                  ┌─[1m > Review exact target [22m─────────────────────────────────────────────────────────── 2 / 2 ┐
+                                  │ [1mPackage       picocolors                                                                [22m │
+                                  │ Version       1.1.1                                                                      │
+                                  │ ! Source selection is a comparison target; release binding is not proven.                │
+                                  │ Source        https://github.com/alexeyraspopov/picocolors                               │
+                                  │ Commit        7249f8c5d4825550f70bc1ea98652639933d3bbd                                   │
+                                  │ Subdirectory  (repository root)                                                          │
+                                  │ SHA-256       Unknown until exact-version acquisition                                    │
+                                  │ AI            Disabled / current inference runtime unavailable                           │
+                                  │ Configuration raw-static-s4-v1                                                           │
+                                  │ Provenance    Not checked / no configured verifier                                       │
+                                  │ 1-10 / 10 · Enter Start · Esc edit                                                       │
+                                  │ [1m > Start investigation                                                                  [22m │
+                                  └──────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  review
+  [1mEnter[22m Start  [1mj/k[22m scroll  [1mEsc[22m edit  [1mq[22m quit
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m   [4m[1mH Home   [22m[24m I Investigations     M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  [1mLive investigation                                                                                                                                          [22m
+  0m 00s elapsed · 0/10 stages reported terminal facts · no estimated finish time
+  [━━━━────────────────────────────] Preparing / indeterminate
+
+  ┌─[1m > Stages [22m──────────────────── 0/10 terminal facts ┐ ┌─[1m Stage details & activity [22m────────────────────────────────────────────────────────────────────────┐
+  │ > resolve artifact / not_started                   │ │ [1mInvestigation in progress                                                                        [22m │
+  │   acquire / not_started                            │ │ Stage execution is not a security verdict.                                                        │
+  │   source / not_started                             │ │                                                                                                   │
+  │   provenance / not_started                         │ │ [1mSelected stage                                                                                   [22m │
+  │   inventory / not_started                          │ │ resolve_artifact                                                                                  │
+  │   compare / not_started                            │ │ Status: not_started                                                                               │
+  │   build / not_started                              │ │ No diagnostic event recorded for this stage.                                                      │
+  │   heuristics / not_started                         │ │                                                                                                   │
+  │   ai / not_started                                 │ │ [1mAvailable evidence                                                                               [22m │
+  │   persist / not_started                            │ │ Live evidence references are unavailable. The settled report preserves its recorded scope.        │
+  │ Complete / incomplete / skipped / failed stay dis… │ │                                                                                                   │
+  │                                                    │ │ [1mRecent activity                                                                                  [22m │
+  └────────────────────────────────────────────────────┘ │                                                                                                   │
+                                                         │ 0 earlier events omitted from this bounded event history.                                         │
+                                                         │ Cancellation requests do not acknowledge cleanup. Detach and retry are unavailable.               │
+                                                         │ 1-15 / 15                                                                                         │
+                                                         └───────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+
+
+
+
+
+
+
+
+
+
+  live
+  [1mUp/Down[22m stages  [1mTab[22m details  [1mCtrl+C[22m cancel  [1mq[22m cancel
+

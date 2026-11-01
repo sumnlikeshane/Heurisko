@@ -1,0 +1,20 @@
+  HEURISKO                                                  
+   H Home    I Investigations     M Monitoring              
+  ────────────────────────────────────────────────────────  
+  picocolors@1.1.1 / HISTORICAL / incomplete / Captured 2…  
+  1 Ov  2 Find  3 Files  4 Src  5 AI  6 Scope               
+  Raw retained evidence · Esc returns to its origin         
+  Evidence                                                  
+  Files > ev_f61f09233ab041767071cc94 / Esc restores posi…  
+  ┌─ > Raw citation / artifact ──────────────────────────┐  
+  │ ev_f61f09233ab041767071cc94                          │  
+  │ BOTH / README.md                                     │  
+  │ RAW utf8: [532, 621) / recorded [532, 621)           │  
+  │ Window truncated: false / total blob 622 bytes       │  
+  │                                                      │  
+  │ 1-5 / 22  j/k scroll                                 │  
+  └──────────────────────────────────────────────────────┘  
+  evidence                                                  
+  j/k scroll  Tab citation  s side  p/b page  q quit        
+                                                            
+                                                            

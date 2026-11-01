@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: heurisko
+    runtime: docker
+    repo: https://github.com/sumnlikeshane/Heurisko
+    branch: main
+    plan: free
+    autoDeploy: false
+    dockerfilePath: ./Dockerfile.render
+    dockerContext: .
+    healthCheckPath: /healthz
+    envVars:
+      - key: HEURISKO_WEB_MODE
+        value: public-readonly
+      - key: PORT
+        value: "10000"

@@ -1,0 +1,35 @@
+  HEURISKO   H Home    I Investigations     M Monitoring                                                                
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+  zod@4.6.7 / HISTORICAL / incomplete / Captured 2026-10-31T19:01:10Z                                                   
+  1 Overview   2 Findings   3 Files   4 Source   5 AI   6 Coverage                                                      
+  Historical — online checks have not refreshed · i Identity                                                            
+  Files                                                                                                                 
+  Flat list / raw auto byte windows / Left–Right pan                                                                    
+  ┌─ > Files ────────── 843 ┐ ┌─ Raw source / artifact comparison ───────────────────────────────────────────────────┐  
+  │   zod-b500a2ee95134f81d │ │ Change chg_2dd8f2bd769a735845c29367                                                  │  
+  │   unresolved            │ │                                                                                      │  
+  │                         │ │ Artifact path:                                                                       │  
+  │   zod-b500a2ee95134f81d │ │ package/LICENSE                                                                      │  
+  │   unresolved            │ │                                                                                      │  
+  │                         │ │ Source path:                                                                         │  
+  │   zod-b500a2ee95134f81d │ │ Not recorded                                                                         │  
+  │   unresolved            │ │                                                                                      │  
+  │                         │ │ Status:                                                                              │  
+  │ > package/LICENSE       │ │ unresolved                                                                           │  
+  │   unresolved            │ │                                                                                      │  
+  │                         │ │ Raw equality:                                                                        │  
+  │   package/README.md     │ │ unknown                                                                              │  
+  │   unresolved            │ │                                                                                      │  
+  │                         │ │ Explanation strength:                                                                │  
+  │   package/compile.cjs   │ │ unexplained                                                                          │  
+  │   unresolved            │ │ Missing member cannot establish absence in an incomplete inventory.                  │  
+  │                         │ │                                                                                      │  
+  │   package/compile.d.cts │ │ Raw evidence:                                                                        │  
+  │   unresolved            │ │ e opens exact recorded byte spans; s changes side.                                   │  
+  │                         │ │ Normalized view unavailable — no transform was performed.                            │  
+  │ 4 / 843 · Enter inspect │ │ 1-21 / 53  j/k scroll                                                                │  
+  └─────────────────────────┘ └──────────────────────────────────────────────────────────────────────────────────────┘  
+  Files                                                                                                                 
+  j/k move  Enter inspect  e evidence  Tab panes  / filter  ? help  q quit                                              
+                                                                                                                        
+                                                                                                                        

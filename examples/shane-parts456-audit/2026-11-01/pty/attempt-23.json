@@ -1,0 +1,74 @@
+{
+  "scope": "Actual local engine, unchanged retained inert inputs, no model or target execution",
+  "checks": [
+    {
+      "check": "HISTORICAL",
+      "passed": true
+    },
+    {
+      "check": "confidence: high",
+      "passed": true
+    },
+    {
+      "check": "Observation:",
+      "passed": true
+    },
+    {
+      "check": "Files",
+      "passed": true
+    },
+    {
+      "check": "[ Local archive ]",
+      "passed": true
+    },
+    {
+      "check": "Review exact target",
+      "passed": true
+    },
+    {
+      "check": "Investigation settled.",
+      "passed": true
+    },
+    {
+      "check": "Malhar analysis module not supplied",
+      "passed": true
+    },
+    {
+      "check": "New engine observation has independent filters, section queries and file preferences",
+      "passed": true
+    },
+    {
+      "check": "ESTABLISHED OBSERVATION",
+      "passed": true
+    },
+    {
+      "check": "New Files Back has no previous finding origin",
+      "passed": true
+    },
+    {
+      "check": "Original observation UI profile preserved byte-for-byte",
+      "passed": true
+    },
+    {
+      "check": "HISTORICAL",
+      "passed": true
+    },
+    {
+      "check": "Flat /",
+      "passed": true
+    },
+    {
+      "check": "confidence: high",
+      "passed": true
+    },
+    {
+      "check": "Filter: lifecycle",
+      "passed": true
+    },
+    {
+      "check": "Explicit Open restores only the selected old observation profile",
+      "passed": true
+    }
+  ],
+  "count": 17
+}

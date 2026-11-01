@@ -1,0 +1,297 @@
+{
+  "version": "heurisko-default-reviewed-intelligence-integration-v1",
+  "checkedAt": "2026-11-01T00:29:00.015Z",
+  "scope": "Actual default shared-engine local replay and reviewed deterministic module intake; no model or target execution.",
+  "selection": {
+    "default": "55240e9",
+    "hostDisable": "HEURISKO_ANALYSIS_MODULE=off",
+    "explicitPin": "HEURISKO_ANALYSIS_MODULE=55240e9",
+    "unknownNonempty": "reject before acquisition",
+    "trustedContextModule": "overrides selector",
+    "trustedContextSelector": "off or 55240e9; no artifact/report/HTTP field"
+  },
+  "source": {
+    "upstreamCommit": "55240e99409ad44cbd6a978f40873ef410cb1861",
+    "upstreamSourceSha256": "sha256:af7b00acceed67aaf37534ee58d3663000deaab08c1bb72f6da1ea9178380019",
+    "derivedSourceSha256": "sha256:ae1795d52ac7c0f340524ff0ddc247ecca8725916a607fcd77d7bff16ca3fcd2",
+    "derivation": "remove terminal reexports only",
+    "runtimeImportEdges": 0,
+    "olderCandidate4096880": "not available in local root/handoff/review object stores; no guessed unpublished-object fetch"
+  },
+  "runtime": {
+    "node": "22.23.4",
+    "pnpm": "10.14.0",
+    "typescript": "5.8.3",
+    "python": "3.13.2"
+  },
+  "build": {
+    "result": "passed",
+    "logSha256": "sha256:768bf415ac339e320687748517dd48f9860b4426a991f15b8830a877e203344f",
+    "offlineFrozenIgnoreScriptsWorkspaceLinks": "passed",
+    "externalDependenciesChanged": false
+  },
+  "engine": {
+    "engine": "shane-audit-v1;sha256:67a94991cf1d121742946ad8a721f0f35e1a32eeaa71f7b3290039d7430fccd2",
+    "codeDigests": {
+      "engine": "sha256:5c09ed6b3a28567b43ea1d8c613bc7229e078aed8727f4824b4be4734cac772d",
+      "producer": "sha256:de02519853ce4201cb6b2cac7ef1834dc83e60a2d0c9cab6ec0a834b0a39533b",
+      "comparison": "sha256:8be2c4525eeb95dc115556013e55f3fcd6ed907c00c6286d679fe0f58451870e",
+      "archive": "sha256:9d1722caf4fda64a76f74bf075c9675dc73986be8dc4be6f4f9a3d85baab52d6",
+      "network": "sha256:06c7b087282832746631c5a89f2ee929ae7ec8cf0b2aec8d80d30c410e264e52",
+      "storage": "sha256:bc9c379d978c5c80349c5989b6699885b1622276a802c7108c01a9aa0029004d",
+      "parser-runtime": "sha256:05cc905bb69c7c2bffa43e9aca54ea20d3fb2b7a1459ac40ae1a09af437187b0",
+      "parser-job": "sha256:c234dcd1eaaf84f97ff636f1471063bcb3f75661aca21c52f30e515d6a4322c2",
+      "adapter": "sha256:79970491592c61cdbad11b60527ce6ebbf730f82740e98f892b41f5c1bacc4f4",
+      "identity": "sha256:91e189c4a4b7eef82b788da7b7707af9fa6df40b4268c49d8b108c682d124e96",
+      "validation": "sha256:97dc29b3b12e1d83ae89e8977839c2cd178cf3c9624464243b65e13e11f77516",
+      "safety": "sha256:f66b9867a5c3a1ec4163f95a446c3d4ba975d0aa07b9df6a28d3aaa172aa9c01",
+      "npm": "sha256:19bd4bc0064b4b6421753305e26db2879662ccb887d727d0aa99defb73d6e850",
+      "sources": "sha256:6eb632d8baf16b4fe313b4433127c64247b09c64687b66387dc1dfb3883d8c25",
+      "provenance": "sha256:e9f6be405bbd3b546bcd25a377180fb5806ca6eeeb12ac8a3071b5bdaa5ce222",
+      "intelligence-boundary": "sha256:1c7b9fb85cca52eb73dc81f7d9a76956b00fece13697ac7767df7053a71a5a6a",
+      "reviewed-module": "sha256:a9db86e4ebdd7fd582b104ee35ba54974b50707a9190dfbf971eefec0f75dc0c",
+      "parserWorker": "sha256:c3425b822ae12703f1f7a7fe891abebbc5776361374efab94f227c49d9bdaceb",
+      "contractSchema": "sha256:bef30a837a383ed7a3fbf49e9bac885822d6e3bdea9ccd05ff46b37f350b4dae",
+      "contractValidator": "sha256:7b3a956eb4651477792a77659397d85c849fa48d4780ddecef02ca3d3242e2e7",
+      "contractSemantics": "sha256:c1e231aa0c887da8e890e7615f8c0ca1e72e21246155746b36c6aebb4ee636e1"
+    }
+  },
+  "analysisModule": {
+    "moduleId": "@heurisko/intelligence-reviewed",
+    "moduleVersion": "0.1.0-55240e9",
+    "implementationSha256": "sha256:dfeaf5866602fd71bd6d988185190892bc03a22bbce44bfb99bc90f9736a37b9",
+    "configurationSha256": "sha256:33d6f01813c20fea3392c43c111cfcdbff629288a7100e73ff9069839c43605b",
+    "interpretationConfigSha256": null
+  },
+  "generated": {
+    "report": "report.json",
+    "bundle": "bundle.json",
+    "store": "store",
+    "reportId": "report_1366f57f990327d57dd6ad73",
+    "reportContentRef": "sha256:c06db35768713d8c3b8dc4fc205a02c96e16af39d62dbe607f2c453373cc7f71",
+    "artifactCaptureTime": "2026-11-01T00:27:21Z",
+    "outcomes": {
+      "artifactIntegrity": "not_checked",
+      "sourceAssociation": "user_supplied",
+      "provenancePolicy": "not_checked",
+      "correspondence": "unresolved",
+      "analysisCompleteness": "complete",
+      "policyResult": "not_evaluated"
+    },
+    "findings": 16,
+    "lifecycle": {
+      "findingId": "find_heurisko_manifest_lifecycle-script-change_chg_6c49c8951ee8ff1147bff2a9_e7075cb6",
+      "ruleVersion": "0.1.0",
+      "evidenceIds": [
+        "ev_e7075cb69f91c7e1b4c4223f"
+      ],
+      "ruleId": "heurisko.manifest.lifecycle-script-change",
+      "title": "Package lifecycle script entry changed",
+      "observation": "Manifest key scripts.postinstall is reported as added to the artifact.",
+      "whyItMatters": "Lifecycle entries can affect package-manager installation behavior; inspect the exact command and its source before deciding what it does. This observation does not establish malicious intent.",
+      "severity": "medium",
+      "reviewPriority": "medium",
+      "evidenceConfidence": "high",
+      "explanationStrength": "exact",
+      "limitations": [
+        "The producer-retained manifest delta supplies the old/new value direction; this M1 rule does not analyze referenced file behavior or establish intent."
+      ],
+      "nextActions": [
+        "Review the retained old and new script values and their referenced files; do not execute them on the host."
+      ]
+    },
+    "exitCode": 0,
+    "cliAnalyzeInspectParity": true,
+    "aiState": {
+      "status": "disabled",
+      "validation": "not_run"
+    },
+    "evidenceReferencesVerified": 81,
+    "citation": {
+      "evidenceId": "ev_e7075cb69f91c7e1b4c4223f",
+      "contentRef": "sha256:f47239397b7822519c35144a37158b0ff4bb7eeddf325e8b518774ab6be02c61",
+      "memberEvidenceId": "ev_c0c1b7d8cb7b119e6ea1880c",
+      "recordedRange": {
+        "startByte": 585,
+        "endByte": 611
+      },
+      "bytesBase64": "IkhFVVJJU0tPX0lORVJUX1RFU1RfT05MWSI=",
+      "sourceDeltaIsAbsent": true,
+      "artifactValue": "HEURISKO_INERT_TEST_ONLY"
+    },
+    "job": {
+      "settled": true,
+      "scratchEntries": 0,
+      "stateEntries": 0,
+      "locks": 0
+    }
+  },
+  "preservation": {
+    "originalCanonicalReport": "examples/p04/local-mutation/report.json",
+    "originalCanonicalReportContentRef": "sha256:47b100f689e4f11c95b7e3fc90541b0abd909e05060c73d071ebdb22c7c65eb2",
+    "originalExampleManifestSha256": "sha256:78fbfa1a45fcb51f17277f9c648ac995497ef35d587d1e9cd68824ce582800f8",
+    "originalInputs": "unchanged; new report/store written to fresh integrated directory"
+  },
+  "tests": {
+    "selectorTests": {
+      "passed": 4,
+      "failed": 0,
+      "tapSha256": "sha256:d8d5662acd65d36dd9af830d56ef703d1688f15aae270d1ff9070bfcb703f13b"
+    },
+    "upstreamSuites": [
+      {
+        "name": "handshake-final",
+        "status": "passed",
+        "logSha256": "sha256:31ee71a1c641acee84f5faade7f8e9bdf590a3b033b9317037aea0246dd9bae8"
+      },
+      {
+        "name": "validate_retrieval",
+        "status": "passed",
+        "logSha256": "sha256:8e195fd1a0fef4de91317909bc1504ca77050b694bc84e29eb869a905cad5a77"
+      },
+      {
+        "name": "validate_interpretations",
+        "status": "passed",
+        "logSha256": "sha256:dc3dbbf6ca3fe4fdb09afb0c9616df9b153cc4ff83abb16e92cacdeff422b394"
+      },
+      {
+        "name": "validate_prompts",
+        "status": "passed",
+        "logSha256": "sha256:33f501dcf1a4d56adaaebf1adc5dcb32f4e020298b307dfd446c082ca21e453e"
+      },
+      {
+        "name": "validate_real_setuptools",
+        "status": "passed",
+        "logSha256": "sha256:21e36cdd97994101b4ec2a862721cde3c67e92a978f788438b9c6cf21fce3e21"
+      }
+    ],
+    "actualReviewedControls": [
+      {
+        "name": "esbuild",
+        "head": "55240e99409ad44cbd6a978f40873ef410cb1861",
+        "input": {
+          "reportId": "report_a5ba9ab98d4c19c137950636",
+          "reportContentRef": "sha256:538dc79fbe02120ed6cbd604469d87b7816fcfbe7fb6a905c504379c3f0d8d4a",
+          "captureTime": "2026-10-31T22:39:43Z",
+          "inputUnchanged": true,
+          "evidenceReverified": true
+        },
+        "output": {
+          "sha256": "sha256:3b9b5d441e770a47ea777a09c0de35b82e1552994fa1a65e34774cd98a170967",
+          "findings": 4,
+          "lifecycleFindings": 0,
+          "aiState": {
+            "status": "disabled",
+            "validation": "not_run"
+          },
+          "deterministicRepeat": true
+        },
+        "lifecycle": [],
+        "resolved": 0,
+        "omissions": [],
+        "networkAttempts": 0
+      },
+      {
+        "name": "npm",
+        "head": "55240e99409ad44cbd6a978f40873ef410cb1861",
+        "input": {
+          "reportId": "report_e088db3a11c119fbfe4c291b",
+          "reportContentRef": "sha256:659f2c4e6823300edc1ae19509c74c8e3cd789a8e27b841714426cab51ecd1b9",
+          "captureTime": "2026-10-31T23:17:18Z",
+          "inputUnchanged": true,
+          "evidenceReverified": true
+        },
+        "output": {
+          "sha256": "sha256:b246a84ad72add6553e71cb8cb9efa9de889708c2a7d59fc4e80bacd23c2058d",
+          "findings": 14,
+          "lifecycleFindings": 0,
+          "aiState": {
+            "status": "disabled",
+            "validation": "not_run"
+          },
+          "deterministicRepeat": true
+        },
+        "lifecycle": [],
+        "resolved": 1,
+        "omissions": [],
+        "networkAttempts": 0
+      },
+      {
+        "name": "canonical-final",
+        "head": "55240e99409ad44cbd6a978f40873ef410cb1861",
+        "input": {
+          "reportId": "report_6f2b8c84f5b3495a77e8da71",
+          "reportContentRef": "sha256:47b100f689e4f11c95b7e3fc90541b0abd909e05060c73d071ebdb22c7c65eb2",
+          "captureTime": "2026-11-01T00:19:27Z",
+          "inputUnchanged": true,
+          "evidenceReverified": true
+        },
+        "output": {
+          "sha256": "sha256:dea6bd13fa021eac9a9b4a178edcafb44b7b6da8bd35b76f3c576a1350ebd53a",
+          "findings": 16,
+          "lifecycleFindings": 1,
+          "aiState": {
+            "status": "disabled",
+            "validation": "not_run"
+          },
+          "deterministicRepeat": true
+        },
+        "lifecycle": [
+          {
+            "findingId": "find_heurisko_manifest_lifecycle-script-change_chg_6c49c8951ee8ff1147bff2a9_e7075cb6",
+            "ruleVersion": "0.1.0",
+            "evidenceIds": [
+              "ev_e7075cb69f91c7e1b4c4223f"
+            ],
+            "ruleId": "heurisko.manifest.lifecycle-script-change",
+            "title": "Package lifecycle script entry changed",
+            "observation": "Manifest key scripts.postinstall is reported as added to the artifact.",
+            "whyItMatters": "Lifecycle entries can affect package-manager installation behavior; inspect the exact command and its source before deciding what it does. This observation does not establish malicious intent.",
+            "severity": "medium",
+            "reviewPriority": "medium",
+            "evidenceConfidence": "high",
+            "explanationStrength": "exact",
+            "limitations": [
+              "The producer-retained manifest delta supplies the old/new value direction; this M1 rule does not analyze referenced file behavior or establish intent."
+            ],
+            "nextActions": [
+              "Review the retained old and new script values and their referenced files; do not execute them on the host."
+            ]
+          }
+        ],
+        "resolved": 2,
+        "omissions": [],
+        "networkAttempts": 0
+      }
+    ],
+    "boundaryAndFullDefaultCoreSuite": "reported separately by final_validation lane"
+  },
+  "fileHashes": {
+    "packages/intelligence-reviewed/package.json": "sha256:eecc8f1dbb01ab4dc73860b7dcbccacea679a2759991a146563b116b3b8f9779",
+    "packages/intelligence-reviewed/admission.json": "sha256:0cb81b900c04e62b422f30b7b71a22dca95a7eb74c171ab9c91801ee4fe86874",
+    "packages/intelligence-reviewed/provenance/upstream-index.ts": "sha256:af7b00acceed67aaf37534ee58d3663000deaab08c1bb72f6da1ea9178380019",
+    "packages/intelligence-reviewed/src/index.ts": "sha256:ae1795d52ac7c0f340524ff0ddc247ecca8725916a607fcd77d7bff16ca3fcd2",
+    "packages/intelligence-reviewed/dist/index.js": "sha256:6a7486a956c049b1f2930858967110e86299309b4df6cc59b0c4c4a831e77b3d",
+    "packages/intelligence-reviewed/dist/index.d.ts": "sha256:4843e4ddcce4e9457eef533e793105b2c8168b85edae2e3462003c4737fb54ba",
+    "packages/core/src/reviewed-module.ts": "sha256:01710d5bee8570896e4fb9cbebf2a9192683744efa17842dc4c76a9c7877ac20",
+    "packages/core/src/intelligence-boundary.ts": "sha256:678a716ce318a717cdf688bb9a8ead5a469babffe4fb572e37af813a8de27acf",
+    "packages/core/src/engine.ts": "sha256:27e6cffc8657993f3dc201fc995b811a88f91d65dd774ed8d0ab6a5ec851b0fd",
+    "packages/core/tests/reviewed-module.test.mjs": "sha256:572b0cca0181f3ff902a956d3264ec70cd60e8015c26d18de3b349305fbe2d2b",
+    "packages/core/tests/intelligence-boundary.test.mjs": "sha256:53c3e37eea9f6127bb1b720f3764923c782d594586ec5f860b4d2e7c10a39a9f",
+    "pnpm-lock.yaml": "sha256:ec3bda3dd8f896a451a88902dbb797fbc20c8c238ddb03aacbf0107353f4c105"
+  },
+  "limitations": [
+    "Static processing complete and exit0 do not imply source correspondence, provenance verification, harmlessness or completeP04.",
+    "M1 removal priority still depends on whole-file status; entrypoint retained-value wording caveat remains.",
+    "Model/provider/CodeAstra/verifier/policy/rebuild/monitor not adopted.",
+    "Actual browser/TUI marker-finding-byte parity and human/joint acceptance are separate receipts."
+  ],
+  "actions": {
+    "productDeterministicModuleLocallyAdopted": true,
+    "newExternalDependency": false,
+    "providerModelCalls": false,
+    "targetCodeExecution": false,
+    "gitCommitPushPublication": false,
+    "externalMessage": false
+  }
+}

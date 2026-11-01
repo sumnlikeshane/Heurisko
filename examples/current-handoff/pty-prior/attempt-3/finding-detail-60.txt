@@ -1,0 +1,20 @@
+  HEURISKO                                                  
+   H Home    I Investigations     M Monitoring              
+  ────────────────────────────────────────────────────────  
+  picocolors@1.1.1 / LOCAL INPUT / HISTORICAL / complete …  
+  1 Ov  2 Find  3 Files  4 Src  5 AI  6 Scope               
+  Historical — online checks have not refreshed · i Ident…  
+  Findings                                                  
+  Findings > Package lifecycle script entry changed / Esc…  
+  ┌─ > Package lifecycle script entry changed ───────────┐  
+  │ changed.                                             │  
+  │                                                      │  
+  │ Significance:                                        │  
+  │ Lifecycle entries can affect package-manager         │  
+  │ installation behavior; inspect the exact command and │  
+  │ 3-7 / 40  j/k scroll                                 │  
+  └──────────────────────────────────────────────────────┘  
+  Findings                                                  
+  j/k move  Enter inspect  e evidence  Tab panes  q quit    
+                                                            
+                                                            

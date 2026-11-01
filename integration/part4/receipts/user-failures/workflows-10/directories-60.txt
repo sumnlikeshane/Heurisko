@@ -1,0 +1,20 @@
+  HEURISKO                                                  
+   H Home    I Investigations     M Monitoring              
+  ────────────────────────────────────────────────────────  
+  picocolors@1.1.1 / HISTORICAL / incomplete / Captured 2…  
+  1 Ov  2 Find  3 Files  4 Src  5 AI  6 Scope               
+  Historical — online checks have not refreshed · i Ident…  
+  Files                                                     
+  Tree / 2 modified / 5 identical / 12 unresolved (19 cha…  
+  ┌─ > Files ──────────────────────────────────────── 25 ┐  
+  │ > [-] Artifact root/                                 │  
+  │   7 records / 2 modified                             │  
+  │                                                      │  
+  │ 1 / 25 · Enter expand                                │  
+  └──────────────────────────────────────────────────────┘  
+                                                            
+                                                            
+  Files                                                     
+  Enter expand  m modified  v tree/flat  ? help  q quit     
+                                                            
+                                                            

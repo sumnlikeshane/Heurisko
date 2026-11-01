@@ -1,0 +1,35 @@
+  HEURISKO   H Home    I Investigations     M Monitoring                                                                
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+  picocolors@1.1.1 / LOCAL INPUT / HISTORICAL / complete / Captured 2026-10-31T21:48:41Z                                
+  1 Overview   2 Findings   3 Files   4 Source   5 AI   6 Coverage                                                      
+  Historical — online checks have not refreshed · i Identity                                                            
+  Files                                                                                                                 
+  Tree / raw auto byte windows / Left–Right pan                                                                         
+  ┌─ > Files ──────────── 2 ┐ ┌─ Raw source / artifact comparison ───────────────────────────────────────────────────┐  
+  │ > [+] package/          │ │ Directory:                                                                           │  
+  │                         │ │ package                                                                              │  
+  │   [+]                   │ │ Enter expands/collapses; no filesystem access.                                       │  
+  │                         │ │ 1-3 / 3                                                                              │  
+  │ 1 / 2 · Enter expand    │ └──────────────────────────────────────────────────────────────────────────────────────┘  
+  └─────────────────────────┘                                                                                           
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+  Files                                                                                                                 
+  j/k move  Enter inspect  e evidence  Tab panes  / filter  ? help  q quit                                              
+                                                                                                                        
+                                                                                                                        

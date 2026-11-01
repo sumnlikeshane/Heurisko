@@ -1,0 +1,196 @@
+{
+  "caseId": "B2",
+  "role": "provisional-corpus",
+  "name": "ts-pattern",
+  "version": "5.9.0",
+  "fixtureKind": "genuine-public-release-replay",
+  "acquisitionMode": "offline retained public bytes/observations; no freshness check",
+  "registry": "https://registry.npmjs.org",
+  "artifactFilename": "ts-pattern-5.9.0.tgz",
+  "artifactURL": "https://registry.npmjs.org/ts-pattern/-/ts-pattern-5.9.0.tgz",
+  "captureTime": "2026-10-31T19:00:35Z",
+  "expectedIntegrity": "sha512-6s5V71mX8qBUmlgbrfL33xDUwO0fq48rxAu2LBE11WBeGdpCPOsXksQbZJHvHwhrd3QjUusd3mAOM5Gg0mFBLg==",
+  "observedSha256": "sha256:ecea9dd2a1460293929c97fb5118fa3f93a2fb37a59a0a79384203d3ff64f368",
+  "observedSha512": "sha512-6s5V71mX8qBUmlgbrfL33xDUwO0fq48rxAu2LBE11WBeGdpCPOsXksQbZJHvHwhrd3QjUusd3mAOM5Gg0mFBLg==",
+  "metadataRef": "sha256:407c01879c9737c8905cb238bb345b1b8ba9c494431f36947b189bda7a4f3f38",
+  "sourceCandidates": [
+    {
+      "repositoryUrl": "https://github.com/gvergnaud/ts-pattern",
+      "commit": "0e15315eafbbb813a91bad34496418846981c1b1",
+      "subdirectory": "",
+      "association": "publisher_asserted",
+      "evidenceIds": [
+        "ev_e1867a1b223701880355eaca",
+        "ev_98991b6480d40554e32afbb9",
+        "ev_925439513a1147f495a8778d",
+        "ev_de0eafe08b87b310aa92072a",
+        "ev_52289d35588e0de4601b931a",
+        "ev_cee903fa857918618405c05b",
+        "ev_84ffae7685b89213f0c398d1"
+      ],
+      "conflicts": [],
+      "sourceSnapshotSha256": "sha256:e0cbf670c4c3635a48e17cd76eaee09a6d10cd5110f411845ad0b02da9233ab7",
+      "buildContextSha256": "sha256:72f6b43653f09c843b6a828a9b4654cf5b979b9c670062d82243b63d03f256c0"
+    }
+  ],
+  "selectedSource": {
+    "version": "heurisko-source-resolution-v1",
+    "selected": {
+      "repo": "https://github.com/gvergnaud/ts-pattern",
+      "commit": "0e15315eafbbb813a91bad34496418846981c1b1",
+      "subdirectory": ""
+    },
+    "ambiguous": false,
+    "sourceCapture": {
+      "version": "heurisko-download-v1",
+      "requestedUrl": "https://codeload.github.com/gvergnaud/ts-pattern/tar.gz/0e15315eafbbb813a91bad34496418846981c1b1",
+      "finalUrl": "https://codeload.github.com/gvergnaud/ts-pattern/tar.gz/0e15315eafbbb813a91bad34496418846981c1b1",
+      "sha256": "sha256:e0cbf670c4c3635a48e17cd76eaee09a6d10cd5110f411845ad0b02da9233ab7",
+      "size": 266583,
+      "hops": [
+        {
+          "url": "https://codeload.github.com/gvergnaud/ts-pattern/tar.gz/0e15315eafbbb813a91bad34496418846981c1b1",
+          "status": 200,
+          "headers": {
+            "content-type": "application/x-gzip",
+            "etag": "\"545b95703610787787cdad1cc691b99a6e5e9d16e4e874100f62a690d41e0a7b\""
+          }
+        }
+      ],
+      "origin": "immutable-https-source-candidate",
+      "commitBinding": "transport-url-not-git-object-verification"
+    },
+    "failure": null
+  },
+  "provenance": {
+    "status": "not_checked",
+    "artifactBinding": "not_checked",
+    "evidenceIds": [
+      "ev_42314f759848719dc316c295"
+    ],
+    "limitations": [
+      "No admitted operational verifier, trusted root or expected signer/issuer/source/builder policy. Retrieved material is unverified; no cryptographic or publish/build assertion is accepted.",
+      "NO_ATTESTATION_ADVERTISED_VERIFIER_UNAVAILABLE"
+    ]
+  },
+  "reportId": "report_793cbbbb87a0240f55c0db5b",
+  "reportFile": "B2.report.json",
+  "bundleFile": "B2.bundle.json",
+  "reportContentRef": "sha256:e8db5ee45eda92a3eff6eb314a0d28fcb3e7f0e269b1568c9c0a5c191680e06c",
+  "analysisConfigFingerprint": "d54b222f5e2a39f9b7374cc7ed710b38a43cd6b968805849b6221dff23401278",
+  "outcomes": {
+    "artifactIntegrity": "matched",
+    "sourceAssociation": "publisher_asserted",
+    "provenancePolicy": "not_checked",
+    "correspondence": "unresolved",
+    "analysisCompleteness": "incomplete",
+    "policyResult": "indeterminate"
+  },
+  "rawCoverage": {
+    "artifactFiles": 45,
+    "sourceFiles": 101,
+    "comparedFiles": 143,
+    "analyzedBytes": 1688050,
+    "skippedBytes": 0,
+    "unsupportedBytes": 0,
+    "omissions": [],
+    "complete": true,
+    "limitations": []
+  },
+  "evidenceCount": 308,
+  "exitCode": 2,
+  "license": {
+    "advertised": "MIT",
+    "retainedArtifactLicense": "B2-LICENSE.txt"
+  },
+  "malharHandoff": {
+    "sourceClaims": [
+      "ev_e1867a1b223701880355eaca",
+      "ev_98991b6480d40554e32afbb9",
+      "ev_925439513a1147f495a8778d",
+      "ev_de0eafe08b87b310aa92072a",
+      "ev_52289d35588e0de4601b931a",
+      "ev_cee903fa857918618405c05b"
+    ],
+    "buildContextEvidence": [
+      {
+        "path": "ts-pattern-0e15315eafbbb813a91bad34496418846981c1b1/LICENSE",
+        "evidenceId": "ev_6013104f01b1ccaa83b0320d",
+        "contentRef": "sha256:4a6f1d5bbd77809165c0f9c24bbcf11768b0c936bd205bdb117aa68fea306601"
+      },
+      {
+        "path": "ts-pattern-0e15315eafbbb813a91bad34496418846981c1b1/benchmarks/package.json",
+        "evidenceId": "ev_63f24e54700d328c55ef7c0a",
+        "contentRef": "sha256:4c1a96d056d679d5386c54c625f19fc131818a4991a3f60dacaf73a4b850e294"
+      },
+      {
+        "path": "ts-pattern-0e15315eafbbb813a91bad34496418846981c1b1/examples/gif-fetcher/package.json",
+        "evidenceId": "ev_49d706f54f4acf71f275da09",
+        "contentRef": "sha256:6829731e7f21cb7aa3ea2cac680ceda6e52e51723547e0d9ca3e0ad7f07201b2"
+      },
+      {
+        "path": "ts-pattern-0e15315eafbbb813a91bad34496418846981c1b1/examples/gif-fetcher/tsconfig.json",
+        "evidenceId": "ev_807c71446da781b99cafcb95",
+        "contentRef": "sha256:ad0d8c546107d00127dadd8f43f9f42a17ee2e1a43bc60ffe3a9f5d6f22ba65c"
+      },
+      {
+        "path": "ts-pattern-0e15315eafbbb813a91bad34496418846981c1b1/examples/one-file-demo/package.json",
+        "evidenceId": "ev_4de88b280c383bdc769cbf8b",
+        "contentRef": "sha256:e75bf7c83a5e68e9856dcc59d2abd6558a15c1089a10a4d9c43198c9977e1430"
+      },
+      {
+        "path": "ts-pattern-0e15315eafbbb813a91bad34496418846981c1b1/examples/one-file-demo/tsconfig.json",
+        "evidenceId": "ev_a4610ec21553d4f7049b9d48",
+        "contentRef": "sha256:350a0687aa31672edf07ac8736ebbac5869e2a9ff82c66f41e870868a025d38f"
+      },
+      {
+        "path": "ts-pattern-0e15315eafbbb813a91bad34496418846981c1b1/package.json",
+        "evidenceId": "ev_c1f817301f5a18ceb42ecc52",
+        "contentRef": "sha256:41f2ebe4021d50fb3ce870a18c7228304e855041d6c96b5c93e1919de9645ff5"
+      },
+      {
+        "path": "ts-pattern-0e15315eafbbb813a91bad34496418846981c1b1/tests/tsconfig.json",
+        "evidenceId": "ev_328e776f4d1b6e9fc603632b",
+        "contentRef": "sha256:5111b54ed9c44e43525f9aea27e54872e6039426a2a92f6096fc2438e76dc8ce"
+      },
+      {
+        "path": "ts-pattern-0e15315eafbbb813a91bad34496418846981c1b1/tsconfig.json",
+        "evidenceId": "ev_9011e43ee73c83efcdf909e1",
+        "contentRef": "sha256:b53aa621db1475ecd4316db408f54cb41bb43d9bc737561f00985de4f4ff3c05"
+      }
+    ],
+    "artifactSourceMaps": [
+      {
+        "path": "package/dist/index.cjs.map",
+        "evidenceId": "ev_e98aeb4a5d82f598c2b006c4",
+        "contentRef": "sha256:d25f5e45252a0653d3f7a2ce456b022d7946c585db6492207c6cef04bc43b9f9"
+      },
+      {
+        "path": "package/dist/index.js.map",
+        "evidenceId": "ev_b40a9380593e6af7db4cbfa3",
+        "contentRef": "sha256:8488daf331842817c70668af49cea03f6306edd929d84228e0fe65103a17ae5e"
+      },
+      {
+        "path": "package/dist/index.umd.js.map",
+        "evidenceId": "ev_f959b1b6bc3fcb9fa4612b3d",
+        "contentRef": "sha256:a6ab47830ebe7e758b886595083d2d235db538183051eaad07e497a361151356"
+      }
+    ],
+    "interpretationOwner": "Malhar; no generated-output explanation or model result supplied by this capture",
+    "delivery": "Prepared locally; no external message sent"
+  },
+  "independentChecks": {
+    "artifactSHA512AgainstRawRegistryMetadata": "passed",
+    "rawEvidenceHashes": "passed",
+    "reportSchemaSemanticsAndReopen": "passed"
+  },
+  "limitations": [
+    "Static raw comparison only; generated/build/security interpretation is unavailable without Malhar analysis.",
+    "Registry/manifest/tag source claims are candidates, not proof of release correspondence.",
+    "No submodule or LFS materialization, target scripts, rebuild, provenance or model execution.",
+    "version-tag:v5.9.0: SOURCE_TAG_RATE_LIMITED",
+    "version-tag:5.9.0: SOURCE_TAG_DISCOVERY_SKIPPED_RATE_LIMIT",
+    "Metadata/gitHead/tag/manifest agreement is publisher-linked candidate evidence, not proof of artifact-to-source binding.",
+    "GitHub immutable archive URL is transport context; no Git object reconstruction, signed-tag validation, submodule or LFS acquisition."
+  ]
+}

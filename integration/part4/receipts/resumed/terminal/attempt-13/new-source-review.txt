@@ -1,0 +1,40 @@
+  HEURISKO / review / wide / 140x40                                                                                                         
+   H Home    I Investigations     M Monitoring                                                                                              
+  Exact artifact / immutable source evidence. Design v1.0.0-rc.1 provisional.                                                               
+  AI runtime unavailable; no monitoring/export configured.                                                                                  
+  <workspace>/examples/handoff/current/store                                                       
+  ┌─ > Review exact target — Enter Start / Esc edit ─────────────────────────────────────────────────────────────────────────────────────┐  
+  │ Input: npm                                                                                                                           │  
+  │ picocolors@1.1.1                                                                                                                     │  
+  │ Artifact digest: Unknown until acquisition; no bytes resolved yet                                                                    │  
+  │ Source: https://github.com/alexeyraspopov/picocolors                                                                                 │  
+  │ Commit: 6f0a4638348ed20633d623ee973f9c9a96f65104                                                                                     │  
+  │ Subdirectory: (root)                                                                                                                 │  
+  │ Association: user-supplied target or unresolved publisher assertion; not proof.                                                      │  
+  │ Configuration: raw-static-s4-v1; AI disabled / runtime unavailable.                                                                  │  
+  │ Provenance not checked. No verifier, rebuild, model, monitor or export.                                                              │  
+  │ Start retrieves exact-version bytes and preserves observed identity; registry changes remain possible.                               │  
+  │                                                                                                                                      │  
+  │                                                                                                                                      │  
+  │                                                                                                                                      │  
+  │                                                                                                                                      │  
+  │                                                                                                                                      │  
+  │                                                                                                                                      │  
+  │                                                                                                                                      │  
+  │                                                                                                                                      │  
+  │                                                                                                                                      │  
+  │                                                                                                                                      │  
+  │                                                                                                                                      │  
+  │                                                                                                                                      │  
+  │                                                                                                                                      │  
+  │                                                                                                                                      │  
+  │                                                                                                                                      │  
+  │                                                                                                                                      │  
+  │                                                                                                                                      │  
+  │                                                                                                                                      │  
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘  
+  Focus 0 / filter (none) / No universal safety verdict                                                                                     
+  j/k move  Enter inspect  e evidence  Tab focus  / filter  ? help  q quit                                                                  
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                                            

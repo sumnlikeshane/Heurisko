@@ -1,0 +1,35 @@
+  HEURISKO   H Home    I Investigations     M Monitoring                                                     SYNTHETIC  
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+  F0.tgz / LOCAL INPUT / HISTORICAL / incomplete / Captured 2026-10-31T15:00:00Z                                        
+  1 Overview   2 Findings   3 Files   4 Source   5 AI   6 Coverage                                                      
+  Raw retained evidence · Esc returns to its origin                                                                     
+  Evidence                                                                                                              
+  Files > ev_3ff91302c2e4f2757084775c / Esc restores position                                                           
+  ┌─ > Raw citation / artifact ──────────────────────────────────────────────────────────────────────────────────────┐  
+  │ ev_3ff91302c2e4f2757084775c                                                                                      │  
+  │ ARTIFACT / package/unsafe\u001b[2J\u202e.txt                                                                     │  
+  │ RAW utf8: [0, 4096) / recorded [0, 20032)                                                                        │  
+  │ Window truncated: true / total blob 20032 bytes                                                                  │  
+  │                                                                                                                  │  
+  │ INERT\u001b]52;c;PAYLOAD\u0007\u001b[2J\u202eTEST                                                                │  
+  │ longlonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglong │  
+  │ longlonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglong │  
+  │ longlonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglong │  
+  │ longlonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglong │  
+  │ longlonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglong │  
+  │ longlonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglonglong │  
+  │ longlonglonglonglonglon                                                                                             
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        

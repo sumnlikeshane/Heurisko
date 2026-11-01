@@ -1,0 +1,20 @@
+  HEURISKO                                                  
+   H Home    I Investigations     M Monitoring              
+  ────────────────────────────────────────────────────────  
+  picocolors@1.1.1 / HISTORICAL / incomplete / Captured 2…  
+  1 Ov  2 Find  3 Files  4 Src  5 AI  6 Scope               
+  Raw retained evidence · Esc returns to its origin         
+  Evidence                                                  
+  Source > ev_3ca16ad46cd957d737ef0c18 / Esc restores pos…  
+  ┌─ > Raw citation / source ────────────────────────────┐  
+  │ BOTH / package.json                                  │  
+  │ RAW utf8: [39, 46) / recorded [39, 46)               │  
+  │ Window truncated: false / total blob 1107 bytes      │  
+  │                                                      │  
+  │ "1.1.0"                                              │  
+  │ 2-6 / 17  j/k scroll                                 │  
+  └──────────────────────────────────────────────────────┘  
+  evidence                                                  
+  j/k scroll  Tab citation  s side  p/b page  q quit        
+                                                            
+                                                            

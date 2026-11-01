@@ -1,0 +1,40 @@
+  HEURISKO   H Home    I Investigations     M Monitoring                                                                                                        
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+                                                                                                                                                                
+                                     ┌─ > New investigation ─────────────────────────────────────────────────────── 1 / 2 ┐                                     
+                                     │   Input (Ctrl+T)  [ npm ]   Local archive                                          │                                     
+                                     │                                                                                    │                                     
+                                     │ Package name                                                                       │                                     
+                                     │   picocolors                                                                       │                                     
+                                     │ Exact version  [editing]                                                           │                                     
+                                     │ > 1.1.1                                                                            │                                     
+                                     │ Source repository (optional override)                                              │                                     
+                                     │   https://github.com/owner/repository                                              │                                     
+                                     │ Full commit                                                                        │                                     
+                                     │   40-character immutable commit                                                    │                                     
+                                     │ Subdirectory                                                                       │                                     
+                                     │   Repository root if empty                                                         │                                     
+                                     │ AI disabled / runtime unavailable · source selection is not provenance             │                                     
+                                     │  Load retained example                                                             │                                     
+                                     │  Review target                                                                     │                                     
+                                     │                                                                                    │                                     
+                                     └────────────────────────────────────────────────────────────────────────────────────┘                                     
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+  New investigation / npm                                                                                                                                       
+  Type to edit  Tab next  Ctrl+T type  Enter review  Esc back                                                                                                   
+                                                                                                                                                                
+                                                                                                                                                                

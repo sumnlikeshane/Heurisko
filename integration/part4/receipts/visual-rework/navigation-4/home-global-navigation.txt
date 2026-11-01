@@ -1,0 +1,35 @@
+  HEURISKO   H Home    I Investigations     M Monitoring                                                                
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+  ┌─ > Investigations ───────────────────────────────────────────────────────────────────────────────────────────────┐  
+  │ > picocolors@1.1.1 / Source conflict                                                                             │  
+  │ Report 7b46cdea60ae / Reading                                                                                    │  
+  │                                                                                                                  │  
+  │ Findings not evaluated; inspect raw evidence and coverage.                                                       │  
+  │ 1-4 / 4                                                                                                          │  
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘  
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+  Saved observations                                                                                                    
+  j/k move  Enter inspect  e evidence  Tab panes  / filter  ? help  q quit                                              
+                                                                                                                        
+                                                                                                                        

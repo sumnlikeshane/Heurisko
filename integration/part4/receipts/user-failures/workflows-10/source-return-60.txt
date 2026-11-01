@@ -1,0 +1,20 @@
+  HEURISKO                                                  
+   H Home    I Investigations     M Monitoring              
+  ────────────────────────────────────────────────────────  
+  picocolors@1.1.1 / HISTORICAL / incomplete / Captured 2…  
+  1 Ov  2 Find  3 Files  4 Src  5 AI  6 Scope               
+  Historical — online checks have not refreshed · i Ident…  
+  Source                                                    
+  [Candidates]  Provenance  Build                           
+  ┌─ > Source records ──────────────────────────────── 1 ┐  
+  │ > Candidate 1 / 6f0a4638348e                         │  
+  │   ambiguous                                          │  
+  │                                                      │  
+  │ 1 / 1 · Enter inspect                                │  
+  └──────────────────────────────────────────────────────┘  
+                                                            
+                                                            
+  SOURCE CONFLICT / inspect source claims                   
+  v subtabs  Enter inspect  e evidence  Tab panes  q quit   
+                                                            
+                                                            

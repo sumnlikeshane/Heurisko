@@ -1,0 +1,35 @@
+  HEURISKO   H Home    I Investigations     M Monitoring                                                                
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+  picocolors-1.1.1.local-inert-mutation.tgz / LOCAL INPUT / HISTORICAL / incomplete / Captured 2026-10-31T23:18:14Z     
+  1 Overview   2 Findings   3 Files   4 Source   5 AI   6 Coverage                                                      
+  Raw retained evidence · Esc returns to its origin                                                                     
+  Evidence                                                                                                              
+  Files > ev_242a34e804daf891e3f7c878 / Esc restores position                                                           
+  ┌─ > Raw citation / artifact ──────────────────────────────────────────────────────────────────────────────────────┐  
+  │ ev_242a34e804daf891e3f7c878                                                                                      │  
+  │ BOTH / package.json                                                                                              │  
+  │ RAW utf8: [309, 611) / recorded [309, 611)                                                                       │  
+  │ Window truncated: false / total blob 618 bytes                                                                   │  
+  │                                                                                                                  │  
+  │ files": [                                                                                                        │  
+  │ "picocolors.*",                                                                                                  │  
+  │ "types.d.ts"                                                                                                     │  
+  │ ],                                                                                                               │  
+  │ "keywords": [                                                                                                    │  
+  │ "terminal",                                                                                                      │  
+  │ "colors",                                                                                                        │  
+  │ "formatting",                                                                                                    │  
+  │ "cli",                                                                                                           │  
+  │ "console"                                                                                                        │  
+  │ ],                                                                                                               │  
+  │ "author": "Alexey Raspopov",                                                                                     │  
+  │ "repository": "alexeyraspopov/picocolors",                                                                       │  
+  │ "license": "ISC",                                                                                                │  
+  │ "scripts": {                                                                                                     │  
+  │ "postinstall": "HEURISKO_INERT_TEST_ONLY"                                                                        │  
+  │ 1-21 / 29  j/k scroll                                                                                            │  
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘  
+  evidence                                                                                                              
+  j/k scroll  Tab citation  s side  p/b page  Esc return  q quit                                                        
+                                                                                                                        
+                                                                                                                        

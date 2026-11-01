@@ -1,0 +1,114 @@
+{
+  "version": "heurisko-complete-workspace-handoff-v1",
+  "recordedAt": "2026-10-31T22:59:22.760010+00:00",
+  "recordedAtIST": "2026-11-01T04:29:22.760787+05:30",
+  "authorization": "User approved complete current workspace checkpoint commit, branch push and PR update, then required waiting for the completed TUI checkpoint. No merge/deployment/submission/external teammate message.",
+  "base": "81346271f5a3789b4b43fd8f379014656011823d",
+  "branch": "handoff/s1-s3-audit-fixes",
+  "pr": "https://github.com/sumnlikeshane/Heurisko/pull/3",
+  "scope": "Current webapp and integrated core/CLI/TUI workspace, docs, public/inert evidence and validation; no intelligence/model/monitor adoption",
+  "runtime": {
+    "node": "22.23.4",
+    "pnpm": "10.14.0",
+    "validatorPython": "3.13.2",
+    "ptyPython": "3.14.7",
+    "pyte": "0.8.2"
+  },
+  "checks": {
+    "frozenLockInstallIgnoreScripts": "pass: logs/install-online.log",
+    "fullWorkspaceBuildTypecheck": "pass: logs/assembled-typecheck.log",
+    "fullG0AndSyntheticHandshakes": "pass: logs/contracts.log",
+    "serialCore": {
+      "passed": 117,
+      "failed": 0,
+      "log": "logs/core.log"
+    },
+    "assembledWeb": {
+      "passed": 47,
+      "failed": 0,
+      "log": "logs/assembled-web.log"
+    },
+    "assembledReaderTUI": {
+      "passed": 32,
+      "failed": 0,
+      "log": "logs/assembled-reader-tui.log"
+    },
+    "completedTUILane": {
+      "receipt": "../../integration/part4/receipts/visual-rework/validation.json",
+      "PTY": 249,
+      "readerTUI": 32,
+      "liveSnapshotCancelResizeAndExactJobAbsence": true,
+      "artifactFilesVerified": 423,
+      "artifactMismatches": 0,
+      "humanVisualAcceptance": "open"
+    },
+    "preliminaryIsolatedPTY": "pty-prior preserves two 185-check runs and one 28-check run before final TUI source; historical only",
+    "parserBoundary": "pass: logs/parser-boundary.log",
+    "historicalCorpora": [
+      "logs/corpus-s3.log",
+      "logs/corpus-audit.log",
+      "logs/corpus-handoff.log"
+    ],
+    "retainedCLITransport": {
+      "cases": 4,
+      "receipt": "transport/verification.json",
+      "originalReportBytesUnchanged": true
+    },
+    "freshEngineCLIWeb": {
+      "cases": 2,
+      "receipt": "investigation/verification.json",
+      "localReplayExit": 2,
+      "npmExit": 2,
+      "sourceBuildUnchangedDuringFinalRun": true,
+      "reportBundleEvidenceAndPortableParity": true,
+      "localDeterministicCLIParity": true
+    },
+    "researchSnapshot": "15 checksums pass: logs/research.log",
+    "markdownLinks": "68 files pass: logs/assembled-doc-links.log",
+    "stagedWhitespace": "pass before final receipt additions; final staging rechecked before commit"
+  },
+  "failuresAndRecovery": [
+    {
+      "failure": "Initial install command prompted without completing",
+      "recovery": "CI=true revealed missing offline tarballs; locked online install with scripts disabled completed. No initial offline-install pass is claimed."
+    },
+    {
+      "failure": "Sandbox listener restrictions caused 12 web test failures (EPERM)",
+      "recovery": "Explicit loopback-enabled execution passed 47/47, including final frozen assembly."
+    },
+    {
+      "failure": "Preliminary engine receipt rejected because this handoff copied TUI source during its hash window",
+      "recovery": "Retained logs/web-engine.log and private failed output; final fixed-source run in a fresh destination passes both real cases. No assertion was disabled."
+    }
+  ],
+  "publication": {
+    "originalLocalFilesPreserved": true,
+    "historicalMetadataLogsRedacted": 30,
+    "allRedactionLedger": "publication-redactions.json",
+    "rawReportBundleArchiveAndBlobBytesRewritten": false,
+    "incomingAttachmentsExcluded": [
+      "M0-files-d725b744.tar.gz",
+      "M1-uncommitted.patch"
+    ],
+    "otherExclusions": [
+      "node_modules",
+      "dist",
+      ".venv",
+      ".tooling",
+      ".heurisko",
+      "separate experimental TUI worktree"
+    ],
+    "activeIndexPreserved": true,
+    "remoteCI": "Consult PR #3 for the final committed head; no earlier run is claimed as this checkpoint pass."
+  },
+  "sourceIdentity": "source-sha256.json; final engine receipt also binds exact source/build; historical TUI docs hashes predate handoff banners",
+  "productModels": [],
+  "targetPackageOrBuildExecution": false,
+  "codingAssistant": "Codex",
+  "remaining": [
+    "Browser viewport/zoom/keyboard/AT/clipboard/GUI file/download/external-offline acceptance",
+    "Human TUI visual/contrast/glyph approval",
+    "Genuine product intelligence/inference/provenance verifier/policy/monitor and joint G3 finding quality",
+    "No main merge, deployment or submission"
+  ]
+}

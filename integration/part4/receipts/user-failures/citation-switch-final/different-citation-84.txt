@@ -1,0 +1,26 @@
+  HEURISKO   H Home    I Investigations     M Monitoring                            
+  ────────────────────────────────────────────────────────────────────────────────  
+  picocolors@1.1.1 / HISTORICAL / incomplete / Captured 2026-10-31T22:59:33Z        
+  1 Overview   2 Findings   3 Files   4 Source   5 AI   6 Coverage                  
+  Raw retained evidence · Esc returns to its origin                                 
+  Evidence                                                                          
+  Source > ev_ec5b0358b13edb689c4ced2c / Esc restores position                      
+  ┌─ > Raw citation / external ──────────────────────────────────────────────────┐  
+  │ ev_ec5b0358b13edb689c4ced2c                                                  │  
+  │ EXTERNAL / source-claim-0-user-override                                      │  
+  │ RAW utf8: [0, 171) / recorded [0, 171)                                       │  
+  │ Window truncated: false / total blob 171 bytes                               │  
+  │                                                                              │  
+  │ {"kind":"user-override","repositoryUrl":"https://github.com/alexeyraspopov/p │  
+  │ icocolors","commit":"6f0a4638348ed20633d623ee973f9c9a96f65104","subdirectory │  
+  │ ":"","captures":[]}                                                          │  
+  │                                                                              │  
+  │ Method: separate-source-claim-v1                                             │  
+  │ Availability: retained                                                       │  
+  │ Verification: not_checked                                                    │  
+  │ 1-12 / 18  j/k scroll                                                        │  
+  └──────────────────────────────────────────────────────────────────────────────┘  
+  evidence                                                                          
+  j/k scroll  Tab citation  s side  p/b page  Esc return  q quit                    
+                                                                                    
+                                                                                    

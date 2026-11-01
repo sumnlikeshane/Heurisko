@@ -1,0 +1,16 @@
+{
+  "oldFilter": "confidence: high",
+  "newReportShowsOldFilter": false,
+  "newReportMisleadingEmptyState": false,
+  "frame": "integration/part4/receipts/current-audit/report-state-repro-v2/new-report-filter.txt",
+  "store": ".heurisko/state-repro-98758e2a-a4ef-4f2a-afe8-5cceacfe4489",
+  "newReportId": "report_18f3fbea35ca15bb23bdb942",
+  "newObservationProfileFilters": {
+    "priority": "all",
+    "severity": "all",
+    "confidence": "high",
+    "rule": "all"
+  },
+  "profileFilterLeakConfirmed": true,
+  "scopeNote": "Actual current-product local run before A12 reset repair. Unavailable-analysis screen stayed truthful; independent observation profile incorrectly inherited confidence filter."
+}

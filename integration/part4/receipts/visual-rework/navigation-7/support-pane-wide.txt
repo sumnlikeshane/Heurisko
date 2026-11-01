@@ -1,0 +1,40 @@
+  HEURISKO   H Home    I Investigations     M Monitoring                                                                                                        
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+  picocolors@1.1.1 / LOCAL INPUT / HISTORICAL / complete / Captured 2026-10-31T21:48:41Z                                                                        
+  1 Overview   2 Findings   3 Files   4 Source   5 AI   6 Coverage                                                                                              
+  Historical — online checks have not refreshed · i Identity                                                                                                    
+  Findings                                                                                                                                                      
+  priority: all / severity: all / confidence: all / rule: all                                                                                                   
+  ┌─ Findings ───────────────────── 1 ┐ ┌─ Observation & assessment ───────────────────────────────────┐ ┌─ > Supporting evidence ───────────────────────────┐  
+  │ Filter: lifecycle                 │ │ Manifest key scripts.postinstall is reported as changed.     │ │ Citations / Up–Down selects                       │  
+  │                                   │ │                                                              │ │ > ev_8e5679afc3b6d3667eb09413                     │  
+  │ * Package lifecycle script entry  │ │ Significance:                                                │ │                                                   │  
+  │   changed                         │ │ Lifecycle entries can affect package-manager installation    │ │ ev_8e5679afc3b6d3667eb09413                       │  
+  │   medium priority / high confide… │ │ behavior; inspect the exact command and its source before    │ │ BOTH / package.json                               │  
+  │                                   │ │ deciding what it does. This observation does not establish   │ │ RAW utf8: [585, 611) / recorded [585, 611)        │  
+  │ 1 / 1 · Enter inspect             │ │ malicious intent.                                            │ │ Window truncated: false / total blob 618 bytes    │  
+  └───────────────────────────────────┘ │                                                              │ │                                                   │  
+                                        │ Severity:                                                    │ │ "HEURISKO_INERT_TEST_ONLY"                        │  
+                                        │ medium                                                       │ │                                                   │  
+                                        │                                                              │ │ Method: strict-json-value-byte-spans-v1           │  
+                                        │ Review priority:                                             │ │ Availability: retained                            │  
+                                        │ medium                                                       │ │ Verification: Not recorded                        │  
+                                        │                                                              │ │ Content digest:                                   │  
+                                        │ Evidence confidence:                                         │ │ sha256:4afa16baaedb6f645fd2dd33275661afe16974496f │  
+                                        │ high                                                         │ │ 33c35765f25402ab3fe069                            │  
+                                        │                                                              │ │ Member: ev_fac6fd5699ff0c83dd8be093               │  
+                                        │ Explanation strength:                                        │ │ Content ref:                                      │  
+                                        │ exact                                                        │ │ sha256:f47239397b7822519c35144a37158b0ff4bb7eeddf │  
+                                        │                                                              │ │ 325e8b518774ab6be02c61                            │  
+                                        │ Evidence:                                                    │ │ 1-20 / 20                                         │  
+                                        │ ev_8e5679afc3b6d3667eb09413                                  │ └───────────────────────────────────────────────────┘  
+                                        │                                                              │                                                        
+                                        │ Limitation:                                                  │                                                        
+                                        │ The evidence identifies the changed manifest key but does    │                                                        
+                                        │ not retain the old and new command values.                   │                                                        
+                                        │ 2-27 / 38  j/k scroll                                        │                                                        
+                                        └──────────────────────────────────────────────────────────────┘                                                        
+  Findings                                                                                                                                                      
+  j/k move  Enter inspect  e evidence  Tab panes  / filter  ? help  q quit                                                                                      
+                                                                                                                                                                
+                                                                                                                                                                

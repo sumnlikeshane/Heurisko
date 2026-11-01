@@ -1,0 +1,35 @@
+  HEURISKO   H Home    I Investigations     M Monitoring                                                                
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+  zod@4.6.7 / HISTORICAL / incomplete / Captured 2026-10-31T19:01:10Z                                                   
+  1 Overview   2 Findings   3 Files   4 Source   5 AI   6 Coverage                                                      
+  Historical — online checks have not refreshed · i Identity                                                            
+  Files                                                                                                                 
+  Tree / raw auto byte windows / Left–Right pan                                                                         
+  ┌─ > Files ────────── 879 ┐ ┌─ Raw source / artifact comparison ───────────────────────────────────────────────────┐  
+  │ > v package/            │ │ Directory:                                                                           │  
+  │                         │ │ package                                                                              │  
+  │   compile.cjs           │ │ Enter expands/collapses; no filesystem access.                                       │  
+  │   unresolved            │ │ 1-3 / 3                                                                              │  
+  │                         │ └──────────────────────────────────────────────────────────────────────────────────────┘  
+  │   compile.d.cts         │                                                                                           
+  │   unresolved            │                                                                                           
+  │                         │                                                                                           
+  │   compile.d.ts          │                                                                                           
+  │   unresolved            │                                                                                           
+  │                         │                                                                                           
+  │   compile.js            │                                                                                           
+  │   unresolved            │                                                                                           
+  │                         │                                                                                           
+  │   index.cjs             │                                                                                           
+  │   unresolved            │                                                                                           
+  │                         │                                                                                           
+  │   index.d.cts           │                                                                                           
+  │   unresolved            │                                                                                           
+  │                         │                                                                                           
+  │ 1 / 879 · Enter expand  │                                                                                           
+  └─────────────────────────┘                                                                                           
+                                                                                                                        
+  Files                                                                                                                 
+  j/k move  Enter inspect  e evidence  Tab panes  / filter  ? help  q quit                                              
+                                                                                                                        
+                                                                                                                        

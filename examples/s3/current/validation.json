@@ -1,0 +1,63 @@
+{
+  "version": "heurisko-s3-validation-v1",
+  "checkedAt": "2026-10-31T19:11:38.891Z",
+  "runtime": {
+    "node": "22.23.4",
+    "pnpm": "10.14.0",
+    "hostValidatorPython": "3.13.2",
+    "parserPython": "3.13.18",
+    "host": "macOS arm64",
+    "parser": "restricted Linux arm64, existing digest-pinned image"
+  },
+  "results": {
+    "frozenOfflineInstall": "passed",
+    "typecheck": "passed",
+    "contracts": "7 x 3 positive shapes, 10 negative cases, F7 and 7 synthetic handshakes passed",
+    "foundation": {
+      "passed": 17,
+      "total": 17
+    },
+    "s2": {
+      "passed": 48,
+      "total": 48
+    },
+    "s3": {
+      "passed": 36,
+      "total": 36
+    },
+    "finalCLIOnlyBuildTypecheckAndInvocation": "passed",
+    "currentCorpus": "verification.json",
+    "actualCLIChecks": "cli-replay-check.json",
+    "actualModelOffConsumerChecks": "handoff.json",
+    "retainedEvidenceReferencesVerified": 2988,
+    "rawDiffSideSpansVerified": 1028,
+    "manifestValueSpansVerified": 146,
+    "historicalS2AndFirstS3Evidence": "passed with explicit historical scope",
+    "markdownLinksAndAnchors": {
+      "files": 36,
+      "status": "passed"
+    },
+    "researchChecksumEntries": {
+      "passed": 15,
+      "total": 15
+    },
+    "gitDiffCheck": "passed",
+    "canonicalG0SchemaTypesFixtures": "unchanged",
+    "index": "empty",
+    "originalM0M1InputHashes": "unchanged",
+    "parserJobsAndFinalStoreLocks": "none remaining",
+    "privateHostPrefixScan": "passed"
+  },
+  "scope": {
+    "part": 3,
+    "sourceAssociation": "candidates/explicit user comparison targets; no verified release-source claim",
+    "provenance": "not_checked; no verifier admitted",
+    "modelExecution": false,
+    "targetCodeExecution": false,
+    "rebuildExecution": false,
+    "remoteCI": "not run; prior G0 result is historical",
+    "publication": "none",
+    "commitPush": "none",
+    "externalMessages": "none"
+  }
+}

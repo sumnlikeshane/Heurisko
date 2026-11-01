@@ -1,0 +1,31 @@
+{
+  "version": "heurisko-s3-corpus-v1",
+  "capturedAt": "2026-10-31T18:55:24.999Z",
+  "cases": [
+    {
+      "caseId": "B1",
+      "manifest": "B1.manifest.json",
+      "reportId": "report_8eb3bfe8ad8293d90aa8aea8",
+      "reportContentRef": "sha256:31d5c9cfafd21119b0850a1b5df232a5e5933da973883147ee434cf0a0fccb32"
+    },
+    {
+      "caseId": "B2",
+      "manifest": "B2.manifest.json",
+      "reportId": "report_7c7058d1969e5e2a8fb0a1ab",
+      "reportContentRef": "sha256:895dd989511a3261624150d38f8337ca9377a8623ae6972dfe166546aed0858c"
+    },
+    {
+      "caseId": "B3",
+      "manifest": "B3.manifest.json",
+      "reportId": "report_08f5a10ddf83d2a1fc3445ec",
+      "reportContentRef": "sha256:4899ffd051c88aee7127e106d892b6f500345bb36d83bf80a4f728fa7be25f1c"
+    },
+    {
+      "caseId": "B3R",
+      "manifest": "B3R.manifest.json",
+      "reportId": "report_69e62ca6865f1bd16bd6e239",
+      "reportContentRef": "sha256:1185065a9b4afbb8a5d8ef3dcfc7854a7d5a623eb1bbc8994d534d3cf036bab6"
+    }
+  ],
+  "scope": "Static acquisition/integrity/source-candidate/raw evidence only. No broad correctness, benignness, cryptographic provenance, interpretation/model or complete P04 claim."
+}

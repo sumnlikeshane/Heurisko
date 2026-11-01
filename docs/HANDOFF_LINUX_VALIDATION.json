@@ -1,0 +1,89 @@
+{
+  "version": "heurisko-linux-handoff-followup-validation-v1",
+  "checkedAt": "2026-10-31T20:19:22.753686+00:00",
+  "branch": "handoff/s1-s3-audit-fixes",
+  "initialHead": "e29a98b3ca8a8eede20533a5220369cd4d026ef5",
+  "initialLinuxCI": {
+    "url": "https://github.com/sumnlikeshane/Heurisko/actions/runs/41237489207",
+    "conclusion": "failure",
+    "cause": "UID 65534 + umask 077 produced host-unreadable 0600 worker journal/member transport output; Docker Desktop mapped ownership locally"
+  },
+  "correction": {
+    "safetyProfile": "heurisko-static-v5",
+    "workerUid": 65534,
+    "transportFileMode": "0644 non-executable",
+    "privateHostJobParentMode": "0700",
+    "unchanged": [
+      "non-root worker",
+      "CPU/memory/swap/PID limits",
+      "network isolation",
+      "read-only root/input/worker",
+      "no host fallback",
+      "private CAS storage"
+    ],
+    "journalDiagnostic": "PARSER_JOURNAL_UNREADABLE"
+  },
+  "setup": {
+    "node": "22.23.4",
+    "pnpm": "10.14.0",
+    "typescript": "5.8.3",
+    "validatorPython": "3.13.2 existing hash-locked environment",
+    "parserPython": "3.13.18 digest-pinned Linux arm64; installed Docker Desktop"
+  },
+  "checks": {
+    "typecheck": "passed",
+    "fullG0": "passed",
+    "serialCore": {
+      "passed": 115,
+      "failed": 0,
+      "skipped": 0,
+      "foundation": 17,
+      "s2": 49,
+      "s3": 36,
+      "audit": 13
+    },
+    "nonvisualReadiness": {
+      "passed": 24,
+      "failed": 0
+    },
+    "actualCrossUidParser": "passed; UID65534, journal/member0644, private parent0700",
+    "historicalAuditReplay": "passed",
+    "modelOffConsumerChecks": {
+      "passed": 4,
+      "findings": {
+        "m0B1": 0,
+        "m1B1": 14,
+        "m0B2": 0,
+        "m1B2": 140
+      },
+      "inputUnchanged": true,
+      "inference": "none",
+      "qualityAcceptance": false
+    },
+    "currentReplay": {
+      "engine": "shane-audit-v1;sha256:603146fe725954c1d1153393f709a5a3f518c008a745e7ffb637cfc54d385e02",
+      "retainedEvidenceReferencesVerified": 2988,
+      "rawDiffSideSpansVerified": 1028,
+      "manifestValueSpansVerified": 146,
+      "cases": 4
+    },
+    "markdownLinksAndAnchors": {
+      "files": 41,
+      "issues": 0
+    },
+    "researchChecksums": {
+      "passed": 15,
+      "total": 15
+    },
+    "authoredSourceWhitespace": "passed",
+    "canonicalG0AndDeclarationLicense": "unchanged"
+  },
+  "scope": {
+    "earlierAssemblyReceipt": "HANDOFF_VALIDATION.json remains historical",
+    "currentReplay": "examples/handoff/current; passed current-code verification",
+    "targetBuildOrModelExecution": false,
+    "mainMerge": false,
+    "remoteCI": "pending final follow-up commit; see exact-head draft PR checks",
+    "intelligenceSourceChangedOrAdopted": false
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "TuiSourceAndBuildMatches": {
+    "packages/tui/src/App.tsx": {
+      "expected": "sha256:773e570a314b60bda1bf6250446b3875ac2335f260ba785909e27f3ae366ac41",
+      "isolated": "sha256:773e570a314b60bda1bf6250446b3875ac2335f260ba785909e27f3ae366ac41",
+      "matches": true
+    },
+    "packages/tui/src/investigation-summary.ts": {
+      "expected": "sha256:36a76b4ab604ac9ed1e3a09d29e12c3011233f3678ef894b9133c4b1d5a70c64",
+      "isolated": "sha256:36a76b4ab604ac9ed1e3a09d29e12c3011233f3678ef894b9133c4b1d5a70c64",
+      "matches": true
+    },
+    "packages/tui/tests/evidence-mode.py": {
+      "expected": "sha256:3da631650c8e741a3aa1195e4de9a109911e7cea1187f72b93f4dcca7d752bd8",
+      "isolated": "sha256:3da631650c8e741a3aa1195e4de9a109911e7cea1187f72b93f4dcca7d752bd8",
+      "matches": true
+    },
+    "packages/tui/tests/report-adoption.py": {
+      "expected": "sha256:455b51d06ab271e8d7ea7629ca38ea4a47d74da02c16e345c81cf1b2d08adc81",
+      "isolated": "sha256:455b51d06ab271e8d7ea7629ca38ea4a47d74da02c16e345c81cf1b2d08adc81",
+      "matches": true
+    },
+    "packages/tui/tests/user-failures.test.mjs": {
+      "expected": "sha256:47231a2e5d38148338eb3fa63988f363f44da78e06207ce7bd5a39209ed6590c",
+      "isolated": "sha256:47231a2e5d38148338eb3fa63988f363f44da78e06207ce7bd5a39209ed6590c",
+      "matches": true
+    },
+    "packages/tui/tests/visual_audit.py": {
+      "expected": "sha256:90270c7ddd7b25965f8eff9360e68c8d6812a65389bc6cbf2607f1f5166487ed",
+      "isolated": "sha256:90270c7ddd7b25965f8eff9360e68c8d6812a65389bc6cbf2607f1f5166487ed",
+      "matches": true
+    },
+    "packages/tui/tests/visual_extra.py": {
+      "expected": "sha256:69441eaa17394380469ba420fa688d7487b408b1926a9b99d12d0b2cc9bd874b",
+      "isolated": "sha256:69441eaa17394380469ba420fa688d7487b408b1926a9b99d12d0b2cc9bd874b",
+      "matches": true
+    },
+    "packages/tui/tests/navigation_audit.py": {
+      "expected": "sha256:70dbf464ab5a8280e4836bf39040ce38463a2dfde196ec27a0d12c747edd8bfa",
+      "isolated": "sha256:70dbf464ab5a8280e4836bf39040ce38463a2dfde196ec27a0d12c747edd8bfa",
+      "matches": true
+    },
+    "packages/tui/README.md": {
+      "expected": "sha256:0e77e3944ac8851ce9ef9a10d8bfc059c34e0a6a553f47541a6b92053a6731f0",
+      "isolated": "sha256:0e77e3944ac8851ce9ef9a10d8bfc059c34e0a6a553f47541a6b92053a6731f0",
+      "matches": true
+    },
+    "packages/tui/dist/App.js": {
+      "expected": "sha256:d36487cb2a0bd917ebea50074d58301a26147c2924fc3054bd1bcceb08237f66",
+      "isolated": "sha256:d36487cb2a0bd917ebea50074d58301a26147c2924fc3054bd1bcceb08237f66",
+      "matches": true
+    },
+    "packages/tui/dist/investigation-summary.js": {
+      "expected": "sha256:da5067c681e30e12ce29b1e6667f7d97777cbcd8cfc4bf9e98118da703fcb333",
+      "isolated": "sha256:da5067c681e30e12ce29b1e6667f7d97777cbcd8cfc4bf9e98118da703fcb333",
+      "matches": true
+    }
+  },
+  "allMatched": true,
+  "actualPtyEngineConfigurations": [
+    {
+      "file": ".heurisko/parts456-audit-20261101/pty/workspace-v2/.heurisko/manual-part4-test/blobs/579b7ee7ab84b9510503c78233bb706d1eb2cc4db823cbfd31c914a58e793223",
+      "engine": "shane-audit-v1;sha256:6c1594a1759eb6b82127d037ca66d118e26f224bdbf534d6f690a3c6f322f915",
+      "analysisModule": null
+    },
+    {
+      "file": ".heurisko/parts456-audit-20261101/pty/workspace-v2/.heurisko/manual-part4-test/blobs/d763691fe2db96d38b05f9c7b07e79cfde5b53f390b2691488887b3811c29be2",
+      "engine": "shane-audit-v1;sha256:6c1594a1759eb6b82127d037ca66d118e26f224bdbf534d6f690a3c6f322f915",
+      "analysisModule": null
+    },
+    {
+      "file": ".heurisko/parts456-audit-20261101/pty/workspace-v2/.heurisko/tui-visual-live-09804684-50e8-40c4-87b5-7b90846ff67d/blobs/f3f2dcdf7d36451b1fd14f9e67925413dfd21c00a45899166b96feb31b49e053",
+      "engine": "shane-audit-v1;sha256:61d25423cad40f76928a7675fffc33763bf5522d4b5f38afe024bdc5c136d9ab",
+      "analysisModule": null
+    },
+    {
+      "file": ".heurisko/parts456-audit-20261101/pty/workspace-v2/.heurisko/tui-visual-live-2f334d01-c31e-4649-8ce1-9dcb03b64fad/blobs/c742fcb4fbf4386974c6d070c8e2a56466e8dea73f479661abe8ddcf93354d12",
+      "engine": "shane-audit-v1;sha256:61d25423cad40f76928a7675fffc33763bf5522d4b5f38afe024bdc5c136d9ab",
+      "analysisModule": null
+    },
+    {
+      "file": ".heurisko/parts456-audit-20261101/pty/workspace-v2/.heurisko/state-repro-98758e2a-a4ef-4f2a-afe8-5cceacfe4489/blobs/12a14ac8211c38ade47ceaed48cf66621ae24637a51ae5cfe409d599cd8d279d",
+      "engine": "shane-audit-v1;sha256:61d25423cad40f76928a7675fffc33763bf5522d4b5f38afe024bdc5c136d9ab",
+      "analysisModule": null
+    },
+    {
+      "file": ".heurisko/parts456-audit-20261101/pty/report-adoption-4h1qzqrz/workspace/store/blobs/12a14ac8211c38ade47ceaed48cf66621ae24637a51ae5cfe409d599cd8d279d",
+      "engine": "shane-audit-v1;sha256:61d25423cad40f76928a7675fffc33763bf5522d4b5f38afe024bdc5c136d9ab",
+      "analysisModule": null
+    }
+  ]
+}

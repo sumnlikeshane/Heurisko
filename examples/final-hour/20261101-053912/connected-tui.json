@@ -1,0 +1,25 @@
+{
+  "scope": "Actual product TUI over final default-generated immutable report; isolated UI preferences",
+  "reportId": "report_1366f57f990327d57dd6ad73",
+  "reportSha256": "c06db35768713d8c3b8dc4fc205a02c96e16af39d62dbe607f2c453373cc7f71",
+  "findings": 16,
+  "lifecycleFinding": "find_heurisko_manifest_lifecycle-script-change_chg_6c49c8951ee8ff1147bff2a9_e7075cb6",
+  "checks": [
+    "HISTORICAL",
+    "Findings",
+    "lifecycle",
+    "added to the artifact",
+    "Raw citation / artifact",
+    "HEURISKO_INERT_TEST_ONLY",
+    "[585, 611)",
+    "Findings"
+  ],
+  "count": 8,
+  "inputUnchanged": true,
+  "size": [
+    140,
+    36
+  ],
+  "targetExecution": false,
+  "modelExecution": false
+}

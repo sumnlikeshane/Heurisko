@@ -1,0 +1,172 @@
+{
+  "version": "heurisko-final-hour-demo-verification-v1",
+  "generatedAt": "2026-11-01T00:12:35.488Z",
+  "node": "v22.23.4",
+  "scope": "Retained original-byte, full retained-blob, CLI/non-TTY and portable parity; not native GUI acceptance or fresh acquisition.",
+  "networkAcquisition": false,
+  "targetExecution": false,
+  "productModelExecution": false,
+  "productModuleAdopted": false,
+  "cases": [
+    {
+      "id": "genuine-release",
+      "label": "Genuine public ts-pattern 5.9.0; retained raw/build-context evidence",
+      "report": "examples/handoff/current/B2.report.json",
+      "store": "examples/handoff/current/store",
+      "reportId": "report_98e7cf895ee37bff160d1894",
+      "reportContentRef": "sha256:1f09dd8942fa3b379d0dc3cf462772e8c3eedd616597c59f3ccc58176b6d6e1e",
+      "artifactSha256": "sha256:ecea9dd2a1460293929c97fb5118fa3f93a2fb37a59a0a79384203d3ff64f368",
+      "capturedAt": "2026-10-31T19:00:35Z",
+      "createdAt": "2026-10-31T20:16:48Z",
+      "outcomes": {
+        "artifactIntegrity": "matched",
+        "sourceAssociation": "publisher_asserted",
+        "provenancePolicy": "not_checked",
+        "correspondence": "unresolved",
+        "analysisCompleteness": "incomplete",
+        "policyResult": "indeterminate"
+      },
+      "findings": 0,
+      "changes": 143,
+      "retainedRecords": 308,
+      "uniqueRetainedBlobs": 302,
+      "retainedBytes": 2427644,
+      "verifiedRetainedBlobs": true,
+      "cliJSONEqual": true,
+      "cliSummaryEqualsNonTTY": true,
+      "exit": 2,
+      "portable": {
+        "path": ".heurisko/final-hour-20261101-053912/demo-retry1/genuine-release",
+        "originalReportBytesEqual": true,
+        "included": 302,
+        "omitted": 0,
+        "partial": false
+      }
+    },
+    {
+      "id": "inert-local-mutation",
+      "label": "Synthetic local picocolors mutation; exact inert lifecycle literal",
+      "report": "examples/part4/user-failures/fresh-local.report.json",
+      "store": "examples/part4/user-failures/store",
+      "reportId": "report_cc24925f49a83ea599cc750f",
+      "reportContentRef": "sha256:1a54411180d2491d7227ad255499559e453ba5ecfa45c03e1422046aa8e49c28",
+      "artifactSha256": "sha256:bcdd003ee749b70575fb2793d3892a393d1224457ecb8ca9c37ff4cfd55e098d",
+      "capturedAt": "2026-10-31T23:18:14Z",
+      "createdAt": "2026-10-31T23:18:40Z",
+      "outcomes": {
+        "artifactIntegrity": "not_checked",
+        "sourceAssociation": "user_supplied",
+        "provenancePolicy": "not_checked",
+        "correspondence": "unresolved",
+        "analysisCompleteness": "incomplete",
+        "policyResult": "not_evaluated"
+      },
+      "findings": 0,
+      "changes": 20,
+      "retainedRecords": 81,
+      "uniqueRetainedBlobs": 76,
+      "retainedBytes": 109047,
+      "verifiedRetainedBlobs": true,
+      "cliJSONEqual": true,
+      "cliSummaryEqualsNonTTY": true,
+      "exit": 2,
+      "portable": {
+        "path": ".heurisko/final-hour-20261101-053912/demo-retry1/inert-local-mutation",
+        "originalReportBytesEqual": true,
+        "included": 76,
+        "omitted": 0,
+        "partial": false
+      },
+      "exactMutation": {
+        "evidenceId": "ev_e7075cb69f91c7e1b4c4223f",
+        "artifactRange": {
+          "startByte": 585,
+          "endByte": 611
+        },
+        "artifactContent": "\"HEURISKO_INERT_TEST_ONLY\"",
+        "sourceReason": "SIDE_NOT_RECORDED"
+      }
+    },
+    {
+      "id": "incomplete-source",
+      "label": "Genuine zod 4.6.7; unsupported source entry and unresolved scope",
+      "report": "examples/handoff/current/B3.report.json",
+      "store": "examples/handoff/current/store",
+      "reportId": "report_53ce205b689a18c8845dba65",
+      "reportContentRef": "sha256:66ea87bddf0319c4ccf8cc0d1e7be0f330eb17dc4fe4531775392692d9799757",
+      "artifactSha256": "sha256:84efd155bed93270286e793fc951be270b536cbd5b0eeb111f0fa3967201d698",
+      "capturedAt": "2026-10-31T19:01:10Z",
+      "createdAt": "2026-10-31T20:18:08Z",
+      "outcomes": {
+        "artifactIntegrity": "matched",
+        "sourceAssociation": "ambiguous",
+        "provenancePolicy": "not_checked",
+        "correspondence": "unresolved",
+        "analysisCompleteness": "incomplete",
+        "policyResult": "indeterminate"
+      },
+      "findings": 0,
+      "changes": 843,
+      "retainedRecords": 1829,
+      "uniqueRetainedBlobs": 1653,
+      "retainedBytes": 20034929,
+      "verifiedRetainedBlobs": true,
+      "cliJSONEqual": true,
+      "cliSummaryEqualsNonTTY": true,
+      "exit": 2,
+      "portable": {
+        "path": ".heurisko/final-hour-20261101-053912/demo-retry1/incomplete-source",
+        "originalReportBytesEqual": true,
+        "included": 1653,
+        "omitted": 0,
+        "partial": false
+      }
+    }
+  ],
+  "code": {
+    "packages/cli/dist/index.js": "sha256:9835d0a0b28f7173a583fc43ac789257a00a7f32b03221115ec6d08a4ea92b0b",
+    "packages/core/dist/engine.js": "sha256:0d99a9289e144a0aae8f45378a24774205ca5e572ec8f82aaf5723e1b2707c0c",
+    "packages/core/dist/adapter.js": "sha256:79970491592c61cdbad11b60527ce6ebbf730f82740e98f892b41f5c1bacc4f4",
+    "packages/core/dist/validation.js": "sha256:97dc29b3b12e1d83ae89e8977839c2cd178cf3c9624464243b65e13e11f77516",
+    "packages/contracts/schema/contracts.schema.json": "sha256:bef30a837a383ed7a3fbf49e9bac885822d6e3bdea9ccd05ff46b37f350b4dae",
+    "packages/contracts/runtime/validate.py": "sha256:7b3a956eb4651477792a77659397d85c849fa48d4780ddecef02ca3d3242e2e7",
+    "packages/contracts/runtime/semantics.py": "sha256:c1e231aa0c887da8e890e7615f8c0ca1e72e21246155746b36c6aebb4ee636e1",
+    "integration/part4/dist/report-reader.js": "sha256:51d93600c97da54adf55402c10b38011ae3afd506780b6574388dd281e163226",
+    "apps/web/dist/observation.js": "sha256:d54b05c9dc661f599f51a983c0018ad0dd463df4f61cb5d9e673accc3f30e0d9",
+    "apps/web/dist/transport.js": "sha256:bffe92a1a3abaa433f3c327bb390d980ca0d99fea68d07b7c69d79539e35471e",
+    "apps/web/tooling/strict-json.ts": "sha256:1855d1f964fc3e61cdcbdf02a2a9f2e0dfdef78c09a8789ff7b0237ea4e663d8",
+    "scripts/verify-final-demo.mjs": "sha256:46167b377282f2a02b61aea00dd1583bef328df92c2e28d01a64491f91da9cf1",
+    "examples/final-hour/20261101-053912/demo-manifest.json": "sha256:03f0a05551cb05dc9b0940082abec493deba336885ff01f7d122e3e5ed3afcfd"
+  },
+  "attempts": [
+    {
+      "result": "failed before case verification",
+      "reason": "Verification harness initially referenced a nonexistent unbundled strict-json output; corrected to the source path plus bundled transport identity.",
+      "destination": ".heurisko/final-hour-20261101-053912/demo"
+    },
+    {
+      "result": "passed",
+      "destination": ".heurisko/final-hour-20261101-053912/demo-retry1"
+    }
+  ],
+  "launcherSmoke": {
+    "version": "heurisko-final-demo-launch-smoke-v1",
+    "generatedAt": "2026-11-01T00:13:44.135Z",
+    "capabilityRecorded": false,
+    "home200": true,
+    "protectedCatalogDeniedWithoutCapability": true,
+    "catalogCases": 3,
+    "jobs": 0,
+    "noAnalysisStarted": true,
+    "closed": {
+      "code": 0,
+      "signal": null
+    },
+    "launcherSourceSha256AtReceipt": "sha256:b1f5540c66a0744fff6f6656a08468bb13bbf092998993671b800e030127c2c1",
+    "serviceBuildSha256AtReceipt": "sha256:4fc3f7dfd383fd0c7d91b9375a2ba4400ad3c756baec5cfe83d2a7c6128a94f3",
+    "initialFailures": [
+      "The first smoke helper registered its exit wait too late after a sandbox-denied listener; fixed the helper to retain one exit promise.",
+      "The loopback listener was denied by sandbox EPERM. The specific authorized listener retry passed without weakening service controls."
+    ]
+  }
+}

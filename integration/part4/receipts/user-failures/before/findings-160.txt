@@ -1,0 +1,40 @@
+  HEURISKO   H Home    I Investigations     M Monitoring                                                                                                        
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+  picocolors@1.1.1 / HISTORICAL / incomplete / Captured 2026-10-31T22:59:33Z                                                                                    
+  1 Overview   2 Findings   3 Files   4 Source   5 AI   6 Coverage                                                                                              
+  Historical — online checks have not refreshed · i Identity                                                                                                    
+  Findings                                                                                                                                                      
+  priority: all / severity: all / confidence: all / rule: all                                                                                                   
+  ┌─ > Findings ─────────────────── No records ┐ ┌─ Observation & assessment ────────────────────────────────────────────────────────────────────────────────┐  
+  │ Findings not evaluated / analysis          │ │ Findings not evaluated / analysis unavailable. Review Coverage.                                           │  
+  │ unavailable. Review Coverage.              │ │                                                                                                           │  
+  │                                            │ │                                                                                                           │  
+  │ Review coverage and stage availability     │ │ 1-1 / 1                                                                                                   │  
+  └────────────────────────────────────────────┘ └───────────────────────────────────────────────────────────────────────────────────────────────────────────┘  
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+  Findings                                                                                                                                                      
+  j/k move  Enter inspect  e evidence  Tab panes  / filter  ? help  q quit                                                                                      
+                                                                                                                                                                
+                                                                                                                                                                

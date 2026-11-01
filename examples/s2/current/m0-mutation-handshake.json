@@ -1,0 +1,45 @@
+{
+  "version": "heurisko-early-handshake-v1",
+  "checkedAt": "2026-10-31T18:26:27.948Z",
+  "bundleContentRef": "sha256:9b917c8a3755a06580e9655b4b8f79c04403099c058fb398e57b09ec1ff5faa5",
+  "producerValidation": "passed",
+  "retainedEvidenceVerified": 81,
+  "status": "consumer-returned-validated-output",
+  "actualModuleVersion": "0.1.0",
+  "sourceSha256": "sha256:f80c0c39b3519308f5219e5e430f70422f4db82c38036e81e91bf1a269846944",
+  "compiledSha256": "sha256:b28e8bb80d02e5b8ac3cdbc6342a5fbe0340795dee60657dd402a45e2b379151",
+  "inputUnchanged": true,
+  "consumerCalled": true,
+  "enableAI": false,
+  "modelExecution": "none in reviewed M0/M1 source",
+  "actualConsumerOutput": {
+    "schemaVersion": "0.1.0",
+    "findings": [],
+    "aiState": {
+      "status": "disabled",
+      "validation": "not_run"
+    },
+    "interpretations": [],
+    "stages": [
+      {
+        "stage": "heuristics",
+        "status": "skipped",
+        "errors": []
+      },
+      {
+        "stage": "ai",
+        "status": "skipped",
+        "errors": []
+      }
+    ],
+    "limitations": [
+      "Static raw comparison only; generated/build/security interpretation is unavailable without Malhar analysis.",
+      "Source override is user supplied; full commit URL is a comparison target, not proof of release correspondence.",
+      "No submodule or LFS materialization, target scripts, rebuild, provenance or model execution.",
+      "M0 adapter only establishes the shared EvidenceBundle to AnalysisResults boundary; deterministic analysis rules are not implemented yet.",
+      "No evidence is retrieved or chunked in M0. Evidence IDs and locations remain owned by the supplied bundle.",
+      "No package acquisition, provenance verification, cryptographic trust decision, or product model inference is performed by this component."
+    ]
+  },
+  "coordination": "Explicit reviewed team source, isolated from the product workspace; no resolver invoked, no external message sent."
+}

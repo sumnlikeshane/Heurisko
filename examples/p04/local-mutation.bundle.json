@@ -1,0 +1,1608 @@
+{
+  "schemaVersion": "0.1.0",
+  "fixtureKind": "real_generated",
+  "input": {
+    "ecosystem": "local",
+    "artifactPath": "retained:sha256:bcdd003ee749b70575fb2793d3892a393d1224457ecb8ca9c37ff4cfd55e098d",
+    "analysisOptions": {
+      "enableAI": false,
+      "analysisProfile": "raw-static-s4-v1"
+    },
+    "sourceOverride": {
+      "repo": "https://github.com/alexeyraspopov/picocolors",
+      "commit": "7249f8c5d4825550f70bc1ea98652639933d3bbd"
+    },
+    "artifactFilename": "picocolors-1.1.1.local-inert-mutation.tgz"
+  },
+  "artifact": {
+    "origin": "local",
+    "artifactFilename": "picocolors-1.1.1.local-inert-mutation.tgz",
+    "observedSha256": "sha256:bcdd003ee749b70575fb2793d3892a393d1224457ecb8ca9c37ff4cfd55e098d",
+    "captureTime": "2026-10-31T23:18:14Z",
+    "integrity": {
+      "algorithm": "none",
+      "status": "not_checked"
+    }
+  },
+  "sourceCandidates": [
+    {
+      "repositoryUrl": "https://github.com/alexeyraspopov/picocolors",
+      "commit": "7249f8c5d4825550f70bc1ea98652639933d3bbd",
+      "subdirectory": "",
+      "association": "user_supplied",
+      "evidenceIds": [
+        "ev_fd5afc8b1e98682e8cc0cbf6",
+        "ev_5356eefc4312741f16ddf629"
+      ],
+      "conflicts": [],
+      "sourceSnapshotSha256": "sha256:c1053a4131e05d3e62088b3988f4cefe16e05b1a90db59115bf7706f7350e7de",
+      "buildContextSha256": "sha256:f8cf11c87c206269fd62e69593f5da3fbeeb0d1948657ee448b43f1a7cbd4e61"
+    }
+  ],
+  "provenance": {
+    "status": "not_checked",
+    "artifactBinding": "not_checked",
+    "evidenceIds": [],
+    "limitations": [
+      "Local archive does not inherit registry integrity or provenance; no verifier integrated."
+    ]
+  },
+  "evidence": [
+    {
+      "kind": "analysis_note",
+      "side": "artifact",
+      "locator": {
+        "metadataKey": "raw-artifact-archive"
+      },
+      "observationMethod": "local-archive-capture-v1",
+      "limitations": [],
+      "contentSha256": "sha256:faae13c791f3d245a60b4774a1d08890369ece1b0bae53eae1071ea73780b53b",
+      "contentRef": "sha256:faae13c791f3d245a60b4774a1d08890369ece1b0bae53eae1071ea73780b53b",
+      "contentState": "retained",
+      "evidenceId": "ev_4b818ec503df9032a4c52917"
+    },
+    {
+      "kind": "analysis_note",
+      "side": "source",
+      "locator": {
+        "metadataKey": "source-capture-observation"
+      },
+      "observationMethod": "volatile-acquisition-observation-v1",
+      "limitations": [
+        "Original source capture time/transport observation retained; not release-binding proof."
+      ],
+      "contentSha256": "sha256:5dff80f274d58a3a1230fd2e5a139d0f58436c19efd79445ba8fb4a80054432c",
+      "contentRef": "sha256:5dff80f274d58a3a1230fd2e5a139d0f58436c19efd79445ba8fb4a80054432c",
+      "contentState": "retained",
+      "evidenceId": "ev_eebffd1fa0dbeef7d53c6011"
+    },
+    {
+      "kind": "analysis_note",
+      "side": "artifact",
+      "locator": {
+        "metadataKey": "raw-artifact-bytes"
+      },
+      "observationMethod": "raw-archive-sha256-v1",
+      "limitations": [],
+      "contentSha256": "sha256:bcdd003ee749b70575fb2793d3892a393d1224457ecb8ca9c37ff4cfd55e098d",
+      "contentRef": "sha256:bcdd003ee749b70575fb2793d3892a393d1224457ecb8ca9c37ff4cfd55e098d",
+      "contentState": "retained",
+      "evidenceId": "ev_92986ddd2b819e3627aa6746"
+    },
+    {
+      "kind": "analysis_note",
+      "side": "source",
+      "locator": {
+        "metadataKey": "raw-source-bytes"
+      },
+      "observationMethod": "raw-source-archive-sha256-v1",
+      "limitations": [],
+      "contentSha256": "sha256:c1053a4131e05d3e62088b3988f4cefe16e05b1a90db59115bf7706f7350e7de",
+      "contentRef": "sha256:c1053a4131e05d3e62088b3988f4cefe16e05b1a90db59115bf7706f7350e7de",
+      "contentState": "retained",
+      "evidenceId": "ev_8b7f49ee4b40a371921c2012"
+    },
+    {
+      "kind": "analysis_note",
+      "side": "artifact",
+      "locator": {
+        "metadataKey": "archive-inventory"
+      },
+      "observationMethod": "bounded-tar-virtual-inventory-v1",
+      "limitations": [],
+      "contentSha256": "sha256:2ca33a37448165fc702ce95a4848a0d134f45dc5f7f2a28d58b8a97a0268c770",
+      "contentRef": "sha256:2ca33a37448165fc702ce95a4848a0d134f45dc5f7f2a28d58b8a97a0268c770",
+      "contentState": "retained",
+      "evidenceId": "ev_85c2ac25f7285ca098a8a3e7"
+    },
+    {
+      "kind": "analysis_note",
+      "side": "source",
+      "locator": {
+        "metadataKey": "archive-inventory"
+      },
+      "observationMethod": "bounded-tar-virtual-inventory-v1",
+      "limitations": [],
+      "contentSha256": "sha256:64303a8531edeb62056f998d863bc88c394e51e0570e6e25bf350d78be4f2709",
+      "contentRef": "sha256:64303a8531edeb62056f998d863bc88c394e51e0570e6e25bf350d78be4f2709",
+      "contentState": "retained",
+      "evidenceId": "ev_5356eefc4312741f16ddf629"
+    },
+    {
+      "kind": "source_claim",
+      "side": "source",
+      "locator": {
+        "metadataKey": "explicit-source-override"
+      },
+      "observationMethod": "user-supplied-pinned-source-v1",
+      "verification": "not_checked",
+      "limitations": [
+        "No cryptographic artifact-to-commit binding established."
+      ],
+      "contentSha256": "sha256:1e635f26de414edecdd8c61a6f980bec6e1d33078e4a6ee87a34b68f5e08d8c7",
+      "contentRef": "sha256:1e635f26de414edecdd8c61a6f980bec6e1d33078e4a6ee87a34b68f5e08d8c7",
+      "contentState": "retained",
+      "evidenceId": "ev_fd5afc8b1e98682e8cc0cbf6"
+    },
+    {
+      "kind": "artifact_member",
+      "side": "artifact",
+      "locator": {
+        "path": "package/LICENSE",
+        "startByte": 0,
+        "endByte": 787
+      },
+      "observationMethod": "raw-member-sha256-v1",
+      "limitations": [],
+      "contentSha256": "sha256:6582629e2979466878f6014313dcc2f3756c9616148682227ce3063dde310750",
+      "contentRef": "sha256:6582629e2979466878f6014313dcc2f3756c9616148682227ce3063dde310750",
+      "contentState": "retained",
+      "evidenceId": "ev_6330c9124ffe21102d0b05dd"
+    },
+    {
+      "kind": "artifact_member",
+      "side": "artifact",
+      "locator": {
+        "path": "package/picocolors.browser.js",
+        "startByte": 0,
+        "endByte": 598
+      },
+      "observationMethod": "raw-member-sha256-v1",
+      "limitations": [],
+      "contentSha256": "sha256:a2e045ba16013e35c7045797ae940e3ea1c0e0ada13467bc73f7538690ea091a",
+      "contentRef": "sha256:a2e045ba16013e35c7045797ae940e3ea1c0e0ada13467bc73f7538690ea091a",
+      "contentState": "retained",
+      "evidenceId": "ev_9b74851d7b2196474c3a5142"
+    },
+    {
+      "kind": "artifact_member",
+      "side": "artifact",
+      "locator": {
+        "path": "package/picocolors.js",
+        "startByte": 0,
+        "endByte": 2663
+      },
+      "observationMethod": "raw-member-sha256-v1",
+      "limitations": [],
+      "contentSha256": "sha256:213bb870fcaad4def0215fe34fbb0f529836cc4d2462e02f14f1a49d09781625",
+      "contentRef": "sha256:213bb870fcaad4def0215fe34fbb0f529836cc4d2462e02f14f1a49d09781625",
+      "contentState": "retained",
+      "evidenceId": "ev_8e229580b03d54518a47b7d4"
+    },
+    {
+      "kind": "artifact_member",
+      "side": "artifact",
+      "locator": {
+        "path": "package/package.json",
+        "startByte": 0,
+        "endByte": 618
+      },
+      "observationMethod": "raw-member-sha256-v1",
+      "limitations": [],
+      "contentSha256": "sha256:f47239397b7822519c35144a37158b0ff4bb7eeddf325e8b518774ab6be02c61",
+      "contentRef": "sha256:f47239397b7822519c35144a37158b0ff4bb7eeddf325e8b518774ab6be02c61",
+      "contentState": "retained",
+      "evidenceId": "ev_c0c1b7d8cb7b119e6ea1880c"
+    },
+    {
+      "kind": "artifact_member",
+      "side": "artifact",
+      "locator": {
+        "path": "package/README.md",
+        "startByte": 0,
+        "endByte": 622
+      },
+      "observationMethod": "raw-member-sha256-v1",
+      "limitations": [],
+      "contentSha256": "sha256:5027b2836551ea0f91fa27b97335de905e24e1459d590eacfa45c0156962b70c",
+      "contentRef": "sha256:5027b2836551ea0f91fa27b97335de905e24e1459d590eacfa45c0156962b70c",
+      "contentState": "retained",
+      "evidenceId": "ev_8577a84c7c0b2523b9a7adf1"
+    },
+    {
+      "kind": "artifact_member",
+      "side": "artifact",
+      "locator": {
+        "path": "package/picocolors.d.ts",
+        "startByte": 0,
+        "endByte": 138
+      },
+      "observationMethod": "raw-member-sha256-v1",
+      "limitations": [],
+      "contentSha256": "sha256:8c5f0739f00f89f89b03a1fe6658c6d78000d7ebd7f556f0f8d6908fa679de35",
+      "contentRef": "sha256:8c5f0739f00f89f89b03a1fe6658c6d78000d7ebd7f556f0f8d6908fa679de35",
+      "contentState": "retained",
+      "evidenceId": "ev_dc18229539c13b73a54e1132"
+    },
+    {
+      "kind": "artifact_member",
+      "side": "artifact",
+      "locator": {
+        "path": "package/types.d.ts",
+        "startByte": 0,
+        "endByte": 1013
+      },
+      "observationMethod": "raw-member-sha256-v1",
+      "limitations": [],
+      "contentSha256": "sha256:590595c1230ebb7c43ebac51b2b2da956a719b213355b4358e2a6b16a8b5936c",
+      "contentRef": "sha256:590595c1230ebb7c43ebac51b2b2da956a719b213355b4358e2a6b16a8b5936c",
+      "contentState": "retained",
+      "evidenceId": "ev_a303bf52f9725d5b1c21b16e"
+    },
+    {
+      "kind": "artifact_member",
+      "side": "artifact",
+      "locator": {
+        "path": "package/heurisko-inert-marker.js",
+        "startByte": 0,
+        "endByte": 81
+      },
+      "observationMethod": "raw-member-sha256-v1",
+      "limitations": [],
+      "contentSha256": "sha256:e3db7386f7402cd4d4b5d8d6611b10a9865c14475edc80266e23517d7bde2289",
+      "contentRef": "sha256:e3db7386f7402cd4d4b5d8d6611b10a9865c14475edc80266e23517d7bde2289",
+      "contentState": "retained",
+      "evidenceId": "ev_5c353d54ca56d370b817b457"
+    },
+    {
+      "kind": "source_member",
+      "side": "source",
+      "locator": {
+        "path": "picocolors-7249f8c5d4825550f70bc1ea98652639933d3bbd/.editorconfig",
+        "startByte": 0,
+        "endByte": 273
+      },
+      "observationMethod": "raw-member-sha256-v1",
+      "limitations": [],
+      "contentSha256": "sha256:58546f33e3d8d110d1cc9dd1b6a5097066bd6c475ab0fea4498b4d2f67a00436",
+      "contentRef": "sha256:58546f33e3d8d110d1cc9dd1b6a5097066bd6c475ab0fea4498b4d2f67a00436",
+      "contentState": "retained",
+      "evidenceId": "ev_b9aa69f8615ea8911c91532e"
+    },
+    {
+      "kind": "source_member",
+      "side": "source",
+      "locator": {
+        "path": "picocolors-7249f8c5d4825550f70bc1ea98652639933d3bbd/.github/workflows/benchmarks.yaml",
+        "startByte": 0,
+        "endByte": 908
+      },
+      "observationMethod": "raw-member-sha256-v1",
+      "limitations": [],
+      "contentSha256": "sha256:55aab7ebb689858284e3f939d67699472a9ee0c06efeac7ed5df46ecfa36cb27",
+      "contentRef": "sha256:55aab7ebb689858284e3f939d67699472a9ee0c06efeac7ed5df46ecfa36cb27",
+      "contentState": "retained",
+      "evidenceId": "ev_6fcd18b69d576ed1a5170cab"
+    },
+    {
+      "kind": "source_member",
+      "side": "source",
+      "locator": {
+        "path": "picocolors-7249f8c5d4825550f70bc1ea98652639933d3bbd/.github/workflows/testing.yaml",
+        "startByte": 0,
+        "endByte": 885
+      },
+      "observationMethod": "raw-member-sha256-v1",
+      "limitations": [],
+      "contentSha256": "sha256:92520d502ee386364282130d2fa2e55ad189cf08e4ea707a3fcf301e55fe88c1",
+      "contentRef": "sha256:92520d502ee386364282130d2fa2e55ad189cf08e4ea707a3fcf301e55fe88c1",
+      "contentState": "retained",
+      "evidenceId": "ev_0dc50316325e7e4988211a1c"
+    },
+    {
+      "kind": "source_member",
+      "side": "source",
+      "locator": {
+        "path": "picocolors-7249f8c5d4825550f70bc1ea98652639933d3bbd/.gitignore",
+        "startByte": 0,
+        "endByte": 13
+      },
+      "observationMethod": "raw-member-sha256-v1",
+      "limitations": [],
+      "contentSha256": "sha256:16d30e4462189fb14dd611bdb708c510630c576a1f35b9383e89a4352da36c97",
+      "contentRef": "sha256:16d30e4462189fb14dd611bdb708c510630c576a1f35b9383e89a4352da36c97",
+      "contentState": "retained",
+      "evidenceId": "ev_e5786ae023bb889ce5250e52"
+    },
+    {
+      "kind": "source_member",
+      "side": "source",
+      "locator": {
+        "path": "picocolors-7249f8c5d4825550f70bc1ea98652639933d3bbd/CHANGELOG.md",
+        "startByte": 0,
+        "endByte": 2553
+      },
+      "observationMethod": "raw-member-sha256-v1",
+      "limitations": [],
+      "contentSha256": "sha256:d59ab3fe39c726144df936bf4ab36c6c560811c918af904918e1ca9e8a05373b",
+      "contentRef": "sha256:d59ab3fe39c726144df936bf4ab36c6c560811c918af904918e1ca9e8a05373b",
+      "contentState": "retained",
+      "evidenceId": "ev_1ef47d6a86992ff1291ebe5f"
+    },
+    {
+      "kind": "source_member",
+      "side": "source",
+      "locator": {
+        "path": "picocolors-7249f8c5d4825550f70bc1ea98652639933d3bbd/LICENSE",
+        "startByte": 0,
+        "endByte": 787
+      },
+      "observationMethod": "raw-member-sha256-v1",
+      "limitations": [],
+      "contentSha256": "sha256:6582629e2979466878f6014313dcc2f3756c9616148682227ce3063dde310750",
+      "contentRef": "sha256:6582629e2979466878f6014313dcc2f3756c9616148682227ce3063dde310750",
+      "contentState": "retained",
+      "evidenceId": "ev_382f5006366ba259c4170ad3"
+    },
+    {
+      "kind": "source_member",
+      "side": "source",
+      "locator": {
+        "path": "picocolors-7249f8c5d4825550f70bc1ea98652639933d3bbd/README.md",
+        "startByte": 0,
+        "endByte": 4995
+      },
+      "observationMethod": "raw-member-sha256-v1",
+      "limitations": [],
+      "contentSha256": "sha256:34367841182335f5b8029c9dbbe45c092e172f1f226be34343540aaf0e2bd034",
+      "contentRef": "sha256:34367841182335f5b8029c9dbbe45c092e172f1f226be34343540aaf0e2bd034",
+      "contentState": "retained",
+      "evidenceId": "ev_91ed6b0ef67ef8386f9c2a8c"
+    },
+    {
+      "kind": "source_member",
+      "side": "source",
+      "locator": {
+        "path": "picocolors-7249f8c5d4825550f70bc1ea98652639933d3bbd/benchmarks/complex.mjs",
+        "startByte": 0,
+        "endByte": 3345
+      },
+      "observationMethod": "raw-member-sha256-v1",
+      "limitations": [],
+      "contentSha256": "sha256:7797a2d96e31fd3d1da7462b661e36a2f06b5aa7f5b871e5986203e91f373aad",
+      "contentRef": "sha256:7797a2d96e31fd3d1da7462b661e36a2f06b5aa7f5b871e5986203e91f373aad",
+      "contentState": "retained",
+      "evidenceId": "ev_bc8728b3a6d3573f54b6a92d"
+    },
+    {
+      "kind": "source_member",
+      "side": "source",
+      "locator": {
+        "path": "picocolors-7249f8c5d4825550f70bc1ea98652639933d3bbd/benchmarks/loading.mjs",
+        "startByte": 0,
+        "endByte": 3239
+      },
+      "observationMethod": "raw-member-sha256-v1",
+      "limitations": [],
+      "contentSha256": "sha256:8486b68a2a04c756654b9d2979c68555cd958043d1bdc5d18559b23590828e4d",
+      "contentRef": "sha256:8486b68a2a04c756654b9d2979c68555cd958043d1bdc5d18559b23590828e4d",
+      "contentState": "retained",
+      "evidenceId": "ev_f663d74181047fd5c691fbed"
+    },
+    {
+      "kind": "source_member",
+      "side": "source",
+      "locator": {
+        "path": "picocolors-7249f8c5d4825550f70bc1ea98652639933d3bbd/benchmarks/recursion.mjs",
+        "startByte": 0,
+        "endByte": 1417
+      },
+      "observationMethod": "raw-member-sha256-v1",
+      "limitations": [],
+      "contentSha256": "sha256:a25a6582b1e0dc73cd0a9147e247ccd3ef97def5186e05f8a12c89e2147f1b57",
+      "contentRef": "sha256:a25a6582b1e0dc73cd0a9147e247ccd3ef97def5186e05f8a12c89e2147f1b57",
+      "contentState": "retained",
+      "evidenceId": "ev_30ad5717d0d4aa71c2ca6f82"
+    },
+    {
+      "kind": "source_member",
+      "side": "source",
+      "locator": {
+        "path": "picocolors-7249f8c5d4825550f70bc1ea98652639933d3bbd/benchmarks/simple.mjs",
+        "startByte": 0,
+        "endByte": 1663
+      },
+      "observationMethod": "raw-member-sha256-v1",
+      "limitations": [],
+      "contentSha256": "sha256:320883948ebc210b0c8e057b68f502c37963f633ba989119f01420554445e8be",
+      "contentRef": "sha256:320883948ebc210b0c8e057b68f502c37963f633ba989119f01420554445e8be",
+      "contentState": "retained",
+      "evidenceId": "ev_d193c4b42a087fd73013c2d3"
+    },
+    {
+      "kind": "source_member",
+      "side": "source",
+      "locator": {
+        "path": "picocolors-7249f8c5d4825550f70bc1ea98652639933d3bbd/benchmarks/size.mjs",
+        "startByte": 0,
+        "endByte": 1189
+      },
+      "observationMethod": "raw-member-sha256-v1",
+      "limitations": [],
+      "contentSha256": "sha256:64a4d1c9ac4f2218d96afbcd64bb8a64b3d767e01bbb546e714b1fdc2e4d213c",
+      "contentRef": "sha256:64a4d1c9ac4f2218d96afbcd64bb8a64b3d767e01bbb546e714b1fdc2e4d213c",
+      "contentState": "retained",
+      "evidenceId": "ev_c21445462e3a95eaadf9569c"
+    },
+    {
+      "kind": "source_member",
+      "side": "source",
+      "locator": {
+        "path": "picocolors-7249f8c5d4825550f70bc1ea98652639933d3bbd/package.json",
+        "startByte": 0,
+        "endByte": 1107
+      },
+      "observationMethod": "raw-member-sha256-v1",
+      "limitations": [],
+      "contentSha256": "sha256:cc90329588edc5d4ab6fc56a62fbc7caef17144881dc5e8afbe6f5a94f322432",
+      "contentRef": "sha256:cc90329588edc5d4ab6fc56a62fbc7caef17144881dc5e8afbe6f5a94f322432",
+      "contentState": "retained",
+      "evidenceId": "ev_a894e3cbbc20b3124c7fb225"
+    },
+    {
+      "kind": "source_member",
+      "side": "source",
+      "locator": {
+        "path": "picocolors-7249f8c5d4825550f70bc1ea98652639933d3bbd/picocolors.browser.js",
+        "startByte": 0,
+        "endByte": 598
+      },
+      "observationMethod": "raw-member-sha256-v1",
+      "limitations": [],
+      "contentSha256": "sha256:a2e045ba16013e35c7045797ae940e3ea1c0e0ada13467bc73f7538690ea091a",
+      "contentRef": "sha256:a2e045ba16013e35c7045797ae940e3ea1c0e0ada13467bc73f7538690ea091a",
+      "contentState": "retained",
+      "evidenceId": "ev_196939ad63a98f4a415b5c10"
+    },
+    {
+      "kind": "source_member",
+      "side": "source",
+      "locator": {
+        "path": "picocolors-7249f8c5d4825550f70bc1ea98652639933d3bbd/picocolors.d.ts",
+        "startByte": 0,
+        "endByte": 138
+      },
+      "observationMethod": "raw-member-sha256-v1",
+      "limitations": [],
+      "contentSha256": "sha256:8c5f0739f00f89f89b03a1fe6658c6d78000d7ebd7f556f0f8d6908fa679de35",
+      "contentRef": "sha256:8c5f0739f00f89f89b03a1fe6658c6d78000d7ebd7f556f0f8d6908fa679de35",
+      "contentState": "retained",
+      "evidenceId": "ev_2eea9e1414aa826006d06ef2"
+    },
+    {
+      "kind": "source_member",
+      "side": "source",
+      "locator": {
+        "path": "picocolors-7249f8c5d4825550f70bc1ea98652639933d3bbd/picocolors.js",
+        "startByte": 0,
+        "endByte": 2663
+      },
+      "observationMethod": "raw-member-sha256-v1",
+      "limitations": [],
+      "contentSha256": "sha256:213bb870fcaad4def0215fe34fbb0f529836cc4d2462e02f14f1a49d09781625",
+      "contentRef": "sha256:213bb870fcaad4def0215fe34fbb0f529836cc4d2462e02f14f1a49d09781625",
+      "contentState": "retained",
+      "evidenceId": "ev_2d47f1f6ca82f9dcb9dfbea7"
+    },
+    {
+      "kind": "source_member",
+      "side": "source",
+      "locator": {
+        "path": "picocolors-7249f8c5d4825550f70bc1ea98652639933d3bbd/tests/environments.js",
+        "startByte": 0,
+        "endByte": 2597
+      },
+      "observationMethod": "raw-member-sha256-v1",
+      "limitations": [],
+      "contentSha256": "sha256:317317f13c6359005db870fb8e22b6569272a26566382021e65853532a338484",
+      "contentRef": "sha256:317317f13c6359005db870fb8e22b6569272a26566382021e65853532a338484",
+      "contentState": "retained",
+      "evidenceId": "ev_83707340f58ba6cc1a154473"
+    },
+    {
+      "kind": "source_member",
+      "side": "source",
+      "locator": {
+        "path": "picocolors-7249f8c5d4825550f70bc1ea98652639933d3bbd/tests/test.js",
+        "startByte": 0,
+        "endByte": 4334
+      },
+      "observationMethod": "raw-member-sha256-v1",
+      "limitations": [],
+      "contentSha256": "sha256:1b8af32564e5ff8b8cb0f7704f809b423186646d38245295c47310f2ef7a3fc1",
+      "contentRef": "sha256:1b8af32564e5ff8b8cb0f7704f809b423186646d38245295c47310f2ef7a3fc1",
+      "contentState": "retained",
+      "evidenceId": "ev_f7e132bab08e5730f064fd14"
+    },
+    {
+      "kind": "source_member",
+      "side": "source",
+      "locator": {
+        "path": "picocolors-7249f8c5d4825550f70bc1ea98652639933d3bbd/types.d.ts",
+        "startByte": 0,
+        "endByte": 1013
+      },
+      "observationMethod": "raw-member-sha256-v1",
+      "limitations": [],
+      "contentSha256": "sha256:590595c1230ebb7c43ebac51b2b2da956a719b213355b4358e2a6b16a8b5936c",
+      "contentRef": "sha256:590595c1230ebb7c43ebac51b2b2da956a719b213355b4358e2a6b16a8b5936c",
+      "contentState": "retained",
+      "evidenceId": "ev_de81baf3c4ba1cb66bbd1255"
+    },
+    {
+      "kind": "raw_diff",
+      "side": "both",
+      "locator": {
+        "path": ".editorconfig",
+        "metadataKey": "raw-byte-delta"
+      },
+      "observationMethod": "common-prefix-suffix-byte-span-v1",
+      "limitations": [
+        "One enclosing changed byte span, not semantic equivalence; full member bytes retained."
+      ],
+      "contentSha256": "sha256:d19eda9596d7b862bc1966b68e22c88508f6852d76d41fb96e78f6332bb9c912",
+      "contentRef": "sha256:d19eda9596d7b862bc1966b68e22c88508f6852d76d41fb96e78f6332bb9c912",
+      "contentState": "retained",
+      "evidenceId": "ev_6737807221122685e88a956a"
+    },
+    {
+      "kind": "raw_diff",
+      "side": "both",
+      "locator": {
+        "path": ".github/workflows/benchmarks.yaml",
+        "metadataKey": "raw-byte-delta"
+      },
+      "observationMethod": "common-prefix-suffix-byte-span-v1",
+      "limitations": [
+        "One enclosing changed byte span, not semantic equivalence; full member bytes retained."
+      ],
+      "contentSha256": "sha256:bb66e1cf6bb05512ce5775eba35c1282af6dcec873c9b46a08617ad82114773d",
+      "contentRef": "sha256:bb66e1cf6bb05512ce5775eba35c1282af6dcec873c9b46a08617ad82114773d",
+      "contentState": "retained",
+      "evidenceId": "ev_4134d66d2076f8184cd70130"
+    },
+    {
+      "kind": "raw_diff",
+      "side": "both",
+      "locator": {
+        "path": ".github/workflows/testing.yaml",
+        "metadataKey": "raw-byte-delta"
+      },
+      "observationMethod": "common-prefix-suffix-byte-span-v1",
+      "limitations": [
+        "One enclosing changed byte span, not semantic equivalence; full member bytes retained."
+      ],
+      "contentSha256": "sha256:88fb68d4faeae36d3bd49bb685ab4795d3f0380b78bdc2480b2896d1c93a916e",
+      "contentRef": "sha256:88fb68d4faeae36d3bd49bb685ab4795d3f0380b78bdc2480b2896d1c93a916e",
+      "contentState": "retained",
+      "evidenceId": "ev_713b90f0051187815faac3a7"
+    },
+    {
+      "kind": "raw_diff",
+      "side": "both",
+      "locator": {
+        "path": ".gitignore",
+        "metadataKey": "raw-byte-delta"
+      },
+      "observationMethod": "common-prefix-suffix-byte-span-v1",
+      "limitations": [
+        "One enclosing changed byte span, not semantic equivalence; full member bytes retained."
+      ],
+      "contentSha256": "sha256:3e7078a9581c315ef1563cacf7d5c264995b148857f97e879abf7db792ed2148",
+      "contentRef": "sha256:3e7078a9581c315ef1563cacf7d5c264995b148857f97e879abf7db792ed2148",
+      "contentState": "retained",
+      "evidenceId": "ev_92b12d21e966801482a093d8"
+    },
+    {
+      "kind": "raw_diff",
+      "side": "both",
+      "locator": {
+        "path": "CHANGELOG.md",
+        "metadataKey": "raw-byte-delta"
+      },
+      "observationMethod": "common-prefix-suffix-byte-span-v1",
+      "limitations": [
+        "One enclosing changed byte span, not semantic equivalence; full member bytes retained."
+      ],
+      "contentSha256": "sha256:cced9e8e3e524686912c13d0f931b4c01596be0392171c700bc5c31c036ed905",
+      "contentRef": "sha256:cced9e8e3e524686912c13d0f931b4c01596be0392171c700bc5c31c036ed905",
+      "contentState": "retained",
+      "evidenceId": "ev_cea0a7640d7ecc61a9d6f1c9"
+    },
+    {
+      "kind": "raw_diff",
+      "side": "both",
+      "locator": {
+        "path": "LICENSE",
+        "metadataKey": "archive-member-metadata"
+      },
+      "observationMethod": "raw-tar-member-metadata-v1",
+      "limitations": [
+        "Metadata difference is an observation; risk interpretation is unavailable."
+      ],
+      "contentSha256": "sha256:2e9d9442798474d6786bc7a71968523992b4aed9450cd13d663b5538602171cb",
+      "contentRef": "sha256:2e9d9442798474d6786bc7a71968523992b4aed9450cd13d663b5538602171cb",
+      "contentState": "retained",
+      "evidenceId": "ev_2c407f8b04cb8fdb1b58bedd"
+    },
+    {
+      "kind": "raw_diff",
+      "side": "both",
+      "locator": {
+        "path": "README.md",
+        "metadataKey": "archive-member-metadata"
+      },
+      "observationMethod": "raw-tar-member-metadata-v1",
+      "limitations": [
+        "Metadata difference is an observation; risk interpretation is unavailable."
+      ],
+      "contentSha256": "sha256:6ab5b2b31d182e9bda1e1dc52ef5192d41cb6397eaaf80b6bc3f8f2188799ad2",
+      "contentRef": "sha256:6ab5b2b31d182e9bda1e1dc52ef5192d41cb6397eaaf80b6bc3f8f2188799ad2",
+      "contentState": "retained",
+      "evidenceId": "ev_8eccb72fed3220c6716fdfa6"
+    },
+    {
+      "kind": "raw_diff",
+      "side": "both",
+      "locator": {
+        "path": "README.md",
+        "metadataKey": "raw-byte-delta"
+      },
+      "observationMethod": "common-prefix-suffix-byte-span-v1",
+      "limitations": [
+        "One enclosing changed byte span, not semantic equivalence; full member bytes retained."
+      ],
+      "contentSha256": "sha256:af4e0b741a5f7807034c2f1f36a3a6da610c464f813028ef0db261cdccf55f95",
+      "contentRef": "sha256:af4e0b741a5f7807034c2f1f36a3a6da610c464f813028ef0db261cdccf55f95",
+      "contentState": "retained",
+      "evidenceId": "ev_b7a8efc56d72a6170dca6029"
+    },
+    {
+      "kind": "raw_diff",
+      "side": "both",
+      "locator": {
+        "path": "benchmarks/complex.mjs",
+        "metadataKey": "raw-byte-delta"
+      },
+      "observationMethod": "common-prefix-suffix-byte-span-v1",
+      "limitations": [
+        "One enclosing changed byte span, not semantic equivalence; full member bytes retained."
+      ],
+      "contentSha256": "sha256:671ded063c2bdcb4e2684930204c236fcf085c28a3eaa4deb0956f78f6921da4",
+      "contentRef": "sha256:671ded063c2bdcb4e2684930204c236fcf085c28a3eaa4deb0956f78f6921da4",
+      "contentState": "retained",
+      "evidenceId": "ev_606d24fe9c3d28b3d87fb639"
+    },
+    {
+      "kind": "raw_diff",
+      "side": "both",
+      "locator": {
+        "path": "benchmarks/loading.mjs",
+        "metadataKey": "raw-byte-delta"
+      },
+      "observationMethod": "common-prefix-suffix-byte-span-v1",
+      "limitations": [
+        "One enclosing changed byte span, not semantic equivalence; full member bytes retained."
+      ],
+      "contentSha256": "sha256:87ee4038a3f6607c6ce11ca34044b16c5065c2a54e345991fd354020e6917957",
+      "contentRef": "sha256:87ee4038a3f6607c6ce11ca34044b16c5065c2a54e345991fd354020e6917957",
+      "contentState": "retained",
+      "evidenceId": "ev_0c42396f94b4d965df63cbe3"
+    },
+    {
+      "kind": "raw_diff",
+      "side": "both",
+      "locator": {
+        "path": "benchmarks/recursion.mjs",
+        "metadataKey": "raw-byte-delta"
+      },
+      "observationMethod": "common-prefix-suffix-byte-span-v1",
+      "limitations": [
+        "One enclosing changed byte span, not semantic equivalence; full member bytes retained."
+      ],
+      "contentSha256": "sha256:00411598d63128ddb9a3c5651ec459d2bc3ba13ddcd112fce73f0b457a1279cf",
+      "contentRef": "sha256:00411598d63128ddb9a3c5651ec459d2bc3ba13ddcd112fce73f0b457a1279cf",
+      "contentState": "retained",
+      "evidenceId": "ev_fe0d79f7c3f3ce4e9e769ff0"
+    },
+    {
+      "kind": "raw_diff",
+      "side": "both",
+      "locator": {
+        "path": "benchmarks/simple.mjs",
+        "metadataKey": "raw-byte-delta"
+      },
+      "observationMethod": "common-prefix-suffix-byte-span-v1",
+      "limitations": [
+        "One enclosing changed byte span, not semantic equivalence; full member bytes retained."
+      ],
+      "contentSha256": "sha256:097a8c353a55b845d51b8058b7008a03f545d569d357dee49a475d01a0bad33b",
+      "contentRef": "sha256:097a8c353a55b845d51b8058b7008a03f545d569d357dee49a475d01a0bad33b",
+      "contentState": "retained",
+      "evidenceId": "ev_bd09b38fa83318f9326736c5"
+    },
+    {
+      "kind": "raw_diff",
+      "side": "both",
+      "locator": {
+        "path": "benchmarks/size.mjs",
+        "metadataKey": "raw-byte-delta"
+      },
+      "observationMethod": "common-prefix-suffix-byte-span-v1",
+      "limitations": [
+        "One enclosing changed byte span, not semantic equivalence; full member bytes retained."
+      ],
+      "contentSha256": "sha256:57dfdbfe47814671c6baa31129bf79075f0ab6f547f1a0c73e152d216fdabd7a",
+      "contentRef": "sha256:57dfdbfe47814671c6baa31129bf79075f0ab6f547f1a0c73e152d216fdabd7a",
+      "contentState": "retained",
+      "evidenceId": "ev_7e41d73c8d44a4f2a3641017"
+    },
+    {
+      "kind": "raw_diff",
+      "side": "both",
+      "locator": {
+        "path": "heurisko-inert-marker.js",
+        "metadataKey": "raw-byte-delta"
+      },
+      "observationMethod": "common-prefix-suffix-byte-span-v1",
+      "limitations": [
+        "One enclosing changed byte span, not semantic equivalence; full member bytes retained."
+      ],
+      "contentSha256": "sha256:578db2d4b24bb7762f767c654f06360c3c2d930b60bebd5b25a5ccf9210665c3",
+      "contentRef": "sha256:578db2d4b24bb7762f767c654f06360c3c2d930b60bebd5b25a5ccf9210665c3",
+      "contentState": "retained",
+      "evidenceId": "ev_305f99771cb2e4d00fbcd7a9"
+    },
+    {
+      "kind": "raw_diff",
+      "side": "both",
+      "locator": {
+        "path": "package.json",
+        "metadataKey": "archive-member-metadata"
+      },
+      "observationMethod": "raw-tar-member-metadata-v1",
+      "limitations": [
+        "Metadata difference is an observation; risk interpretation is unavailable."
+      ],
+      "contentSha256": "sha256:115edbbb007b69265939dd879c31ed9117e405c7931ba60c052bd959556fe501",
+      "contentRef": "sha256:115edbbb007b69265939dd879c31ed9117e405c7931ba60c052bd959556fe501",
+      "contentState": "retained",
+      "evidenceId": "ev_4cc84e38f88353d1b0182594"
+    },
+    {
+      "kind": "raw_diff",
+      "side": "both",
+      "locator": {
+        "path": "package.json",
+        "metadataKey": "raw-byte-delta"
+      },
+      "observationMethod": "common-prefix-suffix-byte-span-v1",
+      "limitations": [
+        "One enclosing changed byte span, not semantic equivalence; full member bytes retained."
+      ],
+      "contentSha256": "sha256:e634beebd0a0e713037a3b9c4d9a3e246c1fad339f7d84a8370e8bbf3e93ff4e",
+      "contentRef": "sha256:e634beebd0a0e713037a3b9c4d9a3e246c1fad339f7d84a8370e8bbf3e93ff4e",
+      "contentState": "retained",
+      "evidenceId": "ev_242a34e804daf891e3f7c878"
+    },
+    {
+      "kind": "manifest_delta",
+      "side": "both",
+      "locator": {
+        "path": "package.json",
+        "metadataKey": "clean-publish"
+      },
+      "observationMethod": "strict-json-value-byte-spans-v1",
+      "limitations": [],
+      "contentSha256": "sha256:cd1abdfa94cb4b6e001022f04fbbff0454ad5a2d149c46408cabdc4a3d4bbdae",
+      "contentRef": "sha256:cd1abdfa94cb4b6e001022f04fbbff0454ad5a2d149c46408cabdc4a3d4bbdae",
+      "contentState": "retained",
+      "evidenceId": "ev_1c374f96bf891662bb5b19d9"
+    },
+    {
+      "kind": "manifest_delta",
+      "side": "both",
+      "locator": {
+        "path": "package.json",
+        "metadataKey": "clean-publish.cleanDocs"
+      },
+      "observationMethod": "strict-json-value-byte-spans-v1",
+      "limitations": [],
+      "contentSha256": "sha256:43bfa66cf63a5980ed2ce5f75e25046971073fa1b3788e0943475b24d1300fd2",
+      "contentRef": "sha256:43bfa66cf63a5980ed2ce5f75e25046971073fa1b3788e0943475b24d1300fd2",
+      "contentState": "retained",
+      "evidenceId": "ev_304e39caf5b3d48d5e2d865d"
+    },
+    {
+      "kind": "manifest_delta",
+      "side": "both",
+      "locator": {
+        "path": "package.json",
+        "metadataKey": "devDependencies"
+      },
+      "observationMethod": "strict-json-value-byte-spans-v1",
+      "limitations": [],
+      "contentSha256": "sha256:27ee59ae8c71f7d5ab64422357c016e9185f7d4decc88aec1c5419e72984b13b",
+      "contentRef": "sha256:27ee59ae8c71f7d5ab64422357c016e9185f7d4decc88aec1c5419e72984b13b",
+      "contentState": "retained",
+      "evidenceId": "ev_d15461e838129368e3874fc5"
+    },
+    {
+      "kind": "manifest_delta",
+      "side": "both",
+      "locator": {
+        "path": "package.json",
+        "metadataKey": "devDependencies.ansi-colors"
+      },
+      "observationMethod": "strict-json-value-byte-spans-v1",
+      "limitations": [],
+      "contentSha256": "sha256:7940307b8e39d94e33cf0e4b2eedea5fadc164e2e33e1f09ed3f27e40212e3d0",
+      "contentRef": "sha256:7940307b8e39d94e33cf0e4b2eedea5fadc164e2e33e1f09ed3f27e40212e3d0",
+      "contentState": "retained",
+      "evidenceId": "ev_4e9b8e4a26b1b24694445007"
+    },
+    {
+      "kind": "manifest_delta",
+      "side": "both",
+      "locator": {
+        "path": "package.json",
+        "metadataKey": "devDependencies.chalk"
+      },
+      "observationMethod": "strict-json-value-byte-spans-v1",
+      "limitations": [],
+      "contentSha256": "sha256:0252ec6ee600eff3dc754fe05ef00bbf490cc50d9166d65c12b6f5180765843e",
+      "contentRef": "sha256:0252ec6ee600eff3dc754fe05ef00bbf490cc50d9166d65c12b6f5180765843e",
+      "contentState": "retained",
+      "evidenceId": "ev_bf60baef2f60db4cebaf38fb"
+    },
+    {
+      "kind": "manifest_delta",
+      "side": "both",
+      "locator": {
+        "path": "package.json",
+        "metadataKey": "devDependencies.clean-publish"
+      },
+      "observationMethod": "strict-json-value-byte-spans-v1",
+      "limitations": [],
+      "contentSha256": "sha256:1aabaaf95b9b843adbe9b89e5b1128bd90cf26313e814326c33bc0b1909d17a5",
+      "contentRef": "sha256:1aabaaf95b9b843adbe9b89e5b1128bd90cf26313e814326c33bc0b1909d17a5",
+      "contentState": "retained",
+      "evidenceId": "ev_e147d8f86a36f8c05b2d80b8"
+    },
+    {
+      "kind": "manifest_delta",
+      "side": "both",
+      "locator": {
+        "path": "package.json",
+        "metadataKey": "devDependencies.cli-color"
+      },
+      "observationMethod": "strict-json-value-byte-spans-v1",
+      "limitations": [],
+      "contentSha256": "sha256:0e5e9062f9a03e58139ebc1d4b37b2bc68a9c29670a69d503af8e727add93038",
+      "contentRef": "sha256:0e5e9062f9a03e58139ebc1d4b37b2bc68a9c29670a69d503af8e727add93038",
+      "contentState": "retained",
+      "evidenceId": "ev_cd5ba659e9cac3825fde1f8f"
+    },
+    {
+      "kind": "manifest_delta",
+      "side": "both",
+      "locator": {
+        "path": "package.json",
+        "metadataKey": "devDependencies.colorette"
+      },
+      "observationMethod": "strict-json-value-byte-spans-v1",
+      "limitations": [],
+      "contentSha256": "sha256:ef745482784bff7cc3d356f9d81e41703ca712e73df60f005daecbca8ebb4cf1",
+      "contentRef": "sha256:ef745482784bff7cc3d356f9d81e41703ca712e73df60f005daecbca8ebb4cf1",
+      "contentState": "retained",
+      "evidenceId": "ev_c3c67141def991004d5bf9e5"
+    },
+    {
+      "kind": "manifest_delta",
+      "side": "both",
+      "locator": {
+        "path": "package.json",
+        "metadataKey": "devDependencies.kleur"
+      },
+      "observationMethod": "strict-json-value-byte-spans-v1",
+      "limitations": [],
+      "contentSha256": "sha256:68565e45a00f14725bc633ed42f6e6181114107fcdf7cd41f7f700171c03e44f",
+      "contentRef": "sha256:68565e45a00f14725bc633ed42f6e6181114107fcdf7cd41f7f700171c03e44f",
+      "contentState": "retained",
+      "evidenceId": "ev_b5a1dde39855f3a6f40aec5d"
+    },
+    {
+      "kind": "manifest_delta",
+      "side": "both",
+      "locator": {
+        "path": "package.json",
+        "metadataKey": "devDependencies.mitata"
+      },
+      "observationMethod": "strict-json-value-byte-spans-v1",
+      "limitations": [],
+      "contentSha256": "sha256:8fd9a5c45de727c117f5172a027b71b98ac5c959116ab26732fd886573d534e8",
+      "contentRef": "sha256:8fd9a5c45de727c117f5172a027b71b98ac5c959116ab26732fd886573d534e8",
+      "contentState": "retained",
+      "evidenceId": "ev_4b73e27ecbb013f4dba9b21f"
+    },
+    {
+      "kind": "manifest_delta",
+      "side": "both",
+      "locator": {
+        "path": "package.json",
+        "metadataKey": "devDependencies.nanocolors"
+      },
+      "observationMethod": "strict-json-value-byte-spans-v1",
+      "limitations": [],
+      "contentSha256": "sha256:aad95153ea7b573334da138c5abc31b3915a88e6878c4900a84ae0e8852014c5",
+      "contentRef": "sha256:aad95153ea7b573334da138c5abc31b3915a88e6878c4900a84ae0e8852014c5",
+      "contentState": "retained",
+      "evidenceId": "ev_152fa32b3a749de283035b91"
+    },
+    {
+      "kind": "manifest_delta",
+      "side": "both",
+      "locator": {
+        "path": "package.json",
+        "metadataKey": "devDependencies.prettier"
+      },
+      "observationMethod": "strict-json-value-byte-spans-v1",
+      "limitations": [],
+      "contentSha256": "sha256:11d13cf9b245657cac5feeaa5857bf075035cbc0239a38414ad645168b43097d",
+      "contentRef": "sha256:11d13cf9b245657cac5feeaa5857bf075035cbc0239a38414ad645168b43097d",
+      "contentState": "retained",
+      "evidenceId": "ev_99ea0c98c3423d3dc50400a9"
+    },
+    {
+      "kind": "manifest_delta",
+      "side": "both",
+      "locator": {
+        "path": "package.json",
+        "metadataKey": "devDependencies.yoctocolors"
+      },
+      "observationMethod": "strict-json-value-byte-spans-v1",
+      "limitations": [],
+      "contentSha256": "sha256:421480d35ef848cb7330a46da707425154fe21cd4caf87c3dc4a96ea2dca3264",
+      "contentRef": "sha256:421480d35ef848cb7330a46da707425154fe21cd4caf87c3dc4a96ea2dca3264",
+      "contentState": "retained",
+      "evidenceId": "ev_e8e8de8d8f095dbc1f3adb10"
+    },
+    {
+      "kind": "manifest_delta",
+      "side": "both",
+      "locator": {
+        "path": "package.json",
+        "metadataKey": "prettier"
+      },
+      "observationMethod": "strict-json-value-byte-spans-v1",
+      "limitations": [],
+      "contentSha256": "sha256:d2a7dee35bc9a2234dce5ee4ff26abdf667a0affe1d0bc2ab00bd5f4d86235ab",
+      "contentRef": "sha256:d2a7dee35bc9a2234dce5ee4ff26abdf667a0affe1d0bc2ab00bd5f4d86235ab",
+      "contentState": "retained",
+      "evidenceId": "ev_98f52695265a93cecfee6bef"
+    },
+    {
+      "kind": "manifest_delta",
+      "side": "both",
+      "locator": {
+        "path": "package.json",
+        "metadataKey": "prettier.arrowParens"
+      },
+      "observationMethod": "strict-json-value-byte-spans-v1",
+      "limitations": [],
+      "contentSha256": "sha256:f2981a9e8d74a496ca1d16d13ba1a1a4ec0a8e75a3220ea55e08940498b37131",
+      "contentRef": "sha256:f2981a9e8d74a496ca1d16d13ba1a1a4ec0a8e75a3220ea55e08940498b37131",
+      "contentState": "retained",
+      "evidenceId": "ev_d4a971236626b4438f85ecd2"
+    },
+    {
+      "kind": "manifest_delta",
+      "side": "both",
+      "locator": {
+        "path": "package.json",
+        "metadataKey": "prettier.printWidth"
+      },
+      "observationMethod": "strict-json-value-byte-spans-v1",
+      "limitations": [],
+      "contentSha256": "sha256:02da9de8c9cee67ab07ace9355d2e66f1204267c174431b38b956f618b4ea84b",
+      "contentRef": "sha256:02da9de8c9cee67ab07ace9355d2e66f1204267c174431b38b956f618b4ea84b",
+      "contentState": "retained",
+      "evidenceId": "ev_bf2cf56d9c18a5790dc2169c"
+    },
+    {
+      "kind": "manifest_delta",
+      "side": "both",
+      "locator": {
+        "path": "package.json",
+        "metadataKey": "prettier.requirePragma"
+      },
+      "observationMethod": "strict-json-value-byte-spans-v1",
+      "limitations": [],
+      "contentSha256": "sha256:ef6c5cb36a730f353570ca6c5336640ff64c5d06edc6c45f71dc8df195f00463",
+      "contentRef": "sha256:ef6c5cb36a730f353570ca6c5336640ff64c5d06edc6c45f71dc8df195f00463",
+      "contentState": "retained",
+      "evidenceId": "ev_b17594b55b74d29a3fc56d28"
+    },
+    {
+      "kind": "manifest_delta",
+      "side": "both",
+      "locator": {
+        "path": "package.json",
+        "metadataKey": "prettier.semi"
+      },
+      "observationMethod": "strict-json-value-byte-spans-v1",
+      "limitations": [],
+      "contentSha256": "sha256:f32491ad260bedb2eefb2480e9d4ce5f23ca20daf2d00f1a606759a5848f796f",
+      "contentRef": "sha256:f32491ad260bedb2eefb2480e9d4ce5f23ca20daf2d00f1a606759a5848f796f",
+      "contentState": "retained",
+      "evidenceId": "ev_533fa3a473fc4a10fe14ba1d"
+    },
+    {
+      "kind": "manifest_delta",
+      "side": "both",
+      "locator": {
+        "path": "package.json",
+        "metadataKey": "prettier.tabWidth"
+      },
+      "observationMethod": "strict-json-value-byte-spans-v1",
+      "limitations": [],
+      "contentSha256": "sha256:79fa52a43acf3e72afa593ec4140555632cac8ccc10f50fcb1733a241c5fd3a5",
+      "contentRef": "sha256:79fa52a43acf3e72afa593ec4140555632cac8ccc10f50fcb1733a241c5fd3a5",
+      "contentState": "retained",
+      "evidenceId": "ev_f05fdbd1265f0c910221fd26"
+    },
+    {
+      "kind": "manifest_delta",
+      "side": "both",
+      "locator": {
+        "path": "package.json",
+        "metadataKey": "prettier.useTabs"
+      },
+      "observationMethod": "strict-json-value-byte-spans-v1",
+      "limitations": [],
+      "contentSha256": "sha256:83aa48c39e3d67fb59cc9dbe489456bcfedcefa38d39588a71721399effe3bcc",
+      "contentRef": "sha256:83aa48c39e3d67fb59cc9dbe489456bcfedcefa38d39588a71721399effe3bcc",
+      "contentState": "retained",
+      "evidenceId": "ev_f2928cdd6823222dc49a2acb"
+    },
+    {
+      "kind": "manifest_delta",
+      "side": "both",
+      "locator": {
+        "path": "package.json",
+        "metadataKey": "scripts"
+      },
+      "observationMethod": "strict-json-value-byte-spans-v1",
+      "limitations": [],
+      "contentSha256": "sha256:08efc11491d62951497bc5d4770a6341af2aa67f479c8ee8af82ebed8f1bee3f",
+      "contentRef": "sha256:08efc11491d62951497bc5d4770a6341af2aa67f479c8ee8af82ebed8f1bee3f",
+      "contentState": "retained",
+      "evidenceId": "ev_dc4c9a07f1573fb79a87d447"
+    },
+    {
+      "kind": "manifest_delta",
+      "side": "both",
+      "locator": {
+        "path": "package.json",
+        "metadataKey": "scripts.postinstall"
+      },
+      "observationMethod": "strict-json-value-byte-spans-v1",
+      "limitations": [],
+      "contentSha256": "sha256:779059b30b3fe07462190688d27fb2da80bedb75f04dd070569e7c1b4fc0e661",
+      "contentRef": "sha256:779059b30b3fe07462190688d27fb2da80bedb75f04dd070569e7c1b4fc0e661",
+      "contentState": "retained",
+      "evidenceId": "ev_e7075cb69f91c7e1b4c4223f"
+    },
+    {
+      "kind": "manifest_delta",
+      "side": "both",
+      "locator": {
+        "path": "package.json",
+        "metadataKey": "scripts.test"
+      },
+      "observationMethod": "strict-json-value-byte-spans-v1",
+      "limitations": [],
+      "contentSha256": "sha256:0c63338ae84ac95d996fd50865b6548374f958997a17bd903ca2ef1460e8fb5d",
+      "contentRef": "sha256:0c63338ae84ac95d996fd50865b6548374f958997a17bd903ca2ef1460e8fb5d",
+      "contentState": "retained",
+      "evidenceId": "ev_d69f24e90c44ecf138a9261e"
+    },
+    {
+      "kind": "raw_diff",
+      "side": "both",
+      "locator": {
+        "path": "picocolors.browser.js",
+        "metadataKey": "archive-member-metadata"
+      },
+      "observationMethod": "raw-tar-member-metadata-v1",
+      "limitations": [
+        "Metadata difference is an observation; risk interpretation is unavailable."
+      ],
+      "contentSha256": "sha256:ba837ca33de95b1606e26245dbf0273ab7648a394af59851a18424d2a6e73650",
+      "contentRef": "sha256:ba837ca33de95b1606e26245dbf0273ab7648a394af59851a18424d2a6e73650",
+      "contentState": "retained",
+      "evidenceId": "ev_52e00414ff77424a507b0cc1"
+    },
+    {
+      "kind": "raw_diff",
+      "side": "both",
+      "locator": {
+        "path": "picocolors.d.ts",
+        "metadataKey": "archive-member-metadata"
+      },
+      "observationMethod": "raw-tar-member-metadata-v1",
+      "limitations": [
+        "Metadata difference is an observation; risk interpretation is unavailable."
+      ],
+      "contentSha256": "sha256:830fcf99a420a3850c32ccd8464095639ccc2b17a35a6a486c42201a65a0033a",
+      "contentRef": "sha256:830fcf99a420a3850c32ccd8464095639ccc2b17a35a6a486c42201a65a0033a",
+      "contentState": "retained",
+      "evidenceId": "ev_a4af86a817b8540d191e7177"
+    },
+    {
+      "kind": "raw_diff",
+      "side": "both",
+      "locator": {
+        "path": "picocolors.js",
+        "metadataKey": "archive-member-metadata"
+      },
+      "observationMethod": "raw-tar-member-metadata-v1",
+      "limitations": [
+        "Metadata difference is an observation; risk interpretation is unavailable."
+      ],
+      "contentSha256": "sha256:ebd97f79a575ce8b37746a71b78b068a66c32472842e917f1007160d0adc3b7d",
+      "contentRef": "sha256:ebd97f79a575ce8b37746a71b78b068a66c32472842e917f1007160d0adc3b7d",
+      "contentState": "retained",
+      "evidenceId": "ev_dc2c7ae08a0f3614ee76ea2f"
+    },
+    {
+      "kind": "raw_diff",
+      "side": "both",
+      "locator": {
+        "path": "tests/environments.js",
+        "metadataKey": "raw-byte-delta"
+      },
+      "observationMethod": "common-prefix-suffix-byte-span-v1",
+      "limitations": [
+        "One enclosing changed byte span, not semantic equivalence; full member bytes retained."
+      ],
+      "contentSha256": "sha256:5002003f4161d1c7ecfce853bbde8c5f2ecbbf8bf7374ad07a495acdcca0b0dd",
+      "contentRef": "sha256:5002003f4161d1c7ecfce853bbde8c5f2ecbbf8bf7374ad07a495acdcca0b0dd",
+      "contentState": "retained",
+      "evidenceId": "ev_0fbfc47a18dcff8d76119728"
+    },
+    {
+      "kind": "raw_diff",
+      "side": "both",
+      "locator": {
+        "path": "tests/test.js",
+        "metadataKey": "raw-byte-delta"
+      },
+      "observationMethod": "common-prefix-suffix-byte-span-v1",
+      "limitations": [
+        "One enclosing changed byte span, not semantic equivalence; full member bytes retained."
+      ],
+      "contentSha256": "sha256:0cf335de2a1fecc9d58c18761d13f5a9c587737baea25a20c4367e9637ec698b",
+      "contentRef": "sha256:0cf335de2a1fecc9d58c18761d13f5a9c587737baea25a20c4367e9637ec698b",
+      "contentState": "retained",
+      "evidenceId": "ev_9021820584d3b46818cf5e32"
+    },
+    {
+      "kind": "raw_diff",
+      "side": "both",
+      "locator": {
+        "path": "types.d.ts",
+        "metadataKey": "archive-member-metadata"
+      },
+      "observationMethod": "raw-tar-member-metadata-v1",
+      "limitations": [
+        "Metadata difference is an observation; risk interpretation is unavailable."
+      ],
+      "contentSha256": "sha256:8c823b780059b4db863bfcd3bb0bcd42da528fffa5871b64faafe41b390ff979",
+      "contentRef": "sha256:8c823b780059b4db863bfcd3bb0bcd42da528fffa5871b64faafe41b390ff979",
+      "contentState": "retained",
+      "evidenceId": "ev_451a5d3ff516ba1be6866c13"
+    },
+    {
+      "kind": "analysis_note",
+      "side": "both",
+      "locator": {
+        "metadataKey": "path-mapping-and-scope"
+      },
+      "observationMethod": "explicit-prefix-view-v1",
+      "limitations": [
+        "Only archive root/package-subtree prefixes are mapped; original paths and bytes remain unchanged."
+      ],
+      "contentSha256": "sha256:df17302f83d15f3f47a37fa87b49d46a9576abd7ac3fd7d9c656bfab60a8eca0",
+      "contentRef": "sha256:df17302f83d15f3f47a37fa87b49d46a9576abd7ac3fd7d9c656bfab60a8eca0",
+      "contentState": "retained",
+      "evidenceId": "ev_ff3d1b2b95cbeebf8a275769"
+    },
+    {
+      "kind": "analysis_note",
+      "side": "both",
+      "locator": {
+        "metadataKey": "analysis-configuration"
+      },
+      "observationMethod": "heurisko-config-v3",
+      "limitations": [],
+      "contentSha256": "sha256:75391e7122a37b2e05a4d2268cedbb84bfd9d741090c1feb602a1b50ddae5e34",
+      "contentRef": "sha256:75391e7122a37b2e05a4d2268cedbb84bfd9d741090c1feb602a1b50ddae5e34",
+      "contentState": "retained",
+      "evidenceId": "ev_f444ceef3ca3f9d76150a34e"
+    }
+  ],
+  "changes": [
+    {
+      "changeId": "chg_b637ce8594d4a1503ecaa4ec",
+      "status": "removed",
+      "rawEquality": "different",
+      "explanationStrength": "unexplained",
+      "evidenceIds": [
+        "ev_b9aa69f8615ea8911c91532e",
+        "ev_6737807221122685e88a956a"
+      ],
+      "notes": [],
+      "sourcePath": "picocolors-7249f8c5d4825550f70bc1ea98652639933d3bbd/.editorconfig"
+    },
+    {
+      "changeId": "chg_37e8339ba9c621ac4d823cd0",
+      "status": "removed",
+      "rawEquality": "different",
+      "explanationStrength": "unexplained",
+      "evidenceIds": [
+        "ev_6fcd18b69d576ed1a5170cab",
+        "ev_4134d66d2076f8184cd70130"
+      ],
+      "notes": [],
+      "sourcePath": "picocolors-7249f8c5d4825550f70bc1ea98652639933d3bbd/.github/workflows/benchmarks.yaml"
+    },
+    {
+      "changeId": "chg_3a58809135d756f39c57f75c",
+      "status": "removed",
+      "rawEquality": "different",
+      "explanationStrength": "unexplained",
+      "evidenceIds": [
+        "ev_0dc50316325e7e4988211a1c",
+        "ev_713b90f0051187815faac3a7"
+      ],
+      "notes": [],
+      "sourcePath": "picocolors-7249f8c5d4825550f70bc1ea98652639933d3bbd/.github/workflows/testing.yaml"
+    },
+    {
+      "changeId": "chg_6d5d662fb1c34d043680b1c5",
+      "status": "removed",
+      "rawEquality": "different",
+      "explanationStrength": "unexplained",
+      "evidenceIds": [
+        "ev_e5786ae023bb889ce5250e52",
+        "ev_92b12d21e966801482a093d8"
+      ],
+      "notes": [],
+      "sourcePath": "picocolors-7249f8c5d4825550f70bc1ea98652639933d3bbd/.gitignore"
+    },
+    {
+      "changeId": "chg_82edd88447b19acf23d44dee",
+      "status": "removed",
+      "rawEquality": "different",
+      "explanationStrength": "unexplained",
+      "evidenceIds": [
+        "ev_1ef47d6a86992ff1291ebe5f",
+        "ev_cea0a7640d7ecc61a9d6f1c9"
+      ],
+      "notes": [],
+      "sourcePath": "picocolors-7249f8c5d4825550f70bc1ea98652639933d3bbd/CHANGELOG.md"
+    },
+    {
+      "changeId": "chg_427bd0ae4a63176bf4fe1268",
+      "status": "identical",
+      "rawEquality": "equal",
+      "explanationStrength": "exact",
+      "evidenceIds": [
+        "ev_6330c9124ffe21102d0b05dd",
+        "ev_382f5006366ba259c4170ad3",
+        "ev_2c407f8b04cb8fdb1b58bedd"
+      ],
+      "notes": [
+        "Archive metadata differs; inspect the retained metadata delta. rawEquality describes content bytes only."
+      ],
+      "artifactPath": "package/LICENSE",
+      "sourcePath": "picocolors-7249f8c5d4825550f70bc1ea98652639933d3bbd/LICENSE"
+    },
+    {
+      "changeId": "chg_acbd26c6e117c39e917fbd79",
+      "status": "modified",
+      "rawEquality": "different",
+      "explanationStrength": "unexplained",
+      "evidenceIds": [
+        "ev_8577a84c7c0b2523b9a7adf1",
+        "ev_91ed6b0ef67ef8386f9c2a8c",
+        "ev_8eccb72fed3220c6716fdfa6",
+        "ev_b7a8efc56d72a6170dca6029"
+      ],
+      "notes": [
+        "Archive metadata differs; inspect the retained metadata delta. rawEquality describes content bytes only."
+      ],
+      "artifactPath": "package/README.md",
+      "sourcePath": "picocolors-7249f8c5d4825550f70bc1ea98652639933d3bbd/README.md"
+    },
+    {
+      "changeId": "chg_73b8f213e317ee456aa82008",
+      "status": "removed",
+      "rawEquality": "different",
+      "explanationStrength": "unexplained",
+      "evidenceIds": [
+        "ev_bc8728b3a6d3573f54b6a92d",
+        "ev_606d24fe9c3d28b3d87fb639"
+      ],
+      "notes": [],
+      "sourcePath": "picocolors-7249f8c5d4825550f70bc1ea98652639933d3bbd/benchmarks/complex.mjs"
+    },
+    {
+      "changeId": "chg_1874fc0c1a1e538174c18fac",
+      "status": "removed",
+      "rawEquality": "different",
+      "explanationStrength": "unexplained",
+      "evidenceIds": [
+        "ev_f663d74181047fd5c691fbed",
+        "ev_0c42396f94b4d965df63cbe3"
+      ],
+      "notes": [],
+      "sourcePath": "picocolors-7249f8c5d4825550f70bc1ea98652639933d3bbd/benchmarks/loading.mjs"
+    },
+    {
+      "changeId": "chg_fe69e1f07169a0736154fa56",
+      "status": "removed",
+      "rawEquality": "different",
+      "explanationStrength": "unexplained",
+      "evidenceIds": [
+        "ev_30ad5717d0d4aa71c2ca6f82",
+        "ev_fe0d79f7c3f3ce4e9e769ff0"
+      ],
+      "notes": [],
+      "sourcePath": "picocolors-7249f8c5d4825550f70bc1ea98652639933d3bbd/benchmarks/recursion.mjs"
+    },
+    {
+      "changeId": "chg_ae547cc7f8f0cafe9cacb9b2",
+      "status": "removed",
+      "rawEquality": "different",
+      "explanationStrength": "unexplained",
+      "evidenceIds": [
+        "ev_d193c4b42a087fd73013c2d3",
+        "ev_bd09b38fa83318f9326736c5"
+      ],
+      "notes": [],
+      "sourcePath": "picocolors-7249f8c5d4825550f70bc1ea98652639933d3bbd/benchmarks/simple.mjs"
+    },
+    {
+      "changeId": "chg_360b8b40394642b599052eb6",
+      "status": "removed",
+      "rawEquality": "different",
+      "explanationStrength": "unexplained",
+      "evidenceIds": [
+        "ev_c21445462e3a95eaadf9569c",
+        "ev_7e41d73c8d44a4f2a3641017"
+      ],
+      "notes": [],
+      "sourcePath": "picocolors-7249f8c5d4825550f70bc1ea98652639933d3bbd/benchmarks/size.mjs"
+    },
+    {
+      "changeId": "chg_48392969eca8028343a26747",
+      "status": "added",
+      "rawEquality": "different",
+      "explanationStrength": "unexplained",
+      "evidenceIds": [
+        "ev_5c353d54ca56d370b817b457",
+        "ev_305f99771cb2e4d00fbcd7a9"
+      ],
+      "notes": [],
+      "artifactPath": "package/heurisko-inert-marker.js"
+    },
+    {
+      "changeId": "chg_6c49c8951ee8ff1147bff2a9",
+      "status": "modified",
+      "rawEquality": "different",
+      "explanationStrength": "unexplained",
+      "evidenceIds": [
+        "ev_c0c1b7d8cb7b119e6ea1880c",
+        "ev_a894e3cbbc20b3124c7fb225",
+        "ev_4cc84e38f88353d1b0182594",
+        "ev_242a34e804daf891e3f7c878",
+        "ev_1c374f96bf891662bb5b19d9",
+        "ev_304e39caf5b3d48d5e2d865d",
+        "ev_d15461e838129368e3874fc5",
+        "ev_4e9b8e4a26b1b24694445007",
+        "ev_bf60baef2f60db4cebaf38fb",
+        "ev_e147d8f86a36f8c05b2d80b8",
+        "ev_cd5ba659e9cac3825fde1f8f",
+        "ev_c3c67141def991004d5bf9e5",
+        "ev_b5a1dde39855f3a6f40aec5d",
+        "ev_4b73e27ecbb013f4dba9b21f",
+        "ev_152fa32b3a749de283035b91",
+        "ev_99ea0c98c3423d3dc50400a9",
+        "ev_e8e8de8d8f095dbc1f3adb10",
+        "ev_98f52695265a93cecfee6bef",
+        "ev_d4a971236626b4438f85ecd2",
+        "ev_bf2cf56d9c18a5790dc2169c",
+        "ev_b17594b55b74d29a3fc56d28",
+        "ev_533fa3a473fc4a10fe14ba1d",
+        "ev_f05fdbd1265f0c910221fd26",
+        "ev_f2928cdd6823222dc49a2acb",
+        "ev_dc4c9a07f1573fb79a87d447",
+        "ev_e7075cb69f91c7e1b4c4223f",
+        "ev_d69f24e90c44ecf138a9261e"
+      ],
+      "notes": [
+        "Archive metadata differs; inspect the retained metadata delta. rawEquality describes content bytes only."
+      ],
+      "artifactPath": "package/package.json",
+      "sourcePath": "picocolors-7249f8c5d4825550f70bc1ea98652639933d3bbd/package.json"
+    },
+    {
+      "changeId": "chg_b6f0cc32bed3e42e283631fa",
+      "status": "identical",
+      "rawEquality": "equal",
+      "explanationStrength": "exact",
+      "evidenceIds": [
+        "ev_9b74851d7b2196474c3a5142",
+        "ev_196939ad63a98f4a415b5c10",
+        "ev_52e00414ff77424a507b0cc1"
+      ],
+      "notes": [
+        "Archive metadata differs; inspect the retained metadata delta. rawEquality describes content bytes only."
+      ],
+      "artifactPath": "package/picocolors.browser.js",
+      "sourcePath": "picocolors-7249f8c5d4825550f70bc1ea98652639933d3bbd/picocolors.browser.js"
+    },
+    {
+      "changeId": "chg_83fd0097f0995ecc5aa8df1c",
+      "status": "identical",
+      "rawEquality": "equal",
+      "explanationStrength": "exact",
+      "evidenceIds": [
+        "ev_dc18229539c13b73a54e1132",
+        "ev_2eea9e1414aa826006d06ef2",
+        "ev_a4af86a817b8540d191e7177"
+      ],
+      "notes": [
+        "Archive metadata differs; inspect the retained metadata delta. rawEquality describes content bytes only."
+      ],
+      "artifactPath": "package/picocolors.d.ts",
+      "sourcePath": "picocolors-7249f8c5d4825550f70bc1ea98652639933d3bbd/picocolors.d.ts"
+    },
+    {
+      "changeId": "chg_f4f97e152d81a46627367564",
+      "status": "identical",
+      "rawEquality": "equal",
+      "explanationStrength": "exact",
+      "evidenceIds": [
+        "ev_8e229580b03d54518a47b7d4",
+        "ev_2d47f1f6ca82f9dcb9dfbea7",
+        "ev_dc2c7ae08a0f3614ee76ea2f"
+      ],
+      "notes": [
+        "Archive metadata differs; inspect the retained metadata delta. rawEquality describes content bytes only."
+      ],
+      "artifactPath": "package/picocolors.js",
+      "sourcePath": "picocolors-7249f8c5d4825550f70bc1ea98652639933d3bbd/picocolors.js"
+    },
+    {
+      "changeId": "chg_fe1de3f3ebc2c498c08c78b7",
+      "status": "removed",
+      "rawEquality": "different",
+      "explanationStrength": "unexplained",
+      "evidenceIds": [
+        "ev_83707340f58ba6cc1a154473",
+        "ev_0fbfc47a18dcff8d76119728"
+      ],
+      "notes": [],
+      "sourcePath": "picocolors-7249f8c5d4825550f70bc1ea98652639933d3bbd/tests/environments.js"
+    },
+    {
+      "changeId": "chg_198d1b0c93272ddd388cf62b",
+      "status": "removed",
+      "rawEquality": "different",
+      "explanationStrength": "unexplained",
+      "evidenceIds": [
+        "ev_f7e132bab08e5730f064fd14",
+        "ev_9021820584d3b46818cf5e32"
+      ],
+      "notes": [],
+      "sourcePath": "picocolors-7249f8c5d4825550f70bc1ea98652639933d3bbd/tests/test.js"
+    },
+    {
+      "changeId": "chg_68e2fb1b0903c15246c85ec5",
+      "status": "identical",
+      "rawEquality": "equal",
+      "explanationStrength": "exact",
+      "evidenceIds": [
+        "ev_a303bf52f9725d5b1c21b16e",
+        "ev_de81baf3c4ba1cb66bbd1255",
+        "ev_451a5d3ff516ba1be6866c13"
+      ],
+      "notes": [
+        "Archive metadata differs; inspect the retained metadata delta. rawEquality describes content bytes only."
+      ],
+      "artifactPath": "package/types.d.ts",
+      "sourcePath": "picocolors-7249f8c5d4825550f70bc1ea98652639933d3bbd/types.d.ts"
+    }
+  ],
+  "stages": [
+    {
+      "stage": "resolve_artifact",
+      "status": "complete",
+      "errors": []
+    },
+    {
+      "stage": "acquire",
+      "status": "complete",
+      "errors": []
+    },
+    {
+      "stage": "source",
+      "status": "complete",
+      "errors": []
+    },
+    {
+      "stage": "provenance",
+      "status": "skipped",
+      "errors": []
+    },
+    {
+      "stage": "inventory",
+      "status": "complete",
+      "errors": []
+    },
+    {
+      "stage": "build",
+      "status": "skipped",
+      "errors": []
+    },
+    {
+      "stage": "compare",
+      "status": "complete",
+      "errors": []
+    },
+    {
+      "stage": "persist",
+      "status": "complete",
+      "errors": []
+    }
+  ],
+  "coverage": {
+    "artifactFiles": 8,
+    "sourceFiles": 19,
+    "comparedFiles": 20,
+    "analyzedBytes": 40237,
+    "skippedBytes": 0,
+    "unsupportedBytes": 0,
+    "omissions": [],
+    "complete": true,
+    "limitations": []
+  },
+  "limitations": [
+    "Static raw comparison only; generated/build/security interpretation is unavailable without Malhar analysis.",
+    "Source override is user supplied; full commit URL is a comparison target, not proof of release correspondence.",
+    "No submodule or LFS materialization, target scripts, rebuild, provenance or model execution."
+  ]
+}

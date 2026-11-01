@@ -1,0 +1,52 @@
+{
+  "startedAt": "2026-11-01T00:47:15.632018+00:00",
+  "imageId": "sha256:e28e8677c403e2e1c21a110a7a772e2752a2abf84cc67deaf463f316ea474060",
+  "imageConfigUser": "10001:10001",
+  "platform": "linux/amd64",
+  "restrictions": {
+    "network": "none",
+    "readOnlyRoot": true,
+    "memoryBytes": 536870912,
+    "pids": 64,
+    "capabilities": "drop ALL",
+    "noNewPrivileges": true
+  },
+  "scope": "Local application-container smoke only; no Render deployment or live parser execution.",
+  "result": "passed",
+  "checks": {
+    "uid": 10001,
+    "dockerSocketVisible": false,
+    "health": {
+      "status": "ok",
+      "mode": "public-readonly"
+    },
+    "catalogEntries": 3,
+    "reportSha256": [
+      "c06db35768713d8c3b8dc4fc205a02c96e16af39d62dbe607f2c453373cc7f71",
+      "1f09dd8942fa3b379d0dc3cf462772e8c3eedd616597c59f3ccc58176b6d6e1e",
+      "66ea87bddf0319c4ccf8cc0d1e7be0f330eb17dc4fe4531775392692d9799757"
+    ],
+    "evidenceId": "ev_6330c9124ffe21102d0b05dd",
+    "evidenceBytesCompared": 787,
+    "findings": 16,
+    "hostSpoof": "rejected",
+    "originSpoof": "rejected",
+    "mutation": "rejected",
+    "jobs": 0,
+    "sourceSha256": {
+      "apps/web/server/hosted.ts": "67683b9e03a4aebb9c63191e01fe7b094fc44a8e6c8b07af19930db1fab04960",
+      "apps/web/src/home.tsx": "4d6a09529b5f3053cccf585034f232fbcdab145c2759e632dccb76a8a40292b3",
+      "apps/web/server/service.ts": "26af46f92d27472fbfc98c10458f0e374896cfee5b65a556cad41956571acf92",
+      "apps/web/server/main.ts": "ab7c108fe0f0bf7987c64d3b50daa46c0f0875626c8b4f0bddfe220410c568e5"
+    }
+  },
+  "logs": "Heurisko public captured-report explorer\nhttps://heurisko-check.onrender.com\nRead-only public examples; live analysis, uploads and reopening are unavailable on this host.\n",
+  "cleanup": {
+    "stopExitCode": 0,
+    "exactContainerAbsent": true,
+    "initialImmediateAbsenceCheck": false,
+    "confirmedBy": "owned image/time-matched destroy event supplies full container ID; subsequent successful exact-ID ls is empty"
+  },
+  "finishedAt": "2026-11-01T00:47:27.927035+00:00",
+  "containerId": "a4bc5365c7949b76f060f0c6fcf40bd1c2518e0dcae9fd0d3c049c0a07a0960c"
+}

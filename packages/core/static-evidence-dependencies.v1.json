@@ -1,0 +1,72 @@
+{
+  "version": "heurisko-static-evidence-dependencies-v1",
+  "observedAt": "2026-10-31",
+  "runtime": {
+    "node": "22.23.4",
+    "hostValidationPython": "3.13.2",
+    "parserPython": "3.13.18",
+    "pnpm": "10.14.0",
+    "testedHost": "macOS arm64",
+    "testedParser": "Linux arm64 in installed Docker Desktop VM",
+    "dockerEngine": "28.4.0",
+    "dockerCLI": "28.4.0",
+    "image": "python:3.13.18-slim-bookworm@sha256:281d39ff02e3b389401586134ff9e6572954687822a58055ec07a60ded4e0b7f",
+    "linuxArm64Manifest": "sha256:15c240ab61e2582e3513e1d8f6f5ae638b5c1625e5746d4b148152c977180275",
+    "linuxAmd64Manifest": "sha256:70bda1e795ded2a684ef9815955e05829b14ee5bb5c3eb2a940648e88f10fce9",
+    "imageObservedBytes": 43837864,
+    "componentsFile": "parser-image-components.v1.json",
+    "componentsFileSha256": "0034c555d2b6633a32de2b5f3d631f31f64949b5135dcb6c51506064bbe40850"
+  },
+  "admission": {
+    "source": "Official Docker library/python exact tag and OCI index; digest-pinned pull completed",
+    "imageRevision": "152874b138f0b1c4699fbdcb52b174608cfbfff5",
+    "signatureVerification": "Not independently performed; OCI digest pin is byte identity, not provenance acceptance",
+    "newNpmRuntimeDependencies": [],
+    "apiSurface": "Node HTTPS/DNS/fs/child_process, Python tarfile/gzip/resource, Docker create/start/kill/rm CLI; actual fixtures exercise these APIs",
+    "platformFailure": "macOS RLIMIT_AS rejected the 256 MiB cap. No host fallback; only the restricted Linux parser is admitted. Missing daemon/image/cgroups yields incomplete/unavailable evidence.",
+    "resourceBehavior": "10 CPU seconds, 256 MiB cgroup plus address-space limit, no swap, 30-second job wall deadline, 16 PIDs, no capabilities, no-new-privileges, read-only root/input/worker, network none, bounded private output only. Measurements and blocked allocation/egress/write/CPU probes are retained."
+  },
+  "security": {
+    "python": "Official Python 3.13.18 security release dated 2026-10-25 inspected; includes additional tarfile filter fixes, though this implementation never uses extraction filters or filesystem extraction.",
+    "osImage": "Exact Debian package versions and copyright-file hashes recorded; no full image CVE scan or general exploit-containment certification claimed.",
+    "scope": "Trusted static parser only. This is not an approved hostile rebuild worker."
+  },
+  "rights": {
+    "python": "PSF License and bundled third-party notices remain in official runtime image",
+    "image": "Debian image components retain their own copyright and licenses; per-component notice-file digests recorded",
+    "docker": "Existing separately installed runtime; no Docker engine/Desktop/image binaries are vendored or redistributed",
+    "npmDependencies": "S1 pins and notices remain in foundation-dependencies.v1.json",
+    "publicCases": "picocolors@1.1.1 ISC; original LICENSE and raw archives retained. Mutated local copy is explicitly labeled and never uploaded.",
+    "malhar": "Team-supplied M0 and distinct uncommitted M1 reviewed in ignored isolated copies; no new runtime npm dependency, no model or resolver admitted."
+  },
+  "sources": [
+    "https://hub.docker.com/_/python",
+    "https://www.python.org/downloads/release/python-31318/",
+    "https://docs.python.org/3.13/library/tarfile.html",
+    "https://docs.python.org/3.13/library/resource.html",
+    "https://docs.docker.com/engine/containers/resource_constraints/",
+    "https://registry.npmjs.org/picocolors/1.1.1"
+  ],
+  "auditRepair20261101": {
+    "authorization": "Shane requested fixing the S1-S3 audit findings; no new dependency/runtime/model admission",
+    "safetyProfile": "heurisko-static-v4",
+    "dockerCreateClientTimeoutMs": 30000,
+    "dockerKillRemoveClientTimeoutMs": 10000,
+    "parserWallDeadlineMs": 30000,
+    "scope": "Creation acknowledgment is awaited within its bounded control window; a passed wall deadline forbids start. Cleanup may require a separate bounded control window. CPU/memory/network/mount restrictions are unchanged. Uncertain creation/removal retains job records/spool/locks; no absence-based automatic unlock.",
+    "recovery": "Explicit stopped immutable container ID + matching store label; non-forced removal; exact absence confirmation; immutable receipt before releasing own spool/locks. Missing object alone is insufficient.",
+    "validation": "Targeted regressions and final serial suite/replay receipts are linked from docs/Audit Repairs and Malhar Handoff.md. Earlier parallel validation exposed lost create acknowledgments and failed closed; those failures are retained in the repair receipt."
+  },
+  "linuxHandoffFollowup20261101": {
+    "trigger": "Draft PR #3 Linux S2 failed with unreadable worker journals; worker UID 65534 and umask 077 produced 0600 files on Linux, unlike Docker Desktop ownership mapping.",
+    "safetyProfile": "heurisko-static-v5",
+    "transportModes": {
+      "privateHostJobParent": "0700",
+      "journalAndMemberSpool": "0644 non-executable; readable by host UID after restricted job stops",
+      "persistedCAS": "unchanged private host-owned publication"
+    },
+    "invariants": "Worker remains UID 65534; CPU/memory/PID/network/capability/read-only mounts unchanged. Numeric spool names and post-stop hash validation unchanged. Other host users cannot traverse the private 0700 parent.",
+    "regression": "Actual restricted parser checks runtime UID/journal mode, host readability of member/journal files and 0700 private job parent. Journal permission/read failures no longer masquerade as size limits.",
+    "history": "Earlier captures remain immutable historical code receipts. Fresh code-bound replay under examples/handoff/current."
+  }
+}

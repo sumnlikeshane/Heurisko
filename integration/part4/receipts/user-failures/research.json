@@ -1,0 +1,52 @@
+{
+  "scope": "Targeted primary-source and retained-byte investigation; no verified release binding",
+  "sources": [
+    {
+      "url": "https://github.com/alexeyraspopov/picocolors/releases/tag/v1.1.1",
+      "observation": "GitHub release page links 7249f8c5d4825550f70bc1ea98652639933d3bbd; retrieved through web fallback."
+    },
+    {
+      "url": "https://github.com/alexeyraspopov/picocolors/commit/7249f8c5d4825550f70bc1ea98652639933d3bbd",
+      "observation": "Commit changes package.json version label 1.1.0 to 1.1.1 and adds changelog; parent 6f0a4638348ed20633d623ee973f9c9a96f65104."
+    },
+    {
+      "url": "https://registry.npmjs.org/picocolors/1.1.1",
+      "observation": "Historical exact-version metadata is retained in the unchanged reproduction store. gitHead is 6f0a4638348ed20633d623ee973f9c9a96f65104, while artifact version is 1.1.1. Fresh acquisition is separately recorded by product workflow."
+    }
+  ],
+  "reproduction": {
+    "reportId": "report_67c88c791c269dab8cab5aff",
+    "contentRef": "sha256:dd4fb19136fa91ca1581336c6fbc22b864b86e413eaa9978ece3ee0f08c52a3b",
+    "versionDelta": "ev_3ca16ad46cd957d737ef0c18",
+    "artifactValue": "1.1.1",
+    "sourceValue": "1.1.0",
+    "artifactRange": [
+      39,
+      46
+    ],
+    "sourceRange": [
+      39,
+      46
+    ],
+    "tagClaims": [
+      "SOURCE_TAG_RATE_LIMITED",
+      "SOURCE_TAG_DISCOVERY_SKIPPED_RATE_LIMIT"
+    ],
+    "inventoryComplete": true,
+    "rawComparisonComplete": true,
+    "absenceSuppressedByAmbiguity": true
+  },
+  "fixtureChoice": {
+    "genuineArtifact": "picocolors@1.1.1",
+    "comparisonCandidate": "7249f8c5d4825550f70bc1ea98652639933d3bbd",
+    "subdirectory": "",
+    "claimConflict": "registry gitHead differs from release-tag candidate; preserve ambiguity",
+    "localMutation": "Existing separately hashed inert picocolors local-input; never execute its marker",
+    "releaseBindingVerified": false
+  },
+  "retrievalLimits": [
+    "Firecrawl search was not run because connected account had insufficient credits.",
+    "Web registry open failed; retained exact metadata and fresh controlled core acquisition supply the registry bytes.",
+    "GitHub page/tag/commit and matching version labels do not cryptographically bind registry bytes to source."
+  ]
+}

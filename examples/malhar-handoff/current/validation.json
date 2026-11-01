@@ -1,0 +1,93 @@
+{
+  "reviewedAt": "2026-10-31T22:42:31.506910+00:00",
+  "reviewedHead": "e8b8116f9960527d0a82e066059d7792c405defe",
+  "pullRequest": {
+    "number": 4,
+    "url": "https://github.com/sumnlikeshane/Heurisko/pull/4",
+    "headSha": "e8b8116f9960527d0a82e066059d7792c405defe",
+    "base": "main",
+    "draft": false
+  },
+  "remoteCI": [
+    {
+      "id": 41249304087,
+      "html_url": "https://github.com/sumnlikeshane/Heurisko/actions/runs/41249304087",
+      "status": "completed",
+      "conclusion": "success",
+      "head_sha": "e8b8116f9960527d0a82e066059d7792c405defe",
+      "event": "pull_request",
+      "jobs": [
+        {
+          "id": 124679268253,
+          "name": "G0 contract checks",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 124679268511,
+          "name": "Documentation integrity",
+          "status": "completed",
+          "conclusion": "success"
+        }
+      ]
+    }
+  ],
+  "localChecks": {
+    "runtime": {
+      "node": "22.23.4",
+      "pnpm": "10.14.0",
+      "typescript": "5.8.3",
+      "python": "3.13.2",
+      "jsonschema": "4.26.0",
+      "additionalRagUnitAndSavedEvaluatorPython": "3.14.7"
+    },
+    "setup": "pnpm install --offline --frozen-lockfile --ignore-scripts --store-dir <existing-project-store>: passed; default-store attempt missing TypeScript tarball was unsuccessful",
+    "pnpm run typecheck": "passed",
+    "pnpm run test:contracts": "passed; includes M1/M2 validators and real setuptools/mocked provider probes",
+    "python3 -m unittest discover -s experiments/rag -p test_*.py": "10 passed",
+    "researchSnapshot": "15/15 SHA256SUMS verified",
+    "branchMarkdownLinks": "30 files passed",
+    "v12SavedMetrics": {
+      "questions": 2,
+      "recallAt5": 1.0,
+      "precisionAt5": 0.8,
+      "mrrAt5": 0.75,
+      "citationIdsValid": 4,
+      "citationIdsChecked": 4,
+      "safeGateAccuracy": 1.0,
+      "rawModelAbstentionAccuracy": 0.5
+    },
+    "modelOffHandoff": "three passed; lifecycle finding counts 0/0/1; input unchanged; known citations; no model",
+    "finalLocalMarkdownLinks": "53 files passed",
+    "git diff --check": "passed",
+    "fixtureStore": "341 content-addressed blob hashes verified; baseline/mutation archive hashes and exact value spans verified",
+    "retainedReportInspect": "original report/store reopens through unchanged producer; expected incomplete exit 2"
+  },
+  "freshProducer": {
+    "head": "81346271f5a3789b4b43fd8f379014656011823d",
+    "esbuildExit": 2,
+    "scope": "new static npm artifact/immutable source capture; manifests fully retained",
+    "limits": [
+      "ARCHIVE_UNSUPPORTED_ENTRY source",
+      "incomplete inventory/comparison",
+      "unverified source/provenance",
+      "no rebuild or target execution"
+    ]
+  },
+  "publication": {
+    "prCreated": true,
+    "newCommit": false,
+    "push": false,
+    "merge": false,
+    "externalTeammateMessage": false,
+    "fixtureAndReviewLocation": "Published PR body plus local files; new local receipts are not branch contents at e8b8116"
+  },
+  "productModelRunThisTask": false,
+  "codingAssistant": "Codex",
+  "openRouterDemoOrganizerConfirmation": "still required",
+  "sourceRetrieval": {
+    "SLSA": "Official approved SLSA v1.2 Build Track Basics read via web retrieval",
+    "url": "https://slsa.dev/spec/v1.2/build-track-basics",
+    "Firecrawl": "Not run: connected account insufficient credits; official web retrieval used as fallback"
+  }
+}

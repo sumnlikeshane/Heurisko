@@ -1,0 +1,20 @@
+  HEURISKO                                                  
+   H Home    I Investigations     M Monitoring              
+  ────────────────────────────────────────────────────────  
+  picocolors@1.1.1 / LOCAL INPUT / HISTORICAL / complete …  
+  1 Ov  2 Find  3 Files  4 Src  5 AI  6 Scope               
+  Historical — online checks have not refreshed · i Ident…  
+  ┌─ > Overview / Outcomes ────────────────────── 1-8/65 ┐  
+  │ ESTABLISHED OBSERVATION                              │  
+  │ Source and artifact differences are recorded. Review │  
+  │ their evidence and the unresolved scope.             │  
+  │                                                      │  
+  │ INDEPENDENT OUTCOMES                                 │  
+  │ Artifact integrity      Not checked                  │  
+  │ Source association      User selected                │  
+  │ Provenance              Not checked                  │  
+  └──────────────────────────────────────────────────────┘  
+  Per-report UI state reset; report unchanged.              
+  Tab focus  Enter inspect  1-6 sections  ? help  q quit    
+                                                            
+                                                            

@@ -1,0 +1,35 @@
+  HEURISKO   H Home    I Investigations     M Monitoring                                                                
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+  picocolors@1.1.1 / LOCAL INPUT / HISTORICAL / complete / Captured 2026-10-31T21:48:41Z                                
+  1 Overview   2 Findings   3 Files   4 Source   5 AI   6 Coverage                                                      
+  Historical — online checks have not refreshed · i Identity                                                            
+  Findings                                                                                                              
+  priority: all / severity: all / confidence: all / rule: all                                                           
+  ┌─ > Findings ─────────────── 16 ┐ ┌─ Observation & assessment ────────────────────────────────────────────────────┐  
+  │ > Package lifecycle script     │ │ Observation:                                                                  │  
+  │   entry changed                │ │ Manifest key scripts.postinstall is reported as changed.                      │  
+  │   medium priority / high conf… │ │                                                                               │  
+  │                                │ │ Significance:                                                                 │  
+  │   File change remains          │ │ Lifecycle entries can affect package-manager installation behavior; inspect   │  
+  │   unexplained                  │ │ the exact command and its source before deciding what it does. This           │  
+  │   low priority / limited conf… │ │ observation does not establish malicious intent.                              │  
+  │                                │ │                                                                               │  
+  │   File change remains          │ │ Severity:                                                                     │  
+  │   unexplained                  │ │ medium                                                                        │  
+  │   low priority / limited conf… │ │                                                                               │  
+  │                                │ │ Review priority:                                                              │  
+  │   File change remains          │ │ medium                                                                        │  
+  │   unexplained                  │ │                                                                               │  
+  │   low priority / limited conf… │ │ Evidence confidence:                                                          │  
+  │                                │ │ high                                                                          │  
+  │   File change remains          │ │                                                                               │  
+  │   unexplained                  │ │ Explanation strength:                                                         │  
+  │   low priority / limited conf… │ │ exact                                                                         │  
+  │                                │ │                                                                               │  
+  │ 1 / 16 · Enter inspect         │ │ Evidence:                                                                     │  
+  └────────────────────────────────┘ │ 1-21 / 37  j/k scroll                                                         │  
+                                     └───────────────────────────────────────────────────────────────────────────────┘  
+  Findings                                                                                                              
+  j/k move  Enter inspect  e evidence  Tab panes  / filter  ? help  q quit                                              
+                                                                                                                        
+                                                                                                                        

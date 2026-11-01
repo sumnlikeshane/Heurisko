@@ -1,5 +1,13 @@
 # Heurisko
 
+**Current local integration:** new CLI, TUI and browser investigations share Malhar's reviewed deterministic rules from `55240e9` through one bounded, hash-checked evidence wrapper. [Module identity, configuration and limits](packages/intelligence-reviewed/README.md) distinguish this implementation from historical raw-only reports. Actual model inference, monitoring and provenance/policy verification remain open. See [representative inputs and actual generated outputs](examples/README.md), the [demo runbook](docs/Final%20Hour%20Demo%20Runbook.md) and [fresh validation receipts](examples/final-hour/20261101-053912/README.md). This final integration remains local and uncommitted.
+
+**Latest local web work:** Shane and Codex own the overhaul in [apps/web](apps/web/README.md). The existing application now has a coherent Home/Docs/Workspace shell, reviewed exact-target input, real job activity, a report/evidence workbench and contextual save/open. Current source-bound validation, remaining acceptance and U01–U18 dispositions belong to the [single gap backlog](docs/Web%20Application%20Gap%20Plan.md) and [continuation](docs/WEB_CONTINUATION.md). This work remains local and uncommitted; the published checkpoint below does not include it. No design is human-approved or frozen.
+
+**Published workspace checkpoint handoff:** [Malhar start here](docs/HANDOFF_CURRENT.md). Shane authorized publishing this webapp/S4 checkpoint through draft PR #3 after the completed TUI checkpoint. Earlier checkpoint hashes and no-publication receipts below are historical; use the PR for the current commit and CI result.
+
+The [M1/M2 handoff review](docs/Malhar%20M1%20M2%20Handoff%20Review.md) records the pinned genuine npm lifecycle control, separately hashed local mutation and independent v12 citation/action review. [PR #4](https://github.com/sumnlikeshane/Heurisko/pull/4) at `e8b8116` passes both [CI jobs](https://github.com/sumnlikeshane/Heurisko/actions/runs/41249304087). Fresh fixture/review receipts remain local; no product-model integration or merge is claimed. Hosted OpenRouter P04 demo use still needs organizer confirmation, and “SLSA Level 3+” is not adopted as project policy.
+
 **Investigate how a published software package relates to its claimed source, explain the differences, and keep the evidence inspectable.**
 
 Heurisko is a software supply-chain integrity project for **Problem 04 — Published Package vs Source Code Integrity Analyzer** at Hacktoberfest 2026 Hack Day Sonipat. It asks a precise question:
@@ -8,9 +16,17 @@ Heurisko is a software supply-chain integrity project for **Problem 04 — Publi
 
 Developers often review a Git repository but install a tarball or wheel from a package registry. Those inputs can differ because of compilation, bundling, packaging rules, generated metadata, native code, or unauthorized changes. Heurisko's proposed role is to investigate that relationship and show the evidence behind each explanation and suspicious finding.
 
-**Current status — 31 October 2026:** the six planning phases and Shane–Malhar engineering agreement are approved and indexed in the [approved decision register](docs/Approved%20Decision%20Register.md). The synthetic G0 contract is integrated under [packages/contracts](packages/contracts/package.json); local checks and [PR #2 CI](https://github.com/sumnlikeshane/Heurisko/actions/runs/41222794704) passed on `0e6adb9`. Shane instructed Codex to review the exact contract and treat the team as accepting it on that review; the [E09 record](docs/Approved/HEURISKO_SHANE_MALHAR_PRE_SPLIT_AGREEMENT_APPROVED_v0.1.0.md#e09-delegated-g0-contract-acceptance--31-october-2026) states the scope. The PR is not merged. **No analysis engine, CLI, TUI, web application, release monitor, or model integration exists.** There is no runnable analyzer yet.
+**Current status — 1 November 2026:** the six planning phases and Shane–Malhar engineering agreement are approved and indexed in the [approved decision register](docs/Approved%20Decision%20Register.md). The synthetic G0 contract is integrated under [packages/contracts](packages/contracts/package.json); local checks and [PR #2 CI](https://github.com/sumnlikeshane/Heurisko/actions/runs/41222794704) passed on `0e6adb9`. Shane instructed Codex to review the exact contract and treat the team as accepting it on that review; the [E09 record](docs/Approved/HEURISKO_SHANE_MALHAR_PRE_SPLIT_AGREEMENT_APPROVED_v0.1.0.md#e09-delegated-g0-contract-acceptance--31-october-2026) states the scope. PR #2 is now merged (read-only API check in Part 1). The local S2 producer now accepts a local tar/tar.gz archive and explicitly pinned source, retains immutable evidence, computes raw member/manifest deltas, and provides real `analyze`/`inspect` commands. [Actual S2 captures and outputs](examples/s2/current/README.md) include an inert labeled local mutation and separate model-off checks of Malhar's received M0/M1 code. S3 adds exact public npm acquisition (including scoped names), SHA-512/SHA-256 integrity, separate immutable source claims/subtrees and retained unverified attestations. [Actual S3 corpus and handoff](examples/s3/current/README.md) preserve conflicts and unsupported scope. **The local browser application now exists in [apps/web](apps/web/README.md), with terminal-style presentation, validated report/evidence access and portable export/import. Provenance verification, full TUI acceptance, release monitoring and product model integration remain open.** See the [execution checkpoint](docs/Shane%20Implementation%20Plan.md#12-execution-checkpoint--update-after-each-part) for evidence and limits.
 
 Team **InBuildingPhase**: **Shane Joseph** and **Malhar Mahanor**. See [HACKATHON.md](HACKATHON.md) for the original declaration and [AGENTS.md](AGENTS.md) for contributor instructions and approval boundaries.
+
+**Part 4 terminal integration:** [Local Ink TUI](packages/tui/README.md) now launches with `node packages/cli/dist/index.js` in a TTY; `tui REPORT --store DIR` opens historical observations and raw evidence, while redirected commands stay useful. New local investigations review immutable retained snapshots, show actual engine progress and request cancellation while awaiting settlement. [Local S4 acceptance](docs/Part%204%20Integration%20Readiness%20Report.md#resumed-product-integration--1-november-2026) passes its keyboard/raw-evidence/error/unknown minimum. Joint G3, automatic product intelligence adoption, monitoring, TUI export, genuine inference and full design approval remain open. The [real local M1 validation report](examples/part4/current/README.md) preserves a separate identity; original reports remain historical. Nothing from this checkpoint was staged, committed or published.
+
+**Audit repair follow-up:** [repair details and Malhar handoff](docs/Audit%20Repairs%20and%20Malhar%20Handoff.md). Module implementation/configuration digests now distinguish report identities; stage callbacks terminate truthfully; uncertain Docker creation retains recovery records and locks. [New offline replay outputs](examples/audit-fixes/current/README.md) preserve original public observation times and supersede current-code claims for the older S3 capture. The original orphan's exact causal history remains unproven; runtime inference cancellation, intelligence/policy adoption and full TUI acceptance remain open.
+
+**Published integration checkpoint:** [draft PR #3](https://github.com/sumnlikeshane/Heurisko/pull/3), branch `handoff/s1-s3-audit-fixes`, commit `81346271f5a3789b4b43fd8f379014656011823d`. [Handoff instructions](docs/HANDOFF_S1_S3.md) describe the evidence, adapter identity and Malhar deliverables. S4 continues separately; main is unmerged. [Exact-head Linux CI](https://github.com/sumnlikeshane/Heurisko/actions/runs/41238407478) passed both producer and documentation jobs on `8134627`.
+
+**Linux handoff correction:** initial draft-PR Linux validation exposed unreadable UID-65534 output. The current worker publishes non-executable transport files inside its private job parent, with a host-readability/privacy regression. Latest [code-bound replay](examples/handoff/current/README.md) supersedes older current-code claims; original captures remain historical. Check draft PR #3 for its exact final CI result.
 
 ## Contents
 
@@ -66,7 +82,7 @@ The organizer's complete P04 scope has eight capabilities:
 | Provide an evidence-supported risk assessment | Present findings, potential impact, evidence confidence, and limitations. |
 | Monitor selected packages' new releases | Persist discovery state and analyze newly observed artifacts through the same engine. |
 
-**npm-first is the approved delivery sequence.** PyPI is the next ecosystem expansion and a design check for artifact-specific identity. Shipping both registries simultaneously is not an organizer requirement. Basic monitoring is required; a hosted monitoring dashboard is optional. All capabilities remain unimplemented.
+**npm-first is the approved delivery sequence.** PyPI is the next ecosystem expansion and a design check for artifact-specific identity. Shipping both registries simultaneously is not an organizer requirement. Basic monitoring is required; a hosted monitoring dashboard is optional. The S3 npm/local evidence producer is implemented; admitted provenance verification, intelligence integration, interfaces and monitoring remain incomplete.
 
 The proposed workflows serve several users:
 
@@ -112,7 +128,7 @@ No package-name allowlist or broad normalization should silently convert a resid
 
 ## Evidence and report semantics
 
-The proposed report separates five dimensions. These are design enums, not output from an executed analysis.
+The historical research design below separates five dimensions. Actual S2 outputs use the six accepted G0 outcome fields shown in the retained examples; these older enum names are not the runtime schema.
 
 | Dimension | Proposed states | Meaning |
 |---|---|---|
@@ -161,7 +177,7 @@ flowchart TD
 | Policy evaluator | Evaluate explicit CI rules over findings and completeness, preserving missing-evidence outcomes. |
 | Interfaces | Select inputs and render the common report with escaped content and visible uncertainty. |
 
-The approved direction is **one TypeScript/Node engine and CLI in a pnpm workspace, a mandatory React/Ink TUI, a React/TypeScript browser, and JSON Schema contracts**. The G0 schema/types live in the root workspace and have local checks, PR CI and Shane's delegated acceptance; PR merge is pending. SQLite and content-addressed local storage are design directions; exact storage policy and versions remain open. The original research also assessed Go/Bubble Tea, Rust/Ratatui and Python/Textual as historical alternatives.
+The approved direction is **one TypeScript/Node engine and CLI in a pnpm workspace, a mandatory React/Ink TUI, a React/TypeScript browser, and JSON Schema contracts**. The G0 schema/types live in the root workspace and have local checks, PR CI and Shane's delegated acceptance; PR #2 is merged. Content-addressed evidence and immutable observation/run records now work locally; SQLite monitor metadata remains a design direction. The S2 parser uses a digest-pinned restricted Linux container because macOS could not enforce the required address-space limit. The numerical controls and limitations are recorded in the checkpoint. The original research also assessed Go/Bubble Tea, Rust/Ratatui and Python/Textual as historical alternatives.
 
 Normal local analysis and exported-report viewing should not require an account or hosted backend. Fresh registry/source evidence still requires network access unless already cached. An optional API can expose the same engine; heavy analysis and rebuilds need suitable isolated job workers rather than assumptions about serverless duration or filesystem limits.
 
@@ -171,9 +187,9 @@ Separate bounded queues are proposed for downloads, parsing, inference, and rebu
 
 ## Terminal and browser experience
 
-The CLI is the approved scriptable entry point, while `heurisko` should open a mandatory keyboard-driven Ink TUI. The TUI navigates the shared report rather than implementing another analyzer. The browser would provide room for artifact/source trees, side-by-side differences, provenance details, transformation links, and stable evidence references alongside installation and usage documentation.
+The CLI is the scriptable entry point. With no arguments it opens the product keyboard-driven Ink TUI when stdin/stdout are terminals; `tui REPORT` opens retained evidence and redirected commands remain scriptable. The TUI navigates the shared report rather than implementing another analyzer. The [local browser](apps/web/README.md) opens explicitly supplied or dynamically admitted saved reports in a near-black/cyan workspace with system typography for reading and monospace for paths/code, with source/artifact byte panes, stable evidence references, separate outcomes, source/provenance/coverage and stored finding/AI records. Its investigation workspace now initiates exact npm/local analyses through the shared engine, alongside landing and sidebar documentation. Saved viewing makes no fresh acquisition; explicit analysis can retrieve public npm/GitHub evidence. [New receipts](examples/web-investigation/README.md) separate engine/API parity from remaining browser acceptance.
 
-The following command shapes are **illustrative design proposals only**. The `heurisko` executable does not exist in this repository.
+The following command shapes retain the broader **illustrative design proposals**. Exact current `analyze`, `inspect` and TUI syntax is in the [CLI reference](docs/CLI%20Reference.md). Exact public npm and local archives are implemented. PyPI, monitoring and the other expansion commands below remain future work; the illustrative flags and placeholders below are not the current parser contract.
 
 ```text
 heurisko analyze npm:@scope/name@1.2.3 --format json
@@ -192,7 +208,7 @@ heurisko serve --local <report>
 
 Registry-qualified inputs avoid name collisions. A PyPI version with multiple distributions needs an exact artifact or an explicitly recorded selection policy; checking one wheel does not check every wheel.
 
-Human output should lead with artifact identity, source association, findings, and incomplete stages. Machine mode should emit one versioned JSON document on stdout and progress on stderr. Distinct process outcomes are proposed for policy pass, policy violation, incomplete analysis, and invocation/internal error; the approved initial exit mapping is 0/1/2/3, with multi-condition precedence still to specify and test. SARIF would project actionable findings while full JSON retains provenance and coverage.
+Human output should lead with artifact identity, source association, findings, and incomplete stages. Machine mode should emit one versioned JSON document on stdout and progress on stderr. Distinct process outcomes are proposed for policy pass, policy violation, incomplete analysis, and invocation/internal error; the approved initial exit mapping is 0/1/2/3, with locally tested S2 precedence: no usable report → 3; otherwise configured violation → 1; otherwise materially incomplete/indeterminate → 2; otherwise → 0. Final shared policy review remains pending. SARIF would project actionable findings while full JSON retains provenance and coverage.
 
 The viewer should distinguish byte matches, rebuilt transformations, source-map claims, and model hypotheses. It should keep raw differences available, support keyboard navigation and accessible labels, and handle large lists/diffs without hiding skipped content. An optional loopback API needs a per-session token and origin checks. Exported reports should remain inert; package HTML, SVG, Markdown, or scripts must never become trusted application content.
 
@@ -242,7 +258,7 @@ Heurisko will inspect adversarial inputs. Its proposed default path retrieves an
 - **Model and rendering isolation:** give the explanation model no action authority; treat source, filenames, logs, and model output as untrusted text. Escape browser content and terminal control sequences.
 - **Data and publication:** the event uses public data only. Public availability does not automatically grant redistribution rights. Never publish tampered packages or automated issues/comments on real projects. Hosted retention, sharing, deletion, access, and quotas remain undecided.
 
-These are required design boundaries for future work, **not demonstrated security properties of an implementation**. The [verification strategy](docs/Heurisko_Research/HEURISKO_VERIFICATION_STRATEGY.md) specifies containment and adversarial tests.
+Static producer boundary checks are documented below. Rebuild and hosted-operation containment remain unimplemented and undemonstrated. The [verification strategy](docs/Heurisko_Research/HEURISKO_VERIFICATION_STRATEGY.md) specifies containment and adversarial tests.
 
 ## Reuse and differentiation
 
@@ -258,11 +274,11 @@ Heurisko should own investigation orchestration, artifact/source relationship ac
 | GuardDog, OSV, Scorecard, Socket, Snyk | Potential complementary behavior, advisory, or repository context, separate from source correspondence. Hosted services are not mandatory engine dependencies. |
 | Dependabot and Renovate | Future CI boundaries for analyzing the exact releases proposed by update tools. |
 
-All integrations are research proposals. Exact released versions, licenses/notices, API stability, runtime compatibility, and resource behavior require admission checks. No dependency is installed or integrated. Heurisko does not claim to be the first package-diff tool, rebuild service, or browser artifact explorer. See [tooling and reuse](docs/Heurisko_Research/HEURISKO_TOOLING_AND_REUSE.md) for the full comparison.
+All integrations are research proposals. Exact released versions, licenses/notices, API stability, runtime compatibility, and resource behavior require admission checks. No specialist analyzer integration is installed; the S1 foundation uses the pinned validator/tooling described below. Heurisko does not claim to be the first package-diff tool, rebuild service, or browser artifact explorer. See [tooling and reuse](docs/Heurisko_Research/HEURISKO_TOOLING_AND_REUSE.md) for the full comparison.
 
 ## Verification and demonstration
 
-**No product tests, rebuilds, detector benchmarks, or model inference have run.** Research defines a falsifiable validation plan with four separately labeled corpus strata:
+**S1–S3 boundary/producer tests and real model-off consumer handshakes have run; no rebuilds, detector accuracy benchmark or model inference has run.** Research defines a falsifiable validation plan with four separately labeled corpus strata:
 
 | Corpus stratum | What it can establish |
 |---|---|
@@ -281,6 +297,8 @@ The proposed eight-minute demo shows a genuine build transformation, a clearly l
 
 ## Implementation roadmap
 
+Shane's current working sequence is the [eight-hour implementation plan](docs/Shane%20Implementation%20Plan.md), with one part per session, completion gates, Malhar integration dependencies and copy-paste next-session prompts. It covers Shane's work only; the rolling checkpoint now records local S1–S3 foundation and producer work and the remaining analyzer milestones.
+
 The original research roadmap below predates approval. Its gates remain useful as a historical dependency sketch; the [team development checklist](docs/Team%20Development%20Checklist.md) now owns the approved G0–G6 implementation sequence.
 
 | Phase | Deliverable and acceptance focus |
@@ -296,30 +314,85 @@ The original research roadmap below predates approval. Its gates remain useful a
 
 P5 can develop after acquisition/report contracts stabilize; it need not wait for every UI. A complete P04 claim requires the eight official capabilities, meaningful actual model work, and required repository evidence. See the [implementation roadmap](docs/Heurisko_Research/HEURISKO_IMPLEMENTATION_ROADMAP.md) for dependencies and phase gates.
 
+## Local browser usage
+
+The application lives in **[apps/web](apps/web/README.md)**, not a top-level `webapp` directory. The browser now includes a landing page, complete sidebar CLI/browser documentation, exact npm/local investigation, stage progress/cancel requests, report/evidence navigation, dynamic reopening and explicit downloads/portable import. The saved-report viewer remains the historical **first slice**; full browser acceptance and broader engine-dependent parity remain open. See the [full web scope and parity map](docs/Web%20Application%20Product%20Scope.md), [current CLI reference](docs/CLI%20Reference.md) and [continuation handoff/exact next-run prompt](docs/WEB_CONTINUATION.md). The historical [first-slice receipt](examples/web/current/README.md) retains its partial browser acceptance status.
+
+W0–W4 of the [single web gap plan](docs/Web%20Application%20Gap%20Plan.md) already established native routes/history, separate draft/job/report contexts, review/start, documentation and retained evidence/export workflows. The current overhaul refines those same flows through one shell, guided review/run, bounded finding/file exploration and readable user guidance. Historical [web-gap receipts](examples/web-gap/README.md) retain their original validation and browser limits; use the current backlog/continuation for assembled acceptance and shared integration dependencies.
+
+With the pinned setup below:
+
+```sh
+pnpm run build
+pnpm web --report examples/handoff/current/B1.report.json --store examples/handoff/current/store --report examples/handoff/current/B2.report.json --store examples/handoff/current/store
+```
+
+Open the private session URL printed locally; Ctrl+C ends access. The reader uses loopback only. Saved observations do not refresh registry, source or provenance checks. New analysis is explicit and uses the shared static engine; model/verifier/monitor integrations remain unavailable. [Full usage and explicit portable export/import](apps/web/README.md); [actual four-case parity/reopen receipt](examples/web/current/README.md). Run `pnpm run test:web` for the new web boundary tests. No remote web CI pass or full S6/G5 acceptance is claimed.
+
 ## Installation and execution
 
-**There is no analyzer to install or run yet.** The root pnpm workspace contains only the shared G0 contract, synthetic fixtures, typecheck and contract test scripts. It has no application entry point, analyzer tests, generated examples, binary release, supported operating-system matrix, or live service. The [CI workflow](.github/workflows/ci.yml) now installs pinned contract tooling and runs contract, checksum and local Markdown-link checks; it does not test analyzer behavior.
+For all current command options, constraints, outputs/exits, evidence inspection and troubleshooting, use the [CLI reference](docs/CLI%20Reference.md). Historical/proposed command examples elsewhere in this overview are not the current parser contract.
 
-You can read the repository now: begin with the [documentation map](docs/README.md), [approved decision register](docs/Approved%20Decision%20Register.md), and [team development checklist](docs/Team%20Development%20Checklist.md), then use the original research for rationale and alternatives. Research integrity can be checked from the repository root with:
+**Historical Part 4 integration checkpoint, before the audit repair:** [nonvisual readiness report](docs/Part%204%20Integration%20Readiness%20Report.md). Candidate report/span and lifecycle adapters have 24 passing headless checks; the visual spike is separate, and S4/G3 remain open. S3 suites/corpus reverify, but the recheck exposed a late-created, never-started parser test orphan after temporary-store removal. The exact stopped job was removed after inspection; the foundation lifecycle issue remains unresolved, and live TUI investigation acceptance is held at that blocker.
+
+**S3 provides a bounded public npm/local evidence producer and CLI.** Its raw reports are useful with AI disabled; missing deterministic analysis remains incomplete. See the [S3 corpus](examples/s3/current/README.md), [historical S2 examples](examples/s2/current/README.md) and [execution checkpoint](docs/Shane%20Implementation%20Plan.md#12-execution-checkpoint--update-after-each-part).
+
+Use **Node 22.23.4**, pnpm **10.14.0**, an isolated Python **3.13** validator environment and an installed, running local Docker engine. Local validation used Python 3.13.2 on macOS arm64; archive parsing uses Python **3.13.18** in the exact Linux image below. Linux x64 CI is configured but has not run for these changes. No host archive-parser fallback exists. The daemon must expose its local Unix socket and enforce cgroup v2 controls; image setup is explicit and parser jobs never pull automatically.
+
+```sh
+pnpm install --frozen-lockfile --ignore-scripts
+python3.13 -m venv .venv
+. .venv/bin/activate
+python3 -m pip install -r requirements-contracts.txt
+docker pull python:3.13.18-slim-bookworm@sha256:281d39ff02e3b389401586134ff9e6572954687822a58055ec07a60ded4e0b7f
+pnpm run typecheck
+pnpm run test:contracts
+pnpm run test:foundation
+pnpm run test:s2
+pnpm run test:s3
+pnpm run test:audit
+node packages/cli/dist/index.js --help
+```
+
+These commands were run locally. `test:contracts` validates the unchanged G0 schema/semantics and synthetic handshakes; `test:foundation` passes 17 tests; `test:s2` covers archive/network/storage/CLI/replay boundaries; `test:s3` covers npm/source/provenance-boundary failures. Final repair validation passes **17 foundation / 48 S2 / 36 S3 / 13 audit repair tests**, 114 in serial, plus 24 separate nonvisual readiness checks; [receipts](examples/audit-fixes/current/validation.json) are linked from the checkpoint. `node scripts/check-parser-boundary.mjs .heurisko/NEW_BOUNDARY_RESULT.json` exercises actual restricted memory, CPU, mount and network controls using trusted development probes. The [parser ledger](packages/core/static-evidence-dependencies.v1.json) and [S3 ledger](packages/core/npm-source-dependencies.v1.json) record version/rights/security limits. S3 adds no external dependencies or verifier.
+
+After this build, the isolated Part 4 checks use the same pinned tooling:
+
+```sh
+node_modules/.bin/tsc -p integration/part4/tsconfig.json
+node --test integration/part4/tests/readiness.test.mjs
+```
+
+These candidate checks do not launch a TUI or establish S4 acceptance. The local web build now compiles the unchanged candidate reader, and the web CI job runs its 24 headless checks.
+
+```sh
+node packages/cli/dist/index.js analyze npm:picocolors@1.1.1 --store .heurisko/npm-run --no-ai --json
+node packages/cli/dist/index.js analyze npm:@vue/shared@3.5.22 --source https://github.com/vuejs/core --commit 5a8aa0b2ba575e098cbb63b396e9bcb751eb3a0f --subdirectory packages/shared --store .heurisko/scoped-run --no-ai --json
+node packages/cli/dist/index.js inspect examples/s3/current/B2.report.json --store examples/s3/current/store --json
+```
+
+These tested paths return **2** while the analysis module remains uninjected. npm requires a canonical exact version; ranges/tags/aliases are rejected. Only the public npm registry and immutable GitHub source archives are supported. Metadata/attestation/ref responses are capped at 256 KiB with strict bounded JSON for metadata/ref inspection. Advertised SHA-512/SHA-256 SRI is checked against downloaded bytes; unsupported/missing integrity remains incomplete, and mismatched bytes cannot earn correspondence. Local input retains local identity. If acquisition fails before an artifact exists, stdout stays empty, exit is 3, and stderr prints a safe SHA-256 receipt reference when retained; `EvidenceStore.get(ref)` reopens its failure/metadata record.
+
+Registry, artifact-manifest, version-tag and user claims remain separate; matching labels do not prove release correspondence. Missing/rate-limited API refs and conflicts are visible. The explicit Vue override is a corpus-author comparison candidate from an official release-page link, not verified source identity. Broader source context is retained and excluded comparison bytes are counted. Source maps/build configuration are inert evidence for Malhar; no build is executed. Provenance remains `not_checked`, with any retrieved attestation bytes labeled unverified. Requested trust policy remains indeterminate.
+
+Historical local-input replay also works:
+
+```sh
+node packages/cli/dist/index.js inspect examples/s2/current/outputs/release-local-input.report.json --store examples/s2/current/store --json
+node packages/cli/dist/index.js analyze --artifact examples/s2/current/inputs/picocolors-1.1.1.tgz --source https://github.com/alexeyraspopov/picocolors --commit 6f0a4638348ed20633d623ee973f9c9a96f65104 --source-archive examples/s2/current/inputs/picocolors-source-6f0a4638348ed20633d623ee973f9c9a96f65104.tar.gz --name picocolors --version 1.1.1 --store .heurisko/s2-replay --no-ai --policy s2-requested-analysis --json
+```
+
+Both commands return **2** for the declared missing analysis/policy. Omit `--source-archive` to fetch the explicitly pinned source through the bounded downloader. `--subdirectory` selects its package subtree; `--report FILE` and `--bundle FILE` save immutable validated output. `inspect ... --evidence ev_ID` opens verified retained bytes as inert text or base64 JSON. JSON stdout contains one result, progress/errors use stderr, and no TTY is required. Default output is an uncolored human summary. Running with no command shows help until Part 4 implements the TUI.
+
+Runtime validation uses `.venv/bin/python`, the canonical schema and shared G0 semantic rules. Archive jobs have no network, host home, secrets, Docker socket or writable project mount; only input/worker files and a private bounded output spool are mounted. They do not run target code. Failed or unavailable controls produce incomplete evidence. Store locks left by an interrupted process or unconfirmed daemon cleanup require explicit recovery after confirming the exact job is stopped; there is no automatic lock deletion or evidence eviction. The in-process analysis seam is trusted team code and cannot contain a hostile synchronous module.
+
+The CLI does not automatically import the transferred intelligence code. Separate reviewed M0 and M0+M1 copies passed model-off real-bundle checks; their actual source digests and limits are in the example receipts. Final workspace integration, generated/build interpretation and model work remain later tasks. PR #2's prior CI predates these local changes; the expanded S1–S3 CI has no new remote result. No commit, push or publication occurred. Product models used: none; coding assistance: Codex.
+
+Research integrity remains separately checkable:
 
 ```sh
 (cd docs/Heurisko_Research && shasum -a 256 -c SHA256SUMS.txt)
 ```
-
-This verifies the supplied research snapshot's file checksums; it is not a product test or source/package verification. Once implementation is authorized and works from a clean checkout, this section must gain tested prerequisites, exact installation/run commands, model setup, offline behavior, and links to real generated examples.
-
-For the shared-contract review, start with the [integrated package](packages/contracts/package.json), [G0 candidate README](docs/G0_Candidate/README_G0.md) and [approved engineering agreement](docs/Approved/HEURISKO_SHANE_MALHAR_PRE_SPLIT_AGREEMENT_APPROVED_v0.1.0.md). With Node 22 or newer, pnpm 10.14.0, Python 3.13 and an isolated Python environment, run from the repository root:
-
-```sh
-pnpm install --frozen-lockfile --ignore-scripts
-python3 -m venv .venv
-. .venv/bin/activate
-python3 -m pip install -r requirements-contracts.txt
-pnpm run typecheck
-pnpm run test:contracts
-```
-
-These check only synthetic contracts. The full JSON Schema/semantic suite, pinned TypeScript 5.8.3 typecheck and stubbed handshakes passed locally on 31 October 2026; PR #2 CI passed on `0e6adb9`. Shane delegated final G0 review and team acceptance to Codex, as recorded in E09. Interface-dependent work can use this accepted contract; keep changes to it reviewed in the PR workflow. PR merge remains pending.
 
 ## Repository and research guide
 
@@ -390,7 +463,7 @@ The organizer requires a new public repository whose first commit contains **onl
 
 **Do not commit or push without the user's explicit approval.** Prepare and validate changes locally, present the concrete change set, and obtain approval for each action. Approval to commit does not by itself authorize a push. See [AGENTS.md](AGENTS.md) for the complete working procedure.
 
-The PR template, contract-and-documentation CI workflow, and Apache-2.0 `LICENSE` are in place locally. The following organizer-required items remain: tested analyzer setup/run instructions once the project is runnable, and `examples/` with representative inputs, actual generated outputs, and supporting evidence. CI must expand to test analyzer behavior when product implementation exists.
+The PR template, contract-and-documentation CI workflow, and Apache-2.0 `LICENSE` are in place locally. S2 adds tested local producer instructions, real public inputs/generated raw reports and producer CI. Complete analyzer/model/interface/monitor examples and a final remote CI pass remain outstanding.
 
 Each PR must contain these sections:
 
@@ -403,12 +476,21 @@ CI must install the project and dependencies, run relevant tests, validate the i
 
 ## Open decisions and limitations
 
-The original [founder research register](docs/Heurisko_Research/HEURISKO_FOUNDER_DECISIONS.md) is preserved as a historical proposal record. The later [approved decision register](docs/Approved%20Decision%20Register.md) controls Phases 01–06 and A01–A14. The exact G0 schema is accepted for separate interface-dependent work under Shane's later delegated review instruction, with PR merge pending; exit mapping 0/1/2/3 is approved initially, but policy precedence needs tests. Third-party license and redistribution review, analyzer dependency/version admission, model/runtime choice, numeric budgets, hosted operation, and retention remain open. Apache-2.0 has already been selected for original Heurisko material.
+The original [founder research register](docs/Heurisko_Research/HEURISKO_FOUNDER_DECISIONS.md) is preserved as a historical proposal record. The later [approved decision register](docs/Approved%20Decision%20Register.md) controls Phases 01–06 and A01–A14. The exact G0 schema is accepted for separate interface-dependent work under Shane's later delegated review instruction, with PR #2 merged; exit mapping 0/1/2/3 has locally tested precedence, pending final shared policy review. Third-party license and redistribution review, analyzer dependency/version admission, model/runtime choice, numeric budgets, hosted operation, and retention remain open. Apache-2.0 has already been selected for original Heurisko material.
 
-Research has not established source-matching accuracy, legitimate-build explanation quality, false positives/negatives, native/bundled-code coverage, AI benefit, laptop feasibility, supported runtime/platform versions, performance, or operating costs. No historical attack was detected by Heurisko during research. Candidate packages and planned mutations are not verified examples.
+Research has not established source-matching accuracy, legitimate-build explanation quality, false positives/negatives, native/bundled-code coverage, AI benefit, laptop feasibility, supported runtime/platform versions, performance, or operating costs. No historical attack was detected by Heurisko during research. The S2 picocolors capture and labeled inert mutation are verified raw producer examples; the broader provisional corpus and interpretation quality remain unvalidated.
 
 Organizer gaps include the full scoring weights, hidden-test inputs/interface, model-server contract and available models, and evaluation expectations for monitoring and local web execution. Some external research retrievals were incomplete or stopped at an account credit limit; the evidence ledgers identify those gaps. Dependency information is a dated research snapshot, not a current compatibility or security audit.
 
 ## License
 
-Heurisko’s original project material is licensed under **Apache-2.0**; see [LICENSE](LICENSE) and [NOTICE](NOTICE). This choice was delegated by Shane on 31 October 2026 and meets the organizer’s MIT-or-Apache-2.0 rule. The express patent grant is useful for an open-source supply-chain tool. Organizer-supplied files in `docs/Governing/`, dependencies, model weights, and other third-party material retain their own rights and redistribution obligations. The license files are local changes awaiting an approved commit and PR.
+Heurisko’s original project material is licensed under **Apache-2.0**; see [LICENSE](LICENSE) and [NOTICE](NOTICE). This choice was delegated by Shane on 31 October 2026 and meets the organizer’s MIT-or-Apache-2.0 rule. The express patent grant is useful for an open-source supply-chain tool. Organizer-supplied files in `docs/Governing/`, dependencies, model weights, and other third-party material retain their own rights and redistribution obligations. LICENSE and NOTICE are already tracked in `0e6adb9` through the prior G0 PR; the newer engineering changes remain uncommitted.
+
+**Part 4 visual correction:** the [whole-TUI audit](docs/Part%204%20TUI%20Visual%20Audit.md) records restored revision-7 screen composition, visible input selection, actual progress bars and revalidated keyboard/evidence/state behavior. Earlier functional S4 receipts did not establish visual fidelity. Joint G3, human visual acceptance and unavailable capabilities remain explicit; no Part 5 was started.
+
+
+### Part 4 user-failure repair
+
+[Reproduce the exact manual report and inspect fresh npm/local workflows](examples/part4/user-failures/README.md). Findings now names the missing deterministic module and successful stages independently of AI. Files exposes modified records and actual bounded content differences, with readable roots and distinct directory navigation. Source explains the selected candidate, exact conflicting version values, discovery limits and new-target action while keeping provenance/build states separate. Original reports and receipts are unchanged. New producer wording distinguishes complete inventories with ambiguous association from incomplete inventories; unresolved/unknown and trust rules are preserved.
+
+The latest explicit module validation is separately hashed and does not adopt an automatic product loader. See [current S4/human/G3 assessment](docs/Part%204%20Integration%20Readiness%20Report.md#user-failure-repair-and-workflow-proof--1-november-2026) and [new receipts](integration/part4/receipts/user-failures/validation.json). Design v1.0.0-rc.1 remains unapproved/unfrozen; no Part 5 or publication action follows.

@@ -1,0 +1,34 @@
+[
+  {
+    "value": {
+      "z": 0,
+      "a": true,
+      "nested": {
+        "\u00e9": "\u2603\ud83d\ude00",
+        "quote": "\"\\\n\t\u007f"
+      }
+    },
+    "canonical": "{\"a\":true,\"nested\":{\"quote\":\"\\\"\\\\\\n\\t\\u007f\",\"\\u00e9\":\"\\u2603\\ud83d\\ude00\"},\"z\":0}",
+    "id": "ev_7780380a4ef83a3f93ea53b4"
+  },
+  {
+    "value": {
+      "\ud800\udc00": 1,
+      "\ue000": 2,
+      "safe": 9007199254740991
+    },
+    "canonical": "{\"safe\":9007199254740991,\"\\ue000\":2,\"\\ud800\\udc00\":1}",
+    "id": "ev_ec2e3357693d93084ecd557a"
+  },
+  {
+    "value": [
+      "\u00e9",
+      "e\u0301",
+      null,
+      false,
+      -12
+    ],
+    "canonical": "[\"\\u00e9\",\"e\\u0301\",null,false,-12]",
+    "id": "ev_d9d2c078b4928be2ee2c8a59"
+  }
+]

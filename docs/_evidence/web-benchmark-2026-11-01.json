@@ -1,0 +1,187 @@
+{
+  "version": "heurisko-web-benchmark-research-v1",
+  "recordedAt": "2026-10-31T21:38:30.108121+00:00",
+  "researchDate": "2026-11-01",
+  "timezone": "Asia/Kolkata",
+  "scope": "research prompt and one production-quality gap execution plan; no implementation",
+  "primaryPlan": "docs/Web Application Gap Plan.md",
+  "prompt": "docs/Web Application Benchmark Research Prompt.md",
+  "localEvidence": "source inspection and earlier executed receipts, not new browser/engine tests",
+  "sourceSHA256": {
+    "apps/web/src/app.tsx": "83793ca0c9834e2d5b3f1744f035c7f382d57c6f18ff5cb2116664c1f155eed8",
+    "apps/web/src/main.tsx": "b22bb4f233928992187bd8e2998777bf84bce93a4d858a6cdf7b364176fe9469",
+    "apps/web/src/render-check.tsx": "4284e2fe87f19089afb483eb3899f22f8b19a522134aca22857acb2672426952",
+    "apps/web/src/index.html": "049fc9f4a86def4e885129d92206e49619e26a350ba1a8d4de168b6bee84f18c",
+    "apps/web/src/home.tsx": "e21e3ba7a5cbe4cd200810fcda065e11d3977282f487777c0e75f235d9568863",
+    "apps/web/src/investigate.tsx": "06a98e37ef37eaeffd901028318af12a0c91b81de0eecb0645dc53bb45c23adb",
+    "apps/web/src/api.ts": "bc274f61c7caa7f89aeff53339856dccb95dd6425696ba0d1f2651320bf4534d",
+    "apps/web/src/docs.tsx": "712f23ef3e6749200f7b1ea61b9f55571a9e1ccc5b49be43ce9aace2380a7569",
+    "apps/web/src/style.css": "f5eab89b7071149e66fb199532ae6661bdf265e42fddf78bad89f83e48c78221",
+    "apps/web/server/main.ts": "fc0cc7c6504b3bf7603ab4e2b00efd4c8120d93382aeae0a78cc91d4eb48c5c1",
+    "apps/web/server/workspace.ts": "89f490e4f39569faa5c18c0a022a780b1eda97fbea8857f07f3bcf5452540514",
+    "apps/web/server/service.ts": "2a385aa4f4f6b470dd69a521dd85f35e6886cfb0057dc3456053e5fde4cacc69",
+    "apps/web/server/observation.ts": "8642dd91aa066984334716f2cacf76426a835e0e6ed79fadaf79ab35bfdaee50",
+    "apps/web/tooling/verify-investigation.mjs": "4567f6985a1c465e8add7c7870022664ea8bfb835ac27ba1f4d92298c126d16e",
+    "apps/web/tooling/portable.ts": "1bea4f7d68a9d7cff1bd3b57967f9948a824379b70f112ca86c7a8082e402251",
+    "apps/web/tooling/strict-json.ts": "1855d1f964fc3e61cdcbdf02a2a9f2e0dfdef78c09a8789ff7b0237ea4e663d8",
+    "apps/web/tooling/export.ts": "cefd5b814e87312380172a189f24b9e6cbda881cb3fbc6fd4f4e16c88b50c86c",
+    "apps/web/tooling/verify-corpus.mjs": "cd348299af334d0c68c8e612ee32d146a430f953c6efc7dc19e25bf66feabdaf",
+    "apps/web/tooling/transport.ts": "82facd0ed9246518210c93e8d9b724c77729842058a0bf364c653e1d557b2607",
+    "apps/web/tests/viewer.test.mjs": "af97eb3a106cd5e4911157436d6ef8549d2bf9604efa4d9865b088090ed6184c",
+    "apps/web/tests/workflow.test.mjs": "63246aad8bbd80c8ddd852becbebcdf246f8320edd7b11789ec6c3d3b28c5251",
+    "apps/web/build.mjs": "00ff3d8d98618d3d033aa0f086195521ace68ca29eb7a41b1bc2a9c9d17c6b45",
+    "apps/web/package.json": "d7bc44d65fb759293cd468dbce6b48d959b7c09e0450289ccc6728818e8ba946",
+    "packages/cli/src/index.ts": "e1d8e8b9c6bd0807be1085c84fb339dea9b7ffd671965dfb684e086fc7325841",
+    "packages/contracts/src/types.ts": "896ecaf54728ac921c539738c75e54369a92f13f3b3fbe6e264593a84201c11b",
+    "examples/web-investigation/validation.json": "dc33d58ffc69ddb8a7e1ceaf4f568206b641dbb8e846de142f0165514ff739a3",
+    "examples/web/current/validation.json": "6d2c9b47588242530e0ba3295b5f3682d44847534ba37933698f8b16430dd4b9",
+    "examples/web/current/verification.json": "1ed0923e10450f9256d3227c5aba0f0aca9d5ad84faca1c8165db6a891a5ba51"
+  },
+  "sourceAndPreservedReceiptsUnchanged": true,
+  "gitIndexUnchanged": true,
+  "sources": [
+    {
+      "id": "B01",
+      "url": "https://cli.github.com/manual/gh_run_view",
+      "evidenceType": "retrieved-page",
+      "supportedScope": "Command navigation, syntax, flags, examples; not browser-operated.",
+      "accessedDate": "2026-11-01"
+    },
+    {
+      "id": "B02",
+      "url": "https://docs.stripe.com/stripe-cli",
+      "evidenceType": "retrieved-page",
+      "supportedScope": "CLI setup/reference entry content; no sidebar or visual observation.",
+      "accessedDate": "2026-11-01"
+    },
+    {
+      "id": "B03",
+      "url": "https://diataxis.fr/application/",
+      "evidenceType": "retrieved-page",
+      "supportedScope": "Documentation types and navigation.",
+      "accessedDate": "2026-11-01"
+    },
+    {
+      "id": "B04",
+      "url": "https://github.com/cli/cli/actions",
+      "evidenceType": "retrieved-page",
+      "supportedScope": "Workflow/run list, search and status metadata; no authenticated run detail.",
+      "accessedDate": "2026-11-01"
+    },
+    {
+      "id": "B05",
+      "url": "https://docs.github.com/en/actions/how-tos/monitor-workflows/use-workflow-run-logs",
+      "evidenceType": "official-documentation",
+      "supportedScope": "Run/job/step logs, diagnostic and permalink workflows; no live console operation.",
+      "accessedDate": "2026-11-01"
+    },
+    {
+      "id": "B06",
+      "url": "https://docs.socket.dev/docs/package-search",
+      "evidenceType": "official-documentation",
+      "supportedScope": "Version/package/file exploration described in official guide.",
+      "accessedDate": "2026-11-01"
+    },
+    {
+      "id": "B07",
+      "url": "https://www.socket.dev/",
+      "evidenceType": "retrieved-page",
+      "supportedScope": "Product/resource entry and product-explanation content; marketing metrics not adopted.",
+      "accessedDate": "2026-11-01"
+    },
+    {
+      "id": "B08",
+      "url": "https://docs.sentry.io/product/issues/issue-details/",
+      "evidenceType": "indexed-official-documentation",
+      "supportedScope": "Search returned detailed indexed official content; direct reads failed unsupported content type; no live UI operation.",
+      "accessedDate": "2026-11-01"
+    },
+    {
+      "id": "B09",
+      "url": "https://www.w3.org/WAI/ARIA/apg/patterns/link/",
+      "evidenceType": "primary-guidance",
+      "supportedScope": "Native-link navigation semantics; no compliance certification.",
+      "accessedDate": "2026-11-01"
+    },
+    {
+      "id": "B10",
+      "url": "https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/",
+      "evidenceType": "primary-guidance",
+      "supportedScope": "Dialog keyboard, inertness and focus-restoration guidance.",
+      "accessedDate": "2026-11-01"
+    },
+    {
+      "id": "B11",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/reflow.html",
+      "evidenceType": "primary-guidance",
+      "supportedScope": "Informative reflow explanation and two-dimensional-region exceptions.",
+      "accessedDate": "2026-11-01"
+    },
+    {
+      "id": "B12",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/status-messages.html",
+      "evidenceType": "primary-guidance",
+      "supportedScope": "Informative async-status accessibility guidance.",
+      "accessedDate": "2026-11-01"
+    }
+  ],
+  "limits": [
+    "Firecrawl searches returned insufficient credits; no successful Firecrawl collection and no retry after exhaustion.",
+    "Standard web retrieval used as fallback.",
+    "No new local browser/GUI/user study or engine/product tests in this research session.",
+    "Historical Chrome ERR_BLOCKED_BY_CLIENT acceptance remains open.",
+    "Socket picocolors version page inaccessible via retrieval; guide used, not claimed as live product audit.",
+    "Sentry direct retrieval failed; indexed official documentation only."
+  ],
+  "inaccessibleURLs": [
+    "https://socket.dev/npm/package/picocolors/overview/1.1.1"
+  ],
+  "productModels": [],
+  "codingAssistance": "Codex",
+  "newTechnologyDependencyTrustSemantics": false,
+  "gitPublicationDeploymentExternalMessaging": false,
+  "validation": {
+    "markdownFilesScanned": 51,
+    "newChangedLinksPass": true,
+    "preExistingIssues": [
+      "docs/HANDOFF_S1_S3.md: missing anchor Audit Repairs and Malhar Handoff.md#repaired-foundation"
+    ],
+    "gapIDs": [
+      "G01",
+      "G02",
+      "G03",
+      "G04",
+      "G05",
+      "G06",
+      "G07",
+      "G08",
+      "G09",
+      "G10",
+      "G11",
+      "G12",
+      "G13",
+      "G14",
+      "G15",
+      "G16",
+      "G17",
+      "G18",
+      "G19"
+    ],
+    "codeFencesBalanced": true,
+    "priorMarkdownFilesChanged": [
+      "docs/WEB_CONTINUATION.md",
+      "docs/README.md"
+    ],
+    "newMarkdownFiles": [
+      "docs/Web Application Benchmark Research Prompt.md",
+      "docs/Web Application Gap Plan.md"
+    ],
+    "agentsEntryPointUpdated": true,
+    "productSourceReceiptsAndIndexUnchanged": true,
+    "productSuitesRerun": false
+  },
+  "outputsSHA256": {
+    "docs/Web Application Benchmark Research Prompt.md": "ba7b553a4fd4ae214e967b40277375f1e34daaa7ea66d9fbca0fef47d84a8cf8",
+    "docs/Web Application Gap Plan.md": "46f7a3a3c396724c5fc0ac854b2d0550e9d9673d3e8561d0fc2aa0e34656b036"
+  }
+}

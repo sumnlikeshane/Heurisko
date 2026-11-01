@@ -1,0 +1,772 @@
+TAP version 13
+# Subtest: a read deadline aborts the pending response exactly once, without announcing a service disconnect or retrying
+ok 1 - a read deadline aborts the pending response exactly once, without announcing a service disconnect or retrying
+  ---
+  duration_ms: 57.840708
+  type: 'test'
+  ...
+# Subtest: caller cancellation preserves its original reason instead of becoming a timeout
+ok 2 - caller cancellation preserves its original reason instead of becoming a timeout
+  ---
+  duration_ms: 2.763792
+  type: 'test'
+  ...
+# Subtest: the read deadline also bounds response body consumption after successful headers
+ok 3 - the read deadline also bounds response body consumption after successful headers
+  ---
+  duration_ms: 14.502084
+  type: 'test'
+  ...
+# Subtest: every documentation page, declared navigation link and anchor resolves from a deterministic manifest
+ok 4 - every documentation page, declared navigation link and anchor resolves from a deterministic manifest
+  ---
+  duration_ms: 7.748167
+  type: 'test'
+  ...
+# Subtest: docs search spans workflows/reference/errors with section snippets and exact targets
+ok 5 - docs search spans workflows/reference/errors with section snippets and exact targets
+  ---
+  duration_ms: 8.499708
+  type: 'test'
+  ...
+# Subtest: inert markdown keeps semantic headings, ordered/bullet lists, table headings, exact selectable code and safe links
+ok 6 - inert markdown keeps semantic headings, ordered/bullet lists, table headings, exact selectable code and safe links
+  ---
+  duration_ms: 50.847375
+  type: 'test'
+  ...
+# Subtest: draft validation catches invalid combinations before admission, and canonical targets match core
+ok 7 - draft validation catches invalid combinations before admission, and canonical targets match core
+  ---
+  duration_ms: 77.418959
+  type: 'test'
+  ...
+# Subtest: accepted job summaries bind actual core options and archive bytes without host paths
+ok 8 - accepted job summaries bind actual core options and archive bytes without host paths
+  ---
+  duration_ms: 130.155042
+  type: 'test'
+  ...
+# Subtest: latest stage facts retain repeated events and truthful cancel/error actions
+ok 9 - latest stage facts retain repeated events and truthful cancel/error actions
+  ---
+  duration_ms: 2.488916
+  type: 'test'
+  ...
+# Subtest: later-page file selection, path member records, explicit omissions and filtered selection stay grounded
+ok 10 - later-page file selection, path member records, explicit omissions and filtered selection stay grounded
+  ---
+  duration_ms: 27.326667
+  type: 'test'
+  ...
+# Subtest: reading guide/export/landing preserve independent outcomes, original identity and honest next actions
+ok 11 - reading guide/export/landing preserve independent outcomes, original identity and honest next actions
+  ---
+  duration_ms: 23.102542
+  type: 'test'
+  ...
+# Subtest: modal focus ring excludes disabled, hidden, inert and closed-details controls
+ok 12 - modal focus ring excludes disabled, hidden, inert and closed-details controls
+  ---
+  duration_ms: 0.720167
+  type: 'test'
+  ...
+# Subtest: closed raw-delta disclosure defers its third byte reader; initial source/artifact slots stay distinct
+ok 13 - closed raw-delta disclosure defers its third byte reader; initial source/artifact slots stay distinct
+  ---
+  duration_ms: 4.476542
+  type: 'test'
+  ...
+# Subtest: older failed jobs remain selectable after a later explicit start, and status reads never retry
+ok 14 - older failed jobs remain selectable after a later explicit start, and status reads never retry
+  ---
+  duration_ms: 3.047583
+  type: 'test'
+  ...
+# Subtest: multiword documentation snippets retain distant matches within a fixed bound
+ok 15 - multiword documentation snippets retain distant matches within a fixed bound
+  ---
+  duration_ms: 0.670833
+  type: 'test'
+  ...
+# Subtest: mode projection preserves selected File identity and excludes inactive mode semantics without mutation
+ok 16 - mode projection preserves selected File identity and excludes inactive mode semantics without mutation
+  ---
+  duration_ms: 1.723208
+  type: 'test'
+  ...
+# Subtest: empty targets and missing source pair/replay associate issues with the useful correction field
+ok 17 - empty targets and missing source pair/replay associate issues with the useful correction field
+  ---
+  duration_ms: 0.228666
+  type: 'test'
+  ...
+# Subtest: first entry requires explicit example selection and the review exposes labels before technical details
+ok 18 - first entry requires explicit example selection and the review exposes labels before technical details
+  ---
+  duration_ms: 11.337916
+  type: 'test'
+  ...
+# Subtest: job states distinguish report availability, cancellation request and no-report failure
+ok 19 - job states distinguish report availability, cancellation request and no-report failure
+  ---
+  duration_ms: 3.866792
+  type: 'test'
+  ...
+# Subtest: open methods explain report-only missing bytes and format-specific recovery without admitting host paths
+ok 20 - open methods explain report-only missing bytes and format-specific recovery without admitting host paths
+  ---
+  duration_ms: 1.882084
+  type: 'test'
+  ...
+# Subtest: all doc sidebar/search/contents links cancel native document loads and navigate from the anchor itself
+ok 21 - all doc sidebar/search/contents links cancel native document loads and navigate from the anchor itself
+  ---
+  duration_ms: 3.374875
+  type: 'test'
+  ...
+# Subtest: native new-tab/download/external actions remain native; links cannot grant authority or target APIs
+ok 22 - native new-tab/download/external actions remain native; links cannot grant authority or target APIs
+  ---
+  duration_ms: 0.539042
+  type: 'test'
+  ...
+# Subtest: same-document repeated anchors scroll only the article without duplicate history or a window jump
+ok 23 - same-document repeated anchors scroll only the article without duplicate history or a window jump
+  ---
+  duration_ms: 2.288833
+  type: 'test'
+  ...
+# Subtest: Analyze after scrolling down leaves the document/shell/sidebar alone; stale navigation frames cannot jump it
+ok 24 - Analyze after scrolling down leaves the document/shell/sidebar alone; stale navigation frames cannot jump it
+  ---
+  duration_ms: 0.801042
+  type: 'test'
+  ...
+# Subtest: documentation anchors scroll only their containing article and reject targets outside it
+ok 25 - documentation anchors scroll only their containing article and reject targets outside it
+  ---
+  duration_ms: 0.1745
+  type: 'test'
+  ...
+# Subtest: a lost successful start response body reports unknown acknowledgment and never resubmits
+ok 26 - a lost successful start response body reports unknown acknowledgment and never resubmits
+  ---
+  duration_ms: 60.885625
+  type: 'test'
+  ...
+# Subtest: an upload body acknowledgment failure never uploads again or requests an investigation
+ok 27 - an upload body acknowledgment failure never uploads again or requests an investigation
+  ---
+  duration_ms: 91.39475
+  type: 'test'
+  ...
+# Subtest: destination allowlist separates draft/job/observation identity and rejects host-path disguises
+ok 28 - destination allowlist separates draft/job/observation identity and rejects host-path disguises
+  ---
+  duration_ms: 1.868709
+  type: 'test'
+  ...
+# Subtest: native history traverses destinations, restores same-process view and never stores authority or submits
+ok 29 - native history traverses destinations, restores same-process view and never stores authority or submits
+  ---
+  duration_ms: 1.521958
+  type: 'test'
+  ...
+# Subtest: allowlisted HTML routes stay public and inert; route URLs cannot access API facts or start analysis
+ok 30 - allowlisted HTML routes stay public and inert; route URLs cannot access API facts or start analysis
+  ---
+  duration_ms: 125.273958
+  type: 'test'
+  ...
+# Subtest: reports sharing report ID keep full distinct content/capture context
+ok 31 - reports sharing report ID keep full distinct content/capture context
+  ---
+  duration_ms: 11.495667
+  type: 'test'
+  ...
+# Subtest: draft, reopen and selected job render their own contexts without historical report/export actions
+ok 32 - draft, reopen and selected job render their own contexts without historical report/export actions
+  ---
+  duration_ms: 24.657958
+  type: 'test'
+  ...
+# Subtest: connection and operation errors separate authority, service failure and scoped input rejection
+ok 33 - connection and operation errors separate authority, service failure and scoped input rejection
+  ---
+  duration_ms: 0.287083
+  type: 'test'
+  ...
+# Subtest: session capability is consumed into memory, recovery preserves destination, errors never echo raw text
+ok 34 - session capability is consumed into memory, recovery preserves destination, errors never echo raw text
+  ---
+  duration_ms: 14.747375
+  type: 'test'
+  ...
+# Subtest: aborted reads preserve cancellation and do not falsely announce service loss
+ok 35 - aborted reads preserve cancellation and do not falsely announce service loss
+  ---
+  duration_ms: 40.295
+  type: 'test'
+  ...
+# Subtest: observation admission snapshots bytes before asynchronous validation
+ok 36 - observation admission snapshots bytes before asynchronous validation
+  ---
+  duration_ms: 195.294
+  type: 'test'
+  ...
+# Subtest: exposed observation bytes cannot mutate admitted report downloads
+ok 37 - exposed observation bytes cannot mutate admitted report downloads
+  ---
+  duration_ms: 399.482708
+  type: 'test'
+  ...
+# Subtest: finding pagination reaches every retained finding including records beyond the old 100-match ceiling
+ok 38 - finding pagination reaches every retained finding including records beyond the old 100-match ceiling
+  ---
+  duration_ms: 5.386541
+  type: 'test'
+  ...
+# Subtest: virtual directory navigation includes only real retained path descendants and permits parent traversal
+ok 39 - virtual directory navigation includes only real retained path descendants and permits parent traversal
+  ---
+  duration_ms: 7.903542
+  type: 'test'
+  ...
+# Subtest: evidence labels distinguish side, path, manifest field and real half-open byte ranges
+ok 40 - evidence labels distinguish side, path, manifest field and real half-open byte ranges
+  ---
+  duration_ms: 0.162917
+  type: 'test'
+  ...
+# Subtest: member filters keep omissions reachable and distinguish retained, absent and unsupported states
+ok 41 - member filters keep omissions reachable and distinguish retained, absent and unsupported states
+  ---
+  duration_ms: 0.941542
+  type: 'test'
+  ...
+# Subtest: auxiliary evidence paging restores by observation handle and never merges equal report IDs
+ok 42 - auxiliary evidence paging restores by observation handle and never merges equal report IDs
+  ---
+  duration_ms: 80.349209
+  type: 'test'
+  ...
+# Subtest: manifest evidence labels retain both the path and recorded field
+ok 43 - manifest evidence labels retain both the path and recorded field
+  ---
+  duration_ms: 12.398166
+  type: 'test'
+  ...
+# Subtest: all related changes and stage errors remain reachable through bounded remembered pages
+ok 44 - all related changes and stage errors remain reachable through bounded remembered pages
+  ---
+  duration_ms: 28.245583
+  type: 'test'
+  ...
+# Subtest: selected omissions retain their stage and byte count and recorded request options stay inspectable
+ok 45 - selected omissions retain their stage and byte count and recorded request options stay inspectable
+  ---
+  duration_ms: 7.547833
+  type: 'test'
+  ...
+# Subtest: source subtree renders repository root distinctly from unrecorded metadata
+ok 46 - source subtree renders repository root distinctly from unrecorded metadata
+  ---
+  duration_ms: 11.932417
+  type: 'test'
+  ...
+# Subtest: upload snapshots selected bytes before asynchronous initialization
+ok 47 - upload snapshots selected bytes before asynchronous initialization
+  ---
+  duration_ms: 41.891334
+  type: 'test'
+  ...
+# Subtest: upload summary remains bound to disk when caller mutates after write completion
+ok 48 - upload summary remains bound to disk when caller mutates after write completion
+  ---
+  duration_ms: 135.39475
+  type: 'test'
+  ...
+# Subtest: original observation identity and exact retained outcomes survive the local API
+ok 49 - original observation identity and exact retained outcomes survive the local API
+  ---
+  duration_ms: 366.177542
+  type: 'test'
+  ...
+# Subtest: Host, Origin, fetch-site, capability, methods and exact query allowlists fail closed
+ok 50 - Host, Origin, fetch-site, capability, methods and exact query allowlists fail closed
+  ---
+  duration_ms: 315.96675
+  type: 'test'
+  ...
+# Subtest: evidence API preserves exact mutation artifact span and absent source side
+ok 51 - evidence API preserves exact mutation artifact span and absent source side
+  ---
+  duration_ms: 322.361959
+  type: 'test'
+  ...
+# Subtest: B2 and monorepo have unchanged IDs, raw changes and original coverage
+ok 52 - B2 and monorepo have unchanged IDs, raw changes and original coverage
+  ---
+  duration_ms: 732.341958
+  type: 'test'
+  ...
+# Subtest: two observations sharing reportId retain distinct content handles and digests
+ok 53 - two observations sharing reportId retain distinct content handles and digests
+  ---
+  duration_ms: 400.53125
+  type: 'test'
+  ...
+# Subtest: raw duplicate keys, unsafe integers, unsupported schema and validator failure are rejected
+ok 54 - raw duplicate keys, unsafe integers, unsupported schema and validator failure are rejected
+  ---
+  duration_ms: 848.782792
+  type: 'test'
+  ...
+# Subtest: portable directory export/reopen preserves original report and exact citation bytes
+ok 55 - portable directory export/reopen preserves original report and exact citation bytes
+  ---
+  duration_ms: 1511.064416
+  type: 'test'
+  ...
+# Subtest: portable import rejects corruption, symlinks, duplicate manifest keys and report binding changes
+ok 56 - portable import rejects corruption, symlinks, duplicate manifest keys and report binding changes
+  ---
+  duration_ms: 2140.428208
+  type: 'test'
+  ...
+# Subtest: missing source bytes produce an explicit partial export without changing report contentState
+ok 57 - missing source bytes produce an explicit partial export without changing report contentState
+  ---
+  duration_ms: 1693.21825
+  type: 'test'
+  ...
+# Subtest: report and blob limits, missing bytes and invalid ranges remain distinguishable
+ok 58 - report and blob limits, missing bytes and invalid ranges remain distinguishable
+  ---
+  duration_ms: 1093.227
+  type: 'test'
+  ...
+# Subtest: transport cancellation, missing included blob and false omission declarations fail closed
+ok 59 - transport cancellation, missing included blob and false omission declarations fail closed
+  ---
+  duration_ms: 1509.551916
+  type: 'test'
+  ...
+# Subtest: synthetic markup, controls, bidi and model text stay inert; real outcome fields stay visible
+ok 60 - synthetic markup, controls, bidi and model text stay inert; real outcome fields stay visible
+  ---
+  duration_ms: 272.180709
+  type: 'test'
+  ...
+# Subtest: all accepted synthetic G0 fixture states render without inferring a verdict
+ok 61 - all accepted synthetic G0 fixture states render without inferring a verdict
+  ---
+  duration_ms: 1675.105959
+  type: 'test'
+  ...
+# Subtest: the service permits only two active evidence reads and stops on owned shutdown
+ok 62 - the service permits only two active evidence reads and stops on owned shutdown
+  ---
+  duration_ms: 256.748833
+  type: 'test'
+  ...
+# Subtest: the genuine monorepo export reopens beyond the package-metadata parser node limit
+ok 63 - the genuine monorepo export reopens beyond the package-metadata parser node limit
+  ---
+  duration_ms: 13308.937
+  type: 'test'
+  ...
+# Subtest: complete built CLI docs and setup include every actual parser flag and workflow
+ok 64 - complete built CLI docs and setup include every actual parser flag and workflow
+  ---
+  duration_ms: 64.924041
+  type: 'test'
+  ...
+# Subtest: privileged requests require exact origin, session, media type, bounds and strict input keys
+ok 65 - privileged requests require exact origin, session, media type, bounds and strict input keys
+  ---
+  duration_ms: 170.220166
+  type: 'test'
+  ...
+# Subtest: options reach one shared-engine call; terminal report, downloads and bundle keep exact facts
+ok 66 - options reach one shared-engine call; terminal report, downloads and bundle keep exact facts
+  ---
+  duration_ms: 1105.969584
+  type: 'test'
+  ...
+# Subtest: cancel and no-report failures never claim acknowledgment, cleanup, or a verdict
+ok 67 - cancel and no-report failures never claim acknowledgment, cleanup, or a verdict
+  ---
+  duration_ms: 27.235375
+  type: 'test'
+  ...
+# Subtest: uploads have opaque IDs, original filenames, kind checks, local labels and bounded admission
+ok 68 - uploads have opaque IDs, original filenames, kind checks, local labels and bounded admission
+  ---
+  duration_ms: 154.178375
+  type: 'test'
+  ...
+# Subtest: browser portable download/upload reopens original bytes and enforces corruption/omission semantics
+ok 69 - browser portable download/upload reopens original bytes and enforces corruption/omission semantics
+  ---
+  duration_ms: 3622.49475
+  type: 'test'
+  ...
+# Subtest: dynamic report-only and workspace digest reopen validate without fresh acquisition or host paths
+ok 70 - dynamic report-only and workspace digest reopen validate without fresh acquisition or host paths
+  ---
+  duration_ms: 1134.41325
+  type: 'test'
+  ...
+# Subtest: portable wrapper preserves the genuine scoped monorepo beyond the small metadata decoder size
+ok 71 - portable wrapper preserves the genuine scoped monorepo beyond the small metadata decoder size
+  ---
+  duration_ms: 18226.60825
+  type: 'test'
+  ...
+# Subtest: S01 input validation is available; it is not resolved preflight or permission to Start
+ok 72 - S01 input validation is available; it is not resolved preflight or permission to Start
+  ---
+  duration_ms: 463.199416
+  type: 'test'
+  ...
+# Subtest: S02 actual conflicting source, all six outcomes and source context survive immutable inspection
+ok 73 - S02 actual conflicting source, all six outcomes and source context survive immutable inspection
+  ---
+  duration_ms: 407.228
+  type: 'test'
+  ...
+# Subtest: S03 actual S3 manifest delta resolves to exact member value bytes, not the JSON delta record
+ok 74 - S03 actual S3 manifest delta resolves to exact member value bytes, not the JSON delta record
+  ---
+  duration_ms: 297.761042
+  type: 'test'
+  ...
+# Subtest: S03 received M1 lifecycle finding cites actual retained S2 evidence; review output stays separate
+ok 75 - S03 received M1 lifecycle finding cites actual retained S2 evidence; review output stays separate
+  ---
+  duration_ms: 401.165625
+  type: 'test'
+  ...
+# Subtest: S03 raw byte difference sides bind exact original member paths and changed spans
+ok 76 - S03 raw byte difference sides bind exact original member paths and changed spans
+  ---
+  duration_ms: 245.526334
+  type: 'test'
+  ...
+# Subtest: S04 unavailable or failed heuristics never produces a displayed examined-scope zero
+ok 77 - S04 unavailable or failed heuristics never produces a displayed examined-scope zero
+  ---
+  duration_ms: 3653.423708
+  type: 'test'
+  ...
+# Subtest: S04 broader monorepo and omission accounting are preserved without incompatible fractions
+ok 78 - S04 broader monorepo and omission accounting are preserved without incompatible fractions
+  ---
+  duration_ms: 781.512541
+  type: 'test'
+  ...
+# Subtest: S05 byte paging stays inside recorded range and distinguishes window truncation from analysis
+ok 79 - S05 byte paging stays inside recorded range and distinguishes window truncation from analysis
+  ---
+  duration_ms: 759.766792
+  type: 'test'
+  ...
+# Subtest: S05 binary and split UTF-8 byte windows use base64 without forged replacement text
+ok 80 - S05 binary and split UTF-8 byte windows use base64 without forged replacement text
+  ---
+  duration_ms: 1033.854292
+  type: 'test'
+  ...
+# Subtest: S05 text safety covers ANSI, OSC, C1, bidi, line boundaries, Unicode and full recorded paths
+ok 81 - S05 text safety covers ANSI, OSC, C1, bidi, line boundaries, Unicode and full recorded paths
+  ---
+  duration_ms: 1073.328167
+  type: 'test'
+  ...
+# Subtest: S05 full blob hash is checked before exposing even a small valid-looking prefix
+ok 82 - S05 full blob hash is checked before exposing even a small valid-looking prefix
+  ---
+  duration_ms: 817.5225
+  type: 'test'
+  ...
+# Subtest: S05 oversized/nonregular/symlink storage cannot turn evidence paths into filesystem reads
+ok 83 - S05 oversized/nonregular/symlink storage cannot turn evidence paths into filesystem reads
+  ---
+  duration_ms: 1383.522875
+  type: 'test'
+  ...
+# Subtest: S06 metadata remains openable with a nonexistent store; replay creates no store and refreshes nothing
+ok 84 - S06 metadata remains openable with a nonexistent store; replay creates no store and refreshes nothing
+  ---
+  duration_ms: 441.990375
+  type: 'test'
+  ...
+# Subtest: S06 not_exported, unavailable, unknown IDs, line-only and invalid byte ranges stay distinct
+ok 85 - S06 not_exported, unavailable, unknown IDs, line-only and invalid byte ranges stay distinct
+  ---
+  duration_ms: 497.934125
+  type: 'test'
+  ...
+# Subtest: S06 unsupported/corrupt imports fail validation, with no schema coercion or bytes availability claims
+ok 86 - S06 unsupported/corrupt imports fail validation, with no schema coercion or bytes availability claims
+  ---
+  duration_ms: 512.167125
+  type: 'test'
+  ...
+# Subtest: S06 file-open errors disclose fixed codes, preserve exact encoding identity and respect pre-cancel
+ok 87 - S06 file-open errors disclose fixed codes, preserve exact encoding identity and respect pre-cancel
+  ---
+  duration_ms: 249.105208
+  type: 'test'
+  ...
+# Subtest: S03/S06 delta readers refuse unbound refs, unknown transforms, duplicate JSON keys and unrecorded sides
+ok 88 - S03/S06 delta readers refuse unbound refs, unknown transforms, duplicate JSON keys and unrecorded sides
+  ---
+  duration_ms: 1117.684333
+  type: 'test'
+  ...
+# Subtest: S06 symlinked store directories are refused without following them or changing retained data
+ok 89 - S06 symlinked store directories are refused without following them or changing retained data
+  ---
+  duration_ms: 708.486834
+  type: 'test'
+  ...
+# Subtest: S03/S06 a delta citation cannot widen its linked member byte or unsupported line scope
+ok 90 - S03/S06 a delta citation cannot widen its linked member byte or unsupported line scope
+  ---
+  duration_ms: 1432.018458
+  type: 'test'
+  ...
+# Subtest: S08 cancellation remains a request until an injected engine settles; no cleanup acknowledgment is invented
+ok 91 - S08 cancellation remains a request until an injected engine settles; no cleanup acknowledgment is invented
+  ---
+  duration_ms: 413.190666
+  type: 'test'
+  ...
+# Subtest: S08 progress forwarding is bounded, preserves real states, and observer errors cannot destroy results
+ok 92 - S08 progress forwarding is bounded, preserves real states, and observer errors cannot destroy results
+  ---
+  duration_ms: 276.699958
+  type: 'test'
+  ...
+# Subtest: S08 inputs are snapshotted and malformed/failed engines return no forged report or private error text
+ok 93 - S08 inputs are snapshotted and malformed/failed engines return no forged report or private error text
+  ---
+  duration_ms: 376.39625
+  type: 'test'
+  ...
+# Subtest: S08 real core pre-cancel validation is observable as no usable report, independently of mocked lifecycle
+ok 94 - S08 real core pre-cancel validation is observable as no usable report, independently of mocked lifecycle
+  ---
+  duration_ms: 2.27525
+  type: 'test'
+  ...
+# Subtest: S09 all AI states preserve deterministic fields; synthetic statuses are not live model evidence
+ok 95 - S09 all AI states preserve deterministic fields; synthetic statuses are not live model evidence
+  ---
+  duration_ms: 3286.571875
+  type: 'test'
+  ...
+# Subtest: non-TTY baseline CLI preserves one JSON report, exact IDs and no interactive dependency
+ok 96 - non-TTY baseline CLI preserves one JSON report, exact IDs and no interactive dependency
+  ---
+  duration_ms: 3568.168334
+  type: 'test'
+  ...
+# Subtest: actual canonical local fixture resolves hash-bound lifecycle addition and removal without changing evidence
+ok 97 - actual canonical local fixture resolves hash-bound lifecycle addition and removal without changing evidence
+  ---
+  duration_ms: 102.193083
+  type: 'test'
+  ...
+# Subtest: the reviewed 55240e9 deterministic consumer accepts the real retained addition through the G0 adapter
+ok 98 - the reviewed 55240e9 deterministic consumer accepts the real retained addition through the G0 adapter
+  ---
+  duration_ms: 827.84525
+  type: 'test'
+  ...
+# Subtest: actual EvidenceStore missing and corrupt delta bytes remain unresolved without supplying content
+ok 99 - actual EvidenceStore missing and corrupt delta bytes remain unresolved without supplying content
+  ---
+  duration_ms: 323.254
+  type: 'test'
+  ...
+# Subtest: foreign pointer, forged member link, span mismatch and false absence cannot establish script direction
+ok 100 - foreign pointer, forged member link, span mismatch and false absence cannot establish script direction
+  ---
+  duration_ms: 424.100167
+  type: 'test'
+  ...
+# Subtest: duplicate-key JSON and invalid UTF8 are rejected for deltas and linked original manifests
+ok 101 - duplicate-key JSON and invalid UTF8 are rejected for deltas and linked original manifests
+  ---
+  duration_ms: 141.138667
+  type: 'test'
+  ...
+# Subtest: both-null and canonically equal-value pseudo-deltas are rejected before any member resolution
+ok 102 - both-null and canonically equal-value pseudo-deltas are rejected before any member resolution
+  ---
+  duration_ms: 37.691791
+  type: 'test'
+  ...
+# Subtest: a delta referenced by another change is unresolved even when its content hash exists in the store
+ok 103 - a delta referenced by another change is unresolved even when its content hash exists in the store
+  ---
+  duration_ms: 54.35225
+  type: 'test'
+  ...
+# Subtest: individual delta/member byte bounds are enforced without passing oversized text to intelligence
+ok 104 - individual delta/member byte bounds are enforced without passing oversized text to intelligence
+  ---
+  duration_ms: 107.659666
+  type: 'test'
+  ...
+# Subtest: record count and total read budgets remain bounded even when every content read fails after consuming its allowance
+ok 105 - record count and total read budgets remain bounded even when every content read fails after consuming its allowance
+  ---
+  duration_ms: 96.654958
+  type: 'test'
+  ...
+# Subtest: pre-cancel, cancellation during a read, and an expired deadline never call the intelligence function
+ok 106 - pre-cancel, cancellation during a read, and an expired deadline never call the intelligence function
+  ---
+  duration_ms: 221.948042
+  type: 'test'
+  ...
+# Subtest: caller mutation during a delayed read cannot replace the bundle, options or resolved retained bytes
+ok 107 - caller mutation during a delayed read cannot replace the bundle, options or resolved retained bytes
+  ---
+  duration_ms: 291.485
+  type: 'test'
+  ...
+# Subtest: exact member spans in the canonical fixture are independently reproducible by the strict scanner
+ok 108 - exact member spans in the canonical fixture are independently reproducible by the strict scanner
+  ---
+  duration_ms: 198.743042
+  type: 'test'
+  ...
+# Subtest: host selector defaults to the reviewed identifier and explicit off is unavailable
+ok 109 - host selector defaults to the reviewed identifier and explicit off is unavailable
+  ---
+  duration_ms: 249.975625
+  type: 'test'
+  ...
+# Subtest: unknown host selector rejects before acquisition or store creation
+ok 110 - unknown host selector rejects before acquisition or store creation
+  ---
+  duration_ms: 8.536375
+  type: 'test'
+  ...
+# Subtest: explicit trusted injection takes precedence over an unknown host selector
+ok 111 - explicit trusted injection takes precedence over an unknown host selector
+  ---
+  duration_ms: 17.293625
+  type: 'test'
+  ...
+# Subtest: configured module has bounded bridge and identities without creating evidence state
+ok 112 - configured module has bounded bridge and identities without creating evidence state
+  ---
+  duration_ms: 68.516917
+  type: 'test'
+  ...
+# Subtest: a process has no percentage without an actual valid unit denominator
+ok 113 - a process has no percentage without an actual valid unit denominator
+  ---
+  duration_ms: 0.668625
+  type: 'test'
+  ...
+# Subtest: v1 navigation migrates without report changes and v2 preserves distinct section/pane/source positions
+ok 114 - v1 navigation migrates without report changes and v2 preserves distinct section/pane/source positions
+  ---
+  duration_ms: 0.709959
+  type: 'test'
+  ...
+# Subtest: large single-grapheme or control-character paste stays bounded before segmentation
+ok 115 - large single-grapheme or control-character paste stays bounded before segmentation
+  ---
+  duration_ms: 0.407
+  type: 'test'
+  ...
+# Subtest: dashboard retains independent actual outcomes and honest processing counts without invented file pairs
+ok 116 - dashboard retains independent actual outcomes and honest processing counts without invented file pairs
+  ---
+  duration_ms: 410.371333
+  type: 'test'
+  ...
+# Subtest: raw display alignment is bounded, window-relative and never changes evidence records
+ok 117 - raw display alignment is bounded, window-relative and never changes evidence records
+  ---
+  duration_ms: 6.425917
+  type: 'test'
+  ...
+# Subtest: actual historical facts preserve all six outcomes, unknown counts and source conflicts
+ok 118 - actual historical facts preserve all six outcomes, unknown counts and source conflicts
+  ---
+  duration_ms: 438.28075
+  type: 'test'
+  ...
+# Subtest: terminal rendering escapes OSC ANSI bidi and keeps grapheme bounds
+ok 119 - terminal rendering escapes OSC ANSI bidi and keeps grapheme bounds
+  ---
+  duration_ms: 20.51225
+  type: 'test'
+  ...
+# Subtest: real mutation file links retain original IDs and exact reader raw range
+ok 120 - real mutation file links retain original IDs and exact reader raw range
+  ---
+  duration_ms: 252.839292
+  type: 'test'
+  ...
+# Subtest: the exact user report explains missing deterministic analysis, successes and ambiguity independently of AI
+ok 121 - the exact user report explains missing deterministic analysis, successes and ambiguity independently of AI
+  ---
+  duration_ms: 283.599542
+  type: 'test'
+  ...
+# Subtest: source explanation resolves exact bound version values, compared candidate, basis, rate limits and root
+ok 122 - source explanation resolves exact bound version values, compared candidate, basis, rate limits and root
+  ---
+  duration_ms: 303.39075
+  type: 'test'
+  ...
+# Subtest: missing evidence cannot supply a displayed version comparison or claim of compared selection
+ok 123 - missing evidence cannot supply a displayed version comparison or claim of compared selection
+  ---
+  duration_ms: 165.273958
+  type: 'test'
+  ...
+# Subtest: a partially missing source claim remains explicit alongside readable selection and full immutable identity
+ok 124 - a partially missing source claim remains explicit alongside readable selection and full immutable identity
+  ---
+  duration_ms: 400.119917
+  type: 'test'
+  ...
+# Subtest: an omitted optional snapshot digest does not erase recorded source members or comparison
+ok 125 - an omitted optional snapshot digest does not erase recorded source members or comparison
+  ---
+  duration_ms: 167.316
+  type: 'test'
+  ...
+# Subtest: a synthetic invalid or unavailable version read cannot create replacement-decoded labels or fall back to another manifest
+ok 126 - a synthetic invalid or unavailable version read cannot create replacement-decoded labels or fall back to another manifest
+  ---
+  duration_ms: 352.484625
+  type: 'test'
+  ...
+# Subtest: directories are labeled navigation, file statuses and full paths survive, byte-delta citation precedes metadata delta
+ok 127 - directories are labeled navigation, file statuses and full paths survive, byte-delta citation precedes metadata delta
+  ---
+  duration_ms: 235.366542
+  type: 'test'
+  ...
+1..127
+# tests 127
+# suites 0
+# pass 127
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 26865.07075

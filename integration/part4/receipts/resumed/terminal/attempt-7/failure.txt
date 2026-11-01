@@ -1,0 +1,36 @@
+Expected 'AI state: unavailable'
+  HEURISKO / report / medium / 120x35                                                                                   
+   H Home    I Investigations     M Monitoring                                                                          
+  LOCAL INPUT F0.tgz@Unknown report_1cbc999c58216e4e1f7471b3                                                            
+  SYNTHETIC / HISTORICAL — checks not refreshed / incomplete / captured 2026-10-31T15:00:00Z                            
+  1 Overview*  2 Findings  3 Files  4 Source  5 AI  6 Coverage                                                          
+  ┌─ > Overview / report_1cbc999c58216e4e1f7471b3 ───────────────────────────────────────────────────────────────────┐  
+  │ Differences recorded; inspect raw evidence.                                                                      │  
+  │ Report report_1cbc999c58216e4e1f7471b3                                                                           │  
+  │ Content sha256:c108da77cb04ee091386d92f7c3152bc5428bba06ab73c019dd650d6459af335                                  │  
+  │ Artifact F0.tgz                                                                                                  │  
+  │ SHA-256 sha256:3120e4762610ddea40ab7b4154d1e562cc0ab85dd26699689f951f10c10c48bc                                  │  
+  │ Captured 2026-10-31T15:00:00Z                                                                                    │  
+  │ Created 2026-10-31T15:00:00Z                                                                                     │  
+  │ Configuration 52e32b9a58e8e53c51743a98b70664f1fb450c4f0095b7774fdb886b8fefe79c                                   │  
+  │ artifactIntegrity: not_available                                                                                 │  
+  │ sourceAssociation: user_supplied                                                                                 │  
+  │ provenancePolicy: not_checked                                                                                    │  
+  │ correspondence: not_assessed                                                                                     │  
+  │ analysisCompleteness: incomplete                                                                                 │  
+  │ policyResult: not_evaluated                                                                                      │  
+  │ Findings evaluation: not_evaluated_or_partial; examined-scope count: Unknown                                     │  
+  │ Recorded findings: 0 (not a safety assessment)                                                                   │  
+  │ AI: unavailable; SYNTHETIC rendering state; no model executed                                                    │  
+  │ Next action: inspect Files, source claims and coverage limitations.                                              │  
+  │                                                                                                                  │  
+  │                                                                                                                  │  
+  │                                                                                                                  │  
+  │                                                                                                                  │  
+  │                                                                                                                  │  
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘  
+  Focus 0 / filter (none) / No universal safety verdict                                                                 
+  j/k move  Enter inspect  e evidence  Tab focus  / filter  ? help  q quit                                              
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        

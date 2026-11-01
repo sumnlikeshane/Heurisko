@@ -1,0 +1,26 @@
+  HEURISKO   H Home    I Investigations     M Monitoring                            
+  ────────────────────────────────────────────────────────────────────────────────  
+  Live investigation                                                                
+  0m 01s elapsed · 2/10 stages reported terminal facts · no estimated finish time   
+  [────────━━━━────────────────] inventory / indeterminate                          
+                                                                                    
+  ┌─ > Stages ────────────────────────────────────────────── 2/10 terminal facts ┐  
+  │   resolve artifact / complete                                                │  
+  │   acquire / complete                                                         │  
+  │   source / not_started                                                       │  
+  │   provenance / not_started                                                   │  
+  │ > inventory / running                                                        │  
+  │   compare / not_started                                                      │  
+  │   build / not_started                                                        │  
+  │   heuristics / not_started                                                   │  
+  │   ai / not_started                                                           │  
+  │   persist / not_started                                                      │  
+  │ Complete / incomplete / skipped / failed stay distinct.                      │  
+  │                                                                              │  
+  └──────────────────────────────────────────────────────────────────────────────┘  
+                                                                                    
+                                                                                    
+  live                                                                              
+  Up/Down stages  Tab details  Ctrl+C cancel  q cancel                              
+                                                                                    
+                                                                                    

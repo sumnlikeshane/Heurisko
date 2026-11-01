@@ -1,0 +1,40 @@
+  HEURISKO   H Home    I Investigations     M Monitoring                                                                                                        
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+                                                                                                                                                                
+                                     ┌─ > New investigation ─────────────────────────────────────────────────────── 1 / 2 ┐                                     
+                                     │   Input (Ctrl+T)  npm   [ Local archive ]                                          │                                     
+                                     │                                                                                    │                                     
+                                     │ Archive path                                                                       │                                     
+                                     │   .heurisko/tui-visual-live-8ec9503a-c14d-437f-8f28-f8dd991f9838-input.tgz         │                                     
+                                     │ Source repository                                                                  │                                     
+                                     │   https://github.com/alexeyraspopov/picocolors                                     │                                     
+                                     │ Full commit                                                                        │                                     
+                                     │   6f0a4638348ed20633d623ee973f9c9a96f65104                                         │                                     
+                                     │ Subdirectory                                                                       │                                     
+                                     │   Repository root if empty                                                         │                                     
+                                     │ Source archive (optional)  [editing]                                               │                                     
+                                     │ > ent/inputs/picocolors-source-6f0a4638348ed20633d623ee973f9c9a96f65104.tar.gz     │                                     
+                                     │ AI disabled / runtime unavailable · source selection is not provenance             │                                     
+                                     │  Load retained example                                                             │                                     
+                                     │  Review target                                                                     │                                     
+                                     │                                                                                    │                                     
+                                     └────────────────────────────────────────────────────────────────────────────────────┘                                     
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+  New investigation / Local archive                                                                                                                             
+  Type to edit  Tab next  Ctrl+T type  Enter review  Esc back                                                                                                   
+                                                                                                                                                                
+                                                                                                                                                                

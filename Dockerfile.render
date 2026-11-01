@@ -1,0 +1,28 @@
+# The hosted image serves committed public observations only. It is not a
+# Docker-in-Docker parser worker and has no Docker socket or target execution.
+FROM node:22.23.4-bookworm-slim@sha256:4b150b48b4116e2a22f2c39cc27025fbf4f153e2078fd3b14d159fdb5c7279da AS node-runtime
+FROM python:3.13.2-slim-bookworm@sha256:6b3223eb4d93718828223966ad316909c39813dee3ee9395204940500792b740
+COPY --from=node-runtime /usr/local/bin/node /usr/local/bin/node
+COPY --from=node-runtime /usr/local/lib/node_modules/npm /usr/local/lib/node_modules/npm
+RUN ln -s ../lib/node_modules/npm/bin/npm-cli.js /usr/local/bin/npm \
+    && npm install --global pnpm@10.14.0 --ignore-scripts
+WORKDIR /app
+COPY package.json pnpm-lock.yaml pnpm-workspace.yaml requirements-contracts.txt ./
+COPY packages ./packages
+COPY integration/part4 ./integration/part4
+COPY apps/web ./apps/web
+COPY README.md LICENSE NOTICE ./
+COPY ["docs/CLI Reference.md", "./docs/CLI Reference.md"]
+COPY examples/handoff/current ./examples/handoff/current
+COPY examples/final-hour/20261101-053912/integrated-55240e9 ./examples/final-hour/20261101-053912/integrated-55240e9
+RUN python -m venv .venv \
+    && .venv/bin/pip install --no-cache-dir --require-hashes -r requirements-contracts.txt \
+    && pnpm install --frozen-lockfile --ignore-scripts \
+    && pnpm run build \
+    && groupadd --gid 10001 heurisko \
+    && useradd --uid 10001 --gid 10001 --no-create-home --shell /usr/sbin/nologin heurisko \
+    && chown -R 10001:10001 /app
+ENV NODE_ENV=production HEURISKO_WEB_MODE=public-readonly PORT=10000
+USER 10001:10001
+EXPOSE 10000
+CMD ["node", "apps/web/dist/main.js"]

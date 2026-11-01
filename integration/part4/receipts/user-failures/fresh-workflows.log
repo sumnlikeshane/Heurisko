@@ -1,0 +1,43 @@
+Traceback (most recent call last):
+  File "<WORKSPACE>/packages/tui/tests/user-workflows.py", line 59, in <module>
+    source=next(c for c in r['bundle']['sourceCandidates'] if c['commit']==NEW)['sourceSnapshotSha256'];source_path=STORE/'blobs'/source[7:]
+    
+  File "<WORKSPACE>/packages/tui/tests/user-workflows.py", line 15, in expect
+    assert ' '.join(text.split()) in ' '.join(s.frame().replace('│',' ').split()),repr(text)+' missing\n'+s.frame()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'RAW CHANGED SPANS' missing
+  HEURISKO   H Home    I Investigations     M Monitoring                                                                
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+  picocolors-1.1.1.local-inert-mutation.tgz / LOCAL INPUT / HISTORICAL / incomplete / Captured 2026-10-31T23:14:47Z     
+  1 Overview   2 Findings   3 Files   4 Source   5 AI   6 Coverage                                                      
+  Historical — online checks have not refreshed · i Identity                                                            
+  Files                                                                                                                 
+  Tree / 2 modified / 5 identical / 0 unresolved (20 change records) / m next modified / v tree-flat                    
+  ┌─ > Files ──────────── 1 ┐ ┌─ Directory / navigation ─────────────────────────────────────────────────────────────┐  
+  │ Filter: package.json    │ │ Directory:                                                                           │  
+  │                         │ │ package                                                                              │  
+  │ > [+] Artifact root/    │ │ 1 descendant change records; 1 modified.                                             │  
+  │   1 records / 1 modifi… │ │ Enter expands/collapses. m jumps directly to the next modified file.                 │  
+  │                         │ │ Directory selection shows navigation metadata; no file comparison is implied.        │  
+  │ 1 / 1 · Enter expand    │ │ 1-5 / 5                                                                              │  
+  └─────────────────────────┘ └──────────────────────────────────────────────────────────────────────────────────────┘  
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+  Files                                                                                                                 
+  Enter expand  m modified  v tree/flat  Tab preview  ? help  q quit                                                    
+                                                                                                                        
+                                                                                                                        

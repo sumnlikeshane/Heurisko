@@ -1,0 +1,11 @@
+acquire: running
+acquire: complete
+source: running
+inventory: running
+inventory: complete
+compare: running
+compare: complete
+heuristics: running
+heuristics: incomplete
+persist: running
+persist: complete

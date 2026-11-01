@@ -1,0 +1,653 @@
+[
+  {
+    "source": ".heurisko/parts456-audit-20261101/logs/assembled-typecheck.log",
+    "copy": "logs/assembled-typecheck.log",
+    "originalSHA256": "5cd55581f3ff2d896e69f2cf1048ea1c6759cffe506169b9658a3849efa4f772",
+    "publishedSHA256": "95fc09c284c58ad937b1ed66b3a744af7625ecbded9c7ca1ec4658ee2c583973",
+    "sanitized": true
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/logs/audit-final-typecheck.log",
+    "copy": "logs/audit-final-typecheck.log",
+    "originalSHA256": "f8690c1ae3503f578dcc9ac2fee59915a1b19f5242d67dd8b406b112bfb8c0bc",
+    "publishedSHA256": "6c0a6bea5bd104d2c240bb7aa83f1e028708511775be206f49df4f0765bbf66c",
+    "sanitized": true
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/logs/browser-service-preflight.log",
+    "copy": "logs/browser-service-preflight.log",
+    "originalSHA256": "54d10f15f8af303ed10851bc37022720ca08cc9e535b8f10ebd00fbcda00646d",
+    "publishedSHA256": "54d10f15f8af303ed10851bc37022720ca08cc9e535b8f10ebd00fbcda00646d",
+    "sanitized": false
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/logs/browser-service.log",
+    "copy": "logs/browser-service.log",
+    "originalSHA256": "4d7a3a19025b308ba3327e91daa77996b4905ca7e82b35f5be51c80873f7af62",
+    "publishedSHA256": "4d7a3a19025b308ba3327e91daa77996b4905ca7e82b35f5be51c80873f7af62",
+    "sanitized": false
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/logs/cli-boundary.log",
+    "copy": "logs/cli-boundary.log",
+    "originalSHA256": "401dac63acfeeb22ea207bcca3b956057faa5f8a07032eb20e345d6197cd04d9",
+    "publishedSHA256": "401dac63acfeeb22ea207bcca3b956057faa5f8a07032eb20e345d6197cd04d9",
+    "sanitized": false
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/logs/contracts.log",
+    "copy": "logs/contracts.log",
+    "originalSHA256": "8df0f800e400683f96d077e61536e5fe87134cf40d71d504f9ab4629a12ba81e",
+    "publishedSHA256": "076eeb0841a25223d4d25a3259c95e34f08eb3c5fc5e47dffcd14c0361768cc0",
+    "sanitized": true
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/logs/core-full.log",
+    "copy": "logs/core-full.log",
+    "originalSHA256": "af4fde581035f2712445a21424aaaec8fe7f4c8c63fd98158be26c0853f5690e",
+    "publishedSHA256": "af4fde581035f2712445a21424aaaec8fe7f4c8c63fd98158be26c0853f5690e",
+    "sanitized": false
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/logs/corpus-parity.log",
+    "copy": "logs/corpus-parity.log",
+    "originalSHA256": "6df547259f07bf34972779a6dc8153122c2114fb15215b1f79c9590388e6b9ab",
+    "publishedSHA256": "6df547259f07bf34972779a6dc8153122c2114fb15215b1f79c9590388e6b9ab",
+    "sanitized": false
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/logs/docker-preflight.log",
+    "copy": "logs/docker-preflight.log",
+    "originalSHA256": "194b19f16b9a91a6986ecba4a11e4e3b1e759cd01383364f361c35b66bf729c2",
+    "publishedSHA256": "194b19f16b9a91a6986ecba4a11e4e3b1e759cd01383364f361c35b66bf729c2",
+    "sanitized": false
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/logs/docs-search-repro.log",
+    "copy": "logs/docs-search-repro.log",
+    "originalSHA256": "0f0963afec254a97454e6c407f1ea0de9addf4541ad1c9628f4eb678bf6cdefc",
+    "publishedSHA256": "0f0963afec254a97454e6c407f1ea0de9addf4541ad1c9628f4eb678bf6cdefc",
+    "sanitized": false
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/logs/environment.log",
+    "copy": "logs/environment.log",
+    "originalSHA256": "9b1af627a53d3d97d2081a9e8e56f90bcac8ef35c8408fd36cf7b09ac1325666",
+    "publishedSHA256": "9b1af627a53d3d97d2081a9e8e56f90bcac8ef35c8408fd36cf7b09ac1325666",
+    "sanitized": false
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/logs/final-workspace-typecheck.log",
+    "copy": "logs/final-workspace-typecheck.log",
+    "originalSHA256": "793b51f61832fa7d13d0a72d3540f7a694656f8cb4d774434e49164993cd24b4",
+    "publishedSHA256": "dd733cc71d4cef95869d44ac16f7ae3ad45df63575f3ce2e0d3d2f801cc0f791",
+    "sanitized": true
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/logs/historical-corpus.log",
+    "copy": "logs/historical-corpus.log",
+    "originalSHA256": "284a490e374ea353acc9e60ef640924df59c795a6e308796700330f6ac322e74",
+    "publishedSHA256": "284a490e374ea353acc9e60ef640924df59c795a6e308796700330f6ac322e74",
+    "sanitized": false
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/logs/investigation-e2e-final.log",
+    "copy": "logs/investigation-e2e-final.log",
+    "originalSHA256": "61870d15b40ed6d1ec869da11c96b93ba416d31b80d32724abc71e1d60580cbd",
+    "publishedSHA256": "4cba70babd3fdb8e5608b2de0f58f8fb8182ceee526bd47d2cc61b6963c637db",
+    "sanitized": true
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/logs/investigation-e2e.log",
+    "copy": "logs/investigation-e2e.log",
+    "originalSHA256": "a1b1b6aac55304e8a0c62cfad63877b501d13b6c2aebaa4859bf6491543d7d02",
+    "publishedSHA256": "a1b1b6aac55304e8a0c62cfad63877b501d13b6c2aebaa4859bf6491543d7d02",
+    "sanitized": false
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/logs/isolated-contracts.log",
+    "copy": "logs/isolated-contracts.log",
+    "originalSHA256": "18e185235fd2efa761a4ae216ea0501e3df59c0038b55dcfe666a8792778bdb6",
+    "publishedSHA256": "3632f548ad40d09ce141cc35e9d769a01f977bc93d42ed082b65007e8ac81a0b",
+    "sanitized": true
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/logs/isolated-core-final.log",
+    "copy": "logs/isolated-core-final.log",
+    "originalSHA256": "3fff78799117115348004b4ed4f6609ffafdcae4a94b6c83a057f24e96647c5b",
+    "publishedSHA256": "3fff78799117115348004b4ed4f6609ffafdcae4a94b6c83a057f24e96647c5b",
+    "sanitized": false
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/logs/isolated-core.log",
+    "copy": "logs/isolated-core.log",
+    "originalSHA256": "f1f08b5e19663901094e950613d3321ca91ead1cb5000f9caa1ac61845345726",
+    "publishedSHA256": "f1f08b5e19663901094e950613d3321ca91ead1cb5000f9caa1ac61845345726",
+    "sanitized": false
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/logs/isolated-corpus.log",
+    "copy": "logs/isolated-corpus.log",
+    "originalSHA256": "6df547259f07bf34972779a6dc8153122c2114fb15215b1f79c9590388e6b9ab",
+    "publishedSHA256": "6df547259f07bf34972779a6dc8153122c2114fb15215b1f79c9590388e6b9ab",
+    "sanitized": false
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/logs/isolated-resolution.log",
+    "copy": "logs/isolated-resolution.log",
+    "originalSHA256": "3a1b0d8022abad58552bc89cba42690cb12eb4c51479025aad6f8a1676a07890",
+    "publishedSHA256": "e04614b1af5c1412e30556924c98d88cc2795f3eb68f8b8af53f2af88a65cfc9",
+    "sanitized": true
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/logs/isolated-s4.log",
+    "copy": "logs/isolated-s4.log",
+    "originalSHA256": "24f80bcd4a8e750d744bc64ba24942ff5c95e86130a7c707cf26d40dcd13d2ad",
+    "publishedSHA256": "24f80bcd4a8e750d744bc64ba24942ff5c95e86130a7c707cf26d40dcd13d2ad",
+    "sanitized": false
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/logs/isolated-typecheck.log",
+    "copy": "logs/isolated-typecheck.log",
+    "originalSHA256": "91bddbf339ba254cf205f03185560e5163098ab04f8ea08533464bbd70391311",
+    "publishedSHA256": "b311e567f548d91d4f029cfe3cc738cdf66db4ba3068d89570597dbe01210632",
+    "sanitized": true
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/logs/isolated-web.log",
+    "copy": "logs/isolated-web.log",
+    "originalSHA256": "87baceb2a91374a00b7c046f6160b03394c8b5d0e8c3172c188f1507171ec19e",
+    "publishedSHA256": "9bcb66bc73507b054325189a1e5018a38b1b5a21f53f10e73a8ac0c7387aef40",
+    "sanitized": true
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/logs/parser-boundary.log",
+    "copy": "logs/parser-boundary.log",
+    "originalSHA256": "b14ad35d8fe6b995bcd8305064b1c7e47c3c3bdfaa8568984cd6ce90f8431e52",
+    "publishedSHA256": "b14ad35d8fe6b995bcd8305064b1c7e47c3c3bdfaa8568984cd6ce90f8431e52",
+    "sanitized": false
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/logs/parser-image-restore.log",
+    "copy": "logs/parser-image-restore.log",
+    "originalSHA256": "b5dcc9035c977dd1a4b4d7350ec0b0745735fd8113696f0572aad0541b16f7f3",
+    "publishedSHA256": "b5dcc9035c977dd1a4b4d7350ec0b0745735fd8113696f0572aad0541b16f7f3",
+    "sanitized": false
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/logs/release-review-typecheck.log",
+    "copy": "logs/release-review-typecheck.log",
+    "originalSHA256": "23dfc24a756096a32d0e4202d793050ce6f73b2bfc5290fd8058a37f9f67f57e",
+    "publishedSHA256": "d9ea7d0e3256491801b77ee518c9cb75fc1988853459f5a54a1c7475582df004",
+    "sanitized": true
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/logs/research-checksums.log",
+    "copy": "logs/research-checksums.log",
+    "originalSHA256": "f2516c77bb897ed2ae1fe5f33e825976d44c5f5b081c36d80c1f5078dd472eae",
+    "publishedSHA256": "f2516c77bb897ed2ae1fe5f33e825976d44c5f5b081c36d80c1f5078dd472eae",
+    "sanitized": false
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/logs/s4-complete.log",
+    "copy": "logs/s4-complete.log",
+    "originalSHA256": "9c8c56a3d54aaf5665741f4e2191d68a86ab22bca80dc0437e2644a2bd615cce",
+    "publishedSHA256": "9c8c56a3d54aaf5665741f4e2191d68a86ab22bca80dc0437e2644a2bd615cce",
+    "sanitized": false
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/logs/s4-final.log",
+    "copy": "logs/s4-final.log",
+    "originalSHA256": "60ef2a0a494851968012eee534e51ce9693d0751ba82a0fc485029ae8c447efb",
+    "publishedSHA256": "60ef2a0a494851968012eee534e51ce9693d0751ba82a0fc485029ae8c447efb",
+    "sanitized": false
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/logs/s4-full.log",
+    "copy": "logs/s4-full.log",
+    "originalSHA256": "d5879d0e909ad7a45bd6a3753457af17e081a4bc55831e96043c9092c6504c46",
+    "publishedSHA256": "d5879d0e909ad7a45bd6a3753457af17e081a4bc55831e96043c9092c6504c46",
+    "sanitized": false
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/logs/stable-workspace-typecheck.log",
+    "copy": "logs/stable-workspace-typecheck.log",
+    "originalSHA256": "62a5858cd0346153001593bce09bd0ca7f91528e09688e5dd11b569ef06bbc27",
+    "publishedSHA256": "48853bdb5cfe4688ce2f081e29f3d2ff35bc801394434b39428c033fbce53526",
+    "sanitized": true
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/logs/tui-last-compile.log",
+    "copy": "logs/tui-last-compile.log",
+    "originalSHA256": "a91b9eed769cad2c90a31b0761053974450b60430ef07a58dc6d33db62e66a1c",
+    "publishedSHA256": "f47b6d6f4d7e6bda555766934c5ee113fcc44d512d9cf03e823af47772579ad4",
+    "sanitized": true
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/logs/web-complete.log",
+    "copy": "logs/web-complete.log",
+    "originalSHA256": "2931504dc62e04f2e9a96e24526c7ff456ee7af653c178eb09f6dfc1fff1a00b",
+    "publishedSHA256": "4152b8b10849d658f5915e4f27da8d280d9c4ddbf31dffe0fa1f982f42e1ea99",
+    "sanitized": true
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/logs/web-full-final.log",
+    "copy": "logs/web-full-final.log",
+    "originalSHA256": "775e8f400d237b7275d8dca4ca0481c781b26562a1126fddea345b8f955b4385",
+    "publishedSHA256": "6563c7bc9995c196f552f3a4dac3d745d0710091df3166ffd4b878d98605ff6f",
+    "sanitized": true
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/logs/web-full.log",
+    "copy": "logs/web-full.log",
+    "originalSHA256": "77694dccf35dafbd7f5e75ab31e51f25c13c4885f6727c5e78f5553b4af9a5e2",
+    "publishedSHA256": "f266452644d949d819e906740543d08bef9965b2165f312c370023b534d08da4",
+    "sanitized": true
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/logs/web-root-label-repro.log",
+    "copy": "logs/web-root-label-repro.log",
+    "originalSHA256": "e0875cd8e2b0e8c49de1cde18e91fbe7d2d425d38bbdb7920327fc911b85f18e",
+    "publishedSHA256": "e0875cd8e2b0e8c49de1cde18e91fbe7d2d425d38bbdb7920327fc911b85f18e",
+    "sanitized": false
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/logs/web-search-build.log",
+    "copy": "logs/web-search-build.log",
+    "originalSHA256": "1e403b03eb2ea06171ee6893b21eb8bd85d2ac92534d4a820a974dc1b687b191",
+    "publishedSHA256": "e51a3dedb7a06854c5acede9e66ee4cca40a2bb4d7b95bfa7b2b60c27ab49c2d",
+    "sanitized": true
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/logs/workspace-review-final.log",
+    "copy": "logs/workspace-review-final.log",
+    "originalSHA256": "793b51f61832fa7d13d0a72d3540f7a694656f8cb4d774434e49164993cd24b4",
+    "publishedSHA256": "dd733cc71d4cef95869d44ac16f7ae3ad45df63575f3ce2e0d3d2f801cc0f791",
+    "sanitized": true
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/logs/workspace-typecheck.log",
+    "copy": "logs/workspace-typecheck.log",
+    "originalSHA256": "793b51f61832fa7d13d0a72d3540f7a694656f8cb4d774434e49164993cd24b4",
+    "publishedSHA256": "dd733cc71d4cef95869d44ac16f7ae3ad45df63575f3ce2e0d3d2f801cc0f791",
+    "sanitized": true
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/pty/evidence-mode-current.log",
+    "copy": "pty/logs/evidence-mode-current.log",
+    "originalSHA256": "1638e974fdbaa885ff3f2c53648d81cb4933cd59c1f788165e2381feaa0ff61e",
+    "publishedSHA256": "f9e0a38290a9d1bba6d3128367e95bc15b32fc88c8296d17ba0330145d9d21e1",
+    "sanitized": true
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/pty/evidence-mode-final.log",
+    "copy": "pty/logs/evidence-mode-final.log",
+    "originalSHA256": "38640675f462f8a3753f677b9e63451af9f4089a90a13156004d61e83f235f70",
+    "publishedSHA256": "f8f83972408b7af1e8e455fd4d642e557f580ec3805083a5150ec4a0a968db71",
+    "sanitized": true
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/pty/evidence-mode-v2.log",
+    "copy": "pty/logs/evidence-mode-v2.log",
+    "originalSHA256": "07c6f14dc7df228a7ab1c9aa2341b716d5103b064e770836e2811ad287fde711",
+    "publishedSHA256": "02bc86e6fb3f0f8dc58c9e8537a66a7e1d8da34a22c95e602f1e08dac9d33eac",
+    "sanitized": true
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/pty/evidence-mode.log",
+    "copy": "pty/logs/evidence-mode.log",
+    "originalSHA256": "4639844fd0450b8912e755758dba43b2f2a5b58eabe84466705fb1ed460d1dcd",
+    "publishedSHA256": "ab22cfe1cddb94cd11c78a45609e163f03a84e9a46bc272f990ca8e636efabc8",
+    "sanitized": true
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/pty/navigation-final.log",
+    "copy": "pty/logs/navigation-final.log",
+    "originalSHA256": "d34efd48e61c25f647756e58b86fa5958f4dd94d3bb96117cca813b195992bcf",
+    "publishedSHA256": "893bf03bb9042ef787cafb904b398726e24ccafe43ab8d41851dc0f8d853fe07",
+    "sanitized": true
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/pty/navigation-synchronized.log",
+    "copy": "pty/logs/navigation-synchronized.log",
+    "originalSHA256": "9a1280b4eeff61b76d194df0b28c45dd77cb028caf29031f68585fd3dd3a3518",
+    "publishedSHA256": "9a1280b4eeff61b76d194df0b28c45dd77cb028caf29031f68585fd3dd3a3518",
+    "sanitized": false
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/pty/navigation-v2.log",
+    "copy": "pty/logs/navigation-v2.log",
+    "originalSHA256": "2b5cec44e9810cc3c24aaa1b084fb8c8e993fcc47ea6b0fd9ca357c5ddd1f4ae",
+    "publishedSHA256": "4c1de5ad662a47895fa9d6d90702656557973a3de7dd8ce7e0cbeaa8a000b3f1",
+    "sanitized": true
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/pty/navigation.log",
+    "copy": "pty/logs/navigation.log",
+    "originalSHA256": "8e3fd2b5cb375de390e6ecac03fa53e6a424ced57aebccb9549193ed77087807",
+    "publishedSHA256": "74b6e9fe0e4aa05a1d00a8ae8d9104c3800a90a37a8b96f4a5760c8e9b2e664b",
+    "sanitized": true
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/pty/report-adoption-final.log",
+    "copy": "pty/logs/report-adoption-final.log",
+    "originalSHA256": "30c9fcb8e9da7fc573598d35e043ef441566d3d5d1436e974cf1888499066be8",
+    "publishedSHA256": "6a4337259667b3d4cc592e2b2016a0d3e1e256bc5e4ff096a9a735c472a1c11a",
+    "sanitized": true
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/pty/report-state-repro-v2.log",
+    "copy": "pty/logs/report-state-repro-v2.log",
+    "originalSHA256": "254b83d4f6297982813acb58f543c1d0a192e11672b29aee6e32036b0f0e92cd",
+    "publishedSHA256": "254b83d4f6297982813acb58f543c1d0a192e11672b29aee6e32036b0f0e92cd",
+    "sanitized": false
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/pty/report-state-repro.log",
+    "copy": "pty/logs/report-state-repro.log",
+    "originalSHA256": "82ad019fba8f0af8c0c12e2b06bed69930ab1697132eacc8a2e0c748c4fd6502",
+    "publishedSHA256": "157364d09adab1866d96f6eccf6414fee0b784c6edf4f77efc628a4cf55bfb9e",
+    "sanitized": true
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/pty/terminal-current-synchronized.log",
+    "copy": "pty/logs/terminal-current-synchronized.log",
+    "originalSHA256": "1b6d0484d7121be58e9ebce763e2c00d2f3de2ba162f0ee0a207e286bbe977d3",
+    "publishedSHA256": "1b6d0484d7121be58e9ebce763e2c00d2f3de2ba162f0ee0a207e286bbe977d3",
+    "sanitized": false
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/pty/terminal-current.log",
+    "copy": "pty/logs/terminal-current.log",
+    "originalSHA256": "2200b965925c88e55a44199675794c67f390891f371b55526b6f49a1d0e1501d",
+    "publishedSHA256": "0593f148d901132e34096ba70cf9ddbfb0a7ef52e7aa375b1411d535c312df1f",
+    "sanitized": true
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/pty/terminal-extra-final.log",
+    "copy": "pty/logs/terminal-extra-final.log",
+    "originalSHA256": "8de254ee4e5e50c478850b31f652644b529676055d8dd0dc695eb3ae0930653d",
+    "publishedSHA256": "a6e204a2bd4838847649b640eeaa347e8644c4c6ef9a93f5f288fb0e7be36b8e",
+    "sanitized": true
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/pty/terminal-extra-synchronized.log",
+    "copy": "pty/logs/terminal-extra-synchronized.log",
+    "originalSHA256": "197222950de0335e22eb6685cdbc06f66cb74b27fb776987bb5b3511445a9b31",
+    "publishedSHA256": "197222950de0335e22eb6685cdbc06f66cb74b27fb776987bb5b3511445a9b31",
+    "sanitized": false
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/pty/terminal-extra.log",
+    "copy": "pty/logs/terminal-extra.log",
+    "originalSHA256": "978e97568206ae9b94e3b7ee7726c19e47af2f337a5bbc59c9580e846471a510",
+    "publishedSHA256": "18e00f5cabe8c160766a7ee4a83f8e73305c51a2f672f01f55af9a18197d834e",
+    "sanitized": true
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/pty/terminal-live-current.log",
+    "copy": "pty/logs/terminal-live-current.log",
+    "originalSHA256": "9e8d8606d19efbc74d3155e1ef752968b23842f0afe54a7191a6230aa48f7d9f",
+    "publishedSHA256": "9e8d8606d19efbc74d3155e1ef752968b23842f0afe54a7191a6230aa48f7d9f",
+    "sanitized": false
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/pty/terminal-live.log",
+    "copy": "pty/logs/terminal-live.log",
+    "originalSHA256": "5f9f2968f2a31a150a907449d012d974d36446d3c1df3375bacb7be9b989aae2",
+    "publishedSHA256": "5f9f2968f2a31a150a907449d012d974d36446d3c1df3375bacb7be9b989aae2",
+    "sanitized": false
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/pty/terminal.log",
+    "copy": "pty/logs/terminal.log",
+    "originalSHA256": "e1b37bb309819544e6518583c793073fcf3e206e82ddc8397d20ddc2ac906bb6",
+    "publishedSHA256": "e1b37bb309819544e6518583c793073fcf3e206e82ddc8397d20ddc2ac906bb6",
+    "sanitized": false
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/pty/user-states.log",
+    "copy": "pty/logs/user-states.log",
+    "originalSHA256": "46005bf8bdd5de59d986858bb339f18e0db306dfa9ecaa62b5a062b0c33b44e0",
+    "publishedSHA256": "46005bf8bdd5de59d986858bb339f18e0db306dfa9ecaa62b5a062b0c33b44e0",
+    "sanitized": false
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/pty/user-workflows-screens-current.log",
+    "copy": "pty/logs/user-workflows-screens-current.log",
+    "originalSHA256": "d21717c40f39a3038c64245521c3a2bc34105336514f6a8a0bcaa0ce00423139",
+    "publishedSHA256": "d21717c40f39a3038c64245521c3a2bc34105336514f6a8a0bcaa0ce00423139",
+    "sanitized": false
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/pty/user-workflows-screens-v2.log",
+    "copy": "pty/logs/user-workflows-screens-v2.log",
+    "originalSHA256": "97886298f9702b2995f41402c872fd5a821e294760f1b78d65829f5401d79c83",
+    "publishedSHA256": "97886298f9702b2995f41402c872fd5a821e294760f1b78d65829f5401d79c83",
+    "sanitized": false
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/pty/user-workflows-screens.log",
+    "copy": "pty/logs/user-workflows-screens.log",
+    "originalSHA256": "b5470c3d998de68e1b8d796dfb3037184f9f3bcc04089b4c83ec0feaaa0c6837",
+    "publishedSHA256": "af20b8f78261a59c972ab7b2c2ef6ca005048f730c81311cf252fef31c7bc4a6",
+    "sanitized": true
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/pty/results.json",
+    "copy": "pty/results.json",
+    "originalSHA256": "c83198ff817b66e20a0fdca6ac1fd9b952016b14a6fe0abe3bc66e7214d4d201",
+    "publishedSHA256": "cac3275488bfcb820acd01c7410989b0cea8f745abc81a041bfded394812f12b",
+    "sanitized": true
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/pty/harness.py",
+    "copy": "pty/harness.py",
+    "originalSHA256": "09f3cdcd25fa7bc7dbef272ace6307849c8675c773ed6198d07ab3c4f92b8497",
+    "publishedSHA256": "09f3cdcd25fa7bc7dbef272ace6307849c8675c773ed6198d07ab3c4f92b8497",
+    "sanitized": false
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/pty/isolated-binding.json",
+    "copy": "pty/isolated-binding.json",
+    "originalSHA256": "fa48c0fbde8c846471fe48cf8cf495ddbafbfe490b79d5e667d9cfc6243cb0c4",
+    "publishedSHA256": "fa48c0fbde8c846471fe48cf8cf495ddbafbfe490b79d5e667d9cfc6243cb0c4",
+    "sanitized": false
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/pty/engine-bindings.json",
+    "copy": "pty/engine-bindings.json",
+    "originalSHA256": "16aad1f7e6a46d5af852546c36ac0507c63bbcee44891246047707ecb6310c42",
+    "publishedSHA256": "16aad1f7e6a46d5af852546c36ac0507c63bbcee44891246047707ecb6310c42",
+    "sanitized": false
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/pty/docker-final.json",
+    "copy": "pty/docker-final.json",
+    "originalSHA256": "6d8424bc8c0a1e739f88a4faef176cacdc213dd0ce4a85864db7d458c602b0d1",
+    "publishedSHA256": "6d8424bc8c0a1e739f88a4faef176cacdc213dd0ce4a85864db7d458c602b0d1",
+    "sanitized": false
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/pty/pre-repair-source.json",
+    "copy": "pty/pre-repair-source.json",
+    "originalSHA256": "21cde42cf0889133fb501d20fc40dabad3c3fb40494c5ec724786362a5653f22",
+    "publishedSHA256": "21cde42cf0889133fb501d20fc40dabad3c3fb40494c5ec724786362a5653f22",
+    "sanitized": false
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/pty/evidence-mode-r2onydxa/validation.json",
+    "copy": "pty/attempt-05.json",
+    "originalSHA256": "5d51640b42aed82d187cec6f2bf819d518122fbd801cca04caa7a72e3072803a",
+    "publishedSHA256": "5d51640b42aed82d187cec6f2bf819d518122fbd801cca04caa7a72e3072803a",
+    "sanitized": false
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/pty/evidence-mode-ivckrhc1/validation.json",
+    "copy": "pty/attempt-06.json",
+    "originalSHA256": "168aae88b6fb71e1e4d29bd79850d1617ca6d61b8ba39510f0a7c4c4bea2158d",
+    "publishedSHA256": "168aae88b6fb71e1e4d29bd79850d1617ca6d61b8ba39510f0a7c4c4bea2158d",
+    "sanitized": false
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/pty/evidence-mode-6wz_u5bt/validation.json",
+    "copy": "pty/attempt-07.json",
+    "originalSHA256": "1cbb1fde40e48d109d8b943433a0ebdbd42deced0c04daeb3b4434d70ad7982c",
+    "publishedSHA256": "1cbb1fde40e48d109d8b943433a0ebdbd42deced0c04daeb3b4434d70ad7982c",
+    "sanitized": false
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/pty/workspace/integration/part4/receipts/user-failures/workflows-1/validation.json",
+    "copy": "pty/attempt-08.json",
+    "originalSHA256": "e42f515584b374e3f2df3a34592ad6257838810489fb6bcd0e8fe7c1094fddaa",
+    "publishedSHA256": "e42f515584b374e3f2df3a34592ad6257838810489fb6bcd0e8fe7c1094fddaa",
+    "sanitized": false
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/pty/workspace-v2/integration/part4/receipts/user-failures/workflows-1/validation.json",
+    "copy": "pty/attempt-09.json",
+    "originalSHA256": "fc320a91e0bb972c91c5d02185b259df4baea935af67f0237e18f9ca42ed6678",
+    "publishedSHA256": "fc320a91e0bb972c91c5d02185b259df4baea935af67f0237e18f9ca42ed6678",
+    "sanitized": false
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/pty/workspace-states/integration/part4/receipts/user-failures/states-1/validation.json",
+    "copy": "pty/attempt-10.json",
+    "originalSHA256": "63a058d44c9775f97a80f3f8caa5e77cad260baf78cc647254051514068d9e24",
+    "publishedSHA256": "63a058d44c9775f97a80f3f8caa5e77cad260baf78cc647254051514068d9e24",
+    "sanitized": false
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/pty/workspace-v2/integration/part4/receipts/visual-rework/attempt-1/validation.json",
+    "copy": "pty/attempt-11.json",
+    "originalSHA256": "28369e44e1f1a92222668b7ac716a1964f28d0105bd0163f3dbfb57b7a18730b",
+    "publishedSHA256": "28369e44e1f1a92222668b7ac716a1964f28d0105bd0163f3dbfb57b7a18730b",
+    "sanitized": false
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/pty/workspace-v2/integration/part4/receipts/visual-rework/extra-1/validation.json",
+    "copy": "pty/attempt-12.json",
+    "originalSHA256": "67187abcc32d46669fc113877678750f507c3be14c6224756db497f1ff7eedf9",
+    "publishedSHA256": "67187abcc32d46669fc113877678750f507c3be14c6224756db497f1ff7eedf9",
+    "sanitized": false
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/pty/workspace-v2/integration/part4/receipts/visual-rework/extra-2/validation.json",
+    "copy": "pty/attempt-13.json",
+    "originalSHA256": "871e7fc9a58969a750b1a801c4b0f7dd222bdf812368b18d6160238777802a98",
+    "publishedSHA256": "871e7fc9a58969a750b1a801c4b0f7dd222bdf812368b18d6160238777802a98",
+    "sanitized": false
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/pty/workspace-v2/integration/part4/receipts/visual-rework/extra-3/validation.json",
+    "copy": "pty/attempt-14.json",
+    "originalSHA256": "4d43a4d415860223e69eebef3f3702b8ed4e7a8e23d09da8fda50491c16b5dc4",
+    "publishedSHA256": "4d43a4d415860223e69eebef3f3702b8ed4e7a8e23d09da8fda50491c16b5dc4",
+    "sanitized": false
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/pty/workspace-v2/integration/part4/receipts/visual-rework/navigation-1/validation.json",
+    "copy": "pty/attempt-15.json",
+    "originalSHA256": "bff7eb64892332622b12839524e1ecfbfaca937e6aef61b3a03a71c6d4011ee7",
+    "publishedSHA256": "bff7eb64892332622b12839524e1ecfbfaca937e6aef61b3a03a71c6d4011ee7",
+    "sanitized": false
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/pty/workspace-v2/integration/part4/receipts/visual-rework/navigation-2/validation.json",
+    "copy": "pty/attempt-16.json",
+    "originalSHA256": "49f32d242d97f543f6616d148ed31e532d54a80bb72e45a16e49ec1ee15f2955",
+    "publishedSHA256": "49f32d242d97f543f6616d148ed31e532d54a80bb72e45a16e49ec1ee15f2955",
+    "sanitized": false
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/pty/workspace-v2/integration/part4/receipts/visual-rework/navigation-3/validation.json",
+    "copy": "pty/attempt-17.json",
+    "originalSHA256": "2960481d6235aa20c327421bbdc523bc44e80d5f8f8793f58fd1da1487126596",
+    "publishedSHA256": "2960481d6235aa20c327421bbdc523bc44e80d5f8f8793f58fd1da1487126596",
+    "sanitized": false
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/pty/workspace-v2/integration/part4/receipts/visual-rework/navigation-4/validation.json",
+    "copy": "pty/attempt-18.json",
+    "originalSHA256": "9db0606dfe2f2cf0354830a33226ea969a6c0a3ba6e95cada1424012517ba9b3",
+    "publishedSHA256": "9db0606dfe2f2cf0354830a33226ea969a6c0a3ba6e95cada1424012517ba9b3",
+    "sanitized": false
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/pty/workspace-v2/integration/part4/receipts/current-audit/live-1/validation.json",
+    "copy": "pty/attempt-19.json",
+    "originalSHA256": "e0f09b632f87ad96aab604dacd8f5f316507e51633d4682ad6c62906f8c917f2",
+    "publishedSHA256": "e0f09b632f87ad96aab604dacd8f5f316507e51633d4682ad6c62906f8c917f2",
+    "sanitized": false
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/pty/workspace-v2/integration/part4/receipts/current-audit/report-state-repro-v2/validation.json",
+    "copy": "pty/attempt-21.json",
+    "originalSHA256": "106598476f1d3a2db9527a0cf5ecee65fe1a52b342646994fedb96a3b19ef960",
+    "publishedSHA256": "106598476f1d3a2db9527a0cf5ecee65fe1a52b342646994fedb96a3b19ef960",
+    "sanitized": false
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/pty/evidence-mode-_zb_wpz3/validation.json",
+    "copy": "pty/attempt-22.json",
+    "originalSHA256": "1cbb1fde40e48d109d8b943433a0ebdbd42deced0c04daeb3b4434d70ad7982c",
+    "publishedSHA256": "1cbb1fde40e48d109d8b943433a0ebdbd42deced0c04daeb3b4434d70ad7982c",
+    "sanitized": false
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/pty/report-adoption-4h1qzqrz/validation.json",
+    "copy": "pty/attempt-23.json",
+    "originalSHA256": "9290bacd9ca87d5c46ade5dae153a19d4fbb881c4abaa4341411fb4762cf7b81",
+    "publishedSHA256": "9290bacd9ca87d5c46ade5dae153a19d4fbb881c4abaa4341411fb4762cf7b81",
+    "sanitized": false
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/pty/workspace-v2/integration/part4/receipts/current-audit/live-2/validation.json",
+    "copy": "pty/attempt-24.json",
+    "originalSHA256": "8afb2e13d16a25a5348a7c4259e72ead354c196e4e54b12838805e122626f1d1",
+    "publishedSHA256": "8afb2e13d16a25a5348a7c4259e72ead354c196e4e54b12838805e122626f1d1",
+    "sanitized": false
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/pty/workspace-v2/integration/part4/receipts/user-failures/workflows-2/validation.json",
+    "copy": "pty/attempt-25.json",
+    "originalSHA256": "4756efacf9098010500d7675f970b97544c1e6c4bd5d472804cf3071ed42e3b2",
+    "publishedSHA256": "4756efacf9098010500d7675f970b97544c1e6c4bd5d472804cf3071ed42e3b2",
+    "sanitized": false
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/pty/workspace-v2/integration/part4/receipts/visual-rework/attempt-2/validation.json",
+    "copy": "pty/attempt-26.json",
+    "originalSHA256": "d9b683b019c84ea4968523a1abce56e59cbe837bbc8b9e85d1018a3035d5c0af",
+    "publishedSHA256": "d9b683b019c84ea4968523a1abce56e59cbe837bbc8b9e85d1018a3035d5c0af",
+    "sanitized": false
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/pty/workspace-v2/integration/part4/receipts/visual-rework/attempt-3/validation.json",
+    "copy": "pty/attempt-27.json",
+    "originalSHA256": "508aa3347cbc70a21fad45db34f4fa6ae4f0791e7e663854feb4e6099e7c3d11",
+    "publishedSHA256": "508aa3347cbc70a21fad45db34f4fa6ae4f0791e7e663854feb4e6099e7c3d11",
+    "sanitized": false
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/isolation.json",
+    "copy": "isolation.json",
+    "originalSHA256": "3767caab358c2ea7e3aca7876f7aedc22cbaee9a944e62b4a12d512641c1d959",
+    "publishedSHA256": "3767caab358c2ea7e3aca7876f7aedc22cbaee9a944e62b4a12d512641c1d959",
+    "sanitized": false
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/parser-boundary.json",
+    "copy": "parser-boundary.json",
+    "originalSHA256": "b14ad35d8fe6b995bcd8305064b1c7e47c3c3bdfaa8568984cd6ce90f8431e52",
+    "publishedSHA256": "b14ad35d8fe6b995bcd8305064b1c7e47c3c3bdfaa8568984cd6ce90f8431e52",
+    "sanitized": false
+  },
+  {
+    "source": ".heurisko/parts456-audit-20261101/fixed-audit/audit-transport/verification.json",
+    "copy": "transport-verification.json",
+    "originalSHA256": "211b872373f971f72388a06196a9aae8272e7ea40025489d0c2132e017beba2a",
+    "publishedSHA256": "211b872373f971f72388a06196a9aae8272e7ea40025489d0c2132e017beba2a",
+    "sanitized": false
+  }
+]

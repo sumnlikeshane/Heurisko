@@ -1,0 +1,20 @@
+--- a/packages/intelligence/src/index.ts
++++ b/packages/intelligence/src/index.ts
+@@ -87,7 +87,7 @@
+           ? 'is reported as removed from the artifact'
+           : 'is reported as changed';
+       const limitations = [
+-        'The evidence identifies the changed manifest key but does not retain the old and new command values.',
++        'This consumer has not read the old and new command values; inspect retained content references and exact spans before interpreting command behavior.',
+         ...(bundle.fixtureKind === 'synthetic_contract' ? ['This is a synthetic contract fixture, not a real package observation.'] : []),
+       ];
+ 
+@@ -125,7 +125,7 @@
+         reviewPriority: 'low',
+         evidenceConfidence: delta.contentState === 'retained' ? 'high' : 'limited',
+         explanationStrength: 'exact',
+-        limitations: ['Old and new manifest values are not available in this evidence record.'],
++        limitations: ['This consumer has not read the old and new manifest values; resolve retained evidence before interpreting the selected entrypoint.'],
+         nextActions: ['Compare the exact old and new values and confirm the referenced artifact path exists.'],
+       }));
+     }

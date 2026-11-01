@@ -1,0 +1,1 @@
+{"kind":"registry","raw":{"repository":{"url":"git+https://github.com/evanw/esbuild.git","type":"git"},"gitHead":"208f539945b145e7c9d6d844290f81c3fe5af320","name":"esbuild","version":"0.25.12"},"repositoryUrl":"https://github.com/evanw/esbuild","commit":"208f539945b145e7c9d6d844290f81c3fe5af320","subdirectory":"npm/esbuild","captures":[]}

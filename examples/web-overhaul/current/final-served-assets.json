@@ -1,0 +1,17 @@
+{
+  "/assets/app.js": {
+    "sha256": "d7ad31d8995113c871a8388817f234f232b13d1d270e961ec0e99308bf1aec8a",
+    "bytes": 302207,
+    "sameAsFinalBuild": true
+  },
+  "/assets/app.css": {
+    "sha256": "8849ab4ddd226e822c8090031c05f26a2ece9baae720ea69db793a2d1aa01004",
+    "bytes": 27282,
+    "sameAsFinalBuild": true
+  },
+  "/assets/docs.json": {
+    "sha256": "ab80706cde09be66d7d4f0a0e474eca3def3c9d3e6bef256e98a8995c10e31e0",
+    "bytes": 80771,
+    "sameAsFinalBuild": true
+  }
+}

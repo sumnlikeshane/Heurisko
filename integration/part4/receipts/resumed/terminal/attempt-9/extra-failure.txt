@@ -1,0 +1,40 @@
+  HEURISKO / report / wide / 140x40                                                                                                         
+   H Home    I Investigations     M Monitoring                                                                                              
+  npm picocolors@1.1.1 report_b74d0497f7fcf6c05930a9c2                                                                                      
+  HISTORICAL — checks not refreshed / incomplete / captured 2026-10-31T19:00:21Z                                                            
+  1 Overview  2 Findings  3 Files  4 Source*  5 AI  6 Coverage                                                                              
+  ┌─ > Source ───────────────────────────┐ ┌─ Source detail ──────────────────────────────────────────┐ ┌─ Supporting evidence ──────────┐  
+  │   No build records; reproduction un… │ │ No build records; reproduction unavailable.              │ │ No citations recorded          │  
+  │                                      │ │                                                          │ │                                │  
+  │                                      │ │                                                          │ │                                │  
+  │                                      │ │                                                          │ │                                │  
+  │                                      │ │                                                          │ │                                │  
+  │                                      │ │                                                          │ │                                │  
+  │                                      │ │                                                          │ │                                │  
+  │                                      │ │                                                          │ │                                │  
+  │                                      │ │                                                          │ │                                │  
+  │                                      │ │                                                          │ │                                │  
+  │                                      │ │                                                          │ │                                │  
+  │                                      │ │                                                          │ │                                │  
+  │                                      │ │                                                          │ │                                │  
+  │                                      │ │                                                          │ │                                │  
+  │                                      │ │                                                          │ │                                │  
+  │                                      │ │                                                          │ │                                │  
+  │                                      │ │                                                          │ │                                │  
+  │                                      │ │                                                          │ │                                │  
+  │                                      │ │                                                          │ │                                │  
+  │                                      │ │                                                          │ │                                │  
+  │                                      │ │                                                          │ │                                │  
+  │                                      │ │                                                          │ │                                │  
+  │                                      │ │                                                          │ │                                │  
+  │                                      │ │                                                          │ │                                │  
+  │                                      │ │                                                          │ │                                │  
+  │                                      │ │                                                          │ │                                │  
+  │                                      │ │                                                          │ │                                │  
+  │                                      │ │                                                          │ │                                │  
+  └──────────────────────────────────────┘ └──────────────────────────────────────────────────────────┘ └────────────────────────────────┘  
+  Per-report UI state reset; report unchanged.                                                                                              
+  j/k move  Enter inspect  e evidence  Tab focus  / filter  ? help  q quit                                                                  
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                                            

@@ -1,0 +1,40 @@
+# Explicit build-context allowlist. Private launch state, credentials, tooling,
+# original attachments and unrelated local artifacts never enter the context.
+**
+!Dockerfile.render
+!.dockerignore
+!package.json
+!pnpm-lock.yaml
+!pnpm-workspace.yaml
+!requirements-contracts.txt
+!README.md
+!LICENSE
+!NOTICE
+!packages/
+!packages/**
+!apps/
+!apps/web/
+!apps/web/**
+!integration/
+!integration/part4/
+!integration/part4/src/
+!integration/part4/src/**
+!integration/part4/tsconfig.json
+!docs/
+!docs/CLI Reference.md
+!examples/
+!examples/handoff/
+!examples/handoff/current/
+!examples/handoff/current/**
+!examples/final-hour/
+!examples/final-hour/20261101-053912/
+!examples/final-hour/20261101-053912/integrated-55240e9/
+!examples/final-hour/20261101-053912/integrated-55240e9/**
+**/node_modules
+**/dist
+**/__pycache__
+**/.env*
+**/.DS_Store
+**/.git
+**/.heurisko
+**/.tooling

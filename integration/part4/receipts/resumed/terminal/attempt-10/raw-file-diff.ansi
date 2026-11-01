@@ -1,0 +1,585 @@
+[?1049h[?25l[?25l  [1mHEURISKO / report / wide / 160x40                                                                                                                           [22m
+   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  LOCAL INPUT picocolors@1.1.1 report_7b46cdea60ae3108dd8c4b21
+  HISTORICAL — checks not refreshed / complete / captured 2026-10-31T21:48:41Z
+  1 Overview*  2 Findings  3 Files  4 Source  5 AI  6 Coverage
+  ┌─[1m > Overview [22m───────────────────────────────┐ ┌─[1m Overview detail [22m─────────────────────────────────────────────────┐ ┌─[1m Supporting evidence [22m───────────────┐
+  │ > Identity and outcomes                    │ │ Differences recorded; inspect raw evidence.                       │ │ No citations recorded               │
+  │                                            │ │ Report report_7b46cdea60ae3108dd8c4b21                            │ │                                     │
+  │                                            │ │ Content                                                           │ │                                     │
+  │                                            │ │ sha256:f0c624713467072d1f5b2bf5d521fecfa2748593f6b203936f6532ba98 │ │                                     │
+  │                                            │ │ c24df3                                                            │ │                                     │
+  │                                            │ │ Artifact picocolors-1.1.1.local-inert-mutation.tgz                │ │                                     │
+  │                                            │ │ SHA-256                                                           │ │                                     │
+  │                                            │ │ sha256:bcdd003ee749b70575fb2793d3892a393d1224457ecb8ca9c37ff4cfd5 │ │                                     │
+  │                                            │ │ 5e098d                                                            │ │                                     │
+  │                                            │ │ Captured 2026-10-31T21:48:41Z                                     │ │                                     │
+  │                                            │ │ Created 2026-10-31T21:48:45Z                                      │ │                                     │
+  │                                            │ │ Configuration                                                     │ │                                     │
+  │                                            │ │ ae22ea2b126cc8643827269363d00478c36faea1d6be6b1e1b9abcef525f4572  │ │                                     │
+  │                                            │ │ artifactIntegrity: not_checked                                    │ │                                     │
+  │                                            │ │ sourceAssociation: user_supplied                                  │ │                                     │
+  │                                            │ │ provenancePolicy: not_checked                                     │ │                                     │
+  │                                            │ │ correspondence: unresolved                                        │ │                                     │
+  │                                            │ │ analysisCompleteness: complete                                    │ │                                     │
+  │                                            │ │ policyResult: not_evaluated                                       │ │                                     │
+  │                                            │ │ Findings evaluation: recorded_for_examined_scope; examined-scope  │ │                                     │
+  │                                            │ │ count: 16                                                         │ │                                     │
+  │                                            │ │ Recorded findings: 16 (not a safety assessment)                   │ │                                     │
+  │                                            │ │ AI: disabled; No runtime configured                               │ │                                     │
+  │                                            │ │ Static raw comparison only; generated/build/security              │ │                                     │
+  │                                            │ │ interpretation is unavailable without Malhar analysis.            │ │                                     │
+  │                                            │ │ Source override is user supplied; full commit URL is a comparison │ │                                     │
+  │                                            │ │ target, not proof of release correspondence.                      │ │                                     │
+  │                                            │ │ No submodule or LFS materialization, target scripts, rebuild,     │ │                                     │
+  └────────────────────────────────────────────┘ └───────────────────────────────────────────────────────────────────┘ └─────────────────────────────────────┘
+  Focus 0 / filter (none) / No universal safety verdict
+  j/k move  Enter inspect  e evidence  Tab focus  / filter  ? help  q quit
+
+
+[?25l[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO / report / wide / 160x40                                                                                                                           [22m
+   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  LOCAL INPUT picocolors@1.1.1 report_7b46cdea60ae3108dd8c4b21
+  HISTORICAL — checks not refreshed / complete / captured 2026-10-31T21:48:41Z
+  1 Overview  2 Findings*  3 Files  4 Source  5 AI  6 Coverage
+  ┌─[1m > Findings [22m───────────────────────────────┐ ┌─[1m Findings detail [22m─────────────────────────────────────────────────┐ ┌─[1m Supporting evidence [22m───────────────┐
+  │ > Package lifecycle script entry changed   │ │ Observation: Manifest key scripts.postinstall is reported as      │ │ > ev_8e5679afc3b6d3667eb09413       │
+  │                                            │ │ changed.                                                          │ │                                     │
+  │                                            │ │ Significance: Lifecycle entries can affect package-manager        │ │                                     │
+  │                                            │ │ installation behavior; inspect the exact command and its source   │ │                                     │
+  │                                            │ │ before deciding what it does. This observation does not establish │ │                                     │
+  │                                            │ │ malicious intent.                                                 │ │                                     │
+  │                                            │ │ Severity: medium                                                  │ │                                     │
+  │                                            │ │ Review priority: medium                                           │ │                                     │
+  │                                            │ │ Evidence confidence: high                                         │ │                                     │
+  │                                            │ │ Explanation strength: exact                                       │ │                                     │
+  │                                            │ │ Evidence: ev_8e5679afc3b6d3667eb09413                             │ │                                     │
+  │                                            │ │ Limitation: The evidence identifies the changed manifest key but  │ │                                     │
+  │                                            │ │ does not retain the old and new command values.                   │ │                                     │
+  │                                            │ │ Next action: Review the retained old and new script values and    │ │                                     │
+  │                                            │ │ their referenced files; do not execute them on the host.          │ │                                     │
+  │                                            │ │ Rule: heurisko.manifest.lifecycle-script-change@0.1.0             │ │                                     │
+  │                                            │ │                                                                   │ │                                     │
+  │                                            │ │                                                                   │ │                                     │
+  │                                            │ │                                                                   │ │                                     │
+  │                                            │ │                                                                   │ │                                     │
+  │                                            │ │                                                                   │ │                                     │
+  │                                            │ │                                                                   │ │                                     │
+  │                                            │ │                                                                   │ │                                     │
+  │                                            │ │                                                                   │ │                                     │
+  │                                            │ │                                                                   │ │                                     │
+  │                                            │ │                                                                   │ │                                     │
+  │                                            │ │                                                                   │ │                                     │
+  │                                            │ │                                                                   │ │                                     │
+  └────────────────────────────────────────────┘ └───────────────────────────────────────────────────────────────────┘ └─────────────────────────────────────┘
+  Focus 0 / filter lifecycle / priority:all severity:all confidence:all rule:all
+  j/k move  Enter inspect  e evidence  Tab focus  / filter  ? help  q quit
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO / report / wide / 160x40                                                                                                                           [22m
+   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  LOCAL INPUT picocolors@1.1.1 report_7b46cdea60ae3108dd8c4b21
+  HISTORICAL — checks not refreshed / complete / captured 2026-10-31T21:48:41Z
+  1 Overview*  2 Findings  3 Files  4 Source  5 AI  6 Coverage
+  ┌─[1m > Overview [22m───────────────────────────────┐ ┌─[1m Overview detail [22m─────────────────────────────────────────────────┐ ┌─[1m Supporting evidence [22m───────────────┐
+  │ > Identity and outcomes                    │ │ Differences recorded; inspect raw evidence.                       │ │ No citations recorded               │
+  │                                            │ │ Report report_7b46cdea60ae3108dd8c4b21                            │ │                                     │
+  │                                            │ │ Content                                                           │ │                                     │
+  │                                            │ │ sha256:f0c624713467072d1f5b2bf5d521fecfa2748593f6b203936f6532ba98 │ │                                     │
+  │                                            │ │ c24df3                                                            │ │                                     │
+  │                                            │ │ Artifact picocolors-1.1.1.local-inert-mutation.tgz                │ │                                     │
+  │                                            │ │ SHA-256                                                           │ │                                     │
+  │                                            │ │ sha256:bcdd003ee749b70575fb2793d3892a393d1224457ecb8ca9c37ff4cfd5 │ │                                     │
+  │                                            │ │ 5e098d                                                            │ │                                     │
+  │                                            │ │ Captured 2026-10-31T21:48:41Z                                     │ │                                     │
+  │                                            │ │ Created 2026-10-31T21:48:45Z                                      │ │                                     │
+  │                                            │ │ Configuration                                                     │ │                                     │
+  │                                            │ │ ae22ea2b126cc8643827269363d00478c36faea1d6be6b1e1b9abcef525f4572  │ │                                     │
+  │                                            │ │ artifactIntegrity: not_checked                                    │ │                                     │
+  │                                            │ │ sourceAssociation: user_supplied                                  │ │                                     │
+  │                                            │ │ provenancePolicy: not_checked                                     │ │                                     │
+  │                                            │ │ correspondence: unresolved                                        │ │                                     │
+  │                                            │ │ analysisCompleteness: complete                                    │ │                                     │
+  │                                            │ │ policyResult: not_evaluated                                       │ │                                     │
+  │                                            │ │ Findings evaluation: recorded_for_examined_scope; examined-scope  │ │                                     │
+  │                                            │ │ count: 16                                                         │ │                                     │
+  │                                            │ │ Recorded findings: 16 (not a safety assessment)                   │ │                                     │
+  │                                            │ │ AI: disabled; No runtime configured                               │ │                                     │
+  │                                            │ │ Static raw comparison only; generated/build/security              │ │                                     │
+  │                                            │ │ interpretation is unavailable without Malhar analysis.            │ │                                     │
+  │                                            │ │ Source override is user supplied; full commit URL is a comparison │ │                                     │
+  │                                            │ │ target, not proof of release correspondence.                      │ │                                     │
+  │                                            │ │ No submodule or LFS materialization, target scripts, rebuild,     │ │                                     │
+  └────────────────────────────────────────────┘ └───────────────────────────────────────────────────────────────────┘ └─────────────────────────────────────┘
+  Per-report UI state reset; report unchanged.
+  j/k move  Enter inspect  e evidence  Tab focus  / filter  ? help  q quit
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO / report / wide / 160x40                                                                                                                           [22m
+   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  LOCAL INPUT picocolors@1.1.1 report_7b46cdea60ae3108dd8c4b21
+  HISTORICAL — checks not refreshed / complete / captured 2026-10-31T21:48:41Z
+  1 Overview  2 Findings  3 Files*  4 Source  5 AI  6 Coverage
+  ┌─[1m > Files [22m───────────────────────────┐ ┌─[1m Files detail [22m───────────────────────────────────────────────────────────┐ ┌─[1m Supporting evidence [22m───────────────┐
+  │ > v package/                        │ │ Directory: package                                                       │ │ No citations recorded               │
+  │     added heurisko-inert-marker.js  │ │ Enter expands/collapses; no filesystem access.                           │ │                                     │
+  │     identical LICENSE               │ │                                                                          │ │                                     │
+  │     modified package.json           │ │                                                                          │ │                                     │
+  │     identical picocolors.browser.js │ │                                                                          │ │                                     │
+  │     identical picocolors.d.ts       │ │                                                                          │ │                                     │
+  │     identical picocolors.js         │ │                                                                          │ │                                     │
+  │     modified README.md              │ │                                                                          │ │                                     │
+  │     identical types.d.ts            │ │                                                                          │ │                                     │
+  │   v picocolors-6f0a4638348ed20633d… │ │                                                                          │ │                                     │
+  │     removed .editorconfig           │ │                                                                          │ │                                     │
+  │     v .github/                      │ │                                                                          │ │                                     │
+  │       v workflows/                  │ │                                                                          │ │                                     │
+  │         removed benchmarks.yaml     │ │                                                                          │ │                                     │
+  │         removed testing.yaml        │ │                                                                          │ │                                     │
+  │     removed .gitignore              │ │                                                                          │ │                                     │
+  │     v benchmarks/                   │ │                                                                          │ │                                     │
+  │       removed complex.mjs           │ │                                                                          │ │                                     │
+  │       removed loading.mjs           │ │                                                                          │ │                                     │
+  │       removed recursion.mjs         │ │                                                                          │ │                                     │
+  │       removed simple.mjs            │ │                                                                          │ │                                     │
+  │       removed size.mjs              │ │                                                                          │ │                                     │
+  │     removed CHANGELOG.md            │ │                                                                          │ │                                     │
+  │     v tests/                        │ │                                                                          │ │                                     │
+  │       removed environments.js       │ │                                                                          │ │                                     │
+  │       removed test.js               │ │                                                                          │ │                                     │
+  │                                     │ │                                                                          │ │                                     │
+  │                                     │ │                                                                          │ │                                     │
+  └─────────────────────────────────────┘ └──────────────────────────────────────────────────────────────────────────┘ └─────────────────────────────────────┘
+  Focus 0 / filter (none) / Raw auto; tree
+  j/k move  Enter inspect  e evidence  Tab focus  / filter  ? help  q quit
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO / report / wide / 160x40                                                                                                                           [22m
+   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  LOCAL INPUT picocolors@1.1.1 report_7b46cdea60ae3108dd8c4b21
+  HISTORICAL — checks not refreshed / complete / captured 2026-10-31T21:48:41Z
+  1 Overview  2 Findings  3 Files*  4 Source  5 AI  6 Coverage
+  ┌─[1m > Files [22m───────────────────────────┐ ┌─[1m Files detail [22m───────────────────────────────────────────────────────────┐ ┌─[1m Supporting evidence [22m───────────────┐
+  │ > > package/                        │ │ Directory: package                                                       │ │ No citations recorded               │
+  │   v picocolors-6f0a4638348ed20633d… │ │ Enter expands/collapses; no filesystem access.                           │ │                                     │
+  │     removed .editorconfig           │ │                                                                          │ │                                     │
+  │     v .github/                      │ │                                                                          │ │                                     │
+  │       v workflows/                  │ │                                                                          │ │                                     │
+  │         removed benchmarks.yaml     │ │                                                                          │ │                                     │
+  │         removed testing.yaml        │ │                                                                          │ │                                     │
+  │     removed .gitignore              │ │                                                                          │ │                                     │
+  │     v benchmarks/                   │ │                                                                          │ │                                     │
+  │       removed complex.mjs           │ │                                                                          │ │                                     │
+  │       removed loading.mjs           │ │                                                                          │ │                                     │
+  │       removed recursion.mjs         │ │                                                                          │ │                                     │
+  │       removed simple.mjs            │ │                                                                          │ │                                     │
+  │       removed size.mjs              │ │                                                                          │ │                                     │
+  │     removed CHANGELOG.md            │ │                                                                          │ │                                     │
+  │     v tests/                        │ │                                                                          │ │                                     │
+  │       removed environments.js       │ │                                                                          │ │                                     │
+  │       removed test.js               │ │                                                                          │ │                                     │
+  │                                     │ │                                                                          │ │                                     │
+  │                                     │ │                                                                          │ │                                     │
+  │                                     │ │                                                                          │ │                                     │
+  │                                     │ │                                                                          │ │                                     │
+  │                                     │ │                                                                          │ │                                     │
+  │                                     │ │                                                                          │ │                                     │
+  │                                     │ │                                                                          │ │                                     │
+  │                                     │ │                                                                          │ │                                     │
+  │                                     │ │                                                                          │ │                                     │
+  │                                     │ │                                                                          │ │                                     │
+  └─────────────────────────────────────┘ └──────────────────────────────────────────────────────────────────────────┘ └─────────────────────────────────────┘
+  Focus 0 / filter (none) / Raw auto; tree
+  j/k move  Enter inspect  e evidence  Tab focus  / filter  ? help  q quit
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO / report / wide / 160x40                                                                                                                           [22m
+   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  LOCAL INPUT picocolors@1.1.1 report_7b46cdea60ae3108dd8c4b21
+  HISTORICAL — checks not refreshed / complete / captured 2026-10-31T21:48:41Z
+  1 Overview  2 Findings  3 Files*  4 Source  5 AI  6 Coverage
+  ┌─[1m > Files [22m───────────────────────────┐ ┌─[1m Files detail [22m───────────────────────────────────────────────────────────┐ ┌─[1m Supporting evidence [22m───────────────┐
+  │ > v package/                        │ │ Directory: package                                                       │ │ No citations recorded               │
+  │     added heurisko-inert-marker.js  │ │ Enter expands/collapses; no filesystem access.                           │ │                                     │
+  │     identical LICENSE               │ │                                                                          │ │                                     │
+  │     modified package.json           │ │                                                                          │ │                                     │
+  │     identical picocolors.browser.js │ │                                                                          │ │                                     │
+  │     identical picocolors.d.ts       │ │                                                                          │ │                                     │
+  │     identical picocolors.js         │ │                                                                          │ │                                     │
+  │     modified README.md              │ │                                                                          │ │                                     │
+  │     identical types.d.ts            │ │                                                                          │ │                                     │
+  │   v picocolors-6f0a4638348ed20633d… │ │                                                                          │ │                                     │
+  │     removed .editorconfig           │ │                                                                          │ │                                     │
+  │     v .github/                      │ │                                                                          │ │                                     │
+  │       v workflows/                  │ │                                                                          │ │                                     │
+  │         removed benchmarks.yaml     │ │                                                                          │ │                                     │
+  │         removed testing.yaml        │ │                                                                          │ │                                     │
+  │     removed .gitignore              │ │                                                                          │ │                                     │
+  │     v benchmarks/                   │ │                                                                          │ │                                     │
+  │       removed complex.mjs           │ │                                                                          │ │                                     │
+  │       removed loading.mjs           │ │                                                                          │ │                                     │
+  │       removed recursion.mjs         │ │                                                                          │ │                                     │
+  │       removed simple.mjs            │ │                                                                          │ │                                     │
+  │       removed size.mjs              │ │                                                                          │ │                                     │
+  │     removed CHANGELOG.md            │ │                                                                          │ │                                     │
+  │     v tests/                        │ │                                                                          │ │                                     │
+  │       removed environments.js       │ │                                                                          │ │                                     │
+  │       removed test.js               │ │                                                                          │ │                                     │
+  │                                     │ │                                                                          │ │                                     │
+  │                                     │ │                                                                          │ │                                     │
+  └─────────────────────────────────────┘ └──────────────────────────────────────────────────────────────────────────┘ └─────────────────────────────────────┘
+  Focus 0 / filter (none) / Raw auto; tree
+  j/k move  Enter inspect  e evidence  Tab focus  / filter  ? help  q quit
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO / report / wide / 160x40                                                                                                                           [22m
+   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  LOCAL INPUT picocolors@1.1.1 report_7b46cdea60ae3108dd8c4b21
+  HISTORICAL — checks not refreshed / complete / captured 2026-10-31T21:48:41Z
+  1 Overview  2 Findings  3 Files*  4 Source  5 AI  6 Coverage
+  ┌─[1m > Files [22m───────────────────────────┐ ┌─[1m Files detail [22m───────────────────────────────────────────────────────────┐ ┌─[1m Supporting evidence [22m───────────────┐
+  │ > removed picocolors-6f0a4638348ed… │ │ Change chg_c2392147ee69c1a107d8feee                                      │ │ > ev_87f773e0a98edba25b223357       │
+  │   removed picocolors-6f0a4638348ed… │ │ Artifact path: Not recorded                                              │ │ ev_dfd19827bd2e5c7d7e1ab8e6         │
+  │   removed picocolors-6f0a4638348ed… │ │ Source path:                                                             │ │                                     │
+  │   removed picocolors-6f0a4638348ed… │ │ picocolors-6f0a4638348ed20633d623ee973f9c9a96f65104/.editorconfig        │ │                                     │
+  │   removed picocolors-6f0a4638348ed… │ │ Status: removed                                                          │ │                                     │
+  │   identical package/LICENSE         │ │ Raw equality: different                                                  │ │                                     │
+  │   modified package/README.md        │ │ Explanation strength: unexplained                                        │ │                                     │
+  │   removed picocolors-6f0a4638348ed… │ │ Raw evidence: e opens exact recorded byte spans; s changes side.         │ │                                     │
+  │   removed picocolors-6f0a4638348ed… │ │ Normalized view unavailable — no transform was performed.                │ │                                     │
+  │   removed picocolors-6f0a4638348ed… │ │                                                                          │ │                                     │
+  │   removed picocolors-6f0a4638348ed… │ │                                                                          │ │                                     │
+  │   removed picocolors-6f0a4638348ed… │ │                                                                          │ │                                     │
+  │   added package/heurisko-inert-mar… │ │                                                                          │ │                                     │
+  │   modified package/package.json     │ │                                                                          │ │                                     │
+  │   identical package/picocolors.bro… │ │                                                                          │ │                                     │
+  │   identical package/picocolors.d.ts │ │                                                                          │ │                                     │
+  │   identical package/picocolors.js   │ │                                                                          │ │                                     │
+  │   removed picocolors-6f0a4638348ed… │ │                                                                          │ │                                     │
+  │   removed picocolors-6f0a4638348ed… │ │                                                                          │ │                                     │
+  │   identical package/types.d.ts      │ │                                                                          │ │                                     │
+  │                                     │ │                                                                          │ │                                     │
+  │                                     │ │                                                                          │ │                                     │
+  │                                     │ │                                                                          │ │                                     │
+  │                                     │ │                                                                          │ │                                     │
+  │                                     │ │                                                                          │ │                                     │
+  │                                     │ │                                                                          │ │                                     │
+  │                                     │ │                                                                          │ │                                     │
+  │                                     │ │                                                                          │ │                                     │
+  └─────────────────────────────────────┘ └──────────────────────────────────────────────────────────────────────────┘ └─────────────────────────────────────┘
+  Focus 0 / filter (none) / Raw auto; flat
+  j/k move  Enter inspect  e evidence  Tab focus  / filter  ? help  q quit
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO / report / wide / 160x40                                                                                                                           [22m
+   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  LOCAL INPUT picocolors@1.1.1 report_7b46cdea60ae3108dd8c4b21
+  HISTORICAL — checks not refreshed / complete / captured 2026-10-31T21:48:41Z
+  1 Overview  2 Findings  3 Files*  4 Source  5 AI  6 Coverage
+  ┌─[1m > Files [22m───────────────────────────┐ ┌─[1m Files detail [22m───────────────────────────────────────────────────────────┐ ┌─[1m Supporting evidence [22m───────────────┐
+  │ > removed picocolors-6f0a4638348ed… │ │ Change chg_c2392147ee69c1a107d8feee                                      │ │ > ev_87f773e0a98edba25b223357       │
+  │   removed picocolors-6f0a4638348ed… │ │ Artifact path: Not recorded                                              │ │ ev_dfd19827bd2e5c7d7e1ab8e6         │
+  │   removed picocolors-6f0a4638348ed… │ │ Source path:                                                             │ │                                     │
+  │   removed picocolors-6f0a4638348ed… │ │ picocolors-6f0a4638348ed20633d623ee973f9c9a96f65104/.editorconfig        │ │                                     │
+  │   removed picocolors-6f0a4638348ed… │ │ Status: removed                                                          │ │                                     │
+  │   identical package/LICENSE         │ │ Raw equality: different                                                  │ │                                     │
+  │   modified package/README.md        │ │ Explanation strength: unexplained                                        │ │                                     │
+  │   removed picocolors-6f0a4638348ed… │ │ Raw evidence: e opens exact recorded byte spans; s changes side.         │ │                                     │
+  │   removed picocolors-6f0a4638348ed… │ │ Normalized view unavailable — no transform was performed.                │ │                                     │
+  │   removed picocolors-6f0a4638348ed… │ │ RAW CHANGED SPANS (independent byte windows; no line-alignment claim)    │ │                                     │
+  │   removed picocolors-6f0a4638348ed… │ │ SOURCE                             | ARTIFACT                            │ │                                     │
+  │   removed picocolors-6f0a4638348ed… │ │ [0,273) truncated=false            | Metadata only: SIDE_NOT_RECORDED    │ │                                     │
+  │   added package/heurisko-inert-mar… │ │ # EditorConfig is awesome: https:… |                                     │ │                                     │
+  │   modified package/package.json     │ │ |                                                                        │ │                                     │
+  │   identical package/picocolors.bro… │ │ root = true                        |                                     │ │                                     │
+  │   identical package/picocolors.d.ts │ │ |                                                                        │ │                                     │
+  │   identical package/picocolors.js   │ │ [*]                                |                                     │ │                                     │
+  │   removed picocolors-6f0a4638348ed… │ │ end_of_line = lf                   |                                     │ │                                     │
+  │   removed picocolors-6f0a4638348ed… │ │ insert_final_newline = true        |                                     │ │                                     │
+  │   identical package/types.d.ts      │ │ |                                                                        │ │                                     │
+  │                                     │ │ [*.{js,d.ts}]                      |                                     │ │                                     │
+  │                                     │ │ charset = utf-8                    |                                     │ │                                     │
+  │                                     │ │ indent_style = tab                 |                                     │ │                                     │
+  │                                     │ │ indent_size = 2                    |                                     │ │                                     │
+  │                                     │ │ trim_trailing_whitespace = true    |                                     │ │                                     │
+  │                                     │ │ |                                                                        │ │                                     │
+  │                                     │ │ [package.json,*.yaml]              |                                     │ │                                     │
+  │                                     │ │ indent_style = space               |                                     │ │                                     │
+  └─────────────────────────────────────┘ └──────────────────────────────────────────────────────────────────────────┘ └─────────────────────────────────────┘
+  Focus 0 / filter (none) / Raw auto; flat
+  j/k move  Enter inspect  e evidence  Tab focus  / filter  ? help  q quit
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO / report / wide / 160x40                                                                                                                           [22m
+   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  LOCAL INPUT picocolors@1.1.1 report_7b46cdea60ae3108dd8c4b21
+  HISTORICAL — checks not refreshed / complete / captured 2026-10-31T21:48:41Z
+  1 Overview  2 Findings  3 Files*  4 Source  5 AI  6 Coverage
+  ┌─[1m > Files [22m───────────────────────────┐ ┌─[1m Files detail [22m───────────────────────────────────────────────────────────┐ ┌─[1m Supporting evidence [22m───────────────┐
+  │ > removed picocolors-6f0a4638348ed… │ │ Change chg_c2392147ee69c1a107d8feee                                      │ │ > ev_87f773e0a98edba25b223357       │
+  │   removed picocolors-6f0a4638348ed… │ │ Artifact path: Not recorded                                              │ │ ev_dfd19827bd2e5c7d7e1ab8e6         │
+  │   removed picocolors-6f0a4638348ed… │ │ Source path:                                                             │ │                                     │
+  │   removed picocolors-6f0a4638348ed… │ │ picocolors-6f0a4638348ed20633d623ee973f9c9a96f65104/.editorconfig        │ │                                     │
+  │   removed picocolors-6f0a4638348ed… │ │ Status: removed                                                          │ │                                     │
+  │   identical package/LICENSE         │ │ Raw equality: different                                                  │ │                                     │
+  │   modified package/README.md        │ │ Explanation strength: unexplained                                        │ │                                     │
+  │   removed picocolors-6f0a4638348ed… │ │ Raw evidence: e opens exact recorded byte spans; s changes side.         │ │                                     │
+  │   removed picocolors-6f0a4638348ed… │ │ Normalized view unavailable — no transform was performed.                │ │                                     │
+  │   removed picocolors-6f0a4638348ed… │ │ RAW CHANGED SPANS (independent byte windows; no line-alignment claim)    │ │                                     │
+  │   removed picocolors-6f0a4638348ed… │ │ SOURCE                             | ARTIFACT                            │ │                                     │
+  │   removed picocolors-6f0a4638348ed… │ │ [0,273) truncated=false            | Metadata only: SIDE_NOT_RECORDED    │ │                                     │
+  │   added package/heurisko-inert-mar… │ │ # EditorConfig is awesome: https:… |                                     │ │                                     │
+  │   modified package/package.json     │ │ |                                                                        │ │                                     │
+  │   identical package/picocolors.bro… │ │ root = true                        |                                     │ │                                     │
+  │   identical package/picocolors.d.ts │ │ |                                                                        │ │                                     │
+  │   identical package/picocolors.js   │ │ [*]                                |                                     │ │                                     │
+  │   removed picocolors-6f0a4638348ed… │ │ end_of_line = lf                   |                                     │ │                                     │
+  │   removed picocolors-6f0a4638348ed… │ │ insert_final_newline = true        |                                     │ │                                     │
+  │   identical package/types.d.ts      │ │ |                                                                        │ │                                     │
+  │                                     │ │ [*.{js,d.ts}]                      |                                     │ │                                     │
+  │                                     │ │ charset = utf-8                    |                                     │ │                                     │
+  │                                     │ │ indent_style = tab                 |                                     │ │                                     │
+  │                                     │ │ indent_size = 2                    |                                     │ │                                     │
+  │                                     │ │ trim_trailing_whitespace = true    |                                     │ │                                     │
+  │                                     │ │ |                                                                        │ │                                     │
+  │                                     │ │ [package.json,*.yaml]              |                                     │ │                                     │
+  │                                     │ │ indent_style = space               |                                     │ │                                     │
+  └─────────────────────────────────────┘ └──────────────────────────────────────────────────────────────────────────┘ └─────────────────────────────────────┘
+  Focus 0 / filter (none) / Raw auto; flat
+  Filter: |
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO / report / wide / 160x40                                                                                                                           [22m
+   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  LOCAL INPUT picocolors@1.1.1 report_7b46cdea60ae3108dd8c4b21
+  HISTORICAL — checks not refreshed / complete / captured 2026-10-31T21:48:41Z
+  1 Overview  2 Findings  3 Files*  4 Source  5 AI  6 Coverage
+  ┌─[1m > Files [22m───────────────────────────┐ ┌─[1m Files detail [22m───────────────────────────────────────────────────────────┐ ┌─[1m Supporting evidence [22m───────────────┐
+  │ > modified package/package.json     │ │ Change chg_e945c3a7fac8dd98aff69799                                      │ │ > ev_fac6fd5699ff0c83dd8be093       │
+  │                                     │ │ Artifact path: package/package.json                                      │ │ ev_8504e9232685621e15be63cc         │
+  │                                     │ │ Source path:                                                             │ │ ev_88e33e48c71c729661f855a3         │
+  │                                     │ │ picocolors-6f0a4638348ed20633d623ee973f9c9a96f65104/package.json         │ │ ev_a68d8495b50e532cf13d0f4d         │
+  │                                     │ │ Status: modified                                                         │ │ ev_6510dde622fd7bf43ac31043         │
+  │                                     │ │ Raw equality: different                                                  │ │ ev_41bb925ed06c544390cf59cf         │
+  │                                     │ │ Explanation strength: unexplained                                        │ │ ev_bb89ba78970618a9c5f53e69         │
+  │                                     │ │ Archive metadata differs; inspect the retained metadata delta.           │ │ ev_b817cc81610788c25c85a2be         │
+  │                                     │ │ rawEquality describes content bytes only.                                │ │ ev_5e7e5f30e27a28591e5965b8         │
+  │                                     │ │ Raw evidence: e opens exact recorded byte spans; s changes side.         │ │ ev_4fd3b965e199fdad4f7a2896         │
+  │                                     │ │ Normalized view unavailable — no transform was performed.                │ │ ev_3e71069083b9a36463bc0f11         │
+  │                                     │ │ RAW CHANGED SPANS (independent byte windows; no line-alignment claim)    │ │ ev_0fa35892ac5f80a39c6f0e4a         │
+  │                                     │ │ SOURCE                             | ARTIFACT                            │ │ ev_5fd03a883e142bff057d6747         │
+  │                                     │ │ [0,273) truncated=false            | Metadata only: SIDE_NOT_RECORDED    │ │ ev_aba065d3408ccceb7ffd7462         │
+  │                                     │ │ # EditorConfig is awesome: https:… |                                     │ │ ev_8988b603382167d66595a363         │
+  │                                     │ │ |                                                                        │ │ ev_400899efff29ae218a7b4764         │
+  │                                     │ │ root = true                        |                                     │ │ ev_492f76b1bce7cb43be787f0c         │
+  │                                     │ │ |                                                                        │ │ ev_a43f9515fb2418ee2e49dce5         │
+  │                                     │ │ [*]                                |                                     │ │ ev_2ff41f3e94fea9e65a03c05f         │
+  │                                     │ │ end_of_line = lf                   |                                     │ │ ev_620eceb4db9cd85bf140efdf         │
+  │                                     │ │ insert_final_newline = true        |                                     │ │ ev_bad307bd4624f76b7c4d2a78         │
+  │                                     │ │ |                                                                        │ │ ev_7939a2da1abd741a9a7dfd1e         │
+  │                                     │ │ [*.{js,d.ts}]                      |                                     │ │ ev_b83d518599a5ec7defc36225         │
+  │                                     │ │ charset = utf-8                    |                                     │ │ ev_63b7aedd4fd6f2aad17ae41b         │
+  │                                     │ │ indent_style = tab                 |                                     │ │ ev_cdc53c558f25fa866aad5851         │
+  │                                     │ │ indent_size = 2                    |                                     │ │ ev_8e5679afc3b6d3667eb09413         │
+  │                                     │ │ trim_trailing_whitespace = true    |                                     │ │ ev_a9e7edfa3a66ec1ade600957         │
+  │                                     │ │ |                                                                        │ │ ev_4c67ceb8d022933653ec1e2b         │
+  └─────────────────────────────────────┘ └──────────────────────────────────────────────────────────────────────────┘ └─────────────────────────────────────┘
+  Focus 0 / filter package.json / Raw auto; flat
+  Filter: package.json|
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO / report / wide / 160x40                                                                                                                           [22m
+   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  LOCAL INPUT picocolors@1.1.1 report_7b46cdea60ae3108dd8c4b21
+  HISTORICAL — checks not refreshed / complete / captured 2026-10-31T21:48:41Z
+  1 Overview  2 Findings  3 Files*  4 Source  5 AI  6 Coverage
+  ┌─[1m > Files [22m───────────────────────────┐ ┌─[1m Files detail [22m───────────────────────────────────────────────────────────┐ ┌─[1m Supporting evidence [22m───────────────┐
+  │ > modified package/package.json     │ │ Change chg_e945c3a7fac8dd98aff69799                                      │ │ > ev_fac6fd5699ff0c83dd8be093       │
+  │                                     │ │ Artifact path: package/package.json                                      │ │ ev_8504e9232685621e15be63cc         │
+  │                                     │ │ Source path:                                                             │ │ ev_88e33e48c71c729661f855a3         │
+  │                                     │ │ picocolors-6f0a4638348ed20633d623ee973f9c9a96f65104/package.json         │ │ ev_a68d8495b50e532cf13d0f4d         │
+  │                                     │ │ Status: modified                                                         │ │ ev_6510dde622fd7bf43ac31043         │
+  │                                     │ │ Raw equality: different                                                  │ │ ev_41bb925ed06c544390cf59cf         │
+  │                                     │ │ Explanation strength: unexplained                                        │ │ ev_bb89ba78970618a9c5f53e69         │
+  │                                     │ │ Archive metadata differs; inspect the retained metadata delta.           │ │ ev_b817cc81610788c25c85a2be         │
+  │                                     │ │ rawEquality describes content bytes only.                                │ │ ev_5e7e5f30e27a28591e5965b8         │
+  │                                     │ │ Raw evidence: e opens exact recorded byte spans; s changes side.         │ │ ev_4fd3b965e199fdad4f7a2896         │
+  │                                     │ │ Normalized view unavailable — no transform was performed.                │ │ ev_3e71069083b9a36463bc0f11         │
+  │                                     │ │ RAW CHANGED SPANS (independent byte windows; no line-alignment claim)    │ │ ev_0fa35892ac5f80a39c6f0e4a         │
+  │                                     │ │ SOURCE                             | ARTIFACT                            │ │ ev_5fd03a883e142bff057d6747         │
+  │                                     │ │ Metadata only: UNSUPPORTED_RECORD  | Metadata only: UNSUPPORTED_RECORD   │ │ ev_aba065d3408ccceb7ffd7462         │
+  │                                     │ │                                                                          │ │ ev_8988b603382167d66595a363         │
+  │                                     │ │                                                                          │ │ ev_400899efff29ae218a7b4764         │
+  │                                     │ │                                                                          │ │ ev_492f76b1bce7cb43be787f0c         │
+  │                                     │ │                                                                          │ │ ev_a43f9515fb2418ee2e49dce5         │
+  │                                     │ │                                                                          │ │ ev_2ff41f3e94fea9e65a03c05f         │
+  │                                     │ │                                                                          │ │ ev_620eceb4db9cd85bf140efdf         │
+  │                                     │ │                                                                          │ │ ev_bad307bd4624f76b7c4d2a78         │
+  │                                     │ │                                                                          │ │ ev_7939a2da1abd741a9a7dfd1e         │
+  │                                     │ │                                                                          │ │ ev_b83d518599a5ec7defc36225         │
+  │                                     │ │                                                                          │ │ ev_63b7aedd4fd6f2aad17ae41b         │
+  │                                     │ │                                                                          │ │ ev_cdc53c558f25fa866aad5851         │
+  │                                     │ │                                                                          │ │ ev_8e5679afc3b6d3667eb09413         │
+  │                                     │ │                                                                          │ │ ev_a9e7edfa3a66ec1ade600957         │
+  │                                     │ │                                                                          │ │ ev_4c67ceb8d022933653ec1e2b         │
+  └─────────────────────────────────────┘ └──────────────────────────────────────────────────────────────────────────┘ └─────────────────────────────────────┘
+  Focus 0 / filter package.json / Raw auto; flat
+  Filter: package.json|
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO / report / wide / 160x40                                                                                                                           [22m
+   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  LOCAL INPUT picocolors@1.1.1 report_7b46cdea60ae3108dd8c4b21
+  HISTORICAL — checks not refreshed / complete / captured 2026-10-31T21:48:41Z
+  1 Overview  2 Findings  3 Files*  4 Source  5 AI  6 Coverage
+  ┌─[1m > Files [22m───────────────────────────┐ ┌─[1m Files detail [22m───────────────────────────────────────────────────────────┐ ┌─[1m Supporting evidence [22m───────────────┐
+  │ > modified package/package.json     │ │ Change chg_e945c3a7fac8dd98aff69799                                      │ │ > ev_fac6fd5699ff0c83dd8be093       │
+  │                                     │ │ Artifact path: package/package.json                                      │ │ ev_8504e9232685621e15be63cc         │
+  │                                     │ │ Source path:                                                             │ │ ev_88e33e48c71c729661f855a3         │
+  │                                     │ │ picocolors-6f0a4638348ed20633d623ee973f9c9a96f65104/package.json         │ │ ev_a68d8495b50e532cf13d0f4d         │
+  │                                     │ │ Status: modified                                                         │ │ ev_6510dde622fd7bf43ac31043         │
+  │                                     │ │ Raw equality: different                                                  │ │ ev_41bb925ed06c544390cf59cf         │
+  │                                     │ │ Explanation strength: unexplained                                        │ │ ev_bb89ba78970618a9c5f53e69         │
+  │                                     │ │ Archive metadata differs; inspect the retained metadata delta.           │ │ ev_b817cc81610788c25c85a2be         │
+  │                                     │ │ rawEquality describes content bytes only.                                │ │ ev_5e7e5f30e27a28591e5965b8         │
+  │                                     │ │ Raw evidence: e opens exact recorded byte spans; s changes side.         │ │ ev_4fd3b965e199fdad4f7a2896         │
+  │                                     │ │ Normalized view unavailable — no transform was performed.                │ │ ev_3e71069083b9a36463bc0f11         │
+  │                                     │ │ RAW CHANGED SPANS (independent byte windows; no line-alignment claim)    │ │ ev_0fa35892ac5f80a39c6f0e4a         │
+  │                                     │ │ SOURCE                             | ARTIFACT                            │ │ ev_5fd03a883e142bff057d6747         │
+  │                                     │ │ Metadata only: UNSUPPORTED_RECORD  | Metadata only: UNSUPPORTED_RECORD   │ │ ev_aba065d3408ccceb7ffd7462         │
+  │                                     │ │                                                                          │ │ ev_8988b603382167d66595a363         │
+  │                                     │ │                                                                          │ │ ev_400899efff29ae218a7b4764         │
+  │                                     │ │                                                                          │ │ ev_492f76b1bce7cb43be787f0c         │
+  │                                     │ │                                                                          │ │ ev_a43f9515fb2418ee2e49dce5         │
+  │                                     │ │                                                                          │ │ ev_2ff41f3e94fea9e65a03c05f         │
+  │                                     │ │                                                                          │ │ ev_620eceb4db9cd85bf140efdf         │
+  │                                     │ │                                                                          │ │ ev_bad307bd4624f76b7c4d2a78         │
+  │                                     │ │                                                                          │ │ ev_7939a2da1abd741a9a7dfd1e         │
+  │                                     │ │                                                                          │ │ ev_b83d518599a5ec7defc36225         │
+  │                                     │ │                                                                          │ │ ev_63b7aedd4fd6f2aad17ae41b         │
+  │                                     │ │                                                                          │ │ ev_cdc53c558f25fa866aad5851         │
+  │                                     │ │                                                                          │ │ ev_8e5679afc3b6d3667eb09413         │
+  │                                     │ │                                                                          │ │ ev_a9e7edfa3a66ec1ade600957         │
+  │                                     │ │                                                                          │ │ ev_4c67ceb8d022933653ec1e2b         │
+  └─────────────────────────────────────┘ └──────────────────────────────────────────────────────────────────────────┘ └─────────────────────────────────────┘
+  Focus 0 / filter package.json / Raw auto; flat
+  j/k move  Enter inspect  e evidence  Tab focus  / filter  ? help  q quit
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO / report / wide / 160x40                                                                                                                           [22m
+   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  LOCAL INPUT picocolors@1.1.1 report_7b46cdea60ae3108dd8c4b21
+  HISTORICAL — checks not refreshed / complete / captured 2026-10-31T21:48:41Z
+  1 Overview  2 Findings  3 Files*  4 Source  5 AI  6 Coverage
+  ┌─[1m > Files / chg_e945c3a7fac8dd98aff69799 [22m─────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Change chg_e945c3a7fac8dd98aff69799                                                                                                                      │
+  │ Artifact path: package/package.json                                                                                                                      │
+  │ Source path: picocolors-6f0a4638348ed20633d623ee973f9c9a96f65104/package.json                                                                            │
+  │ Status: modified                                                                                                                                         │
+  │ Raw equality: different                                                                                                                                  │
+  │ Explanation strength: unexplained                                                                                                                        │
+  │ Archive metadata differs; inspect the retained metadata delta. rawEquality describes content bytes only.                                                 │
+  │ Raw evidence: e opens exact recorded byte spans; s changes side.                                                                                         │
+  │ Normalized view unavailable — no transform was performed.                                                                                                │
+  │ RAW CHANGED SPANS (independent byte windows; no line-alignment claim)                                                                                    │
+  │ SOURCE                                                                     | ARTIFACT                                                                    │
+  │ Metadata only: UNSUPPORTED_RECORD                                          | Metadata only: UNSUPPORTED_RECORD                                           │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+  Focus 0 / filter package.json / Raw auto; flat
+  j/k move  Enter inspect  e evidence  Tab focus  / filter  ? help  q quit
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO / report / wide / 160x40                                                                                                                           [22m
+   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  LOCAL INPUT picocolors@1.1.1 report_7b46cdea60ae3108dd8c4b21
+  HISTORICAL — checks not refreshed / complete / captured 2026-10-31T21:48:41Z
+  1 Overview  2 Findings  3 Files*  4 Source  5 AI  6 Coverage
+  ┌─[1m > Files / chg_e945c3a7fac8dd98aff69799 [22m─────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Change chg_e945c3a7fac8dd98aff69799                                                                                                                      │
+  │ Artifact path: package/package.json                                                                                                                      │
+  │ Source path: picocolors-6f0a4638348ed20633d623ee973f9c9a96f65104/package.json                                                                            │
+  │ Status: modified                                                                                                                                         │
+  │ Raw equality: different                                                                                                                                  │
+  │ Explanation strength: unexplained                                                                                                                        │
+  │ Archive metadata differs; inspect the retained metadata delta. rawEquality describes content bytes only.                                                 │
+  │ Raw evidence: e opens exact recorded byte spans; s changes side.                                                                                         │
+  │ Normalized view unavailable — no transform was performed.                                                                                                │
+  │ RAW CHANGED SPANS (independent byte windows; no line-alignment claim)                                                                                    │
+  │ SOURCE                                                                     | ARTIFACT                                                                    │
+  │ Metadata only: UNSUPPORTED_RECORD                                          | Metadata only: UNSUPPORTED_RECORD                                           │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+  Diff mode side-by-side; raw evidence remains available with e.
+  j/k move  Enter inspect  e evidence  Tab focus  / filter  ? help  q quit
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO / report / wide / 160x40                                                                                                                           [22m
+   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  LOCAL INPUT picocolors@1.1.1 report_7b46cdea60ae3108dd8c4b21
+  HISTORICAL — checks not refreshed / complete / captured 2026-10-31T21:48:41Z
+  1 Overview  2 Findings  3 Files*  4 Source  5 AI  6 Coverage
+  ┌─[1m > Files / chg_e945c3a7fac8dd98aff69799 [22m─────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Change chg_e945c3a7fac8dd98aff69799                                                                                                                      │
+  │ Artifact path: package/package.json                                                                                                                      │
+  │ Source path: picocolors-6f0a4638348ed20633d623ee973f9c9a96f65104/package.json                                                                            │
+  │ Status: modified                                                                                                                                         │
+  │ Raw equality: different                                                                                                                                  │
+  │ Explanation strength: unexplained                                                                                                                        │
+  │ Archive metadata differs; inspect the retained metadata delta. rawEquality describes content bytes only.                                                 │
+  │ Raw evidence: e opens exact recorded byte spans; s changes side.                                                                                         │
+  │ Normalized view unavailable — no transform was performed.                                                                                                │
+  │ RAW CHANGED SPANS (independent byte windows; no line-alignment claim)                                                                                    │
+  │ SOURCE                                                                     | ARTIFACT                                                                    │
+  │ only: UNSUPPORTED_RECORD                                                  |  only: UNSUPPORTED_RECORD                                                    │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+  Diff mode side-by-side; raw evidence remains available with e.
+  j/k move  Enter inspect  e evidence  Tab focus  / filter  ? help  q quit
+
+

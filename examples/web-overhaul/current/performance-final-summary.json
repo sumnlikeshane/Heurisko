@@ -1,0 +1,249 @@
+{
+  "kind": "final-build-node-performance-summary-not-browser",
+  "recordedAt": "2026-10-31T23:46:24.394Z",
+  "receipts": [
+    "performance-final.json",
+    "profile-read-render-final.mjs",
+    "read-render-profile-final.json"
+  ],
+  "sourceBuild": {
+    "apps/web/dist/assets/app.js": "sha256:d7ad31d8995113c871a8388817f234f232b13d1d270e961ec0e99308bf1aec8a",
+    "apps/web/dist/assets/app.css": "sha256:8849ab4ddd226e822c8090031c05f26a2ece9baae720ea69db793a2d1aa01004",
+    "apps/web/dist/service.js": "sha256:e91eaac10fa2649feb3128539be4806c702fbda3c95d915537300bad99f955bd",
+    "apps/web/dist/workspace.js": "sha256:94fdea6e1741a85b6eae1668a1b8ca8afe9654cd8e35aa2739339e9d2c75cd80",
+    "apps/web/dist/report-view.js": "sha256:f954dbeb4858238833641c2950ed19a32762d1e063186fe074d7798177104797",
+    "apps/web/dist/doc-model.js": "sha256:c754ab92ea94cba448a0444d265b7d3d2d642bd767bc2d2069196cfa50a8cb75",
+    "apps/web/dist/cli-docs.json": "sha256:ab80706cde09be66d7d4f0a0e474eca3def3c9d3e6bef256e98a8995c10e31e0",
+    "apps/web/tooling/measure-workspace.mjs": "sha256:7e6eabf7d193c216db9a602a8c176904ccb7dc2b43c1981773566e32eaeab799"
+  },
+  "renderSource": {
+    "apps/web/src/app.tsx": "sha256:9227bd388df995bd92bcb8dd7be2b8d86e45ef7a499f1150e35969f13675274d",
+    "apps/web/src/report-components.tsx": "sha256:4cd527ef4520c69625d2600076ae768e541feace8e20b002dbfd94d2d1d5d0c1",
+    "apps/web/src/report-view.ts": "sha256:bf191386c4473562763884b6a10bd53b60ae55cbc9f95699b03d5b5c2e623e92",
+    "apps/web/dist/render-check.js": "sha256:d25f0632789eeeff09fe21155cf5f7c26ce9bf2004baa4c711bfd5a6f3efc3bb",
+    "apps/web/dist/report-view.js": "sha256:f954dbeb4858238833641c2950ed19a32762d1e063186fe074d7798177104797",
+    "integration/part4/src/report-reader.ts": "sha256:59b0ab64566dccbc7dd8985deb0a06fe01343b9ac33ae4a099c1cb8c35918f2b",
+    "integration/part4/dist/report-reader.js": "sha256:eeb4c76f50b98afc3c9ea07bf8ccfebb33dab35cdef094432ea371e611c41700",
+    ".heurisko/web-gap-final-assembly/apps/web/src/app.tsx": "sha256:6e799019e1c00b90334b48e675cd53374da90f096cde5644a08ba8477f2cc712",
+    ".heurisko/web-gap-final-assembly/apps/web/dist/render-check.js": "sha256:5252ed6da5b50cb6505b297569214215797c6794939d387c8ba784fe3a498a2c",
+    "examples/web-overhaul/current/profile-read-render-final.mjs": "sha256:c73c0fd33e7d35ed35246f6b4c0c1074f1fa2910daa1002a78b5ee43d61c672d"
+  },
+  "results": {
+    "controlledAlternatingSSR": [
+      {
+        "name": "B3R full combined overview/source/coverage/findings/AI SSR (all sections intentionally rendered by harness)",
+        "old": {
+          "iterations": 30,
+          "medianMs": 11.485458999999992,
+          "p95Ms": 65.001083,
+          "maxMs": 125.49395800000002,
+          "renderedHTMLBytes": 446031
+        },
+        "current": {
+          "iterations": 30,
+          "medianMs": 2.6789170000000695,
+          "p95Ms": 43.54641700000002,
+          "maxMs": 63.57058400000005,
+          "renderedHTMLBytes": 43471
+        }
+      },
+      {
+        "name": "B3R Files changes view SSR; old also computes member/omission browse while hidden by its app",
+        "old": {
+          "iterations": 50,
+          "medianMs": 1.9178329999999733,
+          "p95Ms": 3.5762090000000626,
+          "maxMs": 3.974333000000115,
+          "renderedHTMLBytes": 9371
+        },
+        "current": {
+          "iterations": 50,
+          "medianMs": 0.9259159999999156,
+          "p95Ms": 2.580041999999821,
+          "maxMs": 3.3223749999999654,
+          "renderedHTMLBytes": 12637
+        }
+      }
+    ],
+    "boundedEvidenceRead": {
+      "scope": "Direct shared reader, hash checks retained, 4096-byte windows; excludes HTTP/browser decode",
+      "evidenceId": "ev_c779d1cea2900c0ef6d7e876",
+      "path": "core-5a8aa0b2ba575e098cbb63b396e9bcb751eb3a0f/.github/issue-workflow.png",
+      "side": "source",
+      "memberBytes": 267800,
+      "reads": [
+        {
+          "offset": 0,
+          "iterations": 20,
+          "medianMs": 0.6623749999998836,
+          "p95Ms": 1.2506250000001273,
+          "maxMs": 1.2506250000001273,
+          "recordedRange": {
+            "startByte": 0,
+            "endByte": 267800
+          },
+          "displayedRange": {
+            "startByte": 0,
+            "endByte": 4096
+          },
+          "encoding": "base64",
+          "returnedBytes": 4096,
+          "pageSha256": "sha256:639b25b8b596e1ddd436d9b2ced63ee2c624088172976c580c672a32a3403f84"
+        },
+        {
+          "offset": 4096,
+          "iterations": 20,
+          "medianMs": 0.7199170000001232,
+          "p95Ms": 3.371582999999873,
+          "maxMs": 3.371582999999873,
+          "recordedRange": {
+            "startByte": 0,
+            "endByte": 267800
+          },
+          "displayedRange": {
+            "startByte": 4096,
+            "endByte": 8192
+          },
+          "encoding": "base64",
+          "returnedBytes": 4096,
+          "pageSha256": "sha256:b68a9b3c6d50b61f767bdc4acb5d0809cfeb7de995469c301c310ac5d409f6f7"
+        },
+        {
+          "offset": 8192,
+          "iterations": 20,
+          "medianMs": 0.7691250000000309,
+          "p95Ms": 1.52475000000004,
+          "maxMs": 1.52475000000004,
+          "recordedRange": {
+            "startByte": 0,
+            "endByte": 267800
+          },
+          "displayedRange": {
+            "startByte": 8192,
+            "endByte": 12288
+          },
+          "encoding": "base64",
+          "returnedBytes": 4096,
+          "pageSha256": "sha256:a7f6b6be7ac694abc198ec314869af898ea5c18b27b49dcdf8dfab701812da6d"
+        }
+      ]
+    },
+    "exportReopen": [
+      {
+        "name": "exact 32 MiB inert archive admission, never parsed/executed",
+        "ms": 284.27049999999986,
+        "bytes": 33554432
+      },
+      {
+        "name": "observations/OBSERVATION",
+        "ms": 47.10004200000003,
+        "bytes": 798039,
+        "status": 200
+      },
+      {
+        "name": "observations/OBSERVATION/report",
+        "ms": 4.101709000000028,
+        "bytes": 591133,
+        "status": 200
+      },
+      {
+        "name": "observations/OBSERVATION/export",
+        "ms": 5237.934916,
+        "bytes": 11714724,
+        "status": 200
+      },
+      {
+        "name": "uploads/portable",
+        "ms": 56.30608299999949,
+        "bytes": 163,
+        "status": 201
+      },
+      {
+        "name": "reopen",
+        "ms": 524.542625,
+        "bytes": 45,
+        "status": 201
+      },
+      {
+        "name": "observations/4d90cddf8cf539170e0ff6cd3649fcd7/report",
+        "ms": 1.5996670000004087,
+        "bytes": 591133,
+        "status": 200
+      }
+    ],
+    "mixedNodeRSS": {
+      "startBytes": 119685120,
+      "endBytes": 222658560,
+      "processMaxRSSKiB": 241328,
+      "scope": "one Node process, mixed parser/SSR/transport allocations; not isolated per-operation peak"
+    },
+    "searchAndFilter": [
+      {
+        "name": "cross-document search source-archive",
+        "iterations": 100,
+        "medianMs": 0.3044590000000085,
+        "p95Ms": 1.1374999999999886,
+        "maxMs": 2.142458000000005
+      },
+      {
+        "name": "B1 path browser all records",
+        "iterations": 30,
+        "medianMs": 0.019249999999999545,
+        "p95Ms": 0.2557090000000244,
+        "maxMs": 6.3444580000000315
+      },
+      {
+        "name": "B1 overview/source/coverage/findings/AI SSR",
+        "iterations": 5,
+        "medianMs": 13.254374999999982,
+        "p95Ms": 189.99816600000003,
+        "maxMs": 189.99816600000003
+      },
+      {
+        "name": "B2 path browser all records",
+        "iterations": 30,
+        "medianMs": 0.06675000000007003,
+        "p95Ms": 0.11104199999999764,
+        "maxMs": 1.1411669999999958
+      },
+      {
+        "name": "B2 overview/source/coverage/findings/AI SSR",
+        "iterations": 5,
+        "medianMs": 10.780541999999969,
+        "p95Ms": 16.91041699999994,
+        "maxMs": 16.91041699999994
+      },
+      {
+        "name": "B3R path browser all records",
+        "iterations": 30,
+        "medianMs": 1.3526659999999993,
+        "p95Ms": 2.7585000000000264,
+        "maxMs": 4.457457999999974
+      },
+      {
+        "name": "B3R overview/source/coverage/findings/AI SSR",
+        "iterations": 5,
+        "medianMs": 21.284875000000056,
+        "p95Ms": 61.19004199999995,
+        "maxMs": 61.19004199999995
+      },
+      {
+        "name": "synthetic 19000-record path filter/sort (presentation only)",
+        "iterations": 30,
+        "medianMs": 11.067415999999866,
+        "p95Ms": 34.01687500000003,
+        "maxMs": 35.58004100000005
+      }
+    ]
+  },
+  "limits": [
+    "No browser main-thread/style/layout/input trace captured by this Node profile.",
+    "Historical aggregate timings use different times/load and page content; do not infer a speedup from their ratio.",
+    "Controlled SSR differences reflect changed content/pagination as well as renderer work; they are not a browser speed score.",
+    "No latency target or WCAG/performance conformance is asserted.",
+    "No package, lifecycle, configuration or build metadata was executed; only trusted app renderers and static shared reader ran.",
+    "Active browser poll/render counts, browser main-thread style/layout/paint, native download/reopen and browser memory/offline behavior require separate browser observations.",
+    "The Node RSS figure is a mixed-process maximum, not an isolated export memory peak.",
+    "Source/build hashes were stable within both completed measurements."
+  ]
+}

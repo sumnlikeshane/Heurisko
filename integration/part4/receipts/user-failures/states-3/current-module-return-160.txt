@@ -1,0 +1,40 @@
+  HEURISKO   H Home    I Investigations     M Monitoring                                                                                                        
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+  picocolors@1.1.1 / LOCAL INPUT / HISTORICAL / complete / Captured 2026-10-31T23:16:57Z                                                                        
+  1 Overview   2 Findings   3 Files   4 Source   5 AI   6 Coverage                                                                                              
+  Historical — online checks have not refreshed · i Identity                                                                                                    
+  Findings                                                                                                                                                      
+  Findings > Package lifecycle script entry changed / Esc restores position                                                                                     
+  ┌─ > Package lifecycle script entry changed ───────────────────────────────────────────────────────────────────────────────────────────────────────────────┐  
+  │ Manifest key scripts.postinstall is reported as changed.                                                                                                 │  
+  │                                                                                                                                                          │  
+  │ Significance:                                                                                                                                            │  
+  │ Lifecycle entries can affect package-manager installation behavior; inspect the exact command and its source before deciding what it does. This          │  
+  │ observation does not establish malicious intent.                                                                                                         │  
+  │                                                                                                                                                          │  
+  │ Severity:                                                                                                                                                │  
+  │ medium                                                                                                                                                   │  
+  │                                                                                                                                                          │  
+  │ Review priority:                                                                                                                                         │  
+  │ medium                                                                                                                                                   │  
+  │                                                                                                                                                          │  
+  │ Evidence confidence:                                                                                                                                     │  
+  │ high                                                                                                                                                     │  
+  │                                                                                                                                                          │  
+  │ Explanation strength:                                                                                                                                    │  
+  │ exact                                                                                                                                                    │  
+  │                                                                                                                                                          │  
+  │ Evidence:                                                                                                                                                │  
+  │ ev_e7075cb69f91c7e1b4c4223f                                                                                                                              │  
+  │                                                                                                                                                          │  
+  │ Limitation:                                                                                                                                              │  
+  │ The evidence identifies the changed manifest key but does not retain the old and new command values.                                                     │  
+  │                                                                                                                                                          │  
+  │ Next action:                                                                                                                                             │  
+  │ Review the retained old and new script values and their referenced files; do not execute them on the host.                                               │  
+  │ 2-27 / 33  j/k scroll                                                                                                                                    │  
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘  
+  Findings                                                                                                                                                      
+  j/k scroll  PgUp/PgDn sections  e evidence  Esc return  q quit                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                

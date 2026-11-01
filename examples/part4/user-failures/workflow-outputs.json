@@ -1,0 +1,127 @@
+{
+  "reports": [
+    {
+      "name": "npm-release-candidate",
+      "report": "examples/part4/user-failures/npm-release-candidate-b51539b3-ee23-4131-afd1-6d028c89045b.report.json",
+      "reportId": "report_e088db3a11c119fbfe4c291b",
+      "contentRef": "sha256:659f2c4e6823300edc1ae19509c74c8e3cd789a8e27b841714426cab51ecd1b9",
+      "artifact": {
+        "origin": "registry",
+        "artifactFilename": "picocolors-1.1.1.tgz",
+        "observedSha256": "sha256:d3aedb2807967b7eb37fd11b03b7e3701e725af79c650d0812ff7213f8f882d9",
+        "captureTime": "2026-10-31T23:17:18Z",
+        "integrity": {
+          "algorithm": "sha512",
+          "expectedValue": "xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA==",
+          "status": "matched"
+        },
+        "packageName": "picocolors",
+        "version": "1.1.1",
+        "metadataEvidenceId": "ev_988cc17f82fc7b670847d3b7"
+      },
+      "outcomes": {
+        "artifactIntegrity": "matched",
+        "sourceAssociation": "ambiguous",
+        "provenancePolicy": "not_checked",
+        "correspondence": "unresolved",
+        "analysisCompleteness": "incomplete",
+        "policyResult": "not_evaluated"
+      },
+      "changes": {
+        "identical": 5,
+        "modified": 2,
+        "unresolved": 12
+      },
+      "analysisModule": "unavailable; default product",
+      "sourceClaims": [
+        {
+          "repositoryUrl": "https://github.com/alexeyraspopov/picocolors",
+          "commit": "6f0a4638348ed20633d623ee973f9c9a96f65104",
+          "subdirectory": "",
+          "association": "ambiguous",
+          "evidenceIds": [
+            "ev_2af9c746c00b8cdd58bf8d53",
+            "ev_71cfe02e6f43393bc1e70f47",
+            "ev_8ce87ba634c4ba1efd11d9f9",
+            "ev_8be837bb7c713d487b6baf9a"
+          ],
+          "conflicts": [
+            "SOURCE_CLAIMS_CONFLICT: retained repository/commit/subdirectory claims disagree."
+          ]
+        },
+        {
+          "repositoryUrl": "https://github.com/alexeyraspopov/picocolors",
+          "commit": "7249f8c5d4825550f70bc1ea98652639933d3bbd",
+          "subdirectory": "",
+          "association": "ambiguous",
+          "evidenceIds": [
+            "ev_9df83d228b53fafb344e87c1",
+            "ev_71cfe02e6f43393bc1e70f47",
+            "ev_77e1a77b5ae91b0f043252b5",
+            "ev_8ce87ba634c4ba1efd11d9f9",
+            "ev_8be837bb7c713d487b6baf9a",
+            "ev_8da3c52b40697710504b12af",
+            "ev_bcac006cc904f55957eaa0db"
+          ],
+          "conflicts": [
+            "SOURCE_CLAIMS_CONFLICT: retained repository/commit/subdirectory claims disagree."
+          ],
+          "sourceSnapshotSha256": "sha256:c1053a4131e05d3e62088b3988f4cefe16e05b1a90db59115bf7706f7350e7de",
+          "buildContextSha256": "sha256:f8cf11c87c206269fd62e69593f5da3fbeeb0d1948657ee448b43f1a7cbd4e61"
+        }
+      ]
+    },
+    {
+      "name": "local-inert-mutation",
+      "report": "examples/part4/user-failures/local-inert-mutation-b51539b3-ee23-4131-afd1-6d028c89045b.report.json",
+      "reportId": "report_cc24925f49a83ea599cc750f",
+      "contentRef": "sha256:1a54411180d2491d7227ad255499559e453ba5ecfa45c03e1422046aa8e49c28",
+      "artifact": {
+        "origin": "local",
+        "artifactFilename": "picocolors-1.1.1.local-inert-mutation.tgz",
+        "observedSha256": "sha256:bcdd003ee749b70575fb2793d3892a393d1224457ecb8ca9c37ff4cfd55e098d",
+        "captureTime": "2026-10-31T23:18:14Z",
+        "integrity": {
+          "algorithm": "none",
+          "status": "not_checked"
+        }
+      },
+      "outcomes": {
+        "artifactIntegrity": "not_checked",
+        "sourceAssociation": "user_supplied",
+        "provenancePolicy": "not_checked",
+        "correspondence": "unresolved",
+        "analysisCompleteness": "incomplete",
+        "policyResult": "not_evaluated"
+      },
+      "changes": {
+        "added": 1,
+        "identical": 5,
+        "modified": 2,
+        "removed": 12
+      },
+      "analysisModule": "unavailable; default product",
+      "sourceClaims": [
+        {
+          "repositoryUrl": "https://github.com/alexeyraspopov/picocolors",
+          "commit": "7249f8c5d4825550f70bc1ea98652639933d3bbd",
+          "subdirectory": "",
+          "association": "user_supplied",
+          "evidenceIds": [
+            "ev_fd5afc8b1e98682e8cc0cbf6",
+            "ev_5356eefc4312741f16ddf629"
+          ],
+          "conflicts": [],
+          "sourceSnapshotSha256": "sha256:c1053a4131e05d3e62088b3988f4cefe16e05b1a90db59115bf7706f7350e7de",
+          "buildContextSha256": "sha256:f8cf11c87c206269fd62e69593f5da3fbeeb0d1948657ee448b43f1a7cbd4e61"
+        }
+      ]
+    }
+  ],
+  "store": "examples/part4/user-failures/store-b51539b3-ee23-4131-afd1-6d028c89045b",
+  "inputs": {
+    "inputs/picocolors-source-7249f8c5d4825550f70bc1ea98652639933d3bbd.tar.gz": "c1053a4131e05d3e62088b3988f4cefe16e05b1a90db59115bf7706f7350e7de",
+    "inputs/picocolors-1.1.1.local-inert-mutation.tgz": "bcdd003ee749b70575fb2793d3892a393d1224457ecb8ca9c37ff4cfd55e098d",
+    "inputs/picocolors-1.1.1.tgz": "d3aedb2807967b7eb37fd11b03b7e3701e725af79c650d0812ff7213f8f882d9"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "recordedAt": "2026-10-31T21:45:28.573579+00:00",
+  "platform": "macOS arm64",
+  "browser": "Chrome via supported cua_repl extension",
+  "destination": "existing local loopback viewer /",
+  "result": "blocked_before_render",
+  "error": "ERR_BLOCKED_BY_CLIENT",
+  "observedAccessibility": [
+    "127.0.0.1 is blocked",
+    "This page has been blocked by Chrome",
+    "ERR_BLOCKED_BY_CLIENT"
+  ],
+  "notObserved": [
+    "Home > Docs > Workspace > report > evidence",
+    "viewport dimensions",
+    "zoom",
+    "keyboard/focus",
+    "offline behavior"
+  ],
+  "securitySettingsChanged": false,
+  "continued": "independent W1 implementation and non-GUI checks"
+}

@@ -1,0 +1,1 @@
+{"kind":"registry","raw":{"repository":{"url":"git+ssh://git@github.com/gvergnaud/ts-pattern.git","type":"git"},"gitHead":"0e15315eafbbb813a91bad34496418846981c1b1","name":"ts-pattern","version":"5.9.0"},"repositoryUrl":"https://github.com/gvergnaud/ts-pattern","commit":"0e15315eafbbb813a91bad34496418846981c1b1","subdirectory":"","captures":[]}

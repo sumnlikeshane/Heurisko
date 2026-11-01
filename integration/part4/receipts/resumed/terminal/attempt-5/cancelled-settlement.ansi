@@ -1,0 +1,859 @@
+[?1049h[?25l[?25l  HEURISKO / home / wide / 160x40
+   H Home    I Investigations     M Monitoring
+  Exact artifact / immutable source evidence. Design v1.0.0-rc.1 provisional.
+  AI runtime unavailable; no monitoring/export configured.
+  <workspace>/.heurisko/part4-tty-39e81cda-0e49-433c-bb82-07be8585ffe0
+  ┌─ > Home ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Enter / n New investigation; o Open saved report; I Recent observations; M Monitoring                                                                    │
+  │ Monitoring unconfigured. Durable failed-job index unavailable.                                                                                           │
+  │ No indexed reports in selected store. Open an explicit report path.                                                                                      │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+  Focus 0 / filter (none) / No universal safety verdict
+  j/k move  Enter inspect  e evidence  Tab focus  / filter  ? help  q quit
+
+
+[?25l[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  HEURISKO / new / wide / 160x40
+   H Home    I Investigations     M Monitoring
+  Exact artifact / immutable source evidence. Design v1.0.0-rc.1 provisional.
+  AI runtime unavailable; no monitoring/export configured.
+  <workspace>/.heurisko/part4-tty-39e81cda-0e49-433c-bb82-07be8585ffe0
+  ┌─ > New investigation / npm ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Ctrl+T type; Tab field; Enter validates → Review.                                                                                                        │
+  │ AI disabled; current inference runtime unavailable.                                                                                                      │
+  │ > Package name: |                                                                                                                                        │
+  │ Exact version:                                                                                                                                           │
+  │ Source repository:                                                                                                                                       │
+  │ Full commit:                                                                                                                                             │
+  │ Subdirectory:                                                                                                                                            │
+  │ Chosen source is not verified release provenance.                                                                                                        │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+  Focus 0 / filter (none) / No universal safety verdict
+  Type fields  Tab next  Ctrl+T type  Enter review  Esc back
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  HEURISKO / new / wide / 160x40
+   H Home    I Investigations     M Monitoring
+  Exact artifact / immutable source evidence. Design v1.0.0-rc.1 provisional.
+  AI runtime unavailable; no monitoring/export configured.
+  <workspace>/.heurisko/part4-tty-39e81cda-0e49-433c-bb82-07be8585ffe0
+  ┌─ > New investigation / LOCAL INPUT ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Ctrl+T type; Tab field; Enter validates → Review.                                                                                                        │
+  │ AI disabled; current inference runtime unavailable.                                                                                                      │
+  │ > Archive path: |                                                                                                                                        │
+  │ Source repository:                                                                                                                                       │
+  │ Full commit:                                                                                                                                             │
+  │ Subdirectory:                                                                                                                                            │
+  │ Source archive (optional):                                                                                                                               │
+  │ Chosen source is not verified release provenance.                                                                                                        │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+  Focus 0 / filter (none) / No universal safety verdict
+  Type fields  Tab next  Ctrl+T type  Enter review  Esc back
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  HEURISKO / new / wide / 160x40
+   H Home    I Investigations     M Monitoring
+  Exact artifact / immutable source evidence. Design v1.0.0-rc.1 provisional.
+  AI runtime unavailable; no monitoring/export configured.
+  <workspace>/.heurisko/part4-tty-39e81cda-0e49-433c-bb82-07be8585ffe0
+  ┌─ > New investigation / LOCAL INPUT ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Ctrl+T type; Tab field; Enter validates → Review.                                                                                                        │
+  │ AI disabled; current inference runtime unavailable.                                                                                                      │
+  │ > Archive path: examples/s2/current/inputs/picocolors-1.1.1.local-inert-mutation.tgz|                                                                    │
+  │ Source repository:                                                                                                                                       │
+  │ Full commit:                                                                                                                                             │
+  │ Subdirectory:                                                                                                                                            │
+  │ Source archive (optional):                                                                                                                               │
+  │ Chosen source is not verified release provenance.                                                                                                        │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+  Focus 0 / filter (none) / No universal safety verdict
+  Type fields  Tab next  Ctrl+T type  Enter review  Esc back
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  HEURISKO / new / wide / 160x40
+   H Home    I Investigations     M Monitoring
+  Exact artifact / immutable source evidence. Design v1.0.0-rc.1 provisional.
+  AI runtime unavailable; no monitoring/export configured.
+  <workspace>/.heurisko/part4-tty-39e81cda-0e49-433c-bb82-07be8585ffe0
+  ┌─ > New investigation / LOCAL INPUT ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Ctrl+T type; Tab field; Enter validates → Review.                                                                                                        │
+  │ AI disabled; current inference runtime unavailable.                                                                                                      │
+  │ Archive path: examples/s2/current/inputs/picocolors-1.1.1.local-inert-mutation.tgz                                                                       │
+  │ > Source repository: |                                                                                                                                   │
+  │ Full commit:                                                                                                                                             │
+  │ Subdirectory:                                                                                                                                            │
+  │ Source archive (optional):                                                                                                                               │
+  │ Chosen source is not verified release provenance.                                                                                                        │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+  Focus 0 / filter (none) / No universal safety verdict
+  Type fields  Tab next  Ctrl+T type  Enter review  Esc back
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  HEURISKO / new / wide / 160x40
+   H Home    I Investigations     M Monitoring
+  Exact artifact / immutable source evidence. Design v1.0.0-rc.1 provisional.
+  AI runtime unavailable; no monitoring/export configured.
+  <workspace>/.heurisko/part4-tty-39e81cda-0e49-433c-bb82-07be8585ffe0
+  ┌─ > New investigation / LOCAL INPUT ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Ctrl+T type; Tab field; Enter validates → Review.                                                                                                        │
+  │ AI disabled; current inference runtime unavailable.                                                                                                      │
+  │ Archive path: examples/s2/current/inputs/picocolors-1.1.1.local-inert-mutation.tgz                                                                       │
+  │ > Source repository: https://github.com/alexeyraspopov/picocolors|                                                                                       │
+  │ Full commit:                                                                                                                                             │
+  │ Subdirectory:                                                                                                                                            │
+  │ Source archive (optional):                                                                                                                               │
+  │ Chosen source is not verified release provenance.                                                                                                        │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+  Focus 0 / filter (none) / No universal safety verdict
+  Type fields  Tab next  Ctrl+T type  Enter review  Esc back
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  HEURISKO / new / wide / 160x40
+   H Home    I Investigations     M Monitoring
+  Exact artifact / immutable source evidence. Design v1.0.0-rc.1 provisional.
+  AI runtime unavailable; no monitoring/export configured.
+  <workspace>/.heurisko/part4-tty-39e81cda-0e49-433c-bb82-07be8585ffe0
+  ┌─ > New investigation / LOCAL INPUT ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Ctrl+T type; Tab field; Enter validates → Review.                                                                                                        │
+  │ AI disabled; current inference runtime unavailable.                                                                                                      │
+  │ Archive path: examples/s2/current/inputs/picocolors-1.1.1.local-inert-mutation.tgz                                                                       │
+  │ Source repository: https://github.com/alexeyraspopov/picocolors                                                                                          │
+  │ > Full commit: |                                                                                                                                         │
+  │ Subdirectory:                                                                                                                                            │
+  │ Source archive (optional):                                                                                                                               │
+  │ Chosen source is not verified release provenance.                                                                                                        │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+  Focus 0 / filter (none) / No universal safety verdict
+  Type fields  Tab next  Ctrl+T type  Enter review  Esc back
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  HEURISKO / new / wide / 160x40
+   H Home    I Investigations     M Monitoring
+  Exact artifact / immutable source evidence. Design v1.0.0-rc.1 provisional.
+  AI runtime unavailable; no monitoring/export configured.
+  <workspace>/.heurisko/part4-tty-39e81cda-0e49-433c-bb82-07be8585ffe0
+  ┌─ > New investigation / LOCAL INPUT ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Ctrl+T type; Tab field; Enter validates → Review.                                                                                                        │
+  │ AI disabled; current inference runtime unavailable.                                                                                                      │
+  │ Archive path: examples/s2/current/inputs/picocolors-1.1.1.local-inert-mutation.tgz                                                                       │
+  │ Source repository: https://github.com/alexeyraspopov/picocolors                                                                                          │
+  │ > Full commit: 6f0a4638348ed20633d623ee973f9c9a96f65104|                                                                                                 │
+  │ Subdirectory:                                                                                                                                            │
+  │ Source archive (optional):                                                                                                                               │
+  │ Chosen source is not verified release provenance.                                                                                                        │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+  Focus 0 / filter (none) / No universal safety verdict
+  Type fields  Tab next  Ctrl+T type  Enter review  Esc back
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  HEURISKO / new / wide / 160x40
+   H Home    I Investigations     M Monitoring
+  Exact artifact / immutable source evidence. Design v1.0.0-rc.1 provisional.
+  AI runtime unavailable; no monitoring/export configured.
+  <workspace>/.heurisko/part4-tty-39e81cda-0e49-433c-bb82-07be8585ffe0
+  ┌─ > New investigation / LOCAL INPUT ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Ctrl+T type; Tab field; Enter validates → Review.                                                                                                        │
+  │ AI disabled; current inference runtime unavailable.                                                                                                      │
+  │ Archive path: examples/s2/current/inputs/picocolors-1.1.1.local-inert-mutation.tgz                                                                       │
+  │ Source repository: https://github.com/alexeyraspopov/picocolors                                                                                          │
+  │ Full commit: 6f0a4638348ed20633d623ee973f9c9a96f65104                                                                                                    │
+  │ > Subdirectory: |                                                                                                                                        │
+  │ Source archive (optional):                                                                                                                               │
+  │ Chosen source is not verified release provenance.                                                                                                        │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+  Focus 0 / filter (none) / No universal safety verdict
+  Type fields  Tab next  Ctrl+T type  Enter review  Esc back
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  HEURISKO / new / wide / 160x40
+   H Home    I Investigations     M Monitoring
+  Exact artifact / immutable source evidence. Design v1.0.0-rc.1 provisional.
+  AI runtime unavailable; no monitoring/export configured.
+  <workspace>/.heurisko/part4-tty-39e81cda-0e49-433c-bb82-07be8585ffe0
+  ┌─ > New investigation / LOCAL INPUT ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Ctrl+T type; Tab field; Enter validates → Review.                                                                                                        │
+  │ AI disabled; current inference runtime unavailable.                                                                                                      │
+  │ Archive path: examples/s2/current/inputs/picocolors-1.1.1.local-inert-mutation.tgz                                                                       │
+  │ Source repository: https://github.com/alexeyraspopov/picocolors                                                                                          │
+  │ Full commit: 6f0a4638348ed20633d623ee973f9c9a96f65104                                                                                                    │
+  │ Subdirectory:                                                                                                                                            │
+  │ > Source archive (optional): |                                                                                                                           │
+  │ Chosen source is not verified release provenance.                                                                                                        │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+  Focus 0 / filter (none) / No universal safety verdict
+  Type fields  Tab next  Ctrl+T type  Enter review  Esc back
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  HEURISKO / new / wide / 160x40
+   H Home    I Investigations     M Monitoring
+  Exact artifact / immutable source evidence. Design v1.0.0-rc.1 provisional.
+  AI runtime unavailable; no monitoring/export configured.
+  <workspace>/.heurisko/part4-tty-39e81cda-0e49-433c-bb82-07be8585ffe0
+  ┌─ > New investigation / LOCAL INPUT ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Ctrl+T type; Tab field; Enter validates → Review.                                                                                                        │
+  │ AI disabled; current inference runtime unavailable.                                                                                                      │
+  │ Archive path: examples/s2/current/inputs/picocolors-1.1.1.local-inert-mutation.tgz                                                                       │
+  │ Source repository: https://github.com/alexeyraspopov/picocolors                                                                                          │
+  │ Full commit: 6f0a4638348ed20633d623ee973f9c9a96f65104                                                                                                    │
+  │ Subdirectory:                                                                                                                                            │
+  │ > Source archive (optional): examples/s2/current/inputs/picocolors-source-6f0a4638348ed20633d623ee973f9c9a96f65104.tar.gz|                               │
+  │ Chosen source is not verified release provenance.                                                                                                        │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+  Focus 0 / filter (none) / No universal safety verdict
+  Type fields  Tab next  Ctrl+T type  Enter review  Esc back
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  HEURISKO / review / wide / 160x40
+   H Home    I Investigations     M Monitoring
+  Exact artifact / immutable source evidence. Design v1.0.0-rc.1 provisional.
+  AI runtime unavailable; no monitoring/export configured.
+  <workspace>/.heurisko/part4-tty-39e81cda-0e49-433c-bb82-07be8585ffe0
+  ┌─ > Review exact target — Enter Start / Esc edit ─────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Input: local                                                                                                                                             │
+  │ <workspace>/examples/s2/current/inputs/picocolors-1.1.1.local-inert-mutation.tgz                                │
+  │ Artifact digest: sha256:bcdd003ee749b70575fb2793d3892a393d1224457ecb8ca9c37ff4cfd55e098d                                                                 │
+  │ Source: https://github.com/alexeyraspopov/picocolors                                                                                                     │
+  │ Commit: 6f0a4638348ed20633d623ee973f9c9a96f65104                                                                                                         │
+  │ Subdirectory: (root)                                                                                                                                     │
+  │ Association: user-supplied target or unresolved publisher assertion; not proof.                                                                          │
+  │ Configuration: raw-static-s4-v1; AI disabled / runtime unavailable.                                                                                      │
+  │ Provenance not checked. No verifier, rebuild, model, monitor or export.                                                                                  │
+  │ Start retrieves exact-version bytes and preserves observed identity; registry changes remain possible.                                                   │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+  Focus 0 / filter (none) / No universal safety verdict
+  j/k move  Enter inspect  e evidence  Tab focus  / filter  ? help  q quit
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  HEURISKO / live / wide / 160x40
+   H Home    I Investigations     M Monitoring
+  Exact artifact / immutable source evidence. Design v1.0.0-rc.1 provisional.
+  AI runtime unavailable; no monitoring/export configured.
+  <workspace>/.heurisko/part4-tty-39e81cda-0e49-433c-bb82-07be8585ffe0
+  ┌─ > Live investigation / running ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ resolve_artifact: not_started                                                                                                                            │
+  │ acquire: not_started                                                                                                                                     │
+  │ source: not_started                                                                                                                                      │
+  │ provenance: not_started                                                                                                                                  │
+  │ inventory: not_started                                                                                                                                   │
+  │ compare: not_started                                                                                                                                     │
+  │ build: not_started                                                                                                                                       │
+  │ heuristics: not_started                                                                                                                                  │
+  │ ai: not_started                                                                                                                                          │
+  │ persist: not_started                                                                                                                                     │
+  │ Omitted earlier progress events: 0                                                                                                                       │
+  │ No ETA or percentage. Live evidence/diagnostic feed unavailable.                                                                                         │
+  │ q / Esc / Ctrl+C requests cancellation; no detach.                                                                                                       │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+  Focus 0 / filter (none) / No universal safety verdict
+  Ctrl+C / q cancel and wait
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  HEURISKO / live / wide / 160x40
+   H Home    I Investigations     M Monitoring
+  Exact artifact / immutable source evidence. Design v1.0.0-rc.1 provisional.
+  AI runtime unavailable; no monitoring/export configured.
+  <workspace>/.heurisko/part4-tty-39e81cda-0e49-433c-bb82-07be8585ffe0
+  ┌─ > Live investigation / running ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ resolve_artifact: complete                                                                                                                               │
+  │ acquire: running                                                                                                                                         │
+  │ source: not_started                                                                                                                                      │
+  │ provenance: not_started                                                                                                                                  │
+  │ inventory: not_started                                                                                                                                   │
+  │ compare: not_started                                                                                                                                     │
+  │ build: not_started                                                                                                                                       │
+  │ heuristics: not_started                                                                                                                                  │
+  │ ai: not_started                                                                                                                                          │
+  │ persist: not_started                                                                                                                                     │
+  │ Omitted earlier progress events: 0                                                                                                                       │
+  │ No ETA or percentage. Live evidence/diagnostic feed unavailable.                                                                                         │
+  │ q / Esc / Ctrl+C requests cancellation; no detach.                                                                                                       │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+  Focus 0 / filter (none) / No universal safety verdict
+  Ctrl+C / q cancel and wait
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  HEURISKO / live / wide / 160x40
+   H Home    I Investigations     M Monitoring
+  Exact artifact / immutable source evidence. Design v1.0.0-rc.1 provisional.
+  AI runtime unavailable; no monitoring/export configured.
+  <workspace>/.heurisko/part4-tty-39e81cda-0e49-433c-bb82-07be8585ffe0
+  ┌─ > Live investigation / cancel_requested ────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ resolve_artifact: complete                                                                                                                               │
+  │ acquire: running                                                                                                                                         │
+  │ source: not_started                                                                                                                                      │
+  │ provenance: not_started                                                                                                                                  │
+  │ inventory: not_started                                                                                                                                   │
+  │ compare: not_started                                                                                                                                     │
+  │ build: not_started                                                                                                                                       │
+  │ heuristics: not_started                                                                                                                                  │
+  │ ai: not_started                                                                                                                                          │
+  │ persist: not_started                                                                                                                                     │
+  │ Omitted earlier progress events: 0                                                                                                                       │
+  │ No ETA or percentage. Live evidence/diagnostic feed unavailable.                                                                                         │
+  │ Cancellation requested; awaiting settlement.                                                                                                             │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+  Cancellation requested; waiting for engine settlement. Cleanup is not yet acknowledged.
+  Ctrl+C / q cancel and wait
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  HEURISKO / live / wide / 160x40
+   H Home    I Investigations     M Monitoring
+  Exact artifact / immutable source evidence. Design v1.0.0-rc.1 provisional.
+  AI runtime unavailable; no monitoring/export configured.
+  <workspace>/.heurisko/part4-tty-39e81cda-0e49-433c-bb82-07be8585ffe0
+  ┌─ > Live investigation / cancel_requested ────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ resolve_artifact: complete                                                                                                                               │
+  │ acquire: complete                                                                                                                                        │
+  │ source: incomplete                                                                                                                                       │
+  │ CANCELLED: CANCELLED; scope source                                                                                                                       │
+  │ provenance: skipped                                                                                                                                      │
+  │ inventory: running                                                                                                                                       │
+  │ compare: not_started                                                                                                                                     │
+  │ build: skipped                                                                                                                                           │
+  │ heuristics: not_started                                                                                                                                  │
+  │ ai: not_started                                                                                                                                          │
+  │ persist: not_started                                                                                                                                     │
+  │ Omitted earlier progress events: 0                                                                                                                       │
+  │ No ETA or percentage. Live evidence/diagnostic feed unavailable.                                                                                         │
+  │ Cancellation requested; awaiting settlement.                                                                                                             │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+  Cancellation requested; waiting for engine settlement. Cleanup is not yet acknowledged.
+  Ctrl+C / q cancel and wait
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  HEURISKO / live / wide / 160x40
+   H Home    I Investigations     M Monitoring
+  Exact artifact / immutable source evidence. Design v1.0.0-rc.1 provisional.
+  AI runtime unavailable; no monitoring/export configured.
+  <workspace>/.heurisko/part4-tty-39e81cda-0e49-433c-bb82-07be8585ffe0
+  ┌─ > Live investigation / cancel_requested ────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ resolve_artifact: complete                                                                                                                               │
+  │ acquire: complete                                                                                                                                        │
+  │ source: incomplete                                                                                                                                       │
+  │ CANCELLED: CANCELLED; scope source                                                                                                                       │
+  │ provenance: skipped                                                                                                                                      │
+  │ inventory: incomplete                                                                                                                                    │
+  │ INVENTORY_INCOMPLETE: INVENTORY_INCOMPLETE; scope inventory                                                                                              │
+  │ compare: running                                                                                                                                         │
+  │ build: skipped                                                                                                                                           │
+  │ heuristics: not_started                                                                                                                                  │
+  │ ai: not_started                                                                                                                                          │
+  │ persist: not_started                                                                                                                                     │
+  │ Omitted earlier progress events: 0                                                                                                                       │
+  │ No ETA or percentage. Live evidence/diagnostic feed unavailable.                                                                                         │
+  │ Cancellation requested; awaiting settlement.                                                                                                             │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+  Cancellation requested; waiting for engine settlement. Cleanup is not yet acknowledged.
+  Ctrl+C / q cancel and wait
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  HEURISKO / live / wide / 160x40
+   H Home    I Investigations     M Monitoring
+  Exact artifact / immutable source evidence. Design v1.0.0-rc.1 provisional.
+  AI runtime unavailable; no monitoring/export configured.
+  <workspace>/.heurisko/part4-tty-39e81cda-0e49-433c-bb82-07be8585ffe0
+  ┌─ > Live investigation / cancel_requested ────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ resolve_artifact: complete                                                                                                                               │
+  │ acquire: complete                                                                                                                                        │
+  │ source: incomplete                                                                                                                                       │
+  │ CANCELLED: CANCELLED; scope source                                                                                                                       │
+  │ provenance: skipped                                                                                                                                      │
+  │ inventory: incomplete                                                                                                                                    │
+  │ INVENTORY_INCOMPLETE: INVENTORY_INCOMPLETE; scope inventory                                                                                              │
+  │ compare: incomplete                                                                                                                                      │
+  │ build: skipped                                                                                                                                           │
+  │ heuristics: not_started                                                                                                                                  │
+  │ ai: not_started                                                                                                                                          │
+  │ persist: not_started                                                                                                                                     │
+  │ Omitted earlier progress events: 0                                                                                                                       │
+  │ No ETA or percentage. Live evidence/diagnostic feed unavailable.                                                                                         │
+  │ Cancellation requested; awaiting settlement.                                                                                                             │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+  Cancellation requested; waiting for engine settlement. Cleanup is not yet acknowledged.
+  Ctrl+C / q cancel and wait
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  HEURISKO / live / wide / 160x40
+   H Home    I Investigations     M Monitoring
+  Exact artifact / immutable source evidence. Design v1.0.0-rc.1 provisional.
+  AI runtime unavailable; no monitoring/export configured.
+  <workspace>/.heurisko/part4-tty-39e81cda-0e49-433c-bb82-07be8585ffe0
+  ┌─ > Live investigation / cancel_requested ────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ resolve_artifact: complete                                                                                                                               │
+  │ acquire: complete                                                                                                                                        │
+  │ source: incomplete                                                                                                                                       │
+  │ CANCELLED: CANCELLED; scope source                                                                                                                       │
+  │ provenance: skipped                                                                                                                                      │
+  │ inventory: incomplete                                                                                                                                    │
+  │ INVENTORY_INCOMPLETE: INVENTORY_INCOMPLETE; scope inventory                                                                                              │
+  │ compare: incomplete                                                                                                                                      │
+  │ build: skipped                                                                                                                                           │
+  │ heuristics: running                                                                                                                                      │
+  │ ai: not_started                                                                                                                                          │
+  │ persist: not_started                                                                                                                                     │
+  │ Omitted earlier progress events: 0                                                                                                                       │
+  │ No ETA or percentage. Live evidence/diagnostic feed unavailable.                                                                                         │
+  │ Cancellation requested; awaiting settlement.                                                                                                             │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+  Cancellation requested; waiting for engine settlement. Cleanup is not yet acknowledged.
+  Ctrl+C / q cancel and wait
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  HEURISKO / live / wide / 160x40
+   H Home    I Investigations     M Monitoring
+  Exact artifact / immutable source evidence. Design v1.0.0-rc.1 provisional.
+  AI runtime unavailable; no monitoring/export configured.
+  <workspace>/.heurisko/part4-tty-39e81cda-0e49-433c-bb82-07be8585ffe0
+  ┌─ > Live investigation / cancel_requested ────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ resolve_artifact: complete                                                                                                                               │
+  │ acquire: complete                                                                                                                                        │
+  │ source: incomplete                                                                                                                                       │
+  │ CANCELLED: CANCELLED; scope source                                                                                                                       │
+  │ provenance: skipped                                                                                                                                      │
+  │ inventory: incomplete                                                                                                                                    │
+  │ INVENTORY_INCOMPLETE: INVENTORY_INCOMPLETE; scope inventory                                                                                              │
+  │ compare: incomplete                                                                                                                                      │
+  │ build: skipped                                                                                                                                           │
+  │ heuristics: incomplete                                                                                                                                   │
+  │ ANALYSIS_MODULE_UNAVAILABLE: Malhar analysis module not supplied; scope deterministic analysis                                                           │
+  │ ai: skipped                                                                                                                                              │
+  │ persist: running                                                                                                                                         │
+  │ Omitted earlier progress events: 0                                                                                                                       │
+  │ No ETA or percentage. Live evidence/diagnostic feed unavailable.                                                                                         │
+  │ Cancellation requested; awaiting settlement.                                                                                                             │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+  Cancellation requested; waiting for engine settlement. Cleanup is not yet acknowledged.
+  Ctrl+C / q cancel and wait
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  HEURISKO / live / wide / 160x40
+   H Home    I Investigations     M Monitoring
+  Exact artifact / immutable source evidence. Design v1.0.0-rc.1 provisional.
+  AI runtime unavailable; no monitoring/export configured.
+  <workspace>/.heurisko/part4-tty-39e81cda-0e49-433c-bb82-07be8585ffe0
+  ┌─ > Live investigation / cancel_requested ────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ resolve_artifact: complete                                                                                                                               │
+  │ acquire: complete                                                                                                                                        │
+  │ source: incomplete                                                                                                                                       │
+  │ CANCELLED: CANCELLED; scope source                                                                                                                       │
+  │ provenance: skipped                                                                                                                                      │
+  │ inventory: incomplete                                                                                                                                    │
+  │ INVENTORY_INCOMPLETE: INVENTORY_INCOMPLETE; scope inventory                                                                                              │
+  │ compare: incomplete                                                                                                                                      │
+  │ build: skipped                                                                                                                                           │
+  │ heuristics: incomplete                                                                                                                                   │
+  │ ANALYSIS_MODULE_UNAVAILABLE: Malhar analysis module not supplied; scope deterministic analysis                                                           │
+  │ ai: skipped                                                                                                                                              │
+  │ persist: complete                                                                                                                                        │
+  │ Omitted earlier progress events: 0                                                                                                                       │
+  │ No ETA or percentage. Live evidence/diagnostic feed unavailable.                                                                                         │
+  │ Cancellation requested; awaiting settlement.                                                                                                             │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+  Cancellation requested; waiting for engine settlement. Cleanup is not yet acknowledged.
+  Ctrl+C / q cancel and wait
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  HEURISKO / live / wide / 160x40
+   H Home    I Investigations     M Monitoring
+  Exact artifact / immutable source evidence. Design v1.0.0-rc.1 provisional.
+  AI runtime unavailable; no monitoring/export configured.
+  <workspace>/.heurisko/part4-tty-39e81cda-0e49-433c-bb82-07be8585ffe0
+  ┌─ > Live investigation / settled_report ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ resolve_artifact: complete                                                                                                                               │
+  │ acquire: complete                                                                                                                                        │
+  │ source: incomplete                                                                                                                                       │
+  │ CANCELLED: CANCELLED; scope source                                                                                                                       │
+  │ provenance: skipped                                                                                                                                      │
+  │ inventory: incomplete                                                                                                                                    │
+  │ INVENTORY_INCOMPLETE: INVENTORY_INCOMPLETE; scope inventory                                                                                              │
+  │ compare: incomplete                                                                                                                                      │
+  │ build: skipped                                                                                                                                           │
+  │ heuristics: incomplete                                                                                                                                   │
+  │ ANALYSIS_MODULE_UNAVAILABLE: Malhar analysis module not supplied; scope deterministic analysis                                                           │
+  │ ai: skipped                                                                                                                                              │
+  │ persist: complete                                                                                                                                        │
+  │ Omitted earlier progress events: 0                                                                                                                       │
+  │ No ETA or percentage. Live evidence/diagnostic feed unavailable.                                                                                         │
+  │ Cancellation requested; awaiting settlement.                                                                                                             │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  │                                                                                                                                                          │
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+  Cancellation requested; waiting for engine settlement. Cleanup is not yet acknowledged.
+  Ctrl+C / q cancel and wait
+
+
+[?25h[?25h[0m[?25h[?1049l[?25h

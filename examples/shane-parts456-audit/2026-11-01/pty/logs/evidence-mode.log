@@ -1,0 +1,37 @@
+Traceback (most recent call last):
+  File "<workspace>/packages/tui/tests/evidence-mode.py", line 37, in <module>
+    expect(session, 'RAW utf8: [532, 621) / recorded [532, 621)')
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<workspace>/packages/tui/tests/evidence-mode.py", line 22, in expect
+    session.wait(text)
+    ~~~~~~~~~~~~^^^^^^
+  File "<workspace>/packages/tui/tests/pty_session.py", line 42, in wait
+    assert text in self.frame(),repr(text)+' missing\n'+self.frame()
+           ^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'RAW utf8: [532, 621) / recorded [532, 621)' missing
+  HEURISKO   H Home    I Investigations     M Monitoring                            
+  ────────────────────────────────────────────────────────────────────────────────  
+  picocolors@1.1.1 / HISTORICAL / incomplete / Captured 2026-10-31T22:59:33Z        
+  1 Overview   2 Findings   3 Files   4 Source   5 AI   6 Coverage                  
+  Raw retained evidence · Esc returns to its origin                                 
+  Evidence                                                                          
+  Files > ev_e6770cd92cb4fac283e93ff5 / Esc restores position                       
+  ┌─ > Raw citation / artifact ──────────────────────────────────────────────────┐  
+  │ ev_e6770cd92cb4fac283e93ff5                                                  │  
+  │ CITED MEMBER OR RECORD / exact recorded range                                │  
+  │ BOTH / package.json                                                          │  
+  │ RAW utf8: [44, 549) / recorded [44, 549)                                     │  
+  │ Window truncated: false / total blob 552 bytes                               │  
+  │                                                                              │  
+  │ 1",                                                                          │  
+  │ "main": "./picocolors.js",                                                   │  
+  │ "types": "./picocolors.d.ts",                                                │  
+  │ "browser": {                                                                 │  
+  │ "./picocolors.js": "./picocolors.browser.js"                                 │  
+  │ },                                                                           │  
+  │ 1-12 / 40  j/k scroll                                                        │  
+  └──────────────────────────────────────────────────────────────────────────────┘  
+  evidence                                                                          
+  j/k scroll  Tab citation  s side  r record/citation  p/b page  q quit             
+                                                                                    
+                                                                                    

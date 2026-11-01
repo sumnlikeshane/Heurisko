@@ -1,0 +1,44 @@
+{
+  "version": "heurisko-final-hour-native-baseline-v1",
+  "scope": "Actual native Chrome observations before final deterministic-module integration; not acceptance of the final build",
+  "platform": "macOS / Google Chrome native accessibility controls",
+  "observed": [
+    "Home and Documentation destinations reached; documentation article and grouped sidebar observed",
+    "New investigation rejects npm:picocolors@latest with a linked exact-version error",
+    "Corrected npm:picocolors@1.1.1 reaches exact request review",
+    "Edit returns the exact reviewed target to the draft",
+    "Reports lists the three admitted historical demo cases with independent origin/capture context",
+    "Retained local mutation overview identifies local input and separate unresolved/incomplete outcomes",
+    "Files filter package.json selects the actual modified manifest",
+    "Second supporting-evidence page exposes scripts.postinstall and ev_e7075cb69f91c7e1b4c4223f",
+    "Lifecycle evidence overlay opens with correct field label and related member links",
+    "One explicit browser Start produces a settled report with CLI outcome 2"
+  ],
+  "browserJob": {
+    "jobId": "d1c5de93672c33b5b2abfa87894f17d7",
+    "target": "npm:picocolors@1.1.1",
+    "startedAt": "2026-11-01T00:23:30.176Z",
+    "settledAt": "2026-11-01T00:23:42.270Z",
+    "phase": "settled_report",
+    "exitCode": 2,
+    "originalReportSha256": "49f689d22bf7fde4433ad69aabc5644a1f77bd7f6cf4b9de5b18e74307c1115e",
+    "cleanup": "not_observable",
+    "deterministicModule": "unavailable in this pre-integration process",
+    "modelExecuted": false,
+    "targetCodeExecuted": false
+  },
+  "servedAssets": {
+    "index.html": "049fc9f4a86def4e885129d92206e49619e26a350ba1a8d4de168b6bee84f18c",
+    "assets/app.js": "abf674567300a1cbe1241f51a0e2afdd8e844c5aa920d6b504fbfe0f78516196",
+    "assets/app.css": "03b429504d5965e467f022f366a76d00bc3279a731bc6512189ecc2de259fd51"
+  },
+  "limits": [
+    "The task-owned service cached its startup JavaScript; that JavaScript differs from the later final web rebuild. These observations remain bound to the recorded served hashes.",
+    "Native accessibility diffs sometimes lagged the actual transition; fresh full snapshots were used to rebind controls.",
+    "Safari accessibility/screenshot operations timed out; Safari acceptance is not claimed.",
+    "Resolved citation byte text, complete nested Back/focus, native download/reopen, viewport/zoom/offline and assistive-technology acceptance remain unconfirmed in this baseline.",
+    "No screen reader was tested. No WCAG, human design approval, general GUI acceptance or full P04 claim follows."
+  ],
+  "privateArtifacts": ".heurisko/final-hour-20261101-053912/",
+  "sessionCredentialsIncluded": false
+}

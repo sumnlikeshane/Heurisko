@@ -1,0 +1,48 @@
+Traceback (most recent call last):
+  File "<WORKSPACE>/packages/tui/tests/terminal-live.py", line 8, in <module>
+    s.wait('HEURISKO');s.send('\r');s.wait('Package name');s.send('\x14');s.wait('[ Local archive ]');s.send(str(input_copy.relative_to(ROOT)));s.send('\t');s.send('https://github.com/alexeyraspopov/picocolors');s.send('\t');s.send('6f0a4638348ed20633d623ee973f9c9a96f65104');s.send('\t');s.send('\t');s.send('examples/s2/current/inputs/picocolors-source-6f0a4638348ed20633d623ee973f9c9a96f65104.tar.gz');s.send('\r',.025);s.capture(cap/'retaining-target');s.wait('Review exact target');s.wait('Start investigation');s.capture(cap/'review');input_copy.write_bytes(b'AUTHORED_INERT_CHANGE_AFTER_REVIEW');s.send('\r',.025);s.wait('Live investigation');s.wait('indeterminate');s.capture(cap/'live-progress');first=[l for l in s.frame().splitlines() if 'indeterminate' in l];s.read(.3);s.wait('indeterminate');second=[l for l in s.frame().splitlines() if 'indeterminate' in l];s.capture(cap/'live-progress-next');s.resize(120,35);s.wait('indeterminate');s.capture(cap/'live-medium');s.resize(84,26);s.wait('indeterminate');s.capture(cap/'live-narrow');s.send('\t');s.wait('diagnostics');s.capture(cap/'live-narrow-diagnostics');s.resize(55,14);s.wait('Terminal too small');s.capture(cap/'live-short');s.resize(160,40);s.wait('indeterminate');s.send('\x03',.025)
+                                    ~~~~~~^^^^^^^^^^^^^^^^
+  File "<WORKSPACE>/packages/tui/tests/pty_session.py", line 42, in wait
+    assert text in self.frame(),repr(text)+' missing\n'+self.frame()
+           ^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'Package name' missing
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+   > New investigation        npm package / local archive  ·  o Open saved report                                                                               
+                                                                                                                                                                
+  ┌─ Recent investigations ────────────────────────────────────────────────────────────── 0 indexed ┐ ┌─ Monitoring ─────────────────────────────────────────┐  
+  │ PACKAGE / EXACT VERSION                                                                         │ │ Runner                  Not configured               │  
+  │ No indexed reports. o opens a report path.                                                      │ │ Last check              Not recorded                 │  
+  │                                                                                                 │ │ Freshness               Unknown                      │  
+  │                                                                                                 │ │                                                      │  
+  │                                                                                                 │ └──────────────────────────────────────────────────────┘  
+  │                                                                                                 │                                                           
+  │                                                                                                 │ ┌─ Needs attention ───────────────────────────────── 0 ┐  
+  │                                                                                                 │ │ No incomplete report indexed. Job history unavailab… │  
+  │                                                                                                 │ │                                                      │  
+  │                                                                                                 │ │                                                      │  
+  │                                                                                                 │ │                                                      │  
+  │                                                                                                 │ │                                                      │  
+  │                                                                                                 │ │                                                      │  
+  │                                                                                                 │ │                                                      │  
+  │                                                                                                 │ │                                                      │  
+  │                                                                                                 │ │                                                      │  
+  │                                                                                                 │ │                                                      │  
+  │                                                                                                 │ │                                                      │  
+  │                                                                                                 │ │                                                      │  
+  │                                                                                                 │ │ Inspect recorded scope; no safety verdict.           │  
+  └─────────────────────────────────────────────────────────────────────────────────────────────────┘ └──────────────────────────────────────────────────────┘  
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+  New investigation                                                                                                                                             
+  Enter new  Tab panels  o open  ? help  q quit                                                                                                                 
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                

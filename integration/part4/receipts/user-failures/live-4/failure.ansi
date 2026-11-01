@@ -1,0 +1,40 @@
+[?1049h[?25l[?25l  HEURISKO   H Home    I Investigations     M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   > New investigation        npm package / local archive  ·  o Open saved report
+
+  ┌─ Recent investigations ────────────────────────────────────────────────────────────── 0 indexed ┐ ┌─ Monitoring ─────────────────────────────────────────┐
+  │ PACKAGE / EXACT VERSION                                                                         │ │ Runner                  Not configured               │
+  │ No indexed reports. o opens a report path.                                                      │ │ Last check              Not recorded                 │
+  │                                                                                                 │ │ Freshness               Unknown                      │
+  │                                                                                                 │ │                                                      │
+  │                                                                                                 │ └──────────────────────────────────────────────────────┘
+  │                                                                                                 │
+  │                                                                                                 │ ┌─ Needs attention ───────────────────────────────── 0 ┐
+  │                                                                                                 │ │ No incomplete report indexed. Job history unavailab… │
+  │                                                                                                 │ │                                                      │
+  │                                                                                                 │ │                                                      │
+  │                                                                                                 │ │                                                      │
+  │                                                                                                 │ │                                                      │
+  │                                                                                                 │ │                                                      │
+  │                                                                                                 │ │                                                      │
+  │                                                                                                 │ │                                                      │
+  │                                                                                                 │ │                                                      │
+  │                                                                                                 │ │                                                      │
+  │                                                                                                 │ │                                                      │
+  │                                                                                                 │ │                                                      │
+  │                                                                                                 │ │ Inspect recorded scope; no safety verdict.           │
+  └─────────────────────────────────────────────────────────────────────────────────────────────────┘ └──────────────────────────────────────────────────────┘
+
+
+
+
+
+
+
+
+
+
+  New investigation
+  Enter new  Tab panels  o open  ? help  q quit
+
+[?25l

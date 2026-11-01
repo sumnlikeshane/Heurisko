@@ -1,0 +1,26 @@
+// Actual CLI checks against retained/public bytes. No target code is run.
+import * as fs from 'node:fs/promises';
+import {resolve,join,dirname} from 'node:path';
+import {spawnSync} from 'node:child_process';
+import assert from 'node:assert/strict';
+import {EvidenceStore,decodeReport,sha256,writeImmutable,sourceIdentity} from '../packages/core/dist/index.js';
+const base=resolve(process.argv[2]??'examples/s3/current'),store=new EvidenceStore(join(base,'store'));
+const receiptFile=resolve(process.argv[3]??join(base,'cli-replay-check.json'));const outputRoot=dirname(receiptFile);
+const cli=resolve('packages/cli/dist/index.js');
+const run=args=>spawnSync(process.execPath,[cli,...args],{encoding:'utf8',maxBuffer:8*1024*1024});
+const records=[];
+for(const id of ['B1','B2','B3','B3R']){
+ const file=join(base,`${id}.report.json`),bytes=await fs.readFile(file),expected=await decodeReport(bytes.toString());
+ const r=run(['inspect',file,'--store',store.root,'--json']);assert.equal(r.status,2);assert.equal(r.stderr,'');assert.deepEqual(JSON.parse(r.stdout),expected);records.push({caseId:id,operation:'offline inspect',exitCode:r.status,reportId:expected.reportId,reportContentRef:sha256(bytes),freshness:'retained capture; no network refresh'});
+}
+const liveFile=join(outputRoot,'live-cli-B1.report.json');
+const live=run(['analyze','npm:picocolors@1.1.1','--store',store.root,'--no-ai','--policy','s3-unconfigured-provenance-policy','--report',liveFile,'--json']);assert.equal(live.status,2);const liveReport=await decodeReport(live.stdout);await store.verifyEvidence(liveReport);assert.deepEqual(await decodeReport(await fs.readFile(liveFile,'utf8')),liveReport);assert.match(live.stderr,/persist: complete/);
+const original=JSON.parse(await fs.readFile(join(base,'B1.report.json'),'utf8'));assert.equal(liveReport.bundle.artifact.observedSha256,original.bundle.artifact.observedSha256);assert.deepEqual(liveReport.bundle.sourceCandidates.map(sourceIdentity),original.bundle.sourceCandidates.map(sourceIdentity));assert.equal(liveReport.outcomes.artifactIntegrity,'matched');assert.equal(liveReport.outcomes.provenancePolicy,'not_checked');
+records.push({caseId:'B1-live-cli',operation:'fresh public exact npm acquisition',exitCode:live.status,reportFile:'live-cli-B1.report.json',reportId:liveReport.reportId,reportContentRef:sha256(await fs.readFile(liveFile)),configurationFingerprint:liveReport.analysisConfigFingerprint,sameReportIdAsRetained:liveReport.reportId===original.reportId,sameConfigurationAsRetained:liveReport.analysisConfigFingerprint===original.analysisConfigFingerprint,stdoutJSON:true,diagnosticsOnStderr:true});
+const mutationFile=join(outputRoot,'local-mutation-replay.report.json');
+const local=run(['analyze','--artifact','examples/s2/current/inputs/picocolors-1.1.1.local-inert-mutation.tgz','--source','https://github.com/alexeyraspopov/picocolors','--commit','6f0a4638348ed20633d623ee973f9c9a96f65104','--source-archive','examples/s2/current/inputs/picocolors-source-6f0a4638348ed20633d623ee973f9c9a96f65104.tar.gz','--name','picocolors','--version','1.1.1','--store',store.root,'--no-ai','--policy','s3-unconfigured-provenance-policy','--report',mutationFile,'--json']);assert.equal(local.status,2);const mutation=await decodeReport(local.stdout);await store.verifyEvidence(mutation);assert.equal(mutation.bundle.artifact.origin,'local');assert.equal(mutation.outcomes.artifactIntegrity,'not_checked');assert.equal(mutation.outcomes.provenancePolicy,'not_checked');assert.equal(mutation.outcomes.sourceAssociation,'user_supplied');assert.notEqual(mutation.bundle.artifact.observedSha256,original.bundle.artifact.observedSha256);assert.ok(mutation.bundle.evidence.some(e=>e.kind==='manifest_delta'&&e.locator.metadataKey==='scripts.postinstall'));
+records.push({caseId:'M1-local-replay',fixtureKind:'previously authored inert mutation; never executed or uploaded',operation:'local modified archive cannot inherit registry identity/provenance',exitCode:local.status,reportFile:'local-mutation-replay.report.json',reportId:mutation.reportId,reportContentRef:sha256(await fs.readFile(mutationFile)),observedSha256:mutation.bundle.artifact.observedSha256,outcomes:mutation.outcomes,oracle:'S2 independent mutation oracle; scripts.postinstall=HEURISKO_INERT_TEST_ONLY and one comment-only marker file'});
+const unavailable=run(['analyze','npm:picocolors@0.0.0-heurisko-inert-missing-case','--store',store.root,'--no-ai','--json']);assert.equal(unavailable.status,3);assert.equal(unavailable.stdout,'');
+const failureRef=/Retained acquisition failure: (sha256:[a-f0-9]{64})/.exec(unavailable.stderr)?.[1];assert.ok(failureRef);const failure=JSON.parse(await store.get(failureRef));assert.equal(failure.version,'heurisko-npm-acquisition-failure-v1');
+records.push({caseId:'unavailable-version',operation:'real unavailable exact version',exitCode:unavailable.status,stdoutEmpty:true,retainedFailureRef:failureRef,code:failure.code,scope:'Failed acquisition receipt, no artifact/report fabricated'});
+await writeImmutable(receiptFile,Buffer.from(JSON.stringify({version:'heurisko-s3-cli-replay-v1',checkedAt:new Date().toISOString(),records,modelExecution:false,targetCodeExecution:false},null,2)+'\n'));console.log(JSON.stringify(records,null,2));

@@ -1,0 +1,47 @@
+
+> heurisko@ typecheck <workspace>
+> pnpm run build && pnpm -r run typecheck
+
+
+> heurisko@ build <workspace>
+> pnpm --filter @heurisko/core... run build && node_modules/.bin/tsc -p integration/part4/tsconfig.json && pnpm --filter @heurisko/tui --filter @heurisko/cli --filter @heurisko/web run build
+
+Scope: 3 of 7 workspace projects
+packages/contracts build$ tsc -p tsconfig.json
+packages/contracts build: Done
+packages/intelligence-reviewed build$ tsc -p tsconfig.json
+packages/intelligence-reviewed build: src/index.ts(9,8): error TS2307: Cannot find module '@heurisko/contracts' or its corresponding type declarations.
+packages/intelligence-reviewed build: src/index.ts(50,56): error TS7031: Binding element 'evidenceId' implicitly has an 'any' type.
+packages/intelligence-reviewed build: src/index.ts(52,14): error TS7006: Parameter 'change' implicitly has an 'any' type.
+packages/intelligence-reviewed build: src/index.ts(53,11): error TS7006: Parameter 'change' implicitly has an 'any' type.
+packages/intelligence-reviewed build: src/index.ts(56,18): error TS7006: Parameter 'id' implicitly has an 'any' type.
+packages/intelligence-reviewed build: src/index.ts(57,15): error TS7006: Parameter 'id' implicitly has an 'any' type.
+packages/intelligence-reviewed build: src/index.ts(57,44): error TS7006: Parameter 'item' implicitly has an 'any' type.
+packages/intelligence-reviewed build: src/index.ts(60,16): error TS7031: Binding element 'evidence' implicitly has an 'any' type.
+packages/intelligence-reviewed build: src/index.ts(98,54): error TS7031: Binding element 'evidenceId' implicitly has an 'any' type.
+packages/intelligence-reviewed build: src/index.ts(99,52): error TS7006: Parameter 'record' implicitly has an 'any' type.
+packages/intelligence-reviewed build: src/index.ts(106,16): error TS2339: Property 'contentState' does not exist on type '{}'.
+packages/intelligence-reviewed build: src/index.ts(106,55): error TS2339: Property 'contentRef' does not exist on type '{}'.
+packages/intelligence-reviewed build: src/index.ts(106,99): error TS2339: Property 'contentRef' does not exist on type '{}'.
+packages/intelligence-reviewed build: src/index.ts(112,54): error TS7006: Parameter 'change' implicitly has an 'any' type.
+packages/intelligence-reviewed build: src/index.ts(118,28): error TS7006: Parameter 'change' implicitly has an 'any' type.
+packages/intelligence-reviewed build: src/index.ts(123,45): error TS7006: Parameter 'item' implicitly has an 'any' type.
+packages/intelligence-reviewed build: src/index.ts(192,46): error TS7006: Parameter 'item' implicitly has an 'any' type.
+packages/intelligence-reviewed build: src/index.ts(195,33): error TS7006: Parameter 'item' implicitly has an 'any' type.
+packages/intelligence-reviewed build: src/index.ts(197,32): error TS7006: Parameter 'item' implicitly has an 'any' type.
+packages/intelligence-reviewed build: src/index.ts(217,45): error TS7006: Parameter 'item' implicitly has an 'any' type.
+packages/intelligence-reviewed build: src/index.ts(224,55): error TS7006: Parameter 'item' implicitly has an 'any' type.
+packages/intelligence-reviewed build: src/index.ts(227,63): error TS7006: Parameter 'item' implicitly has an 'any' type.
+packages/intelligence-reviewed build: src/index.ts(231,72): error TS7006: Parameter 'item' implicitly has an 'any' type.
+packages/intelligence-reviewed build: src/index.ts(254,31): error TS7006: Parameter 'item' implicitly has an 'any' type.
+packages/intelligence-reviewed build: src/index.ts(256,54): error TS7006: Parameter 'item' implicitly has an 'any' type.
+packages/intelligence-reviewed build: src/index.ts(257,67): error TS7006: Parameter 'id' implicitly has an 'any' type.
+packages/intelligence-reviewed build: src/index.ts(278,28): error TS7006: Parameter 'change' implicitly has an 'any' type.
+packages/intelligence-reviewed build: src/index.ts(278,64): error TS7006: Parameter 'id' implicitly has an 'any' type.
+packages/intelligence-reviewed build: Failed
+<workspace>/packages/intelligence-reviewed:
+ ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  @heurisko/intelligence-reviewed@0.1.0-55240e9 build: `tsc -p tsconfig.json`
+Exit status 2
+ WARN   Local package.json exists, but node_modules missing, did you mean to install?
+ ELIFECYCLE  Command failed with exit code 2.
+ ELIFECYCLE  Command failed with exit code 2.

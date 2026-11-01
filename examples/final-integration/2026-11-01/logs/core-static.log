@@ -1,0 +1,142 @@
+TAP version 13
+# Subtest: bounded local file open rejects FIFO before waiting for a writer
+ok 1 - bounded local file open rejects FIFO before waiting for a writer
+  ---
+  duration_ms: 135.417042
+  type: 'test'
+  ...
+# Subtest: CLI file and digest imports reject invalid UTF-8 instead of changing report identity
+ok 2 - CLI file and digest imports reject invalid UTF-8 instead of changing report identity
+  ---
+  duration_ms: 232.421334
+  type: 'test'
+  ...
+# Subtest: CLI report byte imports preserve BOM rejection and valid retained identity
+ok 3 - CLI report byte imports preserve BOM rejection and valid retained identity
+  ---
+  duration_ms: 1658.792291
+  type: 'test'
+  ...
+# Subtest: CLI evidence inspection honors not_exported even when matching bytes exist
+ok 4 - CLI evidence inspection honors not_exported even when matching bytes exist
+  ---
+  duration_ms: 972.744375
+  type: 'test'
+  ...
+# Subtest: CLI evidence inspection honors unavailable even when matching bytes exist
+ok 5 - CLI evidence inspection honors unavailable even when matching bytes exist
+  ---
+  duration_ms: 813.175334
+  type: 'test'
+  ...
+# Subtest: known-answer ASCII/Unicode/integer vectors match the accepted Python algorithm
+ok 6 - known-answer ASCII/Unicode/integer vectors match the accepted Python algorithm
+  ---
+  duration_ms: 35.515584
+  type: 'test'
+  ...
+# Subtest: all G0 evidence/report IDs are reproduced without changing accepted fixture order
+ok 7 - all G0 evidence/report IDs are reproduced without changing accepted fixture order
+  ---
+  duration_ms: 3.350833
+  type: 'test'
+  ...
+# Subtest: source order is deterministic; subtree/snapshot/build/config changes alter identity
+ok 8 - source order is deterministic; subtree/snapshot/build/config changes alter identity
+  ---
+  duration_ms: 30.222916
+  type: 'test'
+  ...
+# Subtest: producer/consumer/persistence/import boundaries accept all positive G0 records
+ok 9 - producer/consumer/persistence/import boundaries accept all positive G0 records
+  ---
+  duration_ms: 3805.08825
+  type: 'test'
+  ...
+# Subtest: every accepted negative G0 counterexample is rejected at runtime
+ok 10 - every accepted negative G0 counterexample is rejected at runtime
+  ---
+  duration_ms: 1126.247
+  type: 'test'
+  ...
+# Subtest: producer rejects unknown fields, forged IDs and unaccounted omissions
+ok 11 - producer rejects unknown fields, forged IDs and unaccounted omissions
+  ---
+  duration_ms: 309.592667
+  type: 'test'
+  ...
+# Subtest: consumer references are checked against the original evidence
+ok 12 - consumer references are checked against the original evidence
+  ---
+  duration_ms: 89.352542
+  type: 'test'
+  ...
+# Subtest: import rejects duplicate keys, unsafe numeric values, malformed JSON and size overflow
+ok 13 - import rejects duplicate keys, unsafe numeric values, malformed JSON and size overflow
+  ---
+  duration_ms: 419.242042
+  type: 'test'
+  ...
+# Subtest: missing validator fails closed; pre-cancelled validation never runs
+ok 14 - missing validator fails closed; pre-cancelled validation never runs
+  ---
+  duration_ms: 2.473042
+  type: 'test'
+  ...
+# Subtest: boundary results and persistence encoding cannot change while validation awaits
+ok 15 - boundary results and persistence encoding cannot change while validation awaits
+  ---
+  duration_ms: 240.546458
+  type: 'test'
+  ...
+# Subtest: missing analysis is explicitly incomplete with no invented findings
+ok 16 - missing analysis is explicitly incomplete with no invented findings
+  ---
+  duration_ms: 1039.993875
+  type: 'test'
+  ...
+# Subtest: injected team module receives deeply frozen copies and validated options
+ok 17 - injected team module receives deeply frozen copies and validated options
+  ---
+  duration_ms: 727.302333
+  type: 'test'
+  ...
+# Subtest: module exceptions are bounded errors; invalid output is rejected
+ok 18 - module exceptions are bounded errors; invalid output is rejected
+  ---
+  duration_ms: 747.266584
+  type: 'test'
+  ...
+# Subtest: cancellation stops waiting for an asynchronous team module
+ok 19 - cancellation stops waiting for an asynchronous team module
+  ---
+  duration_ms: 257.805541
+  type: 'test'
+  ...
+# Subtest: deterministic equivalence excludes timestamps/model prose; storage bytes differ
+ok 20 - deterministic equivalence excludes timestamps/model prose; storage bytes differ
+  ---
+  duration_ms: 4.918792
+  type: 'test'
+  ...
+# Subtest: unavailable AI can coexist with completed deterministic processing
+ok 21 - unavailable AI can coexist with completed deterministic processing
+  ---
+  duration_ms: 127.873875
+  type: 'test'
+  ...
+# Subtest: CLI help is noninteractive; malformed analyze returns 3
+ok 22 - CLI help is noninteractive; malformed analyze returns 3
+  ---
+  duration_ms: 124.362792
+  type: 'test'
+  ...
+1..22
+# tests 22
+# suites 0
+# pass 22
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 13028.367542

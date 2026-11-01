@@ -1,0 +1,116 @@
+{
+  "id": "9363bfaae0d01092b36bfa9057da0494",
+  "phase": "settled_report",
+  "startedAt": "2026-10-31T21:21:05.137Z",
+  "cancellationRequested": false,
+  "cleanup": "not_observable",
+  "events": [
+    {
+      "stage": "resolve_artifact",
+      "status": "running",
+      "sequence": 1
+    },
+    {
+      "stage": "acquire",
+      "status": "running",
+      "sequence": 2
+    },
+    {
+      "stage": "resolve_artifact",
+      "status": "complete",
+      "sequence": 3
+    },
+    {
+      "stage": "acquire",
+      "status": "complete",
+      "sequence": 4
+    },
+    {
+      "stage": "inventory",
+      "status": "running",
+      "sequence": 5
+    },
+    {
+      "stage": "source",
+      "status": "running",
+      "sequence": 6
+    },
+    {
+      "stage": "provenance",
+      "status": "running",
+      "sequence": 7
+    },
+    {
+      "stage": "source",
+      "status": "complete",
+      "errors": [],
+      "sequence": 8
+    },
+    {
+      "stage": "provenance",
+      "status": "skipped",
+      "errors": [],
+      "sequence": 9
+    },
+    {
+      "stage": "build",
+      "status": "skipped",
+      "errors": [],
+      "sequence": 10
+    },
+    {
+      "stage": "inventory",
+      "status": "complete",
+      "errors": [],
+      "sequence": 11
+    },
+    {
+      "stage": "compare",
+      "status": "running",
+      "sequence": 12
+    },
+    {
+      "stage": "compare",
+      "status": "complete",
+      "sequence": 13
+    },
+    {
+      "stage": "heuristics",
+      "status": "running",
+      "sequence": 14
+    },
+    {
+      "stage": "heuristics",
+      "status": "incomplete",
+      "errors": [
+        {
+          "stage": "heuristics",
+          "code": "ANALYSIS_MODULE_UNAVAILABLE",
+          "message": "Malhar analysis module not supplied",
+          "affectedScope": "deterministic analysis",
+          "retryable": false
+        }
+      ],
+      "sequence": 15
+    },
+    {
+      "stage": "ai",
+      "status": "skipped",
+      "sequence": 16
+    },
+    {
+      "stage": "persist",
+      "status": "running",
+      "sequence": 17
+    },
+    {
+      "stage": "persist",
+      "status": "complete",
+      "sequence": 18
+    }
+  ],
+  "omittedEvents": 0,
+  "observation": "0f451b885bf424df70fc5cc6fbe62e5b",
+  "exitCode": 2,
+  "settledAt": "2026-10-31T21:21:09.743Z"
+}

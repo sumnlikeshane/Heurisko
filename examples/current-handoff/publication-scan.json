@@ -1,0 +1,8 @@
+{
+  "filesScanned": 23127,
+  "findings": {
+    "private_host_prefix": [],
+    "credential": [],
+    "private_launch_url": []
+  }
+}

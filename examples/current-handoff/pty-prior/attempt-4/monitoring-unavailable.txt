@@ -1,0 +1,40 @@
+  HEURISKO   H Home    I Investigations     M Monitoring                                                                                                        
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+  Monitoring                                                                                                                                                    
+  Selected-package release monitoring / runtime not configured                                                                                                  
+  ┌─ > Runner & freshness ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐  
+  │ Runner: Not configured                                                                                                                                   │  
+  │ Last attempted fetch: Not recorded                                                                                                                       │  
+  │ Last successful fetch: Not recorded                                                                                                                      │  
+  │ Last completed analysis: Not recorded                                                                                                                    │  
+  │ Freshness: Unknown                                                                                                                                       │  
+  │ No watch, schedule, baseline or release history is available.                                                                                            │  
+  │ Monitoring remains unavailable; historical report review is available through Investigations.                                                            │  
+  │ 1-7 / 7                                                                                                                                                  │  
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘  
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+  monitor                                                                                                                                                       
+  j/k move  Enter inspect  e evidence  Tab panes  / filter  ? help  q quit                                                                                      
+                                                                                                                                                                
+                                                                                                                                                                

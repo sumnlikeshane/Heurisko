@@ -1,0 +1,28 @@
+  HEURISKO   H Home    I Investigations     M Monitoring                                            
+  ────────────────────────────────────────────────────────────────────────────────────────────────  
+  picocolors@1.1.1 / HISTORICAL / incomplete / Captured 2026-10-31T22:59:33Z                        
+  1 Overview   2 Findings   3 Files   4 Source   5 AI   6 Coverage                                  
+  Raw retained evidence · Esc returns to its origin                                                 
+  Evidence                                                                                          
+  Source > ev_3ca16ad46cd957d737ef0c18 / Esc restores position                                      
+  ┌─ > Raw citation / source ────────────────────────────────────────────────────────────────────┐  
+  │ ev_3ca16ad46cd957d737ef0c18                                                                  │  
+  │ BOTH / package.json                                                                          │  
+  │ RAW utf8: [39, 46) / recorded [39, 46)                                                       │  
+  │ Window truncated: false / total blob 1107 bytes                                              │  
+  │                                                                                              │  
+  │ "1.1.0"                                                                                      │  
+  │                                                                                              │  
+  │ Method: strict-json-value-byte-spans-v1                                                      │  
+  │ Availability: retained                                                                       │  
+  │ Verification: Not recorded                                                                   │  
+  │ Content digest: sha256:9c6cdf861be3a099424c6be279a2d7f09423517d6d0fbd1357ecc7deb67f608d      │  
+  │ Member: ev_913e4520a988d004b90c38c4                                                          │  
+  │ Content ref: sha256:76124c34a1d7110bbe0db5578ee039d79e3c411a1064ae2f0ddeb728fea68f56         │  
+  │ 1-13 / 13                                                                                    │  
+  └──────────────────────────────────────────────────────────────────────────────────────────────┘  
+                                                                                                    
+  evidence                                                                                          
+  j/k scroll  Tab citation  s side  p/b page  Esc return  q quit                                    
+                                                                                                    
+                                                                                                    

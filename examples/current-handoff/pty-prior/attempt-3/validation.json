@@ -1,0 +1,1483 @@
+{
+  "scope": "actual product PTY and reference composition checks; no model; macOS arm64",
+  "checks": [
+    {
+      "check": "HEURISKO",
+      "passed": true,
+      "size": [
+        160,
+        40
+      ]
+    },
+    {
+      "check": "Recent investigations",
+      "passed": true,
+      "size": [
+        160,
+        40
+      ]
+    },
+    {
+      "check": "Needs attention",
+      "passed": true,
+      "size": [
+        160,
+        40
+      ]
+    },
+    {
+      "check": "Monitoring",
+      "passed": true,
+      "size": [
+        160,
+        40
+      ]
+    },
+    {
+      "check": "picocolors",
+      "passed": true,
+      "size": [
+        160,
+        40
+      ]
+    },
+    {
+      "check": "debug header removed",
+      "passed": true,
+      "size": [
+        160,
+        40
+      ]
+    },
+    {
+      "check": "Package name  [editing]",
+      "passed": true,
+      "size": [
+        160,
+        40
+      ]
+    },
+    {
+      "check": "[ npm ]",
+      "passed": true,
+      "size": [
+        160,
+        40
+      ]
+    },
+    {
+      "check": "Local archive",
+      "passed": true,
+      "size": [
+        160,
+        40
+      ]
+    },
+    {
+      "check": "centered reference form at 160 columns",
+      "passed": true,
+      "size": [
+        160,
+        40
+      ]
+    },
+    {
+      "check": "typing footer does not advertise q as quit",
+      "passed": true,
+      "size": [
+        160,
+        40
+      ]
+    },
+    {
+      "check": "qHI?1/",
+      "passed": true,
+      "size": [
+        160,
+        40
+      ]
+    },
+    {
+      "check": "Actions",
+      "passed": true,
+      "size": [
+        160,
+        40
+      ]
+    },
+    {
+      "check": "qHI?1/",
+      "passed": true,
+      "size": [
+        160,
+        40
+      ]
+    },
+    {
+      "check": "Review exact target",
+      "passed": true,
+      "size": [
+        160,
+        40
+      ]
+    },
+    {
+      "check": "Start investigation",
+      "passed": true,
+      "size": [
+        160,
+        40
+      ]
+    },
+    {
+      "check": "Unknown until exact-version acquisition",
+      "passed": true,
+      "size": [
+        160,
+        40
+      ]
+    },
+    {
+      "check": "q quits Home",
+      "passed": true,
+      "size": [
+        160,
+        40
+      ]
+    },
+    {
+      "check": "HEURISKO",
+      "passed": true,
+      "size": [
+        84,
+        26
+      ]
+    },
+    {
+      "check": "Package name",
+      "passed": true,
+      "size": [
+        84,
+        26
+      ]
+    },
+    {
+      "check": "[ Local archive ]",
+      "passed": true,
+      "size": [
+        84,
+        26
+      ]
+    },
+    {
+      "check": "Archive path  [editing]",
+      "passed": true,
+      "size": [
+        84,
+        26
+      ]
+    },
+    {
+      "check": "HEURISKO",
+      "passed": true,
+      "size": [
+        160,
+        40
+      ]
+    },
+    {
+      "check": "HISTORICAL",
+      "passed": true,
+      "size": [
+        160,
+        40
+      ]
+    },
+    {
+      "check": "Independent outcomes",
+      "passed": true,
+      "size": [
+        160,
+        40
+      ]
+    },
+    {
+      "check": "dashboard replaces generic data wall",
+      "passed": true,
+      "size": [
+        160,
+        40
+      ]
+    },
+    {
+      "check": "ESTABLISHED OBSERVATION",
+      "passed": true,
+      "size": [
+        160,
+        40
+      ]
+    },
+    {
+      "check": "Priority findings",
+      "passed": true,
+      "size": [
+        160,
+        40
+      ]
+    },
+    {
+      "check": "Coverage & unknowns",
+      "passed": true,
+      "size": [
+        160,
+        40
+      ]
+    },
+    {
+      "check": "Report next action",
+      "passed": true,
+      "size": [
+        160,
+        40
+      ]
+    },
+    {
+      "check": "Findings",
+      "passed": true,
+      "size": [
+        160,
+        40
+      ]
+    },
+    {
+      "check": "Package lifecycle",
+      "passed": true,
+      "size": [
+        160,
+        40
+      ]
+    },
+    {
+      "check": "Observation:",
+      "passed": true,
+      "size": [
+        160,
+        40
+      ]
+    },
+    {
+      "check": "Evidence",
+      "passed": true,
+      "size": [
+        160,
+        40
+      ]
+    },
+    {
+      "check": "raw citation address accessible",
+      "passed": true,
+      "size": [
+        160,
+        40
+      ]
+    },
+    {
+      "check": "actual inert citation bytes visible",
+      "passed": true,
+      "size": [
+        160,
+        40
+      ]
+    },
+    {
+      "check": "Package lifecycle script entry changed",
+      "passed": true,
+      "size": [
+        160,
+        40
+      ]
+    },
+    {
+      "check": "exact finding/filter/pane/scroll restoration",
+      "passed": true,
+      "size": [
+        160,
+        40
+      ]
+    },
+    {
+      "check": "Candidates",
+      "passed": true,
+      "size": [
+        160,
+        40
+      ]
+    },
+    {
+      "check": "[Provenance]",
+      "passed": true,
+      "size": [
+        160,
+        40
+      ]
+    },
+    {
+      "check": "[Build]",
+      "passed": true,
+      "size": [
+        160,
+        40
+      ]
+    },
+    {
+      "check": "AI disabled",
+      "passed": true,
+      "size": [
+        160,
+        40
+      ]
+    },
+    {
+      "check": "Coverage",
+      "passed": true,
+      "size": [
+        160,
+        40
+      ]
+    },
+    {
+      "check": "q exits saved complete-scope report",
+      "passed": true,
+      "size": [
+        160,
+        40
+      ]
+    },
+    {
+      "check": "HEURISKO",
+      "passed": true,
+      "size": [
+        140,
+        40
+      ]
+    },
+    {
+      "check": "HISTORICAL",
+      "passed": true,
+      "size": [
+        140,
+        40
+      ]
+    },
+    {
+      "check": "Independent outcomes",
+      "passed": true,
+      "size": [
+        140,
+        40
+      ]
+    },
+    {
+      "check": "dashboard replaces generic data wall",
+      "passed": true,
+      "size": [
+        140,
+        40
+      ]
+    },
+    {
+      "check": "ESTABLISHED OBSERVATION",
+      "passed": true,
+      "size": [
+        140,
+        40
+      ]
+    },
+    {
+      "check": "Priority findings",
+      "passed": true,
+      "size": [
+        140,
+        40
+      ]
+    },
+    {
+      "check": "Coverage & unknowns",
+      "passed": true,
+      "size": [
+        140,
+        40
+      ]
+    },
+    {
+      "check": "Report next action",
+      "passed": true,
+      "size": [
+        140,
+        40
+      ]
+    },
+    {
+      "check": "Findings",
+      "passed": true,
+      "size": [
+        140,
+        40
+      ]
+    },
+    {
+      "check": "Package lifecycle",
+      "passed": true,
+      "size": [
+        140,
+        40
+      ]
+    },
+    {
+      "check": "Observation:",
+      "passed": true,
+      "size": [
+        140,
+        40
+      ]
+    },
+    {
+      "check": "Evidence",
+      "passed": true,
+      "size": [
+        140,
+        40
+      ]
+    },
+    {
+      "check": "raw citation address accessible",
+      "passed": true,
+      "size": [
+        140,
+        40
+      ]
+    },
+    {
+      "check": "actual inert citation bytes visible",
+      "passed": true,
+      "size": [
+        140,
+        40
+      ]
+    },
+    {
+      "check": "Package lifecycle script entry changed",
+      "passed": true,
+      "size": [
+        140,
+        40
+      ]
+    },
+    {
+      "check": "exact finding/filter/pane/scroll restoration",
+      "passed": true,
+      "size": [
+        140,
+        40
+      ]
+    },
+    {
+      "check": "Candidates",
+      "passed": true,
+      "size": [
+        140,
+        40
+      ]
+    },
+    {
+      "check": "[Provenance]",
+      "passed": true,
+      "size": [
+        140,
+        40
+      ]
+    },
+    {
+      "check": "[Build]",
+      "passed": true,
+      "size": [
+        140,
+        40
+      ]
+    },
+    {
+      "check": "AI disabled",
+      "passed": true,
+      "size": [
+        140,
+        40
+      ]
+    },
+    {
+      "check": "Coverage",
+      "passed": true,
+      "size": [
+        140,
+        40
+      ]
+    },
+    {
+      "check": "q exits saved complete-scope report",
+      "passed": true,
+      "size": [
+        140,
+        40
+      ]
+    },
+    {
+      "check": "HEURISKO",
+      "passed": true,
+      "size": [
+        120,
+        35
+      ]
+    },
+    {
+      "check": "HISTORICAL",
+      "passed": true,
+      "size": [
+        120,
+        35
+      ]
+    },
+    {
+      "check": "Independent outcomes",
+      "passed": true,
+      "size": [
+        120,
+        35
+      ]
+    },
+    {
+      "check": "dashboard replaces generic data wall",
+      "passed": true,
+      "size": [
+        120,
+        35
+      ]
+    },
+    {
+      "check": "ESTABLISHED OBSERVATION",
+      "passed": true,
+      "size": [
+        120,
+        35
+      ]
+    },
+    {
+      "check": "Priority findings",
+      "passed": true,
+      "size": [
+        120,
+        35
+      ]
+    },
+    {
+      "check": "Coverage & unknowns",
+      "passed": true,
+      "size": [
+        120,
+        35
+      ]
+    },
+    {
+      "check": "Report next action",
+      "passed": true,
+      "size": [
+        120,
+        35
+      ]
+    },
+    {
+      "check": "Findings",
+      "passed": true,
+      "size": [
+        120,
+        35
+      ]
+    },
+    {
+      "check": "Package lifecycle",
+      "passed": true,
+      "size": [
+        120,
+        35
+      ]
+    },
+    {
+      "check": "Observation:",
+      "passed": true,
+      "size": [
+        120,
+        35
+      ]
+    },
+    {
+      "check": "Evidence",
+      "passed": true,
+      "size": [
+        120,
+        35
+      ]
+    },
+    {
+      "check": "raw citation address accessible",
+      "passed": true,
+      "size": [
+        120,
+        35
+      ]
+    },
+    {
+      "check": "actual inert citation bytes visible",
+      "passed": true,
+      "size": [
+        120,
+        35
+      ]
+    },
+    {
+      "check": "Package lifecycle script entry changed",
+      "passed": true,
+      "size": [
+        120,
+        35
+      ]
+    },
+    {
+      "check": "exact finding/filter/pane/scroll restoration",
+      "passed": true,
+      "size": [
+        120,
+        35
+      ]
+    },
+    {
+      "check": "Candidates",
+      "passed": true,
+      "size": [
+        120,
+        35
+      ]
+    },
+    {
+      "check": "[Provenance]",
+      "passed": true,
+      "size": [
+        120,
+        35
+      ]
+    },
+    {
+      "check": "[Build]",
+      "passed": true,
+      "size": [
+        120,
+        35
+      ]
+    },
+    {
+      "check": "AI disabled",
+      "passed": true,
+      "size": [
+        120,
+        35
+      ]
+    },
+    {
+      "check": "Coverage",
+      "passed": true,
+      "size": [
+        120,
+        35
+      ]
+    },
+    {
+      "check": "q exits saved complete-scope report",
+      "passed": true,
+      "size": [
+        120,
+        35
+      ]
+    },
+    {
+      "check": "HEURISKO",
+      "passed": true,
+      "size": [
+        100,
+        26
+      ]
+    },
+    {
+      "check": "HISTORICAL",
+      "passed": true,
+      "size": [
+        100,
+        26
+      ]
+    },
+    {
+      "check": "Overview",
+      "passed": true,
+      "size": [
+        100,
+        26
+      ]
+    },
+    {
+      "check": "dashboard replaces generic data wall",
+      "passed": true,
+      "size": [
+        100,
+        26
+      ]
+    },
+    {
+      "check": "Findings",
+      "passed": true,
+      "size": [
+        100,
+        26
+      ]
+    },
+    {
+      "check": "Package lifecycle",
+      "passed": true,
+      "size": [
+        100,
+        26
+      ]
+    },
+    {
+      "check": "Observation:",
+      "passed": true,
+      "size": [
+        100,
+        26
+      ]
+    },
+    {
+      "check": "Evidence",
+      "passed": true,
+      "size": [
+        100,
+        26
+      ]
+    },
+    {
+      "check": "raw citation address accessible",
+      "passed": true,
+      "size": [
+        100,
+        26
+      ]
+    },
+    {
+      "check": "actual inert citation bytes visible",
+      "passed": true,
+      "size": [
+        100,
+        26
+      ]
+    },
+    {
+      "check": "Package lifecycle script entry changed",
+      "passed": true,
+      "size": [
+        100,
+        26
+      ]
+    },
+    {
+      "check": "exact finding/filter/pane/scroll restoration",
+      "passed": true,
+      "size": [
+        100,
+        26
+      ]
+    },
+    {
+      "check": "Candidates",
+      "passed": true,
+      "size": [
+        100,
+        26
+      ]
+    },
+    {
+      "check": "[Provenance]",
+      "passed": true,
+      "size": [
+        100,
+        26
+      ]
+    },
+    {
+      "check": "[Build]",
+      "passed": true,
+      "size": [
+        100,
+        26
+      ]
+    },
+    {
+      "check": "AI disabled",
+      "passed": true,
+      "size": [
+        100,
+        26
+      ]
+    },
+    {
+      "check": "Coverage",
+      "passed": true,
+      "size": [
+        100,
+        26
+      ]
+    },
+    {
+      "check": "q exits saved complete-scope report",
+      "passed": true,
+      "size": [
+        100,
+        26
+      ]
+    },
+    {
+      "check": "HEURISKO",
+      "passed": true,
+      "size": [
+        84,
+        26
+      ]
+    },
+    {
+      "check": "HISTORICAL",
+      "passed": true,
+      "size": [
+        84,
+        26
+      ]
+    },
+    {
+      "check": "Overview",
+      "passed": true,
+      "size": [
+        84,
+        26
+      ]
+    },
+    {
+      "check": "dashboard replaces generic data wall",
+      "passed": true,
+      "size": [
+        84,
+        26
+      ]
+    },
+    {
+      "check": "Findings",
+      "passed": true,
+      "size": [
+        84,
+        26
+      ]
+    },
+    {
+      "check": "Package lifecycle",
+      "passed": true,
+      "size": [
+        84,
+        26
+      ]
+    },
+    {
+      "check": "Observation:",
+      "passed": true,
+      "size": [
+        84,
+        26
+      ]
+    },
+    {
+      "check": "Evidence",
+      "passed": true,
+      "size": [
+        84,
+        26
+      ]
+    },
+    {
+      "check": "raw citation address accessible",
+      "passed": true,
+      "size": [
+        84,
+        26
+      ]
+    },
+    {
+      "check": "actual inert citation bytes visible",
+      "passed": true,
+      "size": [
+        84,
+        26
+      ]
+    },
+    {
+      "check": "Package lifecycle script entry changed",
+      "passed": true,
+      "size": [
+        84,
+        26
+      ]
+    },
+    {
+      "check": "exact finding/filter/pane/scroll restoration",
+      "passed": true,
+      "size": [
+        84,
+        26
+      ]
+    },
+    {
+      "check": "Candidates",
+      "passed": true,
+      "size": [
+        84,
+        26
+      ]
+    },
+    {
+      "check": "[Provenance]",
+      "passed": true,
+      "size": [
+        84,
+        26
+      ]
+    },
+    {
+      "check": "[Build]",
+      "passed": true,
+      "size": [
+        84,
+        26
+      ]
+    },
+    {
+      "check": "AI disabled",
+      "passed": true,
+      "size": [
+        84,
+        26
+      ]
+    },
+    {
+      "check": "Coverage",
+      "passed": true,
+      "size": [
+        84,
+        26
+      ]
+    },
+    {
+      "check": "q exits saved complete-scope report",
+      "passed": true,
+      "size": [
+        84,
+        26
+      ]
+    },
+    {
+      "check": "HEURISKO",
+      "passed": true,
+      "size": [
+        60,
+        20
+      ]
+    },
+    {
+      "check": "HISTORICAL",
+      "passed": true,
+      "size": [
+        60,
+        20
+      ]
+    },
+    {
+      "check": "Overview",
+      "passed": true,
+      "size": [
+        60,
+        20
+      ]
+    },
+    {
+      "check": "dashboard replaces generic data wall",
+      "passed": true,
+      "size": [
+        60,
+        20
+      ]
+    },
+    {
+      "check": "Findings",
+      "passed": true,
+      "size": [
+        60,
+        20
+      ]
+    },
+    {
+      "check": "Package lifecycle",
+      "passed": true,
+      "size": [
+        60,
+        20
+      ]
+    },
+    {
+      "check": "Observation:",
+      "passed": true,
+      "size": [
+        60,
+        20
+      ]
+    },
+    {
+      "check": "Evidence",
+      "passed": true,
+      "size": [
+        60,
+        20
+      ]
+    },
+    {
+      "check": "raw citation address accessible",
+      "passed": true,
+      "size": [
+        60,
+        20
+      ]
+    },
+    {
+      "check": "actual inert citation bytes visible",
+      "passed": true,
+      "size": [
+        60,
+        20
+      ]
+    },
+    {
+      "check": "Package lifecycle script entry changed",
+      "passed": true,
+      "size": [
+        60,
+        20
+      ]
+    },
+    {
+      "check": "exact finding/filter/pane/scroll restoration",
+      "passed": true,
+      "size": [
+        60,
+        20
+      ]
+    },
+    {
+      "check": "Candidates",
+      "passed": true,
+      "size": [
+        60,
+        20
+      ]
+    },
+    {
+      "check": "[Provenance]",
+      "passed": true,
+      "size": [
+        60,
+        20
+      ]
+    },
+    {
+      "check": "[Build]",
+      "passed": true,
+      "size": [
+        60,
+        20
+      ]
+    },
+    {
+      "check": "AI disabled",
+      "passed": true,
+      "size": [
+        60,
+        20
+      ]
+    },
+    {
+      "check": "Scope",
+      "passed": true,
+      "size": [
+        60,
+        20
+      ]
+    },
+    {
+      "check": "q exits saved complete-scope report",
+      "passed": true,
+      "size": [
+        60,
+        20
+      ]
+    },
+    {
+      "check": "HEURISKO",
+      "passed": true,
+      "size": [
+        160,
+        40
+      ]
+    },
+    {
+      "check": "HISTORICAL",
+      "passed": true,
+      "size": [
+        160,
+        40
+      ]
+    },
+    {
+      "check": "Files",
+      "passed": true,
+      "size": [
+        160,
+        40
+      ]
+    },
+    {
+      "check": "Observation",
+      "passed": true,
+      "size": [
+        160,
+        40
+      ]
+    },
+    {
+      "check": "Terminal too small",
+      "passed": true,
+      "size": [
+        55,
+        14
+      ]
+    },
+    {
+      "check": "Observation",
+      "passed": true,
+      "size": [
+        160,
+        40
+      ]
+    },
+    {
+      "check": "HEURISKO",
+      "passed": true,
+      "size": [
+        160,
+        40
+      ]
+    },
+    {
+      "check": "HISTORICAL",
+      "passed": true,
+      "size": [
+        160,
+        40
+      ]
+    },
+    {
+      "check": "Viewer line alignment v1",
+      "passed": true,
+      "size": [
+        160,
+        40
+      ]
+    },
+    {
+      "check": "[Provenance]",
+      "passed": true,
+      "size": [
+        160,
+        40
+      ]
+    },
+    {
+      "check": "AI",
+      "passed": true,
+      "size": [
+        160,
+        40
+      ]
+    },
+    {
+      "check": "Keyboard",
+      "passed": true,
+      "size": [
+        160,
+        40
+      ]
+    },
+    {
+      "check": "Not configured",
+      "passed": true,
+      "size": [
+        160,
+        40
+      ]
+    },
+    {
+      "check": "Unknown",
+      "passed": true,
+      "size": [
+        160,
+        40
+      ]
+    },
+    {
+      "check": "HEURISKO",
+      "passed": true,
+      "size": [
+        120,
+        35
+      ]
+    },
+    {
+      "check": "HISTORICAL",
+      "passed": true,
+      "size": [
+        120,
+        35
+      ]
+    },
+    {
+      "check": "historical missing bytes stay metadata-only",
+      "passed": true,
+      "size": [
+        120,
+        35
+      ]
+    },
+    {
+      "check": "HEURISKO",
+      "passed": true,
+      "size": [
+        120,
+        35
+      ]
+    },
+    {
+      "check": "HISTORICAL",
+      "passed": true,
+      "size": [
+        120,
+        35
+      ]
+    },
+    {
+      "check": "SYNTHETIC",
+      "passed": true,
+      "size": [
+        120,
+        35
+      ]
+    },
+    {
+      "check": "AI state:",
+      "passed": true,
+      "size": [
+        120,
+        35
+      ]
+    },
+    {
+      "check": "OSC/ANSI/bidi remains inert",
+      "passed": true,
+      "size": [
+        120,
+        35
+      ]
+    },
+    {
+      "check": "HEURISKO",
+      "passed": true,
+      "size": [
+        120,
+        35
+      ]
+    },
+    {
+      "check": "HISTORICAL",
+      "passed": true,
+      "size": [
+        120,
+        35
+      ]
+    },
+    {
+      "check": "SYNTHETIC",
+      "passed": true,
+      "size": [
+        120,
+        35
+      ]
+    },
+    {
+      "check": "AI state:",
+      "passed": true,
+      "size": [
+        120,
+        35
+      ]
+    },
+    {
+      "check": "OSC/ANSI/bidi remains inert",
+      "passed": true,
+      "size": [
+        120,
+        35
+      ]
+    },
+    {
+      "check": "HEURISKO",
+      "passed": true,
+      "size": [
+        120,
+        35
+      ]
+    },
+    {
+      "check": "HISTORICAL",
+      "passed": true,
+      "size": [
+        120,
+        35
+      ]
+    },
+    {
+      "check": "SYNTHETIC",
+      "passed": true,
+      "size": [
+        120,
+        35
+      ]
+    },
+    {
+      "check": "AI state:",
+      "passed": true,
+      "size": [
+        120,
+        35
+      ]
+    },
+    {
+      "check": "OSC/ANSI/bidi remains inert",
+      "passed": true,
+      "size": [
+        120,
+        35
+      ]
+    },
+    {
+      "check": "HEURISKO",
+      "passed": true,
+      "size": [
+        120,
+        35
+      ]
+    },
+    {
+      "check": "HISTORICAL",
+      "passed": true,
+      "size": [
+        120,
+        35
+      ]
+    },
+    {
+      "check": "SYNTHETIC",
+      "passed": true,
+      "size": [
+        120,
+        35
+      ]
+    },
+    {
+      "check": "AI state:",
+      "passed": true,
+      "size": [
+        120,
+        35
+      ]
+    },
+    {
+      "check": "OSC/ANSI/bidi remains inert",
+      "passed": true,
+      "size": [
+        120,
+        35
+      ]
+    },
+    {
+      "check": "HEURISKO",
+      "passed": true,
+      "size": [
+        120,
+        35
+      ]
+    },
+    {
+      "check": "HISTORICAL",
+      "passed": true,
+      "size": [
+        120,
+        35
+      ]
+    },
+    {
+      "check": "SYNTHETIC",
+      "passed": true,
+      "size": [
+        120,
+        35
+      ]
+    },
+    {
+      "check": "AI state:",
+      "passed": true,
+      "size": [
+        120,
+        35
+      ]
+    },
+    {
+      "check": "OSC/ANSI/bidi remains inert",
+      "passed": true,
+      "size": [
+        120,
+        35
+      ]
+    },
+    {
+      "check": "original report bytes preserved",
+      "passed": true,
+      "size": null
+    }
+  ],
+  "count": 185
+}

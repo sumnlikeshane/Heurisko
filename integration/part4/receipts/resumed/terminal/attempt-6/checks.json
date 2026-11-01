@@ -1,0 +1,41 @@
+{
+  "scope": "actual product PTY, no model; macOS arm64",
+  "checks": [
+    {
+      "check": "HISTORICAL",
+      "columns": 160,
+      "rows": 40,
+      "passed": true
+    },
+    {
+      "check": "Findings",
+      "columns": 160,
+      "rows": 40,
+      "passed": true
+    },
+    {
+      "check": "lifecycle",
+      "columns": 160,
+      "rows": 40,
+      "passed": true
+    },
+    {
+      "check": "Observation:",
+      "columns": 160,
+      "rows": 40,
+      "passed": true
+    },
+    {
+      "check": "RAW utf8",
+      "columns": 160,
+      "rows": 40,
+      "passed": true
+    },
+    {
+      "check": "Observation:",
+      "columns": 160,
+      "rows": 40,
+      "passed": true
+    }
+  ]
+}

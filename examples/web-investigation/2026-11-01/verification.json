@@ -1,0 +1,159 @@
+{
+  "version": "heurisko-browser-investigation-v1",
+  "generatedAt": "2026-10-31T21:21:20.437Z",
+  "node": "v22.23.4",
+  "engine": {
+    "engine": "shane-audit-v1;sha256:603146fe725954c1d1153393f709a5a3f518c008a745e7ffb637cfc54d385e02",
+    "codeDigests": {
+      "engine": "sha256:0d99a9289e144a0aae8f45378a24774205ca5e572ec8f82aaf5723e1b2707c0c",
+      "producer": "sha256:d1dd6c3d0617cf60044df50217a6f30b0faa89fe581f052138e563a63c817598",
+      "comparison": "sha256:9a1a68f30013e0ff7c4e6fd40c2caa68c169bc9e5a76bc6656324d08992ea51b",
+      "archive": "sha256:9d1722caf4fda64a76f74bf075c9675dc73986be8dc4be6f4f9a3d85baab52d6",
+      "network": "sha256:06c7b087282832746631c5a89f2ee929ae7ec8cf0b2aec8d80d30c410e264e52",
+      "storage": "sha256:763408f7644f18cd62c3cb591d006cdc7db79641f0dc797be784bbef3ca595c8",
+      "parser-runtime": "sha256:05cc905bb69c7c2bffa43e9aca54ea20d3fb2b7a1459ac40ae1a09af437187b0",
+      "parser-job": "sha256:d520eb67a782bc6d53e3daebe9f99b9c722ecf696435321aa1e0925cc8cbc7db",
+      "adapter": "sha256:79970491592c61cdbad11b60527ce6ebbf730f82740e98f892b41f5c1bacc4f4",
+      "identity": "sha256:91e189c4a4b7eef82b788da7b7707af9fa6df40b4268c49d8b108c682d124e96",
+      "validation": "sha256:5b77dc41ec7d65681de88feb2f033651884bcf3cfb15bd742cbf64d2b3a48324",
+      "safety": "sha256:f66b9867a5c3a1ec4163f95a446c3d4ba975d0aa07b9df6a28d3aaa172aa9c01",
+      "npm": "sha256:19bd4bc0064b4b6421753305e26db2879662ccb887d727d0aa99defb73d6e850",
+      "sources": "sha256:6eb632d8baf16b4fe313b4433127c64247b09c64687b66387dc1dfb3883d8c25",
+      "provenance": "sha256:e9f6be405bbd3b546bcd25a377180fb5806ca6eeeb12ac8a3071b5bdaa5ce222",
+      "parserWorker": "sha256:c3425b822ae12703f1f7a7fe891abebbc5776361374efab94f227c49d9bdaceb",
+      "contractSchema": "sha256:bef30a837a383ed7a3fbf49e9bac885822d6e3bdea9ccd05ff46b37f350b4dae",
+      "contractValidator": "sha256:7b3a956eb4651477792a77659397d85c849fa48d4780ddecef02ca3d3242e2e7",
+      "contractSemantics": "sha256:c1e231aa0c887da8e890e7615f8c0ca1e72e21246155746b36c6aebb4ee636e1"
+    }
+  },
+  "targetExecution": false,
+  "productModels": [],
+  "realEngineExecution": true,
+  "browserGUIAcceptance": "not_claimed_by_api_receipt",
+  "cases": [
+    {
+      "name": "local-replay",
+      "status": "report",
+      "reportId": "report_ee0e4d88abd070856d84849c",
+      "reportContentRef": "sha256:73d16533d17dee4ab9f2b08a2f5d637ba588c9a153f079c80c7c5351ad34d1a1",
+      "artifactDigest": "sha256:d3aedb2807967b7eb37fd11b03b7e3701e725af79c650d0812ff7213f8f882d9",
+      "captureTime": "2026-10-31T21:21:05Z",
+      "sourceCandidates": [
+        {
+          "repositoryUrl": "https://github.com/alexeyraspopov/picocolors",
+          "commit": "6f0a4638348ed20633d623ee973f9c9a96f65104",
+          "subdirectory": "",
+          "association": "user_supplied",
+          "evidenceIds": [
+            "ev_a0a4f1a24bc6c0d8dcfa9bf8",
+            "ev_923052180287909e51ae0c4c"
+          ],
+          "conflicts": [],
+          "sourceSnapshotSha256": "sha256:87646ed7f9b372d94da80ec298ef4ec6fc0c2a56bb60e0b325a9705037408c7c",
+          "buildContextSha256": "sha256:6383b97048e27e8ab0a0cfeecce3bc80b06ebf180528085638aacc6bd3ca0a04"
+        }
+      ],
+      "outcomes": {
+        "artifactIntegrity": "not_checked",
+        "sourceAssociation": "user_supplied",
+        "provenancePolicy": "not_checked",
+        "correspondence": "unresolved",
+        "analysisCompleteness": "incomplete",
+        "policyResult": "indeterminate"
+      },
+      "changes": 19,
+      "findings": 0,
+      "ai": "disabled",
+      "exitCode": 2,
+      "cleanup": "not_observable",
+      "reportParity": true,
+      "bundleParity": true,
+      "evidenceExcerptParity": true,
+      "portableReopen": true,
+      "digestReopen": true,
+      "portableOmissions": 0,
+      "independentLocalCLI": {
+        "exit": 2,
+        "deterministicDigest": "sha256:c95443a2079a8fef61d058c001e40771c844f6f2b737619adea9cf54c2871123",
+        "reportId": "report_ee0e4d88abd070856d84849c",
+        "equivalent": true
+      }
+    },
+    {
+      "name": "npm-exact",
+      "status": "report",
+      "reportId": "report_d2ef36aeb21b940de660b87d",
+      "reportContentRef": "sha256:8771d44d493dd2a4ecd4f499b43c594b69b09d4268a61c332a8a9abc52e14d0d",
+      "artifactDigest": "sha256:d3aedb2807967b7eb37fd11b03b7e3701e725af79c650d0812ff7213f8f882d9",
+      "captureTime": "2026-10-31T21:21:15Z",
+      "sourceCandidates": [
+        {
+          "repositoryUrl": "https://github.com/alexeyraspopov/picocolors",
+          "commit": "6f0a4638348ed20633d623ee973f9c9a96f65104",
+          "subdirectory": "",
+          "association": "ambiguous",
+          "evidenceIds": [
+            "ev_54afcddd214a2726972248d7",
+            "ev_304d5db73d37831377a22783",
+            "ev_3496aac0c09e02ef17bf0be0",
+            "ev_18c792a328cbd8d4d2f0cb3f",
+            "ev_f0c717cb1801a017fda9aefb",
+            "ev_121b7edc186efab090e9dbd5",
+            "ev_923052180287909e51ae0c4c"
+          ],
+          "conflicts": [
+            "SOURCE_VERSION_LABEL_DIFFERS"
+          ],
+          "sourceSnapshotSha256": "sha256:87646ed7f9b372d94da80ec298ef4ec6fc0c2a56bb60e0b325a9705037408c7c",
+          "buildContextSha256": "sha256:6383b97048e27e8ab0a0cfeecce3bc80b06ebf180528085638aacc6bd3ca0a04"
+        }
+      ],
+      "outcomes": {
+        "artifactIntegrity": "matched",
+        "sourceAssociation": "ambiguous",
+        "provenancePolicy": "not_checked",
+        "correspondence": "unresolved",
+        "analysisCompleteness": "incomplete",
+        "policyResult": "indeterminate"
+      },
+      "changes": 19,
+      "findings": 0,
+      "ai": "disabled",
+      "exitCode": 2,
+      "cleanup": "not_observable",
+      "reportParity": true,
+      "bundleParity": true,
+      "evidenceExcerptParity": true,
+      "portableReopen": true,
+      "digestReopen": true,
+      "portableOmissions": 0
+    }
+  ],
+  "code": {
+    "apps/web/src/api.ts": "sha256:bc274f61c7caa7f89aeff53339856dccb95dd6425696ba0d1f2651320bf4534d",
+    "apps/web/src/app.tsx": "sha256:5a568d3c7c51bcbf8c045da7d831608d587f697cd53e4fb19c60bdbcff581af8",
+    "apps/web/src/docs.tsx": "sha256:712f23ef3e6749200f7b1ea61b9f55571a9e1ccc5b49be43ce9aace2380a7569",
+    "apps/web/src/home.tsx": "sha256:e21e3ba7a5cbe4cd200810fcda065e11d3977282f487777c0e75f235d9568863",
+    "apps/web/src/index.html": "sha256:049fc9f4a86def4e885129d92206e49619e26a350ba1a8d4de168b6bee84f18c",
+    "apps/web/src/investigate.tsx": "sha256:06a98e37ef37eaeffd901028318af12a0c91b81de0eecb0645dc53bb45c23adb",
+    "apps/web/src/main.tsx": "sha256:b22bb4f233928992187bd8e2998777bf84bce93a4d858a6cdf7b364176fe9469",
+    "apps/web/src/render-check.tsx": "sha256:4284e2fe87f19089afb483eb3899f22f8b19a522134aca22857acb2672426952",
+    "apps/web/src/style.css": "sha256:f5eab89b7071149e66fb199532ae6661bdf265e42fddf78bad89f83e48c78221",
+    "apps/web/server/main.ts": "sha256:fc0cc7c6504b3bf7603ab4e2b00efd4c8120d93382aeae0a78cc91d4eb48c5c1",
+    "apps/web/server/observation.ts": "sha256:8642dd91aa066984334716f2cacf76426a835e0e6ed79fadaf79ab35bfdaee50",
+    "apps/web/server/service.ts": "sha256:bdb6ef20d7585a1cfadd080dfcaf9fbd27f324ce07ca89b545ee8891f7aeff06",
+    "apps/web/server/workspace.ts": "sha256:c944fe09f267c316f537af7a9af10858f486103ddbfefabe167378e1115a58f8",
+    "apps/web/tooling/export.ts": "sha256:cefd5b814e87312380172a189f24b9e6cbda881cb3fbc6fd4f4e16c88b50c86c",
+    "apps/web/tooling/portable.ts": "sha256:1bea4f7d68a9d7cff1bd3b57967f9948a824379b70f112ca86c7a8082e402251",
+    "apps/web/tooling/strict-json.ts": "sha256:1855d1f964fc3e61cdcbdf02a2a9f2e0dfdef78c09a8789ff7b0237ea4e663d8",
+    "apps/web/tooling/transport.ts": "sha256:82facd0ed9246518210c93e8d9b724c77729842058a0bf364c653e1d557b2607",
+    "apps/web/tooling/verify-corpus.mjs": "sha256:cd348299af334d0c68c8e612ee32d146a430f953c6efc7dc19e25bf66feabdaf",
+    "apps/web/tooling/verify-investigation.mjs": "sha256:af5d086393d953f2ed0f228e414f01a301269554ce64671b2aa5dc4179c3fd14",
+    "apps/web/tests/viewer.test.mjs": "sha256:af97eb3a106cd5e4911157436d6ef8549d2bf9604efa4d9865b088090ed6184c",
+    "apps/web/tests/workflow.test.mjs": "sha256:a5cefd706cb2594992e18b863b4b643166da7c80955706c75a35e84387abcd41",
+    "apps/web/build.mjs": "sha256:00ff3d8d98618d3d033aa0f086195521ace68ca29eb7a41b1bc2a9c9d17c6b45",
+    "apps/web/package.json": "sha256:d7bc44d65fb759293cd468dbce6b48d959b7c09e0450289ccc6728818e8ba946",
+    "pnpm-lock.yaml": "sha256:973f7d8a6a178ad907093b29644d02b275ca6d4ca3ed9366515f8950a2da0815",
+    "docs/CLI Reference.md": "sha256:6984e8a0eebf1b1e610c61491398dbf22de6489526933f27148235b1ede65c4e"
+  }
+}

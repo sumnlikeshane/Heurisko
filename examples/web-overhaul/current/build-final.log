@@ -1,0 +1,4 @@
+
+> @heurisko/web@0.1.0 build <WORKSPACE>/apps/web
+> node build.mjs
+

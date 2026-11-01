@@ -1,0 +1,101 @@
+{
+  "scope": "Exact files authored/edited by this Part 4 repair, preserving pre-existing dirty work",
+  "files": [
+    {
+      "path": "packages/core/src/comparison.ts",
+      "sha256": "d0fccc8386c9ba038b66f5136f2f151d4a475f29c4f402ab0a416ba8fa0bc859"
+    },
+    {
+      "path": "packages/core/src/producer.ts",
+      "sha256": "ac85ae56866d78435b191d9869f10aeb6189698c10f19d1bc33c38fcf35a4746"
+    },
+    {
+      "path": "packages/core/tests/s3.test.mjs",
+      "sha256": "3db0e3e8947da541f153b0560e5e12ac722503d3d2fd4a8c248b50bbe3e33c4c"
+    },
+    {
+      "path": "packages/tui/src/App.tsx",
+      "sha256": "b88dd88a3764b61f556d06fdc33aebb9d5508e03f582b4e26515e1dd2b9fa831"
+    },
+    {
+      "path": "packages/tui/src/model.ts",
+      "sha256": "93d990a8fc49cb426691c885b953faa245499c353be4b705a25d0d7b826e2388"
+    },
+    {
+      "path": "packages/tui/src/investigation-summary.ts",
+      "sha256": "bcfce6b0c23eb60d399bb5af66dd7cccb76e0948de48122f433ecf642f9d7199"
+    },
+    {
+      "path": "packages/tui/src/screens/Workspace.tsx",
+      "sha256": "d25fc535f4eac94610d0f72973029a02d7e6be24e998b08630c30dc5567aab84"
+    },
+    {
+      "path": "packages/tui/src/components/DocumentPane.tsx",
+      "sha256": "9c7dda404458944cb8a66751efecc0f4ef46c92d900b33f0778f331f058ee237"
+    },
+    {
+      "path": "packages/tui/tests/user-failures.test.mjs",
+      "sha256": "193828892ef3e7d347ecbb2e4d7308759f98e040db654fb00a29208429042216"
+    },
+    {
+      "path": "packages/tui/tests/user-workflows.py",
+      "sha256": "ea23ace13cad50c734dc8f85e693e31b09cc6fece5bcf5bb99bb3596bbf65b4e"
+    },
+    {
+      "path": "packages/tui/tests/user-states.py",
+      "sha256": "5507184303009490d299806c0811a48ebf8ca30508d9dd74ef957f739feac872"
+    },
+    {
+      "path": "packages/tui/tests/terminal-live.py",
+      "sha256": "e4487ada527b18f73a8ffe28631f1103960f443e72e4d365b42fe88c5b184c35"
+    },
+    {
+      "path": "scripts/check-part4-cleanup.mjs",
+      "sha256": "a249049f534e188ef4dd1cab391f3a526c5f4e014836bf7f453ee6651db77803"
+    },
+    {
+      "path": "scripts/check-part4-module-boundary.mjs",
+      "sha256": "5e12d1a573905918ce1da7853fb96d8b13c0169c2bb37b376254dcf26ab45749"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "b1f3194b2d2964b0de775e6c1b7d3b2049c78bbc15e49be1e3ca112740a7d0e5"
+    },
+    {
+      "path": "README.md",
+      "sha256": "0bbce4b72ac063d24a2db9d7cfd14f6c3a5b889575e2c245f3c166ae57a10ce3"
+    },
+    {
+      "path": "docs/README.md",
+      "sha256": "2a8514e2be6a61fa3e4b278585e6d62d8f22cb4358841b7e27b311f162c9dc49"
+    },
+    {
+      "path": "docs/Shane Implementation Plan.md",
+      "sha256": "283b111abf7d19d255bc1abc0c43232f898588c7396603fcbed232e86b3eea38"
+    },
+    {
+      "path": "docs/Part 4 Integration Readiness Report.md",
+      "sha256": "a0690983de96defa2d51dde98548b7a660755927b09e99e20a17054e1f87675f"
+    },
+    {
+      "path": "docs/Part 4 TUI Visual Audit.md",
+      "sha256": "2b1c15953367a598e2072437e480595553b27f07b32225d1b37931b6881cbe6b"
+    },
+    {
+      "path": "packages/tui/README.md",
+      "sha256": "f31baef93f19c7cd9ec71fd1451487272865daf6b46763d60d5fcbda16bb2a5a"
+    }
+  ],
+  "artifactRoots": [
+    "examples/part4/user-failures",
+    "integration/part4/receipts/user-failures"
+  ],
+  "artifactInventory": "artifact-inventory.json",
+  "concurrentObservedNotAuthored": [
+    "packages/core/src/parser-job.ts",
+    "packages/core/tests/parser-absence.test.mjs",
+    "packages/core/tests/audit-fixes.test.mjs",
+    "scripts/recover-parser-job.mjs"
+  ],
+  "note": "AGENTS and other root docs already contained unrelated work. Only scoped replacements/additions were authored here; handoff worktree HEAD advanced externally."
+}

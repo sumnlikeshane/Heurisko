@@ -1,0 +1,31 @@
+{
+  "version": "heurisko-s3-corpus-v1",
+  "capturedAt": "2026-10-31T19:05:13.752Z",
+  "cases": [
+    {
+      "caseId": "B1",
+      "manifest": "B1.manifest.json",
+      "reportId": "report_b5fbc4c40096d70898615c59",
+      "reportContentRef": "sha256:a5851d2b9f0d92e75291592c0aae46e45d74a8365f31a7bb13e7d7b04fae44d9"
+    },
+    {
+      "caseId": "B2",
+      "manifest": "B2.manifest.json",
+      "reportId": "report_b9f365256abe5e5929724e6c",
+      "reportContentRef": "sha256:9118fd96b1e11174394c2ff86d9689040aea514e678b662e8e69eb3c2a41b699"
+    },
+    {
+      "caseId": "B3",
+      "manifest": "B3.manifest.json",
+      "reportId": "report_d8244948a383f386ca9ef2dc",
+      "reportContentRef": "sha256:66930f781d9cc50518a9b0aa06dac54c648ff32a022fbb659ceedfb3fd8e6ad8"
+    },
+    {
+      "caseId": "B3R",
+      "manifest": "B3R.manifest.json",
+      "reportId": "report_8863c3d7076ee50f8f2fb0e0",
+      "reportContentRef": "sha256:bc0dfb893a4e5667742217d0e81a77931e571b74237d075c15f787b493cdb37c"
+    }
+  ],
+  "scope": "Static acquisition/integrity/source-candidate/raw evidence only. No broad correctness, benignness, cryptographic provenance, interpretation/model or complete P04 claim."
+}

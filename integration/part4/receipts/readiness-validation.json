@@ -1,0 +1,121 @@
+{
+  "version": "heurisko-part4-nonvisual-readiness-v1",
+  "checkedAt": "2026-10-31T19:31:48.950203+00:00",
+  "scope": "Isolated nonvisual candidates only; S4 and joint G3 remain open. No visual spike source imported, no model/target/rebuild execution, no shared-contract or foundation behavior change.",
+  "branch": "docs/share-research-with-team",
+  "head": "0e2be5a105548b237328879f29c969640d767ec5",
+  "runtime": {
+    "node": "22.23.4",
+    "pnpm": "10.14.0",
+    "typescript": "5.8.3",
+    "validatorPython": "3.13.2",
+    "parserPython": "3.13.18",
+    "host": "macOS arm64"
+  },
+  "checks": {
+    "typecheck": "pnpm run typecheck passed",
+    "contracts": "Full unchanged G0 schema/semantic validation and seven synthetic handshakes passed",
+    "foundation": {
+      "passed": 17,
+      "total": 17
+    },
+    "s2": {
+      "tests": 48,
+      "pass": 48,
+      "fail": 0
+    },
+    "s3FirstSandboxAttempt": "Failed closed without local Docker socket access; no host fallback",
+    "s3FirstSocketEnabled": {
+      "tests": 36,
+      "pass": 35,
+      "fail": 1
+    },
+    "s3ScopedRetry": {
+      "tests": 1,
+      "pass": 1,
+      "fail": 0
+    },
+    "s3UnchangedFullRetry": {
+      "tests": 36,
+      "pass": 36,
+      "fail": 0
+    },
+    "currentS3Corpus": "baseline-verification.json",
+    "isolatedCompile": "node_modules/.bin/tsc -p integration/part4/tsconfig.json passed",
+    "isolatedTests": {
+      "tests": 24,
+      "pass": 24,
+      "fail": 0
+    },
+    "M0M1": "Current isolated source/compiled index digests match S3 receipts; saved M1 mutation analysis revalidated against original S2 bundle, with raw lifecycle citation resolved. No module invocation/adoption.",
+    "ttyVisualTests": "not run",
+    "remoteCI": "not run"
+  },
+  "operationalIssue": {
+    "status": "open; blocks B02 and live investigation integration acceptance",
+    "firstFailure": {
+      "test": "authored scoped npm fixture traverses actual safe producer/store/validator and cannot imply safety",
+      "expectedSourceAssociation": "publisher_asserted",
+      "actualSourceAssociation": "ambiguous"
+    },
+    "container": "heurisko-parser-675ebc57-4b38-44c7-8cdc-6edd176183ec",
+    "createdAt": "2026-10-31T19:16:57.622509002Z",
+    "storeLabel": "d3cf13b18f00d1aee793abd46d234277d5811a39ef1ccedc40d2ac45622bf291",
+    "observedState": {
+      "status": "created",
+      "running": false,
+      "pid": 0,
+      "everStarted": false,
+      "originalTestStoreExists": false
+    },
+    "recovery": "Exact job inspected and removed without force only after its stopped state and this-session test origin were established. No other job or crash/cleanup lock was deleted.",
+    "rootCause": "Not established; failed assertion/orphan relationship and late-create/cleanup behavior require a scoped foundation repair and targeted tests. Passing retry is not closure.",
+    "foundationChanges": false
+  },
+  "adapterLimits": {
+    "reportBytes": 8388608,
+    "blobBytes": 33554432,
+    "pageBytes": 65536,
+    "recordBytes": 262144,
+    "progressEvents": 128,
+    "lineOnlyRanges": "metadata_only",
+    "writes": false,
+    "fetching": false
+  },
+  "candidateSourceDigests": {
+    "integration/part4/src/report-reader.ts": "sha256:59b0ab64566dccbc7dd8985deb0a06fe01343b9ac33ae4a099c1cb8c35918f2b",
+    "integration/part4/src/investigation-task.ts": "sha256:31fff258fd3cd2a7688e5290c52a57a81c2ea489eccff6629daa3b7c22ce005f",
+    "integration/part4/tests/readiness.test.mjs": "sha256:ed68b3ea95c1ed8a6f8e9584238c53a1a5ccffe88bb0b9a0e6591ae17aa3d359",
+    "integration/part4/tsconfig.json": "sha256:b3df22b79c359d35345a2fdbd98fe03955799acf59cef0865bb0c33d1dae6e0d"
+  },
+  "productModel": "none",
+  "codingAssistant": "Codex",
+  "commitPushPublication": "none",
+  "externalMessages": "none",
+  "finalValidationCheckpoint": {
+    "atIST": "2026-11-01 01:02:20 +05:30",
+    "nonvisualStartedAtIST": "2026-11-01 00:45:54 +05:30",
+    "cutoffIST": "2026-11-01 01:55:54 +05:30",
+    "elapsedSeconds": 986,
+    "remainingWindowSeconds": 3214,
+    "scope": "This nonvisual window only; concurrent visual-session time not audited or assigned another budget."
+  },
+  "finalChecks": {
+    "markdownLinksAnchors": {
+      "passed": true,
+      "files": 37
+    },
+    "researchChecksums": {
+      "passed": 15,
+      "total": 15
+    },
+    "privateHostPrefixScan": "New report and receipts passed",
+    "originalFiles": "All 6133 originals present; only four authorized documentation updates changed bytes",
+    "gitDiffCheck": "passed",
+    "gitIndex": "empty",
+    "branchHead": "unchanged",
+    "parserJobs": "none at final local Docker inventory after exact stopped-job removal",
+    "currentCorpusParserWriteLocks": "none",
+    "visualSpike": "Git status inspected only; no implementation read/imported or files modified by this track"
+  }
+}

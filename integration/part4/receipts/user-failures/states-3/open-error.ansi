@@ -1,0 +1,135 @@
+[?1049h[?25l[?25l  [1mHEURISKO[22m   [4m[1mH Home   [22m[24m I Investigations     M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+  [1m > New investigation      [22m  npm package / local archive  ·  o Open saved report
+
+  ┌─[1m Recent investigations [22m─────────────────────── 0 indexed ┐ ┌─[1m Monitoring [22m────────────────────┐
+  │ PACKAGE / EXACT VERSION                                  │ │ Runner           Not configured │
+  │ No indexed reports. o opens a report path.               │ │ Last check       Not recorded   │
+  │                                                          │ │ Freshness        Unknown        │
+  │                                                          │ │                                 │
+  │                                                          │ └─────────────────────────────────┘
+  │                                                          │
+  │                                                          │ ┌─[1m Needs attention [22m──────────── 0 ┐
+  │                                                          │ │ No incomplete report indexed. … │
+  │                                                          │ │                                 │
+  │                                                          │ │                                 │
+  │                                                          │ │                                 │
+  │                                                          │ │                                 │
+  │                                                          │ │                                 │
+  │                                                          │ │                                 │
+  │                                                          │ │                                 │
+  │                                                          │ │                                 │
+  │                                                          │ │ Inspect recorded scope; no saf… │
+  └──────────────────────────────────────────────────────────┘ └─────────────────────────────────┘
+
+  New investigation
+  [1mEnter[22m new  [1mTab[22m panels  [1mo[22m open  [1m?[22m help  [1mq[22m quit
+
+[?25lo[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m   [4m[1mH Home   [22m[24m I Investigations     M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    ┌─[1m > Open saved report [22m────────────────────────────────────────────────────────────────────┐
+    │ [1mReport file or full sha256: observation reference                                       [22m │
+    │                                                                                          │
+    │ |                                                                                        │
+    │                                                                                          │
+    │ Enter validates and opens; Esc returns.                                                  │
+    │ Missing evidence remains inspectable as metadata.                                        │
+    │ 1-6 / 6                                                                                  │
+    └──────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+
+
+
+
+
+
+
+
+
+
+  open
+  [1mType[22m to edit  [1mTab[22m next  [1mCtrl+T[22m type  [1mEnter[22m review  [1mEsc[22m back
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m   [4m[1mH Home   [22m[24m I Investigations     M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    ┌─[1m > Open saved report [22m────────────────────────────────────────────────────────────────────┐
+    │ [1mReport file or full sha256: observation reference                                       [22m │
+    │                                                                                          │
+    │ /does/not/exist|                                                                         │
+    │                                                                                          │
+    │ Enter validates and opens; Esc returns.                                                  │
+    │ Missing evidence remains inspectable as metadata.                                        │
+    │ 1-6 / 6                                                                                  │
+    └──────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+
+
+
+
+
+
+
+
+
+
+  open
+  [1mType[22m to edit  [1mTab[22m next  [1mCtrl+T[22m type  [1mEnter[22m review  [1mEsc[22m back
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m   [4m[1mH Home   [22m[24m I Investigations     M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+
+
+
+       ┌─[1m > Opening saved report [22m───────────────────────────────────────────────────────────┐
+       │ Opening saved report                                                               │
+       │                                                                                    │
+       │ [━━━━────────────────────────] Working / indeterminate                             │
+       │ Wait for the operation to finish. Ctrl+C requests cancellation.                    │
+       │                                                                                    │
+       └────────────────────────────────────────────────────────────────────────────────────┘
+
+
+
+
+
+
+
+
+
+
+  Opening and validating retained report…
+  [1mCtrl+C[22m cancel  [1mWaiting[22m for operation
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m   [4m[1mH Home   [22m[24m I Investigations     M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    ┌─[1m > Open saved report [22m────────────────────────────────────────────────────────────────────┐
+    │ [1mReport file or full sha256: observation reference                                       [22m │
+    │                                                                                          │
+    │ /does/not/exist|                                                                         │
+    │                                                                                          │
+    │ Enter validates and opens; Esc returns.                                                  │
+    │ Missing evidence remains inspectable as metadata.                                        │
+    │ 1-6 / 6                                                                                  │
+    └──────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+
+
+
+
+
+
+
+
+
+
+  Open failed: REPORT_READ_FAILED
+  [1mType[22m to edit  [1mTab[22m next  [1mCtrl+T[22m type  [1mEnter[22m review  [1mEsc[22m back
+

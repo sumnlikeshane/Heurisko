@@ -1,0 +1,48 @@
+Traceback (most recent call last):
+  File "<WORKSPACE>/packages/tui/tests/user-states.py", line 29, in <module>
+    s=new(c,r,p,store);s.send('2',.3);s.send('/',.3);expect(s,'Filter:');s.send('lifecycle',.3);s.send('\r',.3);expect(s,'Package lifecycle');s.send('\r',.4);expect(s,'Findings >');expect(s,'Observation:');s.send('j',.2);s.read(1);before=state(p);s.send('e',.4);expect(s,'RAW utf8:');scroll(s,'HEURISKO_INERT_TEST_ONLY');s.capture(CAP/f'current-module-citation-{c}');s.resize(55,14);expect(s,'Terminal too small');s.resize(c,r);s.send('\x1b',.4);expect(s,'Observation:');s.read(1);after=state(p);assert all(before.get(k)==after.get(k) for k in ['section','selectedId','focus','scroll','scrolls','query','pan','citation']);checks.append({'check':'current-module exact evidence Back at '+str(c),'passed':True});s.capture(CAP/f'current-module-return-{c}');s.quit()
+                                                                                                                                                                                                                                                                                                                                                                                                                                        ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<WORKSPACE>/packages/tui/tests/user-states.py", line 9, in expect
+    assert ' '.join(text.split()) in ' '.join(s.frame().replace('│',' ').split()),text+'\n'+s.frame()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Observation:
+  HEURISKO   H Home    I Investigations     M Monitoring                                                                                                        
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+  picocolors@1.1.1 / LOCAL INPUT / HISTORICAL / complete / Captured 2026-10-31T23:16:57Z                                                                        
+  1 Overview   2 Findings   3 Files   4 Source   5 AI   6 Coverage                                                                                              
+  Historical — online checks have not refreshed · i Identity                                                                                                    
+  Findings                                                                                                                                                      
+  Findings > Package lifecycle script entry changed / Esc restores position                                                                                     
+  ┌─ > Package lifecycle script entry changed ───────────────────────────────────────────────────────────────────────────────────────────────────────────────┐  
+  │ Manifest key scripts.postinstall is reported as changed.                                                                                                 │  
+  │                                                                                                                                                          │  
+  │ Significance:                                                                                                                                            │  
+  │ Lifecycle entries can affect package-manager installation behavior; inspect the exact command and its source before deciding what it does. This          │  
+  │ observation does not establish malicious intent.                                                                                                         │  
+  │                                                                                                                                                          │  
+  │ Severity:                                                                                                                                                │  
+  │ medium                                                                                                                                                   │  
+  │                                                                                                                                                          │  
+  │ Review priority:                                                                                                                                         │  
+  │ medium                                                                                                                                                   │  
+  │                                                                                                                                                          │  
+  │ Evidence confidence:                                                                                                                                     │  
+  │ high                                                                                                                                                     │  
+  │                                                                                                                                                          │  
+  │ Explanation strength:                                                                                                                                    │  
+  │ exact                                                                                                                                                    │  
+  │                                                                                                                                                          │  
+  │ Evidence:                                                                                                                                                │  
+  │ ev_e7075cb69f91c7e1b4c4223f                                                                                                                              │  
+  │                                                                                                                                                          │  
+  │ Limitation:                                                                                                                                              │  
+  │ The evidence identifies the changed manifest key but does not retain the old and new command values.                                                     │  
+  │                                                                                                                                                          │  
+  │ Next action:                                                                                                                                             │  
+  │ Review the retained old and new script values and their referenced files; do not execute them on the host.                                               │  
+  │ 2-27 / 33  j/k scroll                                                                                                                                    │  
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘  
+  Findings                                                                                                                                                      
+  j/k scroll  PgUp/PgDn sections  e evidence  Esc return  q quit                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                

@@ -1,0 +1,26 @@
+  HEURISKO / report / narrow / 84x26                                                
+   H Home    I Investigations     M Monitoring                                      
+  LOCAL INPUT picocolors@1.1.1 report_7b46cdea60ae3108dd8c4b21                      
+  HISTORICAL — checks not refreshed / complete / captured 2026-10-31T21:48:41Z      
+  1 Overview  2 Findings*  3 Files  4 Source  5 AI  6 Coverage                      
+  ┌─ > Findings / list ──────────────────────────────────────────────────────────┐  
+  │ > Package lifecycle script entry changed                                     │  
+  │ File change remains unexplained                                              │  
+  │ File change remains unexplained                                              │  
+  │ File change remains unexplained                                              │  
+  │ File change remains unexplained                                              │  
+  │ File change remains unexplained                                              │  
+  │ File change remains unexplained                                              │  
+  │ File change remains unexplained                                              │  
+  │ File change remains unexplained                                              │  
+  │ File change remains unexplained                                              │  
+  │ File change remains unexplained                                              │  
+  │ File change remains unexplained                                              │  
+  │ File change remains unexplained                                              │  
+  │ File change remains unexplained                                              │  
+  └──────────────────────────────────────────────────────────────────────────────┘  
+  Focus 0 / filter (none) / priority:all severity:all confidence:all rule:all       
+  j/k move  Enter inspect  e evidence  Tab focus  / filter  ? help  q quit          
+                                                                                    
+                                                                                    
+                                                                                    

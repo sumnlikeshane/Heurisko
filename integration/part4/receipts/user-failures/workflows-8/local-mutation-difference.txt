@@ -1,0 +1,35 @@
+  HEURISKO   H Home    I Investigations     M Monitoring                                                                
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+  picocolors-1.1.1.local-inert-mutation.tgz / LOCAL INPUT / HISTORICAL / incomplete / Captured 2026-10-31T23:18:14Z     
+  1 Overview   2 Findings   3 Files   4 Source   5 AI   6 Coverage                                                      
+  Historical — online checks have not refreshed · i Identity                                                            
+  Files                                                                                                                 
+  Files > Artifact / package.json / Esc restores position                                                               
+  ┌─ > Artifact / package.json ──────────────────────────────────────────────────────────────────────────────────────┐  
+  │ S21 -     "clean-publish": "^3.0.3",                   |                                                         │  
+  │ S22 -     "cli-color": "^2.0.0",                       |                                                         │  
+  │ S23 -     "colorette": "^2.0.12",                      |                                                         │  
+  │ S24 -     "kleur": "^4.1.4",                           |                                                         │  
+  │ S25 -     "mitata": "^1.0.10",                         |                                                         │  
+  │ S26 -     "nanocolors": "^0.2.12",                     |                                                         │  
+  │ S27 -     "prettier": "^3.3.3",                        |                                                         │  
+  │ S28 -     "yoctocolors": "^2.1.1"                      |                                                         │  
+  │ S29 -   },                                             |                                                         │  
+  │ S30 -   "prettier": {                                  |                                                         │  
+  │ S31 -     "printWidth": 100,                           |                                                         │  
+  │ S32 -     "useTabs": true,                             |                                                         │  
+  │ S33 -     "tabWidth": 2,                               |                                                         │  
+  │ S34 -     "semi": false,                               |                                                         │  
+  │ S35 -     "arrowParens": "avoid",                      |                                                         │  
+  │ S36 -     "requirePragma": true                        |                                                         │  
+  │ S37 -   },                                             |                                                         │  
+  │ S38 -   "clean-publish": {                             |                                                         │  
+  │ S39 -     "cleanDocs": true                            | A15 +   "scripts": {                                    │  
+  │                                                        | A16 +     "postinstall": "HEURISKO_INERT_TEST_ONLY"     │  
+  │                                                                                                                  │  
+  │ 28-48 / 70  j/k scroll                                                                                           │  
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘  
+  Files                                                                                                                 
+  m next modified  Enter inspect  e exact bytes  Tab panes  v tree/flat  q quit                                         
+                                                                                                                        
+                                                                                                                        

@@ -1,0 +1,618 @@
+{
+  "scope": "actual PTY; synthetic AI/binary states labeled; current explicit model-off module validation report",
+  "checks": [
+    {
+      "check": "HISTORICAL",
+      "size": [
+        120,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "SYNTHETIC",
+      "size": [
+        120,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "AI state:",
+      "size": [
+        120,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "RAW base64:",
+      "size": [
+        120,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "HISTORICAL",
+      "size": [
+        120,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "SYNTHETIC",
+      "size": [
+        120,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "AI state:",
+      "size": [
+        120,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "RAW utf8:",
+      "size": [
+        120,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "HISTORICAL",
+      "size": [
+        120,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "SYNTHETIC",
+      "size": [
+        120,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "AI state:",
+      "size": [
+        120,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "RAW utf8:",
+      "size": [
+        120,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "HISTORICAL",
+      "size": [
+        120,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "SYNTHETIC",
+      "size": [
+        120,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "AI state:",
+      "size": [
+        120,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "RAW utf8:",
+      "size": [
+        120,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "HISTORICAL",
+      "size": [
+        120,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "SYNTHETIC",
+      "size": [
+        120,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "AI state:",
+      "size": [
+        120,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "RAW utf8:",
+      "size": [
+        120,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "HISTORICAL",
+      "size": [
+        160,
+        40
+      ],
+      "passed": true
+    },
+    {
+      "check": "Filter:",
+      "size": [
+        160,
+        40
+      ],
+      "passed": true
+    },
+    {
+      "check": "Package lifecycle",
+      "size": [
+        160,
+        40
+      ],
+      "passed": true
+    },
+    {
+      "check": "Findings >",
+      "size": [
+        160,
+        40
+      ],
+      "passed": true
+    },
+    {
+      "check": "Observation:",
+      "size": [
+        160,
+        40
+      ],
+      "passed": true
+    },
+    {
+      "check": "RAW utf8:",
+      "size": [
+        160,
+        40
+      ],
+      "passed": true
+    },
+    {
+      "check": "Terminal too small",
+      "size": [
+        55,
+        14
+      ],
+      "passed": true
+    },
+    {
+      "check": "Findings >",
+      "size": [
+        160,
+        40
+      ],
+      "passed": true
+    },
+    {
+      "check": "finding Back state oracle",
+      "before": {
+        "section": 1,
+        "subtab": 0,
+        "index": 0,
+        "focus": 0,
+        "citation": 0,
+        "scroll": 1,
+        "scrolls": [
+          1,
+          0,
+          0
+        ],
+        "query": "lifecycle",
+        "detail": false,
+        "pan": 0,
+        "selectedId": "find_heurisko_manifest_lifecycle-script-change_chg_6c49c8951ee8ff1147bff2a9_e7075cb6"
+      },
+      "after": {
+        "section": 1,
+        "subtab": 0,
+        "index": 0,
+        "focus": 0,
+        "citation": 0,
+        "scroll": 1,
+        "scrolls": [
+          1,
+          0,
+          0
+        ],
+        "query": "lifecycle",
+        "detail": false,
+        "pan": 0,
+        "selectedId": "find_heurisko_manifest_lifecycle-script-change_chg_6c49c8951ee8ff1147bff2a9_e7075cb6"
+      },
+      "size": [
+        160,
+        40
+      ]
+    },
+    {
+      "check": "current-module exact evidence Back at 160",
+      "passed": true
+    },
+    {
+      "check": "HISTORICAL",
+      "size": [
+        120,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "Filter:",
+      "size": [
+        120,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "Package lifecycle",
+      "size": [
+        120,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "Findings >",
+      "size": [
+        120,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "Observation:",
+      "size": [
+        120,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "RAW utf8:",
+      "size": [
+        120,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "Terminal too small",
+      "size": [
+        55,
+        14
+      ],
+      "passed": true
+    },
+    {
+      "check": "Findings >",
+      "size": [
+        120,
+        35
+      ],
+      "passed": true
+    },
+    {
+      "check": "finding Back state oracle",
+      "before": {
+        "section": 1,
+        "subtab": 0,
+        "index": 0,
+        "focus": 0,
+        "citation": 0,
+        "scroll": 1,
+        "scrolls": [
+          1,
+          0,
+          0
+        ],
+        "query": "lifecycle",
+        "detail": false,
+        "pan": 0,
+        "selectedId": "find_heurisko_manifest_lifecycle-script-change_chg_6c49c8951ee8ff1147bff2a9_e7075cb6"
+      },
+      "after": {
+        "section": 1,
+        "subtab": 0,
+        "index": 0,
+        "focus": 0,
+        "citation": 0,
+        "scroll": 1,
+        "scrolls": [
+          1,
+          0,
+          0
+        ],
+        "query": "lifecycle",
+        "detail": false,
+        "pan": 0,
+        "selectedId": "find_heurisko_manifest_lifecycle-script-change_chg_6c49c8951ee8ff1147bff2a9_e7075cb6"
+      },
+      "size": [
+        120,
+        35
+      ]
+    },
+    {
+      "check": "current-module exact evidence Back at 120",
+      "passed": true
+    },
+    {
+      "check": "HISTORICAL",
+      "size": [
+        84,
+        26
+      ],
+      "passed": true
+    },
+    {
+      "check": "Filter:",
+      "size": [
+        84,
+        26
+      ],
+      "passed": true
+    },
+    {
+      "check": "Package lifecycle",
+      "size": [
+        84,
+        26
+      ],
+      "passed": true
+    },
+    {
+      "check": "Findings >",
+      "size": [
+        84,
+        26
+      ],
+      "passed": true
+    },
+    {
+      "check": "Observation:",
+      "size": [
+        84,
+        26
+      ],
+      "passed": true
+    },
+    {
+      "check": "RAW utf8:",
+      "size": [
+        84,
+        26
+      ],
+      "passed": true
+    },
+    {
+      "check": "Terminal too small",
+      "size": [
+        55,
+        14
+      ],
+      "passed": true
+    },
+    {
+      "check": "Findings >",
+      "size": [
+        84,
+        26
+      ],
+      "passed": true
+    },
+    {
+      "check": "finding Back state oracle",
+      "before": {
+        "section": 1,
+        "subtab": 0,
+        "index": 0,
+        "focus": 0,
+        "citation": 0,
+        "scroll": 1,
+        "scrolls": [
+          1,
+          0,
+          0
+        ],
+        "query": "lifecycle",
+        "detail": false,
+        "pan": 0,
+        "selectedId": "find_heurisko_manifest_lifecycle-script-change_chg_6c49c8951ee8ff1147bff2a9_e7075cb6"
+      },
+      "after": {
+        "section": 1,
+        "subtab": 0,
+        "index": 0,
+        "focus": 0,
+        "citation": 0,
+        "scroll": 1,
+        "scrolls": [
+          1,
+          0,
+          0
+        ],
+        "query": "lifecycle",
+        "detail": false,
+        "pan": 0,
+        "selectedId": "find_heurisko_manifest_lifecycle-script-change_chg_6c49c8951ee8ff1147bff2a9_e7075cb6"
+      },
+      "size": [
+        84,
+        26
+      ]
+    },
+    {
+      "check": "current-module exact evidence Back at 84",
+      "passed": true
+    },
+    {
+      "check": "HISTORICAL",
+      "size": [
+        60,
+        20
+      ],
+      "passed": true
+    },
+    {
+      "check": "Filter:",
+      "size": [
+        60,
+        20
+      ],
+      "passed": true
+    },
+    {
+      "check": "Package lifecycle",
+      "size": [
+        60,
+        20
+      ],
+      "passed": true
+    },
+    {
+      "check": "Findings >",
+      "size": [
+        60,
+        20
+      ],
+      "passed": true
+    },
+    {
+      "check": "Observation:",
+      "size": [
+        60,
+        20
+      ],
+      "passed": true
+    },
+    {
+      "check": "RAW utf8:",
+      "size": [
+        60,
+        20
+      ],
+      "passed": true
+    },
+    {
+      "check": "Terminal too small",
+      "size": [
+        55,
+        14
+      ],
+      "passed": true
+    },
+    {
+      "check": "Findings >",
+      "size": [
+        60,
+        20
+      ],
+      "passed": true
+    },
+    {
+      "check": "finding Back state oracle",
+      "before": {
+        "section": 1,
+        "subtab": 0,
+        "index": 0,
+        "focus": 0,
+        "citation": 0,
+        "scroll": 1,
+        "scrolls": [
+          1,
+          0,
+          0
+        ],
+        "query": "lifecycle",
+        "detail": false,
+        "pan": 0,
+        "selectedId": "find_heurisko_manifest_lifecycle-script-change_chg_6c49c8951ee8ff1147bff2a9_e7075cb6"
+      },
+      "after": {
+        "section": 1,
+        "subtab": 0,
+        "index": 0,
+        "focus": 0,
+        "citation": 0,
+        "scroll": 1,
+        "scrolls": [
+          1,
+          0,
+          0
+        ],
+        "query": "lifecycle",
+        "detail": false,
+        "pan": 0,
+        "selectedId": "find_heurisko_manifest_lifecycle-script-change_chg_6c49c8951ee8ff1147bff2a9_e7075cb6"
+      },
+      "size": [
+        60,
+        20
+      ]
+    },
+    {
+      "check": "current-module exact evidence Back at 60",
+      "passed": true
+    },
+    {
+      "check": "HEURISKO",
+      "size": [
+        100,
+        28
+      ],
+      "passed": true
+    },
+    {
+      "check": "Open failed:",
+      "size": [
+        100,
+        28
+      ],
+      "passed": true
+    }
+  ],
+  "count": 62
+}

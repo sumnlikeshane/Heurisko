@@ -1,0 +1,189 @@
+{
+  "checks": [
+    {
+      "check": "HISTORICAL",
+      "passed": true
+    },
+    {
+      "check": "Per-report UI state reset",
+      "passed": true
+    },
+    {
+      "check": "PRIORITY FINDINGS",
+      "passed": true
+    },
+    {
+      "check": "COVERAGE & UNKNOWNS",
+      "passed": true
+    },
+    {
+      "check": "NEXT ACTIONS",
+      "passed": true
+    },
+    {
+      "check": "Report next actions",
+      "passed": true
+    },
+    {
+      "check": "[Candidates]",
+      "passed": true
+    },
+    {
+      "check": "priority: all",
+      "passed": true
+    },
+    {
+      "check": "HISTORICAL",
+      "passed": true
+    },
+    {
+      "check": "Per-report UI state reset",
+      "passed": true
+    },
+    {
+      "check": "priority: all",
+      "passed": true
+    },
+    {
+      "check": "Filter:",
+      "passed": true
+    },
+    {
+      "check": "Filter: lifecycle",
+      "passed": true
+    },
+    {
+      "check": "Rendered lifecycle filter submits before pane shortcuts",
+      "passed": true
+    },
+    {
+      "check": "Supporting evidence",
+      "passed": true
+    },
+    {
+      "check": "Supporting evidence",
+      "passed": true
+    },
+    {
+      "check": "Supporting evidence",
+      "passed": true
+    },
+    {
+      "check": "Observation & assessment",
+      "passed": true
+    },
+    {
+      "check": "confidence: high",
+      "passed": true
+    },
+    {
+      "check": "HISTORICAL",
+      "passed": true
+    },
+    {
+      "check": "confidence: high",
+      "passed": true
+    },
+    {
+      "check": "Filter: lifecycle",
+      "passed": true
+    },
+    {
+      "check": "[-] Artifact root/",
+      "passed": true
+    },
+    {
+      "check": "[+] Artifact root/",
+      "passed": true
+    },
+    {
+      "check": "HISTORICAL",
+      "passed": true
+    },
+    {
+      "check": "[+] Artifact root/",
+      "passed": true
+    },
+    {
+      "check": "[-] Artifact root/",
+      "passed": true
+    },
+    {
+      "check": "HISTORICAL",
+      "passed": true
+    },
+    {
+      "check": "Per-report UI state reset",
+      "passed": true
+    },
+    {
+      "check": "Observation:",
+      "passed": true
+    },
+    {
+      "check": "Finding section: Significance",
+      "passed": true
+    },
+    {
+      "check": "Significance:",
+      "passed": true
+    },
+    {
+      "check": "Finding section: Observation",
+      "passed": true
+    },
+    {
+      "check": "Observation:",
+      "passed": true
+    },
+    {
+      "check": "HISTORICAL",
+      "passed": true
+    },
+    {
+      "check": "Per-report UI state reset",
+      "passed": true
+    },
+    {
+      "check": "Observation:",
+      "passed": true
+    },
+    {
+      "check": "Finding section: Significance",
+      "passed": true
+    },
+    {
+      "check": "Significance:",
+      "passed": true
+    },
+    {
+      "check": "Finding section: Observation",
+      "passed": true
+    },
+    {
+      "check": "Observation:",
+      "passed": true
+    },
+    {
+      "check": "Recent investigations",
+      "passed": true
+    },
+    {
+      "check": "HISTORICAL",
+      "passed": true
+    },
+    {
+      "check": "Investigations",
+      "passed": true
+    },
+    {
+      "check": "HISTORICAL",
+      "passed": true
+    },
+    {
+      "check": "Saved observations",
+      "passed": true
+    }
+  ],
+  "count": 46
+}

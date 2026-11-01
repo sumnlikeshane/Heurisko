@@ -1,0 +1,146 @@
+{
+  "scope": "actual product keyboard; source metadata, navigation, raw bytes, safe errors, state reset",
+  "checks": [
+    {
+      "check": "HEURISKO",
+      "passed": true
+    },
+    {
+      "check": "HISTORICAL",
+      "passed": true
+    },
+    {
+      "check": "Source conflict",
+      "passed": true
+    },
+    {
+      "check": "[Candidates]",
+      "passed": true
+    },
+    {
+      "check": "[Provenance]",
+      "passed": true
+    },
+    {
+      "check": "[Build]",
+      "passed": true
+    },
+    {
+      "check": "[Candidates]",
+      "passed": true
+    },
+    {
+      "check": "New investigation",
+      "passed": true
+    },
+    {
+      "check": "Review exact target",
+      "passed": true
+    },
+    {
+      "check": "[Candidates]",
+      "passed": true
+    },
+    {
+      "check": "HEURISKO",
+      "passed": true
+    },
+    {
+      "check": "HISTORICAL",
+      "passed": true
+    },
+    {
+      "check": "[-] Artifact root/",
+      "passed": true
+    },
+    {
+      "check": "Files keeps revision-7 two-pane wide geometry",
+      "passed": true
+    },
+    {
+      "check": "[+] Artifact root/",
+      "passed": true
+    },
+    {
+      "check": "[-] Artifact root/",
+      "passed": true
+    },
+    {
+      "check": "Filter: package.json",
+      "passed": true
+    },
+    {
+      "check": "Rendered package.json filter submits before subsequent shortcuts",
+      "passed": true
+    },
+    {
+      "check": "Filter: Candidate",
+      "passed": true
+    },
+    {
+      "check": "Rendered Candidate filter submits before subsequent shortcuts",
+      "passed": true
+    },
+    {
+      "check": "[Provenance]",
+      "passed": true
+    },
+    {
+      "check": "Filter: Candidate",
+      "passed": true
+    },
+    {
+      "check": "Open failed",
+      "passed": true
+    },
+    {
+      "check": "HEURISKO",
+      "passed": true
+    },
+    {
+      "check": "HISTORICAL",
+      "passed": true
+    },
+    {
+      "check": "Files",
+      "passed": true
+    },
+    {
+      "check": "Measured coverage and stages",
+      "passed": true
+    },
+    {
+      "check": "HEURISKO",
+      "passed": true
+    },
+    {
+      "check": "UI state unavailable or corrupt",
+      "passed": true
+    },
+    {
+      "check": "UI state reset",
+      "passed": true
+    },
+    {
+      "check": "HEURISKO",
+      "passed": true
+    },
+    {
+      "check": "Package name",
+      "passed": true
+    },
+    {
+      "check": "Load retained example",
+      "passed": true
+    },
+    {
+      "check": "[ Local archive ]",
+      "passed": true
+    },
+    {
+      "check": "Archive path",
+      "passed": true
+    }
+  ],
+  "count": 35
+}

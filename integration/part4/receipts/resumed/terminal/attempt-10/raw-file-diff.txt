@@ -1,0 +1,40 @@
+  HEURISKO / report / wide / 160x40                                                                                                                             
+   H Home    I Investigations     M Monitoring                                                                                                                  
+  LOCAL INPUT picocolors@1.1.1 report_7b46cdea60ae3108dd8c4b21                                                                                                  
+  HISTORICAL — checks not refreshed / complete / captured 2026-10-31T21:48:41Z                                                                                  
+  1 Overview  2 Findings  3 Files*  4 Source  5 AI  6 Coverage                                                                                                  
+  ┌─ > Files / chg_e945c3a7fac8dd98aff69799 ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐  
+  │ Change chg_e945c3a7fac8dd98aff69799                                                                                                                      │  
+  │ Artifact path: package/package.json                                                                                                                      │  
+  │ Source path: picocolors-6f0a4638348ed20633d623ee973f9c9a96f65104/package.json                                                                            │  
+  │ Status: modified                                                                                                                                         │  
+  │ Raw equality: different                                                                                                                                  │  
+  │ Explanation strength: unexplained                                                                                                                        │  
+  │ Archive metadata differs; inspect the retained metadata delta. rawEquality describes content bytes only.                                                 │  
+  │ Raw evidence: e opens exact recorded byte spans; s changes side.                                                                                         │  
+  │ Normalized view unavailable — no transform was performed.                                                                                                │  
+  │ RAW CHANGED SPANS (independent byte windows; no line-alignment claim)                                                                                    │  
+  │ SOURCE                                                                     | ARTIFACT                                                                    │  
+  │ only: UNSUPPORTED_RECORD                                                  |  only: UNSUPPORTED_RECORD                                                    │  
+  │                                                                                                                                                          │  
+  │                                                                                                                                                          │  
+  │                                                                                                                                                          │  
+  │                                                                                                                                                          │  
+  │                                                                                                                                                          │  
+  │                                                                                                                                                          │  
+  │                                                                                                                                                          │  
+  │                                                                                                                                                          │  
+  │                                                                                                                                                          │  
+  │                                                                                                                                                          │  
+  │                                                                                                                                                          │  
+  │                                                                                                                                                          │  
+  │                                                                                                                                                          │  
+  │                                                                                                                                                          │  
+  │                                                                                                                                                          │  
+  │                                                                                                                                                          │  
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘  
+  Diff mode side-by-side; raw evidence remains available with e.                                                                                                
+  j/k move  Enter inspect  e evidence  Tab focus  / filter  ? help  q quit                                                                                      
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                

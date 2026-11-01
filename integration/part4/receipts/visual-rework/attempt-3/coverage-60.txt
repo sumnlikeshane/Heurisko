@@ -1,0 +1,20 @@
+  HEURISKO                                                  
+   H Home    I Investigations     M Monitoring              
+  ────────────────────────────────────────────────────────  
+  picocolors@1.1.1 / LOCAL INPUT / HISTORICAL / complete …  
+  1 Ov  2 Find  3 Files  4 Src  5 AI  6 Scope               
+  Historical — online checks have not refreshed · i Ident…  
+  Coverage                                                  
+  Recorded scope / stage outcomes / unresolved work         
+  ┌─ > Coverage ───────────────────────────────────── 11 ┐  
+  │ > Measured coverage and stages                       │  
+  │                                                      │  
+  │   resolve artifact                                   │  
+  │   complete                                           │  
+  │                                                      │  
+  │ 1 / 11 · Enter inspect                               │  
+  └──────────────────────────────────────────────────────┘  
+  Coverage                                                  
+  j/k move  Enter inspect  e evidence  Tab panes  q quit    
+                                                            
+                                                            

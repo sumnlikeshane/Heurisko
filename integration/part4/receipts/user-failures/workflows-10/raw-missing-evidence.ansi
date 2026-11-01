@@ -1,0 +1,270 @@
+[?1049h[?25l[?25l  [1mHEURISKO[22m   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+  [1mpicocolors@1.1.1 / HISTORICAL / incomplete / Captured 2026-10-31T22:59:33Z                      [22m
+  [4m[1m1 Overview   [22m[24m2 Findings   3 Files   4 Source   5 AI   6 Coverage
+  Historical — online checks have not refreshed · i Identity
+  ┌─[1m > Overview / Outcomes [22m───────────────────────────────────────────────────────────── 1-17/27 ┐
+  │ [1mESTABLISHED OBSERVATION                                                                     [22m │
+  │ Source and artifact differences are recorded. Review their evidence and the unresolved       │
+  │ scope.                                                                                       │
+  │ ! Source conflict: competing immutable candidates                                            │
+  │                                                                                              │
+  │ [1mINDEPENDENT OUTCOMES                                                                        [22m │
+  │ Artifact integrity      Digest matched                                                       │
+  │ Source association      Conflicting claims                                                   │
+  │ Provenance              Not checked                                                          │
+  │ Correspondence          Unexplained                                                          │
+  │ Analysis completeness   Incomplete                                                           │
+  │ Policy result           Not evaluated                                                        │
+  │                                                                                              │
+  │ [1mPRIORITY FINDINGS                                                                           [22m │
+  │ Findings not evaluated / analysis unavailable.                                               │
+  │                                                                                              │
+  │ [1mCOVERAGE & UNKNOWNS                                                                         [22m │
+  └──────────────────────────────────────────────────────────────────────────────────────────────┘
+  SOURCE CONFLICT / inspect source claims
+  [1mTab[22m focus  [1mEnter[22m inspect  [1m1-6[22m sections  [1mi[22m identity  [1m?[22m help  [1mq[22m quit
+
+[?25l[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+  [1mpicocolors@1.1.1 / HISTORICAL / incomplete / Captured 2026-10-31T22:59:33Z                      [22m
+  [4m[1m1 Overview   [22m[24m2 Findings   3 Files   4 Source   5 AI   6 Coverage
+  Historical — online checks have not refreshed · i Identity
+  ┌─[1m > Overview / Outcomes [22m───────────────────────────────────────────────────────────── 1-17/27 ┐
+  │ [1mESTABLISHED OBSERVATION                                                                     [22m │
+  │ Source and artifact differences are recorded. Review their evidence and the unresolved       │
+  │ scope.                                                                                       │
+  │ ! Source conflict: competing immutable candidates                                            │
+  │                                                                                              │
+  │ [1mINDEPENDENT OUTCOMES                                                                        [22m │
+  │ Artifact integrity      Digest matched                                                       │
+  │ Source association      Conflicting claims                                                   │
+  │ Provenance              Not checked                                                          │
+  │ Correspondence          Unexplained                                                          │
+  │ Analysis completeness   Incomplete                                                           │
+  │ Policy result           Not evaluated                                                        │
+  │                                                                                              │
+  │ [1mPRIORITY FINDINGS                                                                           [22m │
+  │ Findings not evaluated / analysis unavailable.                                               │
+  │                                                                                              │
+  │ [1mCOVERAGE & UNKNOWNS                                                                         [22m │
+  └──────────────────────────────────────────────────────────────────────────────────────────────┘
+  Per-report UI state reset; report unchanged.
+  [1mTab[22m focus  [1mEnter[22m inspect  [1m1-6[22m sections  [1mi[22m identity  [1m?[22m help  [1mq[22m quit
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+  [1mpicocolors@1.1.1 / HISTORICAL / incomplete / Captured 2026-10-31T22:59:33Z                      [22m
+  1 Overview   2 Findings   3 Files   [4m[1m4 Source   [22m[24m5 AI   6 Coverage
+  Historical — online checks have not refreshed · i Identity
+  [1mSource                                                                                          [22m
+  [Candidates]  Provenance  Build
+  ┌─[1m > Source records [22m──── 1 ┐ ┌─[1m Source details [22m────────────────────────────────────────────────┐
+  │ [1m> Candidate 1 /         [22m │ │ [1mAssociation ambiguous — this candidate is not a verified       [22m │
+  │ [1m  6f0a4638348e          [22m │ │ [1mrelease baseline.                                              [22m │
+  │   ambiguous              │ │ Snapshot recorded; selected-target link could not be confirmed  │
+  │                          │ │ from available records.                                         │
+  │ 1 / 1 · Enter inspect    │ │ Candidate basis: See recorded candidate evidence; claim details │
+  └──────────────────────────┘ │ unavailable.                                                    │
+                               │ SOURCE CONFLICT: SOURCE_VERSION_LABEL_DIFFERS                   │
+                               │ Subdirectory: (repository root)                                 │
+                               │ New investigation with this target: n opens a new draft, then   │
+                               │ Review and Start. Edit the commit before Review to investigate  │
+                               │ another candidate. This report stays immutable.                 │
+                               │ Artifact check: integrity matched. Source claim: ambiguous.     │
+                               │ Digest agreement checks acquired artifact bytes against         │
+                               │ registry metadata, not source provenance.                       │
+                               │ 1-14 / 40  j/k scroll                                           │
+                               └─────────────────────────────────────────────────────────────────┘
+  SOURCE CONFLICT / inspect source claims
+  [1mv[22m subtabs  [1mEnter[22m inspect  [1me[22m evidence  [1mn[22m new target  [1mTab[22m panes  [1mq[22m quit
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+  [1mpicocolors@1.1.1 / HISTORICAL / incomplete / Captured 2026-10-31T22:59:33Z                      [22m
+  1 Overview   2 Findings   3 Files   [4m[1m4 Source   [22m[24m5 AI   6 Coverage
+  Historical — online checks have not refreshed · i Identity
+  [1mSource                                                                                          [22m
+  Source > Candidate 1 / 6f0a4638348e / Esc restores position
+  ┌─[1m > Candidate 1 / 6f0a4638348e [22m───────────────────────────────────────────────────────────────┐
+  │ [1mAssociation ambiguous — this candidate is not a verified release baseline.                  [22m │
+  │ Snapshot recorded; selected-target link could not be confirmed from available records.       │
+  │ Candidate basis: See recorded candidate evidence; claim details unavailable.                 │
+  │ SOURCE CONFLICT: SOURCE_VERSION_LABEL_DIFFERS                                                │
+  │ Subdirectory: (repository root)                                                              │
+  │ New investigation with this target: n opens a new draft, then Review and Start. Edit the     │
+  │ commit before Review to investigate another candidate. This report stays immutable.          │
+  │ Artifact check: integrity matched. Source claim: ambiguous. Digest agreement checks acquired │
+  │ artifact bytes against registry metadata, not source provenance.                             │
+  │ Provenance: not_checked; build stage skipped. No release binding follows from matching       │
+  │ version labels.                                                                              │
+  │ Next action: inspect the conflicting manifest values and release claims; choose another      │
+  │ immutable target if warranted.                                                               │
+  │ Repository: https://github.com/alexeyraspopov/picocolors                                     │
+  │ 1-14 / 24  j/k scroll                                                                        │
+  └──────────────────────────────────────────────────────────────────────────────────────────────┘
+  SOURCE CONFLICT / inspect source claims
+  [1mv[22m subtabs  [1mEnter[22m inspect  [1me[22m evidence  [1mn[22m new target  [1mTab[22m panes  [1mq[22m quit
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+  [1mpicocolors@1.1.1 / HISTORICAL / incomplete / Captured 2026-10-31T22:59:33Z                      [22m
+  1 Overview   2 Findings   3 Files   [4m[1m4 Source   [22m[24m5 AI   6 Coverage
+  Historical — online checks have not refreshed · i Identity
+  [1mSource                                                                                          [22m
+  Source > Candidate 1 / 6f0a4638348e / Esc restores position
+  ┌─[1m > Candidate 1 / 6f0a4638348e [22m───────────────────────────────────────────────────────────────┐
+  │ Snapshot recorded; selected-target link could not be confirmed from available records.       │
+  │ Candidate basis: See recorded candidate evidence; claim details unavailable.                 │
+  │ SOURCE CONFLICT: SOURCE_VERSION_LABEL_DIFFERS                                                │
+  │ Subdirectory: (repository root)                                                              │
+  │ New investigation with this target: n opens a new draft, then Review and Start. Edit the     │
+  │ commit before Review to investigate another candidate. This report stays immutable.          │
+  │ Artifact check: integrity matched. Source claim: ambiguous. Digest agreement checks acquired │
+  │ artifact bytes against registry metadata, not source provenance.                             │
+  │ Provenance: not_checked; build stage skipped. No release binding follows from matching       │
+  │ version labels.                                                                              │
+  │ Next action: inspect the conflicting manifest values and release claims; choose another      │
+  │ immutable target if warranted.                                                               │
+  │ Repository: https://github.com/alexeyraspopov/picocolors                                     │
+  │ Commit: 6f0a4638348ed20633d623ee973f9c9a96f65104                                             │
+  │ 2-15 / 24  j/k scroll                                                                        │
+  └──────────────────────────────────────────────────────────────────────────────────────────────┘
+  SOURCE CONFLICT / inspect source claims
+  [1mv[22m subtabs  [1mEnter[22m inspect  [1me[22m evidence  [1mn[22m new target  [1mTab[22m panes  [1mq[22m quit
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+  [1mpicocolors@1.1.1 / HISTORICAL / incomplete / Captured 2026-10-31T22:59:33Z                      [22m
+  1 Overview   2 Findings   3 Files   [4m[1m4 Source   [22m[24m5 AI   6 Coverage
+  Historical — online checks have not refreshed · i Identity
+  [1mSource                                                                                          [22m
+  Source > Candidate 1 / 6f0a4638348e / Esc restores position
+  ┌─[1m > Candidate 1 / 6f0a4638348e [22m───────────────────────────────────────────────────────────────┐
+  │ Candidate basis: See recorded candidate evidence; claim details unavailable.                 │
+  │ SOURCE CONFLICT: SOURCE_VERSION_LABEL_DIFFERS                                                │
+  │ Subdirectory: (repository root)                                                              │
+  │ New investigation with this target: n opens a new draft, then Review and Start. Edit the     │
+  │ commit before Review to investigate another candidate. This report stays immutable.          │
+  │ Artifact check: integrity matched. Source claim: ambiguous. Digest agreement checks acquired │
+  │ artifact bytes against registry metadata, not source provenance.                             │
+  │ Provenance: not_checked; build stage skipped. No release binding follows from matching       │
+  │ version labels.                                                                              │
+  │ Next action: inspect the conflicting manifest values and release claims; choose another      │
+  │ immutable target if warranted.                                                               │
+  │ Repository: https://github.com/alexeyraspopov/picocolors                                     │
+  │ Commit: 6f0a4638348ed20633d623ee973f9c9a96f65104                                             │
+  │ Snapshot: sha256:87646ed7f9b372d94da80ec298ef4ec6fc0c2a56bb60e0b325a9705037408c7c            │
+  │ 3-16 / 24  j/k scroll                                                                        │
+  └──────────────────────────────────────────────────────────────────────────────────────────────┘
+  SOURCE CONFLICT / inspect source claims
+  [1mv[22m subtabs  [1mEnter[22m inspect  [1me[22m evidence  [1mn[22m new target  [1mTab[22m panes  [1mq[22m quit
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+  [1mpicocolors@1.1.1 / HISTORICAL / incomplete / Captured 2026-10-31T22:59:33Z                      [22m
+  1 Overview   2 Findings   3 Files   [4m[1m4 Source   [22m[24m5 AI   6 Coverage
+  Historical — online checks have not refreshed · i Identity
+  [1mSource                                                                                          [22m
+  Source > Candidate 1 / 6f0a4638348e / Esc restores position
+  ┌─[1m > Candidate 1 / 6f0a4638348e [22m───────────────────────────────────────────────────────────────┐
+  │ SOURCE CONFLICT: SOURCE_VERSION_LABEL_DIFFERS                                                │
+  │ Subdirectory: (repository root)                                                              │
+  │ New investigation with this target: n opens a new draft, then Review and Start. Edit the     │
+  │ commit before Review to investigate another candidate. This report stays immutable.          │
+  │ Artifact check: integrity matched. Source claim: ambiguous. Digest agreement checks acquired │
+  │ artifact bytes against registry metadata, not source provenance.                             │
+  │ Provenance: not_checked; build stage skipped. No release binding follows from matching       │
+  │ version labels.                                                                              │
+  │ Next action: inspect the conflicting manifest values and release claims; choose another      │
+  │ immutable target if warranted.                                                               │
+  │ Repository: https://github.com/alexeyraspopov/picocolors                                     │
+  │ Commit: 6f0a4638348ed20633d623ee973f9c9a96f65104                                             │
+  │ Snapshot: sha256:87646ed7f9b372d94da80ec298ef4ec6fc0c2a56bb60e0b325a9705037408c7c            │
+  │ Build context: sha256:6383b97048e27e8ab0a0cfeecce3bc80b06ebf180528085638aacc6bd3ca0a04       │
+  │ 4-17 / 24  j/k scroll                                                                        │
+  └──────────────────────────────────────────────────────────────────────────────────────────────┘
+  SOURCE CONFLICT / inspect source claims
+  [1mv[22m subtabs  [1mEnter[22m inspect  [1me[22m evidence  [1mn[22m new target  [1mTab[22m panes  [1mq[22m quit
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+  [1mpicocolors@1.1.1 / HISTORICAL / incomplete / Captured 2026-10-31T22:59:33Z                      [22m
+  1 Overview   2 Findings   3 Files   [4m[1m4 Source   [22m[24m5 AI   6 Coverage
+  Historical — online checks have not refreshed · i Identity
+  [1mSource                                                                                          [22m
+  Source > Candidate 1 / 6f0a4638348e / Esc restores position
+  ┌─[1m > Candidate 1 / 6f0a4638348e [22m───────────────────────────────────────────────────────────────┐
+  │ Subdirectory: (repository root)                                                              │
+  │ New investigation with this target: n opens a new draft, then Review and Start. Edit the     │
+  │ commit before Review to investigate another candidate. This report stays immutable.          │
+  │ Artifact check: integrity matched. Source claim: ambiguous. Digest agreement checks acquired │
+  │ artifact bytes against registry metadata, not source provenance.                             │
+  │ Provenance: not_checked; build stage skipped. No release binding follows from matching       │
+  │ version labels.                                                                              │
+  │ Next action: inspect the conflicting manifest values and release claims; choose another      │
+  │ immutable target if warranted.                                                               │
+  │ Repository: https://github.com/alexeyraspopov/picocolors                                     │
+  │ Commit: 6f0a4638348ed20633d623ee973f9c9a96f65104                                             │
+  │ Snapshot: sha256:87646ed7f9b372d94da80ec298ef4ec6fc0c2a56bb60e0b325a9705037408c7c            │
+  │ Build context: sha256:6383b97048e27e8ab0a0cfeecce3bc80b06ebf180528085638aacc6bd3ca0a04       │
+  │ Claim bytes unavailable: ev_ec5b0358b13edb689c4ced2c / MISSING_BLOB.                         │
+  │ 5-18 / 24  j/k scroll                                                                        │
+  └──────────────────────────────────────────────────────────────────────────────────────────────┘
+  SOURCE CONFLICT / inspect source claims
+  [1mv[22m subtabs  [1mEnter[22m inspect  [1me[22m evidence  [1mn[22m new target  [1mTab[22m panes  [1mq[22m quit
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+  [1mpicocolors@1.1.1 / HISTORICAL / incomplete / Captured 2026-10-31T22:59:33Z                      [22m
+  1 Overview   2 Findings   3 Files   [4m[1m4 Source   [22m[24m5 AI   6 Coverage
+  Raw retained evidence · Esc returns to its origin
+  [1mEvidence                                                                                        [22m
+  Source > ev_ec5b0358b13edb689c4ced2c / Esc restores position
+  [━━━━────────────────────────────] Reading evidence / indeterminate
+  ┌─[1m > Raw citation / external [22m──────────────────────────────────────────────────────────────────┐
+  │ [1mev_ec5b0358b13edb689c4ced2c                                                                 [22m │
+  │ EXTERNAL / source-claim-0-user-override                                                      │
+  │ Reading bounded, hash-checked bytes…                                                         │
+  │                                                                                              │
+  │                                                                                              │
+  │ Method: separate-source-claim-v1                                                             │
+  │ Availability: retained                                                                       │
+  │ Verification: not_checked                                                                    │
+  │ Content digest: sha256:b2addd4ca81139763fdfbfd7f69e721222671a26bed6ac80689158f6f9a82891      │
+  │ Limitation: Unverified candidate claim; tag observations are time-bound.                     │
+  │ 1-10 / 10                                                                                    │
+  └──────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+
+  Reading bounded, hash-checked evidence…
+  [1mj/k[22m scroll  [1mTab[22m citation  [1ms[22m side  [1mp/b[22m page  [1mEsc[22m return  [1mq[22m quit
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO[22m   H Home    [4m[1mI Investigations    [22m[24m M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────
+  [1mpicocolors@1.1.1 / HISTORICAL / incomplete / Captured 2026-10-31T22:59:33Z                      [22m
+  1 Overview   2 Findings   3 Files   [4m[1m4 Source   [22m[24m5 AI   6 Coverage
+  Raw retained evidence · Esc returns to its origin
+  [1mEvidence                                                                                        [22m
+  Source > ev_ec5b0358b13edb689c4ced2c / Esc restores position
+  ┌─[1m > Raw citation / external [22m──────────────────────────────────────────────────────────────────┐
+  │ [1mev_ec5b0358b13edb689c4ced2c                                                                 [22m │
+  │ EXTERNAL / source-claim-0-user-override                                                      │
+  │ METADATA ONLY: MISSING_BLOB                                                                  │
+  │                                                                                              │
+  │                                                                                              │
+  │ Method: separate-source-claim-v1                                                             │
+  │ Availability: retained                                                                       │
+  │ Verification: not_checked                                                                    │
+  │ Content digest: sha256:b2addd4ca81139763fdfbfd7f69e721222671a26bed6ac80689158f6f9a82891      │
+  │ Limitation: Unverified candidate claim; tag observations are time-bound.                     │
+  │ 1-10 / 10                                                                                    │
+  └──────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+
+
+  evidence
+  [1mj/k[22m scroll  [1mTab[22m citation  [1ms[22m side  [1mp/b[22m page  [1mEsc[22m return  [1mq[22m quit
+

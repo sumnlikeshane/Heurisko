@@ -1,0 +1,26 @@
+  HEURISKO   H Home    I Investigations     M Monitoring                                            
+  ────────────────────────────────────────────────────────────────────────────────────────────────  
+                                                                                                    
+       ┌─ > New investigation ─────────────────────────────────────────────────────── 1 / 2 ┐       
+       │   Input (Ctrl+T)  npm   [ Local archive ]                                          │       
+       │                                                                                    │       
+       │ Archive path  [editing]                                                            │       
+       │ > examples/s2/current/inputs/picocolors-1.1.1.local-inert-mutation.tgz             │       
+       │ Source repository                                                                  │       
+       │   https://github.com/alexeyraspopov/picocolors                                     │       
+       │ Full commit                                                                        │       
+       │   6f0a4638348ed20633d623ee973f9c9a96f65104                                         │       
+       │ Subdirectory                                                                       │       
+       │   Repository root if empty                                                         │       
+       │ Source archive (optional)                                                          │       
+       │   examples/s2/current/inputs/picocolors-source-6f0a4638348ed20633d623ee973f9c9a96… │       
+       │ AI disabled / runtime unavailable · source selection is not provenance             │       
+       │  Load retained example                                                             │       
+       │  Review target                                                                     │       
+       │                                                                                    │       
+       └────────────────────────────────────────────────────────────────────────────────────┘       
+                                                                                                    
+  Local inert mutation target loaded; no investigation has run.                                     
+  Type to edit  Tab next  Ctrl+T type  Enter review  Esc back                                       
+                                                                                                    
+                                                                                                    

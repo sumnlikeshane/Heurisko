@@ -1,0 +1,40 @@
+  HEURISKO   H Home    I Investigations     M Monitoring                                                                                                        
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+  picocolors@1.1.1 / LOCAL INPUT / HISTORICAL / complete / Captured 2026-10-31T21:48:41Z                                                                        
+  1 Overview   2 Findings   3 Files   4 Source   5 AI   6 Coverage                                                                                              
+  Historical — online checks have not refreshed · i Identity                                                                                                    
+  Coverage                                                                                                                                                      
+  Recorded scope / stage outcomes / unresolved work                                                                                                             
+  ┌─ > Coverage ─────────────────────────── 11 ┐ ┌─ Coverage details ────────────────────────────────────────────────────────────────────────────────────────┐  
+  │ > Measured coverage and stages             │ │ Artifact files recorded:                                                                                  │  
+  │                                            │ │ 8                                                                                                         │  
+  │   resolve artifact                         │ │                                                                                                           │  
+  │   complete                                 │ │ Source files recorded:                                                                                    │  
+  │                                            │ │ 19                                                                                                        │  
+  │   acquire                                  │ │                                                                                                           │  
+  │   complete                                 │ │ Compared change records:                                                                                  │  
+  │                                            │ │ 20                                                                                                        │  
+  │   source                                   │ │                                                                                                           │  
+  │   complete                                 │ │ Analyzed bytes recorded:                                                                                  │  
+  │                                            │ │ 39726                                                                                                     │  
+  │   provenance                               │ │                                                                                                           │  
+  │   skipped                                  │ │ Skipped bytes:                                                                                            │  
+  │                                            │ │ 0                                                                                                         │  
+  │   inventory                                │ │                                                                                                           │  
+  │   complete                                 │ │ Unsupported bytes:                                                                                        │  
+  │                                            │ │ 0                                                                                                         │  
+  │   build                                    │ │                                                                                                           │  
+  │   skipped                                  │ │ Raw scope complete:                                                                                       │  
+  │                                            │ │ true                                                                                                      │  
+  │   compare                                  │ │ These are recorded scope counts; universal coverage denominator: Unknown.                                 │  
+  │   complete                                 │ │ 1-21 / 21                                                                                                 │  
+  │                                            │ └───────────────────────────────────────────────────────────────────────────────────────────────────────────┘  
+  │   persist                                  │                                                                                                                
+  │   complete                                 │                                                                                                                
+  │                                            │                                                                                                                
+  │ 1 / 11 · Enter inspect                     │                                                                                                                
+  └────────────────────────────────────────────┘                                                                                                                
+  Coverage                                                                                                                                                      
+  j/k move  Enter inspect  e evidence  Tab panes  / filter  ? help  q quit                                                                                      
+                                                                                                                                                                
+                                                                                                                                                                

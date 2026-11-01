@@ -1,0 +1,20 @@
+  HEURISKO                                                  
+   H Home    I Investigations     M Monitoring              
+  ────────────────────────────────────────────────────────  
+  picocolors@1.1.1 / LOCAL INPUT / HISTORICAL / complete …  
+  1 Ov  2 Find  3 Files  4 Src  5 AI  6 Scope               
+  Raw retained evidence · Esc returns to its origin         
+  Evidence                                                  
+  Findings > ev_8e5679afc3b6d3667eb09413 / Esc restores p…  
+  ┌─ > Raw citation / artifact ──────────────────────────┐  
+  │ BOTH / package.json                                  │  
+  │ RAW utf8: [585, 611) / recorded [585, 611)           │  
+  │ Window truncated: false / total blob 618 bytes       │  
+  │                                                      │  
+  │ "HEURISKO_INERT_TEST_ONLY"                           │  
+  │ 2-6 / 17  j/k scroll                                 │  
+  └──────────────────────────────────────────────────────┘  
+  evidence                                                  
+  j/k scroll  Tab citation  s side  p/b page  q quit        
+                                                            
+                                                            

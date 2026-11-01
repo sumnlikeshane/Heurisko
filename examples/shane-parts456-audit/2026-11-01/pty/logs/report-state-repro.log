@@ -1,0 +1,54 @@
+Traceback (most recent call last):
+  File "/tmp/heurisko-parts456-pty.py", line 28, in <module>
+    runpy.run_path(str(repo/'packages/tui/tests'/script),run_name='__main__')
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen runpy>", line 294, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "/tmp/heurisko-report-state-repro.py", line 7, in <module>
+    s.wait('HISTORICAL');s.send('x',.4);s.send('2',.3);s.send('z',.3);s.wait('severity: high');s.capture(cap/'original-filter');s.send('H',.3);s.send('n',.3);s.send('\x14',.3);s.wait('[ Local archive ]')
+                                                                      ~~~~~~^^^^^^^^^^^^^^^^^^
+  File "<workspace>/packages/tui/tests/pty_session.py", line 42, in wait
+    assert text in self.frame(),repr(text)+' missing\n'+self.frame()
+           ^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'severity: high' missing
+  HEURISKO   H Home    I Investigations     M Monitoring                                                                                                        
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+  picocolors@1.1.1 / LOCAL INPUT / HISTORICAL / complete / Captured 2026-10-31T21:48:41Z                                                                        
+  1 Overview   2 Findings   3 Files   4 Source   5 AI   6 Coverage                                                                                              
+  Historical — online checks have not refreshed · i Identity                                                                                                    
+  ┌─ > Findings ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐  
+  │ No records match this filter. / then Ctrl+U clears it.                                                                                                   │  
+  │                                                                                                                                                          │  
+  │                                                                                                                                                          │  
+  │ 1-1 / 1                                                                                                                                                  │  
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘  
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+  Findings                                                                                                                                                      
+  j/k move  Enter inspect  e evidence  Tab panes  / filter  ? help  q quit                                                                                      
+                                                                                                                                                                
+                                                                                                                                                                

@@ -1,0 +1,40 @@
+  HEURISKO   H Home    I Investigations     M Monitoring                                                                                                        
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+  picocolors@1.1.1 / HISTORICAL / incomplete / Captured 2026-10-31T22:59:33Z                                                                                    
+  1 Overview   2 Findings   3 Files   4 Source   5 AI   6 Coverage                                                                                              
+  Historical — online checks have not refreshed · i Identity                                                                                                    
+  Source                                                                                                                                                        
+  [Candidates]  Provenance  Build                                                                                                                               
+  ┌─ > Source records ───────────── 1 ┐ ┌─ Source details ─────────────────────────────────────────────┐ ┌─ Supporting evidence ─────────────────────────────┐  
+  │ > Candidate 1 / 6f0a4638348e      │ │ Repository:                                                  │ │ Citations / Up–Down selects                       │  
+  │   ambiguous                       │ │ https://github.com/alexeyraspopov/picocolors                 │ │ > ev_ec5b0358b13edb689c4ced2c                     │  
+  │                                   │ │                                                              │ │ ev_d92f043e33ac7f6993c2b35d                       │  
+  │ 1 / 1 · Enter inspect             │ │ Commit:                                                      │ │ ev_065b4580538f2a13348b79ac                       │  
+  └───────────────────────────────────┘ │ 6f0a4638348ed20633d623ee973f9c9a96f65104                     │ │ ev_f8a730b1133122753c4ae1ce                       │  
+                                        │                                                              │ │ ev_276b463ab652843042b81668                       │  
+                                        │ Subdirectory:                                                │ │ ev_2e14b499a02edfc5f8403706                       │  
+                                        │                                                              │ │ ev_a4390f0100c665fa0f521a21                       │  
+                                        │                                                              │ │ ev_923052180287909e51ae0c4c                       │  
+                                        │ Association:                                                 │ │                                                   │  
+                                        │ ambiguous                                                    │ │ ev_ec5b0358b13edb689c4ced2c                       │  
+                                        │                                                              │ │ EXTERNAL / source-claim-0-user-override           │  
+                                        │ Snapshot:                                                    │ │ RAW utf8: [0, 171) / recorded [0, 171)            │  
+                                        │ sha256:87646ed7f9b372d94da80ec298ef4ec6fc0c2a56bb60e0b325a97 │ │ Window truncated: false / total blob 171 bytes    │  
+                                        │ 05037408c7c                                                  │ │                                                   │  
+                                        │                                                              │ │ {"kind":"user-override","repositoryUrl":"https:// │  
+                                        │ Build context:                                               │ │ github.com/alexeyraspopov/picocolors","commit":"6 │  
+                                        │ sha256:6383b97048e27e8ab0a0cfeecce3bc80b06ebf180528085638aac │ │ f0a4638348ed20633d623ee973f9c9a96f65104","subdire │  
+                                        │ c6bd3ca0a04                                                  │ │ ctory":"","captures":[]}                             
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                

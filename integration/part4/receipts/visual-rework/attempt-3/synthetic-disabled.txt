@@ -1,0 +1,35 @@
+  HEURISKO   H Home    I Investigations     M Monitoring                                                     SYNTHETIC  
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+  F0.tgz / LOCAL INPUT / HISTORICAL / incomplete / Captured 2026-10-31T15:00:00Z                                        
+  1 Overview   2 Findings   3 Files   4 Source   5 AI   6 Coverage                                                      
+  Raw retained evidence · Esc returns to its origin                                                                     
+  Evidence                                                                                                              
+  Files > ev_5d18242396eafe25d802876a / Esc restores position                                                           
+  ┌─ > Raw citation / artifact ──────────────────────────────────────────────────────────────────────────────────────┐  
+  │ ev_5d18242396eafe25d802876a                                                                                      │  
+  │ ARTIFACT / package/unsafe\u001b[2J\u202e.txt                                                                     │  
+  │ RAW base64: [0, 4) / recorded [0, 4)                                                                             │  
+  │ Window truncated: false / total blob 4 bytes                                                                     │  
+  │                                                                                                                  │  
+  │ BASE64 bytes: AAH/Gw==                                                                                           │  
+  │                                                                                                                  │  
+  │ Method: authored-rendering-test                                                                                  │  
+  │ Availability: retained                                                                                           │  
+  │ Verification: Not recorded                                                                                       │  
+  │ Content digest: sha256:5d3a236e6ad38ddc0e9f59335d36c817d31eefd35d896fbaba4df9d9654d3197                          │  
+  │ Member: ev_5d18242396eafe25d802876a                                                                              │  
+  │ Content ref: sha256:5d3a236e6ad38ddc0e9f59335d36c817d31eefd35d896fbaba4df9d9654d3197                             │  
+  │ Limitation: SYNTHETIC rendering fixture                                                                          │  
+  │ 1-14 / 14                                                                                                        │  
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘  
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+  evidence                                                                                                              
+  j/k scroll  Tab citation  s side  p/b page  Esc return  q quit                                                        
+                                                                                                                        
+                                                                                                                        

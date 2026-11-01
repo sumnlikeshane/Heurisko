@@ -1,0 +1,106 @@
+TAP version 13
+# Subtest: actual canonical local fixture resolves hash-bound lifecycle addition and removal without changing evidence
+ok 1 - actual canonical local fixture resolves hash-bound lifecycle addition and removal without changing evidence
+  ---
+  duration_ms: 50.187583
+  type: 'test'
+  ...
+# Subtest: the reviewed 55240e9 deterministic consumer accepts the real retained addition through the G0 adapter
+ok 2 - the reviewed 55240e9 deterministic consumer accepts the real retained addition through the G0 adapter
+  ---
+  duration_ms: 1239.650042
+  type: 'test'
+  ...
+# Subtest: actual EvidenceStore missing and corrupt delta bytes remain unresolved without supplying content
+ok 3 - actual EvidenceStore missing and corrupt delta bytes remain unresolved without supplying content
+  ---
+  duration_ms: 63.055375
+  type: 'test'
+  ...
+# Subtest: foreign pointer, forged member link, span mismatch and false absence cannot establish script direction
+ok 4 - foreign pointer, forged member link, span mismatch and false absence cannot establish script direction
+  ---
+  duration_ms: 93.818958
+  type: 'test'
+  ...
+# Subtest: duplicate-key JSON and invalid UTF8 are rejected for deltas and linked original manifests
+ok 5 - duplicate-key JSON and invalid UTF8 are rejected for deltas and linked original manifests
+  ---
+  duration_ms: 48.971333
+  type: 'test'
+  ...
+# Subtest: both-null and canonically equal-value pseudo-deltas are rejected before any member resolution
+ok 6 - both-null and canonically equal-value pseudo-deltas are rejected before any member resolution
+  ---
+  duration_ms: 74.125792
+  type: 'test'
+  ...
+# Subtest: a delta referenced by another change is unresolved even when its content hash exists in the store
+ok 7 - a delta referenced by another change is unresolved even when its content hash exists in the store
+  ---
+  duration_ms: 7.420375
+  type: 'test'
+  ...
+# Subtest: individual delta/member byte bounds are enforced without passing oversized text to intelligence
+ok 8 - individual delta/member byte bounds are enforced without passing oversized text to intelligence
+  ---
+  duration_ms: 12.805334
+  type: 'test'
+  ...
+# Subtest: record count and total read budgets remain bounded even when every content read fails after consuming its allowance
+ok 9 - record count and total read budgets remain bounded even when every content read fails after consuming its allowance
+  ---
+  duration_ms: 61.415625
+  type: 'test'
+  ...
+# Subtest: pre-cancel, cancellation during a read, and an expired deadline never call the intelligence function
+ok 10 - pre-cancel, cancellation during a read, and an expired deadline never call the intelligence function
+  ---
+  duration_ms: 106.018875
+  type: 'test'
+  ...
+# Subtest: caller mutation during a delayed read cannot replace the bundle, options or resolved retained bytes
+ok 11 - caller mutation during a delayed read cannot replace the bundle, options or resolved retained bytes
+  ---
+  duration_ms: 53.137625
+  type: 'test'
+  ...
+# Subtest: exact member spans in the canonical fixture are independently reproducible by the strict scanner
+ok 12 - exact member spans in the canonical fixture are independently reproducible by the strict scanner
+  ---
+  duration_ms: 25.994041
+  type: 'test'
+  ...
+# Subtest: host selector defaults to the reviewed identifier and explicit off is unavailable
+ok 13 - host selector defaults to the reviewed identifier and explicit off is unavailable
+  ---
+  duration_ms: 33.654875
+  type: 'test'
+  ...
+# Subtest: unknown host selector rejects before acquisition or store creation
+ok 14 - unknown host selector rejects before acquisition or store creation
+  ---
+  duration_ms: 1.171625
+  type: 'test'
+  ...
+# Subtest: explicit trusted injection takes precedence over an unknown host selector
+ok 15 - explicit trusted injection takes precedence over an unknown host selector
+  ---
+  duration_ms: 0.852708
+  type: 'test'
+  ...
+# Subtest: configured module has bounded bridge and identities without creating evidence state
+ok 16 - configured module has bounded bridge and identities without creating evidence state
+  ---
+  duration_ms: 9.994458
+  type: 'test'
+  ...
+1..16
+# tests 16
+# suites 0
+# pass 16
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 2016.248917

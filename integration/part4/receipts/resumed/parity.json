@@ -1,0 +1,22 @@
+{
+  "observedAt": "2026-10-31T22:03:32.777Z",
+  "reportId": "report_7b46cdea60ae3108dd8c4b21",
+  "reportContentRef": "sha256:f0c624713467072d1f5b2bf5d521fecfa2748593f6b203936f6532ba98c24df3",
+  "cliJSONEqualsStoredReport": true,
+  "cliExit": 0,
+  "nonTTYDefaultHelp": true,
+  "nonTTYTuiHistoricalSummary": true,
+  "invalidTuiExit": 3,
+  "currentEngineBinding": true,
+  "citation": {
+    "id": "ev_8e5679afc3b6d3667eb09413",
+    "member": "ev_fac6fd5699ff0c83dd8be093",
+    "contentRef": "sha256:f47239397b7822519c35144a37158b0ff4bb7eeddf325e8b518774ab6be02c61",
+    "recordedRange": {
+      "startByte": 585,
+      "endByte": 611
+    },
+    "exactInertBytes": true
+  },
+  "noModel": true
+}

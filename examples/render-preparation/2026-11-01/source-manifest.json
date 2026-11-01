@@ -1,0 +1,101 @@
+{
+  "version": "heurisko-render-preparation-source-v1",
+  "scope": "Exact prepared application/configuration/test files plus admitted dependency manifests. Existing engine source is preserved; source hashes do not establish deployment.",
+  "files": [
+    {
+      "path": ".dockerignore",
+      "bytes": 860,
+      "sha256": "f982a48547ea17d8ac9e1e79850ffd97365cc2ad7b3584a080d271b5ea646317"
+    },
+    {
+      "path": "Dockerfile.render",
+      "bytes": 1617,
+      "sha256": "7736f7d0ca376d1dc42754f742802c9fa860e90cb12fc99a88d24f58e422a7e0"
+    },
+    {
+      "path": "apps/web/build.mjs",
+      "bytes": 5041,
+      "sha256": "00e9dead706c8c18b7ec4b23a9bd447589fc717e21265a7ff73fbc9bf003a102"
+    },
+    {
+      "path": "apps/web/server/hosted.ts",
+      "bytes": 2107,
+      "sha256": "3e17095a01ccd5454ac3fd7ff41e9a558029f3a9e2ebc11c5c115829aa97870e"
+    },
+    {
+      "path": "apps/web/server/main.ts",
+      "bytes": 2497,
+      "sha256": "ab7c108fe0f0bf7987c64d3b50daa46c0f0875626c8b4f0bddfe220410c568e5"
+    },
+    {
+      "path": "apps/web/server/service.ts",
+      "bytes": 16087,
+      "sha256": "26af46f92d27472fbfc98c10458f0e374896cfee5b65a556cad41956571acf92"
+    },
+    {
+      "path": "apps/web/src/api.ts",
+      "bytes": 6658,
+      "sha256": "7510db1d96a72ff28703a07c8dd7690f2c0daff0da4368c3558aac25f02dd62d"
+    },
+    {
+      "path": "apps/web/src/app.tsx",
+      "bytes": 24945,
+      "sha256": "5387afc66adcc4f3cb10860ba2c671740a0b17358bb56f571894e699122889d5"
+    },
+    {
+      "path": "apps/web/src/home.tsx",
+      "bytes": 5653,
+      "sha256": "5cf2f541e1eee8344290e634f9ac612bd8695c76d60d2fddc1813baf7967eccb"
+    },
+    {
+      "path": "apps/web/src/index.html",
+      "bytes": 475,
+      "sha256": "fe99f5232361cb0e8e73aa973a3be3a2a2c0cd522915a85a66682f5b94226ca4"
+    },
+    {
+      "path": "apps/web/src/investigate.tsx",
+      "bytes": 31756,
+      "sha256": "b83e1e0d5ba5168a8b61acea7ab9110f9f7f4bc007a016e0b80703439550a376"
+    },
+    {
+      "path": "apps/web/src/style.css",
+      "bytes": 30922,
+      "sha256": "965818dcfa5a4d9daad78081d38f0ca0417d196797838a3221271d4e7cc481e7"
+    },
+    {
+      "path": "apps/web/tests/hosted.test.mjs",
+      "bytes": 7843,
+      "sha256": "917a6d3a739ae928a032bb26c1499ad395ab2d6a2a8ae9fb02d409021c3e47d5"
+    },
+    {
+      "path": "docs/Render Deployment.md",
+      "bytes": 5596,
+      "sha256": "1a45682e82941fd4256969bc657c1593404ae6c521ef7294c22153b9045d2bb7"
+    },
+    {
+      "path": "package.json",
+      "bytes": 1353,
+      "sha256": "4dabe0a81333f90f72b5142fe4dd87ff638e45479f9c9b7f7956da73a172c4cf"
+    },
+    {
+      "path": "pnpm-lock.yaml",
+      "bytes": 22412,
+      "sha256": "ec3bda3dd8f896a451a88902dbb797fbc20c8c238ddb03aacbf0107353f4c105"
+    },
+    {
+      "path": "pnpm-workspace.yaml",
+      "bytes": 40,
+      "sha256": "316f2a0038d464f103abd64d7338dacefc35d0d09e57c8296defa0d5ddb898fe"
+    },
+    {
+      "path": "render.yaml",
+      "bytes": 376,
+      "sha256": "96f2beda1183bd8ed3d04da943c828f6b8e25c3e17572c122ef42d4eeac6e8bf"
+    },
+    {
+      "path": "requirements-contracts.txt",
+      "bytes": 736,
+      "sha256": "f589c32497553a4b8c4456450870c523d892b7df25feaf4c2805a98859034e2b"
+    }
+  ]
+}

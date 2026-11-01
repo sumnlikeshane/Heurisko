@@ -1,0 +1,20 @@
+{
+  "scope": "Actual pre-repair compile and existing Source regression tests; tool-output summary, not reconstructed raw TAP log",
+  "commands": [
+    {
+      "command": "PATH=\"$PWD/.tooling/node-v22.23.4/node-v22.23.4-darwin-arm64/bin:$PATH\" node_modules/.bin/tsc -p packages/tui/tsconfig.json",
+      "exitCode": 0
+    },
+    {
+      "command": "PATH=\"$PWD/.tooling/node-v22.23.4/node-v22.23.4-darwin-arm64/bin:$PATH\" node --test packages/tui/tests/user-failures.test.mjs",
+      "exitCode": 1,
+      "tests": 4,
+      "passed": 2,
+      "failed": 2,
+      "failures": [
+        "source explanation resolves exact bound version values, compared candidate, basis, rate limits and root: missing Association ambiguous",
+        "missing evidence cannot supply a displayed version comparison or claim of compared selection: MISSING_BLOB reason omitted"
+      ]
+    }
+  ]
+}

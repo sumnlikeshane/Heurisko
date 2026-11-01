@@ -1,0 +1,200 @@
+[
+  {
+    "path": "AGENTS.md",
+    "startingSHA256": "e5939153ffa8ebcbf51f9642006590f3e137bd23308806acffd5b46faf72622f",
+    "currentSHA256": "0a7125291b535223f108a34178dfd9a7bfe9da8f57edebb16edd01c66fb6d0ec",
+    "scope": "Audit section/edits only; concurrent entry updates preserved."
+  },
+  {
+    "path": "docs/README.md",
+    "startingSHA256": "1c3c731aa84bf1ed6cb97eb8b5d864a1a59479007d537b837e73c9447bd8a1ef",
+    "currentSHA256": "2815f9fed287e9e6a81165e3ba8a29c4883ff5588904c03208bc12dfefd3e0d1",
+    "scope": "Audit section/edits only; concurrent entry updates preserved."
+  },
+  {
+    "path": "docs/Shane Implementation Plan.md",
+    "startingSHA256": "283b111abf7d19d255bc1abc0c43232f898588c7396603fcbed232e86b3eea38",
+    "currentSHA256": "cc3d9b7d5bca80d04356ad9e18d1199d06eb8c5040c95f8156e10b81b2b89122",
+    "scope": "Audit edits over existing user implementation; baseline is not this audit\u2019s authorship."
+  },
+  {
+    "path": "docs/Part 4 Integration Readiness Report.md",
+    "startingSHA256": "a0690983de96defa2d51dde98548b7a660755927b09e99e20a17054e1f87675f",
+    "currentSHA256": "f12d0a7394f3f51a7d1aa3179b934d2eb9227ea568d050f0fc52fc0be3a59f59",
+    "scope": "Audit edits over existing user implementation; baseline is not this audit\u2019s authorship."
+  },
+  {
+    "path": "docs/Part 4 TUI Visual Audit.md",
+    "startingSHA256": "2b1c15953367a598e2072437e480595553b27f07b32225d1b37931b6881cbe6b",
+    "currentSHA256": "e4c3b0e927e2d475cc47018289342794cbedfac841ce553b0417117b8fbf2758",
+    "scope": "Audit edits over existing user implementation; baseline is not this audit\u2019s authorship."
+  },
+  {
+    "path": "docs/CLI Reference.md",
+    "startingSHA256": "43321d0c6238858191e24019e43610899d602286833d44de5d8dd3c18ccfdd99",
+    "currentSHA256": "a0c027f39629996b32f89c96d4fab2a4abe0d99cf2e5e449f1f4b3032efd2f70",
+    "scope": "Audit edits over existing user implementation; baseline is not this audit\u2019s authorship."
+  },
+  {
+    "path": "docs/WEB_CONTINUATION.md",
+    "startingSHA256": "01f7a2e45ce6dd3eceb90050d1e4fdd4c2ba3037544aa90181b1b281aeb4ab7a",
+    "currentSHA256": "cc0e4a1d90228165187aa50a768d06ae46c72a9ac63af82589de4b0eb37d209b",
+    "scope": "Audit edits over existing user implementation; baseline is not this audit\u2019s authorship."
+  },
+  {
+    "path": "docs/Shane Parts 4\u20136 Audit.md",
+    "startingSHA256": null,
+    "currentSHA256": "a2d3f7048018ce1f15b28b05c434fc053984deaaaf6a45befa6c21c4adb78f9e",
+    "scope": "New audit file."
+  },
+  {
+    "path": "apps/web/README.md",
+    "startingSHA256": "8634b0b10bf35a32915e6a389d2cf77aad8356c6856d71f64e2eaff2021288e0",
+    "currentSHA256": "b9ab1148b3abbf74bdc80f780c8248e03d50f83d46f3ec53482d01a61678b2cc",
+    "scope": "Audit edits over existing user implementation; baseline is not this audit\u2019s authorship."
+  },
+  {
+    "path": "packages/tui/README.md",
+    "startingSHA256": "f31baef93f19c7cd9ec71fd1451487272865daf6b46763d60d5fcbda16bb2a5a",
+    "currentSHA256": "1cd3fa38cc7bbff7876bdbd06ca25306fb6ddbb9d48d726499137f8a96708b97",
+    "scope": "Audit edits over existing user implementation; baseline is not this audit\u2019s authorship."
+  },
+  {
+    "path": "package.json",
+    "startingSHA256": "5d45eb7becaa26f8bac977514b8f8d29da0f200d724311373e1d4619e03535dc",
+    "currentSHA256": "4dabe0a81333f90f72b5142fe4dd87ff638e45479f9c9b7f7956da73a172c4cf",
+    "scope": "Only test:audit adds cli-boundary.test.mjs; other package changes pre-existed."
+  },
+  {
+    "path": "packages/core/src/storage.ts",
+    "startingSHA256": "e8a8bf14be4fa3d8b7c074ef0e47a0ad8750031b1c8c7092b1f6811792d4decf",
+    "currentSHA256": "a3edfc75a433681dfe0b21233a99f6f9a3e8e630748b0048d4403d64c91d311a",
+    "scope": "Audit edits over existing user implementation; baseline is not this audit\u2019s authorship."
+  },
+  {
+    "path": "packages/core/src/validation.ts",
+    "startingSHA256": "ad1f28916825500c5a5d7ef6225cace71271e58cbad8f0b5a4caf613504f9f5d",
+    "currentSHA256": "f50054a4384705225ea8969c5fe69dc804b852115feac65956e781db166fdb79",
+    "scope": "Audit edits over existing user implementation; baseline is not this audit\u2019s authorship."
+  },
+  {
+    "path": "packages/core/tests/cli-boundary.test.mjs",
+    "startingSHA256": null,
+    "currentSHA256": "784c6715068fdd581da6cb3bc960e50d9f1908eb0697bb174d15c310cf7b4b03",
+    "scope": "New audit file."
+  },
+  {
+    "path": "packages/cli/src/index.ts",
+    "startingSHA256": "18cea6b9b4be239fd8cb75045387e994b91aaffc8d0b9dc5f11f41dd74d62c0b",
+    "currentSHA256": "4d52af0de26c02cda7c6b9b4e48550a34e85ff198992adeda532b4c6980617ff",
+    "scope": "Audit edits over existing user implementation; baseline is not this audit\u2019s authorship."
+  },
+  {
+    "path": "integration/part4/src/report-reader.ts",
+    "startingSHA256": "59b0ab64566dccbc7dd8985deb0a06fe01343b9ac33ae4a099c1cb8c35918f2b",
+    "currentSHA256": "be14c7131ef021c76ae0f1afe65372fdab5981838d8f475290a373a6f89a9359",
+    "scope": "Audit edits over existing user implementation; baseline is not this audit\u2019s authorship."
+  },
+  {
+    "path": "integration/part4/tests/readiness.test.mjs",
+    "startingSHA256": "74d9de8d605b9901a50f1cd74be2024da9601cc483af3d4dc4cf0271079e5cb4",
+    "currentSHA256": "2d267194b1ce9df159524e889bbf539f80d47b7e58e671f749774bd6b9bc4247",
+    "scope": "Audit edits over existing user implementation; baseline is not this audit\u2019s authorship."
+  },
+  {
+    "path": "packages/tui/src/App.tsx",
+    "startingSHA256": "b88dd88a3764b61f556d06fdc33aebb9d5508e03f582b4e26515e1dd2b9fa831",
+    "currentSHA256": "773e570a314b60bda1bf6250446b3875ac2335f260ba785909e27f3ae366ac41",
+    "scope": "Audit edits over existing user implementation; baseline is not this audit\u2019s authorship."
+  },
+  {
+    "path": "packages/tui/src/investigation-summary.ts",
+    "startingSHA256": "a53fa1d632e3ddb8e9739c29de2ed1ed61bf9045ad74df9be9d31808379aa270",
+    "currentSHA256": "36a76b4ab604ac9ed1e3a09d29e12c3011233f3678ef894b9133c4b1d5a70c64",
+    "scope": "Audit edits over existing user implementation; baseline is not this audit\u2019s authorship."
+  },
+  {
+    "path": "packages/tui/tests/user-failures.test.mjs",
+    "startingSHA256": "193828892ef3e7d347ecbb2e4d7308759f98e040db654fb00a29208429042216",
+    "currentSHA256": "47231a2e5d38148338eb3fa63988f363f44da78e06207ce7bd5a39209ed6590c",
+    "scope": "Audit edits over existing user implementation; baseline is not this audit\u2019s authorship."
+  },
+  {
+    "path": "packages/tui/tests/visual_audit.py",
+    "startingSHA256": "ae194b2b99e62f540239c703832cde6875897c01a45fe044a97069f79e46e5cb",
+    "currentSHA256": "90270c7ddd7b25965f8eff9360e68c8d6812a65389bc6cbf2607f1f5166487ed",
+    "scope": "Audit edits over existing user implementation; baseline is not this audit\u2019s authorship."
+  },
+  {
+    "path": "packages/tui/tests/visual_extra.py",
+    "startingSHA256": "23d7eb9916a44e8475de8d907ed2b4a508cf415573856f82c9bba1635a7046b4",
+    "currentSHA256": "69441eaa17394380469ba420fa688d7487b408b1926a9b99d12d0b2cc9bd874b",
+    "scope": "Audit edits over existing user implementation; baseline is not this audit\u2019s authorship."
+  },
+  {
+    "path": "packages/tui/tests/navigation_audit.py",
+    "startingSHA256": "066d1d9c2b3718f3a16f722f19f79e4ab62119f745cf9585c276f5a9e6c52fd2",
+    "currentSHA256": "70dbf464ab5a8280e4836bf39040ce38463a2dfde196ec27a0d12c747edd8bfa",
+    "scope": "Audit edits over existing user implementation; baseline is not this audit\u2019s authorship."
+  },
+  {
+    "path": "packages/tui/tests/evidence-mode.py",
+    "startingSHA256": null,
+    "currentSHA256": "3da631650c8e741a3aa1195e4de9a109911e7cea1187f72b93f4dcca7d752bd8",
+    "scope": "New audit file."
+  },
+  {
+    "path": "packages/tui/tests/report-adoption.py",
+    "startingSHA256": null,
+    "currentSHA256": "455b51d06ab271e8d7ea7629ca38ea4a47d74da02c16e345c81cf1b2d08adc81",
+    "scope": "New audit file."
+  },
+  {
+    "path": "apps/web/server/observation.ts",
+    "startingSHA256": "8642dd91aa066984334716f2cacf76426a835e0e6ed79fadaf79ab35bfdaee50",
+    "currentSHA256": "c1a06b12e15ad269b3e7c280229d7912a4c0b23b05637d349720cedb6027b0e4",
+    "scope": "Audit edits over existing user implementation; baseline is not this audit\u2019s authorship."
+  },
+  {
+    "path": "apps/web/server/workspace.ts",
+    "startingSHA256": "e3acc77a0b11b63828f3986eae8d82d036c0a347e40d9bec8c0eec4ff80744f4",
+    "currentSHA256": "b1b1e1ff16068ac4a027ace1e4e7eb114bc07e44b461cf13975914260091b5ba",
+    "scope": "Audit edits over existing user implementation; baseline is not this audit\u2019s authorship."
+  },
+  {
+    "path": "apps/web/src/report-components.tsx",
+    "startingSHA256": "4cd527ef4520c69625d2600076ae768e541feace8e20b002dbfd94d2d1d5d0c1",
+    "currentSHA256": "1c8b4a1de08bed5ccc5758ec7153cae5a538868fa27c33fbf896afb97524f708",
+    "scope": "Audit edits over existing user implementation; baseline is not this audit\u2019s authorship."
+  },
+  {
+    "path": "apps/web/src/doc-model.ts",
+    "startingSHA256": "10218361ca4d7e732e70eadfc7bf1eb19f45b6c1bdac9715064d32228bb0cff6",
+    "currentSHA256": "ceb15cb0d15050cc6d229c3e18ba5d35577c0d4f2b257b512ea025cd3ec71b1e",
+    "scope": "Audit edits over existing user implementation; baseline is not this audit\u2019s authorship."
+  },
+  {
+    "path": "apps/web/tests/report-overhaul.test.mjs",
+    "startingSHA256": "035725d27f52ae869be84df4429196882977eb5fa878e3c4fe344ca4def42d27",
+    "currentSHA256": "e45b6e003a4caa7e48063beff9217ada2454fa615772d706844e5faab4540414",
+    "scope": "Audit edits over existing user implementation; baseline is not this audit\u2019s authorship."
+  },
+  {
+    "path": "apps/web/tests/gap-batch.test.mjs",
+    "startingSHA256": "95861253e0f734972c1c9cd85e5b3bb89d0a2b9407576a66a4da93e7d0766e77",
+    "currentSHA256": "a7507a3b3a2635c300fdb8c8e3f374cb3223eba145682426b6ff620b169518b0",
+    "scope": "Audit edits over existing user implementation; baseline is not this audit\u2019s authorship."
+  },
+  {
+    "path": "apps/web/tests/observation-identity.test.mjs",
+    "startingSHA256": null,
+    "currentSHA256": "dbdef4c62891f20063a33924686bc7a51c5716a1c795de7326cad75d8d75bd58",
+    "scope": "New audit file."
+  },
+  {
+    "path": "apps/web/tests/upload-identity.test.mjs",
+    "startingSHA256": null,
+    "currentSHA256": "ca224fe0d5ea0677ffdf7d4e8fe39cd7e174e45704ae34a24d0f8a754903ae5a",
+    "scope": "New audit file."
+  }
+]

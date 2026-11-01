@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "<WORKSPACE>/packages/tui/tests/user-workflows.py", line 5, in <module>
+    CAP=BASE/('workflows-'+str(len(list(BASE.glob('workflows-*/validation.json')))+1));CAP.mkdir(parents=True)
+                                                                                       ~~~~~~~~~^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/pathlib/__init__.py", line 1011, in mkdir
+    os.mkdir(self, mode)
+    ~~~~~~~~^^^^^^^^^^^^
+FileExistsError: [Errno 17] File exists: '<WORKSPACE>/integration/part4/receipts/user-failures/workflows-2'

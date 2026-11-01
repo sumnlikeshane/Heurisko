@@ -1,0 +1,6 @@
+Command: PATH="$PWD/.venv/bin:$PWD/.tooling/node-v22.23.4/node-v22.23.4-darwin-arm64/bin:$PATH" node apps/web/tooling/measure-workspace.mjs examples/web-overhaul/current/performance-20261101.json
+Node: v22.23.4
+Result: exit 1 before writing receipt.
+Blocker: listen EPERM: operation not permitted 127.0.0.1 (sandbox loopback listener).
+The script's finally block removed its task-created temporary workspace; no target package was parsed or executed. Its read-only/SSR measurements before the listener were not emitted as a completed receipt.
+Next attempt uses the same existing writer with approved loopback-listener escalation and fresh wx receipt destination.

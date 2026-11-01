@@ -1,0 +1,43 @@
+{
+  "scope": "actual product keyboard, local bytes + pinned source replay, no model/network; store retained",
+  "passed": true,
+  "exitStatus": 2,
+  "cancelRequestVisible": true,
+  "engineSettlementObserved": true,
+  "exactStoreLabelHasNoContainers": true,
+  "parserAndWriteLocksAbsent": true,
+  "spoolEmptyBeforeAnyReuseOrRemoval": true,
+  "storeRemoved": false,
+  "checks": [
+    {
+      "check": "Home",
+      "columns": 160,
+      "rows": 40,
+      "passed": true
+    },
+    {
+      "check": "New investigation",
+      "columns": 160,
+      "rows": 40,
+      "passed": true
+    },
+    {
+      "check": "Review exact target",
+      "columns": 160,
+      "rows": 40,
+      "passed": true
+    },
+    {
+      "check": "Artifact digest: sha256:",
+      "columns": 160,
+      "rows": 40,
+      "passed": true
+    },
+    {
+      "check": "live",
+      "columns": 160,
+      "rows": 40,
+      "passed": true
+    }
+  ]
+}

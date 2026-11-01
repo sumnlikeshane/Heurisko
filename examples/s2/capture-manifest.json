@@ -1,0 +1,333 @@
+{
+  "version": "heurisko-s2-case-v1",
+  "capturedAt": "2026-10-31T18:13:20.754Z",
+  "publicRelease": "picocolors@1.1.1",
+  "source": {
+    "repo": "https://github.com/alexeyraspopov/picocolors",
+    "commit": "6f0a4638348ed20633d623ee973f9c9a96f65104",
+    "subdirectory": "",
+    "binding": "explicit comparison target; metadata gitHead retained as an unverified claim"
+  },
+  "captures": [
+    {
+      "filename": "picocolors-1.1.1.metadata.json",
+      "version": "heurisko-download-v1",
+      "requestedUrl": "https://registry.npmjs.org/picocolors/1.1.1",
+      "finalUrl": "https://registry.npmjs.org/picocolors/1.1.1",
+      "captureTime": "2026-10-31T18:12:55.326Z",
+      "sha256": "sha256:469edbe4663b07f19026f60ec43744bad678caa89a6be7bf6c4692e2967ddf9d",
+      "size": 1510,
+      "hops": [
+        {
+          "url": "https://registry.npmjs.org/picocolors/1.1.1",
+          "status": 200,
+          "headers": {
+            "content-type": "application/json",
+            "content-length": "1510"
+          }
+        }
+      ]
+    },
+    {
+      "filename": "picocolors-1.1.1.tgz",
+      "version": "heurisko-download-v1",
+      "requestedUrl": "https://registry.npmjs.org/picocolors/-/picocolors-1.1.1.tgz",
+      "finalUrl": "https://registry.npmjs.org/picocolors/-/picocolors-1.1.1.tgz",
+      "captureTime": "2026-10-31T18:12:55.410Z",
+      "sha256": "sha256:d3aedb2807967b7eb37fd11b03b7e3701e725af79c650d0812ff7213f8f882d9",
+      "size": 2625,
+      "hops": [
+        {
+          "url": "https://registry.npmjs.org/picocolors/-/picocolors-1.1.1.tgz",
+          "status": 200,
+          "headers": {
+            "content-type": "application/octet-stream",
+            "content-length": "2625",
+            "etag": "\"b79eaf982d121edc4d16e7f48e2ab920\"",
+            "last-modified": "Wed, 16 Oct 2024 18:20:05 GMT"
+          }
+        }
+      ]
+    },
+    {
+      "filename": "picocolors-source-6f0a4638348ed20633d623ee973f9c9a96f65104.tar.gz",
+      "version": "heurisko-download-v1",
+      "requestedUrl": "https://codeload.github.com/alexeyraspopov/picocolors/tar.gz/6f0a4638348ed20633d623ee973f9c9a96f65104",
+      "finalUrl": "https://codeload.github.com/alexeyraspopov/picocolors/tar.gz/6f0a4638348ed20633d623ee973f9c9a96f65104",
+      "captureTime": "2026-10-31T18:12:55.872Z",
+      "sha256": "sha256:87646ed7f9b372d94da80ec298ef4ec6fc0c2a56bb60e0b325a9705037408c7c",
+      "size": 9432,
+      "hops": [
+        {
+          "url": "https://codeload.github.com/alexeyraspopov/picocolors/tar.gz/6f0a4638348ed20633d623ee973f9c9a96f65104",
+          "status": 200,
+          "headers": {
+            "content-type": "application/x-gzip",
+            "etag": "\"30732e65f5a763747d1957efa0d5179a6205835e2597b594210255d6e0ff95f0\""
+          }
+        }
+      ]
+    }
+  ],
+  "reports": [
+    {
+      "label": "release-local-input",
+      "reportFile": "outputs/release-local-input.report.json",
+      "bundleFile": "outputs/release-local-input.bundle.json",
+      "reportId": "report_e4a755f518778ca8af5c3aa6",
+      "reportContentRef": "sha256:4b45e3677eb57135a052b0ae6a54392ece704f9af1bee6a59cfcfcebaa28ffd6",
+      "artifactSha256": "sha256:d3aedb2807967b7eb37fd11b03b7e3701e725af79c650d0812ff7213f8f882d9",
+      "configurationFingerprint": "1215604bcb011876370a49449478f00267a338b2bd875ba7f408d6f2e537077f",
+      "exitCode": 2,
+      "changes": [
+        {
+          "status": "removed",
+          "artifactPath": null,
+          "sourcePath": "picocolors-6f0a4638348ed20633d623ee973f9c9a96f65104/.editorconfig"
+        },
+        {
+          "status": "removed",
+          "artifactPath": null,
+          "sourcePath": "picocolors-6f0a4638348ed20633d623ee973f9c9a96f65104/.github/workflows/benchmarks.yaml"
+        },
+        {
+          "status": "removed",
+          "artifactPath": null,
+          "sourcePath": "picocolors-6f0a4638348ed20633d623ee973f9c9a96f65104/.github/workflows/testing.yaml"
+        },
+        {
+          "status": "removed",
+          "artifactPath": null,
+          "sourcePath": "picocolors-6f0a4638348ed20633d623ee973f9c9a96f65104/.gitignore"
+        },
+        {
+          "status": "removed",
+          "artifactPath": null,
+          "sourcePath": "picocolors-6f0a4638348ed20633d623ee973f9c9a96f65104/CHANGELOG.md"
+        },
+        {
+          "status": "identical",
+          "artifactPath": "package/LICENSE",
+          "sourcePath": "picocolors-6f0a4638348ed20633d623ee973f9c9a96f65104/LICENSE"
+        },
+        {
+          "status": "modified",
+          "artifactPath": "package/README.md",
+          "sourcePath": "picocolors-6f0a4638348ed20633d623ee973f9c9a96f65104/README.md"
+        },
+        {
+          "status": "removed",
+          "artifactPath": null,
+          "sourcePath": "picocolors-6f0a4638348ed20633d623ee973f9c9a96f65104/benchmarks/complex.mjs"
+        },
+        {
+          "status": "removed",
+          "artifactPath": null,
+          "sourcePath": "picocolors-6f0a4638348ed20633d623ee973f9c9a96f65104/benchmarks/loading.mjs"
+        },
+        {
+          "status": "removed",
+          "artifactPath": null,
+          "sourcePath": "picocolors-6f0a4638348ed20633d623ee973f9c9a96f65104/benchmarks/recursion.mjs"
+        },
+        {
+          "status": "removed",
+          "artifactPath": null,
+          "sourcePath": "picocolors-6f0a4638348ed20633d623ee973f9c9a96f65104/benchmarks/simple.mjs"
+        },
+        {
+          "status": "removed",
+          "artifactPath": null,
+          "sourcePath": "picocolors-6f0a4638348ed20633d623ee973f9c9a96f65104/benchmarks/size.mjs"
+        },
+        {
+          "status": "modified",
+          "artifactPath": "package/package.json",
+          "sourcePath": "picocolors-6f0a4638348ed20633d623ee973f9c9a96f65104/package.json"
+        },
+        {
+          "status": "identical",
+          "artifactPath": "package/picocolors.browser.js",
+          "sourcePath": "picocolors-6f0a4638348ed20633d623ee973f9c9a96f65104/picocolors.browser.js"
+        },
+        {
+          "status": "identical",
+          "artifactPath": "package/picocolors.d.ts",
+          "sourcePath": "picocolors-6f0a4638348ed20633d623ee973f9c9a96f65104/picocolors.d.ts"
+        },
+        {
+          "status": "identical",
+          "artifactPath": "package/picocolors.js",
+          "sourcePath": "picocolors-6f0a4638348ed20633d623ee973f9c9a96f65104/picocolors.js"
+        },
+        {
+          "status": "removed",
+          "artifactPath": null,
+          "sourcePath": "picocolors-6f0a4638348ed20633d623ee973f9c9a96f65104/tests/environments.js"
+        },
+        {
+          "status": "removed",
+          "artifactPath": null,
+          "sourcePath": "picocolors-6f0a4638348ed20633d623ee973f9c9a96f65104/tests/test.js"
+        },
+        {
+          "status": "identical",
+          "artifactPath": "package/types.d.ts",
+          "sourcePath": "picocolors-6f0a4638348ed20633d623ee973f9c9a96f65104/types.d.ts"
+        }
+      ],
+      "outcomes": {
+        "analysisCompleteness": "incomplete",
+        "artifactIntegrity": "not_checked",
+        "correspondence": "unresolved",
+        "policyResult": "indeterminate",
+        "provenancePolicy": "not_checked",
+        "sourceAssociation": "user_supplied"
+      }
+    },
+    {
+      "label": "synthetic-local-mutation",
+      "reportFile": "outputs/synthetic-local-mutation.report.json",
+      "bundleFile": "outputs/synthetic-local-mutation.bundle.json",
+      "reportId": "report_c5d52e28963deacfd27dcbf8",
+      "reportContentRef": "sha256:23293bbe3ebcd797028e91a02e0722fba01d363823c5cec8f1ddfa2de63a2503",
+      "artifactSha256": "sha256:bcdd003ee749b70575fb2793d3892a393d1224457ecb8ca9c37ff4cfd55e098d",
+      "configurationFingerprint": "8ee26e0703f070675108f304de4aa698578ae004348510590dc246560750ce6a",
+      "exitCode": 2,
+      "changes": [
+        {
+          "status": "removed",
+          "artifactPath": null,
+          "sourcePath": "picocolors-6f0a4638348ed20633d623ee973f9c9a96f65104/.editorconfig"
+        },
+        {
+          "status": "removed",
+          "artifactPath": null,
+          "sourcePath": "picocolors-6f0a4638348ed20633d623ee973f9c9a96f65104/.github/workflows/benchmarks.yaml"
+        },
+        {
+          "status": "removed",
+          "artifactPath": null,
+          "sourcePath": "picocolors-6f0a4638348ed20633d623ee973f9c9a96f65104/.github/workflows/testing.yaml"
+        },
+        {
+          "status": "removed",
+          "artifactPath": null,
+          "sourcePath": "picocolors-6f0a4638348ed20633d623ee973f9c9a96f65104/.gitignore"
+        },
+        {
+          "status": "removed",
+          "artifactPath": null,
+          "sourcePath": "picocolors-6f0a4638348ed20633d623ee973f9c9a96f65104/CHANGELOG.md"
+        },
+        {
+          "status": "identical",
+          "artifactPath": "package/LICENSE",
+          "sourcePath": "picocolors-6f0a4638348ed20633d623ee973f9c9a96f65104/LICENSE"
+        },
+        {
+          "status": "modified",
+          "artifactPath": "package/README.md",
+          "sourcePath": "picocolors-6f0a4638348ed20633d623ee973f9c9a96f65104/README.md"
+        },
+        {
+          "status": "removed",
+          "artifactPath": null,
+          "sourcePath": "picocolors-6f0a4638348ed20633d623ee973f9c9a96f65104/benchmarks/complex.mjs"
+        },
+        {
+          "status": "removed",
+          "artifactPath": null,
+          "sourcePath": "picocolors-6f0a4638348ed20633d623ee973f9c9a96f65104/benchmarks/loading.mjs"
+        },
+        {
+          "status": "removed",
+          "artifactPath": null,
+          "sourcePath": "picocolors-6f0a4638348ed20633d623ee973f9c9a96f65104/benchmarks/recursion.mjs"
+        },
+        {
+          "status": "removed",
+          "artifactPath": null,
+          "sourcePath": "picocolors-6f0a4638348ed20633d623ee973f9c9a96f65104/benchmarks/simple.mjs"
+        },
+        {
+          "status": "removed",
+          "artifactPath": null,
+          "sourcePath": "picocolors-6f0a4638348ed20633d623ee973f9c9a96f65104/benchmarks/size.mjs"
+        },
+        {
+          "status": "added",
+          "artifactPath": "package/heurisko-inert-marker.js",
+          "sourcePath": null
+        },
+        {
+          "status": "modified",
+          "artifactPath": "package/package.json",
+          "sourcePath": "picocolors-6f0a4638348ed20633d623ee973f9c9a96f65104/package.json"
+        },
+        {
+          "status": "identical",
+          "artifactPath": "package/picocolors.browser.js",
+          "sourcePath": "picocolors-6f0a4638348ed20633d623ee973f9c9a96f65104/picocolors.browser.js"
+        },
+        {
+          "status": "identical",
+          "artifactPath": "package/picocolors.d.ts",
+          "sourcePath": "picocolors-6f0a4638348ed20633d623ee973f9c9a96f65104/picocolors.d.ts"
+        },
+        {
+          "status": "identical",
+          "artifactPath": "package/picocolors.js",
+          "sourcePath": "picocolors-6f0a4638348ed20633d623ee973f9c9a96f65104/picocolors.js"
+        },
+        {
+          "status": "removed",
+          "artifactPath": null,
+          "sourcePath": "picocolors-6f0a4638348ed20633d623ee973f9c9a96f65104/tests/environments.js"
+        },
+        {
+          "status": "removed",
+          "artifactPath": null,
+          "sourcePath": "picocolors-6f0a4638348ed20633d623ee973f9c9a96f65104/tests/test.js"
+        },
+        {
+          "status": "identical",
+          "artifactPath": "package/types.d.ts",
+          "sourcePath": "picocolors-6f0a4638348ed20633d623ee973f9c9a96f65104/types.d.ts"
+        }
+      ],
+      "outcomes": {
+        "analysisCompleteness": "incomplete",
+        "artifactIntegrity": "not_checked",
+        "correspondence": "unresolved",
+        "policyResult": "indeterminate",
+        "provenancePolicy": "not_checked",
+        "sourceAssociation": "user_supplied"
+      }
+    }
+  ],
+  "mutationOracle": {
+    "synthetic": true,
+    "localOnly": true,
+    "changes": [
+      "package/package.json adds scripts.postinstall with inert literal HEURISKO_INERT_TEST_ONLY",
+      "package/heurisko-inert-marker.js adds a comment only"
+    ],
+    "executed": false
+  },
+  "malharHandshake": {
+    "status": "unavailable",
+    "expectedPackage": "@heurisko/intelligence",
+    "expectedExport": "analyzeEvidence",
+    "actualVersion": null,
+    "reason": "packages/intelligence absent; no external message sent"
+  },
+  "rights": {
+    "packageLicense": "ISC; retain package/LICENSE",
+    "sourceLicense": "ISC; retain source LICENSE; no upstream code executed"
+  },
+  "limitations": [
+    "Local captured bytes do not inherit registry integrity/provenance.",
+    "No source identity verification, heuristics, model, rebuild, monitor, TUI or browser."
+  ]
+}

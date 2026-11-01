@@ -1,0 +1,23 @@
+{
+  "version": "heurisko-s2-replay-check-v1",
+  "checkedAt": "2026-10-31T18:22:42.705Z",
+  "inspect": {
+    "exitCode": 2,
+    "result": "semantically equal to retained report"
+  },
+  "offlineReplay": {
+    "exitCode": 2,
+    "reportId": "report_e4a755f518778ca8af5c3aa6",
+    "deterministicFacts": "identical to baseline; complete content hash differs because capture/run times differ"
+  },
+  "livePinnedSource": {
+    "exitCode": 2,
+    "reportId": "report_e4a755f518778ca8af5c3aa6",
+    "reportContentRef": "sha256:caee95c830785ccb869c39ba9bc19631edb9667e52e036ddd908fd0d2b2d19a0",
+    "reportFile": "outputs/live-pinned-source.report.json",
+    "sourceSnapshotSha256": "sha256:87646ed7f9b372d94da80ec298ef4ec6fc0c2a56bb60e0b325a9705037408c7c",
+    "result": "Same full artifact/source/config identity, newly retained transport observation; no registry/provenance upgrade"
+  },
+  "observationStorage": "Full report bytes are distinct CAS objects; both retained observations resolve the same deterministic reportId",
+  "freshness": "Inspect/offline replay is historical; live override fetch checks that source URL only, not registry release/revocation freshness."
+}

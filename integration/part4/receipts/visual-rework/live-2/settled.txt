@@ -1,0 +1,40 @@
+  HEURISKO   H Home    I Investigations     M Monitoring                                                                                                        
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+  Stopping investigation                                                                                                                                        
+  0m 03s elapsed · 10/10 stages reported terminal facts · no estimated finish time                                                                              
+  [────────────────────────────────] Waiting for settlement / indeterminate                                                                                     
+                                                                                                                                                                
+  ┌─ Stages ───────────────────── 10/10 terminal facts ┐ ┌─ > Stage details & activity ──────────────────────────────────────────────────────────────────────┐  
+  │   resolve artifact / complete                      │ │ Cancellation requested — awaiting engine settlement.                                              │  
+  │   acquire / complete                               │ │ Stage execution is not a security verdict.                                                        │  
+  │   source / incomplete                              │ │                                                                                                   │  
+  │   provenance / skipped                             │ │ Selected stage                                                                                    │  
+  │   inventory / incomplete                           │ │ persist                                                                                           │  
+  │   compare / incomplete                             │ │ Status: complete                                                                                  │  
+  │   build / skipped                                  │ │ No diagnostic event recorded for this stage.                                                      │  
+  │   heuristics / incomplete                          │ │                                                                                                   │  
+  │   ai / skipped                                     │ │ Available evidence                                                                                │  
+  │ > persist / complete                               │ │ Live evidence references are unavailable. The settled report preserves its recorded scope.        │  
+  │ Complete / incomplete / skipped / failed stay dis… │ │                                                                                                   │  
+  │                                                    │ │ Recent activity                                                                                   │  
+  └────────────────────────────────────────────────────┘ │ compare / running                                                                                 │  
+                                                         │ compare / incomplete                                                                              │  
+                                                         │ heuristics / running                                                                              │  
+                                                         │ heuristics / incomplete                                                                           │  
+                                                         │ ai / skipped                                                                                      │  
+                                                         │ persist / running                                                                                 │  
+                                                         │ persist / complete                                                                                │  
+                                                         │                                                                                                   │  
+                                                         │ 0 earlier events omitted from this bounded event history.                                         │  
+                                                         │ Cancellation requests do not acknowledge cleanup. Detach and retry are unavailable.               │  
+                                                         │ 1-22 / 22                                                                                         │  
+                                                         └───────────────────────────────────────────────────────────────────────────────────────────────────┘  
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+  Cancellation requested; waiting for engine settlement. Cleanup is not yet acknowledged.                                                                       
+  Up/Down stages  Tab details  Ctrl+C cancel  q cancel                                                                                                          
+                                                                                                                                                                
+                                                                                                                                                                

@@ -1,0 +1,44 @@
+{
+  "version": "heurisko-reviewed-intelligence-admission-v1",
+  "upstream": {
+    "repository": "https://github.com/sumnlikeshane/Heurisko",
+    "commit": "55240e99409ad44cbd6a978f40873ef410cb1861",
+    "path": "packages/intelligence/src/index.ts",
+    "sourceSha256": "sha256:af7b00acceed67aaf37534ee58d3663000deaab08c1bb72f6da1ea9178380019",
+    "packageName": "@heurisko/intelligence",
+    "packageVersion": "0.1.0"
+  },
+  "derived": {
+    "path": "src/index.ts",
+    "sourceSha256": "sha256:ae1795d52ac7c0f340524ff0ddc247ecca8725916a607fcd77d7bff16ca3fcd2",
+    "transformation": "Preserve the complete deterministic implementation byte-for-byte before the terminal export type { AnalyzeEvidence } marker; remove that marker and all following reexports only; append one LF.",
+    "compiledSha256": "sha256:6a7486a956c049b1f2930858967110e86299309b4df6cc59b0c4c4a831e77b3d",
+    "declarationsSha256": "sha256:4843e4ddcce4e9457eef533e793105b2c8168b85edae2e3462003c4737fb54ba"
+  },
+  "selection": {
+    "hostEnvironmentVariable": "HEURISKO_ANALYSIS_MODULE",
+    "acceptedValue": "55240e9",
+    "default": "55240e9",
+    "explicitTrustedContextModule": "overrides host selector",
+    "disabledValue": "off"
+  },
+  "admittedRuntime": "analyzeEvidence only; optional retained-content argument supplied by the core trusted boundary",
+  "excluded": [
+    "OpenRouter/provider modules and exports",
+    "CodeAstra/model adapters and experiments",
+    "retrieval/prompt/interpretation modules and reexports"
+  ],
+  "dependencies": {
+    "externalRuntime": [],
+    "workspaceTypeDependency": [
+      "@heurisko/contracts"
+    ]
+  },
+  "baselineLockSha256": "sha256:7b304d2abf2987264821998ddf490e501ec65fac81af28888b51793a32daeedb",
+  "qualityLimitations": [
+    "Lifecycle removal severity/reviewPriority remain keyed to FileChange.status even when the resolved key direction is removal.",
+    "Entrypoint findings still contain an old/new-values-unavailable limitation.",
+    "Simple deterministic evidence rules are not general maliciousness/build-equivalence/risk accuracy validation."
+  ],
+  "workspaceLockChange": "Only the new local workspace importer and core-to-reviewed-module workspace link; no external dependency or resolution changed."
+}

@@ -1,0 +1,344 @@
+{
+  "schemaVersion": "0.1.0",
+  "findings": [
+    {
+      "findingId": "find_heurisko_change_unresolved-difference_chg_7756b0a16a02f5fea889a3eb_73f31d88",
+      "ruleVersion": "0.1.0",
+      "evidenceIds": [
+        "ev_73f31d882287a3e962e885c8",
+        "ev_9df3e214dfa5daa802213aa8"
+      ],
+      "ruleId": "heurisko.change.unresolved-difference",
+      "title": "File change remains unexplained",
+      "observation": "picocolors-7249f8c5d4825550f70bc1ea98652639933d3bbd/.editorconfig is unresolved; raw equality is unknown.",
+      "whyItMatters": "The bundle reports a difference without a supported transformation explanation; review is needed to resolve its significance.",
+      "severity": "undetermined",
+      "reviewPriority": "low",
+      "evidenceConfidence": "unresolved",
+      "explanationStrength": "unexplained",
+      "limitations": [
+        "This rule reports the evidence bundle state; it does not infer executable behavior or malicious intent from a filename."
+      ],
+      "nextActions": [
+        "Inspect the cited artifact/source evidence and retain any unsupported bytes as unresolved."
+      ]
+    },
+    {
+      "findingId": "find_heurisko_change_unresolved-difference_chg_b66898c29615ddf02e422f3c_6cfcda2b",
+      "ruleVersion": "0.1.0",
+      "evidenceIds": [
+        "ev_6cfcda2bf4f3d68c7e0ff1e5",
+        "ev_761ef2efecb7ce3b8b7b306c"
+      ],
+      "ruleId": "heurisko.change.unresolved-difference",
+      "title": "File change remains unexplained",
+      "observation": "picocolors-7249f8c5d4825550f70bc1ea98652639933d3bbd/.github/workflows/benchmarks.yaml is unresolved; raw equality is unknown.",
+      "whyItMatters": "The bundle reports a difference without a supported transformation explanation; review is needed to resolve its significance.",
+      "severity": "undetermined",
+      "reviewPriority": "low",
+      "evidenceConfidence": "unresolved",
+      "explanationStrength": "unexplained",
+      "limitations": [
+        "This rule reports the evidence bundle state; it does not infer executable behavior or malicious intent from a filename."
+      ],
+      "nextActions": [
+        "Inspect the cited artifact/source evidence and retain any unsupported bytes as unresolved."
+      ]
+    },
+    {
+      "findingId": "find_heurisko_change_unresolved-difference_chg_8a53883c3ff49f8886a897fc_6e1ad3a7",
+      "ruleVersion": "0.1.0",
+      "evidenceIds": [
+        "ev_6e1ad3a7617d59ba5505c2cc",
+        "ev_b8e49f2821048d11b4e09b1e"
+      ],
+      "ruleId": "heurisko.change.unresolved-difference",
+      "title": "File change remains unexplained",
+      "observation": "picocolors-7249f8c5d4825550f70bc1ea98652639933d3bbd/.github/workflows/testing.yaml is unresolved; raw equality is unknown.",
+      "whyItMatters": "The bundle reports a difference without a supported transformation explanation; review is needed to resolve its significance.",
+      "severity": "undetermined",
+      "reviewPriority": "low",
+      "evidenceConfidence": "unresolved",
+      "explanationStrength": "unexplained",
+      "limitations": [
+        "This rule reports the evidence bundle state; it does not infer executable behavior or malicious intent from a filename."
+      ],
+      "nextActions": [
+        "Inspect the cited artifact/source evidence and retain any unsupported bytes as unresolved."
+      ]
+    },
+    {
+      "findingId": "find_heurisko_change_unresolved-difference_chg_ae55c630d470184e89c49327_3e05a44d",
+      "ruleVersion": "0.1.0",
+      "evidenceIds": [
+        "ev_3e05a44d884544f90d642069",
+        "ev_4a6d778ebefd2140541d3d98"
+      ],
+      "ruleId": "heurisko.change.unresolved-difference",
+      "title": "File change remains unexplained",
+      "observation": "picocolors-7249f8c5d4825550f70bc1ea98652639933d3bbd/.gitignore is unresolved; raw equality is unknown.",
+      "whyItMatters": "The bundle reports a difference without a supported transformation explanation; review is needed to resolve its significance.",
+      "severity": "undetermined",
+      "reviewPriority": "low",
+      "evidenceConfidence": "unresolved",
+      "explanationStrength": "unexplained",
+      "limitations": [
+        "This rule reports the evidence bundle state; it does not infer executable behavior or malicious intent from a filename."
+      ],
+      "nextActions": [
+        "Inspect the cited artifact/source evidence and retain any unsupported bytes as unresolved."
+      ]
+    },
+    {
+      "findingId": "find_heurisko_change_unresolved-difference_chg_8d5e36663b4d96fb3ddae8b8_1b6184cc",
+      "ruleVersion": "0.1.0",
+      "evidenceIds": [
+        "ev_1b6184cce633afce959b52d5",
+        "ev_8dd0eca9cfa241bb8ba1d93f"
+      ],
+      "ruleId": "heurisko.change.unresolved-difference",
+      "title": "File change remains unexplained",
+      "observation": "picocolors-7249f8c5d4825550f70bc1ea98652639933d3bbd/CHANGELOG.md is unresolved; raw equality is unknown.",
+      "whyItMatters": "The bundle reports a difference without a supported transformation explanation; review is needed to resolve its significance.",
+      "severity": "undetermined",
+      "reviewPriority": "low",
+      "evidenceConfidence": "unresolved",
+      "explanationStrength": "unexplained",
+      "limitations": [
+        "This rule reports the evidence bundle state; it does not infer executable behavior or malicious intent from a filename."
+      ],
+      "nextActions": [
+        "Inspect the cited artifact/source evidence and retain any unsupported bytes as unresolved."
+      ]
+    },
+    {
+      "findingId": "find_heurisko_change_unresolved-difference_chg_0bcee9ea105afc6c1729ad0e_3206b12e",
+      "ruleVersion": "0.1.0",
+      "evidenceIds": [
+        "ev_3206b12eb28d58d64fb4ecb0",
+        "ev_b120a11350736f3f82b50363",
+        "ev_ba699d088a6618ddf0a06f01",
+        "ev_c222b6edf269380b42eba6db"
+      ],
+      "ruleId": "heurisko.change.unresolved-difference",
+      "title": "File change remains unexplained",
+      "observation": "package/README.md is reported as modified; raw equality is different.",
+      "whyItMatters": "The bundle reports a difference without a supported transformation explanation; review is needed to resolve its significance.",
+      "severity": "undetermined",
+      "reviewPriority": "low",
+      "evidenceConfidence": "limited",
+      "explanationStrength": "unexplained",
+      "limitations": [
+        "This rule reports the evidence bundle state; it does not infer executable behavior or malicious intent from a filename."
+      ],
+      "nextActions": [
+        "Inspect the cited artifact/source evidence and retain any unsupported bytes as unresolved."
+      ]
+    },
+    {
+      "findingId": "find_heurisko_change_unresolved-difference_chg_f02bd6285cd308a66df5efe5_2496a4c4",
+      "ruleVersion": "0.1.0",
+      "evidenceIds": [
+        "ev_2496a4c4066d510ad20e6758",
+        "ev_e0826f125b349dffbde3cd18"
+      ],
+      "ruleId": "heurisko.change.unresolved-difference",
+      "title": "File change remains unexplained",
+      "observation": "picocolors-7249f8c5d4825550f70bc1ea98652639933d3bbd/benchmarks/complex.mjs is unresolved; raw equality is unknown.",
+      "whyItMatters": "The bundle reports a difference without a supported transformation explanation; review is needed to resolve its significance.",
+      "severity": "undetermined",
+      "reviewPriority": "low",
+      "evidenceConfidence": "unresolved",
+      "explanationStrength": "unexplained",
+      "limitations": [
+        "This rule reports the evidence bundle state; it does not infer executable behavior or malicious intent from a filename."
+      ],
+      "nextActions": [
+        "Inspect the cited artifact/source evidence and retain any unsupported bytes as unresolved."
+      ]
+    },
+    {
+      "findingId": "find_heurisko_change_unresolved-difference_chg_4b159a1e86c34567d233ec4c_321413cf",
+      "ruleVersion": "0.1.0",
+      "evidenceIds": [
+        "ev_321413cf5b9022579ab7f3a3",
+        "ev_5f1748d2bb20015cc561ca03"
+      ],
+      "ruleId": "heurisko.change.unresolved-difference",
+      "title": "File change remains unexplained",
+      "observation": "picocolors-7249f8c5d4825550f70bc1ea98652639933d3bbd/benchmarks/loading.mjs is unresolved; raw equality is unknown.",
+      "whyItMatters": "The bundle reports a difference without a supported transformation explanation; review is needed to resolve its significance.",
+      "severity": "undetermined",
+      "reviewPriority": "low",
+      "evidenceConfidence": "unresolved",
+      "explanationStrength": "unexplained",
+      "limitations": [
+        "This rule reports the evidence bundle state; it does not infer executable behavior or malicious intent from a filename."
+      ],
+      "nextActions": [
+        "Inspect the cited artifact/source evidence and retain any unsupported bytes as unresolved."
+      ]
+    },
+    {
+      "findingId": "find_heurisko_change_unresolved-difference_chg_338f1cb30d82abc0255f431b_26ed75ab",
+      "ruleVersion": "0.1.0",
+      "evidenceIds": [
+        "ev_26ed75abb2e3f6567aa07b62",
+        "ev_d561fd3e19dec012318a9631"
+      ],
+      "ruleId": "heurisko.change.unresolved-difference",
+      "title": "File change remains unexplained",
+      "observation": "picocolors-7249f8c5d4825550f70bc1ea98652639933d3bbd/benchmarks/recursion.mjs is unresolved; raw equality is unknown.",
+      "whyItMatters": "The bundle reports a difference without a supported transformation explanation; review is needed to resolve its significance.",
+      "severity": "undetermined",
+      "reviewPriority": "low",
+      "evidenceConfidence": "unresolved",
+      "explanationStrength": "unexplained",
+      "limitations": [
+        "This rule reports the evidence bundle state; it does not infer executable behavior or malicious intent from a filename."
+      ],
+      "nextActions": [
+        "Inspect the cited artifact/source evidence and retain any unsupported bytes as unresolved."
+      ]
+    },
+    {
+      "findingId": "find_heurisko_change_unresolved-difference_chg_e850565c3b9d5836977eceea_2532b37d",
+      "ruleVersion": "0.1.0",
+      "evidenceIds": [
+        "ev_2532b37d348140b63b41aaa3",
+        "ev_f3d6f79e055bc4ea31291be5"
+      ],
+      "ruleId": "heurisko.change.unresolved-difference",
+      "title": "File change remains unexplained",
+      "observation": "picocolors-7249f8c5d4825550f70bc1ea98652639933d3bbd/benchmarks/simple.mjs is unresolved; raw equality is unknown.",
+      "whyItMatters": "The bundle reports a difference without a supported transformation explanation; review is needed to resolve its significance.",
+      "severity": "undetermined",
+      "reviewPriority": "low",
+      "evidenceConfidence": "unresolved",
+      "explanationStrength": "unexplained",
+      "limitations": [
+        "This rule reports the evidence bundle state; it does not infer executable behavior or malicious intent from a filename."
+      ],
+      "nextActions": [
+        "Inspect the cited artifact/source evidence and retain any unsupported bytes as unresolved."
+      ]
+    },
+    {
+      "findingId": "find_heurisko_change_unresolved-difference_chg_08a2871622bde316d1b83f9b_9b0fd902",
+      "ruleVersion": "0.1.0",
+      "evidenceIds": [
+        "ev_9b0fd902c2330650bef57d50",
+        "ev_ba470a0acd0e7d7586c1bfb6"
+      ],
+      "ruleId": "heurisko.change.unresolved-difference",
+      "title": "File change remains unexplained",
+      "observation": "picocolors-7249f8c5d4825550f70bc1ea98652639933d3bbd/benchmarks/size.mjs is unresolved; raw equality is unknown.",
+      "whyItMatters": "The bundle reports a difference without a supported transformation explanation; review is needed to resolve its significance.",
+      "severity": "undetermined",
+      "reviewPriority": "low",
+      "evidenceConfidence": "unresolved",
+      "explanationStrength": "unexplained",
+      "limitations": [
+        "This rule reports the evidence bundle state; it does not infer executable behavior or malicious intent from a filename."
+      ],
+      "nextActions": [
+        "Inspect the cited artifact/source evidence and retain any unsupported bytes as unresolved."
+      ]
+    },
+    {
+      "findingId": "find_heurisko_manifest_script-change_chg_f471fc3881e76983cbf2d7e5_b22cda41",
+      "ruleVersion": "0.1.0",
+      "evidenceIds": [
+        "ev_b22cda415af987e0c5364cb0"
+      ],
+      "ruleId": "heurisko.manifest.script-change",
+      "title": "Package script entry changed",
+      "observation": "Manifest key scripts.test is reported as changed.",
+      "whyItMatters": "This script is an explicit package command and may be run by maintainers or CI; the key change alone does not establish what it executes.",
+      "severity": "informational",
+      "reviewPriority": "low",
+      "evidenceConfidence": "high",
+      "explanationStrength": "exact",
+      "limitations": [
+        "The evidence identifies the changed manifest key but does not retain the old and new command values."
+      ],
+      "nextActions": [
+        "Review the retained old and new script values and their referenced files; do not execute them on the host."
+      ]
+    },
+    {
+      "findingId": "find_heurisko_change_unresolved-difference_chg_83b072202d0cb2f80c2b1450_8546db3a",
+      "ruleVersion": "0.1.0",
+      "evidenceIds": [
+        "ev_8546db3a4cf2ae274bd16afc",
+        "ev_a5616a3b48104ae822d723f9"
+      ],
+      "ruleId": "heurisko.change.unresolved-difference",
+      "title": "File change remains unexplained",
+      "observation": "picocolors-7249f8c5d4825550f70bc1ea98652639933d3bbd/tests/environments.js is unresolved; raw equality is unknown.",
+      "whyItMatters": "The bundle reports a difference without a supported transformation explanation; review is needed to resolve its significance.",
+      "severity": "undetermined",
+      "reviewPriority": "low",
+      "evidenceConfidence": "unresolved",
+      "explanationStrength": "unexplained",
+      "limitations": [
+        "This rule reports the evidence bundle state; it does not infer executable behavior or malicious intent from a filename."
+      ],
+      "nextActions": [
+        "Inspect the cited artifact/source evidence and retain any unsupported bytes as unresolved."
+      ]
+    },
+    {
+      "findingId": "find_heurisko_change_unresolved-difference_chg_4dad2af610c5da174c83ca31_b33cc11f",
+      "ruleVersion": "0.1.0",
+      "evidenceIds": [
+        "ev_b33cc11f938563570f3d8e24",
+        "ev_f11931a8dc4e7f5c6eb8319a"
+      ],
+      "ruleId": "heurisko.change.unresolved-difference",
+      "title": "File change remains unexplained",
+      "observation": "picocolors-7249f8c5d4825550f70bc1ea98652639933d3bbd/tests/test.js is unresolved; raw equality is unknown.",
+      "whyItMatters": "The bundle reports a difference without a supported transformation explanation; review is needed to resolve its significance.",
+      "severity": "undetermined",
+      "reviewPriority": "low",
+      "evidenceConfidence": "unresolved",
+      "explanationStrength": "unexplained",
+      "limitations": [
+        "This rule reports the evidence bundle state; it does not infer executable behavior or malicious intent from a filename."
+      ],
+      "nextActions": [
+        "Inspect the cited artifact/source evidence and retain any unsupported bytes as unresolved."
+      ]
+    }
+  ],
+  "aiState": {
+    "status": "disabled",
+    "validation": "not_run"
+  },
+  "interpretations": [],
+  "stages": [
+    {
+      "stage": "heuristics",
+      "status": "complete",
+      "errors": []
+    },
+    {
+      "stage": "ai",
+      "status": "skipped",
+      "errors": []
+    }
+  ],
+  "limitations": [
+    "Static raw comparison only; generated/build/security interpretation is unavailable without Malhar analysis.",
+    "Registry/manifest/tag source claims are candidates, not proof of release correspondence.",
+    "No submodule or LFS materialization, target scripts, rebuild, provenance or model execution.",
+    "Only the selected repository/commit archive is acquired; other repository/commit claims remain unacquired unless separately investigated.",
+    "version-tag:v1.1.1: SOURCE_TAG_RATE_LIMITED",
+    "version-tag:1.1.1: SOURCE_TAG_DISCOVERY_SKIPPED_RATE_LIMIT",
+    "Metadata/gitHead/tag/manifest agreement is publisher-linked candidate evidence, not proof of artifact-to-source binding.",
+    "GitHub immutable archive URL is transport context; no Git object reconstruction, signed-tag validation, submodule or LFS acquisition.",
+    "No evidence is retrieved or chunked by the intelligence component; evidence IDs and locations remain owned by the supplied bundle.",
+    "Caller-resolved text supplied for deterministic content checks is not independently read or hash-verified by this component.",
+    "No package acquisition, provenance verification, cryptographic trust decision, or product model inference is performed by this component."
+  ]
+}

@@ -1,0 +1,1267 @@
+﻿2026-10-31T23:00:29.6458321Z Current runner version: '2.338.2'
+2026-10-31T23:00:29.6494251Z ##[group]Runner Image Provisioner
+2026-10-31T23:00:29.6495667Z Hosted Compute Agent
+2026-10-31T23:00:29.6496693Z Version: 20261021.618
+2026-10-31T23:00:29.6498472Z Commit: 21505ad2541d5be6135ed84fc33697146cf75b8e
+2026-10-31T23:00:29.6499769Z Build Date: 2026-10-21T00:45:21Z
+2026-10-31T23:00:29.6500971Z Worker ID: {0a701961-292d-4963-a9ee-2789738c56a0}
+2026-10-31T23:00:29.6502223Z Region: eastus
+2026-10-31T23:00:29.6503270Z Cloud: Azure
+2026-10-31T23:00:29.6504606Z ##[endgroup]
+2026-10-31T23:00:29.6507066Z ##[group]Operating System
+2026-10-31T23:00:29.6508344Z Ubuntu
+2026-10-31T23:00:29.6509267Z 26.04.1
+2026-10-31T23:00:29.6510243Z LTS
+2026-10-31T23:00:29.6511238Z ##[endgroup]
+2026-10-31T23:00:29.6512296Z ##[group]Runner Image
+2026-10-31T23:00:29.6513351Z Image: ubuntu-26.04
+2026-10-31T23:00:29.6514781Z Version: 20261025.179.1
+2026-10-31T23:00:29.6517086Z Included Software: https://github.com/actions/runner-images/blob/ubuntu26/20261025.179/images/ubuntu/Ubuntu2604-Readme.md
+2026-10-31T23:00:29.6519983Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu26%2F20261025.179
+2026-10-31T23:00:29.6521723Z ##[endgroup]
+2026-10-31T23:00:29.6523711Z ##[group]GITHUB_TOKEN Permissions
+2026-10-31T23:00:29.6526652Z Contents: read
+2026-10-31T23:00:29.6527817Z Metadata: read
+2026-10-31T23:00:29.6528778Z ##[endgroup]
+2026-10-31T23:00:29.6532068Z Secret source: Actions
+2026-10-31T23:00:29.6533653Z Cache mode: write
+2026-10-31T23:00:29.6535480Z Prepare workflow directory
+2026-10-31T23:00:29.7040973Z Prepare all required actions
+2026-10-31T23:00:29.7116735Z Getting action download info
+2026-10-31T23:00:29.8858675Z Download action repository 'actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+2026-10-31T23:00:29.9850994Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+2026-10-31T23:00:30.0494812Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+2026-10-31T23:00:30.2242638Z Complete job name: Contracts and S1–S3 producer checks
+2026-10-31T23:00:30.3182039Z ##[group]Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+2026-10-31T23:00:30.3183149Z with:
+2026-10-31T23:00:30.3183608Z   repository: sumnlikeshane/Heurisko
+2026-10-31T23:00:30.3187624Z   token: ***
+2026-10-31T23:00:30.3188078Z   ssh-strict: true
+2026-10-31T23:00:30.3188520Z   ssh-user: git
+2026-10-31T23:00:30.3188970Z   persist-credentials: true
+2026-10-31T23:00:30.3189460Z   clean: true
+2026-10-31T23:00:30.3189908Z   sparse-checkout-cone-mode: true
+2026-10-31T23:00:30.3190432Z   fetch-depth: 1
+2026-10-31T23:00:30.3190857Z   fetch-tags: false
+2026-10-31T23:00:30.3191302Z   show-progress: true
+2026-10-31T23:00:30.3191746Z   lfs: false
+2026-10-31T23:00:30.3192154Z   submodules: false
+2026-10-31T23:00:30.3192602Z   set-safe-directory: true
+2026-10-31T23:00:30.3193127Z   allow-unsafe-pr-checkout: false
+2026-10-31T23:00:30.3194190Z ##[endgroup]
+2026-10-31T23:00:30.6433353Z Syncing repository: sumnlikeshane/Heurisko
+2026-10-31T23:00:30.6436736Z ##[group]Getting Git version info
+2026-10-31T23:00:30.6438071Z Working directory is '/home/runner/work/Heurisko/Heurisko'
+2026-10-31T23:00:30.6439973Z [command]/usr/bin/git version
+2026-10-31T23:00:30.6729750Z git version 2.56.0
+2026-10-31T23:00:30.6764683Z ##[endgroup]
+2026-10-31T23:00:30.6807235Z Temporarily overriding HOME='/home/runner/work/_temp/86a241a2-0499-4263-a311-1713812f6922' before making global git config changes
+2026-10-31T23:00:30.6809960Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-31T23:00:30.6812155Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/Heurisko/Heurisko
+2026-10-31T23:00:30.7419546Z Deleting the contents of '/home/runner/work/Heurisko/Heurisko'
+2026-10-31T23:00:30.7436416Z ##[group]Determining repository object format
+2026-10-31T23:00:30.7438312Z ##[endgroup]
+2026-10-31T23:00:30.7439718Z ##[group]Initializing the repository
+2026-10-31T23:00:30.7441809Z [command]/usr/bin/git init /home/runner/work/Heurisko/Heurisko
+2026-10-31T23:00:30.7607996Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-10-31T23:00:30.7610159Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-10-31T23:00:30.7611651Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-10-31T23:00:30.7705345Z hint: call:
+2026-10-31T23:00:30.7706415Z hint:
+2026-10-31T23:00:30.7707474Z hint: 	git config --global init.defaultBranch <name>
+2026-10-31T23:00:30.7708781Z hint:
+2026-10-31T23:00:30.7710035Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-10-31T23:00:30.7711933Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-10-31T23:00:30.7713584Z hint:
+2026-10-31T23:00:30.7714916Z hint: 	git branch -m <name>
+2026-10-31T23:00:30.7715964Z hint:
+2026-10-31T23:00:30.7717255Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-10-31T23:00:30.7720172Z Initialized empty Git repository in /home/runner/work/Heurisko/Heurisko/.git/
+2026-10-31T23:00:30.7724902Z [command]/usr/bin/git remote add origin https://github.com/sumnlikeshane/Heurisko
+2026-10-31T23:00:30.7729030Z ##[endgroup]
+2026-10-31T23:00:30.7730014Z ##[group]Disabling automatic garbage collection
+2026-10-31T23:00:30.7730796Z [command]/usr/bin/git config --local gc.auto 0
+2026-10-31T23:00:30.7759476Z ##[endgroup]
+2026-10-31T23:00:30.7761147Z ##[group]Setting up auth
+2026-10-31T23:00:30.7762149Z Removing SSH command configuration
+2026-10-31T23:00:30.7766889Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-31T23:00:30.7804816Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-31T23:00:30.8322565Z Removing HTTP extra header
+2026-10-31T23:00:30.8328463Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-31T23:00:30.8364279Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-31T23:00:30.8643737Z Removing includeIf entries pointing to credentials config files
+2026-10-31T23:00:30.8649824Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-31T23:00:30.8685240Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-31T23:00:30.8961006Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-0f0833e0-5b6d-4908-9873-ee01005fe503.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-10-31T23:00:30.8999854Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/Heurisko/Heurisko/.git.path /home/runner/work/_temp/git-credentials-0f0833e0-5b6d-4908-9873-ee01005fe503.config
+2026-10-31T23:00:30.9035122Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/Heurisko/Heurisko/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-0f0833e0-5b6d-4908-9873-ee01005fe503.config
+2026-10-31T23:00:30.9074251Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-0f0833e0-5b6d-4908-9873-ee01005fe503.config
+2026-10-31T23:00:30.9109322Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-0f0833e0-5b6d-4908-9873-ee01005fe503.config
+2026-10-31T23:00:30.9140923Z ##[endgroup]
+2026-10-31T23:00:30.9142734Z ##[group]Fetching the repository
+2026-10-31T23:00:30.9149836Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +d9897b6dcc0b2ef18bded0e64d01560ae78291cc:refs/remotes/pull/3/merge
+2026-10-31T23:00:31.9233053Z From https://github.com/sumnlikeshane/Heurisko
+2026-10-31T23:00:31.9234715Z  * [new ref]         d9897b6dcc0b2ef18bded0e64d01560ae78291cc -> pull/3/merge
+2026-10-31T23:00:31.9237590Z ##[endgroup]
+2026-10-31T23:00:31.9238390Z ##[group]Determining the checkout info
+2026-10-31T23:00:31.9239196Z ##[endgroup]
+2026-10-31T23:00:31.9244760Z [command]/usr/bin/git sparse-checkout disable
+2026-10-31T23:00:31.9299172Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-10-31T23:00:31.9331654Z ##[group]Checking out the ref
+2026-10-31T23:00:31.9336346Z [command]/usr/bin/git checkout --progress --force refs/remotes/pull/3/merge
+2026-10-31T23:00:32.9630075Z Updating files:  59% (14905/25143)
+2026-10-31T23:00:32.9781655Z Updating files:  60% (15086/25143)
+2026-10-31T23:00:32.9927835Z Updating files:  61% (15338/25143)
+2026-10-31T23:00:33.0102784Z Updating files:  62% (15589/25143)
+2026-10-31T23:00:33.0258563Z Updating files:  63% (15841/25143)
+2026-10-31T23:00:33.0438958Z Updating files:  64% (16092/25143)
+2026-10-31T23:00:33.0587538Z Updating files:  65% (16343/25143)
+2026-10-31T23:00:33.0693440Z Updating files:  66% (16595/25143)
+2026-10-31T23:00:33.0854120Z Updating files:  67% (16846/25143)
+2026-10-31T23:00:33.1011306Z Updating files:  68% (17098/25143)
+2026-10-31T23:00:33.1188798Z Updating files:  69% (17349/25143)
+2026-10-31T23:00:33.1355049Z Updating files:  70% (17601/25143)
+2026-10-31T23:00:33.1514737Z Updating files:  71% (17852/25143)
+2026-10-31T23:00:33.1658927Z Updating files:  72% (18103/25143)
+2026-10-31T23:00:33.1832038Z Updating files:  73% (18355/25143)
+2026-10-31T23:00:33.1996908Z Updating files:  74% (18606/25143)
+2026-10-31T23:00:33.2169108Z Updating files:  75% (18858/25143)
+2026-10-31T23:00:33.2319804Z Updating files:  76% (19109/25143)
+2026-10-31T23:00:33.2434798Z Updating files:  77% (19361/25143)
+2026-10-31T23:00:33.2552144Z Updating files:  78% (19612/25143)
+2026-10-31T23:00:33.2666713Z Updating files:  79% (19863/25143)
+2026-10-31T23:00:33.2776467Z Updating files:  80% (20115/25143)
+2026-10-31T23:00:33.2892569Z Updating files:  81% (20366/25143)
+2026-10-31T23:00:33.3003057Z Updating files:  82% (20618/25143)
+2026-10-31T23:00:33.3155368Z Updating files:  83% (20869/25143)
+2026-10-31T23:00:33.3334831Z Updating files:  84% (21121/25143)
+2026-10-31T23:00:33.3495208Z Updating files:  85% (21372/25143)
+2026-10-31T23:00:33.3678183Z Updating files:  86% (21623/25143)
+2026-10-31T23:00:33.3795747Z Updating files:  87% (21875/25143)
+2026-10-31T23:00:33.3907443Z Updating files:  88% (22126/25143)
+2026-10-31T23:00:33.4017049Z Updating files:  89% (22378/25143)
+2026-10-31T23:00:33.4135265Z Updating files:  90% (22629/25143)
+2026-10-31T23:00:33.4245114Z Updating files:  91% (22881/25143)
+2026-10-31T23:00:33.4390731Z Updating files:  92% (23132/25143)
+2026-10-31T23:00:33.4563837Z Updating files:  93% (23383/25143)
+2026-10-31T23:00:33.4719049Z Updating files:  94% (23635/25143)
+2026-10-31T23:00:33.4898662Z Updating files:  95% (23886/25143)
+2026-10-31T23:00:33.5048889Z Updating files:  96% (24138/25143)
+2026-10-31T23:00:33.5177503Z Updating files:  97% (24389/25143)
+2026-10-31T23:00:33.5312305Z Updating files:  98% (24641/25143)
+2026-10-31T23:00:33.5451220Z Updating files:  99% (24892/25143)
+2026-10-31T23:00:33.5452247Z Updating files: 100% (25143/25143)
+2026-10-31T23:00:33.5452690Z Updating files: 100% (25143/25143), done.
+2026-10-31T23:00:33.5703722Z Note: switching to 'refs/remotes/pull/3/merge'.
+2026-10-31T23:00:33.5704542Z 
+2026-10-31T23:00:33.5704913Z You are in 'detached HEAD' state. You can look around, make experimental
+2026-10-31T23:00:33.5705868Z changes and commit them, and you can discard any commits you make in this
+2026-10-31T23:00:33.5706660Z state without impacting any branches by switching back to a branch.
+2026-10-31T23:00:33.5707126Z 
+2026-10-31T23:00:33.5707436Z If you want to create a new branch to retain commits you create, you may
+2026-10-31T23:00:33.5708165Z do so (now or later) by using -c with the switch command. Example:
+2026-10-31T23:00:33.5709014Z 
+2026-10-31T23:00:33.5709178Z   git switch -c <new-branch-name>
+2026-10-31T23:00:33.5709508Z 
+2026-10-31T23:00:33.5709660Z Or undo this operation with:
+2026-10-31T23:00:33.5709921Z 
+2026-10-31T23:00:33.5710058Z   git switch -
+2026-10-31T23:00:33.5710249Z 
+2026-10-31T23:00:33.5710599Z Turn off this advice by setting config variable advice.detachedHead to false
+2026-10-31T23:00:33.5711113Z 
+2026-10-31T23:00:33.5711706Z HEAD is now at d9897b6 Merge af78823b9ea7041166125e773aa4d63ffc58f9d8 into f06ac54030486a3bf53c9fadacd4022d6a736195
+2026-10-31T23:00:33.5740691Z ##[endgroup]
+2026-10-31T23:00:33.5794229Z [command]/usr/bin/git log -1 --format=%H
+2026-10-31T23:00:33.5823069Z d9897b6dcc0b2ef18bded0e64d01560ae78291cc
+2026-10-31T23:00:33.6116374Z ##[group]Run actions/setup-node@v4
+2026-10-31T23:00:33.6116685Z with:
+2026-10-31T23:00:33.6116897Z   node-version: 22.23.4
+2026-10-31T23:00:33.6117131Z   always-auth: false
+2026-10-31T23:00:33.6117345Z   check-latest: false
+2026-10-31T23:00:33.6119617Z   token: ***
+2026-10-31T23:00:33.6119822Z ##[endgroup]
+2026-10-31T23:00:33.7625299Z Found in cache @ /opt/hostedtoolcache/node/22.23.4/x64
+2026-10-31T23:00:33.7629830Z (node:2350) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-31T23:00:33.7630561Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-31T23:00:33.7633296Z ##[group]Environment details
+2026-10-31T23:00:34.2304679Z node: v22.23.4
+2026-10-31T23:00:34.2305157Z npm: 10.9.9
+2026-10-31T23:00:34.2305490Z yarn: 1.22.22
+2026-10-31T23:00:34.2306345Z ##[endgroup]
+2026-10-31T23:00:34.2490382Z ##[group]Run actions/setup-python@v5
+2026-10-31T23:00:34.2490677Z with:
+2026-10-31T23:00:34.2490877Z   python-version: 3.13
+2026-10-31T23:00:34.2491111Z   check-latest: false
+2026-10-31T23:00:34.2493359Z   token: ***
+2026-10-31T23:00:34.2493630Z   update-environment: true
+2026-10-31T23:00:34.2494145Z   allow-prereleases: false
+2026-10-31T23:00:34.2494407Z   freethreaded: false
+2026-10-31T23:00:34.2494619Z ##[endgroup]
+2026-10-31T23:00:34.3895174Z ##[group]Installed versions
+2026-10-31T23:00:34.4029379Z (node:2381) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-31T23:00:34.4031209Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-31T23:00:34.4039954Z Successfully set up CPython (3.13.17)
+2026-10-31T23:00:34.4040740Z ##[endgroup]
+2026-10-31T23:00:34.4184153Z ##[group]Run npm install --global pnpm@10.14.0 --ignore-scripts --no-audit --no-fund
+2026-10-31T23:00:34.4185089Z [36;1mnpm install --global pnpm@10.14.0 --ignore-scripts --no-audit --no-fund[0m
+2026-10-31T23:00:34.4185590Z [36;1mpnpm install --frozen-lockfile --ignore-scripts[0m
+2026-10-31T23:00:34.4185924Z [36;1mpython3 -m venv .venv[0m
+2026-10-31T23:00:34.4186450Z [36;1m.venv/bin/python -m pip install -r requirements-contracts.txt[0m
+2026-10-31T23:00:34.4243198Z shell: /usr/bin/bash -e {0}
+2026-10-31T23:00:34.4243502Z env:
+2026-10-31T23:00:34.4243795Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.17/x64
+2026-10-31T23:00:34.4244597Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.17/x64/lib/pkgconfig
+2026-10-31T23:00:34.4245050Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.17/x64
+2026-10-31T23:00:34.4245462Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.17/x64
+2026-10-31T23:00:34.4245869Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.17/x64
+2026-10-31T23:00:34.4246319Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.17/x64/lib
+2026-10-31T23:00:34.4246653Z ##[endgroup]
+2026-10-31T23:00:36.2405643Z 
+2026-10-31T23:00:36.2406665Z added 1 package in 2s
+2026-10-31T23:00:36.6430904Z Scope: all 6 workspace projects
+2026-10-31T23:00:36.6742635Z Lockfile is up to date, resolution step is skipped
+2026-10-31T23:00:36.7002607Z Progress: resolved 1, reused 0, downloaded 0, added 0
+2026-10-31T23:00:36.7117997Z Packages: +48
+2026-10-31T23:00:36.7145205Z ++++++++++++++++++++++++++++++++++++++++++++++++
+2026-10-31T23:00:37.5565861Z Progress: resolved 48, reused 0, downloaded 48, added 48, done
+2026-10-31T23:00:37.6173469Z 
+2026-10-31T23:00:37.6174671Z devDependencies:
+2026-10-31T23:00:37.6175175Z + @types/node 22.15.30
+2026-10-31T23:00:37.6175758Z + typescript 5.8.3
+2026-10-31T23:00:37.6175985Z 
+2026-10-31T23:00:37.6320032Z Done in 1.3s using pnpm v10.14.0
+2026-10-31T23:00:40.8292896Z Collecting jsonschema==4.26.0 (from -r requirements-contracts.txt (line 4))
+2026-10-31T23:00:40.8694473Z   Downloading jsonschema-4.26.0-py3-none-any.whl (90 kB)
+2026-10-31T23:00:40.9035030Z Collecting attrs==26.1.0 (from -r requirements-contracts.txt (line 6))
+2026-10-31T23:00:40.9127299Z   Downloading attrs-26.1.0-py3-none-any.whl (67 kB)
+2026-10-31T23:00:40.9322251Z Collecting jsonschema-specifications==2025.9.1 (from -r requirements-contracts.txt (line 8))
+2026-10-31T23:00:40.9414556Z   Downloading jsonschema_specifications-2025.9.1-py3-none-any.whl (18 kB)
+2026-10-31T23:00:40.9668561Z Collecting referencing==0.37.0 (from -r requirements-contracts.txt (line 10))
+2026-10-31T23:00:40.9762274Z   Downloading referencing-0.37.0-py3-none-any.whl (26 kB)
+2026-10-31T23:00:41.2461688Z Collecting rpds-py==2026.9.1 (from -r requirements-contracts.txt (line 12))
+2026-10-31T23:00:41.2555256Z   Downloading rpds_py-2026.9.1-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (370 kB)
+2026-10-31T23:00:41.2935315Z Installing collected packages: rpds-py, attrs, referencing, jsonschema-specifications, jsonschema
+2026-10-31T23:00:41.4526394Z 
+2026-10-31T23:00:41.4542099Z Successfully installed attrs-26.1.0 jsonschema-4.26.0 jsonschema-specifications-2025.9.1 referencing-0.37.0 rpds-py-2026.9.1
+2026-10-31T23:00:41.5104914Z ##[group]Run pnpm run typecheck
+2026-10-31T23:00:41.5105279Z [36;1mpnpm run typecheck[0m
+2026-10-31T23:00:41.5141780Z shell: /usr/bin/bash -e {0}
+2026-10-31T23:00:41.5142031Z env:
+2026-10-31T23:00:41.5142297Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.17/x64
+2026-10-31T23:00:41.5142762Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.17/x64/lib/pkgconfig
+2026-10-31T23:00:41.5143215Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.17/x64
+2026-10-31T23:00:41.5143596Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.17/x64
+2026-10-31T23:00:41.5144378Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.17/x64
+2026-10-31T23:00:41.5145069Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.17/x64/lib
+2026-10-31T23:00:41.5145635Z ##[endgroup]
+2026-10-31T23:00:41.9020067Z 
+2026-10-31T23:00:41.9020930Z > heurisko@ typecheck /home/runner/work/Heurisko/Heurisko
+2026-10-31T23:00:41.9021850Z > pnpm run build && pnpm -r run typecheck
+2026-10-31T23:00:41.9022260Z 
+2026-10-31T23:00:42.2790356Z 
+2026-10-31T23:00:42.2791126Z > heurisko@ build /home/runner/work/Heurisko/Heurisko
+2026-10-31T23:00:42.2793265Z > pnpm --filter @heurisko/core... run build && node_modules/.bin/tsc -p integration/part4/tsconfig.json && pnpm --filter @heurisko/tui --filter @heurisko/cli --filter @heurisko/web run build
+2026-10-31T23:00:42.2794938Z 
+2026-10-31T23:00:42.6677007Z Scope: 2 of 6 workspace projects
+2026-10-31T23:00:42.6707644Z packages/contracts build$ tsc -p tsconfig.json
+2026-10-31T23:00:43.6549746Z packages/contracts build: Done
+2026-10-31T23:00:43.6565295Z packages/core build$ tsc -p tsconfig.json
+2026-10-31T23:00:45.4007605Z packages/core build: Done
+2026-10-31T23:00:47.0854448Z Scope: 3 of 6 workspace projects
+2026-10-31T23:00:47.0884312Z packages/tui build$ tsc -p tsconfig.json
+2026-10-31T23:00:47.0890164Z apps/web build$ node build.mjs
+2026-10-31T23:00:49.2713652Z apps/web build: Done
+2026-10-31T23:00:50.4162161Z packages/tui build: Done
+2026-10-31T23:00:50.4171138Z packages/cli build$ tsc -p tsconfig.json
+2026-10-31T23:00:51.6655906Z packages/cli build: Done
+2026-10-31T23:00:52.2085850Z Scope: 5 of 6 workspace projects
+2026-10-31T23:00:52.2125617Z packages/contracts typecheck$ tsc --noEmit -p tsconfig.json
+2026-10-31T23:00:53.3877800Z packages/contracts typecheck: Done
+2026-10-31T23:00:53.3887964Z packages/core typecheck$ tsc --noEmit -p tsconfig.json
+2026-10-31T23:00:54.9836482Z packages/core typecheck: Done
+2026-10-31T23:00:54.9844492Z apps/web typecheck$ tsc --noEmit -p tsconfig.json
+2026-10-31T23:00:54.9848840Z packages/tui typecheck$ tsc --noEmit -p tsconfig.json
+2026-10-31T23:00:58.3612347Z packages/tui typecheck: Done
+2026-10-31T23:00:58.7667102Z apps/web typecheck: Done
+2026-10-31T23:00:58.7675108Z packages/cli typecheck$ tsc --noEmit -p tsconfig.json
+2026-10-31T23:00:59.8470139Z packages/cli typecheck: Done
+2026-10-31T23:00:59.8707934Z ##[group]Run PATH="$PWD/.venv/bin:$PATH" pnpm run test:contracts
+2026-10-31T23:00:59.8708419Z [36;1mPATH="$PWD/.venv/bin:$PATH" pnpm run test:contracts[0m
+2026-10-31T23:00:59.8739206Z shell: /usr/bin/bash -e {0}
+2026-10-31T23:00:59.8739451Z env:
+2026-10-31T23:00:59.8739715Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.17/x64
+2026-10-31T23:00:59.8740166Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.17/x64/lib/pkgconfig
+2026-10-31T23:00:59.8740601Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.17/x64
+2026-10-31T23:00:59.8741011Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.17/x64
+2026-10-31T23:00:59.8741396Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.17/x64
+2026-10-31T23:00:59.8741777Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.17/x64/lib
+2026-10-31T23:00:59.8742094Z ##[endgroup]
+2026-10-31T23:01:00.2514091Z 
+2026-10-31T23:01:00.2515021Z > heurisko@ test:contracts /home/runner/work/Heurisko/Heurisko
+2026-10-31T23:01:00.2516179Z > python3 packages/contracts/tests/validate_contracts.py && node packages/contracts/tests/smoke-handshake.mjs
+2026-10-31T23:01:00.2517108Z 
+2026-10-31T23:01:00.5065304Z PASS F0 : JSON Schema + evidence/inference invariants
+2026-10-31T23:01:00.5066166Z PASS F1 : JSON Schema + evidence/inference invariants
+2026-10-31T23:01:00.5066879Z PASS F2 : JSON Schema + evidence/inference invariants
+2026-10-31T23:01:00.5067554Z PASS F3 : JSON Schema + evidence/inference invariants
+2026-10-31T23:01:00.5068201Z PASS F4 : JSON Schema + evidence/inference invariants
+2026-10-31T23:01:00.5068884Z PASS F5 : JSON Schema + evidence/inference invariants
+2026-10-31T23:01:00.5069527Z PASS F6 : JSON Schema + evidence/inference invariants
+2026-10-31T23:01:00.5070425Z PASS negative false_integrity_success : artifact integrity report mismatch
+2026-10-31T23:01:00.5071428Z PASS negative integrity_without_digest : 'none' is not one of ['sha512', 'sha256']
+2026-10-31T23:01:00.5072375Z PASS negative invalid_schema : -1 is less than the minimum of 0
+2026-10-31T23:01:00.5073162Z PASS negative invented_evidence : invented evidence ID
+2026-10-31T23:01:00.5074124Z PASS negative missing_omission : omission byte total mismatch
+2026-10-31T23:01:00.5075239Z PASS negative provenance_unverified_evidence : verified provenance lacks verified assertion evidence
+2026-10-31T23:01:00.5076311Z PASS negative provenance_without_binding : 'matched' was expected
+2026-10-31T23:01:00.5077093Z PASS negative rejected_ai_claim : invented evidence ID
+2026-10-31T23:01:00.5077915Z PASS negative source_subdirectory_collision : non-deterministic reportId
+2026-10-31T23:01:00.5079082Z PASS negative unsubstantiated_rebuild : reproduced transform lacks independently verified build evidence
+2026-10-31T23:01:00.5080232Z F7: WatchState + Job schema-only fixture validated (no scheduler was executed)
+2026-10-31T23:01:00.5081701Z G0 synthetic corpus: 7 valid × 3 contract shapes, 10 invalid cases rejected; mode: FULL SCHEMA + SEMANTIC
+2026-10-31T23:01:00.5522687Z PASS F0 stubbed collectEvidence → analyzeEvidence → InvestigationReport
+2026-10-31T23:01:00.5528378Z PASS F1 stubbed collectEvidence → analyzeEvidence → InvestigationReport
+2026-10-31T23:01:00.5532466Z PASS F2 stubbed collectEvidence → analyzeEvidence → InvestigationReport
+2026-10-31T23:01:00.5535916Z PASS F3 stubbed collectEvidence → analyzeEvidence → InvestigationReport
+2026-10-31T23:01:00.5538952Z PASS F4 stubbed collectEvidence → analyzeEvidence → InvestigationReport
+2026-10-31T23:01:00.5542199Z PASS F5 stubbed collectEvidence → analyzeEvidence → InvestigationReport
+2026-10-31T23:01:00.5545812Z PASS F6 stubbed collectEvidence → analyzeEvidence → InvestigationReport
+2026-10-31T23:01:00.5546925Z Note: these are synthetic interface fixtures, NOT real engine output.
+2026-10-31T23:01:00.5726937Z ##[group]Run pnpm run test:foundation
+2026-10-31T23:01:00.5727280Z [36;1mpnpm run test:foundation[0m
+2026-10-31T23:01:00.5758028Z shell: /usr/bin/bash -e {0}
+2026-10-31T23:01:00.5758276Z env:
+2026-10-31T23:01:00.5758544Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.17/x64
+2026-10-31T23:01:00.5758984Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.17/x64/lib/pkgconfig
+2026-10-31T23:01:00.5759441Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.17/x64
+2026-10-31T23:01:00.5759830Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.17/x64
+2026-10-31T23:01:00.5760214Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.17/x64
+2026-10-31T23:01:00.5760599Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.17/x64/lib
+2026-10-31T23:01:00.5760935Z ##[endgroup]
+2026-10-31T23:01:00.9444467Z 
+2026-10-31T23:01:00.9445668Z > heurisko@ test:foundation /home/runner/work/Heurisko/Heurisko
+2026-10-31T23:01:00.9446544Z > pnpm run build && node --test packages/core/tests/foundation.test.mjs
+2026-10-31T23:01:00.9446938Z 
+2026-10-31T23:01:01.3136951Z 
+2026-10-31T23:01:01.3137663Z > heurisko@ build /home/runner/work/Heurisko/Heurisko
+2026-10-31T23:01:01.3139697Z > pnpm --filter @heurisko/core... run build && node_modules/.bin/tsc -p integration/part4/tsconfig.json && pnpm --filter @heurisko/tui --filter @heurisko/cli --filter @heurisko/web run build
+2026-10-31T23:01:01.3140848Z 
+2026-10-31T23:01:01.7088847Z Scope: 2 of 6 workspace projects
+2026-10-31T23:01:01.7120826Z packages/contracts build$ tsc -p tsconfig.json
+2026-10-31T23:01:02.6519880Z packages/contracts build: Done
+2026-10-31T23:01:02.6530476Z packages/core build$ tsc -p tsconfig.json
+2026-10-31T23:01:04.4112215Z packages/core build: Done
+2026-10-31T23:01:06.0540387Z Scope: 3 of 6 workspace projects
+2026-10-31T23:01:06.0570126Z packages/tui build$ tsc -p tsconfig.json
+2026-10-31T23:01:06.0576180Z apps/web build$ node build.mjs
+2026-10-31T23:01:08.0878521Z apps/web build: Done
+2026-10-31T23:01:09.1118381Z packages/tui build: Done
+2026-10-31T23:01:09.1126088Z packages/cli build$ tsc -p tsconfig.json
+2026-10-31T23:01:10.2469089Z packages/cli build: Done
+2026-10-31T23:01:10.3130156Z TAP version 13
+2026-10-31T23:01:10.4463719Z # Subtest: known-answer ASCII/Unicode/integer vectors match the accepted Python algorithm
+2026-10-31T23:01:10.4465870Z ok 1 - known-answer ASCII/Unicode/integer vectors match the accepted Python algorithm
+2026-10-31T23:01:10.4466720Z   ---
+2026-10-31T23:01:10.4467104Z   duration_ms: 31.026654
+2026-10-31T23:01:10.4467552Z   type: 'test'
+2026-10-31T23:01:10.4467915Z   ...
+2026-10-31T23:01:10.4468796Z # Subtest: all G0 evidence/report IDs are reproduced without changing accepted fixture order
+2026-10-31T23:01:10.4470127Z ok 2 - all G0 evidence/report IDs are reproduced without changing accepted fixture order
+2026-10-31T23:01:10.4470942Z   ---
+2026-10-31T23:01:10.4471285Z   duration_ms: 2.875159
+2026-10-31T23:01:10.4471686Z   type: 'test'
+2026-10-31T23:01:10.4472023Z   ...
+2026-10-31T23:01:10.4472923Z # Subtest: source order is deterministic; subtree/snapshot/build/config changes alter identity
+2026-10-31T23:01:10.4474710Z ok 3 - source order is deterministic; subtree/snapshot/build/config changes alter identity
+2026-10-31T23:01:10.4475549Z   ---
+2026-10-31T23:01:10.4475896Z   duration_ms: 32.178626
+2026-10-31T23:01:10.4476303Z   type: 'test'
+2026-10-31T23:01:10.4476646Z   ...
+2026-10-31T23:01:14.8066257Z # Subtest: producer/consumer/persistence/import boundaries accept all positive G0 records
+2026-10-31T23:01:14.8068015Z ok 4 - producer/consumer/persistence/import boundaries accept all positive G0 records
+2026-10-31T23:01:14.8068933Z   ---
+2026-10-31T23:01:14.8069431Z   duration_ms: 4368.578314
+2026-10-31T23:01:14.8069935Z   type: 'test'
+2026-10-31T23:01:14.8070398Z   ...
+2026-10-31T23:01:16.0516076Z # Subtest: every accepted negative G0 counterexample is rejected at runtime
+2026-10-31T23:01:16.0517635Z ok 5 - every accepted negative G0 counterexample is rejected at runtime
+2026-10-31T23:01:16.0518474Z   ---
+2026-10-31T23:01:16.0519776Z   duration_ms: 1246.078326
+2026-10-31T23:01:16.0520098Z   type: 'test'
+2026-10-31T23:01:16.0520306Z   ...
+2026-10-31T23:01:16.4295687Z # Subtest: producer rejects unknown fields, forged IDs and unaccounted omissions
+2026-10-31T23:01:16.4297049Z ok 6 - producer rejects unknown fields, forged IDs and unaccounted omissions
+2026-10-31T23:01:16.4297926Z   ---
+2026-10-31T23:01:16.4298306Z   duration_ms: 377.978017
+2026-10-31T23:01:16.4298710Z   type: 'test'
+2026-10-31T23:01:16.4299045Z   ...
+2026-10-31T23:01:16.5565361Z # Subtest: consumer references are checked against the original evidence
+2026-10-31T23:01:16.5566031Z ok 7 - consumer references are checked against the original evidence
+2026-10-31T23:01:16.5566416Z   ---
+2026-10-31T23:01:16.5566628Z   duration_ms: 126.042239
+2026-10-31T23:01:16.5566894Z   type: 'test'
+2026-10-31T23:01:16.5567095Z   ...
+2026-10-31T23:01:16.9333309Z # Subtest: import rejects duplicate keys, unsafe numeric values, malformed JSON and size overflow
+2026-10-31T23:01:16.9335472Z ok 8 - import rejects duplicate keys, unsafe numeric values, malformed JSON and size overflow
+2026-10-31T23:01:16.9336683Z   ---
+2026-10-31T23:01:16.9337396Z   duration_ms: 373.067721
+2026-10-31T23:01:16.9338105Z   type: 'test'
+2026-10-31T23:01:16.9338639Z   ...
+2026-10-31T23:01:16.9339609Z # Subtest: missing validator fails closed; pre-cancelled validation never runs
+2026-10-31T23:01:16.9343010Z ok 9 - missing validator fails closed; pre-cancelled validation never runs
+2026-10-31T23:01:16.9344208Z   ---
+2026-10-31T23:01:16.9344802Z   duration_ms: 4.876434
+2026-10-31T23:01:16.9345399Z   type: 'test'
+2026-10-31T23:01:16.9345927Z   ...
+2026-10-31T23:01:17.1832227Z # Subtest: boundary results and persistence encoding cannot change while validation awaits
+2026-10-31T23:01:17.1833733Z ok 10 - boundary results and persistence encoding cannot change while validation awaits
+2026-10-31T23:01:17.1845460Z   ---
+2026-10-31T23:01:17.1845959Z   duration_ms: 248.93637
+2026-10-31T23:01:17.1846474Z   type: 'test'
+2026-10-31T23:01:17.1846976Z   ...
+2026-10-31T23:01:17.8008207Z # Subtest: missing analysis is explicitly incomplete with no invented findings
+2026-10-31T23:01:17.8009952Z ok 11 - missing analysis is explicitly incomplete with no invented findings
+2026-10-31T23:01:17.8010986Z   ---
+2026-10-31T23:01:17.8011624Z   duration_ms: 616.989068
+2026-10-31T23:01:17.8012288Z   type: 'test'
+2026-10-31T23:01:17.8012852Z   ...
+2026-10-31T23:01:18.4102027Z # Subtest: injected team module receives deeply frozen copies and validated options
+2026-10-31T23:01:18.4103486Z ok 12 - injected team module receives deeply frozen copies and validated options
+2026-10-31T23:01:18.4104309Z   ---
+2026-10-31T23:01:18.4104679Z   duration_ms: 609.972018
+2026-10-31T23:01:18.4105228Z   type: 'test'
+2026-10-31T23:01:18.4105600Z   ...
+2026-10-31T23:01:19.0269363Z # Subtest: module exceptions are bounded errors; invalid output is rejected
+2026-10-31T23:01:19.0271056Z ok 13 - module exceptions are bounded errors; invalid output is rejected
+2026-10-31T23:01:19.0272059Z   ---
+2026-10-31T23:01:19.0272616Z   duration_ms: 616.35204
+2026-10-31T23:01:19.0273060Z   type: 'test'
+2026-10-31T23:01:19.0273400Z   ...
+2026-10-31T23:01:19.2813662Z # Subtest: cancellation stops waiting for an asynchronous team module
+2026-10-31T23:01:19.2815035Z ok 14 - cancellation stops waiting for an asynchronous team module
+2026-10-31T23:01:19.2816092Z   ---
+2026-10-31T23:01:19.2816580Z   duration_ms: 250.875664
+2026-10-31T23:01:19.2816971Z   type: 'test'
+2026-10-31T23:01:19.2817288Z   ...
+2026-10-31T23:01:19.2818776Z # Subtest: deterministic equivalence excludes timestamps/model prose; storage bytes differ
+2026-10-31T23:01:19.2820080Z ok 15 - deterministic equivalence excludes timestamps/model prose; storage bytes differ
+2026-10-31T23:01:19.2821267Z   ---
+2026-10-31T23:01:19.2821600Z   duration_ms: 3.987504
+2026-10-31T23:01:19.2821980Z   type: 'test'
+2026-10-31T23:01:19.2822310Z   ...
+2026-10-31T23:01:19.5201725Z # Subtest: unavailable AI can coexist with completed deterministic processing
+2026-10-31T23:01:19.5203359Z ok 16 - unavailable AI can coexist with completed deterministic processing
+2026-10-31T23:01:19.5211953Z   ---
+2026-10-31T23:01:19.5212360Z   duration_ms: 124.626674
+2026-10-31T23:01:19.5212768Z   type: 'test'
+2026-10-31T23:01:19.5213101Z   ...
+2026-10-31T23:01:19.5213561Z # Subtest: CLI help is noninteractive; malformed analyze returns 3
+2026-10-31T23:01:19.5214403Z ok 17 - CLI help is noninteractive; malformed analyze returns 3
+2026-10-31T23:01:19.5214751Z   ---
+2026-10-31T23:01:19.5214953Z   duration_ms: 115.713706
+2026-10-31T23:01:19.5215180Z   type: 'test'
+2026-10-31T23:01:19.5215374Z   ...
+2026-10-31T23:01:19.5317062Z 1..17
+2026-10-31T23:01:19.5317448Z # tests 17
+2026-10-31T23:01:19.5317724Z # suites 0
+2026-10-31T23:01:19.5318300Z # pass 17
+2026-10-31T23:01:19.5318891Z # fail 0
+2026-10-31T23:01:19.5319416Z # cancelled 0
+2026-10-31T23:01:19.5320141Z # skipped 0
+2026-10-31T23:01:19.5320766Z # todo 0
+2026-10-31T23:01:19.5321567Z # duration_ms 9232.170715
+2026-10-31T23:01:19.5528901Z ##[group]Run docker pull python:3.13.18-slim-bookworm@sha256:281d39ff02e3b389401586134ff9e6572954687822a58055ec07a60ded4e0b7f
+2026-10-31T23:01:19.5529829Z [36;1mdocker pull python:3.13.18-slim-bookworm@sha256:281d39ff02e3b389401586134ff9e6572954687822a58055ec07a60ded4e0b7f[0m
+2026-10-31T23:01:19.5561003Z shell: /usr/bin/bash -e {0}
+2026-10-31T23:01:19.5561261Z env:
+2026-10-31T23:01:19.5561530Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.17/x64
+2026-10-31T23:01:19.5561979Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.17/x64/lib/pkgconfig
+2026-10-31T23:01:19.5562444Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.17/x64
+2026-10-31T23:01:19.5562846Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.17/x64
+2026-10-31T23:01:19.5563238Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.17/x64
+2026-10-31T23:01:19.5563644Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.17/x64/lib
+2026-10-31T23:01:19.5564314Z ##[endgroup]
+2026-10-31T23:01:19.9317004Z docker.io/library/python@sha256:281d39ff02e3b389401586134ff9e6572954687822a58055ec07a60ded4e0b7f: Pulling from library/python
+2026-10-31T23:01:20.0911091Z 7e143ada11af: Pulling fs layer
+2026-10-31T23:01:20.0912047Z 3c5439d0ae62: Pulling fs layer
+2026-10-31T23:01:20.0920401Z 2ed7a1a27c6d: Pulling fs layer
+2026-10-31T23:01:20.0923324Z 6826f8529239: Pulling fs layer
+2026-10-31T23:01:20.1810765Z 6826f8529239: Download complete
+2026-10-31T23:01:20.1811892Z 57e85a5a3bce: Download complete
+2026-10-31T23:01:20.1828709Z 1a7e28b43672: Download complete
+2026-10-31T23:01:20.1833278Z 7e143ada11af: Download complete
+2026-10-31T23:01:20.2798825Z 3c5439d0ae62: Download complete
+2026-10-31T23:01:20.2799802Z 2ed7a1a27c6d: Download complete
+2026-10-31T23:01:21.0842950Z 3c5439d0ae62: Pull complete
+2026-10-31T23:01:21.1808377Z 6826f8529239: Pull complete
+2026-10-31T23:01:21.4503574Z 7e143ada11af: Pull complete
+2026-10-31T23:01:21.4510466Z 2ed7a1a27c6d: Pull complete
+2026-10-31T23:01:21.4512097Z Digest: sha256:281d39ff02e3b389401586134ff9e6572954687822a58055ec07a60ded4e0b7f
+2026-10-31T23:01:21.4513469Z Status: Downloaded newer image for python@sha256:281d39ff02e3b389401586134ff9e6572954687822a58055ec07a60ded4e0b7f
+2026-10-31T23:01:21.4521949Z docker.io/library/python:3.13.18-slim-bookworm@sha256:281d39ff02e3b389401586134ff9e6572954687822a58055ec07a60ded4e0b7f
+2026-10-31T23:01:21.4602032Z ##[group]Run node scripts/check-parser-boundary.mjs .heurisko/ci-parser-boundary.json
+2026-10-31T23:01:21.4603415Z [36;1mnode scripts/check-parser-boundary.mjs .heurisko/ci-parser-boundary.json[0m
+2026-10-31T23:01:21.4647807Z shell: /usr/bin/bash -e {0}
+2026-10-31T23:01:21.4648235Z env:
+2026-10-31T23:01:21.4648700Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.17/x64
+2026-10-31T23:01:21.4649519Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.17/x64/lib/pkgconfig
+2026-10-31T23:01:21.4650673Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.17/x64
+2026-10-31T23:01:21.4651322Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.17/x64
+2026-10-31T23:01:21.4652026Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.17/x64
+2026-10-31T23:01:21.4652541Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.17/x64/lib
+2026-10-31T23:01:21.4653022Z ##[endgroup]
+2026-10-31T23:01:23.1998106Z {
+2026-10-31T23:01:23.1998500Z   "version": "heurisko-parser-boundary-check-v1",
+2026-10-31T23:01:23.1998985Z   "observedAt": "2026-10-31T23:01:23.195Z",
+2026-10-31T23:01:23.1999606Z   "image": "python:3.13.18-slim-bookworm@sha256:281d39ff02e3b389401586134ff9e6572954687822a58055ec07a60ded4e0b7f",
+2026-10-31T23:01:23.2000490Z   "scope": "trusted development resource probes, not target/rebuild execution",
+2026-10-31T23:01:23.2000889Z   "results": [
+2026-10-31T23:01:23.2001081Z     {
+2026-10-31T23:01:23.2001320Z       "probe": "memory-network-mounts",
+2026-10-31T23:01:23.2001652Z       "memoryLimit": 268435456,
+2026-10-31T23:01:23.2001937Z       "hostSentinelVisible": false,
+2026-10-31T23:01:23.2002226Z       "dockerSocketVisible": false,
+2026-10-31T23:01:23.2002533Z       "oversizeAllocationBlocked": true,
+2026-10-31T23:01:23.2002821Z       "egressBlocked": true,
+2026-10-31T23:01:23.2003204Z       "rootWriteBlocked": true,
+2026-10-31T23:01:23.2003554Z       "inputWriteBlocked": true,
+2026-10-31T23:01:23.2003843Z       "workerWriteBlocked": true
+2026-10-31T23:01:23.2004340Z     },
+2026-10-31T23:01:23.2004592Z     {
+2026-10-31T23:01:23.2004932Z       "probe": "cpu",
+2026-10-31T23:01:23.2005172Z       "exitCode": 137,
+2026-10-31T23:01:23.2005421Z       "cpuHardLimitSeconds": 1,
+2026-10-31T23:01:23.2005697Z       "wholeJobTerminated": true
+2026-10-31T23:01:23.2005932Z     }
+2026-10-31T23:01:23.2006194Z   ]
+2026-10-31T23:01:23.2006498Z }
+2026-10-31T23:01:23.2116826Z ##[group]Run pnpm run test:s2
+2026-10-31T23:01:23.2117133Z [36;1mpnpm run test:s2[0m
+2026-10-31T23:01:23.2147713Z shell: /usr/bin/bash -e {0}
+2026-10-31T23:01:23.2147964Z env:
+2026-10-31T23:01:23.2148227Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.17/x64
+2026-10-31T23:01:23.2148680Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.17/x64/lib/pkgconfig
+2026-10-31T23:01:23.2149106Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.17/x64
+2026-10-31T23:01:23.2149486Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.17/x64
+2026-10-31T23:01:23.2149869Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.17/x64
+2026-10-31T23:01:23.2150250Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.17/x64/lib
+2026-10-31T23:01:23.2150571Z ##[endgroup]
+2026-10-31T23:01:23.5844341Z 
+2026-10-31T23:01:23.5845122Z > heurisko@ test:s2 /home/runner/work/Heurisko/Heurisko
+2026-10-31T23:01:23.5846110Z > pnpm run build && node --test packages/core/tests/s2.test.mjs packages/core/tests/network.test.mjs
+2026-10-31T23:01:23.5846651Z 
+2026-10-31T23:01:23.9604588Z 
+2026-10-31T23:01:23.9605337Z > heurisko@ build /home/runner/work/Heurisko/Heurisko
+2026-10-31T23:01:23.9607476Z > pnpm --filter @heurisko/core... run build && node_modules/.bin/tsc -p integration/part4/tsconfig.json && pnpm --filter @heurisko/tui --filter @heurisko/cli --filter @heurisko/web run build
+2026-10-31T23:01:23.9608823Z 
+2026-10-31T23:01:24.3427964Z Scope: 2 of 6 workspace projects
+2026-10-31T23:01:24.3457291Z packages/contracts build$ tsc -p tsconfig.json
+2026-10-31T23:01:25.2803840Z packages/contracts build: Done
+2026-10-31T23:01:25.2818186Z packages/core build$ tsc -p tsconfig.json
+2026-10-31T23:01:27.0370238Z packages/core build: Done
+2026-10-31T23:01:28.6752856Z Scope: 3 of 6 workspace projects
+2026-10-31T23:01:28.6783306Z packages/tui build$ tsc -p tsconfig.json
+2026-10-31T23:01:28.6789726Z apps/web build$ node build.mjs
+2026-10-31T23:01:30.7257744Z apps/web build: Done
+2026-10-31T23:01:31.6860977Z packages/tui build: Done
+2026-10-31T23:01:31.6869498Z packages/cli build$ tsc -p tsconfig.json
+2026-10-31T23:01:32.8339033Z packages/cli build: Done
+2026-10-31T23:01:32.9004746Z TAP version 13
+2026-10-31T23:01:32.9615888Z # Subtest: pins validated DNS address while preserving TLS hostname and captures only selected response headers
+2026-10-31T23:01:32.9624703Z ok 1 - pins validated DNS address while preserving TLS hostname and captures only selected response headers
+2026-10-31T23:01:32.9626063Z   ---
+2026-10-31T23:01:32.9626694Z   duration_ms: 16.050947
+2026-10-31T23:01:32.9627319Z   type: 'test'
+2026-10-31T23:01:32.9627862Z   ...
+2026-10-31T23:01:32.9652176Z # Subtest: rejects mixed public/private DNS answers before creating a socket
+2026-10-31T23:01:32.9653746Z ok 2 - rejects mixed public/private DNS answers before creating a socket
+2026-10-31T23:01:32.9655488Z   ---
+2026-10-31T23:01:32.9656411Z   duration_ms: 1.643438
+2026-10-31T23:01:32.9657441Z   type: 'test'
+2026-10-31T23:01:32.9658335Z   ...
+2026-10-31T23:01:32.9661704Z # Subtest: redirect revalidates DNS and refuses rebinding before another connection
+2026-10-31T23:01:32.9664614Z ok 3 - redirect revalidates DNS and refuses rebinding before another connection
+2026-10-31T23:01:32.9665952Z   ---
+2026-10-31T23:01:32.9666769Z   duration_ms: 4.414823
+2026-10-31T23:01:32.9667565Z   type: 'test'
+2026-10-31T23:01:32.9668354Z   ...
+2026-10-31T23:01:32.9694473Z # Subtest: cross-host redirects cannot leave the HTTPS allowlist
+2026-10-31T23:01:32.9697371Z ok 4 - cross-host redirects cannot leave the HTTPS allowlist
+2026-10-31T23:01:32.9698687Z   ---
+2026-10-31T23:01:32.9699629Z   duration_ms: 2.51176
+2026-10-31T23:01:32.9700491Z   type: 'test'
+2026-10-31T23:01:32.9701447Z   ...
+2026-10-31T23:01:32.9793008Z # Subtest: redirect count, actual streamed size, advertised size and response encodings are bounded
+2026-10-31T23:01:32.9799816Z ok 5 - redirect count, actual streamed size, advertised size and response encodings are bounded
+2026-10-31T23:01:32.9801396Z   ---
+2026-10-31T23:01:32.9802641Z   duration_ms: 10.915189
+2026-10-31T23:01:32.9803644Z   type: 'test'
+2026-10-31T23:01:32.9804656Z   ...
+2026-10-31T23:01:32.9832651Z # Subtest: TLS/HTTP failure, pre-cancel and ambient proxies fail closed without a fallback
+2026-10-31T23:01:32.9838805Z ok 6 - TLS/HTTP failure, pre-cancel and ambient proxies fail closed without a fallback
+2026-10-31T23:01:32.9839956Z   ---
+2026-10-31T23:01:32.9840779Z   duration_ms: 4.049812
+2026-10-31T23:01:32.9841496Z   type: 'test'
+2026-10-31T23:01:32.9842311Z   ...
+2026-10-31T23:01:32.9864162Z # Subtest: acquisition-specific host scopes reject redirects to another globally allowlisted service before a second request
+2026-10-31T23:01:32.9871091Z ok 7 - acquisition-specific host scopes reject redirects to another globally allowlisted service before a second request
+2026-10-31T23:01:32.9872926Z   ---
+2026-10-31T23:01:32.9873725Z   duration_ms: 2.992377
+2026-10-31T23:01:32.9875106Z   type: 'test'
+2026-10-31T23:01:32.9875935Z   ...
+2026-10-31T23:01:32.9881379Z # Subtest: in-flight cancellation aborts a pinned network request without fallback
+2026-10-31T23:01:32.9885042Z ok 8 - in-flight cancellation aborts a pinned network request without fallback
+2026-10-31T23:01:32.9886252Z   ---
+2026-10-31T23:01:32.9887378Z   duration_ms: 2.055898
+2026-10-31T23:01:32.9888164Z   type: 'test'
+2026-10-31T23:01:32.9889073Z   ...
+2026-10-31T23:01:33.4328750Z # Subtest: known-answer member hashes, original names, binary bytes and modes are retained
+2026-10-31T23:01:33.4335643Z not ok 9 - known-answer member hashes, original names, binary bytes and modes are retained
+2026-10-31T23:01:33.4336836Z   ---
+2026-10-31T23:01:33.4337659Z   duration_ms: 467.264648
+2026-10-31T23:01:33.4338392Z   type: 'test'
+2026-10-31T23:01:33.4339465Z   location: '/home/runner/work/Heurisko/Heurisko/packages/core/tests/s2.test.mjs:28:1'
+2026-10-31T23:01:33.4340671Z   failureType: 'testCodeFailure'
+2026-10-31T23:01:33.4341490Z   error: 'PARSER_CLEANUP_UNCONFIRMED'
+2026-10-31T23:01:33.4342564Z   code: 'PARSER_CLEANUP_UNCONFIRMED'
+2026-10-31T23:01:33.4343316Z   stack: |-
+2026-10-31T23:01:33.4352939Z     inventoryArchive (file:///home/runner/work/Heurisko/Heurisko/packages/core/dist/archive.js:79:19)
+2026-10-31T23:01:33.4355522Z     async TestContext.<anonymous> (file:///home/runner/work/Heurisko/Heurisko/packages/core/tests/s2.test.mjs:29:41)
+2026-10-31T23:01:33.4356996Z     async Test.run (node:internal/test_runner/test:1054:7)
+2026-10-31T23:01:33.4358354Z     async startSubtestAfterBootstrap (node:internal/test_runner/harness:296:3)
+2026-10-31T23:01:33.4359310Z   ...
+2026-10-31T23:01:33.8729387Z # Subtest: refuses traversal without materializing archive-controlled paths
+2026-10-31T23:01:33.8731316Z not ok 10 - refuses traversal without materializing archive-controlled paths
+2026-10-31T23:01:33.8732341Z   ---
+2026-10-31T23:01:33.8732836Z   duration_ms: 442.648021
+2026-10-31T23:01:33.8733324Z   type: 'test'
+2026-10-31T23:01:33.8734271Z   location: '/home/runner/work/Heurisko/Heurisko/packages/core/tests/s2.test.mjs:42:3'
+2026-10-31T23:01:33.8735037Z   failureType: 'testCodeFailure'
+2026-10-31T23:01:33.8735514Z   error: 'PARSER_CLEANUP_UNCONFIRMED'
+2026-10-31T23:01:33.8735984Z   code: 'PARSER_CLEANUP_UNCONFIRMED'
+2026-10-31T23:01:33.8736457Z   stack: |-
+2026-10-31T23:01:33.8737161Z     inventoryArchive (file:///home/runner/work/Heurisko/Heurisko/packages/core/dist/archive.js:79:19)
+2026-10-31T23:01:33.8738301Z     async TestContext.<anonymous> (file:///home/runner/work/Heurisko/Heurisko/packages/core/tests/s2.test.mjs:43:46)
+2026-10-31T23:01:33.8739232Z     async Test.run (node:internal/test_runner/test:1054:7)
+2026-10-31T23:01:33.8740155Z     async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+2026-10-31T23:01:33.8740790Z   ...
+2026-10-31T23:01:34.3135630Z # Subtest: refuses absolute without materializing archive-controlled paths
+2026-10-31T23:01:34.3144972Z not ok 11 - refuses absolute without materializing archive-controlled paths
+2026-10-31T23:01:34.3145708Z   ---
+2026-10-31T23:01:34.3146734Z   duration_ms: 440.487218
+2026-10-31T23:01:34.3147389Z   type: 'test'
+2026-10-31T23:01:34.3148424Z   location: '/home/runner/work/Heurisko/Heurisko/packages/core/tests/s2.test.mjs:42:3'
+2026-10-31T23:01:34.3149341Z   failureType: 'testCodeFailure'
+2026-10-31T23:01:34.3150315Z   error: 'PARSER_CLEANUP_UNCONFIRMED'
+2026-10-31T23:01:34.3151143Z   code: 'PARSER_CLEANUP_UNCONFIRMED'
+2026-10-31T23:01:34.3151728Z   stack: |-
+2026-10-31T23:01:34.3152566Z     inventoryArchive (file:///home/runner/work/Heurisko/Heurisko/packages/core/dist/archive.js:79:19)
+2026-10-31T23:01:34.3153499Z     async TestContext.<anonymous> (file:///home/runner/work/Heurisko/Heurisko/packages/core/tests/s2.test.mjs:43:46)
+2026-10-31T23:01:34.3154604Z     async Test.run (node:internal/test_runner/test:1054:7)
+2026-10-31T23:01:34.3155299Z     async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+2026-10-31T23:01:34.3155787Z   ...
+2026-10-31T23:01:34.7445662Z # Subtest: refuses windows drive without materializing archive-controlled paths
+2026-10-31T23:01:34.7447140Z not ok 12 - refuses windows drive without materializing archive-controlled paths
+2026-10-31T23:01:34.7447994Z   ---
+2026-10-31T23:01:34.7448822Z   duration_ms: 430.725281
+2026-10-31T23:01:34.7449488Z   type: 'test'
+2026-10-31T23:01:34.7450491Z   location: '/home/runner/work/Heurisko/Heurisko/packages/core/tests/s2.test.mjs:42:3'
+2026-10-31T23:01:34.7451558Z   failureType: 'testCodeFailure'
+2026-10-31T23:01:34.7452211Z   error: 'PARSER_CLEANUP_UNCONFIRMED'
+2026-10-31T23:01:34.7452936Z   code: 'PARSER_CLEANUP_UNCONFIRMED'
+2026-10-31T23:01:34.7453330Z   stack: |-
+2026-10-31T23:01:34.7454379Z     inventoryArchive (file:///home/runner/work/Heurisko/Heurisko/packages/core/dist/archive.js:79:19)
+2026-10-31T23:01:34.7455791Z     async TestContext.<anonymous> (file:///home/runner/work/Heurisko/Heurisko/packages/core/tests/s2.test.mjs:43:46)
+2026-10-31T23:01:34.7456943Z     async Test.run (node:internal/test_runner/test:1054:7)
+2026-10-31T23:01:34.7457704Z     async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+2026-10-31T23:01:34.7458289Z   ...
+2026-10-31T23:01:35.1845276Z # Subtest: refuses backslash without materializing archive-controlled paths
+2026-10-31T23:01:35.1847233Z not ok 13 - refuses backslash without materializing archive-controlled paths
+2026-10-31T23:01:35.1848188Z   ---
+2026-10-31T23:01:35.1848721Z   duration_ms: 440.19298
+2026-10-31T23:01:35.1849381Z   type: 'test'
+2026-10-31T23:01:35.1850284Z   location: '/home/runner/work/Heurisko/Heurisko/packages/core/tests/s2.test.mjs:42:3'
+2026-10-31T23:01:35.1851320Z   failureType: 'testCodeFailure'
+2026-10-31T23:01:35.1851819Z   error: 'PARSER_CLEANUP_UNCONFIRMED'
+2026-10-31T23:01:35.1852272Z   code: 'PARSER_CLEANUP_UNCONFIRMED'
+2026-10-31T23:01:35.1852716Z   stack: |-
+2026-10-31T23:01:35.1853328Z     inventoryArchive (file:///home/runner/work/Heurisko/Heurisko/packages/core/dist/archive.js:79:19)
+2026-10-31T23:01:35.1854806Z     async TestContext.<anonymous> (file:///home/runner/work/Heurisko/Heurisko/packages/core/tests/s2.test.mjs:43:46)
+2026-10-31T23:01:35.1855820Z     async Test.run (node:internal/test_runner/test:1054:7)
+2026-10-31T23:01:35.1856475Z     async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+2026-10-31T23:01:35.1857065Z   ...
+2026-10-31T23:01:35.6225995Z # Subtest: refuses empty component without materializing archive-controlled paths
+2026-10-31T23:01:35.6227929Z not ok 14 - refuses empty component without materializing archive-controlled paths
+2026-10-31T23:01:35.6228869Z   ---
+2026-10-31T23:01:35.6229369Z   duration_ms: 437.963808
+2026-10-31T23:01:35.6229706Z   type: 'test'
+2026-10-31T23:01:35.6230274Z   location: '/home/runner/work/Heurisko/Heurisko/packages/core/tests/s2.test.mjs:42:3'
+2026-10-31T23:01:35.6230869Z   failureType: 'testCodeFailure'
+2026-10-31T23:01:35.6231280Z   error: 'PARSER_CLEANUP_UNCONFIRMED'
+2026-10-31T23:01:35.6231806Z   code: 'PARSER_CLEANUP_UNCONFIRMED'
+2026-10-31T23:01:35.6232177Z   stack: |-
+2026-10-31T23:01:35.6234893Z     inventoryArchive (file:///home/runner/work/Heurisko/Heurisko/packages/core/dist/archive.js:79:19)
+2026-10-31T23:01:35.6236733Z     async TestContext.<anonymous> (file:///home/runner/work/Heurisko/Heurisko/packages/core/tests/s2.test.mjs:43:46)
+2026-10-31T23:01:35.6238114Z     async Test.run (node:internal/test_runner/test:1054:7)
+2026-10-31T23:01:35.6239414Z     async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+2026-10-31T23:01:35.6240261Z   ...
+2026-10-31T23:01:36.0556626Z # Subtest: refuses dot component without materializing archive-controlled paths
+2026-10-31T23:01:36.0558274Z not ok 15 - refuses dot component without materializing archive-controlled paths
+2026-10-31T23:01:36.0559114Z   ---
+2026-10-31T23:01:36.0559525Z   duration_ms: 433.158667
+2026-10-31T23:01:36.0559955Z   type: 'test'
+2026-10-31T23:01:36.0560785Z   location: '/home/runner/work/Heurisko/Heurisko/packages/core/tests/s2.test.mjs:42:3'
+2026-10-31T23:01:36.0561518Z   failureType: 'testCodeFailure'
+2026-10-31T23:01:36.0562117Z   error: 'PARSER_CLEANUP_UNCONFIRMED'
+2026-10-31T23:01:36.0562652Z   code: 'PARSER_CLEANUP_UNCONFIRMED'
+2026-10-31T23:01:36.0563190Z   stack: |-
+2026-10-31T23:01:36.0564323Z     inventoryArchive (file:///home/runner/work/Heurisko/Heurisko/packages/core/dist/archive.js:79:19)
+2026-10-31T23:01:36.0565371Z     async TestContext.<anonymous> (file:///home/runner/work/Heurisko/Heurisko/packages/core/tests/s2.test.mjs:43:46)
+2026-10-31T23:01:36.0566267Z     async Test.run (node:internal/test_runner/test:1054:7)
+2026-10-31T23:01:36.0567019Z     async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+2026-10-31T23:01:36.0567705Z   ...
+2026-10-31T23:01:36.4988853Z # Subtest: refuses terminal name without materializing archive-controlled paths
+2026-10-31T23:01:36.4991247Z not ok 16 - refuses terminal name without materializing archive-controlled paths
+2026-10-31T23:01:36.4991808Z   ---
+2026-10-31T23:01:36.4992074Z   duration_ms: 443.060099
+2026-10-31T23:01:36.4992371Z   type: 'test'
+2026-10-31T23:01:36.4992963Z   location: '/home/runner/work/Heurisko/Heurisko/packages/core/tests/s2.test.mjs:42:3'
+2026-10-31T23:01:36.4993735Z   failureType: 'testCodeFailure'
+2026-10-31T23:01:36.4995167Z   error: 'PARSER_CLEANUP_UNCONFIRMED'
+2026-10-31T23:01:36.4995584Z   code: 'PARSER_CLEANUP_UNCONFIRMED'
+2026-10-31T23:01:36.4995925Z   stack: |-
+2026-10-31T23:01:36.4996554Z     inventoryArchive (file:///home/runner/work/Heurisko/Heurisko/packages/core/dist/archive.js:79:19)
+2026-10-31T23:01:36.4997660Z     async TestContext.<anonymous> (file:///home/runner/work/Heurisko/Heurisko/packages/core/tests/s2.test.mjs:43:46)
+2026-10-31T23:01:36.4998488Z     async Test.run (node:internal/test_runner/test:1054:7)
+2026-10-31T23:01:36.4999141Z     async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+2026-10-31T23:01:36.4999652Z   ...
+2026-10-31T23:01:36.9331585Z # Subtest: refuses windows ambiguous without materializing archive-controlled paths
+2026-10-31T23:01:36.9332630Z not ok 17 - refuses windows ambiguous without materializing archive-controlled paths
+2026-10-31T23:01:36.9333543Z   ---
+2026-10-31T23:01:36.9336749Z   duration_ms: 434.174618
+2026-10-31T23:01:36.9337236Z   type: 'test'
+2026-10-31T23:01:36.9338058Z   location: '/home/runner/work/Heurisko/Heurisko/packages/core/tests/s2.test.mjs:42:3'
+2026-10-31T23:01:36.9338745Z   failureType: 'testCodeFailure'
+2026-10-31T23:01:36.9339386Z   error: 'PARSER_CLEANUP_UNCONFIRMED'
+2026-10-31T23:01:36.9339985Z   code: 'PARSER_CLEANUP_UNCONFIRMED'
+2026-10-31T23:01:36.9340494Z   stack: |-
+2026-10-31T23:01:36.9341360Z     inventoryArchive (file:///home/runner/work/Heurisko/Heurisko/packages/core/dist/archive.js:79:19)
+2026-10-31T23:01:36.9342470Z     async TestContext.<anonymous> (file:///home/runner/work/Heurisko/Heurisko/packages/core/tests/s2.test.mjs:43:46)
+2026-10-31T23:01:36.9343424Z     async Test.run (node:internal/test_runner/test:1054:7)
+2026-10-31T23:01:36.9344840Z     async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+2026-10-31T23:01:36.9345550Z   ...
+2026-10-31T23:01:37.3655640Z # Subtest: refuses trailing dot without materializing archive-controlled paths
+2026-10-31T23:01:37.3657003Z not ok 18 - refuses trailing dot without materializing archive-controlled paths
+2026-10-31T23:01:37.3657718Z   ---
+2026-10-31T23:01:37.3658977Z   duration_ms: 432.217659
+2026-10-31T23:01:37.3659236Z   type: 'test'
+2026-10-31T23:01:37.3659670Z   location: '/home/runner/work/Heurisko/Heurisko/packages/core/tests/s2.test.mjs:42:3'
+2026-10-31T23:01:37.3660157Z   failureType: 'testCodeFailure'
+2026-10-31T23:01:37.3660465Z   error: 'PARSER_CLEANUP_UNCONFIRMED'
+2026-10-31T23:01:37.3660773Z   code: 'PARSER_CLEANUP_UNCONFIRMED'
+2026-10-31T23:01:37.3661043Z   stack: |-
+2026-10-31T23:01:37.3661540Z     inventoryArchive (file:///home/runner/work/Heurisko/Heurisko/packages/core/dist/archive.js:79:19)
+2026-10-31T23:01:37.3662373Z     async TestContext.<anonymous> (file:///home/runner/work/Heurisko/Heurisko/packages/core/tests/s2.test.mjs:43:46)
+2026-10-31T23:01:37.3663035Z     async Test.run (node:internal/test_runner/test:1054:7)
+2026-10-31T23:01:37.3663538Z     async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+2026-10-31T23:01:37.3664240Z   ...
+2026-10-31T23:01:37.7893781Z # Subtest: refuses duplicate without materializing archive-controlled paths
+2026-10-31T23:01:37.7895491Z not ok 19 - refuses duplicate without materializing archive-controlled paths
+2026-10-31T23:01:37.7896434Z   ---
+2026-10-31T23:01:37.7896884Z   duration_ms: 423.926501
+2026-10-31T23:01:37.7897427Z   type: 'test'
+2026-10-31T23:01:37.7898294Z   location: '/home/runner/work/Heurisko/Heurisko/packages/core/tests/s2.test.mjs:42:3'
+2026-10-31T23:01:37.7899260Z   failureType: 'testCodeFailure'
+2026-10-31T23:01:37.7899792Z   error: 'PARSER_CLEANUP_UNCONFIRMED'
+2026-10-31T23:01:37.7900660Z   code: 'PARSER_CLEANUP_UNCONFIRMED'
+2026-10-31T23:01:37.7901105Z   stack: |-
+2026-10-31T23:01:37.7902032Z     inventoryArchive (file:///home/runner/work/Heurisko/Heurisko/packages/core/dist/archive.js:79:19)
+2026-10-31T23:01:37.7903818Z     async TestContext.<anonymous> (file:///home/runner/work/Heurisko/Heurisko/packages/core/tests/s2.test.mjs:43:46)
+2026-10-31T23:01:37.7905631Z     async Test.run (node:internal/test_runner/test:1054:7)
+2026-10-31T23:01:37.7906218Z     async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+2026-10-31T23:01:37.7906674Z   ...
+2026-10-31T23:01:38.2163357Z # Subtest: refuses case collision without materializing archive-controlled paths
+2026-10-31T23:01:38.2165499Z not ok 20 - refuses case collision without materializing archive-controlled paths
+2026-10-31T23:01:38.2166376Z   ---
+2026-10-31T23:01:38.2166837Z   duration_ms: 426.889756
+2026-10-31T23:01:38.2167343Z   type: 'test'
+2026-10-31T23:01:38.2168180Z   location: '/home/runner/work/Heurisko/Heurisko/packages/core/tests/s2.test.mjs:42:3'
+2026-10-31T23:01:38.2169128Z   failureType: 'testCodeFailure'
+2026-10-31T23:01:38.2169742Z   error: 'PARSER_CLEANUP_UNCONFIRMED'
+2026-10-31T23:01:38.2170385Z   code: 'PARSER_CLEANUP_UNCONFIRMED'
+2026-10-31T23:01:38.2170969Z   stack: |-
+2026-10-31T23:01:38.2171945Z     inventoryArchive (file:///home/runner/work/Heurisko/Heurisko/packages/core/dist/archive.js:79:19)
+2026-10-31T23:01:38.2173535Z     async TestContext.<anonymous> (file:///home/runner/work/Heurisko/Heurisko/packages/core/tests/s2.test.mjs:43:46)
+2026-10-31T23:01:38.2174981Z     async Test.run (node:internal/test_runner/test:1054:7)
+2026-10-31T23:01:38.2175904Z     async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+2026-10-31T23:01:38.2176627Z   ...
+2026-10-31T23:01:38.6417224Z # Subtest: refuses unicode collision without materializing archive-controlled paths
+2026-10-31T23:01:38.6418705Z not ok 21 - refuses unicode collision without materializing archive-controlled paths
+2026-10-31T23:01:38.6419500Z   ---
+2026-10-31T23:01:38.6419858Z   duration_ms: 425.30682
+2026-10-31T23:01:38.6420282Z   type: 'test'
+2026-10-31T23:01:38.6421140Z   location: '/home/runner/work/Heurisko/Heurisko/packages/core/tests/s2.test.mjs:42:3'
+2026-10-31T23:01:38.6422355Z   failureType: 'testCodeFailure'
+2026-10-31T23:01:38.6422941Z   error: 'PARSER_CLEANUP_UNCONFIRMED'
+2026-10-31T23:01:38.6423509Z   code: 'PARSER_CLEANUP_UNCONFIRMED'
+2026-10-31T23:01:38.6424286Z   stack: |-
+2026-10-31T23:01:38.6425239Z     inventoryArchive (file:///home/runner/work/Heurisko/Heurisko/packages/core/dist/archive.js:79:19)
+2026-10-31T23:01:38.6426654Z     async TestContext.<anonymous> (file:///home/runner/work/Heurisko/Heurisko/packages/core/tests/s2.test.mjs:43:46)
+2026-10-31T23:01:38.6427701Z     async Test.run (node:internal/test_runner/test:1054:7)
+2026-10-31T23:01:38.6428519Z     async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+2026-10-31T23:01:38.6429191Z   ...
+2026-10-31T23:01:39.0651452Z # Subtest: refuses file parent without materializing archive-controlled paths
+2026-10-31T23:01:39.0655163Z not ok 22 - refuses file parent without materializing archive-controlled paths
+2026-10-31T23:01:39.0656101Z   ---
+2026-10-31T23:01:39.0656624Z   duration_ms: 423.320109
+2026-10-31T23:01:39.0657080Z   type: 'test'
+2026-10-31T23:01:39.0657534Z   location: '/home/runner/work/Heurisko/Heurisko/packages/core/tests/s2.test.mjs:42:3'
+2026-10-31T23:01:39.0658139Z   failureType: 'testCodeFailure'
+2026-10-31T23:01:39.0658470Z   error: 'PARSER_CLEANUP_UNCONFIRMED'
+2026-10-31T23:01:39.0658777Z   code: 'PARSER_CLEANUP_UNCONFIRMED'
+2026-10-31T23:01:39.0659084Z   stack: |-
+2026-10-31T23:01:39.0659581Z     inventoryArchive (file:///home/runner/work/Heurisko/Heurisko/packages/core/dist/archive.js:79:19)
+2026-10-31T23:01:39.0660388Z     async TestContext.<anonymous> (file:///home/runner/work/Heurisko/Heurisko/packages/core/tests/s2.test.mjs:43:46)
+2026-10-31T23:01:39.0661042Z     async Test.run (node:internal/test_runner/test:1054:7)
+2026-10-31T23:01:39.0661571Z     async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+2026-10-31T23:01:39.0661995Z   ...
+2026-10-31T23:01:39.4979015Z # Subtest: refuses directory parent case without materializing archive-controlled paths
+2026-10-31T23:01:39.4980687Z not ok 23 - refuses directory parent case without materializing archive-controlled paths
+2026-10-31T23:01:39.4982046Z   ---
+2026-10-31T23:01:39.4982653Z   duration_ms: 432.731435
+2026-10-31T23:01:39.4983116Z   type: 'test'
+2026-10-31T23:01:39.4984461Z   location: '/home/runner/work/Heurisko/Heurisko/packages/core/tests/s2.test.mjs:42:3'
+2026-10-31T23:01:39.4985443Z   failureType: 'testCodeFailure'
+2026-10-31T23:01:39.4986099Z   error: 'PARSER_CLEANUP_UNCONFIRMED'
+2026-10-31T23:01:39.4986686Z   code: 'PARSER_CLEANUP_UNCONFIRMED'
+2026-10-31T23:01:39.4987154Z   stack: |-
+2026-10-31T23:01:39.4988059Z     inventoryArchive (file:///home/runner/work/Heurisko/Heurisko/packages/core/dist/archive.js:79:19)
+2026-10-31T23:01:39.4989633Z     async TestContext.<anonymous> (file:///home/runner/work/Heurisko/Heurisko/packages/core/tests/s2.test.mjs:43:46)
+2026-10-31T23:01:39.4991045Z     async Test.run (node:internal/test_runner/test:1054:7)
+2026-10-31T23:01:39.4991960Z     async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+2026-10-31T23:01:39.4992641Z   ...
+2026-10-31T23:01:39.9318698Z # Subtest: refuses implicit directory case without materializing archive-controlled paths
+2026-10-31T23:01:39.9320276Z not ok 24 - refuses implicit directory case without materializing archive-controlled paths
+2026-10-31T23:01:39.9321102Z   ---
+2026-10-31T23:01:39.9321348Z   duration_ms: 433.782034
+2026-10-31T23:01:39.9321628Z   type: 'test'
+2026-10-31T23:01:39.9322132Z   location: '/home/runner/work/Heurisko/Heurisko/packages/core/tests/s2.test.mjs:42:3'
+2026-10-31T23:01:39.9322702Z   failureType: 'testCodeFailure'
+2026-10-31T23:01:39.9323056Z   error: 'PARSER_CLEANUP_UNCONFIRMED'
+2026-10-31T23:01:39.9323419Z   code: 'PARSER_CLEANUP_UNCONFIRMED'
+2026-10-31T23:01:39.9323731Z   stack: |-
+2026-10-31T23:01:39.9324857Z     inventoryArchive (file:///home/runner/work/Heurisko/Heurisko/packages/core/dist/archive.js:79:19)
+2026-10-31T23:01:39.9326176Z     async TestContext.<anonymous> (file:///home/runner/work/Heurisko/Heurisko/packages/core/tests/s2.test.mjs:43:46)
+2026-10-31T23:01:39.9326956Z     async Test.run (node:internal/test_runner/test:1054:7)
+2026-10-31T23:01:39.9327572Z     async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+2026-10-31T23:01:39.9328052Z   ...
+2026-10-31T23:01:40.3652815Z # Subtest: refuses symlink without materializing archive-controlled paths
+2026-10-31T23:01:40.3654743Z not ok 25 - refuses symlink without materializing archive-controlled paths
+2026-10-31T23:01:40.3655196Z   ---
+2026-10-31T23:01:40.3655422Z   duration_ms: 433.555061
+2026-10-31T23:01:40.3655679Z   type: 'test'
+2026-10-31T23:01:40.3656145Z   location: '/home/runner/work/Heurisko/Heurisko/packages/core/tests/s2.test.mjs:42:3'
+2026-10-31T23:01:40.3656653Z   failureType: 'testCodeFailure'
+2026-10-31T23:01:40.3656976Z   error: 'PARSER_CLEANUP_UNCONFIRMED'
+2026-10-31T23:01:40.3657312Z   code: 'PARSER_CLEANUP_UNCONFIRMED'
+2026-10-31T23:01:40.3657581Z   stack: |-
+2026-10-31T23:01:40.3658115Z     inventoryArchive (file:///home/runner/work/Heurisko/Heurisko/packages/core/dist/archive.js:79:19)
+2026-10-31T23:01:40.3659018Z     async TestContext.<anonymous> (file:///home/runner/work/Heurisko/Heurisko/packages/core/tests/s2.test.mjs:43:46)
+2026-10-31T23:01:40.3659675Z     async Test.run (node:internal/test_runner/test:1054:7)
+2026-10-31T23:01:40.3660201Z     async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+2026-10-31T23:01:40.3660611Z   ...
+2026-10-31T23:01:40.8002412Z # Subtest: refuses hardlink without materializing archive-controlled paths
+2026-10-31T23:01:40.8003547Z not ok 26 - refuses hardlink without materializing archive-controlled paths
+2026-10-31T23:01:40.8005963Z   ---
+2026-10-31T23:01:40.8006323Z   duration_ms: 434.794455
+2026-10-31T23:01:40.8006718Z   type: 'test'
+2026-10-31T23:01:40.8007237Z   location: '/home/runner/work/Heurisko/Heurisko/packages/core/tests/s2.test.mjs:42:3'
+2026-10-31T23:01:40.8007740Z   failureType: 'testCodeFailure'
+2026-10-31T23:01:40.8008275Z   error: 'PARSER_CLEANUP_UNCONFIRMED'
+2026-10-31T23:01:40.8008615Z   code: 'PARSER_CLEANUP_UNCONFIRMED'
+2026-10-31T23:01:40.8009351Z   stack: |-
+2026-10-31T23:01:40.8009868Z     inventoryArchive (file:///home/runner/work/Heurisko/Heurisko/packages/core/dist/archive.js:79:19)
+2026-10-31T23:01:40.8010735Z     async TestContext.<anonymous> (file:///home/runner/work/Heurisko/Heurisko/packages/core/tests/s2.test.mjs:43:46)
+2026-10-31T23:01:40.8011395Z     async Test.run (node:internal/test_runner/test:1054:7)
+2026-10-31T23:01:40.8011917Z     async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+2026-10-31T23:01:40.8012333Z   ...
+2026-10-31T23:01:41.2347785Z # Subtest: refuses fifo without materializing archive-controlled paths
+2026-10-31T23:01:41.2348694Z not ok 27 - refuses fifo without materializing archive-controlled paths
+2026-10-31T23:01:41.2349518Z   ---
+2026-10-31T23:01:41.2350005Z   duration_ms: 434.286385
+2026-10-31T23:01:41.2350503Z   type: 'test'
+2026-10-31T23:01:41.2351329Z   location: '/home/runner/work/Heurisko/Heurisko/packages/core/tests/s2.test.mjs:42:3'
+2026-10-31T23:01:41.2352062Z   failureType: 'testCodeFailure'
+2026-10-31T23:01:41.2352667Z   error: 'PARSER_CLEANUP_UNCONFIRMED'
+2026-10-31T23:01:41.2353247Z   code: 'PARSER_CLEANUP_UNCONFIRMED'
+2026-10-31T23:01:41.2353742Z   stack: |-
+2026-10-31T23:01:41.2354857Z     inventoryArchive (file:///home/runner/work/Heurisko/Heurisko/packages/core/dist/archive.js:79:19)
+2026-10-31T23:01:41.2356062Z     async TestContext.<anonymous> (file:///home/runner/work/Heurisko/Heurisko/packages/core/tests/s2.test.mjs:43:46)
+2026-10-31T23:01:41.2357042Z     async Test.run (node:internal/test_runner/test:1054:7)
+2026-10-31T23:01:41.2358160Z     async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+2026-10-31T23:01:41.2358774Z   ...
+2026-10-31T23:01:41.6676608Z # Subtest: refuses device without materializing archive-controlled paths
+2026-10-31T23:01:41.6679815Z not ok 28 - refuses device without materializing archive-controlled paths
+2026-10-31T23:01:41.6680562Z   ---
+2026-10-31T23:01:41.6680936Z   duration_ms: 432.733457
+2026-10-31T23:01:41.6681370Z   type: 'test'
+2026-10-31T23:01:41.6682147Z   location: '/home/runner/work/Heurisko/Heurisko/packages/core/tests/s2.test.mjs:42:3'
+2026-10-31T23:01:41.6683039Z   failureType: 'testCodeFailure'
+2026-10-31T23:01:41.6683431Z   error: 'PARSER_CLEANUP_UNCONFIRMED'
+2026-10-31T23:01:41.6683803Z   code: 'PARSER_CLEANUP_UNCONFIRMED'
+2026-10-31T23:01:41.6684564Z   stack: |-
+2026-10-31T23:01:41.6685263Z     inventoryArchive (file:///home/runner/work/Heurisko/Heurisko/packages/core/dist/archive.js:79:19)
+2026-10-31T23:01:41.6686297Z     async TestContext.<anonymous> (file:///home/runner/work/Heurisko/Heurisko/packages/core/tests/s2.test.mjs:43:46)
+2026-10-31T23:01:41.6687065Z     async Test.run (node:internal/test_runner/test:1054:7)
+2026-10-31T23:01:41.6687672Z     async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+2026-10-31T23:01:41.6688146Z   ...
+2026-10-31T23:01:42.1033150Z # Subtest: cross-UID parser output stays host-readable inside a private job root
+2026-10-31T23:01:42.1034608Z not ok 29 - cross-UID parser output stays host-readable inside a private job root
+2026-10-31T23:01:42.1035359Z   ---
+2026-10-31T23:01:42.1035724Z   duration_ms: 435.712592
+2026-10-31T23:01:42.1036131Z   type: 'test'
+2026-10-31T23:01:42.1036878Z   location: '/home/runner/work/Heurisko/Heurisko/packages/core/tests/s2.test.mjs:47:1'
+2026-10-31T23:01:42.1037758Z   failureType: 'testCodeFailure'
+2026-10-31T23:01:42.1038272Z   error: 'PARSER_CLEANUP_UNCONFIRMED'
+2026-10-31T23:01:42.1038822Z   code: 'PARSER_CLEANUP_UNCONFIRMED'
+2026-10-31T23:01:42.1039267Z   stack: |-
+2026-10-31T23:01:42.1040074Z     inventoryArchive (file:///home/runner/work/Heurisko/Heurisko/packages/core/dist/archive.js:79:19)
+2026-10-31T23:01:42.1041481Z     async TestContext.<anonymous> (file:///home/runner/work/Heurisko/Heurisko/packages/core/tests/s2.test.mjs:62:15)
+2026-10-31T23:01:42.1042551Z     async Test.run (node:internal/test_runner/test:1054:7)
+2026-10-31T23:01:42.1043373Z     async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+2026-10-31T23:01:42.1044649Z   ...
+2026-10-31T23:01:42.5376427Z # Subtest: actual expansion, member, path/depth and entry limits preserve known/unknown coverage
+2026-10-31T23:01:42.5378150Z not ok 30 - actual expansion, member, path/depth and entry limits preserve known/unknown coverage
+2026-10-31T23:01:42.5378953Z   ---
+2026-10-31T23:01:42.5379478Z   duration_ms: 434.183204
+2026-10-31T23:01:42.5380026Z   type: 'test'
+2026-10-31T23:01:42.5380934Z   location: '/home/runner/work/Heurisko/Heurisko/packages/core/tests/s2.test.mjs:66:1'
+2026-10-31T23:01:42.5381758Z   failureType: 'testCodeFailure'
+2026-10-31T23:01:42.5382413Z   error: 'PARSER_CLEANUP_UNCONFIRMED'
+2026-10-31T23:01:42.5383065Z   code: 'PARSER_CLEANUP_UNCONFIRMED'
+2026-10-31T23:01:42.5383624Z   stack: |-
+2026-10-31T23:01:42.5385040Z     inventoryArchive (file:///home/runner/work/Heurisko/Heurisko/packages/core/dist/archive.js:79:19)
+2026-10-31T23:01:42.5386790Z     async TestContext.<anonymous> (file:///home/runner/work/Heurisko/Heurisko/packages/core/tests/s2.test.mjs:74:15)
+2026-10-31T23:01:42.5388030Z     async Test.run (node:internal/test_runner/test:1054:7)
+2026-10-31T23:01:42.5389147Z     async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+2026-10-31T23:01:42.5389633Z   ...
+2026-10-31T23:01:42.9977481Z # Subtest: truncated/corrupt archives and hidden trailing archives fail rather than clean-empty
+2026-10-31T23:01:42.9979048Z not ok 31 - truncated/corrupt archives and hidden trailing archives fail rather than clean-empty
+2026-10-31T23:01:42.9979818Z   ---
+2026-10-31T23:01:42.9980329Z   duration_ms: 460.085866
+2026-10-31T23:01:42.9980840Z   type: 'test'
+2026-10-31T23:01:42.9981679Z   location: '/home/runner/work/Heurisko/Heurisko/packages/core/tests/s2.test.mjs:79:1'
+2026-10-31T23:01:42.9982458Z   failureType: 'testCodeFailure'
+2026-10-31T23:01:42.9983097Z   error: 'PARSER_CLEANUP_UNCONFIRMED'
+2026-10-31T23:01:42.9984400Z   code: 'PARSER_CLEANUP_UNCONFIRMED'
+2026-10-31T23:01:42.9985096Z   stack: |-
+2026-10-31T23:01:42.9986425Z     inventoryArchive (file:///home/runner/work/Heurisko/Heurisko/packages/core/dist/archive.js:79:19)
+2026-10-31T23:01:42.9988212Z     async TestContext.<anonymous> (file:///home/runner/work/Heurisko/Heurisko/packages/core/tests/s2.test.mjs:83:13)
+2026-10-31T23:01:42.9989847Z     async Test.run (node:internal/test_runner/test:1054:7)
+2026-10-31T23:01:42.9990540Z     async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+2026-10-31T23:01:42.9991064Z   ...
+2026-10-31T23:01:43.4574173Z # Subtest: archive-byte variation changes identities while all raw members stay equal
+2026-10-31T23:01:43.4576675Z not ok 32 - archive-byte variation changes identities while all raw members stay equal
+2026-10-31T23:01:43.4577146Z   ---
+2026-10-31T23:01:43.4577372Z   duration_ms: 459.416663
+2026-10-31T23:01:43.4577618Z   type: 'test'
+2026-10-31T23:01:43.4578104Z   location: '/home/runner/work/Heurisko/Heurisko/packages/core/tests/s2.test.mjs:87:1'
+2026-10-31T23:01:43.4578608Z   failureType: 'testCodeFailure'
+2026-10-31T23:01:43.4578939Z   error: 'PARSER_CLEANUP_UNCONFIRMED'
+2026-10-31T23:01:43.4579262Z   code: 'PARSER_CLEANUP_UNCONFIRMED'
+2026-10-31T23:01:43.4579535Z   stack: |-
+2026-10-31T23:01:43.4580036Z     inventoryArchive (file:///home/runner/work/Heurisko/Heurisko/packages/core/dist/archive.js:79:19)
+2026-10-31T23:01:43.4580910Z     async TestContext.<anonymous> (file:///home/runner/work/Heurisko/Heurisko/packages/core/tests/s2.test.mjs:90:11)
+2026-10-31T23:01:43.4581612Z     async Test.run (node:internal/test_runner/test:1054:7)
+2026-10-31T23:01:43.4582138Z     async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+2026-10-31T23:01:43.4582550Z   ...
+2026-10-31T23:01:44.1821463Z # Subtest: real producer computes raw additions/removals/modifications and exact manifest spans with no findings
+2026-10-31T23:01:44.1823402Z not ok 33 - real producer computes raw additions/removals/modifications and exact manifest spans with no findings
+2026-10-31T23:01:44.1824622Z   ---
+2026-10-31T23:01:44.1825410Z   duration_ms: 724.883793
+2026-10-31T23:01:44.1825817Z   type: 'test'
+2026-10-31T23:01:44.1826552Z   location: '/home/runner/work/Heurisko/Heurisko/packages/core/tests/s2.test.mjs:94:1'
+2026-10-31T23:01:44.1827349Z   failureType: 'testCodeFailure'
+2026-10-31T23:01:44.1827842Z   error: 'STORE_BUSY_RECOVERY_REQUIRED'
+2026-10-31T23:01:44.1828362Z   code: 'STORE_BUSY_RECOVERY_REQUIRED'
+2026-10-31T23:01:44.1828789Z   stack: |-
+2026-10-31T23:01:44.1829635Z     EvidenceStore.exclusive (file:///home/runner/work/Heurisko/Heurisko/packages/core/dist/storage.js:133:19)
+2026-10-31T23:01:44.1831025Z     async retainEvidence (file:///home/runner/work/Heurisko/Heurisko/packages/core/dist/comparison.js:15:17)
+2026-10-31T23:01:44.1832363Z     async collectEvidence (file:///home/runner/work/Heurisko/Heurisko/packages/core/dist/producer.js:169:5)
+2026-10-31T23:01:44.1833686Z     async investigate (file:///home/runner/work/Heurisko/Heurisko/packages/core/dist/engine.js:33:20)
+2026-10-31T23:01:44.1835469Z     async localCase (file:///home/runner/work/Heurisko/Heurisko/packages/core/tests/s2.test.mjs:25:15)
+2026-10-31T23:01:44.1836314Z     async TestContext.<anonymous> (file:///home/runner/work/Heurisko/Heurisko/packages/core/tests/s2.test.mjs:97:23)
+2026-10-31T23:01:44.1836944Z     async Test.run (node:internal/test_runner/test:1054:7)
+2026-10-31T23:01:44.1837440Z     async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+2026-10-31T23:01:44.1837825Z   ...
+2026-10-31T23:01:44.9069093Z # Subtest: replay preserves deterministic IDs; full run bytes and observation references remain distinct
+2026-10-31T23:01:44.9070496Z not ok 34 - replay preserves deterministic IDs; full run bytes and observation references remain distinct
+2026-10-31T23:01:44.9071192Z   ---
+2026-10-31T23:01:44.9071671Z   duration_ms: 724.640239
+2026-10-31T23:01:44.9072155Z   type: 'test'
+2026-10-31T23:01:44.9073314Z   location: '/home/runner/work/Heurisko/Heurisko/packages/core/tests/s2.test.mjs:108:1'
+2026-10-31T23:01:44.9074368Z   failureType: 'testCodeFailure'
+2026-10-31T23:01:44.9075045Z   error: 'STORE_BUSY_RECOVERY_REQUIRED'
+2026-10-31T23:01:44.9075655Z   code: 'STORE_BUSY_RECOVERY_REQUIRED'
+2026-10-31T23:01:44.9076221Z   stack: |-
+2026-10-31T23:01:44.9077111Z     EvidenceStore.exclusive (file:///home/runner/work/Heurisko/Heurisko/packages/core/dist/storage.js:133:19)
+2026-10-31T23:01:44.9078225Z     async retainEvidence (file:///home/runner/work/Heurisko/Heurisko/packages/core/dist/comparison.js:15:17)
+2026-10-31T23:01:44.9079309Z     async collectEvidence (file:///home/runner/work/Heurisko/Heurisko/packages/core/dist/producer.js:169:5)
+2026-10-31T23:01:44.9080750Z     async investigate (file:///home/runner/work/Heurisko/Heurisko/packages/core/dist/engine.js:33:20)
+2026-10-31T23:01:44.9082108Z     async localCase (file:///home/runner/work/Heurisko/Heurisko/packages/core/tests/s2.test.mjs:25:15)
+2026-10-31T23:01:44.9083558Z     async TestContext.<anonymous> (file:///home/runner/work/Heurisko/Heurisko/packages/core/tests/s2.test.mjs:109:129)
+2026-10-31T23:01:44.9084918Z     async Test.run (node:internal/test_runner/test:1054:7)
+2026-10-31T23:01:44.9085461Z     async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+2026-10-31T23:01:44.9085858Z   ...
+2026-10-31T23:01:45.6419409Z # Subtest: missing/wrong subtree, partial inventory and binary differences remain visible
+2026-10-31T23:01:45.6420783Z not ok 35 - missing/wrong subtree, partial inventory and binary differences remain visible
+2026-10-31T23:01:45.6436079Z   ---
+2026-10-31T23:01:45.6436493Z   duration_ms: 734.999475
+2026-10-31T23:01:45.6436909Z   type: 'test'
+2026-10-31T23:01:45.6437557Z   location: '/home/runner/work/Heurisko/Heurisko/packages/core/tests/s2.test.mjs:116:1'
+2026-10-31T23:01:45.6438065Z   failureType: 'testCodeFailure'
+2026-10-31T23:01:45.6438386Z   error: 'STORE_BUSY_RECOVERY_REQUIRED'
+2026-10-31T23:01:45.6438740Z   code: 'STORE_BUSY_RECOVERY_REQUIRED'
+2026-10-31T23:01:45.6439002Z   stack: |-
+2026-10-31T23:01:45.6439535Z     EvidenceStore.exclusive (file:///home/runner/work/Heurisko/Heurisko/packages/core/dist/storage.js:133:19)
+2026-10-31T23:01:45.6440744Z     async retainEvidence (file:///home/runner/work/Heurisko/Heurisko/packages/core/dist/comparison.js:15:17)
+2026-10-31T23:01:45.6441556Z     async collectEvidence (file:///home/runner/work/Heurisko/Heurisko/packages/core/dist/producer.js:169:5)
+2026-10-31T23:01:45.6442322Z     async investigate (file:///home/runner/work/Heurisko/Heurisko/packages/core/dist/engine.js:33:20)
+2026-10-31T23:01:45.6443073Z     async localCase (file:///home/runner/work/Heurisko/Heurisko/packages/core/tests/s2.test.mjs:25:15)
+2026-10-31T23:01:45.6444456Z     async TestContext.<anonymous> (file:///home/runner/work/Heurisko/Heurisko/packages/core/tests/s2.test.mjs:117:10)
+2026-10-31T23:01:45.6445145Z     async Test.run (node:internal/test_runner/test:1054:7)
+2026-10-31T23:01:45.6445669Z     async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+2026-10-31T23:01:45.6446065Z   ...
+2026-10-31T23:01:46.3740945Z # Subtest: requested policy remains indeterminate; exit precedence retains simultaneous conditions
+2026-10-31T23:01:46.3743116Z not ok 36 - requested policy remains indeterminate; exit precedence retains simultaneous conditions
+2026-10-31T23:01:46.3744554Z   ---
+2026-10-31T23:01:46.3744998Z   duration_ms: 729.18237
+2026-10-31T23:01:46.3745563Z   type: 'test'
+2026-10-31T23:01:46.3746539Z   location: '/home/runner/work/Heurisko/Heurisko/packages/core/tests/s2.test.mjs:125:1'
+2026-10-31T23:01:46.3747435Z   failureType: 'testCodeFailure'
+2026-10-31T23:01:46.3747765Z   error: 'STORE_BUSY_RECOVERY_REQUIRED'
+2026-10-31T23:01:46.3748092Z   code: 'STORE_BUSY_RECOVERY_REQUIRED'
+2026-10-31T23:01:46.3748359Z   stack: |-
+2026-10-31T23:01:46.3749063Z     EvidenceStore.exclusive (file:///home/runner/work/Heurisko/Heurisko/packages/core/dist/storage.js:133:19)
+2026-10-31T23:01:46.3750540Z     async retainEvidence (file:///home/runner/work/Heurisko/Heurisko/packages/core/dist/comparison.js:15:17)
+2026-10-31T23:01:46.3751954Z     async collectEvidence (file:///home/runner/work/Heurisko/Heurisko/packages/core/dist/producer.js:169:5)
+2026-10-31T23:01:46.3753037Z     async investigate (file:///home/runner/work/Heurisko/Heurisko/packages/core/dist/engine.js:33:20)
+2026-10-31T23:01:46.3754172Z     async localCase (file:///home/runner/work/Heurisko/Heurisko/packages/core/tests/s2.test.mjs:25:15)
+2026-10-31T23:01:46.3755335Z     async TestContext.<anonymous> (file:///home/runner/work/Heurisko/Heurisko/packages/core/tests/s2.test.mjs:126:36)
+2026-10-31T23:01:46.3756482Z     async Test.run (node:internal/test_runner/test:1054:7)
+2026-10-31T23:01:46.3757167Z     async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+2026-10-31T23:01:46.3757719Z   ...
+2026-10-31T23:01:46.3758508Z # Subtest: strict manifest scanner rejects duplicate/deep malformed JSON, preserves unicode byte spans
+2026-10-31T23:01:46.3759717Z ok 37 - strict manifest scanner rejects duplicate/deep malformed JSON, preserves unicode byte spans
+2026-10-31T23:01:46.3760552Z   ---
+2026-10-31T23:01:46.3760834Z   duration_ms: 3.098846
+2026-10-31T23:01:46.3761146Z   type: 'test'
+2026-10-31T23:01:46.3761354Z   ...
+2026-10-31T23:01:46.4195431Z # Subtest: CAS rejects escaping refs, corrupt data, symlinks, cap/reserve and conflicting immutable writes
+2026-10-31T23:01:46.4197142Z ok 38 - CAS rejects escaping refs, corrupt data, symlinks, cap/reserve and conflicting immutable writes
+2026-10-31T23:01:46.4197866Z   ---
+2026-10-31T23:01:46.4198131Z   duration_ms: 45.45872
+2026-10-31T23:01:46.4198432Z   type: 'test'
+2026-10-31T23:01:46.4198690Z   ...
+2026-10-31T23:01:46.4476473Z # Subtest: interrupted publication leaves old blobs readable and incomplete new records unreferenced
+2026-10-31T23:01:46.4478337Z ok 39 - interrupted publication leaves old blobs readable and incomplete new records unreferenced
+2026-10-31T23:01:46.4479127Z   ---
+2026-10-31T23:01:46.4479540Z   duration_ms: 27.48997
+2026-10-31T23:01:46.4479936Z   type: 'test'
+2026-10-31T23:01:46.4480294Z   ...
+2026-10-31T23:01:46.6099499Z # Subtest: cancellation/timeout kills the whole parser job and cleans only its private scratch
+2026-10-31T23:01:46.6101328Z not ok 40 - cancellation/timeout kills the whole parser job and cleans only its private scratch
+2026-10-31T23:01:46.6102424Z   ---
+2026-10-31T23:01:46.6102963Z   duration_ms: 156.752551
+2026-10-31T23:01:46.6103426Z   type: 'test'
+2026-10-31T23:01:46.6104531Z   location: '/home/runner/work/Heurisko/Heurisko/packages/core/tests/s2.test.mjs:156:1'
+2026-10-31T23:01:46.6105490Z   failureType: 'testCodeFailure'
+2026-10-31T23:01:46.6106066Z   error: 'PARSER_CLEANUP_UNCONFIRMED'
+2026-10-31T23:01:46.6106640Z   code: 'PARSER_CLEANUP_UNCONFIRMED'
+2026-10-31T23:01:46.6107103Z   stack: |-
+2026-10-31T23:01:46.6107959Z     inventoryArchive (file:///home/runner/work/Heurisko/Heurisko/packages/core/dist/archive.js:79:19)
+2026-10-31T23:01:46.6109531Z     async TestContext.<anonymous> (file:///home/runner/work/Heurisko/Heurisko/packages/core/tests/s2.test.mjs:159:14)
+2026-10-31T23:01:46.6110698Z     async Test.run (node:internal/test_runner/test:1054:7)
+2026-10-31T23:01:46.6111621Z     async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+2026-10-31T23:01:46.6112325Z   ...
+2026-10-31T23:01:46.6113414Z # Subtest: network rejects private/reserved/mapped addresses, credentials, redirects outside allowlist and mutable commits
+2026-10-31T23:01:46.6115518Z ok 41 - network rejects private/reserved/mapped addresses, credentials, redirects outside allowlist and mutable commits
+2026-10-31T23:01:46.6116470Z   ---
+2026-10-31T23:01:46.6116784Z   duration_ms: 5.685865
+2026-10-31T23:01:46.6117144Z   type: 'test'
+2026-10-31T23:01:46.6117450Z   ...
+2026-10-31T23:01:47.3320650Z # Subtest: CLI is redirected/JSON-safe, inspect resolves exact retained evidence; terminal controls remain inert
+2026-10-31T23:01:47.3322896Z not ok 42 - CLI is redirected/JSON-safe, inspect resolves exact retained evidence; terminal controls remain inert
+2026-10-31T23:01:47.3324272Z   ---
+2026-10-31T23:01:47.3324658Z   duration_ms: 722.12965
+2026-10-31T23:01:47.3325246Z   type: 'test'
+2026-10-31T23:01:47.3325998Z   location: '/home/runner/work/Heurisko/Heurisko/packages/core/tests/s2.test.mjs:171:1'
+2026-10-31T23:01:47.3326811Z   failureType: 'testCodeFailure'
+2026-10-31T23:01:47.3327312Z   error: 'STORE_BUSY_RECOVERY_REQUIRED'
+2026-10-31T23:01:47.3327837Z   code: 'STORE_BUSY_RECOVERY_REQUIRED'
+2026-10-31T23:01:47.3328261Z   stack: |-
+2026-10-31T23:01:47.3329107Z     EvidenceStore.exclusive (file:///home/runner/work/Heurisko/Heurisko/packages/core/dist/storage.js:133:19)
+2026-10-31T23:01:47.3330488Z     async retainEvidence (file:///home/runner/work/Heurisko/Heurisko/packages/core/dist/comparison.js:15:17)
+2026-10-31T23:01:47.3331805Z     async collectEvidence (file:///home/runner/work/Heurisko/Heurisko/packages/core/dist/producer.js:169:5)
+2026-10-31T23:01:47.3333108Z     async investigate (file:///home/runner/work/Heurisko/Heurisko/packages/core/dist/engine.js:33:20)
+2026-10-31T23:01:47.3334877Z     async localCase (file:///home/runner/work/Heurisko/Heurisko/packages/core/tests/s2.test.mjs:25:15)
+2026-10-31T23:01:47.3336121Z     async TestContext.<anonymous> (file:///home/runner/work/Heurisko/Heurisko/packages/core/tests/s2.test.mjs:172:41)
+2026-10-31T23:01:47.3336768Z     async Test.run (node:internal/test_runner/test:1054:7)
+2026-10-31T23:01:47.3337258Z     async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+2026-10-31T23:01:47.3337645Z   ...
+2026-10-31T23:01:48.0629130Z # Subtest: manifest parser omissions and metadata-only executable modes stay explicit
+2026-10-31T23:01:48.0630547Z not ok 43 - manifest parser omissions and metadata-only executable modes stay explicit
+2026-10-31T23:01:48.0631213Z   ---
+2026-10-31T23:01:48.0631434Z   duration_ms: 729.806084
+2026-10-31T23:01:48.0631678Z   type: 'test'
+2026-10-31T23:01:48.0632140Z   location: '/home/runner/work/Heurisko/Heurisko/packages/core/tests/s2.test.mjs:182:1'
+2026-10-31T23:01:48.0632619Z   failureType: 'testCodeFailure'
+2026-10-31T23:01:48.0632925Z   error: 'STORE_BUSY_RECOVERY_REQUIRED'
+2026-10-31T23:01:48.0633562Z   code: 'STORE_BUSY_RECOVERY_REQUIRED'
+2026-10-31T23:01:48.0634087Z   stack: |-
+2026-10-31T23:01:48.0634704Z     EvidenceStore.exclusive (file:///home/runner/work/Heurisko/Heurisko/packages/core/dist/storage.js:133:19)
+2026-10-31T23:01:48.0635544Z     async retainEvidence (file:///home/runner/work/Heurisko/Heurisko/packages/core/dist/comparison.js:15:17)
+2026-10-31T23:01:48.0636337Z     async collectEvidence (file:///home/runner/work/Heurisko/Heurisko/packages/core/dist/producer.js:169:5)
+2026-10-31T23:01:48.0637078Z     async investigate (file:///home/runner/work/Heurisko/Heurisko/packages/core/dist/engine.js:33:20)
+2026-10-31T23:01:48.0637837Z     async localCase (file:///home/runner/work/Heurisko/Heurisko/packages/core/tests/s2.test.mjs:25:15)
+2026-10-31T23:01:48.0638834Z     async TestContext.<anonymous> (file:///home/runner/work/Heurisko/Heurisko/packages/core/tests/s2.test.mjs:183:17)
+2026-10-31T23:01:48.0639460Z     async Test.run (node:internal/test_runner/test:1054:7)
+2026-10-31T23:01:48.0639961Z     async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+2026-10-31T23:01:48.0640342Z   ...
+2026-10-31T23:01:48.7874917Z # Subtest: report persistence failure returns usable incomplete JSON while retaining raw evidence
+2026-10-31T23:01:48.7877718Z not ok 44 - report persistence failure returns usable incomplete JSON while retaining raw evidence
+2026-10-31T23:01:48.7878456Z   ---
+2026-10-31T23:01:48.7878715Z   duration_ms: 725.357494
+2026-10-31T23:01:48.7879017Z   type: 'test'
+2026-10-31T23:01:48.7879574Z   location: '/home/runner/work/Heurisko/Heurisko/packages/core/tests/s2.test.mjs:189:1'
+2026-10-31T23:01:48.7880200Z   failureType: 'testCodeFailure'
+2026-10-31T23:01:48.7880579Z   error: 'STORE_BUSY_RECOVERY_REQUIRED'
+2026-10-31T23:01:48.7880980Z   code: 'STORE_BUSY_RECOVERY_REQUIRED'
+2026-10-31T23:01:48.7881629Z   stack: |-
+2026-10-31T23:01:48.7882343Z     FullReportStore.exclusive (file:///home/runner/work/Heurisko/Heurisko/packages/core/dist/storage.js:133:19)
+2026-10-31T23:01:48.7883469Z     async retainEvidence (file:///home/runner/work/Heurisko/Heurisko/packages/core/dist/comparison.js:15:17)
+2026-10-31T23:01:48.7884875Z     async collectEvidence (file:///home/runner/work/Heurisko/Heurisko/packages/core/dist/producer.js:169:5)
+2026-10-31T23:01:48.7885957Z     async investigate (file:///home/runner/work/Heurisko/Heurisko/packages/core/dist/engine.js:33:20)
+2026-10-31T23:01:48.7887232Z     async TestContext.<anonymous> (file:///home/runner/work/Heurisko/Heurisko/packages/core/tests/s2.test.mjs:193:15)
+2026-10-31T23:01:48.7888080Z     async Test.run (node:internal/test_runner/test:1054:7)
+2026-10-31T23:01:48.7888738Z     async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+2026-10-31T23:01:48.7889253Z   ...
+2026-10-31T23:01:49.2134398Z # Subtest: parser backpressure and queued cancellation do not start extra work
+2026-10-31T23:01:49.2135784Z not ok 45 - parser backpressure and queued cancellation do not start extra work
+2026-10-31T23:01:49.2136572Z   ---
+2026-10-31T23:01:49.2136936Z   duration_ms: 425.995709
+2026-10-31T23:01:49.2137336Z   type: 'test'
+2026-10-31T23:01:49.2138088Z   location: '/home/runner/work/Heurisko/Heurisko/packages/core/tests/s2.test.mjs:197:1'
+2026-10-31T23:01:49.2138942Z   failureType: 'testCodeFailure'
+2026-10-31T23:01:49.2139443Z   error: 'PARSER_CLEANUP_UNCONFIRMED'
+2026-10-31T23:01:49.2139952Z   code: 'PARSER_CLEANUP_UNCONFIRMED'
+2026-10-31T23:01:49.2140377Z   stack: |-
+2026-10-31T23:01:49.2141167Z     inventoryArchive (file:///home/runner/work/Heurisko/Heurisko/packages/core/dist/archive.js:79:19)
+2026-10-31T23:01:49.2142547Z     async TestContext.<anonymous> (file:///home/runner/work/Heurisko/Heurisko/packages/core/tests/s2.test.mjs:200:190)
+2026-10-31T23:01:49.2143600Z     async Test.run (node:internal/test_runner/test:1054:7)
+2026-10-31T23:01:49.2144722Z     async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+2026-10-31T23:01:49.2145528Z   ...
+2026-10-31T23:01:49.6386287Z # Subtest: opaque archive metadata never permits an invalid UTF-8 pathname
+2026-10-31T23:01:49.6387499Z not ok 46 - opaque archive metadata never permits an invalid UTF-8 pathname
+2026-10-31T23:01:49.6388293Z   ---
+2026-10-31T23:01:49.6388785Z   duration_ms: 425.131011
+2026-10-31T23:01:49.6389281Z   type: 'test'
+2026-10-31T23:01:49.6390116Z   location: '/home/runner/work/Heurisko/Heurisko/packages/core/tests/s2.test.mjs:203:1'
+2026-10-31T23:01:49.6391063Z   failureType: 'testCodeFailure'
+2026-10-31T23:01:49.6391687Z   error: 'PARSER_CLEANUP_UNCONFIRMED'
+2026-10-31T23:01:49.6392274Z   code: 'PARSER_CLEANUP_UNCONFIRMED'
+2026-10-31T23:01:49.6392769Z   stack: |-
+2026-10-31T23:01:49.6393610Z     inventoryArchive (file:///home/runner/work/Heurisko/Heurisko/packages/core/dist/archive.js:79:19)
+2026-10-31T23:01:49.6395420Z     async TestContext.<anonymous> (file:///home/runner/work/Heurisko/Heurisko/packages/core/tests/s2.test.mjs:205:12)
+2026-10-31T23:01:49.6396579Z     async Test.run (node:internal/test_runner/test:1054:7)
+2026-10-31T23:01:49.6397489Z     async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+2026-10-31T23:01:49.6398231Z   ...
+2026-10-31T23:01:50.3623111Z # Subtest: a supplied M0-style skipped heuristics stage cannot earn complete analysis
+2026-10-31T23:01:50.3624380Z not ok 47 - a supplied M0-style skipped heuristics stage cannot earn complete analysis
+2026-10-31T23:01:50.3625494Z   ---
+2026-10-31T23:01:50.3626197Z   duration_ms: 723.720069
+2026-10-31T23:01:50.3626661Z   type: 'test'
+2026-10-31T23:01:50.3627548Z   location: '/home/runner/work/Heurisko/Heurisko/packages/core/tests/s2.test.mjs:208:1'
+2026-10-31T23:01:50.3628482Z   failureType: 'testCodeFailure'
+2026-10-31T23:01:50.3629065Z   error: 'STORE_BUSY_RECOVERY_REQUIRED'
+2026-10-31T23:01:50.3629682Z   code: 'STORE_BUSY_RECOVERY_REQUIRED'
+2026-10-31T23:01:50.3630251Z   stack: |-
+2026-10-31T23:01:50.3631643Z     EvidenceStore.exclusive (file:///home/runner/work/Heurisko/Heurisko/packages/core/dist/storage.js:133:19)
+2026-10-31T23:01:50.3633288Z     async retainEvidence (file:///home/runner/work/Heurisko/Heurisko/packages/core/dist/comparison.js:15:17)
+2026-10-31T23:01:50.3635102Z     async collectEvidence (file:///home/runner/work/Heurisko/Heurisko/packages/core/dist/producer.js:169:5)
+2026-10-31T23:01:50.3636514Z     async investigate (file:///home/runner/work/Heurisko/Heurisko/packages/core/dist/engine.js:33:20)
+2026-10-31T23:01:50.3637948Z     async localCase (file:///home/runner/work/Heurisko/Heurisko/packages/core/tests/s2.test.mjs:25:15)
+2026-10-31T23:01:50.3639450Z     async TestContext.<anonymous> (file:///home/runner/work/Heurisko/Heurisko/packages/core/tests/s2.test.mjs:209:29)
+2026-10-31T23:01:50.3640677Z     async Test.run (node:internal/test_runner/test:1054:7)
+2026-10-31T23:01:50.3641537Z     async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+2026-10-31T23:01:50.3642192Z   ...
+2026-10-31T23:01:50.3801882Z # Subtest: CAS and publication snapshot caller-owned bytes before asynchronous filesystem work
+2026-10-31T23:01:50.3803006Z ok 48 - CAS and publication snapshot caller-owned bytes before asynchronous filesystem work
+2026-10-31T23:01:50.3803540Z   ---
+2026-10-31T23:01:50.3803770Z   duration_ms: 18.086239
+2026-10-31T23:01:50.3804369Z   type: 'test'
+2026-10-31T23:01:50.3804670Z   ...
+2026-10-31T23:01:51.1090554Z # Subtest: report identity and invocation cannot drift while validation/persistence awaits
+2026-10-31T23:01:51.1092062Z not ok 49 - report identity and invocation cannot drift while validation/persistence awaits
+2026-10-31T23:01:51.1092992Z   ---
+2026-10-31T23:01:51.1093427Z   duration_ms: 728.605363
+2026-10-31T23:01:51.1094212Z   type: 'test'
+2026-10-31T23:01:51.1095092Z   location: '/home/runner/work/Heurisko/Heurisko/packages/core/tests/s2.test.mjs:219:1'
+2026-10-31T23:01:51.1096048Z   failureType: 'testCodeFailure'
+2026-10-31T23:01:51.1096707Z   error: 'STORE_BUSY_RECOVERY_REQUIRED'
+2026-10-31T23:01:51.1097342Z   code: 'STORE_BUSY_RECOVERY_REQUIRED'
+2026-10-31T23:01:51.1097899Z   stack: |-
+2026-10-31T23:01:51.1099478Z     EvidenceStore.exclusive (file:///home/runner/work/Heurisko/Heurisko/packages/core/dist/storage.js:133:19)
+2026-10-31T23:01:51.1100999Z     async retainEvidence (file:///home/runner/work/Heurisko/Heurisko/packages/core/dist/comparison.js:15:17)
+2026-10-31T23:01:51.1102473Z     async collectEvidence (file:///home/runner/work/Heurisko/Heurisko/packages/core/dist/producer.js:169:5)
+2026-10-31T23:01:51.1104146Z     async investigate (file:///home/runner/work/Heurisko/Heurisko/packages/core/dist/engine.js:33:20)
+2026-10-31T23:01:51.1105440Z     async localCase (file:///home/runner/work/Heurisko/Heurisko/packages/core/tests/s2.test.mjs:25:15)
+2026-10-31T23:01:51.1106272Z     async TestContext.<anonymous> (file:///home/runner/work/Heurisko/Heurisko/packages/core/tests/s2.test.mjs:220:41)
+2026-10-31T23:01:51.1106926Z     async Test.run (node:internal/test_runner/test:1054:7)
+2026-10-31T23:01:51.1107428Z     async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+2026-10-31T23:01:51.1107833Z   ...
+2026-10-31T23:01:51.1223519Z 1..49
+2026-10-31T23:01:51.1224067Z # tests 49
+2026-10-31T23:01:51.1224403Z # suites 0
+2026-10-31T23:01:51.1225077Z # pass 13
+2026-10-31T23:01:51.1225633Z # fail 36
+2026-10-31T23:01:51.1226296Z # cancelled 0
+2026-10-31T23:01:51.1226807Z # skipped 0
+2026-10-31T23:01:51.1227332Z # todo 0
+2026-10-31T23:01:51.1227934Z # duration_ms 18238.427044
+2026-10-31T23:01:51.1407274Z  ELIFECYCLE  Command failed with exit code 1.
+2026-10-31T23:01:51.1662774Z ##[error]Process completed with exit code 1.
+2026-10-31T23:01:51.1803299Z Post job cleanup.
+2026-10-31T23:01:51.2704516Z [command]/usr/bin/git version
+2026-10-31T23:01:51.2752781Z git version 2.56.0
+2026-10-31T23:01:51.2791119Z Temporarily overriding HOME='/home/runner/work/_temp/125e77cb-2d4f-4d2f-bb8a-d1a40629fc69' before making global git config changes
+2026-10-31T23:01:51.2792687Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-31T23:01:51.2797749Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/Heurisko/Heurisko
+2026-10-31T23:01:51.2838018Z Removing SSH command configuration
+2026-10-31T23:01:51.2845706Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-31T23:01:51.2889834Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-31T23:01:51.3261934Z Removing HTTP extra header
+2026-10-31T23:01:51.3269115Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-31T23:01:51.3319075Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-31T23:01:51.3690300Z Removing includeIf entries pointing to credentials config files
+2026-10-31T23:01:51.3700514Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-31T23:01:51.3738935Z includeif.gitdir:/home/runner/work/Heurisko/Heurisko/.git.path
+2026-10-31T23:01:51.3740352Z includeif.gitdir:/home/runner/work/Heurisko/Heurisko/.git/worktrees/*.path
+2026-10-31T23:01:51.3741515Z includeif.gitdir:/github/workspace/.git.path
+2026-10-31T23:01:51.3742468Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-10-31T23:01:51.3751640Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/Heurisko/Heurisko/.git.path
+2026-10-31T23:01:51.3785692Z /home/runner/work/_temp/git-credentials-0f0833e0-5b6d-4908-9873-ee01005fe503.config
+2026-10-31T23:01:51.3799858Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/Heurisko/Heurisko/.git.path \/home\/runner\/work\/_temp\/git\-credentials\-0f0833e0\-5b6d\-4908\-9873\-ee01005fe503\.config
+2026-10-31T23:01:51.3859913Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/Heurisko/Heurisko/.git/worktrees/*.path
+2026-10-31T23:01:51.3893122Z /home/runner/work/_temp/git-credentials-0f0833e0-5b6d-4908-9873-ee01005fe503.config
+2026-10-31T23:01:51.3904204Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/Heurisko/Heurisko/.git/worktrees/*.path \/home\/runner\/work\/_temp\/git\-credentials\-0f0833e0\-5b6d\-4908\-9873\-ee01005fe503\.config
+2026-10-31T23:01:51.3947478Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+2026-10-31T23:01:51.3976186Z /github/runner_temp/git-credentials-0f0833e0-5b6d-4908-9873-ee01005fe503.config
+2026-10-31T23:01:51.3986596Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path \/github\/runner_temp\/git\-credentials\-0f0833e0\-5b6d\-4908\-9873\-ee01005fe503\.config
+2026-10-31T23:01:51.4028933Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-10-31T23:01:51.4055922Z /github/runner_temp/git-credentials-0f0833e0-5b6d-4908-9873-ee01005fe503.config
+2026-10-31T23:01:51.4066435Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path \/github\/runner_temp\/git\-credentials\-0f0833e0\-5b6d\-4908\-9873\-ee01005fe503\.config
+2026-10-31T23:01:51.4117962Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-31T23:01:51.4457946Z Removing credentials config '/home/runner/work/_temp/git-credentials-0f0833e0-5b6d-4908-9873-ee01005fe503.config'
+2026-10-31T23:01:51.4628905Z Cleaning up orphan processes
+2026-10-31T23:01:51.5117745Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/setup-node@v4, actions/setup-python@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

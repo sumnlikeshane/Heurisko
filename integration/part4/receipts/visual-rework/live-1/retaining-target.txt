@@ -1,0 +1,40 @@
+  HEURISKO   H Home    I Investigations     M Monitoring                                                                                                        
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                     ┌─ > Validating and retaining target ────────────────────────────────────────────────┐                                     
+                                     │ Validating and retaining target                                                    │                                     
+                                     │                                                                                    │                                     
+                                     │ [━━━━────────────────────────] Working / indeterminate                             │                                     
+                                     │ Wait for the operation to finish. Ctrl+C requests cancellation.                    │                                     
+                                     │                                                                                    │                                     
+                                     └────────────────────────────────────────────────────────────────────────────────────┘                                     
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+  New investigation / Local archive                                                                                                                             
+  Ctrl+C cancel  Waiting for operation                                                                                                                          
+                                                                                                                                                                
+                                                                                                                                                                

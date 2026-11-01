@@ -1,0 +1,40 @@
+  HEURISKO   H Home    I Investigations     M Monitoring                                                                                                        
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+  Live investigation                                                                                                                                            
+  0m 00s elapsed · 0/10 stages reported terminal facts · no estimated finish time                                                                               
+  [━━━━────────────────────────────] Preparing / indeterminate                                                                                                  
+                                                                                                                                                                
+  ┌─ > Stages ──────────────────── 0/10 terminal facts ┐ ┌─ Stage details & activity ────────────────────────────────────────────────────────────────────────┐  
+  │ > resolve artifact / not_started                   │ │ Investigation in progress                                                                         │  
+  │   acquire / not_started                            │ │ Stage execution is not a security verdict.                                                        │  
+  │   source / not_started                             │ │                                                                                                   │  
+  │   provenance / not_started                         │ │ Selected stage                                                                                    │  
+  │   inventory / not_started                          │ │ resolve_artifact                                                                                  │  
+  │   compare / not_started                            │ │ Status: not_started                                                                               │  
+  │   build / not_started                              │ │ No diagnostic event recorded for this stage.                                                      │  
+  │   heuristics / not_started                         │ │                                                                                                   │  
+  │   ai / not_started                                 │ │ Available evidence                                                                                │  
+  │   persist / not_started                            │ │ Live evidence references are unavailable. The settled report preserves its recorded scope.        │  
+  │ Complete / incomplete / skipped / failed stay dis… │ │                                                                                                   │  
+  │                                                    │ │ Recent activity                                                                                   │  
+  └────────────────────────────────────────────────────┘ │                                                                                                   │  
+                                                         │ 0 earlier events omitted from this bounded event history.                                         │  
+                                                         │ Cancellation requests do not acknowledge cleanup. Detach and retry are unavailable.               │  
+                                                         │ 1-15 / 15                                                                                         │  
+                                                         └───────────────────────────────────────────────────────────────────────────────────────────────────┘  
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+  live                                                                                                                                                          
+  Up/Down stages  Tab details  Ctrl+C cancel  q cancel                                                                                                          
+                                                                                                                                                                
+                                                                                                                                                                

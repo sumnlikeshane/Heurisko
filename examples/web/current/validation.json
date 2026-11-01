@@ -1,0 +1,132 @@
+{
+  "version": "heurisko-web-local-validation-v1",
+  "validatedAt": "2026-10-31T21:05:31.237924+00:00",
+  "foundation": "81346271f5a3789b4b43fd8f379014656011823d",
+  "activeBranch": "docs/share-research-with-team",
+  "proposedFutureBranch": "web/local-evidence-explorer",
+  "runtime": {
+    "node": "22.23.4",
+    "pnpm": "10.14.0",
+    "typescript": "5.8.3",
+    "python": "3.13.2"
+  },
+  "checks": [
+    {
+      "command": "pnpm install --offline --frozen-lockfile --ignore-scripts --store-dir <temporary-workspace>",
+      "result": "passed",
+      "note": "CI=true used for deterministic reinstallation of development modules"
+    },
+    {
+      "command": "pnpm run typecheck",
+      "result": "passed",
+      "scope": "all workspace builds and typechecks"
+    },
+    {
+      "command": "PATH=\"$PWD/.venv/bin:$PATH\" pnpm run test:contracts",
+      "result": "passed",
+      "scope": "full G0 schema/semantic/negative checks and 7 synthetic handshakes"
+    },
+    {
+      "command": "pnpm --filter @heurisko/web build && pnpm --filter @heurisko/web typecheck",
+      "result": "passed",
+      "note": "latest transport-only strict JSON decoder included"
+    },
+    {
+      "command": "pnpm --filter @heurisko/web test",
+      "result": "passed",
+      "tests": 15,
+      "failures": 0
+    },
+    {
+      "command": "node --test integration/part4/tests/readiness.test.mjs",
+      "result": "passed",
+      "tests": 24,
+      "failures": 0
+    },
+    {
+      "command": "node apps/web/tooling/verify-corpus.mjs examples/web/current",
+      "result": "passed",
+      "cases": 4,
+      "includedBlobs": 1202,
+      "omittedBlobs": 0,
+      "originalBytesUnchanged": true,
+      "cliJSONParity": true,
+      "cliExit": 2
+    },
+    {
+      "command": "git diff --check",
+      "result": "passed"
+    },
+    {
+      "command": "shasum -a 256 -c docs/Heurisko_Research/SHA256SUMS.txt (from research directory)",
+      "result": "passed",
+      "files": 15
+    },
+    {
+      "command": "local Markdown link/anchor scan",
+      "result": "scoped web links passed; one pre-existing unrelated failure",
+      "knownIssue": "docs/HANDOFF_S1_S3.md references #repaired-foundation, whose target heading has stray text before its Markdown marker. Preserved unchanged."
+    }
+  ],
+  "browserQA": {
+    "status": "partial",
+    "browser": "Google Chrome, native macOS automation",
+    "observed": [
+      "Initial wide terminal-style B1 overview with six separate outcomes and historical capture time",
+      "Local mutation selection and file filtering/navigation in accessibility state",
+      "API exact mutation span and absence separately proved by automated tests",
+      "Bare reload displays SESSION_DENIED; no capability is persisted"
+    ],
+    "notCertified": [
+      "exact 1440/1024/390 viewport checks",
+      "200 percent zoom",
+      "complete keyboard-only opening/evidence/back-stack round trip",
+      "browser-offline reopen",
+      "browser network request/execution observation",
+      "final assembled renderer visual acceptance"
+    ],
+    "limitation": "Native automation produced inconsistent/late page/viewport observations; independent Safari attempt timed out. No full browser pass or screenshot artifact is claimed."
+  },
+  "securityAndExecution": {
+    "externalAcquisition": false,
+    "targetPackageExecution": false,
+    "productInference": false,
+    "browserCoreImports": false,
+    "previewServersStopped": true
+  },
+  "openGates": [
+    "W browser acceptance and shared review",
+    "TUI parity and S4/G3",
+    "genuine integrated findings/AI navigation",
+    "monitor/full G5",
+    "remote web CI and existing documentation anchor issue",
+    "authorized Git/PR/merge/submission delivery"
+  ],
+  "authorization": {
+    "implementation": "Shane: Please begin keep the ui like the terminal cli",
+    "committed": false,
+    "pushed": false,
+    "prPublished": false,
+    "merged": false,
+    "deployed": false,
+    "submitted": false
+  },
+  "productModels": [],
+  "codingAssistance": "Codex",
+  "codeAndTransportReceipt": "verification.json",
+  "receiptCodeMatchesCurrent": true,
+  "documentationAndAssemblySha256": {
+    "apps/web/README.md": "sha256:d3a82bee71337fb381983704feeff07938819c6e683a6f56674ff72f8c1e74f1",
+    "apps/web/PR_DRAFT.md": "sha256:f0f8775be1b2b92526f784ceca5983c02c9d2b7c70cf7bf3871917ba29473c80",
+    "apps/web/THIRD_PARTY_NOTICES.txt": "sha256:0cab4965023071e70e41b3c51911c4e35d2e85b67748041d0ec4fd97e36b67bd",
+    "pnpm-workspace.yaml": "sha256:316f2a0038d464f103abd64d7338dacefc35d0d09e57c8296defa0d5ddb898fe",
+    "package.json": "sha256:d73449c841639e5b7200bc19168469112595059243b10bd2b66686bc757e1094",
+    ".github/workflows/ci.yml": "sha256:761e492c43dd5061d1fbaf1cb745b23abe11e3409f73d7167c9bc5a2e8ec0111",
+    "AGENTS.md": "sha256:cf96131034c5519e7c5db526cde5135a8586ce0bd1527e3c5f0ec3a7310ffd0b",
+    "README.md": "sha256:2ee95fcf04907c0c38945a8bff96cc541ee1d6708d4d252d7c1fa5f4644dfb02",
+    "docs/README.md": "sha256:17241fa3305f4cfd9ee7db3fd1b2d4d9749e7597b577dba6c4ddf70ac48cfd55",
+    "docs/Approved Decision Register.md": "sha256:c6d764cf13a9df52853b98447cb7d503a476a1ce6b84ea5ac5d843141b82ed64",
+    "docs/Team Development Checklist.md": "sha256:e6f8ebee68a1f92a21f93f185ecfc97d1c9be44f1a94982094a4a068e6344fe0",
+    "docs/Webapp Parallel Implementation Plan.md": "sha256:5ea400df504fd896c26ac716eafa82db02060e312cd10308fbabfaacbafc27b6"
+  }
+}

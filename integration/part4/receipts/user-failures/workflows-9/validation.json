@@ -1,0 +1,196 @@
+{
+  "checks": [
+    {
+      "check": "HISTORICAL",
+      "size": [
+        160,
+        40
+      ],
+      "passed": true
+    },
+    {
+      "check": "Malhar analysis module not supplied",
+      "size": [
+        160,
+        40
+      ],
+      "passed": true
+    },
+    {
+      "check": "unavailable explanation and successes reachable at 160",
+      "passed": true
+    },
+    {
+      "check": "Artifact root/",
+      "size": [
+        160,
+        40
+      ],
+      "passed": true
+    },
+    {
+      "check": "modified / different",
+      "size": [
+        160,
+        40
+      ],
+      "passed": true
+    },
+    {
+      "check": "RAW CHANGED SPANS",
+      "size": [
+        160,
+        40
+      ],
+      "passed": true
+    },
+    {
+      "check": "SOURCE: raw utf8",
+      "size": [
+        160,
+        40
+      ],
+      "passed": true
+    },
+    {
+      "check": "RAW CHANGED SPANS",
+      "size": [
+        160,
+        40
+      ],
+      "passed": true
+    },
+    {
+      "check": "Evidence",
+      "size": [
+        160,
+        40
+      ],
+      "passed": true
+    },
+    {
+      "check": "RAW utf8:",
+      "size": [
+        160,
+        40
+      ],
+      "passed": true
+    },
+    {
+      "check": "RAW CHANGED SPANS",
+      "size": [
+        160,
+        40
+      ],
+      "passed": true
+    },
+    {
+      "check": "Flat /",
+      "size": [
+        160,
+        40
+      ],
+      "passed": true
+    },
+    {
+      "check": "Filter:",
+      "size": [
+        160,
+        40
+      ],
+      "passed": true
+    },
+    {
+      "check": "Filter: package.json",
+      "size": [
+        160,
+        40
+      ],
+      "passed": true
+    },
+    {
+      "check": "RAW CHANGED SPANS",
+      "size": [
+        160,
+        40
+      ],
+      "passed": true
+    },
+    {
+      "check": "Association ambiguous",
+      "size": [
+        160,
+        40
+      ],
+      "passed": true
+    },
+    {
+      "check": "Evidence",
+      "size": [
+        160,
+        40
+      ],
+      "passed": true
+    },
+    {
+      "check": "RAW utf8:",
+      "size": [
+        160,
+        40
+      ],
+      "passed": true
+    },
+    {
+      "check": "Source >",
+      "size": [
+        160,
+        40
+      ],
+      "passed": true
+    },
+    {
+      "check": "source Back state oracle",
+      "before": {
+        "section": 3,
+        "subtab": 0,
+        "index": 0,
+        "focus": 0,
+        "citation": 0,
+        "scroll": 0,
+        "scrolls": [
+          0,
+          0,
+          0
+        ],
+        "query": "",
+        "detail": false,
+        "pan": 0
+      },
+      "after": {
+        "section": 3,
+        "subtab": 0,
+        "index": 0,
+        "focus": 0,
+        "citation": 0,
+        "scroll": 0,
+        "scrolls": [
+          0,
+          0,
+          0
+        ],
+        "query": "",
+        "detail": false,
+        "pan": 0,
+        "selectedId": "candidate-0"
+      },
+      "size": [
+        160,
+        40
+      ]
+    }
+  ],
+  "count": 20,
+  "reports": [],
+  "store": "examples/part4/user-failures/store-a591fa63-7ef3-4881-97f6-c353f57632df",
+  "noTargetOrModelExecution": true
+}

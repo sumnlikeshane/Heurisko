@@ -1,0 +1,26 @@
+  HEURISKO   H Home    I Investigations     M Monitoring                            
+  ────────────────────────────────────────────────────────────────────────────────  
+  picocolors@1.1.1 / HISTORICAL / incomplete / Captured 2026-10-31T22:59:33Z        
+  1 Overview   2 Findings   3 Files   4 Source   5 AI   6 Coverage                  
+  Historical — online checks have not refreshed · i Identity                        
+  Source                                                                            
+  Source > Candidate 1 / 6f0a4638348e / Esc restores position                       
+  ┌─ > Candidate 1 / 6f0a4638348e ───────────────────────────────────────────────┐  
+  │ Association ambiguous — this candidate is not a verified release baseline.   │  
+  │ Compared target: this repository / commit / package directory was selected.  │  
+  │ Candidate basis: user-override, registry, artifact-manifest, version-tag.    │  
+  │ Version labels: artifact 1.1.1; selected source 1.1.0. Evidence              │  
+  │ ev_3ca16ad46cd957d737ef0c18 (e opens exact values; s switches side).         │  
+  │ SOURCE CONFLICT: SOURCE_VERSION_LABEL_DIFFERS                                │  
+  │ Subdirectory: (repository root)                                              │  
+  │ New investigation with this target: n opens a new draft, then Review and     │  
+  │ Start. Edit the commit before Review to investigate another candidate. This  │  
+  │ report stays immutable.                                                      │  
+  │ Discovery limitation: version-tag v1.1.1 — SOURCE_TAG_RATE_LIMITED. This is  │  
+  │ not evidence that the tag is absent.                                         │  
+  │ 1-12 / 28  j/k scroll                                                        │  
+  └──────────────────────────────────────────────────────────────────────────────┘  
+  SOURCE CONFLICT / inspect source claims                                           
+  v subtabs  Enter inspect  e evidence  n new target  Tab panes  q quit             
+                                                                                    
+                                                                                    

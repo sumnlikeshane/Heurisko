@@ -1,0 +1,98 @@
+{
+  "version": "heurisko-s2-verification-v1",
+  "verifiedAt": "2026-10-31T18:17:08.169Z",
+  "engine": "shane-s2-v1;sha256:7d074483da4a6241ac16f33c712e361521df9a0f72e4d2ebd9256730531d9076",
+  "records": [
+    {
+      "label": "release-local-input",
+      "reportId": "report_e4a755f518778ca8af5c3aa6",
+      "reportContentRef": "sha256:4b45e3677eb57135a052b0ae6a54392ece704f9af1bee6a59cfcfcebaa28ffd6",
+      "configurationFingerprint": "1215604bcb011876370a49449478f00267a338b2bd875ba7f408d6f2e537077f",
+      "retainedEvidenceVerified": 78,
+      "rawCoverage": {
+        "artifactFiles": 7,
+        "sourceFiles": 19,
+        "comparedFiles": 19,
+        "analyzedBytes": 39579,
+        "skippedBytes": 0,
+        "unsupportedBytes": 0,
+        "omissions": [],
+        "complete": true,
+        "limitations": []
+      },
+      "exitCode": 2
+    },
+    {
+      "label": "synthetic-local-mutation",
+      "reportId": "report_c5d52e28963deacfd27dcbf8",
+      "reportContentRef": "sha256:23293bbe3ebcd797028e91a02e0722fba01d363823c5cec8f1ddfa2de63a2503",
+      "configurationFingerprint": "8ee26e0703f070675108f304de4aa698578ae004348510590dc246560750ce6a",
+      "retainedEvidenceVerified": 81,
+      "rawCoverage": {
+        "artifactFiles": 8,
+        "sourceFiles": 19,
+        "comparedFiles": 20,
+        "analyzedBytes": 39726,
+        "skippedBytes": 0,
+        "unsupportedBytes": 0,
+        "omissions": [],
+        "complete": true,
+        "limitations": []
+      },
+      "exitCode": 2
+    }
+  ],
+  "rawDiffSideSpansVerified": 33,
+  "manifestValueSpansVerified": 50,
+  "independentMutationOracle": {
+    "added": [
+      "package/heurisko-inert-marker.js"
+    ],
+    "removed": [],
+    "modified": [
+      "package/package.json"
+    ],
+    "exactStructuredDelta": "scripts.postinstall = HEURISKO_INERT_TEST_ONLY"
+  },
+  "defaultCLIAnalysis": "not injected; explicitly incomplete",
+  "earlyConsumerChecks": [
+    {
+      "file": "m0-release-handshake.json",
+      "status": "consumer-returned-validated-output",
+      "findings": 0,
+      "actualModuleVersion": "0.1.0",
+      "sourceSha256": "sha256:f80c0c39b3519308f5219e5e430f70422f4db82c38036e81e91bf1a269846944",
+      "compiledSha256": "sha256:b28e8bb80d02e5b8ac3cdbc6342a5fbe0340795dee60657dd402a45e2b379151"
+    },
+    {
+      "file": "m0-mutation-handshake.json",
+      "status": "consumer-returned-validated-output",
+      "findings": 0,
+      "actualModuleVersion": "0.1.0",
+      "sourceSha256": "sha256:f80c0c39b3519308f5219e5e430f70422f4db82c38036e81e91bf1a269846944",
+      "compiledSha256": "sha256:b28e8bb80d02e5b8ac3cdbc6342a5fbe0340795dee60657dd402a45e2b379151"
+    },
+    {
+      "file": "m1-release-handshake.json",
+      "status": "consumer-returned-validated-output",
+      "findings": 14,
+      "actualModuleVersion": "0.1.0",
+      "sourceSha256": "sha256:bec8727ddaea615dc765f7afe603a62ff4d6fb3fad960391ecb46b3e4185bd57",
+      "compiledSha256": "sha256:816525f0b5f8571c846421c7cbe218019b26e4d862f5db5eb46063ae4448cf70"
+    },
+    {
+      "file": "m1-mutation-handshake.json",
+      "status": "consumer-returned-validated-output",
+      "findings": 16,
+      "actualModuleVersion": "0.1.0",
+      "sourceSha256": "sha256:bec8727ddaea615dc765f7afe603a62ff4d6fb3fad960391ecb46b3e4185bd57",
+      "compiledSha256": "sha256:816525f0b5f8571c846421c7cbe218019b26e4d862f5db5eb46063ae4448cf70"
+    }
+  ],
+  "rights": "Original picocolors ISC LICENSE retained in PICOCOLORS-LICENSE.txt",
+  "limits": [
+    "M0 is only a boundary; M1 is a separately supplied uncommitted initial-rule patch, not a selected product model.",
+    "Reference/schema/immutability checks passed; no comprehensive rule accuracy or explanation-entailment claim.",
+    "M1 currently describes retained value availability conservatively without a byte resolver; this needs Malhar review before final integration."
+  ]
+}

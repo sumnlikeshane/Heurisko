@@ -1,0 +1,35 @@
+  HEURISKO   H Home    I Investigations     M Monitoring                                                     SYNTHETIC  
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+  F0.tgz / LOCAL INPUT / HISTORICAL / incomplete / Captured 2026-10-31T15:00:00Z                                        
+  1 Overview   2 Findings   3 Files   4 Source   5 AI   6 Coverage                                                      
+  Historical — online checks have not refreshed · i Identity                                                            
+  AI                                                                                                                    
+  AI > AI failed / Esc restores position                                                                                
+  ┌─ > AI failed ────────────────────────────────────────────────────────────────────────────────────────────────────┐  
+  │ AI state:                                                                                                        │  
+  │ failed                                                                                                           │  
+  │                                                                                                                  │  
+  │ Reason:                                                                                                          │  
+  │ SYNTHETIC rendering state; no model executed                                                                     │  
+  │                                                                                                                  │  
+  │ Model:                                                                                                           │  
+  │ Not configured                                                                                                   │  
+  │                                                                                                                  │  
+  │ Validation:                                                                                                      │  
+  │ not_run                                                                                                          │  
+  │ Current inference runtime unavailable; deterministic evidence remains accessible.                                │  
+  │ Validation does not establish factual truth.                                                                     │  
+  │ 1-13 / 13                                                                                                        │  
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘  
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        
+  AI                                                                                                                    
+  j/k move  Enter inspect  e evidence  Tab panes  / filter  ? help  q quit                                              
+                                                                                                                        
+                                                                                                                        

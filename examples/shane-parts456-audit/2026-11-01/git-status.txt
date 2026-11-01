@@ -1,0 +1,48 @@
+## docs/share-research-with-team...origin/docs/share-research-with-team
+ M .github/workflows/ci.yml
+ M .gitignore
+ M AGENTS.md
+ M README.md
+ M "docs/Approved Decision Register.md"
+ M docs/README.md
+ M "docs/Team Development Checklist.md"
+ M package.json
+ M packages/contracts/tests/validate_contracts.py
+ M pnpm-lock.yaml
+ M pnpm-workspace.yaml
+ M requirements-contracts.txt
+?? .gitattributes
+?? .nvmrc
+?? M0-files-d725b744.tar.gz
+?? M1-uncommitted.patch
+?? apps/
+?? "docs/Audit Repairs and Malhar Handoff.md"
+?? "docs/CLI Reference.md"
+?? docs/Design/
+?? "docs/Final Hour Demo Runbook.md"
+?? "docs/Final Module Intake.md"
+?? docs/HANDOFF_CURRENT.md
+?? docs/HANDOFF_LINUX_VALIDATION.json
+?? docs/HANDOFF_REMOTE_CI.json
+?? docs/HANDOFF_S1_S3.md
+?? docs/HANDOFF_VALIDATION.json
+?? "docs/Malhar M1 M2 Handoff Review.md"
+?? "docs/Part 4 Integration Readiness Report.md"
+?? "docs/Part 4 TUI Visual Audit.md"
+?? "docs/Shane Implementation Plan.md"
+?? "docs/Shane Parts 4\342\200\2236 Audit.md"
+?? docs/WEB_CONTINUATION.md
+?? "docs/Web Application Benchmark Research Prompt.md"
+?? "docs/Web Application Gap Plan.md"
+?? "docs/Web Application Overhaul Prompt.md"
+?? "docs/Web Application Product Scope.md"
+?? "docs/Webapp Parallel Implementation Plan.md"
+?? docs/_evidence/
+?? examples/
+?? integration/
+?? packages/cli/
+?? packages/contracts/runtime/
+?? packages/core/
+?? packages/intelligence-reviewed/
+?? packages/tui/
+?? scripts/

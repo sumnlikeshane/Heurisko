@@ -1,0 +1,340 @@
+[?1049h[?25l[?25l  [1mHEURISKO / home / medium / 120x35                                                                                   [22m
+   [4m[1mH Home   [22m[24m I Investigations     M Monitoring
+  Exact artifact / immutable source evidence. Design v1.0.0-rc.1 provisional.
+  AI runtime unavailable; no monitoring/export configured.
+  <workspace>/.heurisko
+  ┌─[1m > Home [22m─────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Enter / n New investigation; o Open saved report; I Recent observations; M Monitoring                            │
+  │ Monitoring unconfigured. Durable failed-job index unavailable.                                                   │
+  │ No indexed reports in selected store. Open an explicit report path.                                              │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+  Focus 0 / filter (none) / No universal safety verdict
+  j/k move  Enter inspect  e evidence  Tab focus  / filter  ? help  q quit
+
+
+[?25l[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO / new / medium / 120x35                                                                                    [22m
+   [4m[1mH Home   [22m[24m I Investigations     M Monitoring
+  Exact artifact / immutable source evidence. Design v1.0.0-rc.1 provisional.
+  AI runtime unavailable; no monitoring/export configured.
+  <workspace>/.heurisko
+  ┌─[1m > New investigation / npm [22m──────────────────────────────────────────────────────────────────────────────────────┐
+  │ Ctrl+T type; Tab field; Enter validates → Review.                                                                │
+  │ AI disabled; current inference runtime unavailable.                                                              │
+  │ > Package name: |                                                                                                │
+  │ Exact version:                                                                                                   │
+  │ Source repository:                                                                                               │
+  │ Full commit:                                                                                                     │
+  │ Subdirectory:                                                                                                    │
+  │ Chosen source is not verified release provenance.                                                                │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+  Focus 0 / filter (none) / No universal safety verdict
+  Type fields  Tab next  Ctrl+T type  Enter review  Esc back
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO / new / medium / 120x35                                                                                    [22m
+   [4m[1mH Home   [22m[24m I Investigations     M Monitoring
+  Exact artifact / immutable source evidence. Design v1.0.0-rc.1 provisional.
+  AI runtime unavailable; no monitoring/export configured.
+  <workspace>/.heurisko
+  ┌─[1m > New investigation / npm [22m──────────────────────────────────────────────────────────────────────────────────────┐
+  │ Ctrl+T type; Tab field; Enter validates → Review.                                                                │
+  │ AI disabled; current inference runtime unavailable.                                                              │
+  │ > Package name: qHI?1/|                                                                                          │
+  │ Exact version:                                                                                                   │
+  │ Source repository:                                                                                               │
+  │ Full commit:                                                                                                     │
+  │ Subdirectory:                                                                                                    │
+  │ Chosen source is not verified release provenance.                                                                │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+  Focus 0 / filter (none) / No universal safety verdict
+  Type fields  Tab next  Ctrl+T type  Enter review  Esc back
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO / new / medium / 120x35                                                                                    [22m
+   [4m[1mH Home   [22m[24m I Investigations     M Monitoring
+  Exact artifact / immutable source evidence. Design v1.0.0-rc.1 provisional.
+  AI runtime unavailable; no monitoring/export configured.
+  <workspace>/.heurisko
+  ┌─[1m > Actions —  [22m───────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ > Home                                                                                                           │
+  │ New investigation                                                                                                │
+  │ Open report                                                                                                      │
+  │ Recent reports                                                                                                   │
+  │ Monitoring unavailable                                                                                           │
+  │ Section Overview                                                                                                 │
+  │ Section Findings                                                                                                 │
+  │ Section Files                                                                                                    │
+  │ Section Source                                                                                                   │
+  │ Section AI                                                                                                       │
+  │ Section Coverage                                                                                                 │
+  │ Export unavailable                                                                                               │
+  │ AI runtime unavailable                                                                                           │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+  Focus 0 / filter (none) / No universal safety verdict
+  Type fields  Tab next  Ctrl+T type  Enter review  Esc back
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO / new / medium / 120x35                                                                                    [22m
+   [4m[1mH Home   [22m[24m I Investigations     M Monitoring
+  Exact artifact / immutable source evidence. Design v1.0.0-rc.1 provisional.
+  AI runtime unavailable; no monitoring/export configured.
+  <workspace>/.heurisko
+  ┌─[1m > New investigation / npm [22m──────────────────────────────────────────────────────────────────────────────────────┐
+  │ Ctrl+T type; Tab field; Enter validates → Review.                                                                │
+  │ AI disabled; current inference runtime unavailable.                                                              │
+  │ > Package name: qHI?1/|                                                                                          │
+  │ Exact version:                                                                                                   │
+  │ Source repository:                                                                                               │
+  │ Full commit:                                                                                                     │
+  │ Subdirectory:                                                                                                    │
+  │ Chosen source is not verified release provenance.                                                                │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+  Focus 0 / filter (none) / No universal safety verdict
+  Type fields  Tab next  Ctrl+T type  Enter review  Esc back
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO / home / medium / 120x35                                                                                   [22m
+   [4m[1mH Home   [22m[24m I Investigations     M Monitoring
+  Exact artifact / immutable source evidence. Design v1.0.0-rc.1 provisional.
+  AI runtime unavailable; no monitoring/export configured.
+  <workspace>/.heurisko
+  ┌─[1m > Home [22m─────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Enter / n New investigation; o Open saved report; I Recent observations; M Monitoring                            │
+  │ Monitoring unconfigured. Durable failed-job index unavailable.                                                   │
+  │ No indexed reports in selected store. Open an explicit report path.                                              │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+  Focus 0 / filter (none) / No universal safety verdict
+  j/k move  Enter inspect  e evidence  Tab focus  / filter  ? help  q quit
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO / open / medium / 120x35                                                                                   [22m
+   [4m[1mH Home   [22m[24m I Investigations     M Monitoring
+  Exact artifact / immutable source evidence. Design v1.0.0-rc.1 provisional.
+  AI runtime unavailable; no monitoring/export configured.
+  <workspace>/.heurisko
+  ┌─[1m > Open saved report — Enter validate / Esc back [22m────────────────────────────────────────────────────────────────┐
+  │ |                                                                                                                │
+  │ Path or sha256: full report content reference. Missing evidence does not block metadata.                         │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+  Focus 0 / filter (none) / No universal safety verdict
+  j/k move  Enter inspect  e evidence  Tab focus  / filter  ? help  q quit
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO / open / medium / 120x35                                                                                   [22m
+   [4m[1mH Home   [22m[24m I Investigations     M Monitoring
+  Exact artifact / immutable source evidence. Design v1.0.0-rc.1 provisional.
+  AI runtime unavailable; no monitoring/export configured.
+  <workspace>/.heurisko
+  ┌─[1m > Open saved report — Enter validate / Esc back [22m────────────────────────────────────────────────────────────────┐
+  │ /does/not/exist|                                                                                                 │
+  │ Path or sha256: full report content reference. Missing evidence does not block metadata.                         │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+  Focus 0 / filter (none) / No universal safety verdict
+  j/k move  Enter inspect  e evidence  Tab focus  / filter  ? help  q quit
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO / open / medium / 120x35                                                                                   [22m
+   [4m[1mH Home   [22m[24m I Investigations     M Monitoring
+  Exact artifact / immutable source evidence. Design v1.0.0-rc.1 provisional.
+  AI runtime unavailable; no monitoring/export configured.
+  <workspace>/.heurisko
+  ┌─[1m > Open saved report — Enter validate / Esc back [22m────────────────────────────────────────────────────────────────┐
+  │ /does/not/exist|                                                                                                 │
+  │ Path or sha256: full report content reference. Missing evidence does not block metadata.                         │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+  Opening and validating retained report…
+  j/k move  Enter inspect  e evidence  Tab focus  / filter  ? help  q quit
+
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  [1mHEURISKO / open / medium / 120x35                                                                                   [22m
+   [4m[1mH Home   [22m[24m I Investigations     M Monitoring
+  Exact artifact / immutable source evidence. Design v1.0.0-rc.1 provisional.
+  AI runtime unavailable; no monitoring/export configured.
+  <workspace>/.heurisko
+  ┌─[1m > Open saved report — Enter validate / Esc back [22m────────────────────────────────────────────────────────────────┐
+  │ /does/not/exist|                                                                                                 │
+  │ Path or sha256: full report content reference. Missing evidence does not block metadata.                         │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  │                                                                                                                  │
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+  Open failed: REPORT_READ_FAILED
+  j/k move  Enter inspect  e evidence  Tab focus  / filter  ? help  q quit
+
+

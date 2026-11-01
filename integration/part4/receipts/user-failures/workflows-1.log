@@ -1,0 +1,51 @@
+Traceback (most recent call last):
+  File "<WORKSPACE>/packages/tui/tests/user-workflows.py", line 40, in <module>
+    s.send('/',.1);s.send('package.json',.1);s.send('\r',.2);s.send('\r',.5);expect(s,'RAW CHANGED SPANS');s.capture(CAP/f'manifest-diff-{c}');s.send('\x1b',.3)
+                                                                             ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "<WORKSPACE>/packages/tui/tests/user-workflows.py", line 12, in expect
+    s.wait(text,15);checks.append({'check':text,'size':[s.cols,s.rows],'passed':True})
+    ~~~~~~^^^^^^^^^
+  File "<WORKSPACE>/packages/tui/tests/pty_session.py", line 42, in wait
+    assert text in self.frame(),repr(text)+' missing\n'+self.frame()
+           ^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'RAW CHANGED SPANS' missing
+  HEURISKO   H Home    I Investigations     M Monitoring                                                                                                        
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+  picocolors@1.1.1 / HISTORICAL / incomplete / Captured 2026-10-31T22:59:33Z                                                                                    
+  1 Overview   2 Findings   3 Files   4 Source   5 AI   6 Coverage                                                                                              
+  Raw retained evidence · Esc returns to its origin                                                                                                             
+  Evidence                                                                                                                                                      
+  Files > ev_f61f09233ab041767071cc94 / Esc restores position                                                                                                   
+  ┌─ > Raw citation / artifact ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐  
+  │ ev_f61f09233ab041767071cc94                                                                                                                              │  
+  │ BOTH / README.md                                                                                                                                         │  
+  │ RAW utf8: [532, 621) / recorded [532, 621)                                                                                                               │  
+  │ Window truncated: false / total blob 622 bytes                                                                                                           │  
+  │                                                                                                                                                          │  
+  │ Docs                                                                                                                                                     │  
+  │ Read **[full docs](https://github.com/alexeyraspopov/picocolors#readme)** on GitHub.                                                                     │  
+  │                                                                                                                                                          │  
+  │ Method: common-prefix-suffix-byte-span-v1                                                                                                                │  
+  │ Availability: retained                                                                                                                                   │  
+  │ Verification: Not recorded                                                                                                                               │  
+  │ Content digest: sha256:eb4c571d34dab1160ed59e4cd84bd6a38550bd22c9daa950055ea81f85e43e4b                                                                  │  
+  │ Member: ev_73596ae4a9b9e96268c7161d                                                                                                                      │  
+  │ Content ref: sha256:5027b2836551ea0f91fa27b97335de905e24e1459d590eacfa45c0156962b70c                                                                     │  
+  │ Limitation: One enclosing changed byte span, not semantic equivalence; full member bytes retained.                                                       │  
+  │ 1-15 / 15                                                                                                                                                │  
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘  
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                
+  evidence                                                                                                                                                      
+  j/k scroll  Tab citation  s side  p/b page  Esc return  q quit                                                                                                
+                                                                                                                                                                
+                                                                                                                                                                

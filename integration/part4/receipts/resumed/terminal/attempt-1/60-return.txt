@@ -1,0 +1,20 @@
+  HEURISKO / report / narrow / 60x20                        
+   H Home    I Investigations     M Monitoring              
+  LOCAL INPUT picocolors@1.1.1 report_7b46cdea60ae3108dd8~  
+  HISTORICAL — checks not refreshed / complete / captured~  
+  1 Overview  2 Findings*  3 Files  4 Source  5 AI  6 Cov~  
+  +- > Findings / find_heurisko_manifest_lifecycle-scri~-+  
+  |                                                      |  
+  | Observation: Manifest key scripts.postinstall is     |  
+  | reported as changed.                                 |  
+  | Significance: Lifecycle entries can affect           |  
+  | package-manager installation behavior; inspect the   |  
+  | exact command and its source before deciding what it |  
+  | does. This observation does not establish malicious  |  
+  |                                                      |  
+  +------------------------------------------------------+  
+  Focus 0 / filter lifecycle / No universal safety verdict  
+  j/k move  Enter inspect  e evidence  Tab focus  / filte~  
+                                                            
+                                                            
+                                                            

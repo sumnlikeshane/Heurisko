@@ -1,0 +1,35 @@
+  HEURISKO / evidence / medium / 120x35                                                                                 
+   H Home    I Investigations     M Monitoring                                                                          
+  LOCAL INPUT picocolors@1.1.1 report_7b46cdea60ae3108dd8c4b21                                                          
+  HISTORICAL — checks not refreshed / complete / captured 2026-10-31T21:48:41Z                                          
+  1 Overview  2 Findings*  3 Files  4 Source  5 AI  6 Coverage                                                          
+  ┌─ > Evidence / ev_8e5679afc3b6d3667eb09413 ───────────────────────────────────────────────────────────────────────┐  
+  │ Side: both; requested artifact; method strict-json-value-byte-spans-v1                                           │  
+  │ Path: package.json                                                                                               │  
+  │ Digest: sha256:4afa16baaedb6f645fd2dd33275661afe16974496f33c35765f25402ab3fe069; availability retained           │  
+  │ METADATA ONLY: MISSING_BLOB                                                                                      │  
+  │ Esc restores exact origin. Tab citation; s side; r raw record; p/b page.                                         │  
+  │                                                                                                                  │  
+  │                                                                                                                  │  
+  │                                                                                                                  │  
+  │                                                                                                                  │  
+  │                                                                                                                  │  
+  │                                                                                                                  │  
+  │                                                                                                                  │  
+  │                                                                                                                  │  
+  │                                                                                                                  │  
+  │                                                                                                                  │  
+  │                                                                                                                  │  
+  │                                                                                                                  │  
+  │                                                                                                                  │  
+  │                                                                                                                  │  
+  │                                                                                                                  │  
+  │                                                                                                                  │  
+  │                                                                                                                  │  
+  │                                                                                                                  │  
+  └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘  
+  Focus 0 / filter lifecycle / No universal safety verdict                                                              
+  j/k scroll  Tab cite  s side  p/b page  Esc return  q quit                                                            
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        

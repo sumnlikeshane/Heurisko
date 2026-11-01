@@ -1,0 +1,26 @@
+  HEURISKO   H Home    I Investigations     M Monitoring                            
+  ────────────────────────────────────────────────────────────────────────────────  
+  Live investigation                                                                
+  0m 01s elapsed · 0/10 stages reported terminal facts · no estimated finish time   
+  [──────━━━━──────────────────] Preparing / indeterminate                          
+                                                                                    
+  ┌─ > Stages ────────────────────────────────────────────── 0/10 terminal facts ┐  
+  │ > resolve artifact / not_started                                             │  
+  │   acquire / no                                                                  
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    

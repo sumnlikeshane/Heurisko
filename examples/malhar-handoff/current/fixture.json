@@ -1,0 +1,170 @@
+{
+  "version": "heurisko-malhar-lifecycle-handoff-v1",
+  "reviewedHead": "e8b8116f9960527d0a82e066059d7792c405defe",
+  "producerHead": "81346271f5a3789b4b43fd8f379014656011823d",
+  "genuineControl": {
+    "fixtureKind": "genuine-public-release",
+    "package": "esbuild",
+    "version": "0.25.12",
+    "artifactUrl": "https://registry.npmjs.org/esbuild/-/esbuild-0.25.12.tgz",
+    "artifactSha256": "sha256:227584145829e5c4782734b3fb7b91b49c6aa12876d6cf070e6a3d9d4de543f9",
+    "artifactSize": 30947,
+    "expectedAndObservedSRI": "sha512-bbPBYYrtZbkt6Os6FiTLCTFxvq4tt3JKall1vRwshA3fdVztsLAatFaZobhkBC8/BrPetoa0oksYoKXoG4ryJg==",
+    "captureTime": "2026-10-31T22:39:43Z",
+    "repository": "https://github.com/evanw/esbuild",
+    "commit": "208f539945b145e7c9d6d844290f81c3fe5af320",
+    "subdirectory": "npm/esbuild",
+    "sourceUrl": "https://codeload.github.com/evanw/esbuild/tar.gz/208f539945b145e7c9d6d844290f81c3fe5af320",
+    "sourceArchiveSha256": "sha256:783fa55416dc20211affd339e90608dbf2c56b15939fd416510d24a967ff9efa",
+    "sourceAssociation": "user_supplied; registry gitHead corroboration is an unverified publisher claim",
+    "provenance": "not_checked",
+    "manifestEvidence": [
+      {
+        "kind": "artifact_member",
+        "side": "artifact",
+        "locator": {
+          "path": "package/package.json",
+          "startByte": 0,
+          "endByte": 1490
+        },
+        "observationMethod": "raw-member-sha256-v1",
+        "limitations": [],
+        "contentSha256": "sha256:cb7d5b1fe478f8cbaae566a86031b6fdf5f7d444354f35d1cb3cba9adf6d2935",
+        "contentRef": "sha256:cb7d5b1fe478f8cbaae566a86031b6fdf5f7d444354f35d1cb3cba9adf6d2935",
+        "contentState": "retained",
+        "evidenceId": "ev_9ea14095d99a65b64469c4a2"
+      },
+      {
+        "kind": "source_member",
+        "side": "source",
+        "locator": {
+          "path": "esbuild-208f539945b145e7c9d6d844290f81c3fe5af320/npm/esbuild/package.json",
+          "startByte": 0,
+          "endByte": 1490
+        },
+        "observationMethod": "raw-member-sha256-v1",
+        "limitations": [],
+        "contentSha256": "sha256:cb7d5b1fe478f8cbaae566a86031b6fdf5f7d444354f35d1cb3cba9adf6d2935",
+        "contentRef": "sha256:cb7d5b1fe478f8cbaae566a86031b6fdf5f7d444354f35d1cb3cba9adf6d2935",
+        "contentState": "retained",
+        "evidenceId": "ev_45bf1ae6aa60abb918973bdb"
+      }
+    ],
+    "lifecycleValueLocator": {
+      "jsonPointer": "/scripts/postinstall",
+      "startByte": 256,
+      "endByte": 273,
+      "startLine": 10,
+      "endLine": 10,
+      "value": "node install.js",
+      "byteConvention": "zero-based half-open UTF-8 spans; line numbers one-based inclusive"
+    },
+    "expectedObservation": "Artifact/source manifests are byte-identical; postinstall exists on both sides. This is a genuine unchanged lifecycle control, not a genuine upstream lifecycle delta or proof of harmlessness.",
+    "limits": [
+      "Static parser returned ARCHIVE_UNSUPPORTED_ENTRY for source; inventory/compare remain incomplete. The two complete retained manifests are still comparable.",
+      "Outside-subtree source bytes are omitted from comparison and retained as build context.",
+      "No scripts, package installation, imports, rebuild, platform executable or model were executed.",
+      "No verified artifact-to-source provenance; no overall package behavior/accuracy conclusion."
+    ]
+  },
+  "localMutation": {
+    "fixtureKind": "synthetic-local-mutation",
+    "origin": "local-input",
+    "package": "picocolors",
+    "version": "1.1.1",
+    "baselineTarballUrl": "https://registry.npmjs.org/picocolors/-/picocolors-1.1.1.tgz",
+    "baselineSha256": "sha256:d3aedb2807967b7eb37fd11b03b7e3701e725af79c650d0812ff7213f8f882d9",
+    "mutatedFilename": "picocolors-1.1.1.local-inert-mutation.tgz",
+    "mutatedSha256": "sha256:bcdd003ee749b70575fb2793d3892a393d1224457ecb8ca9c37ff4cfd55e098d",
+    "repository": "https://github.com/alexeyraspopov/picocolors",
+    "commit": "6f0a4638348ed20633d623ee973f9c9a96f65104",
+    "subdirectory": "",
+    "sourceArchiveSha256": "sha256:87646ed7f9b372d94da80ec298ef4ec6fc0c2a56bb60e0b325a9705037408c7c",
+    "manifestEvidence": [
+      {
+        "kind": "artifact_member",
+        "side": "artifact",
+        "locator": {
+          "path": "package/package.json",
+          "startByte": 0,
+          "endByte": 552
+        },
+        "observationMethod": "raw-member-sha256-v1",
+        "limitations": [],
+        "contentSha256": "sha256:ef2ac226c4811d312e12c64214c453878653e834482125ae475f27cea60de737",
+        "contentRef": "sha256:ef2ac226c4811d312e12c64214c453878653e834482125ae475f27cea60de737",
+        "contentState": "retained",
+        "evidenceId": "ev_e230092de7aea9bb23526f1a"
+      },
+      {
+        "kind": "artifact_member",
+        "side": "artifact",
+        "locator": {
+          "path": "package/package.json",
+          "startByte": 0,
+          "endByte": 618
+        },
+        "observationMethod": "raw-member-sha256-v1",
+        "limitations": [],
+        "contentSha256": "sha256:f47239397b7822519c35144a37158b0ff4bb7eeddf325e8b518774ab6be02c61",
+        "contentRef": "sha256:f47239397b7822519c35144a37158b0ff4bb7eeddf325e8b518774ab6be02c61",
+        "contentState": "retained",
+        "evidenceId": "ev_fac6fd5699ff0c83dd8be093"
+      },
+      {
+        "kind": "source_member",
+        "side": "source",
+        "locator": {
+          "path": "picocolors-6f0a4638348ed20633d623ee973f9c9a96f65104/package.json",
+          "startByte": 0,
+          "endByte": 1107
+        },
+        "observationMethod": "raw-member-sha256-v1",
+        "limitations": [],
+        "contentSha256": "sha256:76124c34a1d7110bbe0db5578ee039d79e3c411a1064ae2f0ddeb728fea68f56",
+        "contentRef": "sha256:76124c34a1d7110bbe0db5578ee039d79e3c411a1064ae2f0ddeb728fea68f56",
+        "contentState": "retained",
+        "evidenceId": "ev_8504e9232685621e15be63cc"
+      },
+      {
+        "kind": "manifest_delta",
+        "side": "both",
+        "locator": {
+          "path": "package.json",
+          "metadataKey": "scripts.postinstall"
+        },
+        "observationMethod": "strict-json-value-byte-spans-v1",
+        "limitations": [],
+        "contentSha256": "sha256:4afa16baaedb6f645fd2dd33275661afe16974496f33c35765f25402ab3fe069",
+        "contentRef": "sha256:4afa16baaedb6f645fd2dd33275661afe16974496f33c35765f25402ab3fe069",
+        "contentState": "retained",
+        "evidenceId": "ev_8e5679afc3b6d3667eb09413"
+      }
+    ],
+    "delta": {
+      "version": "heurisko-manifest-delta-v1",
+      "pointer": "/scripts/postinstall",
+      "source": null,
+      "artifact": {
+        "value": "HEURISKO_INERT_TEST_ONLY",
+        "startByte": 585,
+        "endByte": 611
+      },
+      "sourceContentRef": "sha256:76124c34a1d7110bbe0db5578ee039d79e3c411a1064ae2f0ddeb728fea68f56",
+      "artifactContentRef": "sha256:f47239397b7822519c35144a37158b0ff4bb7eeddf325e8b518774ab6be02c61"
+    },
+    "mutationOracle": [
+      "Adds scripts.postinstall literal HEURISKO_INERT_TEST_ONLY",
+      "Adds comment-only package/heurisko-inert-marker.js"
+    ],
+    "executed": false,
+    "expectedObservation": "A lifecycle key is changed. Producer delta proves the value is added; M1 currently reports changed and does not resolve retained delta values.",
+    "limits": [
+      "No genuine upstream postinstall addition is claimed.",
+      "Source version label is 1.1.0 while registry artifact is 1.1.1: explicit comparison target only; association remains ambiguous.",
+      "The registry baseline has no scripts object; source has scripts.test only. Neither has postinstall.",
+      "Local changed bytes inherit no registry integrity or provenance success."
+    ]
+  },
+  "locators": "Evidence records copied unchanged from producer; selected manifest files are convenience byte-for-byte copies. Full esbuild report/store are retained alongside this fixture."
+}

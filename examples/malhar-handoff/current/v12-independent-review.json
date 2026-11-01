@@ -1,0 +1,74 @@
+{
+  "reviewedHead": "e8b8116f9960527d0a82e066059d7792c405defe",
+  "reviewType": "Separate Codex static review on Shane\u2019s behalf; not human review or a live inference rerun",
+  "status": "passed with wording/policy caveats",
+  "archiveHashes": {
+    "artifact": "sha256:75fd345a47ce3d79595b27bf57e6f49c2ca7904f3c7ce75f8a87012046c86b0b",
+    "source_distribution": "sha256:5ec2bbb534ed160b261acbbdd1b463eb3cf52a8d223d96a8ab9981f63798e85c"
+  },
+  "checks": [
+    {
+      "evidenceId": "ev_0af170efa4b01ea3bcc51c54",
+      "path": "distutils-precedence.pth",
+      "startLine": 1,
+      "endLine": 1,
+      "memberSha256": "sha256:2638ce9e2500e572a5e0de7faed6661eb569d1b696fcba07b0dd223da5f5d224",
+      "excerptSha256": "sha256:d0bd71f45f1da4302a7a5e7d699cb1dabb84526a608344b4ec0461adb9ee579a",
+      "status": "matched-to-retained-archive"
+    },
+    {
+      "evidenceId": "ev_538c8c1b965709b1507b36f9",
+      "path": "setup.py",
+      "startLine": 53,
+      "endLine": 59,
+      "memberSha256": "sha256:f2b8c1a68b56240d7e6e9acd2bf1981dc8f929b74e13033ae2fb4557c2a8688d",
+      "excerptSha256": "sha256:0a22a403225d37693b462ee2ad1a686bc9e14a831f6fb5da6650f262b299d1dc",
+      "status": "matched-to-retained-archive"
+    },
+    {
+      "evidenceId": "ev_d7853a3156a8d2146e64cd2e",
+      "path": "_distutils_hack/__init__.py",
+      "startLine": 124,
+      "endLine": 131,
+      "memberSha256": "sha256:7688a23bb369b867ca503635e94c625981671c1e01adf621da6c59d2d07d5114",
+      "excerptSha256": "sha256:cb8e576529d45119641d90aeaf6bc4455a9e32bbc7971193dad42697ca93a3dd",
+      "status": "matched-to-retained-archive"
+    },
+    {
+      "evidenceId": "ev_2c623c2ce90a481e378d7a27",
+      "path": "CHANGES.rst",
+      "startLine": 854,
+      "endLine": 856,
+      "memberSha256": "sha256:d09b6f3d805eb940e91f80e211bc73caaad066a1b6b44a0a5fcac16a2a7a05a5",
+      "excerptSha256": "sha256:2d4fac81dca105f528f9495eaa8fda70b6a65baefcf48928804014b54852d6d9",
+      "status": "matched-to-retained-archive"
+    }
+  ],
+  "additionalChecks": [
+    "Two full retained source copies match sdist members",
+    "Wheel-only .pth presence; absent from sdist inventory"
+  ],
+  "sandbox": {
+    "image": "python:3.13.18-slim-bookworm@sha256:281d39ff02e3b389401586134ff9e6572954687822a58055ec07a60ded4e0b7f",
+    "network": "none",
+    "root": "read-only",
+    "mounts": "dataset and independent review script read-only only",
+    "user": "65534:65534",
+    "capabilities": "none",
+    "noNewPrivileges": true,
+    "memoryMiB": 256,
+    "pids": 16,
+    "cpuSeconds": 10
+  },
+  "packageExecution": false,
+  "modelExecution": false,
+  "scriptSha256": "sha256:67e17f499a6b0f1327ad2f036aec59a45f24413a287b06e8f23cdbc6742cbd6e",
+  "assessment": {
+    "guardAndShimBehavior": "supported as static source/artifact text",
+    "exactBuildOrigin": "unverified",
+    "SLSALevel3Plus": "unsupported as a case/project requirement; do not adopt",
+    "provenanceQuestion": "saved non-abstaining output correctly rejected",
+    "semanticEntailment": "manual scoped review only; not enforced by citation membership/regex guards",
+    "hostedOpenRouterDemo": "requires organizer confirmation"
+  }
+}

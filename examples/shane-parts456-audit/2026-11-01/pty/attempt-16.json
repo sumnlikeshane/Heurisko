@@ -1,0 +1,69 @@
+{
+  "checks": [
+    {
+      "check": "HISTORICAL",
+      "passed": true
+    },
+    {
+      "check": "PRIORITY FINDINGS",
+      "passed": true
+    },
+    {
+      "check": "COVERAGE & UNKNOWNS",
+      "passed": true
+    },
+    {
+      "check": "NEXT ACTIONS",
+      "passed": true
+    },
+    {
+      "check": "Report next actions",
+      "passed": true
+    },
+    {
+      "check": "[Candidates]",
+      "passed": true
+    },
+    {
+      "check": "Findings",
+      "passed": true
+    },
+    {
+      "check": "HISTORICAL",
+      "passed": true
+    },
+    {
+      "check": "Supporting evidence",
+      "passed": true
+    },
+    {
+      "check": "Supporting evidence",
+      "passed": true
+    },
+    {
+      "check": "Supporting evidence",
+      "passed": true
+    },
+    {
+      "check": "Observation & assessment",
+      "passed": true
+    },
+    {
+      "check": "confidence: high",
+      "passed": true
+    },
+    {
+      "check": "HISTORICAL",
+      "passed": true
+    },
+    {
+      "check": "confidence: high",
+      "passed": true
+    },
+    {
+      "check": "Filter: lifecycle",
+      "passed": true
+    }
+  ],
+  "count": 16
+}

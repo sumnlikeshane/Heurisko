@@ -156,6 +156,12 @@ Shane explicitly approved **P6-01 through P6-12** on 31 October 2026. This accep
 
 **Rationale:** Apache-2.0 is permissive and includes an express contributor patent grant. The prior founder research preferred Apache-2.0; the current delegated choice resolves that proposal for the project. The license does not relicense organizer-supplied governing files or third-party dependencies, model weights, sources, and assets. Those require their own admission and attribution checks. [Official license text](https://www.apache.org/licenses/LICENSE-2.0.txt) and [Apache application guidance](https://www.apache.org/legal/apply-license.html) were checked before adding the files.
 
+## TUI design candidate filing — 31 October 2026
+
+**Authority and scope:** Shane requested that the supplied [TUI Design Contract](Design/TUI%20Design%20Contract%20v1.0.0.md) be recorded, moved to the appropriate documentation location and referenced when TUI work starts. The design text and status are preserved in `docs/Design/`, with only three pre-existing appendix table-of-contents anchors corrected; this is a filing and future-reference instruction, not an amendment to Phase 02 or approval of the final design.
+
+**Status:** The filename says v1.0.0; the document identifies itself as **v1.0.0-rc.1 — CANDIDATE FOR REVIEW, NOT APPROVED, NOT FROZEN**, with 59 confirmed design preferences. Proposed wireframes, exact copy, colors, shortcuts and APIs remain provisional. Future TUI work must read this candidate alongside approved Phase 02 and current shared types, verify repository seams, record blockers B01–B13 and evaluate scenarios S01–S09. No prototype, contract conformance or final design acceptance is claimed by this filing.
+
 ## Current decision workflow
 
 **Phases 01–06:** ALL APPROVED as design decisions by explicit user confirmation. **Pre-split A01–A14:** APPROVED (Shane directly; Malhar as reported by Shane); G0 implementation/verification OPEN.  
@@ -168,3 +174,39 @@ Shane explicitly approved **P6-01 through P6-12** on 31 October 2026. This accep
 - Preserve earlier choices and proposal versions; approval of a principle is not implementation or empirical validation.
 - Record modified decisions with amended versions and renewed confirmation.
 - Do not invent package verification outcomes, rebuild isolation evidence, live monitoring uptime or model-performance measurements.
+
+
+## Engineering follow-up — audit repairs, 1 November 2026
+
+Shane authorized fixing the S1–S3 audit findings and preparing the Malhar handoff. [Repair record](Audit%20Repairs%20and%20Malhar%20Handoff.md) documents exact executable/configuration identity, truthful progress and conservative parser-creation recovery. These implement existing evidence/isolation rules; they do not amend the G0 schema, approve a model/policy, freeze the TUI design or authorize publication. LICENSE/NOTICE were already included in `0e6adb9`; the earlier license decision text is historical.
+
+
+## Engineering follow-up — local web implementation, 1 November 2026
+
+Shane instructed Codex to begin the [parallel webapp plan](Webapp%20Parallel%20Implementation%20Plan.md) and keep the UI like the terminal CLI. [apps/web](../apps/web/README.md) implements a local saved-report consumer, bounded evidence service and explicit transport export/import under A08/P5-05/06. It follows the terminal preference direction without adopting/freezing the candidate TUI contract. No approved trust rule or G0 shape changes. Root workspace/lock/scripts/CI were integrated by one writer; core/CLI/contracts/candidate-reader/visual source were preserved.
+
+[Actual local receipts](../examples/web/current/README.md) record typecheck/full G0, 15 web checks, 24 headless checks and four CLI-parity/portable-reopen cases. W5 browser QA, TUI parity, integrated findings/AI review and remote CI/publication remain open. The implementation authorization does not authorize commits, pushes, PR publication, merge, deployment or external submission. Product models: none; coding assistance: Codex.
+
+## Web scope clarification — latest explicit requirement, 1 November 2026
+
+**Authority:** Shane requested documentation reconciliation for “complete CLI documentation and end-to-end browser investigation with parity for supported CLI capabilities.” This is a current explicit product requirement, recorded separately from the original Phase 01–06 approvals and proposed interface details. It clarifies the full browser target beyond A08's initial local/exported-report slice; A08 already permits explicit new-analysis requests through the shared engine. It changes no evidence/trust rule, mandatory TUI obligation, npm-first sequence or local-first/account-free boundary.
+
+**Effect:** the parallel web plan's read-only/live-analysis cuts remain historical first-slice scheduling decisions, not the complete product backlog. [Full scope](Web%20Application%20Product%20Scope.md) records screens, journeys, capability parity, missing functionality and unresolved design questions. [CLI reference](CLI%20Reference.md) documents current supported commands. [Continuation handoff](WEB_CONTINUATION.md) preserves outstanding first-slice acceptance separately and supplies the new next-run prompt. Approved phase texts, old receipts/captures and research proposals remain unchanged.
+
+**Authorization and limits:** this turn is documentation only; no features, technologies, dependencies, hosting, model or shared contract changes are authorized. Shane separately requested running the existing local viewer; that preview is not broader implementation approval. Screen names/layouts, package search UX, local file admission, job API/persistence and browser export mechanics remain proposals/questions. No full W/S6/G5/P04 acceptance, fresh remote CI, commit, push or publication follows from this record. Product models: none; coding assistance: Codex.
+
+
+## Engineering follow-up — browser investigation, 1 November 2026
+
+Shane explicitly authorized continuing local implementation and validation toward complete CLI documentation and supported CLI/browser parity, then confirmed the **landing page → sidebar documentation → complete supported browser pipeline** structure. This supersedes the previous documentation-only task limit for this session. It grants no Git/publication/deployment permission and adopts no TUI/intelligence/model/verifier/monitor lane.
+
+Implementation in [apps/web](../apps/web/README.md) reuses admitted React/TypeScript, the shared engine/reader and directory transport. Mutations require the per-process capability and exact Origin/Host. Inputs are exact coordinates or explicitly selected bounded bytes; only opaque IDs and fixed server-owned storage reach core. One active job, bounded admissions and explicit abort requests preserve core safety/cleanup semantics. Browser exports wrap the existing manifest/report/blobs; no evidence/trust/schema semantics change. These are implementation decisions within A08/P5 boundaries, not new source verification or execution authority. [Current receipts and limits](../examples/web-investigation/README.md) and [next-run handoff](WEB_CONTINUATION.md) separate first-slice acceptance, new functionality and remaining engine dependencies. Product models: none; coding assistance: Codex.
+
+
+## Engineering follow-up — web gap W0/W1, 1 November 2026
+
+Shane explicitly authorized execution of the [single gap plan](Web%20Application%20Gap%20Plan.md), starting with W0/W1. The local implementation reuses admitted dependencies and shared engine facts: allowlisted native destinations/history, separate draft/job/report contexts, per-observation transient evidence state, memory-only capability recovery and read-only session refresh. These implement existing local/evidence rules; no approved trust rule, immutable contract, model, dependency or TUI adoption changes. [Receipts](../examples/web-gap/README.md) distinguish isolated local passes, concurrent S4 setup limits and blocked GUI proof. W2 is next; no Git/publication/deployment approval follows. Product models: none; coding assistance: Codex.
+
+## Engineering follow-up — local web overhaul, 1 November 2026
+
+Shane explicitly authorized the singular end-to-end web overhaul in `apps/web`, with Shane and Codex owning frontend delivery, then requested a terminal-like near-black palette. The local shell, documentation, draft/review/job flows, retained-evidence workbench and Save/Open presentation were revised within the admitted engine/reader and existing dependencies. Browser AI controls retain the CLI's default requested-AI semantics while plainly exposing unavailable integration; selecting off submits `enableAI:false` (`--no-ai`). No product/trust rule, G0, core analysis capability or dependency was amended. [The same gap backlog's U01–U18 matrix](Web%20Application%20Gap%20Plan.md#overhaul-execution--1-november-2026) and [fresh evidence](../examples/web-overhaul/current/README.md) distinguish implementation, actual validation and remaining acceptance. This is neither human design approval nor a frozen design or full P04 completion. Git/publication actions require separate authorization.

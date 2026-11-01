@@ -1,0 +1,429 @@
+[?1049h[?25l[?25l  HEURISKO   H Home    I Investigations     M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   > New investigation        npm package / local archive  ·  o Open saved report
+
+  ┌─ Recent investigations ────────────────────────────────────────────────────────────── 0 indexed ┐ ┌─ Monitoring ─────────────────────────────────────────┐
+  │ PACKAGE / EXACT VERSION                                                                         │ │ Runner                  Not configured               │
+  │ No indexed reports. o opens a report path.                                                      │ │ Last check              Not recorded                 │
+  │                                                                                                 │ │ Freshness               Unknown                      │
+  │                                                                                                 │ │                                                      │
+  │                                                                                                 │ └──────────────────────────────────────────────────────┘
+  │                                                                                                 │
+  │                                                                                                 │ ┌─ Needs attention ───────────────────────────────── 0 ┐
+  │                                                                                                 │ │ No incomplete report indexed. Job history unavailab… │
+  │                                                                                                 │ │                                                      │
+  │                                                                                                 │ │                                                      │
+  │                                                                                                 │ │                                                      │
+  │                                                                                                 │ │                                                      │
+  │                                                                                                 │ │                                                      │
+  │                                                                                                 │ │                                                      │
+  │                                                                                                 │ │                                                      │
+  │                                                                                                 │ │                                                      │
+  │                                                                                                 │ │                                                      │
+  │                                                                                                 │ │                                                      │
+  │                                                                                                 │ │                                                      │
+  │                                                                                                 │ │ Inspect recorded scope; no safety verdict.           │
+  └─────────────────────────────────────────────────────────────────────────────────────────────────┘ └──────────────────────────────────────────────────────┘
+
+
+
+
+
+
+
+
+
+
+  New investigation
+  Enter new  Tab panels  o open  ? help  q quit
+
+[?25l[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  HEURISKO   H Home    I Investigations     M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+                                     ┌─ > New investigation ─────────────────────────────────────────────────────── 1 / 2 ┐
+                                     │   Input (Ctrl+T)  [ npm ]   Local archive                                          │
+                                     │                                                                                    │
+                                     │ Package name  [editing]                                                            │
+                                     │ >  @scope/package                                                                  │
+                                     │ Exact version                                                                      │
+                                     │   1.2.3                                                                            │
+                                     │ Source repository (optional override)                                              │
+                                     │   https://github.com/owner/repository                                              │
+                                     │ Full commit                                                                        │
+                                     │   40-character immutable commit                                                    │
+                                     │ Subdirectory                                                                       │
+                                     │   Repository root if empty                                                         │
+                                     │ AI disabled / runtime unavailable · source selection is not provenance             │
+                                     │  Load retained example                                                             │
+                                     │  Review target                                                                     │
+                                     │                                                                                    │
+                                     └────────────────────────────────────────────────────────────────────────────────────┘
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  New investigation / npm
+  Type to edit  Tab next  Ctrl+T type  Enter review  Esc back
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  HEURISKO   H Home    I Investigations     M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+                                     ┌─ > New investigation ─────────────────────────────────────────────────────── 1 / 2 ┐
+                                     │   Input (Ctrl+T)  npm   [ Local archive ]                                          │
+                                     │                                                                                    │
+                                     │ Archive path  [editing]                                                            │
+                                     │ >  ./package-1.2.3.tgz                                                             │
+                                     │ Source repository                                                                  │
+                                     │   https://github.com/owner/repository                                              │
+                                     │ Full commit                                                                        │
+                                     │   40-character immutable commit                                                    │
+                                     │ Subdirectory                                                                       │
+                                     │   Repository root if empty                                                         │
+                                     │ Source archive (optional)                                                          │
+                                     │   Optional retained source .tar.gz                                                 │
+                                     │ AI disabled / runtime unavailable · source selection is not provenance             │
+                                     │  Load retained example                                                             │
+                                     │  Review target                                                                     │
+                                     │                                                                                    │
+                                     └────────────────────────────────────────────────────────────────────────────────────┘
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  New investigation / Local archive
+  Type to edit  Tab next  Ctrl+T type  Enter review  Esc back
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  HEURISKO   H Home    I Investigations     M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+                                     ┌─ > New investigation ─────────────────────────────────────────────────────── 1 / 2 ┐
+                                     │   Input (Ctrl+T)  npm   [ Local archive ]                                          │
+                                     │                                                                                    │
+                                     │ Archive path  [editing]                                                            │
+                                     │ > .heurisko/tui-visual-live-f7848a67-1866-43eb-bb2d-6c7caa9c34bc-input.tgz         │
+                                     │ Source repository                                                                  │
+                                     │   https://github.com/owner/repository                                              │
+                                     │ Full commit                                                                        │
+                                     │   40-character immutable commit                                                    │
+                                     │ Subdirectory                                                                       │
+                                     │   Repository root if empty                                                         │
+                                     │ Source archive (optional)                                                          │
+                                     │   Optional retained source .tar.gz                                                 │
+                                     │ AI disabled / runtime unavailable · source selection is not provenance             │
+                                     │  Load retained example                                                             │
+                                     │  Review target                                                                     │
+                                     │                                                                                    │
+                                     └────────────────────────────────────────────────────────────────────────────────────┘
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  New investigation / Local archive
+  Type to edit  Tab next  Ctrl+T type  Enter review  Esc back
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  HEURISKO   H Home    I Investigations     M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+                                     ┌─ > New investigation ─────────────────────────────────────────────────────── 1 / 2 ┐
+                                     │   Input (Ctrl+T)  npm   [ Local archive ]                                          │
+                                     │                                                                                    │
+                                     │ Archive path                                                                       │
+                                     │   .heurisko/tui-visual-live-f7848a67-1866-43eb-bb2d-6c7caa9c34bc-input.tgz         │
+                                     │ Source repository  [editing]                                                       │
+                                     │ >  https://github.com/owner/repository                                             │
+                                     │ Full commit                                                                        │
+                                     │   40-character immutable commit                                                    │
+                                     │ Subdirectory                                                                       │
+                                     │   Repository root if empty                                                         │
+                                     │ Source archive (optional)                                                          │
+                                     │   Optional retained source .tar.gz                                                 │
+                                     │ AI disabled / runtime unavailable · source selection is not provenance             │
+                                     │  Load retained example                                                             │
+                                     │  Review target                                                                     │
+                                     │                                                                                    │
+                                     └────────────────────────────────────────────────────────────────────────────────────┘
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  New investigation / Local archive
+  Type to edit  Tab next  Ctrl+T type  Enter review  Esc back
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  HEURISKO   H Home    I Investigations     M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+                                     ┌─ > New investigation ─────────────────────────────────────────────────────── 1 / 2 ┐
+                                     │   Input (Ctrl+T)  npm   [ Local archive ]                                          │
+                                     │                                                                                    │
+                                     │ Archive path                                                                       │
+                                     │   .heurisko/tui-visual-live-f7848a67-1866-43eb-bb2d-6c7caa9c34bc-input.tgz         │
+                                     │ Source repository  [editing]                                                       │
+                                     │ > https://github.com/alexeyraspopov/picocolors                                     │
+                                     │ Full commit                                                                        │
+                                     │   40-character immutable commit                                                    │
+                                     │ Subdirectory                                                                       │
+                                     │   Repository root if empty                                                         │
+                                     │ Source archive (optional)                                                          │
+                                     │   Optional retained source .tar.gz                                                 │
+                                     │ AI disabled / runtime unavailable · source selection is not provenance             │
+                                     │  Load retained example                                                             │
+                                     │  Review target                                                                     │
+                                     │                                                                                    │
+                                     └────────────────────────────────────────────────────────────────────────────────────┘
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  New investigation / Local archive
+  Type to edit  Tab next  Ctrl+T type  Enter review  Esc back
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  HEURISKO   H Home    I Investigations     M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+                                     ┌─ > New investigation ─────────────────────────────────────────────────────── 1 / 2 ┐
+                                     │   Input (Ctrl+T)  npm   [ Local archive ]                                          │
+                                     │                                                                                    │
+                                     │ Archive path                                                                       │
+                                     │   .heurisko/tui-visual-live-f7848a67-1866-43eb-bb2d-6c7caa9c34bc-input.tgz         │
+                                     │ Source repository                                                                  │
+                                     │   https://github.com/alexeyraspopov/picocolors                                     │
+                                     │ Full commit  [editing]                                                             │
+                                     │ >  40-character immutable commit                                                   │
+                                     │ Subdirectory                                                                       │
+                                     │   Repository root if empty                                                         │
+                                     │ Source archive (optional)                                                          │
+                                     │   Optional retained source .tar.gz                                                 │
+                                     │ AI disabled / runtime unavailable · source selection is not provenance             │
+                                     │  Load retained example                                                             │
+                                     │  Review target                                                                     │
+                                     │                                                                                    │
+                                     └────────────────────────────────────────────────────────────────────────────────────┘
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  New investigation / Local archive
+  Type to edit  Tab next  Ctrl+T type  Enter review  Esc back
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  HEURISKO   H Home    I Investigations     M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+                                     ┌─ > New investigation ─────────────────────────────────────────────────────── 1 / 2 ┐
+                                     │   Input (Ctrl+T)  npm   [ Local archive ]                                          │
+                                     │                                                                                    │
+                                     │ Archive path                                                                       │
+                                     │   .heurisko/tui-visual-live-f7848a67-1866-43eb-bb2d-6c7caa9c34bc-input.tgz         │
+                                     │ Source repository                                                                  │
+                                     │   https://github.com/alexeyraspopov/picocolors                                     │
+                                     │ Full commit  [editing]                                                             │
+                                     │ > 6f0a4638348ed20633d623ee973f9c9a96f65104                                         │
+                                     │ Subdirectory                                                                       │
+                                     │   Repository root if empty                                                         │
+                                     │ Source archive (optional)                                                          │
+                                     │   Optional retained source .tar.gz                                                 │
+                                     │ AI disabled / runtime unavailable · source selection is not provenance             │
+                                     │  Load retained example                                                             │
+                                     │  Review target                                                                     │
+                                     │                                                                                    │
+                                     └────────────────────────────────────────────────────────────────────────────────────┘
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  New investigation / Local archive
+  Type to edit  Tab next  Ctrl+T type  Enter review  Esc back
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  HEURISKO   H Home    I Investigations     M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+                                     ┌─ > New investigation ─────────────────────────────────────────────────────── 1 / 2 ┐
+                                     │   Input (Ctrl+T)  npm   [ Local archive ]                                          │
+                                     │                                                                                    │
+                                     │ Archive path                                                                       │
+                                     │   .heurisko/tui-visual-live-f7848a67-1866-43eb-bb2d-6c7caa9c34bc-input.tgz         │
+                                     │ Source repository                                                                  │
+                                     │   https://github.com/alexeyraspopov/picocolors                                     │
+                                     │ Full commit                                                                        │
+                                     │   6f0a4638348ed20633d623ee973f9c9a96f65104                                         │
+                                     │ Subdirectory  [editing]                                                            │
+                                     │ >  Repository root if empty                                                        │
+                                     │ Source archive (optional)                                                          │
+                                     │   Optional retained source .tar.gz                                                 │
+                                     │ AI disabled / runtime unavailable · source selection is not provenance             │
+                                     │  Load retained example                                                             │
+                                     │  Review target                                                                     │
+                                     │                                                                                    │
+                                     └────────────────────────────────────────────────────────────────────────────────────┘
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  New investigation / Local archive
+  Type to edit  Tab next  Ctrl+T type  Enter review  Esc back
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  HEURISKO   H Home    I Investigations     M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+                                     ┌─ > New investigation ─────────────────────────────────────────────────────── 1 / 2 ┐
+                                     │   Input (Ctrl+T)  npm   [ Local archive ]                                          │
+                                     │                                                                                    │
+                                     │ Archive path                                                                       │
+                                     │   .heurisko/tui-visual-live-f7848a67-1866-43eb-bb2d-6c7caa9c34bc-input.tgz         │
+                                     │ Source repository                                                                  │
+                                     │   https://github.com/alexeyraspopov/picocolors                                     │
+                                     │ Full commit                                                                        │
+                                     │   6f0a4638348ed20633d623ee973f9c9a96f65104                                         │
+                                     │ Subdirectory                                                                       │
+                                     │   Repository root if empty                                                         │
+                                     │ Source archive (optional)  [editing]                                               │
+                                     │ >  Optional retained source .tar.gz                                                │
+                                     │ AI disabled / runtime unavailable · source selection is not provenance             │
+                                     │  Load retained example                                                             │
+                                     │  Review target                                                                     │
+                                     │                                                                                    │
+                                     └────────────────────────────────────────────────────────────────────────────────────┘
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  New investigation / Local archive
+  Type to edit  Tab next  Ctrl+T type  Enter review  Esc back
+
+[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[1A[2K[G  HEURISKO   H Home    I Investigations     M Monitoring
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+                                     ┌─ > New investigation ─────────────────────────────────────────────────────── 1 / 2 ┐
+                                     │   Input (Ctrl+T)  npm   [ Local archive ]                                          │
+                                     │                                                                                    │
+                                     │ Archive path                                                                       │
+                                     │   .heurisko/tui-visual-live-f7848a67-1866-43eb-bb2d-6c7caa9c34bc-input.tgz         │
+                                     │ Source repository                                                                  │
+                                     │   https://github.com/alexeyraspopov/picocolors                                     │
+                                     │ Full commit                                                                        │
+                                     │   6f0a4638348ed20633d623ee973f9c9a96f65104                                         │
+                                     │ Subdirectory                                                                       │
+                                     │   Repository root if empty                                                         │
+                                     │ Source archive (optional)  [editing]                                               │
+                                     │ > ent/inputs/picocolors-source-6f0a4638348ed20633d623ee973f9c9a96f65104.tar.gz     │
+                                     │ AI disabled / runtime unavailable · source selection is not provenance             │
+                                     │  Load retained example                                                             │
+                                     │  Review target                                                                     │
+                                     │                                                                                    │
+                                     └────────────────────────────────────────────────────────────────────────────────────┘
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  New investigation / Local archive
+  Type to edit  Tab next  Ctrl+T type  Enter review  Esc back
+

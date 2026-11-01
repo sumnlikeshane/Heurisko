@@ -1,0 +1,20 @@
+  HEURISKO / report / narrow / 60x20                        
+   H Home    I Investigations     M Monitoring              
+  LOCAL INPUT picocolors@1.1.1 report_7b46cdea60ae3108dd8~  
+  HISTORICAL — checks not refreshed / complete / captured~  
+  1 Overview  2 Findings  3 Files  4 Source  5 AI  6 Cove~  
+  +- > Coverage / list ----------------------------------+  
+  |                                                      |  
+  | > Measured coverage and stages                       |  
+  |                                                      |  
+  |                                                      |  
+  |                                                      |  
+  |                                                      |  
+  |                                                      |  
+  |                                                      |  
+  +------------------------------------------------------+  
+  Focus 0 / filter (none) / No universal safety verdict     
+  j/k move  Enter inspect  e evidence  Tab focus  / filte~  
+                                                            
+                                                            
+                                                            

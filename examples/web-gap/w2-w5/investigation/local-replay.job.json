@@ -1,0 +1,136 @@
+{
+  "id": "3c1e5f223a0e3f108a4c20f2b63ab3b1",
+  "phase": "settled_report",
+  "startedAt": "2026-10-31T21:58:54.467Z",
+  "cancellationRequested": false,
+  "cleanup": "not_observable",
+  "request": {
+    "kind": "local",
+    "enableAI": false,
+    "analysisProfile": "raw-static-s3-v1",
+    "artifact": {
+      "filename": "picocolors-1.1.1.tgz",
+      "bytes": 2625,
+      "sha256": "sha256:d3aedb2807967b7eb37fd11b03b7e3701e725af79c650d0812ff7213f8f882d9"
+    },
+    "name": "picocolors",
+    "version": "1.1.1",
+    "sourceArchive": {
+      "filename": "picocolors-source.tar.gz",
+      "bytes": 9432,
+      "sha256": "sha256:87646ed7f9b372d94da80ec298ef4ec6fc0c2a56bb60e0b325a9705037408c7c"
+    },
+    "source": "https://github.com/alexeyraspopov/picocolors",
+    "commit": "6f0a4638348ed20633d623ee973f9c9a96f65104",
+    "policy": "web-requested-policy"
+  },
+  "events": [
+    {
+      "stage": "resolve_artifact",
+      "status": "running",
+      "sequence": 1
+    },
+    {
+      "stage": "acquire",
+      "status": "running",
+      "sequence": 2
+    },
+    {
+      "stage": "resolve_artifact",
+      "status": "complete",
+      "sequence": 3
+    },
+    {
+      "stage": "acquire",
+      "status": "complete",
+      "sequence": 4
+    },
+    {
+      "stage": "inventory",
+      "status": "running",
+      "sequence": 5
+    },
+    {
+      "stage": "source",
+      "status": "running",
+      "sequence": 6
+    },
+    {
+      "stage": "provenance",
+      "status": "running",
+      "sequence": 7
+    },
+    {
+      "stage": "source",
+      "status": "complete",
+      "errors": [],
+      "sequence": 8
+    },
+    {
+      "stage": "provenance",
+      "status": "skipped",
+      "errors": [],
+      "sequence": 9
+    },
+    {
+      "stage": "build",
+      "status": "skipped",
+      "errors": [],
+      "sequence": 10
+    },
+    {
+      "stage": "inventory",
+      "status": "complete",
+      "errors": [],
+      "sequence": 11
+    },
+    {
+      "stage": "compare",
+      "status": "running",
+      "sequence": 12
+    },
+    {
+      "stage": "compare",
+      "status": "complete",
+      "sequence": 13
+    },
+    {
+      "stage": "heuristics",
+      "status": "running",
+      "sequence": 14
+    },
+    {
+      "stage": "heuristics",
+      "status": "incomplete",
+      "errors": [
+        {
+          "stage": "heuristics",
+          "code": "ANALYSIS_MODULE_UNAVAILABLE",
+          "message": "Malhar analysis module not supplied",
+          "affectedScope": "deterministic analysis",
+          "retryable": false
+        }
+      ],
+      "sequence": 15
+    },
+    {
+      "stage": "ai",
+      "status": "skipped",
+      "sequence": 16
+    },
+    {
+      "stage": "persist",
+      "status": "running",
+      "sequence": 17
+    },
+    {
+      "stage": "persist",
+      "status": "complete",
+      "sequence": 18
+    }
+  ],
+  "omittedEvents": 0,
+  "observation": "05aaa69227487cb61eeeeb9d8e14e46a",
+  "exitCode": 2,
+  "settledAt": "2026-10-31T21:59:08.748Z"
+}

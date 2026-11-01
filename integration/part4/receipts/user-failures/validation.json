@@ -1,0 +1,247 @@
+{
+  "status": "complete_local_part4_gate",
+  "scope": "Part 4 actual user-failure repair and complete supported workflow proof; no Part 5",
+  "runtime": {
+    "node": "22.23.4",
+    "pnpm": "10.14.0",
+    "typescript": "5.8.3",
+    "validatorPython": "3.13.2",
+    "jsonschema": "4.26.0",
+    "ptyPython": "3.14.7",
+    "pyte": "0.8.2",
+    "wcwidth": "0.2.13",
+    "platform": "macOS arm64",
+    "parserImage": "python:3.13.18-slim-bookworm@sha256:281d39ff02e3b389401586134ff9e6572954687822a58055ec07a60ded4e0b7f"
+  },
+  "reproduction": {
+    "reportId": "report_67c88c791c269dab8cab5aff",
+    "contentRef": "sha256:dd4fb19136fa91ca1581336c6fbc22b864b86e413eaa9978ece3ee0f08c52a3b",
+    "capturedAt": "2026-10-31T22:59:33Z",
+    "firstAction": "Actual product PTY Findings/Files/Source captured before source edits; before/",
+    "unchanged": true
+  },
+  "checks": {
+    "typecheck": "typecheck-complete.log",
+    "fullG0": "contracts-final.log",
+    "serialCore": {
+      "passed": 125,
+      "failed": 0,
+      "log": "core-socket-enabled.log",
+      "scope": "includes 7 concurrent parser-absence regressions and 1 new ambiguity-wording regression"
+    },
+    "readerModel": {
+      "passed": 36,
+      "failed": 0,
+      "log": "reader-model-verified.log"
+    },
+    "actualPTY": {
+      "passedAssertions": 252,
+      "suites": [
+        {
+          "receipt": "workflows-8/validation.json",
+          "passedAssertions": 32,
+          "diagnosticRecords": 0
+        },
+        {
+          "receipt": "workflows-11/validation.json",
+          "passedAssertions": 159,
+          "diagnosticRecords": 6
+        },
+        {
+          "receipt": "states-3/validation.json",
+          "passedAssertions": 58,
+          "diagnosticRecords": 4
+        },
+        {
+          "receipt": "citation-switch-final/validation.json",
+          "passedAssertions": 3,
+          "diagnosticRecords": 0
+        }
+      ],
+      "note": "Printed legacy len(checks) totals include separate state-oracle diagnostic rows; only explicit passed assertions are counted here."
+    },
+    "liveKeyboard": "live-6/validation.json",
+    "hotCancellation": "hot-cleanup.json",
+    "independentCleanup": "cleanup-verification.json",
+    "portableCliParity": "portable-cli-parity-final.json",
+    "currentEngineBinding": "identity-verification.json",
+    "preservation": "preservation.json",
+    "research": "research.json",
+    "markdown": {
+      "scopedFileLinks": "passed: 61 repository/Part 4 Markdown files, markdown-scoped.log",
+      "genericWholeRepositoryCheck": "failed: 30 website route references in unrelated apps/web/content treated as filesystem paths; markdown-check.log retained",
+      "remoteCI": "not run or claimed"
+    },
+    "gitDiffCheck": "passed",
+    "ownedWhitespace": "passed"
+  },
+  "gates": {
+    "S4FunctionalMinimum": "passed locally for supported workflows",
+    "humanUsabilityVisualAcceptance": "pending Shane review; previous rejection is not superseded by automated acceptance",
+    "jointG3": "open; default product has no accepted deterministic module, M1 wording/finding-quality and coordinated adoption unresolved",
+    "design": "v1.0.0-rc.1 unapproved/unfrozen; all 59 directions preserved",
+    "Part5": "not started"
+  },
+  "outputs": "../../../examples/part4/user-failures/workflow-outputs.json",
+  "moduleValidation": "../../../examples/part4/user-failures/module-validation.json",
+  "filesChanged": "files-changed.json",
+  "failedAttempts": [
+    {
+      "attempt": "initial PTY interpreter",
+      "reason": "Root validator .venv lacks pyte; used the already-admitted sibling interpreter read-only; no dependency installed."
+    },
+    {
+      "attempt": "initial TypeScript build",
+      "reason": "Optional source-record data narrowing errors; corrected optional access before final successful compile."
+    },
+    {
+      "attempt": "core-1.log",
+      "reason": "Mixed concurrent parser source/compiled revision and sandbox Docker denial; 67 passed, 58 failed; not accepted."
+    },
+    {
+      "attempt": "core-2.log",
+      "reason": "Current compiled source but default sandbox denied Docker socket; 74 passed, 51 failed; fail-closed recovery stores retained."
+    },
+    {
+      "attempt": "workflows-1.log through workflows-socket-enabled.log and workflows-6",
+      "reason": "Pre-Start settling/wrapped-text assertions; exact Back oracle initially read a stale/debounced or implicit selection value; workflow-6 then exposed an actual filtered-tree directory selection defect, repaired by direct matching file results."
+    },
+    {
+      "attempt": "states.log / states-final.log",
+      "reason": "The test wrongly expected a scrolled-off Observation label and read the persistence oracle before the requested scroll was saved. Final test waits for the requested stored scroll and checks actual restored breadcrumb/state."
+    },
+    {
+      "attempt": "live-2",
+      "reason": "Live snapshot/cancel checks passed, but the next progress sample was captured mid-redraw; animation not established there. live-6 waits for complete cells and observes animation."
+    },
+    {
+      "attempt": "live-4",
+      "reason": "Home startup key sent before field view was ready; no investigation started. Final startup waits for Home content."
+    },
+    {
+      "attempt": "citation-switch.log",
+      "reason": "Concurrent read-only PTY suites shared the same report UI preference file; isolated serial rerun passes."
+    },
+    {
+      "attempt": "portable-cli-parity.json",
+      "reason": "Test compared JSON insertion order against canonical CLI serialization. Final parity compares canonical report values; original report bytes remain separately hashed."
+    },
+    {
+      "attempt": "markdown-check.log",
+      "reason": "Unchanged generic checker treats web route URLs as filesystem links. Scoped repository/Part 4 file-link/heading check passes; no unrelated web/CI edits."
+    }
+  ],
+  "preservedOperationalLimits": [
+    "G0 schema/types/fixtures unchanged",
+    "No target lifecycle/build/import/install execution",
+    "No product model/provider invocation or automatic module loader",
+    "No resource/isolation/network/trust relaxation or host fallback",
+    "Earlier sandbox-denied isolated test stores remain retained; no bulk lock/spool deletion",
+    "No staged files, commits, pushes, merge, PR publication, deployment, submission or external messages by this task",
+    "Unrelated handoff worktree HEAD advanced externally; active branch/index and visual source remain preserved"
+  ],
+  "clock": {
+    "startedAt": "2026-10-31T23:03:04+00:00",
+    "checkpointAt": "2026-10-31T23:28:17+00:00",
+    "startedIST": "1 November 2026 04:33:04 IST",
+    "checkpointIST": "1 November 2026 04:58:17 IST",
+    "addedSessionElapsedSeconds": 1513,
+    "addedSessionElapsed": "0h25m13s",
+    "includes": "actual repair, validation, waits, documentation and review through this checkpoint",
+    "priorCheckpointIST": "1 November 2026 04:26:48 IST",
+    "unmeasuredGapSecondsExcluded": 376,
+    "priorKnownMeasuredSeconds": 4262,
+    "knownRecordedIntervalsSumSeconds": 5775,
+    "unmeasuredEarlierVisualEffort": "still unmeasured; no exact combined active-effort total is claimed",
+    "originalStartIST": "1 November 2026 00:45:54 IST",
+    "originalCutoffIST": "1 November 2026 01:55:54 IST",
+    "originalCalendarEnvelope": "4h12m23s",
+    "beyondOriginalCutoff": "3h02m23s",
+    "budgetReset": false,
+    "historicalRemainder": "53m34s remains historical, not a fresh allowance"
+  },
+  "currentSourceAndCompiledSha256": {
+    "integration/part4/dist/investigation-task.js": "60db1721116985a1c96911ec05f331f8d19ce5180335a5ffca26120303b4a3a1",
+    "integration/part4/dist/report-reader.js": "eeb4c76f50b98afc3c9ea07bf8ccfebb33dab35cdef094432ea371e611c41700",
+    "integration/part4/src/investigation-task.ts": "31fff258fd3cd2a7688e5290c52a57a81c2ea489eccff6629daa3b7c22ce005f",
+    "integration/part4/src/report-reader.ts": "59b0ab64566dccbc7dd8985deb0a06fe01343b9ac33ae4a099c1cb8c35918f2b",
+    "packages/core/dist/adapter.js": "79970491592c61cdbad11b60527ce6ebbf730f82740e98f892b41f5c1bacc4f4",
+    "packages/core/dist/archive.js": "9d1722caf4fda64a76f74bf075c9675dc73986be8dc4be6f4f9a3d85baab52d6",
+    "packages/core/dist/comparison.js": "8be2c4525eeb95dc115556013e55f3fcd6ed907c00c6286d679fe0f58451870e",
+    "packages/core/dist/engine.js": "0d99a9289e144a0aae8f45378a24774205ca5e572ec8f82aaf5723e1b2707c0c",
+    "packages/core/dist/identity.js": "91e189c4a4b7eef82b788da7b7707af9fa6df40b4268c49d8b108c682d124e96",
+    "packages/core/dist/index.js": "d5abc08e31a318febe1f527ef338b4d6f530821db5f16bbeef450969941ef484",
+    "packages/core/dist/network.js": "06c7b087282832746631c5a89f2ee929ae7ec8cf0b2aec8d80d30c410e264e52",
+    "packages/core/dist/npm.js": "19bd4bc0064b4b6421753305e26db2879662ccb887d727d0aa99defb73d6e850",
+    "packages/core/dist/parser-job.js": "c234dcd1eaaf84f97ff636f1471063bcb3f75661aca21c52f30e515d6a4322c2",
+    "packages/core/dist/parser-runtime.js": "05cc905bb69c7c2bffa43e9aca54ea20d3fb2b7a1459ac40ae1a09af437187b0",
+    "packages/core/dist/producer.js": "de02519853ce4201cb6b2cac7ef1834dc83e60a2d0c9cab6ec0a834b0a39533b",
+    "packages/core/dist/provenance.js": "e9f6be405bbd3b546bcd25a377180fb5806ca6eeeb12ac8a3071b5bdaa5ce222",
+    "packages/core/dist/safety.js": "f66b9867a5c3a1ec4163f95a446c3d4ba975d0aa07b9df6a28d3aaa172aa9c01",
+    "packages/core/dist/sources.js": "6eb632d8baf16b4fe313b4433127c64247b09c64687b66387dc1dfb3883d8c25",
+    "packages/core/dist/storage.js": "763408f7644f18cd62c3cb591d006cdc7db79641f0dc797be784bbef3ca595c8",
+    "packages/core/dist/validation.js": "5b77dc41ec7d65681de88feb2f033651884bcf3cfb15bd742cbf64d2b3a48324",
+    "packages/core/src/adapter.ts": "0d1c24358ade91e9386b6f238373a6fbe89abd97be452416f65bf980cdb304df",
+    "packages/core/src/archive.ts": "12e8be1923cd25778b5492117a215bfc3d7a87403dfabfe541d4593b137b0ff7",
+    "packages/core/src/comparison.ts": "d0fccc8386c9ba038b66f5136f2f151d4a475f29c4f402ab0a416ba8fa0bc859",
+    "packages/core/src/engine.ts": "a9bfcdfa99ec5360f4754351e55ac40248333b731c756d44e08dc7bba0683596",
+    "packages/core/src/identity.ts": "5f5097f3796fdf56740f31ccee7ded03a3dc86a67b26791f804a86beb97c6246",
+    "packages/core/src/index.ts": "d5abc08e31a318febe1f527ef338b4d6f530821db5f16bbeef450969941ef484",
+    "packages/core/src/network.ts": "0ccfd2369e679a18d0c923aaee86d82bc2856f19f4c9676aca84cb8b6be0ee66",
+    "packages/core/src/npm.ts": "6db9ef810490519cc5b4364cf7afea84d08acab94afa5dc29424d477fdd5171a",
+    "packages/core/src/parser-job.ts": "8144abf66505b533d74037b4cbeb572f289d9a3412b031c929d5cc8dbf9bc9fe",
+    "packages/core/src/parser-runtime.ts": "2b204ed6de4c912d86f2184d1783c3beebf615f987887b8debe53bc51aa0a4bd",
+    "packages/core/src/producer.ts": "ac85ae56866d78435b191d9869f10aeb6189698c10f19d1bc33c38fcf35a4746",
+    "packages/core/src/provenance.ts": "ab6d160ad9da7522c6e444e194ee82e088074d89132bfd230e730f8ba6208f75",
+    "packages/core/src/safety.ts": "8402091b35f9f61f715990ca1e155b0c4e8f99e680e1f24fd48d380e9fa4c6c0",
+    "packages/core/src/sources.ts": "588e5d5c3f0719940c9554ffb3d79c41f040ae8d25282146dfef9bb9a445586f",
+    "packages/core/src/storage.ts": "e8a8bf14be4fa3d8b7c074ef0e47a0ad8750031b1c8c7092b1f6811792d4decf",
+    "packages/core/src/validation.ts": "ad1f28916825500c5a5d7ef6225cace71271e58cbad8f0b5a4caf613504f9f5d",
+    "packages/tui/dist/App.js": "c8c0d04124b6cded80ccc0e8e69f47c14e047b6c4b6bbc67f5d4aa5b551be505",
+    "packages/tui/dist/components/DocumentPane.js": "cc011bed5c710ca158df327e14d7369f12337c398a98914389a50df724c335ae",
+    "packages/tui/dist/components/NavigationTabs.js": "c70d6bb59d730503c63e7c8d11eec6899e51668bfae86df468197341e903f329",
+    "packages/tui/dist/components/Panel.js": "34ab37856c78b746063d6048a50cbbeef8b7ee502bcfc7d7ab92f4f8994fa9fe",
+    "packages/tui/dist/components/Progress.js": "d6c7b489b613fc987bea2f9f23d8988186e1f09ee8e7b7dd11393ebb54fb9328",
+    "packages/tui/dist/components/Shell.js": "779d5ee88882b4ce20ee9cdfd3b1b45f816905ba9a1bad428611d186f1fc101f",
+    "packages/tui/dist/diff-view.js": "0929ef9a1711fee546dc9070091aa79e9d0d9d687720956b3f9ee36a77d879d5",
+    "packages/tui/dist/index.js": "6b6687631478ad2ee75167fccdc79b5e56c6912131840af3e5f8605933e96c28",
+    "packages/tui/dist/investigation-summary.js": "38c8d35e3effa2de8694a4d131d8386d0dc8620a46d53b146dd044415c1bbd6c",
+    "packages/tui/dist/model.js": "5e284aca883fc7c976efc18d3872d73daf80e0171bde4ac5cddc74a73cb53414",
+    "packages/tui/dist/screens/Home.js": "90677567d380b2b560ce7891501e08883389b0bc7dd9b84d90a845982708c586",
+    "packages/tui/dist/screens/Live.js": "d1b77395d4a2c79f0f01c5f1aa384b90ab0706f0dcbf7e0f2a18d4c102f9a3d9",
+    "packages/tui/dist/screens/Overview.js": "9c71f50e2140749dd8f299ef395a925ba51da24e83ccfd698652e70d4c1f3d14",
+    "packages/tui/dist/screens/TargetForm.js": "799b6d57d4346a209fed1a08acbc6334588fad478e65755d93536cc5b0dc3517",
+    "packages/tui/dist/screens/Workspace.js": "ed3091ac0521fbf641ae468a347908e23386f2561c0bec9e193701743bb12417",
+    "packages/tui/dist/state/persistence.js": "464155f8af76a77909ccc4a59966fb91bffd24a868fb171de75cb94462d22de5",
+    "packages/tui/dist/state/text-entry.js": "d30e022ebb071ca1cc208f30ce9439d7e44ddbd1f0d263968e63510ac016c7c8",
+    "packages/tui/dist/terminal/layout.js": "2f0ac4d905d053055c9f157d87399a097b830f954329d283f8de52bbff6b7a26",
+    "packages/tui/dist/terminal/safe-text.js": "493451b21bc06576567359171ce0b8494bef77ec8405b5acc87c82a15c9732ca",
+    "packages/tui/dist/terminal/use-terminal-input.js": "5cbb0531065ff0d31b9f93a1ef92ead6273cb9ee99db9ea256561116212dfde8",
+    "packages/tui/dist/terminal/workspace-layout.js": "ef30efbe1b0f629c6063b6367187ddc563ff8374a56af4c2f99de01888552836",
+    "packages/tui/dist/tokens.js": "2d048abd76b99c145890e7fe158cd845ed14496d4c52317b73bda4eaed1cc66e",
+    "packages/tui/dist/view-model.js": "452903ff842d3faecb86651ae41cb5e7e0d83d63c023a658c9d1bc66ac659f6c",
+    "packages/tui/src/App.tsx": "b88dd88a3764b61f556d06fdc33aebb9d5508e03f582b4e26515e1dd2b9fa831",
+    "packages/tui/src/components/DocumentPane.tsx": "9c7dda404458944cb8a66751efecc0f4ef46c92d900b33f0778f331f058ee237",
+    "packages/tui/src/components/NavigationTabs.tsx": "519d67119f0b97f77b7b1c187de753f21ef8a5ca04a7482541ac8578760db260",
+    "packages/tui/src/components/Panel.tsx": "4334c3d592f4f79aa0f84b99d0cf3a0f066f46584b97c689ef966cd62a2d474b",
+    "packages/tui/src/components/Progress.tsx": "3b2c4adcfd6ca4bdaaf432c6d2d19a8738922888821f2594512dc37bb8f182af",
+    "packages/tui/src/components/Shell.tsx": "d53aa7a89930b233b5a71ac2b66ccab92c31307ee1b064fc532449f907661e4f",
+    "packages/tui/src/diff-view.ts": "a9eaedc25b74f105c619f1d96f16989dbb6165bbfa9d2e3b1905ef3420e6193f",
+    "packages/tui/src/index.tsx": "7961c2e690201beb4c08b4cc3bf991a3fef4456d1dba1f578a2803fd6363fe8c",
+    "packages/tui/src/investigation-summary.ts": "bcfce6b0c23eb60d399bb5af66dd7cccb76e0948de48122f433ecf642f9d7199",
+    "packages/tui/src/model.ts": "93d990a8fc49cb426691c885b953faa245499c353be4b705a25d0d7b826e2388",
+    "packages/tui/src/screens/Home.tsx": "3bfd34747f3eb4d9c92ab64aac57cac1b8cd1c5570173f8913804a89a3aed4c3",
+    "packages/tui/src/screens/Live.tsx": "83a92380e4f38fb2097f62808cd539a0ca591023d69479fb4660ed57d068aaa8",
+    "packages/tui/src/screens/Overview.tsx": "1c4502a25daef2ca84a9a51f2ec0a21618cc2db8068489b9bf24c25affe79aca",
+    "packages/tui/src/screens/TargetForm.tsx": "8b008da26d16646d7436f660e46e54aa4d75d23085d72c9ba933dbc15242ec22",
+    "packages/tui/src/screens/Workspace.tsx": "d25fc535f4eac94610d0f72973029a02d7e6be24e998b08630c30dc5567aab84",
+    "packages/tui/src/state/persistence.ts": "9a2e6264bb233afc02d8fed57bf6c47ae872f6a6857352a04d8b3bea1dc25e40",
+    "packages/tui/src/state/text-entry.ts": "f1def2d5f73551c2facfc55be0d5a563aeee57d08f0106b63eff01b015bc8e8a",
+    "packages/tui/src/terminal/layout.ts": "8ac6a74c2f9a8ed38c97d05730c6969d3718e5079a97aa60d1e45e40425ddf74",
+    "packages/tui/src/terminal/safe-text.ts": "29d21f0d6e7f889b6a617243bac3f9cabab9cbad5bfa959f258fe38cfb6670df",
+    "packages/tui/src/terminal/use-terminal-input.ts": "25e1a733a0cff6a18b4ef6821ff8dfcfd149b7eaca754e78ab5649eb2570b838",
+    "packages/tui/src/terminal/workspace-layout.ts": "7d2490034161a202414df636ebd2aaa2aa3fb640ae1cf790c7570c8852e55534",
+    "packages/tui/src/tokens.ts": "45c4bd47b1e21e00ce356d0e9ac1ae1c9546e6cbf5b671772592b1a070d20edb",
+    "packages/tui/src/view-model.ts": "6ba3c237d872c2a669acbbf3076926f0a1861df830f61fec4776ea393b8204d8"
+  }
+}

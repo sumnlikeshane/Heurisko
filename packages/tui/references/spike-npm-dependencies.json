@@ -1,0 +1,143 @@
+{
+  "observedAt": "2026-10-31T19:20:08.500240+00:00",
+  "packages": [
+    {
+      "name": "ink",
+      "version": "6.3.1",
+      "license": "MIT",
+      "engines": {
+        "node": ">=20"
+      },
+      "peerDependencies": {
+        "react": ">=19.0.0",
+        "@types/react": ">=19.0.0",
+        "react-devtools-core": "^6.1.2"
+      },
+      "dist": {
+        "shasum": "ad076f06864cd9303866f974194cda9b168776dc",
+        "tarball": "https://registry.npmjs.org/ink/-/ink-6.3.1.tgz",
+        "fileCount": 155,
+        "integrity": "sha512-3wGwITGrzL6rkWsi2gEKzgwdafGn4ZYd3u4oRp+sOPvfoxEHlnoB5Vnk9Uy5dMRUhDOqF3hqr4rLQ4lEzBc2sQ==",
+        "signatures": [
+          {
+            "sig": "MEYCIQDQNqgr0vycGwAnrW4Iy/k/TqO8cBxpp4QS7icHkvl1ywIhAP6bkxS/PfIlpI5BA+5mV8+e+aAhlU5uVF90TX5KkgVs",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "unpackedSize": 335698
+      }
+    },
+    {
+      "name": "react",
+      "version": "19.1.8",
+      "license": "MIT",
+      "engines": {
+        "node": ">=0.10.0"
+      },
+      "peerDependencies": null,
+      "dist": {
+        "shasum": "e809945f7b9a37d3a8e0c0f57885ad75128ef6c7",
+        "tarball": "https://registry.npmjs.org/react/-/react-19.1.8.tgz",
+        "fileCount": 27,
+        "integrity": "sha512-XzY1Xytszq73B9T+4Q8VYfUX9qTz54+AoeZ+cSYNSVAzgz4gxFMZ8Ngk4RlmE9yVWpiZ3JAtQeHBLOK6ZfvOnw==",
+        "signatures": [
+          {
+            "sig": "MEUCICvYHbvqCvDTTTZiyeXKS5qKCnEpSUqkoGABnK0GYsXBAiEAhzCKhYn9fftj2l1no2Yt445y56V6fSWaTpZTKF+WLFU=",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "attestations": {
+          "url": "https://registry.npmjs.org/-/npm/v1/attestations/react@19.1.8",
+          "provenance": {
+            "predicateType": "https://slsa.dev/provenance/v1"
+          }
+        },
+        "unpackedSize": 166994
+      }
+    },
+    {
+      "name": "string-width",
+      "version": "7.2.0",
+      "license": "MIT",
+      "engines": {
+        "node": ">=18"
+      },
+      "peerDependencies": null,
+      "dist": {
+        "shasum": "b5bb8e2165ce275d4d43476dd2700ad9091db6dc",
+        "tarball": "https://registry.npmjs.org/string-width/-/string-width-7.2.0.tgz",
+        "fileCount": 5,
+        "integrity": "sha512-tsaTIkKW9b4N+AEj+SVA+WhJzV7/zMhcSu78mLKWSk7cXMOSHsBKFWUs0fWwq8QyK3MgJBQRX6Gbi4kYbdvGkQ==",
+        "signatures": [
+          {
+            "sig": "MEQCIE+qFjJEflSd5eYtVryvQT4cd1nIj+bQUaQXzN+OjzH8AiBmOvV0KS1FDTUTb7RoHt3GeghCtLjBzfFQps5oLYrQUA==",
+            "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+          }
+        ],
+        "unpackedSize": 7773
+      }
+    },
+    {
+      "name": "@types/node",
+      "version": "22.15.30",
+      "license": "MIT",
+      "engines": null,
+      "peerDependencies": {},
+      "dist": {
+        "shasum": "3a20431783e28dd0b0326f84ab386a2ec81d921d",
+        "tarball": "https://registry.npmjs.org/@types/node/-/node-22.15.30.tgz",
+        "fileCount": 76,
+        "integrity": "sha512-6Q7lr06bEHdlfplU6YRbgG1SFBdlsfNC4/lX+SkhiTs0cpJkOElmWls8PxDFv4yY/xKb8Y6SO0OmSX4wgqTZbA==",
+        "signatures": [
+          {
+            "sig": "MEQCICyR5YVElq3syMAOdopn+ztgRUvQd7PfcpqgHmZjACgaAiBcUQmbos4gTpjboRZ6mrG7WsYPg6LYwhZub3pv4ZtJUw==",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "unpackedSize": 2359318
+      }
+    },
+    {
+      "name": "@types/react",
+      "version": "19.1.5",
+      "license": "MIT",
+      "engines": null,
+      "peerDependencies": {},
+      "dist": {
+        "shasum": "9feb3bdeb506d0c79d8533b6ebdcacdbcb4756db",
+        "tarball": "https://registry.npmjs.org/@types/react/-/react-19.1.5.tgz",
+        "fileCount": 28,
+        "integrity": "sha512-piErsCVVbpMMT2r7wbawdZsq4xMvIAhQuac2gedQHysu1TZYEigE6pnFfgZT+/jQnrRuF5r+SHzuehFjfRjr4g==",
+        "signatures": [
+          {
+            "sig": "MEUCIQDqxa5ARgB4e2ResDg4aI6LXHKqUEt3VBJOcWpuf+E+vgIgEDHqEBKEk+pUKTfQwIFJEmuNkhlbrMooNcv5PTtHFtk=",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "unpackedSize": 804188
+      }
+    },
+    {
+      "name": "typescript",
+      "version": "5.8.3",
+      "license": "Apache-2.0",
+      "engines": {
+        "node": ">=14.17"
+      },
+      "peerDependencies": null,
+      "dist": {
+        "shasum": "92f8a3e5e3cf497356f4178c34cd65a7f5e8440e",
+        "tarball": "https://registry.npmjs.org/typescript/-/typescript-5.8.3.tgz",
+        "fileCount": 130,
+        "integrity": "sha512-p1diW6TqL9L07nNxvRMM7hMMw4c5XOo/1ibL4aAIGmSAt9slTE1Xgw5KWuof2uTOvCg9BY7ZRi+GaF+7sfgPeQ==",
+        "signatures": [
+          {
+            "sig": "MEUCICgNzEJKBTUaaiiKgg7R0IlwNqfaQnF9gNt4o7IXrwwtAiEA2P9N8bFaSXiQTC6Ix7s0XOloYMV4e2030bP/JdXRImo=",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "unpackedSize": 22867703
+      }
+    }
+  ]
+}

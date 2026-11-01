@@ -1,0 +1,35 @@
+  HEURISKO / report / medium / 120x35                                                                                   
+   H Home    I Investigations     M Monitoring                                                                          
+  LOCAL INPUT picocolors@1.1.1 report_7b46cdea60ae3108dd8c4b21                                                          
+  HISTORICAL — checks not refreshed / complete / captured 2026-10-31T21:48:41Z                                          
+  1 Overview  2 Findings*  3 Files  4 Source  5 AI  6 Coverage                                                          
+  ┌─ > Findings ───────────────────┐ ┌─ Findings detail ────────────────────────────────────────────────────────────┐   
+  │ > Package lifecycle script en… │ │ Observation: Manifest key scripts.postinstall is reported as changed.        │   
+  │   File change remains unexpla… │ │ Significance: Lifecycle entries can affect package-manager installation      │   
+  │   File change remains unexpla… │ │ behavior; inspect the exact command and its source before deciding what it   │   
+  │   File change remains unexpla… │ │ does. This observation does not establish malicious intent.                  │   
+  │   File change remains unexpla… │ │ Severity: medium                                                             │   
+  │   File change remains unexpla… │ │ Review priority: medium                                                      │   
+  │   File change remains unexpla… │ │ Evidence confidence: high                                                    │   
+  │   File change remains unexpla… │ │ Explanation strength: exact                                                  │   
+  │   File change remains unexpla… │ │ Evidence: ev_8e5679afc3b6d3667eb09413                                        │   
+  │   File change remains unexpla… │ │ Limitation: The evidence identifies the changed manifest key but does not    │   
+  │   File change remains unexpla… │ │ retain the old and new command values.                                       │   
+  │   File change remains unexpla… │ │ Next action: Review the retained old and new script values and their         │   
+  │   File change remains unexpla… │ │ referenced files; do not execute them on the host.                           │   
+  │   File change remains unexpla… │ │ Rule: heurisko.manifest.lifecycle-script-change@0.1.0                        │   
+  │   File change remains unexpla… │ │                                                                              │   
+  │   Package script entry changed │ │                                                                              │   
+  │                                │ │                                                                              │   
+  │                                │ │                                                                              │   
+  │                                │ │                                                                              │   
+  │                                │ │                                                                              │   
+  │                                │ │                                                                              │   
+  │                                │ │                                                                              │   
+  │                                │ │                                                                              │   
+  └────────────────────────────────┘ └──────────────────────────────────────────────────────────────────────────────┘   
+  Focus 0 / filter (none) / priority:all severity:all confidence:all rule:all                                           
+  j/k move  Enter inspect  e evidence  Tab focus  / filter  ? help  q quit                                              
+                                                                                                                        
+                                                                                                                        
+                                                                                                                        

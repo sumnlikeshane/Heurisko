@@ -1,0 +1,191 @@
+{
+  "version": "heurisko-web-gap-w1-validation-v1",
+  "recordedAt": "2026-10-31T21:52:14.589226+00:00",
+  "timezone": "Asia/Kolkata",
+  "authorizedScope": "Execute gap plan starting W0/W1; local only",
+  "productModels": [],
+  "codingAssistance": "Codex",
+  "networkAcquisition": false,
+  "targetExecution": false,
+  "runtime": {
+    "node": "v22.23.4",
+    "python": "3.13.2",
+    "pnpm": "10.14.0",
+    "platform": "macOS arm64"
+  },
+  "assembly": {
+    "location": "ignored isolated checkout",
+    "scopedSourceMatchesActiveCheckout": true,
+    "baselineCliSHA256": "sha256:e1d8e8b9c6bd0807be1085c84fb339dea9b7ffd671965dfb684e086fc7325841",
+    "cliContext": "pre-S4 CLI matches benchmark source; active concurrent TUI/CLI wiring is not adopted or validated",
+    "dependencySource": "existing admitted .heurisko/web-work node_modules, matching pinned web versions; no new dependency",
+    "lockfileSHA256": "sha256:973f7d8a6a178ad907093b29644d02b275ca6d4ca3ed9366515f8950a2da0815",
+    "validator": "existing pinned .venv; no validator bypass",
+    "corpus": "copied real stores; symlinked stores are rejected by existing reader policy"
+  },
+  "checks": [
+    {
+      "command": "pnpm run typecheck",
+      "assembly": "isolated core/contracts/CLI/web after foundation bootstrap",
+      "result": "pass"
+    },
+    {
+      "command": "pnpm --filter @heurisko/web typecheck",
+      "result": "pass",
+      "context": "final route guard revision"
+    },
+    {
+      "command": "PATH=<pinned-validator> pnpm run test:contracts",
+      "result": "pass",
+      "proof": "full schema + semantics: F0\u2013F6, 10 invalid rejections, F7 schema fixture and 7 stubbed handshakes; synthetic, no model"
+    },
+    {
+      "command": "node --test apps/web/tests/*.test.mjs",
+      "result": "pass",
+      "tests": 31,
+      "pass": 31,
+      "fail": 0,
+      "context": "loopback listener access allowed; 8 new route/context/session/cancellation tests + 23 prior web tests"
+    },
+    {
+      "command": "node --test integration/part4/tests/readiness.test.mjs",
+      "result": "pass",
+      "tests": 24,
+      "pass": 24,
+      "fail": 0
+    },
+    {
+      "command": "node apps/web/tooling/verify-corpus.mjs NEW_DESTINATION",
+      "result": "pass",
+      "cases": 4,
+      "receipt": "final-corpus/verification.json",
+      "context": "retained B1/B2/B3R/inert local mutation; exact report bytes, outcomes, evidence and CLI exit 2"
+    },
+    {
+      "command": "git diff --check",
+      "result": "pass"
+    },
+    {
+      "command": "relative local link target inspection",
+      "result": "pass",
+      "targets": 206,
+      "context": "owning pre-existing handoff anchor repair stays W2/G18; no global anchor compliance claimed"
+    }
+  ],
+  "browser": {
+    "result": "blocked_before_render",
+    "error": "ERR_BLOCKED_BY_CLIENT",
+    "receipt": "../w0/browser.json",
+    "notCertified": [
+      "actual app Back/Forward and scroll/focus",
+      "viewport 1440/1024/390",
+      "200% zoom",
+      "keyboard-only evidence round trip",
+      "offline behavior",
+      "assistive technology"
+    ]
+  },
+  "priorFailuresAndRecovery": [
+    "Active root typecheck failed on missing TUI/React/Ink dependencies after concurrent S4 edits; preserved and not claimed passing.",
+    "Frozen offline install failed first on concurrent CLI/TUI lock mismatch, then missing cached react-dom tarball. Existing admitted dependency tree reused; no install pass claimed.",
+    "Isolated root prebuild initially lacked compiled core/contracts; explicitly bootstrapped those packages, then full isolated typecheck passed.",
+    "Initial web checks lacked the isolated .venv; connected existing pinned validator, retained all original validation gates.",
+    "Initial reader run: 20/24 passed; four failed because symbolic store paths were refused. Actual corpus stores copied without changing reader semantics; final 24/24 passed.",
+    "Cancellation test stub initially omitted window.addEventListener; corrected test harness, final complete web suite 31/31 passed.",
+    "Earlier corpus checkpoint in corpus/ is retained; final-corpus/ binds final scoped source and test harness."
+  ],
+  "preservation": {
+    "gitIndexUnchanged": true,
+    "historicalReceiptChecks": {
+      "examples/web-investigation/validation.json": true,
+      "examples/web/current/validation.json": true
+    },
+    "coreContractsReaderUnchangedByThisTask": true,
+    "worktreesInspected": 3,
+    "staged": false,
+    "commit": false,
+    "push": false,
+    "publication": false,
+    "deployment": false,
+    "externalMessages": false
+  },
+  "sourceSHA256": {
+    "apps/web/README.md": "sha256:fc8f9c28fee0b1995b43711ddd7f5d57712156e352be0b8591042027f7fbd6bd",
+    "apps/web/build.mjs": "sha256:1d185791daec1a6f11b68dca86aa713fe23eaef486a3158c10f3442ce1fa673e",
+    "apps/web/package.json": "sha256:d7bc44d65fb759293cd468dbce6b48d959b7c09e0450289ccc6728818e8ba946",
+    "apps/web/server/main.ts": "sha256:fc0cc7c6504b3bf7603ab4e2b00efd4c8120d93382aeae0a78cc91d4eb48c5c1",
+    "apps/web/server/observation.ts": "sha256:8642dd91aa066984334716f2cacf76426a835e0e6ed79fadaf79ab35bfdaee50",
+    "apps/web/server/service.ts": "sha256:88184e73f6a036e929b4a08afaf32fe963e006860bc0b77a81efdbffbfbacc32",
+    "apps/web/server/workspace.ts": "sha256:89f490e4f39569faa5c18c0a022a780b1eda97fbea8857f07f3bcf5452540514",
+    "apps/web/src/api.ts": "sha256:a160d6ddc21b690544b3cd31941e13abcb4a39b0a59c70c7571cd32d2495a5f0",
+    "apps/web/src/app.tsx": "sha256:b8b65279b47b391c275648a4bb27edd79dc4ff19f8e66b6e5e4c2ae24d1dbfbf",
+    "apps/web/src/docs.tsx": "sha256:c7af01305646068d4c1a8d7fe3ce012a7aa761de33cd72a61e34c0a84d03ae94",
+    "apps/web/src/home.tsx": "sha256:ff730969ac19d368e0499a74287b4694329f977f16c2bec83b0c4f135320d6da",
+    "apps/web/src/index.html": "sha256:049fc9f4a86def4e885129d92206e49619e26a350ba1a8d4de168b6bee84f18c",
+    "apps/web/src/investigate.tsx": "sha256:cf6814958b26ee06c3db252cb130a0c1bcb1f60161867c22804e1010ab651874",
+    "apps/web/src/main.tsx": "sha256:b22bb4f233928992187bd8e2998777bf84bce93a4d858a6cdf7b364176fe9469",
+    "apps/web/src/navigation.ts": "sha256:7a692568ca9ce4e72db5ea6d8fe2346721e56ed70bb2c96e27f23d846e966f13",
+    "apps/web/src/render-check.tsx": "sha256:d72dff1e5a90e46adaeb6137d7b4bb0ca908b75f13af8b66366de43d75046f3a",
+    "apps/web/src/style.css": "sha256:4166bb0aba5c5c6286c3a92dd765acbd6f79b9c4f70510d64a998b14be0f5337",
+    "apps/web/tests/navigation.test.mjs": "sha256:b336767b81adcfcb95733c357931c51bc5654fb2bd2f83c6a13bbff6f05f58b4",
+    "apps/web/tests/viewer.test.mjs": "sha256:af97eb3a106cd5e4911157436d6ef8549d2bf9604efa4d9865b088090ed6184c",
+    "apps/web/tests/workflow.test.mjs": "sha256:63246aad8bbd80c8ddd852becbebcdf246f8320edd7b11789ec6c3d3b28c5251",
+    "apps/web/tooling/export.ts": "sha256:cefd5b814e87312380172a189f24b9e6cbda881cb3fbc6fd4f4e16c88b50c86c",
+    "apps/web/tooling/portable.ts": "sha256:1bea4f7d68a9d7cff1bd3b57967f9948a824379b70f112ca86c7a8082e402251",
+    "apps/web/tooling/strict-json.ts": "sha256:1855d1f964fc3e61cdcbdf02a2a9f2e0dfdef78c09a8789ff7b0237ea4e663d8",
+    "apps/web/tooling/transport.ts": "sha256:82facd0ed9246518210c93e8d9b724c77729842058a0bf364c653e1d557b2607",
+    "apps/web/tooling/verify-corpus.mjs": "sha256:cd348299af334d0c68c8e612ee32d146a430f953c6efc7dc19e25bf66feabdaf",
+    "apps/web/tooling/verify-investigation.mjs": "sha256:4567f6985a1c465e8add7c7870022664ea8bfb835ac27ba1f4d92298c126d16e",
+    "integration/part4/src/investigation-task.ts": "sha256:31fff258fd3cd2a7688e5290c52a57a81c2ea489eccff6629daa3b7c22ce005f",
+    "integration/part4/src/report-reader.ts": "sha256:59b0ab64566dccbc7dd8985deb0a06fe01343b9ac33ae4a099c1cb8c35918f2b",
+    "packages/contracts/schema/contracts.schema.json": "sha256:bef30a837a383ed7a3fbf49e9bac885822d6e3bdea9ccd05ff46b37f350b4dae",
+    "packages/contracts/src/index.ts": "sha256:488958cf5865bce05ac5343cf1607ad7af72486a351c3afc7756fdd9fdafa233",
+    "packages/contracts/src/types.ts": "sha256:896ecaf54728ac921c539738c75e54369a92f13f3b3fbe6e264593a84201c11b",
+    "packages/core/src/adapter.ts": "sha256:0d1c24358ade91e9386b6f238373a6fbe89abd97be452416f65bf980cdb304df",
+    "packages/core/src/archive.ts": "sha256:12e8be1923cd25778b5492117a215bfc3d7a87403dfabfe541d4593b137b0ff7",
+    "packages/core/src/comparison.ts": "sha256:a078b9ce0e135b3684a01217f60c7e1046d3a5f960b5e84343af35fc7f1f3fcf",
+    "packages/core/src/engine.ts": "sha256:a9bfcdfa99ec5360f4754351e55ac40248333b731c756d44e08dc7bba0683596",
+    "packages/core/src/identity.ts": "sha256:5f5097f3796fdf56740f31ccee7ded03a3dc86a67b26791f804a86beb97c6246",
+    "packages/core/src/index.ts": "sha256:d5abc08e31a318febe1f527ef338b4d6f530821db5f16bbeef450969941ef484",
+    "packages/core/src/network.ts": "sha256:0ccfd2369e679a18d0c923aaee86d82bc2856f19f4c9676aca84cb8b6be0ee66",
+    "packages/core/src/npm.ts": "sha256:6db9ef810490519cc5b4364cf7afea84d08acab94afa5dc29424d477fdd5171a",
+    "packages/core/src/parser-job.ts": "sha256:413ad333e8a5943ec19d23fb0ef16de765eacd6248413620a76141c76b4914d0",
+    "packages/core/src/parser-runtime.ts": "sha256:2b204ed6de4c912d86f2184d1783c3beebf615f987887b8debe53bc51aa0a4bd",
+    "packages/core/src/producer.ts": "sha256:cd4dbdc04b44ee6987973a2a3efeef136b53c0c308ae2b937b2860f1fc92d145",
+    "packages/core/src/provenance.ts": "sha256:ab6d160ad9da7522c6e444e194ee82e088074d89132bfd230e730f8ba6208f75",
+    "packages/core/src/safety.ts": "sha256:8402091b35f9f61f715990ca1e155b0c4e8f99e680e1f24fd48d380e9fa4c6c0",
+    "packages/core/src/sources.ts": "sha256:588e5d5c3f0719940c9554ffb3d79c41f040ae8d25282146dfef9bb9a445586f",
+    "packages/core/src/storage.ts": "sha256:e8a8bf14be4fa3d8b7c074ef0e47a0ad8750031b1c8c7092b1f6811792d4decf",
+    "packages/core/src/validation.ts": "sha256:ad1f28916825500c5a5d7ef6225cace71271e58cbad8f0b5a4caf613504f9f5d"
+  },
+  "buildSHA256": {
+    "apps/web/dist/api.js": "sha256:faf604335f97e1d096669ff31bc2d10e7aeb6ad299ad5ea119852febbe52d8a8",
+    "apps/web/dist/assets/app.css": "sha256:4166bb0aba5c5c6286c3a92dd765acbd6f79b9c4f70510d64a998b14be0f5337",
+    "apps/web/dist/assets/app.js": "sha256:222421c90769290364c61ac5fefe314ce254f6b48eeaeef5f4c6a882268f7ecc",
+    "apps/web/dist/browser-inputs.json": "sha256:061d0acfb2ec27f850776fdfdca9790ad984edfbfb1423ee4a5dbaca0d7ae36b",
+    "apps/web/dist/cli-docs.json": "sha256:b18acd73dcbf5c09d152705efc655469bdd35be6736d7d60d011be91edb511cb",
+    "apps/web/dist/export.js": "sha256:f457bf9a6201b5b312628a540d6b802b7e7d4e2ca3fc5a20e58ff12222f77127",
+    "apps/web/dist/index.html": "sha256:049fc9f4a86def4e885129d92206e49619e26a350ba1a8d4de168b6bee84f18c",
+    "apps/web/dist/main.js": "sha256:f6f3a6e38020d259c76dcec4d00fe21eaddcb136dd87f5e0cdd8863e55a88ed1",
+    "apps/web/dist/navigation.js": "sha256:4597b27c20728fed44eefc68b77fa8fa33c0fcf70e839ff05f667c16049e09ee",
+    "apps/web/dist/observation.js": "sha256:220a8c767ae8715c155faa6cea62af3bfc5d7d809c846b1ab8a2e7901f709f87",
+    "apps/web/dist/portable.js": "sha256:5a2770694247ef04f7a8ac44cb94d23a6d0d4a3923f3925fd7e2c27161b9c5f0",
+    "apps/web/dist/render-check.js": "sha256:ad575197adac21faecff7dbd97e5577e3057488c2f5b13e50ba91fe6de4141d0",
+    "apps/web/dist/service.js": "sha256:20430a57273b19e6523822d5400a9116a9476bfc164847535d5874b2bffe647b",
+    "apps/web/dist/transport.js": "sha256:716ffe52534e30a4ce51f99a60ba732178081414726d968a38f70c1f87992278",
+    "apps/web/dist/workspace.js": "sha256:52833dd1ccd858a14c250f1018220348f494d0e7d43eb8f5fb0c67840cd2a31a",
+    "integration/part4/dist/investigation-task.d.ts": "sha256:0a042d613b2e24bad2bbccdb2896035ee8f0ad8b2c35f9cd1afad68126f0d18c",
+    "integration/part4/dist/investigation-task.js": "sha256:60db1721116985a1c96911ec05f331f8d19ce5180335a5ffca26120303b4a3a1",
+    "integration/part4/dist/report-reader.d.ts": "sha256:bdc7e0ee37ad2cb2f3aacdba9495cf175a1f7b0d4988e1e0c76bcfe168624751",
+    "integration/part4/dist/report-reader.js": "sha256:eeb4c76f50b98afc3c9ea07bf8ccfebb33dab35cdef094432ea371e611c41700"
+  },
+  "documentationSHA256": {
+    "AGENTS.md": "sha256:59d5dc883ccc5ad3fc99749a6fbd5f2e6159b9e7f575eb294737a2e2c93fa278",
+    "README.md": "sha256:84f0d88700c09237f34ea39e7f1e90296fff8b86eea42c25780703855d4daaf4",
+    "docs/Approved Decision Register.md": "sha256:fc84f22c8f34dcce2dc7076ba3206a78d2f6524e2dedf71ef8fc2dc16c307757",
+    "docs/README.md": "sha256:754b8b53ee58443274c708d558c4eb6c53b8b19ce819b518d083f370dbc3909f",
+    "docs/WEB_CONTINUATION.md": "sha256:6083d377e563c118f4f0314327c25e743c80779e49130a30f3c6516c4a6f5cfe",
+    "docs/Web Application Gap Plan.md": "sha256:3d5f7dce5cca70e2be8b83cdeb2f02111ea16f605f45048043c7180d3f115b73"
+  },
+  "remaining": "W2 next; W3\u2013W5 and G19 stay in same backlog; GUI acceptance and active-root S4 assembly remain open."
+}

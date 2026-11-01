@@ -1,0 +1,46 @@
+{
+  "version": "heurisko-runtime-validation-followup-v1",
+  "checkedAt": "2026-11-01T00:44:13.763333+00:00",
+  "scope": "Supplement to initial validation; no initial receipt or source output changed",
+  "productCodeChanged": false,
+  "checks": {
+    "currentCoreDistinctCasesWithPassingExecutions": 146,
+    "initialBroadRuntime": {
+      "tests": 108,
+      "passed": 107,
+      "failed": 1,
+      "failure": "Stale CLI safety test expected exit2 before the reviewed deterministic default integration; corrected to each actual report exitCode"
+    },
+    "fixedCliExactRerun": {
+      "tests": 1,
+      "passed": 1,
+      "failed": 0
+    },
+    "duplicateFullS2": {
+      "tests": 41,
+      "passed": 40,
+      "failed": 1,
+      "failure": "PARSER_CLEANUP_UNCONFIRMED while two Docker-heavy local suites overlapped; durable recovery scratch preserved",
+      "cleanupRuleOrLimitChanged": false
+    },
+    "cleanupExactSerialRerun": {
+      "tests": 1,
+      "passed": 1,
+      "failed": 0,
+      "runningParserJobsBeforeRerun": 0,
+      "command": "node --test --test-name-pattern='truncated/corrupt archives' packages/core/tests/s2.test.mjs",
+      "log": "runtime-cleanup-serial.log",
+      "logSha256": "sha256:5914b6ab15a76e8c28ded6bf1f752807ffbc386a22dd97b9c350cb4a21da423d"
+    }
+  },
+  "limitations": [
+    "Passing serial rerun does not erase the retained fail-closed contention result.",
+    "No uncertain durable job records or pre-existing containers were manually deleted.",
+    "No model/provider, target code, build scripts or lifecycle scripts executed."
+  ],
+  "actions": {
+    "sourceModification": false,
+    "gitOrApiMutation": false,
+    "externalMessage": false
+  }
+}

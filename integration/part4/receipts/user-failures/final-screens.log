@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "<WORKSPACE>/packages/tui/tests/user-workflows.py", line 52, in <module>
+    s.read(.3);before=origin(ORIGINAL);s.send('e',.5);expect(s,'Evidence');expect(s,'RAW utf8:');scroll(s,'"1.1.1"');s.send('s',.5);scroll(s,'"1.1.0"');s.capture(CAP/f'source-version-bytes-{c}');s.send('\x1b',.4);expect(s,'Source >');s.read(.3);after=origin(ORIGINAL);check(all(before.get(k)==after.get(k) for k in ['section','selectedId','focus','scroll','scrolls','query','pan','citation']),'exact source inspection Back '+str(c));s.send('\x1b',.3)
+                                                                                                                                                                                                                                                                            ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<WORKSPACE>/packages/tui/tests/user-workflows.py", line 24, in check
+    assert v,name
+           ^
+AssertionError: exact source inspection Back 84

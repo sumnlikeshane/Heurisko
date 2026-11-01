@@ -1,0 +1,40 @@
+  HEURISKO   H Home    I Investigations     M Monitoring                                                                                                        
+  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  
+  picocolors@1.1.1 / HISTORICAL / incomplete / Captured 2026-10-31T22:59:33Z                                                                                    
+  1 Overview   2 Findings   3 Files   4 Source   5 AI   6 Coverage                                                                                              
+  Historical — online checks have not refreshed · i Identity                                                                                                    
+  Files                                                                                                                                                         
+  Flat / 2 modified / 5 identical / 12 unresolved (19 change records) / m next modified / v tree-flat                                                           
+  ┌─ > Files ───────────────────── 19 ┐ ┌─ Raw source / artifact comparison ─────────────────────────────────────────────────────────────────────────────────┐  
+  │   picocolors-6f0a4638348ed20633d… │ │ File:                                                                                                              │  
+  │   unresolved / unknown            │ │ modified / raw bytes different                                                                                     │  
+  │                                   │ │                                                                                                                    │  
+  │   picocolors-6f0a4638348ed20633d… │ │ Pairing:                                                                                                           │  
+  │   unresolved / unknown            │ │ recorded source and artifact members for this change.                                                              │  
+  │                                   │ │ Raw inventory complete; source association remains ambiguous. One-sided records stay unresolved; release-relative  │  
+  │   picocolors-6f0a4638348ed20633d… │ │ absence is not established.                                                                                        │  
+  │   unresolved / unknown            │ │                                                                                                                    │  
+  │                                   │ │ Historical wording caveat:                                                                                         │  
+  │   picocolors-6f0a4638348ed20633d… │ │ stored notes say incomplete inventory. Both raw inventories/stages are complete here; the producer also used that  │  
+  │   unresolved / unknown            │ │ message when ambiguous source association blocked absence conclusions. Original notes are preserved below.         │  
+  │                                   │ │                                                                                                                    │  
+  │   picocolors-6f0a4638348ed20633d… │ │ Artifact path:                                                                                                     │  
+  │   unresolved / unknown            │ │ package/README.md                                                                                                  │  
+  │                                   │ │                                                                                                                    │  
+  │   package/LICENSE                 │ │ Source path:                                                                                                       │  
+  │   identical / equal               │ │ picocolors-6f0a4638348ed20633d623ee973f9c9a96f65104/README.md                                                      │  
+  │                                   │ │ Raw difference follows; Enter full inspection, e exact bytes, s switches side in Evidence.                         │  
+  │ > package/README.md               │ │                                                                                                                    │  
+  │   modified / different            │ │ Explanation strength:                                                                                              │  
+  │                                   │ │ unexplained                                                                                                        │  
+  │   picocolors-6f0a4638348ed20633d… │ │                                                                                                                    │  
+  │   unresolved / unknown            │ │ Change:                                                                                                            │  
+  │                                   │ │ chg_02e5a55310b73a1ffa706e13                                                                                       │  
+  │ 7 / 19 · Enter inspect            │ │                                                                                                                    │  
+  └───────────────────────────────────┘ │ Stored note:                                                                                                       │  
+                                        │ 1-26 / 31  j/k scroll                                                                                              │  
+                                        └────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘  
+  Modified file / package/README.md / Enter inspect; e exact bytes.                                                                                             
+  m next modified  Enter inspect  e exact bytes  Tab panes  v tree/flat  q quit                                                                                 
+                                                                                                                                                                
+                                                                                                                                                                

@@ -1,0 +1,26 @@
+  HEURISKO   H Home    I Investigations     M Monitoring                            
+  ────────────────────────────────────────────────────────────────────────────────  
+  picocolors@1.1.1 / LOCAL INPUT / HISTORICAL / complete / Captured 2026-10-31T21…  
+  1 Overview   2 Findings   3 Files   4 Source   5 AI   6 Coverage                  
+  Historical — online checks have not refreshed · i Identity                        
+  Files                                                                             
+  Tree / raw auto byte windows / Left–Right pan                                     
+  ┌─ > Files ───────────────────────────────────────────────────────────────── 2 ┐  
+  │ > [+] package/                                                               │  
+  │                                                                              │  
+  │   [+] picocolors-6f0a4638348ed20633d623ee973f9c9a96f65104/                   │  
+  │                                                                              │  
+  │ 1 / 2 · Enter expand                                                         │  
+  └──────────────────────────────────────────────────────────────────────────────┘  
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+                                                                                    
+  Files                                                                             
+  j/k move  Enter inspect  e evidence  Tab panes  / filter  ? help  q quit          
+                                                                                    
+                                                                                    
