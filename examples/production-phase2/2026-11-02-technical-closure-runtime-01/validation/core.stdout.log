@@ -1,0 +1,1247 @@
+TAP version 13
+# Subtest: acknowledged parser creation starts/removes only the exact immutable container ID
+ok 1 - acknowledged parser creation starts/removes only the exact immutable container ID
+  ---
+  duration_ms: 0.9725
+  type: 'test'
+  ...
+# Subtest: cancel during delayed acknowledged creation waits for the acknowledgment and never starts
+ok 2 - cancel during delayed acknowledged creation waits for the acknowledgment and never starts
+  ---
+  duration_ms: 0.174042
+  type: 'test'
+  ...
+# Subtest: unacknowledged create plus immediate not-found never proves cleanup before late creation
+ok 3 - unacknowledged create plus immediate not-found never proves cleanup before late creation
+  ---
+  duration_ms: 0.133667
+  type: 'test'
+  ...
+# Subtest: failed exact removal remains unconfirmed even after a successful parse
+ok 4 - failed exact removal remains unconfirmed even after a successful parse
+  ---
+  duration_ms: 0.125458
+  type: 'test'
+  ...
+# Subtest: attach startup failure still removes the acknowledged exact job
+ok 5 - attach startup failure still removes the acknowledged exact job
+  ---
+  duration_ms: 0.114875
+  type: 'test'
+  ...
+# Subtest: wall timeout awaits exact daemon cleanup instead of only killing its attach client
+ok 6 - wall timeout awaits exact daemon cleanup instead of only killing its attach client
+  ---
+  duration_ms: 11.480583
+  type: 'test'
+  ...
+# Subtest: unconfirmed creation retains private spool, durable job identity and both store locks
+ok 7 - unconfirmed creation retains private spool, durable job identity and both store locks
+  ---
+  duration_ms: 89.407458
+  type: 'test'
+  ...
+# Subtest: explicit recovery stopped verifies identity before releasing only its own records
+ok 8 - explicit recovery stopped verifies identity before releasing only its own records
+  ---
+  duration_ms: 949.505666
+  type: 'test'
+  ...
+# Subtest: explicit recovery running verifies identity before releasing only its own records
+ok 9 - explicit recovery running verifies identity before releasing only its own records
+  ---
+  duration_ms: 684.91025
+  type: 'test'
+  ...
+# Subtest: explicit recovery wrong-label verifies identity before releasing only its own records
+ok 10 - explicit recovery wrong-label verifies identity before releasing only its own records
+  ---
+  duration_ms: 614.978167
+  type: 'test'
+  ...
+# Subtest: explicit recovery missing verifies identity before releasing only its own records
+ok 11 - explicit recovery missing verifies identity before releasing only its own records
+  ---
+  duration_ms: 551.780916
+  type: 'test'
+  ...
+# Subtest: missing executable/configuration digest is rejected before an injected module can run
+ok 12 - missing executable/configuration digest is rejected before an injected module can run
+  ---
+  duration_ms: 0.978542
+  type: 'test'
+  ...
+# Subtest: same package version with changed implementation or rule settings produces distinct report identities
+ok 13 - same package version with changed implementation or rule settings produces distinct report identities
+  ---
+  duration_ms: 29446.799833
+  type: 'test'
+  ...
+# Subtest: spool and both locks remain until delayed exact-job removal is acknowledged
+ok 14 - spool and both locks remain until delayed exact-job removal is acknowledged
+  ---
+  duration_ms: 95.104709
+  type: 'test'
+  ...
+# Subtest: late acknowledged creation after wall timeout never starts and awaits exact cleanup
+ok 15 - late acknowledged creation after wall timeout never starts and awaits exact cleanup
+  ---
+  duration_ms: 31.258167
+  type: 'test'
+  ...
+# Subtest: bounded local file open rejects FIFO before waiting for a writer
+ok 16 - bounded local file open rejects FIFO before waiting for a writer
+  ---
+  duration_ms: 414.524917
+  type: 'test'
+  ...
+# Subtest: CLI file and digest imports reject invalid UTF-8 instead of changing report identity
+ok 17 - CLI file and digest imports reject invalid UTF-8 instead of changing report identity
+  ---
+  duration_ms: 496.085792
+  type: 'test'
+  ...
+# Subtest: CLI report byte imports preserve BOM rejection and valid retained identity
+ok 18 - CLI report byte imports preserve BOM rejection and valid retained identity
+  ---
+  duration_ms: 2029.813791
+  type: 'test'
+  ...
+# Subtest: CLI evidence inspection honors not_exported even when matching bytes exist
+ok 19 - CLI evidence inspection honors not_exported even when matching bytes exist
+  ---
+  duration_ms: 1740.489375
+  type: 'test'
+  ...
+# Subtest: CLI evidence inspection honors unavailable even when matching bytes exist
+ok 20 - CLI evidence inspection honors unavailable even when matching bytes exist
+  ---
+  duration_ms: 1359.3065
+  type: 'test'
+  ...
+# Subtest: known-answer ASCII/Unicode/integer vectors match the accepted Python algorithm
+ok 21 - known-answer ASCII/Unicode/integer vectors match the accepted Python algorithm
+  ---
+  duration_ms: 49.610917
+  type: 'test'
+  ...
+# Subtest: all G0 evidence/report IDs are reproduced without changing accepted fixture order
+ok 22 - all G0 evidence/report IDs are reproduced without changing accepted fixture order
+  ---
+  duration_ms: 3.589083
+  type: 'test'
+  ...
+# Subtest: source order is deterministic; subtree/snapshot/build/config changes alter identity
+ok 23 - source order is deterministic; subtree/snapshot/build/config changes alter identity
+  ---
+  duration_ms: 33.074667
+  type: 'test'
+  ...
+# Subtest: producer/consumer/persistence/import boundaries accept all positive G0 records
+ok 24 - producer/consumer/persistence/import boundaries accept all positive G0 records
+  ---
+  duration_ms: 4923.634083
+  type: 'test'
+  ...
+# Subtest: every accepted negative G0 counterexample is rejected at runtime
+ok 25 - every accepted negative G0 counterexample is rejected at runtime
+  ---
+  duration_ms: 1321.404333
+  type: 'test'
+  ...
+# Subtest: producer rejects unknown fields, forged IDs and unaccounted omissions
+ok 26 - producer rejects unknown fields, forged IDs and unaccounted omissions
+  ---
+  duration_ms: 317.4855
+  type: 'test'
+  ...
+# Subtest: consumer references are checked against the original evidence
+ok 27 - consumer references are checked against the original evidence
+  ---
+  duration_ms: 99.610666
+  type: 'test'
+  ...
+# Subtest: import rejects duplicate keys, unsafe numeric values, malformed JSON and size overflow
+ok 28 - import rejects duplicate keys, unsafe numeric values, malformed JSON and size overflow
+  ---
+  duration_ms: 293.2405
+  type: 'test'
+  ...
+# Subtest: missing validator fails closed; pre-cancelled validation never runs
+ok 29 - missing validator fails closed; pre-cancelled validation never runs
+  ---
+  duration_ms: 5.315208
+  type: 'test'
+  ...
+# Subtest: boundary results and persistence encoding cannot change while validation awaits
+ok 30 - boundary results and persistence encoding cannot change while validation awaits
+  ---
+  duration_ms: 202.05775
+  type: 'test'
+  ...
+# Subtest: missing analysis is explicitly incomplete with no invented findings
+ok 31 - missing analysis is explicitly incomplete with no invented findings
+  ---
+  duration_ms: 476.18075
+  type: 'test'
+  ...
+# Subtest: injected team module receives deeply frozen copies and validated options
+ok 32 - injected team module receives deeply frozen copies and validated options
+  ---
+  duration_ms: 745.60925
+  type: 'test'
+  ...
+# Subtest: module exceptions are bounded errors; invalid output is rejected
+ok 33 - module exceptions are bounded errors; invalid output is rejected
+  ---
+  duration_ms: 494.973833
+  type: 'test'
+  ...
+# Subtest: cancellation stops waiting for an asynchronous team module
+ok 34 - cancellation stops waiting for an asynchronous team module
+  ---
+  duration_ms: 186.317875
+  type: 'test'
+  ...
+# Subtest: deterministic equivalence excludes timestamps/model prose; storage bytes differ
+ok 35 - deterministic equivalence excludes timestamps/model prose; storage bytes differ
+  ---
+  duration_ms: 2.523375
+  type: 'test'
+  ...
+# Subtest: unavailable AI can coexist with completed deterministic processing
+ok 36 - unavailable AI can coexist with completed deterministic processing
+  ---
+  duration_ms: 96.6455
+  type: 'test'
+  ...
+# Subtest: CLI help is noninteractive; malformed analyze returns 3
+ok 37 - CLI help is noninteractive; malformed analyze returns 3
+  ---
+  duration_ms: 108.081291
+  type: 'test'
+  ...
+# Subtest: actual canonical local fixture resolves hash-bound lifecycle addition and removal without changing evidence
+ok 38 - actual canonical local fixture resolves hash-bound lifecycle addition and removal without changing evidence
+  ---
+  duration_ms: 39.356375
+  type: 'test'
+  ...
+# Subtest: the revised deterministic consumer accepts the real retained addition through the G0 adapter
+ok 39 - the revised deterministic consumer accepts the real retained addition through the G0 adapter
+  ---
+  duration_ms: 308.270209
+  type: 'test'
+  ...
+# Subtest: actual EvidenceStore missing and corrupt delta bytes remain unresolved without supplying content
+ok 40 - actual EvidenceStore missing and corrupt delta bytes remain unresolved without supplying content
+  ---
+  duration_ms: 42.029958
+  type: 'test'
+  ...
+# Subtest: foreign pointer, forged member link, span mismatch and false absence cannot establish script direction
+ok 41 - foreign pointer, forged member link, span mismatch and false absence cannot establish script direction
+  ---
+  duration_ms: 51.586042
+  type: 'test'
+  ...
+# Subtest: duplicate-key JSON and invalid UTF8 are rejected for deltas and linked original manifests
+ok 42 - duplicate-key JSON and invalid UTF8 are rejected for deltas and linked original manifests
+  ---
+  duration_ms: 23.730375
+  type: 'test'
+  ...
+# Subtest: both-null and canonically equal-value pseudo-deltas are rejected before any member resolution
+ok 43 - both-null and canonically equal-value pseudo-deltas are rejected before any member resolution
+  ---
+  duration_ms: 9.110375
+  type: 'test'
+  ...
+# Subtest: a delta referenced by another change is unresolved even when its content hash exists in the store
+ok 44 - a delta referenced by another change is unresolved even when its content hash exists in the store
+  ---
+  duration_ms: 4.462417
+  type: 'test'
+  ...
+# Subtest: individual delta/member byte bounds are enforced without passing oversized text to intelligence
+ok 45 - individual delta/member byte bounds are enforced without passing oversized text to intelligence
+  ---
+  duration_ms: 7.3225
+  type: 'test'
+  ...
+# Subtest: record count and total read budgets remain bounded even when every content read fails after consuming its allowance
+ok 46 - record count and total read budgets remain bounded even when every content read fails after consuming its allowance
+  ---
+  duration_ms: 46.754833
+  type: 'test'
+  ...
+# Subtest: pre-cancel, cancellation during a read, and an expired deadline never call the intelligence function
+ok 47 - pre-cancel, cancellation during a read, and an expired deadline never call the intelligence function
+  ---
+  duration_ms: 100.867875
+  type: 'test'
+  ...
+# Subtest: caller mutation during a delayed read cannot replace the bundle, options or resolved retained bytes
+ok 48 - caller mutation during a delayed read cannot replace the bundle, options or resolved retained bytes
+  ---
+  duration_ms: 77.595791
+  type: 'test'
+  ...
+# Subtest: exact member spans in the canonical fixture are independently reproducible by the strict scanner
+ok 49 - exact member spans in the canonical fixture are independently reproducible by the strict scanner
+  ---
+  duration_ms: 91.914292
+  type: 'test'
+  ...
+# Subtest: pins validated DNS address while preserving TLS hostname and captures only selected response headers
+ok 50 - pins validated DNS address while preserving TLS hostname and captures only selected response headers
+  ---
+  duration_ms: 26.627583
+  type: 'test'
+  ...
+# Subtest: rejects mixed public/private DNS answers before creating a socket
+ok 51 - rejects mixed public/private DNS answers before creating a socket
+  ---
+  duration_ms: 2.36425
+  type: 'test'
+  ...
+# Subtest: redirect revalidates DNS and refuses rebinding before another connection
+ok 52 - redirect revalidates DNS and refuses rebinding before another connection
+  ---
+  duration_ms: 3.790584
+  type: 'test'
+  ...
+# Subtest: cross-host redirects cannot leave the HTTPS allowlist
+ok 53 - cross-host redirects cannot leave the HTTPS allowlist
+  ---
+  duration_ms: 2.81675
+  type: 'test'
+  ...
+# Subtest: redirect count, actual streamed size, advertised size and response encodings are bounded
+ok 54 - redirect count, actual streamed size, advertised size and response encodings are bounded
+  ---
+  duration_ms: 8.606125
+  type: 'test'
+  ...
+# Subtest: TLS/HTTP failure, pre-cancel and ambient proxies fail closed without a fallback
+ok 55 - TLS/HTTP failure, pre-cancel and ambient proxies fail closed without a fallback
+  ---
+  duration_ms: 4.516833
+  type: 'test'
+  ...
+# Subtest: acquisition-specific host scopes reject redirects to another globally allowlisted service before a second request
+ok 56 - acquisition-specific host scopes reject redirects to another globally allowlisted service before a second request
+  ---
+  duration_ms: 3.26275
+  type: 'test'
+  ...
+# Subtest: in-flight cancellation aborts a pinned network request without fallback
+ok 57 - in-flight cancellation aborts a pinned network request without fallback
+  ---
+  duration_ms: 2.693042
+  type: 'test'
+  ...
+# Subtest: exact parser absence fails closed: absent
+ok 58 - exact parser absence fails closed: absent
+  ---
+  duration_ms: 767.358333
+  type: 'test'
+  ...
+# Subtest: exact parser absence fails closed: missing-rm
+ok 59 - exact parser absence fails closed: missing-rm
+  ---
+  duration_ms: 587.39075
+  type: 'test'
+  ...
+# Subtest: exact parser absence fails closed: present
+ok 60 - exact parser absence fails closed: present
+  ---
+  duration_ms: 684.983417
+  type: 'test'
+  ...
+# Subtest: exact parser absence fails closed: query-error
+ok 61 - exact parser absence fails closed: query-error
+  ---
+  duration_ms: 915.174
+  type: 'test'
+  ...
+# Subtest: exact parser absence fails closed: unexpected-output
+ok 62 - exact parser absence fails closed: unexpected-output
+  ---
+  duration_ms: 615.858458
+  type: 'test'
+  ...
+# Subtest: exact parser absence fails closed: remove-error
+ok 63 - exact parser absence fails closed: remove-error
+  ---
+  duration_ms: 545.109625
+  type: 'test'
+  ...
+# Subtest: exact parser absence fails closed: partial-id
+ok 64 - exact parser absence fails closed: partial-id
+  ---
+  duration_ms: 544.013
+  type: 'test'
+  ...
+# Subtest: parser boundary harness retains actual cleanup facts: create-unacknowledged
+ok 65 - parser boundary harness retains actual cleanup facts: create-unacknowledged
+  ---
+  duration_ms: 732.003792
+  type: 'test'
+  ...
+# Subtest: parser boundary harness retains actual cleanup facts: remove-unconfirmed
+ok 66 - parser boundary harness retains actual cleanup facts: remove-unconfirmed
+  ---
+  duration_ms: 693.987
+  type: 'test'
+  ...
+# Subtest: parser boundary harness retains actual cleanup facts: remove-error-absent
+ok 67 - parser boundary harness retains actual cleanup facts: remove-error-absent
+  ---
+  duration_ms: 643.972
+  type: 'test'
+  ...
+# Subtest: parser boundary harness retains actual cleanup facts: success
+ok 68 - parser boundary harness retains actual cleanup facts: success
+  ---
+  duration_ms: 865.637375
+  type: 'test'
+  ...
+# Subtest: Q1 actual loader: preinstall add
+ok 69 - Q1 actual loader: preinstall add
+  ---
+  duration_ms: 308.17975
+  type: 'test'
+  ...
+# Subtest: Q1 actual loader: preinstall change
+ok 70 - Q1 actual loader: preinstall change
+  ---
+  duration_ms: 221.476917
+  type: 'test'
+  ...
+# Subtest: Q1 actual loader: preinstall remove
+ok 71 - Q1 actual loader: preinstall remove
+  ---
+  duration_ms: 423.287
+  type: 'test'
+  ...
+# Subtest: Q1 actual loader: install add
+ok 72 - Q1 actual loader: install add
+  ---
+  duration_ms: 174.714792
+  type: 'test'
+  ...
+# Subtest: Q1 actual loader: install change
+ok 73 - Q1 actual loader: install change
+  ---
+  duration_ms: 118.6045
+  type: 'test'
+  ...
+# Subtest: Q1 actual loader: install remove
+ok 74 - Q1 actual loader: install remove
+  ---
+  duration_ms: 81.195917
+  type: 'test'
+  ...
+# Subtest: Q1 actual loader: postinstall add
+ok 75 - Q1 actual loader: postinstall add
+  ---
+  duration_ms: 99.165583
+  type: 'test'
+  ...
+# Subtest: Q1 actual loader: postinstall change
+ok 76 - Q1 actual loader: postinstall change
+  ---
+  duration_ms: 121.742959
+  type: 'test'
+  ...
+# Subtest: Q1 actual loader: postinstall remove
+ok 77 - Q1 actual loader: postinstall remove
+  ---
+  duration_ms: 99.926875
+  type: 'test'
+  ...
+# Subtest: Q1 actual loader: prepare add
+ok 78 - Q1 actual loader: prepare add
+  ---
+  duration_ms: 95.362166
+  type: 'test'
+  ...
+# Subtest: Q1 actual loader: prepare change
+ok 79 - Q1 actual loader: prepare change
+  ---
+  duration_ms: 91.277541
+  type: 'test'
+  ...
+# Subtest: Q1 actual loader: prepare remove
+ok 80 - Q1 actual loader: prepare remove
+  ---
+  duration_ms: 84.225875
+  type: 'test'
+  ...
+# Subtest: Q1 legacy selector preserves the reproduced upstream removal defect under its old rule identity
+ok 81 - Q1 legacy selector preserves the reproduced upstream removal defect under its old rule identity
+  ---
+  duration_ms: 98.638875
+  type: 'test'
+  ...
+# Subtest: Q1 parent scripts removal, mixed edits and ordinary command metadata retain separate events/residuals
+ok 82 - Q1 parent scripts removal, mixed edits and ordinary command metadata retain separate events/residuals
+  ---
+  duration_ms: 104.549583
+  type: 'test'
+  ...
+# Subtest: Q1 unsupported command null cannot infer a lifecycle action
+ok 83 - Q1 unsupported command null cannot infer a lifecycle action
+  ---
+  duration_ms: 87.838125
+  type: 'test'
+  ...
+# Subtest: Q1 unsupported command false cannot infer a lifecycle action
+ok 84 - Q1 unsupported command false cannot infer a lifecycle action
+  ---
+  duration_ms: 80.765834
+  type: 'test'
+  ...
+# Subtest: Q1 unsupported command [] cannot infer a lifecycle action
+ok 85 - Q1 unsupported command [] cannot infer a lifecycle action
+  ---
+  duration_ms: 103.338125
+  type: 'test'
+  ...
+# Subtest: Q1 unsupported command {} cannot infer a lifecycle action
+ok 86 - Q1 unsupported command {} cannot infer a lifecycle action
+  ---
+  duration_ms: 95.536375
+  type: 'test'
+  ...
+# Subtest: Q1 unsupported command 42 cannot infer a lifecycle action
+ok 87 - Q1 unsupported command 42 cannot infer a lifecycle action
+  ---
+  duration_ms: 76.038292
+  type: 'test'
+  ...
+# Subtest: Q1 unsupported command "" cannot infer a lifecycle action
+ok 88 - Q1 unsupported command "" cannot infer a lifecycle action
+  ---
+  duration_ms: 86.000208
+  type: 'test'
+  ...
+# Subtest: Q1 unchanged fields produce no event
+ok 89 - Q1 unchanged fields produce no event
+  ---
+  duration_ms: 32.471375
+  type: 'test'
+  ...
+# Subtest: Q1 scripts arrays cannot impersonate a supported script object
+ok 90 - Q1 scripts arrays cannot impersonate a supported script object
+  ---
+  duration_ms: 78.038458
+  type: 'test'
+  ...
+# Subtest: Q2 actual loader main: direction, retained values and exact original spans
+ok 91 - Q2 actual loader main: direction, retained values and exact original spans
+  ---
+  duration_ms: 271.771125
+  type: 'test'
+  ...
+# Subtest: Q2 actual loader module: direction, retained values and exact original spans
+ok 92 - Q2 actual loader module: direction, retained values and exact original spans
+  ---
+  duration_ms: 645.964042
+  type: 'test'
+  ...
+# Subtest: Q2 actual loader types: direction, retained values and exact original spans
+ok 93 - Q2 actual loader types: direction, retained values and exact original spans
+  ---
+  duration_ms: 480.49725
+  type: 'test'
+  ...
+# Subtest: Q2 actual loader typings: direction, retained values and exact original spans
+ok 94 - Q2 actual loader typings: direction, retained values and exact original spans
+  ---
+  duration_ms: 226.439583
+  type: 'test'
+  ...
+# Subtest: Q2 actual loader exports: direction, retained values and exact original spans
+ok 95 - Q2 actual loader exports: direction, retained values and exact original spans
+  ---
+  duration_ms: 231.475083
+  type: 'test'
+  ...
+# Subtest: Q2 actual loader bin: direction, retained values and exact original spans
+ok 96 - Q2 actual loader bin: direction, retained values and exact original spans
+  ---
+  duration_ms: 244.045042
+  type: 'test'
+  ...
+# Subtest: Q2 actual loader browser: direction, retained values and exact original spans
+ok 97 - Q2 actual loader browser: direction, retained values and exact original spans
+  ---
+  duration_ms: 235.100666
+  type: 'test'
+  ...
+# Subtest: Q2 nested conditions, arrays, slash/tilde/dot keys, false and controls: one outermost event with bounded summary
+ok 98 - Q2 nested conditions, arrays, slash/tilde/dot keys, false and controls: one outermost event with bounded summary
+  ---
+  duration_ms: 159.404791
+  type: 'test'
+  ...
+# Subtest: Q2 missing/corrupt/not-exported delta and malformed member never gain exact values
+ok 99 - Q2 missing/corrupt/not-exported delta and malformed member never gain exact values
+  ---
+  duration_ms: 446.740042
+  type: 'test'
+  ...
+# Subtest: Q2 whole manifest addition/removal abstains: absent-member proof is unsupported by this adapter
+ok 100 - Q2 whole manifest addition/removal abstains: absent-member proof is unsupported by this adapter
+  ---
+  duration_ms: 107.2685
+  type: 'test'
+  ...
+# Subtest: Q2 punctuation cannot impersonate nested pointers
+ok 101 - Q2 punctuation cannot impersonate nested pointers
+  ---
+  duration_ms: 86.415792
+  type: 'test'
+  ...
+# Subtest: Q2 conditional export property order is an observable retained change
+ok 102 - Q2 conditional export property order is an observable retained change
+  ---
+  duration_ms: 96.85575
+  type: 'test'
+  ...
+# Subtest: Q2 forged property order in the delta cannot change the cited source value
+ok 103 - Q2 forged property order in the delta cannot change the cited source value
+  ---
+  duration_ms: 166.886667
+  type: 'test'
+  ...
+# Subtest: Q3 formatting/CRLF relationships retain full raw residual and do not upgrade correspondence
+ok 104 - Q3 formatting/CRLF relationships retain full raw residual and do not upgrade correspondence
+  ---
+  duration_ms: 205.181084
+  type: 'test'
+  ...
+# Subtest: Q3 source-map cross-side matches explain only retained source text, not emitted bytes
+ok 105 - Q3 source-map cross-side matches explain only retained source text, not emitted bytes
+  ---
+  duration_ms: 240.785959
+  type: 'test'
+  ...
+# Subtest: Q3 misleading generated names/build clues and unknown absence stay unresolved
+ok 106 - Q3 misleading generated names/build clues and unknown absence stay unresolved
+  ---
+  duration_ms: 94.372833
+  type: 'test'
+  ...
+# Subtest: Q3 absent optional source digest cannot establish non-acquisition
+ok 107 - Q3 absent optional source digest cannot establish non-acquisition
+  ---
+  duration_ms: 33.079375
+  type: 'test'
+  ...
+# Subtest: host selector defaults to the reviewed identifier and explicit off is unavailable
+ok 108 - host selector defaults to the reviewed identifier and explicit off is unavailable
+  ---
+  duration_ms: 32.379833
+  type: 'test'
+  ...
+# Subtest: unknown host selector rejects before acquisition or store creation
+ok 109 - unknown host selector rejects before acquisition or store creation
+  ---
+  duration_ms: 1.167625
+  type: 'test'
+  ...
+# Subtest: explicit trusted injection takes precedence over an unknown host selector
+ok 110 - explicit trusted injection takes precedence over an unknown host selector
+  ---
+  duration_ms: 0.683375
+  type: 'test'
+  ...
+# Subtest: configured module has bounded bridge and identities without creating evidence state
+ok 111 - configured module has bounded bridge and identities without creating evidence state
+  ---
+  duration_ms: 15.007459
+  type: 'test'
+  ...
+# Subtest: known-answer member hashes, original names, binary bytes and modes are retained
+ok 112 - known-answer member hashes, original names, binary bytes and modes are retained
+  ---
+  duration_ms: 1694.09675
+  type: 'test'
+  ...
+# Subtest: refuses traversal without materializing archive-controlled paths
+ok 113 - refuses traversal without materializing archive-controlled paths
+  ---
+  duration_ms: 1912.950916
+  type: 'test'
+  ...
+# Subtest: refuses absolute without materializing archive-controlled paths
+ok 114 - refuses absolute without materializing archive-controlled paths
+  ---
+  duration_ms: 935.943583
+  type: 'test'
+  ...
+# Subtest: refuses windows drive without materializing archive-controlled paths
+ok 115 - refuses windows drive without materializing archive-controlled paths
+  ---
+  duration_ms: 2053.446
+  type: 'test'
+  ...
+# Subtest: refuses backslash without materializing archive-controlled paths
+ok 116 - refuses backslash without materializing archive-controlled paths
+  ---
+  duration_ms: 1943.909334
+  type: 'test'
+  ...
+# Subtest: refuses empty component without materializing archive-controlled paths
+ok 117 - refuses empty component without materializing archive-controlled paths
+  ---
+  duration_ms: 2185.36525
+  type: 'test'
+  ...
+# Subtest: refuses dot component without materializing archive-controlled paths
+ok 118 - refuses dot component without materializing archive-controlled paths
+  ---
+  duration_ms: 1060.918958
+  type: 'test'
+  ...
+# Subtest: refuses terminal name without materializing archive-controlled paths
+ok 119 - refuses terminal name without materializing archive-controlled paths
+  ---
+  duration_ms: 1938.144917
+  type: 'test'
+  ...
+# Subtest: refuses windows ambiguous without materializing archive-controlled paths
+ok 120 - refuses windows ambiguous without materializing archive-controlled paths
+  ---
+  duration_ms: 1018.433208
+  type: 'test'
+  ...
+# Subtest: refuses trailing dot without materializing archive-controlled paths
+ok 121 - refuses trailing dot without materializing archive-controlled paths
+  ---
+  duration_ms: 1035.781833
+  type: 'test'
+  ...
+# Subtest: refuses duplicate without materializing archive-controlled paths
+ok 122 - refuses duplicate without materializing archive-controlled paths
+  ---
+  duration_ms: 4536.120208
+  type: 'test'
+  ...
+# Subtest: refuses case collision without materializing archive-controlled paths
+ok 123 - refuses case collision without materializing archive-controlled paths
+  ---
+  duration_ms: 5997.405958
+  type: 'test'
+  ...
+# Subtest: refuses unicode collision without materializing archive-controlled paths
+ok 124 - refuses unicode collision without materializing archive-controlled paths
+  ---
+  duration_ms: 6366.881791
+  type: 'test'
+  ...
+# Subtest: refuses file parent without materializing archive-controlled paths
+ok 125 - refuses file parent without materializing archive-controlled paths
+  ---
+  duration_ms: 8687.359041
+  type: 'test'
+  ...
+# Subtest: refuses directory parent case without materializing archive-controlled paths
+ok 126 - refuses directory parent case without materializing archive-controlled paths
+  ---
+  duration_ms: 3381.144083
+  type: 'test'
+  ...
+# Subtest: refuses implicit directory case without materializing archive-controlled paths
+ok 127 - refuses implicit directory case without materializing archive-controlled paths
+  ---
+  duration_ms: 4655.716875
+  type: 'test'
+  ...
+# Subtest: refuses symlink without materializing archive-controlled paths
+ok 128 - refuses symlink without materializing archive-controlled paths
+  ---
+  duration_ms: 3149.043541
+  type: 'test'
+  ...
+# Subtest: refuses hardlink without materializing archive-controlled paths
+ok 129 - refuses hardlink without materializing archive-controlled paths
+  ---
+  duration_ms: 4040.400875
+  type: 'test'
+  ...
+# Subtest: refuses fifo without materializing archive-controlled paths
+ok 130 - refuses fifo without materializing archive-controlled paths
+  ---
+  duration_ms: 3210.069708
+  type: 'test'
+  ...
+# Subtest: refuses device without materializing archive-controlled paths
+ok 131 - refuses device without materializing archive-controlled paths
+  ---
+  duration_ms: 4561.148542
+  type: 'test'
+  ...
+# Subtest: cross-UID parser output stays host-readable inside a private job root
+ok 132 - cross-UID parser output stays host-readable inside a private job root
+  ---
+  duration_ms: 4565.186042
+  type: 'test'
+  ...
+# Subtest: actual expansion, member, path/depth and entry limits preserve known/unknown coverage
+ok 133 - actual expansion, member, path/depth and entry limits preserve known/unknown coverage
+  ---
+  duration_ms: 20654.68275
+  type: 'test'
+  ...
+# Subtest: truncated/corrupt archives and hidden trailing archives fail rather than clean-empty
+ok 134 - truncated/corrupt archives and hidden trailing archives fail rather than clean-empty
+  ---
+  duration_ms: 22956.278084
+  type: 'test'
+  ...
+# Subtest: archive-byte variation changes identities while all raw members stay equal
+ok 135 - archive-byte variation changes identities while all raw members stay equal
+  ---
+  duration_ms: 9533.98725
+  type: 'test'
+  ...
+# Subtest: explicit raw producer mode computes additions/removals/modifications and exact manifest spans with unavailable analysis
+ok 136 - explicit raw producer mode computes additions/removals/modifications and exact manifest spans with unavailable analysis
+  ---
+  duration_ms: 8190.495791
+  type: 'test'
+  ...
+# Subtest: replay preserves deterministic IDs; full run bytes and observation references remain distinct
+ok 137 - replay preserves deterministic IDs; full run bytes and observation references remain distinct
+  ---
+  duration_ms: 13415.497459
+  type: 'test'
+  ...
+# Subtest: missing/wrong subtree, partial inventory and binary differences remain visible
+ok 138 - missing/wrong subtree, partial inventory and binary differences remain visible
+  ---
+  duration_ms: 24427.348709
+  type: 'test'
+  ...
+# Subtest: requested policy remains indeterminate; exit precedence retains simultaneous conditions
+ok 139 - requested policy remains indeterminate; exit precedence retains simultaneous conditions
+  ---
+  duration_ms: 11114.540458
+  type: 'test'
+  ...
+# Subtest: strict manifest scanner rejects duplicate/deep malformed JSON, preserves unicode byte spans
+ok 140 - strict manifest scanner rejects duplicate/deep malformed JSON, preserves unicode byte spans
+  ---
+  duration_ms: 6.144833
+  type: 'test'
+  ...
+# Subtest: CAS rejects escaping refs, corrupt data, symlinks, cap/reserve and conflicting immutable writes
+ok 141 - CAS rejects escaping refs, corrupt data, symlinks, cap/reserve and conflicting immutable writes
+  ---
+  duration_ms: 107.366583
+  type: 'test'
+  ...
+# Subtest: interrupted publication leaves old blobs readable and incomplete new records unreferenced
+ok 142 - interrupted publication leaves old blobs readable and incomplete new records unreferenced
+  ---
+  duration_ms: 41.2525
+  type: 'test'
+  ...
+# Subtest: cancellation/timeout kills the whole parser job and cleans only its private scratch
+ok 143 - cancellation/timeout kills the whole parser job and cleans only its private scratch
+  ---
+  duration_ms: 1923.016833
+  type: 'test'
+  ...
+# Subtest: network rejects private/reserved/mapped addresses, credentials, redirects outside allowlist and mutable commits
+ok 144 - network rejects private/reserved/mapped addresses, credentials, redirects outside allowlist and mutable commits
+  ---
+  duration_ms: 18.667083
+  type: 'test'
+  ...
+# Subtest: CLI is redirected/JSON-safe, inspect resolves exact retained evidence; terminal controls remain inert
+ok 145 - CLI is redirected/JSON-safe, inspect resolves exact retained evidence; terminal controls remain inert
+  ---
+  duration_ms: 27753.821584
+  type: 'test'
+  ...
+# Subtest: manifest parser omissions and metadata-only executable modes stay explicit
+ok 146 - manifest parser omissions and metadata-only executable modes stay explicit
+  ---
+  duration_ms: 8570.168958
+  type: 'test'
+  ...
+# Subtest: report persistence failure returns usable incomplete JSON while retaining raw evidence
+ok 147 - report persistence failure returns usable incomplete JSON while retaining raw evidence
+  ---
+  duration_ms: 8648.306125
+  type: 'test'
+  ...
+# Subtest: parser backpressure and queued cancellation do not start extra work
+ok 148 - parser backpressure and queued cancellation do not start extra work
+  ---
+  duration_ms: 2192.469416
+  type: 'test'
+  ...
+# Subtest: opaque archive metadata never permits an invalid UTF-8 pathname
+ok 149 - opaque archive metadata never permits an invalid UTF-8 pathname
+  ---
+  duration_ms: 2674.696584
+  type: 'test'
+  ...
+# Subtest: a supplied M0-style skipped heuristics stage cannot earn complete analysis
+ok 150 - a supplied M0-style skipped heuristics stage cannot earn complete analysis
+  ---
+  duration_ms: 22191.687458
+  type: 'test'
+  ...
+# Subtest: CAS and publication snapshot caller-owned bytes before asynchronous filesystem work
+ok 151 - CAS and publication snapshot caller-owned bytes before asynchronous filesystem work
+  ---
+  duration_ms: 48.917583
+  type: 'test'
+  ...
+# Subtest: report identity and invocation cannot drift while validation/persistence awaits
+ok 152 - report identity and invocation cannot drift while validation/persistence awaits
+  ---
+  duration_ms: 19179.4735
+  type: 'test'
+  ...
+# Subtest: exact npm coordinates include scoped names and reject ranges, aliases, URLs and ambiguous spelling
+ok 153 - exact npm coordinates include scoped names and reject ranges, aliases, URLs and ambiguous spelling
+  ---
+  duration_ms: 1.063333
+  type: 'test'
+  ...
+# Subtest: registry data URLs reject credentials, queries, IPs, private endpoints and other allowlisted services
+ok 154 - registry data URLs reject credentials, queries, IPs, private endpoints and other allowlisted services
+  ---
+  duration_ms: 3.942125
+  type: 'test'
+  ...
+# Subtest: known-answer SRI binds the actual archive bytes and records independent SHA-256 and SHA-512
+ok 155 - known-answer SRI binds the actual archive bytes and records independent SHA-256 and SHA-512
+  ---
+  duration_ms: 1.230583
+  type: 'test'
+  ...
+# Subtest: SRI selects strongest supported algorithm and never downgrades malformed or unsupported tokens
+ok 156 - SRI selects strongest supported algorithm and never downgrades malformed or unsupported tokens
+  ---
+  duration_ms: 0.440166
+  type: 'test'
+  ...
+# Subtest: untrusted metadata rejects duplicate keys, invalid UTF-8 and structural limits
+ok 157 - untrusted metadata rejects duplicate keys, invalid UTF-8 and structural limits
+  ---
+  duration_ms: 0.374958
+  type: 'test'
+  ...
+# Subtest: GitHub repository normalization is inert and preserves validated monorepo directories
+ok 158 - GitHub repository normalization is inert and preserves validated monorepo directories
+  ---
+  duration_ms: 0.4215
+  type: 'test'
+  ...
+# Subtest: matching metadata/manifest/lightweight tags remain publisher assertions with separate captured claims
+ok 159 - matching metadata/manifest/lightweight tags remain publisher assertions with separate captured claims
+  ---
+  duration_ms: 1.083958
+  type: 'test'
+  ...
+# Subtest: annotated tags are peeled to a full commit with bounded requests; tag equality never verifies provenance
+ok 160 - annotated tags are peeled to a full commit with bounded requests; tag equality never verifies provenance
+  ---
+  duration_ms: 0.884167
+  type: 'test'
+  ...
+# Subtest: moved/wrong version tag retains both full commits and forces ambiguity
+ok 161 - moved/wrong version tag retains both full commits and forces ambiguity
+  ---
+  duration_ms: 0.530291
+  type: 'test'
+  ...
+# Subtest: wrong repository/commit/subtree override is retained beside publisher claims, never silently superseding them
+ok 162 - wrong repository/commit/subtree override is retained beside publisher claims, never silently superseding them
+  ---
+  duration_ms: 0.670041
+  type: 'test'
+  ...
+# Subtest: missing tags/source remain explicit and no default-branch URL is requested
+ok 163 - missing tags/source remain explicit and no default-branch URL is requested
+  ---
+  duration_ms: 0.193041
+  type: 'test'
+  ...
+# Subtest: manifest directory can fill omitted registry directory without treating omission as an explicit root
+ok 164 - manifest directory can fill omitted registry directory without treating omission as an explicit root
+  ---
+  duration_ms: 0.093959
+  type: 'test'
+  ...
+# Subtest: tag discovery cancellation is bounded and preserves the full registry candidate
+ok 165 - tag discovery cancellation is bounded and preserves the full registry candidate
+  ---
+  duration_ms: 0.065459
+  type: 'test'
+  ...
+# Subtest: unavailable verifier treats invalid-signature material as inert unverified bytes (adapter failure fixture)
+ok 166 - unavailable verifier treats invalid-signature material as inert unverified bytes (adapter failure fixture)
+  ---
+  duration_ms: 0.182875
+  type: 'test'
+  ...
+# Subtest: unavailable verifier treats publish-only material as inert unverified bytes (adapter failure fixture)
+ok 167 - unavailable verifier treats publish-only material as inert unverified bytes (adapter failure fixture)
+  ---
+  duration_ms: 0.048417
+  type: 'test'
+  ...
+# Subtest: unavailable verifier treats wrong-subject material as inert unverified bytes (adapter failure fixture)
+ok 168 - unavailable verifier treats wrong-subject material as inert unverified bytes (adapter failure fixture)
+  ---
+  duration_ms: 0.459375
+  type: 'test'
+  ...
+# Subtest: unavailable verifier treats unexpected-signer material as inert unverified bytes (adapter failure fixture)
+ok 169 - unavailable verifier treats unexpected-signer material as inert unverified bytes (adapter failure fixture)
+  ---
+  duration_ms: 0.061708
+  type: 'test'
+  ...
+# Subtest: unavailable verifier treats policy-rejected material as inert unverified bytes (adapter failure fixture)
+ok 170 - unavailable verifier treats policy-rejected material as inert unverified bytes (adapter failure fixture)
+  ---
+  duration_ms: 0.047334
+  type: 'test'
+  ...
+# Subtest: unavailable verifier treats forged-verified material as inert unverified bytes (adapter failure fixture)
+ok 171 - unavailable verifier treats forged-verified material as inert unverified bytes (adapter failure fixture)
+  ---
+  duration_ms: 0.043208
+  type: 'test'
+  ...
+# Subtest: unadvertised provenance is not a cryptographically established absence; invalid URL and offline failure remain not checked
+ok 172 - unadvertised provenance is not a cryptographically established absence; invalid URL and offline failure remain not checked
+  ---
+  duration_ms: 0.175125
+  type: 'test'
+  ...
+# Subtest: explicit raw scoped npm fixture traverses actual safe producer/store/validator and cannot imply safety
+ok 173 - explicit raw scoped npm fixture traverses actual safe producer/store/validator and cannot imply safety
+  ---
+  duration_ms: 10636.175292
+  type: 'test'
+  ...
+# Subtest: advertised archive mismatch retains failed acquisition bytes, suppresses comparison and never fetches source
+ok 174 - advertised archive mismatch retains failed acquisition bytes, suppresses comparison and never fetches source
+  ---
+  duration_ms: 9434.313334
+  type: 'test'
+  ...
+# Subtest: wrong source manifest subject cannot turn matching version metadata into source correspondence
+ok 175 - wrong source manifest subject cannot turn matching version metadata into source correspondence
+  ---
+  duration_ms: 7453.7695
+  type: 'test'
+  ...
+# Subtest: complete inventories with ambiguous version labels keep one-sided records unresolved with the actual reason
+ok 176 - complete inventories with ambiguous version labels keep one-sided records unresolved with the actual reason
+  ---
+  duration_ms: 7612.353167
+  type: 'test'
+  ...
+# Subtest: wrong or missing subtree retains broad build context and unknown correspondence
+ok 177 - wrong or missing subtree retains broad build context and unknown correspondence
+  ---
+  duration_ms: 5802.137541
+  type: 'test'
+  ...
+# Subtest: offline source failure yields valid retained report with unknown absence and no clean result
+ok 178 - offline source failure yields valid retained report with unknown absence and no clean result
+  ---
+  duration_ms: 3191.909125
+  type: 'test'
+  ...
+# Subtest: conflicting tag candidates cannot earn exact correspondence even if selected member bytes match
+ok 179 - conflicting tag candidates cannot earn exact correspondence even if selected member bytes match
+  ---
+  duration_ms: 4480.45275
+  type: 'test'
+  ...
+# Subtest: submodule/LFS archive gaps stay explicit without fetching external objects: root/.gitmodules
+ok 180 - submodule/LFS archive gaps stay explicit without fetching external objects: root/.gitmodules
+  ---
+  duration_ms: 5143.508459
+  type: 'test'
+  ...
+# Subtest: submodule/LFS archive gaps stay explicit without fetching external objects: root/asset
+ok 181 - submodule/LFS archive gaps stay explicit without fetching external objects: root/asset
+  ---
+  duration_ms: 6325.952959
+  type: 'test'
+  ...
+# Subtest: retained exact metadata and source context bind report identity; later metadata changes create new evaluation
+ok 182 - retained exact metadata and source context bind report identity; later metadata changes create new evaluation
+  ---
+  duration_ms: 34207.264833
+  type: 'test'
+  ...
+# Subtest: CLI rejects npm aliases, mixed local/npm inputs and source replay without network
+ok 183 - CLI rejects npm aliases, mixed local/npm inputs and source replay without network
+  ---
+  duration_ms: 1108.87275
+  type: 'test'
+  ...
+# Subtest: valid monorepo subtree retains package evidence and accounts for broader build context
+ok 184 - valid monorepo subtree retains package evidence and accounts for broader build context
+  ---
+  duration_ms: 18997.20325
+  type: 'test'
+  ...
+# Subtest: npm metadata subject mismatch preserves raw bytes and failure receipt without creating a misleading artifact
+ok 185 - npm metadata subject mismatch preserves raw bytes and failure receipt without creating a misleading artifact
+  ---
+  duration_ms: 628.474667
+  type: 'test'
+  ...
+# Subtest: unsupported source entry diagnostic is retained inertly with unknown remaining scope
+ok 186 - unsupported source entry diagnostic is retained inertly with unknown remaining scope
+  ---
+  duration_ms: 14946.946459
+  type: 'test'
+  ...
+# Subtest: missing npm SRI stays materially incomplete while raw observations remain available
+ok 187 - missing npm SRI stays materially incomplete while raw observations remain available
+  ---
+  duration_ms: 11831.647833
+  type: 'test'
+  ...
+# Subtest: observed API rate limit retains retry metadata and stops remaining tag requests
+ok 188 - observed API rate limit retains retry metadata and stops remaining tag requests
+  ---
+  duration_ms: 2.7525
+  type: 'test'
+  ...
+# Subtest: fresh observation timestamps preserve report/change IDs and deterministic equivalence while full observations differ
+ok 189 - fresh observation timestamps preserve report/change IDs and deterministic equivalence while full observations differ
+  ---
+  duration_ms: 22093.78175
+  type: 'test'
+  ...
+# Subtest: bounded batch preserves immutable prefix and releases only its own writer lock on overrun
+ok 190 - bounded batch preserves immutable prefix and releases only its own writer lock on overrun
+  ---
+  duration_ms: 985.997167
+  type: 'test'
+  ...
+# Subtest: batch reservation enforces store cap before writes and cannot interleave a competing writer
+ok 191 - batch reservation enforces store cap before writes and cannot interleave a competing writer
+  ---
+  duration_ms: 185.366709
+  type: 'test'
+  ...
+# Subtest: batch checks prior digest bytes rather than silently replacing a corrupted CAS object
+ok 192 - batch checks prior digest bytes rather than silently replacing a corrupted CAS object
+  ---
+  duration_ms: 31.36825
+  type: 'test'
+  ...
+# Subtest: real parser import cancellation retains its admitted prefix and settles both locks
+ok 193 - real parser import cancellation retains its admitted prefix and settles both locks
+  ---
+  duration_ms: 3705.007917
+  type: 'test'
+  ...
+# Subtest: actual investigation cancellation before comparison never earns complete coverage or invents assessed paths
+ok 194 - actual investigation cancellation before comparison never earns complete coverage or invents assessed paths
+  ---
+  duration_ms: 14504.589792
+  type: 'test'
+  ...
+# Subtest: unconfirmed parser settlement surfaces its original error and preserves recovery evidence
+ok 195 - unconfirmed parser settlement surfaces its original error and preserves recovery evidence
+  ---
+  duration_ms: 526.939833
+  type: 'test'
+  ...
+# Intentionally retained simulated unsettled job, spool and locks: /private/var/folders/nr/h22p8bd51v16nv8j2h0n3f100000gp/T/heurisko-unsettled-parser-NRy8NR
+# Subtest: verifier binds acknowledged creation to immutable ID for every subsequent control
+ok 196 - verifier binds acknowledged creation to immutable ID for every subsequent control
+  ---
+  duration_ms: 3079.365
+  type: 'test'
+  ...
+# Subtest: verifier confirms exact absence without depending on missing-object wording
+ok 197 - verifier confirms exact absence without depending on missing-object wording
+  ---
+  duration_ms: 1040.29025
+  type: 'test'
+  ...
+# Subtest: verifier absence remains uncertain after query-error
+ok 198 - verifier absence remains uncertain after query-error
+  ---
+  duration_ms: 1211.004459
+  type: 'test'
+  ...
+# Subtest: verifier absence remains uncertain after still-present
+ok 199 - verifier absence remains uncertain after still-present
+  ---
+  duration_ms: 1029.218625
+  type: 'test'
+  ...
+# Subtest: verifier absence remains uncertain after unexpected-query
+ok 200 - verifier absence remains uncertain after unexpected-query
+  ---
+  duration_ms: 1004.154958
+  type: 'test'
+  ...
+# Subtest: verifier lost create acknowledgement plus absent lookup never proves cleanup
+ok 201 - verifier lost create acknowledgement plus absent lookup never proves cleanup
+  ---
+  duration_ms: 633.274792
+  type: 'test'
+  ...
+# Subtest: verifier cancellation during create awaits bounded acknowledgement and never starts
+ok 202 - verifier cancellation during create awaits bounded acknowledgement and never starts
+  ---
+  duration_ms: 932.796458
+  type: 'test'
+  ...
+# Subtest: verifier retains failed removal even when exact final absence settles cleanup
+ok 203 - verifier retains failed removal even when exact final absence settles cleanup
+  ---
+  duration_ms: 852.535
+  type: 'test'
+  ...
+# Subtest: verifier retains failed inspection even when exact final absence settles cleanup
+ok 204 - verifier retains failed inspection even when exact final absence settles cleanup
+  ---
+  duration_ms: 941.53125
+  type: 'test'
+  ...
+# Subtest: verifier rejects inspected object identity mismatch: wrong-id
+ok 205 - verifier rejects inspected object identity mismatch: wrong-id
+  ---
+  duration_ms: 786.096834
+  type: 'test'
+  ...
+# Subtest: verifier rejects inspected object identity mismatch: wrong-name
+ok 206 - verifier rejects inspected object identity mismatch: wrong-name
+  ---
+  duration_ms: 704.120625
+  type: 'test'
+  ...
+1..206
+# tests 206
+# suites 0
+# pass 206
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 535018.03225

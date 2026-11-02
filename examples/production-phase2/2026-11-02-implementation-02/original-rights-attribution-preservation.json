@@ -1,0 +1,13 @@
+{
+  "scope": "Every initial PDF/DOCX and original license/notice/contribution file; original complete THIRD_PARTY_NOTICES prefix.",
+  "files": [
+    "docs/Governing/Hacktoberfest HackDay Sonipat.pdf",
+    "NOTICE",
+    "LICENSE",
+    "docs/Governing/Hacktoberfest 2026 (1).docx"
+  ],
+  "changedOrMissing": [],
+  "thirdPartyNoticeOriginalPrefixBytes": 268987,
+  "thirdPartyNoticeOriginalSha256": "ef794fb74d3c264e6b4eef8f6592b85be81fb299124e462ce7a0f3f0e392f586",
+  "passed": true
+}

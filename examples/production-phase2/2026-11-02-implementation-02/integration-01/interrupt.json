@@ -1,0 +1,9 @@
+{
+  "status": "INTERRUPTED_NOT_PASSED",
+  "process": 36412,
+  "observedElapsed": "9m03s",
+  "retainedBlobCountBeforeStop": 3626,
+  "reason": "Repeated whole-store traversal for every imported member causes excessive bounded source import work; no per-record import cancellation checkpoint.",
+  "action": "SIGINT exact task-created process; preserve every original store/scratch/lock. No inferred release or cleanup.",
+  "resolution": "Batch reservation under the existing writer lock, per-record cancellation, meaningful capacity/lock/corruption tests, fresh full parser/core and integration validation."
+}

@@ -1,0 +1,10 @@
+{
+  "status": "rejected",
+  "reason": "source changed between initial hashes and archive add; archive self-verification failed as designed",
+  "mismatchedArchiveMembers": [
+    "scripts/check-phase1-secrets.mjs",
+    "scripts/tests/credential-scan.test.mjs"
+  ],
+  "accepted": false,
+  "originalsPreserved": true
+}

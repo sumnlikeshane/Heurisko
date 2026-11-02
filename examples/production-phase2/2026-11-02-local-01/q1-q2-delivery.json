@@ -1,0 +1,77 @@
+[
+  {
+    "id": "mutation-lifecycle-remove",
+    "originalReportSha256": "sha256:282f4cb397a34ad9d902dec94a5efab9c705ff1a1173a91ea05da09ba4548faf",
+    "module": {
+      "moduleId": "@heurisko/intelligence-reviewed",
+      "moduleVersion": "0.2.0-p2-static-v1",
+      "implementationSha256": "sha256:4fc530fead6a5a9eb35e3a589993576d71ec3131d491cf08859a0c5fef2391bb",
+      "configurationSha256": "sha256:707738a368fd74cf1f99c93b83bccb2811f318bf534d0ca261364c373ff4c271"
+    },
+    "finding": {
+      "findingId": "find_heurisko_manifest_lifecycle-script-change_chg_fbef90a93f3162167b5e5712_a274e296",
+      "ruleVersion": "0.2.0-p2-static-v1",
+      "evidenceIds": [
+        "ev_a274e296ea0ef056004ccb4c"
+      ],
+      "ruleId": "heurisko.manifest.lifecycle-script-change",
+      "title": "Package lifecycle script entry changed",
+      "observation": "Manifest pointer /scripts/postinstall is removed from the artifact. Source: \"HEURISKO_INERT_TEST_ONLY\"; artifact: absent (validated in the retained manifest).",
+      "whyItMatters": "A removed lifecycle entry is not an added installation action; review any other retained changes independently.",
+      "severity": "informational",
+      "reviewPriority": "low",
+      "evidenceConfidence": "high",
+      "explanationStrength": "exact",
+      "limitations": [
+        "Only retained metadata is compared; no referenced file, command, resolver, build or package was executed.",
+        "Direction and values are bound to the original manifest members and exact value byte spans."
+      ],
+      "nextActions": [
+        "Inspect both exact cited value spans and the retained raw file difference; do not install or execute the package."
+      ]
+    },
+    "aiState": {
+      "status": "disabled",
+      "validation": "not_run"
+    },
+    "scope": "New retained-bundle analysis under delivery runtime; original report bytes/meaning preserved."
+  },
+  {
+    "id": "mutation-entrypoint",
+    "originalReportSha256": "sha256:afbe28f6321b377e9a4ac8bc3d14dd15d735f8fdd2b90182d6805cab2190b13b",
+    "module": {
+      "moduleId": "@heurisko/intelligence-reviewed",
+      "moduleVersion": "0.2.0-p2-static-v1",
+      "implementationSha256": "sha256:4fc530fead6a5a9eb35e3a589993576d71ec3131d491cf08859a0c5fef2391bb",
+      "configurationSha256": "sha256:707738a368fd74cf1f99c93b83bccb2811f318bf534d0ca261364c373ff4c271"
+    },
+    "finding": {
+      "findingId": "find_heurisko_manifest_entrypoint-change_chg_a06e7e304e341caf54d8ccd2_718d5e76",
+      "ruleVersion": "0.2.0-p2-static-v1",
+      "evidenceIds": [
+        "ev_718d5e768fef473afb6c2f38"
+      ],
+      "ruleId": "heurisko.manifest.entrypoint-change",
+      "title": "Package entrypoint metadata changed",
+      "observation": "Manifest pointer /main is changed from source to artifact. Source: \"index.js\"; artifact: \"alternate.js\".",
+      "whyItMatters": "Entrypoint metadata can change consumer selection; this static observation does not establish resolution, execution, safety or intent.",
+      "severity": "low",
+      "reviewPriority": "low",
+      "evidenceConfidence": "high",
+      "explanationStrength": "exact",
+      "limitations": [
+        "Only retained metadata is compared; no referenced file, command, resolver, build or package was executed.",
+        "Direction and values are bound to the original manifest members and exact value byte spans.",
+        "Entrypoint objects/arrays/conditions are inert metadata; Node resolution, target-member presence and executable behavior are not established."
+      ],
+      "nextActions": [
+        "Inspect both exact cited value spans and the retained raw file difference; do not install or execute the package."
+      ]
+    },
+    "aiState": {
+      "status": "disabled",
+      "validation": "not_run"
+    },
+    "scope": "New retained-bundle analysis under delivery runtime; original report bytes/meaning preserved."
+  }
+]

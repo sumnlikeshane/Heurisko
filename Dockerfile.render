@@ -9,6 +9,7 @@ RUN ln -s ../lib/node_modules/npm/bin/npm-cli.js /usr/local/bin/npm \
 WORKDIR /app
 COPY package.json pnpm-lock.yaml pnpm-workspace.yaml requirements-contracts.txt ./
 COPY packages ./packages
+COPY scripts/build-verifier-worker.mjs ./scripts/build-verifier-worker.mjs
 COPY integration/part4 ./integration/part4
 COPY apps/web ./apps/web
 COPY README.md LICENSE NOTICE THIRD_PARTY_NOTICES.txt ./

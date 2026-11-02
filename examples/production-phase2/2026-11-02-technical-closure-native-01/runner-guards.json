@@ -1,0 +1,15 @@
+{
+  "capturedAt": "2026-11-02T14:17:12.022962+00:00",
+  "command": [
+    ".venv/bin/python",
+    "scripts/tests/test_closure_native.py"
+  ],
+  "exit": 0,
+  "checks": 3,
+  "sourceSha256": {
+    "scripts/run-closure-validation.py": "b0e2c643166cd0987b22a75a798ccb86caa6ff83fa05d830378e9162a4ea6595",
+    "scripts/tests/test_closure_native.py": "e6d744ad483bb880d6f94f61ac88751bc83da4ad5dd10793339cb509e72a75e5",
+    ".github/workflows/closure-native.yml": "37f4795f60d945df136bea3e6e36025ca7d9eb91b5a3730c531a9a045d2a5a51"
+  },
+  "scope": "Native admission logic only. No native host, Docker execution, full-suite or CI pass inferred."
+}

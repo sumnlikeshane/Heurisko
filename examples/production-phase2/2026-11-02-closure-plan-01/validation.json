@@ -1,0 +1,84 @@
+{
+  "recordedAt": "2026-11-02T11:36:44.309684+00:00",
+  "scope": "Implementation plan and owner acceptance/ownership amendments only; runtime/test/scanner implementation unchanged.",
+  "plan": "PRODUCTION_MASTER_ROADMAP.md#remaining-closure-implementation-plan",
+  "ownerAmendment": "docs/Approved Decision Register.md#remaining-closure-ownership-and-acceptance-amendment--2-november-2026",
+  "source": {
+    "head": "7eee564818c63b0edbe47e58d7c044136a4470c0",
+    "branch": "foundation/phase1-completion-20261101",
+    "documents": {
+      "PRODUCTION_MASTER_ROADMAP.md": {
+        "beforeSha256": "fb4c12fe3eeb5454e4326f9a818faf99dc88aa05aa4f258321440f6bb5238f58",
+        "afterSha256": "9299f011aad6748b7cb688fe0e405b7ac19c5cecc58e824046c0980e8845ac40"
+      },
+      "docs/Approved Decision Register.md": {
+        "beforeSha256": "40c8f04a853bcddd2ad322dadb3a758fd3d81a8c42a13e2a94b1967ed4ba4de7",
+        "afterSha256": "57b1873d7273e29fbeb238d1e457ac40489ce227d38f4ce77e96fc6f5f762ece"
+      },
+      "docs/Production Phase 1 Implementation Plan.md": {
+        "beforeSha256": "4bc563e0fa27754e7b87f6ae6b0d6bc4767386e000d444ad080ece8150d1ade8",
+        "afterSha256": "37217d4aa6f12d2e99517aecfcbe9d9553480e81d0226428952f6e770f532da5"
+      },
+      "docs/Phase 2 Testing Guide.md": {
+        "beforeSha256": "6d8210d7240894ba6b018eeeb57d4906fd7948bc983c96c625f0d46adf55ccc5",
+        "afterSha256": "5d8b8a046755bac4967d453e717d22cf1795a4c194803b7341a2ec0472661b63"
+      },
+      "apps/web/README.md": {
+        "beforeSha256": "276cbcc851c661b49f87a3e963d2e6123be339403675889b899c742ee5fc876f",
+        "afterSha256": "abe2c3c387bf363d57f6247c688ba189946738e42479d137612edd0b7ff22ca6"
+      },
+      "docs/README.md": {
+        "beforeSha256": "387957d2e014cfebf62902c6b9a5bbdcb887bc55fb0686b5a0994f30f72f3693",
+        "afterSha256": "b066a2551268466a8ca894dabf0151a075e8e88571682585c86be486d35f6aec"
+      },
+      "docs/production-phase1/Document Disposition.md": {
+        "beforeSha256": "db7e5d841bac14d0a689b97b172db812d749f0016b278a43a564a4548b2db959",
+        "afterSha256": "eba7f92fb0a5775b7075de86190f592102624f4709e1718282868eb2caf412c3"
+      },
+      "docs/CLI Reference.md": {
+        "beforeSha256": "8a0a2ef4cf2cde9707cbd9f944a7e24065e0fc04d0e67405230b9a9ce7fa037d",
+        "afterSha256": "10047bcd1ae9fd8cd5c70dd115ef01f830c65fc7c13d3491baa47a327bdebbc1"
+      }
+    }
+  },
+  "acceptance": {
+    "ownerOriginalMaterialPermission": "Recorded, including Ardor/Ardor Light where present; no repeated owner-permission gate.",
+    "currentBrowserAccessibility": "Closed by owner acceptance; unperformed observations are not test passes.",
+    "implementationResponsibility": "Agent owns Linux validation, controlled signed fixtures, selected-source notices/exclusions and scanner repair.",
+    "productionTrustUnchanged": true
+  },
+  "plannedNotExecuted": [
+    "native Linux amd64 new-worker matrix",
+    "controlled signed fixture factory and new conformance cases",
+    "bounded streaming scanner repair and whole-candidate rerun",
+    "complete supported selected-source artifact disposition"
+  ],
+  "checks": [
+    {
+      "command": "pnpm run check:docs",
+      "exitCode": 0,
+      "log": "docs.log",
+      "markdownFiles": 111,
+      "researchHashes": 15,
+      "knownOmittedLinkExceptions": 2
+    },
+    {
+      "command": "pnpm run build",
+      "exitCode": 0,
+      "log": "build.log"
+    },
+    {
+      "command": "pnpm --filter @heurisko/web test",
+      "exitCode": 0,
+      "log": "web.log",
+      "passedTests": 79
+    },
+    {
+      "command": "git diff --check",
+      "exitCode": 0
+    }
+  ],
+  "preservation": "preservation.json; 1,867 non-Markdown source/test/build files unchanged, original AGENTS/event files and index unchanged. Historical receipts not edited.",
+  "phaseStatus": "Phase 1/2 remain open for applicable planned technical/artifact work; current browser gate is closed. No phase advancement.",
+  "publicationActions": []
+}

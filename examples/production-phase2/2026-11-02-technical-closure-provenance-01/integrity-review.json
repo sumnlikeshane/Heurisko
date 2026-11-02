@@ -1,0 +1,24 @@
+{
+  "checkedAt": "2026-11-02T14:18:21.210947+00:00",
+  "head": "7eee564818c63b0edbe47e58d7c044136a4470c0",
+  "sourceIdentity": "Dirty existing Phase 2 workspace; exact relevant file SHA-256 below; this is not committed-head CI.",
+  "sourceSha256": {
+    "packages/core/runtime/verifier-worker.ts": "3255c2e4dc8ccff57dc96ec3392de58dd05b2b57c40ec3a73cc65aa53476450c",
+    "packages/core/runtime/trust-bootstrap.json": "73747011d0857ada15479a16c4cae0f3ed03aac698b523b97e1de314ac9d9ca8",
+    "packages/core/src/trust.ts": "94b518b31001d4f12be10f5309852f95b65e877f3ad9d670aa3999e731d00fc7",
+    "scripts/capture-real-provenance-formats.py": "1a82a1fe45265c0da2a7fcd3b159f96788d29356f599c1ce7cc10d95e5f53d4e"
+  },
+  "requests": 48,
+  "uniqueResolvedReleases": 47,
+  "capturedSets": 31,
+  "noAdvertisedAttestation": 17,
+  "unavailable": 0,
+  "logCounts": {
+    "dsse/0.0.1": 27,
+    "intoto/0.0.2": 35
+  },
+  "allKindVersionsMatchDecodedBody": true,
+  "eligibleGenuineDsse002Logs": 0,
+  "cryptographicValidation": "No eligible dsse/0.0.2 example discovered; no cryptographic validation of such an example can be run. Other formats are classified structurally, not claimed cryptographically verified by this search.",
+  "errors": []
+}

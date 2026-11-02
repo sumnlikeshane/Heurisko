@@ -1,0 +1,30 @@
+// Transparent implementing-agent development review, not blind/held-out evidence.
+import fs from 'node:fs/promises';import {resolve,join} from 'node:path';import {createHash} from 'node:crypto';import assert from 'node:assert/strict';
+import {ReportReader} from '../integration/part4/dist/report-reader.js';
+const [outArg]=process.argv.slice(2);if(!outArg)throw Error('NEW output directory required');const out=resolve(outArg);await fs.mkdir(out,{recursive:false});
+const base='examples/production-phase2/2026-11-02-local-01',cases=[];const sha=b=>createHash('sha256').update(b).digest('hex');
+for(const group of ['inert-conformance-delivery','development-observations-delivery'])for(const name of await fs.readdir(join(base,group))) {
+ const dir=join(base,group,name);let bytes;try{bytes=await fs.readFile(join(dir,'report.json'));}catch{continue;}
+ const reader=await ReportReader.openFile(join(dir,'report.json'),join(dir,'store')),r=reader.report,findings=[];
+ for(const f of r.analysis.findings) {
+  const reads=[];for(const id of f.evidenceIds){const e=reader.evidence(id),v=await reader.readEvidence(id);reads.push({id,kind:v.kind,reason:v.kind==='content'?null:v.reason,contentSha256:e?.contentSha256});}
+  const delta=f.evidenceIds.map(id=>reader.evidence(id)).find(e=>e?.kind==='manifest_delta');const valueReads=[];
+  if(delta)for(const side of ['source','artifact']){const v=await reader.readCitation(delta.evidenceId,side);valueReads.push({side,kind:v.kind,reason:v.kind==='content'?null:v.reason,...(v.kind==='content'?{recordedRange:v.recordedRange,utf8:Buffer.from(v.bytesBase64,'base64').toString('utf8')}:{})});}
+  // These are mechanical resolution checks. Entailment decisions below are
+  // explicitly the implementer's review of the bounded rule templates/evidence.
+  const resolved=reads.every(v=>v.kind==='content');
+  let review='unreviewed';
+  if(f.ruleId==='heurisko.manifest.lifecycle-script-change'||f.ruleId==='heurisko.manifest.entrypoint-change'||f.ruleId==='heurisko.manifest.script-change')review='Retained manifest delta plus exact source/artifact member windows support pointer, direction and quoted values. Rubric severity/priority is a policy judgment; no execution/intent inferred.';
+  else if(f.ruleId==='heurisko.source.candidate-scope')review='Candidate claims, captured archive/context digests, association and conflicts are report facts, explicitly qualified as comparison context. They do not authenticate publisher source binding.';
+  else if(f.ruleId==='heurisko.change.unresolved-difference')review='Recorded raw file relationship and equality are qualified as observations with undetermined severity/low priority; no behavior or missing maliciousness inference.';
+  else if(f.ruleId==='heurisko.change.static-relationship')review='Named bounded byte/value relationship only; full raw residuals and non-reproduction qualification remain. This is not an independent generated-build explanation label.';
+  if(f.observation.includes('remain unresolved'))review='The retained producer delta exists, but missing source-side content does not establish exact values/direction. The finding explicitly abstains with undetermined severity and low priority; the available artifact window is not substituted for the source.';
+  const supported=resolved&&review!=='unreviewed';
+  findings.push({findingId:f.findingId,ruleId:f.ruleId,observation:f.observation,severity:f.severity,priority:f.reviewPriority,citations:reads,memberWindows:valueReads,citationResolved:resolved,implementerSupportJudgment:supported,review,reviewAuthorship:'implementing-agent; outputs visible; not independent human evidence'});
+ }
+ const family=group==='inert-conformance-delivery'?'heurisko-original-constructions':name.replace(/-\d.*$/,'');
+ cases.push({id:group+'/'+name,family,split:'development',reportSha256:sha(bytes),artifactSha256:r.bundle.artifact.observedSha256,sourceArchiveDigests:r.bundle.sourceCandidates.map(c=>c.sourceSnapshotSha256??null),outcomes:r.outcomes,findings,sourceCandidates:r.bundle.sourceCandidates,explanationCount:findings.filter(f=>f.ruleId==='heurisko.change.static-relationship').length});
+}
+const counts={reports:cases.length,publicReleaseReports:cases.filter(c=>c.id.startsWith('development-observations')).length,constructionReports:cases.filter(c=>c.id.startsWith('inert-conformance')).length,provisionalProjectGroups:new Set(cases.map(c=>c.family)).size,uniqueArtifactSourcePairs:new Set(cases.map(c=>JSON.stringify([c.artifactSha256,c.sourceArchiveDigests]))).size,findings:cases.reduce((n,c)=>n+c.findings.length,0),unresolvedCitations:cases.flatMap(c=>c.findings).filter(f=>!f.citationResolved).length,unsupportedOrUnreviewedClaims:cases.flatMap(c=>c.findings).filter(f=>!f.implementerSupportJudgment).length,independentHumanReviews:0,heldOutReports:0};
+await fs.writeFile(join(out,'review.json'),JSON.stringify({authority:'Implementing-agent retrospective development review, owner-accepted limitations. Mechanical resolution is distinct from support judgment.',counts,cases,leakage:['All cases and rule templates were visible during development; tuning leakage cannot be excluded.','once and wrappy share a historical maintainer/context; minimist and concat-map share a maintainer. Project groups are not independent random families.','All inert variants share one construction family. Public repository claims are not independent source labels.'],uncertainty:['No independent/held-out, malware/population, causal behavior or universal generated-build accuracy claim.','This supports the existing narrow rule rubric; small event denominators and zero generated explanation coverage do not satisfy the original held-out statistical targets.','No human/AT review is manufactured by owner acceptance.'],errors:cases.flatMap(c=>c.findings.filter(f=>!f.implementerSupportJudgment).map(f=>({caseId:c.id,findingId:f.findingId,reason:!f.citationResolved?'citation unavailable':'unsupported review template'})))},null,2)+'\n',{flag:'wx'});
+console.log(JSON.stringify(counts));

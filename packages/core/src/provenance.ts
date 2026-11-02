@@ -15,5 +15,5 @@ export async function collectUnverifiedProvenance(advertised:unknown,signal?:Abo
     if(new URL(result.capture.finalUrl).hostname!=='registry.npmjs.org')throw new Error('REGISTRY_REDIRECT_REJECTED');
     material=result.bytes;capture=result.capture;
   }catch(error){reason=error instanceof Error&&/^[A-Z_]+$/.test(error.message)?error.message:'ATTESTATION_ACQUISITION_FAILED';}
-  return {state:{status:'not_checked',artifactBinding:'not_checked',evidenceIds:[],limitations:['No admitted operational verifier, trusted root or expected signer/issuer/source/builder policy. Retrieved material is unverified; no cryptographic or publish/build assertion is accepted.',reason]},record:{version:'heurisko-provenance-boundary-v1',verifier:null,trustRoot:null,expectedPolicy:null,advertised:advertised??null,reason,...(capture?{capture}:{})},...(material?{material}:{})};
+  return {state:{status:'not_checked',artifactBinding:'not_checked',evidenceIds:[],limitations:['This acquisition step retains unverified material only. Any host-configured cryptographic/policy decision is a separate retained observation; capture alone accepts no publish/build assertion.',reason]},record:{version:'heurisko-provenance-boundary-v1',verifier:null,trustRoot:null,expectedPolicy:null,advertised:advertised??null,reason,...(capture?{capture}:{})},...(material?{material}:{})};
 }

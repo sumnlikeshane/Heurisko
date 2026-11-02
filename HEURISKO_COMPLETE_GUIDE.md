@@ -6,7 +6,7 @@ Source baseline inspected: local `main` at `6985d3eeecdbdc33463458e8072a31e62e86
 
 **Public service:** [heurisko.onrender.com](https://heurisko.onrender.com/). The existing Chrome page showed the public report catalog and read-only banner. A fresh request to [the health endpoint](https://heurisko.onrender.com/healthz) returned HTTP **200** and `{"status":"ok","mode":"public-readonly"}` at **06:49:26 IST on 1 November 2026**. This confirms the web explorer responded in that mode; it does not establish a working hosted parser or fresh investigation.
 
-Current documentation authority: [index](docs/README.md), [contribution workflow](AGENTS.md), [current work](docs/Production%20Phase%201%20Implementation%20Plan.md), [roadmap](PRODUCTION_MASTER_ROADMAP.md). Phase 1 remains open. Public health observations below are dated; no fresh deployment identity is established by the local Phase 1 validation.
+Current documentation authority: [index](docs/README.md), [contribution workflow](AGENTS.md), [current work](docs/Production%20Phase%201%20Implementation%20Plan.md), [roadmap](PRODUCTION_MASTER_ROADMAP.md). The amended Phase 1 foundation/source-only criteria are met locally; Phase 2 technical gates remain open. Public health observations below are dated; no fresh deployment identity is established by the local Phase 1 validation.
 
 ## Contents
 
@@ -38,7 +38,7 @@ Heurisko investigates **one exact package artifact against evidence for an immut
 
 The product currently handles **exact public npm versions** and **local tar/tar.gz archives**, with GitHub full-commit source snapshots and optional monorepo subdirectories. It fetches and parses bytes without installing the target package or executing its scripts.
 
-New local investigations use the reviewed **deterministic** rules from full commit `55240e99409ad44cbd6a978f40873ef410cb1861`. The admitted package is `@heurisko/intelligence-reviewed` version `0.1.0-55240e9`. These rules are ordinary code, not model inference. No product LLM/provider, release monitor, provenance verifier, trust-policy evaluator or rebuild worker is integrated.
+New local investigations use the reviewed **deterministic** local revision `@heurisko/intelligence-reviewed 0.2.0-p2-static-v1`, derived from Malhar’s implementation at `55240e99409ad44cbd6a978f40873ef410cb1861` with explicit Phase 2 changes. The default/explicit selector is `p2-static-v1`; `55240e9` retains the legacy rule body for reproduction under the current identified boundary. These rules are ordinary code, not model inference. Product LLM/providers, release monitoring and rebuild remain unavailable. The optional host-configured offline npm verifier and expected policy evaluator are described in the [CLI reference](docs/CLI%20Reference.md#offline-provenance-and-expected-policy).
 
 The central question is source correspondence and unexplained differences. A package can match unsafe source, and a legitimate package can contain expected build differences. Heurisko does not issue a universal safe/unsafe certificate.
 
@@ -59,7 +59,8 @@ The central question is source correspondence and unexplained differences. A pac
 | Save report/bundle JSON | Analyze output flags | No TUI exporter | Downloads | Downloads |
 | Portable evidence export/import | Separate web transport tool | No | Yes | No |
 | Model inference | Unavailable | Unavailable | Unavailable | Unavailable |
-| Verified provenance, policy or rebuild | Unavailable | Unavailable | Unavailable | Unavailable |
+| Verified npm provenance / expected policy | Optional host catalog | Same engine | Same engine | Recorded outcomes only |
+| Rebuild | Unavailable | Unavailable | Unavailable | Unavailable |
 | Release monitoring/watch runner | Unavailable | Unavailable screen | Unavailable | Unavailable |
 | PyPI, lockfile/project analysis, upgrade comparison, SARIF | Unavailable | Unavailable | Unavailable | Unavailable |
 
@@ -121,15 +122,15 @@ A strict `package.json` scanner retains exact JSON pointers, values and half-ope
 
 The reviewed rule body covers lifecycle scripts (`preinstall`, `install`, `postinstall`, `prepare`), other scripts, entrypoint metadata (`main`, `module`, `types`, `typings`, `exports`, `bin`, `browser`) and unresolved file differences.
 
-A trusted wrapper supplies specifically admitted `scripts.*` manifest-delta content. It verifies hashes, declared availability, unique ownership, exact pointers, linked members, values, spans and presence/absence before supplying text. It is not unrestricted file access for the module. Missing/corrupt/over-limit content retains unresolved direction and makes heuristics incomplete.
+A trusted wrapper supplies explicitly admitted script/entrypoint manifest-delta content and independently recomputed static relationship records. It verifies hashes, declared availability, unique ownership, exact pointers, linked members, values, spans and presence/absence before supplying text. It is not unrestricted file access for the module. Missing/corrupt/over-limit content retains unresolved direction and makes heuristics incomplete.
 
 The upstream body also contains generated-candidate and Python-hook branches, but current product acquisition and content wiring do not establish operational PyPI hook analysis, generated-code equivalence or build reproduction. Those are not shipped capabilities.
 
-Known preserved rule limitations include removal priority depending on whole-file status and entrypoint wording saying old/new values are unavailable even where producer evidence retains them. A finding is a scoped observation requiring review; its severity is not proof of malicious intent.
+The current revision applies field-level lifecycle severity/priority and resolves retained entrypoint values through the bounded trusted adapter. Missing, corrupt, unsupported or over-budget content remains undetermined/low and incomplete; whole-manifest absent-side proof remains unsupported. Exact values have bounded, explicitly truncated summaries and full original value-span inspection. CRLF, strict JSON formatting that preserves parsed property order, and retained source-map/source-content relationships are narrow observations, not generation or semantic/build equivalence. Every raw residual remains visible. Independent held-out quality remains unmeasured; a finding’s severity is not proof of intent. See the [current module scope and limits](packages/intelligence-reviewed/README.md).
 
 ### 3.6 Provenance, AI and persistence
 
-Advertised npm attestations may be captured as **unverified bytes**. No admitted verifier, signer/issuer trust roots or source/builder policy exists. Provenance remains `not_checked`.
+Advertised npm attestations are retained as original bytes. Without a trusted host catalog, provenance remains `not_checked`. The current optional `npm-gha-slsa-v1-draft.2` profile admits dsse/0.0.1, authenticates roots, exact subject and explicit policy; [configuration and limitations](docs/CLI%20Reference.md#offline-provenance-and-expected-policy). Explicit legacy draft.1 and historical reports retain their original meaning; other formats abstain under draft.2. It does not establish build reproduction or safety. Verifier cancellation waits for the bounded create acknowledgment, skips starting cancelled work and cleans only the acknowledged immutable ID. Decisions retain individual Docker control durations/failures independently from confirmed absence; an unsuccessful control cannot become a policy pass merely because cleanup eventually completes.
 
 No product AI runtime/provider is admitted. CLI and TUI investigations disable AI by default and keep deterministic checks. The CLI continues to accept `--no-ai` with the same behavior. Older reports that requested AI retain their recorded unavailable state. Saved interpretations, experiments and separately reviewed model answers are not integrated product inference.
 
@@ -145,12 +146,12 @@ Finally, core validates the report against shared JSON Schema and semantic rules
 |---|---|---|
 | `artifactIntegrity` | Observed bytes versus supported registry digest expectation | Safe code or correct source |
 | `sourceAssociation` | Evidence/ambiguity for selected source, including publisher assertions or user input | Verified build origin |
-| `provenancePolicy` | Recorded provenance verification state | JSON decoding is not verification; current state is unchecked |
+| `provenancePolicy` | Recorded provenance verification state | JSON decoding is not verification; optional offline profile records its actual result |
 | `correspondence` | Recorded comparison result, such as exact/unresolved/not assessed | General harmlessness or arbitrary semantic equivalence |
 | `analysisCompleteness` | Whether configured processing completed for declared scope | No suspicious differences |
 | `policyResult` | Pass/violation/indeterminate/not evaluated as supported by the contract | A named policy has actually been evaluated |
 
-Current policy behavior is `not_evaluated` when no policy is requested and `indeterminate` when `--policy REF` requests one. There is no concrete evaluator; severity does not create a policy violation.
+Without a policy, `policyResult` remains `not_evaluated`. A requested key is evaluated only from the trusted host catalog; absent/unknown configuration remains `indeterminate`. Severity never creates a policy violation. Exact policy/root/worker/time identities and reasons are retained in shared evidence.
 
 Raw coverage is also visible: counts, omissions, unknown remaining scope and per-stage errors. Complete raw coverage can coexist with incomplete heuristic analysis. Complete analysis can coexist with unresolved correspondence.
 
@@ -159,7 +160,7 @@ Raw coverage is also visible: counts, omissions, unknown remaining scope and per
 | Code | Meaning |
 |---|---|
 | `0` | Configured checks completed without a configured policy violation |
-| `1` | Configured policy violation; supported by the contract, with no current concrete evaluator |
+| `1` | Configured policy violation from the expected-identity/required-provenance evaluator |
 | `2` | Usable report with incomplete analysis or indeterminate requested policy |
 | `3` | No usable report, invalid invocation or relevant CLI/internal/output failure |
 
@@ -338,7 +339,7 @@ This source override is a comparison candidate, not verified release binding.
 | `--name NAME --version V` | Analyze local | Optional subject labels, not registry proof |
 | `--store DIR` | Analyze/inspect/tui/root interactive | Store, default `.heurisko` |
 | `--report FILE --bundle FILE` | Analyze | Immutable output files; bundle alone is not full portable evidence |
-| `--policy REF` | Analyze | Requested policy; evaluator unavailable, result indeterminate |
+| `--policy REF` | Analyze | Exact trusted catalog policy key; unknown/unconfigured remains indeterminate |
 | `--evidence ev_ID` | Inspect | Verify/read first 8,192 bytes of retained evidence record |
 | `--json` | Analyze/inspect | One canonical JSON result on stdout |
 | `--no-ai` | Analyze | Explicitly keep AI disabled; equivalent to the default, preserving deterministic analysis |
@@ -370,7 +371,7 @@ Evidence JSON includes metadata, base64 bytes, total length/truncation and a ret
 
 ```sh
 # Unset/empty selector already uses this reviewed default.
-HEURISKO_ANALYSIS_MODULE=55240e9 node packages/cli/dist/index.js analyze \
+HEURISKO_ANALYSIS_MODULE=p2-static-v1 node packages/cli/dist/index.js analyze \
   npm:picocolors@1.1.1 --no-ai --store .heurisko/NEW_DEFAULT --json
 
 # Explicit historical raw-only behavior, retaining unavailable-analysis limits.
@@ -646,7 +647,7 @@ Restarting does not erase disk usage/capacity checks. There is no automatic evid
 | `packages/contracts/` | G0 TypeScript types, JSON Schema, Python semantic validation, synthetic positive/negative fixtures and handshake tests; current report schema version `0.1.0` |
 | `packages/core/src/engine.ts` | Shared orchestration, identity/configuration, outcomes, validation/persistence and exit mapping |
 | `packages/core/src/producer.ts` | Artifact/source evidence production and stage accounting |
-| `packages/core/src/npm.ts`, `sources.ts`, `provenance.ts` | Exact npm acquisition, source claims/immutable snapshots, unverified attestation capture |
+| `packages/core/src/npm.ts`, `sources.ts`, `provenance.ts`, `trust.ts` | Exact acquisition/source snapshots, raw attestation capture and optional restricted offline verification/policy |
 | `packages/core/src/archive.ts`, `parser-runtime.ts`, `parser-job.ts` | Bounded static parser orchestration, local Docker arguments and acknowledged lifecycle |
 | `packages/core/runtime/archive_worker.py` | Restricted archive inventory/member worker |
 | `packages/core/src/network.ts`, `safety.ts` | Public destination checks and versioned caps/isolation profile |
@@ -731,7 +732,7 @@ It requires registry/dependency network access. Preparation records show a compl
 | Path | Use |
 |---|---|
 | `examples/README.md` | Main index and connected-default replay pointers |
-| `examples/final-hour/20261101-053912/integrated-55240e9/` | Current retained 16-finding deterministic inert-mutation report, bundle and store |
+| `examples/final-hour/20261101-053912/integrated-55240e9/` | Historical retained 16-finding deterministic inert-mutation report, bundle and store |
 | `examples/p04/local-mutation/` | Compact licensed input copies plus **older pre-integration** raw report/store; zero findings and exit 2 are historical |
 | `examples/handoff/current/` | Historical B1/B2/B3/scoped captures with original facts; B2/B3 are public samples |
 | `examples/s2/current/`, `examples/s3/current/` | Earlier producer/acquisition corpora and retained limitations |
@@ -753,7 +754,7 @@ Prior receipts retain their own source/configuration/times, failed attempts and 
 | Exit 2 with JSON | Inspect incompleteness and requested policy; it can be a valid retained result |
 | Zero findings with unavailable heuristics | No assessment was completed; do not call the package clean |
 | `ANALYSIS_MODULE_UNAVAILABLE` | Historical/raw-only capture or missing module; inspect configuration and `HEURISKO_ANALYSIS_MODULE` |
-| Unknown selector/admission mismatch | Use only default/55240e9/off; reviewed code/config changed or build identity is stale; rebuild/restart deliberately |
+| Unknown selector/admission mismatch | Use only default/p2-static-v1/55240e9/off; reviewed code/config changed or build identity is stale; rebuild/restart deliberately |
 | AI unavailable in an older report | No product AI adapter exists; new CLI investigations disable AI by default and keep deterministic work |
 | Public site refuses New/Open/upload/export | Expected hosted read-only boundary; use local browser/CLI/TUI |
 | Render loading screen | Wait for service startup, then check `/healthz`; do not treat the loading page as analysis progress |
@@ -787,9 +788,9 @@ Use the [security policy](SECURITY.md) for the selected private GitHub disclosur
 | Package acquisition | Exact public npm and local tar/tar.gz | PyPI, ranges/floating selectors, alternate/private registries |
 | Source association | GitHub immutable candidates, subtree/context, conflicts and overrides | General correct-source guarantee, verified artifact-to-commit binding |
 | Comparison | Raw bytes/hashes/metadata and manifest spans | General semantic equivalence, operational generated-code proof, reproducible builds |
-| Deterministic intelligence | Reviewed lifecycle/script/entrypoint/unresolved findings | Broad quality/false-positive/held-out acceptance; preserved wording/priority limitations |
+| Deterministic intelligence | Reviewed lifecycle/script/entrypoint/unresolved findings | Independent quality/false-positive/held-out acceptance; unsupported content and whole-manifest absence remain qualified |
 | AI | Contract fields, disabled/unavailable states and separate historical review material | Meaningful integrated open-model inference, runtime/provider, product retrieval and ablation |
-| Provenance/policy | Unverified captured attestations, honest statuses | Cryptographic verifier, trust roots, expected signer/issuer/source/builder policy and concrete evaluator |
+| Provenance/policy | Optional host-configured offline npm/GHA/SLSA-v1 profile and hash-bound decisions | Complete format/platform/quality/interface acceptance; no safety or reproduction inference |
 | Monitoring | Future contracts and visible unavailable destinations | Discovery/polling, durable watch store, scheduler, retries/checkpoints and restart-safe pending jobs |
 | Interfaces | Working CLI/TUI/local browser; captured public explorer; owner accepts Phase 1 baseline limitations | TUI export and unperformed human/GUI/import/offline/AT observations; changed/distributed journeys require Phase 3 acceptance |
 | Hosted platform | Read-only public captured reports | Hosted live analysis, private workspaces/accounts, persistent user storage and remote parser worker |
@@ -811,6 +812,15 @@ Repository changes use reviewed feature PRs with exact-head CI; deployment and r
 4. With local tools installed, open the same deterministic report in the CLI and TUI using section 6.1. Show that report/evidence identity is shared across interfaces.
 5. Start the local browser with the saved report/store pair. Show Files/Source/Coverage and export/reopen with the format/omission distinction.
 6. If the parser is ready, run a **new**, explicitly labeled local replay from section 6.2 or a fresh exact npm investigation. Show actual stage progress and the resulting limitations; do not imply the public server ran it.
-7. State the unfinished capabilities plainly: product-model inference, monitoring, verified provenance/policy and rebuild are unavailable. Present this as an implemented static investigation foundation with three local interfaces and a public captured-evidence explorer.
+7. State the unfinished capabilities plainly: product-model inference, monitoring and rebuild are unavailable; provenance/policy needs explicit trusted host configuration and retains its recorded limits. Present this as an implemented static investigation foundation with three local interfaces and a public captured-evidence explorer.
 
 For deeper source-backed detail, the canonical entry points are [CLI reference](docs/CLI%20Reference.md), [TUI README](packages/tui/README.md), [web README](apps/web/README.md), [reviewed module admission](packages/intelligence-reviewed/README.md), [examples index](examples/README.md), [Render record](docs/Render%20Deployment.md) and [contributor context](AGENTS.md).
+
+
+## Supported source test package and closure tools
+
+The local [supported source package](SOURCE_PACKAGE.md) includes the complete workspace source/tests/docs and required immutable replay fixtures with matching [fixture notices](SOURCE_FIXTURE_NOTICES.txt). Its inclusion/exclusion ledger hashes every candidate; event attachments, installed dependencies, binaries/images and unrelated historical artifacts are omitted without deleting originals/history. Source-only notice completion does not approve binary/image or full-history redistribution.
+
+The credential scanner now processes candidate text with a fixed 64 KiB buffer and 64-byte overlap, preserving ignored/private-file boundaries, redaction, no-follow regular-file checks and mutation detection. It reports finite file/count/total/time budgets, explicit unsupported coverage and incomplete status rather than a clean result after a read/limit failure. Run `pnpm run test:credential-scan` and `node scripts/check-phase1-secrets.mjs`; this detects common formats only and does not certify absence of every secret. Product parser/validator caps remain unchanged.
+
+Controlled-signature construction, separate fixed-anchor test replay and the portable native Linux runner are documented in that source package reference and [current execution evidence](examples/production-phase2/2026-11-02-closure-implementation-01/RESULTS.md). Production trust roots are unchanged. Controlled signatures are not third-party npm publisher evidence; all actual failures, missing native capability and absent real format samples retain their own status. No commit/publication or paid host is part of this work.

@@ -1,0 +1,12 @@
+{
+  "version": "heurisko-controlled-runtime-v1",
+  "productionRoot": "/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko",
+  "fixtureManifestSha256": "44d5ebaf3ae8fe7aaa2766c103579e4e7bea8ab9c0b1b40d9126188a44893354",
+  "testBootstrapSha256": "13d19106b306e4139abff1dad044fc72cc12b2e79fc7173c89dfeb9f0b41626d",
+  "productionBootstrapSha256": "73747011d0857ada15479a16c4cae0f3ed03aac698b523b97e1de314ac9d9ca8",
+  "productionWorkerSha256": "9e13daace8ae961d9ed60d63dfe3cedc48364d44ac56ccdacec3868a375d00e1",
+  "testWorkerSha256": "106e7f82d8b1a4a23a651776b219ea8862452ab9c3493a8a6759cb8419f71a05",
+  "evaluatorSourceSha256": "f23c8e92b38190dfba7a19c5f423e19ce1ee1db0a27f833f7773002f6dc4b15d",
+  "hostEvaluatorSha256": "d6d87c6d1c2c4a9834a3ad4a153b0de90aa1f37ed686eb4b2aa499f753660e04",
+  "boundary": "Same evaluator source and restricted Docker launcher; separate fixed-anchor build only. No production env/request anchor selection."
+}

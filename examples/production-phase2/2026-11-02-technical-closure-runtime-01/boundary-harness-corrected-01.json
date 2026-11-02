@@ -1,0 +1,21 @@
+{
+  "command": [
+    "/private/tmp/heurisko-p2-tools-20261102/node-v22.23.4-darwin-arm64/bin/node",
+    "--test",
+    "--test-concurrency=1",
+    "packages/core/tests/parser-boundary-harness.test.mjs"
+  ],
+  "node": "v22.23.4",
+  "exit": 0,
+  "tests": 4,
+  "passed": 4,
+  "failed": 0,
+  "scope": "Authored fake-Docker lifecycle regression; no actual Docker or cryptographic acceptance inferred.",
+  "sourceSha256": {
+    "packages/core/tests/parser-boundary-harness.test.mjs": "a150759370a823ef7ab3ae2bcf5b7355fca9dd416276f4defaab998623106408",
+    "scripts/check-parser-boundary.mjs": "dc5ccafdc0ad21b40e8f9b5b67514eaad470bd456b344d9b16b02bd719a05498",
+    "packages/core/dist/safety.js": "f66b9867a5c3a1ec4163f95a446c3d4ba975d0aa07b9df6a28d3aaa172aa9c01"
+  },
+  "stdout": "boundary-harness-corrected-01.stdout.log",
+  "stderr": "boundary-harness-corrected-01.stderr.log"
+}

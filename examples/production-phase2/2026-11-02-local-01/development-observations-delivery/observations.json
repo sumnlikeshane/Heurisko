@@ -1,0 +1,1576 @@
+{
+  "cases": [
+    {
+      "id": "picocolors-1.1.1",
+      "family": "upstream:picocolors",
+      "split": "development",
+      "labelAuthority": "unlabeled public release; no independent human label or quality metric",
+      "reportSha256": "sha256:e9a48d6a679b6723b9ecf18b75fbb4c23d4b2bb82ce4e222cd071fa5c269c777",
+      "reportId": "report_30c4b2fcdeb26eaeecd00d93",
+      "configuration": "b7679fe9ae43968aa210f4c56bdd6d2439b4b873742bd1bdf38a8815ed22fb11",
+      "artifactSha256": "sha256:d3aedb2807967b7eb37fd11b03b7e3701e725af79c650d0812ff7213f8f882d9",
+      "sourceArchiveSha256": "87646ed7f9b372d94da80ec298ef4ec6fc0c2a56bb60e0b325a9705037408c7c",
+      "outcomes": {
+        "artifactIntegrity": "not_checked",
+        "sourceAssociation": "user_supplied",
+        "provenancePolicy": "not_checked",
+        "correspondence": "unresolved",
+        "analysisCompleteness": "complete",
+        "policyResult": "not_evaluated"
+      },
+      "findings": 16,
+      "coverage": {
+        "artifactFiles": 7,
+        "sourceFiles": 19,
+        "comparedFiles": 19,
+        "analyzedBytes": 39579,
+        "skippedBytes": 0,
+        "unsupportedBytes": 0,
+        "omissions": [],
+        "complete": true,
+        "limitations": [
+          "Static relationship scope: at most 128 artifact members, 1 MiB candidate reads, 32 source-map relationships and 256 KiB per member. Unsupported/unexamined transformations remain raw residuals; byte inventory coverage is not explanation coverage."
+        ]
+      },
+      "sourceNotices": [
+        {
+          "path": "picocolors-6f0a4638348ed20633d623ee973f9c9a96f65104/LICENSE",
+          "sha256": "sha256:6582629e2979466878f6014313dcc2f3756c9616148682227ce3063dde310750"
+        }
+      ],
+      "citations": [
+        {
+          "evidenceId": "ev_799c9bf1a7184ae375a38780",
+          "side": "source",
+          "kind": "content",
+          "range": {
+            "startByte": 1077,
+            "endByte": 1104
+          },
+          "bytes": 27
+        },
+        {
+          "evidenceId": "ev_799c9bf1a7184ae375a38780",
+          "side": "artifact",
+          "kind": "metadata_only",
+          "reason": "SIDE_NOT_RECORDED"
+        },
+        {
+          "evidenceId": "ev_df47e38b6fa5af717ccd521b",
+          "side": "source",
+          "kind": "content",
+          "range": {
+            "startByte": 1096,
+            "endByte": 1100
+          },
+          "bytes": 4
+        },
+        {
+          "evidenceId": "ev_df47e38b6fa5af717ccd521b",
+          "side": "artifact",
+          "kind": "metadata_only",
+          "reason": "SIDE_NOT_RECORDED"
+        },
+        {
+          "evidenceId": "ev_f08478da3cfacb04168da453",
+          "side": "source",
+          "kind": "content",
+          "range": {
+            "startByte": 625,
+            "endByte": 899
+          },
+          "bytes": 274
+        },
+        {
+          "evidenceId": "ev_f08478da3cfacb04168da453",
+          "side": "artifact",
+          "kind": "metadata_only",
+          "reason": "SIDE_NOT_RECORDED"
+        },
+        {
+          "evidenceId": "ev_5298a3d68f767b08b1a738cc",
+          "side": "source",
+          "kind": "content",
+          "range": {
+            "startByte": 646,
+            "endByte": 654
+          },
+          "bytes": 8
+        },
+        {
+          "evidenceId": "ev_5298a3d68f767b08b1a738cc",
+          "side": "artifact",
+          "kind": "metadata_only",
+          "reason": "SIDE_NOT_RECORDED"
+        },
+        {
+          "evidenceId": "ev_5a581929c8dc2d9eef9533d1",
+          "side": "source",
+          "kind": "content",
+          "range": {
+            "startByte": 669,
+            "endByte": 677
+          },
+          "bytes": 8
+        },
+        {
+          "evidenceId": "ev_5a581929c8dc2d9eef9533d1",
+          "side": "artifact",
+          "kind": "metadata_only",
+          "reason": "SIDE_NOT_RECORDED"
+        },
+        {
+          "evidenceId": "ev_01a57d7c6fb1b04510c2cda4",
+          "side": "source",
+          "kind": "content",
+          "range": {
+            "startByte": 700,
+            "endByte": 708
+          },
+          "bytes": 8
+        },
+        {
+          "evidenceId": "ev_01a57d7c6fb1b04510c2cda4",
+          "side": "artifact",
+          "kind": "metadata_only",
+          "reason": "SIDE_NOT_RECORDED"
+        },
+        {
+          "evidenceId": "ev_aaee6130add2087e9e30e1f7",
+          "side": "source",
+          "kind": "content",
+          "range": {
+            "startByte": 727,
+            "endByte": 735
+          },
+          "bytes": 8
+        },
+        {
+          "evidenceId": "ev_aaee6130add2087e9e30e1f7",
+          "side": "artifact",
+          "kind": "metadata_only",
+          "reason": "SIDE_NOT_RECORDED"
+        },
+        {
+          "evidenceId": "ev_3be9f57e586031b465d91033",
+          "side": "source",
+          "kind": "content",
+          "range": {
+            "startByte": 754,
+            "endByte": 763
+          },
+          "bytes": 9
+        },
+        {
+          "evidenceId": "ev_3be9f57e586031b465d91033",
+          "side": "artifact",
+          "kind": "metadata_only",
+          "reason": "SIDE_NOT_RECORDED"
+        },
+        {
+          "evidenceId": "ev_2aac6833eee60b07f94b0c19",
+          "side": "source",
+          "kind": "content",
+          "range": {
+            "startByte": 778,
+            "endByte": 786
+          },
+          "bytes": 8
+        },
+        {
+          "evidenceId": "ev_2aac6833eee60b07f94b0c19",
+          "side": "artifact",
+          "kind": "metadata_only",
+          "reason": "SIDE_NOT_RECORDED"
+        },
+        {
+          "evidenceId": "ev_59bb2826cb7733d74ac07c80",
+          "side": "source",
+          "kind": "content",
+          "range": {
+            "startByte": 802,
+            "endByte": 811
+          },
+          "bytes": 9
+        },
+        {
+          "evidenceId": "ev_59bb2826cb7733d74ac07c80",
+          "side": "artifact",
+          "kind": "metadata_only",
+          "reason": "SIDE_NOT_RECORDED"
+        },
+        {
+          "evidenceId": "ev_793d3900d39263c98b9179e3",
+          "side": "source",
+          "kind": "content",
+          "range": {
+            "startByte": 831,
+            "endByte": 840
+          },
+          "bytes": 9
+        },
+        {
+          "evidenceId": "ev_793d3900d39263c98b9179e3",
+          "side": "artifact",
+          "kind": "metadata_only",
+          "reason": "SIDE_NOT_RECORDED"
+        },
+        {
+          "evidenceId": "ev_23f0a59af7564fa3ac742146",
+          "side": "source",
+          "kind": "content",
+          "range": {
+            "startByte": 858,
+            "endByte": 866
+          },
+          "bytes": 8
+        },
+        {
+          "evidenceId": "ev_23f0a59af7564fa3ac742146",
+          "side": "artifact",
+          "kind": "metadata_only",
+          "reason": "SIDE_NOT_RECORDED"
+        },
+        {
+          "evidenceId": "ev_2279202c934887fac649cb0c",
+          "side": "source",
+          "kind": "content",
+          "range": {
+            "startByte": 887,
+            "endByte": 895
+          },
+          "bytes": 8
+        },
+        {
+          "evidenceId": "ev_2279202c934887fac649cb0c",
+          "side": "artifact",
+          "kind": "metadata_only",
+          "reason": "SIDE_NOT_RECORDED"
+        },
+        {
+          "evidenceId": "ev_967b0b5e5a3a09285c539450",
+          "side": "source",
+          "kind": "content",
+          "range": {
+            "startByte": 915,
+            "endByte": 1056
+          },
+          "bytes": 141
+        },
+        {
+          "evidenceId": "ev_967b0b5e5a3a09285c539450",
+          "side": "artifact",
+          "kind": "metadata_only",
+          "reason": "SIDE_NOT_RECORDED"
+        },
+        {
+          "evidenceId": "ev_3ce7cac16042c32cf4964af9",
+          "side": "source",
+          "kind": "content",
+          "range": {
+            "startByte": 1018,
+            "endByte": 1025
+          },
+          "bytes": 7
+        },
+        {
+          "evidenceId": "ev_3ce7cac16042c32cf4964af9",
+          "side": "artifact",
+          "kind": "metadata_only",
+          "reason": "SIDE_NOT_RECORDED"
+        },
+        {
+          "evidenceId": "ev_338fa9e85eeb3ba233b51ae6",
+          "side": "source",
+          "kind": "content",
+          "range": {
+            "startByte": 935,
+            "endByte": 938
+          },
+          "bytes": 3
+        },
+        {
+          "evidenceId": "ev_338fa9e85eeb3ba233b51ae6",
+          "side": "artifact",
+          "kind": "metadata_only",
+          "reason": "SIDE_NOT_RECORDED"
+        },
+        {
+          "evidenceId": "ev_8929ce2c8dd491dbd4bc84e2",
+          "side": "source",
+          "kind": "content",
+          "range": {
+            "startByte": 1048,
+            "endByte": 1052
+          },
+          "bytes": 4
+        },
+        {
+          "evidenceId": "ev_8929ce2c8dd491dbd4bc84e2",
+          "side": "artifact",
+          "kind": "metadata_only",
+          "reason": "SIDE_NOT_RECORDED"
+        },
+        {
+          "evidenceId": "ev_eb02c5e39d8195b55962584c",
+          "side": "source",
+          "kind": "content",
+          "range": {
+            "startByte": 992,
+            "endByte": 997
+          },
+          "bytes": 5
+        },
+        {
+          "evidenceId": "ev_eb02c5e39d8195b55962584c",
+          "side": "artifact",
+          "kind": "metadata_only",
+          "reason": "SIDE_NOT_RECORDED"
+        },
+        {
+          "evidenceId": "ev_64ae3f5e178bd8afb30a3fe8",
+          "side": "source",
+          "kind": "content",
+          "range": {
+            "startByte": 977,
+            "endByte": 978
+          },
+          "bytes": 1
+        },
+        {
+          "evidenceId": "ev_64ae3f5e178bd8afb30a3fe8",
+          "side": "artifact",
+          "kind": "metadata_only",
+          "reason": "SIDE_NOT_RECORDED"
+        },
+        {
+          "evidenceId": "ev_5df5cc2385665208217c4b99",
+          "side": "source",
+          "kind": "content",
+          "range": {
+            "startByte": 955,
+            "endByte": 959
+          },
+          "bytes": 4
+        },
+        {
+          "evidenceId": "ev_5df5cc2385665208217c4b99",
+          "side": "artifact",
+          "kind": "metadata_only",
+          "reason": "SIDE_NOT_RECORDED"
+        },
+        {
+          "evidenceId": "ev_2a78bcb71bbd960f30c35c11",
+          "side": "source",
+          "kind": "content",
+          "range": {
+            "startByte": 319,
+            "endByte": 357
+          },
+          "bytes": 38
+        },
+        {
+          "evidenceId": "ev_2a78bcb71bbd960f30c35c11",
+          "side": "artifact",
+          "kind": "metadata_only",
+          "reason": "SIDE_NOT_RECORDED"
+        },
+        {
+          "evidenceId": "ev_91fed29a92449c8902731d88",
+          "side": "source",
+          "kind": "content",
+          "range": {
+            "startByte": 333,
+            "endByte": 353
+          },
+          "bytes": 20
+        },
+        {
+          "evidenceId": "ev_91fed29a92449c8902731d88",
+          "side": "artifact",
+          "kind": "metadata_only",
+          "reason": "SIDE_NOT_RECORDED"
+        },
+        {
+          "evidenceId": "ev_3ca16ad46cd957d737ef0c18",
+          "side": "source",
+          "kind": "content",
+          "range": {
+            "startByte": 39,
+            "endByte": 46
+          },
+          "bytes": 7
+        },
+        {
+          "evidenceId": "ev_3ca16ad46cd957d737ef0c18",
+          "side": "artifact",
+          "kind": "content",
+          "range": {
+            "startByte": 39,
+            "endByte": 46
+          },
+          "bytes": 7
+        }
+      ],
+      "seconds": 20.773
+    },
+    {
+      "id": "kleur-4.1.5",
+      "family": "upstream:kleur",
+      "split": "development",
+      "labelAuthority": "unlabeled public release; no independent human label or quality metric",
+      "reportSha256": "sha256:d1c2bd7fc68f6395dc87f122996de6ecd2eaf96e167b4f5e167288348e610a64",
+      "reportId": "report_9e3d7811ab9b68379e5e2f83",
+      "configuration": "46f0d948931a6d9ebc8768bd7b2970109412bc0d5f80d05fb61b97463ac30c23",
+      "artifactSha256": "sha256:0d99562acf82fca4afce2a57b687289a524ac6755dcaf1fdf82a147473091469",
+      "sourceArchiveSha256": "f89639d261e294cfe8ce5f865dcfb764414c9130530c3b9156e2b63e1c492314",
+      "outcomes": {
+        "artifactIntegrity": "not_checked",
+        "sourceAssociation": "user_supplied",
+        "provenancePolicy": "not_checked",
+        "correspondence": "unresolved",
+        "analysisCompleteness": "complete",
+        "policyResult": "not_evaluated"
+      },
+      "findings": 21,
+      "coverage": {
+        "artifactFiles": 9,
+        "sourceFiles": 25,
+        "comparedFiles": 27,
+        "analyzedBytes": 85308,
+        "skippedBytes": 0,
+        "unsupportedBytes": 0,
+        "omissions": [],
+        "complete": true,
+        "limitations": [
+          "Static relationship scope: at most 128 artifact members, 1 MiB candidate reads, 32 source-map relationships and 256 KiB per member. Unsupported/unexamined transformations remain raw residuals; byte inventory coverage is not explanation coverage."
+        ]
+      },
+      "sourceNotices": [
+        {
+          "path": "kleur-fa3454483899ddab550d08c18c028e6db1aab0e5/license",
+          "sha256": "sha256:306fa513e39b23a6e8747520de761809d206b99800ef41907b530226574c59ae"
+        }
+      ],
+      "citations": [],
+      "seconds": 29.559
+    },
+    {
+      "id": "ms-2.1.3",
+      "family": "upstream:ms",
+      "split": "development",
+      "labelAuthority": "unlabeled public release; no independent human label or quality metric",
+      "reportSha256": "sha256:c515f0a99fb6bd53946b6b5ebd2fcb9bf0928d305963d4d87056898d3d92f03d",
+      "reportId": "report_3abef7df5671a53c37c285ac",
+      "configuration": "0d278165ee85207bfda82bc9511f73e4caa54f40cfa08dfed49dced5ac620462",
+      "artifactSha256": "sha256:f6616e15e530ed552f9daa2d3ce71963947c6bc7c98c9b64fd3e673fd02622c6",
+      "sourceArchiveSha256": "a457e52fb4f68067255bed09109cbd64898c6739d494ad826517e9da5a6df81e",
+      "outcomes": {
+        "artifactIntegrity": "not_checked",
+        "sourceAssociation": "user_supplied",
+        "provenancePolicy": "not_checked",
+        "correspondence": "unresolved",
+        "analysisCompleteness": "complete",
+        "policyResult": "not_evaluated"
+      },
+      "findings": 6,
+      "coverage": {
+        "artifactFiles": 4,
+        "sourceFiles": 9,
+        "comparedFiles": 9,
+        "analyzedBytes": 89534,
+        "skippedBytes": 0,
+        "unsupportedBytes": 0,
+        "omissions": [],
+        "complete": true,
+        "limitations": [
+          "Static relationship scope: at most 128 artifact members, 1 MiB candidate reads, 32 source-map relationships and 256 KiB per member. Unsupported/unexamined transformations remain raw residuals; byte inventory coverage is not explanation coverage."
+        ]
+      },
+      "sourceNotices": [
+        {
+          "path": "ms-1c6264b795492e8fdecbc82cb8802fcfbfc08d26/license.md",
+          "sha256": "sha256:1662fae9b5314d11cf51284e2dcd1f006a354f7343f08712a730fcff9a359801"
+        }
+      ],
+      "citations": [],
+      "seconds": 19.508
+    },
+    {
+      "id": "is-number-7.0.0",
+      "family": "upstream:is-number",
+      "split": "development",
+      "labelAuthority": "unlabeled public release; no independent human label or quality metric",
+      "reportSha256": "sha256:747fe8c71952dc937289249df95af33de76bac0360572f709408e94901cba3af",
+      "reportId": "report_b82f459948aa4ca4c795effe",
+      "configuration": "d09389bdf699e66903948413d2148af1830e7b0846b15855e4807565cebbac7e",
+      "artifactSha256": "sha256:7b75c1057198cf97696909a9bee176c9c5e9bcb5b03bf3ecef2f484defadd51e",
+      "sourceArchiveSha256": "4e169d1ea361d1b92907a6ab2dd6bcd781c85027858d99df1596a712aab49506",
+      "outcomes": {
+        "artifactIntegrity": "not_checked",
+        "sourceAssociation": "user_supplied",
+        "provenancePolicy": "not_checked",
+        "correspondence": "unresolved",
+        "analysisCompleteness": "complete",
+        "policyResult": "not_evaluated"
+      },
+      "findings": 12,
+      "coverage": {
+        "artifactFiles": 4,
+        "sourceFiles": 15,
+        "comparedFiles": 15,
+        "analyzedBytes": 34164,
+        "skippedBytes": 0,
+        "unsupportedBytes": 0,
+        "omissions": [],
+        "complete": true,
+        "limitations": [
+          "Static relationship scope: at most 128 artifact members, 1 MiB candidate reads, 32 source-map relationships and 256 KiB per member. Unsupported/unexamined transformations remain raw residuals; byte inventory coverage is not explanation coverage."
+        ]
+      },
+      "sourceNotices": [
+        {
+          "path": "is-number-98e8ff1da1a89f93d1397a24d7413ed15421c139/LICENSE",
+          "sha256": "sha256:35bdd8a44339719441900fb50fbefc5e2dca1ca662cbaed7a687de842c8b70f2"
+        }
+      ],
+      "citations": [],
+      "seconds": 38.971
+    },
+    {
+      "id": "ansi-regex-6.2.2",
+      "family": "upstream:ansi-regex",
+      "split": "development",
+      "labelAuthority": "unlabeled public release; no independent human label or quality metric",
+      "reportSha256": "sha256:3360a2e5d707e532c064a4ebc5da275a7925f9a8b6ffcf0424c32fc59c73155e",
+      "reportId": "report_a3965ce60559f784c8f219e4",
+      "configuration": "70cb62ca43b7cdb856429b7a7b3f6fc638d5847129af66591543c8edcd38d032",
+      "artifactSha256": "sha256:e746bb8f5dd8805dc40c399b91a4a232db7d9f93fe2d83b771a9cace7b5231d7",
+      "sourceArchiveSha256": "a4a164e0d98fddb50a4d80c851114149f5c7ba1ae0c08eda660499c0f1f96e0d",
+      "outcomes": {
+        "artifactIntegrity": "not_checked",
+        "sourceAssociation": "user_supplied",
+        "provenancePolicy": "not_checked",
+        "correspondence": "unresolved",
+        "analysisCompleteness": "complete",
+        "policyResult": "not_evaluated"
+      },
+      "findings": 12,
+      "coverage": {
+        "artifactFiles": 5,
+        "sourceFiles": 16,
+        "comparedFiles": 16,
+        "analyzedBytes": 30968,
+        "skippedBytes": 0,
+        "unsupportedBytes": 0,
+        "omissions": [],
+        "complete": true,
+        "limitations": [
+          "Static relationship scope: at most 128 artifact members, 1 MiB candidate reads, 32 source-map relationships and 256 KiB per member. Unsupported/unexamined transformations remain raw residuals; byte inventory coverage is not explanation coverage."
+        ]
+      },
+      "sourceNotices": [
+        {
+          "path": "ansi-regex-94983fc6ba00e1e9657f72c07eb7b9c75e4011a2/license",
+          "sha256": "sha256:5c932d88256b4ab958f64a856fa48e8bd1f55bc1d96b8149c65689e0c61789d3"
+        }
+      ],
+      "citations": [],
+      "seconds": 31.39
+    },
+    {
+      "id": "escape-string-regexp-5.0.0",
+      "family": "upstream:escape-string-regexp",
+      "split": "development",
+      "labelAuthority": "unlabeled public release; no independent human label or quality metric",
+      "reportSha256": "sha256:e387c5a133936bda32e9b5223bbb9c1b7b3efd8ebae7f63af442a0c3731deec0",
+      "reportId": "report_9923d6ce548df0a7e5818e01",
+      "configuration": "c6435b71bc6dfc01fb1cb58cbac7a9a61e75f28cd0b86d59ad231c7fa19253e3",
+      "artifactSha256": "sha256:c8b662afe8aa2b852ecc27d766e584a502f8351fbbd890611f2509bf083d28e6",
+      "sourceArchiveSha256": "d24eaa0b89fe74cca6bed6922e837eb685773a7028863010d6327047c16c0490",
+      "outcomes": {
+        "artifactIntegrity": "not_checked",
+        "sourceAssociation": "user_supplied",
+        "provenancePolicy": "not_checked",
+        "correspondence": "unresolved",
+        "analysisCompleteness": "complete",
+        "policyResult": "not_evaluated"
+      },
+      "findings": 10,
+      "coverage": {
+        "artifactFiles": 5,
+        "sourceFiles": 14,
+        "comparedFiles": 14,
+        "analyzedBytes": 8908,
+        "skippedBytes": 0,
+        "unsupportedBytes": 0,
+        "omissions": [],
+        "complete": true,
+        "limitations": [
+          "Static relationship scope: at most 128 artifact members, 1 MiB candidate reads, 32 source-map relationships and 256 KiB per member. Unsupported/unexamined transformations remain raw residuals; byte inventory coverage is not explanation coverage."
+        ]
+      },
+      "sourceNotices": [
+        {
+          "path": "escape-string-regexp-ba9a4473850cb367936417e97f1f2191b7cc67dd/license",
+          "sha256": "sha256:5c932d88256b4ab958f64a856fa48e8bd1f55bc1d96b8149c65689e0c61789d3"
+        }
+      ],
+      "citations": [],
+      "seconds": 28.591
+    },
+    {
+      "id": "fast-deep-equal-3.1.3",
+      "family": "upstream:fast-deep-equal",
+      "split": "development",
+      "labelAuthority": "unlabeled public release; no independent human label or quality metric",
+      "reportSha256": "sha256:872470836c0d75fbcd17aa67796083010d1168fdcdda746d864b9779d5fc217d",
+      "reportId": "report_ff2d3be4b795972089c5d1c9",
+      "configuration": "302e4abbce1ef0d67065d66ce21e6759d19ad486246a26537777e658cd5dfb03",
+      "artifactSha256": "sha256:b019a0980f27638dc3f85836b0e478f188e00d7a6e5852c0819fa86f56e47b8f",
+      "sourceArchiveSha256": "671092ac55cf21aa7ebbef546d8ae2f11dbb13f7133b2adfde86b52db1fefaf6",
+      "outcomes": {
+        "artifactIntegrity": "not_checked",
+        "sourceAssociation": "user_supplied",
+        "provenancePolicy": "not_checked",
+        "correspondence": "unresolved",
+        "analysisCompleteness": "complete",
+        "policyResult": "not_evaluated"
+      },
+      "findings": 19,
+      "coverage": {
+        "artifactFiles": 11,
+        "sourceFiles": 21,
+        "comparedFiles": 25,
+        "analyzedBytes": 47991,
+        "skippedBytes": 0,
+        "unsupportedBytes": 0,
+        "omissions": [],
+        "complete": true,
+        "limitations": [
+          "Static relationship scope: at most 128 artifact members, 1 MiB candidate reads, 32 source-map relationships and 256 KiB per member. Unsupported/unexamined transformations remain raw residuals; byte inventory coverage is not explanation coverage."
+        ]
+      },
+      "sourceNotices": [
+        {
+          "path": "fast-deep-equal-d807ffc5013e710deb1c63d463a03f729bcd144d/LICENSE",
+          "sha256": "sha256:7bf9b2de73a6b356761c948d0e9eeb4be6c1270bd04c79cd489c1e400ffdfc1a"
+        }
+      ],
+      "citations": [],
+      "seconds": 42.32
+    },
+    {
+      "id": "balanced-match-2.0.0",
+      "family": "upstream:balanced-match",
+      "split": "development",
+      "labelAuthority": "unlabeled public release; no independent human label or quality metric",
+      "reportSha256": "sha256:e89e8c8ec3c03c1df4b66fcfe41268f08d2496bae91ea405f6397ea32e7e909c",
+      "reportId": "report_105b8fae9aa7261239663271",
+      "configuration": "56023e776aad47518465fc0a68a75e8d2affc9698be63cb489dc5966e632608a",
+      "artifactSha256": "sha256:561e0fb7b25ac6bebee816546c7fd71c36a2b8f3e5c091212c3e753052fdc9f9",
+      "sourceArchiveSha256": "d874d32b176733bdb520d8fb00f106f73eb80ad38fdad94e55f8d64015276b6e",
+      "outcomes": {
+        "artifactIntegrity": "not_checked",
+        "sourceAssociation": "user_supplied",
+        "provenancePolicy": "not_checked",
+        "correspondence": "unresolved",
+        "analysisCompleteness": "complete",
+        "policyResult": "not_evaluated"
+      },
+      "findings": 9,
+      "coverage": {
+        "artifactFiles": 5,
+        "sourceFiles": 13,
+        "comparedFiles": 13,
+        "analyzedBytes": 619371,
+        "skippedBytes": 0,
+        "unsupportedBytes": 0,
+        "omissions": [],
+        "complete": true,
+        "limitations": [
+          "Static relationship scope: at most 128 artifact members, 1 MiB candidate reads, 32 source-map relationships and 256 KiB per member. Unsupported/unexamined transformations remain raw residuals; byte inventory coverage is not explanation coverage."
+        ]
+      },
+      "sourceNotices": [
+        {
+          "path": "balanced-match-1c56fa33180a54e0e69a3fae9d60c191e74c4174/LICENSE.md",
+          "sha256": "sha256:a1bd5deadb6a06dd74efa852c1b8b23f63b67f2214fbe9c8bd591da51da69268"
+        }
+      ],
+      "citations": [],
+      "seconds": 29.602
+    },
+    {
+      "id": "concat-map-0.0.1",
+      "family": "upstream:concat-map",
+      "split": "development",
+      "labelAuthority": "unlabeled public release; no independent human label or quality metric",
+      "reportSha256": "sha256:bf7b1f81e634d3a36db6307b533ff1de0047e11ee9e81bb2c76d193e48b5fb1b",
+      "reportId": "report_2a61f4f187f3df2e1d4f30bc",
+      "configuration": "a0306ee7eea42f53945e4e84d0faf85b75703ec097f05f868d3bb67ae68221a5",
+      "artifactSha256": "sha256:35902dd620cf0058c49ea614120f18a889d984269a90381b7622e79c2cfe4261",
+      "sourceArchiveSha256": null,
+      "outcomes": {
+        "artifactIntegrity": "not_checked",
+        "sourceAssociation": "unavailable",
+        "provenancePolicy": "not_checked",
+        "correspondence": "unresolved",
+        "analysisCompleteness": "incomplete",
+        "policyResult": "not_evaluated"
+      },
+      "findings": 9,
+      "coverage": {
+        "artifactFiles": 7,
+        "sourceFiles": 0,
+        "comparedFiles": 7,
+        "analyzedBytes": 4861,
+        "skippedBytes": 0,
+        "unsupportedBytes": 0,
+        "omissions": [],
+        "complete": false,
+        "limitations": [
+          "File/byte totals are known observed members only; remaining archive scope is unknown on failure.",
+          "Static relationship scope: at most 128 artifact members, 1 MiB candidate reads, 32 source-map relationships and 256 KiB per member. Unsupported/unexamined transformations remain raw residuals; byte inventory coverage is not explanation coverage."
+        ]
+      },
+      "sourceNotices": [],
+      "citations": [
+        {
+          "evidenceId": "ev_a1a4cf11f25020ff2dd8b451",
+          "side": "source",
+          "kind": "metadata_only",
+          "reason": "SIDE_NOT_RECORDED"
+        },
+        {
+          "evidenceId": "ev_a1a4cf11f25020ff2dd8b451",
+          "side": "artifact",
+          "kind": "content",
+          "range": {
+            "startByte": 608,
+            "endByte": 727
+          },
+          "bytes": 119
+        },
+        {
+          "evidenceId": "ev_28d3d020175b896b4ffa3234",
+          "side": "source",
+          "kind": "metadata_only",
+          "reason": "SIDE_NOT_RECORDED"
+        },
+        {
+          "evidenceId": "ev_28d3d020175b896b4ffa3234",
+          "side": "artifact",
+          "kind": "content",
+          "range": {
+            "startByte": 663,
+            "endByte": 682
+          },
+          "bytes": 19
+        },
+        {
+          "evidenceId": "ev_34cd0a01daaa8c7dede650ab",
+          "side": "source",
+          "kind": "metadata_only",
+          "reason": "SIDE_NOT_RECORDED"
+        },
+        {
+          "evidenceId": "ev_34cd0a01daaa8c7dede650ab",
+          "side": "artifact",
+          "kind": "content",
+          "range": {
+            "startByte": 627,
+            "endByte": 643
+          },
+          "bytes": 16
+        },
+        {
+          "evidenceId": "ev_00e803452f23c4e03d9b6eae",
+          "side": "source",
+          "kind": "metadata_only",
+          "reason": "SIDE_NOT_RECORDED"
+        },
+        {
+          "evidenceId": "ev_00e803452f23c4e03d9b6eae",
+          "side": "artifact",
+          "kind": "content",
+          "range": {
+            "startByte": 700,
+            "endByte": 721
+          },
+          "bytes": 21
+        },
+        {
+          "evidenceId": "ev_1493c64a271e36aa3f562664",
+          "side": "source",
+          "kind": "metadata_only",
+          "reason": "SIDE_NOT_RECORDED"
+        },
+        {
+          "evidenceId": "ev_1493c64a271e36aa3f562664",
+          "side": "artifact",
+          "kind": "content",
+          "range": {
+            "startByte": 49,
+            "endByte": 75
+          },
+          "bytes": 26
+        },
+        {
+          "evidenceId": "ev_98096c8f9adda083df6726b6",
+          "side": "source",
+          "kind": "metadata_only",
+          "reason": "SIDE_NOT_RECORDED"
+        },
+        {
+          "evidenceId": "ev_98096c8f9adda083df6726b6",
+          "side": "artifact",
+          "kind": "content",
+          "range": {
+            "startByte": 535,
+            "endByte": 568
+          },
+          "bytes": 33
+        },
+        {
+          "evidenceId": "ev_de69f51eddd1e1f5230036e9",
+          "side": "source",
+          "kind": "metadata_only",
+          "reason": "SIDE_NOT_RECORDED"
+        },
+        {
+          "evidenceId": "ev_de69f51eddd1e1f5230036e9",
+          "side": "artifact",
+          "kind": "content",
+          "range": {
+            "startByte": 554,
+            "endByte": 562
+          },
+          "bytes": 8
+        },
+        {
+          "evidenceId": "ev_25fe73eb99a719b04d10e683",
+          "side": "source",
+          "kind": "metadata_only",
+          "reason": "SIDE_NOT_RECORDED"
+        },
+        {
+          "evidenceId": "ev_25fe73eb99a719b04d10e683",
+          "side": "artifact",
+          "kind": "content",
+          "range": {
+            "startByte": 388,
+            "endByte": 450
+          },
+          "bytes": 62
+        },
+        {
+          "evidenceId": "ev_93f89b6e55a09c824dbbfa9c",
+          "side": "source",
+          "kind": "metadata_only",
+          "reason": "SIDE_NOT_RECORDED"
+        },
+        {
+          "evidenceId": "ev_93f89b6e55a09c824dbbfa9c",
+          "side": "artifact",
+          "kind": "content",
+          "range": {
+            "startByte": 410,
+            "endByte": 419
+          },
+          "bytes": 9
+        },
+        {
+          "evidenceId": "ev_56e0eb5020677c9cd1c8ad8a",
+          "side": "source",
+          "kind": "metadata_only",
+          "reason": "SIDE_NOT_RECORDED"
+        },
+        {
+          "evidenceId": "ev_56e0eb5020677c9cd1c8ad8a",
+          "side": "artifact",
+          "kind": "content",
+          "range": {
+            "startByte": 438,
+            "endByte": 444
+          },
+          "bytes": 6
+        },
+        {
+          "evidenceId": "ev_6f40b595f8fc5c678bd658a7",
+          "side": "source",
+          "kind": "metadata_only",
+          "reason": "SIDE_NOT_RECORDED"
+        },
+        {
+          "evidenceId": "ev_6f40b595f8fc5c678bd658a7",
+          "side": "artifact",
+          "kind": "content",
+          "range": {
+            "startByte": 260,
+            "endByte": 366
+          },
+          "bytes": 106
+        },
+        {
+          "evidenceId": "ev_7c0c7bf0e20568bafeba2582",
+          "side": "source",
+          "kind": "metadata_only",
+          "reason": "SIDE_NOT_RECORDED"
+        },
+        {
+          "evidenceId": "ev_7c0c7bf0e20568bafeba2582",
+          "side": "artifact",
+          "kind": "content",
+          "range": {
+            "startByte": 270,
+            "endByte": 278
+          },
+          "bytes": 8
+        },
+        {
+          "evidenceId": "ev_72a88bc0ba8d1bf4a1b13abe",
+          "side": "source",
+          "kind": "metadata_only",
+          "reason": "SIDE_NOT_RECORDED"
+        },
+        {
+          "evidenceId": "ev_72a88bc0ba8d1bf4a1b13abe",
+          "side": "artifact",
+          "kind": "content",
+          "range": {
+            "startByte": 288,
+            "endByte": 299
+          },
+          "bytes": 11
+        },
+        {
+          "evidenceId": "ev_8df4a6935398845258885dee",
+          "side": "source",
+          "kind": "metadata_only",
+          "reason": "SIDE_NOT_RECORDED"
+        },
+        {
+          "evidenceId": "ev_8df4a6935398845258885dee",
+          "side": "artifact",
+          "kind": "content",
+          "range": {
+            "startByte": 309,
+            "endByte": 314
+          },
+          "bytes": 5
+        },
+        {
+          "evidenceId": "ev_82c5e3fa459059ae29423f20",
+          "side": "source",
+          "kind": "metadata_only",
+          "reason": "SIDE_NOT_RECORDED"
+        },
+        {
+          "evidenceId": "ev_82c5e3fa459059ae29423f20",
+          "side": "artifact",
+          "kind": "content",
+          "range": {
+            "startByte": 324,
+            "endByte": 336
+          },
+          "bytes": 12
+        },
+        {
+          "evidenceId": "ev_e4f78c2d5e62724b820607a0",
+          "side": "source",
+          "kind": "metadata_only",
+          "reason": "SIDE_NOT_RECORDED"
+        },
+        {
+          "evidenceId": "ev_e4f78c2d5e62724b820607a0",
+          "side": "artifact",
+          "kind": "content",
+          "range": {
+            "startByte": 346,
+            "endByte": 360
+          },
+          "bytes": 14
+        },
+        {
+          "evidenceId": "ev_b5d8c3133bb4f97ccffd9dc6",
+          "side": "source",
+          "kind": "metadata_only",
+          "reason": "SIDE_NOT_RECORDED"
+        },
+        {
+          "evidenceId": "ev_b5d8c3133bb4f97ccffd9dc6",
+          "side": "artifact",
+          "kind": "content",
+          "range": {
+            "startByte": 586,
+            "endByte": 591
+          },
+          "bytes": 5
+        },
+        {
+          "evidenceId": "ev_4756f3cb950373c2485ce261",
+          "side": "source",
+          "kind": "metadata_only",
+          "reason": "SIDE_NOT_RECORDED"
+        },
+        {
+          "evidenceId": "ev_4756f3cb950373c2485ce261",
+          "side": "artifact",
+          "kind": "content",
+          "range": {
+            "startByte": 231,
+            "endByte": 241
+          },
+          "bytes": 10
+        },
+        {
+          "evidenceId": "ev_e364e06ce429a301dc9d1fe0",
+          "side": "source",
+          "kind": "metadata_only",
+          "reason": "SIDE_NOT_RECORDED"
+        },
+        {
+          "evidenceId": "ev_e364e06ce429a301dc9d1fe0",
+          "side": "artifact",
+          "kind": "content",
+          "range": {
+            "startByte": 15,
+            "endByte": 27
+          },
+          "bytes": 12
+        },
+        {
+          "evidenceId": "ev_c7104eee7fd73f5db9296bc9",
+          "side": "source",
+          "kind": "metadata_only",
+          "reason": "SIDE_NOT_RECORDED"
+        },
+        {
+          "evidenceId": "ev_c7104eee7fd73f5db9296bc9",
+          "side": "artifact",
+          "kind": "content",
+          "range": {
+            "startByte": 121,
+            "endByte": 216
+          },
+          "bytes": 95
+        },
+        {
+          "evidenceId": "ev_5daa657b8184fb9a4d60fa51",
+          "side": "source",
+          "kind": "metadata_only",
+          "reason": "SIDE_NOT_RECORDED"
+        },
+        {
+          "evidenceId": "ev_5daa657b8184fb9a4d60fa51",
+          "side": "artifact",
+          "kind": "content",
+          "range": {
+            "startByte": 140,
+            "endByte": 145
+          },
+          "bytes": 5
+        },
+        {
+          "evidenceId": "ev_336e59ca5fa8cdc2b4df7185",
+          "side": "source",
+          "kind": "metadata_only",
+          "reason": "SIDE_NOT_RECORDED"
+        },
+        {
+          "evidenceId": "ev_336e59ca5fa8cdc2b4df7185",
+          "side": "artifact",
+          "kind": "content",
+          "range": {
+            "startByte": 163,
+            "endByte": 210
+          },
+          "bytes": 47
+        },
+        {
+          "evidenceId": "ev_8be9ce7193585dd5cfea6278",
+          "side": "source",
+          "kind": "metadata_only",
+          "reason": "SIDE_NOT_RECORDED"
+        },
+        {
+          "evidenceId": "ev_8be9ce7193585dd5cfea6278",
+          "side": "artifact",
+          "kind": "content",
+          "range": {
+            "startByte": 468,
+            "endByte": 509
+          },
+          "bytes": 41
+        },
+        {
+          "evidenceId": "ev_f8e1fea0c1071b3e9796b323",
+          "side": "source",
+          "kind": "metadata_only",
+          "reason": "SIDE_NOT_RECORDED"
+        },
+        {
+          "evidenceId": "ev_f8e1fea0c1071b3e9796b323",
+          "side": "artifact",
+          "kind": "content",
+          "range": {
+            "startByte": 487,
+            "endByte": 503
+          },
+          "bytes": 16
+        },
+        {
+          "evidenceId": "ev_71afedfc1b909c299a952891",
+          "side": "source",
+          "kind": "metadata_only",
+          "reason": "SIDE_NOT_RECORDED"
+        },
+        {
+          "evidenceId": "ev_71afedfc1b909c299a952891",
+          "side": "artifact",
+          "kind": "content",
+          "range": {
+            "startByte": 746,
+            "endByte": 986
+          },
+          "bytes": 240
+        },
+        {
+          "evidenceId": "ev_99948400d4033e2e56a2e4fc",
+          "side": "source",
+          "kind": "metadata_only",
+          "reason": "SIDE_NOT_RECORDED"
+        },
+        {
+          "evidenceId": "ev_99948400d4033e2e56a2e4fc",
+          "side": "artifact",
+          "kind": "content",
+          "range": {
+            "startByte": 800,
+            "endByte": 980
+          },
+          "bytes": 180
+        },
+        {
+          "evidenceId": "ev_3ec55082d2949b2b7942a6e3",
+          "side": "source",
+          "kind": "metadata_only",
+          "reason": "SIDE_NOT_RECORDED"
+        },
+        {
+          "evidenceId": "ev_3ec55082d2949b2b7942a6e3",
+          "side": "artifact",
+          "kind": "content",
+          "range": {
+            "startByte": 898,
+            "endByte": 908
+          },
+          "bytes": 10
+        },
+        {
+          "evidenceId": "ev_59ed728e31362b2fb623466c",
+          "side": "source",
+          "kind": "metadata_only",
+          "reason": "SIDE_NOT_RECORDED"
+        },
+        {
+          "evidenceId": "ev_59ed728e31362b2fb623466c",
+          "side": "artifact",
+          "kind": "content",
+          "range": {
+            "startByte": 900,
+            "endByte": 902
+          },
+          "bytes": 2
+        },
+        {
+          "evidenceId": "ev_2a8d32ad7c3fd40078f6441d",
+          "side": "source",
+          "kind": "metadata_only",
+          "reason": "SIDE_NOT_RECORDED"
+        },
+        {
+          "evidenceId": "ev_2a8d32ad7c3fd40078f6441d",
+          "side": "artifact",
+          "kind": "content",
+          "range": {
+            "startByte": 904,
+            "endByte": 906
+          },
+          "bytes": 2
+        },
+        {
+          "evidenceId": "ev_edea2ee710f916327b1d9f9e",
+          "side": "source",
+          "kind": "metadata_only",
+          "reason": "SIDE_NOT_RECORDED"
+        },
+        {
+          "evidenceId": "ev_edea2ee710f916327b1d9f9e",
+          "side": "artifact",
+          "kind": "content",
+          "range": {
+            "startByte": 856,
+            "endByte": 873
+          },
+          "bytes": 17
+        },
+        {
+          "evidenceId": "ev_b6263e588b9283a5dc449617",
+          "side": "source",
+          "kind": "metadata_only",
+          "reason": "SIDE_NOT_RECORDED"
+        },
+        {
+          "evidenceId": "ev_b6263e588b9283a5dc449617",
+          "side": "artifact",
+          "kind": "content",
+          "range": {
+            "startByte": 858,
+            "endByte": 861
+          },
+          "bytes": 3
+        },
+        {
+          "evidenceId": "ev_f0e516397c1473127ec99c68",
+          "side": "source",
+          "kind": "metadata_only",
+          "reason": "SIDE_NOT_RECORDED"
+        },
+        {
+          "evidenceId": "ev_f0e516397c1473127ec99c68",
+          "side": "artifact",
+          "kind": "content",
+          "range": {
+            "startByte": 863,
+            "endByte": 865
+          },
+          "bytes": 2
+        },
+        {
+          "evidenceId": "ev_c7556358e3a0dfdd41472c3e",
+          "side": "source",
+          "kind": "metadata_only",
+          "reason": "SIDE_NOT_RECORDED"
+        },
+        {
+          "evidenceId": "ev_c7556358e3a0dfdd41472c3e",
+          "side": "artifact",
+          "kind": "content",
+          "range": {
+            "startByte": 867,
+            "endByte": 871
+          },
+          "bytes": 4
+        },
+        {
+          "evidenceId": "ev_7055e066435911ace9215e39",
+          "side": "source",
+          "kind": "metadata_only",
+          "reason": "SIDE_NOT_RECORDED"
+        },
+        {
+          "evidenceId": "ev_7055e066435911ace9215e39",
+          "side": "artifact",
+          "kind": "content",
+          "range": {
+            "startByte": 821,
+            "endByte": 835
+          },
+          "bytes": 14
+        },
+        {
+          "evidenceId": "ev_fe30491abf65735bb2236aca",
+          "side": "source",
+          "kind": "metadata_only",
+          "reason": "SIDE_NOT_RECORDED"
+        },
+        {
+          "evidenceId": "ev_fe30491abf65735bb2236aca",
+          "side": "artifact",
+          "kind": "content",
+          "range": {
+            "startByte": 823,
+            "endByte": 824
+          },
+          "bytes": 1
+        },
+        {
+          "evidenceId": "ev_aabb0f347fc57d8513ffb4f7",
+          "side": "source",
+          "kind": "metadata_only",
+          "reason": "SIDE_NOT_RECORDED"
+        },
+        {
+          "evidenceId": "ev_aabb0f347fc57d8513ffb4f7",
+          "side": "artifact",
+          "kind": "content",
+          "range": {
+            "startByte": 826,
+            "endByte": 827
+          },
+          "bytes": 1
+        },
+        {
+          "evidenceId": "ev_a68588c193c001d62bb39055",
+          "side": "source",
+          "kind": "metadata_only",
+          "reason": "SIDE_NOT_RECORDED"
+        },
+        {
+          "evidenceId": "ev_a68588c193c001d62bb39055",
+          "side": "artifact",
+          "kind": "content",
+          "range": {
+            "startByte": 829,
+            "endByte": 830
+          },
+          "bytes": 1
+        },
+        {
+          "evidenceId": "ev_021c4192b0c25dc5f42c8bb0",
+          "side": "source",
+          "kind": "metadata_only",
+          "reason": "SIDE_NOT_RECORDED"
+        },
+        {
+          "evidenceId": "ev_021c4192b0c25dc5f42c8bb0",
+          "side": "artifact",
+          "kind": "content",
+          "range": {
+            "startByte": 832,
+            "endByte": 833
+          },
+          "bytes": 1
+        },
+        {
+          "evidenceId": "ev_199f15a6273b4446e76765f0",
+          "side": "source",
+          "kind": "metadata_only",
+          "reason": "SIDE_NOT_RECORDED"
+        },
+        {
+          "evidenceId": "ev_199f15a6273b4446e76765f0",
+          "side": "artifact",
+          "kind": "content",
+          "range": {
+            "startByte": 964,
+            "endByte": 970
+          },
+          "bytes": 6
+        },
+        {
+          "evidenceId": "ev_9e99e0d973fc76c4229b9f6a",
+          "side": "source",
+          "kind": "metadata_only",
+          "reason": "SIDE_NOT_RECORDED"
+        },
+        {
+          "evidenceId": "ev_9e99e0d973fc76c4229b9f6a",
+          "side": "artifact",
+          "kind": "content",
+          "range": {
+            "startByte": 966,
+            "endByte": 968
+          },
+          "bytes": 2
+        },
+        {
+          "evidenceId": "ev_d70ba34f3ed25dd332a905a5",
+          "side": "source",
+          "kind": "metadata_only",
+          "reason": "SIDE_NOT_RECORDED"
+        },
+        {
+          "evidenceId": "ev_d70ba34f3ed25dd332a905a5",
+          "side": "artifact",
+          "kind": "content",
+          "range": {
+            "startByte": 933,
+            "endByte": 940
+          },
+          "bytes": 7
+        },
+        {
+          "evidenceId": "ev_43bbb531ed12fb6563e6057a",
+          "side": "source",
+          "kind": "metadata_only",
+          "reason": "SIDE_NOT_RECORDED"
+        },
+        {
+          "evidenceId": "ev_43bbb531ed12fb6563e6057a",
+          "side": "artifact",
+          "kind": "content",
+          "range": {
+            "startByte": 935,
+            "endByte": 938
+          },
+          "bytes": 3
+        },
+        {
+          "evidenceId": "ev_7baf0b867929aaa30c68d006",
+          "side": "source",
+          "kind": "metadata_only",
+          "reason": "SIDE_NOT_RECORDED"
+        },
+        {
+          "evidenceId": "ev_7baf0b867929aaa30c68d006",
+          "side": "artifact",
+          "kind": "content",
+          "range": {
+            "startByte": 766,
+            "endByte": 777
+          },
+          "bytes": 11
+        },
+        {
+          "evidenceId": "ev_0511eb8ec9375469fbd6d94a",
+          "side": "source",
+          "kind": "metadata_only",
+          "reason": "SIDE_NOT_RECORDED"
+        },
+        {
+          "evidenceId": "ev_0511eb8ec9375469fbd6d94a",
+          "side": "artifact",
+          "kind": "content",
+          "range": {
+            "startByte": 93,
+            "endByte": 100
+          },
+          "bytes": 7
+        }
+      ],
+      "seconds": 33.655
+    },
+    {
+      "id": "minimist-1.2.8",
+      "family": "upstream:minimist",
+      "split": "development",
+      "labelAuthority": "unlabeled public release; no independent human label or quality metric",
+      "reportSha256": "sha256:fd7047dfc54c020fd5f0c433e3917d40e09831918bc8ce9383a5368b368e48f4",
+      "reportId": "report_b15b8c6817119d7bd3a974c2",
+      "configuration": "cf34face0a88c296066ed8ef0f2b3d7e2aff71553e64cb93635979376a3e6b65",
+      "artifactSha256": "sha256:350a76c115b393c19d24654834261e5dc9f0e8cc5e08f3937fa80140f3e4ce83",
+      "sourceArchiveSha256": "2c7f81307eb485e34dacd5f3561d10ac112db1967e605df7c81d31cc6791d74e",
+      "outcomes": {
+        "artifactIntegrity": "not_checked",
+        "sourceAssociation": "user_supplied",
+        "provenancePolicy": "not_checked",
+        "correspondence": "unresolved",
+        "analysisCompleteness": "complete",
+        "policyResult": "not_evaluated"
+      },
+      "findings": 8,
+      "coverage": {
+        "artifactFiles": 24,
+        "sourceFiles": 31,
+        "comparedFiles": 31,
+        "analyzedBytes": 110840,
+        "skippedBytes": 0,
+        "unsupportedBytes": 0,
+        "omissions": [],
+        "complete": true,
+        "limitations": [
+          "Static relationship scope: at most 128 artifact members, 1 MiB candidate reads, 32 source-map relationships and 256 KiB per member. Unsupported/unexamined transformations remain raw residuals; byte inventory coverage is not explanation coverage."
+        ]
+      },
+      "sourceNotices": [
+        {
+          "path": "minimist-6901ee286bc4c16da6830b48b46ce1574703cea1/LICENSE",
+          "sha256": "sha256:435a6722c786b0a56fbe7387028f1d9d3f3a2d0fb615bb8fee118727c3f59b7b"
+        }
+      ],
+      "citations": [],
+      "seconds": 40.505
+    },
+    {
+      "id": "wrappy-1.0.2",
+      "family": "upstream:wrappy",
+      "split": "development",
+      "labelAuthority": "unlabeled public release; no independent human label or quality metric",
+      "reportSha256": "sha256:9d274570ef566976b30c1e8e4c4fb254895e5b95937a4978fb64e8cb2288aab9",
+      "reportId": "report_58e2e372cc7c1b6db2ad9678",
+      "configuration": "1386bce12ec3ccd74f89eb4c43068f8fbc52f1917f040b8b2a6b679e02098699",
+      "artifactSha256": "sha256:aff3730d91b7b1e143822956d14608f563163cf11b9d0ae602df1fe1e430fdfb",
+      "sourceArchiveSha256": "d4c44dbfe2a81c44042eb94b0574c671d0fb157524dd13d5be62c108ae550b3e",
+      "outcomes": {
+        "artifactIntegrity": "not_checked",
+        "sourceAssociation": "user_supplied",
+        "provenancePolicy": "not_checked",
+        "correspondence": "unresolved",
+        "analysisCompleteness": "complete",
+        "policyResult": "not_evaluated"
+      },
+      "findings": 4,
+      "coverage": {
+        "artifactFiles": 4,
+        "sourceFiles": 7,
+        "comparedFiles": 7,
+        "analyzedBytes": 7234,
+        "skippedBytes": 0,
+        "unsupportedBytes": 0,
+        "omissions": [],
+        "complete": true,
+        "limitations": [
+          "Static relationship scope: at most 128 artifact members, 1 MiB candidate reads, 32 source-map relationships and 256 KiB per member. Unsupported/unexamined transformations remain raw residuals; byte inventory coverage is not explanation coverage."
+        ]
+      },
+      "sourceNotices": [
+        {
+          "path": "wrappy-71d91b6dc5bdeac37e218c2cf03f9ab55b60d214/LICENSE",
+          "sha256": "sha256:4ec3d4c66cd87f5c8d8ad911b10f99bf27cb00cdfcff82621956e379186b016b"
+        }
+      ],
+      "citations": [],
+      "seconds": 24.716
+    },
+    {
+      "id": "once-1.4.0",
+      "family": "upstream:once",
+      "split": "development",
+      "labelAuthority": "unlabeled public release; no independent human label or quality metric",
+      "reportSha256": "sha256:b6646019bb27b054182a66dadd4b053c76ea3891fb6b0186d8dad4bb3e1a7b19",
+      "reportId": "report_04c2fc9dc050b6635cdc0599",
+      "configuration": "ee54179910e5691b3ee6003657f9178aff7458d72055675c2f649b139b8b3945",
+      "artifactSha256": "sha256:cf51460ba370c698f68b976e514d113497339ba018b6003e8e8eb569c6fccfcf",
+      "sourceArchiveSha256": "84937ca8526ee65649ff8d17183c24759139e3f028dd3d83f085141e39e6a4a2",
+      "outcomes": {
+        "artifactIntegrity": "not_checked",
+        "sourceAssociation": "user_supplied",
+        "provenancePolicy": "not_checked",
+        "correspondence": "unresolved",
+        "analysisCompleteness": "complete",
+        "policyResult": "not_evaluated"
+      },
+      "findings": 3,
+      "coverage": {
+        "artifactFiles": 4,
+        "sourceFiles": 6,
+        "comparedFiles": 6,
+        "analyzedBytes": 10093,
+        "skippedBytes": 0,
+        "unsupportedBytes": 0,
+        "omissions": [],
+        "complete": true,
+        "limitations": [
+          "Static relationship scope: at most 128 artifact members, 1 MiB candidate reads, 32 source-map relationships and 256 KiB per member. Unsupported/unexamined transformations remain raw residuals; byte inventory coverage is not explanation coverage."
+        ]
+      },
+      "sourceNotices": [
+        {
+          "path": "once-0e614d9f5a7e6f0305c625f6b581f6d80b33b8a6/LICENSE",
+          "sha256": "sha256:4ec3d4c66cd87f5c8d8ad911b10f99bf27cb00cdfcff82621956e379186b016b"
+        }
+      ],
+      "citations": [],
+      "seconds": 11.823
+    }
+  ],
+  "limitations": [
+    "Development only; 12 provisional upstream families, no held-out selection or grading.",
+    "Local origin preserves exact downloaded bytes but does not inherit registry integrity/provenance.",
+    "Registry/gitHead claims and HTTPS source snapshots are not independent source labels.",
+    "Parser/API/CLI/reader checks do not establish GUI/AT or independent claim acceptance."
+  ]
+}

@@ -15,11 +15,11 @@ Examples use `node packages/cli/dist/index.js`, the built repository executable.
 | `inspect REPORT_FILE_OR_SHA256 [options]` | Validate/reopen retained report or inspect one evidence object |
 | `tui REPORT [--store DIR] [--no-color] [--ascii] [--palette]` | Retained-report TUI; nonterminal use emits the shared report summary and report exit outcome; human visual acceptance remains separate |
 
-The static producer never installs/imports the analyzed package or runs its hooks/build. New investigations use the reviewed `55240e9` deterministic entry through the shared engine by default. `HEURISKO_ANALYSIS_MODULE=off` explicitly retains raw evidence with unavailable deterministic analysis. No product model, monitor, provenance verifier or rebuild worker is enabled. Zero findings with unavailable or incomplete analysis is not a clean assessment.
+The static producer never installs/imports the analyzed package or runs its hooks/build. New investigations use the reviewed `p2-static-v1` deterministic revision through the shared engine by default. `HEURISKO_ANALYSIS_MODULE=off` explicitly retains raw evidence with unavailable deterministic analysis. Product models, monitoring and rebuild remain unavailable. Provenance/policy checking is optional host configuration described below. Zero findings with unavailable or incomplete analysis is not a clean assessment.
 
 ## Deterministic analysis and raw-only replay
 
-The default is `@heurisko/intelligence-reviewed` version `0.1.0-55240e9`, derived from the supplied commit `55240e99409ad44cbd6a978f40873ef410cb1861`. The allowlisted host setting `HEURISKO_ANALYSIS_MODULE=55240e9` explicitly selects the same entry. Only reviewed deterministic code is admitted; provider/CodeAstra/model paths are excluded. Integration validation and remaining limits belong to the [module admission reference](../packages/intelligence-reviewed/README.md); older receipts and saved reports retain their original configuration.
+The default is `@heurisko/intelligence-reviewed` version `0.2.0-p2-static-v1`, a local Phase 2 revision of the deterministic implementation at `55240e99409ad44cbd6a978f40873ef410cb1861`. `HEURISKO_ANALYSIS_MODULE=p2-static-v1` explicitly selects it; `55240e9` loads the preserved legacy rule body with its known quality defects under the current identified boundary. Only reviewed deterministic code is admitted; provider/CodeAstra/model paths are excluded. Integration validation and remaining limits belong to the [module admission reference](../packages/intelligence-reviewed/README.md); older receipts and saved reports retain their original configuration.
 
 This is trusted **host-process configuration**, not an artifact option, CLI module-path flag, browser form field or HTTP module API. The shared engine reads it for a new investigation. An absent/empty value uses the reviewed default; `off` selects raw-only/unavailable analysis. An unknown nonempty selector is rejected before acquisition unless trusted caller code supplies its own explicit module. An explicit trusted `InvestigationContext.module` takes precedence. Opening a saved report never reruns analysis or changes its module identity.
 
@@ -75,7 +75,7 @@ Options use separate values (`--store DIR`), not `--store=DIR`. Duplicate option
 | `--store DIR` | analyze, inspect, tui / interactive entry | Evidence store; default `.heurisko`; explicit path resolved from working directory |
 | `--report FILE` | analyze | Save immutable validated full report JSON; do not overwrite a changed existing output |
 | `--bundle FILE` | analyze | Save EvidenceBundle JSON; not a self-contained portable evidence directory |
-| `--policy REF` | analyze | Record requested trust policy; remains indeterminate until a concrete evaluator exists |
+| `--policy REF` | analyze | Select an exact key from the trusted host catalog; unknown/unconfigured policy is indeterminate |
 | `--evidence ev_ID` | inspect | Read a retained evidence object's first 8,192 bytes after report/evidence verification |
 | `--json` | analyze, inspect | One canonical JSON result on stdout; diagnostics/progress on stderr |
 | `--no-ai` | analyze | Explicitly keep AI disabled; configured deterministic checks remain active. The default also disables AI; no product model is admitted. |
@@ -94,7 +94,7 @@ node packages/cli/dist/index.js analyze npm:picocolors@1.1.1 --store .heurisko/n
 node packages/cli/dist/index.js analyze npm:@vue/shared@3.5.22 --source https://github.com/vuejs/core --commit 5a8aa0b2ba575e098cbb63b396e9bcb751eb3a0f --subdirectory packages/shared --store .heurisko/scoped-run --no-ai --json
 ```
 
-Fresh analysis needs permitted public network access, full validation and the restricted parser. Public npm integrity supports strict SHA-512/SHA-256 SRI; missing/unsupported SRI remains incomplete. Retrieved advertised attestations remain unverified and provenance `not_checked`. The Vue override is a user-selected corpus comparison candidate, not a verified source binding.
+Fresh analysis needs permitted public network access, full validation and the restricted parser. Public npm integrity supports strict SHA-512/SHA-256 SRI; missing/unsupported SRI remains incomplete. Without a configured trusted catalog, advertised attestations remain unverified and provenance `not_checked`. The Vue override is a user-selected corpus comparison candidate, not a verified source binding.
 
 ## Local archive and source replay
 
@@ -132,7 +132,7 @@ Analyze and report inspection emit a readable uncolored summary by default; `--j
 | `2` | Otherwise materially incomplete/failed analysis or indeterminate requested policy |
 | `0` | Otherwise completed configured checks without violation; never universal harmlessness |
 
-The mapping is preserved in [current decisions](Approved%20Decision%20Register.md), with precedence implemented in `engine.ts` and covered by core tests; concrete policy evaluation remains unavailable. The retained raw/default examples intentionally exit **2**, including successful historical JSON inspection. A newly configured report uses its own recorded outcomes and may have a different exit. Treat valid useful JSON plus exit 2 as incomplete evidence, not a process transport failure or a safe result. CI must capture both the exit and report; do not discard JSON just because a shell's fail-fast setting sees nonzero. No tested generic policy-evaluation recipe is claimed.
+The mapping is preserved in [current decisions](Approved%20Decision%20Register.md), with precedence implemented in `engine.ts` and covered by core tests; optional concrete policy evaluation is described below. The retained raw/default examples intentionally exit **2**, including successful historical JSON inspection. A newly configured report uses its own recorded outcomes and may have a different exit. Treat valid useful JSON plus exit 2 as incomplete evidence, not a process transport failure or a safe result. CI must capture both the exit and report; do not discard JSON just because a shell's fail-fast setting sees nonzero. Policy fixtures establish their named scope; no general identity recommendation or safety claim follows.
 
 SIGINT/SIGTERM request cancellation via the shared abort signal. A request is not proof of cleanup acknowledgment; use actual outcome/recovery records. The parser retains durable records/locks/spool if creation/removal is uncertain. There is no CLI `resume`, `detach`, automatic lock deletion or general job recovery command; the existing explicit [parser recovery script](../scripts/recover-parser-job.mjs) is developer tooling and requires exact-job inspection, not a browser retry API.
 
@@ -170,7 +170,8 @@ Default terminal Home and `tui REPORT` are available as described above; their h
 | Direction | Availability |
 |---|---|
 | `watch add/run --once/status/remove`, configured recurring runner | Approved monitor design; not implemented; exact complete syntax must follow actual implementation |
-| Provenance verification, concrete policy evaluator, verified generated/build equivalence, genuine open-model interpretation | Required/planned integrations; default deterministic findings do not establish these capabilities |
+| Provenance/policy | Optional host-configured offline npm profile; default deterministic findings alone do not establish provenance/policy |
+| Verified generated/build equivalence, genuine open-model interpretation | Required/planned integrations; unavailable |
 | PyPI, `compare`, `project --lockfile`, SARIF, `report export`, `serve --local` | Later directions/provisional syntax; current parser rejects these commands |
 | Hosted analysis, accounts, notifications, public sharing | Separate future scope/approval; not prerequisites for local use |
 
@@ -180,3 +181,31 @@ The browser uses this engine contract with [explicit interface differences](../H
 ### Missing-evidence compatibility
 
 `inspect REPORT --store STORE --json` validates the report and verifies its retained blobs before emitting JSON. A missing/corrupt required blob yields exit 3 and no JSON. This strict check is different from metadata viewing: `tui REPORT --store STORE` accepts a valid historical report even with missing blobs; redirected output is an inert summary with the recorded report exit. Interactive TUI and browser show `MISSING_BLOB` when cited bytes are requested. Neither path fabricates bytes or upgrades outcomes. A standalone report JSON is not a portable evidence bundle. The Phase 1 compatibility receipt preserves this distinction and the original bytes; use portable export or retain the matching store for full evidence.
+
+## Offline provenance and expected policy
+
+The optional shared verifier follows current accepted profile `npm-gha-slsa-v1-draft.2`. Without trusted host configuration, existing capture-only behavior remains: provenance is unchecked and a requested policy is indeterminate. Configure the host with `HEURISKO_TRUST_CONFIG=/absolute/path/catalog.json`; a CLI/TUI/browser policy field selects only an exact key in that catalog. Unknown keys are indeterminate. An invalid host catalog fails before acquisition. Targets cannot select files, roots, executable modules or network destinations.
+
+Prepare the exact offline worker runtime explicitly:
+
+```sh
+# macOS arm64 host:
+docker pull --platform=linux/arm64 node:22.23.4-bookworm-slim@sha256:9a422d62743ffb1e6eb282549f4eae7ab89f7b926db1f136f4cba8be60e4ecbc
+# Linux amd64 host:
+docker pull --platform=linux/amd64 node:22.23.4-bookworm-slim@sha256:9f0dde62d10e7ff7a310ecaebd66225f6b46c17e6cb778449a77b05d3541bea2
+pnpm run build
+# NEW paths only; explicit public fixed-host capture, then offline authentication:
+python3 scripts/capture-trust-snapshot.py .heurisko/NEW_TRUST_CAPTURE
+node scripts/prepare-trust-snapshot.mjs .heurisko/NEW_TRUST_CAPTURE .heurisko/NEW_TRUST_SNAPSHOT.json
+# On every subsequent update, pass the prior selected snapshot as the third argument.
+```
+
+Host architecture selects the corresponding fixed image; assertion material cannot choose a runtime. Selected image/platform are retained in report configuration. The preparation tool authenticates the embedded version-15 TUF anchor, sequential rotations, signed metadata/version/expiry chain and exact target hash/length. Updates produce new immutable snapshots; retain prior high-water versions. Catalog replacement is an explicit host trust operation. Verification never fetches roots or refreshes a cache. New decisions reject expired metadata, snapshots older than 30 days, rollback, unsupported inputs and unconfirmed worker cleanup. Historical reopening preserves the earlier decision/time/root state.
+
+Current draft.2 admits Rekor `dsse/0.0.1` only. `dsse/0.0.2`, `intoto` and `hashedrekord` return unsupported/indeterminate when a policy is requested. With no policy, the current format filter still applies while `policyResult` stays `not_evaluated`. Draft.1 remains an explicit legacy evaluator with its original two-DSSE-version behavior and original real-format evidence limit; existing catalogs/reports are never silently upgraded. To select draft.2, create a new immutable catalog policy entry with the new profile name and its reviewed expected identities. The worker decision records the selected profile; policy/root/worker/code hashes bind the new observation. Historical reopening preserves old bytes and does not re-evaluate them.
+
+A catalog is JSON with `version: "heurisko-trust-catalog-v1"`, an embedded authenticated `snapshot` object and a `policies` map. Each policy has exactly `profile: "npm-gha-slsa-v1-draft.2"` (or explicit legacy `"npm-gha-slsa-v1-draft.1"`), `provenance: "required"` or `"optional"`, and `expect` with exact string values for `package`, `version`, `repositoryUrl`, `fullSourceCommit`, `packageSubdirectory`, `workflowPath`, `workflowRef`, `signerSAN`, `builderId` and `buildType`. Expectations must come from a host-reviewed policy, never automatically from the assertion being verified. [Admission and trust boundaries](../packages/core/VERIFIER_ADMISSION.md) describe formats, generic certificate OIDs and resource bounds. The dated [fixture catalog](../examples/production-phase2/2026-11-02-implementation-02/test-trust-catalog.json) is test input, not a general trust recommendation; its embedded signed timestamp expires.
+
+With the catalog selected, an exact npm archive's signed build subject is checked independently of registry SRI. Valid signature plus exact subject can record `verified_cryptographic_only`; all explicit supported expectations are required for `verified_policy`. A supported identity mismatch is a policy violation, preserving crypto success. Required captured absence/definite invalidity violates policy; explicitly optional captured absence can pass while provenance remains absent. Unknown formats/parameters, missing assertion fields, source conflicts/subtree requirements, stale roots, cancellation and resource limits remain indeterminate. A repository-root dependency claim is not a claim about the working directory, package subtree, generated bytes or build reproduction. Local archives never inherit registry provenance.
+
+A report binds exact policy content, authenticated root snapshot/anchor, worker/dependency/runtime identity and verification time in versioned evidence and configuration. All six outcomes remain independent. CLI exit precedence remains 3 → 1 → 2 → 0 as defined above; successful policy evaluation cannot clear unrelated incomplete analysis. The worker uses no network, read-only files, unprivileged UID, 128 MiB memory/no additional swap, one CPU/16 processes and a configured five-second worker execution deadline under the pinned image’s GNU timeout 9.1 supervisor. Docker create/start controls are bounded separately at ten seconds; other control operations at five seconds. The retained emulation run includes a 9,004 ms container start-to-finish timeout; five-second end-to-end settlement is not established. Timeout/cancellation requires exact-job termination and observed cleanup; no host fallback exists. The verifier awaits the bounded create acknowledgment during cancellation and skips start when cancellation is already requested. Subsequent controls use the full immutable container ID and validate inspected ID/name; a successful full-ID list with no objects confirms absence without matching daemon error text. A failed control and confirmed eventual absence are separate retained facts: the decision remains indeterminate. Per-control timestamps, durations, limits/exits/errors and the primary failure are retained; an absent name after unacknowledged creation never proves settlement. Native Linux host and remaining signed-fixture/application conformance are documented Phase 2 work. Current browser/accessibility acceptance is closed by the owner amendment; absent execution remains an evidence limit. A local policy success is not release acceptance or safety.

@@ -1,0 +1,27 @@
+{
+  "purpose": "Phase 2 planning research only; no dependency admission or verification result",
+  "recordedAt": "2026-11-01T18:45:21.380448+00:00",
+  "sourceCommit": "7eee564818c63b0edbe47e58d7c044136a4470c0",
+  "files": [
+    {
+      "path": "verify-metadata.json",
+      "url": "https://registry.npmjs.org/@sigstore%2fverify/4.1.2",
+      "sha256": "45de3b73a7a1956a800aa7fa8586f9d90e7f242166e02429b779c3716900fa30",
+      "bytes": 2068
+    },
+    {
+      "path": "sigstore-metadata.json",
+      "url": "https://registry.npmjs.org/sigstore/5.0.0",
+      "sha256": "d15360adff505187b0b96107fd82fd4154d09d229d3a16a5623fcfe03bf2f62e",
+      "bytes": 2113
+    }
+  ],
+  "method": "Bounded public HTTPS JSON retrieval; original response bytes retained. No package installed, imported or executed.",
+  "limitations": [
+    "Registry metadata and gitHead are publisher assertions; package tarball bytes and signatures were not independently verified.",
+    "Dependency closure, released archive notices and positive/negative cryptographic fixtures remain untested.",
+    "Default sandbox registry retrieval failed DNS resolution; permitted network retrieval succeeded.",
+    "GitHub CLI unavailable; public PR and check-runs API returned HTTP 403 rate limit exceeded. Browser/web fetch did not supply final-head check evidence.",
+    "Some primary-source web fetches were unavailable; only successfully read sources support roadmap claims."
+  ]
+}

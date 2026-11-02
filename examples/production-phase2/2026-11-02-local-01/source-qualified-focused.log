@@ -1,0 +1,340 @@
+TAP version 13
+# Subtest: actual canonical local fixture resolves hash-bound lifecycle addition and removal without changing evidence
+ok 1 - actual canonical local fixture resolves hash-bound lifecycle addition and removal without changing evidence
+  ---
+  duration_ms: 29.758417
+  type: 'test'
+  ...
+# Subtest: the revised deterministic consumer accepts the real retained addition through the G0 adapter
+ok 2 - the revised deterministic consumer accepts the real retained addition through the G0 adapter
+  ---
+  duration_ms: 343.752708
+  type: 'test'
+  ...
+# Subtest: actual EvidenceStore missing and corrupt delta bytes remain unresolved without supplying content
+ok 3 - actual EvidenceStore missing and corrupt delta bytes remain unresolved without supplying content
+  ---
+  duration_ms: 24.969916
+  type: 'test'
+  ...
+# Subtest: foreign pointer, forged member link, span mismatch and false absence cannot establish script direction
+ok 4 - foreign pointer, forged member link, span mismatch and false absence cannot establish script direction
+  ---
+  duration_ms: 27.345042
+  type: 'test'
+  ...
+# Subtest: duplicate-key JSON and invalid UTF8 are rejected for deltas and linked original manifests
+ok 5 - duplicate-key JSON and invalid UTF8 are rejected for deltas and linked original manifests
+  ---
+  duration_ms: 10.48
+  type: 'test'
+  ...
+# Subtest: both-null and canonically equal-value pseudo-deltas are rejected before any member resolution
+ok 6 - both-null and canonically equal-value pseudo-deltas are rejected before any member resolution
+  ---
+  duration_ms: 4.994292
+  type: 'test'
+  ...
+# Subtest: a delta referenced by another change is unresolved even when its content hash exists in the store
+ok 7 - a delta referenced by another change is unresolved even when its content hash exists in the store
+  ---
+  duration_ms: 2.367625
+  type: 'test'
+  ...
+# Subtest: individual delta/member byte bounds are enforced without passing oversized text to intelligence
+ok 8 - individual delta/member byte bounds are enforced without passing oversized text to intelligence
+  ---
+  duration_ms: 7.133917
+  type: 'test'
+  ...
+# Subtest: record count and total read budgets remain bounded even when every content read fails after consuming its allowance
+ok 9 - record count and total read budgets remain bounded even when every content read fails after consuming its allowance
+  ---
+  duration_ms: 32.002084
+  type: 'test'
+  ...
+# Subtest: pre-cancel, cancellation during a read, and an expired deadline never call the intelligence function
+ok 10 - pre-cancel, cancellation during a read, and an expired deadline never call the intelligence function
+  ---
+  duration_ms: 89.138459
+  type: 'test'
+  ...
+# Subtest: caller mutation during a delayed read cannot replace the bundle, options or resolved retained bytes
+ok 11 - caller mutation during a delayed read cannot replace the bundle, options or resolved retained bytes
+  ---
+  duration_ms: 7.706917
+  type: 'test'
+  ...
+# Subtest: exact member spans in the canonical fixture are independently reproducible by the strict scanner
+ok 12 - exact member spans in the canonical fixture are independently reproducible by the strict scanner
+  ---
+  duration_ms: 5.553333
+  type: 'test'
+  ...
+# Subtest: Q1 actual loader: preinstall add
+ok 13 - Q1 actual loader: preinstall add
+  ---
+  duration_ms: 119.065958
+  type: 'test'
+  ...
+# Subtest: Q1 actual loader: preinstall change
+ok 14 - Q1 actual loader: preinstall change
+  ---
+  duration_ms: 88.196625
+  type: 'test'
+  ...
+# Subtest: Q1 actual loader: preinstall remove
+ok 15 - Q1 actual loader: preinstall remove
+  ---
+  duration_ms: 91.183542
+  type: 'test'
+  ...
+# Subtest: Q1 actual loader: install add
+ok 16 - Q1 actual loader: install add
+  ---
+  duration_ms: 76.920875
+  type: 'test'
+  ...
+# Subtest: Q1 actual loader: install change
+ok 17 - Q1 actual loader: install change
+  ---
+  duration_ms: 78.902958
+  type: 'test'
+  ...
+# Subtest: Q1 actual loader: install remove
+ok 18 - Q1 actual loader: install remove
+  ---
+  duration_ms: 74.717042
+  type: 'test'
+  ...
+# Subtest: Q1 actual loader: postinstall add
+ok 19 - Q1 actual loader: postinstall add
+  ---
+  duration_ms: 73.070333
+  type: 'test'
+  ...
+# Subtest: Q1 actual loader: postinstall change
+ok 20 - Q1 actual loader: postinstall change
+  ---
+  duration_ms: 73.502125
+  type: 'test'
+  ...
+# Subtest: Q1 actual loader: postinstall remove
+ok 21 - Q1 actual loader: postinstall remove
+  ---
+  duration_ms: 76.232625
+  type: 'test'
+  ...
+# Subtest: Q1 actual loader: prepare add
+ok 22 - Q1 actual loader: prepare add
+  ---
+  duration_ms: 82.519166
+  type: 'test'
+  ...
+# Subtest: Q1 actual loader: prepare change
+ok 23 - Q1 actual loader: prepare change
+  ---
+  duration_ms: 154.194709
+  type: 'test'
+  ...
+# Subtest: Q1 actual loader: prepare remove
+ok 24 - Q1 actual loader: prepare remove
+  ---
+  duration_ms: 90.344083
+  type: 'test'
+  ...
+# Subtest: Q1 legacy selector preserves the reproduced upstream removal defect under its old rule identity
+ok 25 - Q1 legacy selector preserves the reproduced upstream removal defect under its old rule identity
+  ---
+  duration_ms: 77.003833
+  type: 'test'
+  ...
+# Subtest: Q1 parent scripts removal, mixed edits and ordinary command metadata retain separate events/residuals
+ok 26 - Q1 parent scripts removal, mixed edits and ordinary command metadata retain separate events/residuals
+  ---
+  duration_ms: 95.504708
+  type: 'test'
+  ...
+# Subtest: Q1 unsupported command null cannot infer a lifecycle action
+ok 27 - Q1 unsupported command null cannot infer a lifecycle action
+  ---
+  duration_ms: 63.845333
+  type: 'test'
+  ...
+# Subtest: Q1 unsupported command false cannot infer a lifecycle action
+ok 28 - Q1 unsupported command false cannot infer a lifecycle action
+  ---
+  duration_ms: 65.846209
+  type: 'test'
+  ...
+# Subtest: Q1 unsupported command [] cannot infer a lifecycle action
+ok 29 - Q1 unsupported command [] cannot infer a lifecycle action
+  ---
+  duration_ms: 66.014375
+  type: 'test'
+  ...
+# Subtest: Q1 unsupported command {} cannot infer a lifecycle action
+ok 30 - Q1 unsupported command {} cannot infer a lifecycle action
+  ---
+  duration_ms: 82.079417
+  type: 'test'
+  ...
+# Subtest: Q1 unsupported command 42 cannot infer a lifecycle action
+ok 31 - Q1 unsupported command 42 cannot infer a lifecycle action
+  ---
+  duration_ms: 81.416333
+  type: 'test'
+  ...
+# Subtest: Q1 unsupported command "" cannot infer a lifecycle action
+ok 32 - Q1 unsupported command "" cannot infer a lifecycle action
+  ---
+  duration_ms: 67.181834
+  type: 'test'
+  ...
+# Subtest: Q1 unchanged fields produce no event
+ok 33 - Q1 unchanged fields produce no event
+  ---
+  duration_ms: 23.272417
+  type: 'test'
+  ...
+# Subtest: Q1 scripts arrays cannot impersonate a supported script object
+ok 34 - Q1 scripts arrays cannot impersonate a supported script object
+  ---
+  duration_ms: 71.344333
+  type: 'test'
+  ...
+# Subtest: Q2 actual loader main: direction, retained values and exact original spans
+ok 35 - Q2 actual loader main: direction, retained values and exact original spans
+  ---
+  duration_ms: 176.111917
+  type: 'test'
+  ...
+# Subtest: Q2 actual loader module: direction, retained values and exact original spans
+ok 36 - Q2 actual loader module: direction, retained values and exact original spans
+  ---
+  duration_ms: 173.21425
+  type: 'test'
+  ...
+# Subtest: Q2 actual loader types: direction, retained values and exact original spans
+ok 37 - Q2 actual loader types: direction, retained values and exact original spans
+  ---
+  duration_ms: 207.106542
+  type: 'test'
+  ...
+# Subtest: Q2 actual loader typings: direction, retained values and exact original spans
+ok 38 - Q2 actual loader typings: direction, retained values and exact original spans
+  ---
+  duration_ms: 168.07525
+  type: 'test'
+  ...
+# Subtest: Q2 actual loader exports: direction, retained values and exact original spans
+ok 39 - Q2 actual loader exports: direction, retained values and exact original spans
+  ---
+  duration_ms: 168.845584
+  type: 'test'
+  ...
+# Subtest: Q2 actual loader bin: direction, retained values and exact original spans
+ok 40 - Q2 actual loader bin: direction, retained values and exact original spans
+  ---
+  duration_ms: 172.152
+  type: 'test'
+  ...
+# Subtest: Q2 actual loader browser: direction, retained values and exact original spans
+ok 41 - Q2 actual loader browser: direction, retained values and exact original spans
+  ---
+  duration_ms: 162.497459
+  type: 'test'
+  ...
+# Subtest: Q2 nested conditions, arrays, slash/tilde/dot keys, false and controls: one outermost event with bounded summary
+ok 42 - Q2 nested conditions, arrays, slash/tilde/dot keys, false and controls: one outermost event with bounded summary
+  ---
+  duration_ms: 140.963208
+  type: 'test'
+  ...
+# Subtest: Q2 missing/corrupt/not-exported delta and malformed member never gain exact values
+ok 43 - Q2 missing/corrupt/not-exported delta and malformed member never gain exact values
+  ---
+  duration_ms: 323.100792
+  type: 'test'
+  ...
+# Subtest: Q2 whole manifest addition/removal abstains: absent-member proof is unsupported by this adapter
+ok 44 - Q2 whole manifest addition/removal abstains: absent-member proof is unsupported by this adapter
+  ---
+  duration_ms: 85.080416
+  type: 'test'
+  ...
+# Subtest: Q2 punctuation cannot impersonate nested pointers
+ok 45 - Q2 punctuation cannot impersonate nested pointers
+  ---
+  duration_ms: 79.181625
+  type: 'test'
+  ...
+# Subtest: Q2 conditional export property order is an observable retained change
+ok 46 - Q2 conditional export property order is an observable retained change
+  ---
+  duration_ms: 72.258625
+  type: 'test'
+  ...
+# Subtest: Q2 forged property order in the delta cannot change the cited source value
+ok 47 - Q2 forged property order in the delta cannot change the cited source value
+  ---
+  duration_ms: 76.827833
+  type: 'test'
+  ...
+# Subtest: Q3 formatting/CRLF relationships retain full raw residual and do not upgrade correspondence
+ok 48 - Q3 formatting/CRLF relationships retain full raw residual and do not upgrade correspondence
+  ---
+  duration_ms: 110.683375
+  type: 'test'
+  ...
+# Subtest: Q3 source-map cross-side matches explain only retained source text, not emitted bytes
+ok 49 - Q3 source-map cross-side matches explain only retained source text, not emitted bytes
+  ---
+  duration_ms: 114.392917
+  type: 'test'
+  ...
+# Subtest: Q3 misleading generated names/build clues and unknown absence stay unresolved
+ok 50 - Q3 misleading generated names/build clues and unknown absence stay unresolved
+  ---
+  duration_ms: 73.515834
+  type: 'test'
+  ...
+# Subtest: Q3 absent optional source digest cannot establish non-acquisition
+ok 51 - Q3 absent optional source digest cannot establish non-acquisition
+  ---
+  duration_ms: 21.656833
+  type: 'test'
+  ...
+# Subtest: host selector defaults to the reviewed identifier and explicit off is unavailable
+ok 52 - host selector defaults to the reviewed identifier and explicit off is unavailable
+  ---
+  duration_ms: 35.040417
+  type: 'test'
+  ...
+# Subtest: unknown host selector rejects before acquisition or store creation
+ok 53 - unknown host selector rejects before acquisition or store creation
+  ---
+  duration_ms: 3.636292
+  type: 'test'
+  ...
+# Subtest: explicit trusted injection takes precedence over an unknown host selector
+ok 54 - explicit trusted injection takes precedence over an unknown host selector
+  ---
+  duration_ms: 0.781083
+  type: 'test'
+  ...
+# Subtest: configured module has bounded bridge and identities without creating evidence state
+ok 55 - configured module has bounded bridge and identities without creating evidence state
+  ---
+  duration_ms: 13.809958
+  type: 'test'
+  ...
+1..55
+# tests 55
+# suites 0
+# pass 55
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 4186.706875

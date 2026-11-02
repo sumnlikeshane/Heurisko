@@ -1,0 +1,43 @@
+ .dockerignore                                      |    2 +
+ AGENTS.md                                          |    4 +-
+ Dockerfile.render                                  |    1 +
+ HEURISKO_COMPLETE_GUIDE.md                         |   44 +-
+ PRODUCTION_MASTER_ROADMAP.md                       |  215 +++-
+ README.md                                          |    6 +-
+ THIRD_PARTY_NOTICES.txt                            | 1322 ++++++++++++++++++++
+ apps/web/README.md                                 |   12 +-
+ apps/web/content/availability.md                   |    2 +-
+ apps/web/content/browser.md                        |    2 +-
+ apps/web/src/home.tsx                              |    2 +-
+ apps/web/src/investigate.tsx                       |    4 +-
+ docs/Approved Decision Register.md                 |   60 +-
+ docs/CLI Reference.md                              |   39 +-
+ docs/Production Phase 1 Implementation Plan.md     |   61 +-
+ docs/README.md                                     |    6 +-
+ docs/production-phase1/Document Disposition.md     |   12 +
+ docs/production-phase1/Foundation Contract.md      |   11 +-
+ package.json                                       |    8 +-
+ packages/cli/src/index.ts                          |    4 +-
+ packages/core/package.json                         |   12 +-
+ packages/core/src/archive.ts                       |   15 +-
+ packages/core/src/comparison.ts                    |   80 +-
+ packages/core/src/engine.ts                        |   15 +-
+ packages/core/src/identity.ts                      |    1 +
+ packages/core/src/intelligence-boundary.ts         |   92 +-
+ packages/core/src/producer.ts                      |   14 +-
+ packages/core/src/provenance.ts                    |    2 +-
+ packages/core/src/reviewed-module.ts               |   39 +-
+ packages/core/src/storage.ts                       |   19 +
+ packages/core/tests/intelligence-boundary.test.mjs |    4 +-
+ packages/core/tests/reviewed-module.test.mjs       |    4 +-
+ packages/intelligence-reviewed/README.md           |   37 +-
+ packages/intelligence-reviewed/admission.json      |   33 +-
+ packages/intelligence-reviewed/package.json        |    4 +-
+ packages/intelligence-reviewed/src/index.ts        |  146 ++-
+ packages/tui/README.md                             |   16 +-
+ packages/tui/src/App.tsx                           |   17 +-
+ packages/tui/src/screens/TargetForm.tsx            |    8 +-
+ pnpm-lock.yaml                                     |  127 ++
+ scripts/check-parser-boundary.mjs                  |   47 +-
+ scripts/check-phase1-secrets.mjs                   |  115 +-
+ 42 files changed, 2385 insertions(+), 279 deletions(-)

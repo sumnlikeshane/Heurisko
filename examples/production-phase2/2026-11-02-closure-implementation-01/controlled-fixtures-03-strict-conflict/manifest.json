@@ -1,0 +1,85 @@
+{
+  "version": "heurisko-controlled-signatures-v1",
+  "revision": 3,
+  "selection": "contradictory-claims-and-positive-controls",
+  "certificateEncoding": "Minimal positive DER INTEGER serials and RFC5280 UTCTime through 2049; construction self-checks Node X509 signatures and validity dates.",
+  "origin": "Authored inert controlled fixtures; TEST ONLY anchors; not npm publisher evidence.",
+  "node": "v22.23.4",
+  "openssl": "3.5.9",
+  "generatorSha256": "3d467565908731ab4eafd2a922391bc1d1171ceb6eaa49123a1186708b2d8d83",
+  "lockSha256": "2726d3c3794d9eab8de5ef47b0ad9254b638808a3440334b81f5114a0c22284e",
+  "createdAt": "2026-11-02T13:18:37.882Z",
+  "keys": "Ephemeral P-256 leaf/CA/CT/Rekor and Ed25519 per TUF role, never serialized; only public certificates/anchors retained.",
+  "rights": "Original Heurisko fixture construction and inert bytes under repository Apache-2.0; no third-party package code included. Verifier dependencies retain their separate notices.",
+  "files": {
+    "artifact.tgz": "52d4e00571a051b9222d10eec019bff7c9ff8dff68ad7606a5dcf2ff8fbe14a5",
+    "bootstrap.json": "c3003c68af2139a6edff2648eb2f1392534d653b377a28c761134362159faa55",
+    "cases.json": "f97cac2db746551d639ccb4b4ea1ba3083eacf377aa6ddd380925f19ddafd659",
+    "digests.json": "6cace9e1944ccae5c2e05bbb7d73555b7da52fda7ef255a5308c4284e545a41c",
+    "expired-snapshot.json": "ae358f3b1efc84c1b18384045b276d5cc2befc38e2f64297930e6129f79659c1",
+    "policy.json": "6fce503145deb04685a9a67dcd630b0590320cf73bcef3626c6f63043e9d6a6b",
+    "snapshot.json": "8fe3b007fc9673f93fb64b89360144733f45d1242f81cfdc0934954c00b2e43b",
+    "source.tgz": "4cffef3c405f208cb4eb1a1870d47adae2126196cc9d2ed8af4c9ceb39f75c71",
+    "trusted-root.json": "9b538a534ad0a93fcacf7a10fce542c18d02621fd0c84a54dc1980f09aab5895"
+  },
+  "cases": [
+    {
+      "id": "positive-0-0-1",
+      "expected": {
+        "status": "verified_policy",
+        "policyResult": "pass",
+        "artifactBinding": "matched"
+      },
+      "cryptoRequired": false
+    },
+    {
+      "id": "conflict-0-0-1",
+      "expected": {
+        "status": "unresolved",
+        "policyResult": "indeterminate",
+        "reason": "ASSERTIONS_CONFLICT"
+      },
+      "cryptoRequired": true
+    },
+    {
+      "id": "positive-after-0-0-1",
+      "expected": {
+        "status": "verified_policy",
+        "policyResult": "pass",
+        "artifactBinding": "matched"
+      },
+      "cryptoRequired": false
+    },
+    {
+      "id": "positive-0-0-2",
+      "expected": {
+        "status": "verified_policy",
+        "policyResult": "pass",
+        "artifactBinding": "matched"
+      },
+      "cryptoRequired": false
+    },
+    {
+      "id": "conflict-0-0-2",
+      "expected": {
+        "status": "unresolved",
+        "policyResult": "indeterminate",
+        "reason": "ASSERTIONS_CONFLICT"
+      },
+      "cryptoRequired": true
+    },
+    {
+      "id": "positive-after-0-0-2",
+      "expected": {
+        "status": "verified_policy",
+        "policyResult": "pass",
+        "artifactBinding": "matched"
+      },
+      "cryptoRequired": false
+    }
+  ],
+  "limitations": [
+    "One-leaf valid Merkle tree; larger-tree cryptographic negatives retain genuine npm lane.",
+    "Controlled keys do not establish third-party issuer/publisher identity or real npm dsse 0.0.2 usage."
+  ]
+}

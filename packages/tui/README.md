@@ -15,14 +15,14 @@ No arguments opens Home only when stdin and stdout are TTYs. Redirected default 
 
 ## Connected deterministic investigations
 
-New TUI investigations use the supplied `55240e99409ad44cbd6a978f40873ef410cb1861` reviewed deterministic entry through the shared engine by default:
+New TUI investigations use the local reviewed `p2-static-v1` deterministic revision through the shared engine by default, with distinct admission identity and preserved upstream derivation:
 
 ```sh
 node packages/cli/dist/index.js \
   --store .heurisko/CONFIGURED_TUI_NEW --no-color
 ```
 
-Choose a local/npm target, review it and explicitly Start. An absent/empty selector uses the reviewed default; `HEURISKO_ANALYSIS_MODULE=55240e9` explicitly pins the same selection, while `HEURISKO_ANALYSIS_MODULE=off` preserves raw-only/unavailable analysis for reproduction. The setting is trusted host-process configuration, not package metadata or a TUI module-path control; unknown nonempty selectors are rejected before acquisition. Opening `tui REPORT` only renders the report's recorded configuration and never reruns it. Exact intake/validation limits are in the [module admission](../intelligence-reviewed/README.md).
+Choose a local/npm target, review it and explicitly Start. An absent/empty selector uses the reviewed default; `HEURISKO_ANALYSIS_MODULE=p2-static-v1` explicitly selects it; `55240e9` retains the legacy rule body for reproduction, while `HEURISKO_ANALYSIS_MODULE=off` preserves raw-only/unavailable analysis for reproduction. The setting is trusted host-process configuration, not package metadata or a TUI module-path control; unknown nonempty selectors are rejected before acquisition. Opening `tui REPORT` only renders the report's recorded configuration and never reruns it. Exact intake/validation limits are in the [module admission](../intelligence-reviewed/README.md).
 
 This path uses reviewed deterministic code with bounded hash-checked retained evidence. Missing, corrupt or over-limit deltas/members remain limited/unexplained with incomplete heuristics. Product models/providers/CodeAstra are not admitted; new TUI work stays model-off. Findings are scoped observations and do not establish safety, verified generated/build equivalence, provenance-policy success, monitoring or human design acceptance. Historical e8b8116 and raw receipts below retain their original meaning.
 
@@ -54,3 +54,15 @@ HEURISKO_TUI_RECEIPTS="$PWD/.heurisko/tui-audit" "$HEURISKO_TEST_PYTHON" package
 ```
 
 Set `HEURISKO_TEST_PYTHON` to an existing interpreter containing the pinned terminal-test dependencies. Historical receipts above remain unchanged; source-bound historical results remain in the linked receipts; current human/accessibility gates remain in the Phase 1 plan.
+
+Optional npm provenance/policy checking uses the same host-configured offline verifier as the CLI. Set `HEURISKO_TRUST_CONFIG` before launch; the optional **Requested policy** field selects only an exact catalog key. Review shows that key before Start; the engine consumes the reviewed option snapshot. Unknown/unconfigured keys stay indeterminate, local archives inherit no registry provenance and finding severity cannot select violation. [Setup, policy outcomes and worker limits](../../docs/CLI%20Reference.md#offline-provenance-and-expected-policy). Reopening old reports preserves their original unchecked outcomes.
+
+The policy PTY journey additionally requires an explicit host catalog whose `optional` key belongs to the retained `is-number@7.0.0` fixture. It records the catalog hash/interpreter before launch and fails early for missing/wrong fixture setup. With the pinned Node and terminal-test interpreter selected:
+
+```sh
+HEURISKO_TEST_NODE="$(command -v node)" \
+HEURISKO_TRUST_CONFIG="$PWD/examples/production-phase2/2026-11-02-implementation-02/cli-policy-admitted/catalog.json" \
+"$HEURISKO_TEST_PYTHON" packages/tui/tests/phase2-policy.py .heurisko/NEW_POLICY_PTY
+```
+
+That dated fixture catalog is test input; its signed metadata expires. Use an explicitly authenticated fresh snapshot when testing after expiry, as described in the CLI operating reference. Neither an absent catalog's indeterminate result nor expired-root rejection is a successful optional-policy fixture run.

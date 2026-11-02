@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "checks": 82,
+  "failures": [],
+  "node": "v22.23.4",
+  "platform": "darwin",
+  "arch": "arm64",
+  "runtime": {
+    "image": "node:22.23.4-bookworm-slim@sha256:9a422d62743ffb1e6eb282549f4eae7ab89f7b926db1f136f4cba8be60e4ecbc",
+    "platform": "linux/arm64"
+  },
+  "limitations": [
+    "Host darwin/arm64 with architecture-matched Linux worker; not native Linux amd64 host validation.",
+    "Two signed npm pairs from one upstream project; not population or held-out accuracy.",
+    "Fixture policy expectations are explicit test constants cross-checked against separate captured release metadata; no target-selected production policy."
+  ]
+}

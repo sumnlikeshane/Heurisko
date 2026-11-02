@@ -1,0 +1,52 @@
+{
+  "version": "heurisko-technical-closure-diagnosis-v1",
+  "baseHead": "7eee564818c63b0edbe47e58d7c044136a4470c0",
+  "establishedCauses": [
+    {
+      "capability": "verifier cancellation during create",
+      "evidence": "baseline/controlled/cancellation.json",
+      "observation": "Abort at 1200ms killed create client before acknowledgement; result creation uncertain, cleanup unknown.",
+      "correction": "Keep existing bounded create control independent of cancellation; after acknowledgement skip start and clean exact ID."
+    },
+    {
+      "capability": "verifier identity and absence",
+      "evidence": [
+        "regression-baseline-extended.json",
+        "regression-baseline-extended.stdout.log"
+      ],
+      "observation": "Acknowledged ID discarded, subsequent controls by name; missing-object error string used as absence proof.",
+      "correction": "Use acknowledged immutable ID; validate inspected ID/name; successful full-ID empty query; retain control failure separately from observed absence."
+    },
+    {
+      "capability": "parser boundary acceptance harness",
+      "evidence": [
+        "boundary-harness-baseline.stdout.log",
+        "boundary-harness-corrected-01.stdout.log"
+      ],
+      "observation": "Hardcoded 10-second control for all probe operations, name-based controls and unconditional mounted-spool deletion on uncertain cleanup.",
+      "correction": "Match existing product create/control/whole-job limits, immutable IDs, exact absence; preserve uncertain mounted files and record actual failed operations."
+    },
+    {
+      "capability": "real parser cleanup latency",
+      "evidence": [
+        "baseline/parser-failure-daemon-name.txt",
+        "baseline/parser-failure-daemon-id.txt",
+        "baseline/application/wrong-workflow-0-0-2/error.json"
+      ],
+      "observation": "Exact daemon DELETE for e36e58b9f5c2226c2183941628ac95b623d9426d9ae12363232403f2d22faf85 took 24.443398011s; parser cleanup client cap is 10s. Journal says complete OK; original job outcome cleanup false and locks retained.",
+      "correction": "No cap increase or claimed daemon repair. Preserve original failure and inspect native/local validation separately.",
+      "limit": "Underlying Docker Desktop/host scheduling/filesystem cause not established. Source packaging/hash I/O ran concurrently during this baseline segment; it is context, not a proved cause."
+    }
+  ],
+  "unchangedSafety": {
+    "parserCreateMs": 30000,
+    "parserControlMs": 10000,
+    "parserWallMs": 30000,
+    "verifierCreateStartMs": 10000,
+    "verifierOtherControlMs": 5000,
+    "verifierSupervisorSeconds": 5,
+    "safetySourceSha256": "8402091b35f9f61f715990ca1e155b0c4e8f99e680e1f24fd48d380e9fa4c6c0",
+    "productionBootstrapSha256": "73747011d0857ada15479a16c4cae0f3ed03aac698b523b97e1de314ac9d9ca8"
+  },
+  "historicalLimits": "Earlier narrative 21.26-second/10-second observations describe their own probe/runtime. Current product safety already has 30-second create/10-second control; no product cap was raised here."
+}

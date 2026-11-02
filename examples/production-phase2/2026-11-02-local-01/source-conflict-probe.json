@@ -1,0 +1,7 @@
+{
+  "scope": "Synthetic mocked HTTP-source conflict, no network or target execution",
+  "conflictingBytesRetained": true,
+  "mismatchNotReplacedOrPromoted": true,
+  "exit": 1,
+  "sha256": "ea67c3ff114320df174404b740c34c3202a24032b45a572ad2e09300b0af4b54"
+}

@@ -14,7 +14,7 @@ Use the [complete CLI reference](../../../docs/CLI%20Reference.md) for exact opt
 
 ## Shared integrations still unavailable
 
-The web workflow uses the reviewed deterministic analysis module. Open-model inference, a provenance verifier, concrete policy evaluator, rebuild worker and release monitor are unavailable. AI is off by default; an explicit AI request records unavailable model work. Policy options record intent without evaluation. No fallback interpretation is synthesized.
+The web workflow uses the reviewed deterministic analysis module. Open-model inference, rebuild and release monitoring remain unavailable. Optional offline npm provenance/expected-policy checking uses a trusted server-process catalog and the shared engine. AI is off by default; an explicit AI request records unavailable model work. Policy options select exact trusted catalog keys; unconfigured/unknown keys remain indeterminate. No fallback interpretation is synthesized.
 
 Monitoring and meaningful model work remain future product work. A readable web interface does not supply those capabilities.
 

@@ -1,0 +1,110 @@
+{
+  "version": "heurisko-parser-boundary-check-v1",
+  "observedAt": "2026-11-02T14:42:08.373Z",
+  "image": "python:3.13.18-slim-bookworm@sha256:281d39ff02e3b389401586134ff9e6572954687822a58055ec07a60ded4e0b7f",
+  "scope": "trusted development resource probes, not target/rebuild execution",
+  "passed": true,
+  "results": [
+    {
+      "probe": "memory-network-mounts",
+      "memoryLimit": 268435456,
+      "hostSentinelVisible": false,
+      "dockerSocketVisible": false,
+      "oversizeAllocationBlocked": true,
+      "egressBlocked": true,
+      "rootWriteBlocked": true,
+      "inputWriteBlocked": true,
+      "workerWriteBlocked": true,
+      "containerName": "heurisko-parser-d256eca2-5676-4c90-b5fa-423ba9bd777c",
+      "containerId": "dfdb9d4cbbda8568c4aea175543ff957f6330c686bec8b0acdc12dc71ef1e9b8",
+      "creationRequested": true,
+      "cleanupConfirmed": true,
+      "controls": [
+        {
+          "operation": "create",
+          "durationMs": 1199,
+          "limitMs": 30000,
+          "exitCode": 0,
+          "signal": null,
+          "error": null,
+          "stderr": ""
+        },
+        {
+          "operation": "start",
+          "durationMs": 1515,
+          "limitMs": 28800,
+          "exitCode": 0,
+          "signal": null,
+          "error": null,
+          "stderr": ""
+        },
+        {
+          "operation": "rm",
+          "durationMs": 412,
+          "limitMs": 10000,
+          "exitCode": 0,
+          "signal": null,
+          "error": null,
+          "stderr": ""
+        },
+        {
+          "operation": "container",
+          "durationMs": 34,
+          "limitMs": 10000,
+          "exitCode": 0,
+          "signal": null,
+          "error": null,
+          "stderr": ""
+        }
+      ]
+    },
+    {
+      "probe": "cpu",
+      "exitCode": 137,
+      "cpuHardLimitSeconds": 1,
+      "wholeJobTerminated": true,
+      "containerName": "heurisko-parser-108a20d4-b439-4239-b82c-098dc957ad2d",
+      "containerId": "d8b9abf664fb451bae60cea0556beb120aab1579c5e4943e94ad28382d12c1c4",
+      "creationRequested": true,
+      "cleanupConfirmed": true,
+      "controls": [
+        {
+          "operation": "create",
+          "durationMs": 769,
+          "limitMs": 30000,
+          "exitCode": 0,
+          "signal": null,
+          "error": null,
+          "stderr": ""
+        },
+        {
+          "operation": "start",
+          "durationMs": 2360,
+          "limitMs": 29229,
+          "exitCode": 137,
+          "signal": null,
+          "error": null,
+          "stderr": ""
+        },
+        {
+          "operation": "rm",
+          "durationMs": 213,
+          "limitMs": 10000,
+          "exitCode": 0,
+          "signal": null,
+          "error": null,
+          "stderr": ""
+        },
+        {
+          "operation": "container",
+          "durationMs": 43,
+          "limitMs": 10000,
+          "exitCode": 0,
+          "signal": null,
+          "error": null,
+          "stderr": ""
+        }
+      ]
+    }
+  ]
+}

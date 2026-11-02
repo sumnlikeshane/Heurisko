@@ -1,0 +1,200 @@
+{
+  "version": "heurisko-p2-bounded-source-captures-v1",
+  "network": "HTTPS codeload.github.com only, no redirects or proxy environment, 30 s and 8 MiB per response",
+  "cases": [
+    {
+      "caseId": "picocolors-1.1.1",
+      "family": "upstream:picocolors",
+      "repositoryClaim": "git+https://github.com/alexeyraspopov/picocolors.git",
+      "commitClaim": "6f0a4638348ed20633d623ee973f9c9a96f65104",
+      "url": "https://codeload.github.com/alexeyraspopov/picocolors/tar.gz/6f0a4638348ed20633d623ee973f9c9a96f65104",
+      "capturedAt": "2026-11-01T19:44:55.911170+00:00",
+      "headers": {
+        "Content-Type": "application/x-gzip",
+        "ETag": "\"30732e65f5a763747d1957efa0d5179a6205835e2597b594210255d6e0ff95f0\""
+      },
+      "sha256": "87646ed7f9b372d94da80ec298ef4ec6fc0c2a56bb60e0b325a9705037408c7c",
+      "bytes": 9432,
+      "path": "picocolors-1.1.1.source.tgz",
+      "matchesPriorBytes": true,
+      "binding": "publisher claim + HTTPS commit URL only; no Git-object/release/provenance verification"
+    },
+    {
+      "caseId": "kleur-4.1.5",
+      "family": "upstream:kleur",
+      "repositoryClaim": "git+https://github.com/lukeed/kleur.git",
+      "commitClaim": "fa3454483899ddab550d08c18c028e6db1aab0e5",
+      "url": "https://codeload.github.com/lukeed/kleur/tar.gz/fa3454483899ddab550d08c18c028e6db1aab0e5",
+      "capturedAt": "2026-11-01T19:44:56.314083+00:00",
+      "headers": {
+        "Content-Type": "application/x-gzip",
+        "ETag": "\"a0e8dd86aaed2cfc623a9a30a54eb9ff9b9ff65746f41b8bc6001e21bfc70a41\""
+      },
+      "sha256": "f89639d261e294cfe8ce5f865dcfb764414c9130530c3b9156e2b63e1c492314",
+      "bytes": 39684,
+      "path": "kleur-4.1.5.source.tgz",
+      "matchesPriorBytes": true,
+      "binding": "publisher claim + HTTPS commit URL only; no Git-object/release/provenance verification"
+    },
+    {
+      "caseId": "ms-2.1.3",
+      "family": "upstream:ms",
+      "repositoryClaim": "git+https://github.com/vercel/ms.git",
+      "commitClaim": "1c6264b795492e8fdecbc82cb8802fcfbfc08d26",
+      "url": "https://codeload.github.com/vercel/ms/tar.gz/1c6264b795492e8fdecbc82cb8802fcfbfc08d26",
+      "capturedAt": "2026-11-01T19:44:56.749125+00:00",
+      "headers": {
+        "Content-Type": "application/x-gzip",
+        "ETag": "\"22fc54fb80b61637874c2bd0e8606f9f078dbe0477ec9e8f15fe20c47e72aa42\""
+      },
+      "sha256": "a457e52fb4f68067255bed09109cbd64898c6739d494ad826517e9da5a6df81e",
+      "bytes": 20337,
+      "path": "ms-2.1.3.source.tgz",
+      "matchesPriorBytes": true,
+      "binding": "publisher claim + HTTPS commit URL only; no Git-object/release/provenance verification"
+    },
+    {
+      "caseId": "is-number-7.0.0",
+      "family": "upstream:is-number",
+      "repositoryClaim": "git+https://github.com/jonschlinkert/is-number.git",
+      "commitClaim": "98e8ff1da1a89f93d1397a24d7413ed15421c139",
+      "url": "https://codeload.github.com/jonschlinkert/is-number/tar.gz/98e8ff1da1a89f93d1397a24d7413ed15421c139",
+      "capturedAt": "2026-11-01T19:44:57.164271+00:00",
+      "headers": {
+        "Content-Type": "application/x-gzip",
+        "ETag": "\"965a126864b148be5a338b25fed3ce83c2f4fafb0c5cdfcca1d912bcb532f498\""
+      },
+      "sha256": "4e169d1ea361d1b92907a6ab2dd6bcd781c85027858d99df1596a712aab49506",
+      "bytes": 7654,
+      "path": "is-number-7.0.0.source.tgz",
+      "matchesPriorBytes": true,
+      "binding": "publisher claim + HTTPS commit URL only; no Git-object/release/provenance verification"
+    },
+    {
+      "caseId": "ansi-regex-6.2.2",
+      "family": "upstream:ansi-regex",
+      "repositoryClaim": "git+https://github.com/chalk/ansi-regex.git",
+      "commitClaim": "94983fc6ba00e1e9657f72c07eb7b9c75e4011a2",
+      "url": "https://codeload.github.com/chalk/ansi-regex/tar.gz/94983fc6ba00e1e9657f72c07eb7b9c75e4011a2",
+      "capturedAt": "2026-11-01T19:44:57.628874+00:00",
+      "headers": {
+        "Content-Type": "application/x-gzip",
+        "ETag": "\"720e47083d112dd3d92f34650f59a28ec33f7b79bdb88025c704a27c20b04e71\""
+      },
+      "sha256": "a4a164e0d98fddb50a4d80c851114149f5c7ba1ae0c08eda660499c0f1f96e0d",
+      "bytes": 8652,
+      "path": "ansi-regex-6.2.2.source.tgz",
+      "matchesPriorBytes": true,
+      "binding": "publisher claim + HTTPS commit URL only; no Git-object/release/provenance verification"
+    },
+    {
+      "caseId": "escape-string-regexp-5.0.0",
+      "family": "upstream:escape-string-regexp",
+      "repositoryClaim": "git+https://github.com/sindresorhus/escape-string-regexp.git",
+      "commitClaim": "ba9a4473850cb367936417e97f1f2191b7cc67dd",
+      "url": "https://codeload.github.com/sindresorhus/escape-string-regexp/tar.gz/ba9a4473850cb367936417e97f1f2191b7cc67dd",
+      "capturedAt": "2026-11-01T19:44:58.090824+00:00",
+      "headers": {
+        "Content-Type": "application/x-gzip",
+        "ETag": "\"3f1f7e2fee915bb0c7d720b38db0ffce1c1315b7e2b8fadf245103336a253031\""
+      },
+      "sha256": "d24eaa0b89fe74cca6bed6922e837eb685773a7028863010d6327047c16c0490",
+      "bytes": 3080,
+      "path": "escape-string-regexp-5.0.0.source.tgz",
+      "matchesPriorBytes": true,
+      "binding": "publisher claim + HTTPS commit URL only; no Git-object/release/provenance verification"
+    },
+    {
+      "caseId": "fast-deep-equal-3.1.3",
+      "family": "upstream:fast-deep-equal",
+      "repositoryClaim": "git+https://github.com/epoberezkin/fast-deep-equal.git",
+      "commitClaim": "d807ffc5013e710deb1c63d463a03f729bcd144d",
+      "url": "https://codeload.github.com/epoberezkin/fast-deep-equal/tar.gz/d807ffc5013e710deb1c63d463a03f729bcd144d",
+      "capturedAt": "2026-11-01T19:44:58.470910+00:00",
+      "headers": {
+        "Content-Type": "application/x-gzip",
+        "ETag": "\"e670f4f7df2f5ad8d5dae58934c1ac37529093fb2cab83f794f1659cc9777b9c\""
+      },
+      "sha256": "671092ac55cf21aa7ebbef546d8ae2f11dbb13f7133b2adfde86b52db1fefaf6",
+      "bytes": 8979,
+      "path": "fast-deep-equal-3.1.3.source.tgz",
+      "matchesPriorBytes": true,
+      "binding": "publisher claim + HTTPS commit URL only; no Git-object/release/provenance verification"
+    },
+    {
+      "caseId": "balanced-match-2.0.0",
+      "family": "upstream:balanced-match",
+      "repositoryClaim": "git://github.com/juliangruber/balanced-match.git",
+      "commitClaim": "1c56fa33180a54e0e69a3fae9d60c191e74c4174",
+      "url": "https://codeload.github.com/juliangruber/balanced-match/tar.gz/1c56fa33180a54e0e69a3fae9d60c191e74c4174",
+      "capturedAt": "2026-11-01T19:44:58.962617+00:00",
+      "headers": {
+        "Content-Type": "application/x-gzip",
+        "ETag": "\"bbbd5f9e403c09eb87f411fa81f19810cf8588b2438cfc25c484b484d01d1150\""
+      },
+      "sha256": "d874d32b176733bdb520d8fb00f106f73eb80ad38fdad94e55f8d64015276b6e",
+      "bytes": 152542,
+      "path": "balanced-match-2.0.0.source.tgz",
+      "matchesPriorBytes": true,
+      "binding": "publisher claim + HTTPS commit URL only; no Git-object/release/provenance verification"
+    },
+    {
+      "caseId": "concat-map-0.0.1",
+      "family": "upstream:concat-map",
+      "repositoryClaim": "git://github.com/substack/node-concat-map.git",
+      "commitClaim": null,
+      "omission": "No supported immutable commit claim; no branch/tag guess."
+    },
+    {
+      "caseId": "minimist-1.2.8",
+      "family": "upstream:minimist",
+      "repositoryClaim": "git://github.com/minimistjs/minimist.git",
+      "commitClaim": "6901ee286bc4c16da6830b48b46ce1574703cea1",
+      "url": "https://codeload.github.com/minimistjs/minimist/tar.gz/6901ee286bc4c16da6830b48b46ce1574703cea1",
+      "capturedAt": "2026-11-01T19:44:59.376351+00:00",
+      "headers": {
+        "Content-Type": "application/x-gzip",
+        "ETag": "\"f94ecf4210b6493189b2aab06f5173a74b1126a93d54436e7c09776313bb3fe1\""
+      },
+      "sha256": "2c7f81307eb485e34dacd5f3561d10ac112db1967e605df7c81d31cc6791d74e",
+      "bytes": 16443,
+      "path": "minimist-1.2.8.source.tgz",
+      "matchesPriorBytes": true,
+      "binding": "publisher claim + HTTPS commit URL only; no Git-object/release/provenance verification"
+    },
+    {
+      "caseId": "wrappy-1.0.2",
+      "family": "upstream:wrappy",
+      "repositoryClaim": "git+https://github.com/npm/wrappy.git",
+      "commitClaim": "71d91b6dc5bdeac37e218c2cf03f9ab55b60d214",
+      "url": "https://codeload.github.com/npm/wrappy/tar.gz/71d91b6dc5bdeac37e218c2cf03f9ab55b60d214",
+      "capturedAt": "2026-11-01T19:44:59.773215+00:00",
+      "headers": {
+        "Content-Type": "application/x-gzip",
+        "ETag": "\"c3d8f6b2c4b2e8968b339fe8d4c69d91044cea55dd88aa8eb8f136467445ab12\""
+      },
+      "sha256": "d4c44dbfe2a81c44042eb94b0574c671d0fb157524dd13d5be62c108ae550b3e",
+      "bytes": 2339,
+      "path": "wrappy-1.0.2.source.tgz",
+      "matchesPriorBytes": true,
+      "binding": "publisher claim + HTTPS commit URL only; no Git-object/release/provenance verification"
+    },
+    {
+      "caseId": "once-1.4.0",
+      "family": "upstream:once",
+      "repositoryClaim": "git://github.com/isaacs/once.git",
+      "commitClaim": "0e614d9f5a7e6f0305c625f6b581f6d80b33b8a6",
+      "url": "https://codeload.github.com/isaacs/once/tar.gz/0e614d9f5a7e6f0305c625f6b581f6d80b33b8a6",
+      "capturedAt": "2026-11-01T19:45:00.195837+00:00",
+      "headers": {
+        "Content-Type": "application/x-gzip",
+        "ETag": "\"2896d2d55060d15799de0209a00d2fcab41473075ff9f830a4e22c98c2332228\""
+      },
+      "sha256": "84937ca8526ee65649ff8d17183c24759139e3f028dd3d83f085141e39e6a4a2",
+      "bytes": 2636,
+      "path": "once-1.4.0.source.tgz",
+      "matchesPriorBytes": true,
+      "binding": "publisher claim + HTTPS commit URL only; no Git-object/release/provenance verification"
+    }
+  ]
+}

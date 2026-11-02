@@ -1,0 +1,31 @@
+{
+  "scope": "Additional safety assertion against already executed genuine draft.2 reports; native harness now enforces this invariant on every new replay. No report/outcome rewritten or target re-executed.",
+  "passed": true,
+  "results": [
+    {
+      "case": "crypto-only",
+      "pass": true,
+      "reportSha256": "bc25a459f3a0aefe6cb29e964273de02dd4f9176e9390226a3f2bfe908c63eb3"
+    },
+    {
+      "case": "exact",
+      "pass": true,
+      "reportSha256": "a7e1761397657f6fe3ce138bb6ff6a4798f82039fd1f852ecb80ed0f30f9495a"
+    },
+    {
+      "case": "oversized",
+      "pass": true,
+      "reportSha256": "f426592acc1af59f6baedb9717fab079480a9014baaa92750fb063d5e6fe50d3"
+    },
+    {
+      "case": "unknown",
+      "pass": true,
+      "reportSha256": "ab18a62e2136ea9bd758e9e8def41fc8e9495e80108deadeba2509e07ebe0d31"
+    },
+    {
+      "case": "wrong-builder",
+      "pass": true,
+      "reportSha256": "f25f53adfeee00a3c7dd6ec4d1ed20750330bb056d0039ff6fc944beb03c4fd3"
+    }
+  ]
+}

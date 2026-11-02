@@ -1,0 +1,29 @@
+{
+  "scope": "Actual changed-report browser GUI attempt over fresh lifecycle-removal and entrypoint observations",
+  "origin": "http://127.0.0.1:52325",
+  "capability": "omitted; process-private and not retained",
+  "result": "blocked; no GUI acceptance pass",
+  "attempts": [
+    {
+      "surface": "Chrome connector, dedicated Phase 2 tab",
+      "result": "net::ERR_BLOCKED_BY_CLIENT"
+    },
+    {
+      "surface": "Native Chrome via CUA, same dedicated tab",
+      "result": "Rendered 127.0.0.1 is blocked / ERR_BLOCKED_BY_CLIENT"
+    },
+    {
+      "surface": "Native Safari display name",
+      "result": "Computer Use server error -10005: timeoutReached"
+    },
+    {
+      "surface": "Native Safari bundle identifier",
+      "result": "Computer Use server error -10005: timeoutReached"
+    }
+  ],
+  "resolution": "Browser/operator environment with ordinary loopback access; run new finding, exact source/artifact citation, missing-content and Back/focus journeys. No security setting change, broader host binding, tunnel or external upload is authorized or used.",
+  "independentWork": "Core/contracts/reader/TUI/web API tests, fresh CLI/static-parser development observations and real PTY findings/citations continue independently.",
+  "limits": "API/SSR/reader/PTY results are not GUI or assistive-technology acceptance; existing owner Phase 1 acceptance is preserved.",
+  "temporaryReaderStopped": true,
+  "taskCreatedBlockedTabClosed": true
+}

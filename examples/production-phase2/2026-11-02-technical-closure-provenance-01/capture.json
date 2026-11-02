@@ -1,0 +1,1453 @@
+{
+  "capturedAt": "2026-11-02T14:16:11.970569+00:00",
+  "python": "3.13.2 (main, Feb  4 2025, 14:51:09) [Clang 16.0.0 (clang-1600.0.26.6)]",
+  "selection": "Twelve npm tooling/build/framework families; explicit historical versions across late 2024-2026 plus latest; purposive, not random or exhaustive.",
+  "bounds": "HTTPS fixed hosts, redirects rejected; 20s/request; 1MiB metadata,256KiB attestations,8MiB artifact only for dsse/0.0.2; four read requests concurrently; at most two primary requests per selected release plus artifact on discovery.",
+  "scriptSha256": "7431e6b61f7c46bfc0099fbed9861bc6ee0935684bcb8465ea6fcf3d09ab78ce",
+  "cases": [
+    {
+      "package": "@sigstore/verify",
+      "requestedVersion": "latest",
+      "metadataUrl": "https://registry.npmjs.org/%40sigstore%2Fverify/latest",
+      "version": "4.1.2",
+      "metadataSha256": "45de3b73a7a1956a800aa7fa8586f9d90e7f242166e02429b779c3716900fa30",
+      "status": "captured",
+      "attestationsUrl": "https://registry.npmjs.org/-/npm/v1/attestations/@sigstore%2fverify@4.1.2",
+      "attestationsSha256": "16b3a19d9470ae46cdc939d3b508cb859ef7e536c5db0c956f3f37ac5ca16e46",
+      "logs": [
+        {
+          "predicateType": "https://github.com/npm/attestation/tree/main/specs/publish/v0.1",
+          "bundleMediaType": "application/vnd.dev.sigstore.bundle+json;version=0.2",
+          "kindVersion": {
+            "kind": "dsse",
+            "version": "0.0.1"
+          },
+          "bodyKind": "dsse",
+          "bodyApiVersion": "0.0.1",
+          "logId": {
+            "keyId": "wNI9atQGlz+VWfO6LRygH4QUfY/8W4RFwiT5i5WRgB0="
+          },
+          "logIndex": "2341452617",
+          "integratedTime": "1785879284"
+        },
+        {
+          "predicateType": "https://slsa.dev/provenance/v1",
+          "bundleMediaType": "application/vnd.dev.sigstore.bundle.v0.3+json",
+          "kindVersion": {
+            "kind": "dsse",
+            "version": "0.0.1"
+          },
+          "bodyKind": "dsse",
+          "bodyApiVersion": "0.0.1",
+          "logId": {
+            "keyId": "wNI9atQGlz+VWfO6LRygH4QUfY/8W4RFwiT5i5WRgB0="
+          },
+          "logIndex": "2341448712",
+          "integratedTime": "1785879092"
+        }
+      ]
+    },
+    {
+      "package": "@sigstore/verify",
+      "requestedVersion": "4.1.2",
+      "metadataUrl": "https://registry.npmjs.org/%40sigstore%2Fverify/4.1.2",
+      "version": "4.1.2",
+      "metadataSha256": "45de3b73a7a1956a800aa7fa8586f9d90e7f242166e02429b779c3716900fa30",
+      "status": "captured",
+      "attestationsUrl": "https://registry.npmjs.org/-/npm/v1/attestations/@sigstore%2fverify@4.1.2",
+      "attestationsSha256": "16b3a19d9470ae46cdc939d3b508cb859ef7e536c5db0c956f3f37ac5ca16e46",
+      "logs": [
+        {
+          "predicateType": "https://github.com/npm/attestation/tree/main/specs/publish/v0.1",
+          "bundleMediaType": "application/vnd.dev.sigstore.bundle+json;version=0.2",
+          "kindVersion": {
+            "kind": "dsse",
+            "version": "0.0.1"
+          },
+          "bodyKind": "dsse",
+          "bodyApiVersion": "0.0.1",
+          "logId": {
+            "keyId": "wNI9atQGlz+VWfO6LRygH4QUfY/8W4RFwiT5i5WRgB0="
+          },
+          "logIndex": "2341452617",
+          "integratedTime": "1785879284"
+        },
+        {
+          "predicateType": "https://slsa.dev/provenance/v1",
+          "bundleMediaType": "application/vnd.dev.sigstore.bundle.v0.3+json",
+          "kindVersion": {
+            "kind": "dsse",
+            "version": "0.0.1"
+          },
+          "bodyKind": "dsse",
+          "bodyApiVersion": "0.0.1",
+          "logId": {
+            "keyId": "wNI9atQGlz+VWfO6LRygH4QUfY/8W4RFwiT5i5WRgB0="
+          },
+          "logIndex": "2341448712",
+          "integratedTime": "1785879092"
+        }
+      ]
+    },
+    {
+      "package": "@sigstore/verify",
+      "requestedVersion": "4.0.0",
+      "metadataUrl": "https://registry.npmjs.org/%40sigstore%2Fverify/4.0.0",
+      "version": "4.0.0",
+      "metadataSha256": "dafb5ec98ad6ab79ba0cebed0147a6688ba71272ef4973b0d11b51eabe19e91e",
+      "status": "captured",
+      "attestationsUrl": "https://registry.npmjs.org/-/npm/v1/attestations/@sigstore%2fverify@4.0.0",
+      "attestationsSha256": "0ace4222ae7e2b7b9b3fcb20a53d83a4634e7d4ce111cb869f8c1198b187e10e",
+      "logs": [
+        {
+          "predicateType": "https://github.com/npm/attestation/tree/main/specs/publish/v0.1",
+          "bundleMediaType": "application/vnd.dev.sigstore.bundle+json;version=0.2",
+          "kindVersion": {
+            "kind": "dsse",
+            "version": "0.0.1"
+          },
+          "bodyKind": "dsse",
+          "bodyApiVersion": "0.0.1",
+          "logId": {
+            "keyId": "wNI9atQGlz+VWfO6LRygH4QUfY/8W4RFwiT5i5WRgB0="
+          },
+          "logIndex": "1697020393",
+          "integratedTime": "1780347775"
+        },
+        {
+          "predicateType": "https://slsa.dev/provenance/v1",
+          "bundleMediaType": "application/vnd.dev.sigstore.bundle.v0.3+json",
+          "kindVersion": {
+            "kind": "dsse",
+            "version": "0.0.1"
+          },
+          "bodyKind": "dsse",
+          "bodyApiVersion": "0.0.1",
+          "logId": {
+            "keyId": "wNI9atQGlz+VWfO6LRygH4QUfY/8W4RFwiT5i5WRgB0="
+          },
+          "logIndex": "1697019836",
+          "integratedTime": "1780347771"
+        }
+      ]
+    },
+    {
+      "package": "@sigstore/verify",
+      "requestedVersion": "3.0.0",
+      "metadataUrl": "https://registry.npmjs.org/%40sigstore%2Fverify/3.0.0",
+      "version": "3.0.0",
+      "metadataSha256": "209fb5f591fcc65403a660fa0b95b13148bd08f4e98ab5b2f746dd18bd80e49a",
+      "status": "captured",
+      "attestationsUrl": "https://registry.npmjs.org/-/npm/v1/attestations/@sigstore%2fverify@3.0.0",
+      "attestationsSha256": "d76b864a4b1545a91d6596e6f90ecf7ea4f9bc83a5e0e0f145da0f3eaaa5ce3a",
+      "logs": [
+        {
+          "predicateType": "https://github.com/npm/attestation/tree/main/specs/publish/v0.1",
+          "bundleMediaType": "application/vnd.dev.sigstore.bundle+json;version=0.2",
+          "kindVersion": {
+            "kind": "intoto",
+            "version": "0.0.2"
+          },
+          "bodyKind": "intoto",
+          "bodyApiVersion": "0.0.2",
+          "logId": {
+            "keyId": "wNI9atQGlz+VWfO6LRygH4QUfY/8W4RFwiT5i5WRgB0="
+          },
+          "logIndex": "327695376",
+          "integratedTime": "1753831009"
+        },
+        {
+          "predicateType": "https://slsa.dev/provenance/v1",
+          "bundleMediaType": "application/vnd.dev.sigstore.bundle.v0.3+json",
+          "kindVersion": {
+            "kind": "dsse",
+            "version": "0.0.1"
+          },
+          "bodyKind": "dsse",
+          "bodyApiVersion": "0.0.1",
+          "logId": {
+            "keyId": "wNI9atQGlz+VWfO6LRygH4QUfY/8W4RFwiT5i5WRgB0="
+          },
+          "logIndex": "327695181",
+          "integratedTime": "1753831007"
+        }
+      ]
+    },
+    {
+      "package": "@sigstore/verify",
+      "requestedVersion": "2.1.1",
+      "metadataUrl": "https://registry.npmjs.org/%40sigstore%2Fverify/2.1.1",
+      "version": "2.1.1",
+      "metadataSha256": "82c493103e59eb673dfd4fe1f555379c35b90e5a16a28561dce65eed2004665c",
+      "status": "captured",
+      "attestationsUrl": "https://registry.npmjs.org/-/npm/v1/attestations/@sigstore%2fverify@2.1.1",
+      "attestationsSha256": "4435e58230988572d69dbfa79606e3904f6c1a35c6c18ba692617d03b1a7bb4b",
+      "logs": [
+        {
+          "predicateType": "https://github.com/npm/attestation/tree/main/specs/publish/v0.1",
+          "bundleMediaType": "application/vnd.dev.sigstore.bundle+json;version=0.2",
+          "kindVersion": {
+            "kind": "intoto",
+            "version": "0.0.2"
+          },
+          "bodyKind": "intoto",
+          "bodyApiVersion": "0.0.2",
+          "logId": {
+            "keyId": "wNI9atQGlz+VWfO6LRygH4QUfY/8W4RFwiT5i5WRgB0="
+          },
+          "logIndex": "202977623",
+          "integratedTime": "1745614549"
+        },
+        {
+          "predicateType": "https://slsa.dev/provenance/v1",
+          "bundleMediaType": "application/vnd.dev.sigstore.bundle+json;version=0.2",
+          "kindVersion": {
+            "kind": "intoto",
+            "version": "0.0.2"
+          },
+          "bodyKind": "intoto",
+          "bodyApiVersion": "0.0.2",
+          "logId": {
+            "keyId": "wNI9atQGlz+VWfO6LRygH4QUfY/8W4RFwiT5i5WRgB0="
+          },
+          "logIndex": "202977615",
+          "integratedTime": "1745614547"
+        }
+      ]
+    },
+    {
+      "package": "@sigstore/sign",
+      "requestedVersion": "latest",
+      "metadataUrl": "https://registry.npmjs.org/%40sigstore%2Fsign/latest",
+      "version": "5.0.0",
+      "metadataSha256": "f750b7b71949a0a631fd3ea60c3654e41278a275237b32c1fb96ded434930a01",
+      "status": "captured",
+      "attestationsUrl": "https://registry.npmjs.org/-/npm/v1/attestations/@sigstore%2fsign@5.0.0",
+      "attestationsSha256": "bfa6230f8217d8091117a2905a07580559d434b8a193824a40c7c6e8936c5408",
+      "logs": [
+        {
+          "predicateType": "https://github.com/npm/attestation/tree/main/specs/publish/v0.1",
+          "bundleMediaType": "application/vnd.dev.sigstore.bundle+json;version=0.2",
+          "kindVersion": {
+            "kind": "dsse",
+            "version": "0.0.1"
+          },
+          "bodyKind": "dsse",
+          "bodyApiVersion": "0.0.1",
+          "logId": {
+            "keyId": "wNI9atQGlz+VWfO6LRygH4QUfY/8W4RFwiT5i5WRgB0="
+          },
+          "logIndex": "1697020213",
+          "integratedTime": "1780347773"
+        },
+        {
+          "predicateType": "https://slsa.dev/provenance/v1",
+          "bundleMediaType": "application/vnd.dev.sigstore.bundle.v0.3+json",
+          "kindVersion": {
+            "kind": "dsse",
+            "version": "0.0.1"
+          },
+          "bodyKind": "dsse",
+          "bodyApiVersion": "0.0.1",
+          "logId": {
+            "keyId": "wNI9atQGlz+VWfO6LRygH4QUfY/8W4RFwiT5i5WRgB0="
+          },
+          "logIndex": "1697019854",
+          "integratedTime": "1780347771"
+        }
+      ]
+    },
+    {
+      "package": "@sigstore/sign",
+      "requestedVersion": "4.0.1",
+      "metadataUrl": "https://registry.npmjs.org/%40sigstore%2Fsign/4.0.1",
+      "version": "4.0.1",
+      "metadataSha256": "0d7d268def50862d53691075dc9f300f7cb321e82619918ad9162b1e0f0b64fb",
+      "status": "captured",
+      "attestationsUrl": "https://registry.npmjs.org/-/npm/v1/attestations/@sigstore%2fsign@4.0.1",
+      "attestationsSha256": "897ec5bed1c33cc27de737d2815b9662b09f77f5283fede2e91dd68203db5b5b",
+      "logs": [
+        {
+          "predicateType": "https://github.com/npm/attestation/tree/main/specs/publish/v0.1",
+          "bundleMediaType": "application/vnd.dev.sigstore.bundle+json;version=0.2",
+          "kindVersion": {
+            "kind": "intoto",
+            "version": "0.0.2"
+          },
+          "bodyKind": "intoto",
+          "bodyApiVersion": "0.0.2",
+          "logId": {
+            "keyId": "wNI9atQGlz+VWfO6LRygH4QUfY/8W4RFwiT5i5WRgB0="
+          },
+          "logIndex": "561337560",
+          "integratedTime": "1758821956"
+        },
+        {
+          "predicateType": "https://slsa.dev/provenance/v1",
+          "bundleMediaType": "application/vnd.dev.sigstore.bundle.v0.3+json",
+          "kindVersion": {
+            "kind": "dsse",
+            "version": "0.0.1"
+          },
+          "bodyKind": "dsse",
+          "bodyApiVersion": "0.0.1",
+          "logId": {
+            "keyId": "wNI9atQGlz+VWfO6LRygH4QUfY/8W4RFwiT5i5WRgB0="
+          },
+          "logIndex": "561337537",
+          "integratedTime": "1758821954"
+        }
+      ]
+    },
+    {
+      "package": "@sigstore/sign",
+      "requestedVersion": "3.1.0",
+      "metadataUrl": "https://registry.npmjs.org/%40sigstore%2Fsign/3.1.0",
+      "version": "3.1.0",
+      "metadataSha256": "14879d7ce339543a6708f785ca348520b2e67515ab56b754d12b98ea654e987b",
+      "status": "captured",
+      "attestationsUrl": "https://registry.npmjs.org/-/npm/v1/attestations/@sigstore%2fsign@3.1.0",
+      "attestationsSha256": "2608fa59b7ce86fa0ff6e579ea0814c0fad73061a08ce2b92353494e31799487",
+      "logs": [
+        {
+          "predicateType": "https://github.com/npm/attestation/tree/main/specs/publish/v0.1",
+          "bundleMediaType": "application/vnd.dev.sigstore.bundle+json;version=0.2",
+          "kindVersion": {
+            "kind": "intoto",
+            "version": "0.0.2"
+          },
+          "bodyKind": "intoto",
+          "bodyApiVersion": "0.0.2",
+          "logId": {
+            "keyId": "wNI9atQGlz+VWfO6LRygH4QUfY/8W4RFwiT5i5WRgB0="
+          },
+          "logIndex": "168704789",
+          "integratedTime": "1738701350"
+        },
+        {
+          "predicateType": "https://slsa.dev/provenance/v1",
+          "bundleMediaType": "application/vnd.dev.sigstore.bundle+json;version=0.2",
+          "kindVersion": {
+            "kind": "intoto",
+            "version": "0.0.2"
+          },
+          "bodyKind": "intoto",
+          "bodyApiVersion": "0.0.2",
+          "logId": {
+            "keyId": "wNI9atQGlz+VWfO6LRygH4QUfY/8W4RFwiT5i5WRgB0="
+          },
+          "logIndex": "168704765",
+          "integratedTime": "1738701347"
+        }
+      ]
+    },
+    {
+      "package": "@sigstore/sign",
+      "requestedVersion": "2.3.2",
+      "metadataUrl": "https://registry.npmjs.org/%40sigstore%2Fsign/2.3.2",
+      "version": "2.3.2",
+      "metadataSha256": "eb189f070e7bd04b9341758968ccb46925f2a7734ad5fa3cbaf07aba4d28b292",
+      "status": "captured",
+      "attestationsUrl": "https://registry.npmjs.org/-/npm/v1/attestations/@sigstore%2fsign@2.3.2",
+      "attestationsSha256": "a43e67d38c9504dc021d30684add0bba23a0c1ecd7dc7bf5e1fd6aecc95c900b",
+      "logs": [
+        {
+          "predicateType": "https://github.com/npm/attestation/tree/main/specs/publish/v0.1",
+          "bundleMediaType": "application/vnd.dev.sigstore.bundle+json;version=0.2",
+          "kindVersion": {
+            "kind": "intoto",
+            "version": "0.0.2"
+          },
+          "bodyKind": "intoto",
+          "bodyApiVersion": "0.0.2",
+          "logId": {
+            "keyId": "wNI9atQGlz+VWfO6LRygH4QUfY/8W4RFwiT5i5WRgB0="
+          },
+          "logIndex": "94408159",
+          "integratedTime": "1715879526"
+        },
+        {
+          "predicateType": "https://slsa.dev/provenance/v1",
+          "bundleMediaType": "application/vnd.dev.sigstore.bundle+json;version=0.2",
+          "kindVersion": {
+            "kind": "intoto",
+            "version": "0.0.2"
+          },
+          "bodyKind": "intoto",
+          "bodyApiVersion": "0.0.2",
+          "logId": {
+            "keyId": "wNI9atQGlz+VWfO6LRygH4QUfY/8W4RFwiT5i5WRgB0="
+          },
+          "logIndex": "94408139",
+          "integratedTime": "1715879523"
+        }
+      ]
+    },
+    {
+      "package": "sigstore",
+      "requestedVersion": "latest",
+      "metadataUrl": "https://registry.npmjs.org/sigstore/latest",
+      "version": "5.0.0",
+      "metadataSha256": "d15360adff505187b0b96107fd82fd4154d09d229d3a16a5623fcfe03bf2f62e",
+      "status": "captured",
+      "attestationsUrl": "https://registry.npmjs.org/-/npm/v1/attestations/sigstore@5.0.0",
+      "attestationsSha256": "eb82424f8acabd3b7eb31935bfda5d1bc5ebab511475af4c32ea377ecba6187c",
+      "logs": [
+        {
+          "predicateType": "https://github.com/npm/attestation/tree/main/specs/publish/v0.1",
+          "bundleMediaType": "application/vnd.dev.sigstore.bundle+json;version=0.2",
+          "kindVersion": {
+            "kind": "dsse",
+            "version": "0.0.1"
+          },
+          "bodyKind": "dsse",
+          "bodyApiVersion": "0.0.1",
+          "logId": {
+            "keyId": "wNI9atQGlz+VWfO6LRygH4QUfY/8W4RFwiT5i5WRgB0="
+          },
+          "logIndex": "1697020151",
+          "integratedTime": "1780347773"
+        },
+        {
+          "predicateType": "https://slsa.dev/provenance/v1",
+          "bundleMediaType": "application/vnd.dev.sigstore.bundle.v0.3+json",
+          "kindVersion": {
+            "kind": "dsse",
+            "version": "0.0.1"
+          },
+          "bodyKind": "dsse",
+          "bodyApiVersion": "0.0.1",
+          "logId": {
+            "keyId": "wNI9atQGlz+VWfO6LRygH4QUfY/8W4RFwiT5i5WRgB0="
+          },
+          "logIndex": "1697019812",
+          "integratedTime": "1780347770"
+        }
+      ]
+    },
+    {
+      "package": "sigstore",
+      "requestedVersion": "4.0.0",
+      "metadataUrl": "https://registry.npmjs.org/sigstore/4.0.0",
+      "version": "4.0.0",
+      "metadataSha256": "e8ac7dbe5527a42312defac6155f9c28f58386e6f3217ef9d79a2bb6f66b585c",
+      "status": "captured",
+      "attestationsUrl": "https://registry.npmjs.org/-/npm/v1/attestations/sigstore@4.0.0",
+      "attestationsSha256": "261d36a82e7b96193de4502d2afa8ab73378cb3346b6d22c8a39f9bf5bf1492f",
+      "logs": [
+        {
+          "predicateType": "https://github.com/npm/attestation/tree/main/specs/publish/v0.1",
+          "bundleMediaType": "application/vnd.dev.sigstore.bundle+json;version=0.2",
+          "kindVersion": {
+            "kind": "intoto",
+            "version": "0.0.2"
+          },
+          "bodyKind": "intoto",
+          "bodyApiVersion": "0.0.2",
+          "logId": {
+            "keyId": "wNI9atQGlz+VWfO6LRygH4QUfY/8W4RFwiT5i5WRgB0="
+          },
+          "logIndex": "327695335",
+          "integratedTime": "1753831009"
+        },
+        {
+          "predicateType": "https://slsa.dev/provenance/v1",
+          "bundleMediaType": "application/vnd.dev.sigstore.bundle.v0.3+json",
+          "kindVersion": {
+            "kind": "dsse",
+            "version": "0.0.1"
+          },
+          "bodyKind": "dsse",
+          "bodyApiVersion": "0.0.1",
+          "logId": {
+            "keyId": "wNI9atQGlz+VWfO6LRygH4QUfY/8W4RFwiT5i5WRgB0="
+          },
+          "logIndex": "327695169",
+          "integratedTime": "1753831006"
+        }
+      ]
+    },
+    {
+      "package": "sigstore",
+      "requestedVersion": "3.1.0",
+      "metadataUrl": "https://registry.npmjs.org/sigstore/3.1.0",
+      "version": "3.1.0",
+      "metadataSha256": "ea13ada51fdae4362c35b6965daafb186137b823e5f89cc8759b219681af6acc",
+      "status": "captured",
+      "attestationsUrl": "https://registry.npmjs.org/-/npm/v1/attestations/sigstore@3.1.0",
+      "attestationsSha256": "be049b99c7eba09c40190c742a5956f3ad1135210ccaefaf60d8113e5530374b",
+      "logs": [
+        {
+          "predicateType": "https://github.com/npm/attestation/tree/main/specs/publish/v0.1",
+          "bundleMediaType": "application/vnd.dev.sigstore.bundle+json;version=0.2",
+          "kindVersion": {
+            "kind": "intoto",
+            "version": "0.0.2"
+          },
+          "bodyKind": "intoto",
+          "bodyApiVersion": "0.0.2",
+          "logId": {
+            "keyId": "wNI9atQGlz+VWfO6LRygH4QUfY/8W4RFwiT5i5WRgB0="
+          },
+          "logIndex": "168704787",
+          "integratedTime": "1738701350"
+        },
+        {
+          "predicateType": "https://slsa.dev/provenance/v1",
+          "bundleMediaType": "application/vnd.dev.sigstore.bundle+json;version=0.2",
+          "kindVersion": {
+            "kind": "intoto",
+            "version": "0.0.2"
+          },
+          "bodyKind": "intoto",
+          "bodyApiVersion": "0.0.2",
+          "logId": {
+            "keyId": "wNI9atQGlz+VWfO6LRygH4QUfY/8W4RFwiT5i5WRgB0="
+          },
+          "logIndex": "168704762",
+          "integratedTime": "1738701347"
+        }
+      ]
+    },
+    {
+      "package": "sigstore",
+      "requestedVersion": "3.0.0",
+      "metadataUrl": "https://registry.npmjs.org/sigstore/3.0.0",
+      "version": "3.0.0",
+      "metadataSha256": "748c34bed7317ea5c28425726f4e2c1245054cdb88e34941409e1c7cfcf457e2",
+      "status": "captured",
+      "attestationsUrl": "https://registry.npmjs.org/-/npm/v1/attestations/sigstore@3.0.0",
+      "attestationsSha256": "aa241f27d54d28ac4ec967d626ce5473418962c54bebf7019531e0e808a22c40",
+      "logs": [
+        {
+          "predicateType": "https://github.com/npm/attestation/tree/main/specs/publish/v0.1",
+          "bundleMediaType": "application/vnd.dev.sigstore.bundle+json;version=0.2",
+          "kindVersion": {
+            "kind": "intoto",
+            "version": "0.0.2"
+          },
+          "bodyKind": "intoto",
+          "bodyApiVersion": "0.0.2",
+          "logId": {
+            "keyId": "wNI9atQGlz+VWfO6LRygH4QUfY/8W4RFwiT5i5WRgB0="
+          },
+          "logIndex": "139985246",
+          "integratedTime": "1728922429"
+        },
+        {
+          "predicateType": "https://slsa.dev/provenance/v1",
+          "bundleMediaType": "application/vnd.dev.sigstore.bundle+json;version=0.2",
+          "kindVersion": {
+            "kind": "intoto",
+            "version": "0.0.2"
+          },
+          "bodyKind": "intoto",
+          "bodyApiVersion": "0.0.2",
+          "logId": {
+            "keyId": "wNI9atQGlz+VWfO6LRygH4QUfY/8W4RFwiT5i5WRgB0="
+          },
+          "logIndex": "139985224",
+          "integratedTime": "1728922425"
+        }
+      ]
+    },
+    {
+      "package": "sigstore",
+      "requestedVersion": "2.3.1",
+      "metadataUrl": "https://registry.npmjs.org/sigstore/2.3.1",
+      "version": "2.3.1",
+      "metadataSha256": "b2c05c99fc96ef4c4b944bb17136aeabf60d974d6960e8e56521ac18367023e8",
+      "status": "captured",
+      "attestationsUrl": "https://registry.npmjs.org/-/npm/v1/attestations/sigstore@2.3.1",
+      "attestationsSha256": "64e9751a99d46659ae84310398ee3e997ac839553510fdf704b94ea5156ea497",
+      "logs": [
+        {
+          "predicateType": "https://github.com/npm/attestation/tree/main/specs/publish/v0.1",
+          "bundleMediaType": "application/vnd.dev.sigstore.bundle+json;version=0.2",
+          "kindVersion": {
+            "kind": "intoto",
+            "version": "0.0.2"
+          },
+          "bodyKind": "intoto",
+          "bodyApiVersion": "0.0.2",
+          "logId": {
+            "keyId": "wNI9atQGlz+VWfO6LRygH4QUfY/8W4RFwiT5i5WRgB0="
+          },
+          "logIndex": "94408157",
+          "integratedTime": "1715879526"
+        },
+        {
+          "predicateType": "https://slsa.dev/provenance/v1",
+          "bundleMediaType": "application/vnd.dev.sigstore.bundle+json;version=0.2",
+          "kindVersion": {
+            "kind": "intoto",
+            "version": "0.0.2"
+          },
+          "bodyKind": "intoto",
+          "bodyApiVersion": "0.0.2",
+          "logId": {
+            "keyId": "wNI9atQGlz+VWfO6LRygH4QUfY/8W4RFwiT5i5WRgB0="
+          },
+          "logIndex": "94408136",
+          "integratedTime": "1715879523"
+        }
+      ]
+    },
+    {
+      "package": "npm",
+      "requestedVersion": "latest",
+      "metadataUrl": "https://registry.npmjs.org/npm/latest",
+      "version": "12.2.1",
+      "metadataSha256": "c1af64bb9a5700b6d66d35c17577929240828487229b8e1771211c3e7aaa4778",
+      "status": "no-advertised-attestation"
+    },
+    {
+      "package": "npm",
+      "requestedVersion": "11.6.0",
+      "metadataUrl": "https://registry.npmjs.org/npm/11.6.0",
+      "version": "11.6.0",
+      "metadataSha256": "35e511a022322db5fd172f57a9452c0c519a277822948ff8b408c7c7dadfba3a",
+      "status": "no-advertised-attestation"
+    },
+    {
+      "package": "npm",
+      "requestedVersion": "11.0.0",
+      "metadataUrl": "https://registry.npmjs.org/npm/11.0.0",
+      "version": "11.0.0",
+      "metadataSha256": "46011912a89c7ae1df6b51448015011d249d75a950e5b763896db200ddfa9617",
+      "status": "no-advertised-attestation"
+    },
+    {
+      "package": "npm",
+      "requestedVersion": "10.9.2",
+      "metadataUrl": "https://registry.npmjs.org/npm/10.9.2",
+      "version": "10.9.2",
+      "metadataSha256": "9713344d09fd2d6ccd1d76bcf6dc53f107c3556f184a5295431d08208e3f8f91",
+      "status": "no-advertised-attestation"
+    },
+    {
+      "package": "npm",
+      "requestedVersion": "10.8.3",
+      "metadataUrl": "https://registry.npmjs.org/npm/10.8.3",
+      "version": "10.8.3",
+      "metadataSha256": "a29b7df88063ccd7b07d246dc7746fb8957dabe506bc1b001d19b3ce150e7fbc",
+      "status": "no-advertised-attestation"
+    },
+    {
+      "package": "rollup",
+      "requestedVersion": "latest",
+      "metadataUrl": "https://registry.npmjs.org/rollup/latest",
+      "version": "4.67.4",
+      "metadataSha256": "ee332f7aa28cd72044c6c697708c7cc6e9675028fc20632b2638886c122105ee",
+      "status": "captured",
+      "attestationsUrl": "https://registry.npmjs.org/-/npm/v1/attestations/rollup@4.67.4",
+      "attestationsSha256": "f1a5d0cd1e072ea2222b9388d8395f21cd0357249f5bed1691e37aa980371b8b",
+      "logs": [
+        {
+          "predicateType": "https://github.com/npm/attestation/tree/main/specs/publish/v0.1",
+          "bundleMediaType": "application/vnd.dev.sigstore.bundle+json;version=0.2",
+          "kindVersion": {
+            "kind": "dsse",
+            "version": "0.0.1"
+          },
+          "bodyKind": "dsse",
+          "bodyApiVersion": "0.0.1",
+          "logId": {
+            "keyId": "wNI9atQGlz+VWfO6LRygH4QUfY/8W4RFwiT5i5WRgB0="
+          },
+          "logIndex": "3623805831",
+          "integratedTime": "1793519321"
+        },
+        {
+          "predicateType": "https://slsa.dev/provenance/v1",
+          "bundleMediaType": "application/vnd.dev.sigstore.bundle.v0.3+json",
+          "kindVersion": {
+            "kind": "dsse",
+            "version": "0.0.1"
+          },
+          "bodyKind": "dsse",
+          "bodyApiVersion": "0.0.1",
+          "logId": {
+            "keyId": "wNI9atQGlz+VWfO6LRygH4QUfY/8W4RFwiT5i5WRgB0="
+          },
+          "logIndex": "3623767643",
+          "integratedTime": "1793519200"
+        }
+      ]
+    },
+    {
+      "package": "rollup",
+      "requestedVersion": "4.52.4",
+      "metadataUrl": "https://registry.npmjs.org/rollup/4.52.4",
+      "version": "4.52.4",
+      "metadataSha256": "370a9ecf73c667e45b5257bddba45daf5443c7f104e97a50daf8d05cf6f91167",
+      "status": "captured",
+      "attestationsUrl": "https://registry.npmjs.org/-/npm/v1/attestations/rollup@4.52.4",
+      "attestationsSha256": "f3aff3c746fe39453d3dd804f92842d5b47250cced67e3377faa3d8809aa6534",
+      "logs": [
+        {
+          "predicateType": "https://github.com/npm/attestation/tree/main/specs/publish/v0.1",
+          "bundleMediaType": "application/vnd.dev.sigstore.bundle+json;version=0.2",
+          "kindVersion": {
+            "kind": "intoto",
+            "version": "0.0.2"
+          },
+          "bodyKind": "intoto",
+          "bodyApiVersion": "0.0.2",
+          "logId": {
+            "keyId": "wNI9atQGlz+VWfO6LRygH4QUfY/8W4RFwiT5i5WRgB0="
+          },
+          "logIndex": "582323170",
+          "integratedTime": "1759470559"
+        },
+        {
+          "predicateType": "https://slsa.dev/provenance/v1",
+          "bundleMediaType": "application/vnd.dev.sigstore.bundle.v0.3+json",
+          "kindVersion": {
+            "kind": "dsse",
+            "version": "0.0.1"
+          },
+          "bodyKind": "dsse",
+          "bodyApiVersion": "0.0.1",
+          "logId": {
+            "keyId": "wNI9atQGlz+VWfO6LRygH4QUfY/8W4RFwiT5i5WRgB0="
+          },
+          "logIndex": "582323150",
+          "integratedTime": "1759470556"
+        }
+      ]
+    },
+    {
+      "package": "rollup",
+      "requestedVersion": "4.44.0",
+      "metadataUrl": "https://registry.npmjs.org/rollup/4.44.0",
+      "version": "4.44.0",
+      "metadataSha256": "76fc8a8e91129d34360c8fbddc04c0ae9ccec1dd560f92df40816a61861acf18",
+      "status": "no-advertised-attestation"
+    },
+    {
+      "package": "rollup",
+      "requestedVersion": "4.34.0",
+      "metadataUrl": "https://registry.npmjs.org/rollup/4.34.0",
+      "version": "4.34.0",
+      "metadataSha256": "104deefe92db6a1968438d020a50287c5443d4e20262d1caeaf5346f3b13cf96",
+      "status": "no-advertised-attestation"
+    },
+    {
+      "package": "rollup",
+      "requestedVersion": "4.24.0",
+      "metadataUrl": "https://registry.npmjs.org/rollup/4.24.0",
+      "version": "4.24.0",
+      "metadataSha256": "0f075d4af54c7f86bd6ce985e06f701738364bceed9370df7a9bf0dc3af52df3",
+      "status": "no-advertised-attestation"
+    },
+    {
+      "package": "vite",
+      "requestedVersion": "latest",
+      "metadataUrl": "https://registry.npmjs.org/vite/latest",
+      "version": "8.3.5",
+      "metadataSha256": "ba34bc2cd5e3e2c14de8d81d000e5596d4c110aab59b723c8b9bdb175df78723",
+      "status": "captured",
+      "attestationsUrl": "https://registry.npmjs.org/-/npm/v1/attestations/vite@8.3.5",
+      "attestationsSha256": "4b55d246767e1ce439a118b95965fab8244f7fc2e4ba017c9bbbbcd818064c43",
+      "logs": [
+        {
+          "predicateType": "https://github.com/npm/attestation/tree/main/specs/publish/v0.1",
+          "bundleMediaType": "application/vnd.dev.sigstore.bundle+json;version=0.2",
+          "kindVersion": {
+            "kind": "dsse",
+            "version": "0.0.1"
+          },
+          "bodyKind": "dsse",
+          "bodyApiVersion": "0.0.1",
+          "logId": {
+            "keyId": "wNI9atQGlz+VWfO6LRygH4QUfY/8W4RFwiT5i5WRgB0="
+          },
+          "logIndex": "3351257925",
+          "integratedTime": "1792564744"
+        },
+        {
+          "predicateType": "https://slsa.dev/provenance/v1",
+          "bundleMediaType": "application/vnd.dev.sigstore.bundle.v0.3+json",
+          "kindVersion": {
+            "kind": "dsse",
+            "version": "0.0.1"
+          },
+          "bodyKind": "dsse",
+          "bodyApiVersion": "0.0.1",
+          "logId": {
+            "keyId": "wNI9atQGlz+VWfO6LRygH4QUfY/8W4RFwiT5i5WRgB0="
+          },
+          "logIndex": "3351213712",
+          "integratedTime": "1792564540"
+        }
+      ]
+    },
+    {
+      "package": "vite",
+      "requestedVersion": "7.1.12",
+      "metadataUrl": "https://registry.npmjs.org/vite/7.1.12",
+      "version": "7.1.12",
+      "metadataSha256": "60a7a0844080a8508e5d529a094354636036c6627286c635abff92fd22462183",
+      "status": "captured",
+      "attestationsUrl": "https://registry.npmjs.org/-/npm/v1/attestations/vite@7.1.12",
+      "attestationsSha256": "b2d1fb7cc2654c6dfaff43f59a2dc84884fd671e6983702741b8b3273cb138e4",
+      "logs": [
+        {
+          "predicateType": "https://github.com/npm/attestation/tree/main/specs/publish/v0.1",
+          "bundleMediaType": "application/vnd.dev.sigstore.bundle+json;version=0.2",
+          "kindVersion": {
+            "kind": "intoto",
+            "version": "0.0.2"
+          },
+          "bodyKind": "intoto",
+          "bodyApiVersion": "0.0.2",
+          "logId": {
+            "keyId": "wNI9atQGlz+VWfO6LRygH4QUfY/8W4RFwiT5i5WRgB0="
+          },
+          "logIndex": "632206417",
+          "integratedTime": "1761201883"
+        },
+        {
+          "predicateType": "https://slsa.dev/provenance/v1",
+          "bundleMediaType": "application/vnd.dev.sigstore.bundle.v0.3+json",
+          "kindVersion": {
+            "kind": "dsse",
+            "version": "0.0.1"
+          },
+          "bodyKind": "dsse",
+          "bodyApiVersion": "0.0.1",
+          "logId": {
+            "keyId": "wNI9atQGlz+VWfO6LRygH4QUfY/8W4RFwiT5i5WRgB0="
+          },
+          "logIndex": "632206353",
+          "integratedTime": "1761201878"
+        }
+      ]
+    },
+    {
+      "package": "vite",
+      "requestedVersion": "7.0.0",
+      "metadataUrl": "https://registry.npmjs.org/vite/7.0.0",
+      "version": "7.0.0",
+      "metadataSha256": "df4fae8d0e037906694557ec7833fc1cace6f1788378798494e59a0c57bd1856",
+      "status": "captured",
+      "attestationsUrl": "https://registry.npmjs.org/-/npm/v1/attestations/vite@7.0.0",
+      "attestationsSha256": "0df0f54f9367a9ac4e5dbed69ba9d10f646a12fcd99388e7791be20055c392b5",
+      "logs": [
+        {
+          "predicateType": "https://github.com/npm/attestation/tree/main/specs/publish/v0.1",
+          "bundleMediaType": "application/vnd.dev.sigstore.bundle+json;version=0.2",
+          "kindVersion": {
+            "kind": "intoto",
+            "version": "0.0.2"
+          },
+          "bodyKind": "intoto",
+          "bodyApiVersion": "0.0.2",
+          "logId": {
+            "keyId": "wNI9atQGlz+VWfO6LRygH4QUfY/8W4RFwiT5i5WRgB0="
+          },
+          "logIndex": "248461841",
+          "integratedTime": "1750756689"
+        },
+        {
+          "predicateType": "https://slsa.dev/provenance/v1",
+          "bundleMediaType": "application/vnd.dev.sigstore.bundle+json;version=0.2",
+          "kindVersion": {
+            "kind": "intoto",
+            "version": "0.0.2"
+          },
+          "bodyKind": "intoto",
+          "bodyApiVersion": "0.0.2",
+          "logId": {
+            "keyId": "wNI9atQGlz+VWfO6LRygH4QUfY/8W4RFwiT5i5WRgB0="
+          },
+          "logIndex": "248461817",
+          "integratedTime": "1750756682"
+        }
+      ]
+    },
+    {
+      "package": "vite",
+      "requestedVersion": "6.1.0",
+      "metadataUrl": "https://registry.npmjs.org/vite/6.1.0",
+      "version": "6.1.0",
+      "metadataSha256": "26f138ecda363df349802f4fc8c5a021eea8bd4f9000a21cb168a70f801eb472",
+      "status": "captured",
+      "attestationsUrl": "https://registry.npmjs.org/-/npm/v1/attestations/vite@6.1.0",
+      "attestationsSha256": "475c29ef3120696dc4a217f109dd389eff6b8518a8f406368a83d803920ab00c",
+      "logs": [
+        {
+          "predicateType": "https://github.com/npm/attestation/tree/main/specs/publish/v0.1",
+          "bundleMediaType": "application/vnd.dev.sigstore.bundle+json;version=0.2",
+          "kindVersion": {
+            "kind": "intoto",
+            "version": "0.0.2"
+          },
+          "bodyKind": "intoto",
+          "bodyApiVersion": "0.0.2",
+          "logId": {
+            "keyId": "wNI9atQGlz+VWfO6LRygH4QUfY/8W4RFwiT5i5WRgB0="
+          },
+          "logIndex": "168944851",
+          "integratedTime": "1738761434"
+        },
+        {
+          "predicateType": "https://slsa.dev/provenance/v1",
+          "bundleMediaType": "application/vnd.dev.sigstore.bundle+json;version=0.2",
+          "kindVersion": {
+            "kind": "intoto",
+            "version": "0.0.2"
+          },
+          "bodyKind": "intoto",
+          "bodyApiVersion": "0.0.2",
+          "logId": {
+            "keyId": "wNI9atQGlz+VWfO6LRygH4QUfY/8W4RFwiT5i5WRgB0="
+          },
+          "logIndex": "168944809",
+          "integratedTime": "1738761427"
+        }
+      ]
+    },
+    {
+      "package": "vite",
+      "requestedVersion": "5.4.0",
+      "metadataUrl": "https://registry.npmjs.org/vite/5.4.0",
+      "version": "5.4.0",
+      "metadataSha256": "b4fee711fccc0b3e684f9ea837ef2044334950ec25bc885a4495a8ee29410a76",
+      "status": "captured",
+      "attestationsUrl": "https://registry.npmjs.org/-/npm/v1/attestations/vite@5.4.0",
+      "attestationsSha256": "a1b383db3f236546032181d00508a77402b11edae4d35b98d5361817a3c6cfaf",
+      "logs": [
+        {
+          "predicateType": "https://github.com/npm/attestation/tree/main/specs/publish/v0.1",
+          "bundleMediaType": "application/vnd.dev.sigstore.bundle+json;version=0.2",
+          "kindVersion": {
+            "kind": "intoto",
+            "version": "0.0.2"
+          },
+          "bodyKind": "intoto",
+          "bodyApiVersion": "0.0.2",
+          "logId": {
+            "keyId": "wNI9atQGlz+VWfO6LRygH4QUfY/8W4RFwiT5i5WRgB0="
+          },
+          "logIndex": "119279245",
+          "integratedTime": "1723044296"
+        },
+        {
+          "predicateType": "https://slsa.dev/provenance/v1",
+          "bundleMediaType": "application/vnd.dev.sigstore.bundle+json;version=0.2",
+          "kindVersion": {
+            "kind": "intoto",
+            "version": "0.0.2"
+          },
+          "bodyKind": "intoto",
+          "bodyApiVersion": "0.0.2",
+          "logId": {
+            "keyId": "wNI9atQGlz+VWfO6LRygH4QUfY/8W4RFwiT5i5WRgB0="
+          },
+          "logIndex": "119279157",
+          "integratedTime": "1723044288"
+        }
+      ]
+    },
+    {
+      "package": "@npmcli/arborist",
+      "requestedVersion": "latest",
+      "metadataUrl": "https://registry.npmjs.org/%40npmcli%2Farborist/latest",
+      "version": "10.0.4",
+      "metadataSha256": "396c4c000b1d533e61316e0216c4f06b1cb41e3c371c9b2c63ff85532ebd1d13",
+      "status": "no-advertised-attestation"
+    },
+    {
+      "package": "@npmcli/arborist",
+      "requestedVersion": "9.1.7",
+      "metadataUrl": "https://registry.npmjs.org/%40npmcli%2Farborist/9.1.7",
+      "version": "9.1.7",
+      "metadataSha256": "ca7b241c9b9dd91483a4ecfa590a1841597141598abbc0cc0883bbe08157d40f",
+      "status": "no-advertised-attestation"
+    },
+    {
+      "package": "@npmcli/arborist",
+      "requestedVersion": "9.0.0",
+      "metadataUrl": "https://registry.npmjs.org/%40npmcli%2Farborist/9.0.0",
+      "version": "9.0.0",
+      "metadataSha256": "c6a9abb6c707f31b0b013e72ebd6fcbbff9755e6d53458d7f6ba0353bbced0f1",
+      "status": "no-advertised-attestation"
+    },
+    {
+      "package": "@npmcli/arborist",
+      "requestedVersion": "8.0.0",
+      "metadataUrl": "https://registry.npmjs.org/%40npmcli%2Farborist/8.0.0",
+      "version": "8.0.0",
+      "metadataSha256": "9392633020a1e5bba3eecc223783972ea9936ff66740f1ee6139f7b347723301",
+      "status": "no-advertised-attestation"
+    },
+    {
+      "package": "@actions/core",
+      "requestedVersion": "latest",
+      "metadataUrl": "https://registry.npmjs.org/%40actions%2Fcore/latest",
+      "version": "3.0.1",
+      "metadataSha256": "d13ddd76f2bb50bc1f047c4827f87224c54ba921d50600fb0cec1fb84b8e8fc0",
+      "status": "captured",
+      "attestationsUrl": "https://registry.npmjs.org/-/npm/v1/attestations/@actions%2fcore@3.0.1",
+      "attestationsSha256": "dea2b7b4f6a142846c002fcc2470858a6a676c1509f3efcfd9cc8f4ec54d07b1",
+      "logs": [
+        {
+          "predicateType": "https://github.com/npm/attestation/tree/main/specs/publish/v0.1",
+          "bundleMediaType": "application/vnd.dev.sigstore.bundle+json;version=0.2",
+          "kindVersion": {
+            "kind": "dsse",
+            "version": "0.0.1"
+          },
+          "bodyKind": "dsse",
+          "bodyApiVersion": "0.0.1",
+          "logId": {
+            "keyId": "wNI9atQGlz+VWfO6LRygH4QUfY/8W4RFwiT5i5WRgB0="
+          },
+          "logIndex": "1353506837",
+          "integratedTime": "1776802209"
+        },
+        {
+          "predicateType": "https://slsa.dev/provenance/v1",
+          "bundleMediaType": "application/vnd.dev.sigstore.bundle.v0.3+json",
+          "kindVersion": {
+            "kind": "dsse",
+            "version": "0.0.1"
+          },
+          "bodyKind": "dsse",
+          "bodyApiVersion": "0.0.1",
+          "logId": {
+            "keyId": "wNI9atQGlz+VWfO6LRygH4QUfY/8W4RFwiT5i5WRgB0="
+          },
+          "logIndex": "1353506518",
+          "integratedTime": "1776802207"
+        }
+      ]
+    },
+    {
+      "package": "@actions/core",
+      "requestedVersion": "1.11.1",
+      "metadataUrl": "https://registry.npmjs.org/%40actions%2Fcore/1.11.1",
+      "version": "1.11.1",
+      "metadataSha256": "5c98e0c82e88311983cfb66d6a9e0ca383e9917f0de20b96a61549581c539f27",
+      "status": "captured",
+      "attestationsUrl": "https://registry.npmjs.org/-/npm/v1/attestations/@actions%2fcore@1.11.1",
+      "attestationsSha256": "0963e586f4de860034a63a2801b7e5fe65c14e5819d59810b709554daa988760",
+      "logs": [
+        {
+          "predicateType": "https://github.com/npm/attestation/tree/main/specs/publish/v0.1",
+          "bundleMediaType": "application/vnd.dev.sigstore.bundle+json;version=0.2",
+          "kindVersion": {
+            "kind": "intoto",
+            "version": "0.0.2"
+          },
+          "bodyKind": "intoto",
+          "bodyApiVersion": "0.0.2",
+          "logId": {
+            "keyId": "wNI9atQGlz+VWfO6LRygH4QUfY/8W4RFwiT5i5WRgB0="
+          },
+          "logIndex": "137009990",
+          "integratedTime": "1728079160"
+        },
+        {
+          "predicateType": "https://slsa.dev/provenance/v1",
+          "bundleMediaType": "application/vnd.dev.sigstore.bundle+json;version=0.2",
+          "kindVersion": {
+            "kind": "intoto",
+            "version": "0.0.2"
+          },
+          "bodyKind": "intoto",
+          "bodyApiVersion": "0.0.2",
+          "logId": {
+            "keyId": "wNI9atQGlz+VWfO6LRygH4QUfY/8W4RFwiT5i5WRgB0="
+          },
+          "logIndex": "137009988",
+          "integratedTime": "1728079157"
+        }
+      ]
+    },
+    {
+      "package": "@actions/core",
+      "requestedVersion": "1.11.0",
+      "metadataUrl": "https://registry.npmjs.org/%40actions%2Fcore/1.11.0",
+      "version": "1.11.0",
+      "metadataSha256": "6678ef53ae05b34af892bc5501fc439c07ce43b8118296d92e00d67390e849b6",
+      "status": "captured",
+      "attestationsUrl": "https://registry.npmjs.org/-/npm/v1/attestations/@actions%2fcore@1.11.0",
+      "attestationsSha256": "d1ae1cd40c862b26b36dfce36701af227a32121683ab9b28c5df764cf8cbd204",
+      "logs": [
+        {
+          "predicateType": "https://github.com/npm/attestation/tree/main/specs/publish/v0.1",
+          "bundleMediaType": "application/vnd.dev.sigstore.bundle+json;version=0.2",
+          "kindVersion": {
+            "kind": "intoto",
+            "version": "0.0.2"
+          },
+          "bodyKind": "intoto",
+          "bodyApiVersion": "0.0.2",
+          "logId": {
+            "keyId": "wNI9atQGlz+VWfO6LRygH4QUfY/8W4RFwiT5i5WRgB0="
+          },
+          "logIndex": "136203394",
+          "integratedTime": "1727892184"
+        },
+        {
+          "predicateType": "https://slsa.dev/provenance/v1",
+          "bundleMediaType": "application/vnd.dev.sigstore.bundle+json;version=0.2",
+          "kindVersion": {
+            "kind": "intoto",
+            "version": "0.0.2"
+          },
+          "bodyKind": "intoto",
+          "bodyApiVersion": "0.0.2",
+          "logId": {
+            "keyId": "wNI9atQGlz+VWfO6LRygH4QUfY/8W4RFwiT5i5WRgB0="
+          },
+          "logIndex": "136203391",
+          "integratedTime": "1727892180"
+        }
+      ]
+    },
+    {
+      "package": "typescript",
+      "requestedVersion": "latest",
+      "metadataUrl": "https://registry.npmjs.org/typescript/latest",
+      "version": "7.0.2",
+      "metadataSha256": "28a8ef314c6bbc3fddb831088f80eb2fcac6351cb618c8ac029f7229f587b8aa",
+      "status": "no-advertised-attestation"
+    },
+    {
+      "package": "typescript",
+      "requestedVersion": "5.9.3",
+      "metadataUrl": "https://registry.npmjs.org/typescript/5.9.3",
+      "version": "5.9.3",
+      "metadataSha256": "80f0d5d237c08c433b4cee823d75c4f54469beee86cc2fad5e1800f86b6243d8",
+      "status": "no-advertised-attestation"
+    },
+    {
+      "package": "typescript",
+      "requestedVersion": "5.8.3",
+      "metadataUrl": "https://registry.npmjs.org/typescript/5.8.3",
+      "version": "5.8.3",
+      "metadataSha256": "903e88bb6d16ca9419e14722378df6b66de31187f3534fb90a18e9ee2b37582e",
+      "status": "no-advertised-attestation"
+    },
+    {
+      "package": "esbuild",
+      "requestedVersion": "latest",
+      "metadataUrl": "https://registry.npmjs.org/esbuild/latest",
+      "version": "0.28.2",
+      "metadataSha256": "7a6838097b106ef5d8877fd543a1e25c46e5eb1730945fb7e57bc467c12c7c8c",
+      "status": "captured",
+      "attestationsUrl": "https://registry.npmjs.org/-/npm/v1/attestations/esbuild@0.28.2",
+      "attestationsSha256": "292470b6de0e55d058bffe5c574bc11b4a6aad96fb9907f6bd488733becc7a6a",
+      "logs": [
+        {
+          "predicateType": "https://github.com/npm/attestation/tree/main/specs/publish/v0.1",
+          "bundleMediaType": "application/vnd.dev.sigstore.bundle+json;version=0.2",
+          "kindVersion": {
+            "kind": "dsse",
+            "version": "0.0.1"
+          },
+          "bodyKind": "dsse",
+          "bodyApiVersion": "0.0.1",
+          "logId": {
+            "keyId": "wNI9atQGlz+VWfO6LRygH4QUfY/8W4RFwiT5i5WRgB0="
+          },
+          "logIndex": "2386692323",
+          "integratedTime": "1786219257"
+        },
+        {
+          "predicateType": "https://slsa.dev/provenance/v1",
+          "bundleMediaType": "application/vnd.dev.sigstore.bundle.v0.3+json",
+          "kindVersion": {
+            "kind": "dsse",
+            "version": "0.0.1"
+          },
+          "bodyKind": "dsse",
+          "bodyApiVersion": "0.0.1",
+          "logId": {
+            "keyId": "wNI9atQGlz+VWfO6LRygH4QUfY/8W4RFwiT5i5WRgB0="
+          },
+          "logIndex": "2386690745",
+          "integratedTime": "1786219128"
+        }
+      ]
+    },
+    {
+      "package": "esbuild",
+      "requestedVersion": "0.25.11",
+      "metadataUrl": "https://registry.npmjs.org/esbuild/0.25.11",
+      "version": "0.25.11",
+      "metadataSha256": "8d1418a8c0615f5e3d56230f859aef712b4d5ac0afd9420b16334d3f78eebe43",
+      "status": "no-advertised-attestation"
+    },
+    {
+      "package": "esbuild",
+      "requestedVersion": "0.25.0",
+      "metadataUrl": "https://registry.npmjs.org/esbuild/0.25.0",
+      "version": "0.25.0",
+      "metadataSha256": "95b09ec25530a069251446e4fcba96fe9a1e192f68218d07e0e5701300c36a66",
+      "status": "no-advertised-attestation"
+    },
+    {
+      "package": "vitest",
+      "requestedVersion": "latest",
+      "metadataUrl": "https://registry.npmjs.org/vitest/latest",
+      "version": "5.0.5",
+      "metadataSha256": "161da05d413b8aca31ebb7763625d66086cb47057057f00d24d69147a343ef62",
+      "status": "captured",
+      "attestationsUrl": "https://registry.npmjs.org/-/npm/v1/attestations/vitest@5.0.5",
+      "attestationsSha256": "d02ae5b1d438706d9e01cf5dc9f645c9d691403e9645bc25dd865b6a933388a1",
+      "logs": [
+        {
+          "predicateType": "https://github.com/npm/attestation/tree/main/specs/publish/v0.1",
+          "bundleMediaType": "application/vnd.dev.sigstore.bundle+json;version=0.2",
+          "kindVersion": {
+            "kind": "dsse",
+            "version": "0.0.1"
+          },
+          "bodyKind": "dsse",
+          "bodyApiVersion": "0.0.1",
+          "logId": {
+            "keyId": "wNI9atQGlz+VWfO6LRygH4QUfY/8W4RFwiT5i5WRgB0="
+          },
+          "logIndex": "3265773709",
+          "integratedTime": "1792074547"
+        },
+        {
+          "predicateType": "https://slsa.dev/provenance/v1",
+          "bundleMediaType": "application/vnd.dev.sigstore.bundle.v0.3+json",
+          "kindVersion": {
+            "kind": "dsse",
+            "version": "0.0.1"
+          },
+          "bodyKind": "dsse",
+          "bodyApiVersion": "0.0.1",
+          "logId": {
+            "keyId": "wNI9atQGlz+VWfO6LRygH4QUfY/8W4RFwiT5i5WRgB0="
+          },
+          "logIndex": "3265710792",
+          "integratedTime": "1792074151"
+        }
+      ]
+    },
+    {
+      "package": "vitest",
+      "requestedVersion": "3.2.4",
+      "metadataUrl": "https://registry.npmjs.org/vitest/3.2.4",
+      "version": "3.2.4",
+      "metadataSha256": "71dbc982ed3e4f2db029fe0aa6d8395d3d540ec7b0edb0358250993801c41909",
+      "status": "captured",
+      "attestationsUrl": "https://registry.npmjs.org/-/npm/v1/attestations/vitest@3.2.4",
+      "attestationsSha256": "6f8eea398b0b5761647bf1f730de42454f529d1da51109492fbae6682e53cbd7",
+      "logs": [
+        {
+          "predicateType": "https://github.com/npm/attestation/tree/main/specs/publish/v0.1",
+          "bundleMediaType": "application/vnd.dev.sigstore.bundle+json;version=0.2",
+          "kindVersion": {
+            "kind": "intoto",
+            "version": "0.0.2"
+          },
+          "bodyKind": "intoto",
+          "bodyApiVersion": "0.0.2",
+          "logId": {
+            "keyId": "wNI9atQGlz+VWfO6LRygH4QUfY/8W4RFwiT5i5WRgB0="
+          },
+          "logIndex": "241999647",
+          "integratedTime": "1750182867"
+        },
+        {
+          "predicateType": "https://slsa.dev/provenance/v1",
+          "bundleMediaType": "application/vnd.dev.sigstore.bundle+json;version=0.2",
+          "kindVersion": {
+            "kind": "intoto",
+            "version": "0.0.2"
+          },
+          "bodyKind": "intoto",
+          "bodyApiVersion": "0.0.2",
+          "logId": {
+            "keyId": "wNI9atQGlz+VWfO6LRygH4QUfY/8W4RFwiT5i5WRgB0="
+          },
+          "logIndex": "241999509",
+          "integratedTime": "1750182863"
+        }
+      ]
+    },
+    {
+      "package": "vitest",
+      "requestedVersion": "3.0.0",
+      "metadataUrl": "https://registry.npmjs.org/vitest/3.0.0",
+      "version": "3.0.0",
+      "metadataSha256": "c84a3977a7cd0b627939b233b8afdab8dababec62cd6242c9791496779cf2ef1",
+      "status": "captured",
+      "attestationsUrl": "https://registry.npmjs.org/-/npm/v1/attestations/vitest@3.0.0",
+      "attestationsSha256": "acf1d3fe678e21b9f799e53cc455cffd291e4b0e49111886099f4f9bdf6655d8",
+      "logs": [
+        {
+          "predicateType": "https://github.com/npm/attestation/tree/main/specs/publish/v0.1",
+          "bundleMediaType": "application/vnd.dev.sigstore.bundle+json;version=0.2",
+          "kindVersion": {
+            "kind": "intoto",
+            "version": "0.0.2"
+          },
+          "bodyKind": "intoto",
+          "bodyApiVersion": "0.0.2",
+          "logId": {
+            "keyId": "wNI9atQGlz+VWfO6LRygH4QUfY/8W4RFwiT5i5WRgB0="
+          },
+          "logIndex": "162953117",
+          "integratedTime": "1737036485"
+        },
+        {
+          "predicateType": "https://slsa.dev/provenance/v1",
+          "bundleMediaType": "application/vnd.dev.sigstore.bundle+json;version=0.2",
+          "kindVersion": {
+            "kind": "intoto",
+            "version": "0.0.2"
+          },
+          "bodyKind": "intoto",
+          "bodyApiVersion": "0.0.2",
+          "logId": {
+            "keyId": "wNI9atQGlz+VWfO6LRygH4QUfY/8W4RFwiT5i5WRgB0="
+          },
+          "logIndex": "162953096",
+          "integratedTime": "1737036481"
+        }
+      ]
+    },
+    {
+      "package": "@sveltejs/kit",
+      "requestedVersion": "latest",
+      "metadataUrl": "https://registry.npmjs.org/%40sveltejs%2Fkit/latest",
+      "version": "3.1.1",
+      "metadataSha256": "55b2f9661b133396860acd2e232a764c82fae0577b06ae2cb1b2c075b46272f7",
+      "status": "captured",
+      "attestationsUrl": "https://registry.npmjs.org/-/npm/v1/attestations/@sveltejs%2fkit@3.1.1",
+      "attestationsSha256": "83d91fb29d36e294e4d9e9ac8f5396a88a5c874a2a05d9146278ce5051226d66",
+      "logs": [
+        {
+          "predicateType": "https://github.com/npm/attestation/tree/main/specs/publish/v0.1",
+          "bundleMediaType": "application/vnd.dev.sigstore.bundle+json;version=0.2",
+          "kindVersion": {
+            "kind": "dsse",
+            "version": "0.0.1"
+          },
+          "bodyKind": "dsse",
+          "bodyApiVersion": "0.0.1",
+          "logId": {
+            "keyId": "wNI9atQGlz+VWfO6LRygH4QUfY/8W4RFwiT5i5WRgB0="
+          },
+          "logIndex": "3579484853",
+          "integratedTime": "1793317727"
+        },
+        {
+          "predicateType": "https://slsa.dev/provenance/v1",
+          "bundleMediaType": "application/vnd.dev.sigstore.bundle.v0.3+json",
+          "kindVersion": {
+            "kind": "dsse",
+            "version": "0.0.1"
+          },
+          "bodyKind": "dsse",
+          "bodyApiVersion": "0.0.1",
+          "logId": {
+            "keyId": "wNI9atQGlz+VWfO6LRygH4QUfY/8W4RFwiT5i5WRgB0="
+          },
+          "logIndex": "3579447843",
+          "integratedTime": "1793317619"
+        }
+      ]
+    },
+    {
+      "package": "@sveltejs/kit",
+      "requestedVersion": "2.37.1",
+      "metadataUrl": "https://registry.npmjs.org/%40sveltejs%2Fkit/2.37.1",
+      "version": "2.37.1",
+      "metadataSha256": "ed85226503442931249de5260dba899fac3cb15a5c1a8f3373753b645eda3345",
+      "status": "captured",
+      "attestationsUrl": "https://registry.npmjs.org/-/npm/v1/attestations/@sveltejs%2fkit@2.37.1",
+      "attestationsSha256": "3c07822038fee9a62a352e88a37e508826828d1435de5f97087d02240eb8a1f8",
+      "logs": [
+        {
+          "predicateType": "https://github.com/npm/attestation/tree/main/specs/publish/v0.1",
+          "bundleMediaType": "application/vnd.dev.sigstore.bundle+json;version=0.2",
+          "kindVersion": {
+            "kind": "intoto",
+            "version": "0.0.2"
+          },
+          "bodyKind": "intoto",
+          "bodyApiVersion": "0.0.2",
+          "logId": {
+            "keyId": "wNI9atQGlz+VWfO6LRygH4QUfY/8W4RFwiT5i5WRgB0="
+          },
+          "logIndex": "478514234",
+          "integratedTime": "1757152910"
+        },
+        {
+          "predicateType": "https://slsa.dev/provenance/v1",
+          "bundleMediaType": "application/vnd.dev.sigstore.bundle+json;version=0.2",
+          "kindVersion": {
+            "kind": "intoto",
+            "version": "0.0.2"
+          },
+          "bodyKind": "intoto",
+          "bodyApiVersion": "0.0.2",
+          "logId": {
+            "keyId": "wNI9atQGlz+VWfO6LRygH4QUfY/8W4RFwiT5i5WRgB0="
+          },
+          "logIndex": "478514229",
+          "integratedTime": "1757152907"
+        }
+      ]
+    },
+    {
+      "package": "@sveltejs/kit",
+      "requestedVersion": "2.20.0",
+      "metadataUrl": "https://registry.npmjs.org/%40sveltejs%2Fkit/2.20.0",
+      "version": "2.20.0",
+      "metadataSha256": "cf652bae035b479309c17838742d84023686dfc95a2e86bb424025bb12d69780",
+      "status": "captured",
+      "attestationsUrl": "https://registry.npmjs.org/-/npm/v1/attestations/@sveltejs%2fkit@2.20.0",
+      "attestationsSha256": "a99ca63bf3419a643328effcd6f64a20486e3346fb3bf99cf641dd297ca37b9c",
+      "logs": [
+        {
+          "predicateType": "https://github.com/npm/attestation/tree/main/specs/publish/v0.1",
+          "bundleMediaType": "application/vnd.dev.sigstore.bundle+json;version=0.2",
+          "kindVersion": {
+            "kind": "intoto",
+            "version": "0.0.2"
+          },
+          "bodyKind": "intoto",
+          "bodyApiVersion": "0.0.2",
+          "logId": {
+            "keyId": "wNI9atQGlz+VWfO6LRygH4QUfY/8W4RFwiT5i5WRgB0="
+          },
+          "logIndex": "183509374",
+          "integratedTime": "1742225917"
+        },
+        {
+          "predicateType": "https://slsa.dev/provenance/v1",
+          "bundleMediaType": "application/vnd.dev.sigstore.bundle+json;version=0.2",
+          "kindVersion": {
+            "kind": "intoto",
+            "version": "0.0.2"
+          },
+          "bodyKind": "intoto",
+          "bodyApiVersion": "0.0.2",
+          "logId": {
+            "keyId": "wNI9atQGlz+VWfO6LRygH4QUfY/8W4RFwiT5i5WRgB0="
+          },
+          "logIndex": "183509292",
+          "integratedTime": "1742225913"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Structural classification is not cryptographic verification.",
+    "No target package is installed, imported or executed.",
+    "No discovered dsse/0.0.2 is not universal absence.",
+    "Bundle v0.2 or intoto/0.0.2 is not dsse/0.0.2."
+  ]
+}

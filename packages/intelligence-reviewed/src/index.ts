@@ -78,7 +78,7 @@ const makeFinding = (
   const references = [...new Set(evidenceIds)].sort();
   return {
     findingId: findingId(fields.ruleId, changeId, references),
-    ruleVersion: '0.1.0',
+    ruleVersion: '0.2.0-p2-static-v1',
     evidenceIds: references,
     ...fields,
   };
@@ -121,73 +121,84 @@ function collectDeterministicFindings(
 
   for (const { change, evidence } of changed(bundle)) {
     const manifestDeltas = evidence.filter((item) => item.kind === 'manifest_delta' && item.locator.metadataKey);
-    let classifiedManifest = false;
-
-    for (const delta of manifestDeltas) {
+    // Interpret one outermost entrypoint value per changed root. Parent/leaf
+    // records remain retained, but cannot inflate the event count.
+    const pointer = (key: string): string => key.startsWith('/') ? key : '/' + key.split('.').join('/');
+    const selected = manifestDeltas.filter(delta => {
+      const path = pointer(delta.locator.metadataKey!);
+      const parts = path.slice(1).split('/').map(s => s.replace(/~1/g, '/').replace(/~0/g, '~'));
+      if (parts[0] === 'scripts') return parts.length === 2;
+      if (!ENTRYPOINT_KEYS.has(parts[0]!)) return false;
+      return !manifestDeltas.some(parent => {
+        const other = pointer(parent.locator.metadataKey!);
+        return other !== path && path.startsWith(other + '/');
+      });
+    });
+    for (const delta of selected) {
       const key = delta.locator.metadataKey!;
-      if (!key.startsWith('scripts.')) continue;
-
-      classifiedManifest = true;
-      const scriptName = key.slice('scripts.'.length);
-      const isLifecycle = LIFECYCLE_SCRIPTS.has(scriptName);
-      const isOnlyTestOrDev = ['test', 'pretest', 'posttest', 'lint', 'format'].includes(scriptName);
-      const manifestDelta = resolveManifestDelta(contentById.get(delta.evidenceId));
-      const direction = manifestDelta && manifestDelta.source === null && manifestDelta.artifact !== null
-        ? 'is reported as added to the artifact'
-        : manifestDelta && manifestDelta.artifact === null && manifestDelta.source !== null
-          ? 'is reported as removed from the artifact'
-          : manifestDelta
-            ? 'is reported as changed'
-            : change.status === 'added'
-        ? 'is reported as added to the artifact'
-        : change.status === 'removed'
-          ? 'is reported as removed from the artifact'
-          : 'is reported as changed';
-      const limitations = manifestDelta
-        ? ['The producer-retained manifest delta supplies the old/new value direction; this M1 rule does not analyze referenced file behavior or establish intent.']
-        : ['The producer may retain old and new manifest values, but this M1 rule has not resolved them from the retained delta content.'];
-
+      const path = pointer(key);
+      const scriptName = path.startsWith('/scripts/') ? path.slice(9).replace(/~1/g, '/').replace(/~0/g, '~') : undefined;
+      const isScript = scriptName !== undefined;
+      const isLifecycle = isScript && LIFECYCLE_SCRIPTS.has(scriptName);
+      const value = resolveManifestDelta(contentById.get(delta.evidenceId));
+      const commandsSupported = !isScript || !!value && [value.source, value.artifact].every(side => side === null || typeof side.value === 'string' && side.value.trim().length > 0);
+      const resolved = !!value && commandsSupported;
+      const removed = resolved && value.artifact === null;
+      const direction = !resolved ? 'has a producer-recorded difference; exact old/new values and direction remain unresolved'
+        : value.source === null ? 'is added to the artifact'
+        : removed ? 'is removed from the artifact' : 'is changed from source to artifact';
+      const summarize = (side: {value: unknown} | null): string => {
+        if (side === null) return 'absent (validated in the retained manifest)';
+        const text = JSON.stringify(side.value).replace(/[\u007f-\u009f\u061c\u200b-\u200f\u2028-\u202e\u2060-\u206f\ufeff]/g, c => '\\u' + c.charCodeAt(0).toString(16).padStart(4, '0'));
+        return text.length > 240 ? text.slice(0, 240) + '… [summary truncated; inspect full cited value]' : text;
+      };
+      const reasons = [
+        'Only retained metadata is compared; no referenced file, command, resolver, build or package was executed.',
+        ...(resolved ? ['Direction and values are bound to the original manifest members and exact value byte spans.'] : ['Consumer content is missing, unsupported or unresolved; this does not assert that producer values are absent.']),
+        ...(isScript && !commandsSupported ? ['Empty or nonstring script values are unsupported as commands; no lifecycle action is inferred.'] : []),
+        ...(!isScript ? ['Entrypoint objects/arrays/conditions are inert metadata; Node resolution, target-member presence and executable behavior are not established.'] : []),
+      ];
+      if (!commandsSupported) limitations.push(`Unsupported script command at ${path}; exact command interpretation remains incomplete.`);
       findings.push(makeFinding(change.changeId, [delta.evidenceId], {
-        ruleId: isLifecycle ? 'heurisko.manifest.lifecycle-script-change' : 'heurisko.manifest.script-change',
-        title: isLifecycle ? 'Package lifecycle script entry changed' : 'Package script entry changed',
-        observation: `Manifest key ${key} ${direction}.`,
+        ruleId: isScript ? isLifecycle ? 'heurisko.manifest.lifecycle-script-change' : 'heurisko.manifest.script-change' : 'heurisko.manifest.entrypoint-change',
+        title: isScript ? isLifecycle ? 'Package lifecycle script entry changed' : 'Package script entry changed' : 'Package entrypoint metadata changed',
+        observation: `Manifest pointer ${path} ${direction}.${resolved ? ` Source: ${summarize(value.source)}; artifact: ${summarize(value.artifact)}.` : ''}`,
         whyItMatters: isLifecycle
-          ? 'Lifecycle entries can affect package-manager installation behavior; inspect the exact command and its source before deciding what it does. This observation does not establish malicious intent.'
-          : isOnlyTestOrDev
-            ? 'This script is an explicit package command and may be run by maintainers or CI; the key change alone does not establish what it executes.'
-            : 'A package script entry changed; inspect the command and its callers before deciding what behavior it enables.',
-        severity: isLifecycle && change.status !== 'removed' ? 'medium' : 'informational',
-        reviewPriority: isLifecycle && change.status !== 'removed' ? 'medium' : 'low',
-        evidenceConfidence: manifestDelta ? 'high' : 'limited',
-        explanationStrength: 'exact',
-        limitations: findingLimitations(bundle, limitations),
-        nextActions: manifestDelta
-          ? ['Review the retained old and new script values and their referenced files; do not execute them on the host.']
-          : ['Resolve the retained old and new manifest values from producer evidence, then inspect referenced files without installing or executing the package.'],
+          ? scriptName === 'prepare' ? 'prepare has development, packing and some installation contexts distinct from install hooks; command metadata alone establishes no behavior or intent.'
+            : removed ? 'A removed lifecycle entry is not an added installation action; review any other retained changes independently.'
+              : 'Install lifecycle entries can affect package-manager installation behavior; inspect the retained command without executing it. No intent is inferred.'
+          : isScript ? 'This is explicit command metadata; a script change alone does not establish automatic execution or intent.'
+            : 'Entrypoint metadata can change consumer selection; this static observation does not establish resolution, execution, safety or intent.',
+        severity: !resolved ? 'undetermined' : isScript ? isLifecycle && !removed ? 'medium' : 'informational' : 'low',
+        reviewPriority: resolved && isLifecycle && !removed ? 'medium' : 'low',
+        evidenceConfidence: resolved ? 'high' : 'limited',
+        explanationStrength: resolved ? 'exact' : 'unexplained',
+        limitations: findingLimitations(bundle, reasons),
+        nextActions: ['Inspect both exact cited value spans and the retained raw file difference; do not install or execute the package.'],
       }));
     }
 
-    for (const delta of manifestDeltas) {
-      const key = delta.locator.metadataKey!;
-      if (!ENTRYPOINT_KEYS.has(key) && !['exports.', 'bin.', 'browser.'].some((prefix) => key.startsWith(prefix))) continue;
-
-      classifiedManifest = true;
-      findings.push(makeFinding(change.changeId, [delta.evidenceId], {
-        ruleId: 'heurisko.manifest.entrypoint-change',
-        title: 'Package entrypoint metadata changed',
-        observation: `Manifest key ${key} is reported as changed.`,
-        whyItMatters: 'Entrypoint changes affect which files consumers load or execute; the key-level delta does not prove the selected file is unsafe.',
-        severity: 'low',
-        reviewPriority: 'low',
-        evidenceConfidence: delta.contentState === 'retained' ? 'high' : 'limited',
-        explanationStrength: 'exact',
-        limitations: findingLimitations(bundle, ['Old and new manifest values are not available in this evidence record.']),
-        nextActions: ['Compare the exact old and new values and confirm the referenced artifact path exists.'],
+    // Every raw difference stays visible even when selected manifest fields are
+    // interpreted. Recognized fields never suppress unrelated/residual edits.
+    for (const note of evidence.filter(item => item.kind === 'analysis_note' && item.observationMethod === 'heurisko-static-relationship-v1')) {
+      const text = contentById.get(note.evidenceId);if (!text) continue;
+      let relation: {rule?: string;matches?: unknown[];totalSources?: number};
+      try {relation=JSON.parse(text);}catch {continue;}
+      const wording = relation.rule === 'crlf-only'
+        ? 'The retained source and artifact text differ only in CRLF versus LF byte sequences.'
+        : relation.rule === 'strict-json-formatting'
+          ? 'The retained source and artifact are strict JSON objects with equal parsed values in the same parsed property order; formatting differs.'
+          : relation.rule === 'sourcemap-retained-source'
+            ? `A final local source-map reference resolves to a retained map; ${relation.matches?.length} of ${relation.totalSources} embedded source entries exactly match retained source-member bytes.` : undefined;
+      if (!wording) continue;
+      findings.push(makeFinding(change.changeId, [note.evidenceId, ...evidence.filter(e=>e.kind==='source_member'||e.kind==='artifact_member').map(e=>e.evidenceId)], {
+        ruleId: 'heurisko.change.static-relationship', title: 'Bounded static relationship observed', observation: wording,
+        whyItMatters: 'This mechanically checked relationship can guide review; it does not prove emitted behavior, semantic equivalence, generation, provenance, reproduction or safety.',
+        severity: 'informational', reviewPriority: 'low', evidenceConfidence: 'high', explanationStrength: 'supported_unreproduced',
+        limitations: findingLimitations(bundle, ['All original member bytes and raw enclosing changed spans remain residual evidence.', 'Only the named byte/value/source-text relationship is checked. Source-map mappings, build configuration, source selection and remaining bytes are unverified.']),
+        nextActions: ['Inspect the relationship record and all raw residuals, including unmatched source-map entries and emitted bytes.'],
       }));
     }
-
-    if (classifiedManifest) continue;
-
     if (change.status === 'generated_candidate') {
       const buildEvidence = evidence.filter((item) => item.kind === 'build_record');
       // Keep the raw artifact/source references beside the build record so a
@@ -274,6 +285,17 @@ function collectDeterministicFindings(
       nextActions: ['Inspect the cited artifact/source evidence and retain any unsupported bytes as unresolved.'],
     }));
   }
+  for (const [index,candidate] of [...bundle.sourceCandidates].sort((a,b)=>{const x=JSON.stringify([a.repositoryUrl,a.commit,a.subdirectory]),y=JSON.stringify([b.repositoryUrl,b.commit,b.subdirectory]);return x<y?-1:x>y?1:0;}).entries()) {
+    const ids=candidate.evidenceIds.filter(id=>evidenceIds.has(id));if (!ids.length) continue;
+    findings.push(makeFinding(`source_${index}_${candidate.commit ?? 'unpinned'}`, ids, {
+      ruleId:'heurisko.source.candidate-scope',title:'Source candidate and comparison scope',
+      observation:`Candidate ${JSON.stringify(candidate.repositoryUrl)} at ${candidate.commit ?? 'unresolved commit'}, subtree ${JSON.stringify(candidate.subdirectory ?? '(not recorded)')}: ${candidate.sourceSnapshotSha256 ? `acquired archive ${candidate.sourceSnapshotSha256}; build context ${candidate.buildContextSha256 ?? 'not recorded'}` : 'archive digest not recorded; inspect retained acquisition evidence'}. Association: ${candidate.association}. Conflicts: ${JSON.stringify([...candidate.conflicts].sort())}.`,
+      whyItMatters:'Comparison covers the recorded selected source scope. Metadata agreement and byte comparison do not authenticate source association or remove conflicts; missing optional metadata does not establish non-acquisition.',
+      severity:'informational',reviewPriority:'low',evidenceConfidence:'limited',explanationStrength:'not_assessed',
+      limitations:findingLimitations(bundle,['Claims and captures are immutable observations, not cryptographic Git/tag/provenance verification. Byte inventory scope and explanation coverage are separate.']),
+      nextActions:['Inspect every candidate claim/capture and the selected package subtree; retain conflicts and omitted broader context.'],
+    }));
+  }
   // A malformed reference must not be converted into an uncited finding.
   if (bundle.changes.some((change) => change.evidenceIds.some((id) => !evidenceIds.has(id)))) {
     limitations.push('One or more change records reference evidence IDs absent from this bundle; those references were not used to generate findings.');
@@ -326,6 +348,10 @@ export async function analyzeEvidence(
   ];
 
   const deterministic = collectDeterministicFindings(bundle, resolvedContent);
+  if (deterministic.limitations.some(text => text.startsWith('Unsupported script command'))) {
+    stages[0]!.status = 'incomplete';
+    stages[0]!.errors.push({stage:'heuristics',code:'SCRIPT_COMMAND_UNSUPPORTED',message:'Empty or nonstring script commands remain unresolved.',affectedScope:'manifest scripts',retryable:false});
+  }
   return {
     schemaVersion: '0.1.0',
     findings: deterministic.findings,

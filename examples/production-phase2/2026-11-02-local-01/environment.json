@@ -1,0 +1,18 @@
+{
+  "node": "v22.23.4",
+  "nodeExecutableSha256": "2cc28a1880d0774616959f2210ee739bffa6ac695c887e8988a496a21271f6c0",
+  "nodeArchiveSha256": "c9e1dbc748b33ed2d14f42445191ecaf14c56259c7a9a26d0042c49ec2b66428",
+  "nodeChecksumSource": "retained official SHASUMS256.txt from earlier admitted setup; fresh sandbox DNS lookup denied",
+  "pnpm": "10.14.0",
+  "python": "3.13.2 (main, Feb  4 2025, 14:51:09) [Clang 16.0.0 (clang-1600.0.26.6)]",
+  "host": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "pythonRequirementsSha256": "f589c32497553a4b8c4456450870c523d892b7df25feaf4c2805a98859034e2b",
+  "installedValidatorVersions": {
+    "jsonschema": "4.26.0",
+    "attrs": "26.1.0",
+    "jsonschema-specifications": "2025.9.1",
+    "referencing": "0.37.0",
+    "rpds-py": "2026.9.1"
+  },
+  "scope": "macOS arm64 local implementation/evaluation; no new Linux or distribution claim"
+}

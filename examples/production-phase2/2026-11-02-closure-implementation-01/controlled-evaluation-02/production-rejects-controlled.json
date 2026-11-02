@@ -1,0 +1,31 @@
+{
+  "pass": true,
+  "result": {
+    "status": "unresolved",
+    "artifactBinding": "not_available",
+    "policyResult": "indeterminate",
+    "reason": "ROOT_OR_INPUT_REJECTED",
+    "detail": "timestamp was signed by 0/1 keys"
+  },
+  "identity": {
+    "exitCode": 0,
+    "stderr": "",
+    "verifier": "@sigstore/verify@4.1.2;bundle@5.0.0;core@4.0.1;protobuf@0.5.2;tuf-js@6.0.1;models@5.0.1;minimatch@11.0.1",
+    "workerSha256": "sha256:3b919229638310b4036df1594c1632c2337316ecd34ad508085945435b0de46e",
+    "image": "node:22.23.4-bookworm-slim@sha256:9a422d62743ffb1e6eb282549f4eae7ab89f7b926db1f136f4cba8be60e4ecbc",
+    "workerPlatform": "linux/arm64",
+    "platform": "darwin-arm64",
+    "containerName": "heurisko-verifier-5a4350c9-b078-4e6d-bcb1-c7bca7dc5553",
+    "creationRequested": true,
+    "creationAcknowledged": true,
+    "workerState": {
+      "startedAt": "2026-11-02T12:31:02.542709967Z",
+      "finishedAt": "2026-11-02T12:31:03.781638759Z",
+      "oomKilled": false,
+      "exitCode": 0,
+      "wallMs": 1239
+    },
+    "supervisor": "GNU timeout 9.1, configured KILL at 5s; Docker create/start controls 10s",
+    "cleanup": "confirmed_absent"
+  }
+}

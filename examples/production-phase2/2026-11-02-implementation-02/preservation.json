@@ -1,0 +1,9 @@
+{
+  "scope": "Every initial historical evidence/research/retained-provenance file; index bytes. Current source and owning narrative edits are separate.",
+  "checkedFiles": 32871,
+  "missing": [],
+  "changed": [],
+  "indexUnchanged": true,
+  "initialIndexSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "currentIndexSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

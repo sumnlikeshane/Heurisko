@@ -1,0 +1,18 @@
+[
+  {
+    "component": "verifier-launcher",
+    "before": "examples/production-phase2/2026-11-02-technical-closure-runtime-01/baseline-runtime/packages/core/src/trust.ts",
+    "beforeSha256": "d1df67ceeeb7bd91c76e0fc703b897fa5af863a1e6d08964da01e2c3ec1057cc",
+    "after": "packages/core/src/trust.ts",
+    "afterSha256": "eb180dde05fbee6565a98c528787d2adc831456401fd5f90b4f75b17c04d9575",
+    "diff": "verifier-launcher.diff"
+  },
+  {
+    "component": "parser-boundary-harness",
+    "before": "examples/production-phase2/2026-11-02-technical-closure-runtime-01/boundary-harness-baseline-source.mjs",
+    "beforeSha256": "a2c99dcd86166f86551a42a9bfb61451008a2f3136ce37a44d5f2692c253d906",
+    "after": "scripts/check-parser-boundary.mjs",
+    "afterSha256": "dc5ccafdc0ad21b40e8f9b5b67514eaad470bd456b344d9b16b02bd719a05498",
+    "diff": "parser-boundary-harness.diff"
+  }
+]

@@ -1,0 +1,60 @@
+{
+  "capturedAt": "2026-11-02T14:58:42.401287+00:00",
+  "initialFilesVerified": 69698,
+  "changedOriginalFiles": [
+    ".github/workflows/closure-native.yml",
+    "HEURISKO_COMPLETE_GUIDE.md",
+    "PRODUCTION_MASTER_ROADMAP.md",
+    "SOURCE_PACKAGE.md",
+    "docs/Approved Decision Register.md",
+    "docs/CLI Reference.md",
+    "docs/Production Phase 1 Implementation Plan.md",
+    "docs/README.md",
+    "docs/production-phase1/Document Disposition.md",
+    "packages/core/VERIFIER_ADMISSION.md",
+    "packages/core/src/trust.ts",
+    "scripts/check-parser-boundary.mjs",
+    "scripts/run-closure-validation.py"
+  ],
+  "unexpectedChanges": [],
+  "missingOriginalFiles": [],
+  "indexUnchanged": true,
+  "historicalEvidenceChanges": [],
+  "selectedSourceMismatches": [],
+  "manifestSha256": "ba5fda889734514e04006b202a42c54e48a1e03694347a63ba6bcc37d3248fb2",
+  "baselineFailedStores": [
+    {
+      "case": "wrong-workflow-0-0-2",
+      "writeLockRetained": true,
+      "parserLockRetained": true,
+      "outcomes": [
+        {
+          "path": "baseline/application/wrong-workflow-0-0-2/store/scratch/parser-EvowIu/outcome.json",
+          "sha256": "6563a6103bb08ef4f2051dd9515ea839b1b715e967cca0d6f0d5230b8bb866ae",
+          "value": {
+            "version": "heurisko-parser-job-outcome-v1",
+            "code": "PARSER_INTERRUPTED",
+            "cleanupConfirmed": false
+          }
+        }
+      ]
+    },
+    {
+      "case": "wrong-source-0-0-2",
+      "writeLockRetained": true,
+      "parserLockRetained": true,
+      "outcomes": [
+        {
+          "path": "baseline/application/wrong-source-0-0-2/store/scratch/parser-pJifUC/outcome.json",
+          "sha256": "0fcc3c6c8f8c56148c1508507ace6382e78b06ca59c4aff66a34203baabdaaf8",
+          "value": {
+            "version": "heurisko-parser-job-outcome-v1",
+            "code": "PARSER_TIMEOUT",
+            "cleanupConfirmed": false
+          }
+        }
+      ]
+    }
+  ],
+  "preserved": true
+}

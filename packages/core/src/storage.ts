@@ -85,6 +85,25 @@ export class EvidenceStore {
       await this.assertCapacity(bytes.byteLength); await writeImmutable(this.blobPath(ref),bytes); return ref;
     });
   }
+  // One locked capacity reservation for a bounded producer batch. Partial CAS
+  // writes remain immutable on failure; no rollback, cleanup or quota bypass.
+  async putBatch<T>(maximumBytes:number,work:(put:(bytes:Uint8Array)=>Promise<`sha256:${string}`>)=>Promise<T>):Promise<T> {
+    if(!Number.isSafeInteger(maximumBytes)||maximumBytes<0||maximumBytes>this.limits.capBytes)throw new StorageError('STORE_CAP');
+    return this.exclusive(async()=>{
+      await this.assertCapacity(maximumBytes);let remaining=maximumBytes;
+      return work(async value=>{
+        const bytes=Buffer.from(value);if(bytes.length>remaining)throw new StorageError('STORE_BATCH_LIMIT');remaining-=bytes.length;
+        const ref=sha256(bytes);
+        try{const prior=await this.get(ref);if(!prior.equals(bytes))throw new StorageError('IMMUTABLE_COLLISION');return ref;}
+        catch(e){if((e as NodeJS.ErrnoException).code!=='ENOENT')throw e;}
+        // Capacity was reserved under this same cross-process write lock. Disk
+        // reserve is still checked for every write, including outside disk use.
+        const disk=await fs.statfs(this.root,{bigint:true});
+        if(disk.bavail*disk.bsize<BigInt(bytes.length+this.limits.reserveBytes))throw new StorageError('STORE_DISK_RESERVE');
+        await writeImmutable(this.blobPath(ref),bytes);return ref;
+      });
+    });
+  }
   async putJSON(value:unknown) { return this.put(Buffer.from(canonicalJSON(value))); }
   async saveReport(report:InvestigationReport,context:ValidationContext={}):Promise<string> {
     report=structuredClone(report);

@@ -1,0 +1,20 @@
+{
+  "host": "macOS arm64",
+  "docker": {
+    "OSType": "linux",
+    "Architecture": "aarch64",
+    "OperatingSystem": "Docker Desktop",
+    "KernelVersion": "6.10.14-linuxkit",
+    "NCPU": 8,
+    "MemTotal": 4109803520
+  },
+  "contexts": [
+    "default: local Unix socket",
+    "desktop-linux: local Docker Desktop Unix socket"
+  ],
+  "sshConfiguredHostAliases": [],
+  "nativeLinuxAmd64Accessible": false,
+  "capabilityMissing": "An already authorized native Linux x86_64 execution host with Node x64 22.23.4, Python 3.13, pnpm 10.14.0 and native x86_64 Docker engine.",
+  "resolution": "Provide an accessible existing authorized host, or separately authorize later exact-head CI publication. No paid infrastructure or publication used.",
+  "independentWork": "Portable runner, hash-verified complete test source, local ARM restricted-worker and application checks."
+}

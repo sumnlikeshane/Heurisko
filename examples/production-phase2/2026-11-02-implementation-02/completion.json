@@ -1,0 +1,159 @@
+{
+  "recordedAt": "2026-11-02T10:10:24.388661+00:00",
+  "status": "Local implementation and available checks complete; technical/access/evidence/distribution conditions remain.",
+  "head": "7eee564818c63b0edbe47e58d7c044136a4470c0",
+  "branch": "foundation/phase1-completion-20261101",
+  "sourceIdentity": "source-assembled.json",
+  "workerSha256": "sha256:3b919229638310b4036df1594c1632c2337316ecd34ad508085945435b0de46e",
+  "publicationActions": [],
+  "ownerAcceptance": "Prepared review/limitations and Q4 draft/direction accepted; further reviewer signoff waived. No independent labels, unperformed checks or rights permission inferred.",
+  "preservedFinalPhase1CI": "7eee564818c63b0edbe47e58d7c044136a4470c0; all four original jobs and owner signoffs preserved. No CI claimed for this dirty tree.",
+  "checks": {
+    "typecheckAndBuild": {
+      "passed": true,
+      "log": "typecheck-arm64.log"
+    },
+    "worker": {
+      "passed": true,
+      "checks": 82,
+      "receipt": "trust-arm64/summary.json"
+    },
+    "signedApplicationReports": {
+      "passed": true,
+      "checks": 5,
+      "receipt": "integration-arm64/summary.json"
+    },
+    "serialCore": {
+      "passed": true,
+      "checks": 191,
+      "log": "core-arm64.log"
+    },
+    "realParserBoundary": {
+      "passed": true,
+      "receipt": "parser-boundary-arm64.json"
+    },
+    "readerTUI": {
+      "passed": true,
+      "checks": 40,
+      "log": "readers-tui-arm64.log"
+    },
+    "web": {
+      "passed": true,
+      "checks": 79,
+      "log": "web-arm64.log"
+    },
+    "realPolicyPTY": {
+      "passed": true,
+      "checks": 5,
+      "receipt": "pty-policy-arm64-configured/validation.json"
+    },
+    "CLIAnalyze": {
+      "passed": true,
+      "actualExits": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "receipt": "cli-policy-arm64/summary.json"
+    },
+    "contracts": {
+      "passed": true,
+      "log": "contracts-final.log"
+    },
+    "intelligenceIntake": {
+      "passed": true,
+      "files": 33,
+      "log": "intake-final.log"
+    },
+    "documentation": {
+      "passed": true,
+      "markdownFiles": 111,
+      "researchHashes": 15,
+      "knownUpstreamLinkExceptions": 2,
+      "log": "docs-delivery-final.log"
+    },
+    "sourceSelection": {
+      "passed": true,
+      "files": 1799,
+      "receipt": "source-selection-arm64-validation.json"
+    },
+    "selectedSourceCommonCredentialScan": {
+      "passed": true,
+      "textFiles": 1058,
+      "receipt": "source-selection-arm64-scan.json"
+    },
+    "wholeCandidateCredentialScan": {
+      "passed": false,
+      "status": "Stopped at unchanged 8 MiB per-text cap on generated exclusion manifest; not completed.",
+      "log": "secrets-final.log"
+    },
+    "preservation": {
+      "passed": true,
+      "historicalFiles": 32871,
+      "indexUnchanged": true,
+      "AGENTSUnchanged": true,
+      "receipt": "preservation-delivery.json"
+    },
+    "originalRightsAttribution": {
+      "passed": true,
+      "receipt": "original-rights-attribution-preservation.json"
+    },
+    "diffCheck": {
+      "passed": true,
+      "receipt": "diff-check-final.json"
+    }
+  },
+  "retainedFailures": {
+    "diagnosticCore": "186/191, core-supervised.log; daemon control spans document create/start/kill delays beyond unchanged budgets, not every individual old assertion timing.",
+    "emulatedWorker": "75/82, trust-delivery-final/summary.json; no retry relabels original failures.",
+    "PTY": "Wrong interpreter stopped before launch; unconfigured catalog correctly gave indeterminate/2. Corrected configured journey passes, with preflight/environment binding.",
+    "largeSource": "VALIDATION_LIMIT at existing 8 MiB after bundle retention; no usable report/pass and no raised cap."
+  },
+  "quality": {
+    "status": "Completed retrospective development review within accepted limits.",
+    "findings": 152,
+    "reports": 23,
+    "uniqueArtifactSourcePairs": 20,
+    "publicReleases": 12,
+    "provisionalRelatedGroups": 13,
+    "unresolvedCitations": 0,
+    "independentReviews": 0,
+    "heldOutReports": 0,
+    "populationThresholdsEstablished": false,
+    "receipt": "quality-review-delivery/review.json"
+  },
+  "remaining": [
+    {
+      "id": "native-worker-host",
+      "owner": "Shane / native-host provider",
+      "resolution": "Run the exact pinned new worker/core/application/resource/cancellation/parity matrix on a native Linux amd64 host and retain source/runtime/results; provide local host access or separately authorize future exact-head CI publication. Current no-publication constraint stands."
+    },
+    {
+      "id": "browser-AT",
+      "owner": "Shane / task-scoped browser and AT operator",
+      "resolution": "Supply a stable task-scoped ordinary pointer/keyboard/AT session and complete both citations, entrypoint, missing content, keyboard/Back/focus, narrow viewport/native 200% zoom and named screen-reader checks. Current input-dispatch timeouts are not GUI passes or proof of a citation defect."
+    },
+    {
+      "id": "real-format-adverse-evidence",
+      "owner": "Owner / trust-profile maintainer",
+      "resolution": "Acquire suitable lawfully retained real npm dsse/0.0.2 artifact/envelope pairs and valid contradictory same-subject assertions with rights/expected identities, or record a separately authorized product/profile amendment. Do not substitute staging/hello-world data, constructed reports or a silently changed profile.",
+      "receipt": "format-coverage-observation.json"
+    },
+    {
+      "id": "full-repository-and-binary-rights",
+      "owner": "Shane / organizer and applicable upstream licensors",
+      "resolution": "Obtain exact organizer attachment permission or select a reviewed separate distribution that excludes unresolved material/history. Any selected binary/image/venv release also needs the existing yoga/rpds/pip-vendor/OS-source dispositions. Narrow source artifact exclusions are verified but grant no full Git-history or image clearance."
+    },
+    {
+      "id": "whole-candidate-scan-scope",
+      "owner": "Owner / future publication-selection maintainer",
+      "resolution": "Review the selected publication inputs and separately bounded-scan the oversized metadata or omit it from that selection. Current exact source archive passes its narrower scan; no whole-tree/history credential absence is claimed."
+    }
+  ],
+  "phases": {
+    "phase1": "Open: applicable intended-distribution rights/selection conditions remain; prior owner signoffs and final CI stay closed.",
+    "phase2": "Open: new native-host proof, actual browser/AT and real format/adverse matrix remain; reviewer staffing/signoff is waived and authored quality limits are explicit.",
+    "phase3CanBegin": false
+  }
+}

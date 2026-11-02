@@ -1,0 +1,47 @@
+{
+  "date": "2026-11-02",
+  "reader": "Fresh private loopback process, three original inert-conformance-delivery report/store pairs, existing compiled web reader",
+  "capability": "Private launch fragment omitted from retained evidence",
+  "observations": [
+    {
+      "method": "Chrome connector navigation",
+      "result": "ERR_BLOCKED_BY_CLIENT"
+    },
+    {
+      "method": "Native address-bar navigation in task-created tab",
+      "result": "Home rendered visually; observed screenshot and subsequent task-scoped AX/DOM snapshots exposed semantic headings, main navigation and named links"
+    },
+    {
+      "method": "Task-scoped Workspace pointer activation",
+      "result": "Input.dispatchMouseEvent timeout; home DOM unchanged"
+    },
+    {
+      "method": "Task-scoped Workspace Enter activation",
+      "result": "Input.dispatchKeyEvent timeout; no completed navigation"
+    },
+    {
+      "method": "Captured task-tab developer logs",
+      "result": "No captured error/warning entries"
+    },
+    {
+      "method": "Native app targeting",
+      "result": "User/browser focus changed to unrelated activity; no further actions taken on that surface"
+    }
+  ],
+  "classification": "Confirmed automation/input restriction for this attempt. No reproduced citation or routing product defect; no full browser pass claimed.",
+  "not_completed": [
+    "Both lifecycle citation sides",
+    "Entrypoint citation/member values",
+    "Missing-content error/return",
+    "Keyboard modal/Back/focus",
+    "Narrow viewport/native 200% reflow",
+    "Named screen reader speech/focus"
+  ],
+  "resolution": "Stable task-scoped browser/input and named assistive-technology access; complete guide A-WEB-02 through A-WEB-05 with actual observations. No security-control changes, tunnel or public bind.",
+  "owner": "Local browser/input/AT environment; further reviewer signoff is waived",
+  "limits": "API/SSR/contract/PTY and AX-tree exposure are separate from real GUI input/AT acceptance. Existing Phase 1 signoffs/limits remain intact. No new investigation was started in the browser.",
+  "cleanup": {
+    "readerStopRequested": "SIGINT exact task-created process 18662",
+    "taskTabClose": "Browser session ownership was unavailable; no action on unrelated user tabs. No browser control workaround attempted."
+  }
+}

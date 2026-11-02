@@ -1,6 +1,6 @@
 # Heurisko foundation contract
 
-**Source reference, reconciled 1 November 2026.** This owns current module responsibilities, evidence/compatibility and trust boundaries. It does not certify platform support or Phase 1 acceptance. [The Phase 1 plan](../Production%20Phase%201%20Implementation%20Plan.md) owns unfinished work; [initial receipts](../../examples/production-phase1/2026-11-01/README.md) establish only their named checks.
+**Source reference, reconciled 2 November 2026.** This owns current module responsibilities, evidence/compatibility and trust boundaries. It does not certify platform support or Phase 1 acceptance. [The Phase 1 plan](../Production%20Phase%201%20Implementation%20Plan.md) owns unfinished work; [initial receipts](../../examples/production-phase1/2026-11-01/README.md) establish only their named checks.
 
 ## Responsibility map and public interfaces
 
@@ -30,9 +30,12 @@ The public API to preserve during Phase 1 is `investigate(input, options, contex
 
 Existing `heurisko-static-v5` caps remain unchanged: 32 MiB compressed and 128 MiB expanded archive, 16 MiB per member, 10,000 entries; parser 30 s wall, 10 CPU s, 256 MiB, one active with queue eight, network none, read-only root, UID/GID 65534, no host fallback; store 1 GiB with 64 MiB reserve and no automatic eviction. These are containment limits, not measured production SLOs. Resource samples for macOS and native Linux amd64 are retained in the Phase 1 plan; tiny-fixture measurements do not establish production SLOs.
 
+The optional local npm provenance profile is implemented in a separate offline container through `trust.ts`. It retains raw assertions, authenticated TUF anchor/metadata/root snapshots and exact policy/evaluator/runtime/time identity in versioned G0 evidence. Hash/signature/policy success cannot upgrade raw correspondence or clear source conflicts. Local inputs inherit no registry success. Host policy/catalog selection is explicit; targets and browser fields select no file, root or code. Verification has no network or host fallback and has separate hard memory/CPU/process/time bounds. [Admission and remaining technical limits](../../packages/core/VERIFIER_ADMISSION.md). Parser import now reserves its declared bounded batch under the existing writer lock and checks cancellation per journal record; immutable partial CAS bytes and all cap/recovery rules remain.
+
 ## Configuration, credentials and diagnostics
 
-- `HEURISKO_ANALYSIS_MODULE` is a trusted host selector: unset/empty or `55240e9` selects the reviewed module; `off` reproduces raw-only incomplete analysis. Unknown values fail before acquisition. Target metadata and HTTP requests cannot select it.
+- `HEURISKO_ANALYSIS_MODULE` is a trusted host selector: unset/empty or `p2-static-v1` selects the current reviewed local revision; explicit `55240e9` loads preserved legacy rule bytes under the current identified boundary; `off` reproduces raw-only incomplete analysis. Unknown values fail before acquisition. Target metadata and HTTP requests cannot select it.
+- `HEURISKO_TRUST_CONFIG` selects a bounded host-owned catalog file; exact policy keys, root snapshot, worker bytes and verification time bind new configuration/evidence. It is not a browser-selected path. Unknown keys remain indeterminate; invalid catalogs fail before acquisition. No credential is read by the offline worker.
 - `HEURISKO_WEB_MODE` is `local` (or unset) for the local app and `public-readonly` for the hosted explorer. Hosted mode requires an exact trusted `RENDER_EXTERNAL_URL` and numeric `PORT`; local web uses its own private loopback URL. `HEURISKO_WEB_TEST_CORPUS` and TUI receipt/test variables are test-only.
 - The product does not read an OpenRouter credential. The imported development adapter accepts an API key only as an explicit caller argument after an explicit enable flag; it is not connected. [Example settings](example.env) contain no credential. The [bounded format scan](../../scripts/check-phase1-secrets.mjs) checks present Git-tracked/candidate source, configuration, documentation and receipt text for common token/private-key forms. It reports bytes/types/exclusions; ignored/private files, binaries, archives and extensionless CAS blobs are outside coverage. It cannot prove arbitrary secrets absent.
 - CLI exits: `0` for a usable report with complete analysis and no configured policy violation/indeterminate policy; `1` for a configured policy violation; `2` for usable but incomplete/indeterminate; `3` for no usable report. Exit 0 is not a package-safety claim. JSON stdout and progress/error stderr remain separate. TUI and web surface the recorded outcome and unavailable-feature state rather than upgrading it.
@@ -62,7 +65,7 @@ The executable authority is G0 `0.1.0` in `packages/contracts/schema/contracts.s
 
 ## Analysis admission and interface behavior
 
-`packages/intelligence-reviewed` retains the complete deterministic body from `55240e99409ad44cbd6a978f40873ef410cb1861`; only terminal reexports were removed. Original source and derivation/admission hashes remain in that package. The trusted shared loader supplies bounded verified manifest delta/member content through a wrapper; G0's two-argument consumer interface is unchanged. Provider, retrieval, prompt and CodeAstra code from development intake is not in this runtime graph.
+`packages/intelligence-reviewed` now defaults to local revision `0.2.0-p2-static-v1`, derived from Malhar’s deterministic body at `55240e99409ad44cbd6a978f40873ef410cb1861`. Original upstream/derived source and parent admission remain byte-preserved; the legacy selector retains that rule body. The revised ledger honestly identifies Q1 field severity, Q2 entrypoint values and Q3 static relationship/source-scope changes. The trusted loader supplies bounded verified manifest deltas and independently recomputed static relationships through a wrapper; G0's two-argument consumer interface is unchanged. Provider, retrieval, prompt and CodeAstra code from development intake is not in this runtime graph.
 
 The loader binds source/compiled/admission/loader/boundary/configuration identity, rechecks bytes after asynchronous import and rejects changed cached code. Unknown selectors fail before acquisition; explicit trusted injection takes precedence. Target metadata and HTTP cannot choose executable modules. The in-process adapter is trusted code, not hostile JavaScript containment: timeout stops waiting and cannot preempt arbitrary synchronous code or prove background inference stopped.
 
@@ -72,7 +75,7 @@ A cancel request, engine settlement, exact parser absence and UI cleanup observa
 
 ## Regression ownership
 
-Historical audits were retired after these protections and remaining findings were reconciled. Current known quality/UI work is in the [roadmap backlog](../../PRODUCTION_MASTER_ROADMAP.md#priorities-and-known-issues); Phase 1 gates are in [the current plan](../Production%20Phase%201%20Implementation%20Plan.md#remaining-work-and-acceptance-matrix).
+Historical audits were retired after these protections and remaining findings were reconciled. Current Phase 2 implementation/evaluation status and remaining quality/UI work are in the [roadmap backlog](../../PRODUCTION_MASTER_ROADMAP.md#priorities-and-known-issues); Phase 1 gates are in [the current plan](../Production%20Phase%201%20Implementation%20Plan.md#remaining-work-and-acceptance-matrix).
 
 | Boundary | Source / checks retaining repaired behavior |
 |---|---|

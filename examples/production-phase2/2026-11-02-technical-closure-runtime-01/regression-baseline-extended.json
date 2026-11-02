@@ -1,0 +1,22 @@
+{
+  "command": [
+    "/private/tmp/heurisko-p2-tools-20261102/node-v22.23.4-darwin-arm64/bin/node",
+    "--test",
+    "--test-concurrency=1",
+    "packages/core/tests/verifier-lifecycle.test.mjs"
+  ],
+  "node": "v22.23.4",
+  "exit": 1,
+  "tests": 9,
+  "passed": 1,
+  "failed": 8,
+  "scope": "Authored fake Docker control-plane regression against unchanged baseline; no daemon or cryptographic acceptance claimed.",
+  "stdout": "regression-baseline-extended.stdout.log",
+  "stderr": "regression-baseline-extended.stderr.log",
+  "sourceSha256": {
+    "packages/core/tests/verifier-lifecycle.test.mjs": "f09fd799e3c822811891aa7ef0c1a3214db2c50a7075b1edbf4335c90e39e618",
+    "packages/core/dist/trust.js": "447fa2e580e08c2a4daa6c3059fad4b7a3b38f5d760fca8c175853e40a836ae2",
+    "packages/core/src/trust.ts": "d1df67ceeeb7bd91c76e0fc703b897fa5af863a1e6d08964da01e2c3ec1057cc"
+  },
+  "sourceNote": "Executed baseline dist remains unchanged; production source patch was in progress concurrently and was not loaded."
+}

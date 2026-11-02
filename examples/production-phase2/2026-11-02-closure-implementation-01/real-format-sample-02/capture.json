@@ -1,0 +1,127 @@
+{
+  "capturedAt": "2026-11-02T11:49:34.320028+00:00",
+  "network": "registry.npmjs.org HTTPS only; no redirects, 20s, 1MiB metadata/256KiB envelopes/8MiB artifact; eight selected releases",
+  "cases": [
+    {
+      "package": "@sigstore/verify",
+      "version": "4.1.2",
+      "metadataSha256": "45de3b73a7a1956a800aa7fa8586f9d90e7f242166e02429b779c3716900fa30",
+      "status": "captured",
+      "attestationsSha256": "16b3a19d9470ae46cdc939d3b508cb859ef7e536c5db0c956f3f37ac5ca16e46",
+      "formats": [
+        {
+          "kind": "dsse",
+          "version": "0.0.1"
+        },
+        {
+          "kind": "dsse",
+          "version": "0.0.1"
+        }
+      ],
+      "url": "https://registry.npmjs.org/-/npm/v1/attestations/@sigstore%2fverify@4.1.2"
+    },
+    {
+      "package": "@sigstore/core",
+      "version": "4.0.1",
+      "metadataSha256": "d9c0299f02330d6a4d413af4965b53c60090d495d8f7585b306a070dd13ded8c",
+      "status": "captured",
+      "attestationsSha256": "3cc33ac30877d2facdd5c888087fec303bf0a4e88cb0b310b4c44ef54ec33960",
+      "formats": [
+        {
+          "kind": "dsse",
+          "version": "0.0.1"
+        },
+        {
+          "kind": "dsse",
+          "version": "0.0.1"
+        }
+      ],
+      "url": "https://registry.npmjs.org/-/npm/v1/attestations/@sigstore%2fcore@4.0.1"
+    },
+    {
+      "package": "sigstore",
+      "version": "5.0.0",
+      "metadataSha256": "d15360adff505187b0b96107fd82fd4154d09d229d3a16a5623fcfe03bf2f62e",
+      "status": "captured",
+      "attestationsSha256": "eb82424f8acabd3b7eb31935bfda5d1bc5ebab511475af4c32ea377ecba6187c",
+      "formats": [
+        {
+          "kind": "dsse",
+          "version": "0.0.1"
+        },
+        {
+          "kind": "dsse",
+          "version": "0.0.1"
+        }
+      ],
+      "url": "https://registry.npmjs.org/-/npm/v1/attestations/sigstore@5.0.0"
+    },
+    {
+      "package": "rollup",
+      "version": "4.67.4",
+      "metadataSha256": "ee332f7aa28cd72044c6c697708c7cc6e9675028fc20632b2638886c122105ee",
+      "status": "captured",
+      "attestationsSha256": "f1a5d0cd1e072ea2222b9388d8395f21cd0357249f5bed1691e37aa980371b8b",
+      "formats": [
+        {
+          "kind": "dsse",
+          "version": "0.0.1"
+        },
+        {
+          "kind": "dsse",
+          "version": "0.0.1"
+        }
+      ],
+      "url": "https://registry.npmjs.org/-/npm/v1/attestations/rollup@4.67.4"
+    },
+    {
+      "package": "vite",
+      "version": "8.3.5",
+      "metadataSha256": "ba34bc2cd5e3e2c14de8d81d000e5596d4c110aab59b723c8b9bdb175df78723",
+      "status": "captured",
+      "attestationsSha256": "4b55d246767e1ce439a118b95965fab8244f7fc2e4ba017c9bbbbcd818064c43",
+      "formats": [
+        {
+          "kind": "dsse",
+          "version": "0.0.1"
+        },
+        {
+          "kind": "dsse",
+          "version": "0.0.1"
+        }
+      ],
+      "url": "https://registry.npmjs.org/-/npm/v1/attestations/vite@8.3.5"
+    },
+    {
+      "package": "@npmcli/arborist",
+      "version": "10.0.4",
+      "metadataSha256": "396c4c000b1d533e61316e0216c4f06b1cb41e3c371c9b2c63ff85532ebd1d13",
+      "status": "no-advertised-attestation"
+    },
+    {
+      "package": "npm",
+      "version": "12.2.1",
+      "metadataSha256": "c1af64bb9a5700b6d66d35c17577929240828487229b8e1771211c3e7aaa4778",
+      "status": "no-advertised-attestation"
+    },
+    {
+      "package": "@actions/core",
+      "version": "3.0.1",
+      "metadataSha256": "d13ddd76f2bb50bc1f047c4827f87224c54ba921d50600fb0cec1fb84b8e8fc0",
+      "status": "captured",
+      "attestationsSha256": "dea2b7b4f6a142846c002fcc2470858a6a676c1509f3efcfd9cc8f4ec54d07b1",
+      "formats": [
+        {
+          "kind": "dsse",
+          "version": "0.0.1"
+        },
+        {
+          "kind": "dsse",
+          "version": "0.0.1"
+        }
+      ],
+      "url": "https://registry.npmjs.org/-/npm/v1/attestations/@actions%2fcore@3.0.1"
+    }
+  ],
+  "limitations": "Sampling does not establish universal absence or crypto verification. No substituted or fabricated publisher claim."
+}

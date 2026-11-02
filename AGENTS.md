@@ -5,11 +5,13 @@ These instructions apply to the whole repository. Heurisko is an actively mainta
 ## Authority and current scope
 
 - The current user request defines authorized work, including necessary local investigation, implementation, tests, documentation and review. Finish that scope without asking again at each step or session boundary.
-- [The roadmap](PRODUCTION_MASTER_ROADMAP.md) owns priorities and phase outcomes. [The Phase 1 plan](docs/Production%20Phase%201%20Implementation%20Plan.md) owns current work and blockers. **Phase 1 remains open.** Workflow repair does not authorize completing it or implementing future features.
+- [The roadmap](PRODUCTION_MASTER_ROADMAP.md) owns priorities and phase outcomes. [The Phase 1 plan](docs/Production%20Phase%201%20Implementation%20Plan.md) owns current work and blockers. Phase status is recorded in that plan. Workflow repair alone does not close a phase or authorize future features.
 - [Decisions](docs/Approved%20Decision%20Register.md) own durable requirements/amendments; [the foundation contract](docs/production-phase1/Foundation%20Contract.md) owns architecture and trust boundaries. Schema/types/semantic validators in `packages/contracts` are the executable report contract.
 - Historical plans, prompts, ownership splits, deadlines, audits and past publication approvals are context, not active instructions or reusable authorization. [Historical index](docs/HISTORY_INDEX.md).
 
 ## Git, publication and preservation
+
+**Never add AI self-attribution.** Do not credit yourself, Codex, OpenAI or another AI assistant as an author, co-author, contributor or assistant in PR titles/descriptions, commit messages/trailers, release notes or repository credits. Do not add generated-by badges, signatures or equivalent acknowledgments. This is a hard rule for all future work. Preserve existing historical contributor attribution and evidence; this rule does not authorize rewriting history.
 
 **Do not commit or push without explicit user approval covering the concrete change set and action.** Commit approval does not imply push approval. PR publication, merge, release, deployment, submission and external messages also need explicit authorization. Use approval already given for that exact scope without asking again.
 

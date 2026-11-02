@@ -1,0 +1,7 @@
+{
+  "passed": false,
+  "status": "not_admitted",
+  "reason": "NATIVE_LINUX_AMD64_UNAVAILABLE",
+  "checksExecuted": 0,
+  "nativeAccepted": false
+}

@@ -38,6 +38,7 @@ export function evidenceId(bundle: EvidenceBundle, e: Omit<EvidenceRecord, 'evid
 }
 export interface AnalysisConfiguration {
   version: 'heurisko-config-v1'|'heurisko-config-v2'|'heurisko-config-v3';
+  trust?:Record<string,unknown>;
   analysisModule?:ReturnType<typeof import('./adapter.js').analysisModuleIdentity>|null;
   evidenceSnapshotSha256?: `sha256:${string}`;
   subject: { ecosystem:'npm'|'local'; origin:'registry'|'local'; packageName:string|null; version:string|null; artifactFilename:string; registryUrl:string|null };

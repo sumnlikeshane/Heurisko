@@ -1,0 +1,173 @@
+{
+  "capturedAt": "2026-11-02T09:49:22.423183+00:00",
+  "jobs": [
+    {
+      "job": "heurisko-parser-b5af974a-9950-48f5-9b6b-4ced36c904da",
+      "source": "/Users/sumnlikehsane/Library/Containers/com.docker.docker/Data/log/vm/init.log.6",
+      "sourceSha256": "a97b2dc6d1faf4c6ca4f73e1b8d2278ed082c8774e0cf4844dabe2f7393428fe",
+      "scope": "Serial create-to-next-create API span; inferred ID association, not a new observed container state. Only container control protocol lines retained.",
+      "records": [
+        {
+          "line": 4540,
+          "protocol": "INFO[46229] >> POST /v1.51/containers/create?name=heurisko-parser-b5af974a-9950-48f5-9b6b-4ced36c904da  component=apiproxy"
+        },
+        {
+          "line": 4554,
+          "protocol": "INFO[46237] << POST /v1.51/containers/create?name=heurisko-parser-b5af974a-9950-48f5-9b6b-4ced36c904da (8.138444171s)  component=apiproxy"
+        },
+        {
+          "line": 4561,
+          "protocol": "INFO[46239] >> POST /v1.51/containers/e7d965affb815ca95cf1a808f27da703a36d066c85f3050c8022b7d9ee4f8daa/attach?stderr=1&stdout=1&stream=1  component=apiproxy"
+        },
+        {
+          "line": 4567,
+          "protocol": "INFO[46239] >> POST /v1.51/containers/e7d965affb815ca95cf1a808f27da703a36d066c85f3050c8022b7d9ee4f8daa/start  component=apiproxy"
+        },
+        {
+          "line": 4578,
+          "protocol": "INFO[46260] >> POST /v1.51/containers/e7d965affb815ca95cf1a808f27da703a36d066c85f3050c8022b7d9ee4f8daa/kill  component=apiproxy"
+        },
+        {
+          "line": 4620,
+          "protocol": "INFO[46272] >> DELETE /v1.51/containers/e7d965affb815ca95cf1a808f27da703a36d066c85f3050c8022b7d9ee4f8daa?force=1  component=apiproxy"
+        },
+        {
+          "line": 4650,
+          "protocol": "INFO[46283] << POST /v1.51/containers/e7d965affb815ca95cf1a808f27da703a36d066c85f3050c8022b7d9ee4f8daa/start (43.624661936s)  component=apiproxy"
+        }
+      ]
+    },
+    {
+      "job": "heurisko-parser-9de231c2-ea47-4e1a-b1c1-26f055d6a950",
+      "source": "/Users/sumnlikehsane/Library/Containers/com.docker.docker/Data/log/vm/init.log.6",
+      "sourceSha256": "a97b2dc6d1faf4c6ca4f73e1b8d2278ed082c8774e0cf4844dabe2f7393428fe",
+      "scope": "Serial create-to-next-create API span; inferred ID association, not a new observed container state. Only container control protocol lines retained.",
+      "records": [
+        {
+          "line": 1212,
+          "protocol": "INFO[45900] >> POST /v1.51/containers/create?name=heurisko-parser-9de231c2-ea47-4e1a-b1c1-26f055d6a950  component=apiproxy"
+        },
+        {
+          "line": 1216,
+          "protocol": "INFO[45905] << POST /v1.51/containers/create?name=heurisko-parser-9de231c2-ea47-4e1a-b1c1-26f055d6a950 (4.808488169s)  component=apiproxy"
+        },
+        {
+          "line": 1225,
+          "protocol": "INFO[45911] >> POST /v1.51/containers/b1b06b26fab7731c836c1fec8d6a9d6479e72680b29e512462f39553190bea90/attach?stderr=1&stdout=1&stream=1  component=apiproxy"
+        },
+        {
+          "line": 1254,
+          "protocol": "INFO[45914] >> POST /v1.51/containers/b1b06b26fab7731c836c1fec8d6a9d6479e72680b29e512462f39553190bea90/start  component=apiproxy"
+        },
+        {
+          "line": 1350,
+          "protocol": "INFO[45922] << POST /v1.51/containers/b1b06b26fab7731c836c1fec8d6a9d6479e72680b29e512462f39553190bea90/start (8.213734212s)  component=apiproxy"
+        },
+        {
+          "line": 1382,
+          "protocol": "INFO[45926] << POST /v1.51/containers/b1b06b26fab7731c836c1fec8d6a9d6479e72680b29e512462f39553190bea90/attach?stderr=1&stdout=1&stream=1 (15.533079341s)  component=apiproxy"
+        },
+        {
+          "line": 1443,
+          "protocol": "INFO[45929] >> DELETE /v1.51/containers/b1b06b26fab7731c836c1fec8d6a9d6479e72680b29e512462f39553190bea90?force=1  component=apiproxy"
+        }
+      ]
+    },
+    {
+      "job": "heurisko-parser-be4ac8ae-eab1-44f8-9c90-180ebf16ad4e",
+      "source": "/Users/sumnlikehsane/Library/Containers/com.docker.docker/Data/log/vm/init.log.6",
+      "sourceSha256": "a97b2dc6d1faf4c6ca4f73e1b8d2278ed082c8774e0cf4844dabe2f7393428fe",
+      "scope": "Serial create-to-next-create API span; inferred ID association, not a new observed container state. Only container control protocol lines retained.",
+      "records": [
+        {
+          "line": 4349,
+          "protocol": "INFO[46171] >> POST /v1.51/containers/create?name=heurisko-parser-be4ac8ae-eab1-44f8-9c90-180ebf16ad4e  component=apiproxy"
+        },
+        {
+          "line": 4359,
+          "protocol": "INFO[46187] << POST /v1.51/containers/create?name=heurisko-parser-be4ac8ae-eab1-44f8-9c90-180ebf16ad4e (15.670493007s)  component=apiproxy"
+        },
+        {
+          "line": 4366,
+          "protocol": "INFO[46190] >> POST /v1.51/containers/d32a614d7e50d197befb70985c79158132fa8b62f33534ffd62bb1aebea63023/attach?stderr=1&stdout=1&stream=1  component=apiproxy"
+        },
+        {
+          "line": 4373,
+          "protocol": "INFO[46192] >> POST /v1.51/containers/d32a614d7e50d197befb70985c79158132fa8b62f33534ffd62bb1aebea63023/start  component=apiproxy"
+        },
+        {
+          "line": 4385,
+          "protocol": "INFO[46201] >> POST /v1.51/containers/d32a614d7e50d197befb70985c79158132fa8b62f33534ffd62bb1aebea63023/kill  component=apiproxy"
+        },
+        {
+          "line": 4446,
+          "protocol": "INFO[46208] << POST /v1.51/containers/d32a614d7e50d197befb70985c79158132fa8b62f33534ffd62bb1aebea63023/start (15.707193716s)  component=apiproxy"
+        },
+        {
+          "line": 4457,
+          "protocol": "INFO[46211] << POST /v1.51/containers/d32a614d7e50d197befb70985c79158132fa8b62f33534ffd62bb1aebea63023/attach?stderr=1&stdout=1&stream=1 (20.221812301s)  component=apiproxy"
+        },
+        {
+          "line": 4460,
+          "protocol": "INFO[46211] >> DELETE /v1.51/containers/d32a614d7e50d197befb70985c79158132fa8b62f33534ffd62bb1aebea63023?force=1  component=apiproxy"
+        },
+        {
+          "line": 4464,
+          "protocol": "INFO[46213] << POST /v1.51/containers/d32a614d7e50d197befb70985c79158132fa8b62f33534ffd62bb1aebea63023/kill (11.92805588s)  component=apiproxy"
+        },
+        {
+          "line": 4529,
+          "protocol": "INFO[46220] << DELETE /v1.51/containers/d32a614d7e50d197befb70985c79158132fa8b62f33534ffd62bb1aebea63023?force=1 (8.933895421s)  component=apiproxy"
+        }
+      ]
+    },
+    {
+      "job": "heurisko-parser-a5c0c787-ed0b-4b20-8a93-acd490d6bc21",
+      "source": "/Users/sumnlikehsane/Library/Containers/com.docker.docker/Data/log/vm/init.log.6",
+      "sourceSha256": "a97b2dc6d1faf4c6ca4f73e1b8d2278ed082c8774e0cf4844dabe2f7393428fe",
+      "scope": "Serial create-to-next-create API span; inferred ID association, not a new observed container state. Only container control protocol lines retained.",
+      "records": [
+        {
+          "line": 4088,
+          "protocol": "INFO[46113] >> POST /v1.51/containers/create?name=heurisko-parser-a5c0c787-ed0b-4b20-8a93-acd490d6bc21  component=apiproxy"
+        },
+        {
+          "line": 4153,
+          "protocol": "INFO[46130] << POST /v1.51/containers/create?name=heurisko-parser-a5c0c787-ed0b-4b20-8a93-acd490d6bc21 (16.761586757s)  component=apiproxy"
+        },
+        {
+          "line": 4169,
+          "protocol": "INFO[46133] >> POST /v1.51/containers/8f0d38fedb9c02fc2f04147d1d91065c33474424f6a8ea7c72f0e1e68ec86568/attach?stderr=1&stdout=1&stream=1  component=apiproxy"
+        },
+        {
+          "line": 4177,
+          "protocol": "INFO[46134] >> POST /v1.51/containers/8f0d38fedb9c02fc2f04147d1d91065c33474424f6a8ea7c72f0e1e68ec86568/start  component=apiproxy"
+        },
+        {
+          "line": 4188,
+          "protocol": "INFO[46141] >> POST /v1.51/containers/8f0d38fedb9c02fc2f04147d1d91065c33474424f6a8ea7c72f0e1e68ec86568/kill  component=apiproxy"
+        },
+        {
+          "line": 4250,
+          "protocol": "INFO[46145] << POST /v1.51/containers/8f0d38fedb9c02fc2f04147d1d91065c33474424f6a8ea7c72f0e1e68ec86568/start (11.175913589s)  component=apiproxy"
+        },
+        {
+          "line": 4257,
+          "protocol": "INFO[46148] << POST /v1.51/containers/8f0d38fedb9c02fc2f04147d1d91065c33474424f6a8ea7c72f0e1e68ec86568/attach?stderr=1&stdout=1&stream=1 (15.028347048s)  component=apiproxy"
+        },
+        {
+          "line": 4263,
+          "protocol": "INFO[46151] >> DELETE /v1.51/containers/8f0d38fedb9c02fc2f04147d1d91065c33474424f6a8ea7c72f0e1e68ec86568?force=1  component=apiproxy"
+        },
+        {
+          "line": 4265,
+          "protocol": "INFO[46155] << POST /v1.51/containers/8f0d38fedb9c02fc2f04147d1d91065c33474424f6a8ea7c72f0e1e68ec86568/kill (14.27757809s)  component=apiproxy"
+        },
+        {
+          "line": 4331,
+          "protocol": "INFO[46159] << DELETE /v1.51/containers/8f0d38fedb9c02fc2f04147d1d91065c33474424f6a8ea7c72f0e1e68ec86568?force=1 (8.298261546s)  component=apiproxy"
+        }
+      ]
+    }
+  ]
+}

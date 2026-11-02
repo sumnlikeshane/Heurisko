@@ -1,0 +1,64 @@
+{
+  "scope": "Owner-requested Phase 2 testing/reviewer guide; documentation only",
+  "gitHead": "7eee564818c63b0edbe47e58d7c044136a4470c0",
+  "workingSourceSha256": "15ba1b9106c0ce09f1e6e0fb3456602cc235460d76b35d4a3d11006b5e7fe868",
+  "sourceManifest": "source-final.json",
+  "document": "docs/Phase 2 Testing Guide.md",
+  "documentSha256": "242caa5d968e817da2ea8317ce00dbf9f69653b4bd9da21f6894781a40c709f8",
+  "sourceDeltaFromImplementationDelivery": [
+    "PRODUCTION_MASTER_ROADMAP.md",
+    "docs/Phase 2 Testing Guide.md",
+    "docs/README.md"
+  ],
+  "productSourceUnchangedFromDelivery": true,
+  "checks": [
+    {
+      "name": "JSON forms parse",
+      "result": "pass",
+      "forms": 4
+    },
+    {
+      "name": "shell block zsh syntax",
+      "result": "pass",
+      "blocks": 18
+    },
+    {
+      "name": "check:docs corrected",
+      "observedExit": 0,
+      "log": "docs-corrected.log"
+    },
+    {
+      "name": "retained CLI inspect",
+      "observedExit": 0,
+      "factParity": true,
+      "report": "inspect.json"
+    },
+    {
+      "name": "development normalization",
+      "observedExit": 0,
+      "reports": 8,
+      "log": "normalizer.log"
+    },
+    {
+      "name": "development grader practice",
+      "observedExit": 0,
+      "acceptance": null,
+      "reports": 8,
+      "log": "grader.log"
+    },
+    {
+      "name": "git diff --check",
+      "observedExit": 0
+    }
+  ],
+  "preservedFailure": {
+    "log": "docs.log",
+    "reason": "Navigation anchor used one hyphen for an em-dash heading that generated two; heading changed to a colon, checker then passed."
+  },
+  "indexUnchangedEmpty": true,
+  "heldOutEvaluationPerformed": false,
+  "browserAcceptancePerformed": false,
+  "q4AdmissionGranted": false,
+  "phase1": "open; existing owner acceptance preserved",
+  "publicationActions": "none"
+}

@@ -1,0 +1,12 @@
+{
+  "scope": "Exact newly prepared source-selection files only; same common credential patterns as check-phase1-secrets.mjs. Full working tree/history, omitted evidence, archives, ignored/private files and unknown credential formats are outside coverage.",
+  "manifestSha256": "54ce846f3add77539cc7941d00a4bb1e72d52ce34c4c751cd0a940d9e2ba7ec2",
+  "coverage": {
+    "hashed": 1799,
+    "checked": 1058,
+    "bytes": 6575901,
+    "excludedType": 741
+  },
+  "matches": [],
+  "passed": true
+}

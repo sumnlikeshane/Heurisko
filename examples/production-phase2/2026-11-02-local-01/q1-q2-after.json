@@ -1,0 +1,119 @@
+[
+  {
+    "id": "mutation-lifecycle-remove",
+    "originalReportSha256": "sha256:282f4cb397a34ad9d902dec94a5efab9c705ff1a1173a91ea05da09ba4548faf",
+    "historicalFinding": {
+      "findingId": "find_heurisko_manifest_lifecycle-script-change_chg_fbef90a93f3162167b5e5712_a274e296",
+      "ruleVersion": "0.1.0",
+      "evidenceIds": [
+        "ev_a274e296ea0ef056004ccb4c"
+      ],
+      "ruleId": "heurisko.manifest.lifecycle-script-change",
+      "title": "Package lifecycle script entry changed",
+      "observation": "Manifest key scripts.postinstall is reported as removed from the artifact.",
+      "whyItMatters": "Lifecycle entries can affect package-manager installation behavior; inspect the exact command and its source before deciding what it does. This observation does not establish malicious intent.",
+      "severity": "medium",
+      "reviewPriority": "medium",
+      "evidenceConfidence": "high",
+      "explanationStrength": "exact",
+      "limitations": [
+        "The producer-retained manifest delta supplies the old/new value direction; this M1 rule does not analyze referenced file behavior or establish intent."
+      ],
+      "nextActions": [
+        "Review the retained old and new script values and their referenced files; do not execute them on the host."
+      ]
+    },
+    "freshRetainedBundleAnalysisFinding": {
+      "findingId": "find_heurisko_manifest_lifecycle-script-change_chg_fbef90a93f3162167b5e5712_a274e296",
+      "ruleVersion": "0.2.0-p2-static-v1",
+      "evidenceIds": [
+        "ev_a274e296ea0ef056004ccb4c"
+      ],
+      "ruleId": "heurisko.manifest.lifecycle-script-change",
+      "title": "Package lifecycle script entry changed",
+      "observation": "Manifest pointer /scripts/postinstall is removed from the artifact. Source: \"HEURISKO_INERT_TEST_ONLY\"; artifact: absent (validated in the retained manifest).",
+      "whyItMatters": "A removed lifecycle entry is not an added installation action; review any other retained changes independently.",
+      "severity": "informational",
+      "reviewPriority": "low",
+      "evidenceConfidence": "high",
+      "explanationStrength": "exact",
+      "limitations": [
+        "Only retained metadata is compared; no referenced file, command, resolver, build or package was executed.",
+        "Direction and values are bound to the original manifest members and exact value byte spans."
+      ],
+      "nextActions": [
+        "Inspect both exact cited value spans and the retained raw file difference; do not install or execute the package."
+      ]
+    },
+    "module": {
+      "moduleId": "@heurisko/intelligence-reviewed",
+      "moduleVersion": "0.2.0-p2-static-v1",
+      "implementationSha256": "sha256:6e20f4bd5d020a32a471a4fc6dbf5fb61a4b8dfd7cd22c111f2c40389511bb73",
+      "configurationSha256": "sha256:814e20f410027d986075ac20db76cd343581f6d3a97c0348eda1e9ec7447282c"
+    },
+    "aiState": {
+      "status": "disabled",
+      "validation": "not_run"
+    },
+    "limitation": "New analysis of retained bundle, not alteration/reopen/reparse of the historical report."
+  },
+  {
+    "id": "mutation-entrypoint",
+    "originalReportSha256": "sha256:afbe28f6321b377e9a4ac8bc3d14dd15d735f8fdd2b90182d6805cab2190b13b",
+    "historicalFinding": {
+      "findingId": "find_heurisko_manifest_entrypoint-change_chg_a06e7e304e341caf54d8ccd2_718d5e76",
+      "ruleVersion": "0.1.0",
+      "evidenceIds": [
+        "ev_718d5e768fef473afb6c2f38"
+      ],
+      "ruleId": "heurisko.manifest.entrypoint-change",
+      "title": "Package entrypoint metadata changed",
+      "observation": "Manifest key main is reported as changed.",
+      "whyItMatters": "Entrypoint changes affect which files consumers load or execute; the key-level delta does not prove the selected file is unsafe.",
+      "severity": "low",
+      "reviewPriority": "low",
+      "evidenceConfidence": "high",
+      "explanationStrength": "exact",
+      "limitations": [
+        "Old and new manifest values are not available in this evidence record."
+      ],
+      "nextActions": [
+        "Compare the exact old and new values and confirm the referenced artifact path exists."
+      ]
+    },
+    "freshRetainedBundleAnalysisFinding": {
+      "findingId": "find_heurisko_manifest_entrypoint-change_chg_a06e7e304e341caf54d8ccd2_718d5e76",
+      "ruleVersion": "0.2.0-p2-static-v1",
+      "evidenceIds": [
+        "ev_718d5e768fef473afb6c2f38"
+      ],
+      "ruleId": "heurisko.manifest.entrypoint-change",
+      "title": "Package entrypoint metadata changed",
+      "observation": "Manifest pointer /main is changed from source to artifact. Source: \"index.js\"; artifact: \"alternate.js\".",
+      "whyItMatters": "Entrypoint metadata can change consumer selection; this static observation does not establish resolution, execution, safety or intent.",
+      "severity": "low",
+      "reviewPriority": "low",
+      "evidenceConfidence": "high",
+      "explanationStrength": "exact",
+      "limitations": [
+        "Only retained metadata is compared; no referenced file, command, resolver, build or package was executed.",
+        "Direction and values are bound to the original manifest members and exact value byte spans.",
+        "Entrypoint objects/arrays/conditions are inert metadata; Node resolution, target-member presence and executable behavior are not established."
+      ],
+      "nextActions": [
+        "Inspect both exact cited value spans and the retained raw file difference; do not install or execute the package."
+      ]
+    },
+    "module": {
+      "moduleId": "@heurisko/intelligence-reviewed",
+      "moduleVersion": "0.2.0-p2-static-v1",
+      "implementationSha256": "sha256:6e20f4bd5d020a32a471a4fc6dbf5fb61a4b8dfd7cd22c111f2c40389511bb73",
+      "configurationSha256": "sha256:814e20f410027d986075ac20db76cd343581f6d3a97c0348eda1e9ec7447282c"
+    },
+    "aiState": {
+      "status": "disabled",
+      "validation": "not_run"
+    },
+    "limitation": "New analysis of retained bundle, not alteration/reopen/reparse of the historical report."
+  }
+]

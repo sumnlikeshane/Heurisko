@@ -1,0 +1,57 @@
+{
+  "version": "heurisko-p2-eval-v1",
+  "approved": "P2-EVAL, 2 November 2026",
+  "developmentFamiliesMinimum": 12,
+  "heldOutFamiliesMinimum": 24,
+  "heldOutReportsMinimum": 120,
+  "primaryCategories": [
+    "benign-authored",
+    "benign-generated",
+    "inert-mutated",
+    "ambiguous-incomplete"
+  ],
+  "perCategoryReportsMinimum": 30,
+  "perCategoryFamiliesMinimum": 6,
+  "eventDirectionsPerRuleClassMinimum": {
+    "add": 10,
+    "change": 10,
+    "remove": 10
+  },
+  "ruleClasses": [
+    "Q1.lifecycle",
+    "Q1.script",
+    "Q2.entrypoint"
+  ],
+  "familyRules": [
+    "Group upstream project, monorepo, forks, related versions and all derivatives together.",
+    "Shared generated template/build recipe creates a connected family group; no cross-split derivatives.",
+    "Phase 1 and all visible Phase 2 development material are excluded from held-out selection."
+  ],
+  "thresholds": {
+    "eventPrecision": 0.95,
+    "unconditionalRecall": 0.95,
+    "resolvedDirectionAccuracy": 1,
+    "severityAgreement": 0.95,
+    "priorityAgreement": 0.95,
+    "explanationPrecision": 0.95,
+    "explainableGeneratedCoverage": 0.7,
+    "falseEscalationEachBenignCategory": 0.05,
+    "factualCitationSupport": 1,
+    "mandatoryTrustCompatibilityNegatives": 1
+  },
+  "independence": {
+    "custodian": null,
+    "reviewers": [],
+    "heldOutFamilies": [],
+    "heldOutLabels": null,
+    "status": "Pending human appointment, blind evidence labeling, family review and freeze. No held-out outputs or grading created."
+  },
+  "labelAuthorship": "Existing Phase 1 and new original inert conformance labels are implementing-agent constructions; public release captures are unlabeled. No independent label authorship is claimed.",
+  "freeze": "Bind labels/rationale/citation locations, family/split seed/method, rights/input hashes, code/configuration/grader hashes before outputs; custodian records one grading attempt. Keep failures; tuning requires fresh family-separated reserve.",
+  "tools": {
+    "capture": "scripts/prepare-phase2-data.py",
+    "parserNoticeReview": "scripts/inspect-phase2-data.mjs",
+    "grading": "scripts/grade-phase2.py",
+    "gradingTests": "scripts/test-grade-phase2.py"
+  }
+}

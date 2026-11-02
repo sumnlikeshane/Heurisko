@@ -60,6 +60,7 @@ export function App({storeRoot,reader:provided,theme}:{storeRoot:string;reader?:
  const [overviewFinding,setOverviewFinding]=useState(0);
  const [helpScroll,setHelpScroll]=useState(0);
  const [modal,setModal]=useState<'help'|'palette'|'identity'|'actions'|null>(null),[filtering,setFiltering]=useState(false);
+ const [policyKey,setPolicyKey]=useState('');
  const [values,setValues]=useState(['','','','','','','']),[local,setLocal]=useState(false),[field,setField]=useState(0),[cursor,setCursor]=useState(0);
  const [homeFocus,setHomeFocus]=useState(0),[attentionIndex,setAttentionIndex]=useState(0),[homeQuery,setHomeQuery]=useState('');
  const [navMode,setNavMode]=useState<'content'|'global'|'sections'>('content'),[navSelected,setNavSelected]=useState(0);
@@ -164,7 +165,8 @@ export function App({storeRoot,reader:provided,theme}:{storeRoot:string;reader?:
  async function review(){beginBusy('Validating and retaining target');try{
   const source=values[3]?{sourceOverride:{repo:values[3]!,commit:values[4]!,...(values[5]?{subdirectory:values[5]}:{})}}:{};
   if(local&&!values[3])throw Error('LOCAL_SOURCE_REQUIRED');
-  const input:ArtifactInput=local?{ecosystem:'local',artifactPath:resolve(values[2]!),analysisOptions:options,...source}:{ecosystem:'npm',packageName:values[0]!,version:values[1]!,analysisOptions:options,...source};
+  const selectedOptions={...options,...(policyKey?{trustPolicyRef:policyKey}:{})};
+  const input:ArtifactInput=local?{ecosystem:'local',artifactPath:resolve(values[2]!),analysisOptions:selectedOptions,...source}:{ecosystem:'npm',packageName:values[0]!,version:values[1]!,analysisOptions:selectedOptions,...source};
   if(input.ecosystem==='npm')npmCoordinates(input.packageName,input.version);if(input.sourceOverride){pinnedSourceURL(input.sourceOverride.repo,input.sourceOverride.commit);safeSubdirectory(input.sourceOverride.subdirectory??'');}
   let validated=await validateInput(input);let localRef:string|undefined;let sourceSnapshot:{path:string;ref:string}|undefined;
   if(validated.ecosystem==='local'){
@@ -179,7 +181,7 @@ export function App({storeRoot,reader:provided,theme}:{storeRoot:string;reader?:
   if(request.ecosystem==='local'&&sha256(await boundedFile(request.artifactPath,32*1024*1024))!==reviewHash)throw Error('REVIEWED_ARCHIVE_CHANGED');
   if(reviewSource&&sha256(await boundedFile(reviewSource.path,32*1024*1024))!==reviewSource.ref)throw Error('REVIEWED_SOURCE_CHANGED');
   if(operationAbort.current)throw Error('OPERATION_CANCELLED');setLoc(initial());setLiveStarted(Date.now());setLiveSelected(undefined);
-  const running=startInvestigation(request,options,{context:{store:new EvidenceStore(storeRoot),...(local&&reviewSource?{sourceArchivePath:reviewSource.path}:{})}});task.current=running;setRoute('live');setNotice('');
+  const running=startInvestigation(request,request.analysisOptions,{context:{store:new EvidenceStore(storeRoot),...(local&&reviewSource?{sourceArchivePath:reviewSource.path}:{})}});task.current=running;setRoute('live');setNotice('');
   const unsub=running.subscribe(s=>setSnapshot(s));const result=await running.result;unsub();task.current=undefined;
   process.exitCode=result.exitCode;
   if(result.kind==='report'){reportOrigin.current='home';adoptReport(await ReportReader.fromReport(structuredClone(result.report) as InvestigationReport,storeRoot));setNotice(result.cancellationRequested?'Cancellation requested; engine settled with retained report. Cleanup acknowledgment is not observable.':'Investigation settled.');}
@@ -206,12 +208,13 @@ export function App({storeRoot,reader:provided,theme}:{storeRoot:string;reader?:
   if(key.ctrl&&input==='p'){modalReturn.current={entry,cursor};setEntry('');setCursor(0);setRecentIndex(0);setModal('palette');return;}
   if(route==='new'){
    if(key.escape){const origin=newOrigin.current;if(origin?.route==='report'){setLoc(origin.location);setTrail(origin.trail);setRoute('report');}else setRoute('home');return;}
-   if(key.tab){const controls=[-1,...(local?[2,3,4,5,6]:[0,1,3,4,5]),8,7];const at=controls.indexOf(field);const next=controls[(at+(key.shift?-1:1)+controls.length)%controls.length]!;setField(next);setCursor(next>=0&&next<7?graphemes(values[next]!).length:0);return;}
+   if(key.tab){const controls=[-1,...(local?[2,3,4,5,6,9]:[0,1,3,4,5,9]),8,7];const at=controls.indexOf(field);const next=controls[(at+(key.shift?-1:1)+controls.length)%controls.length]!;setField(next);setCursor(next===9?graphemes(policyKey).length:next>=0&&next<7?graphemes(values[next]!).length:0);return;}
    if((key.ctrl&&input==='t')||(field===-1&&(key.leftArrow||key.rightArrow))){setLocal(v=>!v);if(field!==-1){setField(local?0:2);setCursor(graphemes(values[local?0:2]!).length);}return;}
    if(field===-1){if(key.return){setField(local?2:0);setCursor(graphemes(values[local?2:0]!).length);}return;}
    if(field===8){if(key.upArrow||key.leftArrow||input==='k')setExample(i=>(i+2)%3);else if(key.downArrow||key.rightArrow||input==='j')setExample(i=>(i+1)%3);else if(key.return){const source='examples/s2/current/inputs/picocolors-source-6f0a4638348ed20633d623ee973f9c9a96f65104.tar.gz';setLocal(example!==2);setValues(example===2?['picocolors','1.1.1','','','','','']:['','','examples/s2/current/inputs/'+(example===0?'picocolors-1.1.1.local-inert-mutation.tgz':'picocolors-1.1.1.tgz'),'https://github.com/alexeyraspopov/picocolors','6f0a4638348ed20633d623ee973f9c9a96f65104','',source]);setField(example===2?0:2);setCursor(0);setNotice(example===0?'Local inert mutation target loaded; no investigation has run.':'Target loaded; review before Start.');}return;}
    if(key.return){void review();return;}
    if(field===7)return;
+   if(field===9){const edit=editText(policyKey,cursor,input,key,128);setPolicyKey(edit.value);setCursor(edit.cursor);return;}
    const edit=editText(values[field]!,cursor,input,key,1024);setValues(s=>s.map((v,i)=>i===field?edit.value:v));setCursor(edit.cursor);return;
   }
   if(route==='open'){
@@ -310,7 +313,7 @@ export function App({storeRoot,reader:provided,theme}:{storeRoot:string;reader?:
  ],width,height,helpScroll);
  else if(modal==='palette')body=<Box width={width} height={height} justifyContent="center" alignItems="flex-start" paddingTop={1}>{doc('Actions / '+entry,choices.map((s,i)=>({text:(i===recentIndex%Math.max(1,choices.length)?'> ':'  ')+s,tone:i===recentIndex%Math.max(1,choices.length)?'accent':'foreground'})),Math.min(width,80),Math.min(height-1,choices.length+4),0)}</Box>;
  else if(busy&&route!=='live')body=<Box width={width} height={height} justifyContent="center" alignItems="flex-start" paddingTop={Math.max(0,Math.floor(height*.25))}><Panel title={operation} width={Math.min(width,86)} height={7} focused theme={theme}><Row width={Math.min(width,86)-4} theme={theme}>{operation}</Row><Box height={1}/><ProgressBar width={Math.min(width,86)-4} theme={theme} label="Working"/><Row width={Math.min(width,86)-4} theme={theme} tone="muted">{operationAbort.current?'Cancellation requested; awaiting local operation.':'Wait for the operation to finish. Ctrl+C requests cancellation.'}</Row></Panel></Box>;
- else if(route==='new')body=<TargetForm columns={size.columns} height={height} theme={theme} local={local} values={values} field={field} cursor={cursor} error={notice.startsWith('Target validation failed')?notice:undefined} example={example}/>;
+ else if(route==='new')body=<TargetForm columns={size.columns} height={height} theme={theme} local={local} values={[...values,'','',policyKey]} field={field} cursor={cursor} error={notice.startsWith('Target validation failed')?notice:undefined} example={example}/>;
  else if(route==='review')body=<TargetReview columns={size.columns} height={height} theme={theme} scroll={loc.scroll} lines={[
   request?.ecosystem==='npm'?`Package       ${request.packageName}`:`Archive       ${reviewOriginal||request?.artifactPath||''}`,
   ...(request?.ecosystem==='npm'?[`Version       ${request.version}`]:[]),
@@ -323,7 +326,9 @@ export function App({storeRoot,reader:provided,theme}:{storeRoot:string;reader?:
   ...(reviewSource?[`Source bytes  ${reviewSource.ref} / user asserted`]:[]),
   'AI            Disabled / current inference runtime unavailable',
   `Configuration ${options.analysisProfile}`,
-  'Provenance    Not checked / no configured verifier',
+  `Policy key    ${request?.analysisOptions.trustPolicyRef??'None requested'}`,
+  'Exact trusted host catalog key; unknown/unconfigured remains indeterminate.',
+  'Provenance    Optional trusted host configuration',
  ]}/>;
  else if(route==='open')body=<Box width={width} height={height} justifyContent="center" alignItems="flex-start" paddingTop={1}>{doc('Open saved report',[{text:'Report file or full sha256: observation reference',bold:true},{text:''},{text:entry.slice(0,cursor)+'|'+entry.slice(cursor),tone:'accent'},{text:''},{text:'Enter validates and opens; Esc returns.'},{text:'Missing evidence remains inspectable as metadata.'}],Math.min(width,92),10,0)}</Box>;
  else if(route==='live')body=<Live columns={size.columns} height={height} theme={theme} snapshot={snapshot} selected={liveSelected} focus={loc.focus} scroll={loc.scroll} started={liveStarted}/>;
@@ -351,7 +356,7 @@ export function App({storeRoot,reader:provided,theme}:{storeRoot:string;reader?:
    body=<Workspace columns={size.columns} height={height} theme={theme} title={title} subtitle={subtitle} active={navMode==='content'} items={items} index={selectedIndex} focus={loc.focus} scroll={loc.scroll} scrolls={loc.scrolls} detail={loc.detail} query={loc.query} refs={refs} citation={citation} detailLines={detailLines} supportLines={support}/>;
   }
  }
- const typing=route==='new'&&field>=0&&field<7||route==='open'||filtering||modal==='palette';
+ const typing=route==='new'&&(field>=0&&field<7||field===9)||route==='open'||filtering||modal==='palette';
  let contextLabel=modal==='help'?'Keyboard help':modal==='identity'?'Investigation identity':modal==='palette'?'Actions':modal==='actions'?'Report next actions':route==='new'?'New investigation / '+(local?'Local archive':'npm'):route==='report'?sections[loc.section]??'Overview':route==='recent'?'Saved observations':route==='home'?['New investigation','Recent investigations','Needs attention','Monitoring'][homeFocus]!:route;
  let hints=typing?['Type to edit','Tab next','Ctrl+T type','Enter review','Esc back']:route==='live'?['Up/Down stages','Tab details','Ctrl+C cancel']:route==='evidence'?['j/k scroll','Tab citation','s side','r record/citation','p/b page','Esc return']:route==='new'?field===-1?['Left/Right input','Tab fields','Enter edit','Esc back']:field===8?['Arrows example','Enter load','Tab next','Esc back']:['Enter review','Shift+Tab back','Esc cancel']:route==='review'?['Enter Start','j/k scroll','Esc edit']:modal?['j/k scroll','Esc back']:route==='home'?homeFocus===0?['Enter new','Tab panels','o open','? help']:['j/k select','Enter open','Tab panels','/ filter']:route==='report'&&loc.section===0?['Tab focus','Enter inspect','1-6 sections','i identity','? help']:['j/k move','Enter inspect','e evidence','Tab panes','/ filter','? help'];
  if(route==='report'&&loc.section===1&&loc.detail&&!modal)hints=['j/k scroll','PgUp/PgDn sections','e evidence','Esc return'];

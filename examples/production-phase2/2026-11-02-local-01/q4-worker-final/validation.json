@@ -1,0 +1,70 @@
+{
+  "node": "v22.23.4",
+  "platform": "darwin",
+  "arch": "arm64",
+  "results": [
+    {
+      "mode": "positive",
+      "code": 0,
+      "signal": null,
+      "pid": 74823,
+      "ms": 150,
+      "terminationRequested": false,
+      "settlementAfterRequestMs": null,
+      "overflow": false,
+      "ready": true,
+      "pass": true
+    },
+    {
+      "mode": "malformed",
+      "code": 0,
+      "signal": null,
+      "pid": 74825,
+      "ms": 96,
+      "terminationRequested": false,
+      "settlementAfterRequestMs": null,
+      "overflow": false,
+      "ready": true,
+      "pass": true
+    },
+    {
+      "mode": "timeout",
+      "code": null,
+      "signal": "SIGTERM",
+      "pid": 74826,
+      "ms": 505,
+      "terminationRequested": true,
+      "settlementAfterRequestMs": 3,
+      "overflow": false,
+      "ready": true,
+      "pass": true
+    },
+    {
+      "mode": "cancel",
+      "code": null,
+      "signal": "SIGTERM",
+      "pid": 74827,
+      "ms": 165,
+      "terminationRequested": true,
+      "settlementAfterRequestMs": 3,
+      "overflow": false,
+      "ready": true,
+      "pass": true
+    }
+  ],
+  "passed": true,
+  "limits": {
+    "jsHeapMiB": 128,
+    "stackKiB": 512,
+    "parentWallMs": 5000,
+    "timeoutProbeMs": 500,
+    "stdoutStderrBytesEach": 131072
+  },
+  "limitations": [
+    "Development worker prototype only, no production integration/admission.",
+    "Node permissions and JS heap cap are not OS memory/network containment; native allocations and unknown native-library behavior need independent boundary review.",
+    "Read scope is isolated verifier-tool and public fixture directories; child-process permission denied. No target package or build executed.",
+    "Busy probe repeatedly verifies a real positive; parent cancellation/timeout confirms exact child exit rather than an in-process promise timeout.",
+    "No native Linux, root bootstrap/freshness/rollback or complete mandatory admission matrix claimed."
+  ]
+}

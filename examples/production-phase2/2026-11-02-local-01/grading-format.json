@@ -1,0 +1,36 @@
+{
+  "version": "heurisko-p2-grading-workflow-v1",
+  "normalizer": "scripts/normalize-phase2-observations.mjs",
+  "normalizerInput": "Host-owned JSON cases: id, split, report, store; paths relative to manifest. Held-out entries additionally require freeze and labels paths.",
+  "normalizedVersion": "heurisko-p2-observations-v2",
+  "frozenIdentity": "Common engine+module code hash and module/options/version/safety configuration hash; individual report hashes/config fingerprints retained per case.",
+  "labelsVersion": "heurisko-p2-labels-v1 for independent held-out labels; current construction labels are development only.",
+  "eventUnits": [
+    "artifactSha256",
+    "sourceSha256",
+    "pointer",
+    "ruleClass"
+  ],
+  "ruleClasses": [
+    "Q1.lifecycle",
+    "Q1.script",
+    "Q2.entrypoint"
+  ],
+  "fileUnits": "Unique human-reviewed explanation IDs, matched to frozen independently explainable file/transform labels.",
+  "policyUnits": [
+    "artifactSha256",
+    "policyId",
+    "result"
+  ],
+  "claimReview": "Normalizer emits provisional claim candidates, not support labels. Independent reviewers split atomic factual claims, retain citation locations and mark resolved/supported separately, review false escalation/critical failures and explanations; provisional/unreviewed claims cannot pass held-out acceptance.",
+  "freezeFields": [
+    "labelsSha256",
+    "independentCustodian",
+    "codeSha256",
+    "configurationSha256",
+    "frozenBeforeOutputs"
+  ],
+  "onePass": "Reviewer/rights/family/category/direction minima are checked before grading. One exclusive grading-attempt receipt per eligible freeze; failed detector scores retained and tuning requires a new family-separated reserve.",
+  "authorship": "Original inert construction/rubric labels are implementing-agent data; public development observations remain unlabeled. No independent review or held-out result is supplied.",
+  "counts": "Report/category/family, event direction/severity/priority, file explanation, policy and claim/citation units; misses include missing/abstained supported events; duplicate units reject; zero denominators N/A; deterministic family bootstrap."
+}

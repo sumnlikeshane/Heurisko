@@ -1,0 +1,34 @@
+{
+  "module": {
+    "id": "@heurisko/intelligence-reviewed",
+    "version": "0.1.0-55240e9",
+    "implementation": "sha256:d1d10fa4133668c0eb7aedb63e6c48b75dd1dbc43efc3fdc6ac1609c1679edf0",
+    "configuration": "sha256:33d6f01813c20fea3392c43c111cfcdbff629288a7100e73ff9069839c43605b"
+  },
+  "finding": {
+    "findingId": "find_heurisko_manifest_lifecycle-script-change_chg_fbef90a93f3162167b5e5712_a274e296",
+    "ruleVersion": "0.1.0",
+    "evidenceIds": [
+      "ev_a274e296ea0ef056004ccb4c"
+    ],
+    "ruleId": "heurisko.manifest.lifecycle-script-change",
+    "title": "Package lifecycle script entry changed",
+    "observation": "Manifest key scripts.postinstall is reported as removed from the artifact.",
+    "whyItMatters": "Lifecycle entries can affect package-manager installation behavior; inspect the exact command and its source before deciding what it does. This observation does not establish malicious intent.",
+    "severity": "medium",
+    "reviewPriority": "medium",
+    "evidenceConfidence": "high",
+    "explanationStrength": "exact",
+    "limitations": [
+      "The producer-retained manifest delta supplies the old/new value direction; this M1 rule does not analyze referenced file behavior or establish intent."
+    ],
+    "nextActions": [
+      "Review the retained old and new script values and their referenced files; do not execute them on the host."
+    ]
+  },
+  "expected": {
+    "severity": "informational",
+    "reviewPriority": "low"
+  },
+  "matchesApprovedRubric": false
+}

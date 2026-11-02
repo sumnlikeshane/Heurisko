@@ -5,8 +5,16 @@
   "type": "module",
   "exports": "./dist/index.js",
   "scripts": {
-    "build": "tsc -p tsconfig.json",
+    "build": "tsc -p tsconfig.json && cd ../.. && node scripts/build-verifier-worker.mjs",
     "typecheck": "tsc --noEmit -p tsconfig.json"
   },
-  "dependencies": { "@heurisko/contracts": "workspace:*", "@heurisko/intelligence-reviewed": "workspace:*" }
+  "dependencies": {
+    "@heurisko/contracts": "workspace:*",
+    "@heurisko/intelligence-reviewed": "workspace:*",
+    "@sigstore/bundle": "5.0.0",
+    "@sigstore/core": "4.0.1",
+    "@sigstore/protobuf-specs": "0.5.2",
+    "@sigstore/verify": "4.1.2",
+    "tuf-js": "6.0.1"
+  }
 }

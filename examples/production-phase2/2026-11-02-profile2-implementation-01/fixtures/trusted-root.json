@@ -1,0 +1,58 @@
+{
+  "mediaType": "application/vnd.dev.sigstore.trustedroot+json;version=0.1",
+  "certificateAuthorities": [
+    {
+      "subject": {
+        "organization": "Heurisko TEST ONLY",
+        "commonName": "Heurisko controlled TEST ONLY CA v1"
+      },
+      "uri": "https://controlled.invalid/ca",
+      "certChain": {
+        "certificates": [
+          {
+            "rawBytes": "MIIBbjCCARSgAwIBAgIBATAKBggqhkjOPQQDAjAuMSwwKgYDVQQDDCNIZXVyaXNrbyBjb250cm9sbGVkIFRFU1QgT05MWSBDQSB2MTAeFw0yNjAxMDEwMDAwMDBaFw0zMDAxMDEwMDAwMDBaMC4xLDAqBgNVBAMMI0hldXJpc2tvIGNvbnRyb2xsZWQgVEVTVCBPTkxZIENBIHYxMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE2C4bDBK2wJqYs/hVuUWb14VP9/K40X5gTLJM9mNXpuuTkjvoVqnFVgU5H84Ylizo9PL6pxVJOwE1gijd/qr5VaMjMCEwDwYDVR0TAQH/BAUwAwEB/zAOBgNVHQ8BAf8EBAMCAQYwCgYIKoZIzj0EAwIDSAAwRQIhAMMCDw0TG53/fCcORZercGynFVgJKxE5fZLZTJKhxTE5AiApHlZgTTuPntQ+Ul9/z7AsbLN+vyYR4pe9jJmtBWgb2w=="
+          }
+        ]
+      },
+      "validFor": {
+        "start": "2026-01-01T00:00:00Z",
+        "end": "2030-01-01T00:00:00Z"
+      }
+    }
+  ],
+  "tlogs": [
+    {
+      "baseUrl": "https://controlled.invalid/rekor",
+      "hashAlgorithm": "SHA2_256",
+      "publicKey": {
+        "rawBytes": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEG9+X1sWhmR3iJuJI8V1kAzWevvx4WU12BzVPAty0zCstjL2E6gChEna7wehJ91+jQVytzdcZNgD2E+6NS8lcZg==",
+        "keyDetails": "PKIX_ECDSA_P256_SHA_256",
+        "validFor": {
+          "start": "2026-01-01T00:00:00Z",
+          "end": "2030-01-01T00:00:00Z"
+        }
+      },
+      "logId": {
+        "keyId": "JWiVhmSm/sd+X8z92vnKcXk5o0tATNXDE/bRQiSG6Oc="
+      }
+    }
+  ],
+  "ctlogs": [
+    {
+      "baseUrl": "https://controlled.invalid/ct",
+      "hashAlgorithm": "SHA2_256",
+      "publicKey": {
+        "rawBytes": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEtuES5ExY6JO8godEwRv5LvtU0I0tUnNCSaHSIhKTmxzG2OY4w7CpJVioJ84NwIWbwAaN0oKCUSNGclLg/yBvvg==",
+        "keyDetails": "PKIX_ECDSA_P256_SHA_256",
+        "validFor": {
+          "start": "2026-01-01T00:00:00Z",
+          "end": "2030-01-01T00:00:00Z"
+        }
+      },
+      "logId": {
+        "keyId": "jajgXgUSisliaB7XnGVQ9umU4fsfXdJstkRV6AIfPZo="
+      }
+    }
+  ],
+  "timestampAuthorities": []
+}
