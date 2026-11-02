@@ -6,7 +6,7 @@ Source baseline inspected: local `main` at `6985d3eeecdbdc33463458e8072a31e62e86
 
 **Public service:** [heurisko.onrender.com](https://heurisko.onrender.com/). The existing Chrome page showed the public report catalog and read-only banner. A fresh request to [the health endpoint](https://heurisko.onrender.com/healthz) returned HTTP **200** and `{"status":"ok","mode":"public-readonly"}` at **06:49:26 IST on 1 November 2026**. This confirms the web explorer responded in that mode; it does not establish a working hosted parser or fresh investigation.
 
-Current documentation authority: [index](docs/README.md), [contribution workflow](AGENTS.md), [current work](docs/Production%20Phase%201%20Implementation%20Plan.md), [roadmap](PRODUCTION_MASTER_ROADMAP.md). The amended Phase 1 foundation/source-only criteria are met locally; Phase 2 technical gates remain open. Public health observations below are dated; no fresh deployment identity is established by the local Phase 1 validation.
+Current documentation authority: [index](docs/README.md), [contribution workflow](AGENTS.md), [current work](docs/Production%20Phase%201%20Implementation%20Plan.md), [roadmap](PRODUCTION_MASTER_ROADMAP.md). The amended Phase 1 foundation/source-only criteria are met locally; Phase 2 native implementation criteria are met, with final acceptance governed by the exact-head PR checks. Public health observations below are dated; no fresh deployment identity is established by the local Phase 1 validation.
 
 ## Contents
 

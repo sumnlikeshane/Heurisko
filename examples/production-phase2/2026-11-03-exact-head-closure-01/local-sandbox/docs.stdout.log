@@ -1,0 +1,5 @@
+
+> heurisko@ check:docs /private/tmp/heurisko-phase2-technical-closure-20261102
+> python3 scripts/check-docs.py
+
+Checked 120 Markdown files and 15 research hashes; 2 exact upstream omitted-experiment links excepted.

@@ -1,6 +1,6 @@
 # Heurisko documentation
 
-Start at [the product README](../README.md). Heurisko currently investigates exact public npm/local archives through one static engine, CLI, TUI and local browser. Public hosting browses captured reports only. **The amended Phase 1 foundation/source-only criteria are met locally; Phase 2 technical gates remain open.**
+Start at [the product README](../README.md). Heurisko currently investigates exact public npm/local archives through one static engine, CLI, TUI and local browser. Public hosting browses captured reports only. **The amended Phase 1 foundation/source-only criteria are met locally; Phase 2 native implementation criteria are met, with final acceptance governed by the exact-head PR checks.**
 
 | Need | Canonical location |
 |---|---|
@@ -10,7 +10,7 @@ Start at [the product README](../README.md). Heurisko currently investigates exa
 | Test Phase 2 and inspect evidence limits | [Testing guide with exact input values, commands and reviewer forms](Phase%202%20Testing%20Guide.md) |
 | Build/test the supported local source artifact | [Source package, exact notices and portable native runner](../SOURCE_PACKAGE.md) |
 | Contribute, validate, review and release | [Contributor instructions](../AGENTS.md#one-development-workflow); actual scripts and CI define commands |
-| Find current work, blockers and next action | [Phase 1 plan](Production%20Phase%201%20Implementation%20Plan.md); [authorized Phase 2 local work](../PRODUCTION_MASTER_ROADMAP.md#2-trustworthy-npm-investigation), including the [remaining closure implementation plan](../PRODUCTION_MASTER_ROADMAP.md#remaining-closure-implementation-plan) and [technical closure evidence](../examples/production-phase2/2026-11-02-technical-closure-runtime-01/REPORT.md) |
+| Find current work, blockers and next action | [Phase 1 plan](Production%20Phase%201%20Implementation%20Plan.md); [authorized Phase 2 local work](../PRODUCTION_MASTER_ROADMAP.md#2-trustworthy-npm-investigation), including the [remaining closure implementation plan](../PRODUCTION_MASTER_ROADMAP.md#remaining-closure-implementation-plan) and [current technical closure evidence](../examples/production-phase2/2026-11-03-exact-head-closure-01/REPORT.md) |
 | Follow all phase outcomes and future priorities | [Development roadmap](../PRODUCTION_MASTER_ROADMAP.md) |
 | Understand architecture, evidence and safety rules | [Foundation contract](production-phase1/Foundation%20Contract.md); executable schema/types/semantics in `packages/contracts` |
 | Find durable choices and unresolved owner decisions | [Decision register](Approved%20Decision%20Register.md) |

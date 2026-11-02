@@ -12,7 +12,7 @@ python3 -m venv .venv
 .venv/bin/python -m pip install --require-hashes -r requirements-contracts.txt
 pnpm run typecheck
 PATH="$PWD/.venv/bin:$PATH" pnpm run test:contracts
-node --test scripts/tests/credential-scan.test.mjs
+node --test scripts/tests/credential-scan.test.mjs scripts/tests/phase1-npm-parity.test.mjs
 node --test --test-concurrency=1 packages/core/tests/*.test.mjs
 node --test integration/part4/tests/readiness.test.mjs packages/tui/tests/*.test.mjs
 pnpm --filter @heurisko/web test
@@ -46,3 +46,6 @@ Source packaging alone establishes neither native validation, population accurac
 
 
 The current factory revision 4 defaults to draft.2 and makes contradictory same-subject builder/source claims for supported dsse/0.0.1. It adds excluded-format rejection and explicit legacy draft.1 controls. Use `--legacy-profile` to construct the full original draft.1 matrix; old fixture captures and their exact generators remain preserved. For a focused construction run, add `--conflict-only` to the factory and `--matrix-only` to both test harnesses; receipts explicitly record that coverage subset. Default commands retain the full matrix. The package preserves the complete revision-2 fixture lane and its exact generator source separately from revision-3 contradictory claims. Their signed inputs, anchors and results are never relabeled as one capture or as genuine publishers.
+
+
+[Native source-bound proof at implementation commit 60e9f40](examples/production-phase2/2026-11-03-exact-head-closure-01/REPORT.md) records actual admission, all 18 commands, original artifacts and source/worker/fixture/report hashes. Final acceptance also requires existing CI and native validation on the final repaired PR head. The npm default/no-AI checker validates each original report/store independently, then compares all finding facts and cited evidence. Only numeric GitHub rate-limit header values within tag-capture claims are projected for cross-observation comparison; original bytes, IDs, hashes, statuses, body/source identities and limits remain preserved.

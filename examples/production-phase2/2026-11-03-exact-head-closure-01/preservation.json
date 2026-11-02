@@ -1,0 +1,12 @@
+{
+  "capturedAt": "2026-11-02T18:35:27.214432+00:00",
+  "originalHead": "7eee564818c63b0edbe47e58d7c044136a4470c0",
+  "originalBranch": "foundation/phase1-completion-20261101",
+  "originalIndexStageSha256": "173199d4e2322b05a073130ef3ee9a45bc75a843457c9fd08180cf4c127180ff",
+  "expectedIndexStageSha256": "173199d4e2322b05a073130ef3ee9a45bc75a843457c9fd08180cf4c127180ff",
+  "originalSelectedFilesChecked": 334,
+  "originalSelectionMismatches": [],
+  "originalPtyWorkspaceExists": true,
+  "featureHead": "60e9f40ddb210095637d6689a3422ad8696ffb87",
+  "featureToolingSymlinkExcluded": true
+}

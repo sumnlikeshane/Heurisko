@@ -1,0 +1,65 @@
+[
+  {
+    "name": "typecheck",
+    "command": [
+      "pnpm",
+      "run",
+      "typecheck"
+    ],
+    "exit": 0,
+    "seconds": 9.803649500012398
+  },
+  {
+    "name": "contracts",
+    "command": [
+      "pnpm",
+      "run",
+      "test:contracts"
+    ],
+    "exit": 0,
+    "seconds": 0.6203939580009319
+  },
+  {
+    "name": "core",
+    "command": [
+      "node",
+      "--test",
+      "--test-concurrency=1",
+      "packages/core/tests/audit-fixes.test.mjs",
+      "packages/core/tests/cli-boundary.test.mjs",
+      "packages/core/tests/foundation.test.mjs",
+      "packages/core/tests/intelligence-boundary.test.mjs",
+      "packages/core/tests/network.test.mjs",
+      "packages/core/tests/parser-absence.test.mjs",
+      "packages/core/tests/parser-boundary-harness.test.mjs",
+      "packages/core/tests/phase2.test.mjs",
+      "packages/core/tests/reviewed-module.test.mjs",
+      "packages/core/tests/s2.test.mjs",
+      "packages/core/tests/s3.test.mjs",
+      "packages/core/tests/storage-batch.test.mjs",
+      "packages/core/tests/trust-profiles.test.mjs",
+      "packages/core/tests/verifier-lifecycle.test.mjs"
+    ],
+    "exit": 1,
+    "seconds": 43.3757407090161
+  },
+  {
+    "name": "docs",
+    "command": [
+      "pnpm",
+      "run",
+      "check:docs"
+    ],
+    "exit": 0,
+    "seconds": 0.7201802500057966
+  },
+  {
+    "name": "intake",
+    "command": [
+      "node",
+      "scripts/verify-intelligence-intake.mjs"
+    ],
+    "exit": 0,
+    "seconds": 0.038556833984330297
+  }
+]

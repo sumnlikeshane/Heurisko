@@ -1,0 +1,29 @@
+{
+  "failingRun": "https://github.com/sumnlikeshane/Heurisko/actions/runs/41501497603",
+  "sourceCommit": "60e9f40ddb210095637d6689a3422ad8696ffb87",
+  "artifactId": 13169356151,
+  "artifactSha256": "9ee88a2be798e8c42ff08c9bc76a3d94b098aee71e6136d0847cf927b17e98a3",
+  "failedCheck": "npm-parity",
+  "allOtherMeasurementChecksMetAcceptedExits": true,
+  "findingCounts": [
+    17,
+    17
+  ],
+  "outcomesEqual": true,
+  "changedFindingFields": [
+    {
+      "ruleId": "heurisko.source.candidate-scope",
+      "fields": [
+        "evidenceIds"
+      ]
+    },
+    {
+      "ruleId": "heurisko.source.candidate-scope",
+      "fields": [
+        "evidenceIds"
+      ]
+    }
+  ],
+  "correction": "Cross-observation comparator retains all finding facts and cited descriptors/content. Only numeric rate-limit-remaining/reset header values inside version-tag source claims are projected; observation IDs/content hashes remain unmodified.",
+  "regressions": "Four focused positive/adverse tests plus replay of the exact failed CI reports and stores."
+}

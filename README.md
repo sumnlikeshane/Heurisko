@@ -65,7 +65,7 @@ pnpm run test:web
 pnpm run check:docs
 ```
 
-Start with [the contributor workflow](AGENTS.md#one-development-workflow) and [documentation index](docs/README.md). The [Phase 1 plan](docs/Production%20Phase%201%20Implementation%20Plan.md) owns current work and blockers; the [roadmap](PRODUCTION_MASTER_ROADMAP.md) defines each phase's acceptance and next step. The amended Phase 1 foundation/source-only criteria are met locally; Phase 2 technical gates remain open. The contributor test map selects checks appropriate to a change; phase acceptance requires the full owning gates. Product code changes use feature branches, review and exact-head CI. The [contributor instructions](AGENTS.md) define repository approval and evidence-preservation rules.
+Start with [the contributor workflow](AGENTS.md#one-development-workflow) and [documentation index](docs/README.md). The [Phase 1 plan](docs/Production%20Phase%201%20Implementation%20Plan.md) owns current work and blockers; the [roadmap](PRODUCTION_MASTER_ROADMAP.md) defines each phase's acceptance and next step. The amended Phase 1 foundation/source-only criteria are met locally; Phase 2 native implementation criteria are met, with final acceptance governed by the exact-head PR checks. The contributor test map selects checks appropriate to a change; phase acceptance requires the full owning gates. Product code changes use feature branches, review and exact-head CI. The [contributor instructions](AGENTS.md) define repository approval and evidence-preservation rules.
 
 ## License
 

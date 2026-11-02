@@ -1,0 +1,41 @@
+[
+  {
+    "name": "parity-tests",
+    "argv": [
+      "node",
+      "--test",
+      "scripts/tests/phase1-npm-parity.test.mjs"
+    ],
+    "exit": 0,
+    "seconds": 0.26153449999401346
+  },
+  {
+    "name": "docs",
+    "argv": [
+      "pnpm",
+      "run",
+      "check:docs"
+    ],
+    "exit": 0,
+    "seconds": 0.7167474160087295
+  },
+  {
+    "name": "credential-scan",
+    "argv": [
+      "node",
+      "scripts/check-phase1-secrets.mjs"
+    ],
+    "exit": 0,
+    "seconds": 2.373990332998801
+  },
+  {
+    "name": "diff",
+    "argv": [
+      "git",
+      "diff",
+      "--check"
+    ],
+    "exit": 0,
+    "seconds": 0.08850366697879508
+  }
+]

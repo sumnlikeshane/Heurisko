@@ -76,3 +76,6 @@ The executed closure disposition replaces stale canonical Phase 1-open markers w
 
 
 The Phase 2 technical closure reconciles current runtime/source settings with historical observations in its [closure report](../../examples/production-phase2/2026-11-02-technical-closure-runtime-01/REPORT.md), retaining original receipts, failure logs, reports and research snapshots. The independent npm search and native capability evidence are separate new observations. Current references describe immutable-ID control, cancellation/create acknowledgment, exact absence and fixed-local-engine native admission; no historical result is relabeled or requirement silently removed.
+
+
+Current Phase 2 navigation now points to [actual exact-head native closure evidence](../../examples/production-phase2/2026-11-03-exact-head-closure-01/REPORT.md). Stale active publication/obsolete-format statements are reconciled with the approved versioned profile and published PR #7. Original closure reports/CLOSURE records, research hashes, upstream notices, failed local/CI artifacts and source snapshots remain unchanged. The separate npm-parity harness correction retains complete finding/citation content checks across observation-specific rate-header identities. No handoff plan, new phase, merge or deployment is introduced.

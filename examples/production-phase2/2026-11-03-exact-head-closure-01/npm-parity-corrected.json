@@ -1,0 +1,64 @@
+{
+  "defaultNoAIOptionsModuleOutcomesFindingsEqual": true,
+  "citationComparison": "Each original report/store validated independently. Compare complete finding facts and cited descriptors/content; only numeric x-ratelimit-remaining/reset values inside version-tag source claims are projected for parity. Finding/citation identity remains observation-specific.",
+  "reportIdentityEqual": false,
+  "acquisitionSnapshots": {
+    "normal": "sha256:cc813f3e5027c341968031b246328eaed7ffd893fce40d1f790c4363c61e45fd",
+    "noAI": "sha256:1233ea73976bbd7fede735901affb5cedc9ee34c5e32ac8d63328911fdbdb8a2"
+  },
+  "identityReason": "Changed exact acquisition snapshot, including observed HTTP facts, legitimately changes identity; no report normalized or rewritten",
+  "rawRemainsIncomplete": true,
+  "cases": [
+    {
+      "path": "examples/production-phase2/2026-11-03-exact-head-closure-01/ci-failure-41501497603/ci-phase1-npm-default.report.json",
+      "sha256": "sha256:4340ec3af4c2addaa5fe8e0ee58e011e84b6e12f83dd77da143906e9e2afec11",
+      "bytes": 77055,
+      "reportId": "report_56ed4f570faa187b3d41443e",
+      "artifactSha256": "sha256:d3aedb2807967b7eb37fd11b03b7e3701e725af79c650d0812ff7213f8f882d9",
+      "outcomes": {
+        "artifactIntegrity": "matched",
+        "sourceAssociation": "ambiguous",
+        "provenancePolicy": "not_checked",
+        "correspondence": "unresolved",
+        "analysisCompleteness": "complete",
+        "policyResult": "not_evaluated"
+      },
+      "findings": 17,
+      "exit": 0
+    },
+    {
+      "path": "examples/production-phase2/2026-11-03-exact-head-closure-01/ci-failure-41501497603/ci-phase1-npm-no-ai.report.json",
+      "sha256": "sha256:5bd6f8629f67c80a7fa76201672fef2d4fc5982da23c32a75b02f3e98428728e",
+      "bytes": 77055,
+      "reportId": "report_47e8e1d0745c431a8161cc85",
+      "artifactSha256": "sha256:d3aedb2807967b7eb37fd11b03b7e3701e725af79c650d0812ff7213f8f882d9",
+      "outcomes": {
+        "artifactIntegrity": "matched",
+        "sourceAssociation": "ambiguous",
+        "provenancePolicy": "not_checked",
+        "correspondence": "unresolved",
+        "analysisCompleteness": "complete",
+        "policyResult": "not_evaluated"
+      },
+      "findings": 17,
+      "exit": 0
+    },
+    {
+      "path": "examples/production-phase2/2026-11-03-exact-head-closure-01/ci-failure-41501497603/ci-phase1-npm-raw.report.json",
+      "sha256": "sha256:c7938233f7422d82a69e74e298b233a1776624198133860023add34c8a76d994",
+      "bytes": 58159,
+      "reportId": "report_5702fdbcb899f33d00298d63",
+      "artifactSha256": "sha256:d3aedb2807967b7eb37fd11b03b7e3701e725af79c650d0812ff7213f8f882d9",
+      "outcomes": {
+        "artifactIntegrity": "matched",
+        "sourceAssociation": "ambiguous",
+        "provenancePolicy": "not_checked",
+        "correspondence": "unresolved",
+        "analysisCompleteness": "incomplete",
+        "policyResult": "not_evaluated"
+      },
+      "findings": 0,
+      "exit": 2
+    }
+  ]
+}
