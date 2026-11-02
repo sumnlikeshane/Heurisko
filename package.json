@@ -17,10 +17,16 @@
     "test:web": "pnpm run build && pnpm --filter @heurisko/web test",
     "web": "node apps/web/dist/main.js",
     "test:s4": "pnpm run build && node --test integration/part4/tests/readiness.test.mjs packages/tui/tests/*.test.mjs",
-    "check:docs": "python3 scripts/check-docs.py"
+    "check:docs": "python3 scripts/check-docs.py",
+    "test:credential-scan": "node --test scripts/tests/credential-scan.test.mjs"
   },
   "devDependencies": {
     "@types/node": "22.15.30",
     "typescript": "5.8.3"
+  },
+  "pnpm": {
+    "overrides": {
+      "@tufjs/models@5.0.1>minimatch": "11.0.1"
+    }
   }
 }

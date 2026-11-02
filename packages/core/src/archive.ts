@@ -60,7 +60,19 @@ export async function inventoryArchive(store:EvidenceStore,archiveRef:string,con
     try { journal=(await boundedFile(join(output,'journal.jsonl'),4*1024*1024)).toString('utf8'); }
     catch(e) { if((e as NodeJS.ErrnoException).code!=='ENOENT') inventory.code=e instanceof StorageError&&e.code==='FILE_LIMIT_OR_TYPE'?'PARSER_JOURNAL_LIMIT':'PARSER_JOURNAL_UNREADABLE'; }
     await fs.rmdir(join(store.root,'.write-lock'));writeLock=false;
+    // Bound the reservation to the journal's actual declared output bytes.
+    // Malformed sizes cannot reduce the quota charged by the batch writer.
+    let batchBytes=0;
     for(const line of journal.split('\n').filter(Boolean)) {
+      let record;try{record=JSON.parse(line);}catch{break;}
+      if(record.kind==='member'&&record.type==='file') {
+        if(!Number.isSafeInteger(record.size)||record.size<0||batchBytes+record.size>limits.expandedBytes)throw new StorageError('PARSER_MEMBER_MISMATCH');
+        batchBytes+=record.size;
+      }
+    }
+    await store.putBatch(batchBytes,async put=>{
+    for(const line of journal.split('\n').filter(Boolean)) {
+      if(context.signal?.aborted){inventory.complete=false;inventory.code='CANCELLED';inventory.remainingScope='unknown';break;}
       let record; try { record=JSON.parse(line); } catch { break; }
       if(record.kind==='runtime'){const {kind,...runtime}=record;inventory.runtime=runtime;continue;}
       if(record.kind==='result') { if(['PARSER_INTERRUPTED','PARSER_RUNTIME_OR_INPUT_FAILURE'].includes(resultCode))Object.assign(inventory,{complete:record.complete,code:record.code,remainingScope:record.remainingScope,...(record.rejectedEntry?{rejectedEntry:record.rejectedEntry}:{})}); continue; }
@@ -70,10 +82,11 @@ export async function inventoryArchive(store:EvidenceStore,archiveRef:string,con
         if(!/^\d+\.member$/.test(spool)) throw new StorageError('PARSER_INVALID_SPOOL');
         const bytes=await boundedFile(join(output,spool),limits.memberBytes);
         if(sha256(bytes)!==member.sha256 || bytes.length!==member.size) throw new StorageError('PARSER_MEMBER_MISMATCH');
-        member.contentRef=await store.put(bytes); inventory.knownFiles++;inventory.knownBytes+=bytes.length;
+        member.contentRef=await put(bytes); inventory.knownFiles++;inventory.knownBytes+=bytes.length;
       }
       inventory.members.push(member);
     }
+    });
     return inventory;
   } finally {
     // Failed daemon cleanup never broadens access or reuses a potentially live

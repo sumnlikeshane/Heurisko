@@ -1,0 +1,9 @@
+{
+  "exit": 0,
+  "signal": null,
+  "error": null,
+  "stdout": "{\"version\":\"11.0.1\",\"tufModelDelegationCases\":5,\"advisoryPatternSegments\":24,\"adversarialOutcome\":\"boolean\",\"patternMilliseconds\":1,\"resourceUsage\":{\"userCPUTime\":64983,\"systemCPUTime\":21220,\"maxRSS\":52576,\"sharedMemorySize\":0,\"unsharedDataSize\":0,\"unsharedStackSize\":0,\"minorPageFault\":3343,\"majorPageFault\":156,\"swappedOut\":0,\"fsRead\":0,\"fsWrite\":0,\"ipcSent\":0,\"ipcReceived\":0,\"signalsCount\":0,\"voluntaryContextSwitches\":66,\"involuntaryContextSwitches\":925}}\n",
+  "stderr": "",
+  "deadlineMs": 5000,
+  "heapMiB": 96
+}

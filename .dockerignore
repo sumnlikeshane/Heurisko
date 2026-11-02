@@ -11,6 +11,8 @@
 !LICENSE
 !NOTICE
 !THIRD_PARTY_NOTICES.txt
+!scripts/
+!scripts/build-verifier-worker.mjs
 !packages/
 !packages/**
 !apps/

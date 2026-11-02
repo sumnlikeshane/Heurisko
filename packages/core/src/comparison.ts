@@ -1,10 +1,11 @@
-import { TextDecoder } from 'node:util';
+import {manifestFields,textOrNull} from './json-values.js';
+export {manifestFields,textOrNull} from './json-values.js';
 import type { EvidenceBundle, EvidenceRecord, EvidenceId, FileChange } from '@heurisko/contracts';
 import type { ArchiveInventory, ArchiveMember } from './archive.js';
 import { EvidenceStore } from './storage.js';
 import { canonicalId, canonicalJSON, evidenceId, sha256, sourceIdentity } from './identity.js';
+import { byteRelationship, localMapReference, sourceMapData, RELATIONSHIP_MEMBER_LIMIT, RELATIONSHIP_VERSION } from './relationships.js';
 
-export const textOrNull=(bytes:Uint8Array):string|null=>{try {if(bytes.includes(0))return null;return new TextDecoder('utf-8',{fatal:true}).decode(bytes);}catch{return null;}};
 export function terminalText(value:string):string {
   return value.replace(/[\u0000-\u0008\u000b-\u001f\u007f-\u009f\u061c\u200b-\u200f\u2028-\u202e\u2060-\u206f\ufeff]/g,c=>'\\u'+c.charCodeAt(0).toString(16).padStart(4,'0'));
 }
@@ -29,33 +30,33 @@ export async function memberEvidence(bundle:EvidenceBundle,store:EvidenceStore,i
   }
   return result;
 }
-// Strict bounded JSON scanner keeps exact value byte spans and rejects duplicate
-// keys. It never loads package configuration as code. Deltas are observations.
-export function manifestFields(bytes:Buffer):Map<string,{value:unknown;startByte:number;endByte:number}> {
-  if(bytes.length>256*1024)throw new Error('MANIFEST_SIZE_LIMIT');
-  const text=textOrNull(bytes);if(text===null)throw new Error('MANIFEST_ENCODING');
-  let i=0;const fields=new Map<string,{value:unknown;startByte:number;endByte:number}>();
-  const ws=()=>{while(/[\t\r\n ]/.test(text[i]??'!'))i++;};
-  const string=():string=>{const start=i++;while(i<text.length){if(text[i]==='\\'){i+=2;continue;}if(text[i++]==='"')return JSON.parse(text.slice(start,i));}throw new Error('MANIFEST_JSON');};
-  const value=(path:string,depth:number):void=>{
-    if(depth>32 || fields.size>=2048)throw new Error('MANIFEST_STRUCTURE_LIMIT');
-    ws();const start=i;
-    if(text[i]==='{') {i++;ws();const seen=new Set<string>();if(text[i]!=='}')for(;;){ws();if(text[i]!=='"')throw new Error('MANIFEST_JSON');const key=string();if(seen.has(key))throw new Error('MANIFEST_DUPLICATE_KEY');seen.add(key);ws();if(text[i++]!==':')throw new Error('MANIFEST_JSON');value(path+'/'+key.replace(/~/g,'~0').replace(/\//g,'~1'),depth+1);ws();if(text[i]!==',')break;i++;}if(text[i++]!=='}')throw new Error('MANIFEST_JSON');}
-    else if(text[i]==='['){i++;ws();let n=0;if(text[i]!==']')for(;;){value(path+'/'+n++,depth+1);ws();if(text[i]!==',')break;i++;}if(text[i++]!==']')throw new Error('MANIFEST_JSON');}
-    else if(text[i]==='"')string();
-    else {const m=/^(?:-?(?:0|[1-9]\d*)(?:\.\d+)?(?:[eE][+-]?\d+)?|true|false|null)/.exec(text.slice(i));if(!m)throw new Error('MANIFEST_JSON');i+=m[0].length;}
-    if(i>text.length)throw new Error('MANIFEST_JSON');
-    fields.set(path,{value:JSON.parse(text.slice(start,i)),startByte:Buffer.byteLength(text.slice(0,start)),endByte:Buffer.byteLength(text.slice(0,i))});
+export async function rawCompare(bundle:EvidenceBundle,store:EvidenceStore,artifact:LogicalMember[],source:LogicalMember[],scopeComplete:boolean,absenceLimitation='Missing member cannot establish absence in an incomplete inventory.',signal?:AbortSignal):Promise<void> {
+  // Compare emits many small immutable records. Buffer at most 1 MiB between
+  // locked, exactly charged batches instead of traversing the entire store per
+  // delta. Pending prefix records are flushed even when comparison fails.
+  const owner=store,pending=new Map<string,Buffer>();let pendingBytes=0,flushFailed=false;
+  const flush=async()=>{
+    if(!pending.size)return;
+    try{await owner.putBatch(pendingBytes,async put=>{for(const bytes of pending.values())await put(bytes);});}
+    catch(error){flushFailed=true;throw error;}
+    pending.clear();pendingBytes=0;
   };
-  value('',0);ws();if(i!==text.length || !text.startsWith('{',text.search(/\S/)))throw new Error('MANIFEST_JSON');return fields;
-}
-export async function rawCompare(bundle:EvidenceBundle,store:EvidenceStore,artifact:LogicalMember[],source:LogicalMember[],scopeComplete:boolean,absenceLimitation='Missing member cannot establish absence in an incomplete inventory.'):Promise<void> {
+  store=new EvidenceStore(owner.root,owner.limits);
+  store.put=async value=>{
+    const bytes=Buffer.from(value),ref=sha256(bytes);if(pending.has(ref))return ref;
+    if(pendingBytes+bytes.length>1024*1024)await flush();
+    if(bytes.length>1024*1024)return owner.put(bytes);
+    pending.set(ref,bytes);pendingBytes+=bytes.length;return ref;
+  };
+  store.get=async(ref,limit=128*1024*1024)=>{const bytes=pending.get(ref);if(!bytes)return owner.get(ref,limit);if(bytes.length>limit)throw Error('FILE_LIMIT_OR_TYPE');return Buffer.from(bytes);};
+  try {
   const am=new Map(artifact.map(m=>[m.relativePath,m])),sm=new Map(source.map(m=>[m.relativePath,m]));
   const unsupportedManifest=(a:LogicalMember|undefined,s:LogicalMember|undefined,reason:string)=>{
     bundle.coverage.complete=false;bundle.coverage.limitations.push(reason+'; full manifest bytes and raw delta retained.');
     for(const [side,m]of [['artifact',a],['source',s]] as const)if(m){bundle.coverage.unsupportedBytes+=m.member.size;bundle.coverage.analyzedBytes-=m.member.size;bundle.coverage.omissions.push({side,path:m.member.path,kind:'unsupported',stage:'compare',reason,bytes:m.member.size,evidenceIds:[m.evidenceId]});}
   };
   for(const path of [...new Set([...am.keys(),...sm.keys()])].sort()) {
+    if(signal?.aborted){bundle.coverage.complete=false;bundle.coverage.limitations.push('Comparison cancelled; remaining retained paths are unassessed.');break;}
     const a=am.get(path),s=sm.get(path);const equal=!!a&&!!s&&a.member.sha256===s.member.sha256;
     const status=equal?'identical':a&&s?'modified':scopeComplete?a?'added':'removed':'unresolved';
     const ids=[...(a?[a.evidenceId]:[]),...(s?[s.evidenceId]:[])];
@@ -76,6 +77,13 @@ export async function rawCompare(bundle:EvidenceBundle,store:EvidenceStore,artif
       const side=(bytes:Buffer,m:LogicalMember|undefined)=>({path:m?.member.path??null,contentRef:m?.member.contentRef??null,size:bytes.length,changedSpan:{startByte:start,endByte:bytes.length-suffix},excerptBase64:bytes.subarray(start,Math.min(bytes.length-suffix,start+2048)).toString('base64'),excerptTruncated:bytes.length-suffix-start>2048});
       const e=await retainJSONEvidence(bundle,store,{kind:'raw_diff',side:'both',locator:{path,metadataKey:'raw-byte-delta'},observationMethod:'common-prefix-suffix-byte-span-v1',limitations:['One enclosing changed byte span, not semantic equivalence; full member bytes retained.']},{version:'heurisko-raw-diff-v1',kind:textOrNull(ab)!==null&&textOrNull(sb)!==null?'utf8':'binary',source:side(sb,s),artifact:side(ab,a),absenceEstablished:scopeComplete});
       change.evidenceIds.push(e.evidenceId);
+      if(a&&s&&ab.length<=RELATIONSHIP_MEMBER_LIMIT&&sb.length<=RELATIONSHIP_MEMBER_LIMIT) {
+        const rule=byteRelationship(sb,ab);
+        if(rule) {
+          const relation=await retainJSONEvidence(bundle,store,{kind:'analysis_note',side:'both',locator:{path,metadataKey:'static-relationship'},observationMethod:RELATIONSHIP_VERSION,limitations:['Full raw residual retained. This byte/value relationship establishes neither program equivalence nor build reproduction.']},{version:RELATIONSHIP_VERSION,rule,sourceEvidenceId:s.evidenceId,artifactEvidenceId:a.evidenceId,sourceRef:s.member.contentRef,artifactRef:a.member.contentRef});
+          change.evidenceIds.push(relation.evidenceId);
+        }
+      }
       if(path==='package.json') {
         try {
           const af:ReturnType<typeof manifestFields>=a?manifestFields(ab):new Map(),sf:ReturnType<typeof manifestFields>=s?manifestFields(sb):new Map();let count=0;
@@ -97,5 +105,33 @@ export async function rawCompare(bundle:EvidenceBundle,store:EvidenceStore,artif
     }
     bundle.changes.push(change);
   }
+  // A retained source-map reference plus exact embedded source text is a clue
+  // with mechanically checked cross-side support, not proof of emitted code.
+  // Bound scanning/counts; do not fetch map paths or run build/configuration code.
+  let inspected=0,total=0,relations=0;
+  for(const a of artifact) {
+    if(signal?.aborted)break;
+    if(inspected++>=128||relations>=32)break;
+    if(a.member.size>RELATIONSHIP_MEMBER_LIMIT||total+a.member.size>1024*1024)continue;
+    const output=await store.get(a.member.contentRef!);total+=output.length;
+    const name=localMapReference(output);if(!name)continue;
+    const mapPath=a.relativePath.slice(0,a.relativePath.lastIndexOf('/')+1)+name;
+    const map=am.get(mapPath);if(!map||map.member.size>RELATIONSHIP_MEMBER_LIMIT||total+map.member.size>1024*1024)continue;
+    const bytes=await store.get(map.member.contentRef!);total+=bytes.length;
+    const data=sourceMapData(bytes);if(!data)continue;
+    const matches=[];
+    for(let i=0;i<data.sourcesContent.length;i++) {
+      const content=data.sourcesContent[i]!;if(Buffer.byteLength(content)>RELATIONSHIP_MEMBER_LIMIT)continue;
+      const digest=sha256(content),candidates=source.filter(s=>s.member.sha256===digest);
+      if(candidates.length===1)matches.push({index:i,sourceEvidenceId:candidates[0]!.evidenceId,sourceRef:digest});
+    }
+    if(!matches.length)continue;
+    const change=bundle.changes.find(c=>c.artifactPath===a.member.path&&c.status!=='identical');if(!change)continue;
+    const relation=await retainJSONEvidence(bundle,store,{kind:'analysis_note',side:'both',locator:{path:a.relativePath,metadataKey:'static-relationship'},observationMethod:RELATIONSHIP_VERSION,limitations:['Only the local final reference and matching embedded source text are checked; mappings/emitted behavior/build recipe are unverified. All raw residuals remain visible.']},{version:RELATIONSHIP_VERSION,rule:'sourcemap-retained-source',artifactEvidenceId:a.evidenceId,artifactRef:a.member.contentRef,mapEvidenceId:map.evidenceId,mapRef:map.member.contentRef,matches,totalSources:data.sources.length});
+    change.evidenceIds.push(relation.evidenceId,map.evidenceId,...matches.map(m=>m.sourceEvidenceId));
+    change.evidenceIds=[...new Set(change.evidenceIds)];relations++;
+  }
+  bundle.coverage.limitations.push('Static relationship scope: at most 128 artifact members, 1 MiB candidate reads, 32 source-map relationships and 256 KiB per member. Unsupported/unexamined transformations remain raw residuals; byte inventory coverage is not explanation coverage.');
   bundle.coverage.comparedFiles=bundle.changes.length;
+  } finally { if(!flushFailed)await flush(); }
 }

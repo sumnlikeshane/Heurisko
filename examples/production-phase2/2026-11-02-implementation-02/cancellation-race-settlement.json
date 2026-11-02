@@ -1,0 +1,31 @@
+[
+  {
+    "args": [
+      "inspect",
+      "--format",
+      "{{json .State}}",
+      "heurisko-verifier-f2063c4c-afc0-4ec3-a93e-c0b626786d0e"
+    ],
+    "exitCode": 0,
+    "stdout": "{\"Status\":\"exited\",\"Running\":false,\"Paused\":false,\"Restarting\":false,\"OOMKilled\":false,\"Dead\":false,\"Pid\":0,\"ExitCode\":143,\"Error\":\"\",\"StartedAt\":\"2026-11-02T09:10:04.324949467Z\",\"FinishedAt\":\"2026-11-02T09:10:05.074730176Z\"}\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "rm",
+      "heurisko-verifier-f2063c4c-afc0-4ec3-a93e-c0b626786d0e"
+    ],
+    "exitCode": 0,
+    "stdout": "heurisko-verifier-f2063c4c-afc0-4ec3-a93e-c0b626786d0e\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "inspect",
+      "heurisko-verifier-f2063c4c-afc0-4ec3-a93e-c0b626786d0e"
+    ],
+    "exitCode": 1,
+    "stdout": "[]\n",
+    "stderr": "Error: No such object: heurisko-verifier-f2063c4c-afc0-4ec3-a93e-c0b626786d0e\n"
+  }
+]

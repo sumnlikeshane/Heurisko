@@ -1,0 +1,21 @@
+{
+  "command": [
+    "/private/tmp/heurisko-p2-tools-20261102/node-v22.23.4-darwin-arm64/bin/node",
+    "--test",
+    "--test-concurrency=1",
+    "packages/core/tests/verifier-lifecycle.test.mjs"
+  ],
+  "node": "v22.23.4",
+  "exit": 0,
+  "tests": 11,
+  "passed": 11,
+  "failed": 0,
+  "scope": "Authored fake-Docker lifecycle regression; no actual Docker or cryptographic acceptance inferred.",
+  "sourceSha256": {
+    "packages/core/tests/verifier-lifecycle.test.mjs": "f47ec70fe7938267acd05004638d2c76377f97e72595f1d870e55c721c9ae2b7",
+    "packages/core/src/trust.ts": "eb180dde05fbee6565a98c528787d2adc831456401fd5f90b4f75b17c04d9575",
+    "packages/core/dist/trust.js": "aa53dd88ea2075d943dd337ce7b94a1846f95f725f0317b3c8d772e33bfd809c"
+  },
+  "stdout": "regression-corrected-01.stdout.log",
+  "stderr": "regression-corrected-01.stderr.log"
+}

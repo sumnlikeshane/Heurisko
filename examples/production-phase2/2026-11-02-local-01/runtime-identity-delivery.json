@@ -1,0 +1,35 @@
+{
+  "engine": {
+    "engine": "shane-audit-v1;sha256:5202a5c281126afd07ad444852a5016055f343fd912b1eef6461f735f5a0ffbc",
+    "codeDigests": {
+      "engine": "sha256:7467c1505c710a858389e2286f9768d7532138782030b6d96996a52a754eb431",
+      "producer": "sha256:c67877b62be8cd53b184804e755ac929091a2ccf02b03bdfa4c35e82a6867b74",
+      "comparison": "sha256:78e8f46e63f921271e415a72d6ee8d7efc63dffd5867fc3b5a5d9c6f375bb53f",
+      "relationships": "sha256:50dcde4ce23e81ec68bce6a6a46043d98d8ee776ae343b05f16c4e0ff84fc15e",
+      "archive": "sha256:9d1722caf4fda64a76f74bf075c9675dc73986be8dc4be6f4f9a3d85baab52d6",
+      "network": "sha256:06c7b087282832746631c5a89f2ee929ae7ec8cf0b2aec8d80d30c410e264e52",
+      "storage": "sha256:bc9c379d978c5c80349c5989b6699885b1622276a802c7108c01a9aa0029004d",
+      "parser-runtime": "sha256:05cc905bb69c7c2bffa43e9aca54ea20d3fb2b7a1459ac40ae1a09af437187b0",
+      "parser-job": "sha256:c234dcd1eaaf84f97ff636f1471063bcb3f75661aca21c52f30e515d6a4322c2",
+      "adapter": "sha256:79970491592c61cdbad11b60527ce6ebbf730f82740e98f892b41f5c1bacc4f4",
+      "identity": "sha256:91e189c4a4b7eef82b788da7b7707af9fa6df40b4268c49d8b108c682d124e96",
+      "validation": "sha256:97dc29b3b12e1d83ae89e8977839c2cd178cf3c9624464243b65e13e11f77516",
+      "safety": "sha256:f66b9867a5c3a1ec4163f95a446c3d4ba975d0aa07b9df6a28d3aaa172aa9c01",
+      "npm": "sha256:19bd4bc0064b4b6421753305e26db2879662ccb887d727d0aa99defb73d6e850",
+      "sources": "sha256:6eb632d8baf16b4fe313b4433127c64247b09c64687b66387dc1dfb3883d8c25",
+      "provenance": "sha256:e9f6be405bbd3b546bcd25a377180fb5806ca6eeeb12ac8a3071b5bdaa5ce222",
+      "intelligence-boundary": "sha256:c9ed283ba8ebed78719398200b1551d1f482521595115e8e8c8fb77b9e8aac11",
+      "reviewed-module": "sha256:675472ebe6518419e28d83adc90c58a9c2b356523cd4b8b062de5e1512b836d2",
+      "parserWorker": "sha256:c3425b822ae12703f1f7a7fe891abebbc5776361374efab94f227c49d9bdaceb",
+      "contractSchema": "sha256:bef30a837a383ed7a3fbf49e9bac885822d6e3bdea9ccd05ff46b37f350b4dae",
+      "contractValidator": "sha256:7b3a956eb4651477792a77659397d85c849fa48d4780ddecef02ca3d3242e2e7",
+      "contractSemantics": "sha256:c1e231aa0c887da8e890e7615f8c0ca1e72e21246155746b36c6aebb4ee636e1"
+    }
+  },
+  "module": {
+    "moduleId": "@heurisko/intelligence-reviewed",
+    "moduleVersion": "0.2.0-p2-static-v1",
+    "implementationSha256": "sha256:4fc530fead6a5a9eb35e3a589993576d71ec3131d491cf08859a0c5fef2391bb",
+    "configurationSha256": "sha256:707738a368fd74cf1f99c93b83bccb2811f318bf534d0ca261364c373ff4c271"
+  }
+}

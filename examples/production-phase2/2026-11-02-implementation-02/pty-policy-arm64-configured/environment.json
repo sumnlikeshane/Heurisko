@@ -1,0 +1,6 @@
+{
+  "python": "3.13.2 (main, Feb  4 2025, 14:51:09) [Clang 16.0.0 (clang-1600.0.26.6)]",
+  "interpreter": "/private/tmp/heurisko-p2-terminal-venv/bin/python",
+  "catalogSha256": "87af9d82a3c1a4c942b9f36650084a35c78b3b2d65d0fd179b737e89682390e2",
+  "node": "/private/tmp/heurisko-p2-tools-20261102/node-v22.23.4-darwin-arm64/bin/node"
+}

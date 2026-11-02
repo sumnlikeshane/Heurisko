@@ -1,0 +1,91 @@
+## foundation/phase1-completion-20261101...origin/foundation/phase1-completion-20261101
+ M .dockerignore
+ M AGENTS.md
+ M Dockerfile.render
+ M HEURISKO_COMPLETE_GUIDE.md
+ M PRODUCTION_MASTER_ROADMAP.md
+ M README.md
+ M THIRD_PARTY_NOTICES.txt
+ M apps/web/README.md
+ M apps/web/content/availability.md
+ M apps/web/content/browser.md
+ M apps/web/src/home.tsx
+ M apps/web/src/investigate.tsx
+ M "docs/Approved Decision Register.md"
+ M "docs/CLI Reference.md"
+ M "docs/Production Phase 1 Implementation Plan.md"
+ M docs/README.md
+ M "docs/production-phase1/Document Disposition.md"
+ M "docs/production-phase1/Foundation Contract.md"
+ M package.json
+ M packages/cli/src/index.ts
+ M packages/core/package.json
+ M packages/core/src/archive.ts
+ M packages/core/src/comparison.ts
+ M packages/core/src/engine.ts
+ M packages/core/src/identity.ts
+ M packages/core/src/intelligence-boundary.ts
+ M packages/core/src/producer.ts
+ M packages/core/src/provenance.ts
+ M packages/core/src/reviewed-module.ts
+ M packages/core/src/storage.ts
+ M packages/core/tests/intelligence-boundary.test.mjs
+ M packages/core/tests/reviewed-module.test.mjs
+ M packages/intelligence-reviewed/README.md
+ M packages/intelligence-reviewed/admission.json
+ M packages/intelligence-reviewed/package.json
+ M packages/intelligence-reviewed/src/index.ts
+ M packages/tui/README.md
+ M packages/tui/src/App.tsx
+ M packages/tui/src/screens/TargetForm.tsx
+ M pnpm-lock.yaml
+ M scripts/check-parser-boundary.mjs
+ M scripts/check-phase1-secrets.mjs
+?? .github/workflows/closure-native.yml
+?? SOURCE_FIXTURE_NOTICES.txt
+?? SOURCE_PACKAGE.md
+?? "docs/Phase 2 Testing Guide.md"
+?? docs/production-phase1/source-fixture-rights.json
+?? examples/production-phase1/2026-11-01-completion-01/pty/evidence-mode-byt4j66_/workspace/
+?? examples/production-phase2/
+?? packages/core/VERIFIER_ADMISSION.md
+?? packages/core/VERIFIER_THIRD_PARTY_NOTICES.txt
+?? packages/core/runtime/trust-bootstrap.json
+?? packages/core/runtime/verifier-worker.ts
+?? packages/core/src/json-values.ts
+?? packages/core/src/relationships.ts
+?? packages/core/src/trust.ts
+?? packages/core/tests/parser-boundary-harness.test.mjs
+?? packages/core/tests/phase2.test.mjs
+?? packages/core/tests/storage-batch.test.mjs
+?? packages/core/tests/verifier-lifecycle.test.mjs
+?? packages/intelligence-reviewed/provenance/admission-55240e9.json
+?? packages/intelligence-reviewed/provenance/reviewed-55240e9.ts
+?? packages/intelligence-reviewed/src/legacy-55240e9.ts
+?? packages/tui/tests/phase2-findings.py
+?? packages/tui/tests/phase2-policy.py
+?? scripts/build-verifier-worker.mjs
+?? scripts/capture-phase2-sources.py
+?? scripts/capture-real-provenance-formats.py
+?? scripts/capture-trust-snapshot.py
+?? scripts/check-phase2-verifier-worker.mjs
+?? scripts/evaluate-phase2-verifier.mjs
+?? scripts/generate-controlled-signatures.mjs
+?? scripts/grade-phase2.py
+?? scripts/inspect-phase2-data.mjs
+?? scripts/normalize-phase2-observations.mjs
+?? scripts/prepare-controlled-runtime.mjs
+?? scripts/prepare-phase2-data.py
+?? scripts/prepare-source-selection.py
+?? scripts/prepare-trust-snapshot.mjs
+?? scripts/review-phase2-quality.mjs
+?? scripts/run-closure-validation.py
+?? scripts/run-phase2-development.mjs
+?? scripts/test-controlled-signatures.mjs
+?? scripts/test-grade-phase2.py
+?? scripts/test-phase2-trust.mjs
+?? scripts/tests/credential-scan.test.mjs
+?? scripts/tests/test_closure_native.py
+?? scripts/verify-controlled-integration.mjs
+?? scripts/verify-phase2-integration.mjs
+?? scripts/verify-source-package.py

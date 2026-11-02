@@ -1,0 +1,14 @@
+{
+  "command": [
+    "/private/tmp/heurisko-p2-tools-20261102/node-v22.23.4-darwin-arm64/bin/node",
+    "--test",
+    "--test-concurrency=1",
+    "packages/core/tests/parser-boundary-harness.test.mjs"
+  ],
+  "exit": 1,
+  "scope": "Authored fake-Docker harness failure reproduction; no actual Docker commands",
+  "sourceSha256": {
+    "scripts/check-parser-boundary.mjs": "a2c99dcd86166f86551a42a9bfb61451008a2f3136ce37a44d5f2692c253d906",
+    "packages/core/tests/parser-boundary-harness.test.mjs": "a150759370a823ef7ab3ae2bcf5b7355fca9dd416276f4defaab998623106408"
+  }
+}

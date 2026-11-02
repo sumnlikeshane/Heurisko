@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "checks": [
+    "Policy field owns ordinary q input; backspace edits without quitting",
+    "Review shows the exact requested key before Start",
+    "90-column review keeps the selected policy inspectable",
+    "Actual shared engine settles the requested optional policy",
+    "Saved original report preserves requested key, absent provenance, policy pass and genuine exit 0"
+  ],
+  "exit": 0,
+  "reportContentRef": "sha256:f886a2e0d03f0e47b710d86f4df6814419669f3ff60aca7ca49e6e2552bf4d12",
+  "outcomes": {
+    "artifactIntegrity": "matched",
+    "sourceAssociation": "publisher_asserted",
+    "provenancePolicy": "absent",
+    "correspondence": "unresolved",
+    "analysisCompleteness": "complete",
+    "policyResult": "pass"
+  },
+  "columns": [
+    160,
+    90
+  ],
+  "rows": [
+    44,
+    30
+  ],
+  "scope": "Actual PTY new investigation with public npm is-number 7.0.0, trusted fixture catalog and real evaluator. No independent human or browser/AT claim."
+}

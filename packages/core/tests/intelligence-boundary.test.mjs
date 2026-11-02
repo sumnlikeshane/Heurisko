@@ -40,7 +40,7 @@ test('actual canonical local fixture resolves hash-bound lifecycle addition and 
  for(const c of supplied)assert.equal(sha256(c.text),c.contentRef);assert.equal(JSON.stringify(baseline),before);
 });
 
-test('the reviewed 55240e9 deterministic consumer accepts the real retained addition through the G0 adapter',async()=>{
+test('the revised deterministic consumer accepts the real retained addition through the G0 adapter',async()=>{
  const {analyzeEvidence}=await import('../../intelligence-reviewed/dist/index.js');
  const before=JSON.stringify(baseline);
  const module=createIntelligenceBoundary({identity,store:retained,analyzeEvidence});
@@ -57,7 +57,7 @@ test('actual EvidenceStore missing and corrupt delta bytes remain unresolved wit
   const f=await fixture(),broken=which==='delta'?f.evidence.contentRef:f.delta.sourceContentRef;if(corrupt)await writeFile(missing.blobPath(broken),'different bytes');let content;
   const module=createIntelligenceBoundary({identity,store:{get:(ref,limit)=>ref===broken?missing.get(ref,limit):retained.get(ref,limit)},analyzeEvidence:async(_b,_o,c)=>{content=c;return result([targetId]);}});
   const r=await module.analyzeEvidence(f.bundle,options);assert.deepEqual(content,[]);incomplete(r,corrupt?'BLOB_HASH_MISMATCH':'CONTENT_READ_FAILED');
-  assert.match(r.findings[0].observation,/direction remain unresolved/);assert.equal(r.findings[0].evidenceConfidence,'limited');assert.equal(r.findings[0].explanationStrength,'unexplained');assert.equal(r.findings[0].severity,'medium');
+  assert.match(r.findings[0].observation,/direction remain unresolved/);assert.equal(r.findings[0].evidenceConfidence,'limited');assert.equal(r.findings[0].explanationStrength,'unexplained');assert.equal(r.findings[0].severity,'undetermined');assert.equal(r.findings[0].reviewPriority,'low');
  }
 });
 

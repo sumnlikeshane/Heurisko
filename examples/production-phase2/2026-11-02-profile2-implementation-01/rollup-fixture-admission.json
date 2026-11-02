@@ -1,0 +1,16 @@
+{
+  "fixture": "rollup@4.52.4",
+  "role": "Inert captured public npm artifact/envelope pair for current-profile producer replay; no target installation/import/execution",
+  "files": {
+    "examples/production-phase2/2026-11-02-implementation-02/npm-fixtures/rollup-4.52.4/metadata.json": "370a9ecf73c667e45b5257bddba45daf5443c7f104e97a50daf8d05cf6f91167",
+    "examples/production-phase2/2026-11-02-implementation-02/npm-fixtures/rollup-4.52.4/attestations.json": "f3aff3c746fe39453d3dd804f92842d5b47250cced67e3377faa3d8809aa6534",
+    "examples/production-phase2/2026-11-02-implementation-02/npm-fixtures/rollup-4.52.4/artifact.tgz": "7efa444d2d1792db2c64d4ad7949e0d9bf8ce477f50fe561c650900f68bb0122",
+    "packages/core/ROLLUP_FIXTURE_NOTICES.txt": "bc91f5e3c168054fba08a1ea209a89c0fc10bc0667e52911481ee284c07ef69b"
+  },
+  "artifactMatchesOriginalReport": true,
+  "registrySriMatches": true,
+  "licenseMembershipProvedByOriginalReport": "examples/production-phase2/2026-11-02-implementation-02/integration-source-unavailable/exact/report.json",
+  "originalReportSha256": "22dea6f7443fbc582f314c4ed20616396ef715e3a8fc7fdb43d8d9ef0571ea61",
+  "licenseTerms": "Complete publisher-packaged MIT/ISC/0BSD grants/copyrights retained verbatim, including bundled dependencies",
+  "sourceArchive": "Original source.tgz remains local and unselected; --source-unavailable records that omission and never claims raw source correspondence"
+}

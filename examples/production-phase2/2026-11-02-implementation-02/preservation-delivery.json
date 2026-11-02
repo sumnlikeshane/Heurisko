@@ -1,0 +1,11 @@
+{
+  "capturedAt": "2026-11-02T10:04:50.464111+00:00",
+  "scope": "Every initial historical evidence/research/retained-provenance file; index contents; pre-existing AGENTS.md bytes. Source/owning narrative edits are separate.",
+  "checkedFiles": 32871,
+  "missing": [],
+  "changed": [],
+  "indexUnchanged": true,
+  "initialIndexSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "currentIndexSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "AGENTSUnchanged": true
+}

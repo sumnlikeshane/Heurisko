@@ -1,0 +1,71 @@
+{
+  "scope": "Retained unsettled s2 parser outcomes during diagnostic full run. No mounts, stores or locks removed. Exact Docker control/settlement cause remains unresolved; no complete final-source pass claimed.",
+  "fromUTC": "2026-11-02T09:11:47.835136+00:00",
+  "toUTC": "2026-11-02T09:27:51.496593+00:00",
+  "jobs": [
+    {
+      "path": "/private/var/folders/nr/h22p8bd51v16nv8j2h0n3f100000gp/T/heurisko-s2-test-Usvt1T/store/scratch/parser-KIr5Mp/outcome.json",
+      "sha256": "0fcc3c6c8f8c56148c1508507ace6382e78b06ca59c4aff66a34203baabdaaf8",
+      "outcome": {
+        "version": "heurisko-parser-job-outcome-v1",
+        "code": "PARSER_TIMEOUT",
+        "cleanupConfirmed": false
+      },
+      "job": {
+        "version": "heurisko-parser-job-v1",
+        "name": "heurisko-parser-b5af974a-9950-48f5-9b6b-4ced36c904da",
+        "storeLabel": "06d8ed56c3bfaccaced00158bb23acc464001c14b6c441b0792d42b3e1211a7b",
+        "creation": "request-may-be-pending",
+        "createdAt": "2026-11-02T09:20:06.104Z"
+      }
+    },
+    {
+      "path": "/private/var/folders/nr/h22p8bd51v16nv8j2h0n3f100000gp/T/heurisko-s2-test-AsjJku/store/scratch/parser-UR0Dss/outcome.json",
+      "sha256": "0fcc3c6c8f8c56148c1508507ace6382e78b06ca59c4aff66a34203baabdaaf8",
+      "outcome": {
+        "version": "heurisko-parser-job-outcome-v1",
+        "code": "PARSER_TIMEOUT",
+        "cleanupConfirmed": false
+      },
+      "job": {
+        "version": "heurisko-parser-job-v1",
+        "name": "heurisko-parser-9de231c2-ea47-4e1a-b1c1-26f055d6a950",
+        "storeLabel": "e1131fc93b1c3b0c9c7f55f1168552f16ed9148ae93a3c26b739a48834f58a1e",
+        "creation": "request-may-be-pending",
+        "createdAt": "2026-11-02T09:14:37.849Z"
+      }
+    },
+    {
+      "path": "/private/var/folders/nr/h22p8bd51v16nv8j2h0n3f100000gp/T/heurisko-s2-test-vmAbep/store/scratch/parser-hS4mtd/outcome.json",
+      "sha256": "0fcc3c6c8f8c56148c1508507ace6382e78b06ca59c4aff66a34203baabdaaf8",
+      "outcome": {
+        "version": "heurisko-parser-job-outcome-v1",
+        "code": "PARSER_TIMEOUT",
+        "cleanupConfirmed": false
+      },
+      "job": {
+        "version": "heurisko-parser-job-v1",
+        "name": "heurisko-parser-be4ac8ae-eab1-44f8-9c90-180ebf16ad4e",
+        "storeLabel": "9c511f280406e10aaf78ba3930f862d4bdb0b09b8d3f6915a2fa7cb6eeb28bd9",
+        "creation": "request-may-be-pending",
+        "createdAt": "2026-11-02T09:19:07.329Z"
+      }
+    },
+    {
+      "path": "/private/var/folders/nr/h22p8bd51v16nv8j2h0n3f100000gp/T/heurisko-s2-test-pMZY9k/store/scratch/parser-FyCLml/outcome.json",
+      "sha256": "0fcc3c6c8f8c56148c1508507ace6382e78b06ca59c4aff66a34203baabdaaf8",
+      "outcome": {
+        "version": "heurisko-parser-job-outcome-v1",
+        "code": "PARSER_TIMEOUT",
+        "cleanupConfirmed": false
+      },
+      "job": {
+        "version": "heurisko-parser-job-v1",
+        "name": "heurisko-parser-a5c0c787-ed0b-4b20-8a93-acd490d6bc21",
+        "storeLabel": "22daf671928ac871d7d3e3d8178f35efd47d265885f05e97928c0336da471fc2",
+        "creation": "request-may-be-pending",
+        "createdAt": "2026-11-02T09:18:06.666Z"
+      }
+    }
+  ]
+}

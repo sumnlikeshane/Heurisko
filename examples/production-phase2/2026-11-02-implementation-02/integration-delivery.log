@@ -1,0 +1,23 @@
+file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/producer.js:260
+        throw new Error('PRODUCER_CONTRACT_INVALID', { cause: { retainedBundleRef, error } });
+              ^
+
+Error: PRODUCER_CONTRACT_INVALID
+    at collectEvidence (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/producer.js:260:15)
+    at async investigate (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/engine.js:38:20)
+    at async file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/scripts/verify-phase2-integration.mjs:23:15 {
+  [cause]: {
+    retainedBundleRef: 'sha256:c38503031df7c0d14dfedb05557401b9f31edb499bf610f08d51d5b6b1bbeb7f',
+    error: BoundaryError: VALIDATION_LIMIT
+        at runValidator (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/validation.js:20:15)
+        at validateContract (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/validation.js:13:12)
+        at validateProducedBundle (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/validation.js:40:11)
+        at collectEvidence (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/producer.js:256:22)
+        at async investigate (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/dist/engine.js:38:20)
+        at async file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/scripts/verify-phase2-integration.mjs:23:15 {
+      code: 'VALIDATION_LIMIT'
+    }
+  }
+}
+
+Node.js v22.23.4

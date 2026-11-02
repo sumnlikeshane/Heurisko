@@ -1,0 +1,21 @@
+{
+  "scope": "Exact parser job from the failed latest serial replay test. Inspection only; spool/locks are preserved.",
+  "job": {
+    "version": "heurisko-parser-job-v1",
+    "name": "heurisko-parser-9de231c2-ea47-4e1a-b1c1-26f055d6a950",
+    "storeLabel": "e1131fc93b1c3b0c9c7f55f1168552f16ed9148ae93a3c26b739a48834f58a1e",
+    "creation": "request-may-be-pending",
+    "createdAt": "2026-11-02T09:14:37.849Z"
+  },
+  "outcome": {
+    "version": "heurisko-parser-job-outcome-v1",
+    "code": "PARSER_TIMEOUT",
+    "cleanupConfirmed": false
+  },
+  "path": "/private/var/folders/nr/h22p8bd51v16nv8j2h0n3f100000gp/T/heurisko-s2-test-AsjJku/store/scratch/parser-UR0Dss",
+  "inspect": {
+    "exitCode": 1,
+    "stdout": "[]\n",
+    "stderr": "Error: No such object: heurisko-parser-9de231c2-ea47-4e1a-b1c1-26f055d6a950\n"
+  }
+}

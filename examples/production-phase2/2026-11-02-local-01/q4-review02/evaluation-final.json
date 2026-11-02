@@ -1,0 +1,844 @@
+{
+  "node": "v22.23.4",
+  "platform": "darwin",
+  "arch": "arm64",
+  "candidate": "@sigstore/verify@4.1.2",
+  "networkAttempts": 0,
+  "results": [
+    {
+      "id": "upstream-message-positive",
+      "expectedReturned": true,
+      "returned": true,
+      "pass": true,
+      "ms": 22.784915999999996
+    },
+    {
+      "id": "upstream-message-signature-mutation",
+      "expectedReturned": false,
+      "returned": false,
+      "pass": true,
+      "error": {
+        "code": "TIMESTAMP_ERROR",
+        "message": "timestamp could not be verified"
+      },
+      "ms": 2.679124999999999
+    },
+    {
+      "id": "upstream-dsse-positive",
+      "expectedReturned": true,
+      "returned": true,
+      "pass": true,
+      "ms": 36.723457999999994
+    },
+    {
+      "id": "upstream-dsse-signature-mutation",
+      "expectedReturned": false,
+      "returned": false,
+      "pass": true,
+      "error": {
+        "code": "TIMESTAMP_ERROR",
+        "message": "timestamp could not be verified"
+      },
+      "ms": 7.899540999999999
+    },
+    {
+      "id": "upstream-rekor-v2-positive",
+      "expectedReturned": true,
+      "returned": true,
+      "pass": true,
+      "ms": 44.87424999999999
+    },
+    {
+      "id": "upstream-rekor-v2-signature-mutation",
+      "expectedReturned": false,
+      "returned": false,
+      "pass": true,
+      "error": {
+        "code": "TIMESTAMP_ERROR",
+        "message": "timestamp could not be verified"
+      },
+      "ms": 2.2680420000000083
+    },
+    {
+      "id": "message-wrong-artifact",
+      "expectedReturned": false,
+      "returned": false,
+      "pass": true,
+      "error": {
+        "code": "SIGNATURE_ERROR",
+        "message": "signature verification failed"
+      },
+      "ms": 13.256542000000024
+    },
+    {
+      "id": "verify-real-positive",
+      "expectedReturned": true,
+      "returned": true,
+      "pass": true,
+      "ms": 5.286082999999991
+    },
+    {
+      "id": "verify-wrong-package-valid-signature",
+      "expectedReturned": false,
+      "returned": false,
+      "pass": true,
+      "error": {
+        "code": "Error",
+        "message": "SUBJECT_NAME_MISMATCH"
+      },
+      "ms": 4.0988749999999925
+    },
+    {
+      "id": "verify-wrong-version-valid-signature",
+      "expectedReturned": false,
+      "returned": false,
+      "pass": true,
+      "error": {
+        "code": "Error",
+        "message": "SUBJECT_NAME_MISMATCH"
+      },
+      "ms": 3.7837920000000054
+    },
+    {
+      "id": "verify-artifact-mutation",
+      "expectedReturned": false,
+      "returned": false,
+      "pass": true,
+      "error": {
+        "code": "Error",
+        "message": "SUBJECT_DIGEST_MISMATCH"
+      },
+      "ms": 3.5664170000000013
+    },
+    {
+      "id": "verify-unexpected-signer",
+      "expectedReturned": false,
+      "returned": false,
+      "pass": true,
+      "error": {
+        "code": "UNTRUSTED_SIGNER_ERROR",
+        "message": "certificate identity error - expected /^https:\\/\\/github\\.com\\/untrusted\\/workflow$/, got https://github.com/sigstore/sigstore-js/.github/workflows/release.yml@refs/heads/main"
+      },
+      "ms": 3.6248329999999953
+    },
+    {
+      "id": "verify-unexpected-issuer",
+      "expectedReturned": false,
+      "returned": false,
+      "pass": true,
+      "error": {
+        "code": "UNTRUSTED_SIGNER_ERROR",
+        "message": "invalid certificate extension - expected issuer=https://issuer.invalid, got issuer=https://token.actions.githubusercontent.com"
+      },
+      "ms": 3.518459000000007
+    },
+    {
+      "id": "verify-missing-oid",
+      "expectedReturned": false,
+      "returned": false,
+      "pass": true,
+      "error": {
+        "code": "UNTRUSTED_SIGNER_ERROR",
+        "message": "invalid certificate extension - missing OID 1.2.3.4.56789"
+      },
+      "ms": 3.6357500000000016
+    },
+    {
+      "id": "verify-payload",
+      "expectedReturned": false,
+      "returned": false,
+      "pass": true,
+      "error": {
+        "code": "TLOG_BODY_ERROR",
+        "message": "DSSE payload hash mismatch"
+      },
+      "ms": 3.522874999999999
+    },
+    {
+      "id": "verify-payloadType",
+      "expectedReturned": false,
+      "returned": false,
+      "pass": true,
+      "error": {
+        "code": "SIGNATURE_ERROR",
+        "message": "signature verification failed"
+      },
+      "ms": 3.2054580000000215
+    },
+    {
+      "id": "verify-signature",
+      "expectedReturned": false,
+      "returned": false,
+      "pass": true,
+      "error": {
+        "code": "TLOG_BODY_ERROR",
+        "message": "tlog entry signature mismatch"
+      },
+      "ms": 3.141290999999967
+    },
+    {
+      "id": "verify-duplicate-log",
+      "expectedReturned": false,
+      "returned": false,
+      "pass": true,
+      "error": {
+        "code": "TIMESTAMP_ERROR",
+        "message": "duplicate timestamp"
+      },
+      "ms": 0.22449999999997772
+    },
+    {
+      "id": "verify-missing-log",
+      "expectedReturned": false,
+      "returned": false,
+      "pass": true,
+      "error": {
+        "code": "TIMESTAMP_ERROR",
+        "message": "expected 1 timestamps, got 0"
+      },
+      "ms": 0.16329200000001265
+    },
+    {
+      "id": "verify-malformed-cert",
+      "expectedReturned": false,
+      "returned": false,
+      "pass": true,
+      "error": {
+        "code": "Error",
+        "message": "length exceeds 6 byte limit"
+      },
+      "ms": 0.026167000000043572
+    },
+    {
+      "id": "verify-unknown-version",
+      "expectedReturned": false,
+      "returned": false,
+      "pass": true,
+      "error": {
+        "code": "Error",
+        "message": "invalid bundle"
+      },
+      "ms": 0.03962500000000091
+    },
+    {
+      "id": "verify-missing-checkpoint",
+      "expectedReturned": false,
+      "returned": false,
+      "pass": true,
+      "error": {
+        "code": "Error",
+        "message": "CHECKPOINT_SHAPE_UNSUPPORTED"
+      },
+      "ms": 0.005084000000010747
+    },
+    {
+      "id": "verify-forged-checkpoint",
+      "expectedReturned": false,
+      "returned": false,
+      "pass": true,
+      "error": {
+        "code": "TLOG_INCLUSION_PROOF_ERROR",
+        "message": "invalid checkpoint signature"
+      },
+      "ms": 3.2045420000000036
+    },
+    {
+      "id": "verify-checkpoint-unsigned-suffix",
+      "expectedReturned": false,
+      "returned": false,
+      "pass": true,
+      "error": {
+        "code": "Error",
+        "message": "CHECKPOINT_SHAPE_UNSUPPORTED"
+      },
+      "ms": 0.005708999999967546
+    },
+    {
+      "id": "verify-forged-time",
+      "expectedReturned": false,
+      "returned": false,
+      "pass": true,
+      "error": {
+        "code": "CERTIFICATE_ERROR",
+        "message": "Failed to verify certificate chain"
+      },
+      "ms": 0.21295800000001464
+    },
+    {
+      "id": "verify-missing-signed-time",
+      "expectedReturned": false,
+      "returned": false,
+      "pass": true,
+      "error": {
+        "code": "TIMESTAMP_ERROR",
+        "message": "expected 1 timestamps, got 0"
+      },
+      "ms": 0.1947080000000483
+    },
+    {
+      "id": "verify-unknown-log-version",
+      "expectedReturned": false,
+      "returned": false,
+      "pass": true,
+      "error": {
+        "code": "TLOG_BODY_ERROR",
+        "message": "kind/version mismatch - expected: dsse/999, received: dsse/0.0.1"
+      },
+      "ms": 3.444999999999993
+    },
+    {
+      "id": "verify-forged-log-body",
+      "expectedReturned": false,
+      "returned": false,
+      "pass": true,
+      "error": {
+        "code": "TLOG_INCLUSION_PROMISE_ERROR",
+        "message": "inclusion promise could not be verified"
+      },
+      "ms": 3.1628749999999854
+    },
+    {
+      "id": "verify-untrusted-roots",
+      "expectedReturned": false,
+      "returned": false,
+      "pass": true,
+      "error": {
+        "code": "CERTIFICATE_ERROR",
+        "message": "Failed to verify certificate chain"
+      },
+      "ms": 0.45445899999998574
+    },
+    {
+      "id": "verify-expired-root-authority",
+      "expectedReturned": false,
+      "returned": false,
+      "pass": true,
+      "error": {
+        "code": "CERTIFICATE_ERROR",
+        "message": "Failed to verify certificate chain"
+      },
+      "ms": 0.33020800000002737
+    },
+    {
+      "id": "verify-ctlogThreshold-enforced",
+      "expectedReturned": false,
+      "returned": false,
+      "pass": true,
+      "error": {
+        "code": "CERTIFICATE_ERROR",
+        "message": "expected 99 SCTs, got 1"
+      },
+      "ms": 3.1149580000000014
+    },
+    {
+      "id": "verify-tlogThreshold-enforced",
+      "expectedReturned": false,
+      "returned": false,
+      "pass": true,
+      "error": {
+        "code": "TLOG_ERROR",
+        "message": "expected 99 tlog entries, got 1"
+      },
+      "ms": 3.2681670000000054
+    },
+    {
+      "id": "verify-timestampThreshold-enforced",
+      "expectedReturned": false,
+      "returned": false,
+      "pass": true,
+      "error": {
+        "code": "TIMESTAMP_ERROR",
+        "message": "expected 99 timestamps, got 1"
+      },
+      "ms": 0.4350000000000023
+    },
+    {
+      "id": "verify-publish-only-not-build",
+      "expectedReturned": false,
+      "returned": false,
+      "pass": true,
+      "error": {
+        "code": "Error",
+        "message": "BUILD_ASSERTION_REQUIRED"
+      },
+      "ms": 0.07962500000002137
+    },
+    {
+      "id": "verify-valid-crypto-wrong-repository",
+      "expectedReturned": false,
+      "returned": false,
+      "pass": true,
+      "error": {
+        "code": "Error",
+        "message": "EVALUATION_EXPECTATION_MISMATCH"
+      },
+      "ms": 3.3734999999999786
+    },
+    {
+      "id": "verify-valid-crypto-wrong-commit",
+      "expectedReturned": false,
+      "returned": false,
+      "pass": true,
+      "error": {
+        "code": "Error",
+        "message": "EVALUATION_EXPECTATION_MISMATCH"
+      },
+      "ms": 3.428250000000048
+    },
+    {
+      "id": "verify-valid-crypto-wrong-workflow",
+      "expectedReturned": false,
+      "returned": false,
+      "pass": true,
+      "error": {
+        "code": "Error",
+        "message": "EVALUATION_EXPECTATION_MISMATCH"
+      },
+      "ms": 3.635166999999967
+    },
+    {
+      "id": "verify-valid-crypto-wrong-builder",
+      "expectedReturned": false,
+      "returned": false,
+      "pass": true,
+      "error": {
+        "code": "Error",
+        "message": "EVALUATION_EXPECTATION_MISMATCH"
+      },
+      "ms": 3.2450000000000045
+    },
+    {
+      "id": "verify-valid-crypto-wrong-build-type",
+      "expectedReturned": false,
+      "returned": false,
+      "pass": true,
+      "error": {
+        "code": "Error",
+        "message": "EVALUATION_EXPECTATION_MISMATCH"
+      },
+      "ms": 3.2333340000000135
+    },
+    {
+      "id": "verify-metadata-commit-agreement",
+      "expectedReturned": true,
+      "returned": true,
+      "pass": true,
+      "ms": 0.012166999999976724
+    },
+    {
+      "id": "core-real-positive",
+      "expectedReturned": true,
+      "returned": true,
+      "pass": true,
+      "ms": 4.065750000000037
+    },
+    {
+      "id": "core-wrong-package-valid-signature",
+      "expectedReturned": false,
+      "returned": false,
+      "pass": true,
+      "error": {
+        "code": "Error",
+        "message": "SUBJECT_NAME_MISMATCH"
+      },
+      "ms": 2.8012919999999895
+    },
+    {
+      "id": "core-wrong-version-valid-signature",
+      "expectedReturned": false,
+      "returned": false,
+      "pass": true,
+      "error": {
+        "code": "Error",
+        "message": "SUBJECT_NAME_MISMATCH"
+      },
+      "ms": 2.92029100000002
+    },
+    {
+      "id": "core-artifact-mutation",
+      "expectedReturned": false,
+      "returned": false,
+      "pass": true,
+      "error": {
+        "code": "Error",
+        "message": "SUBJECT_DIGEST_MISMATCH"
+      },
+      "ms": 2.9745000000000346
+    },
+    {
+      "id": "core-unexpected-signer",
+      "expectedReturned": false,
+      "returned": false,
+      "pass": true,
+      "error": {
+        "code": "UNTRUSTED_SIGNER_ERROR",
+        "message": "certificate identity error - expected /^https:\\/\\/github\\.com\\/untrusted\\/workflow$/, got https://github.com/sigstore/sigstore-js/.github/workflows/release.yml@refs/heads/main"
+      },
+      "ms": 3.009999999999991
+    },
+    {
+      "id": "core-unexpected-issuer",
+      "expectedReturned": false,
+      "returned": false,
+      "pass": true,
+      "error": {
+        "code": "UNTRUSTED_SIGNER_ERROR",
+        "message": "invalid certificate extension - expected issuer=https://issuer.invalid, got issuer=https://token.actions.githubusercontent.com"
+      },
+      "ms": 2.8038329999999974
+    },
+    {
+      "id": "core-missing-oid",
+      "expectedReturned": false,
+      "returned": false,
+      "pass": true,
+      "error": {
+        "code": "UNTRUSTED_SIGNER_ERROR",
+        "message": "invalid certificate extension - missing OID 1.2.3.4.56789"
+      },
+      "ms": 2.872374999999977
+    },
+    {
+      "id": "core-payload",
+      "expectedReturned": false,
+      "returned": false,
+      "pass": true,
+      "error": {
+        "code": "TLOG_BODY_ERROR",
+        "message": "DSSE payload hash mismatch"
+      },
+      "ms": 2.753541000000041
+    },
+    {
+      "id": "core-payloadType",
+      "expectedReturned": false,
+      "returned": false,
+      "pass": true,
+      "error": {
+        "code": "SIGNATURE_ERROR",
+        "message": "signature verification failed"
+      },
+      "ms": 3.262999999999977
+    },
+    {
+      "id": "core-signature",
+      "expectedReturned": false,
+      "returned": false,
+      "pass": true,
+      "error": {
+        "code": "TLOG_BODY_ERROR",
+        "message": "tlog entry signature mismatch"
+      },
+      "ms": 3.14304199999998
+    },
+    {
+      "id": "core-duplicate-log",
+      "expectedReturned": false,
+      "returned": false,
+      "pass": true,
+      "error": {
+        "code": "TIMESTAMP_ERROR",
+        "message": "duplicate timestamp"
+      },
+      "ms": 0.23912499999994452
+    },
+    {
+      "id": "core-missing-log",
+      "expectedReturned": false,
+      "returned": false,
+      "pass": true,
+      "error": {
+        "code": "TIMESTAMP_ERROR",
+        "message": "expected 1 timestamps, got 0"
+      },
+      "ms": 0.13549999999997908
+    },
+    {
+      "id": "core-malformed-cert",
+      "expectedReturned": false,
+      "returned": false,
+      "pass": true,
+      "error": {
+        "code": "Error",
+        "message": "length exceeds 6 byte limit"
+      },
+      "ms": 0.024249999999994998
+    },
+    {
+      "id": "core-unknown-version",
+      "expectedReturned": false,
+      "returned": false,
+      "pass": true,
+      "error": {
+        "code": "Error",
+        "message": "invalid bundle"
+      },
+      "ms": 0.02908300000001418
+    },
+    {
+      "id": "core-missing-checkpoint",
+      "expectedReturned": false,
+      "returned": false,
+      "pass": true,
+      "error": {
+        "code": "Error",
+        "message": "CHECKPOINT_SHAPE_UNSUPPORTED"
+      },
+      "ms": 0.00354200000003857
+    },
+    {
+      "id": "core-forged-checkpoint",
+      "expectedReturned": false,
+      "returned": false,
+      "pass": true,
+      "error": {
+        "code": "TLOG_INCLUSION_PROOF_ERROR",
+        "message": "invalid checkpoint signature"
+      },
+      "ms": 2.811125000000004
+    },
+    {
+      "id": "core-checkpoint-unsigned-suffix",
+      "expectedReturned": false,
+      "returned": false,
+      "pass": true,
+      "error": {
+        "code": "Error",
+        "message": "CHECKPOINT_SHAPE_UNSUPPORTED"
+      },
+      "ms": 0.00437499999998181
+    },
+    {
+      "id": "core-forged-time",
+      "expectedReturned": false,
+      "returned": false,
+      "pass": true,
+      "error": {
+        "code": "CERTIFICATE_ERROR",
+        "message": "Failed to verify certificate chain"
+      },
+      "ms": 0.15220899999997073
+    },
+    {
+      "id": "core-missing-signed-time",
+      "expectedReturned": false,
+      "returned": false,
+      "pass": true,
+      "error": {
+        "code": "TIMESTAMP_ERROR",
+        "message": "expected 1 timestamps, got 0"
+      },
+      "ms": 0.14504099999999198
+    },
+    {
+      "id": "core-unknown-log-version",
+      "expectedReturned": false,
+      "returned": false,
+      "pass": true,
+      "error": {
+        "code": "TLOG_BODY_ERROR",
+        "message": "kind/version mismatch - expected: dsse/999, received: dsse/0.0.1"
+      },
+      "ms": 2.8193750000000364
+    },
+    {
+      "id": "core-forged-log-body",
+      "expectedReturned": false,
+      "returned": false,
+      "pass": true,
+      "error": {
+        "code": "TLOG_INCLUSION_PROMISE_ERROR",
+        "message": "inclusion promise could not be verified"
+      },
+      "ms": 2.6865420000000313
+    },
+    {
+      "id": "core-untrusted-roots",
+      "expectedReturned": false,
+      "returned": false,
+      "pass": true,
+      "error": {
+        "code": "CERTIFICATE_ERROR",
+        "message": "Failed to verify certificate chain"
+      },
+      "ms": 0.19325000000003456
+    },
+    {
+      "id": "core-expired-root-authority",
+      "expectedReturned": false,
+      "returned": false,
+      "pass": true,
+      "error": {
+        "code": "CERTIFICATE_ERROR",
+        "message": "Failed to verify certificate chain"
+      },
+      "ms": 0.24425000000002228
+    },
+    {
+      "id": "core-ctlogThreshold-enforced",
+      "expectedReturned": false,
+      "returned": false,
+      "pass": true,
+      "error": {
+        "code": "CERTIFICATE_ERROR",
+        "message": "expected 99 SCTs, got 1"
+      },
+      "ms": 2.805084000000022
+    },
+    {
+      "id": "core-tlogThreshold-enforced",
+      "expectedReturned": false,
+      "returned": false,
+      "pass": true,
+      "error": {
+        "code": "TLOG_ERROR",
+        "message": "expected 99 tlog entries, got 1"
+      },
+      "ms": 2.984458000000018
+    },
+    {
+      "id": "core-timestampThreshold-enforced",
+      "expectedReturned": false,
+      "returned": false,
+      "pass": true,
+      "error": {
+        "code": "TIMESTAMP_ERROR",
+        "message": "expected 99 timestamps, got 1"
+      },
+      "ms": 0.23954200000002857
+    },
+    {
+      "id": "core-publish-only-not-build",
+      "expectedReturned": false,
+      "returned": false,
+      "pass": true,
+      "error": {
+        "code": "Error",
+        "message": "BUILD_ASSERTION_REQUIRED"
+      },
+      "ms": 0.034874999999999545
+    },
+    {
+      "id": "core-valid-crypto-wrong-repository",
+      "expectedReturned": false,
+      "returned": false,
+      "pass": true,
+      "error": {
+        "code": "Error",
+        "message": "EVALUATION_EXPECTATION_MISMATCH"
+      },
+      "ms": 3.7203329999999823
+    },
+    {
+      "id": "core-valid-crypto-wrong-commit",
+      "expectedReturned": false,
+      "returned": false,
+      "pass": true,
+      "error": {
+        "code": "Error",
+        "message": "EVALUATION_EXPECTATION_MISMATCH"
+      },
+      "ms": 2.9031250000000455
+    },
+    {
+      "id": "core-valid-crypto-wrong-workflow",
+      "expectedReturned": false,
+      "returned": false,
+      "pass": true,
+      "error": {
+        "code": "Error",
+        "message": "EVALUATION_EXPECTATION_MISMATCH"
+      },
+      "ms": 2.9309160000000247
+    },
+    {
+      "id": "core-valid-crypto-wrong-builder",
+      "expectedReturned": false,
+      "returned": false,
+      "pass": true,
+      "error": {
+        "code": "Error",
+        "message": "EVALUATION_EXPECTATION_MISMATCH"
+      },
+      "ms": 2.8562499999999886
+    },
+    {
+      "id": "core-valid-crypto-wrong-build-type",
+      "expectedReturned": false,
+      "returned": false,
+      "pass": true,
+      "error": {
+        "code": "Error",
+        "message": "EVALUATION_EXPECTATION_MISMATCH"
+      },
+      "ms": 2.992958999999985
+    },
+    {
+      "id": "core-metadata-commit-agreement",
+      "expectedReturned": true,
+      "returned": true,
+      "pass": true,
+      "ms": 0.002583000000015545
+    },
+    {
+      "id": "bounded-json-size",
+      "expectedReturned": false,
+      "returned": false,
+      "pass": true,
+      "error": {
+        "code": "Error",
+        "message": "MANIFEST_SIZE_LIMIT"
+      },
+      "ms": 0.06854099999998198
+    },
+    {
+      "id": "bounded-json-depth",
+      "expectedReturned": false,
+      "returned": false,
+      "pass": true,
+      "error": {
+        "code": "Error",
+        "message": "MANIFEST_STRUCTURE_LIMIT"
+      },
+      "ms": 0.0422500000000241
+    },
+    {
+      "id": "duplicate-json-key",
+      "expectedReturned": false,
+      "returned": false,
+      "pass": true,
+      "error": {
+        "code": "Error",
+        "message": "MANIFEST_DUPLICATE_KEY"
+      },
+      "ms": 0.011209000000008018
+    }
+  ],
+  "passed": true,
+  "resourceUsage": {
+    "userCPUTime": 322944,
+    "systemCPUTime": 26964,
+    "maxRSS": 76560,
+    "sharedMemorySize": 0,
+    "unsharedDataSize": 0,
+    "unsharedStackSize": 0,
+    "minorPageFault": 6036,
+    "majorPageFault": 47,
+    "swappedOut": 0,
+    "fsRead": 0,
+    "fsWrite": 0,
+    "ipcSent": 0,
+    "ipcReceived": 0,
+    "signalsCount": 0,
+    "voluntaryContextSwitches": 108,
+    "involuntaryContextSwitches": 1376
+  },
+  "limitations": [
+    "Isolated development tool evaluation, not production admission or independent trust review.",
+    "Upstream fixture roots are caller-supplied evaluation inputs, not authenticated production bootstrap.",
+    "Two real npm positives are from one upstream project/provider; not population accuracy or independent labels.",
+    "Field policy mismatch probes are an evaluation harness, not a production policy evaluator.",
+    "No target package or build code executed; verifier tool and inspected upstream fixture modules only.",
+    "Linux/resource/cancellation/root-freshness and full mandatory admission matrix still require review."
+  ]
+}

@@ -8,9 +8,9 @@ import {EvidenceStore,configuredAnalysisSelection,loadConfiguredAnalysisModule,i
 async function selected(value,work){const prior=process.env.HEURISKO_ANALYSIS_MODULE;try{if(value===undefined)delete process.env.HEURISKO_ANALYSIS_MODULE;else process.env.HEURISKO_ANALYSIS_MODULE=value;return await work();}finally{if(prior===undefined)delete process.env.HEURISKO_ANALYSIS_MODULE;else process.env.HEURISKO_ANALYSIS_MODULE=prior;}}
 async function emptyStore(t){const root=await fs.mkdtemp(join(await fs.realpath(tmpdir()),'heurisko-module-selector-'));t.after(()=>fs.rm(root,{recursive:true,force:true}));return new EvidenceStore(join(root,'store'));}
 test('host selector defaults to the reviewed identifier and explicit off is unavailable',async t=>{
-  assert.equal(REVIEWED_INTELLIGENCE_SELECTOR,'55240e9');assert.match(REVIEWED_INTELLIGENCE_COMMIT,/^55240e9[a-f0-9]{33}$/);
+  assert.equal(REVIEWED_INTELLIGENCE_SELECTOR,'p2-static-v1');assert.match(REVIEWED_INTELLIGENCE_COMMIT,/^55240e9[a-f0-9]{33}$/);
   const store=await emptyStore(t);
-  for(const value of [undefined,''])await selected(value,async()=>{assert.equal(configuredAnalysisSelection(),'55240e9');assert.equal((await loadConfiguredAnalysisModule({store})).moduleVersion,'0.1.0-55240e9');});
+  for(const value of [undefined,''])await selected(value,async()=>{assert.equal(configuredAnalysisSelection(),'p2-static-v1');assert.equal((await loadConfiguredAnalysisModule({store})).moduleVersion,'0.2.0-p2-static-v1');});
   await selected('off',async()=>{assert.equal(configuredAnalysisSelection(),undefined);assert.equal(await loadConfiguredAnalysisModule({store}),undefined);});
   for(const value of ['55240e9 ','55240e9\n','latest','../../module.js','e8b8116'])assert.throws(()=>configuredAnalysisSelection(value),/ANALYSIS_MODULE_SELECTOR_REJECTED/);
   await assert.rejects(fs.stat(store.root),{code:'ENOENT'});

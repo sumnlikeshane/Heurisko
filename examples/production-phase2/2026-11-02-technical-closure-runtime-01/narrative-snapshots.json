@@ -1,0 +1,17 @@
+{
+  "scope": "Exact mutable-draft bytes captured by the source-exclusion ledger, retained separately from final results. The old draft wording index bytes meant cached staged diff, not physical .git/index bytes; the final report clarifies it. These are not new executions or final acceptance claims.",
+  "snapshots": [
+    {
+      "originalPath": "examples/production-phase2/2026-11-02-technical-closure-runtime-01/REPORT.md",
+      "exclusionLedgerSha256": "798572a3f3f4c6dfbc2a9afea71d8b702e3efb02a64f7c563c3898b5be2b091e",
+      "retainedSnapshot": "examples/production-phase2/2026-11-02-technical-closure-runtime-01/source-selection-report-draft.txt",
+      "exactBytesMatched": true
+    },
+    {
+      "originalPath": "examples/production-phase2/2026-11-02-technical-closure-native-01/README.md",
+      "exclusionLedgerSha256": "ef486d0a3fedb4405abfade9b9a28033fcbc7e73976b4fb81fd8e2ffc5409799",
+      "retainedSnapshot": "examples/production-phase2/2026-11-02-technical-closure-runtime-01/source-selection-native-readme.txt",
+      "exactBytesMatched": true
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "version": "heurisko-controlled-signatures-v1",
+  "revision": 2,
+  "certificateEncoding": "Minimal positive DER INTEGER serials and RFC5280 UTCTime through 2049; construction self-checks Node X509 signatures and validity dates.",
+  "origin": "Authored inert controlled fixtures; TEST ONLY anchors; not npm publisher evidence.",
+  "node": "v22.23.4",
+  "openssl": "3.5.9",
+  "generatorSha256": "38b90b4508017e85e29bc0c7bd8e187eaf962290a732b6d352136e9c6c6b11cd",
+  "lockSha256": "2726d3c3794d9eab8de5ef47b0ad9254b638808a3440334b81f5114a0c22284e",
+  "createdAt": "2026-11-02T12:25:21.006Z",
+  "keys": "Ephemeral P-256 leaf/CA/CT/Rekor and Ed25519 per TUF role, never serialized; only public certificates/anchors retained.",
+  "rights": "Original Heurisko fixture construction and inert bytes under repository Apache-2.0; no third-party package code included. Verifier dependencies retain their separate notices.",
+  "files": {
+    "artifact.tgz": "52d4e00571a051b9222d10eec019bff7c9ff8dff68ad7606a5dcf2ff8fbe14a5",
+    "bootstrap.json": "512a0a6d3ebef7002a50ddb1c6fe7707c6ba653d02b523f31c0867697ac467a9",
+    "cases.json": "547076114c81b8e711839126b782761662f454090631ec59816b0b88b3db8beb",
+    "digests.json": "6cace9e1944ccae5c2e05bbb7d73555b7da52fda7ef255a5308c4284e545a41c",
+    "expired-snapshot.json": "c64da62861c7583c873388e1de9561822048cf1dac06607d0c3856d05d49ff97",
+    "policy.json": "6fce503145deb04685a9a67dcd630b0590320cf73bcef3626c6f63043e9d6a6b",
+    "snapshot.json": "cf1ca9998bb74e086d0fd806e5fbb43b8aa52371ac6f027f23ade2affceb6a82",
+    "source.tgz": "4cffef3c405f208cb4eb1a1870d47adae2126196cc9d2ed8af4c9ceb39f75c71",
+    "trusted-root.json": "0647990bcd752919c7e8c095a090dd65942c18dd8d9885f718c7681984ddcbb3"
+  },
+  "cases": [
+    {
+      "id": "positive-0-0-1",
+      "expected": {
+        "status": "verified_policy",
+        "policyResult": "pass",
+        "artifactBinding": "matched"
+      },
+      "cryptoRequired": false
+    },
+    {
+      "id": "wrong-signer-0-0-1",
+      "expected": {
+        "status": "verified_cryptographic_only",
+        "policyResult": "violation",
+        "artifactBinding": "matched"
+      },
+      "cryptoRequired": true
+    },
+    {
+      "id": "wrong-issuer-0-0-1",
+      "expected": {
+        "status": "verified_cryptographic_only",
+        "policyResult": "violation",
+        "artifactBinding": "matched"
+      },
+      "cryptoRequired": true
+    },
+    {
+      "id": "wrong-builder-0-0-1",
+      "expected": {
+        "status": "verified_cryptographic_only",
+        "policyResult": "violation",
+        "artifactBinding": "matched"
+      },
+      "cryptoRequired": true
+    },
+    {
+      "id": "wrong-workflow-0-0-1",
+      "expected": {
+        "status": "verified_cryptographic_only",
+        "policyResult": "violation",
+        "artifactBinding": "matched"
+      },
+      "cryptoRequired": true
+    },
+    {
+      "id": "wrong-source-0-0-1",
+      "expected": {
+        "status": "verified_cryptographic_only",
+        "policyResult": "violation",
+        "artifactBinding": "matched"
+      },
+      "cryptoRequired": true
+    },
+    {
+      "id": "wrong-subject-name-0-0-1",
+      "expected": {
+        "status": "invalid",
+        "policyResult": "violation",
+        "artifactBinding": "mismatched"
+      },
+      "cryptoRequired": true
+    },
+    {
+      "id": "wrong-subject-digest-0-0-1",
+      "expected": {
+        "status": "invalid",
+        "policyResult": "violation",
+        "artifactBinding": "mismatched"
+      },
+      "cryptoRequired": true
+    },
+    {
+      "id": "conflict-0-0-1",
+      "expected": {
+        "status": "unresolved",
+        "policyResult": "indeterminate",
+        "reason": "ASSERTIONS_CONFLICT"
+      },
+      "cryptoRequired": true
+    },
+    {
+      "id": "bad-signature-0-0-1",
+      "expected": {
+        "status": "invalid",
+        "policyResult": "violation"
+      },
+      "cryptoRequired": false
+    },
+    {
+      "id": "unsupported-0-0-1",
+      "expected": {
+        "status": "unresolved",
+        "policyResult": "indeterminate"
+      },
+      "cryptoRequired": false
+    },
+    {
+      "id": "positive-after-0-0-1",
+      "expected": {
+        "status": "verified_policy",
+        "policyResult": "pass",
+        "artifactBinding": "matched"
+      },
+      "cryptoRequired": false
+    },
+    {
+      "id": "positive-0-0-2",
+      "expected": {
+        "status": "verified_policy",
+        "policyResult": "pass",
+        "artifactBinding": "matched"
+      },
+      "cryptoRequired": false
+    },
+    {
+      "id": "wrong-signer-0-0-2",
+      "expected": {
+        "status": "verified_cryptographic_only",
+        "policyResult": "violation",
+        "artifactBinding": "matched"
+      },
+      "cryptoRequired": true
+    },
+    {
+      "id": "wrong-issuer-0-0-2",
+      "expected": {
+        "status": "verified_cryptographic_only",
+        "policyResult": "violation",
+        "artifactBinding": "matched"
+      },
+      "cryptoRequired": true
+    },
+    {
+      "id": "wrong-builder-0-0-2",
+      "expected": {
+        "status": "verified_cryptographic_only",
+        "policyResult": "violation",
+        "artifactBinding": "matched"
+      },
+      "cryptoRequired": true
+    },
+    {
+      "id": "wrong-workflow-0-0-2",
+      "expected": {
+        "status": "verified_cryptographic_only",
+        "policyResult": "violation",
+        "artifactBinding": "matched"
+      },
+      "cryptoRequired": true
+    },
+    {
+      "id": "wrong-source-0-0-2",
+      "expected": {
+        "status": "verified_cryptographic_only",
+        "policyResult": "violation",
+        "artifactBinding": "matched"
+      },
+      "cryptoRequired": true
+    },
+    {
+      "id": "wrong-subject-name-0-0-2",
+      "expected": {
+        "status": "invalid",
+        "policyResult": "violation",
+        "artifactBinding": "mismatched"
+      },
+      "cryptoRequired": true
+    },
+    {
+      "id": "wrong-subject-digest-0-0-2",
+      "expected": {
+        "status": "invalid",
+        "policyResult": "violation",
+        "artifactBinding": "mismatched"
+      },
+      "cryptoRequired": true
+    },
+    {
+      "id": "conflict-0-0-2",
+      "expected": {
+        "status": "unresolved",
+        "policyResult": "indeterminate",
+        "reason": "ASSERTIONS_CONFLICT"
+      },
+      "cryptoRequired": true
+    },
+    {
+      "id": "bad-signature-0-0-2",
+      "expected": {
+        "status": "invalid",
+        "policyResult": "violation"
+      },
+      "cryptoRequired": false
+    },
+    {
+      "id": "unsupported-0-0-2",
+      "expected": {
+        "status": "unresolved",
+        "policyResult": "indeterminate"
+      },
+      "cryptoRequired": false
+    },
+    {
+      "id": "positive-after-0-0-2",
+      "expected": {
+        "status": "verified_policy",
+        "policyResult": "pass",
+        "artifactBinding": "matched"
+      },
+      "cryptoRequired": false
+    }
+  ],
+  "limitations": [
+    "One-leaf valid Merkle tree; larger-tree cryptographic negatives retain genuine npm lane.",
+    "Controlled keys do not establish third-party issuer/publisher identity or real npm dsse 0.0.2 usage."
+  ]
+}

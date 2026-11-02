@@ -7,8 +7,9 @@ import { spawnSync } from 'node:child_process';
 import { localDockerArgs,parserContainerArguments,safetyProfile,sha256,writeImmutable } from '../packages/core/dist/index.js';
 const parent=await fs.mkdtemp(join(await fs.realpath(tmpdir()),'heurisko-parser-probe-'));
 const limits={...safetyProfile.archive,...safetyProfile.parser};
-const run=(args)=>spawnSync('docker',localDockerArgs(args),{encoding:'utf8',timeout:10000,maxBuffer:8192,env:{PATH:process.env.PATH,HOME:process.env.HOME}});
 const results=[];
+let retained=false;
+const errorCode=error=>error instanceof Error&&/^[A-Z_]+$/.test(error.message)?error.message:'PROBE_CONTROL_FAILED';
 try {
  for(const mode of ['memory-network-mounts','cpu']) {
   const directory=join(parent,mode);await fs.mkdir(directory,{mode:0o700});
@@ -16,14 +17,42 @@ try {
   const sentinel=join(parent,'host-private-sentinel');await fs.writeFile(sentinel,'INERT_PRIVATE_SENTINEL');
   const python=mode==='cpu'?`import resource,json\nresource.setrlimit(resource.RLIMIT_CPU,(1,1))\nprint(json.dumps({'cpuStarted':True}),flush=True)\nwhile True: pass\n`:`import resource,json,socket,os\nresource.setrlimit(resource.RLIMIT_AS,(${limits.memoryBytes},${limits.memoryBytes}))\nr={'memoryLimit':${limits.memoryBytes},'hostSentinelVisible':os.path.exists(${JSON.stringify(sentinel)}),'dockerSocketVisible':os.path.exists('/var/run/docker.sock')}\ntry: bytearray(512*1024*1024);r['oversizeAllocationBlocked']=False\nexcept MemoryError:r['oversizeAllocationBlocked']=True\ns=socket.socket();s.settimeout(0.2)\ntry:s.connect(('203.0.113.1',9));r['egressBlocked']=False\nexcept OSError:r['egressBlocked']=True\nfor key,path in [('rootWriteBlocked','/tmp/heurisko-probe'),('inputWriteBlocked','/input.tar'),('workerWriteBlocked','/worker.py')]:\n try:\n  with open(path,'wb') as f:f.write(b'INERT')\n  r[key]=False\n except OSError:r[key]=True\nprint(json.dumps(r),flush=True)\n`;
   await fs.writeFile(worker,python);await fs.chmod(worker,0o444);
-  const name='heurisko-parser-'+randomUUID();
+  const name='heurisko-parser-'+randomUUID(),controls=[];
+  let id,creationRequested=false,cleanupConfirmed=false,facts,error,cleanupError;
+  const startedAt=performance.now();
+  const run=(args,timeout=limits.controlTimeoutMs)=>{
+   const start=performance.now(),result=spawnSync('docker',localDockerArgs(args),{encoding:'utf8',timeout,maxBuffer:8192,env:{PATH:process.env.PATH,HOME:process.env.HOME}});
+   controls.push({operation:args[0],durationMs:Math.round(performance.now()-start),limitMs:timeout,exitCode:result.status,signal:result.signal,error:result.error?.code??null,stderr:result.stderr??''});
+   return result;
+  };
   try {
-   const create=run(parserContainerArguments({worker,input,output},limits,name,sha256(parent).slice(7)));if(create.status!==0)throw new Error('PROBE_CREATE_FAILED');
-   const started=run(['start','--attach',name]);
-   if(mode==='cpu'){if(started.status!==137||!started.stdout.includes('cpuStarted'))throw new Error('CPU_LIMIT_NOT_ENFORCED');results.push({probe:mode,exitCode:started.status,cpuHardLimitSeconds:1,wholeJobTerminated:true});}
-   else {if(started.status!==0)throw new Error('PROBE_FAILED');const facts=JSON.parse(started.stdout);if(Object.entries(facts).some(([key,value])=>key.endsWith('Blocked')?!value:key.endsWith('Visible')?value:false))throw new Error('BOUNDARY_NOT_ENFORCED');results.push({probe:mode,...facts});}
-  } finally {const removed=run(['rm','-f',name]);if(removed.status!==0)throw new Error('PROBE_CLEANUP_FAILED');}
+   creationRequested=true;
+   const create=run(parserContainerArguments({worker,input,output},limits,name,sha256(parent).slice(7)),limits.createTimeoutMs);
+   if(create.status!==0||!/^[a-f0-9]{64}\s*$/.test(create.stdout??''))throw new Error('PROBE_CREATE_UNCONFIRMED');
+   id=create.stdout.trim();
+   const remaining=Math.floor(limits.wallMs-(performance.now()-startedAt));
+   if(remaining<=0)throw new Error('PROBE_TIMEOUT');
+   const started=run(['start','--attach',id],remaining);
+   if(mode==='cpu'){if(started.status!==137||!started.stdout.includes('cpuStarted'))throw new Error('CPU_LIMIT_NOT_ENFORCED');facts={exitCode:started.status,cpuHardLimitSeconds:1,wholeJobTerminated:true};}
+   else {if(started.status!==0)throw new Error('PROBE_FAILED');facts=JSON.parse(started.stdout);if(Object.entries(facts).some(([key,value])=>key.endsWith('Blocked')?!value:key.endsWith('Visible')?value:false))throw new Error('BOUNDARY_NOT_ENFORCED');}
+  } catch(e){error=errorCode(e);}
+  finally {
+   if(id){
+    const removed=run(['rm','-f',id]);
+    if(removed.status!==0)cleanupError='PROBE_REMOVE_FAILED';
+    // A failed client and observed exact daemon absence are independent facts.
+    // Never infer absence from localized stderr, a name or a partial ID.
+    const absent=run(['container','ls','--all','--quiet','--no-trunc','--filter','id='+id]);
+    cleanupConfirmed=absent.status===0&&(absent.stdout??'').trim()==='';
+    if(!cleanupConfirmed)cleanupError??='PROBE_CLEANUP_UNCONFIRMED';
+   }
+   if(creationRequested&&!cleanupConfirmed)retained=true;
+   results.push({probe:mode,...facts,containerName:name,containerId:id??null,creationRequested,cleanupConfirmed,controls,...(error?{error}:{}),...(cleanupError?{cleanupError}:{})});
+  }
+  if(error||cleanupError)break;
  }
- const result={version:'heurisko-parser-boundary-check-v1',observedAt:new Date().toISOString(),image:safetyProfile.parser.image,scope:'trusted development resource probes, not target/rebuild execution',results};
+ const passed=results.length===2&&results.every(r=>!r.error&&!r.cleanupError&&r.cleanupConfirmed);
+ const result={version:'heurisko-parser-boundary-check-v1',observedAt:new Date().toISOString(),image:safetyProfile.parser.image,scope:'trusted development resource probes, not target/rebuild execution',passed,...(retained?{retainedPath:parent,limitation:'Creation or exact cleanup remains uncertain. Mounted inputs are retained for explicit inspection; no lock or spool deletion is inferred.'}:{}),results};
  if(process.argv[2])await writeImmutable(resolve(process.argv[2]),Buffer.from(JSON.stringify(result,null,2)+'\n'));console.log(JSON.stringify(result,null,2));
-} finally {await fs.rm(parent,{recursive:true,force:true});}
+ if(!passed)process.exitCode=1;
+} finally {if(!retained)await fs.rm(parent,{recursive:true,force:true});}

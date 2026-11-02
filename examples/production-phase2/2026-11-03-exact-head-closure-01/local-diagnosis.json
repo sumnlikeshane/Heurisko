@@ -1,0 +1,17 @@
+{
+  "capturedAt": "2026-11-02T18:34:27.408931+00:00",
+  "sourceCommit": "60e9f40ddb210095637d6689a3422ad8696ffb87",
+  "firstCoreAttempt": {
+    "tests": 209,
+    "passed": 156,
+    "failed": 53,
+    "allFailureCode": "PARSER_CLEANUP_UNCONFIRMED",
+    "diagnosis": "Sandbox denied the fixed local Docker socket; direct Docker info returned operation not permitted. Failures are retained, not a full suite pass."
+  },
+  "unrestrictedProbe": {
+    "observation": "Two task-owned Docker info processes did not return for almost three minutes and were terminated with SIGTERM. No core/parser rerun started because the prerequisite did not pass.",
+    "exit": 143,
+    "scope": "Local Darwin ARM Docker capability remains unavailable; no Docker restart, container removal, store or lock deletion was performed."
+  },
+  "remoteRoute": "PR #7 exact-head CI/native workflows now executing; local failure cannot establish their result."
+}

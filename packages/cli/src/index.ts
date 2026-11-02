@@ -18,11 +18,11 @@ Options:
   --store DIR            Evidence store (default .heurisko)
   --report FILE          Save immutable validated report JSON
   --bundle FILE          Save real importable EvidenceBundle JSON
-  --policy REF           Requested policy; indeterminate until evaluator exists
+  --policy REF           Trusted host catalog policy key; unknown is indeterminate
   --json                 One JSON result on stdout; progress on stderr
   --no-ai --no-color     Keep AI disabled / use inert uncolored output
 Exact public npm releases and local tar/tar.gz use the same static producer.
-Provenance is not checked: no admitted verifier. No target code is executed.
+Optional provenance/policy checks require a trusted host catalog. No target code is executed.
 Model inference is unavailable and disabled by default. --no-ai remains accepted.
 No monitor or TUI export yet. Saved reports remain historical.
 Exit: 0 completed checks; 1 configured violation; 2 incomplete; 3 no usable report.

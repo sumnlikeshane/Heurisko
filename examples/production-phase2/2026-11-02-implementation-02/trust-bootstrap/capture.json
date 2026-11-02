@@ -1,0 +1,16 @@
+{
+  "capturedAt": "2026-11-02T07:14:35.619992+00:00",
+  "rootVersion": 16,
+  "snapshotVersion": 166,
+  "targetsVersion": 14,
+  "timestampVersion": 823,
+  "files": {
+    "14.targets.json": "6a697f7f8908c8ab26c11786ecb490b54acec97fa8c802e399f065f8a0cc1acd",
+    "166.snapshot.json": "6d61405faa993ba3d07556b79d1e319627cdc06ff879a7b5700967dc25d1d224",
+    "bootstrap-root.json": "73747011d0857ada15479a16c4cae0f3ed03aac698b523b97e1de314ac9d9ca8",
+    "timestamp.json": "edfb68e7f2538b7aa4f6adb6bd9419cc42c82f3c80486bd081160c12f5e759d6",
+    "16.root.json": "27aea7e372aa7864065174f0661784fcf8b0e28b1dbfebeada31a0f1fb19167f",
+    "seeds.json": "a53802df73a833a0b7e59c93f238599cd547f6ec746eea105548b3eb81f32131",
+    "targets/6494e21ea73fa7ee769f85f57d5a3e6a08725eae1e38c755fc3517c9e6bc0b66.trusted_root.json": "6494e21ea73fa7ee769f85f57d5a3e6a08725eae1e38c755fc3517c9e6bc0b66"
+  }
+}

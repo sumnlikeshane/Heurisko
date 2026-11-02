@@ -1,0 +1,103 @@
+{
+  "profile": "npm-gha-slsa-v1-draft.2",
+  "results": [
+    {
+      "id": "exact",
+      "pass": true,
+      "profile": "npm-gha-slsa-v1-draft.2",
+      "decisionReason": "ASSERTIONS_VERIFIED",
+      "expectedProvenance": "verified_policy",
+      "expectedPolicy": "pass",
+      "reportSha256": "sha256:a7e1761397657f6fe3ce138bb6ff6a4798f82039fd1f852ecb80ed0f30f9495a",
+      "outcomes": {
+        "artifactIntegrity": "matched",
+        "sourceAssociation": "publisher_asserted",
+        "provenancePolicy": "verified_policy",
+        "correspondence": "unresolved",
+        "analysisCompleteness": "incomplete",
+        "policyResult": "pass"
+      },
+      "cliExit": 2
+    },
+    {
+      "id": "wrong-builder",
+      "pass": true,
+      "profile": "npm-gha-slsa-v1-draft.2",
+      "decisionReason": "EXPECTATION_MISMATCH",
+      "expectedProvenance": "verified_cryptographic_only",
+      "expectedPolicy": "violation",
+      "reportSha256": "sha256:f25f53adfeee00a3c7dd6ec4d1ed20750330bb056d0039ff6fc944beb03c4fd3",
+      "outcomes": {
+        "artifactIntegrity": "matched",
+        "sourceAssociation": "publisher_asserted",
+        "provenancePolicy": "verified_cryptographic_only",
+        "correspondence": "unresolved",
+        "analysisCompleteness": "incomplete",
+        "policyResult": "violation"
+      },
+      "cliExit": 1
+    },
+    {
+      "id": "unknown",
+      "pass": true,
+      "profile": null,
+      "decisionReason": "POLICY_UNKNOWN",
+      "expectedProvenance": "unresolved",
+      "expectedPolicy": "indeterminate",
+      "reportSha256": "sha256:ab18a62e2136ea9bd758e9e8def41fc8e9495e80108deadeba2509e07ebe0d31",
+      "outcomes": {
+        "artifactIntegrity": "matched",
+        "sourceAssociation": "publisher_asserted",
+        "provenancePolicy": "unresolved",
+        "correspondence": "unresolved",
+        "analysisCompleteness": "incomplete",
+        "policyResult": "indeterminate"
+      },
+      "cliExit": 2
+    },
+    {
+      "id": "crypto-only",
+      "pass": true,
+      "profile": "npm-gha-slsa-v1-draft.2",
+      "decisionReason": "ASSERTIONS_VERIFIED",
+      "expectedProvenance": "verified_cryptographic_only",
+      "expectedPolicy": "not_evaluated",
+      "reportSha256": "sha256:bc25a459f3a0aefe6cb29e964273de02dd4f9176e9390226a3f2bfe908c63eb3",
+      "outcomes": {
+        "artifactIntegrity": "matched",
+        "sourceAssociation": "publisher_asserted",
+        "provenancePolicy": "verified_cryptographic_only",
+        "correspondence": "unresolved",
+        "analysisCompleteness": "incomplete",
+        "policyResult": "not_evaluated"
+      },
+      "cliExit": 2
+    },
+    {
+      "id": "oversized",
+      "pass": true,
+      "profile": null,
+      "decisionReason": "VERIFIER_INPUT_LIMIT",
+      "expectedProvenance": "unresolved",
+      "expectedPolicy": "indeterminate",
+      "reportSha256": "sha256:f426592acc1af59f6baedb9717fab079480a9014baaa92750fb063d5e6fe50d3",
+      "outcomes": {
+        "artifactIntegrity": "matched",
+        "sourceAssociation": "publisher_asserted",
+        "provenancePolicy": "unresolved",
+        "correspondence": "unresolved",
+        "analysisCompleteness": "incomplete",
+        "policyResult": "indeterminate"
+      },
+      "cliExit": 2
+    }
+  ],
+  "passed": true,
+  "sourceUnavailableFixture": true,
+  "limitations": [
+    "An explicitly source-unavailable replay retains missing raw source/completeness; signed expected-source claims never become raw byte correspondence.",
+    "Original retained HTTP bodies replayed through actual acquisition/producer/parser/evaluator; not a fresh network observation.",
+    "The repository-root Rollup policy is an explicit fixture; source identity expectation is cross-checked against original exact release metadata and commit capture.",
+    "CLI inspect reads actual evaluator output and does not reconstruct policy decisions."
+  ]
+}

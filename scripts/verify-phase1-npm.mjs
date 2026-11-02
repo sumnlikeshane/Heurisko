@@ -5,6 +5,7 @@ import {resolve} from 'node:path';
 import {decodeReportBytes,sha256,exitCode,EvidenceStore} from '../packages/core/dist/index.js';
 import {ReportReader} from '../integration/part4/dist/report-reader.js';
 import {openObservation} from '../apps/web/dist/observation.js';
+import {comparableNpmFindings} from './phase1-npm-parity.mjs';
 const args=process.argv.slice(2);if(args.length!==3)throw Error('Expected default, no-AI and raw report paths');
 const cases=[];
 for(const path of args) {
@@ -24,6 +25,7 @@ const {evidenceSnapshotSha256:noAISnapshot,...noAISettings}=noAI.configuration;
 assert.deepEqual(normalSettings,noAISettings);
 if(normalSnapshot===noAISnapshot)assert.equal(normal.report.reportId,noAI.report.reportId);
 else assert.notEqual(normal.report.reportId,noAI.report.reportId);
-assert.deepEqual(normal.report.outcomes,noAI.report.outcomes);assert.deepEqual(normal.report.analysis.findings,noAI.report.analysis.findings);
+assert.deepEqual(normal.report.outcomes,noAI.report.outcomes);
+assert.deepEqual(await comparableNpmFindings(normal.report,new EvidenceStore(resolve(args[0].replace(/\.report\.json$/, '-store')))),await comparableNpmFindings(noAI.report,new EvidenceStore(resolve(args[1].replace(/\.report\.json$/, '-store')))));
 assert.equal(raw.report.bundle.artifact.observedSha256,normal.report.bundle.artifact.observedSha256);assert.equal(raw.report.analysis.findings.length,0);assert.equal(raw.report.outcomes.analysisCompleteness,'incomplete');assert.equal(exitCode(raw.report),2);assert.notEqual(raw.report.reportId,normal.report.reportId);
-console.log(JSON.stringify({defaultNoAIOptionsModuleOutcomesFindingsEqual:true,reportIdentityEqual:normal.report.reportId===noAI.report.reportId,acquisitionSnapshots:{normal:normalSnapshot,noAI:noAISnapshot},identityReason:normalSnapshot===noAISnapshot?'Same configuration and acquisition snapshot':'Changed exact acquisition snapshot, including observed HTTP facts, legitimately changes identity; no report normalized or rewritten',rawRemainsIncomplete:true,cases:cases.map(({report,configuration,...rest})=>({...rest,reportId:report.reportId,artifactSha256:report.bundle.artifact.observedSha256,outcomes:report.outcomes,findings:report.analysis.findings.length,exit:exitCode(report)}))},null,2));
+console.log(JSON.stringify({defaultNoAISettingsOutcomesFindingFactsAndCitationsEquivalent:true,citationComparison:'Each original report/store validated independently. Compare complete finding facts and cited descriptors/content; only numeric x-ratelimit-remaining/reset values inside version-tag source claims are projected for parity. Finding/citation identity remains observation-specific.',reportIdentityEqual:normal.report.reportId===noAI.report.reportId,acquisitionSnapshots:{normal:normalSnapshot,noAI:noAISnapshot},identityReason:normalSnapshot===noAISnapshot?'Same configuration and acquisition snapshot':'Changed exact acquisition snapshot, including observed HTTP facts, legitimately changes identity; no report normalized or rewritten',rawRemainsIncomplete:true,cases:cases.map(({report,configuration,...rest})=>({...rest,reportId:report.reportId,artifactSha256:report.bundle.artifact.observedSha256,outcomes:report.outcomes,findings:report.analysis.findings.length,exit:exitCode(report)}))},null,2));

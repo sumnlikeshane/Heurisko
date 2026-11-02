@@ -1,0 +1,16 @@
+{
+  "profile": "npm-gha-slsa-v1-draft.1",
+  "provenance": "required",
+  "expect": {
+    "package": "heurisko-controlled-fixture",
+    "version": "1.0.0",
+    "repositoryUrl": "https://github.com/heurisko-controlled/test-only",
+    "fullSourceCommit": "1111111111111111111111111111111111111111",
+    "packageSubdirectory": "",
+    "workflowPath": ".github/workflows/controlled.yml",
+    "workflowRef": "refs/heads/test-only",
+    "signerSAN": "https://github.com/heurisko-controlled/test-only/.github/workflows/controlled.yml@refs/heads/test-only",
+    "builderId": "https://github.com/actions/runner/github-hosted",
+    "buildType": "https://slsa-framework.github.io/github-actions-buildtypes/workflow/v1"
+  }
+}

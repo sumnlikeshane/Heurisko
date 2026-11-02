@@ -9,11 +9,11 @@ Heurisko is a product maintained by Shane Joseph as its sole owner. The project 
 - Analyze exact public npm versions or local tar/tar.gz archives with a static, restricted parser. Target packages are not installed or executed.
 - Compare with an explicitly selected full GitHub commit and optional package subdirectory. Source claims and conflicts remain visible.
 - Preserve raw artifacts, inventories, manifest deltas, evidence bytes and immutable reports in a local content-addressed store.
-- Apply deterministic rules to retained script, entrypoint and unresolved-file differences. These findings guide review; they do not establish intent or provenance.
+- Apply the reviewed `p2-static-v1` deterministic rules to retained script/entrypoint values, source candidates and bounded static relationships, keeping raw residuals visible. These findings guide review; they do not establish intent or provenance.
 - Use the same report and evidence semantics through the CLI, interactive terminal app and local browser app.
 - Browse three saved public reports at [heurisko.onrender.com](https://heurisko.onrender.com/). The public service is a read-only explorer and cannot start investigations.
 
-Model inference, provenance verification, concrete trust policy evaluation, rebuilds, release monitoring, PyPI and hosted live analysis are not product capabilities yet. The [production roadmap](PRODUCTION_MASTER_ROADMAP.md) and [Phase 1 plan](docs/Production%20Phase%201%20Implementation%20Plan.md) track the next work. [AI development source](docs/production-phase1/AI%20Source%20Intake.md) is present for offline work; the currently admitted deterministic module remains separate from a model runtime.
+Optional local npm provenance and expected-identity policy evaluation now use a host-configured offline verifier; [setup and limits](docs/CLI%20Reference.md#offline-provenance-and-expected-policy). Model inference, rebuilds, release monitoring, PyPI and hosted live analysis remain unavailable. The [production roadmap](PRODUCTION_MASTER_ROADMAP.md) and [Phase 1 plan](docs/Production%20Phase%201%20Implementation%20Plan.md) track the next work. [AI development source](docs/production-phase1/AI%20Source%20Intake.md) is present for offline work; the currently admitted deterministic module remains separate from a model runtime.
 
 ## Installation and execution
 
@@ -65,7 +65,7 @@ pnpm run test:web
 pnpm run check:docs
 ```
 
-Start with [the contributor workflow](AGENTS.md#one-development-workflow) and [documentation index](docs/README.md). The [Phase 1 plan](docs/Production%20Phase%201%20Implementation%20Plan.md) owns current work and blockers; the [roadmap](PRODUCTION_MASTER_ROADMAP.md) defines each phase's acceptance and next step. Phase 1 remains open. The contributor test map selects checks appropriate to a change; phase acceptance requires the full owning gates. Product code changes use feature branches, review and exact-head CI. The [contributor instructions](AGENTS.md) define repository approval and evidence-preservation rules.
+Start with [the contributor workflow](AGENTS.md#one-development-workflow) and [documentation index](docs/README.md). The [Phase 1 plan](docs/Production%20Phase%201%20Implementation%20Plan.md) owns current work and blockers; the [roadmap](PRODUCTION_MASTER_ROADMAP.md) defines each phase's acceptance and next step. The amended Phase 1 foundation/source-only criteria are met locally; Phase 2 native implementation criteria are met, with final acceptance governed by the exact-head PR checks. The contributor test map selects checks appropriate to a change; phase acceptance requires the full owning gates. Product code changes use feature branches, review and exact-head CI. The [contributor instructions](AGENTS.md) define repository approval and evidence-preservation rules.
 
 ## License
 

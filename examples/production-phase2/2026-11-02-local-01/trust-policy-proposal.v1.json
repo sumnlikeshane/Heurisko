@@ -1,0 +1,111 @@
+{
+  "version": "heurisko-npm-gha-trust-proposal-v1",
+  "policyId": "npm-gha-slsa-v1-draft.1",
+  "status": "PROPOSED_NOT_ADMITTED_NOT_INTEGRATED",
+  "authority": "Concrete proposal for owner and independent trust/security review; P2-SEVERITY/P2-EVAL approval does not admit this policy.",
+  "scope": {
+    "ecosystem": "public npm exact release",
+    "provider": "GitHub Actions hosted runner",
+    "predicateType": "https://slsa.dev/provenance/v1",
+    "statementType": "https://in-toto.io/Statement/v1",
+    "dssePayloadType": "application/vnd.in-toto+json",
+    "bundleMediaTypes": [
+      "application/vnd.dev.sigstore.bundle.v0.3+json"
+    ],
+    "logKinds": [
+      "dsse/0.0.1",
+      "dsse/0.0.2"
+    ],
+    "unsupported": "unresolved/indeterminate; no positive claim"
+  },
+  "subject": {
+    "names": "Exactly one canonical npm purl for the trusted package/version, with %40 for scoped @; no basename/alias/digest-only match.",
+    "digests": "Require sha512 or sha256 of the exact observed archive bytes; verify every declared supported digest. Unknown algorithm or conflicting/duplicate subject is unresolved. Authenticated wrong subject is invalid.",
+    "localInputs": "Never inherit registry identity or provenance success; modified bytes require a new observation and exact subject verification."
+  },
+  "trustedExpectations": {
+    "origin": "Explicit host-owned policy values reviewed independently of target metadata; registry/manifest/envelope values are evidence, never their own expected identity.",
+    "required": [
+      "package",
+      "version",
+      "repositoryUrl",
+      "fullSourceCommit",
+      "packageSubdirectory",
+      "workflowPath",
+      "workflowRef",
+      "signerSAN",
+      "builderId",
+      "buildType"
+    ],
+    "issuer": "https://token.actions.githubusercontent.com",
+    "sanMatching": "Exact anchored escaped literal; library strings are regex patterns, never pass an unescaped identity.",
+    "builderId": "https://github.com/actions/runner/github-hosted",
+    "buildType": "https://slsa-framework.github.io/github-actions-buildtypes/workflow/v1",
+    "externalParameters": "Only workflow.repository, workflow.path and workflow.ref allowed in this profile; compare exact expected values. Unknown fields are indeterminate.",
+    "source": "Require unique resolvedDependency repository URI plus full gitCommit; compare all source assertions and certificate OIDs. Subtree/build-context assertion missing when required remains indeterminate; no inference from working directory or matching files.",
+    "certificateOIDs": {
+      "1.3.6.1.4.1.57264.1.8": "DER UTF8String issuer",
+      "1.3.6.1.4.1.57264.1.11": "runner environment = github-hosted",
+      "1.3.6.1.4.1.57264.1.12": "source repository URI = expected repository",
+      "1.3.6.1.4.1.57264.1.13": "source repository digest = expected full commit",
+      "1.3.6.1.4.1.57264.1.14": "source repository ref = expected workflow/source ref"
+    },
+    "oidCompatibility": "This draft requires provider-generic OIDs; legacy missing/deprecated extensions remain unsupported. DER decoding/representation must receive exact-fixture admission before use."
+  },
+  "roots": {
+    "bootstrap": "Owner-reviewed authenticated Sigstore TUF initial root, exact SHA-256 and version, then independently verified signed metadata chain/expiry/rollback checks. No bootstrap anchor is admitted here.",
+    "snapshots": "Immutable root/TUF metadata/policy/verifier closure stored by full digest and version in each observation.",
+    "update": "Explicit bounded host operation creates a new snapshot and observation; require reviewed HTTPS hosts, no redirects outside exact allowlist, signed rotation/threshold/expiry and monotonic version checks. No implicit library fetch/cache/root refresh.",
+    "offline": "Use only the selected approved snapshot. Proposed maximum 30 days since authenticated snapshot capture for a new policy decision; stale/unavailable/expired material yields indeterminate, never pass.",
+    "rollback": "Deny older versions except an explicit independently reviewed incident rollback recorded as a new policy version.",
+    "evaluationSnapshotOnly": {
+      "repositoryCommit": "c9bda74ad2221f938f7d2e0295ca3aad2da710a8",
+      "sha256": "6494e21ea73fa7ee769f85f57d5a3e6a08725eae1e38c755fc3517c9e6bc0b66",
+      "authenticatedProductionBootstrap": false
+    }
+  },
+  "cryptoRequirements": {
+    "minimumDistinctLogs": 1,
+    "minimumAuthenticatedSigningTimestamps": 1,
+    "minimumSCTs": 1,
+    "signingTime": "Signed log entry timestamp or admitted RFC3161 timestamp; not unauthenticated integratedTime. Require chain/log/CA valid-for intervals at authenticated signing time. Current leaf expiry alone does not erase historical validity.",
+    "log": "Verify inclusion proof and signed checkpoint; reject duplicate log/timestamp entries, unknown versions, unsupported checkpoint structure and unsigned trailing lines.",
+    "multipleAttestations": "Retain all. Every applicable build assertion for exact subject must be verified and agree on required fields; conflicting verified assertions yield indeterminate. Wrong-subject assertions remain visible and cannot satisfy the target. Publish assertions never satisfy build policy.",
+    "certificate": "Reject malformed/untrusted chains and unmet signer/issuer/OID expectations. No email/OAuth or self-hosted runner profile admitted by this draft."
+  },
+  "outcomes": {
+    "required-v1": {
+      "validCryptoAllExpectations": "verified_policy / matched; policy pass; exit 0 if otherwise complete",
+      "validCryptoExpectationMismatch": "verified_cryptographic_only / matched; policy violation; exit 1",
+      "definiteInvalidSignatureOrSubject": "invalid; policy violation; exit 1",
+      "boundedDiscoveryNoBuildAssertion": "absent; policy violation; exit 1",
+      "unknownUnsupportedMissingStaleConflictingCancelled": "unresolved or not_checked as observed; policy indeterminate; exit 2"
+    },
+    "optional-v1": "Same invalid/mismatch/unresolved handling. Completed bounded discovery with no build assertion may pass policy while provenance remains absent; do not claim global cryptographic absence.",
+    "noPolicy": "Crypto may be recorded separately only after verifier admission. Policy stays not_evaluated; requested incomplete verification yields exit 2.",
+    "precedence": "No report 3; policy violation 1; otherwise incomplete/failed analysis or indeterminate policy 2; otherwise 0. Severity never chooses exit 1."
+  },
+  "containment": {
+    "inputBytes": 262144,
+    "jsonDepth": 32,
+    "records": 128,
+    "workerMemoryMiB": 128,
+    "workerWallSeconds": 5,
+    "cancellation": "Parent must terminate an isolated verification worker and confirm settlement; never present an in-process timeout as preemption. This execution design still requires review.",
+    "network": "Offline verification only; no signing, OIDC, provider, registry writes, build or target execution."
+  },
+  "compatibility": "Retain G0 0.1.0 only if evidence records honestly encode these observations; otherwise obtain P2-COMPAT before any incompatible implementation. Preserve six outcomes, original claims/conflicts, raw residuals and independent AI state.",
+  "remainingAdmission": [
+    "Independent trust/security/rights review and owner acceptance of this exact version/hash",
+    "Authenticated production TUF bootstrap and root update/rollback/freshness fixtures",
+    "Native Linux pinned-tool compatibility/resource/cancellation proof",
+    "Every mandatory roadmap positive/negative fixture through an admitted application wrapper and actual exit paths",
+    "Independent source/workflow/builder expectations, consequential two-reviewer labels and full held-out gates",
+    "No production integration or favorable shared-report provenance/policy claims until admission"
+  ],
+  "primaryReferences": [
+    "https://docs.npmjs.com/generating-provenance-statements/",
+    "https://slsa.dev/spec/v1.2/verifying-artifacts",
+    "https://github.com/sigstore/fulcio/blob/main/docs/oid-info.md"
+  ]
+}

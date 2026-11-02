@@ -1,0 +1,237 @@
+{
+  "source": {
+    "gitHead": "7eee564818c63b0edbe47e58d7c044136a4470c0",
+    "workingSourceSha256": "dd9a176f5cc32724902b53514fe597bcd6ed1fde6f5e7ed1478b877038baf108",
+    "sourceManifest": "source-delivery.json",
+    "runtimeIdentity": "runtime-identity-delivery.json",
+    "branch": "foundation/phase1-completion-20261101",
+    "uncommitted": true
+  },
+  "environment": "environment.json; all Node commands use the explicit Node 22.23.4 PATH and Python validator commands use .venv 3.13.2; terminal tests use the separate hash-locked 3.13 environment",
+  "checks": [
+    {
+      "name": "typecheck",
+      "argvPattern": [
+        "pnpm",
+        "run",
+        "typecheck"
+      ],
+      "observedExit": 0,
+      "units": null,
+      "log": "source-qualified-typecheck.log",
+      "logSha256": "71341b1600f09af82312bc859b6f4c7f8527eb95c2a84189f87af2cdb1f648df"
+    },
+    {
+      "name": "contracts",
+      "argvPattern": [
+        "pnpm",
+        "run",
+        "test:contracts"
+      ],
+      "observedExit": 0,
+      "units": null,
+      "log": "contracts-delivery.log",
+      "logSha256": "8df0f800e400683f96d077e61536e5fe87134cf40d71d504f9ab4629a12ba81e"
+    },
+    {
+      "name": "core-focused",
+      "argvPattern": [
+        "node",
+        "--test",
+        "packages/core/tests/phase2.test.mjs",
+        "packages/core/tests/intelligence-boundary.test.mjs",
+        "packages/core/tests/reviewed-module.test.mjs"
+      ],
+      "observedExit": 0,
+      "units": 55,
+      "log": "source-qualified-focused.log",
+      "logSha256": "2791188e4aebaaecaaa6f9f79ba63a1be084b1d24212f48a90a890af0e33bb63"
+    },
+    {
+      "name": "core-serial",
+      "argvPattern": [
+        "node",
+        "--test",
+        "--test-concurrency=1",
+        "packages/core/tests/*.test.mjs"
+      ],
+      "observedExit": 0,
+      "units": 185,
+      "log": "core-delivery.log",
+      "logSha256": "2107b5e083bf081d7fa662a379f22bb5419bdd603375514fe401bce9707cf123"
+    },
+    {
+      "name": "reader-tui",
+      "argvPattern": [
+        "node",
+        "--test",
+        "integration/part4/tests/readiness.test.mjs",
+        "packages/tui/tests/*.test.mjs"
+      ],
+      "observedExit": 0,
+      "units": 40,
+      "log": "reader-tui-delivery.log",
+      "logSha256": "3a012455348c8e348f6a36d8e8619b4445d6d90ce63da49ddccfb01e32ed3c80"
+    },
+    {
+      "name": "web-build",
+      "argvPattern": [
+        "pnpm",
+        "--filter",
+        "@heurisko/web",
+        "run",
+        "build"
+      ],
+      "observedExit": 0,
+      "units": null,
+      "log": "source-qualified-typecheck.log",
+      "logSha256": "71341b1600f09af82312bc859b6f4c7f8527eb95c2a84189f87af2cdb1f648df"
+    },
+    {
+      "name": "web",
+      "argvPattern": [
+        "pnpm",
+        "--filter",
+        "@heurisko/web",
+        "test"
+      ],
+      "observedExit": 0,
+      "units": 79,
+      "log": "web-source-qualified.log",
+      "logSha256": "0119ea2c9434fdbe5cc5a20b61f1031e468d6209243627d30d630b1896ab262d"
+    },
+    {
+      "name": "grader",
+      "argvPattern": [
+        ".venv/bin/python3",
+        "scripts/test-grade-phase2.py"
+      ],
+      "observedExit": 0,
+      "units": 7,
+      "log": "grader-acceptance.log",
+      "logSha256": "83166b089fbcb82fac63f22522fa6ae99bb5e46368cd35d756277fd463dd6346"
+    },
+    {
+      "name": "intake",
+      "argvPattern": [
+        "node",
+        "scripts/verify-intelligence-intake.mjs"
+      ],
+      "observedExit": 0,
+      "units": 33,
+      "log": "intake-preservation.log",
+      "logSha256": "65b85c1249c62ad17501763cd3d40ac1bf5a6c2d45df72d3124c9dfb16a595e0"
+    },
+    {
+      "name": "public-development",
+      "argvPattern": [
+        "node",
+        "scripts/run-phase2-development.mjs",
+        "development-data",
+        "NEW_OUTPUT"
+      ],
+      "observedExit": 0,
+      "units": 12,
+      "log": "development-observations-delivery.log",
+      "logSha256": "5eba2d4bdad5b6f22e23d49a6409ffe650054699f2059969e26e4dbe98a58132"
+    },
+    {
+      "name": "inert-cli-reopen",
+      "argvPattern": [
+        "node",
+        "scripts/validate-phase1-foundation.mjs",
+        "NEW_OUTPUT"
+      ],
+      "observedExit": 0,
+      "units": 8,
+      "log": "inert-conformance-delivery.log",
+      "logSha256": "88651b17a34502d80ab2718e78a062c6a0d8dfbced09bd681b7665d316920fe2"
+    },
+    {
+      "name": "pty-historical",
+      "argvPattern": [
+        "python3.13",
+        "packages/tui/tests/evidence-mode.py"
+      ],
+      "observedExit": 0,
+      "units": 22,
+      "log": "pty-evidence.log",
+      "logSha256": "983e8da18b888212d015bcda302fae4494a89800e1145f9d725ec12fd69fd9bb"
+    },
+    {
+      "name": "pty-changed",
+      "argvPattern": [
+        "python3.13",
+        "packages/tui/tests/phase2-findings.py",
+        "inert-conformance-final"
+      ],
+      "observedExit": 0,
+      "units": 15,
+      "log": "pty-phase2-delivery.log",
+      "logSha256": "c18b4c566bdbf060c1dd7cc919e367e17bcc3bdab9eebc8ac564c80e85b389db"
+    },
+    {
+      "name": "verifier-isolated",
+      "argvPattern": [
+        "node",
+        "--max-old-space-size=128",
+        "--stack-size=512",
+        "scripts/evaluate-phase2-verifier.mjs",
+        "ISOLATED_TOOL_ROOT",
+        "RETAINED_EVIDENCE",
+        "NEW_OUTPUT"
+      ],
+      "observedExit": 0,
+      "units": 76,
+      "log": "q4-eval-final.log",
+      "logSha256": "f45335db54d85f767a903240ec4d1351b31a259142d8d8a098be87bc45a42362"
+    },
+    {
+      "name": "verifier-worker",
+      "argvPattern": [
+        "node",
+        "scripts/check-phase2-verifier-worker.mjs",
+        "ISOLATED_TOOL_ROOT",
+        "RETAINED_EVIDENCE",
+        "NEW_OUTPUT"
+      ],
+      "observedExit": 0,
+      "units": 4,
+      "log": "q4-worker-final.log",
+      "logSha256": "06ace40b873c7357c28b60229fe9c67d8dc0f720df98b78fa303f5fdbab2e96f"
+    }
+  ],
+  "independentEvaluation": {
+    "heldOutGraded": false,
+    "reviewersAppointed": false,
+    "publicDevelopmentUnlabeled": 12,
+    "originalConstructionReports": 8,
+    "seededFieldEventsDevelopmentOnly": 3,
+    "claimReviewsUnperformed": true
+  },
+  "gates": [
+    {
+      "capability": "Independent held-out quality acceptance",
+      "evidence": "evaluation-design.json; development-grading-final.json; held-out-gate-rejection.log",
+      "resolution": "Independent human custody, blind labels/family/rights review, sample minima, freeze and one grading pass; owner appoints reviewers.",
+      "independentWorkCompleted": "Q1\u2013Q3 implementation, development data/tools and conformance."
+    },
+    {
+      "capability": "Q4 verifier/root/trust-policy production admission",
+      "evidence": "trust-policy-proposal.v1.json; q4-review02/evaluation-final.json; q4-worker-final/validation.json; q4-alternative/review.json",
+      "resolution": "Owner/independent trust/security/rights review of concrete version; authenticated roots/freshness/rollback, native Linux, production OS-boundary review and full mandatory application/exit matrix.",
+      "independentWorkCompleted": "Exact released-byte/notice review, 76 isolated fixture checks and four local worker probes; no production integration."
+    },
+    {
+      "capability": "Changed-flow browser GUI/AT acceptance",
+      "evidence": "browser-review.json",
+      "resolution": "Ordinary loopback access in a supported browser; run new findings, both citations, missing content and Back/focus journeys. Chrome blocked by client; Safari timeouts.",
+      "independentWorkCompleted": "CLI/reader/web tests and actual PTY journeys."
+    }
+  ],
+  "preservation": "preservation.json; two original planning metadata hashes also verified; production dependency lock/core package/CI workflow unchanged",
+  "localStatus": "Authorized source implementation/evaluation preparation/design reviewed and locally validated within recorded limits; GUI acceptance blocked, independent evaluation/admission/phase acceptance open.",
+  "phase1": "open; existing owner acceptance preserved",
+  "publication": "No staging, commit, push, PR edit/publication, merge, release, deployment or external message.",
+  "review": "Assembled implementation/claim/diff review retained the order and optional-digest failures, repaired both, and preserved preceding runtime/source/admission contexts. Independent human/held-out/trust admission is unperformed."
+}

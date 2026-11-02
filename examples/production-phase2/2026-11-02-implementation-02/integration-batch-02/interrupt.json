@@ -1,0 +1,8 @@
+{
+  "status": "INTERRUPTED_NOT_PASSED",
+  "process": 49477,
+  "observedElapsed": "7m13s",
+  "retainedBlobCountAtEarlierSample": 4511,
+  "reason": "Bulk parser import completed, but per-file comparison delta retention still traverses all stored blobs for every small immutable write.",
+  "resolution": "Bounded 1 MiB delta buffers flushed through the same locked/exact-byte batch writer, with comparison cancellation checkpoints; retain all partial evidence."
+}

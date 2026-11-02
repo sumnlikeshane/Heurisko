@@ -46,3 +46,17 @@ examples/production-phase1/2026-11-01-completion-01/rights/installed-notices/typ
 examples/production-phase1/2026-11-01-completion-01/rights/installed-notices/typescript@5.8.3/ThirdPartyNoticeText.txt -whitespace
 examples/production-phase1/2026-11-01-completion-01/rights/node-22.23.4-LICENSE -whitespace
 examples/production-phase1/2026-11-01-publication-01/setup-node/action.yml -whitespace
+
+# Exact Rollup artifact fixture notice (MIT/ISC/0BSD), retained byte-for-byte.
+packages/core/ROLLUP_FIXTURE_NOTICES.txt -text -whitespace
+
+# Exact immutable notices, patch/research/report captures and hash-pinned legacy
+# source retain original whitespace; current authored code is still checked.
+SOURCE_FIXTURE_NOTICES.txt -text -whitespace
+examples/production-phase2/2026-11-02-closure-implementation-01/initial.patch -text -whitespace
+examples/production-phase2/2026-11-02-implementation-02/initial.patch -text -whitespace
+examples/production-phase2/2026-11-02-local-01/baseline.patch -text -whitespace
+examples/production-phase2/2026-11-02-technical-closure-provenance-01/upstream/CLIENTS.md -text -whitespace
+examples/production-phase2/2026-11-02-technical-closure-runtime-01/REPORT.md -text -whitespace
+packages/intelligence-reviewed/provenance/reviewed-55240e9.ts -text -whitespace
+packages/intelligence-reviewed/src/legacy-55240e9.ts -text -whitespace

@@ -1,0 +1,54 @@
+TAP version 13
+# Subtest: Q2 conditional export property order is an observable retained change
+not ok 1 - Q2 conditional export property order is an observable retained change
+  ---
+  duration_ms: 104.841958
+  type: 'test'
+  location: '/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/phase2.test.mjs:94:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    
+    'limited' !== 'high'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'high'
+  actual: 'limited'
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/phase2.test.mjs:96:82)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async startSubtestAfterBootstrap (node:internal/test_runner/harness:296:3)
+  ...
+# Subtest: Q2 forged property order in the delta cannot change the cited source value
+not ok 2 - Q2 forged property order in the delta cannot change the cited source value
+  ---
+  duration_ms: 184.200792
+  type: 'test'
+  location: '/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/phase2.test.mjs:99:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    
+    'high' !== 'limited'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'limited'
+  actual: 'high'
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/phase2.test.mjs:103:36)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+1..2
+# tests 2
+# suites 0
+# pass 0
+# fail 2
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 376.225084

@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "nativeAccepted": false,
+  "mode": "local-rehearsal",
+  "checksExecuted": 17,
+  "checksBlocked": 0,
+  "sourceChanged": [],
+  "failures": [],
+  "limitations": [
+    "No CI head/deployment/publication or GUI/AT claim.",
+    "Production-root real dsse 0.0.2 population coverage remains separate from controlled-format checks."
+  ]
+}

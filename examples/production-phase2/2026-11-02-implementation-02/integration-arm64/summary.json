@@ -1,0 +1,92 @@
+{
+  "results": [
+    {
+      "id": "exact",
+      "pass": true,
+      "expectedProvenance": "verified_policy",
+      "expectedPolicy": "pass",
+      "reportSha256": "sha256:2dc33f27c3e2c53dfd068f2c7f23dbfc6f7d03f6f5ce52e2fe906b5735816a32",
+      "outcomes": {
+        "artifactIntegrity": "matched",
+        "sourceAssociation": "publisher_asserted",
+        "provenancePolicy": "verified_policy",
+        "correspondence": "unresolved",
+        "analysisCompleteness": "incomplete",
+        "policyResult": "pass"
+      },
+      "cliExit": 2
+    },
+    {
+      "id": "wrong-builder",
+      "pass": true,
+      "expectedProvenance": "verified_cryptographic_only",
+      "expectedPolicy": "violation",
+      "reportSha256": "sha256:f071d7997d7708117c5029851c36aa1758bb160483e228d0c166622668e70926",
+      "outcomes": {
+        "artifactIntegrity": "matched",
+        "sourceAssociation": "publisher_asserted",
+        "provenancePolicy": "verified_cryptographic_only",
+        "correspondence": "unresolved",
+        "analysisCompleteness": "incomplete",
+        "policyResult": "violation"
+      },
+      "cliExit": 1
+    },
+    {
+      "id": "unknown",
+      "pass": true,
+      "expectedProvenance": "unresolved",
+      "expectedPolicy": "indeterminate",
+      "reportSha256": "sha256:949975938515e0fcba99455659d6fda7a90e937f702723bd48271a339af4b0a1",
+      "outcomes": {
+        "artifactIntegrity": "matched",
+        "sourceAssociation": "publisher_asserted",
+        "provenancePolicy": "unresolved",
+        "correspondence": "unresolved",
+        "analysisCompleteness": "incomplete",
+        "policyResult": "indeterminate"
+      },
+      "cliExit": 2
+    },
+    {
+      "id": "crypto-only",
+      "pass": true,
+      "expectedProvenance": "verified_cryptographic_only",
+      "expectedPolicy": "not_evaluated",
+      "reportSha256": "sha256:22f900bf60183dba5d9c351cd0d25df36f205a2f00428ada56f281778a0e9ade",
+      "outcomes": {
+        "artifactIntegrity": "matched",
+        "sourceAssociation": "publisher_asserted",
+        "provenancePolicy": "verified_cryptographic_only",
+        "correspondence": "unresolved",
+        "analysisCompleteness": "incomplete",
+        "policyResult": "not_evaluated"
+      },
+      "cliExit": 2
+    },
+    {
+      "id": "oversized",
+      "pass": true,
+      "expectedProvenance": "unresolved",
+      "expectedPolicy": "indeterminate",
+      "reportSha256": "sha256:b0921ecc2fcc691cbdfea575c9b5685c970c068a4bbdf5d7c1b3655b0300d074",
+      "outcomes": {
+        "artifactIntegrity": "matched",
+        "sourceAssociation": "publisher_asserted",
+        "provenancePolicy": "unresolved",
+        "correspondence": "unresolved",
+        "analysisCompleteness": "incomplete",
+        "policyResult": "indeterminate"
+      },
+      "cliExit": 2
+    }
+  ],
+  "passed": true,
+  "sourceUnavailableFixture": true,
+  "limitations": [
+    "An explicitly source-unavailable replay retains missing raw source/completeness; signed expected-source claims never become raw byte correspondence.",
+    "Original retained HTTP bodies replayed through actual acquisition/producer/parser/evaluator; not a fresh network observation.",
+    "The repository-root Rollup policy is an explicit fixture; source identity expectation is cross-checked against original exact release metadata and commit capture.",
+    "CLI inspect reads actual evaluator output and does not reconstruct policy decisions."
+  ]
+}

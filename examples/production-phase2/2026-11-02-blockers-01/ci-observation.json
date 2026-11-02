@@ -1,0 +1,35 @@
+{
+  "observedDate": "2026-11-02",
+  "method": "Signed-in native Chrome accessibility tree and screenshot, read-only via CUA",
+  "pr": "https://github.com/sumnlikeshane/Heurisko/pull/6",
+  "state": "merged",
+  "mergedBy": "sumnlikeshane",
+  "mergeTimeDisplayed": "Nov 2, 2026, 00:07 GMT+5:30",
+  "finalPrHead": "7eee564818c63b0edbe47e58d7c044136a4470c0",
+  "headLabelObserved": "7eee564 / Record native Linux Phase 1 validation and PR evidence",
+  "run": "https://github.com/sumnlikeshane/Heurisko/actions/runs/41336826192",
+  "jobs": [
+    {
+      "name": "Contracts and core investigation boundaries",
+      "result": "succeeded",
+      "jobId": "124938323468"
+    },
+    {
+      "name": "Local web evidence boundaries",
+      "result": "succeeded",
+      "jobId": "124938323385"
+    },
+    {
+      "name": "Offline AI source checks (runtime inactive)",
+      "result": "succeeded",
+      "jobId": "124938323373"
+    },
+    {
+      "name": "Documentation integrity",
+      "result": "succeeded",
+      "jobId": "124938323305"
+    }
+  ],
+  "actions": "Read only; no merge, publication, workflow rerun, settings or credentials changed.",
+  "limits": "This establishes checks on the final published Phase 1 PR head, not the current dirty Phase 2 source or a deployment. Earlier native artifact remains its own 3521e1c observation; no new artifact is claimed."
+}

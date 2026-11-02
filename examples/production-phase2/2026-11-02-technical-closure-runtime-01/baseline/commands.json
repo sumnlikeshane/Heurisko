@@ -1,0 +1,57 @@
+[
+  {
+    "name": "build",
+    "command": [
+      "pnpm",
+      "run",
+      "typecheck"
+    ],
+    "exit": 0,
+    "seconds": 14.451
+  },
+  {
+    "name": "generate",
+    "command": [
+      "node",
+      "scripts/generate-controlled-signatures.mjs",
+      "/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/examples/production-phase2/2026-11-02-technical-closure-runtime-01/fixtures"
+    ],
+    "exit": 0,
+    "seconds": 0.068
+  },
+  {
+    "name": "prepare",
+    "command": [
+      "node",
+      "scripts/prepare-controlled-runtime.mjs",
+      "/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/examples/production-phase2/2026-11-02-technical-closure-runtime-01/fixtures",
+      "/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/examples/production-phase2/2026-11-02-technical-closure-runtime-01/baseline-runtime"
+    ],
+    "exit": 0,
+    "seconds": 0.342
+  },
+  {
+    "name": "controlled",
+    "command": [
+      "node",
+      "scripts/test-controlled-signatures.mjs",
+      "/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/examples/production-phase2/2026-11-02-technical-closure-runtime-01/fixtures",
+      "/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/examples/production-phase2/2026-11-02-technical-closure-runtime-01/baseline-runtime",
+      "/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/examples/production-phase2/2026-11-02-technical-closure-runtime-01/baseline/controlled"
+    ],
+    "exit": 1,
+    "seconds": 222.61
+  },
+  {
+    "name": "application",
+    "command": [
+      "node",
+      "scripts/verify-controlled-integration.mjs",
+      "/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/examples/production-phase2/2026-11-02-technical-closure-runtime-01/fixtures",
+      "/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/examples/production-phase2/2026-11-02-technical-closure-runtime-01/baseline-runtime",
+      "/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/examples/production-phase2/2026-11-02-technical-closure-runtime-01/baseline/application"
+    ],
+    "exit": 1,
+    "seconds": 752.263
+  }
+]

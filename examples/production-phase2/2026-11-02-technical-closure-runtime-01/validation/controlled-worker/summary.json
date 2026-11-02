@@ -1,0 +1,31 @@
+{
+  "matrixOnly": false,
+  "productionRejectsControlled": true,
+  "version": "heurisko-controlled-evaluation-v1",
+  "identity": {
+    "version": "heurisko-controlled-runtime-v1",
+    "productionRoot": "/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko",
+    "fixtureManifestSha256": "7fc0a3dbc3f8dd8b1a9784d097ef6851cec06c7d9f2414111cc08e4233d34891",
+    "testBootstrapSha256": "e309897b7e5082200d954b5af451183b8c79e202a016f809af2029808b54c3e5",
+    "productionBootstrapSha256": "73747011d0857ada15479a16c4cae0f3ed03aac698b523b97e1de314ac9d9ca8",
+    "productionWorkerSha256": "3b919229638310b4036df1594c1632c2337316ecd34ad508085945435b0de46e",
+    "testWorkerSha256": "88f23058947031098554622d1c91e084fa0835370d60ac30596afdf287b2a44d",
+    "evaluatorSourceSha256": "3255c2e4dc8ccff57dc96ec3392de58dd05b2b57c40ec3a73cc65aa53476450c",
+    "hostEvaluatorSha256": "aa53dd88ea2075d943dd337ce7b94a1846f95f725f0317b3c8d772e33bfd809c",
+    "boundary": "Same evaluator source and restricted Docker launcher; separate fixed-anchor build only. No production env/request anchor selection."
+  },
+  "fixtureManifestSha256": "7fc0a3dbc3f8dd8b1a9784d097ef6851cec06c7d9f2414111cc08e4233d34891",
+  "host": {
+    "platform": "darwin",
+    "arch": "arm64",
+    "node": "v22.23.4"
+  },
+  "worker": {
+    "platform": "linux/arm64",
+    "image": "node:22.23.4-bookworm-slim@sha256:9a422d62743ffb1e6eb282549f4eae7ab89f7b926db1f136f4cba8be60e4ecbc"
+  },
+  "checks": 69,
+  "passed": true,
+  "failures": [],
+  "limitation": "Controlled fixture acceptance only; no real npm publisher or native Linux host claim."
+}

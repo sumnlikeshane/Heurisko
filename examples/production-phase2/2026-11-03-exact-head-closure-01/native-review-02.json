@@ -1,0 +1,85 @@
+{
+  "capturedAt": "2026-11-02T18:48:13.453045+00:00",
+  "sourceCommit": "60e9f40ddb210095637d6689a3422ad8696ffb87",
+  "artifact": "closure-native-linux-amd64-60e9f40ddb210095637d6689a3422ad8696ffb87.zip",
+  "artifactSha256": "e6ff30722e47c87a9bd1453273358619feaa3c44b052b5527bed3beb66ca75db",
+  "artifactMembers": 1957,
+  "sourceManifestSha256": "b6ec344e65b883cd6016604295076f913d3b652a222771b3ecf0232dc4d123ba",
+  "selectedGitBlobsVerified": 11471,
+  "sourceMismatches": [],
+  "all18CommandsPassed": true,
+  "nativeAccepted": true,
+  "sourceUnchanged": true,
+  "hostNode": {
+    "node": "v22.23.4",
+    "platform": "linux",
+    "arch": "x64",
+    "openssl": "3.5.9"
+  },
+  "hostKernel": "Linux runnervmnwato 7.0.0-1017-azure #17-Ubuntu SMP PREEMPT Thu Sep 24 15:54:51 UTC 2026 x86_64 GNU/Linux",
+  "python": "Python 3.13.17",
+  "pnpm": "10.14.0",
+  "docker": {
+    "OSType": "linux",
+    "Architecture": "x86_64",
+    "OperatingSystem": "Ubuntu 26.04.1 LTS",
+    "ServerVersion": "29.4.2",
+    "NCPU": 4,
+    "MemTotal": 16759443456
+  },
+  "counts": {
+    "core": {
+      "tests": 209,
+      "pass": 209,
+      "fail": 0,
+      "skipped": 0
+    },
+    "readers-tui": {
+      "tests": 40,
+      "pass": 40,
+      "fail": 0,
+      "skipped": 0
+    },
+    "web": {
+      "tests": 79,
+      "pass": 79,
+      "fail": 0,
+      "skipped": 0
+    },
+    "scanner-tests": {
+      "tests": 9,
+      "pass": 9,
+      "fail": 0,
+      "skipped": 0
+    }
+  },
+  "productionWorkerChecks": 82,
+  "controlledWorkerChecks": 61,
+  "controlledApplicationChecks": 24,
+  "genuineApplicationCases": 5,
+  "controlledCliExits": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "productionWorkerSha256": "9e13daace8ae961d9ed60d63dfe3cedc48364d44ac56ccdacec3868a375d00e1",
+  "controlledRuntimeIdentity": {
+    "version": "heurisko-controlled-runtime-v1",
+    "productionRoot": "/home/runner/work/Heurisko/Heurisko",
+    "fixtureManifestSha256": "fdaf6e2f6f1c859532d1225e5351448fc54a810aba1ac6ce925f03baade7fac9",
+    "testBootstrapSha256": "e1561e5e931b70a4d5976a599453aa810776f89234b3a84d9a77b3732f75848e",
+    "productionBootstrapSha256": "73747011d0857ada15479a16c4cae0f3ed03aac698b523b97e1de314ac9d9ca8",
+    "productionWorkerSha256": "9e13daace8ae961d9ed60d63dfe3cedc48364d44ac56ccdacec3868a375d00e1",
+    "testWorkerSha256": "3d21da3398240199a44b1ba5674b82e7632e53290d3901f572397cea5d107468",
+    "evaluatorSourceSha256": "f23c8e92b38190dfba7a19c5f423e19ce1ee1db0a27f833f7773002f6dc4b15d",
+    "hostEvaluatorSha256": "d6d87c6d1c2c4a9834a3ad4a153b0de90aa1f37ed686eb4b2aa499f753660e04",
+    "boundary": "Same evaluator source and restricted Docker launcher; separate fixed-anchor build only. No production env/request anchor selection."
+  },
+  "checks": "ZIP digest; all selected Git blobs; admission and unchanged-source receipts; every command; fixture and compiled-runtime hashes; all per-case worker cleanup; report byte hashes/outcomes; source-unavailable omissions; actual suite counts.",
+  "limitations": [
+    "Conformance and retained public fixtures, not independent held-out population accuracy.",
+    "Original Mac Docker failures remain retained; native passing evidence does not prove arbitrary host/VM latency eliminated.",
+    "CLI/shared reader/TUI model/web parity is not new GUI/AT acceptance."
+  ]
+}

@@ -1,0 +1,247 @@
+{
+  "version": "heurisko-p2-data-v1",
+  "cases": [
+    {
+      "caseId": "picocolors-1.1.1",
+      "family": "upstream:picocolors",
+      "split": "development",
+      "origin": "https://registry.npmjs.org/picocolors/1.1.1",
+      "artifactURL": "https://registry.npmjs.org/picocolors/-/picocolors-1.1.1.tgz",
+      "capturedAt": "2026-11-01T19:08:08.838488+00:00",
+      "artifactSha256": "d3aedb2807967b7eb37fd11b03b7e3701e725af79c650d0812ff7213f8f882d9",
+      "metadataSha256": "469edbe4663b07f19026f60ec43744bad678caa89a6be7bf6c4692e2967ddf9d",
+      "version": "1.1.1",
+      "commitClaim": "6f0a4638348ed20633d623ee973f9c9a96f65104",
+      "repositoryClaim": {
+        "url": "git+https://github.com/alexeyraspopov/picocolors.git",
+        "type": "git"
+      },
+      "declaredLicense": "ISC",
+      "retention": "provisional development capture; admitted-parser notice review required",
+      "labelAuthority": "unlabeled; no independent human determination",
+      "artifact": "picocolors/artifact.tgz"
+    },
+    {
+      "caseId": "kleur-4.1.5",
+      "family": "upstream:kleur",
+      "split": "development",
+      "origin": "https://registry.npmjs.org/kleur/4.1.5",
+      "artifactURL": "https://registry.npmjs.org/kleur/-/kleur-4.1.5.tgz",
+      "capturedAt": "2026-11-01T19:08:09.507008+00:00",
+      "artifactSha256": "0d99562acf82fca4afce2a57b687289a524ac6755dcaf1fdf82a147473091469",
+      "metadataSha256": "a8fc8e9ce4099bfaceffeb79f56d0f91c8956c309bfea7640eb070fbe70feb33",
+      "version": "4.1.5",
+      "commitClaim": "fa3454483899ddab550d08c18c028e6db1aab0e5",
+      "repositoryClaim": {
+        "url": "git+https://github.com/lukeed/kleur.git",
+        "type": "git"
+      },
+      "declaredLicense": "MIT",
+      "retention": "provisional development capture; admitted-parser notice review required",
+      "labelAuthority": "unlabeled; no independent human determination",
+      "artifact": "kleur/artifact.tgz"
+    },
+    {
+      "caseId": "ms-2.1.3",
+      "family": "upstream:ms",
+      "split": "development",
+      "origin": "https://registry.npmjs.org/ms/2.1.3",
+      "artifactURL": "https://registry.npmjs.org/ms/-/ms-2.1.3.tgz",
+      "capturedAt": "2026-11-01T19:08:09.984599+00:00",
+      "artifactSha256": "f6616e15e530ed552f9daa2d3ce71963947c6bc7c98c9b64fd3e673fd02622c6",
+      "metadataSha256": "9f31c78548e84f877cedb1e0f0652419777d0c036fbb72985da187e2a962b45d",
+      "version": "2.1.3",
+      "commitClaim": "1c6264b795492e8fdecbc82cb8802fcfbfc08d26",
+      "repositoryClaim": {
+        "url": "git+https://github.com/vercel/ms.git",
+        "type": "git"
+      },
+      "declaredLicense": "MIT",
+      "retention": "provisional development capture; admitted-parser notice review required",
+      "labelAuthority": "unlabeled; no independent human determination",
+      "artifact": "ms/artifact.tgz"
+    },
+    {
+      "caseId": "is-number-7.0.0",
+      "family": "upstream:is-number",
+      "split": "development",
+      "origin": "https://registry.npmjs.org/is-number/7.0.0",
+      "artifactURL": "https://registry.npmjs.org/is-number/-/is-number-7.0.0.tgz",
+      "capturedAt": "2026-11-01T19:08:10.530766+00:00",
+      "artifactSha256": "7b75c1057198cf97696909a9bee176c9c5e9bcb5b03bf3ecef2f484defadd51e",
+      "metadataSha256": "42288c4971286c252ea16450b0777e67a710a698446faa99e2d8d2344a087c25",
+      "version": "7.0.0",
+      "commitClaim": "98e8ff1da1a89f93d1397a24d7413ed15421c139",
+      "repositoryClaim": {
+        "url": "git+https://github.com/jonschlinkert/is-number.git",
+        "type": "git"
+      },
+      "declaredLicense": "MIT",
+      "retention": "provisional development capture; admitted-parser notice review required",
+      "labelAuthority": "unlabeled; no independent human determination",
+      "artifact": "is-number/artifact.tgz"
+    },
+    {
+      "caseId": "ansi-regex-6.2.2",
+      "family": "upstream:ansi-regex",
+      "split": "development",
+      "origin": "https://registry.npmjs.org/ansi-regex/6.2.2",
+      "artifactURL": "https://registry.npmjs.org/ansi-regex/-/ansi-regex-6.2.2.tgz",
+      "capturedAt": "2026-11-01T19:08:11.036408+00:00",
+      "artifactSha256": "e746bb8f5dd8805dc40c399b91a4a232db7d9f93fe2d83b771a9cace7b5231d7",
+      "metadataSha256": "293b965b75db12a8d41bd6ffafe5e1e37c77709312de848527f21fa6375ccb24",
+      "version": "6.2.2",
+      "commitClaim": "94983fc6ba00e1e9657f72c07eb7b9c75e4011a2",
+      "repositoryClaim": {
+        "url": "git+https://github.com/chalk/ansi-regex.git",
+        "type": "git"
+      },
+      "declaredLicense": "MIT",
+      "retention": "provisional development capture; admitted-parser notice review required",
+      "labelAuthority": "unlabeled; no independent human determination",
+      "artifact": "ansi-regex/artifact.tgz"
+    },
+    {
+      "caseId": "escape-string-regexp-5.0.0",
+      "family": "upstream:escape-string-regexp",
+      "split": "development",
+      "origin": "https://registry.npmjs.org/escape-string-regexp/5.0.0",
+      "artifactURL": "https://registry.npmjs.org/escape-string-regexp/-/escape-string-regexp-5.0.0.tgz",
+      "capturedAt": "2026-11-01T19:08:11.425737+00:00",
+      "artifactSha256": "c8b662afe8aa2b852ecc27d766e584a502f8351fbbd890611f2509bf083d28e6",
+      "metadataSha256": "2803d60c9c4c40f117eaaf087b756887d708dd701e9e225a07c218101d85f767",
+      "version": "5.0.0",
+      "commitClaim": "ba9a4473850cb367936417e97f1f2191b7cc67dd",
+      "repositoryClaim": {
+        "url": "git+https://github.com/sindresorhus/escape-string-regexp.git",
+        "type": "git"
+      },
+      "declaredLicense": "MIT",
+      "retention": "provisional development capture; admitted-parser notice review required",
+      "labelAuthority": "unlabeled; no independent human determination",
+      "artifact": "escape-string-regexp/artifact.tgz"
+    },
+    {
+      "caseId": "fast-deep-equal-3.1.3",
+      "family": "upstream:fast-deep-equal",
+      "split": "development",
+      "origin": "https://registry.npmjs.org/fast-deep-equal/3.1.3",
+      "artifactURL": "https://registry.npmjs.org/fast-deep-equal/-/fast-deep-equal-3.1.3.tgz",
+      "capturedAt": "2026-11-01T19:08:11.906965+00:00",
+      "artifactSha256": "b019a0980f27638dc3f85836b0e478f188e00d7a6e5852c0819fa86f56e47b8f",
+      "metadataSha256": "8f54f986d646ded6b0b47752afa4cb0a4ddeaeb91a4d556d97d1c268bfa4a7fc",
+      "version": "3.1.3",
+      "commitClaim": "d807ffc5013e710deb1c63d463a03f729bcd144d",
+      "repositoryClaim": {
+        "url": "git+https://github.com/epoberezkin/fast-deep-equal.git",
+        "type": "git"
+      },
+      "declaredLicense": "MIT",
+      "retention": "provisional development capture; admitted-parser notice review required",
+      "labelAuthority": "unlabeled; no independent human determination",
+      "artifact": "fast-deep-equal/artifact.tgz"
+    },
+    {
+      "caseId": "balanced-match-2.0.0",
+      "family": "upstream:balanced-match",
+      "split": "development",
+      "origin": "https://registry.npmjs.org/balanced-match/2.0.0",
+      "artifactURL": "https://registry.npmjs.org/balanced-match/-/balanced-match-2.0.0.tgz",
+      "capturedAt": "2026-11-01T19:08:12.363508+00:00",
+      "artifactSha256": "561e0fb7b25ac6bebee816546c7fd71c36a2b8f3e5c091212c3e753052fdc9f9",
+      "metadataSha256": "f5df040953b97129bcb95aa42824a46aedc297b29afb66d20adaed569f75cd6a",
+      "version": "2.0.0",
+      "commitClaim": "1c56fa33180a54e0e69a3fae9d60c191e74c4174",
+      "repositoryClaim": {
+        "url": "git://github.com/juliangruber/balanced-match.git",
+        "type": "git"
+      },
+      "declaredLicense": "MIT",
+      "retention": "provisional development capture; admitted-parser notice review required",
+      "labelAuthority": "unlabeled; no independent human determination",
+      "artifact": "balanced-match/artifact.tgz"
+    },
+    {
+      "caseId": "concat-map-0.0.1",
+      "family": "upstream:concat-map",
+      "split": "development",
+      "origin": "https://registry.npmjs.org/concat-map/0.0.1",
+      "artifactURL": "https://registry.npmjs.org/concat-map/-/concat-map-0.0.1.tgz",
+      "capturedAt": "2026-11-01T19:08:12.893810+00:00",
+      "artifactSha256": "35902dd620cf0058c49ea614120f18a889d984269a90381b7622e79c2cfe4261",
+      "metadataSha256": "e0f1793ea0483b37b828938f6d5892ab6ec62a18d919511b3db838c4939bd435",
+      "version": "0.0.1",
+      "commitClaim": null,
+      "repositoryClaim": {
+        "url": "git://github.com/substack/node-concat-map.git",
+        "type": "git"
+      },
+      "declaredLicense": "MIT",
+      "retention": "provisional development capture; admitted-parser notice review required",
+      "labelAuthority": "unlabeled; no independent human determination",
+      "artifact": "concat-map/artifact.tgz"
+    },
+    {
+      "caseId": "minimist-1.2.8",
+      "family": "upstream:minimist",
+      "split": "development",
+      "origin": "https://registry.npmjs.org/minimist/1.2.8",
+      "artifactURL": "https://registry.npmjs.org/minimist/-/minimist-1.2.8.tgz",
+      "capturedAt": "2026-11-01T19:08:13.377629+00:00",
+      "artifactSha256": "350a76c115b393c19d24654834261e5dc9f0e8cc5e08f3937fa80140f3e4ce83",
+      "metadataSha256": "dc08770ea3dc9e8efb9e3592a1c705ee560f0765d0f6887d54499dafb3a08cb1",
+      "version": "1.2.8",
+      "commitClaim": "6901ee286bc4c16da6830b48b46ce1574703cea1",
+      "repositoryClaim": {
+        "url": "git://github.com/minimistjs/minimist.git",
+        "type": "git"
+      },
+      "declaredLicense": "MIT",
+      "retention": "provisional development capture; admitted-parser notice review required",
+      "labelAuthority": "unlabeled; no independent human determination",
+      "artifact": "minimist/artifact.tgz"
+    },
+    {
+      "caseId": "wrappy-1.0.2",
+      "family": "upstream:wrappy",
+      "split": "development",
+      "origin": "https://registry.npmjs.org/wrappy/1.0.2",
+      "artifactURL": "https://registry.npmjs.org/wrappy/-/wrappy-1.0.2.tgz",
+      "capturedAt": "2026-11-01T19:08:13.848867+00:00",
+      "artifactSha256": "aff3730d91b7b1e143822956d14608f563163cf11b9d0ae602df1fe1e430fdfb",
+      "metadataSha256": "76b8c7dea2c592824a6bd038fdef4738d5147b6cfa188d906294075b04415738",
+      "version": "1.0.2",
+      "commitClaim": "71d91b6dc5bdeac37e218c2cf03f9ab55b60d214",
+      "repositoryClaim": {
+        "url": "git+https://github.com/npm/wrappy.git",
+        "type": "git"
+      },
+      "declaredLicense": "ISC",
+      "retention": "provisional development capture; admitted-parser notice review required",
+      "labelAuthority": "unlabeled; no independent human determination",
+      "artifact": "wrappy/artifact.tgz"
+    },
+    {
+      "caseId": "once-1.4.0",
+      "family": "upstream:once",
+      "split": "development",
+      "origin": "https://registry.npmjs.org/once/1.4.0",
+      "artifactURL": "https://registry.npmjs.org/once/-/once-1.4.0.tgz",
+      "capturedAt": "2026-11-01T19:08:14.261494+00:00",
+      "artifactSha256": "cf51460ba370c698f68b976e514d113497339ba018b6003e8e8eb569c6fccfcf",
+      "metadataSha256": "56c04153fe7b9401ef06c0d6fedccb5e93b4b5f5e7574d08ddf51343e6f66033",
+      "version": "1.4.0",
+      "commitClaim": "0e614d9f5a7e6f0305c625f6b581f6d80b33b8a6",
+      "repositoryClaim": {
+        "url": "git://github.com/isaacs/once.git",
+        "type": "git"
+      },
+      "declaredLicense": "ISC",
+      "retention": "provisional development capture; admitted-parser notice review required",
+      "labelAuthority": "unlabeled; no independent human determination",
+      "artifact": "once/artifact.tgz"
+    }
+  ],
+  "familyReview": "provisional upstream-project groups; merge forks/monorepos/shared build templates before freeze",
+  "heldOut": "none: independent custodian/families/labels still required"
+}

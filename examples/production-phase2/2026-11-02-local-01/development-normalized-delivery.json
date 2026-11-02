@@ -1,0 +1,558 @@
+{
+  "version": "heurisko-p2-observations-v2",
+  "authority": "immutable report normalization, no golden labels or independent output review",
+  "codeSha256": "af1dc4cdb1772c723b2e3410e3c7137d1e43c1253f3b262a8706ae10b43075a4",
+  "configurationSha256": "b14ceb705b2f1ccdb96832515e0cf685aee0c856eb936abd5ae4e0017322a779",
+  "manifestSha256": "sha256:889d42d2f25acd5c87dcc8077cca55911081323a2dc5c94f341c27e97b1391cd",
+  "cases": [
+    {
+      "id": "benign-identical",
+      "reportSha256": "sha256:3f43bccd95aa4cfdd86e47a1506183c11d0274a5664dda1a036d3e941bcbda99",
+      "reportId": "report_908314ea5f5f68638fc1960c",
+      "analysisConfigFingerprint": "78a9c47026680b9411a4b20bdb6e07f1e9953923896824fe3ff18f7938357ce2",
+      "codeSha256": "af1dc4cdb1772c723b2e3410e3c7137d1e43c1253f3b262a8706ae10b43075a4",
+      "configurationSha256": "b14ceb705b2f1ccdb96832515e0cf685aee0c856eb936abd5ae4e0017322a779",
+      "events": [],
+      "explanationCandidates": [],
+      "policyDecisions": [
+        {
+          "artifactSha256": "sha256:7ea042df6af3ae12e0356b37fd3900d970a96201b01504d0cf03ccef4319ff30",
+          "policyId": "none",
+          "result": "not_evaluated"
+        }
+      ],
+      "factualClaimCount": 1,
+      "claimUnitsAreProvisional": true,
+      "claimCandidates": [
+        {
+          "id": "find_heurisko_source_candidate-scope_source_0_6f0a4638348ed20633d623ee973f9c9a96f65104_a9bdf06d",
+          "observation": "Candidate \"https://github.com/alexeyraspopov/picocolors\" at 6f0a4638348ed20633d623ee973f9c9a96f65104, subtree \"\": acquired archive sha256:93b8591e3802176cd43844bc2389e1b8d24f2a5f76ec48915d351e6735e473fc; build context sha256:eed372cbed5fdc6bb42583ec617687836c4054267f21b672e9455761291460c6. Association: user_supplied. Conflicts: [].",
+          "evidenceIds": [
+            "ev_a9bdf06d097fcb5bd38319d7",
+            "ev_ae2a7adf72b52be0e2160d88"
+          ]
+        }
+      ],
+      "claimReviews": [],
+      "explanationReviews": [],
+      "humanReviewComplete": false,
+      "unresolved": false,
+      "abstentionReasons": [],
+      "rawCoverage": {
+        "artifactFiles": 2,
+        "sourceFiles": 2,
+        "comparedFiles": 2,
+        "analyzedBytes": 252,
+        "skippedBytes": 0,
+        "unsupportedBytes": 0,
+        "omissions": [],
+        "complete": true,
+        "limitations": [
+          "Static relationship scope: at most 128 artifact members, 1 MiB candidate reads, 32 source-map relationships and 256 KiB per member. Unsupported/unexamined transformations remain raw residuals; byte inventory coverage is not explanation coverage."
+        ]
+      },
+      "criticalFailures": [],
+      "reviewLimit": "One provisional claim unit per finding; a human must split atomic claims and review support, explanations, escalation and critical boundaries before acceptance. Empty review arrays mean unreviewed, not zero errors."
+    },
+    {
+      "id": "benign-format",
+      "reportSha256": "sha256:ecee5c9f972ab13114c3edcb7e565abdf025506d8052bdbd97a483380301283c",
+      "reportId": "report_2f9199b4012282a89b4d54ed",
+      "analysisConfigFingerprint": "8c427cff6694c4fe2543d776b900751d3a299fec497f7c46e28a2f32c698aec5",
+      "codeSha256": "af1dc4cdb1772c723b2e3410e3c7137d1e43c1253f3b262a8706ae10b43075a4",
+      "configurationSha256": "b14ceb705b2f1ccdb96832515e0cf685aee0c856eb936abd5ae4e0017322a779",
+      "events": [],
+      "explanationCandidates": [],
+      "policyDecisions": [
+        {
+          "artifactSha256": "sha256:dfb468d6fd31bfccc9d5003c06aa80980a3836c510f8b62a09688d1a5f7b67b1",
+          "policyId": "none",
+          "result": "not_evaluated"
+        }
+      ],
+      "factualClaimCount": 2,
+      "claimUnitsAreProvisional": true,
+      "claimCandidates": [
+        {
+          "id": "find_heurisko_change_unresolved-difference_chg_b873316e33eaeadb768edf3e_45434cc7",
+          "observation": "package/index.js is reported as modified; raw equality is different.",
+          "evidenceIds": [
+            "ev_45434cc716ec98123934c977",
+            "ev_5c55c6a29cce9db041d28a50",
+            "ev_f8cfaf6ebde1238fe8a42d34"
+          ]
+        },
+        {
+          "id": "find_heurisko_source_candidate-scope_source_0_6f0a4638348ed20633d623ee973f9c9a96f65104_4b121237",
+          "observation": "Candidate \"https://github.com/alexeyraspopov/picocolors\" at 6f0a4638348ed20633d623ee973f9c9a96f65104, subtree \"\": acquired archive sha256:93b8591e3802176cd43844bc2389e1b8d24f2a5f76ec48915d351e6735e473fc; build context sha256:eed372cbed5fdc6bb42583ec617687836c4054267f21b672e9455761291460c6. Association: user_supplied. Conflicts: [].",
+          "evidenceIds": [
+            "ev_4b121237dd8eaaa15c1c1433",
+            "ev_bc3d9fe59060e3c532898c6b"
+          ]
+        }
+      ],
+      "claimReviews": [],
+      "explanationReviews": [],
+      "humanReviewComplete": false,
+      "unresolved": false,
+      "abstentionReasons": [],
+      "rawCoverage": {
+        "artifactFiles": 2,
+        "sourceFiles": 2,
+        "comparedFiles": 2,
+        "analyzedBytes": 250,
+        "skippedBytes": 0,
+        "unsupportedBytes": 0,
+        "omissions": [],
+        "complete": true,
+        "limitations": [
+          "Static relationship scope: at most 128 artifact members, 1 MiB candidate reads, 32 source-map relationships and 256 KiB per member. Unsupported/unexamined transformations remain raw residuals; byte inventory coverage is not explanation coverage."
+        ]
+      },
+      "criticalFailures": [],
+      "reviewLimit": "One provisional claim unit per finding; a human must split atomic claims and review support, explanations, escalation and critical boundaries before acceptance. Empty review arrays mean unreviewed, not zero errors."
+    },
+    {
+      "id": "benign-generated",
+      "reportSha256": "sha256:457d6df16868b48a6aae8e7dff254c259a92aaa6ce1634c72654a081185dd9ca",
+      "reportId": "report_41286c412bebc50dc4278979",
+      "analysisConfigFingerprint": "6deb247efdc79da3953ced3c26dd7b85478a14234c176a469ee54e5402a235a1",
+      "codeSha256": "af1dc4cdb1772c723b2e3410e3c7137d1e43c1253f3b262a8706ae10b43075a4",
+      "configurationSha256": "b14ceb705b2f1ccdb96832515e0cf685aee0c856eb936abd5ae4e0017322a779",
+      "events": [],
+      "explanationCandidates": [],
+      "policyDecisions": [
+        {
+          "artifactSha256": "sha256:59993e0544d795f43fdd9e73dce4f6e6bca57eb4e5e120ec31d631d37175c1ed",
+          "policyId": "none",
+          "result": "not_evaluated"
+        }
+      ],
+      "factualClaimCount": 2,
+      "claimUnitsAreProvisional": true,
+      "claimCandidates": [
+        {
+          "id": "find_heurisko_change_unresolved-difference_chg_2544c4733496227eb1a6a1fd_1370b35c",
+          "observation": "package/index.js is reported as modified; raw equality is different.",
+          "evidenceIds": [
+            "ev_1370b35c0c64218f5a3f808c",
+            "ev_74944aef2cfd586fff8d86c6",
+            "ev_9996d944cd68801536c2edfb"
+          ]
+        },
+        {
+          "id": "find_heurisko_source_candidate-scope_source_0_6f0a4638348ed20633d623ee973f9c9a96f65104_29b130c1",
+          "observation": "Candidate \"https://github.com/alexeyraspopov/picocolors\" at 6f0a4638348ed20633d623ee973f9c9a96f65104, subtree \"\": acquired archive sha256:93b8591e3802176cd43844bc2389e1b8d24f2a5f76ec48915d351e6735e473fc; build context sha256:eed372cbed5fdc6bb42583ec617687836c4054267f21b672e9455761291460c6. Association: user_supplied. Conflicts: [].",
+          "evidenceIds": [
+            "ev_29b130c17f7a7c8e68cb8166",
+            "ev_d71a4ec2aa43aa0f19fe3320"
+          ]
+        }
+      ],
+      "claimReviews": [],
+      "explanationReviews": [],
+      "humanReviewComplete": false,
+      "unresolved": false,
+      "abstentionReasons": [],
+      "rawCoverage": {
+        "artifactFiles": 2,
+        "sourceFiles": 2,
+        "comparedFiles": 2,
+        "analyzedBytes": 253,
+        "skippedBytes": 0,
+        "unsupportedBytes": 0,
+        "omissions": [],
+        "complete": true,
+        "limitations": [
+          "Static relationship scope: at most 128 artifact members, 1 MiB candidate reads, 32 source-map relationships and 256 KiB per member. Unsupported/unexamined transformations remain raw residuals; byte inventory coverage is not explanation coverage."
+        ]
+      },
+      "criticalFailures": [],
+      "reviewLimit": "One provisional claim unit per finding; a human must split atomic claims and review support, explanations, escalation and critical boundaries before acceptance. Empty review arrays mean unreviewed, not zero errors."
+    },
+    {
+      "id": "mutation-lifecycle-add",
+      "reportSha256": "sha256:cb6da06c56fb4c24d844d8ea0196897698cae6950fbb111ccb54013a5367cd8d",
+      "reportId": "report_7a0eceed9c1dd0f019a1c52c",
+      "analysisConfigFingerprint": "b80c57b19b0207cac06078805eec62e9bbca75c039d28cab553be9bbeb032b38",
+      "codeSha256": "af1dc4cdb1772c723b2e3410e3c7137d1e43c1253f3b262a8706ae10b43075a4",
+      "configurationSha256": "b14ceb705b2f1ccdb96832515e0cf685aee0c856eb936abd5ae4e0017322a779",
+      "events": [
+        {
+          "artifactSha256": "sha256:d7f47d08f3df8ba067e12864c9e58ede70e26e219749449850ecc889d0fb681c",
+          "sourceSha256": "sha256:93b8591e3802176cd43844bc2389e1b8d24f2a5f76ec48915d351e6735e473fc",
+          "pointer": "/scripts/postinstall",
+          "ruleClass": "Q1.lifecycle",
+          "direction": "add",
+          "severity": "medium",
+          "priority": "medium",
+          "unresolved": false,
+          "reason": "RESOLVED",
+          "findingId": "find_heurisko_manifest_lifecycle-script-change_chg_94500e0b5472540305564758_92f2176b",
+          "evidenceIds": [
+            "ev_92f2176bca6e21ec8dd0095c"
+          ],
+          "observation": "Manifest pointer /scripts/postinstall is added to the artifact. Source: absent (validated in the retained manifest); artifact: \"HEURISKO_INERT_TEST_ONLY\"."
+        }
+      ],
+      "explanationCandidates": [],
+      "policyDecisions": [
+        {
+          "artifactSha256": "sha256:d7f47d08f3df8ba067e12864c9e58ede70e26e219749449850ecc889d0fb681c",
+          "policyId": "none",
+          "result": "not_evaluated"
+        }
+      ],
+      "factualClaimCount": 3,
+      "claimUnitsAreProvisional": true,
+      "claimCandidates": [
+        {
+          "id": "find_heurisko_manifest_lifecycle-script-change_chg_94500e0b5472540305564758_92f2176b",
+          "observation": "Manifest pointer /scripts/postinstall is added to the artifact. Source: absent (validated in the retained manifest); artifact: \"HEURISKO_INERT_TEST_ONLY\".",
+          "evidenceIds": [
+            "ev_92f2176bca6e21ec8dd0095c"
+          ]
+        },
+        {
+          "id": "find_heurisko_change_unresolved-difference_chg_94500e0b5472540305564758_1168ed22",
+          "observation": "package/package.json is reported as modified; raw equality is different.",
+          "evidenceIds": [
+            "ev_1168ed22003caf942a411fcc",
+            "ev_71cdcaa59309be36a2e9f310",
+            "ev_7aa80275d9ebb04288e825d8",
+            "ev_7d9da3faa85f9e6b17790823",
+            "ev_92f2176bca6e21ec8dd0095c"
+          ]
+        },
+        {
+          "id": "find_heurisko_source_candidate-scope_source_0_6f0a4638348ed20633d623ee973f9c9a96f65104_30f49805",
+          "observation": "Candidate \"https://github.com/alexeyraspopov/picocolors\" at 6f0a4638348ed20633d623ee973f9c9a96f65104, subtree \"\": acquired archive sha256:93b8591e3802176cd43844bc2389e1b8d24f2a5f76ec48915d351e6735e473fc; build context sha256:eed372cbed5fdc6bb42583ec617687836c4054267f21b672e9455761291460c6. Association: user_supplied. Conflicts: [].",
+          "evidenceIds": [
+            "ev_30f49805c7517788af3c796d",
+            "ev_a1685e7c24952bbd9bba789c"
+          ]
+        }
+      ],
+      "claimReviews": [],
+      "explanationReviews": [],
+      "humanReviewComplete": false,
+      "unresolved": false,
+      "abstentionReasons": [],
+      "rawCoverage": {
+        "artifactFiles": 2,
+        "sourceFiles": 2,
+        "comparedFiles": 2,
+        "analyzedBytes": 292,
+        "skippedBytes": 0,
+        "unsupportedBytes": 0,
+        "omissions": [],
+        "complete": true,
+        "limitations": [
+          "Static relationship scope: at most 128 artifact members, 1 MiB candidate reads, 32 source-map relationships and 256 KiB per member. Unsupported/unexamined transformations remain raw residuals; byte inventory coverage is not explanation coverage."
+        ]
+      },
+      "criticalFailures": [],
+      "reviewLimit": "One provisional claim unit per finding; a human must split atomic claims and review support, explanations, escalation and critical boundaries before acceptance. Empty review arrays mean unreviewed, not zero errors."
+    },
+    {
+      "id": "mutation-lifecycle-remove",
+      "reportSha256": "sha256:8c41c9946083d0c4f6390919f4bfba4f3d74fdee9eb2ca2c579e2d61bc56e5d5",
+      "reportId": "report_1a8e52828d923d2141698ab9",
+      "analysisConfigFingerprint": "0ab9a969c25317ae7cab887a986e5bf3cef0fce91fd2e161561f23a2eda7df12",
+      "codeSha256": "af1dc4cdb1772c723b2e3410e3c7137d1e43c1253f3b262a8706ae10b43075a4",
+      "configurationSha256": "b14ceb705b2f1ccdb96832515e0cf685aee0c856eb936abd5ae4e0017322a779",
+      "events": [
+        {
+          "artifactSha256": "sha256:7ea042df6af3ae12e0356b37fd3900d970a96201b01504d0cf03ccef4319ff30",
+          "sourceSha256": "sha256:353eedc6881e2daf5bf6619840c7fa6def99f28d15109495749bbb0e26c2483c",
+          "pointer": "/scripts/postinstall",
+          "ruleClass": "Q1.lifecycle",
+          "direction": "remove",
+          "severity": "informational",
+          "priority": "low",
+          "unresolved": false,
+          "reason": "RESOLVED",
+          "findingId": "find_heurisko_manifest_lifecycle-script-change_chg_fbef90a93f3162167b5e5712_a274e296",
+          "evidenceIds": [
+            "ev_a274e296ea0ef056004ccb4c"
+          ],
+          "observation": "Manifest pointer /scripts/postinstall is removed from the artifact. Source: \"HEURISKO_INERT_TEST_ONLY\"; artifact: absent (validated in the retained manifest)."
+        }
+      ],
+      "explanationCandidates": [],
+      "policyDecisions": [
+        {
+          "artifactSha256": "sha256:7ea042df6af3ae12e0356b37fd3900d970a96201b01504d0cf03ccef4319ff30",
+          "policyId": "none",
+          "result": "not_evaluated"
+        }
+      ],
+      "factualClaimCount": 3,
+      "claimUnitsAreProvisional": true,
+      "claimCandidates": [
+        {
+          "id": "find_heurisko_manifest_lifecycle-script-change_chg_fbef90a93f3162167b5e5712_a274e296",
+          "observation": "Manifest pointer /scripts/postinstall is removed from the artifact. Source: \"HEURISKO_INERT_TEST_ONLY\"; artifact: absent (validated in the retained manifest).",
+          "evidenceIds": [
+            "ev_a274e296ea0ef056004ccb4c"
+          ]
+        },
+        {
+          "id": "find_heurisko_change_unresolved-difference_chg_fbef90a93f3162167b5e5712_2666405d",
+          "observation": "package/package.json is reported as modified; raw equality is different.",
+          "evidenceIds": [
+            "ev_2666405dee2c1eb677dcf1fc",
+            "ev_4bae9e641e9293805bc8ac24",
+            "ev_853fdf325341f24a90bceda5",
+            "ev_a274e296ea0ef056004ccb4c",
+            "ev_c3cb3647e2c3b5d7b557bfd7"
+          ]
+        },
+        {
+          "id": "find_heurisko_source_candidate-scope_source_0_6f0a4638348ed20633d623ee973f9c9a96f65104_1d648883",
+          "observation": "Candidate \"https://github.com/alexeyraspopov/picocolors\" at 6f0a4638348ed20633d623ee973f9c9a96f65104, subtree \"\": acquired archive sha256:353eedc6881e2daf5bf6619840c7fa6def99f28d15109495749bbb0e26c2483c; build context sha256:06439c4d09aaf1b8c3fbf3873a57b5413ad8795c9f516c01cac81c56fbaded82. Association: user_supplied. Conflicts: [].",
+          "evidenceIds": [
+            "ev_1d64888383ec0947672cd9c8",
+            "ev_2c07be450e023aec88631264"
+          ]
+        }
+      ],
+      "claimReviews": [],
+      "explanationReviews": [],
+      "humanReviewComplete": false,
+      "unresolved": false,
+      "abstentionReasons": [],
+      "rawCoverage": {
+        "artifactFiles": 2,
+        "sourceFiles": 2,
+        "comparedFiles": 2,
+        "analyzedBytes": 292,
+        "skippedBytes": 0,
+        "unsupportedBytes": 0,
+        "omissions": [],
+        "complete": true,
+        "limitations": [
+          "Static relationship scope: at most 128 artifact members, 1 MiB candidate reads, 32 source-map relationships and 256 KiB per member. Unsupported/unexamined transformations remain raw residuals; byte inventory coverage is not explanation coverage."
+        ]
+      },
+      "criticalFailures": [],
+      "reviewLimit": "One provisional claim unit per finding; a human must split atomic claims and review support, explanations, escalation and critical boundaries before acceptance. Empty review arrays mean unreviewed, not zero errors."
+    },
+    {
+      "id": "mutation-entrypoint",
+      "reportSha256": "sha256:6b494165a2bebf3a3ed24c116c1d2100322daed4abff4711456837c1122967d6",
+      "reportId": "report_f1b223eacc1270aae02156b6",
+      "analysisConfigFingerprint": "25573c4c02aef142535b0598a36e9e6c91e027923856190476b9552764becd48",
+      "codeSha256": "af1dc4cdb1772c723b2e3410e3c7137d1e43c1253f3b262a8706ae10b43075a4",
+      "configurationSha256": "b14ceb705b2f1ccdb96832515e0cf685aee0c856eb936abd5ae4e0017322a779",
+      "events": [
+        {
+          "artifactSha256": "sha256:8652d4c4e95d4d21ed14ac1da5df71cc9a6e718639fb8d4cde0f995a5f0ded6a",
+          "sourceSha256": "sha256:93b8591e3802176cd43844bc2389e1b8d24f2a5f76ec48915d351e6735e473fc",
+          "pointer": "/main",
+          "ruleClass": "Q2.entrypoint",
+          "direction": "change",
+          "severity": "low",
+          "priority": "low",
+          "unresolved": false,
+          "reason": "RESOLVED",
+          "findingId": "find_heurisko_manifest_entrypoint-change_chg_a06e7e304e341caf54d8ccd2_718d5e76",
+          "evidenceIds": [
+            "ev_718d5e768fef473afb6c2f38"
+          ],
+          "observation": "Manifest pointer /main is changed from source to artifact. Source: \"index.js\"; artifact: \"alternate.js\"."
+        }
+      ],
+      "explanationCandidates": [],
+      "policyDecisions": [
+        {
+          "artifactSha256": "sha256:8652d4c4e95d4d21ed14ac1da5df71cc9a6e718639fb8d4cde0f995a5f0ded6a",
+          "policyId": "none",
+          "result": "not_evaluated"
+        }
+      ],
+      "factualClaimCount": 3,
+      "claimUnitsAreProvisional": true,
+      "claimCandidates": [
+        {
+          "id": "find_heurisko_manifest_entrypoint-change_chg_a06e7e304e341caf54d8ccd2_718d5e76",
+          "observation": "Manifest pointer /main is changed from source to artifact. Source: \"index.js\"; artifact: \"alternate.js\".",
+          "evidenceIds": [
+            "ev_718d5e768fef473afb6c2f38"
+          ]
+        },
+        {
+          "id": "find_heurisko_change_unresolved-difference_chg_a06e7e304e341caf54d8ccd2_32bdf9fe",
+          "observation": "package/package.json is reported as modified; raw equality is different.",
+          "evidenceIds": [
+            "ev_32bdf9fe0df2f640f9ee2220",
+            "ev_564324b7f6caa72201d9a13d",
+            "ev_679f3e9871e0f029d54637d1",
+            "ev_718d5e768fef473afb6c2f38"
+          ]
+        },
+        {
+          "id": "find_heurisko_source_candidate-scope_source_0_6f0a4638348ed20633d623ee973f9c9a96f65104_3915c9e2",
+          "observation": "Candidate \"https://github.com/alexeyraspopov/picocolors\" at 6f0a4638348ed20633d623ee973f9c9a96f65104, subtree \"\": acquired archive sha256:93b8591e3802176cd43844bc2389e1b8d24f2a5f76ec48915d351e6735e473fc; build context sha256:eed372cbed5fdc6bb42583ec617687836c4054267f21b672e9455761291460c6. Association: user_supplied. Conflicts: [].",
+          "evidenceIds": [
+            "ev_3915c9e25ea703b52b33a6d6",
+            "ev_59fa3ea0a4dbd62bcdd39ef7"
+          ]
+        }
+      ],
+      "claimReviews": [],
+      "explanationReviews": [],
+      "humanReviewComplete": false,
+      "unresolved": false,
+      "abstentionReasons": [],
+      "rawCoverage": {
+        "artifactFiles": 2,
+        "sourceFiles": 2,
+        "comparedFiles": 2,
+        "analyzedBytes": 256,
+        "skippedBytes": 0,
+        "unsupportedBytes": 0,
+        "omissions": [],
+        "complete": true,
+        "limitations": [
+          "Static relationship scope: at most 128 artifact members, 1 MiB candidate reads, 32 source-map relationships and 256 KiB per member. Unsupported/unexamined transformations remain raw residuals; byte inventory coverage is not explanation coverage."
+        ]
+      },
+      "criticalFailures": [],
+      "reviewLimit": "One provisional claim unit per finding; a human must split atomic claims and review support, explanations, escalation and critical boundaries before acceptance. Empty review arrays mean unreviewed, not zero errors."
+    },
+    {
+      "id": "uncertain-link",
+      "reportSha256": "sha256:8bac892c2dc41f8b1c35a660b3cb39674eb694e138bb8586ba248986dd58f664",
+      "reportId": "report_e33520b186c2b22b77e7695a",
+      "analysisConfigFingerprint": "2a86bfb62f0086b139df575627e5cbc8f15be8a42c2133c90c3f080829cbc5e8",
+      "codeSha256": "af1dc4cdb1772c723b2e3410e3c7137d1e43c1253f3b262a8706ae10b43075a4",
+      "configurationSha256": "b14ceb705b2f1ccdb96832515e0cf685aee0c856eb936abd5ae4e0017322a779",
+      "events": [],
+      "explanationCandidates": [],
+      "policyDecisions": [
+        {
+          "artifactSha256": "sha256:e76d7195dcf540b82fe56a459ea421d43924c8e9d5f0098cae2d69656376b1a4",
+          "policyId": "none",
+          "result": "not_evaluated"
+        }
+      ],
+      "factualClaimCount": 1,
+      "claimUnitsAreProvisional": true,
+      "claimCandidates": [
+        {
+          "id": "find_heurisko_source_candidate-scope_source_0_6f0a4638348ed20633d623ee973f9c9a96f65104_d874abd3",
+          "observation": "Candidate \"https://github.com/alexeyraspopov/picocolors\" at 6f0a4638348ed20633d623ee973f9c9a96f65104, subtree \"\": acquired archive sha256:93b8591e3802176cd43844bc2389e1b8d24f2a5f76ec48915d351e6735e473fc; build context sha256:eed372cbed5fdc6bb42583ec617687836c4054267f21b672e9455761291460c6. Association: user_supplied. Conflicts: [].",
+          "evidenceIds": [
+            "ev_d874abd37f78134f2bab9210",
+            "ev_f7d64c3c57e9a797fc92191c"
+          ]
+        }
+      ],
+      "claimReviews": [],
+      "explanationReviews": [],
+      "humanReviewComplete": false,
+      "unresolved": true,
+      "abstentionReasons": [],
+      "rawCoverage": {
+        "artifactFiles": 2,
+        "sourceFiles": 2,
+        "comparedFiles": 2,
+        "analyzedBytes": 252,
+        "skippedBytes": 0,
+        "unsupportedBytes": 0,
+        "omissions": [],
+        "complete": false,
+        "limitations": [
+          "File/byte totals are known observed members only; remaining archive scope is unknown on failure.",
+          "Static relationship scope: at most 128 artifact members, 1 MiB candidate reads, 32 source-map relationships and 256 KiB per member. Unsupported/unexamined transformations remain raw residuals; byte inventory coverage is not explanation coverage."
+        ]
+      },
+      "criticalFailures": [],
+      "reviewLimit": "One provisional claim unit per finding; a human must split atomic claims and review support, explanations, escalation and critical boundaries before acceptance. Empty review arrays mean unreviewed, not zero errors."
+    },
+    {
+      "id": "uncertain-manifest",
+      "reportSha256": "sha256:2e81da1e0e43441d0ce0ef3e215624c000ba450e3931369f73f7a35b038722c5",
+      "reportId": "report_1ba82ddff9adfdec7458bcee",
+      "analysisConfigFingerprint": "92b32deb213c9fc27451c23ab3dc60b55230509cb9b98245013c5ab438aeaf6b",
+      "codeSha256": "af1dc4cdb1772c723b2e3410e3c7137d1e43c1253f3b262a8706ae10b43075a4",
+      "configurationSha256": "b14ceb705b2f1ccdb96832515e0cf685aee0c856eb936abd5ae4e0017322a779",
+      "events": [],
+      "explanationCandidates": [],
+      "policyDecisions": [
+        {
+          "artifactSha256": "sha256:395208b6c49cb207e6a17ca483aae7597342f4a27762e307e6d1c535e0beadd1",
+          "policyId": "none",
+          "result": "not_evaluated"
+        }
+      ],
+      "factualClaimCount": 2,
+      "claimUnitsAreProvisional": true,
+      "claimCandidates": [
+        {
+          "id": "find_heurisko_change_unresolved-difference_chg_2464e161466941b3926c52c8_381629ba",
+          "observation": "package/package.json is reported as modified; raw equality is different.",
+          "evidenceIds": [
+            "ev_381629bafb6ce5d4f87c6e22",
+            "ev_a7ae28aca3e2e6e6f673db48",
+            "ev_ee7bfc23d68bf6df5a7c5a1e"
+          ]
+        },
+        {
+          "id": "find_heurisko_source_candidate-scope_source_0_6f0a4638348ed20633d623ee973f9c9a96f65104_2df3d0a6",
+          "observation": "Candidate \"https://github.com/alexeyraspopov/picocolors\" at 6f0a4638348ed20633d623ee973f9c9a96f65104, subtree \"\": acquired archive sha256:93b8591e3802176cd43844bc2389e1b8d24f2a5f76ec48915d351e6735e473fc; build context sha256:eed372cbed5fdc6bb42583ec617687836c4054267f21b672e9455761291460c6. Association: user_supplied. Conflicts: [].",
+          "evidenceIds": [
+            "ev_2df3d0a6cec7fb8c00ac32f9",
+            "ev_378a7552f3916a03c351ca74"
+          ]
+        }
+      ],
+      "claimReviews": [],
+      "explanationReviews": [],
+      "humanReviewComplete": false,
+      "unresolved": true,
+      "abstentionReasons": [],
+      "rawCoverage": {
+        "artifactFiles": 2,
+        "sourceFiles": 2,
+        "comparedFiles": 2,
+        "analyzedBytes": 102,
+        "skippedBytes": 0,
+        "unsupportedBytes": 123,
+        "omissions": [
+          {
+            "side": "artifact",
+            "path": "package/package.json",
+            "kind": "unsupported",
+            "stage": "compare",
+            "reason": "MANIFEST_DUPLICATE_KEY",
+            "bytes": 48,
+            "evidenceIds": [
+              "ev_a7ae28aca3e2e6e6f673db48"
+            ]
+          },
+          {
+            "side": "source",
+            "path": "source-root/package.json",
+            "kind": "unsupported",
+            "stage": "compare",
+            "reason": "MANIFEST_DUPLICATE_KEY",
+            "bytes": 75,
+            "evidenceIds": [
+              "ev_381629bafb6ce5d4f87c6e22"
+            ]
+          }
+        ],
+        "complete": false,
+        "limitations": [
+          "MANIFEST_DUPLICATE_KEY; full manifest bytes and raw delta retained.",
+          "Static relationship scope: at most 128 artifact members, 1 MiB candidate reads, 32 source-map relationships and 256 KiB per member. Unsupported/unexamined transformations remain raw residuals; byte inventory coverage is not explanation coverage."
+        ]
+      },
+      "criticalFailures": [],
+      "reviewLimit": "One provisional claim unit per finding; a human must split atomic claims and review support, explanations, escalation and critical boundaries before acceptance. Empty review arrays mean unreviewed, not zero errors."
+    }
+  ],
+  "mandatoryConformanceComplete": false
+}

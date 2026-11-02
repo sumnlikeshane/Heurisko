@@ -1,0 +1,128 @@
+{
+  "authority": "development only; labels may be implementing-agent constructions",
+  "acceptance": null,
+  "reportCount": 8,
+  "events": {
+    "Q1.lifecycle": {
+      "eligible": 2,
+      "tp": 2,
+      "directionCorrect": 2,
+      "severityCorrect": 2,
+      "priorityCorrect": 2,
+      "precision": 1.0,
+      "unconditionalRecall": 1.0,
+      "directionAccuracy": 1.0,
+      "severityAgreement": 1.0,
+      "priorityAgreement": 1.0,
+      "directions": {
+        "add": 1,
+        "remove": 1
+      }
+    },
+    "Q2.entrypoint": {
+      "eligible": 1,
+      "tp": 1,
+      "directionCorrect": 1,
+      "severityCorrect": 1,
+      "priorityCorrect": 1,
+      "precision": 1.0,
+      "unconditionalRecall": 1.0,
+      "directionAccuracy": 1.0,
+      "severityAgreement": 1.0,
+      "priorityAgreement": 1.0,
+      "directions": {
+        "change": 1
+      }
+    }
+  },
+  "exclusivePrimaryCategories": {
+    "benign-authored": {
+      "reports": 2,
+      "expectedEvents": 0,
+      "observedEvents": 0,
+      "falseEscalations": 0,
+      "escalationUnreviewed": 2,
+      "unresolvedOutputs": 0
+    },
+    "benign-generated": {
+      "reports": 1,
+      "expectedEvents": 0,
+      "observedEvents": 0,
+      "falseEscalations": 0,
+      "escalationUnreviewed": 1,
+      "unresolvedOutputs": 0
+    },
+    "inert-mutated": {
+      "reports": 3,
+      "expectedEvents": 3,
+      "observedEvents": 3,
+      "falseEscalations": 0,
+      "escalationUnreviewed": 3,
+      "unresolvedOutputs": 0
+    },
+    "ambiguous-incomplete": {
+      "reports": 2,
+      "expectedEvents": 0,
+      "observedEvents": 0,
+      "falseEscalations": 0,
+      "escalationUnreviewed": 2,
+      "unresolvedOutputs": 2
+    }
+  },
+  "overlappingSubgroups": {},
+  "families": {
+    "heurisko-original-constructions": {
+      "reports": 8,
+      "eligible": 3
+    }
+  },
+  "familyWeightedRecall": 1.0,
+  "familyClusterBootstrap95": null,
+  "familyBootstrapEligibleClusters": 1,
+  "reviewCoverage": {
+    "humanReviewedReports": 0,
+    "unreviewedReports": 8,
+    "provisionalClaimUnitReports": 8
+  },
+  "citations": {
+    "unreviewedClaims": 17
+  },
+  "explanations": {
+    "fileUnitsEligible": 0,
+    "fn": 0
+  },
+  "uncertainty": {
+    "required": 2,
+    "preserved": 2
+  },
+  "criticalFailures": {},
+  "abstentionReasons": {
+    "RESOLVED": 3
+  },
+  "policyDecisions": {
+    "eligible": 8,
+    "tp": 8,
+    "fp": 0,
+    "precision": 1.0,
+    "unconditionalRecall": 1.0,
+    "matrix": [
+      {
+        "expected": "not_evaluated",
+        "actual": "not_evaluated",
+        "count": 8
+      }
+    ]
+  },
+  "exclusions": [],
+  "limitations": [
+    "No malware/population accuracy inference.",
+    "Citation entailment and false escalation are human judgments, not inferred from resolution.",
+    "Zero denominators are N/A; missing/abstained supported events count as misses.",
+    "Independent grading does not grant phase acceptance or Q4 admission."
+  ],
+  "inputs": {
+    "labelsSha256": "20d62805ce19b9a52e1baf7b6db7c91fbe4f705f21b5cd858db531a377295a90",
+    "observationsSha256": "7b6d91bd9bf361037b964e04c7ac6ea79ac6e8807348e5c431e542ee0edefecd",
+    "graderSha256": "1573d53d5844f61413aa1f0d799edd518c8a31b58a9e124a67160e5e932ea72c"
+  }
+}

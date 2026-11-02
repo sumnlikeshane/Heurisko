@@ -1,0 +1,30 @@
+[
+  {
+    "name": "@sigstore/verify",
+    "version": "4.1.2",
+    "kind": "metadata",
+    "url": "https://registry.npmjs.org/@sigstore/verify/4.1.2",
+    "sha256": "45de3b73a7a1956a800aa7fa8586f9d90e7f242166e02429b779c3716900fa30"
+  },
+  {
+    "name": "@sigstore/verify",
+    "version": "4.1.2",
+    "kind": "attestations",
+    "url": "https://registry.npmjs.org/-/npm/v1/attestations/@sigstore%2fverify@4.1.2",
+    "sha256": "16b3a19d9470ae46cdc939d3b508cb859ef7e536c5db0c956f3f37ac5ca16e46"
+  },
+  {
+    "name": "@sigstore/core",
+    "version": "4.0.1",
+    "kind": "metadata",
+    "url": "https://registry.npmjs.org/@sigstore/core/4.0.1",
+    "sha256": "d9c0299f02330d6a4d413af4965b53c60090d495d8f7585b306a070dd13ded8c"
+  },
+  {
+    "name": "@sigstore/core",
+    "version": "4.0.1",
+    "kind": "attestations",
+    "url": "https://registry.npmjs.org/-/npm/v1/attestations/@sigstore%2fcore@4.0.1",
+    "sha256": "3cc33ac30877d2facdd5c888087fec303bf0a4e88cb0b310b4c44ef54ec33960"
+  }
+]

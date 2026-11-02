@@ -1,0 +1,7 @@
+{
+  "stageInventorySha256": "173199d4e2322b05a073130ef3ee9a45bc75a843457c9fd08180cf4c127180ff",
+  "frozenStageInventorySha256": "173199d4e2322b05a073130ef3ee9a45bc75a843457c9fd08180cf4c127180ff",
+  "matchesFrozenInventory": true,
+  "stagedDiffMatchesInitial": true,
+  "scope": "Semantic stage inventory and cached diff; not physical .git/index byte identity or stat-cache metadata."
+}

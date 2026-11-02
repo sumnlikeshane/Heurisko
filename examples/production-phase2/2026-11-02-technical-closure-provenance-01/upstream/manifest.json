@@ -1,0 +1,49 @@
+{
+  "capturedAt": "2026-11-02T14:17:26.449650+00:00",
+  "bounds": "Seven HTTPS fixed-host requests; redirects rejected; 1MiB each; 20s each; public read-only.",
+  "scriptSha256": "d803e377d3ba74f67ecc90dcef79e670bcf734747ad6e34479eff31caeb93f07",
+  "sources": [
+    {
+      "file": "rekor-tiles-release.json",
+      "url": "https://api.github.com/repos/sigstore/rekor-tiles/releases/tags/v2.3.0",
+      "sha256": "ef4d22256ebd4d02ed7732a8f3aa643be648ab02168b46b55ef1cccea6a8da21",
+      "bytes": 58965
+    },
+    {
+      "file": "rekor-tiles-commit.json",
+      "url": "https://api.github.com/repos/sigstore/rekor-tiles/commits/v2.3.0",
+      "sha256": "39499802227ab5b5cc94903f009cdba652e534581b08c9ec6da6a402996e6e88",
+      "bytes": 96446
+    },
+    {
+      "file": "CLIENTS.md",
+      "url": "https://raw.githubusercontent.com/sigstore/rekor-tiles/fa390b1c17f9685f7a164da2c06e82dc295cfdca/CLIENTS.md",
+      "sha256": "fd7b33b3a59b678c062e6283d76aca0817405059d27a78565a18f4fb97458f74",
+      "bytes": 24639
+    },
+    {
+      "file": "rekor-tiles-LICENSE",
+      "url": "https://raw.githubusercontent.com/sigstore/rekor-tiles/fa390b1c17f9685f7a164da2c06e82dc295cfdca/LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "bytes": 11357
+    },
+    {
+      "file": "conformance-release.json",
+      "url": "https://api.github.com/repos/sigstore/sigstore-conformance/releases/tags/v0.0.28",
+      "sha256": "cb0ecfd426138778122738c94ff7c92158e1a536c197e5041e304cc098fdc138",
+      "bytes": 2468
+    },
+    {
+      "file": "conformance-commit.json",
+      "url": "https://api.github.com/repos/sigstore/sigstore-conformance/commits/v0.0.28",
+      "sha256": "a6d0b60a6d15479b90270c2808b60fd9c6233a2135c8fa60eea859acfd0fab66",
+      "bytes": 92186
+    },
+    {
+      "file": "architecture-pr-63.json",
+      "url": "https://api.github.com/repos/sigstore/architecture-docs/pulls/63",
+      "sha256": "d618d72b7d623da81467d0124ca2b8727d0846c5916ef1f8bdc30a5c0979e30a",
+      "bytes": 18058
+    }
+  ]
+}

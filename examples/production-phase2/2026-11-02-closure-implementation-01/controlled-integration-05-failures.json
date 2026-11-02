@@ -1,0 +1,231 @@
+[
+  {
+    "id": "positive-0-0-1",
+    "outcomes": {
+      "artifactIntegrity": "matched",
+      "sourceAssociation": "publisher_asserted",
+      "provenancePolicy": "verified_policy",
+      "correspondence": "unresolved",
+      "analysisCompleteness": "incomplete",
+      "policyResult": "pass"
+    },
+    "cliExit": 2,
+    "reason": "ASSERTIONS_VERIFIED",
+    "incompleteStages": [
+      {
+        "stage": "inventory",
+        "status": "incomplete",
+        "errors": [
+          {
+            "stage": "inventory",
+            "code": "INVENTORY_INCOMPLETE",
+            "message": "INVENTORY_INCOMPLETE",
+            "affectedScope": "inventory",
+            "retryable": false
+          }
+        ]
+      },
+      {
+        "stage": "compare",
+        "status": "incomplete",
+        "errors": [
+          {
+            "stage": "compare",
+            "code": "COMPARISON_SCOPE_INCOMPLETE",
+            "message": "COMPARISON_SCOPE_INCOMPLETE",
+            "affectedScope": "compare",
+            "retryable": false
+          }
+        ]
+      }
+    ],
+    "inventories": [
+      {
+        "complete": false,
+        "code": "PARSER_TIMEOUT",
+        "runtime": {
+          "python": "3.13.18",
+          "platform": "linux",
+          "machine": "aarch64",
+          "uid": 65534,
+          "journalMode": 420,
+          "memoryBytes": 268435456,
+          "swapBytes": 0,
+          "pids": 16,
+          "cpuSeconds": 10,
+          "addressSpaceBytes": 268435456,
+          "rootReadOnly": true,
+          "inputReadOnly": true,
+          "workerReadOnly": true,
+          "capabilities": "0000000000000000",
+          "noNewPrivileges": "1",
+          "networkDevices": [
+            "bonding_masters",
+            "erspan0",
+            "gre0",
+            "gretap0",
+            "ip6_vti0",
+            "ip6gre0",
+            "ip6tnl0",
+            "ip_vti0",
+            "lo",
+            "sit0",
+            "tunl0"
+          ],
+          "networkUpDevices": [
+            "lo"
+          ],
+          "dockerSocketPresent": false
+        },
+        "remainingScope": "unknown"
+      },
+      {
+        "complete": true,
+        "code": "OK",
+        "runtime": {
+          "python": "3.13.18",
+          "platform": "linux",
+          "machine": "aarch64",
+          "uid": 65534,
+          "journalMode": 420,
+          "memoryBytes": 268435456,
+          "swapBytes": 0,
+          "pids": 16,
+          "cpuSeconds": 10,
+          "addressSpaceBytes": 268435456,
+          "rootReadOnly": true,
+          "inputReadOnly": true,
+          "workerReadOnly": true,
+          "capabilities": "0000000000000000",
+          "noNewPrivileges": "1",
+          "networkDevices": [
+            "bonding_masters",
+            "erspan0",
+            "gre0",
+            "gretap0",
+            "ip6_vti0",
+            "ip6gre0",
+            "ip6tnl0",
+            "ip_vti0",
+            "lo",
+            "sit0",
+            "tunl0"
+          ],
+          "networkUpDevices": [
+            "lo"
+          ],
+          "dockerSocketPresent": false
+        },
+        "remainingScope": "none"
+      }
+    ]
+  },
+  {
+    "id": "bad-signature-0-0-1",
+    "outcomes": {
+      "artifactIntegrity": "matched",
+      "sourceAssociation": "publisher_asserted",
+      "provenancePolicy": "unresolved",
+      "correspondence": "exact",
+      "analysisCompleteness": "incomplete",
+      "policyResult": "indeterminate"
+    },
+    "cliExit": 2,
+    "reason": "VERIFIER_DEADLINE",
+    "incompleteStages": [
+      {
+        "stage": "provenance",
+        "status": "incomplete",
+        "errors": [
+          {
+            "stage": "provenance",
+            "code": "VERIFIER_DEADLINE",
+            "message": "VERIFIER_DEADLINE",
+            "affectedScope": "provenance",
+            "retryable": false
+          }
+        ]
+      }
+    ],
+    "inventories": [
+      {
+        "complete": true,
+        "code": "OK",
+        "runtime": {
+          "python": "3.13.18",
+          "platform": "linux",
+          "machine": "aarch64",
+          "uid": 65534,
+          "journalMode": 420,
+          "memoryBytes": 268435456,
+          "swapBytes": 0,
+          "pids": 16,
+          "cpuSeconds": 10,
+          "addressSpaceBytes": 268435456,
+          "rootReadOnly": true,
+          "inputReadOnly": true,
+          "workerReadOnly": true,
+          "capabilities": "0000000000000000",
+          "noNewPrivileges": "1",
+          "networkDevices": [
+            "bonding_masters",
+            "erspan0",
+            "gre0",
+            "gretap0",
+            "ip6_vti0",
+            "ip6gre0",
+            "ip6tnl0",
+            "ip_vti0",
+            "lo",
+            "sit0",
+            "tunl0"
+          ],
+          "networkUpDevices": [
+            "lo"
+          ],
+          "dockerSocketPresent": false
+        },
+        "remainingScope": "none"
+      },
+      {
+        "complete": true,
+        "code": "OK",
+        "runtime": {
+          "python": "3.13.18",
+          "platform": "linux",
+          "machine": "aarch64",
+          "uid": 65534,
+          "journalMode": 420,
+          "memoryBytes": 268435456,
+          "swapBytes": 0,
+          "pids": 16,
+          "cpuSeconds": 10,
+          "addressSpaceBytes": 268435456,
+          "rootReadOnly": true,
+          "inputReadOnly": true,
+          "workerReadOnly": true,
+          "capabilities": "0000000000000000",
+          "noNewPrivileges": "1",
+          "networkDevices": [
+            "bonding_masters",
+            "erspan0",
+            "gre0",
+            "gretap0",
+            "ip6_vti0",
+            "ip6gre0",
+            "ip6tnl0",
+            "ip_vti0",
+            "lo",
+            "sit0",
+            "tunl0"
+          ],
+          "networkUpDevices": [
+            "lo"
+          ],
+          "dockerSocketPresent": false
+        },
+        "remainingScope": "none"
+      }
+    ]
+  }
+]

@@ -1,0 +1,332 @@
+[
+  {
+    "name": "runner-guards",
+    "command": [
+      "/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/.venv/bin/python",
+      "scripts/tests/test_closure_native.py"
+    ],
+    "executed": true,
+    "exit": 0,
+    "error": null,
+    "seconds": 0.171,
+    "resource": {
+      "userSeconds": 0.063438,
+      "systemSeconds": 0.022538000000000058,
+      "maxRss": 117309440,
+      "scope": "Cumulative child high-water RSS, Linux KiB/macOS bytes; command-specific Linux time -v also retained. Not Docker container peak."
+    }
+  },
+  {
+    "name": "typecheck",
+    "command": [
+      "pnpm",
+      "run",
+      "typecheck"
+    ],
+    "executed": true,
+    "exit": 0,
+    "error": null,
+    "seconds": 15.575,
+    "resource": {
+      "userSeconds": 27.306205000000002,
+      "systemSeconds": 2.2467989999999998,
+      "maxRss": 251363328,
+      "scope": "Cumulative child high-water RSS, Linux KiB/macOS bytes; command-specific Linux time -v also retained. Not Docker container peak."
+    }
+  },
+  {
+    "name": "contracts",
+    "command": [
+      "pnpm",
+      "run",
+      "test:contracts"
+    ],
+    "executed": true,
+    "exit": 0,
+    "error": null,
+    "seconds": 0.721,
+    "resource": {
+      "userSeconds": 0.331391,
+      "systemSeconds": 0.08003100000000041,
+      "maxRss": 251363328,
+      "scope": "Cumulative child high-water RSS, Linux KiB/macOS bytes; command-specific Linux time -v also retained. Not Docker container peak."
+    }
+  },
+  {
+    "name": "scanner-tests",
+    "command": [
+      "node",
+      "--test",
+      "scripts/tests/credential-scan.test.mjs"
+    ],
+    "executed": true,
+    "exit": 0,
+    "error": null,
+    "seconds": 0.35,
+    "resource": {
+      "userSeconds": 0.1813149999999979,
+      "systemSeconds": 0.0945269999999998,
+      "maxRss": 251363328,
+      "scope": "Cumulative child high-water RSS, Linux KiB/macOS bytes; command-specific Linux time -v also retained. Not Docker container peak."
+    }
+  },
+  {
+    "name": "core",
+    "command": [
+      "node",
+      "--test",
+      "--test-concurrency=1",
+      "packages/core/tests/audit-fixes.test.mjs",
+      "packages/core/tests/cli-boundary.test.mjs",
+      "packages/core/tests/foundation.test.mjs",
+      "packages/core/tests/intelligence-boundary.test.mjs",
+      "packages/core/tests/network.test.mjs",
+      "packages/core/tests/parser-absence.test.mjs",
+      "packages/core/tests/parser-boundary-harness.test.mjs",
+      "packages/core/tests/phase2.test.mjs",
+      "packages/core/tests/reviewed-module.test.mjs",
+      "packages/core/tests/s2.test.mjs",
+      "packages/core/tests/s3.test.mjs",
+      "packages/core/tests/storage-batch.test.mjs",
+      "packages/core/tests/verifier-lifecycle.test.mjs"
+    ],
+    "executed": true,
+    "exit": 0,
+    "error": null,
+    "seconds": 535.1,
+    "resource": {
+      "userSeconds": 68.308508,
+      "systemSeconds": 35.175236999999996,
+      "maxRss": 251363328,
+      "scope": "Cumulative child high-water RSS, Linux KiB/macOS bytes; command-specific Linux time -v also retained. Not Docker container peak."
+    }
+  },
+  {
+    "name": "parser-boundary",
+    "command": [
+      "node",
+      "scripts/check-parser-boundary.mjs",
+      "/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/examples/production-phase2/2026-11-02-technical-closure-runtime-01/validation/parser-boundary.json"
+    ],
+    "executed": true,
+    "exit": 0,
+    "error": null,
+    "seconds": 6.864,
+    "resource": {
+      "userSeconds": 0.14734199999999475,
+      "systemSeconds": 0.16520100000000326,
+      "maxRss": 251363328,
+      "scope": "Cumulative child high-water RSS, Linux KiB/macOS bytes; command-specific Linux time -v also retained. Not Docker container peak."
+    }
+  },
+  {
+    "name": "production-worker",
+    "command": [
+      "node",
+      "scripts/test-phase2-trust.mjs",
+      "/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/examples/production-phase2/2026-11-02-technical-closure-runtime-01/validation/production-worker"
+    ],
+    "executed": true,
+    "exit": 0,
+    "error": null,
+    "seconds": 245.281,
+    "resource": {
+      "userSeconds": 5.865606999999997,
+      "systemSeconds": 6.631762999999999,
+      "maxRss": 251363328,
+      "scope": "Cumulative child high-water RSS, Linux KiB/macOS bytes; command-specific Linux time -v also retained. Not Docker container peak."
+    }
+  },
+  {
+    "name": "controlled-generate",
+    "command": [
+      "node",
+      "scripts/generate-controlled-signatures.mjs",
+      "/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/examples/production-phase2/2026-11-02-technical-closure-runtime-01/validation/controlled-fixtures"
+    ],
+    "executed": true,
+    "exit": 0,
+    "error": null,
+    "seconds": 0.561,
+    "resource": {
+      "userSeconds": 0.06080599999999947,
+      "systemSeconds": 0.05762099999999748,
+      "maxRss": 251363328,
+      "scope": "Cumulative child high-water RSS, Linux KiB/macOS bytes; command-specific Linux time -v also retained. Not Docker container peak."
+    }
+  },
+  {
+    "name": "controlled-prepare",
+    "command": [
+      "node",
+      "scripts/prepare-controlled-runtime.mjs",
+      "/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/examples/production-phase2/2026-11-02-technical-closure-runtime-01/validation/controlled-fixtures",
+      "/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/examples/production-phase2/2026-11-02-technical-closure-runtime-01/validation/controlled-runtime"
+    ],
+    "executed": true,
+    "exit": 0,
+    "error": null,
+    "seconds": 1.171,
+    "resource": {
+      "userSeconds": 0.21611400000000458,
+      "systemSeconds": 0.23620100000000122,
+      "maxRss": 251363328,
+      "scope": "Cumulative child high-water RSS, Linux KiB/macOS bytes; command-specific Linux time -v also retained. Not Docker container peak."
+    }
+  },
+  {
+    "name": "controlled-worker",
+    "command": [
+      "node",
+      "scripts/test-controlled-signatures.mjs",
+      "/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/examples/production-phase2/2026-11-02-technical-closure-runtime-01/validation/controlled-fixtures",
+      "/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/examples/production-phase2/2026-11-02-technical-closure-runtime-01/validation/controlled-runtime",
+      "/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/examples/production-phase2/2026-11-02-technical-closure-runtime-01/validation/controlled-worker"
+    ],
+    "executed": true,
+    "exit": 0,
+    "error": null,
+    "seconds": 191.915,
+    "resource": {
+      "userSeconds": 4.831739999999996,
+      "systemSeconds": 5.261203999999999,
+      "maxRss": 251363328,
+      "scope": "Cumulative child high-water RSS, Linux KiB/macOS bytes; command-specific Linux time -v also retained. Not Docker container peak."
+    }
+  },
+  {
+    "name": "controlled-application",
+    "command": [
+      "node",
+      "scripts/verify-controlled-integration.mjs",
+      "/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/examples/production-phase2/2026-11-02-technical-closure-runtime-01/validation/controlled-fixtures",
+      "/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/examples/production-phase2/2026-11-02-technical-closure-runtime-01/validation/controlled-runtime",
+      "/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/examples/production-phase2/2026-11-02-technical-closure-runtime-01/validation/controlled-application"
+    ],
+    "executed": true,
+    "exit": 0,
+    "error": null,
+    "seconds": 330.023,
+    "resource": {
+      "userSeconds": 48.36043000000001,
+      "systemSeconds": 28.000189000000006,
+      "maxRss": 251363328,
+      "scope": "Cumulative child high-water RSS, Linux KiB/macOS bytes; command-specific Linux time -v also retained. Not Docker container peak."
+    }
+  },
+  {
+    "name": "readers-tui",
+    "command": [
+      "node",
+      "--test",
+      "integration/part4/tests/readiness.test.mjs",
+      "packages/tui/tests/audit.test.mjs",
+      "packages/tui/tests/model.test.mjs",
+      "packages/tui/tests/user-failures.test.mjs"
+    ],
+    "executed": true,
+    "exit": 0,
+    "error": null,
+    "seconds": 10.615,
+    "resource": {
+      "userSeconds": 8.401548999999989,
+      "systemSeconds": 2.3731789999999933,
+      "maxRss": 251363328,
+      "scope": "Cumulative child high-water RSS, Linux KiB/macOS bytes; command-specific Linux time -v also retained. Not Docker container peak."
+    }
+  },
+  {
+    "name": "web",
+    "command": [
+      "pnpm",
+      "--filter",
+      "@heurisko/web",
+      "test"
+    ],
+    "executed": true,
+    "exit": 0,
+    "error": null,
+    "seconds": 9.115,
+    "resource": {
+      "userSeconds": 11.590386999999993,
+      "systemSeconds": 3.793586000000005,
+      "maxRss": 251363328,
+      "scope": "Cumulative child high-water RSS, Linux KiB/macOS bytes; command-specific Linux time -v also retained. Not Docker container peak."
+    }
+  },
+  {
+    "name": "historical-s3",
+    "command": [
+      "node",
+      "scripts/verify-s3-capture.mjs",
+      "examples/s3/current",
+      "--historical"
+    ],
+    "executed": true,
+    "exit": 0,
+    "error": null,
+    "seconds": 25.397,
+    "resource": {
+      "userSeconds": 9.345564000000024,
+      "systemSeconds": 7.666145,
+      "maxRss": 251363328,
+      "scope": "Cumulative child high-water RSS, Linux KiB/macOS bytes; command-specific Linux time -v also retained. Not Docker container peak."
+    }
+  },
+  {
+    "name": "historical-audit",
+    "command": [
+      "node",
+      "scripts/verify-s3-capture.mjs",
+      "examples/audit-fixes/current",
+      "--historical"
+    ],
+    "executed": true,
+    "exit": 0,
+    "error": null,
+    "seconds": 25.899,
+    "resource": {
+      "userSeconds": 8.708699999999993,
+      "systemSeconds": 7.558570000000003,
+      "maxRss": 251363328,
+      "scope": "Cumulative child high-water RSS, Linux KiB/macOS bytes; command-specific Linux time -v also retained. Not Docker container peak."
+    }
+  },
+  {
+    "name": "historical-handoff",
+    "command": [
+      "node",
+      "scripts/verify-s3-capture.mjs",
+      "examples/handoff/current",
+      "--historical"
+    ],
+    "executed": true,
+    "exit": 0,
+    "error": null,
+    "seconds": 23.911,
+    "resource": {
+      "userSeconds": 9.006437000000005,
+      "systemSeconds": 7.866913999999994,
+      "maxRss": 251363328,
+      "scope": "Cumulative child high-water RSS, Linux KiB/macOS bytes; command-specific Linux time -v also retained. Not Docker container peak."
+    }
+  },
+  {
+    "name": "source-integrity",
+    "command": [
+      "/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/.venv/bin/python",
+      "scripts/verify-source-package.py",
+      "/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/.heurisko/technical-closure-source-01/manifest.json"
+    ],
+    "executed": true,
+    "exit": 0,
+    "error": null,
+    "seconds": 4.108,
+    "resource": {
+      "userSeconds": 0.5760539999999992,
+      "systemSeconds": 0.6890709999999984,
+      "maxRss": 251363328,
+      "scope": "Cumulative child high-water RSS, Linux KiB/macOS bytes; command-specific Linux time -v also retained. Not Docker container peak."
+    }
+  }
+]

@@ -34,6 +34,8 @@ jobs:
           .venv/bin/python -m pip install --require-hashes -r requirements-contracts.txt
       - name: Typecheck contracts
         run: pnpm run typecheck
+      - name: Test cross-observation npm citation parity
+        run: node --test scripts/tests/phase1-npm-parity.test.mjs
       - name: Validate contracts and synthetic handshake
         run: PATH="$PWD/.venv/bin:$PATH" pnpm run test:contracts
       - name: Prepare digest-pinned static parser runtime

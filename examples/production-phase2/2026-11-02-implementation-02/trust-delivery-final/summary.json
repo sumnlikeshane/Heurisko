@@ -1,0 +1,21 @@
+{
+  "passed": false,
+  "checks": 82,
+  "failures": [
+    "core-wrong-workflowRef",
+    "core-missing-log",
+    "core-unknown-attestation",
+    "core-positive-after",
+    "roots-rollback",
+    "cancellation",
+    "native-allocation-cap"
+  ],
+  "node": "v22.23.4",
+  "platform": "darwin",
+  "arch": "arm64",
+  "limitations": [
+    "Mac host with Linux amd64 runtime under emulation; not native Linux host validation.",
+    "Two signed npm pairs from one upstream project; not population or held-out accuracy.",
+    "Fixture policy expectations are explicit test constants cross-checked against separate captured release metadata; no target-selected production policy."
+  ]
+}

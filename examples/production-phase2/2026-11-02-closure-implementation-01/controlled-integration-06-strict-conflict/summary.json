@@ -1,0 +1,252 @@
+{
+  "matrixOnly": true,
+  "identity": {
+    "version": "heurisko-controlled-runtime-v1",
+    "productionRoot": "/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko",
+    "fixtureManifestSha256": "74ef786e4c423858138c13d19b17de16bf3d824f25cf08fb47a543b0bfd6ba38",
+    "testBootstrapSha256": "c3003c68af2139a6edff2648eb2f1392534d653b377a28c761134362159faa55",
+    "productionBootstrapSha256": "73747011d0857ada15479a16c4cae0f3ed03aac698b523b97e1de314ac9d9ca8",
+    "productionWorkerSha256": "3b919229638310b4036df1594c1632c2337316ecd34ad508085945435b0de46e",
+    "testWorkerSha256": "7f433a5517aef6e970317c1c4048d3f9ff03010026466420ba4ca02a3a85193a",
+    "evaluatorSourceSha256": "3255c2e4dc8ccff57dc96ec3392de58dd05b2b57c40ec3a73cc65aa53476450c",
+    "hostEvaluatorSha256": "447fa2e580e08c2a4daa6c3059fad4b7a3b38f5d760fca8c175853e40a836ae2",
+    "boundary": "Same evaluator source and restricted Docker launcher; separate fixed-anchor build only. No production env/request anchor selection."
+  },
+  "checks": 7,
+  "passed": true,
+  "failures": [],
+  "plannedCases": 6,
+  "attemptedCases": 6,
+  "errors": 0,
+  "actualCliExits": [
+    0,
+    2,
+    3
+  ],
+  "results": [
+    {
+      "id": "positive-0-0-1",
+      "durationMs": 26777,
+      "expected": {
+        "status": "verified_policy",
+        "policyResult": "pass",
+        "artifactBinding": "matched"
+      },
+      "expectedExit": 0,
+      "pass": true,
+      "reportSha256": "sha256:b6146b9df66776814af4f05c90ce05f9ea6c1a0c29db545e449dbec4643817b0",
+      "outcomes": {
+        "artifactIntegrity": "matched",
+        "sourceAssociation": "publisher_asserted",
+        "provenancePolicy": "verified_policy",
+        "correspondence": "exact",
+        "analysisCompleteness": "complete",
+        "policyResult": "pass"
+      },
+      "cliExit": 0,
+      "decisionReason": "ASSERTIONS_VERIFIED",
+      "decisionResults": [
+        {
+          "status": "verified_policy",
+          "binding": "matched",
+          "reason": "EXPECTATIONS_MET",
+          "crypto": true,
+          "assertionSha256": "5e391896cf4d1f9d867ea850d0b632a565cc81f10b0fc848c4fd72200a861fad"
+        }
+      ],
+      "parity": "Original saved bytes and all report facts equal in CLI/shared TUI reader/web loader",
+      "origin": "CONTROLLED TEST ONLY; synthetic capture transport, not a genuine npm publisher observation"
+    },
+    {
+      "id": "conflict-0-0-1",
+      "durationMs": 14925,
+      "expected": {
+        "status": "unresolved",
+        "policyResult": "indeterminate",
+        "reason": "ASSERTIONS_CONFLICT"
+      },
+      "expectedExit": 2,
+      "pass": true,
+      "reportSha256": "sha256:0a3d56dd37dee00cb6302a5af0a5af9b6f10d7c7a9eed362c5c9bccd927783eb",
+      "outcomes": {
+        "artifactIntegrity": "matched",
+        "sourceAssociation": "publisher_asserted",
+        "provenancePolicy": "unresolved",
+        "correspondence": "exact",
+        "analysisCompleteness": "incomplete",
+        "policyResult": "indeterminate"
+      },
+      "cliExit": 2,
+      "decisionReason": "ASSERTIONS_CONFLICT",
+      "decisionResults": [
+        {
+          "status": "verified_policy",
+          "binding": "matched",
+          "reason": "EXPECTATIONS_MET",
+          "crypto": true,
+          "assertionSha256": "5e391896cf4d1f9d867ea850d0b632a565cc81f10b0fc848c4fd72200a861fad"
+        },
+        {
+          "status": "verified_cryptographic_only",
+          "binding": "matched",
+          "reason": "EXPECTATION_MISMATCH",
+          "crypto": true,
+          "mismatches": [
+            "builderId",
+            "fullSourceCommit"
+          ],
+          "assertionSha256": "b72b46ddbad020bc85ad904b99c518e633225787eeea354a580e3db57cd244f2"
+        }
+      ],
+      "parity": "Original saved bytes and all report facts equal in CLI/shared TUI reader/web loader",
+      "origin": "CONTROLLED TEST ONLY; synthetic capture transport, not a genuine npm publisher observation"
+    },
+    {
+      "id": "positive-after-0-0-1",
+      "durationMs": 12677,
+      "expected": {
+        "status": "verified_policy",
+        "policyResult": "pass",
+        "artifactBinding": "matched"
+      },
+      "expectedExit": 0,
+      "pass": true,
+      "reportSha256": "sha256:29b8b0bec854a85b85ecd680992e0d9e9fb90c2c093ed4490661fa8d6992bd85",
+      "outcomes": {
+        "artifactIntegrity": "matched",
+        "sourceAssociation": "publisher_asserted",
+        "provenancePolicy": "verified_policy",
+        "correspondence": "exact",
+        "analysisCompleteness": "complete",
+        "policyResult": "pass"
+      },
+      "cliExit": 0,
+      "decisionReason": "ASSERTIONS_VERIFIED",
+      "decisionResults": [
+        {
+          "status": "verified_policy",
+          "binding": "matched",
+          "reason": "EXPECTATIONS_MET",
+          "crypto": true,
+          "assertionSha256": "5e391896cf4d1f9d867ea850d0b632a565cc81f10b0fc848c4fd72200a861fad"
+        }
+      ],
+      "parity": "Original saved bytes and all report facts equal in CLI/shared TUI reader/web loader",
+      "origin": "CONTROLLED TEST ONLY; synthetic capture transport, not a genuine npm publisher observation"
+    },
+    {
+      "id": "positive-0-0-2",
+      "durationMs": 23692,
+      "expected": {
+        "status": "verified_policy",
+        "policyResult": "pass",
+        "artifactBinding": "matched"
+      },
+      "expectedExit": 0,
+      "pass": true,
+      "reportSha256": "sha256:58e632b163a0eed37cd065aa4d71e4d47ed40e5b78f94189340bb478b20debae",
+      "outcomes": {
+        "artifactIntegrity": "matched",
+        "sourceAssociation": "publisher_asserted",
+        "provenancePolicy": "verified_policy",
+        "correspondence": "exact",
+        "analysisCompleteness": "complete",
+        "policyResult": "pass"
+      },
+      "cliExit": 0,
+      "decisionReason": "ASSERTIONS_VERIFIED",
+      "decisionResults": [
+        {
+          "status": "verified_policy",
+          "binding": "matched",
+          "reason": "EXPECTATIONS_MET",
+          "crypto": true,
+          "assertionSha256": "5e391896cf4d1f9d867ea850d0b632a565cc81f10b0fc848c4fd72200a861fad"
+        }
+      ],
+      "parity": "Original saved bytes and all report facts equal in CLI/shared TUI reader/web loader",
+      "origin": "CONTROLLED TEST ONLY; synthetic capture transport, not a genuine npm publisher observation"
+    },
+    {
+      "id": "conflict-0-0-2",
+      "durationMs": 18295,
+      "expected": {
+        "status": "unresolved",
+        "policyResult": "indeterminate",
+        "reason": "ASSERTIONS_CONFLICT"
+      },
+      "expectedExit": 2,
+      "pass": true,
+      "reportSha256": "sha256:96a93eb7fe22a7fabd641161178600541adbdfd44d84f03fa3e6c61dba2ecfce",
+      "outcomes": {
+        "artifactIntegrity": "matched",
+        "sourceAssociation": "publisher_asserted",
+        "provenancePolicy": "unresolved",
+        "correspondence": "exact",
+        "analysisCompleteness": "incomplete",
+        "policyResult": "indeterminate"
+      },
+      "cliExit": 2,
+      "decisionReason": "ASSERTIONS_CONFLICT",
+      "decisionResults": [
+        {
+          "status": "verified_policy",
+          "binding": "matched",
+          "reason": "EXPECTATIONS_MET",
+          "crypto": true,
+          "assertionSha256": "5e391896cf4d1f9d867ea850d0b632a565cc81f10b0fc848c4fd72200a861fad"
+        },
+        {
+          "status": "verified_cryptographic_only",
+          "binding": "matched",
+          "reason": "EXPECTATION_MISMATCH",
+          "crypto": true,
+          "mismatches": [
+            "builderId",
+            "fullSourceCommit"
+          ],
+          "assertionSha256": "b72b46ddbad020bc85ad904b99c518e633225787eeea354a580e3db57cd244f2"
+        }
+      ],
+      "parity": "Original saved bytes and all report facts equal in CLI/shared TUI reader/web loader",
+      "origin": "CONTROLLED TEST ONLY; synthetic capture transport, not a genuine npm publisher observation"
+    },
+    {
+      "id": "positive-after-0-0-2",
+      "durationMs": 27898,
+      "expected": {
+        "status": "verified_policy",
+        "policyResult": "pass",
+        "artifactBinding": "matched"
+      },
+      "expectedExit": 0,
+      "pass": true,
+      "reportSha256": "sha256:6ea530a5bd9dc413e7879aa4cb3db9a67c2437a7c597bf03ee044f0781e6e3c3",
+      "outcomes": {
+        "artifactIntegrity": "matched",
+        "sourceAssociation": "publisher_asserted",
+        "provenancePolicy": "verified_policy",
+        "correspondence": "exact",
+        "analysisCompleteness": "complete",
+        "policyResult": "pass"
+      },
+      "cliExit": 0,
+      "decisionReason": "ASSERTIONS_VERIFIED",
+      "decisionResults": [
+        {
+          "status": "verified_policy",
+          "binding": "matched",
+          "reason": "EXPECTATIONS_MET",
+          "crypto": true,
+          "assertionSha256": "5e391896cf4d1f9d867ea850d0b632a565cc81f10b0fc848c4fd72200a861fad"
+        }
+      ],
+      "parity": "Original saved bytes and all report facts equal in CLI/shared TUI reader/web loader",
+      "origin": "CONTROLLED TEST ONLY; synthetic capture transport, not a genuine npm publisher observation"
+    }
+  ],
+  "limitations": [
+    "Controlled transport and fixed test anchor; no third-party publisher, GUI/AT, native Linux or production-root claims.",
+    "Reader fact parity covers the shared TUI model, not a new real PTY journey."
+  ]
+}

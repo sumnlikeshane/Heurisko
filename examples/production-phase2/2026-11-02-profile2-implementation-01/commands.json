@@ -1,0 +1,114 @@
+[
+  {
+    "name": "typecheck",
+    "command": [
+      "pnpm",
+      "run",
+      "typecheck"
+    ],
+    "exit": 0,
+    "seconds": 9.797
+  },
+  {
+    "name": "contracts",
+    "command": [
+      "pnpm",
+      "run",
+      "test:contracts"
+    ],
+    "exit": 0,
+    "seconds": 0.396
+  },
+  {
+    "name": "affected-core",
+    "command": [
+      "node",
+      "--test",
+      "--test-concurrency=1",
+      "packages/core/tests/phase2.test.mjs",
+      "packages/core/tests/trust-profiles.test.mjs",
+      "packages/core/tests/verifier-lifecycle.test.mjs"
+    ],
+    "exit": 0,
+    "seconds": 11.658
+  },
+  {
+    "name": "production-worker",
+    "command": [
+      "node",
+      "scripts/test-phase2-trust.mjs",
+      "/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/examples/production-phase2/2026-11-02-profile2-implementation-01/production-worker"
+    ],
+    "exit": 0,
+    "seconds": 107.657
+  },
+  {
+    "name": "generate",
+    "command": [
+      "node",
+      "scripts/generate-controlled-signatures.mjs",
+      "/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/examples/production-phase2/2026-11-02-profile2-implementation-01/fixtures"
+    ],
+    "exit": 0,
+    "seconds": 0.225
+  },
+  {
+    "name": "prepare",
+    "command": [
+      "node",
+      "scripts/prepare-controlled-runtime.mjs",
+      "/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/examples/production-phase2/2026-11-02-profile2-implementation-01/fixtures",
+      "/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/examples/production-phase2/2026-11-02-profile2-implementation-01/runtime"
+    ],
+    "exit": 0,
+    "seconds": 0.434
+  },
+  {
+    "name": "controlled-worker",
+    "command": [
+      "node",
+      "scripts/test-controlled-signatures.mjs",
+      "/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/examples/production-phase2/2026-11-02-profile2-implementation-01/fixtures",
+      "/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/examples/production-phase2/2026-11-02-profile2-implementation-01/runtime",
+      "/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/examples/production-phase2/2026-11-02-profile2-implementation-01/controlled-worker"
+    ],
+    "exit": 0,
+    "seconds": 111.296
+  },
+  {
+    "name": "application",
+    "command": [
+      "node",
+      "scripts/verify-controlled-integration.mjs",
+      "/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/examples/production-phase2/2026-11-02-profile2-implementation-01/fixtures",
+      "/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/examples/production-phase2/2026-11-02-profile2-implementation-01/runtime",
+      "/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/examples/production-phase2/2026-11-02-profile2-implementation-01/application"
+    ],
+    "exit": 0,
+    "seconds": 216.91
+  },
+  {
+    "name": "readers-tui",
+    "command": [
+      "node",
+      "--test",
+      "integration/part4/tests/readiness.test.mjs",
+      "packages/tui/tests/audit.test.mjs",
+      "packages/tui/tests/model.test.mjs",
+      "packages/tui/tests/user-failures.test.mjs"
+    ],
+    "exit": 0,
+    "seconds": 8.956
+  },
+  {
+    "name": "web",
+    "command": [
+      "pnpm",
+      "--filter",
+      "@heurisko/web",
+      "test"
+    ],
+    "exit": 0,
+    "seconds": 7.511
+  }
+]

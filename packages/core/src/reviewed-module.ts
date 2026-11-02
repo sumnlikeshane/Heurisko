@@ -7,31 +7,37 @@ import { canonicalJSON, sha256 } from './identity.js';
 import type { AnalysisModule } from './adapter.js';
 import { createIntelligenceBoundary, INTELLIGENCE_BOUNDARY_VERSION, INTELLIGENCE_BOUNDARY_LIMITS } from './intelligence-boundary.js';
 
-export const REVIEWED_INTELLIGENCE_SELECTOR='55240e9';
+export const REVIEWED_INTELLIGENCE_SELECTOR='p2-static-v1';
 export const REVIEWED_INTELLIGENCE_COMMIT='55240e99409ad44cbd6a978f40873ef410cb1861';
-export const REVIEWED_INTELLIGENCE_LOADER_VERSION='heurisko-reviewed-module-loader-v2';
+export const REVIEWED_INTELLIGENCE_LOADER_VERSION='heurisko-reviewed-module-loader-v3';
 
-export function configuredAnalysisSelection(value:string|undefined=process.env.HEURISKO_ANALYSIS_MODULE):typeof REVIEWED_INTELLIGENCE_SELECTOR|undefined {
+export function configuredAnalysisSelection(value:string|undefined=process.env.HEURISKO_ANALYSIS_MODULE):typeof REVIEWED_INTELLIGENCE_SELECTOR|'55240e9'|undefined {
   if(value==='off')return undefined;
   if(value===undefined||value==='')return REVIEWED_INTELLIGENCE_SELECTOR;
-  if(value!==REVIEWED_INTELLIGENCE_SELECTOR)throw Error('ANALYSIS_MODULE_SELECTOR_REJECTED');
-  return REVIEWED_INTELLIGENCE_SELECTOR;
+  if(value!==REVIEWED_INTELLIGENCE_SELECTOR&&value!=='55240e9')throw Error('ANALYSIS_MODULE_SELECTOR_REJECTED');
+  return value;
 }
 interface LoadSettings {store:EvidenceStore;signal?:AbortSignal;selector?:string;deadlineAt?:number}
-let loadedImplementationSha256:string|undefined;
+const loadedImplementations=new Map<string,string>();
 export async function loadConfiguredAnalysisModule(settings:LoadSettings):Promise<AnalysisModule|undefined> {
-  if(!configuredAnalysisSelection(settings.selector))return undefined;
+  const selection=configuredAnalysisSelection(settings.selector);
+  if(!selection)return undefined;
+  const legacy=selection==='55240e9';
   if(settings.signal?.aborted)throw Error('CANCELLED');
   const files:Record<string,string>={};
   const paths:ReadonlyArray<readonly[string,string,number]>=[
-    ['reviewedCompiled','../../intelligence-reviewed/dist/index.js',256*1024],
-    ['reviewedDeclarations','../../intelligence-reviewed/dist/index.d.ts',128*1024],
-    ['reviewedSource','../../intelligence-reviewed/src/index.ts',256*1024],
+    ['reviewedCompiled',legacy?'../../intelligence-reviewed/dist/legacy-55240e9.js':'../../intelligence-reviewed/dist/index.js',256*1024],
+    ['reviewedDeclarations',legacy?'../../intelligence-reviewed/dist/legacy-55240e9.d.ts':'../../intelligence-reviewed/dist/index.d.ts',128*1024],
+    ['reviewedSource',legacy?'../../intelligence-reviewed/src/legacy-55240e9.ts':'../../intelligence-reviewed/src/index.ts',256*1024],
     ['upstreamSource','../../intelligence-reviewed/provenance/upstream-index.ts',256*1024],
-    ['admission','../../intelligence-reviewed/admission.json',128*1024],
+    ['parentAdmission','../../intelligence-reviewed/provenance/admission-55240e9.json',128*1024],
+    ['parentSource','../../intelligence-reviewed/provenance/reviewed-55240e9.ts',256*1024],
+    ['admission',legacy?'../../intelligence-reviewed/provenance/admission-55240e9.json':'../../intelligence-reviewed/admission.json',128*1024],
     ['reviewedPackage','../../intelligence-reviewed/package.json',128*1024],
     ['reviewedTypeScriptConfig','../../intelligence-reviewed/tsconfig.json',128*1024],
     ['boundary','./intelligence-boundary.js',256*1024],
+    ['relationships','./relationships.js',128*1024],
+    ['comparison','./comparison.js',256*1024],
     ['loader','./reviewed-module.js',128*1024],
     ['adapter','./adapter.js',128*1024],
     ['storage','./storage.js',256*1024],
@@ -43,17 +49,18 @@ export async function loadConfiguredAnalysisModule(settings:LoadSettings):Promis
   ];
   let admission:any;
   for(const [name,path,limit]of paths){const bytes=await boundedFile(fileURLToPath(new URL(path,import.meta.url)),limit);files[name]=sha256(bytes);if(name==='admission')admission=JSON.parse(bytes.toString('utf8'));if(settings.signal?.aborted)throw Error('CANCELLED');}
-  if(admission?.version!=='heurisko-reviewed-intelligence-admission-v1'||admission.upstream?.commit!==REVIEWED_INTELLIGENCE_COMMIT||admission.upstream?.sourceSha256!==files.upstreamSource||admission.derived?.sourceSha256!==files.reviewedSource||admission.derived?.compiledSha256!==files.reviewedCompiled||admission.derived?.declarationsSha256!==files.reviewedDeclarations)throw Error('REVIEWED_MODULE_ADMISSION_MISMATCH');
-  const identity={moduleId:'@heurisko/intelligence-reviewed',moduleVersion:'0.1.0-55240e9',implementationSha256:sha256(canonicalJSON({version:REVIEWED_INTELLIGENCE_LOADER_VERSION,files})),configurationSha256:sha256(canonicalJSON({selector:REVIEWED_INTELLIGENCE_SELECTOR,hostSelection:{default:'55240e9',disabled:'off'},upstreamCommit:REVIEWED_INTELLIGENCE_COMMIT,boundaryVersion:INTELLIGENCE_BOUNDARY_VERSION,limits:INTELLIGENCE_BOUNDARY_LIMITS,selection:'retained versioned manifest-delta records and their admitted linked manifest members only',model:'not integrated',providers:'not adopted'}))};
+  if(admission?.version!==(legacy?'heurisko-reviewed-intelligence-admission-v1':'heurisko-reviewed-intelligence-admission-v2')||admission.upstream?.commit!==REVIEWED_INTELLIGENCE_COMMIT||admission.upstream?.sourceSha256!==files.upstreamSource||admission.derived?.sourceSha256!==files.reviewedSource||admission.derived?.compiledSha256!==files.reviewedCompiled||admission.derived?.declarationsSha256!==files.reviewedDeclarations)throw Error('REVIEWED_MODULE_ADMISSION_MISMATCH');
+  if(!legacy&&(admission.parent?.admissionSha256!==files.parentAdmission||admission.parent?.sourceSha256!==files.parentSource))throw Error('REVIEWED_MODULE_PARENT_MISMATCH');
+  const identity={moduleId:'@heurisko/intelligence-reviewed',moduleVersion:legacy?'0.1.0-55240e9':'0.2.0-p2-static-v1',implementationSha256:sha256(canonicalJSON({version:REVIEWED_INTELLIGENCE_LOADER_VERSION,files})),configurationSha256:sha256(canonicalJSON({selector:selection,hostSelection:{default:REVIEWED_INTELLIGENCE_SELECTOR,legacy:'55240e9',disabled:'off'},upstreamCommit:REVIEWED_INTELLIGENCE_COMMIT,boundaryVersion:INTELLIGENCE_BOUNDARY_VERSION,limits:INTELLIGENCE_BOUNDARY_LIMITS,selection:'retained versioned manifest deltas and recomputed static relationships with admitted linked members only',model:'not integrated',providers:'not adopted'}))};
   // ESM import caching cannot relabel already loaded code as newly changed
   // bytes. A configured process must restart after its executable/config changes.
-  if(loadedImplementationSha256&&loadedImplementationSha256!==identity.implementationSha256)throw Error('REVIEWED_MODULE_RUNTIME_CHANGED');
-  const imported=await import('@heurisko/intelligence-reviewed');
+  if(loadedImplementations.has(selection)&&loadedImplementations.get(selection)!==identity.implementationSha256)throw Error('REVIEWED_MODULE_RUNTIME_CHANGED');
+  const imported=legacy?await import('@heurisko/intelligence-reviewed/legacy'):await import('@heurisko/intelligence-reviewed');
   if(typeof imported.analyzeEvidence!=='function')throw Error('REVIEWED_MODULE_EXPORT_MISSING');
   // Import yields to the event loop. A concurrent build/edit cannot replace the
   // bytes after identity capture and be presented as the reviewed executable.
   for(const [name,path,limit]of paths){if(sha256(await boundedFile(fileURLToPath(new URL(path,import.meta.url)),limit))!==files[name])throw Error('REVIEWED_MODULE_RUNTIME_CHANGED');if(settings.signal?.aborted)throw Error('CANCELLED');}
-  loadedImplementationSha256=identity.implementationSha256;
+  loadedImplementations.set(selection,identity.implementationSha256);
   const analyzeEvidence=imported.analyzeEvidence as (bundle:Readonly<EvidenceBundle>,options:AnalysisOptions,resolvedContent?:readonly {evidenceId:`ev_${string}`;contentRef:string;text:string}[])=>Promise<AnalysisResults>;
   return createIntelligenceBoundary({identity,store:settings.store,analyzeEvidence,signal:settings.signal,deadlineAt:settings.deadlineAt});
 }

@@ -1,0 +1,22 @@
+{
+  "result": {
+    "status": "authenticated",
+    "versions": {
+      "root": 16,
+      "timestamp": 823,
+      "snapshot": 166,
+      "targets": 14
+    },
+    "rootSha256": "6494e21ea73fa7ee769f85f57d5a3e6a08725eae1e38c755fc3517c9e6bc0b66"
+  },
+  "identity": {
+    "exitCode": 0,
+    "stderr": "",
+    "verifier": "@sigstore/verify@4.1.2;bundle@5.0.0;core@4.0.1;protobuf@0.5.2;tuf-js@6.0.1",
+    "workerSha256": "sha256:b1c2bb2ff351942e41fc73d4683e4e78173cbd6b7c4929e9358584b1bb3aaaf4",
+    "image": "sha256:fca199d4126b2c5c1d11ff39d7736c4651faea40f171097f97d5fd490d81ee4b",
+    "platform": "darwin-arm64",
+    "containerName": "heurisko-verifier-5642455c-7982-486a-b1fc-d32abe61d7b8",
+    "cleanup": "confirmed_absent"
+  }
+}

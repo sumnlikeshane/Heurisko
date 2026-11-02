@@ -1,0 +1,76 @@
+{
+  "observedAt": "2026-11-02T14:57:00.725634+00:00",
+  "originalReceipt": "baseline/controlled/cancellation.json",
+  "boundary": "Only this exact captured UUID, fixed image and read-only worker mount may be removed after stopped identity proof. Parser stores/spools/locks and original receipts remain unchanged.",
+  "identityAdmitted": true,
+  "containerId": "db95bac161f76768e7d6c32ed749f2165b684c004cfa35eb49b6d72e230e2a9c",
+  "removeSucceeded": true,
+  "cleanupConfirmed": true,
+  "parserLaterExactAbsence": true,
+  "commands": [
+    {
+      "command": [
+        "docker",
+        "--host",
+        "unix:///Users/sumnlikehsane/.docker/run/docker.sock",
+        "inspect",
+        "--format",
+        "{{json .}}",
+        "heurisko-verifier-43d6bd8e-7dc2-45c7-ab22-a3437c421cf3"
+      ],
+      "exit": 0,
+      "stdout": "{\"Id\": \"db95bac161f76768e7d6c32ed749f2165b684c004cfa35eb49b6d72e230e2a9c\", \"Name\": \"/heurisko-verifier-43d6bd8e-7dc2-45c7-ab22-a3437c421cf3\", \"State\": {\"Status\": \"created\", \"Running\": false, \"Paused\": false, \"Restarting\": false, \"OOMKilled\": false, \"Dead\": false, \"Pid\": 0, \"ExitCode\": 0, \"Error\": \"\", \"StartedAt\": \"0001-01-01T00:00:00Z\", \"FinishedAt\": \"0001-01-01T00:00:00Z\"}, \"Mounts\": [{\"Type\": \"bind\", \"Source\": \"/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/examples/production-phase2/2026-11-02-technical-closure-runtime-01/baseline-runtime/packages/core/dist/verifier-worker.cjs\", \"Destination\": \"/worker.cjs\", \"Mode\": \"\", \"RW\": false, \"Propagation\": \"rprivate\"}]}",
+      "stderr": "",
+      "seconds": 0.205
+    },
+    {
+      "command": [
+        "docker",
+        "--host",
+        "unix:///Users/sumnlikehsane/.docker/run/docker.sock",
+        "rm",
+        "db95bac161f76768e7d6c32ed749f2165b684c004cfa35eb49b6d72e230e2a9c"
+      ],
+      "exit": 0,
+      "stdout": "db95bac161f76768e7d6c32ed749f2165b684c004cfa35eb49b6d72e230e2a9c\n",
+      "stderr": "",
+      "seconds": 0.596
+    },
+    {
+      "command": [
+        "docker",
+        "--host",
+        "unix:///Users/sumnlikehsane/.docker/run/docker.sock",
+        "container",
+        "ls",
+        "--all",
+        "--quiet",
+        "--no-trunc",
+        "--filter",
+        "id=db95bac161f76768e7d6c32ed749f2165b684c004cfa35eb49b6d72e230e2a9c"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": "",
+      "seconds": 0.07
+    },
+    {
+      "command": [
+        "docker",
+        "--host",
+        "unix:///Users/sumnlikehsane/.docker/run/docker.sock",
+        "container",
+        "ls",
+        "--all",
+        "--quiet",
+        "--no-trunc",
+        "--filter",
+        "id=e36e58b9f5c2226c2183941628ac95b623d9426d9ae12363232403f2d22faf85"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": "",
+      "seconds": 0.056
+    }
+  ]
+}

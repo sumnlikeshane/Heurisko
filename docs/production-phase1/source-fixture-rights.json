@@ -1,0 +1,165 @@
+{
+  "version": "heurisko-source-fixture-rights-v1",
+  "selection": "scripts/prepare-source-selection.py v2 supported source/test/docs scope",
+  "groups": [
+    {
+      "material": "Heurisko original source/tests/docs and controlled signed fixtures",
+      "includedScope": [
+        "apps/",
+        "packages/",
+        "integration/",
+        "scripts/",
+        "docs/",
+        "controlled-fixtures-v1"
+      ],
+      "terms": "Apache-2.0 original material; owner permission recorded; preserve historical contributors. Upstream source retains its own original notices.",
+      "notices": [
+        {
+          "path": "LICENSE",
+          "sha256": "3a0b32a74c46bdda3499ec9f39ab4f2a98fc2b239a1c1c1592086d26fdf76159"
+        },
+        {
+          "path": "NOTICE",
+          "sha256": "4b3d6147112c1a443a067eeebcd838aeafabf02280d776f913522a2594768995"
+        }
+      ]
+    },
+    {
+      "material": "picocolors 1.1.1 artifact, exact captured source and inert mutations",
+      "includedScope": [
+        "examples/s2/current/",
+        "examples/s3/current/",
+        "examples/handoff/current/",
+        "examples/audit-fixes/current/",
+        "examples/p04/",
+        "examples/part4/user-failures/",
+        "examples/final-hour/20261101-053912/integrated-55240e9/"
+      ],
+      "terms": "ISC; retain exact Oleksii Raspopov/Kostiantyn Denysov/Anton Verinov attribution. Mutations are test data, never publisher releases.",
+      "notices": [
+        {
+          "path": "examples/s2/current/PICOCOLORS-LICENSE.txt",
+          "sha256": "6582629e2979466878f6014313dcc2f3756c9616148682227ce3063dde310750"
+        }
+      ]
+    },
+    {
+      "material": "ts-pattern 5.9.0 immutable npm/source replay corpora",
+      "includedScope": [
+        "examples/s3/current/",
+        "examples/handoff/current/",
+        "examples/audit-fixes/current/"
+      ],
+      "terms": "MIT, retain exact upstream copyright and permission text; original archives/derived retained members remain inert test data.",
+      "notices": [
+        {
+          "path": "examples/s3/current/B2-LICENSE.txt",
+          "sha256": "4a6f1d5bbd77809165c0f9c24bbcf11768b0c936bd205bdb117aa68fea306601"
+        }
+      ]
+    },
+    {
+      "material": "zod 4.6.7 immutable npm/source replay corpora",
+      "includedScope": [
+        "examples/s3/current/",
+        "examples/handoff/current/",
+        "examples/audit-fixes/current/"
+      ],
+      "terms": "MIT, retain exact upstream copyright and permission text; original archives/derived retained members remain inert test data.",
+      "notices": [
+        {
+          "path": "examples/s3/current/B3-LICENSE.txt",
+          "sha256": "3f1189b28e3866e0d979968d466b78f813f76827cfdca1fbb124cc0a5c8841f8"
+        }
+      ]
+    },
+    {
+      "material": "@vue/shared 3.5.22 immutable npm/source replay corpora",
+      "includedScope": [
+        "examples/s3/current/",
+        "examples/handoff/current/",
+        "examples/audit-fixes/current/"
+      ],
+      "terms": "MIT, retain exact upstream copyright and permission text; original archives/derived retained members remain inert test data.",
+      "notices": [
+        {
+          "path": "examples/s3/current/B3R-LICENSE.txt",
+          "sha256": "1bb85cc9b13b81ef41c81c51866172fc345e0503c86726a6755b796590b70175"
+        }
+      ]
+    },
+    {
+      "material": "@sigstore/verify 4.1.2 and @sigstore/core 4.0.1 real npm artifact/envelope pairs and public TUF metadata",
+      "includedScope": [
+        "examples/production-phase2/2026-11-02-local-01/q4-review02/real-npm/",
+        "examples/production-phase2/2026-11-02-local-01/q4-review02/verify-4.1.2.tgz",
+        "examples/production-phase2/2026-11-02-local-01/q4-review02/core-4.0.1.tgz",
+        "packages/core/runtime/trust-bootstrap.json"
+      ],
+      "terms": "Exact Apache-2.0 Sigstore notices and TUF closure notices retained. These archives are static verification inputs, not installed target dependencies. No invented signer or publisher claim.",
+      "notices": [
+        {
+          "path": "packages/core/VERIFIER_THIRD_PARTY_NOTICES.txt",
+          "sha256": "ff780206d7d0fdaa70e2e2b49230e813b086f10b566bb684ceb2bd67c7cfba97"
+        }
+      ]
+    },
+    {
+      "material": "setuptools 60.0.0 retained development excerpt",
+      "includedScope": [
+        "experiments/rag/datasets/real/setuptools-60.0.0/"
+      ],
+      "terms": "MIT; exact retained excerpt/manifests and source-intake hashes, no wheel or installed setuptools distribution.",
+      "notices": [
+        {
+          "path": "experiments/rag/datasets/real/setuptools-60.0.0/LICENSE",
+          "sha256": "db3f0246b1f9278f15845b99fec478b8b506eb76487993722f8c6e254285faf8"
+        }
+      ]
+    },
+    {
+      "material": "Pinned install/build dependencies acquired separately",
+      "includedScope": [
+        "pnpm-lock.yaml",
+        "requirements-contracts.txt"
+      ],
+      "terms": "Existing complete notice assembly retained including verifier amendments. Source package ships no installed node_modules, venv, native/WASM binaries or container images. Their own redistribution obligations remain conditional on a later selected binary/image artifact.",
+      "notices": [
+        {
+          "path": "THIRD_PARTY_NOTICES.txt",
+          "sha256": "dc9a9b3c2b5965fd296e2c2f3a201c526ef6dd7b6b10acaacbbbac16ae167665"
+        }
+      ]
+    },
+    {
+      "material": "Rollup 4.52.4 captured npm archive and provenance envelope; source bytes deliberately unavailable in this native provenance replay",
+      "includedScope": [
+        "examples/production-phase2/2026-11-02-implementation-02/npm-fixtures/rollup-4.52.4/metadata.json",
+        "examples/production-phase2/2026-11-02-implementation-02/npm-fixtures/rollup-4.52.4/attestations.json",
+        "examples/production-phase2/2026-11-02-implementation-02/npm-fixtures/rollup-4.52.4/artifact.tgz"
+      ],
+      "terms": "Publisher-packaged MIT/ISC/0BSD license and complete bundled dependency notices retained verbatim from the already bounded parser/CAS observation. Inert verification fixture only; no target installation/import/execution. Original larger source archive remains local and unselected.",
+      "notices": [
+        {
+          "path": "packages/core/ROLLUP_FIXTURE_NOTICES.txt",
+          "sha256": "bc91f5e3c168054fba08a1ea209a89c0fc10bc0667e52911481ee284c07ef69b"
+        }
+      ]
+    }
+  ],
+  "explicitExclusions": [
+    {
+      "material": "docs/Governing/Hacktoberfest 2026 (1).docx and docs/Governing/Hacktoberfest HackDay Sonipat.pdf",
+      "disposition": "Not included. Original bytes and Git history preserved; external event-document permission unresolved, no blanket owner-permission gate."
+    },
+    {
+      "material": "yoga WASM linked components; rpds wheel; bundled pip vendors; Node/Python/Debian container images",
+      "disposition": "No installed/binary/image bytes selected. Root upstream notices retained; exact future binary/source-offer obligations apply only if those release contents are selected."
+    },
+    {
+      "material": "Images, fonts, unrelated historical stores/archives and patches",
+      "disposition": "Excluded with exact hashes in SOURCE_SELECTION.json. Originals preserved; no removal from Git history claimed."
+    }
+  ],
+  "limits": "Specific selected source scope only. Does not clear full Git-history, arbitrary archived package, binary/image or release distribution."
+}

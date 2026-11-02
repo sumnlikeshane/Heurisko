@@ -1,0 +1,28 @@
+positive-0-0-1 PASS {"artifactIntegrity":"matched","sourceAssociation":"publisher_asserted","provenancePolicy":"verified_policy","correspondence":"exact","analysisCompleteness":"complete","policyResult":"pass"} 0
+wrong-signer-0-0-1 PASS {"artifactIntegrity":"matched","sourceAssociation":"publisher_asserted","provenancePolicy":"verified_cryptographic_only","correspondence":"exact","analysisCompleteness":"complete","policyResult":"violation"} 1
+wrong-issuer-0-0-1 PASS {"artifactIntegrity":"matched","sourceAssociation":"publisher_asserted","provenancePolicy":"verified_cryptographic_only","correspondence":"exact","analysisCompleteness":"complete","policyResult":"violation"} 1
+wrong-builder-0-0-1 PASS {"artifactIntegrity":"matched","sourceAssociation":"publisher_asserted","provenancePolicy":"verified_cryptographic_only","correspondence":"exact","analysisCompleteness":"complete","policyResult":"violation"} 1
+wrong-workflow-0-0-1 PASS {"artifactIntegrity":"matched","sourceAssociation":"publisher_asserted","provenancePolicy":"verified_cryptographic_only","correspondence":"exact","analysisCompleteness":"complete","policyResult":"violation"} 1
+wrong-source-0-0-1 PASS {"artifactIntegrity":"matched","sourceAssociation":"publisher_asserted","provenancePolicy":"verified_cryptographic_only","correspondence":"exact","analysisCompleteness":"complete","policyResult":"violation"} 1
+wrong-subject-name-0-0-1 PASS {"artifactIntegrity":"matched","sourceAssociation":"publisher_asserted","provenancePolicy":"invalid","correspondence":"exact","analysisCompleteness":"incomplete","policyResult":"violation"} 1
+wrong-subject-digest-0-0-1 PASS {"artifactIntegrity":"matched","sourceAssociation":"publisher_asserted","provenancePolicy":"invalid","correspondence":"exact","analysisCompleteness":"incomplete","policyResult":"violation"} 1
+conflict-0-0-1 PASS {"artifactIntegrity":"matched","sourceAssociation":"publisher_asserted","provenancePolicy":"unresolved","correspondence":"exact","analysisCompleteness":"incomplete","policyResult":"indeterminate"} 2
+bad-signature-0-0-1 PASS {"artifactIntegrity":"matched","sourceAssociation":"publisher_asserted","provenancePolicy":"invalid","correspondence":"exact","analysisCompleteness":"incomplete","policyResult":"violation"} 1
+unsupported-0-0-1 PASS {"artifactIntegrity":"matched","sourceAssociation":"publisher_asserted","provenancePolicy":"unresolved","correspondence":"exact","analysisCompleteness":"incomplete","policyResult":"indeterminate"} 2
+positive-after-0-0-1 PASS {"artifactIntegrity":"matched","sourceAssociation":"publisher_asserted","provenancePolicy":"verified_policy","correspondence":"exact","analysisCompleteness":"complete","policyResult":"pass"} 0
+positive-0-0-2 FAIL {"artifactIntegrity":"matched","sourceAssociation":"publisher_asserted","provenancePolicy":"unresolved","correspondence":"exact","analysisCompleteness":"incomplete","policyResult":"indeterminate"} 2
+wrong-signer-0-0-2 FAIL {"artifactIntegrity":"matched","sourceAssociation":"publisher_asserted","provenancePolicy":"unresolved","correspondence":"unresolved","analysisCompleteness":"incomplete","policyResult":"indeterminate"} 2
+file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/.heurisko/controlled-runtime-20261102-04/packages/core/dist/archive.js:79
+            throw new StorageError('PARSER_CLEANUP_UNCONFIRMED');
+                  ^
+
+StorageError: PARSER_CLEANUP_UNCONFIRMED
+    at inventoryArchive (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/.heurisko/controlled-runtime-20261102-04/packages/core/dist/archive.js:79:19)
+    at async parse (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/.heurisko/controlled-runtime-20261102-04/packages/core/dist/producer.js:65:20)
+    at async collectEvidence (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/.heurisko/controlled-runtime-20261102-04/packages/core/dist/producer.js:120:14)
+    at async investigate (file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/.heurisko/controlled-runtime-20261102-04/packages/core/dist/engine.js:38:20)
+    at async file:///Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/scripts/verify-controlled-integration.mjs:19:15 {
+  code: 'PARSER_CLEANUP_UNCONFIRMED'
+}
+
+Node.js v22.23.4

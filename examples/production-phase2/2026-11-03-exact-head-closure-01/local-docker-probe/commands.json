@@ -1,0 +1,15 @@
+[
+  {
+    "name": "docker",
+    "command": [
+      "docker",
+      "--host",
+      "unix:///Users/sumnlikehsane/.docker/run/docker.sock",
+      "info",
+      "--format",
+      "{{.OSType}} {{.Architecture}} {{.OperatingSystem}}"
+    ],
+    "exit": 143,
+    "seconds": 168.6659465410048
+  }
+]

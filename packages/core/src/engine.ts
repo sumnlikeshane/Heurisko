@@ -1,4 +1,5 @@
 import type { AnalysisOptions, ArtifactInput, InvestigationReport, Outcomes } from '@heurisko/contracts';
+import { applyTrust, loadTrustCatalog, type TrustCatalog } from './trust.js';
 import { collectEvidence, type ProducerContext } from './producer.js';
 import { EvidenceStore } from './storage.js';
 import { runAnalysis, analysisModuleIdentity, emitProgress, type AnalysisModule } from './adapter.js';
@@ -10,10 +11,10 @@ import { boundedFile } from './storage.js';
 import { fileURLToPath } from 'node:url';
 import { loadConfiguredAnalysisModule } from './reviewed-module.js';
 
-export interface InvestigationContext extends ProducerContext { module?:AnalysisModule; analysisModuleSelector?:string }
+export interface InvestigationContext extends ProducerContext { module?:AnalysisModule; analysisModuleSelector?:string; trustCatalog?:TrustCatalog }
 export async function engineCodeIdentity() {
   const codeDigests:Record<string,string>={};
-  for(const name of ['engine','producer','comparison','archive','network','storage','parser-runtime','parser-job','adapter','identity','validation','safety','npm','sources','provenance','intelligence-boundary','reviewed-module'])codeDigests[name]=sha256(await boundedFile(fileURLToPath(new URL(`./${name}.js`,import.meta.url)),256*1024));
+  for(const name of ['engine','producer','comparison','json-values','relationships','archive','network','storage','parser-runtime','parser-job','adapter','identity','validation','safety','npm','sources','provenance','trust','trust-profiles','intelligence-boundary','reviewed-module'])codeDigests[name]=sha256(await boundedFile(fileURLToPath(new URL(`./${name}.js`,import.meta.url)),256*1024));
   for(const [name,path]of [['parserWorker','../runtime/archive_worker.py'],['contractSchema','../../contracts/schema/contracts.schema.json'],['contractValidator','../../contracts/runtime/validate.py'],['contractSemantics','../../contracts/runtime/semantics.py']] as const)codeDigests[name]=sha256(await boundedFile(fileURLToPath(new URL(path,import.meta.url)),256*1024));
   return {engine:'shane-audit-v1;'+sha256(canonicalJSON(codeDigests)),codeDigests};
 }
@@ -31,9 +32,12 @@ export async function investigate(input:ArtifactInput,options:AnalysisOptions,co
   const module=context.module?Object.freeze({...context.module}):await loadConfiguredAnalysisModule({store,signal:context.signal,selector:context.analysisModuleSelector});
   const moduleIdentity=module?analysisModuleIdentity(module):null;
   const settings=await validateOptions(options,context);
+  const catalog=context.trustCatalog?structuredClone(context.trustCatalog):await loadTrustCatalog();
   const bundle=await collectEvidence({...input,analysisOptions:settings},{...context,store});
+  const trust=await applyTrust(bundle,store,catalog,context.signal);
+  if(catalog)emitProgress(context,bundle.stages.find(s=>s.stage==='provenance')!);
   const {engine,codeDigests}=await engineCodeIdentity();
-  const config:AnalysisConfiguration={version:'heurisko-config-v3',analysisModule:moduleIdentity,evidenceSnapshotSha256:sha256(canonicalJSON(bundle.evidence.filter(e=>e.locator.metadataKey==='acquisition-context').map(e=>({kind:e.kind,locator:e.locator,digest:e.contentSha256})))),subject:{ecosystem:input.ecosystem,origin:bundle.artifact.origin,packageName:bundle.artifact.packageName??null,version:bundle.artifact.version??null,artifactFilename:bundle.artifact.artifactFilename,registryUrl:input.ecosystem==='npm'?'https://registry.npmjs.org':null},artifactSha256:bundle.artifact.observedSha256,sources:bundle.sourceCandidates.map(sourceIdentity),versions:{engine,rules:moduleIdentity?`${moduleIdentity.moduleId}@${moduleIdentity.moduleVersion}`:'unavailable',tools:`node-${process.versions.node};host-${process.platform}-${process.arch};${safetyProfile.parser.image};worker-${codeDigests.parserWorker}`,policy:settings.trustPolicyRef??'none',normalizers:'none',verifier:'none',trustRoot:'none'},options:settings,safetyProfileSha256:sha256(canonicalJSON(safetyProfile)),interpretationConfigSha256:moduleIdentity?.interpretationConfigSha256??null};
+  const config:AnalysisConfiguration={version:'heurisko-config-v3',trust:trust.identity,analysisModule:moduleIdentity,evidenceSnapshotSha256:sha256(canonicalJSON(bundle.evidence.filter(e=>e.locator.metadataKey==='acquisition-context').map(e=>({kind:e.kind,locator:e.locator,digest:e.contentSha256})))),subject:{ecosystem:input.ecosystem,origin:bundle.artifact.origin,packageName:bundle.artifact.packageName??null,version:bundle.artifact.version??null,artifactFilename:bundle.artifact.artifactFilename,registryUrl:input.ecosystem==='npm'?'https://registry.npmjs.org':null},artifactSha256:bundle.artifact.observedSha256,sources:bundle.sourceCandidates.map(sourceIdentity),versions:{engine,rules:moduleIdentity?`${moduleIdentity.moduleId}@${moduleIdentity.moduleVersion}`:'unavailable',tools:`node-${process.versions.node};host-${process.platform}-${process.arch};${safetyProfile.parser.image};worker-${codeDigests.parserWorker}`,policy:String(trust.identity.policy??settings.trustPolicyRef??'none'),normalizers:'none',verifier:String(trust.identity.verifier),trustRoot:String(trust.identity.trustRoot??'none')},options:settings,safetyProfileSha256:sha256(canonicalJSON(safetyProfile)),interpretationConfigSha256:moduleIdentity?.interpretationConfigSha256??null};
   await retainJSONEvidence(bundle,store,{kind:'analysis_note',side:'both',locator:{metadataKey:'analysis-configuration'},observationMethod:'heurisko-config-v3',limitations:[]},config);
   let analysis;
   const validationContext={...context,signal:undefined};
@@ -51,9 +55,8 @@ export async function investigate(input:ArtifactInput,options:AnalysisOptions,co
   if(!analysis.stages.some(s=>s.stage==='ai'))analysis.stages.push({stage:'ai',status:'skipped',errors:[]});
   const incomplete=!bundle.coverage.complete || analysis.stages.find(s=>s.stage==='heuristics')?.status!=='complete' || [...bundle.stages,...analysis.stages].some(s=>['failed','incomplete','not_started','running'].includes(s.status));
   const outcomes:Outcomes={artifactIntegrity:bundle.artifact.integrity.status,sourceAssociation:bundle.sourceCandidates.some(c=>c.association==='ambiguous')?'ambiguous':bundle.sourceCandidates.some(c=>c.association==='user_supplied')?'user_supplied':bundle.sourceCandidates.some(c=>c.commit)?'publisher_asserted':'unavailable',provenancePolicy:bundle.provenance.status,
-    correspondence:bundle.artifact.integrity.status==='mismatched'?'not_assessed':bundle.sourceCandidates.some(c=>c.association==='ambiguous')?'unresolved':bundle.coverage.complete&&bundle.changes.length>0&&bundle.changes.every(c=>c.status==='identical')?'exact':bundle.changes.length?'unresolved':'not_assessed',analysisCompleteness:incomplete?'incomplete':'complete',policyResult:settings.trustPolicyRef?'indeterminate':'not_evaluated'};
-  // Policy implementations are not supplied in S2. Priority/severity never invent
-  // a violation, and a named but unevaluated policy never earns pass.
+    correspondence:bundle.artifact.integrity.status==='mismatched'?'not_assessed':bundle.sourceCandidates.some(c=>c.association==='ambiguous')?'unresolved':bundle.coverage.complete&&bundle.changes.length>0&&bundle.changes.every(c=>c.status==='identical')?'exact':bundle.changes.length?'unresolved':'not_assessed',analysisCompleteness:incomplete?'incomplete':'complete',policyResult:trust.policyResult};
+  // Policy decisions come from the host-selected evaluator, never finding severity.
   // G0's report field is bare 64-hex; internal digest APIs retain sha256:.
   const fingerprint=configurationFingerprint(config).slice(7);
   const report:InvestigationReport={schemaVersion:'0.1.0',reportId:reportId(bundle,fingerprint),createdAt:new Date().toISOString().replace(/\.\d{3}Z$/,'Z'),bundle,analysis,outcomes,analysisConfigFingerprint:fingerprint,fixtureKind:'real_generated'};

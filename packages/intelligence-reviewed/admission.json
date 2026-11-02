@@ -1,5 +1,5 @@
 {
-  "version": "heurisko-reviewed-intelligence-admission-v1",
+  "version": "heurisko-reviewed-intelligence-admission-v2",
   "upstream": {
     "repository": "https://github.com/sumnlikeshane/Heurisko",
     "commit": "55240e99409ad44cbd6a978f40873ef410cb1861",
@@ -10,16 +10,16 @@
   },
   "derived": {
     "path": "src/index.ts",
-    "sourceSha256": "sha256:ae1795d52ac7c0f340524ff0ddc247ecca8725916a607fcd77d7bff16ca3fcd2",
-    "transformation": "Preserve the complete deterministic implementation byte-for-byte before the terminal export type { AnalyzeEvidence } marker; remove that marker and all following reexports only; append one LF.",
-    "compiledSha256": "sha256:6a7486a956c049b1f2930858967110e86299309b4df6cc59b0c4c4a831e77b3d",
-    "declarationsSha256": "sha256:4843e4ddcce4e9457eef533e793105b2c8168b85edae2e3462003c4737fb54ba"
+    "sourceSha256": "sha256:e87ebb2900dc6cafbe70ec3e2ce0d0f93caf8e56a5c70726373187b23d9c52df",
+    "compiledSha256": "sha256:ae82d37f1a62b3c225d7b9d15433e129473605450a5a0016e4740d266bc0ff30",
+    "declarationsSha256": "sha256:4843e4ddcce4e9457eef533e793105b2c8168b85edae2e3462003c4737fb54ba",
+    "transformation": "Local Phase 2 revision of the retained deterministic body: field-level Q1 rubric, bounded Q2 entrypoint value summaries, Q3 static relationships/source scope with missing optional metadata qualified, and visible raw residuals. Not an unchanged upstream copy."
   },
   "selection": {
     "hostEnvironmentVariable": "HEURISKO_ANALYSIS_MODULE",
-    "acceptedValue": "55240e9",
-    "default": "55240e9",
-    "explicitTrustedContextModule": "overrides host selector",
+    "acceptedValue": "p2-static-v1",
+    "default": "p2-static-v1",
+    "legacyValue": "55240e9 loads preserved legacy rule bytes with current identified boundary",
     "disabledValue": "off"
   },
   "admittedRuntime": "analyzeEvidence only; optional retained-content argument supplied by the core trusted boundary",
@@ -36,9 +36,18 @@
   },
   "baselineLockSha256": "sha256:7b304d2abf2987264821998ddf490e501ec65fac81af28888b51793a32daeedb",
   "qualityLimitations": [
-    "Lifecycle removal severity/reviewPriority remain keyed to FileChange.status even when the resolved key direction is removal.",
-    "Entrypoint findings still contain an old/new-values-unavailable limitation.",
-    "Simple deterministic evidence rules are not general maliciousness/build-equivalence/risk accuracy validation."
+    "Development conformance only; independent human labels and held-out grading pending.",
+    "Four supported lifecycle keys only: preinstall, install, postinstall, prepare; empty/nonstring commands unresolved.",
+    "Whole manifest absent-side proof not admitted by content adapter; it abstains.",
+    "Static byte/value/source-map relationships do not prove semantic equivalence, generation, reproduction, provenance or safety.",
+    "No verifier, policy or model activated."
   ],
-  "workspaceLockChange": "Only the new local workspace importer and core-to-reviewed-module workspace link; no external dependency or resolution changed."
+  "workspaceLockChange": "Only the new local workspace importer and core-to-reviewed-module workspace link; no external dependency or resolution changed.",
+  "revision": "p2-static-v1",
+  "parent": {
+    "admissionPath": "provenance/admission-55240e9.json",
+    "admissionSha256": "sha256:0cb81b900c04e62b422f30b7b71a22dca95a7eb74c171ab9c91801ee4fe86874",
+    "sourcePath": "provenance/reviewed-55240e9.ts",
+    "sourceSha256": "sha256:ae1795d52ac7c0f340524ff0ddc247ecca8725916a607fcd77d7bff16ca3fcd2"
+  }
 }

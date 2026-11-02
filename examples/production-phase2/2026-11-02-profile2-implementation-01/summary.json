@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "profile": "npm-gha-slsa-v1-draft.2",
+  "legacyProfile": "npm-gha-slsa-v1-draft.1",
+  "sourceChanges": [],
+  "failures": [],
+  "limitation": "Local relevant profile/worker/application suites; serial full core/native acceptance occurs on exact published CI head."
+}

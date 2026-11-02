@@ -1,0 +1,92 @@
+[
+  {
+    "name": "trust-arm64",
+    "command": [
+      "/private/tmp/heurisko-p2-tools-20261102/node-v22.23.4-darwin-arm64/bin/node",
+      "scripts/test-phase2-trust.mjs",
+      "/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/examples/production-phase2/2026-11-02-implementation-02/trust-arm64"
+    ],
+    "exitCode": 0,
+    "seconds": 175.304,
+    "log": "trust-arm64.log"
+  },
+  {
+    "name": "integration-arm64",
+    "command": [
+      "/private/tmp/heurisko-p2-tools-20261102/node-v22.23.4-darwin-arm64/bin/node",
+      "scripts/verify-phase2-integration.mjs",
+      "/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/examples/production-phase2/2026-11-02-implementation-02/integration-arm64",
+      "--source-unavailable"
+    ],
+    "exitCode": 0,
+    "seconds": 136.812,
+    "log": "integration-arm64.log"
+  },
+  {
+    "name": "core-arm64",
+    "command": [
+      "/private/tmp/heurisko-p2-tools-20261102/node-v22.23.4-darwin-arm64/bin/node",
+      "--test",
+      "--test-concurrency=1",
+      "/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/audit-fixes.test.mjs",
+      "/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/cli-boundary.test.mjs",
+      "/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/foundation.test.mjs",
+      "/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/intelligence-boundary.test.mjs",
+      "/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/network.test.mjs",
+      "/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/parser-absence.test.mjs",
+      "/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/phase2.test.mjs",
+      "/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/reviewed-module.test.mjs",
+      "/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s2.test.mjs",
+      "/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/s3.test.mjs",
+      "/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/packages/core/tests/storage-batch.test.mjs"
+    ],
+    "exitCode": 0,
+    "seconds": 506.527,
+    "log": "core-arm64.log"
+  },
+  {
+    "name": "parser-boundary-arm64",
+    "command": [
+      "/private/tmp/heurisko-p2-tools-20261102/node-v22.23.4-darwin-arm64/bin/node",
+      "scripts/check-parser-boundary.mjs",
+      "/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/examples/production-phase2/2026-11-02-implementation-02/parser-boundary-arm64.json"
+    ],
+    "exitCode": 0,
+    "seconds": 9.537,
+    "log": "parser-boundary-arm64.log"
+  },
+  {
+    "name": "pty-policy-arm64",
+    "command": [
+      "/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/.venv/bin/python",
+      "packages/tui/tests/phase2-policy.py",
+      "/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/examples/production-phase2/2026-11-02-implementation-02/pty-policy-arm64"
+    ],
+    "exitCode": 1,
+    "seconds": 0.353,
+    "log": "pty-policy-arm64.log"
+  },
+  {
+    "name": "readers-tui-arm64",
+    "command": [
+      "pnpm",
+      "run",
+      "test:s4"
+    ],
+    "exitCode": 0,
+    "seconds": 23.175,
+    "log": "readers-tui-arm64.log"
+  },
+  {
+    "name": "web-arm64",
+    "command": [
+      "pnpm",
+      "--filter",
+      "@heurisko/web",
+      "test"
+    ],
+    "exitCode": 0,
+    "seconds": 10.281,
+    "log": "web-arm64.log"
+  }
+]

@@ -1,0 +1,196 @@
+[
+  {
+    "name": "typecheck",
+    "command": [
+      "pnpm",
+      "run",
+      "typecheck"
+    ],
+    "cwd": "/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/.heurisko/source-supported-replay-20261102-04/heurisko-source",
+    "exit": 0,
+    "error": null,
+    "seconds": 12.715,
+    "childUserSeconds": 24.411078,
+    "childSystemSeconds": 1.725403,
+    "cumulativeChildMaxRssBytes": 283049984,
+    "resourceScope": "macOS cumulative child RSS, not Docker container peak"
+  },
+  {
+    "name": "contracts",
+    "command": [
+      "pnpm",
+      "run",
+      "test:contracts"
+    ],
+    "cwd": "/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/.heurisko/source-supported-replay-20261102-04/heurisko-source",
+    "exit": 0,
+    "error": null,
+    "seconds": 0.5,
+    "childUserSeconds": 0.2749689999999987,
+    "childSystemSeconds": 0.06435299999999988,
+    "cumulativeChildMaxRssBytes": 283049984,
+    "resourceScope": "macOS cumulative child RSS, not Docker container peak"
+  },
+  {
+    "name": "scanner-tests",
+    "command": [
+      "node",
+      "--test",
+      "scripts/tests/credential-scan.test.mjs"
+    ],
+    "cwd": "/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/.heurisko/source-supported-replay-20261102-04/heurisko-source",
+    "exit": 0,
+    "error": null,
+    "seconds": 0.342,
+    "childUserSeconds": 0.1523290000000017,
+    "childSystemSeconds": 0.07586099999999996,
+    "cumulativeChildMaxRssBytes": 283049984,
+    "resourceScope": "macOS cumulative child RSS, not Docker container peak"
+  },
+  {
+    "name": "core",
+    "command": [
+      "node",
+      "--test",
+      "--test-concurrency=1",
+      "packages/core/tests/audit-fixes.test.mjs",
+      "packages/core/tests/cli-boundary.test.mjs",
+      "packages/core/tests/foundation.test.mjs",
+      "packages/core/tests/intelligence-boundary.test.mjs",
+      "packages/core/tests/network.test.mjs",
+      "packages/core/tests/parser-absence.test.mjs",
+      "packages/core/tests/phase2.test.mjs",
+      "packages/core/tests/reviewed-module.test.mjs",
+      "packages/core/tests/s2.test.mjs",
+      "packages/core/tests/s3.test.mjs",
+      "packages/core/tests/storage-batch.test.mjs"
+    ],
+    "cwd": "/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/.heurisko/source-supported-replay-20261102-04/heurisko-source",
+    "exit": 0,
+    "error": null,
+    "seconds": 472.735,
+    "childUserSeconds": 61.137226,
+    "childSystemSeconds": 31.759946999999997,
+    "cumulativeChildMaxRssBytes": 283049984,
+    "resourceScope": "macOS cumulative child RSS, not Docker container peak"
+  },
+  {
+    "name": "parser-boundary",
+    "command": [
+      "node",
+      "scripts/check-parser-boundary.mjs",
+      "/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/examples/production-phase2/2026-11-02-closure-implementation-01/source-replay-04-installed/parser-boundary.json"
+    ],
+    "cwd": "/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/.heurisko/source-supported-replay-20261102-04/heurisko-source",
+    "exit": 0,
+    "error": null,
+    "seconds": 10.864,
+    "childUserSeconds": 0.16263899999999865,
+    "childSystemSeconds": 0.24963100000000082,
+    "cumulativeChildMaxRssBytes": 283049984,
+    "resourceScope": "macOS cumulative child RSS, not Docker container peak"
+  },
+  {
+    "name": "readers-tui",
+    "command": [
+      "node",
+      "--test",
+      "integration/part4/tests/readiness.test.mjs",
+      "packages/tui/tests/audit.test.mjs",
+      "packages/tui/tests/model.test.mjs",
+      "packages/tui/tests/user-failures.test.mjs"
+    ],
+    "cwd": "/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/.heurisko/source-supported-replay-20261102-04/heurisko-source",
+    "exit": 0,
+    "error": null,
+    "seconds": 17.545,
+    "childUserSeconds": 10.299238000000003,
+    "childSystemSeconds": 3.4255759999999995,
+    "cumulativeChildMaxRssBytes": 283049984,
+    "resourceScope": "macOS cumulative child RSS, not Docker container peak"
+  },
+  {
+    "name": "web",
+    "command": [
+      "pnpm",
+      "--filter",
+      "@heurisko/web",
+      "test"
+    ],
+    "cwd": "/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/.heurisko/source-supported-replay-20261102-04/heurisko-source",
+    "exit": 1,
+    "error": null,
+    "seconds": 17.471,
+    "childUserSeconds": 13.071486000000007,
+    "childSystemSeconds": 5.208839000000005,
+    "cumulativeChildMaxRssBytes": 283049984,
+    "resourceScope": "macOS cumulative child RSS, not Docker container peak"
+  },
+  {
+    "name": "historical-s3",
+    "command": [
+      "node",
+      "scripts/verify-s3-capture.mjs",
+      "examples/s3/current",
+      "--historical"
+    ],
+    "cwd": "/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/.heurisko/source-supported-replay-20261102-04/heurisko-source",
+    "exit": 0,
+    "error": null,
+    "seconds": 66.81,
+    "childUserSeconds": 15.263156999999993,
+    "childSystemSeconds": 13.550117999999998,
+    "cumulativeChildMaxRssBytes": 283049984,
+    "resourceScope": "macOS cumulative child RSS, not Docker container peak"
+  },
+  {
+    "name": "historical-audit",
+    "command": [
+      "node",
+      "scripts/verify-s3-capture.mjs",
+      "examples/audit-fixes/current",
+      "--historical"
+    ],
+    "cwd": "/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/.heurisko/source-supported-replay-20261102-04/heurisko-source",
+    "exit": 0,
+    "error": null,
+    "seconds": 48.232,
+    "childUserSeconds": 12.70416800000001,
+    "childSystemSeconds": 11.134723000000001,
+    "cumulativeChildMaxRssBytes": 283049984,
+    "resourceScope": "macOS cumulative child RSS, not Docker container peak"
+  },
+  {
+    "name": "historical-handoff",
+    "command": [
+      "node",
+      "scripts/verify-s3-capture.mjs",
+      "examples/handoff/current",
+      "--historical"
+    ],
+    "cwd": "/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/.heurisko/source-supported-replay-20261102-04/heurisko-source",
+    "exit": 0,
+    "error": null,
+    "seconds": 24.656,
+    "childUserSeconds": 9.339641,
+    "childSystemSeconds": 8.122945000000001,
+    "cumulativeChildMaxRssBytes": 283049984,
+    "resourceScope": "macOS cumulative child RSS, not Docker container peak"
+  },
+  {
+    "name": "package-hashes",
+    "command": [
+      "/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/.heurisko/source-supported-replay-20261102-04/heurisko-source/.venv/bin/python",
+      "scripts/verify-source-package.py",
+      "SOURCE_SELECTION.json"
+    ],
+    "cwd": "/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/.heurisko/source-supported-replay-20261102-04/heurisko-source",
+    "exit": 0,
+    "error": null,
+    "seconds": 9.17,
+    "childUserSeconds": 0.7585849999999823,
+    "childSystemSeconds": 0.9613269999999972,
+    "cumulativeChildMaxRssBytes": 283049984,
+    "resourceScope": "macOS cumulative child RSS, not Docker container peak"
+  }
+]

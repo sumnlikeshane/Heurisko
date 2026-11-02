@@ -1,0 +1,8 @@
+{
+  "original": "controlled-fixtures-01",
+  "corrected": "controlled-fixtures-02",
+  "correction": "Minimal positive DER INTEGER serials, RFC5280 UTCTime for 2026/2030, explicit Rekor v2 verifier keyDetails. All affected certificates/SCTs/bundles/logs/TUF are generated and signed afresh under new ephemeral keys.",
+  "evidence": "Initial 49 restricted passes establish actual library acceptance of the original inputs, not strict certificate generation conformance. Original bytes/reports remain unchanged.",
+  "source": "https://www.rfc-editor.org/rfc/rfc5280#section-4.1.2.5",
+  "productionChanged": false
+}

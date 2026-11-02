@@ -1,0 +1,108 @@
+{
+  "scope": "Actual current CLI analyze against public exact is-number 7.0.0, genuine evaluator/report/exit; invalid range rejected without report. No constructed reports.",
+  "catalogSha256": "87af9d82a3c1a4c942b9f36650084a35c78b3b2d65d0fd179b737e89682390e2",
+  "results": [
+    {
+      "id": "optional",
+      "command": [
+        "/private/tmp/heurisko-p2-tools-20261102/node-v22.23.4-darwin-arm64/bin/node",
+        "packages/cli/dist/index.js",
+        "analyze",
+        "npm:is-number@7.0.0",
+        "--policy",
+        "optional",
+        "--store",
+        "/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/examples/production-phase2/2026-11-02-implementation-02/cli-policy-arm64/optional/store",
+        "--json"
+      ],
+      "exitCode": 0,
+      "expectedExit": 0,
+      "exitMatches": true,
+      "seconds": 11.929,
+      "outcomes": {
+        "analysisCompleteness": "complete",
+        "artifactIntegrity": "matched",
+        "correspondence": "unresolved",
+        "policyResult": "pass",
+        "provenancePolicy": "absent",
+        "sourceAssociation": "publisher_asserted"
+      },
+      "reportId": "report_4e31b1474046674443542f5f"
+    },
+    {
+      "id": "required",
+      "command": [
+        "/private/tmp/heurisko-p2-tools-20261102/node-v22.23.4-darwin-arm64/bin/node",
+        "packages/cli/dist/index.js",
+        "analyze",
+        "npm:is-number@7.0.0",
+        "--policy",
+        "required",
+        "--store",
+        "/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/examples/production-phase2/2026-11-02-implementation-02/cli-policy-arm64/required/store",
+        "--json"
+      ],
+      "exitCode": 1,
+      "expectedExit": 1,
+      "exitMatches": true,
+      "seconds": 9.385,
+      "outcomes": {
+        "analysisCompleteness": "complete",
+        "artifactIntegrity": "matched",
+        "correspondence": "unresolved",
+        "policyResult": "violation",
+        "provenancePolicy": "absent",
+        "sourceAssociation": "publisher_asserted"
+      },
+      "reportId": "report_13cbc182118d44ad678ff5cb"
+    },
+    {
+      "id": "unknown",
+      "command": [
+        "/private/tmp/heurisko-p2-tools-20261102/node-v22.23.4-darwin-arm64/bin/node",
+        "packages/cli/dist/index.js",
+        "analyze",
+        "npm:is-number@7.0.0",
+        "--policy",
+        "unknown-fixture",
+        "--store",
+        "/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/examples/production-phase2/2026-11-02-implementation-02/cli-policy-arm64/unknown/store",
+        "--json"
+      ],
+      "exitCode": 2,
+      "expectedExit": 2,
+      "exitMatches": true,
+      "seconds": 8.881,
+      "outcomes": {
+        "analysisCompleteness": "incomplete",
+        "artifactIntegrity": "matched",
+        "correspondence": "unresolved",
+        "policyResult": "indeterminate",
+        "provenancePolicy": "unresolved",
+        "sourceAssociation": "publisher_asserted"
+      },
+      "reportId": "report_b5917d2d5ffaff9d26fae532"
+    },
+    {
+      "id": "invalid",
+      "command": [
+        "/private/tmp/heurisko-p2-tools-20261102/node-v22.23.4-darwin-arm64/bin/node",
+        "packages/cli/dist/index.js",
+        "analyze",
+        "npm:is-number@latest",
+        "--policy",
+        "required",
+        "--store",
+        "/Users/sumnlikehsane/Desktop/Shane/Projects/Heurisko/examples/production-phase2/2026-11-02-implementation-02/cli-policy-arm64/invalid/store",
+        "--json"
+      ],
+      "exitCode": 3,
+      "expectedExit": 3,
+      "exitMatches": true,
+      "seconds": 0.059,
+      "outcomes": null,
+      "reportId": null
+    }
+  ],
+  "passed": true
+}
